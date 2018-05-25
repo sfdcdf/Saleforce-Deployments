@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Call Answering</relationshipLabel>
+        <relationshipName>Call_Answering</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Additional_Business_Info__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional information about the business to help call answering representative handle caller's questions.  (Ex: "We accept most insurance")</inlineHelpText>
+        <label>Additional Business Info</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>After_Hours_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirm the hours / days that the call answering should pickup.</inlineHelpText>
+        <label>After Hours Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Business_Address__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If you do not want the client's business address available to callers, please skip.</inlineHelpText>
+        <label>Business Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Business_Hours_Days_Open__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What are the days of the week the client's business are open (ex: Monday-Friday)?
+What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inlineHelpText>
+        <label>Business Hours / Days Open</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Business_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Client's business name to be used for call answering</inlineHelpText>
+        <label>Business Name</label>
+        <length>50</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Call_Answering_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Answering Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Setup</fullName>
+                    <default>true</default>
+                    <label>New Setup</label>
+                </value>
+                <value>
+                    <fullName>Change Requested</fullName>
+                    <default>false</default>
+                    <label>Change Requested</label>
+                </value>
+                <value>
+                    <fullName>Question/Issue</fullName>
+                    <default>false</default>
+                    <label>Question/Issue</label>
+                </value>
+                <value>
+                    <fullName>Cancel Service</fullName>
+                    <default>false</default>
+                    <label>Cancel Service</label>
+                </value>
+                <value>
+                    <fullName>Setup In Progress</fullName>
+                    <default>false</default>
+                    <label>Setup In Progress</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Deactivated</fullName>
+                    <default>false</default>
+                    <label>Deactivated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Cancel_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancel Complete Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Cancel_Submit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancel Submit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Call Answering</relationshipLabel>
+        <relationshipName>Call_Answering</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Change_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Change Complete Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Change_Request_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Include the details of your change request here.</inlineHelpText>
+        <label>Change Request Details</label>
+        <length>32000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Change_Submit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Change Submit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Client_Cell_Phone_2_For_Text_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Cell Phone 2 For Text Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields><fields>
+        <fullName>Client_Cell_Phone_3_For_Text_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Cell Phone 3 For Text Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields><fields>
+        <fullName>Client_Email_2_For_Email_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Email 2 For Email Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_Email_3_For_Email_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Email 3 For Email Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_Email__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is email address would the client like notifications sent to?</inlineHelpText>
+        <label>Client Email For Email Message</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Client_ID__c</formula>
+        <label>Client ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the phone number that is needed for the client to receive text messages of their calls.</inlineHelpText>
+        <label>Client Cell Phone For Text Message</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields><fields>
+        <fullName>Client_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>text( Account__r.Client_Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Client Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Closing_Script__c</fullName>
+        <externalId>false</externalId>
+        <label>Closing Script</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Custom_Greeting_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Greeting</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Days_Since_Open__c</fullName>
+        <externalId>false</externalId>
+        <formula>now () -  LastModifiedDate</formula>
+        <label>Days Since Submitted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Days_to_Close_Question__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(IsNull(  Question_Complete_Date__c ), 
+CASE(MOD( DateValue( Question_Submit_Date__c ) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( Today() - DateValue(Question_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( Today() - DateValue(Question_Submit_Date__c) )/7)*5-1), 
+
+CASE(MOD( DateValue(Question_Submit_Date__c) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date__c) )/7)*5-1))</formula>
+        <label>Days to Close Question</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Days_to_Complete_Cancel__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(IsNull(  Cancel_Complete_Date__c ), 
+CASE(MOD( DateValue(  Cancel_Submit_Date__c ) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( Today() - DateValue(Cancel_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( Today() - DateValue(Cancel_Submit_Date__c) )/7)*5-1), 
+
+CASE(MOD( DateValue(Cancel_Submit_Date__c) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c) )/7)*5-1))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to Complete Cancel</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Days_to_Complete_Change__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(IsNull(  Change_Complete_Date__c ), 
+CASE(MOD( DateValue(  Change_Submit_Date__c ) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( Today() - DateValue(Change_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( Today() - DateValue(Change_Submit_Date__c) )/7)*5-1), 
+
+CASE(MOD( DateValue(Change_Submit_Date__c) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( DateValue(Change_Complete_Date__c ) - DateValue(Change_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c) )/7)*5-1))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to Complete Change</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Days_to_Setup_Business__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(IsNull( Setup_Complete_Date__c ), 
+CASE(MOD( DateValue( Setup_Submit_Date__c ) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( Today() - DateValue(Setup_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( Today() - DateValue(Setup_Submit_Date__c) )/7)*5-1), 
+
+CASE(MOD( DateValue(Setup_Submit_Date__c) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) )/7)*5-1))</formula>
+        <label>Days to Setup (Business)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Emergency_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Available 24/7?</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>First_Response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What do you want the call answering representative's first response to be following the caller's response to the greeting?</inlineHelpText>
+        <label>First Response</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>If_specific_lines_please_list_below__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please list the Yodle tracking lines the client would like associated with the call answering service.</inlineHelpText>
+        <label>If specific lines, please list below:</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Info_to_Verify_on_the_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>Info to Verify on the Call:</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Initial_Setup_Complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Initial Setup Complete</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>List_of_Services__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What are are the primary services Yodle is advertising for this client?</inlineHelpText>
+        <label>List of Services</label>
+        <length>800</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields><fields>
+        <fullName>Names_of_Key_Staff__c</fullName>
+        <externalId>false</externalId>
+        <label>Names of Key Staff</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Phonetic_Spelling_of_Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Phonetic Spelling of Company Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Question_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Question Complete Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Question_Issue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is your question or issue?</inlineHelpText>
+        <label>Question/Issue</label>
+        <length>32000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Question_Submit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Question Submit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Requested_By_Email__c</fullName>
+        <description>Email address of the person submitting the request.</description>
+        <externalId>false</externalId>
+        <label>Requested By Email:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Requested_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested By</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Segment_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Secondary_Segments__c</formula>
+        <label>Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Setup_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Complete Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Setup_Submit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Submit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Setup_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText># of Rings - Call is transferred to call answering after a certain number of rings
+Full Forward - Call is directly forwarded to call answering 
+After Hours - Call goes to call answering during specified time</inlineHelpText>
+        <label>Setup Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName># of Rings</fullName>
+                    <default>false</default>
+                    <label># of Rings</label>
+                </value>
+                <value>
+                    <fullName>Full Forward</fullName>
+                    <default>false</default>
+                    <label>Full Forward</label>
+                </value>
+                <value>
+                    <fullName>After Hours</fullName>
+                    <default>false</default>
+                    <label>After Hours</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Yodle_Call_Tracking_Numbers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What are the call tracking lines associated with the account in Yodle Live that you would like associated with the Call Answering service?</inlineHelpText>
+        <label>Yodle Call Tracking Numbers:</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Yodle Tracking Lines</fullName>
+                    <default>false</default>
+                    <label>All Yodle Tracking Lines</label>
+                </value>
+                <value>
+                    <fullName>Specific Lines Below</fullName>
+                    <default>false</default>
+                    <label>Specific Lines Below</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>of_Rings_Before_Answer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please note that if your voicemail picks up in the same amount of rings as you choose here than that might answer the call first</inlineHelpText>
+        <label># of Rings Before Answer</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Setup_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue># of Rings</controllingFieldValue>
+                <valueName>1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue># of Rings</controllingFieldValue>
+                <valueName>2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue># of Rings</controllingFieldValue>
+                <valueName>3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue># of Rings</controllingFieldValue>
+                <valueName>4</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Call answering setup requests.</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Call Answering</label><nameField>
+        <displayFormat>CA-{0000}</displayFormat>
+        <label>Call Answering Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Call Answering</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><startsWith>Vowel</startsWith><visibility>Public</visibility><listViews>
+        <fullName>Active_Call_Answering</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Call_Answering_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Client_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>equals</operation>
+            <value>Local</value>
+        </filters>
+        <label>Active Call Answering</label>
+    </listViews><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Account__c</columns>
+        <columns>Call_Answering_Status__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><listViews>
+        <fullName>Call_Answering</fullName>
+        <columns>Client_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Call_Answering_Status__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Queue</filterScope>
+        <label>Call Answering</label>
+        <queue>Call_Answering</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>Call_Answering_Cancels</fullName>
+        <columns>Account__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Client_ID__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>Cancel Service</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>notContain</operation>
+            <value>National</value>
+        </filters>
+        <label>Call Answering Cancel Request</label>
+        <sharedTo>
+            <role>CSOperations</role>
+            <role>ProductionManager</role>
+            <role>SEM_Ops</role>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>Call_Answering_New_Setup</fullName>
+        <columns>Account__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Client_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>New Setup</value>
+        </filters>
+        <label>Call Answering New Setup</label>
+    </listViews><listViews>
+        <fullName>Change_Requested</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>Change Requested</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>notContain</operation>
+            <value>YBN</value>
+        </filters>
+        <label>Change Requested</label>
+        <sharedTo>
+            <group>CS_Operations</group>
+            <role>ProductionManager</role>
+            <role>SEM_Ops</role>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>New_Set_Up</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Call_Answering_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>New Setup</value>
+        </filters>
+        <label>New Set Up</label>
+        <sharedTo>
+            <role>CSOperations</role>
+            <role>ProductionManager</role>
+            <role>SEM_Ops</role>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>Setup_In_Progress_Call_Answering</fullName>
+        <columns>NAME</columns>
+        <columns>Call_Answering_Status__c</columns>
+        <columns>Setup_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Client_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>Setup In Progress</value>
+        </filters>
+        <label>Setup In Progress Call Answering</label>
+        <sharedTo>
+            <group>CS_Operations</group>
+            <group>YBN_Operations</group>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>YBN_CA_CHANGES</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>Call_Answering_Status__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Client_Type__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>Change Requested,Question/Issue,Cancel Service,Setup In Progress</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>contains</operation>
+            <value>National,YBN</value>
+        </filters>
+        <label>YBN Changes/Questions/Cancelations/Setup</label>
+    </listViews><listViews>
+        <fullName>question_issue</fullName>
+        <columns>NAME</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Account__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Call_Answering_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Call_Answering_Status__c</field>
+            <operation>equals</operation>
+            <value>Question/Issue</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>notContain</operation>
+            <value>National,YBN</value>
+        </filters>
+        <label>question/issue</label>
+        <sharedTo>
+            <group>CS_Operations</group>
+            <role>ProductionManager</role>
+            <role>SEM_Ops</role>
+        </sharedTo>
+    </listViews><recordTypes>
+        <fullName>Call_Answering</fullName>
+        <active>true</active>
+        <label>Call Answering</label>
+        <picklistValues>
+            <picklist>Call_Answering_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deactivated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Setup</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Question%2FIssue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Setup In Progress</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Emergency_Hours__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Setup_Type__c</picklist>
+            <values>
+                <fullName>%23 of Rings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>After Hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Forward</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Yodle_Call_Tracking_Numbers__c</picklist>
+            <values>
+                <fullName>All Yodle Tracking Lines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specific Lines Below</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>of_Rings_Before_Answer__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes><validationRules>
+        <fullName>Call_Answering_After_Hours_Details</fullName>
+        <active>true</active>
+        <description>If Setup Type is equal to After Hours then we must fill out After Hours Details text field.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Setup_Type__c, "After Hours"),
+ISBLANK( After_Hours_Details__c) 
+)</errorConditionFormula>
+        <errorDisplayField>After_Hours_Details__c</errorDisplayField>
+        <errorMessage>Please provide hours that the call answering service should be active.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Call_Answering_Change_Requests</fullName>
+        <active>true</active>
+        <description>Must change the status if changing any of the call answering fields</description>
+        <errorConditionFormula>and(
+not(ischanged( Call_Answering_Status__c )),
+or(
+ischanged(   Business_Name__c ),
+ischanged(   List_of_Services__c ),
+ischanged(   Emergency_Hours__c ),
+ischanged(   Business_Hours_Days_Open__c ),
+ischanged(   Business_Address__c ),
+ischanged(   Setup_Type__c ),
+ischanged(   of_Rings_Before_Answer__c ),
+ischanged(   Custom_Greeting_del__c ),
+ischanged(   First_Response__c ),
+ischanged(   Info_to_Verify_on_the_Call__c ),
+ischanged(   Closing_Script__c ),
+ischanged(   Change_Request_Details__c ),
+ischanged(   Question_Issue__c )))</errorConditionFormula>
+        <errorDisplayField>Call_Answering_Status__c</errorDisplayField>
+        <errorMessage>You must change the Call Answering status if making changes to the existing setup.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Call_Answering_Client_Phone_or_Email</fullName>
+        <active>true</active>
+        <description>Client phone number or email address needs to be filled out prior to submission so the client can receive the message for the call.</description>
+        <errorConditionFormula>AND(
+ ISBLANK(Client_Email__c),
+ ISBLANK(Client_Phone_Number__c)
+)</errorConditionFormula>
+        <errorMessage>Client phone number or email address needs to be filled out prior to submission so the client can receive the message for the call.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Change_Request_Details</fullName>
+        <active>true</active>
+        <description>You must fill out the Change Request Details section when requesting a change to the call answering setup.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( Call_Answering_Status__c ,"Change Requested"),
+ISBLANK( Change_Request_Details__c ))</errorConditionFormula>
+        <errorMessage>You must fill out the Change Request Details section when requesting a change to the call answering setup.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Client_Must_Have_Sponsored</fullName>
+        <active>true</active>
+        <description>Clients must have Yodle Ads or Yodle Max to be on Call Answering. Since this account does not have either, they cannot be offered our Call Answering product.</description>
+        <errorConditionFormula>AND(
+NOT(CONTAINS( Account__r.Product_Type__c ,"SEM")),
+NOT(CONTAINS( Account__r.Name ,"Miracle")),
+not($UserRole.Name = "CS Operations"))</errorConditionFormula>
+        <errorMessage>Clients must have Yodle Ads or Yodle Max to be on Call Answering. Since this account does not have either, they cannot be offered our Call Answering product.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Deactivated_status_option_for_admin_only</fullName>
+        <active>true</active>
+        <description>Only system admins have the ability to select "Deactivated" status for call answering status.</description>
+        <errorConditionFormula>AND( 
+ ISPICKVAL( Call_Answering_Status__c,"Deactivated"),
+ $User.UserRoleId&lt;&gt;"00E60000001J9zD",
+$User.UserRoleId &lt;&gt;"00E60000000rjxk",
+$User.UserRoleId &lt;&gt;"00E60000001Gham",
+$User.UserRoleId &lt;&gt;"00E60000000sSEH"
+)</errorConditionFormula>
+        <errorMessage>If you wish to have the call answering service deactivated, please select "Cancel Service" in the Call Answering Status field.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Number_of_rings_must_be_selected</fullName>
+        <active>true</active>
+        <description>If # of rings is selected as option from Setup Type need to denote how many rings from # of rings before answer field.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Setup_Type__c, "# of Rings"),
+ISPICKVAL(of_Rings_Before_Answer__c,"")
+)</errorConditionFormula>
+        <errorDisplayField>of_Rings_Before_Answer__c</errorDisplayField>
+        <errorMessage>Please choose number of rings</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Phone_Number_Must_Be_Numbers</fullName>
+        <active>true</active>
+        <description>Only phone numbers should be entered into the Client Cell Phone fields. Please edit accordingly.</description>
+        <errorConditionFormula>IF( LEN(  Client_Phone_Number__c ) &gt;14, true, false)</errorConditionFormula>
+        <errorMessage>Only numbers should be entered into the Client Cell Phone fields. Please edit accordingly.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Question_Issue_Details</fullName>
+        <active>true</active>
+        <description>You must fill out the Questions/Issues section when changing the call answering status to questions/issue.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( Call_Answering_Status__c ,"Question/Issue"),
+ISBLANK(  Question_Issue__c  ))</errorConditionFormula>
+        <errorMessage>You must fill out the Questions/Issues section when changing the call answering status to questions/issue.</errorMessage>
+    </validationRules></CustomObject>

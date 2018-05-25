@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Default_Email__c</fullName>
+        <description>Default Email address/addresses to use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Make sure you format as expected if using multiple addresses</inlineHelpText>
+        <label>Default Email</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Default_User_Name__c</fullName>
+        <description>The Name to use if the flow or query that requires a name -to be populated to replacement for Full Name of user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Name to use if the flow or query that requires a name -to be populated to replacement for Full Name of user</inlineHelpText>
+        <label>Default User Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Type__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique Name to use for lookup in flow or query</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Name to use for lookup in flow or query</inlineHelpText>
+        <label>Type</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields><customSettingsType>List</customSettingsType><description>Used for Flows which may need to email a lookup field user.  This would be the default if the users does not exist</description><enableFeeds>false</enableFeeds><label>Flow EMail Defaults</label><visibility>Public</visibility></CustomObject>

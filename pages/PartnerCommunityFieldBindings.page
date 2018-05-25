@@ -1,0 +1,14 @@
+<apex:page showHeader="true" sidebar="true">
+	Account:
+	Account Name = {Account.Name}<br/>
+	Account Partner Score = {Account.PartnerScore}<br/>
+	<br/>
+	Contact: <br/>
+	Contact Name = {Contact.Name}<br/>
+	<br/>
+	Account Owner:<br/>
+	Owner Name = {Owner.Name}<br/>
+	Owner Title = {Owner.Title}<br/>
+	Owner Phone = {Owner.Phone}<br/>
+	Owner Email = {Owner.Email}<br/>
+</apex:page>

@@ -1,0 +1,116 @@
+<apex:page standardController="Case" extensions="CaseCtl_MultiRequest" sidebar="false" showHeader="false">
+
+<apex:form >
+    <script type="text/javascript">
+        function ToggleInput(input, theId)
+        {
+            var e = document.getElementById(theId);
+            var i = document.getElementById(input);
+            
+            if(i.value=="Work Item" || i.value==""){
+                e.disabled = true;
+            } else {
+                e.disabled = false;
+            }
+        }       
+
+        function CustomDesc(reason, detail, desc)
+        {
+            var rea = document.getElementById(reason);
+            var dtl = document.getElementById(detail);
+            var des = document.getElementById(desc);
+            
+            if(rea.value=="Listing Update" && dtl.value=="Multiple Company Changes"){
+                des.value = "Address Update:\nBusiness Name:\nDomain Swap:\nUnpaid Tracking Phone:\nUpdated Hours of Operation:\nChange Destination Num:";
+            } else if(rea.value=="Creative" || rea.value=="Production Specialists" || rea.value=="Web Dev"){
+                des.value = dtl.value + ":";
+            } else {
+                des.value = "";
+            }
+        }
+    </script>
+    <apex:pageBlock title="Create YBN Requests"> 
+        <apex:pageBlockSection title="Parent Case" columns="1">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Case Number" for="the_parent"/>
+                <apex:outputLink value="/{!parent.Id}" id="the_parent">
+                    {!parent.CaseNumber}
+                </apex:outputLink>
+            </apex:pageBlockSectionItem>
+            <apex:outputField value="{!parent.Account.Name}"/>
+            <apex:outputField value="{!parent.Subject}"/>
+            <apex:outputText id="comments" value="{!parent.Description}" style="overflow:scroll; max-height:100px; display:block; white-space:pre;"/>
+        </apex:pageBlockSection> 
+        
+        <apex:pageBlockSection title="Existing YBN Requests" columns="1">
+            <apex:pageBlockTable id="oldTbl" value="{!ExistingCases}" var="old">
+                <apex:column headerValue="{!$ObjectType.Case.fields.CaseNumber.Label}" width="105">
+                    <apex:outputField value="{!old.CaseNumber}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.Status.Label}" width="95">
+                    <apex:outputField value="{!old.Status}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.Type.Label}" width="100">
+                    <apex:outputField value="{!old.Type}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.YBNRequestReason__c.Label}" width="150">
+                    <apex:outputField value="{!old.YBNRequestReason__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.YBNRequestDetail__c.Label}" width="225">
+                    <apex:outputField value="{!old.YBNRequestDetail__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.Priority.Label}" width="70">
+                    <apex:outputField value="{!old.Priority}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.Description.Label}">                   
+                    <apex:outputField value="{!old.Description}" />                   
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+               
+        <apex:pageBlockSection title="New YBN Requests" collapsible="false" columns="1">
+            <apex:pageMessage summary="Important Note: Setup all your cases before attaching documents, adding a new row will clear out your attachments." severity="warning" strength="5" /> 
+            
+            <apex:pageBlockTable id="newTbl" value="{!lstRequests}" var="yr">
+                <apex:column headerValue="Action" width="70">
+                    <apex:commandLink value="Remove" action="{!remove}" rendered="{!yr.rowNum>0}" immediate="true">
+                        <apex:param name="removeRow" value="{!yr.rowNum}" assignTo="{!selectedRow}"/>
+                    </apex:commandLink>
+                </apex:column>
+                
+                <apex:column headerValue="{!$ObjectType.Case.fields.Type.Label}" width="115">                   
+                    <apex:inputField id="typeInput" required="true" onchange="ToggleInput('{!$Component.this}','{!$Component.closeBox}');" value="{!yr.newCase.Type}"/>                                          
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.Case.fields.YBNRequestReason__c.Label}" width="175">
+                    <apex:inputField id="reasonInput" required="true" value="{!yr.newCase.YBNRequestReason__c}"/>
+                </apex:column>  
+                <apex:column headerValue="{!$ObjectType.Case.fields.YBNRequestDetail__c.Label}" width="250">
+                    <apex:inputField id="detailInput" required="true" onchange="CustomDesc('{!$Component.reasonInput}','{!$Component.this}','{!$Component.descInput}');" value="{!yr.newCase.YBNRequestDetail__c}"/>
+                </apex:column>                             
+                <apex:column headerValue="{!$ObjectType.Case.fields.Description.Label}">
+                    <apex:inputField id="descInput" required="true" value="{!yr.newCase.Description}" style="width:95%;height:40px;"/>
+                </apex:column>
+                <apex:column headerValue="Close Case" width="65">
+                    <apex:inputCheckbox id="closeBox" value="{!yr.closeCase}" disabled="{!IF(yr.newCase.Type=='Work Item', true, false)}"/>
+                </apex:column>
+                
+                <apex:column headerValue="Attachment" width="50">
+                    <apex:inputFile value="{!yr.rowAtt.body}" filename="{!yr.rowAtt.name}" id="file"/>
+                </apex:column>               
+            </apex:pageBlockTable>
+                       
+            <apex:commandButton value="Add Row" action="{!add}" disabled="{!IF(parent.Id==null, true, false)}"/>                                  
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockButtons location="Bottom">
+            
+            <apex:actionStatus id="stat"> 
+                <apex:facet name="start"> <img src="/img/loading.gif"/> </apex:facet> 
+                <apex:facet name="stop"> <apex:commandButton id="saveBtn" value="Create New YBN Request Cases" action="{!createCases}" disabled="{!IF(parent.Id==null, true, false)}" status="stat"/> </apex:facet> 
+            </apex:actionStatus>
+           
+            <!-- <apex:commandButton value="Create New YBN Request Cases" action="{!createCases}" reRender="oldTbl, newTbl" disabled="{!IF(parent.Id==null, true, false)}"/> -->
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+</apex:form>  
+</apex:page>

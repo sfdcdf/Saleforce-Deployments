@@ -1,0 +1,4 @@
+<apex:page showHeader="true" sidebar="true" standardController="Account" extensions="HermesAccountRedirectControllerExt" action="{!redirectToHermes}">
+	<apex:pageMessage summary="Retrieving Hermes Account Page." severity="info" strength="3" rendered="{!showWaitingStatus}"/>
+	<apex:pageMessages />
+</apex:page>

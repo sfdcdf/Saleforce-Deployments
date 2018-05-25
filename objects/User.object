@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Ability_to_Complete_Install_Wrkst__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ability to Complete Install Wrkst</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Annual_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Quota</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Collections__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Collections</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Custom_Report_Executive_View__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag/ indicator signifying if the user has Executive view to Custom reporting</description>
+        <externalId>false</externalId>
+        <label>Custom Report Executive View</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>EMS_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>EMS ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>FirstName + " " + LastName</formula>
+        <label>Full Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Last_Initial__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(LastName, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Initial</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LiveOps_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>LiveOps ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Loop__LOOPlus_Tester__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this box will allow this user to run Document Packages on the Drawloop next-release environment when it is available for testing.</inlineHelpText>
+        <label>Drawloop Next Release Test User</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Loop__dsPassword__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DocuSign Password</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Loop__dsToken__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DocuSign API UserName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields><fields>
+        <fullName>Official_Hire_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Official Hire Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Plan_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mgr</fullName>
+                    <default>false</default>
+                    <label>Mgr</label>
+                </value>
+                <value>
+                    <fullName>NAE</fullName>
+                    <default>false</default>
+                    <label>NAE</label>
+                </value>
+                <value>
+                    <fullName>NAM</fullName>
+                    <default>false</default>
+                    <label>NAM</label>
+                </value>
+                <value>
+                    <fullName>non-sales</fullName>
+                    <default>false</default>
+                    <label>non-sales</label>
+                </value>
+                <value>
+                    <fullName>SDR</fullName>
+                    <default>false</default>
+                    <label>SDR</label>
+                </value>
+                <value>
+                    <fullName>SE-BOB</fullName>
+                    <default>false</default>
+                    <label>SE-BOB</label>
+                </value>
+                <value>
+                    <fullName>SE-NB</fullName>
+                    <default>false</default>
+                    <label>SE-NB</label>
+                </value>
+                <value>
+                    <fullName>SR-BoB</fullName>
+                    <default>false</default>
+                    <label>SR-BoB</label>
+                </value>
+                <value>
+                    <fullName>SR-NB</fullName>
+                    <default>false</default>
+                    <label>SR-NB</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Previous_Employer__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Employer</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Profile_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Profile.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Profile Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Recruiter__c</fullName>
+        <externalId>false</externalId>
+        <label>Recruiter</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aaron Cain</fullName>
+                    <default>false</default>
+                    <label>Aaron Cain</label>
+                </value>
+                <value>
+                    <fullName>Evan Anger</fullName>
+                    <default>false</default>
+                    <label>Evan Anger</label>
+                </value>
+                <value>
+                    <fullName>Heather Sorrels</fullName>
+                    <default>false</default>
+                    <label>Heather Sorrels</label>
+                </value>
+                <value>
+                    <fullName>Kristin Abraham</fullName>
+                    <default>false</default>
+                    <label>Kristin Abraham</label>
+                </value>
+                <value>
+                    <fullName>Nicole Comas</fullName>
+                    <default>false</default>
+                    <label>Nicole Comas</label>
+                </value>
+                <value>
+                    <fullName>Pam Russo</fullName>
+                    <default>false</default>
+                    <label>Pam Russo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Retention_Associate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to identify retention associates so we can properly assign Live Ops routing.</description>
+        <externalId>false</externalId>
+        <label>Retention Associate</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Role_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Role Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>School__c</fullName>
+        <externalId>false</externalId>
+        <label>School</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Source_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Source Detail</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency</fullName>
+                    <default>false</default>
+                    <label>Agency</label>
+                </value>
+                <value>
+                    <fullName>CareerBuilder Applicant</fullName>
+                    <default>false</default>
+                    <label>CareerBuilder Applicant</label>
+                </value>
+                <value>
+                    <fullName>CareerBuilder Sourced</fullName>
+                    <default>false</default>
+                    <label>CareerBuilder Sourced</label>
+                </value>
+                <value>
+                    <fullName>Craigslist</fullName>
+                    <default>false</default>
+                    <label>Craigslist</label>
+                </value>
+                <value>
+                    <fullName>Hotjobs Applicant</fullName>
+                    <default>false</default>
+                    <label>Hotjobs Applicant</label>
+                </value>
+                <value>
+                    <fullName>HotJobs Sourced</fullName>
+                    <default>false</default>
+                    <label>HotJobs Sourced</label>
+                </value>
+                <value>
+                    <fullName>Ladders</fullName>
+                    <default>false</default>
+                    <label>Ladders</label>
+                </value>
+                <value>
+                    <fullName>Linked In</fullName>
+                    <default>false</default>
+                    <label>Linked In</label>
+                </value>
+                <value>
+                    <fullName>Monster Applicant</fullName>
+                    <default>false</default>
+                    <label>Monster Applicant</label>
+                </value>
+                <value>
+                    <fullName>Monster Sourced</fullName>
+                    <default>false</default>
+                    <label>Monster Sourced</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Outside Referral</fullName>
+                    <default>false</default>
+                    <label>Outside Referral</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+                <value>
+                    <fullName>Word of Mouth</fullName>
+                    <default>false</default>
+                    <label>Word of Mouth</label>
+                </value>
+                <value>
+                    <fullName>Yodle Careers</fullName>
+                    <default>false</default>
+                    <label>Yodle Careers</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Team_Assignment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Team Assignments for LiveOps routing and reporting in Salesforce</inlineHelpText>
+        <label>Team Assignment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blue Team (AMP)</fullName>
+                    <default>false</default>
+                    <label>Blue Team (AMP)</label>
+                </value>
+                <value>
+                    <fullName>Red Team (AMP)</fullName>
+                    <default>false</default>
+                    <label>Red Team (AMP)</label>
+                </value>
+                <value>
+                    <fullName>New Glasgow (AMP)</fullName>
+                    <default>false</default>
+                    <label>New Glasgow (AMP)</label>
+                </value>
+                <value>
+                    <fullName>AMJax (AMP)</fullName>
+                    <default>false</default>
+                    <label>AMJax (AMP)</label>
+                </value>
+                <value>
+                    <fullName>Inbound (AMP)</fullName>
+                    <default>false</default>
+                    <label>Inbound (AMP)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Term_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Term Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Term_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Term Reason</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Today_s_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( YEAR(TODAY()) )</formula>
+        <label>Today's Year</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Training_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Training Class</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>July 2012</fullName>
+                    <default>false</default>
+                    <label>July 2012</label>
+                </value>
+                <value>
+                    <fullName>August 2012</fullName>
+                    <default>false</default>
+                    <label>August 2012</label>
+                </value>
+                <value>
+                    <fullName>September 2012</fullName>
+                    <default>false</default>
+                    <label>September 2012</label>
+                </value>
+                <value>
+                    <fullName>October 2012</fullName>
+                    <default>false</default>
+                    <label>October 2012</label>
+                </value>
+                <value>
+                    <fullName>November 2012</fullName>
+                    <default>false</default>
+                    <label>November 2012</label>
+                </value>
+                <value>
+                    <fullName>December 2012</fullName>
+                    <default>false</default>
+                    <label>December 2012</label>
+                </value>
+                <value>
+                    <fullName>Jul-08</fullName>
+                    <default>false</default>
+                    <label>Jul-08</label>
+                </value>
+                <value>
+                    <fullName>Aug-08</fullName>
+                    <default>false</default>
+                    <label>Aug-08</label>
+                </value>
+                <value>
+                    <fullName>Sep-08</fullName>
+                    <default>false</default>
+                    <label>Sep-08</label>
+                </value>
+                <value>
+                    <fullName>Oct-08</fullName>
+                    <default>false</default>
+                    <label>Oct-08</label>
+                </value>
+                <value>
+                    <fullName>Nov-08</fullName>
+                    <default>false</default>
+                    <label>Nov-08</label>
+                </value>
+                <value>
+                    <fullName>Dec-08</fullName>
+                    <default>false</default>
+                    <label>Dec-08</label>
+                </value>
+                <value>
+                    <fullName>Jan-09</fullName>
+                    <default>false</default>
+                    <label>Jan-09</label>
+                </value>
+                <value>
+                    <fullName>Feb-09</fullName>
+                    <default>false</default>
+                    <label>Feb-09</label>
+                </value>
+                <value>
+                    <fullName>Mar-09</fullName>
+                    <default>false</default>
+                    <label>Mar-09</label>
+                </value>
+                <value>
+                    <fullName>Apr-09</fullName>
+                    <default>false</default>
+                    <label>Apr-09</label>
+                </value>
+                <value>
+                    <fullName>May-09</fullName>
+                    <default>false</default>
+                    <label>May-09</label>
+                </value>
+                <value>
+                    <fullName>Jun-09</fullName>
+                    <default>false</default>
+                    <label>Jun-09</label>
+                </value>
+                <value>
+                    <fullName>Jul-09</fullName>
+                    <default>false</default>
+                    <label>Jul-09</label>
+                </value>
+                <value>
+                    <fullName>Aug-09</fullName>
+                    <default>false</default>
+                    <label>Aug-09</label>
+                </value>
+                <value>
+                    <fullName>Sep-09</fullName>
+                    <default>false</default>
+                    <label>Sep-09</label>
+                </value>
+                <value>
+                    <fullName>Oct-09</fullName>
+                    <default>false</default>
+                    <label>Oct-09</label>
+                </value>
+                <value>
+                    <fullName>Nov-09</fullName>
+                    <default>false</default>
+                    <label>Nov-09</label>
+                </value>
+                <value>
+                    <fullName>Dec-09</fullName>
+                    <default>false</default>
+                    <label>Dec-09</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Winback_Team__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Winback Team</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>YBN_Consultant_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>YBN Consultant Team</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Miracle-Ear</fullName>
+                    <default>false</default>
+                    <label>Miracle-Ear</label>
+                </value>
+                <value>
+                    <fullName>Dwyer</fullName>
+                    <default>false</default>
+                    <label>Dwyer</label>
+                </value>
+                <value>
+                    <fullName>Tier 2 - Team A</fullName>
+                    <default>false</default>
+                    <label>Tier 2 - Team A</label>
+                </value>
+                <value>
+                    <fullName>Tier 2 - Team B</fullName>
+                    <default>false</default>
+                    <label>Tier 2 - Team B</label>
+                </value>
+                <value>
+                    <fullName>Tier 3 - IB/OB</fullName>
+                    <default>false</default>
+                    <label>Tier 3 - IB/OB</label>
+                </value>
+                <value>
+                    <fullName>Tier 3 - IB Only</fullName>
+                    <default>false</default>
+                    <label>Tier 3 - IB Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Years_of_Experience__c</fullName>
+        <externalId>false</externalId>
+        <label>Years of Experience</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-2</fullName>
+                    <default>false</default>
+                    <label>0-2</label>
+                </value>
+                <value>
+                    <fullName>3-5</fullName>
+                    <default>false</default>
+                    <label>3-5</label>
+                </value>
+                <value>
+                    <fullName>5+</fullName>
+                    <default>false</default>
+                    <label>5+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this box so that others in this Salesforce organization can send Document Cloud agreements on behalf of this user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box so that others in this Salesforce organization can send Document Cloud agreements on behalf of this user.</inlineHelpText>
+        <label>Adobe Sign Allow Sending As Other Users</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>echosign_dev1__EchoSign_Email_Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox indicates that the user's email address has been validated in Document Cloud API.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox indicates that the user's email address has been validated in Document Cloud API.</inlineHelpText>
+        <label>Adobe Sign Email Verified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><externalSharingModel>Private</externalSharingModel><searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USER_ROLE.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ACTIVE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MANAGER</searchResultsAdditionalFields>
+    </searchLayouts><sharingModel>Read</sharingModel><listViews>
+        <fullName>ActiveUsers1</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+    </listViews><listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator,YBN System Administrator,System Admin +</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews><listViews>
+        <fullName>AdminUsers_AMM</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator,YBN System Administrator,System Admin +</value>
+        </filters>
+        <label>Admin Users - ALLAMM</label>
+    </listViews><listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+        <sharedTo>
+            <role>ExecutiveVP</role>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>CPP_Portal</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>Partner Community Lighthouse Dental</value>
+        </filters>
+        <label>CPP Portal</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>Partner_Portal</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Partner Community Lighthouse Dental</value>
+        </filters>
+        <label>Partner Portal</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>Stale_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.LAST_LOGIN</field>
+            <operation>lessOrEqual</operation>
+            <value>10/1/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Communit</value>
+        </filters>
+        <label>Stale Users</label>
+    </listViews><webLinks>
+        <fullName>Loop__Change_DS_Cred</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Change DocuSign Credentials</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/loop__dsUnPass</url>
+    </webLinks><webLinks>
+        <fullName>ctu__Clone</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open('/apex/ctu__CloneThisUser?Id={!User.Id}&amp;Desktop=true', '_self');</url>
+    </webLinks><webLinks>
+        <fullName>echosign_dev1__Sync_EchoSign_User</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>300</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Sync Document Cloud User</masterLabel>
+        <openType>newWindow</openType>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/echosign_dev1__UserGroupMapping?userId={!User.Id}</url>
+        <width>800</width>
+    </webLinks></CustomObject>

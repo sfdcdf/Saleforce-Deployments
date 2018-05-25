@@ -1,0 +1,1268 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Call Quality Concerns</relationshipLabel>
+        <relationshipName>Call_Quality_Concerns</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Action_T__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Taken</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Re-provisioned</fullName>
+                    <default>false</default>
+                    <label>Re-provisioned</label>
+                </value>
+                <value>
+                    <fullName>Blacklisted</fullName>
+                    <default>false</default>
+                    <label>Blacklisted</label>
+                </value>
+                <value>
+                    <fullName>Escalated</fullName>
+                    <default>false</default>
+                    <label>Escalated</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Outlet Paused</fullName>
+                    <default>false</default>
+                    <label>Outlet Paused</label>
+                </value>
+                <value>
+                    <fullName>Sent to Vendor</fullName>
+                    <default>false</default>
+                    <label>Sent to Vendor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Call_Quality_Action__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(
+and(
+not(isblank( Numbers_to_be_blacklisted__c )),
+isblank( Callers_are_Often_Calling_For__c )),
+"Blacklist",
+if(
+and(
+ispickval( Calls_for_Wrong_Business__c , "Are many of the calls for the Same Business"),
+not(isblank( Callers_are_Often_Calling_For__c ))),
+"Reprovision #s",
+if(
+or(
+ispickval( Solicitor_Calls__c ,"Yes"),
+ispickval( Hang_Up_Calls__c , "Yes"),
+ispickval ( Out_of_Area_Calls__c ,"Yes"),
+ispickval ( Wrong_Service__c ,"Yes"),
+ispickval( Calls_for_Wrong_Business__c , "Is it All Different Businesses")),
+"Pause Outlets",
+if(
+and(
+not(isblank( Numbers_to_be_blacklisted__c )),
+not(isblank( Callers_are_Often_Calling_For__c ))),
+"Blacklist &amp; Reprovision #s",
+"Other"))))</formula>
+        <label>Call Quality Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Call_Quality_Issue_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Quality Issue to MOPs</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Callers_are_Often_Calling_For__c</fullName>
+        <externalId>false</externalId>
+        <label>Callers Are Often Calling For:</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Calls_for_Wrong_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Calls for Wrong Business:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Wrong_Business__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Is it All Different Businesses</fullName>
+                    <default>false</default>
+                    <label>Is it All Different Businesses</label>
+                </value>
+                <value>
+                    <fullName>Are Many of the Calls for the Same Business</fullName>
+                    <default>false</default>
+                    <label>Are Many of the Calls for the Same Business</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Is it All Different Businesses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Are Many of the Calls for the Same Business</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields><fields>
+        <fullName>Calls_for_Wrong_Service__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are these:
+-many calls all for different services
+-many calls for the wrong service but generally the same wrong service</inlineHelpText>
+        <label>Calls for Wrong Service:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Wrong_Service__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Multiple Calls for All Different Services</fullName>
+                    <default>false</default>
+                    <label>Multiple Calls for All Different Services</label>
+                </value>
+                <value>
+                    <fullName>Multiple Calls for Consistently the Same Wrong Service</fullName>
+                    <default>false</default>
+                    <label>Multiple Calls for Consistently the Same Wrong Service</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Multiple Calls for All Different Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Multiple Calls for Consistently the Same Wrong Service</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields><fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Call Quality Concerns</relationshipLabel>
+        <relationshipName>Call_Quality_Concerns</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Channel_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Account_Name__r.Client_Type__c)</formula>
+        <label>Channel Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Client ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Consultant_Channel__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.IMS_Rep_Role__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consultant Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Custom_Call_Tracking__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account_Name__r.Custom_Call_TrackingPL__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Custom Call Tracking?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Escalated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Ask your manager to check this box if you need to escalate</inlineHelpText>
+        <label>Escalated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Example_Bad_Calls__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Can you point out some of the calls that have been bad?</inlineHelpText>
+        <label>Example Bad Calls</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>First_Call_Concern__c</fullName>
+        <externalId>false</externalId>
+        <label>First Call Concern</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Hang_Up_Calls__c</fullName>
+        <externalId>false</externalId>
+        <label>Hang Up Calls?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>IMS_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>IMS Consultant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>IT_Pro_Member__c</fullName>
+        <externalId>false</externalId>
+        <label>IT Pro Member</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Albert</fullName>
+                    <default>false</default>
+                    <label>Albert</label>
+                </value>
+                <value>
+                    <fullName>Antoney Selvaraj.R</fullName>
+                    <default>false</default>
+                    <label>Antoney Selvaraj.R</label>
+                </value>
+                <value>
+                    <fullName>Arun Sami</fullName>
+                    <default>false</default>
+                    <label>Arun Sami</label>
+                </value>
+                <value>
+                    <fullName>Azhagarasan</fullName>
+                    <default>false</default>
+                    <label>Azhagarasan</label>
+                </value>
+                <value>
+                    <fullName>Bala Murugan</fullName>
+                    <default>false</default>
+                    <label>Bala Murugan</label>
+                </value>
+                <value>
+                    <fullName>Bramma Giri</fullName>
+                    <default>false</default>
+                    <label>Bramma Giri</label>
+                </value>
+                <value>
+                    <fullName>Chandra Sekar.S</fullName>
+                    <default>false</default>
+                    <label>Chandra Sekar.S</label>
+                </value>
+                <value>
+                    <fullName>Chenna Krishnan.C</fullName>
+                    <default>false</default>
+                    <label>Chenna Krishnan.C</label>
+                </value>
+                <value>
+                    <fullName>Deepa</fullName>
+                    <default>false</default>
+                    <label>Deepa</label>
+                </value>
+                <value>
+                    <fullName>Dilip S</fullName>
+                    <default>false</default>
+                    <label>Dilip S</label>
+                </value>
+                <value>
+                    <fullName>Dimalson</fullName>
+                    <default>false</default>
+                    <label>Dimalson</label>
+                </value>
+                <value>
+                    <fullName>Dinesh Kumar</fullName>
+                    <default>false</default>
+                    <label>Dinesh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Dominic Sylvester</fullName>
+                    <default>false</default>
+                    <label>Dominic Sylvester</label>
+                </value>
+                <value>
+                    <fullName>G.Ashok</fullName>
+                    <default>false</default>
+                    <label>G.Ashok</label>
+                </value>
+                <value>
+                    <fullName>Ganesan.M</fullName>
+                    <default>false</default>
+                    <label>Ganesan.M</label>
+                </value>
+                <value>
+                    <fullName>Glenny Joseph</fullName>
+                    <default>false</default>
+                    <label>Glenny Joseph</label>
+                </value>
+                <value>
+                    <fullName>Gopala Krishnan</fullName>
+                    <default>false</default>
+                    <label>Gopala Krishnan</label>
+                </value>
+                <value>
+                    <fullName>Gunasekar.T</fullName>
+                    <default>false</default>
+                    <label>Gunasekar.T</label>
+                </value>
+                <value>
+                    <fullName>Hari Prasath.T</fullName>
+                    <default>false</default>
+                    <label>Hari Prasath.T</label>
+                </value>
+                <value>
+                    <fullName>Ibrahim Badusha B</fullName>
+                    <default>false</default>
+                    <label>Ibrahim Badusha B</label>
+                </value>
+                <value>
+                    <fullName>Irshad Ahmed</fullName>
+                    <default>false</default>
+                    <label>Irshad Ahmed</label>
+                </value>
+                <value>
+                    <fullName>Jagatha</fullName>
+                    <default>false</default>
+                    <label>Jagatha</label>
+                </value>
+                <value>
+                    <fullName>John Paul</fullName>
+                    <default>false</default>
+                    <label>John Paul</label>
+                </value>
+                <value>
+                    <fullName>Joseph</fullName>
+                    <default>false</default>
+                    <label>Joseph</label>
+                </value>
+                <value>
+                    <fullName>Karpagam</fullName>
+                    <default>false</default>
+                    <label>Karpagam</label>
+                </value>
+                <value>
+                    <fullName>Karthick K</fullName>
+                    <default>false</default>
+                    <label>Karthick K</label>
+                </value>
+                <value>
+                    <fullName>M.Karthick</fullName>
+                    <default>false</default>
+                    <label>M.Karthick</label>
+                </value>
+                <value>
+                    <fullName>Maheshwaran</fullName>
+                    <default>false</default>
+                    <label>Maheshwaran</label>
+                </value>
+                <value>
+                    <fullName>Maheswaran</fullName>
+                    <default>false</default>
+                    <label>Maheswaran</label>
+                </value>
+                <value>
+                    <fullName>Manigandan.S</fullName>
+                    <default>false</default>
+                    <label>Manigandan.S</label>
+                </value>
+                <value>
+                    <fullName>Manikandan</fullName>
+                    <default>false</default>
+                    <label>Manikandan</label>
+                </value>
+                <value>
+                    <fullName>Mithun Mathew</fullName>
+                    <default>false</default>
+                    <label>Mithun Mathew</label>
+                </value>
+                <value>
+                    <fullName>Mohan Kumar</fullName>
+                    <default>false</default>
+                    <label>Mohan Kumar</label>
+                </value>
+                <value>
+                    <fullName>Mohanraj M</fullName>
+                    <default>false</default>
+                    <label>Mohanraj M</label>
+                </value>
+                <value>
+                    <fullName>Muthu Kumar</fullName>
+                    <default>false</default>
+                    <label>Muthu Kumar</label>
+                </value>
+                <value>
+                    <fullName>Other User</fullName>
+                    <default>false</default>
+                    <label>Other User</label>
+                </value>
+                <value>
+                    <fullName>Ponraj</fullName>
+                    <default>false</default>
+                    <label>Ponraj</label>
+                </value>
+                <value>
+                    <fullName>Prabhakaran</fullName>
+                    <default>false</default>
+                    <label>Prabhakaran</label>
+                </value>
+                <value>
+                    <fullName>Prabhu S</fullName>
+                    <default>false</default>
+                    <label>Prabhu S</label>
+                </value>
+                <value>
+                    <fullName>Pradhap</fullName>
+                    <default>false</default>
+                    <label>Pradhap</label>
+                </value>
+                <value>
+                    <fullName>Priya</fullName>
+                    <default>false</default>
+                    <label>Priya</label>
+                </value>
+                <value>
+                    <fullName>R.Sarath Kumar</fullName>
+                    <default>false</default>
+                    <label>R.Sarath Kumar</label>
+                </value>
+                <value>
+                    <fullName>Raghul V R.</fullName>
+                    <default>false</default>
+                    <label>Raghul V R.</label>
+                </value>
+                <value>
+                    <fullName>Raja</fullName>
+                    <default>false</default>
+                    <label>Raja</label>
+                </value>
+                <value>
+                    <fullName>Rajesh Anand</fullName>
+                    <default>false</default>
+                    <label>Rajesh Anand</label>
+                </value>
+                <value>
+                    <fullName>Rajesh Kumar</fullName>
+                    <default>false</default>
+                    <label>Rajesh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Rajkumar</fullName>
+                    <default>false</default>
+                    <label>Rajkumar</label>
+                </value>
+                <value>
+                    <fullName>Ram Kumar</fullName>
+                    <default>false</default>
+                    <label>Ram Kumar</label>
+                </value>
+                <value>
+                    <fullName>Ravi Shankar</fullName>
+                    <default>false</default>
+                    <label>Ravi Shankar</label>
+                </value>
+                <value>
+                    <fullName>Rusanthan</fullName>
+                    <default>false</default>
+                    <label>Rusanthan</label>
+                </value>
+                <value>
+                    <fullName>Ryan De Cruz</fullName>
+                    <default>false</default>
+                    <label>Ryan De Cruz</label>
+                </value>
+                <value>
+                    <fullName>Sambath Kumar</fullName>
+                    <default>false</default>
+                    <label>Sambath Kumar</label>
+                </value>
+                <value>
+                    <fullName>Santosh Kumar</fullName>
+                    <default>false</default>
+                    <label>Santosh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Sateesh Kumar</fullName>
+                    <default>false</default>
+                    <label>Sateesh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Sathishkumar K</fullName>
+                    <default>false</default>
+                    <label>Sathishkumar K</label>
+                </value>
+                <value>
+                    <fullName>Sathya</fullName>
+                    <default>false</default>
+                    <label>Sathya</label>
+                </value>
+                <value>
+                    <fullName>Satish</fullName>
+                    <default>false</default>
+                    <label>Satish</label>
+                </value>
+                <value>
+                    <fullName>Savio</fullName>
+                    <default>false</default>
+                    <label>Savio</label>
+                </value>
+                <value>
+                    <fullName>Sebastian Jerome</fullName>
+                    <default>false</default>
+                    <label>Sebastian Jerome</label>
+                </value>
+                <value>
+                    <fullName>Selva Ganesh</fullName>
+                    <default>false</default>
+                    <label>Selva Ganesh</label>
+                </value>
+                <value>
+                    <fullName>Senthil Raja</fullName>
+                    <default>false</default>
+                    <label>Senthil Raja</label>
+                </value>
+                <value>
+                    <fullName>Shankar</fullName>
+                    <default>false</default>
+                    <label>Shankar</label>
+                </value>
+                <value>
+                    <fullName>Sugantha Kumar</fullName>
+                    <default>false</default>
+                    <label>Sugantha Kumar</label>
+                </value>
+                <value>
+                    <fullName>Sujith</fullName>
+                    <default>false</default>
+                    <label>Sujith</label>
+                </value>
+                <value>
+                    <fullName>Syed Suraj.N</fullName>
+                    <default>false</default>
+                    <label>Syed Suraj.N</label>
+                </value>
+                <value>
+                    <fullName>Thanasekar.R</fullName>
+                    <default>false</default>
+                    <label>Thanasekar.R</label>
+                </value>
+                <value>
+                    <fullName>Thangaraj</fullName>
+                    <default>false</default>
+                    <label>Thangaraj</label>
+                </value>
+                <value>
+                    <fullName>Thyagu</fullName>
+                    <default>false</default>
+                    <label>Thyagu</label>
+                </value>
+                <value>
+                    <fullName>Vanmathi</fullName>
+                    <default>false</default>
+                    <label>Vanmathi</label>
+                </value>
+                <value>
+                    <fullName>Vidhya Lakshmi</fullName>
+                    <default>false</default>
+                    <label>Vidhya Lakshmi</label>
+                </value>
+                <value>
+                    <fullName>Vijayanandh</fullName>
+                    <default>false</default>
+                    <label>Vijayanandh</label>
+                </value>
+                <value>
+                    <fullName>Vishnu Prasanth.K</fullName>
+                    <default>false</default>
+                    <label>Vishnu Prasanth.K</label>
+                </value>
+                <value>
+                    <fullName>Vivek Anand</fullName>
+                    <default>false</default>
+                    <label>Vivek Anand</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Manager_Approved_Changes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Manager Approved Changes</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Marketing_Ops_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Close Notes</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Numbers_to_be_blacklisted__c</fullName>
+        <description>Any numbers that need to be blacklisted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List the numbers that you think should be blacklisted based upon your client's performance.</inlineHelpText>
+        <label>Numbers to be Blacklisted</label>
+        <length>11</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Out_of_Area_Calls_Are__c</fullName>
+        <externalId>false</externalId>
+        <label>Out of Area Calls Are:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Out_of_Area_Calls__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All the same area &amp; for your service</fullName>
+                    <default>false</default>
+                    <label>All the same area &amp; for your service</label>
+                </value>
+                <value>
+                    <fullName>All the same area &amp; NOT for your service</fullName>
+                    <default>false</default>
+                    <label>All the same area &amp; NOT for your service</label>
+                </value>
+                <value>
+                    <fullName>All different areas &amp; for your service</fullName>
+                    <default>false</default>
+                    <label>All different areas &amp; for your service</label>
+                </value>
+                <value>
+                    <fullName>All different areas &amp; NOT for your service</fullName>
+                    <default>false</default>
+                    <label>All different areas &amp; NOT for your service</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All the same area &amp; for your service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All the same area &amp; NOT for your service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All different areas &amp; for your service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All different areas &amp; NOT for your service</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields><fields>
+        <fullName>Out_of_Area_Calls__c</fullName>
+        <externalId>false</externalId>
+        <label>Out of Area Calls?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Phone_Number_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Number Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Jingle</fullName>
+                    <default>false</default>
+                    <label>Jingle</label>
+                </value>
+                <value>
+                    <fullName>Ingenio</fullName>
+                    <default>false</default>
+                    <label>Ingenio</label>
+                </value>
+                <value>
+                    <fullName>City Search</fullName>
+                    <default>false</default>
+                    <label>City Search</label>
+                </value>
+                <value>
+                    <fullName>Google Mobile</fullName>
+                    <default>false</default>
+                    <label>Google Mobile</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Unpaid</fullName>
+                    <default>false</default>
+                    <label>Unpaid</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields><fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                    <label>Major</label>
+                </value>
+                <value>
+                    <fullName>Escalated</fullName>
+                    <default>false</default>
+                    <label>Escalated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Reason_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wrong Number: Business or Service Unrelated to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business or Service Unrelated to Segment</label>
+                </value>
+                <value>
+                    <fullName>Wrong Number: Business Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business Related to Segment</label>
+                </value>
+                <value>
+                    <fullName>Robo Calls</fullName>
+                    <default>false</default>
+                    <label>Robo Calls</label>
+                </value>
+                <value>
+                    <fullName>No Caller On The Line</fullName>
+                    <default>false</default>
+                    <label>No Caller On The Line</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Same Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Same Issue</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Different Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Different Issue</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Unsupported Service but Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Unsupported Service but Related to Segment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Reason_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wrong Number: Business or Service Unrelated to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business or Service Unrelated to Segment</label>
+                </value>
+                <value>
+                    <fullName>Wrong Number: Business Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business Related to Segment</label>
+                </value>
+                <value>
+                    <fullName>Robo Calls</fullName>
+                    <default>false</default>
+                    <label>Robo Calls</label>
+                </value>
+                <value>
+                    <fullName>No Call On The Line</fullName>
+                    <default>false</default>
+                    <label>No Call On The Line</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Same Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Same Issue</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Different Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Different Issue</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Unsupported Service but Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Unsupported Service but Related to Segment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Resolution_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Resolved_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Resolved By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Call_Quality_Concerns</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Second_Call_Concern__c</fullName>
+        <externalId>false</externalId>
+        <label>Second Call Concern</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Solicitor_Calls__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Calls?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Tracking_Name_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Tracking # Name/Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Unpaid</fullName>
+                    <default>false</default>
+                    <label>Unpaid</label>
+                </value>
+                <value>
+                    <fullName>Jingle</fullName>
+                    <default>false</default>
+                    <label>Jingle</label>
+                </value>
+                <value>
+                    <fullName>Ingenio</fullName>
+                    <default>false</default>
+                    <label>Ingenio</label>
+                </value>
+                <value>
+                    <fullName>Google Mobile</fullName>
+                    <default>false</default>
+                    <label>Google Mobile</label>
+                </value>
+                <value>
+                    <fullName>City Search</fullName>
+                    <default>false</default>
+                    <label>City Search</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Tracking_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>11</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Wrong_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Wrong Business?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Wrong_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Wrong Service?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>To submit call quality concerns from clients to Marketing Ops team to review for potential paused distribution outlets.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Call Quality Concern</label><nameField>
+        <displayFormat>Q-{00000}</displayFormat>
+        <label>Call Quality Concern ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Call Quality Concerns</pluralLabel><searchLayouts>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>Client_ID__c</columns>
+        <columns>Channel_Type__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><listViews>
+        <fullName>Rogers_Support_Call_Quality_Concern</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Rogers Support</label>
+        <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>Send_To_Rogers_Call_Quality_Concern</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Send To Rogers</label>
+        <queue>Send_To_Rogers</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews><validationRules>
+        <fullName>Blacklist_Number_Must_Be_Numbers</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT (ISBLANK( Numbers_to_be_blacklisted__c )),
+NOT(ISNUMBER( Numbers_to_be_blacklisted__c )))</errorConditionFormula>
+        <errorDisplayField>Numbers_to_be_blacklisted__c</errorDisplayField>
+        <errorMessage>Only numbers should be entered into the Blacklist Number fields. Please edit accordingly.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Blacklist_Number_Must_Be_only_11</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( LEN( Numbers_to_be_blacklisted__c ) &gt;11, true, false)</errorConditionFormula>
+        <errorDisplayField>Numbers_to_be_blacklisted__c</errorDisplayField>
+        <errorMessage>Only numbers should be entered into the Blacklist Number fields. Please edit accordingly.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Escalated_Priority_Needs_Approval</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+Escalated__c=False,
+Manager_Approved_Changes__c=False),
+ISPICKVAL( Priority__c,"Escalated"))</errorConditionFormula>
+        <errorMessage>Your manager must select "Manager Approved Changes" in order to escalate this request.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Notes_Required</fullName>
+        <active>true</active>
+        <description>You must enter the notes field if you select "multiple lines same issue", "multiple lines different issue"  or "Other".</description>
+        <errorConditionFormula>and(
+ISBLANK( Notes__c),
+OR(
+ISPICKVAL( Reason_1__c , "Multiple Lines Same Issue"),
+ISPICKVAL( Reason_1__c , "Other"),
+ISPICKVAL( Reason_1__c , "Multiple Lines Different Issue"),
+ISPICKVAL( Reason_2__c , "Multiple Lines Same Issue"),
+ISPICKVAL( Reason_2__c , "Other"),
+ISPICKVAL( Reason_2__c , "Multiple Lines Different Issue")))</errorConditionFormula>
+        <errorMessage>You must enter the notes field if you select "multiple lines same issue", "multiple lines different issue"  or "Other".</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Solicitor_Calls_Opens_Numbers_Blacklist</fullName>
+        <active>false</active>
+        <description>When you select that the client is receiving solicitor calls, it opens the field for numbers to be blacklisted.</description>
+        <errorConditionFormula>AND(ispickval(Solicitor_Calls__c,"Yes"),
+isblank(Numbers_to_be_blacklisted__c))</errorConditionFormula>
+        <errorMessage>You must enter numbers to be blacklisted when there have been solicitor calls.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Tracking_Number_Must_Be_Numbers</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISNUMBER( Tracking_Number__c ))</errorConditionFormula>
+        <errorDisplayField>Tracking_Number__c</errorDisplayField>
+        <errorMessage>Only numbers should be entered into the Tracking Number fields. Please edit accordingly.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Tracking_Number_Must_Be_only_11</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( LEN( Tracking_Number__c ) &gt;11, true, false)</errorConditionFormula>
+        <errorDisplayField>Tracking_Number__c</errorDisplayField>
+        <errorMessage>Only numbers should be entered into the Tracking Number fields. Please edit accordingly.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Wrong_ServiceWrong_Business_Must_Enter</fullName>
+        <active>true</active>
+        <description>If you indicate that the clients are calling for one business, you must enter what business the callers are actually calling for.</description>
+        <errorConditionFormula>and(
+ ispickval (Calls_for_Wrong_Business__c , "Are Many of the Calls for the Same Business"),
+isblank(Callers_are_Often_Calling_For__c ))</errorConditionFormula>
+        <errorDisplayField>Callers_are_Often_Calling_For__c</errorDisplayField>
+        <errorMessage>You must fill in Callers are Often Calling For if you indicate that many of the calls for the same business.</errorMessage>
+    </validationRules></CustomObject>

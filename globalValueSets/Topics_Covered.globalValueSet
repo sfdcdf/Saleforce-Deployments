@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Did Not Cover</fullName>
+        <default>true</default>
+        <label>Did Not Cover</label>
+    </customValue>
+    <customValue>
+        <fullName>Covered - Client Initiated</fullName>
+        <default>false</default>
+        <label>Covered - Client Initiated</label>
+    </customValue>
+    <customValue>
+        <fullName>Covered - CS Initiated</fullName>
+        <default>false</default>
+        <label>Covered - CS Initiated</label>
+    </customValue>
+    <customValue>
+        <fullName>Covered/Concerned - Client Initiated</fullName>
+        <default>false</default>
+        <label>Covered/Concerned - Client Initiated</label>
+    </customValue>
+    <customValue>
+        <fullName>Covered/Concerned - CS Initiated</fullName>
+        <default>false</default>
+        <label>Covered/Concerned - CS Initiated</label>
+    </customValue>
+    <customValue>
+        <fullName>Concerned - Client Initiated</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Concerned - Client Initiated</label>
+    </customValue>
+    <customValue>
+        <fullName>Concerned - CS Initiated</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Concerned - CS Initiated</label>
+    </customValue>
+    <masterLabel>Topics Covered</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

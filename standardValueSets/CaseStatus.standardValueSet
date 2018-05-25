@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call In Progress</fullName>
+        <default>false</default>
+        <label>Call In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <color>#0B6FCE</color>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>1. CSC Pending</fullName>
+        <default>false</default>
+        <label>1. CSC Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>1-GCC</fullName>
+        <color>#66E9BD</color>
+        <default>false</default>
+        <label>1-GCC</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>1-MA Setup AutoLaunch</fullName>
+        <default>false</default>
+        <label>1-MA Setup AutoLaunch</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>1-Web Dev AutoLaunch</fullName>
+        <default>false</default>
+        <label>1-Web Dev AutoLaunch</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>2. ASW</fullName>
+        <color>#0B24BE</color>
+        <default>false</default>
+        <label>2. ASW</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>2-QA AutoLaunch</fullName>
+        <default>false</default>
+        <label>2-QA AutoLaunch</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>3a-Web Dev Setup</fullName>
+        <color>#419249</color>
+        <default>false</default>
+        <label>3a-Web Dev Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>3b-National Custom Site</fullName>
+        <color>#B6E32E</color>
+        <default>false</default>
+        <label>3b-National Custom Site</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>3-CSC AutoLaunch</fullName>
+        <default>false</default>
+        <label>3-CSC AutoLaunch</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>4-MA/MPA Setup</fullName>
+        <default>false</default>
+        <label>4-MA/MPA Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>4a - Geo Setup</fullName>
+        <color>#641CCF</color>
+        <default>false</default>
+        <label>4a - Geo Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>4b - Campaign Setup</fullName>
+        <default>false</default>
+        <label>4b - Campaign Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>5 - Pending Partner QA</fullName>
+        <color>#2F5D85</color>
+        <default>false</default>
+        <label>5 - Pending Partner QA</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>6 - 72 Hour Email Sent</fullName>
+        <default>false</default>
+        <label>6 - 72 Hour Email Sent</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>6A - QA Complete; Errors Found</fullName>
+        <default>false</default>
+        <label>6A - QA Complete; Errors Found</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>6B - QA Complete; No Errors Found</fullName>
+        <default>false</default>
+        <label>6B - QA Complete; No Errors Found</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Assigned to IS - Not Started</fullName>
+        <default>false</default>
+        <label>Assigned to IS - Not Started</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Internal Response</fullName>
+        <color>#8F6429</color>
+        <default>false</default>
+        <label>Awaiting Internal Response</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Charge Failure Hold</fullName>
+        <default>false</default>
+        <label>Charge Failure Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Problem</fullName>
+        <color>#78C953</color>
+        <default>false</default>
+        <label>Client Problem</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <color>#AFCADF</color>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated to IMS</fullName>
+        <default>false</default>
+        <label>Escalated to IMS</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <color>#78C953</color>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Customer Response</fullName>
+        <color>#2F5D85</color>
+        <default>false</default>
+        <label>Awaiting Customer Response</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Case Work Completion</fullName>
+        <default>false</default>
+        <label>Awaiting Case Work Completion</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Review</fullName>
+        <default>false</default>
+        <label>Internal Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <color>#641CCF</color>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress - No Attempts</fullName>
+        <default>false</default>
+        <label>In Progress - No Attempts</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress - 1 Attempt</fullName>
+        <default>false</default>
+        <label>In Progress - 1 Attempt</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress - 2 Attempts</fullName>
+        <default>false</default>
+        <label>In Progress - 2 Attempts</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress - 3 Attempts</fullName>
+        <default>false</default>
+        <label>In Progress - 3 Attempts</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Clarification Sent</fullName>
+        <default>false</default>
+        <label>Clarification Sent</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress - 3+ Attempts</fullName>
+        <default>false</default>
+        <label>In Progress - 3+ Attempts</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Retention</fullName>
+        <default>false</default>
+        <label>Pending Retention</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Promise to Pay</fullName>
+        <default>false</default>
+        <label>Promise to Pay</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>QA - Needs Fix</fullName>
+        <color>#E27001</color>
+        <default>false</default>
+        <label>QA - Needs Fix</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>QA - Pending</fullName>
+        <color>#78C953</color>
+        <default>false</default>
+        <label>QA - Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-Opened</fullName>
+        <color>#A53711</color>
+        <default>false</default>
+        <label>Re-Opened</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Revisions Needed</fullName>
+        <default>false</default>
+        <label>Revisions Needed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Website Assessment</fullName>
+        <color>#B6E32E</color>
+        <default>false</default>
+        <label>Website Assessment</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Updated</fullName>
+        <default>false</default>
+        <label>Updated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Completed</fullName>
+        <color>#A845DC</color>
+        <default>false</default>
+        <label>Work Completed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>QA</fullName>
+        <default>false</default>
+        <label>QA</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Approved</fullName>
+        <default>false</default>
+        <label>Request Approved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Denied</fullName>
+        <default>false</default>
+        <label>Request Denied</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Unscheduled - Reattempt</fullName>
+        <default>false</default>
+        <label>Unscheduled - Reattempt</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Unscheduled - 4+ Attempts</fullName>
+        <default>false</default>
+        <label>Unscheduled - 4+ Attempts</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <color>#419249</color>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - changes made</fullName>
+        <color>#0B24BE</color>
+        <default>false</default>
+        <label>Closed - changes made</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - never received confirmation</fullName>
+        <color>#419249</color>
+        <default>false</default>
+        <label>Closed - never received confirmation</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Opt Complete</fullName>
+        <color>#AFCADF</color>
+        <default>false</default>
+        <label>Closed - Opt Complete</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Opt Not Necessary</fullName>
+        <color>#AFCADF</color>
+        <default>false</default>
+        <label>Closed - Opt Not Necessary</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>Complete</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete AutoLaunch</fullName>
+        <default>false</default>
+        <label>Complete AutoLaunch</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Free Time Period</fullName>
+        <default>false</default>
+        <label>Free Time Period</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Save Mode</fullName>
+        <default>false</default>
+        <label>Save Mode</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Churned</fullName>
+        <color>#E27001</color>
+        <default>false</default>
+        <label>Churned</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Did Not Complete</fullName>
+        <default>false</default>
+        <label>Did Not Complete</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Did Not Complete - Sent Recap Email</fullName>
+        <default>false</default>
+        <label>Did Not Complete - Sent Recap Email</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>LIVE</fullName>
+        <color>#8F6429</color>
+        <default>false</default>
+        <label>LIVE</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Never launched</fullName>
+        <color>#EFAE73</color>
+        <default>false</default>
+        <label>Never launched</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Not Resolved</fullName>
+        <default>false</default>
+        <label>Payment Not Resolved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Received</fullName>
+        <default>false</default>
+        <label>Payment Received</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Attempted</fullName>
+        <default>false</default>
+        <label>Closed - Attempted</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Saved/Winback</fullName>
+        <color>#78C953</color>
+        <default>false</default>
+        <label>Saved/Winback</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated (Internal)</fullName>
+        <default>false</default>
+        <label>Escalated (Internal)</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated (Dev)</fullName>
+        <default>false</default>
+        <label>Escalated (Dev)</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Setup</fullName>
+        <default>false</default>
+        <label>New Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Setup In Progress</fullName>
+        <default>false</default>
+        <label>Setup In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Change Requested</fullName>
+        <default>false</default>
+        <label>Change Requested</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Question/Issue</fullName>
+        <default>false</default>
+        <label>Question/Issue</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancel Setup</fullName>
+        <default>false</default>
+        <label>Cancel Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Deactivated</fullName>
+        <default>false</default>
+        <label>Deactivated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Upsell Accepted</fullName>
+        <default>false</default>
+        <label>Closed - Upsell Accepted</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Budget Change Accepted</fullName>
+        <default>false</default>
+        <label>Closed - Budget Change Accepted</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs 2nd Attempt</fullName>
+        <default>false</default>
+        <label>Needs 2nd Attempt</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Incomplete after 2nd Attempt</fullName>
+        <default>false</default>
+        <label>Incomplete after 2nd Attempt</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed on Callback</fullName>
+        <default>false</default>
+        <label>Completed on Callback</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed - Client Declined</fullName>
+        <default>false</default>
+        <label>Completed - Client Declined</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Multi Location Owner</fullName>
+        <default>false</default>
+        <label>Closed - Multi Location Owner</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Rescheduled</fullName>
+        <default>false</default>
+        <label>Closed - Rescheduled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rescheduled on 1st Attempt</fullName>
+        <default>false</default>
+        <label>Rescheduled on 1st Attempt</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ProductionTeam Mistake</fullName>
+        <color>#EFAE73</color>
+        <default>false</default>
+        <label>ProductionTeam Mistake</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Bug Reported</fullName>
+        <default>false</default>
+        <label>Bug Reported</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved in Another Case</fullName>
+        <default>false</default>
+        <label>Resolved in Another Case</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Delete Case</fullName>
+        <default>false</default>
+        <label>Delete Case</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Do Not Call</fullName>
+        <default>false</default>
+        <label>Do Not Call</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled - Reattempt</fullName>
+        <default>false</default>
+        <label>Scheduled - Reattempt</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Inbound Email</fullName>
+        <default>false</default>
+        <label>New Inbound Email</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Backed Out</fullName>
+        <default>false</default>
+        <label>Backed Out</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Facebook Setup</fullName>
+        <default>false</default>
+        <label>Facebook Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>FB Setup In Progress, Pending Approval</fullName>
+        <default>false</default>
+        <label>FB Setup In Progress, Pending Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>FB Setup Complete, Pending QA</fullName>
+        <default>false</default>
+        <label>FB Setup Complete, Pending QA</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>FB Setup &amp; PES QA Complete</fullName>
+        <default>false</default>
+        <label>FB Setup &amp; PES QA Complete</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Partial Payment Received</fullName>
+        <default>false</default>
+        <label>Partial Payment Received</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

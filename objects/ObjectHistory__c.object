@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Account_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Status at time of Deactivation Date Change</inlineHelpText>
+        <label>Account Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Object History</relationshipLabel>
+        <relationshipName>Object_History</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Object History</relationshipLabel>
+        <relationshipName>Object_History</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Days_in_Escalated_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Field_Status__c = "Escalated",  EndDateTime__c  -  StartDateTime__c, null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Escalated Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>ElapsedDays__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(EndDateTime__c), NOW()-StartDateTime__c+1, EndDateTime__c-StartDateTime__c+1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Elapsed Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>EndDateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>End DateTime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>FieldName__c</fullName>
+        <externalId>false</externalId>
+        <label>Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>FieldValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Field Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Field_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Field Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>OppAnnualContractValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Annual Contract Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>OppTotalContractValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Total Contract Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>HistoryTracker_Opp</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>RecordCreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Created Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>RecordOwner__c</fullName>
+        <externalId>false</externalId>
+        <label>Record Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RecordType__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Opportunity__c)), Opportunity__r.RecordType.Name, "")</formula>
+        <label>Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>StartDateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>Start DateTime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>TORCHx_Elapsed_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(EndDateTime__c)), 
+(DATETIMEVALUE(EndDateTime__c ) - DATETIMEVALUE( StartDateTime__c )) - 
+( FLOOR ( ( ( (DATETimeVALUE(EndDateTime__c )) - DATETIMEVALUE(StartDateTime__c )) / 7 ) ) * 2 ) + 
+CASE(MOD ( DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7), 
+0,CASE( MOD ((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7),0,1,2 ), 
+1,CASE( MOD ((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7),0,2,1 ), 
+IF(MOD(DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7) - MOD((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7) &lt;= 0 ,0, 
+IF(MOD((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) ) 
+, 
+(NOW()- DATETIMEVALUE( StartDateTime__c )) - 
+( FLOOR ( ( ( NOW() - DATETIMEVALUE(StartDateTime__c)) / 7 ) ) * 2 ) + 
+CASE(MOD ( DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7), 
+0,CASE( MOD (TODAY() - DATE( 1900,1,6 ),7),0,1,2 ), 
+1,CASE( MOD (TODAY() - DATE( 1900,1,6 ),7),0,2,1 ), 
+IF(MOD(DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7) - MOD(TODAY() - DATE( 1900,1,6 ),7) &lt;= 0 ,0, 
+IF(MOD(TODAY() - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) ) 
+)</formula>
+        <label>TORCHx Elapsed Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>TORCHx_Elapsed_Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>(IF(NOT(ISBLANK(EndDateTime__c)), 
+(DATETIMEVALUE(EndDateTime__c ) - DATETIMEVALUE( StartDateTime__c )) - 
+( FLOOR ( ( ( (DATETimeVALUE(EndDateTime__c )) - DATETIMEVALUE(StartDateTime__c )) / 7 ) ) * 2 ) + 
+CASE(MOD ( DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7), 
+0,CASE( MOD ((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7),0,1,2 ), 
+1,CASE( MOD ((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7),0,2,1 ), 
+IF(MOD(DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7) - MOD((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7) &lt;= 0 ,0, 
+IF(MOD((DATEVALUE(EndDateTime__c)) - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) ) 
+, 
+(NOW()- DATETIMEVALUE( StartDateTime__c )) - 
+( FLOOR ( ( ( NOW() - DATETIMEVALUE(StartDateTime__c)) / 7 ) ) * 2 ) + 
+CASE(MOD ( DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7), 
+0,CASE( MOD (TODAY() - DATE( 1900,1,6 ),7),0,1,2 ), 
+1,CASE( MOD (TODAY() - DATE( 1900,1,6 ),7),0,2,1 ), 
+IF(MOD(DATEVALUE(StartDateTime__c) - DATE( 1900,1,6 ),7) - MOD(TODAY() - DATE( 1900,1,6 ),7) &lt;= 0 ,0, 
+IF(MOD(TODAY() - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) ) 
+))*24
+
+
+/*https://help.salesforce.com/articleView?id=000001100&amp;type=1*/</formula>
+        <label>TORCHx Elapsed Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Time_Value__c</fullName>
+        <description>This field is used to house time values populated by other objects</description>
+        <externalId>false</externalId>
+        <label>Time Value</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields><fields>
+        <fullName>UpdatedByText__c</fullName>
+        <externalId>false</externalId>
+        <label>Updated By (Text)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Update By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Object_History</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Object History</label><nameField>
+        <displayFormat>OH-{0000000}</displayFormat>
+        <label>Object History Name</label>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Object History</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews></CustomObject>

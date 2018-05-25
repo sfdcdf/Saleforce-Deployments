@@ -1,0 +1,102 @@
+<apex:page controller="PerfectCall_CampaignController" showHeader="false" sidebar="false">
+<style>
+body {
+    background-color:#f6f6f0;
+    color:#666666;
+
+}
+a:link {
+        color:#cccccc;
+}
+
+</style>
+
+	 <div height="60" width="100%" id="mmHeader" >
+         <table width="100%" border="0" cellpadding="0" cellspacing="0">
+	         <tr>
+	          <td width="248"><apex:image url="{!URLFOR($Resource.images, 'images/logo.gif')}" alt="PerfectCall" /></td>
+	          <td align="right" valign="top">
+					<apex:outputLink value="/home/home.jsp">Home</apex:outputLink> &nbsp;&nbsp; | &nbsp;&nbsp; <apex:outputLink id="setupLink" value="/ui/setup/Setup">Setup</apex:outputLink>
+	          </td>
+	         </tr>
+         </table>
+	</div>
+	<apex:pageBlock >
+		<table width="100%" border="0">
+			<tr>
+				<td>
+					<b>Select a Campaign from the list below to begin dialing.</b>
+				</td>
+				<td align="right"/>
+					<apex:form >
+						<b>Sort by: </b>
+						<apex:actionFunction name="sortAction" action="{!setCampaigns}" rerender="campPanel" status="sortStatus"/>
+						<apex:selectList id="sortList" value="{!sortBy}" size="1" onChange="sortAction()">
+							<apex:selectOptions value="{!sortByOptions}" />
+							
+						</apex:selectList>
+					</apex:form>
+				</td>
+			</tr>
+		</table>
+		<apex:outputPanel id="campPanel">
+			<apex:actionStatus id="sortStatus" startText="Sorting..." stopText=""/><br/><hr>
+			<apex:repeat value="{!campaigns}" var="camp">
+				<table width="100%" border="0" cellPadding="5">
+					<tr>
+						<td valign="top">
+							<apex:outputText value="{!camp.Name}" style="font-weight:bold; font-size:small"/>
+						</td>
+						
+					</tr>
+					<tr>
+						<td valign="top" width="300">
+							<b>Your Assigned Members: </b>
+							<apex:outputText value="{!camp.NumberOfLeads + camp.NumberOfContacts}"/>
+							<br/>
+							<b>Your Open Calls: </b>
+							<apex:outputText value="{!camp.NumberOfLeads + camp.NumberOfContacts - camp.NumberOfResponses}"/>
+						</td>
+						<td valign="top" align="right" rowSpan="3">
+							<table width="100%">
+								<tr>
+								<td><strong>Type: </strong>
+									<apex:outputText value="{!camp.Type}"/>
+									<br/>
+									<strong>Status: </strong>
+									<apex:outputText value="{!camp.Status}"/>
+								</td>
+								<td><strong>Starts: </strong>
+									<apex:outputText value="{!camp.StartDate.month+1}/{!camp.StartDate.date}/{!camp.StartDate.year+1900}"/>
+									<br/>
+									<strong>Ends: </strong>
+									<apex:outputText value="{!camp.EndDate.month+1}/{!camp.EndDate.date}/{!camp.EndDate.year+1900}"/>
+								</td>
+								</tr>
+							</table>
+								
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<b>Campaign Description:</b><br/>
+							<apex:outputText value="{!camp.Description}"/>
+						</td>
+					</tr>
+			    </table>
+			    <!-- 
+			    <apex:outputLink style="margin-right:10px;" value="/servlet/servlet.Integration?lid=01N800000006rrw&cId={!camp.Id}"><apex:image url="{!URLFOR($Resource.images, '/images/btn_dialCampaign.gif')}" alt="Dial Campaign" /></apex:outputLink>
+		    	 -->
+		    	<!-- Use code below to load VF page and not JS -->
+		    		<apex:outputLink style="margin-right:10px;" value="/apex/PerfectCall_Dialer?cId={!camp.Id}"><apex:image url="{!URLFOR($Resource.images, '/images/btn_dialCampaign.gif')}" alt="Dial Campaign" /></apex:outputLink>
+		    	<!-- -->
+		    	<apex:outputLink value="/{!camp.Id}"><apex:image url="{!URLFOR($Resource.images, '/images/btn_viewDetail.gif')}" alt="View Campaign Detail" /></apex:outputLink>
+					<!--   apex:commandButton value="Dial Campaign" action="/apex/PerfectCall_Dialer?cId={!camp.Id}"/ 
+					<apex:commandButton value="View Campaign Details" action="/{!camp.Id}"/ -->
+					<!-- <apex:commandButton value="Preview Script"/> -->
+			    <br/>
+			    <hr>
+			</apex:repeat>
+		</apex:outputPanel>
+	</apex:pageBlock>
+</apex:page>

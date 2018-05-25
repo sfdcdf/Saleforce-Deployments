@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Product</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides><compactLayouts>
+        <fullName>Oppty_Product</fullName>
+        <fields>Product2Id</fields>
+        <fields>OpportunityId</fields>
+        <fields>Quantity</fields>
+        <fields>UnitPrice</fields>
+        <fields>ProductChargeType__c</fields>
+        <label>Oppty Product</label>
+    </compactLayouts><fields>
+        <fullName>AnnualProductValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Product Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>CRV_One_Time__c</fullName>
+        <description>Product Charge Type is One-Time, multiply the Total Price by 0.25.</description>
+        <externalId>false</externalId>
+        <formula>CASE(
+TEXT(ProductChargeType__c),"One-Time",TotalPrice * 0.25, 0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Commissionable Revenue Value for One Time products</inlineHelpText>
+        <label>CRV One Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>CRV_Recurring_Multiplier__c</fullName>
+        <description>Determines the multiplier for commission based on the contract term..</description>
+        <externalId>false</externalId>
+        <formula>IF(WBN_2018_Commission__c=TRUE, 
+ 
+/*Commission 2018 TRUE - NEW Rates*/ 
+  (IF
+    (Quantity &lt;12,
+    0.75,
+      IF (Quantity &gt;= 12,
+        1,
+        0)
+    )),
+/*Commission 2018 FALSE - OLD ONES */     
+    IF (Quantity &lt;= 5, 0.8,
+    /* greater than 5 */
+        IF ((Quantity &gt;= 6 &amp;&amp; Quantity &lt;= 11),1,
+    /*else greater than 12 */
+            IF (Quantity &gt;= 12, 1.2,
+      /*none of the above*/
+                0)
+      )
+    )
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Commissionable Revenue Value Multiplier</inlineHelpText>
+        <label>CRV Recurring Multiplier</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>CRV_Recurring__c</fullName>
+        <description>Product Charge Type is Recurring, multiply the Total Price by the Commission Recurring Multiplier.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL(ProductChargeType__c,"Recurring"), 
+UnitPrice *  CRV_Recurring_Multiplier__c,
+0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Commissionable Revenue Value for Recurring products</inlineHelpText>
+        <label>CRV Recurring</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>ContractLength__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this for WBN Corporate Opportunities</inlineHelpText>
+        <label>Contract Length (Mth)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Converted_to_Asset__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Converted to Asset?</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Description</fullName>
+    </fields><fields>
+        <fullName>Discount</fullName>
+    </fields><fields>
+        <fullName>Fulfillment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Fulfillment</label>
+        <referenceTo>Fulfillment__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>IncludeProductsSold__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.IncludeProductsSold__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Include Products Sold</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Initial_Charge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Would this product be considered part of an initial charge on the invoice</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For WBN IL Oppty - Check this box is this is an initial charge or is the first billable month of a PPC Schedule</inlineHelpText>
+        <label>Initial Charge</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>ListPrice</fullName>
+    </fields><fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>ProductChargeType__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Charge Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ProductChargeType</valueSetName>
+        </valueSet>
+    </fields><fields>
+        <fullName>ProductCode</fullName>
+    </fields><fields>
+        <fullName>ProductCost__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>ProductDescriptionClient__c</fullName>
+        <description>Client Facing Product Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Client Facing Product Description</inlineHelpText>
+        <label>Product Description (Client)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>ProductNameClient__c</fullName>
+        <description>Client facing Product Name</description>
+        <externalId>false</externalId>
+        <label>Product Name (Client)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>ProductName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Product_Description__c</fullName>
+        <description>.</description>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.Description</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>ProjectedAdoptionEndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Adoption End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>ProjectedAdoptionLengthMth__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdoptionStartDate__c))
+     ,(((YEAR(ProjectedAdoptionEndDate__c) - YEAR(ProjectedAdoptionStartDate__c) - 1) *12) + (12 - MONTH(ProjectedAdoptionStartDate__c) +1) + MONTH(ProjectedAdoptionEndDate__c-5))
+     , 0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Projected Adoption Length (Mth)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>ProjectedAdoptionMonthlyValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Projected Adoption Monthly Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>ProjectedAdoptionPct__c</fullName>
+        <externalId>false</externalId>
+        <label>Projected Adoption %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields><fields>
+        <fullName>ProjectedAdoptionStartDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Adoption Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Projected_Adoption_Total_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Projected Adoption Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Promotion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Promotion</label>
+        <referenceTo>Promotion__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Quantity</fullName>
+        <inlineHelpText>For WBN IL Sales - use this for Month Terms.</inlineHelpText>
+    </fields><fields>
+        <fullName>ServiceDate</fullName>
+    </fields><fields>
+        <fullName>Subtotal</fullName>
+    </fields><fields>
+        <fullName>TotalPrice</fullName>
+    </fields><fields>
+        <fullName>TotalProductCost__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Product Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>TotalProductValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Product Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>UnitPrice</fullName>
+    </fields><fields>
+        <fullName>WBN_2018_Commission__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If Close date is after 4/1 - check box and use 2018 commission</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If Close date is after 4/1 - check box and use 2018 commission</inlineHelpText>
+        <label>WBN 2018 Commission</label>
+        <type>Checkbox</type>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><validationRules>
+        <fullName>YBN_Contract_Length_Must_Be_Greater_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+Opportunity.RecordTypeId &lt;&gt; "012600000009YRT",
+OR( 
+NOT(ContractLength__c &gt; 0), 
+ISBLANK(ContractLength__c), 
+AND(
+ContractLength__c &gt; 1, 
+CONTAINS(Product2.Name, " Setup") 
+) 
+)
+)</errorConditionFormula>
+        <errorDisplayField>ContractLength__c</errorDisplayField>
+        <errorMessage>Must be greater than zero. Place a value of one for "Setup" products.</errorMessage>
+    </validationRules></CustomObject>

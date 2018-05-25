@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Service Audits</relationshipLabel>
+        <relationshipName>Service_Audits</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Call_Last_Timestamp__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>ex: 6/5/2015 11:18:00</inlineHelpText>
+        <label>Call Last Timestamp</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Client_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Client ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Fix_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Fix Needed?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Issue_Catagory_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Catagory Group</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Issue_Catagory__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Catagory</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Issue_Resolved__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Resolved?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Pending Client</fullName>
+                    <default>false</default>
+                    <label>Pending Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Last_Change_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Last Change Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Service_Audits1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Last_Change_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Last Change Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Service_Audits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Link_to_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>Link to Call</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields><fields>
+        <fullName>QA_d_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>QA'd By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Service_Audits2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Results_of_QA__c</fullName>
+        <externalId>false</externalId>
+        <label>Results of QA</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Quality Concern</fullName>
+                    <default>false</default>
+                    <label>Call Quality Concern</label>
+                </value>
+                <value>
+                    <fullName>NA - Poor Audio Quality</fullName>
+                    <default>false</default>
+                    <label>NA - Poor Audio Quality</label>
+                </value>
+                <value>
+                    <fullName>NA - Call Not Recorded</fullName>
+                    <default>false</default>
+                    <label>NA - Call Not Recorded</label>
+                </value>
+                <value>
+                    <fullName>No Errors</fullName>
+                    <default>false</default>
+                    <label>No Errors</label>
+                </value>
+                <value>
+                    <fullName>Request Denied - Product Limitation</fullName>
+                    <default>false</default>
+                    <label>Request Denied - Product Limitation</label>
+                </value>
+                <value>
+                    <fullName>Request Denied - Knowledge Limitation</fullName>
+                    <default>false</default>
+                    <label>Request Denied - Knowledge Limitation</label>
+                </value>
+                <value>
+                    <fullName>Work Completed Incorrectly (CS)</fullName>
+                    <default>false</default>
+                    <label>Work Completed Incorrectly (CS)</label>
+                </value>
+                <value>
+                    <fullName>Work Completed Incorrectly (OPT)</fullName>
+                    <default>false</default>
+                    <label>Work Completed Incorrectly (OPT)</label>
+                </value>
+                <value>
+                    <fullName>Work Not Completed (CS)</fullName>
+                    <default>false</default>
+                    <label>Work Not Completed (CS)</label>
+                </value>
+                <value>
+                    <fullName>Work Not Completed (OPT)</fullName>
+                    <default>false</default>
+                    <label>Work Not Completed (OPT)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Summary_of_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>Summary of Call</label>
+        <length>50000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Service Audit</label><nameField>
+        <displayFormat>SA-{0000}</displayFormat>
+        <label>Service Audit Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Service Audits</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><recordTypes>
+        <fullName>Inbound_Call_Audit</fullName>
+        <active>true</active>
+        <label>Inbound Call Audit</label>
+        <picklistValues>
+            <picklist>Fix_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issue_Resolved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Results_of_QA__c</picklist>
+            <values>
+                <fullName>Call Quality Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA - Call Not Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA - Poor Audio Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Denied - Knowledge Limitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Denied - Product Limitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Completed Incorrectly %28CS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Completed Incorrectly %28OPT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Not Completed %28CS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Not Completed %28OPT%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes></CustomObject>
