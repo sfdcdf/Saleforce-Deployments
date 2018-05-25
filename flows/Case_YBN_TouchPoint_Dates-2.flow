@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>myVariable_waitStartTimeAssignment</name>
+        <label>myVariable_waitStartTimeAssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myDecision</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>myDecision</name>
+        <label>Primary Decision</label>
+        <locationX>150</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Introduction Call/CSC</label>
+        </rules>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>Month 1 Checkin</label>
+        </rules>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Monthly TouchPoints</label>
+        </rules>
+    </decisions>
+    <description>Updates Account Level Dates when Case is closed</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_2_myRule_1_A1_YBN_CSC_Completed_Date_c</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_4_myRule_3_A1_Month_1_Check_In_Completed_Date_c</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_6_myRule_5_A1_Last_Completed_YBN_TP_c</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+   OR(ISNEW(), ISCHANGED([Case].Status)),
+   [Case].RecordType.Name  = &quot;YBN Outbound Touch Point&quot;,
+   [Case].Client_Type__c = &quot;YBN&quot;,  
+   [Case].Account.RecordType.Name  &lt;&gt; &quot;YBN Master Account&quot;,
+   ISPICKVAL([Case].Reason_Detail__c, &quot;Introduction Call/CSC&quot;),
+   NOT(ISBLANK([Case].Initial_DateTime_Closed__c)),
+   OR(
+      ISPICKVAL([Case].Status, &apos;Completed&apos;),
+      ISPICKVAL([Case].Status, &apos;Incomplete after 2nd Attempt&apos;),
+      ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
+      ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;)
+   )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+   OR(ISNEW(), ISCHANGED({!myVariable_current.Status})),
+   {!myVariable_current.RecordType.Name}  = &quot;YBN Outbound Touch Point&quot;,
+   {!myVariable_current.Client_Type__c} = &quot;YBN&quot;,  
+   {!myVariable_current.Account.RecordType.Name}  &lt;&gt; &quot;YBN Master Account&quot;,
+   ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Introduction Call/CSC&quot;),
+   NOT(ISBLANK({!myVariable_current.Initial_DateTime_Closed__c})),
+   OR(
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Incomplete after 2nd Attempt&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;)
+   )
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+   OR(ISNEW(), ISCHANGED([Case].Status)),
+   [Case].RecordType.Name  = &quot;YBN Outbound Touch Point&quot;,
+   [Case].Sponsored_Status__c = &quot;LIVE&quot;,
+   [Case].Client_Type__c = &quot;YBN&quot;,
+   [Case].Account.RecordType.Name  &lt;&gt; &quot;YBN Master Account&quot;,
+   ISPICKVAL([Case].Reason_Detail__c, &quot;Month 1 Check In&quot;),
+   NOT(ISBLANK([Case].Initial_DateTime_Closed__c)),
+   OR(
+      ISPICKVAL([Case].Status, &apos;Completed&apos;),
+      ISPICKVAL([Case].Status, &apos;Incomplete after 2nd Attempt&apos;),
+      ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
+      ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;)
+   )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+   OR(ISNEW(), ISCHANGED({!myVariable_current.Status})),
+   {!myVariable_current.RecordType.Name}  = &quot;YBN Outbound Touch Point&quot;,
+   {!myVariable_current.Sponsored_Status__c} = &quot;LIVE&quot;,
+   {!myVariable_current.Client_Type__c} = &quot;YBN&quot;,
+   {!myVariable_current.Account.RecordType.Name}  &lt;&gt; &quot;YBN Master Account&quot;,
+   ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Month 1 Check In&quot;),
+   NOT(ISBLANK({!myVariable_current.Initial_DateTime_Closed__c})),
+   OR(
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Incomplete after 2nd Attempt&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;)
+   )
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+   OR(ISNEW(), ISCHANGED([Case].Status)),
+   [Case].RecordType.Name  = &quot;YBN Outbound Touch Point&quot;,
+   [Case].Sponsored_Status__c = &quot;LIVE&quot;,
+   [Case].Client_Type__c = &quot;YBN&quot;,
+   [Case].Account.RecordType.Name  &lt;&gt; &quot;YBN Master Account&quot;,
+   NOT(ISBLANK([Case].Initial_DateTime_Closed__c)),
+   OR(
+      ISPICKVAL([Case].Reason_Detail__c, &quot;Monthly Touch Point - SL A&quot;),
+      ISPICKVAL([Case].Reason_Detail__c, &quot;Bi-Monthly Touch Point - SL B&quot;),
+      ISPICKVAL([Case].Reason_Detail__c, &quot;Quarterly Touch Point - SL C&quot;)
+   ),
+   OR(
+      ISPICKVAL([Case].Status, &apos;Completed&apos;),
+      ISPICKVAL([Case].Status, &apos;Incomplete after 2nd Attempt&apos;),
+      ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
+      ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;)
+   )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+   OR(ISNEW(), ISCHANGED({!myVariable_current.Status})),
+   {!myVariable_current.RecordType.Name}  = &quot;YBN Outbound Touch Point&quot;,
+   {!myVariable_current.Sponsored_Status__c} = &quot;LIVE&quot;,
+   {!myVariable_current.Client_Type__c} = &quot;YBN&quot;,
+   {!myVariable_current.Account.RecordType.Name}  &lt;&gt; &quot;YBN Master Account&quot;,
+   NOT(ISBLANK({!myVariable_current.Initial_DateTime_Closed__c})),
+   OR(
+      ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Monthly Touch Point - SL A&quot;),
+      ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Bi-Monthly Touch Point - SL B&quot;),
+      ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Quarterly Touch Point - SL C&quot;)
+   ),
+   OR(
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Incomplete after 2nd Attempt&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;)
+   )
+)</expression>
+    </formulas>
+    <interviewLabel>Case_YBN_TouchPoint_Dates-2_Case</interviewLabel>
+    <label>Case - YBN TouchPoint Dates</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Case</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Case].Account ID</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Update Account Completed Date</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.AccountId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>YBN CSC Completed Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>YBN_CSC_Completed_Date__c</field>
+            <value>
+                <elementReference>formula_2_myRule_1_A1_YBN_CSC_Completed_Date_c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Case].Account ID</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Update Account Month 1 CIC Date</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.AccountId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Month 1 Check In Completed Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Month_1_Check_In_Completed_Date__c</field>
+            <value>
+                <elementReference>formula_4_myRule_3_A1_Month_1_Check_In_Completed_Date_c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Case].Account ID</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>Update Account Last Completed YBN TP</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.AccountId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Last Completed YBN TP</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Last_Completed_YBN_TP__c</field>
+            <value>
+                <elementReference>formula_6_myRule_5_A1_Last_Completed_YBN_TP_c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_waitStartTimeVariable</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDateTime</elementReference>
+        </value>
+    </variables>
+</Flow>

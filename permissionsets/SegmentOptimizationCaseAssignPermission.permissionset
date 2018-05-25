@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Gives users access to the VF page and tab for AssignSegmentOptimizationCaseOwner</description><hasActivationRequired>false</hasActivationRequired><label>SegmentOptimizationCaseAssignPermission</label><pageAccesses>
+        <apexPage>AssignSegmentOptimizationCaseOwner</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses><objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Segment_Optimization_Case_Assignment__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions><tabSettings>
+        <tab>Segment_Optimization_Case_Assignment__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings></PermissionSet>

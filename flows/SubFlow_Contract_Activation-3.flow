@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>SubFlow Contract Activation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SubFlow Contract Activation</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Activate_Contract</name>
+        <label>Activate Contract</label>
+        <locationX>111</locationX>
+        <locationY>33</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>subvarContractId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Contract_Oppty__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Activated</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contract</object>
+    </recordUpdates>
+    <startElementReference>Activate_Contract</startElementReference>
+    <variables>
+        <name>subvarContractId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

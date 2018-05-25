@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>The ability to create, read, or edit TORCHx Master Cases</description><hasActivationRequired>false</hasActivationRequired><label>TORCHx Master Case Create/Edit</label><license>Salesforce</license><objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Case</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions><recordTypeVisibilities>
+        <recordType>Case.TORCHx_Master</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities></PermissionSet>

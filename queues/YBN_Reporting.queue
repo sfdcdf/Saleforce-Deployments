@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>YBN Reporting</name>
+    <queueMembers>
+        <users>
+            <user>aspinelli@yodle.com</user>
+            <user>bramos@yodle.com</user>
+            <user>isabel.yoon@yodle.com</user>
+            <user>mbrevig@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

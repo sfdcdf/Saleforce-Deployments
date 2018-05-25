@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>CaseOrigin__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Case Origin</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>EmailAddress__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>true</unique>
+    </fields><label>Case Thread Origin</label><pluralLabel>Case Thread Origins</pluralLabel><visibility>Public</visibility><listViews>
+        <fullName>Case_Origin_View</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>CaseOrigin__c</columns>
+        <columns>EmailAddress__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Case Origin View</label>
+    </listViews></CustomObject>

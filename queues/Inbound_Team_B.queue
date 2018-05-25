@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>inboundteamb@yodle.com</email>
+    <name>Inbound Team B</name>
+    <queueMembers>
+        <users>
+            <user>arenner@yodle.com</user>
+            <user>basnis@yodle.com</user>
+            <user>dbascom@yodle.com</user>
+            <user>kkhemlani@yodle.com</user>
+            <user>rrodriguez@yodle.com</user>
+            <user>anuj.lal@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

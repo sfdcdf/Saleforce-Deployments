@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Strategic Project Managers</name>
+    <queueMembers>
+        <roles>
+            <role>YBN_Customer_Success_Manager</role>
+        </roles>
+        <users>
+            <user>jswitzer@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Fulfillment__c</sobjectType>
+    </queueSobject>
+</Queue>

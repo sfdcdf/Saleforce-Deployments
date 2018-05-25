@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Open Sales</name>
+    <queueMembers>
+        <roles>
+            <role>Director_National_Sales</role>
+            <role>ExecutiveVPA</role>
+            <role>NationalAccountsSales</role>
+            <role>NationalAccountsManagerHeppnerA</role>
+            <role>NationalClientPartnerSales</role>
+            <role>Sales</role>
+            <role>SalesNewYork3A</role>
+            <role>TrainingExecutiveA</role>
+            <role>VPNationalAccountsSales</role>
+            <role>YodleTeamA</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

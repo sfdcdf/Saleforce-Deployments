@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><hasActivationRequired>false</hasActivationRequired><label>CS User Permissions</label><license>Salesforce</license><pageAccesses>
+        <apexPage>CaseCloneYBN</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses><pageAccesses>
+        <apexPage>CaseResultPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses><pageAccesses>
+        <apexPage>MultiRequest</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses><recordTypeVisibilities>
+        <recordType>Case.YBN_Inbound_Inquiry</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <recordType>Case.YBN_Request</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities></PermissionSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Owner</field>
+        <field>Budget__c</field>
+        <field>SEO_Product__c</field>
+        <field>IMS_Rep__c</field>
+        <field>Sales_Person__c</field>
+        <field>Client_ID__c</field>
+        <field>CaseNumber</field>
+        <field>Initial_Website_Setup_do_not_edit__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <label>Website Tier - Mgr Approval Submission</label>
+        <name>Website_Tier_Mgr_Approval_Submission</name>
+    </approvalStep>
+    <description>this is the approval process for free customizations on website tier clients ( manager approval)</description>
+    <emailTemplate>Support/Website_Tier_Approval_to_Mgr</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Case.RecordType</field>
+            <operation>equals</operation>
+            <value>New Client Setup (NON AUTO LAUNCH)</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Website_Tier_Approval_checkbox</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Website_Tier_Mgr_Approve_to_Web_Dev</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Website Tier - Mgr Approval Free Chg WD</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

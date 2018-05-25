@@ -1,0 +1,140 @@
+<apex:page showHeader="true" sidebar="false" controller="ConsolidatedCaseViewController">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <apex:includeScript value="/support/console/30.0/integration.js"/>
+
+	<script>
+            var $j = jQuery.noConflict();
+
+            var displayInteraction = function(interactionId){
+                var elem = document.getElementById(interactionId);
+                console.log(elem.style.display);
+                if(elem.style.display == 'none'){
+                    elem.style.display = 'table-row';
+                }else{
+                   	elem.style.display = 'none';
+                }
+            };
+
+            var expandAll = function(){
+                $j('.interactionRowClass').css('display','table-row');
+                document.getElementById('expandAll').style.display = 'none';
+                document.getElementById('collapseAll').style.display = 'block';
+            }
+
+            var collapseAll = function(){
+                $j('.interactionRowClass').css('display','none');
+                document.getElementById('expandAll').style.display = 'block';
+                document.getElementById('collapseAll').style.display = 'none';
+            }
+
+            var openCase = function(caseId){
+                if (sforce.console.isInConsole()) { 
+                    console.log('TEST TEST TST');
+                    var openSubtab = function(result){ 
+                        sforce.console.openSubtab(result.id, '/'+caseId, true, 'Loading...', null, openSuccess); 
+                    }; 
+
+                    sforce.console.getEnclosingPrimaryTabId(openSubtab); 
+
+                }else{ 
+
+                    window.open('/'+caseId, '_blank'); 
+
+                } 
+            };
+
+            var openSuccess = function openSuccess(result){
+                if(result.success == true) {
+                    setTabIcon(result);
+                }
+            }
+
+            function setTabIcon(result){
+                // Force Salesforce to set their Standard Lead Icon hack
+                sforce.console.setTabTitle(undefined, result.id);
+            }
+
+    </script>
+
+    <apex:stylesheet value="{!URLFOR($Resource.animate)}"/>
+
+    <style>
+    	@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+    	table {
+    		width: 100%;
+    	}
+
+    	.table td, .table th {
+    		padding: 10px;
+    	}
+    </style>
+
+    <apex:form >
+    	<apex:outputPanel id="panelId">
+            <center>
+                <b>{!acct.Name}</b> - {!acct.Client_ID__c}
+            </center>
+
+			<table class="table table-striped table-hover">
+		        <tr>
+		        	<th style="color: #FF4F4F; font-weight: bold;">
+		                <a href="javascript:void(0);" onclick="expandAll();" id="expandAll"><span class="glyphicon glyphicon-folder-close"/></a>
+		                <a href="javascript:void(0);" onclick="collapseAll();" id="collapseAll" style="display: none;"><span class="glyphicon glyphicon-folder-open"/></a>
+		            </th>
+		            <th style="color: #FF4F4F; font-weight: bold;">
+		            	Case Number
+		            </th>
+		            <th>Record Type</th>
+		            <th>Case Reason</th>
+		            <th>Reason Detail</th>
+		            <th>Subject</th>
+		            <th>Status</th>
+		            <th>Owner</th>
+		            <th>Date/Time Opened</th>
+		            <th>Date/Time Closed</th>
+		        </tr>
+		        <apex:repeat value="{!CaseList}" var="case">
+		            <tr style="background-color: #f9f9f9;">
+		            	<td style="color: #FF4F4F; background-color: #f9f9f9; font-weight: bold;"></td>
+		                <td style="color: #FF4F4F; background-color: #f9f9f9; font-weight: bold;"><a href="javascript:void(0);" onclick="openCase('{!case.id}');">{!case.CaseNumber}</a></td>
+		                <td onclick="displayInteraction('{!case.id}RowId');">{!case.RecordType.Name}</td>
+		                <td onclick="displayInteraction('{!case.id}RowId');">{!case.Reason}</td>
+		                <td onclick="displayInteraction('{!case.id}RowId');">{!case.Reason_Detail__c}</td>
+		                <td onclick="displayInteraction('{!case.id}RowId');">{!case.Subject}</td>
+		                <td onclick="displayInteraction('{!case.id}RowId');">{!case.Status}</td>
+		                <td onclick="displayInteraction('{!case.id}RowId');">{!case.Owner.Name}</td>
+		                <td onclick="displayInteraction('{!case.id}RowId');"><apex:outputField value="{!case.CreatedDate}"/></td>
+		                <td onclick="displayInteraction('{!case.id}RowId');"><apex:outputField value="{!case.ClosedDate}"/></td>
+		            </tr>
+
+		             <tr class="interactionRowClass animated fadeIn" id="{!case.id}RowId" style="display: none;">
+		                    <td colspan="10">
+                                <apex:detail subject="{!case.Id}" inlineEdit="false" title="false"/>
+		                    </td>
+		                </tr>
+		        </apex:repeat>
+		    </table>
+
+            <center>
+
+                <apex:commandButton status="updateStatus" reRender="panelId" value="First" action="{!setCon.first}" disabled="{!!setCon.hasPrevious}" title="First Page"/> 
+
+                <apex:commandButton status="updateStatus" reRender="panelId" value="Previous" action="{!setCon.previous}" disabled="{!!setCon.hasPrevious}" title="Previous Page"/> 
+
+                <apex:outputText >{!(setCon.pageNumber * size)+1-size}-{!IF((setCon.pageNumber * size)>noOfRecords, noOfRecords,
+                     (setCon.pageNumber * size))} of {!noOfRecords}
+                </apex:outputText> 
+
+                <apex:commandButton status="updateStatus" reRender="panelId" value="Next" action="{!setCon.next}" disabled="{!!setCon.hasNext}" title="Next Page"/> 
+
+                <apex:commandButton status="updateStatus" reRender="panelId" value="Last" action="{!setCon.last}" disabled="{!!setCon.hasNext}" title="Last Page"/> 
+
+                <apex:actionStatus startText=" (updating...)" id="updateStatus"/>
+
+            </center>
+	    </apex:outputPanel>
+    </apex:form>
+
+</apex:page>

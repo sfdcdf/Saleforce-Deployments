@@ -1,0 +1,22 @@
+<apex:component controller="SortedCaseCommentsController" access="global">
+    <apex:attribute name="caseId" type="Id" assignTo="{!AttributeCaseId}" description="Case Id" />
+    <table>
+        <apex:repeat value="{!CaseComments}" var="caseComment">
+            <tr>
+                <th>Created Date</th>
+                <th>Created By</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>
+                    <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                        <apex:param value="{!caseComment.CreatedDate}" /> </apex:outputText>.
+                </td>
+                <td>
+                    {!caseComment.CreatedBy.Name}
+                </td>
+                <td>{!caseComment.CommentBody}</td>
+            </tr>
+        </apex:repeat>
+    </table>
+</apex:component>

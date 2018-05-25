@@ -1,0 +1,97 @@
+<apex:page showHeader="false" sidebar="false" controller="ScheduleTORCHxOBCallController" title="TORCHx - Schedule Call">
+    <script>
+        function setFocusOnLoad() {}
+    </script>
+
+    <style>
+        body {
+            background-color: #ededed;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body input.btn, body input.btnDisabled, body input.btnCancel {
+            padding: 5px 10px;
+            margin: 5px 0;
+        }
+
+        .torchxDateButton {
+            -webkit-border-radius: 4 !important;
+            -moz-border-radius: 4 !important;
+            border-radius: 4px !important;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 'bold';
+            color: #ffffff !important;
+            font-size: 14px !important;
+            background: #183660 !important;
+            text-decoration: none;
+            border: none !important;
+        }
+
+        .torchxDateButton:hover, .torchxDateButton:disabled {
+            background: #ffffff !important;
+            color: #183660 !important;
+            text-decoration: none;
+            border: none !important;
+        }
+    </style>
+
+    <apex:outputPanel layout="block" style="background-color: #183660;">
+        <apex:image url="{!$Resource.TORCHxLogo}" height="75px" style="margin: auto; display: block; padding: 15px 0;"/>
+    </apex:outputPanel>
+
+    <apex:outputPanel style="text-align: center;">
+        <apex:outputPanel style="display: block; margin: auto; width: 925px;">
+            <apex:form id="formId">
+                <apex:actionFunction name="selectDate" action="{!selectDateFilter}" reRender="formId" status="loadStatus"/>
+                <br/>
+                <h3 style="font-size: 20px;">{!acct.Name}</h3>
+
+                <br/>
+                <br/>
+
+                <apex:inputField value="{!dateCaseWorkAround.StartDate__c}" onchange="selectDate();"/>
+                &nbsp;
+                <apex:selectList value="{!selectedTimeZone}" multiselect="false" size="1" onchange="selectDate();" >
+                    <apex:selectOptions value="{!supportedTimeZone}"/>
+                </apex:selectList>
+                &nbsp;
+                <apex:selectList value="{!selectedCaseId}" multiselect="false" size="1" onchange="selectDate();" >
+                    <apex:selectOptions value="{!openCases}"/>
+                </apex:selectList>
+                &nbsp;
+                <!--Current Call Scheduled:&nbsp;<apex:outputField value="{!selectedCase.Scheduled_Call__c}"/-->
+                <br/>
+                <br/>
+                <apex:outputText value="{!IF(scheduledCallFormat != '', 'Current Call Scheduled: ' + scheduledCallFormat, 'No Call Scheduled!')}"/>
+
+                <br/>
+                <apex:pageMessages />
+                <apex:pageMessage rendered="{!savedCallSchedule}" summary="Thank you for scheduling" severity="confirm" strength="3" />
+                <apex:actionStatus startText="updating..." id="loadStatus">
+                    <apex:facet name="stop">
+                        <br/>
+                        <apex:repeat value="{!businessHourDateTimeMap}" var="bhDT" rendered="{!selectedCaseId != ''}">
+                            <span style="float: left; padding: 10px; text-align: center;">
+                                <apex:outputText value="{0, date, MM/dd - EEEE}">
+                                    <apex:param value="{!bhDT}" /> 
+                                </apex:outputText>
+                                <br/>
+                                <apex:repeat value="{!businessHourDateTimeMap[bhDT]}" var="dateTimeNow">
+                                    <apex:commandButton action="{!scheduleDateTime}" value="{!dateTimeNow.convertedStartTime} - {!dateTimeNow.convertedEndTime}" disabled="{!!dateTimeNow.availableDateTime}" reRender="formId" status="loadStatus" styleClass="torchxDateButton">
+                                        <apex:param name="selectedAvailableTime" value="{!dateTimeNow.selectDateTimeId}" assignTo="{!selectedAvailableTime}"/>
+                                    </apex:commandButton>
+                                    <br/>
+                                </apex:repeat>
+                            </span>
+                        </apex:repeat>
+                    </apex:facet>
+                </apex:actionStatus>
+            </apex:form>
+            <apex:outputPanel layout="block" style="clear: both;">
+            Copyright ©2017 Web.com Group, Inc. All Rights Reserved. All registered trademarks herein are the property of their respective owners.
+            <br/><br/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:outputPanel>
+</apex:page>

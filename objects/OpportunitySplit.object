@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EditOpportunitySplits</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveAndClose</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>OpportunityId</fullName>
+        <type>MasterDetail</type>
+    </fields><fields>
+        <fullName>SplitAmount</fullName>
+    </fields><fields>
+        <fullName>SplitNote</fullName>
+    </fields><fields>
+        <fullName>SplitOwnerId</fullName>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>SplitPercentage</fullName>
+    </fields><fields>
+        <fullName>SplitTypeId</fullName>
+        <type>Lookup</type>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><sharingModel>ControlledByParent</sharingModel><validationRules>
+        <fullName>Oppt_Split_Changes_Only_be_Sales_Admins</fullName>
+        <active>true</active>
+        <description>Only allow for System Admins to be able to update validation</description>
+        <errorConditionFormula>AND( 
+ISChanged( SplitPercentage ), 
+OR(
+
+ $User.ProfileId &lt;&gt; '00e60000000nQe9'), /*sys admin*/ 
+ NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */
+)</errorConditionFormula>
+        <errorMessage>Only System Administrators can edit Opportunity Splits.  Please submit a operations ticket. Click Back to Opportunities to return to your Opportunity.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>WBN_Split_must_be_50percent</fullName>
+        <active>true</active>
+        <description>The splits would always be an even 50/50. Our Sales compensation plans outline that if any split is to occur, it can only be split between two reps</description>
+        <errorConditionFormula>Case(SplitPercentage , 
+0.5,1,
+1,1,
+0,1,
+0) = 0</errorConditionFormula>
+        <errorMessage>Split percentages can only be 50% for each person.</errorMessage>
+    </validationRules></CustomObject>

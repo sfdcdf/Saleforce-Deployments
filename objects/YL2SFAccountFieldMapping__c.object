@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Email2UsernameMap__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the YL request value an email that maps to a SF user?</inlineHelpText>
+        <label>Email2UsernameMap</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Salesforce_Field_API_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><customSettingsType>List</customSettingsType><description>Yodle Live Client to Salesforce Account record field mapping</description><enableFeeds>false</enableFeeds><label>YL2SFAccountFieldMapping</label><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Salesforce_Field_API_Name__c</columns>
+        <columns>Email2UsernameMap__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews></CustomObject>

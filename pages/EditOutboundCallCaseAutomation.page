@@ -1,0 +1,78 @@
+<apex:page showHeader="true" sidebar="false" controller="EditOutboundCallCaseAutomationController" title="Outbound Call Case Automation Settings">
+	<apex:form >
+		<apex:pageBlock title="Outbound Call Case Automation" mode="maindetail" id="pageBlockId">
+			<apex:pageMessages />
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Save" action="{!saveChanges}" reRender="pageBlockId" rendered="{!editMode}"/>
+				<apex:commandButton value="Edit" action="{!editChanges}" reRender="pageBlockId" rendered="{!!editMode}"/>
+				<apex:commandButton value="Cancel" action="{!cancelChanges}" reRender="pageBlockId" rendered="{!editMode}"/>
+				<apex:commandButton value="Delete Selected" action="{!deleteSelected}" reRender="pageBlockId" />
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection columns="1" collapsible="false" title="Outbound Call Case Automation Rules">
+				<apex:pageBlockTable value="{!outboundCallCaseRecords}" var="occr">
+
+					<apex:column headerValue="Select">
+				        <apex:inputCheckbox value="{!occr.selected}"/>
+				    </apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Validation_Order__c.Label}">
+						<apex:inputField value="{!occr.occa.Validation_Order__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Validation_Order__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Name.Label}">
+						<apex:inputField value="{!occr.occa.Name}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Name}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Case_Reason__c.Label}">
+						<apex:inputField value="{!occr.occa.Case_Reason__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Case_Reason__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Channel_Type__c.Label}">
+						<apex:inputField value="{!occr.occa.Channel_Type__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Channel_Type__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Total_Account_Revenue__c.Label}">
+						<apex:inputField value="{!occr.occa.Total_Account_Revenue__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Total_Account_Revenue__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Product_Type__c.Label}">
+						<apex:inputField value="{!occr.occa.Product_Type__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Product_Type__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Sales_Notes_Contains__c.Label}">
+						<apex:inputField value="{!occr.occa.Sales_Notes_Contains__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Sales_Notes_Contains__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Segment__c.Label}">
+						<apex:inputField value="{!occr.occa.Segment__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Segment__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Website_Type__c.Label}">
+						<apex:inputField value="{!occr.occa.Website_Type__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Website_Type__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Winback_CSC_Script__c.Label}">
+						<apex:inputField value="{!occr.occa.Winback_CSC_Script__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Winback_CSC_Script__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+					<apex:column headerValue="{!$ObjectType.Outbound_Call_Case_Automation__c.fields.Script_URL__c.Label}">
+						<apex:inputField value="{!occr.occa.Script_URL__c}" rendered="{!editMode}"/>
+						<apex:outputField value="{!occr.occa.Script_URL__c}" rendered="{!!editMode}"/>
+					</apex:column>
+
+				</apex:pageBlockTable>
+				<apex:commandLink value="New Custom Setting" action="{!addCustomSetting}" reRender="pageBlockId" rendered="{!editMode}"/>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

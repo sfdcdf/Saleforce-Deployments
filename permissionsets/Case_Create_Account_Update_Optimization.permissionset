@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Allow for these users to create the Account update and Optimization cases</description><hasActivationRequired>false</hasActivationRequired><label>Case - Create Account Update &amp; Optimization</label><license>Salesforce</license><recordTypeVisibilities>
+        <recordType>Case.O_Account_Update</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <recordType>Case.Performance_Issue</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities></PermissionSet>

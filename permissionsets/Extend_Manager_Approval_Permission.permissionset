@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><hasActivationRequired>false</hasActivationRequired><label>Extend Manager Approval Permission</label><license>Salesforce</license><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Escalated__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.IsEscalated</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Manager_Approved_Changes__c</field>
+        <readable>true</readable>
+    </fieldPermissions></PermissionSet>

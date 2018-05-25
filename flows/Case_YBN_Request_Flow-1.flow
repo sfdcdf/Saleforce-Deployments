@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Assign_Campaign</name>
+        <label>Assign Campaign</label>
+        <locationX>340</locationX>
+        <locationY>249</locationY>
+        <assignmentItems>
+            <assignToReference>objCase.Requested_Campaign_Updates__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>objCase.YBNRequestDetail__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Website</name>
+        <label>Assign Website</label>
+        <locationX>40</locationX>
+        <locationY>254</locationY>
+        <assignmentItems>
+            <assignToReference>objCase.Requested_Website_Updates__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>objCase.YBNRequestDetail__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Determine_Request_Reason</name>
+        <label>Determine Request Reason</label>
+        <locationX>193</locationX>
+        <locationY>141</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Website_Reason</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>objCase</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>objCase.YBNRequestReason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Creative</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>objCase.YBNRequestReason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Web Dev</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Website</targetReference>
+            </connector>
+            <label>Website Reason</label>
+        </rules>
+        <rules>
+            <name>Campaign_Reason</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>objCase</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>objCase.YBNRequestReason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Production Specialists</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Campaign</targetReference>
+            </connector>
+            <label>Campaign Reason</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Case - YBN -  {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - YBN Request Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Case</name>
+        <label>Get Case</label>
+        <locationX>192</locationX>
+        <locationY>25</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Determine_Request_Reason</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseId</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>objCase</outputReference>
+        <queriedFields>YBNRequestReason__c</queriedFields>
+        <queriedFields>YBNRequestDetail__c</queriedFields>
+        <queriedFields>Requested_Campaign_Updates__c</queriedFields>
+        <queriedFields>Requested_Website_Updates__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>202</locationX>
+        <locationY>352</locationY>
+        <inputReference>objCase</inputReference>
+    </recordUpdates>
+    <startElementReference>Get_Case</startElementReference>
+    <variables>
+        <name>objCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>varCaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

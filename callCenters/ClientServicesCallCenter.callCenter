@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <adapterUrl>https://phonecall.prod.yodle.com/signed-phone</adapterUrl>
+    <customSettings>{&quot;reqSoftphoneHeight&quot;:&quot;200&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqCanvasApiName&quot;:&quot;Phone&quot;,&quot;reqSoftphoneWidth&quot;:&quot;200&quot;}</customSettings>
+    <displayName>Client Services Call Center</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>Yodle CS Call center</value>
+        </items>
+        <items>
+            <label>CTI Connector ProgId</label>
+            <name>reqProgId</name>
+            <value>Yodle.CTIPhone.1</value>
+        </items>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://phonecall.prod.yodle.com/signed-phone</value>
+        </items>
+        <items>
+            <label>Canvas Namespace</label>
+            <name>reqCanvasNamespace</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Canvas Api Name</label>
+            <name>reqCanvasApiName</name>
+            <value>Phone</value>
+        </items>
+        <items>
+            <label>OpenCTI?</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Softphone Height (px)</label>
+            <name>reqSoftphoneHeight</name>
+            <value>200</value>
+        </items>
+        <items>
+            <label>Softphone Width (px)</label>
+            <name>reqSoftphoneWidth</name>
+            <value>200</value>
+        </items>
+        <label>General Info</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Outside Prefix</label>
+            <name>reqOutsidePrefix</name>
+            <value>9</value>
+        </items>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value>1</value>
+        </items>
+        <items>
+            <label>International Prefix</label>
+            <name>reqInternationalPrefix</name>
+            <value>01</value>
+        </items>
+        <label>Dialing Options</label>
+        <name>reqDialingOptions</name>
+    </sections>
+</CallCenter>

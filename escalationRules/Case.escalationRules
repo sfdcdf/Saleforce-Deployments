@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata"><escalationRule>
+        <fullName>Escalation Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Renewal / Upsell</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>720</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>Support/SUPPORTCasemissingSLA</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <minutesToEscalation>1320</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>Support/SUPPORTCasemissingSLA</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <minutesToEscalation>14400</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>Support/SUPPORTCasemissingSLA14</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule></EscalationRules>

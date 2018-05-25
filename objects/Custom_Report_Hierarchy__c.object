@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Business_Unit__c</fullName>
+        <description>Attribute signifying what business unit the record applies to</description>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Market_Name__c</fullName>
+        <description>Name of the Market/ Branch area within a specific managed region</description>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>User_Mkt_Mgr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Manager of the specific Market/ Branch</description>
+        <externalId>false</externalId>
+        <label>Branch Manager</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The user must be an Active Salesforce licensed User</errorMessage>
+            <filterItems>
+                <field>User.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Custom_Report_Configs</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>User_Reg_Mgr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Region Manager User lookup</description>
+        <externalId>false</externalId>
+        <label>Region Manager</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The user must be an Active Salesforce licensed User</errorMessage>
+            <filterItems>
+                <field>User.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Custom_Report_Configs_User</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Custom VF Reporting access and hierarchy viewing management</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>false</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Custom Report Hierarchy</label><nameField>
+        <displayFormat>CRH-{0000000}</displayFormat>
+        <label>Custom Report Hierarchy Name</label>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Custom Report Hierarchies</pluralLabel><searchLayouts>
+        <customTabListAdditionalFields>User_Mkt_Mgr__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Market_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>User_Reg_Mgr__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Business_Unit__c</customTabListAdditionalFields>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Market_Name__c</columns>
+        <columns>User_Mkt_Mgr__c</columns>
+        <columns>User_Reg_Mgr__c</columns>
+        <columns>Business_Unit__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><recordTypes>
+        <fullName>Default</fullName>
+        <active>true</active>
+        <description>Default Record Type for Custom Report Config</description>
+        <label>Default</label>
+    </recordTypes></CustomObject>

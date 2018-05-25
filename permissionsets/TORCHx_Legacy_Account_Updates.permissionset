@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><hasActivationRequired>false</hasActivationRequired><label>TORCHx Legacy Account Updates</label><fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Budget_Ads__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Monthly_Budget__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Next_Billing_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Yodle_Web_Fees__c</field>
+        <readable>true</readable>
+    </fieldPermissions></PermissionSet>

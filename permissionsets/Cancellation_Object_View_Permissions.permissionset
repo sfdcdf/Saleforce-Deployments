@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Gives user ability to view the cancellation object</description><hasActivationRequired>false</hasActivationRequired><label>Cancellation Object View Permissions</label><license>Salesforce</license><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Cancellation_Request__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions><tabSettings>
+        <tab>Cancellation_Request__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings></PermissionSet>

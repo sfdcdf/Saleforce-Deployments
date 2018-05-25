@@ -1,0 +1,113 @@
+<apex:page showHeader="false" sidebar="false" controller="WBNScheduleTouchpointController" title="Schedule Touchpoint" cache="false">
+	<apex:stylesheet value="//fonts.googleapis.com/css?family=Open+Sans:300" />
+
+	<script>
+		function setFocusOnLoad() {}
+	</script>
+
+	<style>
+		.dateFormat a { 
+			color : white; 
+		}
+
+		body {
+			background-color: #ededed;
+			font-size: 14px;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		body input.btn, body input.btnDisabled, body input.btnCancel {
+		    padding: 5px 10px;
+		    margin: 5px 0;
+		}
+	</style>
+
+	<apex:form id="formId">
+		<apex:outputPanel style="text-align: center; display: block;" id="scheduleAvailability" rendered="{!!optedOut}">
+			<apex:outputPanel style="background-color: #105a8b; padding: 50px 50px 25px 50px; color: white" layout="block">
+				<apex:actionFunction name="selectAccount" action="{!populateUserAvailability}" reRender="scheduleAvailability" status="loadStatus"/>
+				<apex:selectList value="{!selectedAccountId}" multiselect="false" size="1" onchange="selectAccount();" rendered="{!displayAcctSelector}">
+		            <apex:selectOptions value="{!WBNAccounts}"/>
+		        </apex:selectList>
+		        &nbsp;
+		    	<!--apex:inputField value="{!dateCaseWorkAround.StartDate__c}" onchange="selectAccount();"/-->
+		    	&nbsp;
+		    	<apex:selectList value="{!selectedTimeZone}" multiselect="false" size="1" onchange="selectAccount();" >
+		            <apex:selectOptions value="{!supportedTimeZone}"/>
+		        </apex:selectList>
+
+		        <apex:commandButton value="Opt out of Performance Call" action="{!optOutOfCurrentTouchpoint}" reRender="formId" style="float: right;" rendered="{!activeOutboundTouchpointCase.Id != ''}" status="loadStatus"/>
+				<br/>
+				<br/>
+				<apex:outputText value="IMS Rep: {!activeOutboundTouchpointCase.Account.IMS_Rep__r.Name}" rendered="{!activeOutboundTouchpointCase.Id != ''}" style="clear: both; white-space: nowrap;"/>
+				<br/>
+				<b>Current Scheduled Touchpoint:</b> <i>{!scheduledCallFormat}</i>
+				<br/>
+			</apex:outputPanel>
+			<br/>
+			<br/>
+
+			<apex:pageMessages />
+			<apex:actionStatus startText="updating..." id="loadStatus">
+				<apex:facet name="stop">
+					<apex:outputPanel style="display: inline-block; position: relative; margin: 0px 100px;">
+						<span style="color: #105a8b; font-weight: bold"><i>Click on the time you want to schedule/reschedule your call!</i></span>
+						<br/>
+						<br/>
+						<apex:repeat value="{!userAvailableDateTimeMap}" var="dateNow" rendered="{!activeOutboundTouchpointCase.Id != ''}">
+							<span style="float: left; padding: 10px; text-align: center;">
+								<apex:outputText value="{0, date, MM/dd}, {!dateDayOfWeek[dateNow]}">
+									<apex:param value="{!dateNow}" /> 
+								</apex:outputText>
+								<br/>
+								<apex:repeat value="{!userAvailableDateTimeMap[dateNow]}" var="dateTimeNow">
+									<apex:commandButton action="{!scheduleTime}" value="{!dateTimeNow.convertedStartDateTime} - {!dateTimeNow.convertedEndDateTime}" disabled="{!!dateTimeNow.repAvailable}" reRender="scheduleAvailability" status="loadStatus">
+										<apex:param name="selectedAvailableTime" value="{!dateTimeNow.temporaryId}" assignTo="{!selectedAvailableTime}"/>
+										<!--div style='margin: 5px; padding: 10px; background-color: {!IF(dateTimeNow.repAvailable, "green", "gray")};'>
+											
+											<!--br/>
+											{!dateTimeNow.startTime} - {!dateTimeNow.endTime}-->
+										<!--/div-->
+									</apex:commandButton>
+									<!--apex:outputPanel rendered="{!!dateTimeNow.repAvailable}">
+										<div style='margin: 5px; padding: 10px; background-color: {!IF(dateTimeNow.repAvailable, "green", "gray")};'>
+											{!dateTimeNow.convertedStartDateTime} - {!dateTimeNow.convertedEndDateTime} {!dateTimeNow.timeZoneSet}
+											<!--br/>
+											{!dateTimeNow.startTime} - {!dateTimeNow.endTime}-->
+										<!--/div>
+									</apex:outputPanel-->
+									<br/>
+								</apex:repeat>
+							</span>
+						</apex:repeat>
+					</apex:outputPanel>
+				</apex:facet>
+			</apex:actionStatus>
+		</apex:outputPanel>
+
+		<apex:outputPanel style="text-align: center; display: block;" id="optOutPanel" rendered="{!optedOut}">
+			<apex:outputPanel rendered="{!optOutParam && activeOutboundTouchpointCase.Id != ''}" layout="none">
+				<apex:actionFunction name="optOutParam" action="{!optOutOfCurrentTouchpoint}" reRender="formId" status="optingOut"/>
+				<script>
+					setTimeout(function(){ optOutParam(); }, 200);
+				</script>
+			</apex:outputPanel>
+			<apex:outputPanel style="background-color: #105a8b; padding: 50px 50px 25px 50px; color: white" layout="block">
+			</apex:outputPanel>
+			<br/>
+			<br/>
+
+			<apex:pageMessages />
+			<apex:actionStatus startText="updating..." id="optingOut">
+				<apex:facet name="stop">
+					<apex:outputPanel style="display: inline-block; position: relative; margin: 0px 100px;" rendered="{!activeOutboundTouchpointCase.Id != ''}">
+						<span style="color: #105a8b; font-weight: bold"><i>Thank you! You have opted out of your current month’s performance call.</i></span>
+						<br/>
+						<apex:commandLink action="{!unOptOutOfCurrentTouchpoint}" reRender="formId" status="optingOut"> If you opted out by mistake, click here!</apex:commandLink>
+						<br/>
+					</apex:outputPanel>
+				</apex:facet>
+			</apex:actionStatus>
+		</apex:outputPanel>
+	</apex:form>
+</apex:page>

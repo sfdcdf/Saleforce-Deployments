@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>austinwarmtransfer@yodle.com</email>
+    <name>ProfitFuel Warm Transfer</name>
+    <queueMembers>
+        <users>
+            <user>salesforcealerts@yodle.com</user>
+            <user>talvarez@yodle.com</user>
+            <user>anuj.lal@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

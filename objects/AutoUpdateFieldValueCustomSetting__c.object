@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Additional_SOQL_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional SOQL Criteria</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Field_Value_Update__c</fullName>
+        <externalId>false</externalId>
+        <label>Field Value Update</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>SOQL__c</fullName>
+        <externalId>false</externalId>
+        <label>SOQL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><customSettingsType>List</customSettingsType><description>Currently only supports simple field value update.</description><enableFeeds>false</enableFeeds><label>AutoUpdateFieldValueCustomSetting</label><visibility>Public</visibility></CustomObject>

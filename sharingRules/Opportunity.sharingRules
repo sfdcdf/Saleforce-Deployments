@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"><sharingCriteriaRules>
+        <fullName>WBN_Corp_Ops_SA_and_PrjMgmt_Managers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allow SA And Project manager Management to edit corp opportunities to assign roles</description>
+        <label>WBN Corp Ops - SA and PrjMgmt Managers</label>
+        <sharedTo>
+            <group>WBN_SA_and_PrjMgmt_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN - Growth Opportunity,YBN - Initial Transaction,YBN - Renewal</value>
+        </criteriaItems>
+    </sharingCriteriaRules><sharingOwnerRules>
+        <fullName>WBN_CS_Edit_Abilities</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>WBN CS Edit Abilities</label>
+        <sharedTo>
+            <group>WBN_Opportunity_Editing</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>WBN_Sales_Teams</group>
+        </sharedFrom>
+    </sharingOwnerRules></SharingRules>

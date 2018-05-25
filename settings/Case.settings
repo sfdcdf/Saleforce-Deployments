@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAssignNotificationTemplate>Support/SUPPORTNewassignmentnotificationSAMPLE</caseAssignNotificationTemplate>
+    <caseFeedItemSettings>
+        <characterLimit>400</characterLimit>
+        <collapseThread>true</collapseThread>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <closeCaseThroughStatusChange>true</closeCaseThroughStatusChange>
+    <defaultCaseOwner>sfdc@yodle.com</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>sfdc@yodle.com</defaultCaseUser>
+    <emailToCase>
+        <enableE2CSourceTracking>true</enableE2CSourceTracking>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>false</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>false</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <preQuoteSignature>false</preQuoteSignature>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>ACW - Retention</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>acw@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>ACW</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>adrienne.glenn@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>adrienne.glenn@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Adrienne Glenn</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>angela.cameron@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>angela.cameron@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Angela Cameron</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>bosteros@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bosteros@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Beau Osteros</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>brandnetworksupport@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>brandnetworksupport@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Brand Network Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>brittany.mackeil@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>brittany.mackeil@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Brittany Mackeil</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>brittney.white@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>brittney.white@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Brittany White Decker</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Vivial Budget Change</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>budgetchange@viviallocalleads.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Budget Change for Vivial</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>CS Upsell</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>csupselllead@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>CS Upsell Lead</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>caitlin.boutilier@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>caitlin.boutilier@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Caitlin Boutilier</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>carolanne.white@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>carolanne.white@web.com</emailAddress>
+            <isVerified>false</isVerified>
+            <routingName>Carolanne White</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Centermark BI</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>centermarkbi@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>CentermarkBI</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>clientsuccess@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>clientsuccess@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Client Success Marketing Campaign</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>CS@Outrank.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>clientservices@outrank.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>ClientServices@outrank.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>emily.walsh@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>emily.walsh@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Emily Walsh</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Vivial Escalations</caseOrigin>
+            <caseOwner>erik.vicars@web.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>erik.vicars@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Erik Vicars</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Escalated Email Response</caseOrigin>
+            <casePriority>Blocker</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>courtcunningham@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Escalated Email Response</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Escalated Email Response</caseOrigin>
+            <casePriority>Blocker</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cunningham@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Escalated Email Response</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Account Services</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>accountservices@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Exit Email for All</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>fsproductfeedback@yodle.com</caseOrigin>
+            <casePriority>New</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>fsproductfeedback@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>FS Product Feedback</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>YBN Email</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>facebookadssupport@yodle.net</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Facebook Ads Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>greenskymerchant@web.com</caseOrigin>
+            <caseOwner>GreenSky_Holding_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>greenskymerchant@web.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Greenskymerchant@web.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>james.pyche@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>james.pyche@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>James Pyche</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>jason.chapman@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jason.chapman@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jason Chapman</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>jennifer.daley@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jennifer.daley@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jennifer Daley</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>jessica.macdonald@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jessica.macdonald@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Jessica MacDonald</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>joseph.stjohn@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>joseph.stjohn@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Joseph St. John</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>joshua.lowrey@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>joshua.lowrey@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Joshua Lowery</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>kaitlyn.crosby@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kaitlyn.crosby@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kaitlyn Crosby</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>karen.park@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>karen.park@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Karen Park</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>kimberley.boutilier@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kimberley.boutilier@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Kim Boutilier</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LBW VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lbwvmail@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>LBW VM</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>autosupport@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>autosupport@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>LH Auto Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LH Dental Marketing</caseOrigin>
+            <caseOwner>Marketing_Emails</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>connect@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>LH Marketing Emails</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>medicalsupport@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>medicalsupport@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>LH Medical Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>lhproductfeedback@yodle.com</caseOrigin>
+            <casePriority>New</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lhproductfeedback@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>LH Product Feedback</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LH Upsell</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lhupsellleads@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>LH Upsell Leads</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Lh-postcards@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lh-postcards@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lh-postcards@lighthousepmg.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>accountservices@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>accountservices@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lighthouse Account Services</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>customercare@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customercare@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lighthouse Customer Care</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>logo@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>logo@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lighthouse Logos</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>support@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>support@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lighthouse Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LHWB@yodle.com</caseOrigin>
+            <caseOwner>LH_Support_Austin</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lhwb@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lighthouse Winback</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>lynn.arsenault@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lynn.arsenault@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lynn Arsenault</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>lynn.tobias@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lynn.tobias@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Lynn Tobias</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>mlsc@torchx.com</caseOrigin>
+            <caseOwner>MLS_Approvals</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mlsc@torchx.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>MLS Approvals</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>billing@torchx.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>billing@torchx.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>MLS Invoices</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>mary.fillmore@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mary.fillmore@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Mary Fillmore</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>matthew.scott@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>matthew.scott@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Matthew Scott</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>nationalclientsupport@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nationalclientsupport@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>National Client Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Outrank Wordpress</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>existingclients@outrank.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Outrank Wordpress</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>peter.walsh@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>peter.walsh@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Peter Walsh</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>podsupport@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>podsupport@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Pod Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>LH_Medical_Support</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>priyanka.rao@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Priyanka Rao</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Voicemail</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>processybnvoicemail@gmail.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>ProcessYBNvoicemail</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>productideas@yodle.com</caseOrigin>
+            <casePriority>New</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>productideas@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Product Ideas</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>MyLeadsSupport@Web.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>myleadssupport@web.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Prosource SharePoint</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>rachel.canning@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rachel.canning@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Rachel Canning</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>outranksupport@service.rogersoutrank.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>outranksupport@service.rogersoutrank.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Rogers Outrank Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rogers Platinum Support</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>platinumsupport@service.rogersoutrank.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Rogers Platinum Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rogers Pooled VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rogerspooledvm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Rogers Pooled Voicemail</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>stephanie.acorn@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>stephanie.acorn@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Stephanie Acorn</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>srussell@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>steven.russell@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Steven Russell</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Marketing_Emails</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>connect@torchx.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>TORCHx Marketing Email</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>TORCHxProductFeedback@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>torchxproductfeedback@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>TORCHx Product Feedback</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>support@torchx.com</caseOrigin>
+            <caseOwner>TORCHx_Inbound_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>New</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>support@torchx.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>TORCHx Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>tara.cromwell@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>tara.cromwell@web.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Tara Cromwell</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>terry.hayden@yodle.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>terry.hayden@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Terry Hayden</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rep Email</caseOrigin>
+            <caseOwner>tricia.valadez@yodle.com.old</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>tricia.llanas@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Tricia Llanas</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Berry VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>berryvm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - Berry</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LH Auto VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>autosupportvm@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - LH Auto</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LH Field Services VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customercarevm@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - LH Field Services</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LH Medical VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>supportvm@lighthousepmg.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - LH Medical</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LHFS Service Task VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customercarevmst@lighthousepmg.com</emailAddress>
+            <isVerified>false</isVerified>
+            <routingName>VM - LHFS Service Task</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Platinum Support</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>platinumsupportvm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - Local Pod</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Local Pooled VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customercarevm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - Local Pooled</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Partner VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>miscpartnervm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - Partner</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rogers Dedicated VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rogersdedicatedvm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - Rogers Dedicated</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Rogers Pooled VM</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>vmrogerspooled@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - Rogers Pooled</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>TORCHx VM</caseOrigin>
+            <caseOwner>TORCHx_Inbound_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>torchxvm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>VM - TORCHx</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Via Media</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>viamediasupport@viamediatv.net</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>ViaMedia</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Vivial Confirmation</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>confirmation@viviallocalleads.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Vivial Confirmation</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Vivial Escalations</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>escalations@viviallocalleads.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Vivial Escalations</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Vivial Support</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>support@berrylocalleads.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Vivial Support / Berry Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>YBN Email</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ybn.email2case@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>YBN Email to Case</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>ybnpooledvm@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ybnpooledvm@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>YBN Pooled Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>YBNProductIdeas@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ybnproductideas@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>YBN Product Ideas</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>customercare@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customercare@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Yodle Customer Care</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>YodleGoldService@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>yodlegoldservice@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Yodle Gold Service</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Marketing_Emails</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>yodlemarketing@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Yodle Marketing Email</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Platinum Support</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>platinumsupport@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>Yodle Platinum Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>berrysales@yodle.com</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>berrysales@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>berrysales@yodle.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>confirmation@berrylocalleads.com</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>confirmation@berrylocalleads.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>confirmation@berrylocalleads.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Marketing_Emails</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>leadstreamconnect@web.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>leadstreamconnect@web.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>LBWCustomerService@web.com</caseOrigin>
+            <caseOwner>LBW_Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>leadstreamsupport@web.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>leadstreamsupport@web.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>support@lighthousepmg.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lighthouse.plz.support@gmail.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>lighthouse.plz.support@gmail.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>dl-newdomain@yodle.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>newdomain@yodle.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>newdomain@yodle.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>outranksupport@service.rogersoutrank.com</caseOrigin>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rogerssupport@service.rogersoutrank.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>rogerssupport@service.rogersoutrank.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Vivial Sales</caseOrigin>
+            <caseOwner>Berry_Email_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Major</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>sales@viviallocalleads.com</emailAddress>
+            <isVerified>true</isVerified>
+            <routingName>sales@viviallocalleads.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <unauthorizedSenderAction>Bounce</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>true</enableCaseFeed>
+    <enableDraftEmails>false</enableDraftEmails>
+    <enableEarlyEscalationRuleTriggers>true</enableEarlyEscalationRuleTriggers>
+    <enableEmailActionDefaultsHandler>false</enableEmailActionDefaultsHandler>
+    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
+    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
+    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
+    <enableSuggestedSolutions>true</enableSuggestedSolutions>
+    <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>true</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>true</notifyOwnerOnCaseOwnerChange>
+    <showEmailAttachmentsInCaseAttachmentsRL>true</showEmailAttachmentsInCaseAttachmentsRL>
+    <showFewerCloseActions>false</showFewerCloseActions>
+    <systemUserEmail>automatedcase@00d600000006ycdeay.ext</systemUserEmail>
+    <useSystemEmailAddress>true</useSystemEmailAddress>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
+    <webToCase>
+        <caseOrigin>Web</caseOrigin>
+        <enableWebToCase>true</enableWebToCase>
+    </webToCase>
+</CaseSettings>

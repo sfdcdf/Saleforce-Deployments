@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Local</label>
+            <name>Local</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Lighthouse</label>
+            <name>Lighthouse</name>
+        </dataCategory>
+        <dataCategory>
+            <label>TORCHx</label>
+            <name>TORCHx</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Partner</label>
+            <name>Partner</name>
+        </dataCategory>
+        <dataCategory>
+            <label>WBN</label>
+            <name>WBN</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Channel</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

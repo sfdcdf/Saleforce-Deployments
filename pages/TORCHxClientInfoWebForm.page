@@ -1,0 +1,167 @@
+<apex:page showHeader="false" sidebar="false" controller="TORCHxClientInfoWebFormController" title="TORCHx Client Info Web Form">
+   <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"  />
+
+	<script>
+		$j = jQuery.noConflict();
+
+		function checkFileSize()
+		{
+		    var goodSize = true;
+		    $j('input[type=file]').each(function()
+		    {
+		        if(typeof this.files[0] !== 'undefined')
+		        {
+		            var file = this.files[0],
+		                size = typeof ActiveXObject !== 'undefined' ?
+		                    getIEFileSize(file)
+		                    :
+		                    file.fileSize || file.size;
+		 
+		            goodSize = 10485760 > size;
+		            if(!goodSize)
+		            {
+		                alert(this.files[0].name +' is too large - please choose a file that is 10Mb or less');
+		            }
+		 
+		            return goodSize;
+		        }
+		    });
+	    return goodSize;
+	}
+	</script>
+
+    <style>
+        .inputStyling {
+            min-width: 350px;
+        }
+
+        .inputTextAreaStyling {
+            width: 540px;
+            height: 100px;
+        }
+
+        body {
+            background-color: #183660;
+        }
+
+        .btnOverride {
+            -webkit-border-radius: 4px !important;
+            -moz-border-radius: 4px !important;
+            border-radius: 4px !important;
+            font-family: Arial !important;
+            color: #FFFFFF !important;
+            font-size: 14px !important;
+            background: #FAA21B !important;
+            padding: 10px 20px 10px 20px !important;
+            text-decoration: none !important;
+            border: none !important;
+            width: 100% !important;
+        }
+
+        .btnOverride:hover {
+            background: #FBB852 !important;
+            text-decoration: none !important;
+        }
+
+        .pbSubheader {
+            background-color: #754C29 !important;
+        }
+
+        .bPageBlock{
+            border-top: none !important;
+            /*padding-top: 10px !important;*/
+        }
+
+        .customtooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .customtooltip .customtooltiptext {
+            visibility: hidden;
+            width: 400px;
+            background-color: #183660;
+            color: #fff;
+            /*text-align: center;*/
+            border-radius: 6px;
+            padding: 10px;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .customtooltip:hover .customtooltiptext {
+            visibility: visible;
+        }
+
+        a.popUpLink {
+            color: #FAA21B;
+        }
+
+        a.popUpLink:hover {
+            color: #757575;
+        }
+    </style>
+
+    <apex:form >
+        <apex:image url="{!$Resource.TORCHxLogo}" height="75px" style="margin: auto; display: block; padding: 15px 0;"/>
+
+        <apex:outputPanel style="width: 600px; margin: auto;" layout="block">
+            <apex:pageBlock rendered="{!ncsCase.Id == ''}">
+                <br/>
+                <apex:pageMessages />
+                <div style="min-height: 350px;">
+
+                </div>
+            </apex:pageBlock>
+            <apex:pageBlock rendered="{!ncsCase.Id != ''}" title="{!ncsCase.Account.Name}">
+                <apex:pageBlockSection columns="1">
+                    <apex:pageMessages />
+                    Enter your MLS ID:
+                    <apex:inputText value="{!webForm.mlsId}" styleClass="inputStyling"/>
+                    Name of the person who will be the primary user on the account:
+                    <apex:inputText value="{!webForm.primaryUser}" styleClass="inputStyling"/>
+                    Email address of the primary user on the account (<span style="color: red;">cannot accept <b>Yahoo</b> email addresses</span>):
+                    <apex:inputText value="{!webForm.primaryUserEmail}" styleClass="inputStyling"/>
+                    <!--apex:inputFile value="{!attachedLogo.body}" filename="{!attachedLogo.name}" /-->
+                    Top 5 target cities or neighborhoods (<span style="color: red;">at least 1 city required</span>) for the main page of the site:
+                    <apex:inputTextArea value="{!webForm.top5TargetAreas}" styleClass="inputTextAreaStyling"/>
+                    List of any areas you want to avoid. These can be zips, counties, cities, etc - whatever works best:
+                    <apex:inputTextArea value="{!webForm.filterList}" styleClass="inputTextAreaStyling"/>
+                    The domain name you want to use for the site:
+                    <apex:inputText value="{!webForm.domainName}" styleClass="inputStyling"/>
+                    Domain host login <span class="customtooltip">username:
+                        <span class="customtooltiptext">
+                            Domain Login Username - This refers to the login username for your current website’s domain registration company (Web.com, GoDaddy, etc.). If you have questions about how to find this information, <a class="popUpLink" target="_blank" href="http://torchx.freshdesk.com/support/solutions/articles/4000096097-getting-your-existing-website-domain-login-credentials-">please read this quick guide</a>. If you do not currently have a website, please skip filling out this field.
+                        </span>
+                    </span>
+                    <apex:inputText value="{!webForm.loginUsername}" styleClass="inputStyling"/>
+                    Domain host login <span class="customtooltip">password:
+                        <span class="customtooltiptext">
+                            Domain Login Password - This refers to the login password for your current website’s domain registration company (Web.com, GoDaddy, etc.). If you have questions about how to find this information, <a class="popUpLink" target="_blank" href="http://torchx.freshdesk.com/support/solutions/articles/4000096097-getting-your-existing-website-domain-login-credentials-">please read this quick guide</a>. If you do not currently have a website, please skip filling out this field.
+                        </span>
+                    </span>
+                    <apex:inputSecret value="{!webForm.loginPW}" styleClass="inputStyling"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Upload Your Logos (limit each logo to under 10MB in size)" collapsible="false">
+                    <apex:inputFile value="{!attachedLogo1.body}" filename="{!attachedLogo1.name}" />
+                    <apex:inputFile value="{!attachedLogo2.body}" filename="{!attachedLogo2.name}" />
+                    <apex:inputFile value="{!attachedLogo3.body}" filename="{!attachedLogo3.name}" />
+                    <apex:inputFile value="{!attachedLogo4.body}" filename="{!attachedLogo4.name}" />
+                    <apex:inputFile value="{!attachedLogo5.body}" filename="{!attachedLogo5.name}" />
+                </apex:pageBlockSection>
+                <hr/>
+                <hr/>
+                <apex:commandButton action="{!saveFormData}" value="Submit" styleClass="btnOverride" onclick="return checkFileSize();"/>
+            </apex:pageBlock>
+
+            <apex:outputPanel style="color: #D7D7D7;">
+            Copyright ©2017 Web.com Group, Inc. All Rights Reserved. All registered trademarks herein are the property of their respective owners.
+            <br/><br/>
+            </apex:outputPanel>
+
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

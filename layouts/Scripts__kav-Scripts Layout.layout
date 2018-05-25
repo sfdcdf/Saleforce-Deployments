@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layoutSections>
+        <customLabel>false</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Information</label>
+        <layoutColumns>
+            <layoutItems>
+                <field>Script__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Attachments__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Attachments_2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Attachments_3__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Attachments_4__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Attachments_5__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
+</Layout>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>This allows users to edit Response and Notes Sections of Surveys</description><hasActivationRequired>false</hasActivationRequired><label>Issue Resolution Permissions</label><license>Salesforce</license><fieldPermissions>
+        <editable>true</editable>
+        <field>Customer_Surveys__c.Issue_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Customer_Surveys__c.Resolution_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Customer_Surveys__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions></PermissionSet>

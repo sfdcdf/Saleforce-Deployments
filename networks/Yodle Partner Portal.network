@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <communityRoles/>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailFooterText>Yodle Web.com, Inc. 330 W 34th St. 18th Floor New York, Ny 10001</emailFooterText>
+    <emailSenderAddress>certifiedpartnersupport@yodle.com</emailSenderAddress>
+    <emailSenderName>Lighthouse 360 Partner Team</emailSenderName>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>false</enableDirectMessages>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>false</enableGuestFileAccess>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>false</enableSiteAsContainer>
+    <enableTalkingAboutStats>true</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>false</enableTopicAssignmentRules>
+    <enableTopicSuggestions>true</enableTopicSuggestions>
+    <enableUpDownVote>false</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <logoutUrl>http://yodle-community.force.com/LighthouseDental</logoutUrl>
+    <navigationLinkSet>
+        <navigationMenuItem>
+            <label>Topics</label>
+            <position>1</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <target>ShowMoreTopics</target>
+            <type>NavigationalTopic</type>
+        </navigationMenuItem>
+    </navigationLinkSet>
+    <networkMemberGroups>
+        <permissionSet>Partner_Training_Permission_Sets</permissionSet>
+        <permissionSet>Partner_Community_User_Management_Permission_Set</permissionSet>
+        <permissionSet>Partner_Community_VF_Page_Object_Misc_access</permissionSet>
+        <permissionSet>Partner_Community_Admins_Permission_Set</permissionSet>
+        <profile>Partner Community Lighthouse Dental</profile>
+        <profile>Partner Community Uncertified Lighthouse Dental</profile>
+        <profile>Partner Community User</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Standard</homePageOverrideSetting>
+        <loginPageOverrideSetting>Standard</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>Yodle_Partner_Portal_C</picassoSite>
+    <selfRegistration>false</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>Yodle_Partner_Portal</site>
+    <status>Live</status>
+    <tabs>
+        <customTab>Welcome_Page</customTab>
+        <customTab>Account_Summary</customTab>
+        <customTab>CPP_Lead_Registration__c</customTab>
+        <customTab>Marketing_Development_Funds</customTab>
+        <customTab>Partner_Sales_Form</customTab>
+        <customTab>Partner_Training</customTab>
+        <customTab>Partner_Certification_Quiz</customTab>
+        <defaultTab>01r32000000ESgf</defaultTab>
+        <standardTab>Workspace</standardTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <urlPathPrefix>LighthouseDental</urlPathPrefix>
+    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+</Network>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Allow for certain members to be able to use additional record types across multiple profiles
+Including renewals, upsells</description><hasActivationRequired>false</hasActivationRequired><label>WBN - Access to Corporate Opportunities (RecordTypes)</label><license>Salesforce</license><recordTypeVisibilities>
+        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <recordType>Opportunity.YBN_Renewal</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities></PermissionSet>

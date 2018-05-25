@@ -1,0 +1,23 @@
+<apex:page controller="TextbrokerTestController">
+
+	<h1>API CALLS</h1>
+	<br />
+	<h2>Test Page to Trigger Textbroker Calls</h2>
+	<br />
+	<apex:form >
+		<apex:pageBlock title="Make REST Calls by Clicking the Buttons">
+			<apex:commandButton action="{!HttpsTestCall}" value="HTTPS Test Call" />
+			<apex:commandButton action="{!createOrders}" value="Create Orders" />
+			<apex:commandButton action="{!checkReadyOrders}" value="Check Ready Orders" />
+			<apex:commandButton action="{!exportOrder}" value="Get Word Doc" />
+			<apex:commandButton action="{!confirmOrdersExported}" value="Confirm Word Doc Received" />
+		<!-- <apex:commandButton action="{!acceptOrders}" value="Accept Orders" /> --> 
+			<apex:commandButton action="{!requestRevisions}" value="Request Revisions" />
+		</apex:pageBlock>
+	</apex:form>
+
+	<pre>
+		<apex:outputText value="{!display}" />
+	</pre>
+	
+</apex:page>

@@ -1,0 +1,51 @@
+<apex:page showHeader="false" sidebar="false" standardController="Account">
+    <style>
+        .labelCol {
+			color: #54698d !important;
+    		font-weight: normal !important;
+        }
+    </style>
+
+	<apex:pageBlock mode="maindetail">
+        <apex:pageBlockSection >
+			<apex:outputText value="{!IF(Account.Monthly_Budget__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Monthly_Budget__c.label}">
+				<apex:param value="{!Account.Monthly_Budget__c}"/>
+			</apex:outputText>
+			<apex:outputText value="{!IF(Account.invoiced_last_mtd__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.invoiced_last_mtd__c.label}">
+				<apex:param value="{!Account.invoiced_last_mtd__c}"/>
+			</apex:outputText>
+
+			<apex:outputText value="{!IF(Account.Budget__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Budget__c.label}">
+				<apex:param value="{!Account.Budget__c}"/>
+			</apex:outputText>
+			<apex:outputText value="{!IF(Account.Spend_last_MTD__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Spend_last_MTD__c.label}">
+				<apex:param value="{!Account.Spend_last_MTD__c}"/>
+			</apex:outputText>
+
+			<apex:outputText value="{!IF(Account.OutRank_Fees__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.OutRank_Fees__c.label}">
+				<apex:param value="{!Account.OutRank_Fees__c}"/>
+			</apex:outputText>
+			<apex:outputText value="{!IF(Account.invoiced_this_MTD__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.invoiced_this_MTD__c.label}">
+				<apex:param value="{!Account.invoiced_this_MTD__c}"/>
+			</apex:outputText>
+
+			<apex:outputText value="{!IF(Account.OutRank_Fees__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Fee_Essentials__c.label}">
+				<apex:param value="{!Account.Fee_Essentials__c}"/>
+			</apex:outputText>
+			<apex:outputText value="{!IF(Account.Spend_This_MTD__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Spend_This_MTD__c.label}">
+				<apex:param value="{!Account.Spend_This_MTD__c}"/>
+			</apex:outputText>
+
+			<apex:outputText value="{!IF(Account.Budget_Ads__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Budget_Ads__c.label}">
+				<apex:param value="{!Account.Budget_Ads__c}"/>
+			</apex:outputText>
+			<apex:outputText value="{!IF(Account.AdStation_Balance__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.AdStation_Balance__c.label}">
+				<apex:param value="{!Account.AdStation_Balance__c}"/>
+			</apex:outputText>
+
+			<apex:outputText value="{!IF(Account.Yodle_Web_Fees__c != null, IF(Account.Currency_Code__c == 'CAD', 'CAD', 'USD'), '')}{0, number, $###,###,###,###.##}" label="{!$ObjectType.Account.fields.Yodle_Web_Fees__c.label}">
+				<apex:param value="{!Account.Yodle_Web_Fees__c}"/>
+			</apex:outputText>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata"><labels>
+        <fullName>AccountMLSNeededByMLSWorksheetError</fullName>
+        <categories>TORCHx, Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountMLSNeededByMLSWorksheetError</shortDescription>
+        <value>Please create the Account MLS record(s) before creating this MLS Worksheet!</value>
+    </labels><labels>
+        <fullName>AccountTORCHXandLBWMapQuery</fullName>
+        <categories>Query</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountTORCHXandLBWMapQuery</shortDescription>
+        <value>select Id, Product_Type_Transactional__c, Days_Since_Live__c, Days_Live_Equivalent__c, CSC_Completed_Date__c, Days_in_Save_Mode__c, (select Id, ClosedDate, Auto_Close_Date__c from Cases where RecordType.Name = 'Outbound Call' and Reason = 'CSC' and IsClosed = true and Status = 'Complete' order by ClosedDate DESC limit 1) from Account where Id in :accountIdSet and (Product_Type_Transactional__c like '%TORCHx%' or Product_Type_Transactional__c = 'Leads By Web')</value>
+    </labels><labels>
+        <fullName>BilledThroughHermes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BilledThroughHermes</shortDescription>
+        <value>Client is billed through Hermes! View Client in Hermes!</value>
+    </labels><labels>
+        <fullName>CSTouchpoint30DayError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CSTouchpoint30DayError</shortDescription>
+        <value>CS Touchpoint must be scheduled after 30 days from the last CS Touchpoint Case Created Date.</value>
+    </labels><labels>
+        <fullName>CancellationOutcome2AbortAutomation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CancellationOutcome2AbortAutomation</shortDescription>
+        <value>Save Mode; Cancelled; Duplicate Retention Case</value>
+    </labels><labels>
+        <fullName>CancellationSavedOutcome</fullName>
+        <categories>Cancellation Saved Outcome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CancellationSavedOutcome</shortDescription>
+        <value>Saved with No Concessions; Saved with Hard Concessions; Saved with Soft Concessions; Saved with Upsell</value>
+    </labels><labels>
+        <fullName>ClosedOptOutWBNStatus</fullName>
+        <categories>WBN</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ClosedOptOutWBNStatus</shortDescription>
+        <value>Completed - Client Declined</value>
+    </labels><labels>
+        <fullName>DeleteNoneAccountMarketoActivityBatchQuery</fullName>
+        <categories>DeleteNoneAccountMarketoActivityBatch, Query</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DeleteNoneAccountMarketoActivityBatchQuery</shortDescription>
+        <value>select Id, Campaign_ID__c from Account_Marketo_Activity__c where Account__c = ''</value>
+    </labels><labels>
+        <fullName>EmailForTouchplanDuplicateError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailForTouchplanDuplicateError</shortDescription>
+        <value>Email for Touchplan value is already used!</value>
+    </labels><labels>
+        <fullName>LBWMonthlyPerformanceAutomationBatchQuery</fullName>
+        <categories>Custom Automation, SOQL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBWMonthlyPerformanceAutomationBatchQuery</shortDescription>
+        <value>select Id from Account where Id in (select Account__c from Custom_Automation__c where Automation_Status__c = 'Scheduled' and Automation_Trigger_Date__c = TODAY and Automation_Type_API_Name_External_ID__c = 'Create_Monthly_LBW_Account_Performance') and Marketo_ID__c != '' and Status__c = 'LIVE' and Pause_Touchplan__c = false and Product_Type_Transactional__c like '%Leads By Web%'</value>
+    </labels><labels>
+        <fullName>LocalHLPanelOrganicCaseQuery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LocalHLPanelOrganicCaseQuery</shortDescription>
+        <value>select Id, Google_Listing_Status__c, OV_Max_Attempts__c from Organic_Analysis__c where RecordType.Name = 'Maps Initial Claiming' and Account_Name__c =: acctId order by LastModifiedDate DESC limit 1</value>
+    </labels><labels>
+        <fullName>MarketoCampaignSyncBatchQuery</fullName>
+        <categories>MarketoCampaignSyncBatch, Query</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MarketoCampaignSyncBatchQuery</shortDescription>
+        <value>select Id, Campaign_ID__c from Marketo_Campaign__c where Date_Time_of_Last_Sync_With_Marketo__c = null</value>
+    </labels><labels>
+        <fullName>NCSCaseCSCDateToMarketoBatchQuery</fullName>
+        <categories>Custom Query</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCSCaseCSCDateToMarketoBatchQuery</shortDescription>
+        <value>select Id, Next_Scheduled_CSC2__c, AccountId from Case where RecordType.Name = 'NCS - AutoLaunch' and Next_Scheduled_CSC2__c != null and Account.Marketo_ID__c != '' and Account.Sync_to_Marketo__c = true and Sync_to_Marketo__c = false</value>
+    </labels><labels>
+        <fullName>NCSCaseFormSubmitted</fullName>
+        <categories>TORCHx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCSCaseFormSubmitted</shortDescription>
+        <value>Success: Your information has been delivered to our website experts. Thank you!</value>
+    </labels><labels>
+        <fullName>NCSCaseNotFoundError</fullName>
+        <categories>TORCHx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCSCaseNotFoundError</shortDescription>
+        <value>Error: there was an issue delivering the information. Please call 888-428-9659 for assistance.</value>
+    </labels><labels>
+        <fullName>OpenCSTouchPlanError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpenCSTouchPlanError</shortDescription>
+        <value>There's an open CS Touch Plan Case. Please update the Scheduled Call date on the opened Case fore rescheduled. To schedule the next 30 day CS Touch Plan call, please close the open Case first.</value>
+    </labels><labels>
+        <fullName>OrganicCustomContentSetupCaseBatchExcludeServicesOffered</fullName>
+        <categories>OrganicCustomContentSetupCaseBatch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrganicCustomContentSetupCaseBatchExcludeServicesOffered</shortDescription>
+        <value>Lawyer, Roofer, General Contractor, HVAC Contractor, Home Remodeling, Kitchen Remodeling, Bathroom Remodeling, Electrician, Accountant, Dentist</value>
+    </labels><labels>
+        <fullName>SchedulingPageNewScheduledDT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SchedulingPageNewScheduledDT</shortDescription>
+        <value>In Progress</value>
+    </labels><labels>
+        <fullName>ShowNoFeesMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ShowNoFeesMessage</shortDescription>
+        <value>All fees have $0 value for this Account.</value>
+    </labels><labels>
+        <fullName>TLS_Warning_Help_URL_Link_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TLS Warning Help URL Link Text</shortDescription>
+        <value>Contact Salesforce Support</value>
+    </labels><labels>
+        <fullName>TLS_Warning_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TLS Warning Message</shortDescription>
+        <value>This device is using TLS 1.0 to access Salesforce, and TLS 1.0 will no longer work after {effective_date}.</value>
+    </labels><labels>
+        <fullName>TORCHXMonthlyReviewAutomationBatchQuery</fullName>
+        <categories>Custom Automation, SOQL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TORCHXMonthlyReviewAutomationBatchQuery</shortDescription>
+        <value>select Id, Marketo_ID__c from Account where Id in (select Account__c from Custom_Automation__c where Automation_Status__c = 'Scheduled' and Automation_Trigger_Date__c = TODAY and Automation_Type_API_Name_External_ID__c = 'TORCHX_MONTHLY_REVIEW_EVERY_30') and Status__c = 'LIVE' and Marketo_ID__c != '' and Pause_Touchplan__c = false and Product_Type_Transactional__c like '%TORCHx%'</value>
+    </labels><labels>
+        <fullName>TORCHxMedicalBusinessHourName</fullName>
+        <categories>TORCHx Medical Scheduling</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TORCHxMedicalBusinessHourName</shortDescription>
+        <value>TORCHx and Medical OB Call Hours</value>
+    </labels><labels>
+        <fullName>TORCHxScheduleTimeNotAvailableError</fullName>
+        <categories>TORCHx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TORCHxScheduleTimeNotAvailableError</shortDescription>
+        <value>Selected time is not available anymore!</value>
+    </labels><labels>
+        <fullName>UnOptOutWBNStatus</fullName>
+        <categories>WBN</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnOptOutWBNStatus</shortDescription>
+        <value>Call In Progress</value>
+    </labels><labels>
+        <fullName>UnableToFindFeesInYodleLive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnableToFindFeesInYodleLive</shortDescription>
+        <value>Unable to find billing info for this client. Please check the billing application for this client's fees!</value>
+    </labels></CustomLabels>

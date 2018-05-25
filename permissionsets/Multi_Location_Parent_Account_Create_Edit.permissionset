@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><hasActivationRequired>false</hasActivationRequired><label>Multi Location Parent Account Create/Edit</label><license>Salesforce</license><fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Product_Type_Transactional__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Product_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions><objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions><recordTypeVisibilities>
+        <recordType>Account.Multi_Location_Parent</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities></PermissionSet>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>partner@yodle.com</email>
+    <name>Partner</name>
+    <queueMembers>
+        <roles>
+            <role>VPofOperationsA</role>
+            <role>CSOperations</role>
+            <role>ExecutiveVPA</role>
+            <role>LocalCSM</role>
+            <role>SEMMarketingOps</role>
+            <role>WebDevA</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>
