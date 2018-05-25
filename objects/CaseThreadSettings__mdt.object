@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>CaseRecordType__c</fullName>
+        <description>Enter the case record type name separated by a comma (",")</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Case Record Type(s)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>ClosedHours__c</fullName>
+        <description>Used to designate the number of hours a case is closed before an incoming email would generate a new case instead of threading and reopening the case.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Closed Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>DisableThreading__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to designate if a case should not thread at all.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Disables all threading on a particular case record type; Closed or Open cases.</inlineHelpText>
+        <label>Disable Threading</label>
+        <type>Checkbox</type>
+    </fields><label>Case Thread Setting</label><pluralLabel>Case Thread Settings</pluralLabel><visibility>Public</visibility></CustomObject>

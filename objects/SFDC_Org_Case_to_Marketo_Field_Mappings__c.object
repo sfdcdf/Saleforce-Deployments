@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>SFDC_Field_API_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SFDC Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Sync_Blank_Values__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>When a value is changed from a value to blank, update the Marketo field value to null.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When a value is changed from a value to blank, update the Marketo field value to null.</inlineHelpText>
+        <label>Sync Blank Values</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Sync_Field__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync Field</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><customSettingsType>List</customSettingsType><enableFeeds>false</enableFeeds><label>SFDC Org Case to Marketo Field Mappings</label><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SFDC_Field_API_Name__c</columns>
+        <columns>Sync_Field__c</columns>
+        <columns>Sync_Blank_Values__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews></CustomObject>

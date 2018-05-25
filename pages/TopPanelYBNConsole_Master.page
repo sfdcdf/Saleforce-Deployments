@@ -1,0 +1,105 @@
+<apex:page standardController="Account" showHeader="true" showChat="false" sidebar="false">
+  
+    
+    <div id="column">    
+    <apex:outputText > <div class="businessname">{!Account.Name}</div> </apex:outputText>
+        <apex:outputText >{!Account.Client_First_Name__c} {!Account.Client_Last_Name__c}</apex:outputText> <br/>
+<apex:outputText > {!Account.Email__c} </apex:outputText> <br/>
+        <support:clickToDial number="{!Account.Phone}" entityId="{!Account.id}"/>
+    </div>
+    
+    <div id="column">
+      <div class="header">Account Information</div>
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr><td>Product Type:</td><td>{!Account.Product_Type_Transactional__c}</td></tr>     
+            <tr><td>Next Bill Date: &nbsp; </td><td><apex:outputText value="{0,date,MM/dd/yyyy}">
+                   <apex:param value="{!Account.Next_Billing_Date__c}" />
+         </apex:outputText></td></tr>
+        <tr><td>Corp Acct ID:</td><td>{!TEXT(Account.Relationship_ID__c)}</td></tr>
+        <tr><td>Website:</td><td><a href="http://{!Account.Website}" target="_blank">{!Account.Website}</a></td></tr>       
+        </table>
+      
+    </div>
+    
+    <div id="column">
+        <div class="header">Corporate Information</div>
+        <apex:outputText ><a href=" http://live.yodle.com/app/corporaterelationship/modify?relationshipId={!TEXT(Account.Relationship_ID__c)}&externalView=false" target="_blank">View Corporate Account</a></apex:outputText>
+        </div>
+    
+        
+    <div id="column">
+        <apex:outputText ><b>General Value Statement: </b><a href="/06932000002YRXlAAO" target="_blank">View File</a></apex:outputText><br/>
+        <div class="header">Important Account Notes
+        <div class="helpOrb tooltip">
+            <span>
+               You can edit this field on the Account Level
+           </span>
+        </div></div>
+        <apex:outputText >
+        {!IF((Account.Important_Account_Notes__c!= ''),Account.Important_Account_Notes__c,"None")}
+        </apex:outputText> 
+    </div>
+    
+   
+    <style type="text/css">
+        body {
+            font-size:11px;
+            line-height:15px;
+            paddings:5px;
+        }
+        #column {
+            float:left;
+            width:18%;
+            padding-right:10px;
+           
+        }
+        .businessname {
+            font-size:14px;
+            font-weight:bold;
+            line-height:16px;
+        }
+        .header {
+            font-size:11px;
+            font-weight:bold;
+            line-height:15px;
+            
+         }
+         .highlight {
+            color: red;
+        }
+         .clear {
+            clear:both;
+            }
+            
+            div.tooltip {
+    width: 20px;
+    float: right;
+    display:inline;
+    position: absolute;
+}
+
+div.tooltip span {
+    display: none;
+    font-weight:normal;
+    text-align:left;
+    padding: 3px 5px;
+    margin-left: 8px;
+    width: 220px;
+}
+
+div.tooltip:hover span {
+    display: inline;
+    position: absolute;
+    border: 1px solid #cccccc;
+    background: #FFC;
+    margin-left:-230px;
+    color: #000000;
+    z-index:10000;
+}
+
+        </style>
+
+<apex:includeScript value="/support/console/24.0/integration.js"/>
+
+   
+</apex:page>

@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Additional_team_members_to_involve__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional team members to involve?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Been_part_of_reseller_program_before__c</fullName>
+        <externalId>false</externalId>
+        <label>Been part of reseller program before?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Bundling_integrating_w_other_products__c</fullName>
+        <externalId>false</externalId>
+        <label>Bundling/integrating w/ other products?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Do_you_have_a_sales_team__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you have a sales team?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Do_you_have_specific_prospects_in_mind__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you have specific prospects in mind?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>How_are_you_currently_marketing__c</fullName>
+        <externalId>false</externalId>
+        <label>How are you currently marketing?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>How_long_have_you_been_in_business__c</fullName>
+        <externalId>false</externalId>
+        <label>How long have you been in business?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&gt;1 year</fullName>
+                    <default>false</default>
+                    <label>&gt;1 year</label>
+                </value>
+                <value>
+                    <fullName>2-3 years</fullName>
+                    <default>false</default>
+                    <label>2-3 years</label>
+                </value>
+                <value>
+                    <fullName>4-5 years</fullName>
+                    <default>false</default>
+                    <label>4-5 years</label>
+                </value>
+                <value>
+                    <fullName>6-10 years</fullName>
+                    <default>false</default>
+                    <label>6-10 years</label>
+                </value>
+                <value>
+                    <fullName>11-15 years</fullName>
+                    <default>false</default>
+                    <label>11-15 years</label>
+                </value>
+                <value>
+                    <fullName>16+ years</fullName>
+                    <default>false</default>
+                    <label>16+ years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>IF_YES_what_products__c</fullName>
+        <externalId>false</externalId>
+        <label>IF YES, what products?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>IF_YES_which_one__c</fullName>
+        <externalId>false</externalId>
+        <label>IF YES: which one?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>If_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>If Other:</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>If_yes_who__c</fullName>
+        <externalId>false</externalId>
+        <label>If yes- who?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Marketing_commitments_in_1st_month__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing commitments in 1st month?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>email</fullName>
+                    <default>false</default>
+                    <label>email</label>
+                </value>
+                <value>
+                    <fullName>webinar</fullName>
+                    <default>false</default>
+                    <label>webinar</label>
+                </value>
+                <value>
+                    <fullName>newsletter</fullName>
+                    <default>false</default>
+                    <label>newsletter</label>
+                </value>
+                <value>
+                    <fullName>direct mailer</fullName>
+                    <default>false</default>
+                    <label>direct mailer</label>
+                </value>
+                <value>
+                    <fullName>calls to existing clients</fullName>
+                    <default>false</default>
+                    <label>calls to existing clients</label>
+                </value>
+                <value>
+                    <fullName>ads</fullName>
+                    <default>false</default>
+                    <label>ads</label>
+                </value>
+                <value>
+                    <fullName>social campaign</fullName>
+                    <default>false</default>
+                    <label>social campaign</label>
+                </value>
+                <value>
+                    <fullName>OTHER</fullName>
+                    <default>false</default>
+                    <label>OTHER</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields><fields>
+        <fullName>Number_of_employees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of employees?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1-10</fullName>
+                    <default>false</default>
+                    <label>1-10</label>
+                </value>
+                <value>
+                    <fullName>11-20</fullName>
+                    <default>false</default>
+                    <label>11-20</label>
+                </value>
+                <value>
+                    <fullName>21-50</fullName>
+                    <default>false</default>
+                    <label>21-50</label>
+                </value>
+                <value>
+                    <fullName>51-100</fullName>
+                    <default>false</default>
+                    <label>51-100</label>
+                </value>
+                <value>
+                    <fullName>101+</fullName>
+                    <default>false</default>
+                    <label>101+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Partner Transition</relationshipLabel>
+        <relationshipName>Partner_Transition</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Personality_traits_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Personality traits/Notes:</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Projected_of_your_clients_to_buy_lh_yo__c</fullName>
+        <externalId>false</externalId>
+        <label>Projected # of your clients to buy lh/yo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1-5</fullName>
+                    <default>false</default>
+                    <label>1-5</label>
+                </value>
+                <value>
+                    <fullName>6-10</fullName>
+                    <default>false</default>
+                    <label>6-10</label>
+                </value>
+                <value>
+                    <fullName>11-25</fullName>
+                    <default>false</default>
+                    <label>11-25</label>
+                </value>
+                <value>
+                    <fullName>26-50</fullName>
+                    <default>false</default>
+                    <label>26-50</label>
+                </value>
+                <value>
+                    <fullName>51-100</fullName>
+                    <default>false</default>
+                    <label>51-100</label>
+                </value>
+                <value>
+                    <fullName>101+</fullName>
+                    <default>false</default>
+                    <label>101+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Sales_strategy_for_introducing_lh_yo__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales strategy for introducing lh/yo?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Training_call_scheduled_on__c</fullName>
+        <externalId>false</externalId>
+        <label>Training call scheduled on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>What_is_your_current_sales_strategy__c</fullName>
+        <externalId>false</externalId>
+        <label>What is your current sales strategy?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>What_resources_do_you_need_from_us__c</fullName>
+        <externalId>false</externalId>
+        <label>What resources do you need from us?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>Who_is_selling_supporting_lh_yo__c</fullName>
+        <externalId>false</externalId>
+        <label>Who is selling/supporting lh/yo?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><fields>
+        <fullName>how_will_you_comp_your_reps__c</fullName>
+        <externalId>false</externalId>
+        <label>how will you comp your reps?</label>
+        <length>2500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Used to document the Partner Closing Script and transition to training.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Partner Transition</label><nameField>
+        <displayFormat>PT-{0000}</displayFormat>
+        <label>Partner Transition  Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Partner Transition</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><validationRules>
+        <fullName>If_Other_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( INCLUDES(  Marketing_commitments_in_1st_month__c  , "Other"),  ISBLANK(  If_Other__c  ))</errorConditionFormula>
+        <errorMessage>You specified Other in Marketing Commitments - Please share what the other is.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Must_have_all_details_to_complete</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Status__c , "Complete"),
+OR(
+ISPICKVAL( Do_you_have_a_sales_team__c ,""),
+ISPICKVAL( How_long_have_you_been_in_business__c ,""),  
+ISPICKVAL( Number_of_employees__c , ""),  
+ISPICKVAL( Bundling_integrating_w_other_products__c ,""),  
+ISBLANK( Additional_team_members_to_involve__c ),
+ISPICKVAL( Been_part_of_reseller_program_before__c ,""),
+ISBLANK( how_will_you_comp_your_reps__c ),
+ISBLANK( Who_is_selling_supporting_lh_yo__c ),
+ISBLANK( What_is_your_current_sales_strategy__c ),
+ISBLANK( Sales_strategy_for_introducing_lh_yo__c ),
+ISBLANK( How_are_you_currently_marketing__c ),
+ISBLANK(Marketing_commitments_in_1st_month__c),
+ISBLANK( Training_call_scheduled_on__c ),
+ISBLANK( What_resources_do_you_need_from_us__c ),
+ISPICKVAL( Do_you_have_specific_prospects_in_mind__c ,""),
+ISPICKVAL( Projected_of_your_clients_to_buy_lh_yo__c ,""),
+ISBLANK( Personality_traits_Notes__c )))</errorConditionFormula>
+        <errorMessage>Please fill in all the details before marking this as complete.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Partner_Programs</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL(  Been_part_of_reseller_program_before__c  , "YES"),  ISBLANK(  IF_YES_which_one__c  ))</errorConditionFormula>
+        <errorMessage>Please answer which programs they have participated in.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Require_Products</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL( Bundling_integrating_w_other_products__c , "YES"),  ISBLANK( IF_YES_what_products__c ))</errorConditionFormula>
+        <errorMessage>Please fill in what Products they will be bundling with.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Specific_Clients</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL(  Do_you_have_specific_prospects_in_mind__c  , "YES"),  ISBLANK(  If_yes_who__c  ))</errorConditionFormula>
+        <errorMessage>Please specify who the specific clients are.</errorMessage>
+    </validationRules></CustomObject>

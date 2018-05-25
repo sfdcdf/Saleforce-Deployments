@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The related account.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>SMS Trackings</relationshipLabel>
+        <relationshipName>SMS_Trackings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The related touch point case.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The related touch point case.</inlineHelpText>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>SMS Trackings</relationshipLabel>
+        <relationshipName>SMS_Trackings</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Client_First_Name__c</fullName>
+        <description>First name of the Marketo Lead/Contact associated to lead.</description>
+        <externalId>false</externalId>
+        <label>Client First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_Last_Name__c</fullName>
+        <description>Last name of the Marketo Lead/Contact associated to lead.</description>
+        <externalId>false</externalId>
+        <label>Client Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The phone number that was texted.</inlineHelpText>
+        <label>Client Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields><fields>
+        <fullName>Client_Response__c</fullName>
+        <description>The response from the client. 'Opt Out' will check the 'SMS Opt Out' field on the Account. 'Unrecognized Response' will trigger an automated reply to try again. The reply will create another SMS Tracking record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The response from the client.</inlineHelpText>
+        <label>Client Response</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Confirm</fullName>
+                    <default>false</default>
+                    <label>Confirm</label>
+                </value>
+                <value>
+                    <fullName>Reschedule</fullName>
+                    <default>false</default>
+                    <label>Reschedule</label>
+                </value>
+                <value>
+                    <fullName>Opt Out</fullName>
+                    <default>false</default>
+                    <label>Opt Out</label>
+                </value>
+                <value>
+                    <fullName>Opt In</fullName>
+                    <default>false</default>
+                    <label>Opt In</label>
+                </value>
+                <value>
+                    <fullName>Unrecognized Response</fullName>
+                    <default>false</default>
+                    <label>Unrecognized Response</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Intro_Sent__c</fullName>
+        <description>Intro message was/not sent.  The message informs the client about the standard rates may apply when receiving/sending a text.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Intro message was/not sent.  The message informs the client about the standard rates may apply when receiving/sending a text.</inlineHelpText>
+        <label>Intro Sent?</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
+    </fields><fields>
+        <fullName>Invalid_Phone_Number__c</fullName>
+        <description>The phone number provide is not valid.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The phone number provide is not valid.</inlineHelpText>
+        <label>Invalid Phone Number?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
+    </fields><fields>
+        <fullName>Marketo_Email_Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The related Marketo Email Campaign.</description>
+        <externalId>false</externalId>
+        <label>Marketo Email Campaign</label>
+        <referenceTo>Marketo_Email_Campaign__c</referenceTo>
+        <relationshipLabel>SMS Trackings</relationshipLabel>
+        <relationshipName>SMS_Trackings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Marketo_Lead_Id__c</fullName>
+        <description>Lead Id from the Marketo associated to the contact/recipient.</description>
+        <externalId>false</externalId>
+        <label>Marketo Lead Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Response_Date_Time__c</fullName>
+        <description>The date/time the client responded to the text.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time the client responded to the text.</inlineHelpText>
+        <label>Response Date/Time</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Twilio_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Twilio Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Creates a record from Twilio when a client responds to a SMS (text messaging).</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>SMS Tracking</label><nameField>
+        <displayFormat>SMS-{00000}</displayFormat>
+        <label>SMS Tracking Number</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>SMS Trackings</pluralLabel><recordTypeTrackHistory>true</recordTypeTrackHistory><searchLayouts>
+        <customTabListAdditionalFields>Client_First_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Last_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Phone_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Response__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Case__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Client_First_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_Last_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_Response__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Case__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_First_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Last_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Response__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Case__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Case__c</searchFilterFields>
+        <searchResultsAdditionalFields>Case__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_First_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Last_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Phone_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Response__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Twilio_Id__c</searchResultsAdditionalFields>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Client_First_Name__c</columns>
+        <columns>Client_Last_Name__c</columns>
+        <columns>Client_Phone_Number__c</columns>
+        <columns>Client_Response__c</columns>
+        <columns>Response_Date_Time__c</columns>
+        <columns>Case__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><recordTypes>
+        <fullName>Default</fullName>
+        <active>true</active>
+        <description>Default record type</description>
+        <label>Default</label>
+        <picklistValues>
+            <picklist>Client_Response__c</picklist>
+            <values>
+                <fullName>Confirm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt Out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unrecognized Response</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Intro_Sent__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invalid_Phone_Number__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes></CustomObject>

@@ -1,0 +1,55 @@
+<apex:page standardController="Opportunity" extensions="NetAPCtl_NetworkAdoption">
+    <apex:form >
+        <apex:pageBlock title="Network Adoption Products">
+        <apex:pageBlockSection title="Opportunity Overview" columns="1">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Opportunity"/>
+                <apex:outputLink value="/{!Opportunity.Id}">
+                    {!Opportunity.Name}
+                </apex:outputLink>
+            </apex:pageBlockSectionItem>
+            <apex:pageblockSectionItem >
+                <apex:outputLabel value="Account"/>
+                <apex:outputLink value="/{!Opportunity.AccountId}">
+                    {!Opportunity.Account.Name}
+                </apex:outputLink>
+            </apex:pageblockSectionItem>
+            <apex:outputField value="{!Opportunity.Products__c}"/>               
+
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Adoption Products" columns="1">
+            <apex:pageBlockTable value="{!lstNetProds}" var="np">
+                <apex:column headerValue="Action" width="70">
+                    <apex:commandLink value="Remove" action="{!remove}" rendered="{!np.rowNum>0}" immediate="true">
+                        <apex:param name="removeRow" value="{!np.rowNum}" assignTo="{!selectedRow}"/>
+                    </apex:commandLink>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.NetworkAdoptionProduct__c.fields.Product__c.Label}" >
+                    <apex:inputField required="true" value="{!np.nap.Product__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.NetworkAdoptionProduct__c.fields.SalesPrice__c.Label}" width="110">
+                    <apex:inputField required="true" value="{!np.nap.SalesPrice__c}" style="width: 95px !important;"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.NetworkAdoptionProduct__c.fields.Quantity__c.Label + " "}" width="65">
+                    <apex:inputField required="true" value="{!np.nap.Quantity__c}" style="width: 50px !important;"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.NetworkAdoptionProduct__c.fields.AdoptionPct__c.Label}" width="70">
+                    <apex:inputField required="true" value="{!np.nap.AdoptionPct__c}" style="width: 50px !important;"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.NetworkAdoptionProduct__c.fields.StartDate__c.Label}" width="170">
+                    <apex:inputField value="{!np.nap.StartDate__c}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.NetworkAdoptionProduct__c.fields.AdoptionLen__c.Label}" width="80">
+                    <apex:inputField required="true" value="{!np.nap.AdoptionLen__c}" style="width: 60px !important;"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:commandButton value="Add Row" action="{!addRow}" disabled="{!Opportunity.Id==null}"/>  
+        </apex:pageBlockSection>
+        <apex:pageblockButtons location="Bottom">
+            <apex:commandButton value="Save Adoption Products" action="{!createRecords}" />
+            <apex:commandButton value="Return To Opp" action="{!back}" />
+        </apex:pageblockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

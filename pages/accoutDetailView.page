@@ -1,0 +1,183 @@
+<apex:page standardController="Account">
+
+  
+<div style="width:100%;">
+
+<div style="margin-right:25px; line-height:19px; margin-top:19px;">
+<div style="font-family:Arial; font-size:24px; font-weight:bold; color:#464646;">{!Account.Name}</div>
+<div style="font-family:Arial; font-size:15px; color:#464646;">{!Account.Secondary_Segments__c}</div><br /><br />
+</div>
+
+
+<div style="width:22%; float: left; margin-right:25px; line-height:19px; margin-top:5px;">
+
+<div style="padding-bottom:18px;">
+<div style="font-size: 15px; font-weight:bold;">Client Information<hr /></div>
+<a href="http://live.yodle.com/dashboard?clientId={!Account.Client_ID__c}&externalView=false" target="_blank">View Client Dashboard</a><br />
+<a href="http://live.yodle.com/app/clientconfig/home/clientsummary?clientId={!Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br /><br />
+
+<b>Adversite</b><br />
+<a href="http://{!Account.Website}" target="_blank">http://{!Account.Website}</a><br /><br />
+
+<b>Metro</b><br />
+<br /><br />
+
+<b>Services Offered</b><br />
+<br /><br />
+
+<b>Start Date</b><br />
+
+        <apex:outputText value="{0,date, MMMMM d, Y}">
+               <apex:param value="{!Account.Live_Date__c}" />
+        </apex:outputText>
+
+  
+<br /><i>
+<apex:outputText value="{0, number,###,###,###,###}"><apex:param value="{!Account.Days_Live__c}"/></apex:outputText> Days Live</i>
+<br /><br />
+
+<b>Marketing Specialist</b><br />
+
+
+{!Account.IMS_Rep__c}<br /><br />
+</div>
+
+<div style="padding-bottom:18px;">
+<div style="font-size: 15px; font-weight:bold;">Client Engagment<hr /></div>
+<b>Client Uploaded Photos</b><br />
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr><td>Lifetime</td><td align="right"><apex:outputText value="{0, number,###,###,###,###}"><apex:param value="{!Account.Uploaded_Photos_Lifetime__c}"/></apex:outputtext></td></tr>
+<tr><td>Last 30 Days</td><td align="right"><apex:outputText value="{0, number,###,###,###,###}"><apex:param value="{!Account.Uploaded_Photos_Last_30__c}"/></apex:outputtext></td></tr>
+
+</table>
+
+<br />
+
+<b>Client Solicited Reviews</b><br />
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr><td>Lifetime</td><td align="right"><apex:outputText value="{0, number,###,###,###,###}"><apex:param value="{!Account.Solicited_Reviews_Lifetime__c}"/></apex:outputtext></td></tr>
+<tr><td>Last 30 Days</td><td align="right"><apex:outputText value="{0, number,###,###,###,###}"><apex:param value="{!Account.Solicited_Reviews_Last_30__c}"/></apex:outputtext></td></tr>
+
+</table><br />
+
+<b>Social</b><br />
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr><td>Facebook</td><td align="right">{!Account.Connected_to_Facebook__c}</td></tr>
+</table>
+<br />
+
+<b>Dashboard Logins</b><br />
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr><td>Last 30 Days</td><td align="right">data here</td></tr>
+<tr><td>Most Recent</td><td align="right"><apex:outputText value="{0,date, MMMMM d, Y}">
+               <apex:param value="{!Account.Most_Recent_Login_Date__c}" />
+        </apex:outputText></td></tr>
+</table>
+<br />
+
+<b>Maps Listings</b><br />
+<br /><br />
+
+</div>
+
+<div style="padding-bottom:18px;">
+<div style="font-size: 15px; font-weight:bold;">Contacts<hr /></div>
+
+
+<apex:dataTable value="{!account.Contacts}" var="contact" cellPadding="1" border="0" width="350">
+              <table style="width:100%">
+              <apex:column >
+              <tr style="background-color:#e8e8e8;width:100%;"><td colspan="2" style="padding:3px; font-weight:bold; font-size:14px; width:350px;"><i>&nbsp; {!contact.Name}</i></td></tr>
+              <tr><td><b>Email:</b></td><td><a href="mailto:{!contact.Email}">{!contact.Email}</a></td></tr>
+              <apex:outputPanel rendered="{!contact.Phone != ''}">
+                <tr><td><b>Phone:</b></td><td>{!contact.Phone}</td></tr>
+        
+            </apex:outputPanel>
+             <apex:outputPanel rendered="{!contact.MobilePhone != ''}">
+                 <tr><td><b>Mobile:</b></td><td>{!contact.MobilePhone}</td></tr>
+        
+            </apex:outputPanel>
+
+              
+          
+          
+              <tr><td>&nbsp;</td><td></td></tr>
+              </apex:column>
+              </table>
+            </apex:dataTable>
+           
+        
+
+</div>
+
+
+<div style="padding-bottom:18px;">
+<div style="font-size: 15px; font-weight:bold;">Status<hr /></div>
+
+
+<div style="width:350px">
+<div style="width:350px; margin-bottom:15px">
+<div style="float:left; width:33%;"><b>Account</b><br />{!Account.Client_ID__c}</div>
+<div style="float:left; width:33%;"><b>Client ID</b><br />{!Account.Client_ID__c}</div>
+<div style="float:left; width:33%;"></div>
+<div style="clear:both;"></div>
+</div>
+<div style="width:350px; padding-bottom:15px;">
+<div style="float:left; width:33%"><b>Ad Station<br />Balance</b><br />
+<apex:outputPanel rendered="{!Account.AdStation_Balance__c == NULL}">
+    $0.00
+</apex:outputPanel>
+<apex:outputPanel rendered="{!Account.AdStation_Balance__c != NULL}">
+    $<apex:outputText value="{0, number,###,###,###,###.00}"><apex:param value="{!Account.AdStation_Balance__c}"/></apex:outputText>
+</apex:outputPanel>
+</div>
+
+<div style="float:left; width:33%;"><b>Prepay Balance</b><br />45565</div>
+<div style="float:left; width:33%;"><b>Auto Renew</b></div>
+<div style="clear:both;"></div>
+</div>
+
+<div style="width:350px; padding-bottom:15px;">
+<div style="float:left; width:33%"><b>Contract</b></div>
+<div style="float:left; width:33%;"><b>Next Bill Date</b><br /><apex:outputText value="{0,date, MMMMM d, Y}">
+               <apex:param value="{!Account.Next_Billing_Date__c}" />
+        </apex:outputText></div>
+<div style="float:left; width:33%;"><b>Last Invoice</b><br />$<apex:outputText value="{0, number,###,###,###,###.00}"><apex:param value="{!Account.invoiced_last_mtd__c}"/></apex:outputText></div>
+<div style="clear:both;"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+<div style="width:65%; float:left; margin-right:25px; line-height:19px; margin-top:19px;">
+
+
+<apex:pageBlock title="Open Cases">
+ 
+<apex:pageBlockTable value="{!account.Cases}" var="cases">
+<apex:outputlink value="\{!cases.Id}">info here {!cases.caseNumber}</apex:outputlink>
+
+<apex:column value="{!cases.CaseNumber}" />
+<apex:column value="{!cases.Status}" />
+<apex:column headervalue="Subject" value="{!cases.Subject}" />
+<apex:column value="{!cases.Reason}" />
+
+<apex:column value="{!cases.Reason_Detail__c}" />
+
+
+
+</apex:pageBlockTable>
+</apex:pageBlock>
+
+
+<apex:relatedList list="Cases" title="Open Cases" />
+
+</div>
+
+</div>
+
+</apex:page>

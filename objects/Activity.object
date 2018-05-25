@@ -1,0 +1,3697 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>AM_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>AM Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Discussion</fullName>
+                    <default>false</default>
+                    <label>Discussion</label>
+                </value>
+                <value>
+                    <fullName>Problem/Error</fullName>
+                    <default>false</default>
+                    <label>Problem/Error</label>
+                </value>
+                <value>
+                    <fullName>Question</fullName>
+                    <default>false</default>
+                    <label>Question</label>
+                </value>
+                <value>
+                    <fullName>Request</fullName>
+                    <default>false</default>
+                    <label>Request</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Action_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Items</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Activity_Lead_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Lead Source</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Inbound Call - Holiday Promotion</fullName>
+                    <default>false</default>
+                    <label>Inbound Call - Holiday Promotion</label>
+                </value>
+                <value>
+                    <fullName>Inbound Email - Holiday Promotion</fullName>
+                    <default>false</default>
+                    <label>Inbound Email - Holiday Promotion</label>
+                </value>
+                <value>
+                    <fullName>Inbound Form Submission - Holiday Promotion</fullName>
+                    <default>false</default>
+                    <label>Inbound Form Submission - Holiday Promotion</label>
+                </value>
+                <value>
+                    <fullName>Outbound Call - Holiday Promotion</fullName>
+                    <default>false</default>
+                    <label>Outbound Call - Holiday Promotion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Activity_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospecting</fullName>
+                    <default>false</default>
+                    <label>Prospecting</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Milestone - Transaction</fullName>
+                    <default>false</default>
+                    <label>Opportunity Milestone - Transaction</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Milestone - Implementation</fullName>
+                    <default>false</default>
+                    <label>Opportunity Milestone - Implementation</label>
+                </value>
+                <value>
+                    <fullName>Lifecycle Milestone</fullName>
+                    <default>false</default>
+                    <label>Lifecycle Milestone</label>
+                </value>
+                <value>
+                    <fullName>Sales Activity</fullName>
+                    <default>false</default>
+                    <label>Sales Activity</label>
+                </value>
+                <value>
+                    <fullName>Client Services Activity - Individual Location</fullName>
+                    <default>false</default>
+                    <label>Client Services Activity - Individual Location</label>
+                </value>
+                <value>
+                    <fullName>Network Communications Portal Notification</fullName>
+                    <default>false</default>
+                    <label>Network Communications Portal Notification</label>
+                </value>
+                <value>
+                    <fullName>Account Transition Milestone</fullName>
+                    <default>false</default>
+                    <label>Account Transition Milestone</label>
+                </value>
+                <value>
+                    <fullName>Client Services Activity - Corporate</fullName>
+                    <default>false</default>
+                    <label>Client Services Activity - Corporate</label>
+                </value>
+                <value>
+                    <fullName>Customer Call - Escalation</fullName>
+                    <default>false</default>
+                    <label>Customer Call - Escalation</label>
+                </value>
+                <value>
+                    <fullName>Customer Call - Performance Review</fullName>
+                    <default>false</default>
+                    <label>Customer Call - Performance Review</label>
+                </value>
+                <value>
+                    <fullName>Customer Call - Exec to Exec</fullName>
+                    <default>false</default>
+                    <label>Customer Call - Exec to Exec</label>
+                </value>
+                <value>
+                    <fullName>Customer In Person Meeting</fullName>
+                    <default>false</default>
+                    <label>Customer In Person Meeting</label>
+                </value>
+                <value>
+                    <fullName>Internal Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Meeting</label>
+                </value>
+                <value>
+                    <fullName>Account Support</fullName>
+                    <default>false</default>
+                    <label>Account Support</label>
+                </value>
+                <value>
+                    <fullName>External Customer Activity</fullName>
+                    <default>false</default>
+                    <label>External Customer Activity</label>
+                </value>
+                <value>
+                    <fullName>Internal YBN Activities</fullName>
+                    <default>false</default>
+                    <label>Internal YBN Activities</label>
+                </value>
+                <value>
+                    <fullName>Service Level Touch Points</fullName>
+                    <default>false</default>
+                    <label>Service Level Touch Points</label>
+                </value>
+                <value>
+                    <fullName>Presale</fullName>
+                    <default>false</default>
+                    <label>Presale</label>
+                </value>
+                <value>
+                    <fullName>Bulk Onboarding</fullName>
+                    <default>false</default>
+                    <label>Bulk Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Internal YBN Sales Activities</fullName>
+                    <default>false</default>
+                    <label>Internal YBN Sales Activities</label>
+                </value>
+                <value>
+                    <fullName>Retention</fullName>
+                    <default>false</default>
+                    <label>Retention</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Maintenance</fullName>
+                    <default>false</default>
+                    <label>Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Multi-Account Support</fullName>
+                    <default>false</default>
+                    <label>Multi-Account Support</label>
+                </value>
+                <value>
+                    <fullName>Internal Initiatives</fullName>
+                    <default>false</default>
+                    <label>Internal Initiatives</label>
+                </value>
+                <value>
+                    <fullName>Admin</fullName>
+                    <default>false</default>
+                    <label>Admin</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Activity_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+And(
+ISPICKVAL (Milestone__c,"M003 - Demo/Value Presentation"),
+ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
+        <label>Activity Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Activity_time__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Actual_Lead_Volume_Per_Month__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of unique contacts per month</inlineHelpText>
+        <label>Actual Lead Volume Per Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Actual_New_Customers_Per_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual New Customers Per Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Actual_PPL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Monthly PPL data pulled from the FMA dashboard</inlineHelpText>
+        <label>Actual PPL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Actual_ROI__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual ROI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Add_to_Cold_Call_Blitz__c</fullName>
+        <externalId>false</externalId>
+        <label>Add to Cold Call Blitz?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Save for Future Blitz</fullName>
+                    <default>false</default>
+                    <label>Save for Future Blitz</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Annual_Contract_Value_Opp__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Contract Value (Opp)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Assigned_To_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Manager.Full_Name__c</formula>
+        <label>Assigned To Manager</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Assigned_To_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.UserRole.Name</formula>
+        <label>Assigned To Role</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Bottoms_Up_Program__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bottoms Up Program</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Business_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>CS_Customer_Satisfaction_Score__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>1 being the lowest 10 being the highest, rating should reflect how satisfied you think the customer is with this specific call/meeting</inlineHelpText>
+        <label>CS - Customer Satisfaction Score</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Call_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Outbound Call</fullName>
+                    <default>false</default>
+                    <label>Outbound Call</label>
+                </value>
+                <value>
+                    <fullName>Inbound Call</fullName>
+                    <default>false</default>
+                    <label>Inbound Call</label>
+                </value>
+                <value>
+                    <fullName>SDR</fullName>
+                    <default>false</default>
+                    <label>SDR</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Client ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Client_Project_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For client services only, details on the client project they are logging minutes for</inlineHelpText>
+        <label>Project Details</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASW Business Updates</fullName>
+                    <default>false</default>
+                    <label>ASW Business Updates</label>
+                </value>
+                <value>
+                    <fullName>Website Updates</fullName>
+                    <default>false</default>
+                    <label>Website Updates</label>
+                </value>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Reporting</fullName>
+                    <default>false</default>
+                    <label>Reporting</label>
+                </value>
+                <value>
+                    <fullName>Call Quality Audit</fullName>
+                    <default>false</default>
+                    <label>Call Quality Audit</label>
+                </value>
+                <value>
+                    <fullName>Website Audit</fullName>
+                    <default>false</default>
+                    <label>Website Audit</label>
+                </value>
+                <value>
+                    <fullName>Creating Training Materials</fullName>
+                    <default>false</default>
+                    <label>Creating Training Materials</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Business Updates</fullName>
+                    <default>false</default>
+                    <label>Business Updates</label>
+                </value>
+                <value>
+                    <fullName>Coupon updates</fullName>
+                    <default>false</default>
+                    <label>Coupon updates</label>
+                </value>
+                <value>
+                    <fullName>Audits</fullName>
+                    <default>false</default>
+                    <label>Audits</label>
+                </value>
+                <value>
+                    <fullName>Call rating</fullName>
+                    <default>false</default>
+                    <label>Call rating</label>
+                </value>
+                <value>
+                    <fullName>Project Management</fullName>
+                    <default>false</default>
+                    <label>Project Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Close_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Close Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Close Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Closed_Deal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Closed Deal</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Communication_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Communication Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                    <label>Phone Call</label>
+                </value>
+                <value>
+                    <fullName>In Person Meeting</fullName>
+                    <default>false</default>
+                    <label>In Person Meeting</label>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Contract_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to designate if a contract was sent to client.  Used by YBN IL Sales.</description>
+        <externalId>false</externalId>
+        <label>Contract Sent</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Corp_Acct_ID_in_YL__c</fullName>
+        <externalId>false</externalId>
+        <label>Corp Acct ID in YL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Created_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created DateTime</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Created_by_new_hire_class__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(CreatedBy.Training_Class__c)</formula>
+        <label>Created By New Hire Class</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Customer_Rated_Satisfaction_Score__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>1 being the lowest 10 being the highest, rating should reflect customer's response to how satisfied they are with this specific meeting/call</inlineHelpText>
+        <label>Customer Rated Satisfaction Score</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Demo_Held__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Held</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Demo_Set__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Set</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Demo_Showed_Up__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo - Show/No Show</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Show</fullName>
+                    <default>false</default>
+                    <label>Show</label>
+                </value>
+                <value>
+                    <fullName>No Show</fullName>
+                    <default>false</default>
+                    <label>No Show</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Demo_d_Products__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo'd Products</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PPC</fullName>
+                    <default>false</default>
+                    <label>PPC</label>
+                </value>
+                <value>
+                    <fullName>Foundations</fullName>
+                    <default>false</default>
+                    <label>Foundations</label>
+                </value>
+                <value>
+                    <fullName>Reviews</fullName>
+                    <default>false</default>
+                    <label>Reviews</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Eliminate_from_Intro_Call_compliance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eliminate from Intro Call compliance</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Initial_Touch_Connected_w_target_and__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial Touch: Connected w/ target and</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Confirmed basic info - no edits needed</fullName>
+                    <default>false</default>
+                    <label>Confirmed basic info - no edits needed</label>
+                </value>
+                <value>
+                    <fullName>Confirmed basic info - edits needed</fullName>
+                    <default>false</default>
+                    <label>Confirmed basic info - edits needed</label>
+                </value>
+                <value>
+                    <fullName>Positioned YBN &amp; our product</fullName>
+                    <default>false</default>
+                    <label>Positioned YBN &amp; our product</label>
+                </value>
+                <value>
+                    <fullName>Covered relationship specific info</fullName>
+                    <default>false</default>
+                    <label>Covered relationship specific info</label>
+                </value>
+                <value>
+                    <fullName>Dashboard walkthrough</fullName>
+                    <default>false</default>
+                    <label>Dashboard walkthrough</label>
+                </value>
+                <value>
+                    <fullName>Demo'd products - Sales</fullName>
+                    <default>false</default>
+                    <label>Demo'd products - Sales</label>
+                </value>
+                <value>
+                    <fullName>Upsold additional products - Sales</fullName>
+                    <default>false</default>
+                    <label>Upsold additional products - Sales</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields><fields>
+        <fullName>Interaction_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Interaction Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial Milestone</fullName>
+                    <default>false</default>
+                    <label>Initial Milestone</label>
+                </value>
+                <value>
+                    <fullName>Repeated Milestone</fullName>
+                    <default>false</default>
+                    <label>Repeated Milestone</label>
+                </value>
+                <value>
+                    <fullName>Follow Up</fullName>
+                    <default>false</default>
+                    <label>Follow Up</label>
+                </value>
+                <value>
+                    <fullName>Prep</fullName>
+                    <default>false</default>
+                    <label>Prep</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Issue_Resolution_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Resolution Detail</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Billing Questions</fullName>
+                    <default>false</default>
+                    <label>Billing Questions</label>
+                </value>
+                <value>
+                    <fullName>Business Info Updates</fullName>
+                    <default>false</default>
+                    <label>Business Info Updates</label>
+                </value>
+                <value>
+                    <fullName>Call Tracking Updates</fullName>
+                    <default>false</default>
+                    <label>Call Tracking Updates</label>
+                </value>
+                <value>
+                    <fullName>Dashboard Walkthrough</fullName>
+                    <default>false</default>
+                    <label>Dashboard Walkthrough</label>
+                </value>
+                <value>
+                    <fullName>Listing Issues</fullName>
+                    <default>false</default>
+                    <label>Listing Issues</label>
+                </value>
+                <value>
+                    <fullName>Login Issues</fullName>
+                    <default>false</default>
+                    <label>Login Issues</label>
+                </value>
+                <value>
+                    <fullName>Performance Concerns</fullName>
+                    <default>false</default>
+                    <label>Performance Concerns</label>
+                </value>
+                <value>
+                    <fullName>Pin Collection</fullName>
+                    <default>false</default>
+                    <label>Pin Collection</label>
+                </value>
+                <value>
+                    <fullName>Promotion Updates</fullName>
+                    <default>false</default>
+                    <label>Promotion Updates</label>
+                </value>
+                <value>
+                    <fullName>Sales Expectations</fullName>
+                    <default>false</default>
+                    <label>Sales Expectations</label>
+                </value>
+                <value>
+                    <fullName>Service Concerns</fullName>
+                    <default>false</default>
+                    <label>Service Concerns</label>
+                </value>
+                <value>
+                    <fullName>Website Updates</fullName>
+                    <default>false</default>
+                    <label>Website Updates</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Issues_or_Concerns_Raised__c</fullName>
+        <externalId>false</externalId>
+        <label>Issues or Concerns Raised</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>LOCC_App__Call_Recording__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( LOCC_App__LO_CC_base_URL__c  &amp; "/html/play.cgi?session_id=" &amp; CallObject, "Play Recording")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Call Recording</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__LO_CC_base_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>LO CC base URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields><fields>
+        <fullName>LOCC_App__calllength__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__callscore__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__campaignid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__campaignname__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__dnis__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DNIS</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__interactionid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Interaction ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__phonenumbercountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Phone Number Country</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>LOCC_App__wrapuplength__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Wrap Up Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Lead_Consultant__c</fullName>
+        <description>Should only be marked as yes when activity creator is also the lead consultant adn they're doing lead consultant specific work, NOT just servicing owned accounts within that lead relationship.</description>
+        <externalId>false</externalId>
+        <label>Lead Consultant</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Location_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Location ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Mark_for_Deletion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mark for Deletion</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Marketing_Campaign_Inbound_Lead_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Campaign Inbound Lead Source</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Web Lead</fullName>
+                    <default>false</default>
+                    <label>Web Lead</label>
+                </value>
+                <value>
+                    <fullName>Incoming Call</fullName>
+                    <default>false</default>
+                    <label>Incoming Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Marketing_Campaign_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Campaign Name</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email $200 Promo</fullName>
+                    <default>false</default>
+                    <label>Email $200 Promo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields><fields>
+        <fullName>Marketing_Campaign_Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Campaign Outcome</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Back</fullName>
+                    <default>false</default>
+                    <label>Call Back</label>
+                </value>
+                <value>
+                    <fullName>Demo Set</fullName>
+                    <default>false</default>
+                    <label>Demo Set</label>
+                </value>
+                <value>
+                    <fullName>Not Interested</fullName>
+                    <default>false</default>
+                    <label>Not Interested</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Meeting__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Meeting Attendees</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Director</fullName>
+                    <default>false</default>
+                    <label>Account Director</label>
+                </value>
+                <value>
+                    <fullName>Sales Director</fullName>
+                    <default>false</default>
+                    <label>Sales Director</label>
+                </value>
+                <value>
+                    <fullName>Sales Executive</fullName>
+                    <default>false</default>
+                    <label>Sales Executive</label>
+                </value>
+                <value>
+                    <fullName>Implementation Specialist</fullName>
+                    <default>false</default>
+                    <label>Implementation Specialist</label>
+                </value>
+                <value>
+                    <fullName>Lead Consultant</fullName>
+                    <default>false</default>
+                    <label>Lead Consultant</label>
+                </value>
+                <value>
+                    <fullName>Lead Analyst</fullName>
+                    <default>false</default>
+                    <label>Lead Analyst</label>
+                </value>
+                <value>
+                    <fullName>CS Manager</fullName>
+                    <default>false</default>
+                    <label>CS Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Product Manager</fullName>
+                    <default>false</default>
+                    <label>Product Manager</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>SDR</fullName>
+                    <default>false</default>
+                    <label>SDR</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Milestone__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What meeting/call/activity are you logging here?</inlineHelpText>
+        <label>Activity Detail</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Activity_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>M000 - Conversation Initiation</fullName>
+                    <default>false</default>
+                    <label>M000 - Conversation Initiation</label>
+                </value>
+                <value>
+                    <fullName>M001 – Discovery Call</fullName>
+                    <default>false</default>
+                    <label>M001 – Discovery Call</label>
+                </value>
+                <value>
+                    <fullName>M002 – Internal Download Call</fullName>
+                    <default>false</default>
+                    <label>M002 – Internal Download Call</label>
+                </value>
+                <value>
+                    <fullName>M003 - Demo/Value Presentation</fullName>
+                    <default>false</default>
+                    <label>M003 - Demo/Value Presentation</label>
+                </value>
+                <value>
+                    <fullName>M004 - Detailed Audit Discovery</fullName>
+                    <default>false</default>
+                    <label>M004 - Detailed Audit Discovery</label>
+                </value>
+                <value>
+                    <fullName>M005 –  Audit Download</fullName>
+                    <default>false</default>
+                    <label>M005 –  Audit Download</label>
+                </value>
+                <value>
+                    <fullName>M006 - Implementation &amp; ROI Investigation Call</fullName>
+                    <default>false</default>
+                    <label>M006 - Implementation &amp; ROI Investigation Call</label>
+                </value>
+                <value>
+                    <fullName>M006 - ROI info gathering</fullName>
+                    <default>false</default>
+                    <label>M006 - ROI info gathering</label>
+                </value>
+                <value>
+                    <fullName>M006 - Custom Implementation Investigation</fullName>
+                    <default>false</default>
+                    <label>M006 - Custom Implementation Investigation</label>
+                </value>
+                <value>
+                    <fullName>Review Initial SOW with Customer</fullName>
+                    <default>false</default>
+                    <label>Review Initial SOW with Customer</label>
+                </value>
+                <value>
+                    <fullName>M007 - Product Assessment &amp; Strategy Internal Stakeholder Meeting</fullName>
+                    <default>false</default>
+                    <label>M007 - Product Assessment &amp; Strategy Internal Stakeholder Meeting</label>
+                </value>
+                <value>
+                    <fullName>M008 - Solutions in Action Presentation</fullName>
+                    <default>false</default>
+                    <label>M008 - Solutions in Action Presentation</label>
+                </value>
+                <value>
+                    <fullName>M008 - ROI Analysis Presentation</fullName>
+                    <default>false</default>
+                    <label>M008 - ROI Analysis Presentation</label>
+                </value>
+                <value>
+                    <fullName>M009 - Proposal Creation &amp; Update SOW</fullName>
+                    <default>false</default>
+                    <label>M009 - Proposal Creation &amp; Update SOW</label>
+                </value>
+                <value>
+                    <fullName>M009 – Solutions in Action Presentation</fullName>
+                    <default>false</default>
+                    <label>M009 – Solutions in Action Presentation</label>
+                </value>
+                <value>
+                    <fullName>M010 - Present Proposal &amp; SOW</fullName>
+                    <default>false</default>
+                    <label>M010 - Present Proposal &amp; SOW</label>
+                </value>
+                <value>
+                    <fullName>M10.5 Network Adoption</fullName>
+                    <default>false</default>
+                    <label>M10.5 Network Adoption</label>
+                </value>
+                <value>
+                    <fullName>M011 - Moving to Close</fullName>
+                    <default>false</default>
+                    <label>M011 - Moving to Close</label>
+                </value>
+                <value>
+                    <fullName>M012 - Proof of Value Agreement</fullName>
+                    <default>false</default>
+                    <label>M012 - Proof of Value Agreement</label>
+                </value>
+                <value>
+                    <fullName>M013 - Contract Creation</fullName>
+                    <default>false</default>
+                    <label>M013 - Contract Creation</label>
+                </value>
+                <value>
+                    <fullName>M013– Proof of Value Agreement</fullName>
+                    <default>false</default>
+                    <label>M013– Proof of Value Agreement</label>
+                </value>
+                <value>
+                    <fullName>M014 - Deliver Contract to the Customer</fullName>
+                    <default>false</default>
+                    <label>M014 - Deliver Contract to the Customer</label>
+                </value>
+                <value>
+                    <fullName>M015– Deliver Contract</fullName>
+                    <default>false</default>
+                    <label>M015– Deliver Contract</label>
+                </value>
+                <value>
+                    <fullName>Custom Implementation Discovery Call</fullName>
+                    <default>false</default>
+                    <label>Custom Implementation Discovery Call</label>
+                </value>
+                <value>
+                    <fullName>M100 - Deal Closes</fullName>
+                    <default>false</default>
+                    <label>M100 - Deal Closes</label>
+                </value>
+                <value>
+                    <fullName>M101 - Create Detailed Project Plan</fullName>
+                    <default>false</default>
+                    <label>M101 - Create Detailed Project Plan</label>
+                </value>
+                <value>
+                    <fullName>M104- Design consultation</fullName>
+                    <default>false</default>
+                    <label>M104- Design consultation</label>
+                </value>
+                <value>
+                    <fullName>M104 - Introduction call</fullName>
+                    <default>false</default>
+                    <label>M104 - Introduction call</label>
+                </value>
+                <value>
+                    <fullName>M105 - Custom Template Creation</fullName>
+                    <default>false</default>
+                    <label>M105 - Custom Template Creation</label>
+                </value>
+                <value>
+                    <fullName>M106 - Bulk Account Setup</fullName>
+                    <default>false</default>
+                    <label>M106 - Bulk Account Setup</label>
+                </value>
+                <value>
+                    <fullName>M107 - Website Setup</fullName>
+                    <default>false</default>
+                    <label>M107 - Website Setup</label>
+                </value>
+                <value>
+                    <fullName>M107 - Launch</fullName>
+                    <default>false</default>
+                    <label>M107 - Launch</label>
+                </value>
+                <value>
+                    <fullName>M108 - Campaign Setup</fullName>
+                    <default>false</default>
+                    <label>M108 - Campaign Setup</label>
+                </value>
+                <value>
+                    <fullName>M109 - Custom Implementation</fullName>
+                    <default>false</default>
+                    <label>M109 - Custom Implementation</label>
+                </value>
+                <value>
+                    <fullName>M110 - Network Communication Portal &amp; BI Setup</fullName>
+                    <default>false</default>
+                    <label>M110 - Network Communication Portal &amp; BI Setup</label>
+                </value>
+                <value>
+                    <fullName>M111 - Launch</fullName>
+                    <default>false</default>
+                    <label>M111 - Launch</label>
+                </value>
+                <value>
+                    <fullName>M112 - Marketing Webinars</fullName>
+                    <default>false</default>
+                    <label>M112 - Marketing Webinars</label>
+                </value>
+                <value>
+                    <fullName>Sales &amp; AD Meeting</fullName>
+                    <default>false</default>
+                    <label>Sales &amp; AD Meeting</label>
+                </value>
+                <value>
+                    <fullName>Roundtable/CS account meeting</fullName>
+                    <default>false</default>
+                    <label>Roundtable/CS account meeting</label>
+                </value>
+                <value>
+                    <fullName>Reporting Analysis</fullName>
+                    <default>false</default>
+                    <label>Reporting Analysis</label>
+                </value>
+                <value>
+                    <fullName>Internal Stakeholder Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Stakeholder Meeting</label>
+                </value>
+                <value>
+                    <fullName>Performance Review</fullName>
+                    <default>false</default>
+                    <label>Performance Review</label>
+                </value>
+                <value>
+                    <fullName>In Person Review Meeting</fullName>
+                    <default>false</default>
+                    <label>In Person Review Meeting</label>
+                </value>
+                <value>
+                    <fullName>Conference</fullName>
+                    <default>false</default>
+                    <label>Conference</label>
+                </value>
+                <value>
+                    <fullName>Connected with Gatekeeper</fullName>
+                    <default>false</default>
+                    <label>Connected with Gatekeeper</label>
+                </value>
+                <value>
+                    <fullName>Connected with Target</fullName>
+                    <default>false</default>
+                    <label>Connected with Target</label>
+                </value>
+                <value>
+                    <fullName>M001 - Set local demo</fullName>
+                    <default>false</default>
+                    <label>M001 - Set local demo</label>
+                </value>
+                <value>
+                    <fullName>M002 - Local demo</fullName>
+                    <default>false</default>
+                    <label>M002 - Local demo</label>
+                </value>
+                <value>
+                    <fullName>M003 - Contract</fullName>
+                    <default>false</default>
+                    <label>M003 - Contract</label>
+                </value>
+                <value>
+                    <fullName>Month 1 Check In</fullName>
+                    <default>false</default>
+                    <label>Month 1 Check In</label>
+                </value>
+                <value>
+                    <fullName>Monthly Touch Point</fullName>
+                    <default>false</default>
+                    <label>Monthly Touch Point</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+                <value>
+                    <fullName>Customer Project</fullName>
+                    <default>false</default>
+                    <label>Customer Project</label>
+                </value>
+                <value>
+                    <fullName>Win Back</fullName>
+                    <default>false</default>
+                    <label>Win Back</label>
+                </value>
+                <value>
+                    <fullName>Webinar Follow Up</fullName>
+                    <default>false</default>
+                    <label>Webinar Follow Up</label>
+                </value>
+                <value>
+                    <fullName>Internal Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Meeting</label>
+                </value>
+                <value>
+                    <fullName>IL Customer Call</fullName>
+                    <default>false</default>
+                    <label>IL Customer Call</label>
+                </value>
+                <value>
+                    <fullName>IL Customer Performance Review</fullName>
+                    <default>false</default>
+                    <label>IL Customer Performance Review</label>
+                </value>
+                <value>
+                    <fullName>IL Customer Email</fullName>
+                    <default>false</default>
+                    <label>IL Customer Email</label>
+                </value>
+                <value>
+                    <fullName>Corporate Customer Call</fullName>
+                    <default>false</default>
+                    <label>Corporate Customer Call</label>
+                </value>
+                <value>
+                    <fullName>Corporate Customer Performance Review</fullName>
+                    <default>false</default>
+                    <label>Corporate Customer Performance Review</label>
+                </value>
+                <value>
+                    <fullName>Corporate Customer Email</fullName>
+                    <default>false</default>
+                    <label>Corporate Customer Email</label>
+                </value>
+                <value>
+                    <fullName>Customer Meeting</fullName>
+                    <default>false</default>
+                    <label>Customer Meeting</label>
+                </value>
+                <value>
+                    <fullName>Customer Email</fullName>
+                    <default>false</default>
+                    <label>Customer Email</label>
+                </value>
+                <value>
+                    <fullName>Customer Conference/Convention</fullName>
+                    <default>false</default>
+                    <label>Customer Conference/Convention</label>
+                </value>
+                <value>
+                    <fullName>No Voicemail</fullName>
+                    <default>false</default>
+                    <label>No Voicemail</label>
+                </value>
+                <value>
+                    <fullName>ROI Calculator Data</fullName>
+                    <default>false</default>
+                    <label>ROI Calculator Data</label>
+                </value>
+                <value>
+                    <fullName>Kickstart Budget</fullName>
+                    <default>false</default>
+                    <label>Kickstart Budget</label>
+                </value>
+                <value>
+                    <fullName>Yodle Outreach</fullName>
+                    <default>false</default>
+                    <label>Yodle Outreach</label>
+                </value>
+                <value>
+                    <fullName>-None-</fullName>
+                    <default>false</default>
+                    <label>-None-</label>
+                </value>
+                <value>
+                    <fullName>Email Reach Out Only (No Phone Contact Made)</fullName>
+                    <default>false</default>
+                    <label>Email Reach Out Only (No Phone Contact Made)</label>
+                </value>
+                <value>
+                    <fullName>Follow Up Email (After Phone Contact Made)</fullName>
+                    <default>false</default>
+                    <label>Follow Up Email (After Phone Contact Made)</label>
+                </value>
+                <value>
+                    <fullName>No Voicemail Message / Email Reach Out / Contact Made</fullName>
+                    <default>false</default>
+                    <label>No Voicemail Message / Email Reach Out / Contact Made</label>
+                </value>
+                <value>
+                    <fullName>LM4 - Customer Status Call</fullName>
+                    <default>false</default>
+                    <label>LM4 - Customer Status Call</label>
+                </value>
+                <value>
+                    <fullName>LM6 - Internal Stakeholder Meeting</fullName>
+                    <default>false</default>
+                    <label>LM6 - Internal Stakeholder Meeting</label>
+                </value>
+                <value>
+                    <fullName>LM7 - Performance Review</fullName>
+                    <default>false</default>
+                    <label>LM7 - Performance Review</label>
+                </value>
+                <value>
+                    <fullName>LM8 - In Person Review Meeting</fullName>
+                    <default>false</default>
+                    <label>LM8 - In Person Review Meeting</label>
+                </value>
+                <value>
+                    <fullName>Introduction Call/CSC</fullName>
+                    <default>false</default>
+                    <label>Introduction Call/CSC</label>
+                </value>
+                <value>
+                    <fullName>Status Update</fullName>
+                    <default>false</default>
+                    <label>Status Update</label>
+                </value>
+                <value>
+                    <fullName>User Sign Up</fullName>
+                    <default>false</default>
+                    <label>User Sign Up</label>
+                </value>
+                <value>
+                    <fullName>Internal Transition Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Transition Meeting</label>
+                </value>
+                <value>
+                    <fullName>Account Team Transition Meeting</fullName>
+                    <default>false</default>
+                    <label>Account Team Transition Meeting</label>
+                </value>
+                <value>
+                    <fullName>Initial Customer Transition Call</fullName>
+                    <default>false</default>
+                    <label>Initial Customer Transition Call</label>
+                </value>
+                <value>
+                    <fullName>Relationship Transition Kick Off Call</fullName>
+                    <default>false</default>
+                    <label>Relationship Transition Kick Off Call</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Rally/TownHall</fullName>
+                    <default>false</default>
+                    <label>Rally/TownHall</label>
+                </value>
+                <value>
+                    <fullName>Reporting</fullName>
+                    <default>false</default>
+                    <label>Reporting</label>
+                </value>
+                <value>
+                    <fullName>1:1s and Team Meetings</fullName>
+                    <default>false</default>
+                    <label>1:1s and Team Meetings</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Account Transfer Prep &amp; Execution</fullName>
+                    <default>false</default>
+                    <label>Account Transfer Prep &amp; Execution</label>
+                </value>
+                <value>
+                    <fullName>Internal Email/Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Email/Meeting</label>
+                </value>
+                <value>
+                    <fullName>Internal Meeting Prep</fullName>
+                    <default>false</default>
+                    <label>Internal Meeting Prep</label>
+                </value>
+                <value>
+                    <fullName>Internal Training</fullName>
+                    <default>false</default>
+                    <label>Internal Training</label>
+                </value>
+                <value>
+                    <fullName>Mentoring/Coaching</fullName>
+                    <default>false</default>
+                    <label>Mentoring/Coaching</label>
+                </value>
+                <value>
+                    <fullName>Weekly BOB Updates</fullName>
+                    <default>false</default>
+                    <label>Weekly BOB Updates</label>
+                </value>
+                <value>
+                    <fullName>Touch Point Prep</fullName>
+                    <default>false</default>
+                    <label>Touch Point Prep</label>
+                </value>
+                <value>
+                    <fullName>AD Support/Lead Consultant Work</fullName>
+                    <default>false</default>
+                    <label>AD Support/Lead Consultant Work</label>
+                </value>
+                <value>
+                    <fullName>AD to Consultant Delegation</fullName>
+                    <default>false</default>
+                    <label>AD to Consultant Delegation</label>
+                </value>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Brainstorming/Problem Solving Discussions</fullName>
+                    <default>false</default>
+                    <label>Brainstorming/Problem Solving Discussions</label>
+                </value>
+                <value>
+                    <fullName>Call Answering / Marchex Work</fullName>
+                    <default>false</default>
+                    <label>Call Answering / Marchex Work</label>
+                </value>
+                <value>
+                    <fullName>Client Conference</fullName>
+                    <default>false</default>
+                    <label>Client Conference</label>
+                </value>
+                <value>
+                    <fullName>Client Related Travel</fullName>
+                    <default>false</default>
+                    <label>Client Related Travel</label>
+                </value>
+                <value>
+                    <fullName>Custom Reporting</fullName>
+                    <default>false</default>
+                    <label>Custom Reporting</label>
+                </value>
+                <value>
+                    <fullName>Customer Contact</fullName>
+                    <default>false</default>
+                    <label>Customer Contact</label>
+                </value>
+                <value>
+                    <fullName>Deep Dive Performance Analysis</fullName>
+                    <default>false</default>
+                    <label>Deep Dive Performance Analysis</label>
+                </value>
+                <value>
+                    <fullName>Franchisee Escalation</fullName>
+                    <default>false</default>
+                    <label>Franchisee Escalation</label>
+                </value>
+                <value>
+                    <fullName>IL Account Builds</fullName>
+                    <default>false</default>
+                    <label>IL Account Builds</label>
+                </value>
+                <value>
+                    <fullName>IL Billing Collections</fullName>
+                    <default>false</default>
+                    <label>IL Billing Collections</label>
+                </value>
+                <value>
+                    <fullName>Integration Bug Investigation</fullName>
+                    <default>false</default>
+                    <label>Integration Bug Investigation</label>
+                </value>
+                <value>
+                    <fullName>Issue Resolution</fullName>
+                    <default>false</default>
+                    <label>Issue Resolution</label>
+                </value>
+                <value>
+                    <fullName>LM1 - Sales &amp; AD Meeting</fullName>
+                    <default>false</default>
+                    <label>LM1 - Sales &amp; AD Meeting</label>
+                </value>
+                <value>
+                    <fullName>LM3 - Roundtable/CS account meeting</fullName>
+                    <default>false</default>
+                    <label>LM3 - Roundtable/CS account meeting</label>
+                </value>
+                <value>
+                    <fullName>LM5 - Reporting Analysis</fullName>
+                    <default>false</default>
+                    <label>LM5 - Reporting Analysis</label>
+                </value>
+                <value>
+                    <fullName>Meeting Prep</fullName>
+                    <default>false</default>
+                    <label>Meeting Prep</label>
+                </value>
+                <value>
+                    <fullName>Product Bug Investigation</fullName>
+                    <default>false</default>
+                    <label>Product Bug Investigation</label>
+                </value>
+                <value>
+                    <fullName>Project Execution</fullName>
+                    <default>false</default>
+                    <label>Project Execution</label>
+                </value>
+                <value>
+                    <fullName>Website Changes</fullName>
+                    <default>false</default>
+                    <label>Website Changes</label>
+                </value>
+                <value>
+                    <fullName>Status Call</fullName>
+                    <default>false</default>
+                    <label>Status Call</label>
+                </value>
+                <value>
+                    <fullName>Follow Up</fullName>
+                    <default>false</default>
+                    <label>Follow Up</label>
+                </value>
+                <value>
+                    <fullName>Scheduled Discovery Call and/or Demo</fullName>
+                    <default>false</default>
+                    <label>Scheduled Discovery Call and/or Demo</label>
+                </value>
+                <value>
+                    <fullName>Scheduled Discovery Call</fullName>
+                    <default>false</default>
+                    <label>Scheduled Discovery Call</label>
+                </value>
+                <value>
+                    <fullName>Discovery Call</fullName>
+                    <default>false</default>
+                    <label>Discovery Call</label>
+                </value>
+                <value>
+                    <fullName>Custom Implementation Review Call</fullName>
+                    <default>false</default>
+                    <label>Custom Implementation Review Call</label>
+                </value>
+                <value>
+                    <fullName>Scheduled Demo</fullName>
+                    <default>false</default>
+                    <label>Scheduled Demo</label>
+                </value>
+                <value>
+                    <fullName>Demo &amp; Value Presentation</fullName>
+                    <default>false</default>
+                    <label>Demo &amp; Value Presentation</label>
+                </value>
+                <value>
+                    <fullName>Executive Review Call</fullName>
+                    <default>false</default>
+                    <label>Executive Review Call</label>
+                </value>
+                <value>
+                    <fullName>IL Demo Scheduled</fullName>
+                    <default>false</default>
+                    <label>IL Demo Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Left Voicemail</fullName>
+                    <default>false</default>
+                    <label>Left Voicemail</label>
+                </value>
+                <value>
+                    <fullName>No contact/No voicemail</fullName>
+                    <default>false</default>
+                    <label>No contact/No voicemail</label>
+                </value>
+                <value>
+                    <fullName>Proactive  Email</fullName>
+                    <default>false</default>
+                    <label>Proactive  Email</label>
+                </value>
+                <value>
+                    <fullName>Solution Review Call</fullName>
+                    <default>false</default>
+                    <label>Solution Review Call</label>
+                </value>
+                <value>
+                    <fullName>Proposal &amp; SOW Review Call</fullName>
+                    <default>false</default>
+                    <label>Proposal &amp; SOW Review Call</label>
+                </value>
+                <value>
+                    <fullName>Marketing Webinar Presentation</fullName>
+                    <default>false</default>
+                    <label>Marketing Webinar Presentation</label>
+                </value>
+                <value>
+                    <fullName>Prospecting: Connected with Gatekeeper</fullName>
+                    <default>false</default>
+                    <label>Prospecting: Connected with Gatekeeper</label>
+                </value>
+                <value>
+                    <fullName>Prospecting: Connected with Target</fullName>
+                    <default>false</default>
+                    <label>Prospecting: Connected with Target</label>
+                </value>
+                <value>
+                    <fullName>Ran IL Demo</fullName>
+                    <default>false</default>
+                    <label>Ran IL Demo</label>
+                </value>
+                <value>
+                    <fullName>Reactive Email</fullName>
+                    <default>false</default>
+                    <label>Reactive Email</label>
+                </value>
+                <value>
+                    <fullName>Contract Review</fullName>
+                    <default>false</default>
+                    <label>Contract Review</label>
+                </value>
+                <value>
+                    <fullName>Exec Dry Run</fullName>
+                    <default>false</default>
+                    <label>Exec Dry Run</label>
+                </value>
+                <value>
+                    <fullName>Internal Customer Audit</fullName>
+                    <default>false</default>
+                    <label>Internal Customer Audit</label>
+                </value>
+                <value>
+                    <fullName>Internal Download Call</fullName>
+                    <default>false</default>
+                    <label>Internal Download Call</label>
+                </value>
+                <value>
+                    <fullName>Internal Email</fullName>
+                    <default>false</default>
+                    <label>Internal Email</label>
+                </value>
+                <value>
+                    <fullName>Internal Planning &amp; Prep</fullName>
+                    <default>false</default>
+                    <label>Internal Planning &amp; Prep</label>
+                </value>
+                <value>
+                    <fullName>Internal Stakeholder Kickoff</fullName>
+                    <default>false</default>
+                    <label>Internal Stakeholder Kickoff</label>
+                </value>
+                <value>
+                    <fullName>LM2 - Sales Account Meeting</fullName>
+                    <default>false</default>
+                    <label>LM2 - Sales Account Meeting</label>
+                </value>
+                <value>
+                    <fullName>Network Adoption Meeting</fullName>
+                    <default>false</default>
+                    <label>Network Adoption Meeting</label>
+                </value>
+                <value>
+                    <fullName>Other - Customer Activity</fullName>
+                    <default>false</default>
+                    <label>Other - Customer Activity</label>
+                </value>
+                <value>
+                    <fullName>Other - Internal Activity</fullName>
+                    <default>false</default>
+                    <label>Other - Internal Activity</label>
+                </value>
+                <value>
+                    <fullName>Attempted Customer Contact</fullName>
+                    <default>false</default>
+                    <label>Attempted Customer Contact</label>
+                </value>
+                <value>
+                    <fullName>Corporate Billing Breakdown</fullName>
+                    <default>false</default>
+                    <label>Corporate Billing Breakdown</label>
+                </value>
+                <value>
+                    <fullName>M1: Discovery Call</fullName>
+                    <default>false</default>
+                    <label>M1: Discovery Call</label>
+                </value>
+                <value>
+                    <fullName>M1: Internal Download</fullName>
+                    <default>false</default>
+                    <label>M1: Internal Download</label>
+                </value>
+                <value>
+                    <fullName>M1: Mini-Audit</fullName>
+                    <default>false</default>
+                    <label>M1: Mini-Audit</label>
+                </value>
+                <value>
+                    <fullName>M2: Client Facing Demo</fullName>
+                    <default>false</default>
+                    <label>M2: Client Facing Demo</label>
+                </value>
+                <value>
+                    <fullName>M2: Demo &amp; Dry Run w/ YBN Exec</fullName>
+                    <default>false</default>
+                    <label>M2: Demo &amp; Dry Run w/ YBN Exec</label>
+                </value>
+                <value>
+                    <fullName>M4: Implementation Needs Call</fullName>
+                    <default>false</default>
+                    <label>M4: Implementation Needs Call</label>
+                </value>
+                <value>
+                    <fullName>M4: Internal Download</fullName>
+                    <default>false</default>
+                    <label>M4: Internal Download</label>
+                </value>
+                <value>
+                    <fullName>M4: Solutions Review</fullName>
+                    <default>false</default>
+                    <label>M4: Solutions Review</label>
+                </value>
+                <value>
+                    <fullName>M4: Solutions Review Call Dry Run</fullName>
+                    <default>false</default>
+                    <label>M4: Solutions Review Call Dry Run</label>
+                </value>
+                <value>
+                    <fullName>Custom Implementation Strategy Work/Meetings</fullName>
+                    <default>false</default>
+                    <label>Custom Implementation Strategy Work/Meetings</label>
+                </value>
+                <value>
+                    <fullName>Performance Strategy Work/Meetings</fullName>
+                    <default>false</default>
+                    <label>Performance Strategy Work/Meetings</label>
+                </value>
+                <value>
+                    <fullName>Product Strategy Work/Meetings</fullName>
+                    <default>false</default>
+                    <label>Product Strategy Work/Meetings</label>
+                </value>
+                <value>
+                    <fullName>Runbook Creation</fullName>
+                    <default>false</default>
+                    <label>Runbook Creation</label>
+                </value>
+                <value>
+                    <fullName>SOW and/or Contract Work</fullName>
+                    <default>false</default>
+                    <label>SOW and/or Contract Work</label>
+                </value>
+                <value>
+                    <fullName>Billing Profile Setup</fullName>
+                    <default>false</default>
+                    <label>Billing Profile Setup</label>
+                </value>
+                <value>
+                    <fullName>Bulk Campaign Onboarding Work</fullName>
+                    <default>false</default>
+                    <label>Bulk Campaign Onboarding Work</label>
+                </value>
+                <value>
+                    <fullName>Client Communication Strategy</fullName>
+                    <default>false</default>
+                    <label>Client Communication Strategy</label>
+                </value>
+                <value>
+                    <fullName>Client Side Website Setup</fullName>
+                    <default>false</default>
+                    <label>Client Side Website Setup</label>
+                </value>
+                <value>
+                    <fullName>Customer Project Status Calls</fullName>
+                    <default>false</default>
+                    <label>Customer Project Status Calls</label>
+                </value>
+                <value>
+                    <fullName>Gathering Client Deliverables</fullName>
+                    <default>false</default>
+                    <label>Gathering Client Deliverables</label>
+                </value>
+                <value>
+                    <fullName>M102 – Internal Stakeholder Kick Off</fullName>
+                    <default>false</default>
+                    <label>M102 – Internal Stakeholder Kick Off</label>
+                </value>
+                <value>
+                    <fullName>M103 – Customer Kick Off</fullName>
+                    <default>false</default>
+                    <label>M103 – Customer Kick Off</label>
+                </value>
+                <value>
+                    <fullName>M104 - Design Consultation Call</fullName>
+                    <default>false</default>
+                    <label>M104 - Design Consultation Call</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous Project Work</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous Project Work</label>
+                </value>
+                <value>
+                    <fullName>Network Communication Portal Setup</fullName>
+                    <default>false</default>
+                    <label>Network Communication Portal Setup</label>
+                </value>
+                <value>
+                    <fullName>On Page Optimization Strategy</fullName>
+                    <default>false</default>
+                    <label>On Page Optimization Strategy</label>
+                </value>
+                <value>
+                    <fullName>Project Plan Creation</fullName>
+                    <default>false</default>
+                    <label>Project Plan Creation</label>
+                </value>
+                <value>
+                    <fullName>Quality Assurance</fullName>
+                    <default>false</default>
+                    <label>Quality Assurance</label>
+                </value>
+                <value>
+                    <fullName>Reporting Profile Setup</fullName>
+                    <default>false</default>
+                    <label>Reporting Profile Setup</label>
+                </value>
+                <value>
+                    <fullName>Runbook Updates</fullName>
+                    <default>false</default>
+                    <label>Runbook Updates</label>
+                </value>
+                <value>
+                    <fullName>Website Creation (Yodle-hosted only)</fullName>
+                    <default>false</default>
+                    <label>Website Creation (Yodle-hosted only)</label>
+                </value>
+                <value>
+                    <fullName>BETA: Returned Voicemail</fullName>
+                    <default>false</default>
+                    <label>BETA: Returned Voicemail</label>
+                </value>
+                <value>
+                    <fullName>AD &amp; SD Meeting</fullName>
+                    <default>false</default>
+                    <label>AD &amp; SD Meeting</label>
+                </value>
+                <value>
+                    <fullName>Sales Account Meeting</fullName>
+                    <default>false</default>
+                    <label>Sales Account Meeting</label>
+                </value>
+                <value>
+                    <fullName>Internal Account Team Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Account Team Meeting</label>
+                </value>
+                <value>
+                    <fullName>Customer Status Call</fullName>
+                    <default>false</default>
+                    <label>Customer Status Call</label>
+                </value>
+                <value>
+                    <fullName>Client Account Update</fullName>
+                    <default>false</default>
+                    <label>Client Account Update</label>
+                </value>
+                <value>
+                    <fullName>Account Business Review Call</fullName>
+                    <default>false</default>
+                    <label>Account Business Review Call</label>
+                </value>
+                <value>
+                    <fullName>In Person Account Business Review</fullName>
+                    <default>false</default>
+                    <label>In Person Account Business Review</label>
+                </value>
+                <value>
+                    <fullName>Quarterly Business Review</fullName>
+                    <default>false</default>
+                    <label>Quarterly Business Review</label>
+                </value>
+                <value>
+                    <fullName>Monthly RD Relationship Call</fullName>
+                    <default>false</default>
+                    <label>Monthly RD Relationship Call</label>
+                </value>
+                <value>
+                    <fullName>Team Meeting</fullName>
+                    <default>false</default>
+                    <label>Team Meeting</label>
+                </value>
+                <value>
+                    <fullName>Individual &amp; Manager 1-1</fullName>
+                    <default>false</default>
+                    <label>Individual &amp; Manager 1-1</label>
+                </value>
+                <value>
+                    <fullName>Account Round-table Meeting</fullName>
+                    <default>false</default>
+                    <label>Account Round-table Meeting</label>
+                </value>
+                <value>
+                    <fullName>Retention</fullName>
+                    <default>false</default>
+                    <label>Retention</label>
+                </value>
+                <value>
+                    <fullName>Project Communication</fullName>
+                    <default>false</default>
+                    <label>Project Communication</label>
+                </value>
+                <value>
+                    <fullName>Sprint Planning</fullName>
+                    <default>false</default>
+                    <label>Sprint Planning</label>
+                </value>
+                <value>
+                    <fullName>Backlog Grooming</fullName>
+                    <default>false</default>
+                    <label>Backlog Grooming</label>
+                </value>
+                <value>
+                    <fullName>Other Clients Support Meeting</fullName>
+                    <default>false</default>
+                    <label>Other Clients Support Meeting</label>
+                </value>
+                <value>
+                    <fullName>Clients Related Communication</fullName>
+                    <default>false</default>
+                    <label>Clients Related Communication</label>
+                </value>
+                <value>
+                    <fullName>Maintenance</fullName>
+                    <default>false</default>
+                    <label>Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Internal Project</fullName>
+                    <default>false</default>
+                    <label>Internal Project</label>
+                </value>
+                <value>
+                    <fullName>Closed Won Opportunity</fullName>
+                    <default>false</default>
+                    <label>Closed Won Opportunity</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <controllingFieldValue>Admin</controllingFieldValue>
+                <valueName>1:1s and Team Meetings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Account Transfer Prep &amp; Execution</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Internal Email/Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Internal Meeting Prep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Internal Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Mentoring/Coaching</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Weekly BOB Updates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Account Round-table Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM4 - Customer Status Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM6 - Internal Stakeholder Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM7 - Performance Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM8 - In Person Review Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Introduction Call/CSC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
+                <valueName>Touch Point Prep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <valueName>AD Support/Lead Consultant Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>AD to Consultant Delegation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Billing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Brainstorming/Problem Solving Discussions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Call Answering / Marchex Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Client Conference</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Client Related Travel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Custom Reporting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Customer Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Deep Dive Performance Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Franchisee Escalation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>IL Account Builds</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>IL Billing Collections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Integration Bug Investigation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Issue Resolution</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM1 - Sales &amp; AD Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM3 - Roundtable/CS account meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM5 - Reporting Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Meeting Prep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Product Bug Investigation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Maintenance</controllingFieldValue>
+                <controllingFieldValue>Onboarding</controllingFieldValue>
+                <valueName>Project Execution</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>Corporate Billing Breakdown</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>SOW and/or Contract Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Quality Assurance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Support</controllingFieldValue>
+                <valueName>BETA: Returned Voicemail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Connected with Gatekeeper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Connected with Target</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Win Back</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Status Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Follow Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Scheduled Discovery Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Discovery Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Custom Implementation Review Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Scheduled Demo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Demo &amp; Value Presentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Executive Review Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>IL Demo Scheduled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Left Voicemail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Solution Review Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Proposal &amp; SOW Review Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Marketing Webinar Presentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Ran IL Demo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Contract Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Network Adoption Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Other - Customer Activity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Attempted Customer Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Quarterly Business Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <valueName>Monthly RD Relationship Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Exec Dry Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Internal Customer Audit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Internal Download Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Internal Planning &amp; Prep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Internal Stakeholder Kickoff</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM2 - Sales Account Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Other - Internal Activity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Team Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Individual &amp; Manager 1-1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Billing Profile Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Bulk Campaign Onboarding Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Client Communication Strategy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Client Side Website Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Customer Project Status Calls</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Gathering Client Deliverables</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M102 – Internal Stakeholder Kick Off</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M103 – Customer Kick Off</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>M104 - Design Consultation Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Miscellaneous Project Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Network Communication Portal Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>On Page Optimization Strategy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Project Plan Creation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Reporting Profile Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Runbook Updates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
+                <valueName>Website Creation (Yodle-hosted only)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Transition Milestone</controllingFieldValue>
+                <valueName>Internal Transition Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Transition Milestone</controllingFieldValue>
+                <valueName>Account Team Transition Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Transition Milestone</controllingFieldValue>
+                <valueName>Initial Customer Transition Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Transition Milestone</controllingFieldValue>
+                <valueName>Relationship Transition Kick Off Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M1: Discovery Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M1: Internal Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M1: Mini-Audit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M2: Client Facing Demo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M2: Demo &amp; Dry Run w/ YBN Exec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M4: Implementation Needs Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M4: Internal Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M4: Solutions Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>M4: Solutions Review Call Dry Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>Custom Implementation Strategy Work/Meetings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>Performance Strategy Work/Meetings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>Product Strategy Work/Meetings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Presale</controllingFieldValue>
+                <valueName>Runbook Creation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Project</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <valueName>Corporate Customer Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <valueName>Corporate Customer Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Corporate</controllingFieldValue>
+                <valueName>Customer Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retention</controllingFieldValue>
+                <valueName>Retention</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Maintenance</controllingFieldValue>
+                <controllingFieldValue>Onboarding</controllingFieldValue>
+                <valueName>Project Communication</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Multi-Account Support</controllingFieldValue>
+                <valueName>Sprint Planning</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Multi-Account Support</controllingFieldValue>
+                <valueName>Backlog Grooming</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Multi-Account Support</controllingFieldValue>
+                <valueName>Other Clients Support Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Multi-Account Support</controllingFieldValue>
+                <valueName>Clients Related Communication</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Multi-Account Support</controllingFieldValue>
+                <valueName>Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal Initiatives</controllingFieldValue>
+                <valueName>Internal Project</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Admin</controllingFieldValue>
+                <valueName>Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Admin</controllingFieldValue>
+                <valueName>Rally/TownHall</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Admin</controllingFieldValue>
+                <valueName>Reporting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Admin</controllingFieldValue>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M001 – Discovery Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M002 – Internal Download Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M003 - Demo/Value Presentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M004 - Detailed Audit Discovery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M005 –  Audit Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M006 - ROI info gathering</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M006 - Custom Implementation Investigation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>Review Initial SOW with Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M007 - Product Assessment &amp; Strategy Internal Stakeholder Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M008 - Solutions in Action Presentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M008 - ROI Analysis Presentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M009 - Proposal Creation &amp; Update SOW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M010 - Present Proposal &amp; SOW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M10.5 Network Adoption</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M011 - Moving to Close</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M012 - Proof of Value Agreement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M013 - Contract Creation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <valueName>M014 - Deliver Contract to the Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <valueName>M001 - Set local demo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <valueName>M002 - Local demo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Transaction</controllingFieldValue>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <valueName>M003 - Contract</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M101 - Create Detailed Project Plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M104- Design consultation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M105 - Custom Template Creation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M106 - Bulk Account Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M107 - Website Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M108 - Campaign Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M109 - Custom Implementation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M110 - Network Communication Portal &amp; BI Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M111 - Launch</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Milestone - Implementation</controllingFieldValue>
+                <valueName>M112 - Marketing Webinars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Sales &amp; AD Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Roundtable/CS account meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Reporting Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Internal Stakeholder Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Performance Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>In Person Review Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Sales Account Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>Customer Status Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <valueName>Webinar Follow Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Internal Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>No Voicemail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Email Reach Out Only (No Phone Contact Made)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Follow Up Email (After Phone Contact Made)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>No Voicemail Message / Email Reach Out / Contact Made</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sales Activity</controllingFieldValue>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Internal Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Month 1 Check In</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>Monthly Touch Point</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>IL Customer Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>IL Customer Performance Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Services Activity - Individual Location</controllingFieldValue>
+                <valueName>IL Customer Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>M000 - Conversation Initiation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Customer Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>
+                <valueName>ROI Calculator Data</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>
+                <valueName>Kickstart Budget</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>
+                <valueName>Yodle Outreach</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>
+                <valueName>User Sign Up</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields><fields>
+        <fullName>Modified_Milestone__c</fullName>
+        <externalId>false</externalId>
+        <label>Milestone #</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Monthly_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Monthly Contact</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>National_Client_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.National_Account_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>National Client Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Owner_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Assigned To Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields><fields>
+        <fullName>Phone_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Result</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NVM</fullName>
+                    <default>false</default>
+                    <label>NVM</label>
+                </value>
+                <value>
+                    <fullName>LVM</fullName>
+                    <default>false</default>
+                    <label>LVM</label>
+                </value>
+                <value>
+                    <fullName>Connected with Target</fullName>
+                    <default>false</default>
+                    <label>Connected with Target</label>
+                </value>
+                <value>
+                    <fullName>Connected with Gatekeeper</fullName>
+                    <default>false</default>
+                    <label>Connected with Gatekeeper</label>
+                </value>
+                <value>
+                    <fullName>Set Demo</fullName>
+                    <default>false</default>
+                    <label>Set Demo</label>
+                </value>
+                <value>
+                    <fullName>On the Fly Demo</fullName>
+                    <default>false</default>
+                    <label>On the Fly Demo</label>
+                </value>
+                <value>
+                    <fullName>Conducted Demo</fullName>
+                    <default>false</default>
+                    <label>Conducted Demo</label>
+                </value>
+                <value>
+                    <fullName>Demo did not hold</fullName>
+                    <default>false</default>
+                    <label>Demo did not hold</label>
+                </value>
+                <value>
+                    <fullName>Future Event</fullName>
+                    <default>false</default>
+                    <label>Future Event</label>
+                </value>
+                <value>
+                    <fullName>Bad number</fullName>
+                    <default>false</default>
+                    <label>Bad number</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Portal_Outreach_Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Portal Outreach Outcome</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Successfully Signed Customer Up</fullName>
+                    <default>false</default>
+                    <label>Successfully Signed Customer Up</label>
+                </value>
+                <value>
+                    <fullName>Customer Declined</fullName>
+                    <default>false</default>
+                    <label>Customer Declined</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Posted_By__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>for Marketing/PR</inlineHelpText>
+        <label>Posted By</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Pre_Cold_Call_Prep_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre Cold Call Prep Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Minor</fullName>
+                    <default>true</default>
+                    <label>Minor</label>
+                </value>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                    <label>Major</label>
+                </value>
+                <value>
+                    <fullName>Blocked</fullName>
+                    <default>false</default>
+                    <label>Blocked</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Proactive_vs_Reactive__c</fullName>
+        <externalId>false</externalId>
+        <label>Proactive or Reactive</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Proactive</fullName>
+                    <default>false</default>
+                    <label>Proactive</label>
+                </value>
+                <value>
+                    <fullName>Reactive</fullName>
+                    <default>false</default>
+                    <label>Reactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Products_upsold__c</fullName>
+        <externalId>false</externalId>
+        <label>Products upsold</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PPC</fullName>
+                    <default>false</default>
+                    <label>PPC</label>
+                </value>
+                <value>
+                    <fullName>Foundations</fullName>
+                    <default>false</default>
+                    <label>Foundations</label>
+                </value>
+                <value>
+                    <fullName>Reviews</fullName>
+                    <default>false</default>
+                    <label>Reviews</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administration</fullName>
+                    <default>false</default>
+                    <label>Administration</label>
+                </value>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Case activity</fullName>
+                    <default>false</default>
+                    <label>Case activity</label>
+                </value>
+                <value>
+                    <fullName>Churn</fullName>
+                    <default>false</default>
+                    <label>Churn</label>
+                </value>
+                <value>
+                    <fullName>General/Common Questions</fullName>
+                    <default>false</default>
+                    <label>General/Common Questions</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Technical Issue</fullName>
+                    <default>false</default>
+                    <label>Technical Issue</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Related_to_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(WhatId, 3)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related to ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Related_to_Object__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+BEGINS(WhatId, "001"), "Account","")</formula>
+        <label>Related to Object</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Relationship_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship Name</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>SA_demo_type__c</fullName>
+        <externalId>false</externalId>
+        <label>SA demo type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Warm Transfer</fullName>
+                    <default>false</default>
+                    <label>Warm Transfer</label>
+                </value>
+                <value>
+                    <fullName>Scheduled Appt</fullName>
+                    <default>false</default>
+                    <label>Scheduled Appt</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Sales_Customer_Satisfaction_Score__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>1 being the lowest 10 being the highest, rating should reflect how satisfied you think the customer is with this specific call/meeting</inlineHelpText>
+        <label>Sales - Customer Satisfaction Score</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Sales_Lab__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Lab</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>April Baseline</fullName>
+                    <default>false</default>
+                    <label>April Baseline</label>
+                </value>
+                <value>
+                    <fullName>Auto</fullName>
+                    <default>false</default>
+                    <label>Auto</label>
+                </value>
+                <value>
+                    <fullName>Guide 2.0</fullName>
+                    <default>false</default>
+                    <label>Guide 2.0</label>
+                </value>
+                <value>
+                    <fullName>Mobile Test</fullName>
+                    <default>false</default>
+                    <label>Mobile Test</label>
+                </value>
+                <value>
+                    <fullName>SDR</fullName>
+                    <default>false</default>
+                    <label>SDR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Send_Email_Alert_to_SD_AD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this button to send an email notification to the SD or AD on the account with a summary of the call notes</inlineHelpText>
+        <label>Send Email Alert to SD/AD</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>true</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Rescheduled</fullName>
+                    <default>false</default>
+                    <label>Rescheduled</label>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                    <label>Canceled</label>
+                </value>
+                <value>
+                    <fullName>No Show</fullName>
+                    <default>false</default>
+                    <label>No Show</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Left Message</fullName>
+                    <default>false</default>
+                    <label>Left Message</label>
+                </value>
+                <value>
+                    <fullName>Connected with Gatekeeper</fullName>
+                    <default>false</default>
+                    <label>Connected with Gatekeeper</label>
+                </value>
+                <value>
+                    <fullName>Connected with Target</fullName>
+                    <default>false</default>
+                    <label>Connected with Target</label>
+                </value>
+                <value>
+                    <fullName>LifeCycle Milestone Completed</fullName>
+                    <default>false</default>
+                    <label>LifeCycle Milestone Completed</label>
+                </value>
+                <value>
+                    <fullName>Closed - Not Completed</fullName>
+                    <default>false</default>
+                    <label>Closed - Not Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Summary_of_Discussion_Items__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes on all items discussed during the activity</inlineHelpText>
+        <label>Summary of Discussion Items</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Summary_of_Issues_Client_Concerns__c</fullName>
+        <externalId>false</externalId>
+        <label>Issues &amp; Client Concerns Details</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Summary_of_Issues_or_Concerns__c</fullName>
+        <externalId>false</externalId>
+        <label>Summary of Issues or Concerns</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Product functionality</fullName>
+                    <default>false</default>
+                    <label>Product functionality</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Service concerns</fullName>
+                    <default>false</default>
+                    <label>Service concerns</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Time_To_Complete_Activity_Minutes__c</fullName>
+        <externalId>false</externalId>
+        <label>Time To Complete Activity (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Win_Back_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Win Back Customer</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>X1st_Attempt_By_del__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>1st Attempt By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Activities_del</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>X1st_Attempt_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Attempt Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>X1st_Attempt_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Attempt Result</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left Message/VM</fullName>
+                    <default>false</default>
+                    <label>Left Message/VM</label>
+                </value>
+                <value>
+                    <fullName>No answer</fullName>
+                    <default>false</default>
+                    <label>No answer</label>
+                </value>
+                <value>
+                    <fullName>Connected - Rescheduled</fullName>
+                    <default>false</default>
+                    <label>Connected - Rescheduled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>X2nd_Attempt_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Attempt Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>X2nd_Attempt_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Attempt Result</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left Message/VM</fullName>
+                    <default>false</default>
+                    <label>Left Message/VM</label>
+                </value>
+                <value>
+                    <fullName>No answer</fullName>
+                    <default>false</default>
+                    <label>No answer</label>
+                </value>
+                <value>
+                    <fullName>Connected - Rescheduled</fullName>
+                    <default>false</default>
+                    <label>Connected - Rescheduled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>X5_in_60__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>5 in 60</label>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>created_by_profile__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Profile.Name</formula>
+        <label>created by profile</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>internal_external_activity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this an activity for an internal meeting/call or external customer facing meeting/call</inlineHelpText>
+        <label>Internal or External Activity?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>External</fullName>
+                    <default>true</default>
+                    <label>External</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>link_to_comment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>for marketing/PR use</inlineHelpText>
+        <label>link to comment</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields><fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the local time for the related Lead or Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTC_Offset__c), 
+"Unknown", 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 6, 2 ) &amp; "/" &amp; 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 9, 2 ) &amp; "/" &amp; 
+LEFT( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 4 ) &amp; " " &amp; 
+TEXT( 
+IF( 
+OR( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) = 0, 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) = 12 
+), 
+12, 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) 
+- 
+IF( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) &lt; 12, 
+0, 
+12 
+) 
+) 
+) 
+&amp;":"&amp; 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 15, 2 ) 
+&amp;" "&amp; 
+IF( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) &lt; 12, 
+"AM", 
+"PM" 
+) 
+&amp; " " &amp; 
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"") 
+)</formula>
+        <inlineHelpText>Shows the local time for the related Lead or Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>tz__UTC_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the UTC timezone offset of the Lead / Contact associated with the task.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Lead / Contact associated with the task.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><enableFeeds>false</enableFeeds><searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts><sharingModel>ControlledByParent</sharingModel><listViews>
+        <fullName>Griswold</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.FULL_NAME</field>
+            <operation>contains</operation>
+            <value>Sarah</value>
+        </filters>
+        <filters>
+            <field>Milestone__c</field>
+            <operation>equals</operation>
+            <value>Monthly Touch Point</value>
+        </filters>
+        <filters>
+            <field>TASK.WHAT_NAME</field>
+            <operation>contains</operation>
+            <value>Griswold</value>
+        </filters>
+        <label>Griswold</label>
+    </listViews><listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <label>My Activities</label>
+    </listViews><listViews>
+        <fullName>MyCallBacks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>contains</operation>
+            <value>Call back</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <label>My Call Backs</label>
+    </listViews><listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews><listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team's Activities</label>
+    </listViews><listViews>
+        <fullName>Next30DaysTasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_N_DAYS:30</value>
+        </filters>
+        <label>Next 30 Days Tasks</label>
+    </listViews><listViews>
+        <fullName>Retention_Calendar_Events</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OWNER_ROLE</field>
+            <operation>equals</operation>
+            <value>Retention Consultant</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <label>Retention Calendar Events</label>
+        <sharedTo>
+            <role>RetentionConsultant294541</role>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.WHAT_NAME</field>
+            <operation>contains</operation>
+            <value>griswold</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>contains</operation>
+            <value>Sarah</value>
+        </filters>
+        <label>Today's Tasks</label>
+    </listViews><listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews></CustomObject>

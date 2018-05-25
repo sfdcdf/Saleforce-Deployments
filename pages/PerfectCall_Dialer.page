@@ -1,0 +1,184 @@
+<apex:page controller="PC_Dialing_Controller" showHeader="false" sidebar="false" cache="false" >
+<html>
+<head>
+<title>PerfectCall Dialer</title>
+<style>
+body, html {
+    height:100%;
+}
+body {
+    background-color:#f6f6f0;
+    color:#666666;
+    font-family:Arial;
+    font-size:.8em;
+
+}
+a:link {
+        color:#cccccc;
+}
+
+</style>
+<script type="text/javascript" src="/static/052708/js/functions.js"></script>
+<!--  script type="text/javascript" src="/static/052708/js/sfcti.js"></script -->
+<script type="text/javascript" src="/static/022509/js/sfcti.js"></script>
+
+<script  src="/dJS/en/1224534618000/library.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/052708/desktop/desktopAjax.js"></script>
+
+<script language="javascript">
+
+/*
+function initSoftphone(inputPageId) {
+        if (inputPageId==null || inputPageId=="") {
+                pageId = Math.random() * 10000000000000000;
+        } else pageId = inputPageId;
+        for (var i=0;i < maxLines;i++) {
+                commentsActive[i]=false;
+        }
+        setInterval('updateTimers()',1000);
+        var hiddenRefresh = document.getElementById('softphoneRefresh');
+        if (hiddenRefresh!=null) {
+                hiddenRefresh.src='/img/cti_refresh.gif';
+                hiddenRefresh.style.display='none';
+
+        }
+        if (awaitEvents) awaitEvent();
+}
+*/
+
+function setComments(comment) {
+
+    comments[1] = "Call_Result_Detail__c:" + escape(comment);
+    //updateComments("/UPDATE_COMMENTS",1,comments[1]);
+    //var updateString = "/UPDATE_COMMENTS?LINE_NUMBER=1&VALUE=Call_Result_Detail__c:" + escape(comments);
+    var updateString = "/SELECT_LOG_OBJECT?LINE_NUMBER=1&ID=" + comments;
+    doCTI(updateString);
+    doCTI("/RELEASE?LINE_NUMBER=1");
+}
+
+function doCTI(url) {
+    //localHttp = 'http://localhost:7332';
+    if (!url.match(/http/)) {
+        url = localHttp + url;
+    }
+    parent.sendCTIMessage(url);
+
+    if (url.match("RELEASE") != null) {
+        parent.sendCTIMessage("/SAVE_WRAPUP");
+    }
+}
+
+function onLoad () {
+    initSoftphone('c27114fe-ee2f-410a-9525-9032d9c12d95');
+      
+}
+
+//This function creates an XMLHTTPRequest to send the message to the server and ignores the response.
+//It is intended for CTI commands.
+// Replaced so we can see error
+function sendCTIMessage(url) {
+    //alert("Calling my cti message");
+    var commandHidden = document.getElementById('softphoneCommand');
+    url = url ? UserContext.getUrl(url) : url;
+    try {
+        if (commandHidden!=null) {
+            commandHidden.value = url;
+            
+            // flush the value for ff
+            if (isFirefox) {
+                commandHidden.value = '';
+            }
+        } else if (this.window!=window.parent && window.parent.sendCTIMessage) {
+            //We may be in a frame or popup -- iterate up through the stack of parents until we find the hidden input
+            window.parent.sendCTIMessage(url);
+        }
+    } catch (exceptionObj) {
+        alert(exceptionObj);
+        //Well, an exception occurred.  We may have tried to hit a page where there is no access.
+      }
+    //This call will do nothing unless we're in HTTP mode
+    loadXMLDoc(url,reqHandler,messageRequestObject,errHandler);
+}
+
+function errHandler(err) {
+    alert("Error:\n" + err);
+}
+
+function reqHandler(res) {
+    alert("HTTP-Req:\n" + res);
+    
+}
+
+function loadXMLDoc(url,handler,requestObject,onerrorhandler) {
+    
+    if (useHttp) {
+        var xmlhttp = null;
+        if (requestObject!=null) {
+            xmlhttp=requestObject;
+        } else {
+            xmlhttp=getRequestObject();
+        }
+        
+        
+        if(xmlhttp!=null) {
+            xmlhttp.abort();
+            if (handler!=null) xmlhttp.onreadystatechange = function() { handler(xmlhttp); };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send("");
+        } else {
+            log("xmlhttp is null.");
+        }
+    }
+}
+
+
+
+
+</script> 
+</head>
+<body onLoad="onLoad()">
+<div style="display:none">
+<input type="hidden"  id="softphoneCommand" name="softphoneCommand" value="" />
+<div class="ctiSoftphone" id="softphone" style="display:block;"></div>
+<iframe  id="softphoneRefresh" name="softphoneRefresh" src="javascript:false;" style="display:none;" title="RefreshCTI"></iframe></div>
+</div></div>
+ <div height="60" width="100%" id="mmHeader" >
+         <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                 <tr>
+                         <td width="248"><apex:image url="{!URLFOR($Resource.images, 'images/logo.gif')}" alt="PerfectCall" /></td>
+                         <td align="right" valign="top">
+                            <apex:outputLink value="/home/home.jsp">Home</apex:outputLink> &nbsp;&nbsp; | &nbsp;&nbsp; <apex:outputLink value="/{!campaign.Id}">Back to Campaigns</apex:outputLink> &nbsp;&nbsp; | &nbsp;&nbsp; <apex:outputLink id="setupLink" value="/ui/setup/Setup">Setup</apex:outputLink>
+                            <br/>
+                            <strong>Dialing: {!campaign.Name}</strong>
+                            <br/>
+                            {!campaign.Description}
+                            <!-- 
+                            <br/>
+                            Ends: {!campaign.EndDate}
+                            -->
+                         </td>
+                 </tr>
+         </table>
+ </div>
+<div id="flashBlock" height="570" width="100%">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="FlexSalesforce" width="100%" height="570"
+codebase="https://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+<param name="movie" value="{!URLFOR($Resource.CTIFlash)}" />
+<param name="quality" value="high" /><param name="play" value="true" />
+<param name="bgcolor" value="#f3f3ec" /><param name="allowScriptAccess" value="always" />
+<param name="flashvars" value="session_id={!$Api.Session_ID}&server_url={!$Api.Partner_Server_URL_160}&campaign={!cId}&delay=10000&useOwner=true&callResult={!activityVals}" />
+    <embed src="{!URLFOR($Resource.CTIFlash)}" play="true" bgcolor="#f3f3ec" width="100%" height="570"
+    name="FlexSalesforce" align="middle"
+    flashvars="session_id={!$Api.Session_ID}&server_url={!$Api.Partner_Server_URL_160}&campaign={!cId}&delay=10000&useOwner=truee&callResult={!activityVals}"
+    loop="false" allowScriptAccess="always"
+    type="application/x-shockwave-flash"
+    pluginspage="http://www.adobe.com/go/getflashplayer">
+</embed>
+</object>
+</div>
+
+
+<!--  <apex:flash src="{!URLFOR($Resource.CTIFlash)}" width="100%" height="650" /> -->
+</body>
+</html>
+</apex:page>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>AdoptionLen__c</fullName>
+        <defaultValue>1</defaultValue>
+        <externalId>false</externalId>
+        <label>Adoption Length (Mth)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>AdoptionPct__c</fullName>
+        <externalId>false</externalId>
+        <label>Adoption %</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields><fields>
+        <fullName>ApexUpdate__c</fullName>
+        <externalId>false</externalId>
+        <label>Apex Update</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>MonthlyValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Network Adoption Products</relationshipLabel>
+        <relationshipName>Network_Adoption_Products</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields><fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enhanced SEO</fullName>
+                    <default>false</default>
+                    <label>Enhanced SEO</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+                <value>
+                    <fullName>Facebook Setup</fullName>
+                    <default>false</default>
+                    <label>Facebook Setup</label>
+                </value>
+                <value>
+                    <fullName>Foundations</fullName>
+                    <default>false</default>
+                    <label>Foundations</label>
+                </value>
+                <value>
+                    <fullName>Location Setup</fullName>
+                    <default>false</default>
+                    <label>Location Setup</label>
+                </value>
+                <value>
+                    <fullName>Paid Per Click (PPC)</fullName>
+                    <default>false</default>
+                    <label>Paid Per Click (PPC)</label>
+                </value>
+                <value>
+                    <fullName>Reviews</fullName>
+                    <default>false</default>
+                    <label>Reviews</label>
+                </value>
+                <value>
+                    <fullName>Yodle Web</fullName>
+                    <default>false</default>
+                    <label>Yodle Web</label>
+                </value>
+                <value>
+                    <fullName>Media Management</fullName>
+                    <default>false</default>
+                    <label>Media Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Qty / Loc</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>SalesPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>StartDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>TotalValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Network Adoption Product</label><nameField>
+        <displayFormat>NAP-{0000000}</displayFormat>
+        <label>NAP Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Network Adoption Products</pluralLabel><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility><validationRules>
+        <fullName>AdoptionLen_Greater_Than_0</fullName>
+        <active>false</active>
+        <errorConditionFormula>NOT(AdoptionLen__c &gt; 0)</errorConditionFormula>
+        <errorDisplayField>AdoptionLen__c</errorDisplayField>
+        <errorMessage>Must be greater than 0.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>AdoptionPct_Between_0_100</fullName>
+        <active>false</active>
+        <description>Must be between 0 and 100</description>
+        <errorConditionFormula>OR(
+  AdoptionPct__c = 0,
+  AdoptionPct__c &gt; 1
+)</errorConditionFormula>
+        <errorDisplayField>AdoptionPct__c</errorDisplayField>
+        <errorMessage>Must be between 0 and 100.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Quantity_Greater_Than_Zero</fullName>
+        <active>false</active>
+        <errorConditionFormula>NOT(Quantity__c &gt; 0)</errorConditionFormula>
+        <errorDisplayField>Quantity__c</errorDisplayField>
+        <errorMessage>Must be greater than 0.</errorMessage>
+    </validationRules><webLinks>
+        <fullName>Setup_Adoption_Products</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Setup Adoption Products</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/NetworkAdoption?id={!Opportunity.Id}</url>
+    </webLinks></CustomObject>

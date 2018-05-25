@@ -1,0 +1,129 @@
+<apex:component allowDML="true" controller="MDFRequestStatusAndClaimFormController" layout="block">
+    <style>
+        .bPageBlock {
+            margin-bottom: 0px !important;
+        }
+    </style>
+    <apex:form >
+        <apex:pageBlock mode="maindetail" id="listBlockId">
+            <apex:actionPoller action="{!refreshData}" reRender="listBlockId" interval="600"/>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Refresh List" action="{!refreshData}" reRender="listBlockId"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageMessage summary="MDF Tier: {!pmdfQuarterlyBudgetSetting.Minimum_Managed_Accounts__c} - {!pmdfQuarterlyBudgetSetting.Maximum_Managed_Accounts__c} Managed Accounts | Quarterly Budget: Up to ${!pmdfQuarterlyBudgetSetting.Maximum_Quarterly_Budget_Allowance__c} | Current Quarter Request: ${!currentRequestTotal}" severity="info" strength="3" rendered="{!pmdfQuarterlyBudgetSetting.Id != ''}"/>
+
+            <apex:pageMessage summary="You do not qualify for Marketing Development Fund for this Quarter." severity="info" strength="3" rendered="{!pmdfQuarterlyBudgetSetting.Id == ''}"/>
+            
+            <hr/>
+            <hr/>
+
+            <apex:pageblockSection title="{!pqmacLastQuarter.Child_Accounts_End_of_Quarter_Count__c} Managed Accounts Last Quarter" columns="1" collapsible="true" rendered="{!pqmacLastQuarter.Id != ''}">
+                <apex:pageBlockTable value="{!pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r}" var="pqmac" rendered="{!pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r.size > 0}">
+                    <apex:column value="{!pqmac.Child_Account__r.Name}"/>
+                    <apex:column value="{!pqmac.Child_Account__r.Phone}"/>
+                    <apex:column value="{!pqmac.Child_Account__r.Order_Date__c}"/>
+                    <apex:column value="{!pqmac.Child_Account__r.Live_Date__c}"/>
+                    <apex:column value="{!pqmac.Child_Account__r.Status__c}"/>
+                </apex:pageBlockTable>
+            </apex:pageblockSection>
+
+            <apex:outputPanel rendered="{!pqmacLastQuarter.Id != ''}">
+                <script>
+                    twistSection(document.getElementsByClassName('hideListButton')[0]);
+                </script>
+            </apex:outputPanel>
+
+            <apex:pageMessage summary="No Qualifying Managed Accounts for Last Quarter!" severity="info" strength="3" rendered="{!pqmacLastQuarter.Id == ''}"/>
+
+            <hr/>
+            <hr/>
+
+            <apex:pageBlockSection title="Current Quarter MDF Request Status" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!pmdfStatusList}" var="pmdfStatus" rendered="{!pmdfStatusList.size > 0}">
+                    <apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Name.label}">
+                        <apex:commandLink action="{!selectedPMDF}" value="{!pmdfStatus.Name}" reRender="selectedRecordPanelId">
+                            <apex:param name="pmdfSelectedId" value="{!pmdfStatus.id}" />
+                        </apex:commandLink>
+                    </apex:column>
+                    <apex:column value="{!pmdfStatus.MDF_Status__c}"/>
+                    <apex:column value="{!pmdfStatus.Requested_By__c}"/>
+                    <apex:column value="{!pmdfStatus.Estimated_Cost_of_Activity__c}"/>
+                    <apex:column value="{!pmdfStatus.Total_Cost_of_Activity__c}"/>
+                    <apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Type_of_Activity__c.label}">
+                        <apex:outputField value="{!pmdfStatus.Type_of_Activity__c}" rendered="{!pmdfStatus.Type_of_Activity__c != 'Other'}"/>
+                        <apex:outputField value="{!pmdfStatus.Other_Activity__c}" rendered="{!pmdfStatus.Type_of_Activity__c == 'Other'}"/>
+                    </apex:column>
+                    <apex:column value="{!pmdfStatus.What_is_the_goal_of_the_activity__c}"/>
+                    <apex:column value="{!pmdfStatus.When_will_the_activity_happen__c}"/>
+                    <apex:column value="{!pmdfStatus.MDF_Date_Submitted__c}"/>
+                </apex:pageBlockTable>
+
+                <apex:pageMessage summary="No Marketing Development Funds requested within the past 60 days! Please go to the MDF Request History tab for older requests!" severity="info" strength="3" rendered="{!pmdfStatusList.size == 0}"/>
+            </apex:pageBlockSection>
+
+            <hr/>
+            <hr/>
+
+            <apex:pageBlockSection title="Claimable MDF" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!pmdfClaimList}" var="pmdfClaim" rendered="{!pmdfClaimList.size > 0}">
+                    <apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Name.label}">
+                        <apex:commandLink action="{!selectedPMDF}" value="{!pmdfClaim.Name}" reRender="selectedRecordPanelId">
+                            <apex:param name="pmdfSelectedId" value="{!pmdfClaim.id}" />
+                        </apex:commandLink>
+                    </apex:column>
+                    <apex:column value="{!pmdfClaim.MDF_Status__c}"/>
+                    <apex:column value="{!pmdfClaim.Requested_By__c}"/>
+                    <apex:column value="{!pmdfClaim.Estimated_Cost_of_Activity__c}"/>
+                    <apex:column value="{!pmdfClaim.Total_Cost_of_Activity__c}"/>
+                    <apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Type_of_Activity__c.label}">
+                        <apex:outputField value="{!pmdfClaim.Type_of_Activity__c}" rendered="{!pmdfClaim.Type_of_Activity__c != 'Other'}"/>
+                        <apex:outputField value="{!pmdfClaim.Other_Activity__c}" rendered="{!pmdfClaim.Type_of_Activity__c == 'Other'}"/>
+                    </apex:column>
+                    <apex:column value="{!pmdfClaim.What_is_the_goal_of_the_activity__c}"/>
+                    <apex:column value="{!pmdfClaim.When_will_the_activity_happen__c}"/>
+                    <apex:column value="{!pmdfClaim.MDF_Date_Submitted__c}"/>
+                </apex:pageBlockTable>
+
+                <apex:pageMessage summary="No claimable Marketing Development Funds at the moment!" severity="info" strength="3" rendered="{!pmdfClaimList.size == 0}"/>
+            </apex:pageBlockSection>
+
+            <hr/>
+            <hr/>
+        </apex:pageBlock>
+        <!--hr/>
+        <hr/-->
+    </apex:form>
+
+    
+    <apex:outputPanel id="selectedRecordPanelId">
+        <apex:form >
+            <apex:outputPanel layout="block" rendered="{!pmdfSelected.Id != ''}">
+                <apex:commandLink action="{!selectedPMDF}" value="x" reRender="selectedRecordPanelId" style="float:right; margin-right: 25px; text-decoration: none; font-weight: bolder; border-style: dashed; color: #ff0000;">
+                    <apex:param name="pmdfSelectedId" value="" />
+                </apex:commandLink>
+            </apex:outputPanel>
+        </apex:form>
+        <apex:pageBlock mode="maindetail" rendered="{!pmdfSelected.Id != ''}" title="{!pmdfSelected.Name}">
+            <apex:pageMessages />
+            <apex:outputPanel rendered="{!pmdfSelected.MDF_Status__c == 'Request Approved' || CONTAINS(pmdfSelected.MDF_Status__c, 'Claim')}">
+                <apex:form >
+                    <apex:pageBlockSection title="Claim Form" columns="1" collapsible="false">
+                        <apex:inputField value="{!pmdfSelected.Claimed_By__c}"/>
+                        <apex:inputField value="{!pmdfSelected.Date_of_Activity__c}"/>
+                        <apex:inputField value="{!pmdfSelected.Total_Cost_of_Activity__c}"/>
+                        <apex:inputField value="{!pmdfSelected.Claim_Notes__c}" style="min-width: 500px;"/>
+                    </apex:pageBlockSection>
+                    <center><apex:commandButton value="Submit Claim Form" action="{!saveClaimForm}" rerender="selectedRecordPanelId"/><apex:commandButton value="Attach Files" action="{!attachFile}"/></center>
+                </apex:form>
+
+            </apex:outputPanel>
+
+            <apex:form >
+                <apex:pageBlockSection title="Selected MDF" columns="1" collapsible="false">
+                    <apex:detail subject="{!pmdfSelected.Id}" />
+                </apex:pageBlockSection>
+            </apex:form>
+        </apex:pageBlock>
+    </apex:outputPanel>
+</apex:component>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Fields_to_Monitor_Changes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Fields that we monitor that if it changes, send to YodleLive. Delimit the fields by ';'</inlineHelpText>
+        <label>Fields to Monitor Changes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>Fields_to_Return__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>List the fields to send to Queue delimited by ';'</inlineHelpText>
+        <label>Fields to Return</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><customSettingsType>List</customSettingsType><description>Salesforce fields that are sent to Yodle Live through the Queue</description><enableFeeds>false</enableFeeds><label>SF2YLFieldMapping</label><visibility>Public</visibility></CustomObject>

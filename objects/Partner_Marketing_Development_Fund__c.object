@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Anything_else_we_should_know__c</fullName>
+        <externalId>false</externalId>
+        <label>Anything else we should know?</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields><fields>
+        <fullName>Claim_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Claim Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields><fields>
+        <fullName>Claimed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Claimed By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Partner_Marketing_Development_Funds1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Date_of_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Activity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Estimated_Cost_of_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Cost of Activity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Explain_activity_in_detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Explain activity in detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields><fields>
+        <fullName>MDF_Date_Submitted__c</fullName>
+        <externalId>false</externalId>
+        <label>MDF Date Submitted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>MDF_Status_Date_Time_Stamp__c</fullName>
+        <externalId>false</externalId>
+        <label>MDF Status Date/Time Stamp</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>MDF_Status_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>MDF Status Notes</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>MDF_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>MDF Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>true</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Request Approved</fullName>
+                    <default>false</default>
+                    <label>Request Approved</label>
+                </value>
+                <value>
+                    <fullName>Request Denied</fullName>
+                    <default>false</default>
+                    <label>Request Denied</label>
+                </value>
+                <value>
+                    <fullName>Request Expired</fullName>
+                    <default>false</default>
+                    <label>Request Expired</label>
+                </value>
+                <value>
+                    <fullName>Claim Submitted</fullName>
+                    <default>false</default>
+                    <label>Claim Submitted</label>
+                </value>
+                <value>
+                    <fullName>Claim In Review</fullName>
+                    <default>false</default>
+                    <label>Claim In Review</label>
+                </value>
+                <value>
+                    <fullName>Claim Needs More Information</fullName>
+                    <default>false</default>
+                    <label>Claim Needs More Information</label>
+                </value>
+                <value>
+                    <fullName>Claim Approved</fullName>
+                    <default>false</default>
+                    <label>Claim Approved</label>
+                </value>
+                <value>
+                    <fullName>Claim Denied</fullName>
+                    <default>false</default>
+                    <label>Claim Denied</label>
+                </value>
+                <value>
+                    <fullName>Claim Expired</fullName>
+                    <default>false</default>
+                    <label>Claim Expired</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Other_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Activity</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Partner_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Partner Marketing Development Funds</relationshipLabel>
+        <relationshipName>Partner_Marketing_Development_Funds</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Requested_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requested By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Partner_Marketing_Development_Funds</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Total_Cost_of_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Cost of Activity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Type_of_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Activity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Testimonial Videos</fullName>
+                    <default>false</default>
+                    <label>Testimonial Videos</label>
+                </value>
+                <value>
+                    <fullName>White Papers</fullName>
+                    <default>false</default>
+                    <label>White Papers</label>
+                </value>
+                <value>
+                    <fullName>Research Docs</fullName>
+                    <default>false</default>
+                    <label>Research Docs</label>
+                </value>
+                <value>
+                    <fullName>Advertising</fullName>
+                    <default>false</default>
+                    <label>Advertising</label>
+                </value>
+                <value>
+                    <fullName>Events</fullName>
+                    <default>false</default>
+                    <label>Events</label>
+                </value>
+                <value>
+                    <fullName>Promotional Items</fullName>
+                    <default>false</default>
+                    <label>Promotional Items</label>
+                </value>
+                <value>
+                    <fullName>Online Marketing</fullName>
+                    <default>false</default>
+                    <label>Online Marketing</label>
+                </value>
+                <value>
+                    <fullName>Sponsorships</fullName>
+                    <default>false</default>
+                    <label>Sponsorships</label>
+                </value>
+                <value>
+                    <fullName>Direct Mail/Email</fullName>
+                    <default>false</default>
+                    <label>Direct Mail/Email</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>What_is_the_goal_of_the_activity__c</fullName>
+        <externalId>false</externalId>
+        <label>What is the goal of the activity?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>When_will_the_activity_happen__c</fullName>
+        <externalId>false</externalId>
+        <label>When will the activity happen</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>Private</externalSharingModel><label>Partner Marketing Development Fund</label><nameField>
+        <displayFormat>PMDF-{0000000}</displayFormat>
+        <label>Partner MDF Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Partner Marketing Development Funds</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><validationRules>
+        <fullName>Other_Activity_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Type_of_Activity__c , "Other") &amp;&amp; ISBLANK( Other_Activity__c )</errorConditionFormula>
+        <errorDisplayField>Other_Activity__c</errorDisplayField>
+        <errorMessage>Other Activity field is required if Other is the selected Type of Activity value!</errorMessage>
+    </validationRules></CustomObject>

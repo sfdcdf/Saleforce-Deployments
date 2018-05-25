@@ -1,0 +1,22 @@
+<apex:page showHeader="true" sidebar="false" title="Marketing Development Funds" docType="html-5.0" tabStyle="Marketing_Development_Funds__tab">
+	<apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/versioning.css" />
+	<apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/extended.css" />
+
+    <c:CPPAccountPickerComponent />
+
+	<apex:tabPanel switchType="client" value="{!IF(ISBLANK($CurrentPage.parameters.selectedTab), 'name1', $CurrentPage.parameters.selectedTab)}" id="theTabPanel" contentStyle="background-color: white;" ><!--headerAlignment="right"-->
+        <apex:tab label="Reference Guide" name="name1" id="tabOne">
+        	<apex:iframe src="https://s3.amazonaws.com/yodle-partner-marketing/Certified+Partner+MDF+Program.pdf" height="800px"/>
+        </apex:tab>
+        <apex:tab label="Request Form" name="name2" id="tabTwo">
+        	<c:MDFRequestForm />
+        </apex:tab>
+        <apex:tab label="Request Status/Claim Form" name="name3" id="tabThree">
+            <c:MDFRequestStatusAndClaimForm />
+        </apex:tab>
+        <apex:tab label="MDF Request History" name="name4" id="tabFour">
+            <c:MDFRequestHistory />
+        </apex:tab>
+    </apex:tabPanel>
+	
+</apex:page>

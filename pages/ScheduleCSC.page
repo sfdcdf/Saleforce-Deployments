@@ -1,0 +1,148 @@
+<apex:page showHeader="false" sidebar="false" controller="ScheduleCSCController" title="Schedule CSC">
+    <apex:stylesheet value="//fonts.googleapis.com/css?family=Open+Sans:400,700" />
+
+    <script>
+        function setFocusOnLoad() {}
+    </script>
+
+    <apex:outputPanel style="text-align: center; display: block;" id="scheduleAvailability">
+        <style>
+            .dateFormat a { 
+                color : white; 
+            }
+
+            body {
+                background-color: #ededed;
+                font-size: 14px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            body input.btn, body input.btnDisabled, body input.btnCancel {
+                padding: 5px 10px;
+                margin: 5px 0;
+            }
+
+            .defaultHeader {
+                background-color: #105a8b; 
+                padding: 0px 50px 25px 50px; 
+                color: white;
+            }
+
+            .lighthouseHeader {
+                background-color: #55BEDB; 
+                padding: 0px 50px 25px 50px; 
+                color: white;
+            }
+
+            .torchxHeader {
+                background-color: #183660; 
+                padding: 0px 50px 25px 50px; 
+                color: white;
+            }
+
+            .lbwHeader {
+                background-color: #61baf5; 
+                padding: 0px 50px 25px 50px; 
+                color: white;
+            }
+
+            .torchxButton {
+                -webkit-border-radius: 4 !important;
+                -moz-border-radius: 4 !important;
+                border-radius: 4px !important;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 'bold';
+                color: #ffffff !important;
+                font-size: 14px !important;
+                background: #FAA21B !important;
+                padding: 10px 20px 10px 20px !important;
+                text-decoration: none !important;
+                border: none !important;
+                text-transform: uppercase;
+            }
+
+            .torchxButton:hover {
+                background: #FBB852 !important;
+                text-decoration: none !important;
+                border: none !important;
+                text-transform: uppercase;
+            }
+
+            .torchxDateButton {
+                -webkit-border-radius: 4 !important;
+                -moz-border-radius: 4 !important;
+                border-radius: 4px !important;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 'bold';
+                color: #ffffff !important;
+                font-size: 14px !important;
+                background: #183660 !important;
+                text-decoration: none;
+                border: none !important;
+            }
+
+            .torchxDateButton:hover, .torchxDateButton:disabled {
+                background: #ffffff !important;
+                color: #183660 !important;
+                text-decoration: none;
+                border: none !important;
+            }
+        </style>
+
+        <apex:form >
+            <!--apex:outputPanel style="" layout="block"-->
+            <apex:outputPanel styleClass="{!IF(contains(acctView.Product_Type_Transactional__c, 'TORCHx'), 'torchxHeader', IF(contains(acctView.Product_Type_Transactional__c, 'Leads by Web') || contains(acctView.Product_Type_Transactional__c, 'Leads By Web'), 'lbwHeader', IF(contains(acctView.Product_Type_Transactional__c, 'Lighthouse'), 'lighthouseHeader', 'defaultHeader')))}" layout="block">
+                <apex:image url="{!$Resource.Yodle_Max_Logo_Schedule}" style="max-height: 75px; vertical-align: middle;" rendered="{!(!contains(acctView.Product_Type_Transactional__c, 'TORCHx') && !contains(acctView.Product_Type_Transactional__c, 'Leads By Web') && !contains(acctView.Product_Type_Transactional__c, 'Leads by Web') && !contains(acctView.Product_Type_Transactional__c, 'Lighthouse')) || acctView.Product_Type_Transactional__c == ''}"/>
+                <apex:image url="{!$Resource.TORCHxLogo}" style="max-height: 75px; vertical-align: middle; margin: 15px 15px 0 0;" rendered="{!acctView.Product_Type_Transactional__c != '' && contains(acctView.Product_Type_Transactional__c, 'TORCHx')}"/>
+                <apex:image url="{!$Resource.WebLogo}" style="max-height: 75px; vertical-align: middle; margin: 15px 15px 0 0;" rendered="{!acctView.Product_Type_Transactional__c != '' && (contains(acctView.Product_Type_Transactional__c, 'Leads By Web') || contains(acctView.Product_Type_Transactional__c, 'Leads by Web'))}"/>
+                <apex:image url="{!$Resource.LighthouseLogo}" style="max-height: 75px; vertical-align: middle; margin: 15px 15px 0 0;" rendered="{!acctView.Product_Type_Transactional__c != '' && contains(acctView.Product_Type_Transactional__c, 'Lighthouse')}"/>
+
+                <apex:actionFunction name="selectAccount" action="{!populateUserAvailability}" reRender="scheduleAvailability" status="loadStatus"/>
+                <!--apex:selectList value="{!selectedAccountId}" multiselect="false" size="1" onchange="selectAccount();" rendered="{!displayAcctSelector}">
+                    <apex:selectOptions value="{!availableAccounts}"/>
+                </apex:selectList>
+                &nbsp;-->
+                <apex:inputField value="{!dateCaseWorkAround.StartDate__c}" onchange="selectAccount();"/>
+                &nbsp;
+                <apex:selectList value="{!selectedTimeZone}" multiselect="false" size="1" onchange="selectAccount();" >
+                    <apex:selectOptions value="{!supportedTimeZone}"/>
+                </apex:selectList>
+
+                <apex:commandButton value="Unschedule Current Setup Call" action="{!unscheduleCurrentTouchpoint}" reRender="scheduleAvailability" style="float: right; margin-top: 25px;" styleClass="{!IF(contains(acctView.Product_Type_Transactional__c, 'TORCHx'), 'torchxButton', '')}" rendered="{!activeOutboundTouchpointCase.Id != ''}" status="loadStatus"/>
+                <br/>
+                <apex:outputText value="Customer Service Rep: {!activeOutboundTouchpointCase.Owner.Name}" rendered="{!activeOutboundTouchpointCase.Id != ''}" style="clear: both; white-space: nowrap;"/>
+                <br/>
+                Current Scheduled Setup Call: <i>{!scheduledCallFormat}</i>
+                <br/>
+            </apex:outputPanel>
+            <!--apex:actionStatus startText="Scheduling...." id="scheduleStatus"/-->
+            <br/>
+            <br/>
+
+            <apex:pageMessages />
+            <apex:actionStatus startText="updating..." id="loadStatus">
+                <apex:facet name="stop">
+                    <apex:outputPanel style="display: inline-block; position: relative;">
+                        <span style="color: #105a8b;"><i>Click on the time you want to schedule/reschedule your call!</i></span>
+                        <br/>
+                        <br/>
+                        <apex:repeat value="{!userAvailableDateTimeMap}" var="dateNow" rendered="{!activeOutboundTouchpointCase.Id != ''}">
+                            <span style="float: left; padding: 10px; text-align: center;">
+                                <apex:outputText value="{0, date, MM/dd}">
+                                    <apex:param value="{!dateNow}" /> 
+                                </apex:outputText>
+                                <br/>
+                                <apex:repeat value="{!userAvailableDateTimeMap[dateNow]}" var="dateTimeNow">
+                                    <apex:commandButton action="{!scheduleTime}" value="{!dateTimeNow.convertedStartDateTime} - {!dateTimeNow.convertedEndDateTime}" disabled="{!!dateTimeNow.repAvailable}" reRender="scheduleAvailability" status="loadStatus" styleClass="{!IF(contains(acctView.Product_Type_Transactional__c, 'TORCHx'), 'torchxDateButton', '')}">
+                                        <apex:param name="selectedAvailableTime" value="{!dateTimeNow.temporaryId}" assignTo="{!selectedAvailableTime}"/>
+                                    </apex:commandButton>
+                                    <br/>
+                                </apex:repeat>
+                            </span>
+                        </apex:repeat>
+                    </apex:outputPanel>
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:form>
+    </apex:outputPanel>
+</apex:page>

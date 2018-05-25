@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>BusinessHourId__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Business Hour Id</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>CaseRecordTypes__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Case Record Types</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields><fields>
+        <fullName>EntitlementProcessName__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Entitlement Process Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><label>Entitlement Setting</label><pluralLabel>Entitlement Settings</pluralLabel><visibility>Public</visibility></CustomObject>

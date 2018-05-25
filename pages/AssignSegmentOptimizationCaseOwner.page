@@ -1,0 +1,76 @@
+<apex:page showHeader="true" sidebar="true" controller="AssignSegmentOptCaseOwnerController" tabStyle="Segment_Optimization_Case_Assignment__c" title="Segment Optimization Case Assignment">
+	<apex:sectionHeader title="Segment Optimization Case Assignment" subtitle="Add or change Segment Optimization Case Assigments"/>
+	<script>
+		var hideSaveNewButton = function(){
+			document.getElementsByClassName("saveNewButtonClass")[0].style.display = "none";
+		}
+	</script>
+	<apex:outputPanel id="pagePanelId">
+		<apex:form ><!-- rendered="{!editMode}"-->
+			<style type="text/css">
+				select {
+					display: none;
+				}
+			</style>
+			<apex:pageBlock mode="maindetail" id="blockId">
+				<apex:actionRegion >
+					<apex:pageBlockSection collapsible="false" columns="1" title="Add a New Optimization Case Owner">
+						<apex:inputField value="{!newSegmentOptCaseAssignment.Name}"/>
+						<apex:inputField value="{!newSegmentOptCaseAssignment.OwnerId}"/>
+						<apex:pageBlockSectionItem >
+							<apex:outputLabel value=""/>
+							<apex:commandButton action="{!saveNewAssignment}" value="Save New Segment Assignment" reRender="blockId" status="statusId" styleClass="saveNewButtonClass"/>
+						</apex:pageBlockSectionItem>
+					</apex:pageBlockSection>
+				</apex:actionRegion>
+				<apex:pageMessages />
+				<apex:actionRegion >
+					<apex:pageBlockSection collapsible="false" columns="1" title="Segment Optimization Case Owner List">
+						<apex:pageBlockSectionItem >
+							<apex:outputLabel value=""/>
+							<apex:outputPanel >
+								<apex:commandButton action="{!saveListChanges}" value="Save Optimization Case Assignments" reRender="blockId" rendered="{!editMode}" status="statusId"/>
+								<apex:commandButton action="{!editAssignments}" value="Edit Segment Assignments" reRender="blockId" rendered="{!!editMode}"/>
+								<apex:commandButton action="{!editAssignments}" value="View List as Read Only" reRender="blockId" rendered="{!editMode}"/>
+							</apex:outputPanel>
+						</apex:pageBlockSectionItem>
+						<apex:actionStatus startText=" Saving...." id="statusId" onstart="hideSaveNewButton();">
+							<apex:facet name="stop">
+								<apex:pageBlockTable value="{!segmentOptOwnerList}" var="segOwner">
+									<apex:column value="{!segOwner.Name}"/>
+									<apex:column headerValue="Owner">
+										<apex:inputField value="{!segOwner.OwnerId}" rendered="{!editMode}"/>
+										<apex:outputField value="{!segOwner.OwnerId}" rendered="{!!editMode}"/>
+									</apex:column>
+									<apex:column headerValue="Last Modified By">
+										<apex:outputField value="{!segOwner.LastModifiedById}"/>,&nbsp;
+										<apex:outputField value="{!segOwner.LastModifiedDate}"/>
+									</apex:column>
+								</apex:pageBlockTable>
+							</apex:facet>
+						</apex:actionStatus>
+					</apex:pageBlockSection>
+				</apex:actionRegion>
+			</apex:pageBlock>
+		</apex:form>
+
+		<!--apex:form rendered="{!!editMode}">
+			<apex:pageBlock mode="maindetail" >
+				<apex:pageBlockSection collapsible="false" columns="1" title="Segment Optimization Case Owner List">
+					<apex:pageBlockSectionItem>
+						<apex:outputLabel value=""/>
+						<apex:commandButton action="{!editAssignments}" value="Edit Segment Assignments" reRender="pagePanelId"/>
+					</apex:pageBlockSectionItem>
+					<apex:pageBlockTable value="{!segmentOptOwnerList}" var="segOwner">
+						<apex:column value="{!segOwner.Name}"/>
+						<apex:column value="{!segOwner.OwnerId}"/>
+						<apex:column headerValue="Last Modified By">
+							<apex:outputField value="{!segOwner.LastModifiedById}"/>,&nbsp;
+							<apex:outputField value="{!segOwner.LastModifiedDate}"/>
+						</apex:column>
+					</apex:pageBlockTable>
+				</apex:pageBlockSection>
+			</apex:pageBlock>
+		</apex:form-->
+	</apex:outputPanel>
+</apex:page>

@@ -1,0 +1,4 @@
+<apex:page standardController="Case" extensions="CaseCtl_ResultPage" action="{!resultMsg}">
+    <apex:pageMessages ></apex:pageMessages>
+    <apex:detail title="false" inlineEdit="true"/>
+</apex:page>

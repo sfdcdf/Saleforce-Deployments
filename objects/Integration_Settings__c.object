@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Marketo_Sync_Token__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketo Sync Token</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Marketo_Token_Expiration__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketo Token Expiration</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields><fields>
+        <fullName>Salesforce_Incoming_Service_authToken__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Auth token for Salesforce-Incoming-Service</inlineHelpText>
+        <label>Salesforce-Incoming-Service authToken</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Sync_Account_Data_With_Marketo__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync Account Data With Marketo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Sync_Case_Data_With_Marketo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync Case Data With Marketo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Sync_Organic_Case_Data_With_Marketo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync Organic Case Data With Marketo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><customSettingsType>Hierarchy</customSettingsType><enableFeeds>false</enableFeeds><label>Integration Settings</label><visibility>Public</visibility></CustomObject>
