@@ -3380,6 +3380,15 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <label>link to comment</label>
         <required>false</required>
         <type>Url</type>
+    </fields><fields>
+        <fullName>Start_time__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ActivityDateTime)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields><enableFeeds>false</enableFeeds><searchLayouts>
         <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
