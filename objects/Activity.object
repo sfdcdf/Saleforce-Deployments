@@ -3381,7 +3381,14 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <required>false</required>
         <type>Url</type>
     </fields><fields>
+        <fullName>Event_Start_time__c</fullName>
+        <externalId>false</externalId>
+        <label>Event Start time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields><fields>
         <fullName>Start_time__c</fullName>
+        <description>Start time of the event/ used in reports to group by time.</description>
         <externalId>false</externalId>
         <formula>TEXT(ActivityDateTime)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

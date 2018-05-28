@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
         <fullName>Automated_TP_Event_Scheduled</fullName>
         <description>Automated TP Event Scheduled</description>
         <protected>false</protected>
@@ -29,6 +29,14 @@
         <field>Close_Date__c</field>
         <formula>TODAY()</formula>
         <name>ybn update close date when closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>Update_Event_Start_Time</fullName>
+        <field>Event_Start_time__c</field>
+        <formula>ActivityDateTime</formula>
+        <name>Update Event Start Time</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -78,6 +86,18 @@
             <field>Event.Status__c</field>
             <operation>equals</operation>
             <value>Completed,LifeCycle Milestone Completed,Closed - Not Completed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>Update Event Start Time</fullName>
+        <actions>
+            <name>Update_Event_Start_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.ActivityDate</field>
+            <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules></Workflow>
