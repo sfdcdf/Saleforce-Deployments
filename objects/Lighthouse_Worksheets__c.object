@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -14210,6 +14210,31 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
+    </listViews><listViews>
+        <fullName>CSC</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Practice_Name__c</columns>
+        <columns>Last_Attempt_Date__c</columns>
+        <columns>LAST_ACTIVITY</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not Completed</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>4/1/2018 12:00 AM</value>
+        </filters>
+        <label>CSC</label>
     </listViews><recordTypes>
         <fullName>AR_Request_Form</fullName>
         <active>true</active>
