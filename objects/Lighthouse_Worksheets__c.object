@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -47251,24 +47251,6 @@ Email_has_been_sent__c = false,
 ISPICKVAL( Go_Live__c  ,"")))</errorConditionFormula>
         <errorMessage>You must complete the Message Activation and Very Important sections in order to move the CW into MA-1 Ready or MA-2 Pending Review</errorMessage>
     </validationRules><validationRules>
-        <fullName>CSC_Worksheet_Multi_Location_Restriction</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-
- RecordType.Id = "012600000009Zma",
- Multi_Location_Account__c = true,
-OR(
-
- ISPICKVAL(Go_Live__c, "On a specific date"),
- ISPICKVAL(Go_Live__c, "ASAP"), 
- ISNULL(Split_By__c),
- ISNULL(Split_Details__c),
- ISNULL(Location_Information__c),
- ISNULL(Test_Patients_Appointments__c),
- ISNULL(Other_Information__c),
- ISNULL(Go_Live_Notes__c)))</errorConditionFormula>
-        <errorMessage>When Multi-Location is selected then Split By, Split Details, Location Information, Test Patients/Appointments, Other Information, and Message Activation cannot be blank.  Message Activation cannot be "ASAP" or "On a Specific Date."</errorMessage>
-    </validationRules><validationRules>
         <fullName>CSC_Worksheet_Newsletters_Feedback</fullName>
         <active>true</active>
         <description>You must complete the Newsletters and Feedback sections in order to move the CW into MA-1 Ready, MA-2 Pending Review or MA-4 Pending Input</description>
@@ -48032,6 +48014,24 @@ NOT(INCLUDES(  Config_Prep__c  , "Verify STC Days"))))
 
 )</errorConditionFormula>
         <errorMessage>Before changing the status to Messages Activated, you must complete the required tasks in the WebUI Verifications section</errorMessage>
+    </validationRules><validationRules>
+        <fullName>CSC_Worksheet_Multi_Location_Restriction</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ NOT($Permission.CSC_Worksheet_Multi_location_restriction_bypass),
+ RecordType.Id = "012600000009Zma",
+ Multi_Location_Account__c = true,
+OR(
+
+ ISPICKVAL(Go_Live__c, "On a specific date"),
+ ISPICKVAL(Go_Live__c, "ASAP"), 
+ ISNULL(Split_By__c),
+ ISNULL(Split_Details__c),
+ ISNULL(Location_Information__c),
+ ISNULL(Test_Patients_Appointments__c),
+ ISNULL(Other_Information__c),
+ ISNULL(Go_Live_Notes__c)))</errorConditionFormula>
+        <errorMessage>When Multi-Location is selected then Split By, Split Details, Location Information, Test Patients/Appointments, Other Information, and Message Activation cannot be blank.  Message Activation cannot be "ASAP" or "On a Specific Date."</errorMessage>
     </validationRules><webLinks>
         <fullName>OBC_Swap</fullName>
         <availability>online</availability>
