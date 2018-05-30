@@ -5,6 +5,8 @@
   Last Modified Date .: 24-Mar-2018
   Modifications.......: Added new products for NCS Cases to be created and assets/ contracts associated to account.
   Description ........: Apex invocable method which executes various business taks automatically when an Opportunity is Closed/ Won for WBN.
+  5/20/2018 - AMM added to each section <Case>.Opportunityname__c= oli.OpportunityId;
+              Changed 1-GCC to new Status 1-Client Setup Call
 *****************************************************************************/
 
 public class OpportunityClosedWonActions
@@ -182,10 +184,11 @@ public class OpportunityClosedWonActions
                             fbCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             fbCase.Channel_Type__c = 'National';
                             fbCase.Budget__c = 0.00;
-                            fbCase.Status = '1-GCC';
+                            fbCase.Status = '1-Client Setup Call';
                             fbCase.SEO_Product__c = 'Facebook Ads';
-                            fbCase.Subject = 'Facebook Ads';
+                            fbCase.Subject = 'NCS - Facebook Ads';
                             fbCase.Facebook_Ad_Objective__c = 'Website Clicks';
+                            fbCase.Opportunityname__c= oli.OpportunityId;
                                                             
                             // add Case to Insert List
                             dmlCases.add(fbCase);
@@ -248,9 +251,10 @@ public class OpportunityClosedWonActions
                             lblCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             lblCase.Channel_Type__c = 'National';
                             lblCase.Budget__c = 0.00;
-                            lblCase.Status = '1-GCC';
+                            lblCase.Status = '1-Client Setup Call';
                             lblCase.SEO_Product__c = oli.ProductName__c;
                             lblCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            lblCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(lblCase);
@@ -313,9 +317,10 @@ public class OpportunityClosedWonActions
                             seoStationaryBizCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoStationaryBizCase.Channel_Type__c = 'National';
                             seoStationaryBizCase.Budget__c = 0.00;
-                            seoStationaryBizCase.Status = '1-GCC';
+                            seoStationaryBizCase.Status = '1-Client Setup Call';
                             seoStationaryBizCase.SEO_Product__c = oli.ProductName__c;
                             seoStationaryBizCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoStationaryBizCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoStationaryBizCase);
@@ -378,9 +383,10 @@ public class OpportunityClosedWonActions
                             websiteCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             websiteCase.Channel_Type__c = 'National';
                             websiteCase.Budget__c = 0.00;
-                            websiteCase.Status = '1-GCC';
+                            websiteCase.Status = '1-Client Setup Call';
                             websiteCase.SEO_Product__c = oli.ProductName__c;
                             websiteCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            websiteCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(websiteCase);
@@ -443,9 +449,10 @@ public class OpportunityClosedWonActions
                             seoSABCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoSABCase.Channel_Type__c = 'National';
                             seoSABCase.Budget__c = 0.00;
-                            seoSABCase.Status = '1-GCC';
+                            seoSABCase.Status = '1-Client Setup Call';
                             seoSABCase.SEO_Product__c = oli.ProductName__c;
                             seoSABCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoSABCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoSABCase);
@@ -508,9 +515,10 @@ public class OpportunityClosedWonActions
                             seoProStationaryBizCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoProStationaryBizCase.Channel_Type__c = 'National';
                             seoProStationaryBizCase.Budget__c = 0.00;
-                            seoProStationaryBizCase.Status = '1-GCC';
+                            seoProStationaryBizCase.Status = '1-Client Setup Call';
                             seoProStationaryBizCase.SEO_Product__c = oli.ProductName__c;
                             seoProStationaryBizCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoProStationaryBizCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoProStationaryBizCase);
@@ -573,9 +581,10 @@ public class OpportunityClosedWonActions
                             seoProSABCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoProSABCase.Channel_Type__c = 'National';
                             seoProSABCase.Budget__c = 0.00;
-                            seoProSABCase.Status = '1-GCC';
+                            seoProSABCase.Status = '1-Client Setup Call';
                             seoProSABCase.SEO_Product__c = oli.ProductName__c;
                             seoProSABCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoProSABCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoProSABCase);
@@ -638,9 +647,10 @@ public class OpportunityClosedWonActions
                             seoMasterStationaryBizCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoMasterStationaryBizCase.Channel_Type__c = 'National';
                             seoMasterStationaryBizCase.Budget__c = 0.00;
-                            seoMasterStationaryBizCase.Status = '1-GCC';
+                            seoMasterStationaryBizCase.Status = '1-Client Setup Call';
                             seoMasterStationaryBizCase.SEO_Product__c = oli.ProductName__c;
                             seoMasterStationaryBizCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoMasterStationaryBizCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoMasterStationaryBizCase);
@@ -703,9 +713,10 @@ public class OpportunityClosedWonActions
                             seoMasterSABCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoMasterSABCase.Channel_Type__c = 'National';
                             seoMasterSABCase.Budget__c = 0.00;
-                            seoMasterSABCase.Status = '1-GCC';
+                            seoMasterSABCase.Status = '1-Client Setup Call';
                             seoMasterSABCase.SEO_Product__c = oli.ProductName__c;
                             seoMasterSABCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoMasterSABCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoMasterSABCase);
@@ -768,9 +779,10 @@ public class OpportunityClosedWonActions
                             seoUpgradeCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             seoUpgradeCase.Channel_Type__c = 'National';
                             seoUpgradeCase.Budget__c = 0.00;
-                            seoUpgradeCase.Status = '1-GCC';
+                            seoUpgradeCase.Status = '1-Client Setup Call';
                             seoUpgradeCase.SEO_Product__c = oli.ProductName__c;
                             seoUpgradeCase.Subject = 'NCS - ' + oli.ProductName__c;
+                            seoUpgradeCase.Opportunityname__c= oli.OpportunityId;
                                                                     
                             // add Case to Insert List
                             dmlCases.add(seoUpgradeCase);
@@ -865,9 +877,10 @@ public class OpportunityClosedWonActions
                             fppcCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                             fppcCase.Channel_Type__c = 'National';
                             fppcCase.Budget__c = ppcBudget;
-                            fppcCase.Status = '1-GCC';
+                            fppcCase.Status = '1-Client Setup Call';
                             fppcCase.SEO_Product__c = 'Yodle Ads + YBN Foundations';
-                            fppcCase.Subject = 'Yodle Ads + YBN Foundations';
+                            fppcCase.Subject = 'NCS - Yodle Ads + YBN Foundations';
+                            fppcCase.Opportunityname__c= oli.OpportunityId;
                                         
                             // add Case to Insert List
                             dmlCases.add(fppcCase);
@@ -889,9 +902,10 @@ public class OpportunityClosedWonActions
                                 fndCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                                 fndCase.Channel_Type__c = 'National';
                                 fndCase.Budget__c = 0.00;
-                                fndCase.Status = '1-GCC';
+                                fndCase.Status = '1-Client Setup Call';
                                 fndCase.SEO_Product__c = 'YBN Foundations';
-                                fndCase.Subject = 'YBN Foundations';
+                                fndCase.Subject = 'NCS - YBN Foundations';
+                                fndCase.Opportunityname__c= oli.OpportunityId;
                                         
                                 // add Case to Insert List
                                 dmlCases.add(fndCase);
@@ -912,9 +926,10 @@ public class OpportunityClosedWonActions
                                 ppcCase.Sales_Person__c = oppsMap.get(oli.OpportunityId).OwnerId;
                                 ppcCase.Channel_Type__c = 'National';
                                 ppcCase.Budget__c = ppcBudget;
-                                ppcCase.Status = '1-GCC';
+                                ppcCase.Status = '1-Client Setup Call';
                                 ppcCase.SEO_Product__c = 'Yodle Ads';
-                                ppcCase.Subject = 'Yodle Ads';
+                                ppcCase.Subject = 'NCS - Yodle Ads';
+                                ppcCase.Opportunityname__c= oli.OpportunityId;
                                         
                                 // add Case to Insert List
                                 dmlCases.add(ppcCase);

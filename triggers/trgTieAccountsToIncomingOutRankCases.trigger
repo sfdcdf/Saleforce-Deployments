@@ -1,15 +1,13 @@
 trigger trgTieAccountsToIncomingOutRankCases on Case (before insert, before update) 
-
-
-  {
-
-    
+{
     // Date : 12/2/2014
     // Author : Rehan Nayyer
     // Objective : The objective is to tie the correct Account to the cases coming in from OutRank Salesforce using S2S. 
     //             This trigger will populate the "Account ID" on Cases using the "Yodle ID" which is mapped with "Yodle Account ID" 
     //             in S2S mapping for Cases    
     
+    // Eugene Ross - 5/29/2018: Deactivated trigger. Rogers Venture/ Local Digital connection record is no longer active.
+    //                          This functionality is no longer needed.
       
         // Define connection id for OutRank connection in S2S
         Id networkId; 
@@ -17,7 +15,6 @@ trigger trgTieAccountsToIncomingOutRankCases on Case (before insert, before upda
         try
           {
              networkId = clsS2SShareHelper.getConnectionId('Rogers Venture/ Local Digital');
-
           }
         catch(Exception excp)
           {          
@@ -50,4 +47,4 @@ trigger trgTieAccountsToIncomingOutRankCases on Case (before insert, before upda
          
              } 
 
-  }
+ }

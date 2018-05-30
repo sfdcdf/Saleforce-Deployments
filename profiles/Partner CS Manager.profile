@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><description>Updated to Support WBN And Vivial Accounts</description><userLicense>Salesforce</userLicense><classAccesses>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><description>Updated to Support WBN And Vivial Accounts</description><userLicense>Salesforce</userLicense><classAccesses>
         <apexClass>PC_ConvertLead</apexClass>
         <enabled>true</enabled>
     </classAccesses><classAccesses>
@@ -24713,6 +24713,14 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Lost_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Next_Action_Date__c</field>
         <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
