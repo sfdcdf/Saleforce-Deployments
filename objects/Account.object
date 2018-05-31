@@ -10991,89 +10991,6 @@ Live_Date__c+9+YBN_CSC_Date_Adjustment__c,Null)</formula>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields><fields>
-        <fullName>YBN_Call_Routing__c</fullName>
-        <description>Used for YBN Routing</description>
-        <externalId>false</externalId>
-        <formula>IF(
-  AND(
-    NOT(ISBLANK(LiveOps_VM_ID__c)),
-    NOT(ISBLANK(LiveOps_VM_ID_Standard__c)),
-    LiveOps_VM_ID__c &lt;&gt; LiveOps_VM_ID_Standard__c,
-    RecordType.DeveloperName = 'YBN_Corporate_Relationship'
-    ), 
-    
-    CASE(
-       LiveOps_VM_ID__c,
-       "15128727600", "402",
-       "15126374800", "400",
-       "19046806660", "400",
-       "15128727300", "400",
-       "15126376400", "400",
-       "15128727400", "401",
-       ""
-       ),
-     
-    IF(
-        AND(
-            OR(
-                NOT(ISBLANK(LiveOps_VM_ID__c)),
-                NOT(ISBLANK(LiveOps_VM_ID_Standard__c))
-            ),
-            OR(
-                LiveOps_VM_ID__c = "15128727600",
-                LiveOps_VM_ID_Standard__c = "15128727600"
-            )
-           ), "402",
-                
-            IF(
-                AND(
-                    OR(
-                        NOT(ISBLANK(LiveOps_VM_ID__c)),
-                        NOT(ISBLANK(LiveOps_VM_ID_Standard__c))
-                    ),
-                    OR(
-                        CASE(
-                            LiveOps_VM_ID__c,
-                            "15126374800", 1,
-                            "15128727300", 1,
-                            "19046806660", 1,
-                            "15126376400", 1,
-                            0
-                        ) = 1,
-                        CASE(
-                            LiveOps_VM_ID_Standard__c, 
-                            "15126374800", 1,
-                            "15128727300", 1,
-                            "19046806660", 1,
-                            "15126376400", 1,
-                            0
-                        ) = 1
-                    )
-                ), "400",
-                
-                    IF(
-                       AND(
-                           OR(
-                              NOT(ISBLANK(LiveOps_VM_ID__c)),
-                              NOT(ISBLANK(LiveOps_VM_ID_Standard__c))
-                           ),
-                           OR(
-                              LiveOps_VM_ID__c = "15128727400",
-                              LiveOps_VM_ID_Standard__c = "15128727400"
-                           )
-                          ),"401", 
-                           ""
-               )
-           )
-      )
- )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>YBN Call Routing</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
         <fullName>YBN_High_Importance_Account_Parent__c</fullName>
         <externalId>false</externalId>
         <formula>Parent.YBN_High_Importance_Account__c</formula>
@@ -11812,6 +11729,42 @@ AND(ISPICKVAL( Individual_Location_Service_Level__c ,"Service Level C"),OR( Last
             </valueSetDefinition>
         </valueSet>
         <visibleLines>7</visibleLines>
+    </fields><fields>
+        <fullName>YBN_Call_Routing__c</fullName>
+        <description>Used for YBN Routing</description>
+        <externalId>false</externalId>
+        <formula>CASE(
+    LiveOps_VM_ID__c,
+    "15128727600", "402",/* WBN Tier 3 */
+    "15126374800", "400",/* WBN Tier 1 */
+    "19046806660", "400",/* WBN Tier 1 */
+    "15128727300", "400",/* WBN Tier 1 */
+    "15126376400", "400",/* WBN Tier 1 */
+    "15128727400", "401",/* WBN Tier 2 */
+    "19045590990", "410",/* JAX Tier 1 */
+    "19045590991", "411",/* JAX Tier 2 */
+    "19045590992", "412",/* JAX Tier 3 */
+    ""
+) +
+CASE(
+    LiveOps_VM_ID_Standard__c,
+    "15128727600", "402",/* WBN Tier 3 */
+    "15126374800", "400",/* WBN Tier 1 */
+    "19046806660", "400",/* WBN Tier 1 */
+    "15128727300", "400",/* WBN Tier 1 */
+    "15126376400", "400",/* WBN Tier 1 */
+    "15128727400", "401",/* WBN Tier 2 */
+    "19045590990", "410",/* JAX Tier 1 */
+    "19045590991", "411",/* JAX Tier 2 */
+    "19045590992", "412",/* JAX Tier 3 */
+    ""
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YBN Call Routing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>

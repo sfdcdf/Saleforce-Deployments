@@ -46,9 +46,6 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -452,6 +449,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Contract_Length__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LiveOps_VM_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
