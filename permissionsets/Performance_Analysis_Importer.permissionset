@@ -726,6 +726,10 @@
         <editable>true</editable>
         <field>Performance_Analysis__c.isClosed__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Analysis__c.Last_Optimization_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
