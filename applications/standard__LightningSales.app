@@ -101,6 +101,7 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Feed</tabs>
     <tabs>standard-report</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>undefined_UtilityBar</utilityBar>
 </CustomApplication>

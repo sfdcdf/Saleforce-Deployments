@@ -197,6 +197,7 @@
     <tabs>Service_Audit__c</tabs>
     <tabs>zzContract__c</tabs>
     <tabs>Call_Grading_Form_2_0__c</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Best_Practice_Evaluation__c</tab>
@@ -230,6 +231,9 @@
         </mappings>
         <mappings>
             <tab>Organic_Analysis__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Quality_Team_Rep_Management</tab>
         </mappings>
         <mappings>
             <tab>Segment__c</tab>

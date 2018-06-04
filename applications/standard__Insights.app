@@ -82,4 +82,5 @@
     <tabs>Partner_Name__c</tabs>
     <tabs>standard-Workspace</tabs>
     <tabs>Marketo_Email_Campaign__c</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
 </CustomApplication>

@@ -22,9 +22,13 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Quality_Team_Rep_Management</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

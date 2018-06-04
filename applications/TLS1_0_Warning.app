@@ -4,4 +4,5 @@
     <formFactors>Large</formFactors>
     <label>TLS1.0 Warning</label>
     <tabs>Config_TLS_Warning</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
 </CustomApplication>

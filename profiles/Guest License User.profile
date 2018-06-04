@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Guest User License</userLicense><applicationVisibilities>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Guest User License</userLicense><applicationVisibilities>
         <application>Clicktools</application>
         <default>false</default>
         <visible>false</visible>
@@ -4922,5 +4922,8 @@
         <visibility>Hidden</visibility>
     </tabVisibilities><tabVisibilities>
         <tab>zzContract__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Quality_Team_Rep_Management</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities></Profile>

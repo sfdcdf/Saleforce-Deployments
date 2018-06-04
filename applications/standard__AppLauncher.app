@@ -6,4 +6,5 @@
     <tabs>Cancellation_Request__c</tabs>
     <tabs>Service_Audit__c</tabs>
     <tabs>Call_Grading_Form_2_0__c</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
 </CustomApplication>

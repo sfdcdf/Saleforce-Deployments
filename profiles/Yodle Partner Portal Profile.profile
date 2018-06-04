@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense><pageAccesses>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense><pageAccesses>
         <apexPage>BandwidthExceeded</apexPage>
         <enabled>true</enabled>
     </pageAccesses><pageAccesses>
@@ -4983,5 +4983,8 @@
         <visibility>Hidden</visibility>
     </tabVisibilities><tabVisibilities>
         <tab>zzContract__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Quality_Team_Rep_Management</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities></Profile>

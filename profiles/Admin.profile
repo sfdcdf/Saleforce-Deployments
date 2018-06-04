@@ -1120,6 +1120,9 @@
     </pageAccesses><pageAccesses>
         <apexPage>soql</apexPage>
         <enabled>true</enabled>
+    </pageAccesses><pageAccesses>
+        <apexPage>QualityTeam_RepMgmt</apexPage>
+        <enabled>true</enabled>
     </pageAccesses><applicationVisibilities>
         <application>Clicktools</application>
         <default>false</default>
@@ -32305,4 +32308,7 @@
     </tabVisibilities><tabVisibilities>
         <tab>zzContract__c</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Quality_Team_Rep_Management</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities></Profile>

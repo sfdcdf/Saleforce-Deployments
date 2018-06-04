@@ -15,9 +15,13 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-home</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Quality_Team_Rep_Management</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

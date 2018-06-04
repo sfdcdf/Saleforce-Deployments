@@ -28833,4 +28833,7 @@
     </tabVisibilities><tabVisibilities>
         <tab>zzContract__c</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Quality_Team_Rep_Management</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities></Profile>

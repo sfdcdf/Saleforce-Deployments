@@ -212,6 +212,7 @@
     <tabs>MLS__c</tabs>
     <tabs>MLS_Name__c</tabs>
     <tabs>Worksheets__c</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_MLS__c</tab>
@@ -249,6 +250,9 @@
         <mappings>
             <fieldName>Account_Name__c</fieldName>
             <tab>Organic_Analysis__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Quality_Team_Rep_Management</tab>
         </mappings>
         <mappings>
             <fieldName>Account_Name__c</fieldName>

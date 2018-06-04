@@ -13,4 +13,5 @@
     <tabs>Call_Grading_Forms__c</tabs>
     <tabs>CorpSDR_Demo_Questionaire__c</tabs>
     <tabs>Call_Grading_Form_2_0__c</tabs>
+    <tabs>Quality_Team_Rep_Management</tabs>
 </CustomApplication>
