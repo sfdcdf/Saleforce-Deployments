@@ -75,13 +75,13 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities><applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
         <application>standard__ServiceConsole</application>
         <default>false</default>
         <visible>false</visible>
+    </applicationVisibilities><applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>true</visible>
     </applicationVisibilities><fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
