@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CallHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -839,6 +839,41 @@
             <value>Communit</value>
         </filters>
         <label>Stale Users</label>
+    </listViews><listViews>
+        <fullName>Users_Active_Not_Logged_Since_last_10_Da</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.LAST_LOGIN</field>
+            <operation>notEqual</operation>
+            <value>LAST_N_DAYS:60</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Communit</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>API</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Users Active and NotLogged For 60 Days</label>
     </listViews><webLinks>
         <fullName>Loop__Change_DS_Cred</fullName>
         <availability>online</availability>

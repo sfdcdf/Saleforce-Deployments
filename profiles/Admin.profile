@@ -1120,6 +1120,9 @@
     </pageAccesses><pageAccesses>
         <apexPage>soql</apexPage>
         <enabled>true</enabled>
+    </pageAccesses><pageAccesses>
+        <apexPage>QualityTeam_RepMgmt</apexPage>
+        <enabled>true</enabled>
     </pageAccesses><fieldPermissions>
         <editable>true</editable>
         <field>Account.AC_OCC_Created__c</field>
