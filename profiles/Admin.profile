@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Salesforce</userLicense><classAccesses>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Salesforce</userLicense><classAccesses>
         <apexClass>AccountFeesController</apexClass>
         <enabled>true</enabled>
     </classAccesses><classAccesses>
@@ -1119,6 +1119,9 @@
         <enabled>true</enabled>
     </pageAccesses><pageAccesses>
         <apexPage>soql</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses><pageAccesses>
+        <apexPage>QualityTeam_RepMgmt</apexPage>
         <enabled>true</enabled>
     </pageAccesses><fieldPermissions>
         <editable>true</editable>
