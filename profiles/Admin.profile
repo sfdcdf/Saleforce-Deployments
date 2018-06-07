@@ -29683,6 +29683,66 @@
         <editable>true</editable>
         <field>Quality_Case__c.Sales_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Additional_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.CS_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Call_Found_Under__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Demo_Recorded__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fail_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fail_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fail_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fine_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Potential_Quality_Offense__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Product_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.QO_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Rep_Emailed_QA__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Director__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Rep__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Segment__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -30968,6 +31028,9 @@
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
     </layoutAssignments><layoutAssignments>
         <layout>zzContract__c-Contract Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -32071,6 +32134,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>

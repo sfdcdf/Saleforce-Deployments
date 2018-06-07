@@ -3820,6 +3820,9 @@
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
     </layoutAssignments><layoutAssignments>
         <layout>zzContract__c-Contract Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -4939,6 +4942,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>

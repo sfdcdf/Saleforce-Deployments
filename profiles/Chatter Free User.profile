@@ -4669,6 +4669,9 @@
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
     </layoutAssignments><layoutAssignments>
         <layout>zzContract__c-Contract Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -5758,6 +5761,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>
