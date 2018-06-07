@@ -24611,6 +24611,14 @@
         <editable>false</editable>
         <field>Task.Activity_Start_Time__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Outcome__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Austin Client Services %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>

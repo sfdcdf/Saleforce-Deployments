@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
         <fullName>Alert_New_Inbound_Email</fullName>
         <description>Alert - New Inbound Email</description>
         <protected>false</protected>
@@ -3056,145 +3056,6 @@
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Escalation_Path_Submission</template>
     </alerts><alerts>
-        <fullName>YBN_SOW_Denied</fullName>
-        <description>YBN SOW Denied</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <recipients>
-            <recipient>YBN_VP_of_Client_Services</recipient>
-            <type>role</type>
-        </recipients>
-        <recipients>
-            <recipient>bpekarek@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>dmccarthy@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>doleary@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jswitzer@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jwilder@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>neal.siebert@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_SOW_Not_Approved</template>
-    </alerts><alerts>
-        <fullName>YBN_SOW_Email_Alert</fullName>
-        <description>YBN SOW Email Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <type>creator</type>
-        </recipients>
-        <recipients>
-            <recipient>YBN_VP_of_Client_Services</recipient>
-            <type>role</type>
-        </recipients>
-        <recipients>
-            <recipient>bpekarek@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>dmccarthy@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jswitzer@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>justin.petrillo@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mpugh@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mswiader@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>neal.siebert@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>scornwall@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_SOW_Submission</template>
-    </alerts><alerts>
-        <fullName>YBN_SOW_approved_Email_Alert</fullName>
-        <description>YBN SOW approved Email Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <type>creator</type>
-        </recipients>
-        <recipients>
-            <recipient>YBN_VP_of_Client_Services</recipient>
-            <type>role</type>
-        </recipients>
-        <recipients>
-            <recipient>bpekarek@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>dmccarthy@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jswitzer@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>neal.siebert@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>sarah.mctate@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_SOW_Approved</template>
-    </alerts><alerts>
         <fullName>YBN_Send_Issue_Resolution_Survey_To_Spoke_To</fullName>
         <description>YBN: Send Issue Resolution Survey To Spoke To</description>
         <protected>false</protected>
@@ -3321,6 +3182,57 @@
         </recipients>
         <senderType>DefaultWorkflowUser</senderType>
         <template>National_Templates/NCS_Case_Not_Touched_in_4_days</template>
+    </alerts><alerts>
+        <fullName>YBN_SOW_Denied</fullName>
+        <description>YBN SOW Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>SOW_Denial_Alert</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_VP_of_Client_Services</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>National_Templates/YBN_SOW_Not_Approved</template>
+    </alerts><alerts>
+        <fullName>YBN_SOW_Email_Alert</fullName>
+        <description>YBN SOW Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>SOW_Submission_Alert</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_VP_of_Client_Services</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>National_Templates/YBN_SOW_Submission</template>
+    </alerts><alerts>
+        <fullName>YBN_SOW_approved_Email_Alert</fullName>
+        <description>YBN SOW approved Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>SOW_Approval_Alert</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_VP_of_Client_Services</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>National_Templates/YBN_SOW_Approved</template>
     </alerts><fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
