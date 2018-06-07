@@ -24710,6 +24710,14 @@
         <editable>false</editable>
         <field>Task.Start_time__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Activity_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Activity_Start_Time__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>

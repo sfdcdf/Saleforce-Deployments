@@ -3396,6 +3396,19 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>Activity_Start_Time__c</fullName>
+        <description>Time field for Event Start Time field Uses Central Time Zone - 5 hour Offset (Dalylight Savings Time)</description>
+        <externalId>false</externalId>
+        <formula>TIMEVALUE(ActivityDateTime) - 18000000
+/*
+1800000  5 hour offset Daylight Saving Central Time Zone
+21600000 6 hour offset Standard Time for Central TimeZone
+*/</formula>
+        <inlineHelpText>Uses Central Time Zone - 5 hour Offset (Dalylight Savings Time)</inlineHelpText>
+        <label>Activity Start Time</label>
+        <required>false</required>
+        <type>Time</type>
     </fields><enableFeeds>false</enableFeeds><searchLayouts>
         <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>

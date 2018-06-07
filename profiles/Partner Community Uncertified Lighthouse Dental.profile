@@ -21326,6 +21326,14 @@
         <editable>false</editable>
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Activity_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Activity_Start_Time__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>
