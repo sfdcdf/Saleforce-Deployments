@@ -187,7 +187,7 @@ public without sharing class CancellationRequestTriggerHandler {
 
     public static Map<String, Event> getExistingEventsMap(Map<Id, Cancellation_Request__c> newMapValues){               
         List<Event> existingEventsList = new List<Event>([select WhatId,Id,RecordTypeId,Subject,Status__c,StartDateTime,OwnerId  from Event where WhatId in :newMapValues.keySet() 
-            and RecordType.ID = :Schema.SObjectType.Event.getRecordTypeInfosByName().get('Calendar Blocker').getRecordTypeId() and Subject = 'CR Follow Up' and Status__c = 'Scheduled']);
+            and RecordType.ID = :Schema.SObjectType.Event.getRecordTypeInfosByName().get('Calendar Blocker').getRecordTypeId() and Subject LIKE '%CR Follow Up%' and Status__c = 'Scheduled']);
         Map<String, Event> existingEventsMap = new Map<String, Event>();
         for(Event eventRecord : existingEventsList){
             existingEventsMap.put(eventRecord.WhatId,eventRecord);      
@@ -201,7 +201,7 @@ public without sharing class CancellationRequestTriggerHandler {
         e.RecordTypeId = Schema.SObjectType.Event.getRecordTypeInfosByName().get('Calendar Blocker').getRecordTypeId();
         e.internal_external_activity__c = 'External';
         e.ShowAs = 'Busy';
-        e.Subject = 'CR Follow Up';
+        e.Subject = cancelRequest.Client_ID__c + ' | CR Follow Up';
         e.Status__c = 'Scheduled';
         e.StartDateTime = cancelRequest.Next_Scheduled_Contact_Date__c;
         e.DurationInMinutes = 30;        
