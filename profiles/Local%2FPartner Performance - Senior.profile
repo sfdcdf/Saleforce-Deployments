@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Salesforce</userLicense><classAccesses>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Salesforce</userLicense><classAccesses>
         <apexClass>PC_ConvertLead</apexClass>
         <enabled>true</enabled>
     </classAccesses><classAccesses>
@@ -24744,6 +24744,78 @@
         <editable>false</editable>
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Activity_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Additional_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.CS_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Call_Found_Under__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Demo_Recorded__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fail_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fail_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fail_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Fine_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Outcome__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Product_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.QO_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Rep_Emailed_QA__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Director__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Rep__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Segment__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Activity_Start_Time__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -26350,6 +26422,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>

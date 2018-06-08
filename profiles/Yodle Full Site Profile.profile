@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense><fieldPermissions>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense><fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountSource</field>
         <readable>true</readable>
@@ -3473,6 +3473,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
