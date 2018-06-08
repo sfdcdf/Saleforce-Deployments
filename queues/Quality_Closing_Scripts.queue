@@ -2,6 +2,11 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Quality Closing Scripts</name>
+    <queueMembers>
+        <roles>
+            <role>Quality_Training_Executive</role>
+        </roles>
+    </queueMembers>
     <queueSobject>
         <sobjectType>Quality_Case__c</sobjectType>
     </queueSobject>
