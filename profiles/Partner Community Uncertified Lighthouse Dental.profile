@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Partner Community</userLicense><classAccesses>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Partner Community</userLicense><classAccesses>
         <apexClass>TLS_WarningMessageController</apexClass>
         <enabled>true</enabled>
     </classAccesses><classAccesses>
@@ -21241,6 +21241,14 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Activity_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Activity_Start_Time__c</field>
         <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>

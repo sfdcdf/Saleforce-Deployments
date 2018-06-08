@@ -29575,6 +29575,14 @@
         <editable>true</editable>
         <field>Case.Requested_Launch_Delay_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Activity_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Activity_Start_Time__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
