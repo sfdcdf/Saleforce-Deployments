@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
         <fullName>Email2UsernameMap__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -15,4 +15,11 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><customSettingsType>List</customSettingsType><description>Yodle Live Client to Salesforce Account record field mapping</description><enableFeeds>false</enableFeeds><label>YL2SFAccountFieldMapping</label><visibility>Public</visibility></CustomObject>
+    </fields><customSettingsType>List</customSettingsType><description>Yodle Live Client to Salesforce Account record field mapping</description><enableFeeds>false</enableFeeds><label>YL2SFAccountFieldMapping</label><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Salesforce_Field_API_Name__c</columns>
+        <columns>Email2UsernameMap__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews></CustomObject>

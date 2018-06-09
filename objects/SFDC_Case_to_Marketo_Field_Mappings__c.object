@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
         <fullName>Case_Reason_Criteria__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Put the Case Reason criteria to sync this fields to Marketo!</inlineHelpText>
@@ -33,4 +33,13 @@
         <label>Sync Field</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><customSettingsType>List</customSettingsType><description>Only supported for Record Type 'Outbound Call' with Case Reason 'CSC'!</description><enableFeeds>false</enableFeeds><label>SFDC Case to Marketo Field Mappings</label><visibility>Public</visibility></CustomObject>
+    </fields><customSettingsType>List</customSettingsType><description>Only supported for Record Type 'Outbound Call' with Case Reason 'CSC'!</description><enableFeeds>false</enableFeeds><label>SFDC Case to Marketo Field Mappings</label><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SFDC_Field_API_Name__c</columns>
+        <columns>Sync_Field__c</columns>
+        <columns>Sync_Blank_Values__c</columns>
+        <columns>Case_Reason_Criteria__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews></CustomObject>

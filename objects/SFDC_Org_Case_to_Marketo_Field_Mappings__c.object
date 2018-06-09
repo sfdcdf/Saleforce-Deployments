@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
         <fullName>SFDC_Field_API_Name__c</fullName>
         <externalId>false</externalId>
         <label>SFDC Field API Name</label>
@@ -23,4 +23,12 @@
         <label>Sync Field</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><customSettingsType>List</customSettingsType><enableFeeds>false</enableFeeds><label>SFDC Org Case to Marketo Field Mappings</label><visibility>Public</visibility></CustomObject>
+    </fields><customSettingsType>List</customSettingsType><enableFeeds>false</enableFeeds><label>SFDC Org Case to Marketo Field Mappings</label><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SFDC_Field_API_Name__c</columns>
+        <columns>Sync_Field__c</columns>
+        <columns>Sync_Blank_Values__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews></CustomObject>
