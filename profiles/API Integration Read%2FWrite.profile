@@ -26727,23 +26727,11 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
-        <field>Quality_Case__c.Cancellation_Parent__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>false</editable>
         <field>Quality_Case__c.Case_Ag_Bus_Days__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Quality_Case__c.Case_Age__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>false</editable>
-        <field>Quality_Case__c.Case_Closed_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>false</editable>
-        <field>Quality_Case__c.Case_Closed_Date_Time__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
@@ -26760,14 +26748,6 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Quality_Case__c.IsClosed__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>false</editable>
-        <field>Quality_Case__c.Original_Case_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>false</editable>
-        <field>Quality_Case__c.Original_Case_Number__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
@@ -28548,6 +28528,122 @@
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
         <field>Quality_Case__c.Segment__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Account_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Cancellation_Parent__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Case_Closed_By__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Case_Closed_Date_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Date_Processed_QA__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Minutes_Recorded__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Offense_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Original_Case_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Original_Case_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Priority__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.QA_Action_Taken__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.QA_Product_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.QA_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Result_of_QA__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_Date_Processed_QA__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_E_mail_Address__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_Name_text__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_Offense_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_QA_Action_Taken__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.SR1_Sales_Office__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Office__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Person_text__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Sales_Rep_E_mail_Address__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Subject__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Words_Transcribed__c</field>
         <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
@@ -30452,18 +30548,6 @@
         <visible>true</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
-        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
-        <default>false</default>
         <recordType>SMS_Tracking__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
@@ -30594,9 +30678,22 @@
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
