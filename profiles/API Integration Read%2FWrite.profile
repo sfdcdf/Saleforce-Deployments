@@ -11978,34 +11978,6 @@
         <field>Case.taskId__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__Local_Time_24_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__Local_Time_24__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__Local_Time_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__Local_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__Timezone_Formula__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__Timezone_Full__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Case.tz__UTC_Offset_Formula__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>CaseMilestoneSync__c.BusinessHours__c</field>
         <readable>true</readable>
@@ -28645,6 +28617,46 @@
         <editable>true</editable>
         <field>Quality_Case__c.Words_Transcribed__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CSC_Rep__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Sales_Rep_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Sync_to_Marketo__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__Local_Time_24_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__Local_Time_24__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__Local_Time_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__Timezone_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__Timezone_Full__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.tz__UTC_Offset_Formula__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -30013,10 +30025,6 @@
         <recordType>Case.LS_ATV_Organic_Setup</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Case.Master</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.New_Client_Setup</recordType>
         <visible>true</visible>
@@ -30693,6 +30701,11 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Case.Master</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>

@@ -3164,9 +3164,14 @@ false)</formula>
         <queue>QualityTeam295311</queue>
     </listViews><listViews>
         <fullName>Quality_Closing_Scripts_Quality_Case</fullName>
-        <filterScope>Queue</filterScope>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Sales_Date__c</columns>
+        <columns>Sales_Office__c</columns>
+        <columns>Sales_Rep__c</columns>
+        <filterScope>Everything</filterScope>
         <label>Quality Closing Scripts</label>
-        <queue>Quality_Closing_Scripts</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
