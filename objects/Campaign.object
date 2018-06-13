@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>AddCampaign</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -217,7 +217,7 @@
         <filters>
             <field>CAMPAIGN.NAME</field>
             <operation>startsWith</operation>
-            <value>WBN</value>
+            <value>WBN,YBN</value>
         </filters>
         <label>WBN Campaigns</label>
         <sharedTo>
