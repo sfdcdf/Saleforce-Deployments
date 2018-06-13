@@ -424,28 +424,6 @@
         <senderType>CurrentUser</senderType>
         <template>Partner_Email_Templates/Escalation_Escalated_To_Berry</template>
     </alerts><alerts>
-        <fullName>Escalated_National_Analyst</fullName>
-        <description>Escalated National Analyst</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>YBN_Organic_Escalations</recipient>
-            <type>group</type>
-        </recipients>
-        <recipients>
-            <recipient>matt.austin@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <field>Client_Services_Mgr__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>IMS_Rep__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Escalation_Standard_Email</template>
-    </alerts><alerts>
         <fullName>Escalated_SEM_Ops</fullName>
         <description>Escalated SEM Ops</description>
         <protected>false</protected>
@@ -3233,6 +3211,28 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_SOW_Approved</template>
+    </alerts><alerts>
+        <fullName>Escalated_National_Analyst</fullName>
+        <description>Escalated National Analyst</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>YBN_Organic_Escalations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>shawna.kays@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Client_Services_Mgr__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>IMS_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/Escalation_Standard_Email</template>
     </alerts><fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
