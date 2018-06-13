@@ -14,7 +14,7 @@ public without sharing class OrganicCaseATVUpdates
         try{
         
              Id lsATVCaseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId();
-             Set<Id> organicCaseRecordTypeIds = new Set<Id>{Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId(), Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(), Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId()};
+             Set<Id> organicCaseRecordTypeIds = new Set<Id>{Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(), Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId()};
              List<Services_Offered_Vertical__c> dmlServicesOffered = new List<Services_Offered_Vertical__c>();
              List<Case> dmlCases = new List<Case>();
              List<String> caseServicesOfferedList = new List<String>();
