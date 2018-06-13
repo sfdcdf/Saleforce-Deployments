@@ -2547,46 +2547,6 @@ false)</formula>
         <type>Text</type>
         <unique>false</unique>
     </fields><fields>
-        <fullName>Sales_Office__c</fullName>
-        <externalId>false</externalId>
-        <label>Sales Office</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Austin</fullName>
-                    <default>false</default>
-                    <label>Austin</label>
-                </value>
-                <value>
-                    <fullName>Charlotte</fullName>
-                    <default>false</default>
-                    <label>Charlotte</label>
-                </value>
-                <value>
-                    <fullName>New York</fullName>
-                    <default>false</default>
-                    <label>New York</label>
-                </value>
-                <value>
-                    <fullName>Scottsdale</fullName>
-                    <default>false</default>
-                    <label>Scottsdale</label>
-                </value>
-                <value>
-                    <fullName>Jacksonville</fullName>
-                    <default>false</default>
-                    <label>Jacksonville</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
         <fullName>Sales_Person_text__c</fullName>
         <externalId>false</externalId>
         <label>Sales Person (text)</label>
@@ -3117,6 +3077,51 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>Sales_Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Austin</fullName>
+                    <default>false</default>
+                    <label>Austin</label>
+                </value>
+                <value>
+                    <fullName>Charlotte</fullName>
+                    <default>false</default>
+                    <label>Charlotte</label>
+                </value>
+                <value>
+                    <fullName>New York</fullName>
+                    <default>false</default>
+                    <label>New York</label>
+                </value>
+                <value>
+                    <fullName>Scottsdale</fullName>
+                    <default>false</default>
+                    <label>Scottsdale</label>
+                </value>
+                <value>
+                    <fullName>Jacksonville</fullName>
+                    <default>false</default>
+                    <label>Jacksonville</label>
+                </value>
+                <value>
+                    <fullName>Field Sales</fullName>
+                    <default>false</default>
+                    <label>Field Sales</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Quality Case</label><nameField>
         <displayFormat>Q-{0000}</displayFormat>
         <label>Quality Case Name</label>
@@ -3170,6 +3175,7 @@ false)</formula>
         <columns>Sales_Date__c</columns>
         <columns>Sales_Office__c</columns>
         <columns>Sales_Rep__c</columns>
+        <columns>Created_Date__c</columns>
         <filterScope>Everything</filterScope>
         <label>Quality Closing Scripts</label>
         <sharedTo>
@@ -4146,6 +4152,10 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Field Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Jacksonville</fullName>
                 <default>false</default>
             </values>
@@ -5016,6 +5026,10 @@ false)</formula>
             <values>
                 <fullName>Austin</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>Field Sales</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -5963,6 +5977,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Charlotte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Sales</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6919,6 +6937,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Charlotte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Sales</fullName>
                 <default>false</default>
             </values>
             <values>
