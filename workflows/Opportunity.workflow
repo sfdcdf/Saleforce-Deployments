@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
         <fullName>Completed_SEOPPC_Ranking_Scrape</fullName>
         <description>Completed SEOPPC Ranking Scrape</description>
         <protected>false</protected>
@@ -78,72 +78,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>YBN_Sales_Email_Templates/YBN_Assign_Relationship_Director_RD</template>
-    </alerts><alerts>
-        <fullName>YBN_Contract_Signed</fullName>
-        <description>YBN Contract Signed</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>aspinelli@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>emcintyre@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>joe.fitzpatrick@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jswitzer@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>justin.petrillo@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mark.fucaloro@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mpugh@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mswiader@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>raymond.rosario@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>reid.beck@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.ciampi@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.volkel@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>scornwall@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_Contract_Signed</template>
     </alerts><alerts>
         <fullName>YBN_Contract_Signed_Assign_AD</fullName>
         <description>YBN Contract Signed-Assign AD</description>
@@ -468,6 +402,52 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Estimated_Launch_Dates_Needed</template>
+    </alerts><alerts>
+        <fullName>YBN_Contract_Signed</fullName>
+        <description>YBN Contract Signed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>emily.garza@web.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jennifer.hendrickson@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>justin.petrillo@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lcuiman@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mark.fucaloro@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mbrevig@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mpugh@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mswiader@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ryan.ciampi@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>scornwall@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>National_Templates/YBN_Contract_Signed</template>
     </alerts><fieldUpdates>
         <fullName>CPP_Update_Probability_to_10</fullName>
         <field>Probability</field>
