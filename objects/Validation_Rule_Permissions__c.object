@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 1 Cases</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP 1 Scheduled Call Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 2 Cases</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP 2 Scheduled Call Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Lead_Stream_TP_3_Scheduled_Call_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 3 Cases</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP 3 Scheduled Call Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility></CustomObject>
