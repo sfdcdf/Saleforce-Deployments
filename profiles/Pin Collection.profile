@@ -1347,10 +1347,6 @@
         <field>Account.Next_Billing_Date__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Next_Scheduled_Touchpoint__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Account.Next_TP_Needed_By__c</field>
         <readable>true</readable>
@@ -24573,6 +24569,10 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Task.Activity_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
