@@ -1339,10 +1339,6 @@
         <field>Account.Next_Billing_Date__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Next_Scheduled_Touchpoint__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Account.Next_TP_Needed_By__c</field>
         <readable>true</readable>
@@ -24602,6 +24598,10 @@
         <editable>true</editable>
         <field>Quality_Case__c.Segment__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Next_Scheduled_Touchpoint__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -25681,6 +25681,14 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>zzContract__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Validation_Rule_Permissions__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>
