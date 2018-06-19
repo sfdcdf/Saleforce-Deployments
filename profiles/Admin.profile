@@ -925,6 +925,9 @@
     </classAccesses><classAccesses>
         <apexClass>ybnUtilsEvents</apexClass>
         <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>wbnNationalNCSStatusNotificationBatch</apexClass>
+        <enabled>true</enabled>
     </classAccesses><pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
