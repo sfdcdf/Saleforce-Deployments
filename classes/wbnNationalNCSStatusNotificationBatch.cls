@@ -32,7 +32,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     
     global void execute(Database.BatchableContext BC, List<sObject> scope)
     {
-        List<Case> ncsCaseNotificationsList = new List<Case>();
+        List<Case_Status_Change_Log__c> dmlChangeLogs = new List<Case_Status_Change_Log__c>();
         
         // put Case History data into Map
         Map<Id, CaseHistory> caseHistMap = new Map<Id, CaseHistory>();
@@ -54,12 +54,30 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
             caseHistMap.put(ch.CaseId, ch);
         }
         
-        if(caseHistMap.size() > 0 && scope.size() > 0){
+        // put Case History data into Map
+        Map<Id, Case_Status_Change_Log__c> caseChangeLogMap = new Map<Id, Case_Status_Change_Log__c>();
+        for(Case_Status_Change_Log__c cl :
+            [SELECT Id,
+                    CaseId__c,
+                    Case_Status__c,
+                    Notification_Sent_Date__c
+               FROM Case_Status_Change_Log__c
+              WHERE Notification_Sent_Date__c = :Date.TODAY().addDays(-3)]){
+            
+            caseChangeLogMap.put(cl.CaseId__c, cl);
+        }
         
-            // compare National NCS Cases to Case History
+        if(scope.size() > 0){
+        
+            // compare National NCS Cases to Case History & Case Change Log
             for(Case c : (List<Case>) scope){
-                if(!caseHistMap.containsKey(c.Id)){
-                    ncsCaseNotificationsList.add(c);
+                if(!caseHistMap.containsKey(c.Id) || (caseChangeLogMap.get(c.Id).CaseId__c == c.Id && caseChangeLogMap.get(c.Id).Case_Status__c == c.Status)){
+                
+                    Case_Status_Change_Log__c newChangeLog = new Case_Status_Change_Log__c();
+                    newChangeLog.CaseId__c = c.Id;
+                    newChangeLog.Case_Status__c = c.Status;
+                    newChangeLog.Notification_Sent_Date__c = System.Now();
+                    dmlChangeLogs.add(newChangeLog);
                 }
             }
         }
@@ -67,7 +85,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
    
     global void finish(Database.BatchableContext BC) 
     {
-
+        // send notifications from change log from current day
     }
 
 }

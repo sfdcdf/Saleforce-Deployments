@@ -26973,6 +26973,18 @@
         <editable>false</editable>
         <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.CaseId__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.Case_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.Notification_Sent_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -28258,6 +28270,11 @@
     </layoutAssignments><layoutAssignments>
         <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -29217,6 +29234,14 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Validation_Rule_Permissions__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Case_Status_Change_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>
@@ -30323,6 +30348,10 @@
         <default>false</default>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>
         <visibility>DefaultOn</visibility>

@@ -25259,6 +25259,18 @@
         <editable>false</editable>
         <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.CaseId__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.Case_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.Notification_Sent_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -26547,6 +26559,11 @@
     </layoutAssignments><layoutAssignments>
         <layout>CaseClose-Account Update Close</layout>
         <recordType>Case.YBN_Request</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -28688,6 +28705,10 @@
         <default>true</default>
         <personAccountDefault>true</personAccountDefault>
         <recordType>Case.Master</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>

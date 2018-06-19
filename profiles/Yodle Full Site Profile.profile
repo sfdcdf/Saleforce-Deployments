@@ -3586,6 +3586,11 @@
     </layoutAssignments><layoutAssignments>
         <layout>Quality_Case__c-TORCHx Master Quality</layout>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -4701,6 +4706,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>

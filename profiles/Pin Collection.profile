@@ -24654,6 +24654,18 @@
         <editable>false</editable>
         <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.CaseId__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.Case_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case_Status_Change_Log__c.Notification_Sent_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
         <recordType>Account.Standard</recordType>
@@ -25915,6 +25927,11 @@
     </layoutAssignments><layoutAssignments>
         <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -27487,6 +27504,10 @@
         <default>false</default>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>
         <visibility>Hidden</visibility>
