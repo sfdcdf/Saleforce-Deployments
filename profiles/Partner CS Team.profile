@@ -9754,10 +9754,6 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
-        <field>Case.Recurring_Fees__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
         <field>Case.Reduced_Contract_Term_Details__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
@@ -24707,6 +24703,10 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Notification_Log__c.Trigger_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Recurring_Fees__c</field>
         <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
