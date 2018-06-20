@@ -13,6 +13,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     public Set<String> recordTypeNameIncludeSet = new Set<String>{'National - New Client Setup'};
     public Set<String> ownerTypeIncludeSet = new Set<String>{'User'};
     public Set<String> profileExcludeSet = new Set<String>{'System Administrator', 'API Integration Read/Write'};
+    public Id logRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
     public String query = 'SELECT Id, CreatedDate, Owner.Name, Owner.Email, Account.IMS_Rep__r.Name, Account.IMS_Rep__r.Email, Account.IMS_Rep__r.Manager.Name, Account.IMS_Rep__r.Manager.Email,' +
                           'AccountId, Account.Name, CaseNumber, Status, RecordType.Name ' +
                           'FROM Case ' +
@@ -23,7 +24,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
                           'AccountId NOT IN :acctIdsExcludeSet AND ' +
                           'Owner.Profile.Name NOT IN :profileExcludeSet AND ' +
                           'AccountId != NULL AND ' +
-                          'CreatedDate = :Date.TODAY().addDays(-3)';
+                          'CreatedDate = LAST_N_DAYS: 7';
     
     global database.querylocator start(Database.BatchableContext BC)
     {
@@ -32,7 +33,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     
     global void execute(Database.BatchableContext BC, List<sObject> scope)
     {
-        List<Case_Status_Change_Log__c> dmlChangeLogs = new List<Case_Status_Change_Log__c>();
+        List<Notification_Log__c> dmlChangeLogs = new List<Notification_Log__c>();
         
         // put Case History data into Map
         Map<Id, CaseHistory> caseHistMap = new Map<Id, CaseHistory>();
@@ -47,7 +48,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
                     NewValue 
                FROM CaseHistory 
               WHERE Field = 'Status' AND 
-                    CreatedDate = LAST_N_DAYS: 30 AND 
+                    CreatedDate = LAST_N_DAYS: 4 AND 
                     Case.RecordType.Name = 'National - New Client Setup' 
            ORDER BY CreatedDate DESC]){
         
@@ -55,37 +56,50 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
         }
         
         // put Case History data into Map
-        Map<Id, Case_Status_Change_Log__c> caseChangeLogMap = new Map<Id, Case_Status_Change_Log__c>();
-        for(Case_Status_Change_Log__c cl :
+        Map<Id, Notification_Log__c> caseChangeLogMap = new Map<Id, Notification_Log__c>();
+        for(Notification_Log__c cl :
             [SELECT Id,
-                    CaseId__c,
-                    Case_Status__c,
-                    Notification_Sent_Date__c
-               FROM Case_Status_Change_Log__c
-              WHERE Notification_Sent_Date__c = :Date.TODAY().addDays(-3)]){
+                    Notification_Sent_Date__c,
+                    Record_Id__c,
+                    Record_Type_Name__c,
+                    SObject_Name__c,
+                    Trigger_Field_Name__c,
+                    Trigger_Value__c
+               FROM Notification_Log__c
+              WHERE Notification_Sent_Date__c = :Date.TODAY().addDays(-4)]){
             
-            caseChangeLogMap.put(cl.CaseId__c, cl);
+            caseChangeLogMap.put(cl.Record_Id__c, cl);
         }
         
         if(scope.size() > 0){
         
-            // compare National NCS Cases to Case History & Case Change Log
+            // compare National NCS Cases to Case History & Notification Log
             for(Case c : (List<Case>) scope){
-                if(!caseHistMap.containsKey(c.Id) || (caseChangeLogMap.get(c.Id).CaseId__c == c.Id && caseChangeLogMap.get(c.Id).Case_Status__c == c.Status)){
+                if(!caseHistMap.containsKey(c.Id) || (caseChangeLogMap.get(c.Id).Record_Id__c == c.Id && caseChangeLogMap.get(c.Id).Trigger_Value__c == c.Status)){
                 
-                    Case_Status_Change_Log__c newChangeLog = new Case_Status_Change_Log__c();
-                    newChangeLog.CaseId__c = c.Id;
-                    newChangeLog.Case_Status__c = c.Status;
+                    // Add new record to List
+                    Notification_Log__c newChangeLog = new Notification_Log__c();
+                    newChangeLog.RecordTypeId = logRecordTypeId;
+                    newChangeLog.Record_Id__c = c.Id;
+                    newChangeLog.Record_Type_Name__c = 'National - New Client Setup';
+                    newChangeLog.SObject_Name__c = 'Case';
+                    newChangeLog.Trigger_Field_Name__c = 'Status';
+                    newChangeLog.Trigger_Value__c = c.Status;
                     newChangeLog.Notification_Sent_Date__c = System.Now();
                     dmlChangeLogs.add(newChangeLog);
                 }
+            }
+            
+            if(dmlChangeLogs.size() > 0){
+                // Insert New Log Records from List
+                insert dmlChangeLogs;
             }
         }
     }
    
     global void finish(Database.BatchableContext BC) 
     {
-        // send notifications from change log from current day
+        // send notifications from current day Notification Log
     }
 
 }

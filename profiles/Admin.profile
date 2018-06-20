@@ -11980,10 +11980,6 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
-        <field>Case.Recurring_Fees__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
         <field>Case.Reduced_Contract_Term_Details__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
@@ -29758,6 +29754,34 @@
         <editable>true</editable>
         <field>Case_Status_Change_Log__c.Notification_Sent_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Recurring_Fees__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.Notification_Sent_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.Record_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.Record_Type_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.SObject_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.Trigger_Field_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.Trigger_Value__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -31051,6 +31075,11 @@
     </layoutAssignments><layoutAssignments>
         <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
         <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -32162,6 +32191,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>true</default>
         <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>

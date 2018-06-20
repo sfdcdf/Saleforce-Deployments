@@ -24715,6 +24715,30 @@
         <editable>false</editable>
         <field>Case_Status_Change_Log__c.Notification_Sent_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Notification_Sent_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Type_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.SObject_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Trigger_Field_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Trigger_Value__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>
@@ -26002,6 +26026,11 @@
     </layoutAssignments><layoutAssignments>
         <layout>Case_Status_Change_Log__c-Case Status Change Log Layout</layout>
         <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -27611,6 +27640,10 @@
         <default>true</default>
         <recordType>Case_Status_Change_Log__c.WBN_Change_Log</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>
         <visibility>Hidden</visibility>
