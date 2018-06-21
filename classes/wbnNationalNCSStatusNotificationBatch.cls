@@ -35,7 +35,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     global void execute(Database.BatchableContext BC, List<sObject> scope)
     {
         List<Notification_Log__c> dmlChangeLogs = new List<Notification_Log__c>();
-        Date d = System.Today().addDays(-3);
+        Date d = System.Today().addDays(-3); // logic for days away from current date for Case list to validate
         
         // put Case History data into Map
         Map<Id, CaseHistory> caseHistMap = new Map<Id, CaseHistory>();
