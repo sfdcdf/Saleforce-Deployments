@@ -23,7 +23,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
                           'AccountId NOT IN :acctIdsExcludeSet AND ' +
                           'Owner.Profile.Name NOT IN :profileExcludeSet AND ' +
                           'AccountId != NULL AND ' +
-                          'CreatedDate = LAST_N_DAYS: 7';
+                          'CreatedDate = LAST_N_DAYS: 4';
     
     // BATCH START
     global database.querylocator start(Database.BatchableContext BC)
@@ -35,6 +35,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     global void execute(Database.BatchableContext BC, List<sObject> scope)
     {
         List<Notification_Log__c> dmlChangeLogs = new List<Notification_Log__c>();
+        Date d = System.Today().addDays(-3);
         
         // put Case History data into Map
         Map<Id, CaseHistory> caseHistMap = new Map<Id, CaseHistory>();
@@ -75,19 +76,23 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
         // compare National NCS Cases to Case History & Notification Log
         for(Case c : (List<Case>) scope){
             
-            // check for the Case not in the current Case History or Case record being in the Notification Log and the Status not changed
-            if(!caseHistMap.containsKey(c.Id) || (notificationLogMap.get(c.Id).Record_Id__c == c.Id && notificationLogMap.get(c.Id).Trigger_Value__c == c.Status)){
-                
-                // Add new record to List
-                Notification_Log__c newChangeLog = new Notification_Log__c();
-                newChangeLog.RecordTypeId = logRecordTypeId;
-                newChangeLog.Record_Id__c = c.Id;
-                newChangeLog.Record_Type_Name__c = 'National - New Client Setup';
-                newChangeLog.SObject_Name__c = 'Case';
-                newChangeLog.Trigger_Field_Name__c = 'Status';
-                newChangeLog.Trigger_Value__c = c.Status;
-                newChangeLog.Notification_Sent_Date__c = System.Now();
-                dmlChangeLogs.add(newChangeLog);
+            // only check Cases created 3 days ago from the in scope list of Cases
+            if(c.CreatedDate.date() == d){
+            
+                // check for the Case not in the current Case History or Case record being in the Notification Log and the Status not changed
+                if(!caseHistMap.containsKey(c.Id) || (notificationLogMap.get(c.Id).Record_Id__c == c.Id && notificationLogMap.get(c.Id).Trigger_Value__c == c.Status)){
+                    
+                    // Add new record to List
+                    Notification_Log__c newChangeLog = new Notification_Log__c();
+                    newChangeLog.RecordTypeId = logRecordTypeId;
+                    newChangeLog.Record_Id__c = c.Id;
+                    newChangeLog.Record_Type_Name__c = 'National - New Client Setup';
+                    newChangeLog.SObject_Name__c = 'Case';
+                    newChangeLog.Trigger_Field_Name__c = 'Status';
+                    newChangeLog.Trigger_Value__c = c.Status;
+                    newChangeLog.Notification_Sent_Date__c = System.Now();
+                    dmlChangeLogs.add(newChangeLog);
+                }
             }
         }
             
@@ -131,7 +136,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
               WHERE Record_Type_Name__c = 'National - New Client Setup' AND
                     SObject_Name__c = 'Case' AND
                     Trigger_Field_Name__c = 'Status' AND
-                    Notification_Sent_Date__c = :Date.TODAY()]){
+                    Notification_Sent_Date__c = TODAY]){
             
             caseIds.add(nl.Record_Id__c);
         }
@@ -152,13 +157,13 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
                   WHERE Id IN :caseIds]){
             
                 // build list of email addresses to send to
-                if(c.Account.IMS_Rep__r.Email != null){
+                if(!String.isBlank(c.Account.IMS_Rep__r.Email)){
                     toAddress.add(c.Account.IMS_Rep__r.Email);
                 }
-                if(ownerMgrsMap.get(c.OwnerId).Manager.Email != null){
+                if(!String.isBlank(ownerMgrsMap.get(c.OwnerId).Manager.Email)){
                     toAddress.add(ownerMgrsMap.get(c.OwnerId).Manager.Email);
                 }
-                if(c.Owner.Email != null){
+                if(!String.isBlank(c.Owner.Email)){
                     toAddress.add(c.Owner.Email);
                 }
                 
@@ -167,15 +172,15 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
                     
                     // send notifications
                     Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-                    String body = 'You are being sent this notification because the status of the Case detail listed below has not changed for at least 3 days. Please review and ensure no action is needed.<br/><br/><br/>';
+                    String body = 'You are being sent this notification because the status of the Case detail listed below has not changed for at least 3 days. Please review and ensure no action is required.<br/><br/><br/>';
                     body += '<b>Case #:</b> ' + c.CaseNumber + '<br/><br/>';
                     body += '<b>Account:</b> ' + c.Account.Name + '<br/><br/>';
                     body += '<b>Case Status:</b> ' + c.Status + '<br/><br/>';
                     body += '<b>Case Owner:</b> ' + c.Owner.Name + '<br/><br/>';
-                    body += '<b>Created Date:</b> ' + c.CreatedDate + '<br/><br/>';
+                    body += '<b>Created Date:</b> ' + c.CreatedDate.format() + '<br/><br/>';
                     
                     // Dynamic Subject Line
-                    subjectLine = c.Account.Name + ' - New Client Setup Case Status Not Changed';
+                    subjectLine = c.Account.Name + ' - No Change to New Client Setup Case Status';
                     
                     // set message content
                     message.setToAddresses(toAddress);
