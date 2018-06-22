@@ -31103,6 +31103,9 @@
     </layoutAssignments><layoutAssignments>
         <layout>Notification_Log__c-Notification Log Layout</layout>
         <recordType>Notification_Log__c.WBN_Log</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
+        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

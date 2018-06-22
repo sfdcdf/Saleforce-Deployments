@@ -10588,24 +10588,6 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField><pluralLabel>Cancellation Requests</pluralLabel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
-        <fullName>AMM_Working_List</fullName>
-        <columns>NAME</columns>
-        <columns>Case__c</columns>
-        <columns>Outcome__c</columns>
-        <columns>Cancel_Outcome_Sub_Status__c</columns>
-        <columns>Cancellation_Code__c</columns>
-        <columns>CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Account_Product_Type__c</field>
-            <operation>equals</operation>
-            <value>Leads by Web</value>
-        </filters>
-        <label>AMM - Working List</label>
-        <sharedTo>
-            <group>Sys_Local_Admin</group>
-        </sharedTo>
-    </listViews><listViews>
         <fullName>LBW_Support_Cancellation_Request</fullName>
         <columns>NAME</columns>
         <columns>OWNER.ALIAS</columns>
@@ -10719,6 +10701,25 @@ false)</formula>
         <queue>TORCHx_Retention</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews><listViews>
+        <fullName>AMM_Working_List</fullName>
+        <columns>NAME</columns>
+        <columns>Case__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Cancel_Outcome_Sub_Status__c</columns>
+        <columns>Cancellation_Code__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Leads by Web</value>
+        </filters>
+        <label>AMM - Working List</label>
+        <sharedTo>
+            <group>Sys_Local_Admin</group>
         </sharedTo>
     </listViews><recordTypes>
         <fullName>Cancellation_Request</fullName>
