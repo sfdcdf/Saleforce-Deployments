@@ -9066,25 +9066,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules><rules>
-        <fullName>LH - Assign to LH Support Sugar Hill</fullName>
-        <actions>
-            <name>Case_Owner_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
-        </criteriaItems>
-        <description>Updated with https://jira.yodle.com/browse/YO-60625</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
         <fullName>LH - Assign to Sugar Hill Support</fullName>
         <actions>
             <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
@@ -14578,6 +14559,25 @@ ISCHANGED(Estimated_Completion_Date__c)
             <operation>equals</operation>
             <value>YodleLive</value>
         </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules><rules>
+        <fullName>LH - Assign to LH Support Sugar Hill</fullName>
+        <actions>
+            <name>Case_Owner_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
+        </criteriaItems>
+        <description>Updated with https://jira.yodle.com/browse/YO-60625</description>
         <triggerType>onCreateOnly</triggerType>
     </rules><tasks>
         <fullName>Mary_Case_Task</fullName>

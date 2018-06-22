@@ -157,6 +157,9 @@
         <label>Cancellation Code</label>
         <layoutColumns>
             <layoutItems>
+                <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Cancel_Code__c</field>
             </layoutItems>
