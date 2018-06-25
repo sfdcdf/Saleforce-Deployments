@@ -9666,10 +9666,6 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
-        <field>Case.Recurring_Fees__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
         <field>Case.Reduced_Contract_Term_Details__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
@@ -24643,6 +24639,10 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Account.Next_Scheduled_Touchpoint__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Recurring_Fees__c</field>
         <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
