@@ -177,6 +177,8 @@
         <primaryTabColor>#1477f8</primaryTabColor>
     </consoleConfig>
     <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isServiceCloudConsole>true</isServiceCloudConsole>
     <label>System Admin Services</label>
     <preferences>

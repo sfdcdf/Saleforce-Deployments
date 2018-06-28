@@ -168,6 +168,8 @@
     </consoleConfig>
     <defaultLandingTab>standard-home</defaultLandingTab>
     <description>This Console will be used to display relevant data pertaining to the WBN process.</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isServiceCloudConsole>true</isServiceCloudConsole>
     <label>WBN Console</label>
     <logo>Images/SF_Web_com_Logo.png</logo>

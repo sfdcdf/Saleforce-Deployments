@@ -2,6 +2,8 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>standard-AppLauncher</defaultLandingTab>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <tabs>standard-AppLauncher</tabs>
     <tabs>Cancellation_Request__c</tabs>
     <tabs>Service_Audit__c</tabs>

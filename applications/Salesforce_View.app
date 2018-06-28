@@ -2,6 +2,8 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>standard-Case</defaultLandingTab>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Salesforce View</label>
     <logo>Images/Salesforce_App_Logo.png</logo>
     <tabs>standard-Chatter</tabs>

@@ -178,6 +178,8 @@
         <whitelistedDomains>yodle.com</whitelistedDomains>
     </consoleConfig>
     <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isServiceCloudConsole>true</isServiceCloudConsole>
     <label>Services</label>
     <logo>Images/SF_Yodle_Logo.gif</logo>

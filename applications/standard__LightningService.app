@@ -6,6 +6,8 @@
     </brand>
     <description>(Lightning Experience) Lets support agents work with multiple records across customer service channels on one screen</description>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Service Console</label>
     <navType>Console</navType>
     <setupExperience>service</setupExperience>

@@ -6,6 +6,8 @@
     </brand>
     <description>(Lightning Experience) Lets sales reps work with multiple records on one screen</description>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Sales Console</label>
     <navType>Console</navType>
     <tabs>standard-home</tabs>

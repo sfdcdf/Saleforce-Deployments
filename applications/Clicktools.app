@@ -3,6 +3,8 @@
     <defaultLandingTab>standard-home</defaultLandingTab>
     <description>Create and update salesforce information with custom forms, surveys and landing pages. Clicktools can be used for a wide range of applications including updating campaign status, case and customer satisfaction and user surveys.</description>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Clicktools</label>
     <logo>Images/Clicktoolslogo.gif</logo>
     <tabs>AboutClicktools</tabs>

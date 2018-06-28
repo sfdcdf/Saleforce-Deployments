@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
         <fullName>LBW_Cancellation_Alert</fullName>
         <description>LBW Cancellation Alert</description>
         <protected>false</protected>
@@ -62,20 +62,6 @@
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/TORCHx_Unresponsive_Client_Cancellation_Email</template>
     </alerts><alerts>
-        <fullName>TORCHx_Cancellation_Resolution_Email</fullName>
-        <description>TORCHx Cancellation Resolution Email</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>shannon.vaughn@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>tdube@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Admin_Email_Templates/TORCHx_Cancellation_Email</template>
-    </alerts><alerts>
         <fullName>WBN_Alert_Owner_of_Approval</fullName>
         <description>WBN - Alert Owner of Approval</description>
         <protected>false</protected>
@@ -104,6 +90,24 @@
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Agent_Emails_Retention/Yodle_Gold_Cancel_Request_Closed</template>
+    </alerts><alerts>
+        <fullName>TORCHx_Cancellation_Resolution_Email</fullName>
+        <description>TORCHx Cancellation Resolution Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bosteros@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>james.carr@web.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>julia.correa@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Admin_Email_Templates/TORCHx_Cancellation_Email</template>
     </alerts><fieldUpdates>
         <fullName>Approval_By_Manager</fullName>
         <field>Approval_By__c</field>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
         <fullName>Bolt_On_Backed_Out_Sale_Cancel_All</fullName>
         <ccEmails>support@boltontechnology.com;</ccEmails>
         <ccEmails>pmcgee@boltontechnology.com</ccEmails>
@@ -120,42 +120,6 @@
         <senderAddress>support@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Config_and_Install/Curve_Cloud_Install</template>
-    </alerts><alerts>
-        <fullName>LH_Install_Backed_Out</fullName>
-        <description>LH Install/CSC Backed Out</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>alewis@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jamartini@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mstaffieri@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Lighthouse_Install_Backed_Out</template>
-    </alerts><alerts>
-        <fullName>LH_Install_Moved_to_Stalled</fullName>
-        <description>LH Install Moved to Stalled</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>alewis@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jamartini@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mstaffieri@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Lighthouse_Install_Stalled</template>
     </alerts><alerts>
         <fullName>LH_Install_Rescheduled</fullName>
         <description>LH Install Rescheduled</description>
@@ -390,6 +354,42 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/LH_Auto_Case_Owner</template>
+    </alerts><alerts>
+        <fullName>LH_Install_Backed_Out</fullName>
+        <description>LH Install/CSC Backed Out</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alewis@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mstaffieri@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sjohnson@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/Lighthouse_Install_Backed_Out</template>
+    </alerts><alerts>
+        <fullName>LH_Install_Moved_to_Stalled</fullName>
+        <description>LH Install Moved to Stalled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alewis@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mstaffieri@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sjohnson@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/Lighthouse_Install_Stalled</template>
     </alerts><fieldUpdates>
         <fullName>AR_Request_Form_Subject_Default</fullName>
         <field>Subject__c</field>

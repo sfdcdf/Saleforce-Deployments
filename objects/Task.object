@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -89,7 +89,7 @@
     </fields><fields>
         <fullName>WhoId</fullName>
         <type>Lookup</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><sharingModel>ControlledByParent</sharingModel><recordTypes>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><searchLayouts /><sharingModel>ControlledByParent</sharingModel><recordTypes>
         <fullName>Executive_Sponsor_Activity</fullName>
         <active>true</active>
         <label>Executive Sponsor Activity</label>

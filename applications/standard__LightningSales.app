@@ -87,6 +87,8 @@
     </brand>
     <description>WBN Individual Location Sales</description>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>WBN IL Sales</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
