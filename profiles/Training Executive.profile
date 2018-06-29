@@ -26627,10 +26627,6 @@
         <visible>false</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Closing_Script_Auto_Launch</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
-        <default>false</default>
         <recordType>Case.Decision_Tree_Optimization</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
@@ -26649,10 +26645,6 @@
         <default>false</default>
         <recordType>Case.LH_Cancellation_Request</recordType>
         <visible>false</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
-        <visible>true</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.LH_Master</recordType>
@@ -27344,6 +27336,14 @@
         <default>false</default>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
