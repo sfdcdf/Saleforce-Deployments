@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Permission set for common WBN Operations Tasks. Assign only to users who would need this type of extra permission. Includes delete for accounts (merge), Case, Opportunity and edit contract line items</description><hasActivationRequired>false</hasActivationRequired><label>WBN - Operations Tasks</label><license>Salesforce</license><fieldPermissions>
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Permission set for common WBN Operations Tasks. Assign only to users who would need this type of extra permission</description><hasActivationRequired>false</hasActivationRequired><label>WBN - Operations Tasks</label><license>Salesforce</license><fieldPermissions>
         <editable>true</editable>
         <field>Account.Individual_Location_Service_Level__c</field>
         <readable>true</readable>
@@ -85,6 +85,10 @@
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
         <field>Account.Solutions_Architect__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Auto_TP_Date__c</field>
         <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
