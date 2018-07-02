@@ -26390,6 +26390,30 @@
         <editable>true</editable>
         <field>Cancellation_Request__c.Cancel_Type__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Notification_Sent_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Type_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.SObject_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Trigger_Field_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Trigger_Value__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -27333,6 +27357,14 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>zzContract__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Notification_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>
@@ -28434,6 +28466,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
