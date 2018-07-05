@@ -2808,9 +2808,8 @@ ISPICKVAL( Status__c ,"RFC"))</formula>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
-            <value>CSC Worksheet - Dental,Installation Worksheet,CSC Worksheet - Medical,CSC Worksheet - Auto,CSC Worksheet - Vision</value>
+            <value>CSC Worksheet - Dental,Installation Worksheet,CSC Worksheet - Medical,CSC Worksheet - Auto</value>
         </criteriaItems>
-        <description>Add Client Email to Installation and CSC worksheets</description>
         <triggerType>onCreateOnly</triggerType>
     </rules><rules>
         <fullName>LH Install%2FCSC Backed Out</fullName>
@@ -2822,7 +2821,7 @@ ISPICKVAL( Status__c ,"RFC"))</formula>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
-            <value>Installation Worksheet,CSC Worksheet - Dental,CSC Worksheet - Medical,CSC Worksheet - Auto,CSC Worksheet - Vision</value>
+            <value>Installation Worksheet,CSC Worksheet - Dental,CSC Worksheet - Medical,CSC Worksheet - Auto</value>
         </criteriaItems>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
@@ -2834,6 +2833,5 @@ ISPICKVAL( Status__c ,"RFC"))</formula>
             <operation>notEqual</operation>
             <value>rozenblat</value>
         </criteriaItems>
-        <description>Email Alert on LH Install and CSC Worksheets</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules></Workflow>

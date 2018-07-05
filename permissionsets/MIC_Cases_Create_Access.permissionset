@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>This gives the agents ability to create MIC Cases (Maps Initial Claiming Cases - one of the record type in Organic case object)</description><hasActivationRequired>false</hasActivationRequired><label>MIC Cases - Create Access</label><license>Salesforce</license><objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Organic_Analysis__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><recordTypeVisibilities>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><tabSettings>
+        <tab>Organic_Analysis__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings></PermissionSet>
