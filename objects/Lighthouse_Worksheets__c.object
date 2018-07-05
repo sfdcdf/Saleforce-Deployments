@@ -13930,6 +13930,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <value>
                     <fullName>Optometrist</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Optometrist</label>
                 </value>
             </valueSetDefinition>
@@ -46992,10 +46993,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Optometrist</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Oral Surgeon</fullName>
                 <default>false</default>
             </values>
@@ -47139,25 +47136,6 @@ NOT(ISPICKVAL(Spanish_Alert_Field__c ,""))
 ))</errorConditionFormula>
         <errorDisplayField>Test_Appointments_Scheduled_1_mo_out__c</errorDisplayField>
         <errorMessage>If you fill out any field in the Account Settings Section,  you must also fill out the "Test Appointments (Scheduled 1 mo. out)" field</errorMessage>
-    </validationRules><validationRules>
-        <fullName>Acct_Segment_Must_Match_CW_Segment</fullName>
-        <active>true</active>
-        <description>You must select the proper CW type for the Account Segment - please change to the proper segment</description>
-        <errorConditionFormula>OR(
-
-AND(
- RecordType.Name = "CSC Worksheet - Dental",
- Segment__c &lt;&gt; "Dentist",
- Segment__c &lt;&gt; "Orthodontist"),
-
-AND(
- RecordType.Name = "CSC Worksheet - Medical",
- Segment__c &lt;&gt; "Chiropractor"),
-
-AND(
- RecordType.Name = "CSC Worksheet - Auto",
- NOT(CONTAINS(Segment__c , "Auto"))))</errorConditionFormula>
-        <errorMessage>You must select the proper CW type for the Account Segment - please change to the proper segment</errorMessage>
     </validationRules><validationRules>
         <fullName>Activate_Messages_on_Specific_Date</fullName>
         <active>true</active>
@@ -48066,6 +48044,28 @@ NOT(INCLUDES(  Config_Prep__c  , "Verify STC Days"))))
 
 )</errorConditionFormula>
         <errorMessage>Before changing the status to Messages Activated, you must complete the required tasks in the WebUI Verifications section</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Acct_Segment_Must_Match_CW_Segment</fullName>
+        <active>true</active>
+        <description>You must select the proper CW type for the Account Segment - please change to the proper segment</description>
+        <errorConditionFormula>OR(
+
+AND(
+ RecordType.Name = "CSC Worksheet - Dental",
+ Segment__c &lt;&gt; "Dentist",
+ Segment__c &lt;&gt; "Optometrist", /* REMOVE WITH VISION RT Added */
+ Segment__c &lt;&gt; "Orthodontist"
+
+),
+
+AND(
+ RecordType.Name = "CSC Worksheet - Medical",
+ Segment__c &lt;&gt; "Chiropractor"),
+
+AND(
+ RecordType.Name = "CSC Worksheet - Auto",
+ NOT(CONTAINS(Segment__c , "Auto"))))</errorConditionFormula>
+        <errorMessage>You must select the proper CW type for the Account Segment - please change to the proper segment</errorMessage>
     </validationRules><webLinks>
         <fullName>OBC_Swap</fullName>
         <availability>online</availability>
