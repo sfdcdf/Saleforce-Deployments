@@ -26051,6 +26051,9 @@
     </layoutAssignments><layoutAssignments>
         <layout>Notification_Log__c-Notification Log Layout</layout>
         <recordType>Notification_Log__c.WBN_Log</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -27663,6 +27666,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Notification_Log__c.WBN_Log</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>

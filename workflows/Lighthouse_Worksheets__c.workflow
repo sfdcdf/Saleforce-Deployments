@@ -1988,42 +1988,6 @@ ISCHANGED( Date_Time_Install_Scheduled__c ))</formula>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><rules>
-        <fullName>LH Install and CW fill in %22Client Email from Acct%22</fullName>
-        <actions>
-            <name>Client_Email_from_Acct</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lighthouse_Worksheets__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>CSC Worksheet - Dental,Installation Worksheet,CSC Worksheet - Medical,CSC Worksheet - Auto</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
-        <fullName>LH Install%2FCSC Backed Out</fullName>
-        <actions>
-            <name>LH_Install_Backed_Out</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lighthouse_Worksheets__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Installation Worksheet,CSC Worksheet - Dental,CSC Worksheet - Medical,CSC Worksheet - Auto</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lighthouse_Worksheets__c.Status__c</field>
-            <operation>equals</operation>
-            <value>Backed Out Sale</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>User.LastName</field>
-            <operation>notEqual</operation>
-            <value>rozenblat</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
         <fullName>LH OOS Created</fullName>
         <actions>
             <name>Owner_to_LH_Install</name>
@@ -2833,5 +2797,43 @@ ISPICKVAL( Status__c ,"RFC"))</formula>
             <value>Pending Message Activation,MA-1 Ready,MA-2 Pending Review,MA-8 Multi Location Split</value>
         </criteriaItems>
         <description>Updates when status MA-1,MA-2, or MA-8</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>LH Install and CW fill in %22Client Email from Acct%22</fullName>
+        <actions>
+            <name>Client_Email_from_Acct</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lighthouse_Worksheets__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CSC Worksheet - Dental,Installation Worksheet,CSC Worksheet - Medical,CSC Worksheet - Auto,CSC Worksheet - Vision</value>
+        </criteriaItems>
+        <description>Add Client Email to Installation and CSC worksheets</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules><rules>
+        <fullName>LH Install%2FCSC Backed Out</fullName>
+        <actions>
+            <name>LH_Install_Backed_Out</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lighthouse_Worksheets__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Installation Worksheet,CSC Worksheet - Dental,CSC Worksheet - Medical,CSC Worksheet - Auto,CSC Worksheet - Vision</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lighthouse_Worksheets__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Backed Out Sale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.LastName</field>
+            <operation>notEqual</operation>
+            <value>rozenblat</value>
+        </criteriaItems>
+        <description>Email Alert on LH Install and CSC Worksheets</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules></Workflow>
