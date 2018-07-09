@@ -29717,6 +29717,10 @@
         <editable>true</editable>
         <field>Notification_Log__c.Trigger_Value__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Performance_Analysis__c.Location_PPL_Goal__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
