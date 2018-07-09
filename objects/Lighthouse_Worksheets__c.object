@@ -47106,25 +47106,6 @@ NOT(ISPICKVAL(Spanish_Alert_Field__c ,""))
         <errorDisplayField>Test_Appointments_Scheduled_1_mo_out__c</errorDisplayField>
         <errorMessage>If you fill out any field in the Account Settings Section,  you must also fill out the "Test Appointments (Scheduled 1 mo. out)" field</errorMessage>
     </validationRules><validationRules>
-        <fullName>Acct_Segment_Must_Match_CW_Segment</fullName>
-        <active>true</active>
-        <description>You must select the proper CW type for the Account Segment - please change to the proper segment</description>
-        <errorConditionFormula>OR(
-
-AND(
- RecordType.Name = "CSC Worksheet - Dental",
- Segment__c &lt;&gt; "Dentist",
- Segment__c &lt;&gt; "Orthodontist"),
-
-AND(
- RecordType.Name = "CSC Worksheet - Medical",
- Segment__c &lt;&gt; "Chiropractor"),
-
-AND(
- RecordType.Name = "CSC Worksheet - Auto",
- NOT(CONTAINS(Segment__c , "Auto"))))</errorConditionFormula>
-        <errorMessage>You must select the proper CW type for the Account Segment - please change to the proper segment</errorMessage>
-    </validationRules><validationRules>
         <fullName>Activate_Messages_on_Specific_Date</fullName>
         <active>true</active>
         <description>If you select that the customer would like to activate messages on a specific date, you need to enter the requested message activation date</description>
@@ -48032,6 +48013,28 @@ OR(
  ISNULL(Other_Information__c),
  ISNULL(Go_Live_Notes__c)))</errorConditionFormula>
         <errorMessage>When Multi-Location is selected then Split By, Split Details, Location Information, Test Patients/Appointments, Other Information, and Message Activation cannot be blank.  Message Activation cannot be "ASAP" or "On a Specific Date."</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Acct_Segment_Must_Match_CW_Segment</fullName>
+        <active>true</active>
+        <description>You must select the proper CW type for the Account Segment - please change to the proper segment</description>
+        <errorConditionFormula>OR(
+
+AND(
+ RecordType.Name = "CSC Worksheet - Dental",
+ Segment__c &lt;&gt; "Dentist",
+ Segment__c &lt;&gt; "Optometrist", /* REMOVE WITH VISION RT Added */
+ Segment__c &lt;&gt; "Orthodontist"
+
+),
+
+AND(
+ RecordType.Name = "CSC Worksheet - Medical",
+ Segment__c &lt;&gt; "Chiropractor"),
+
+AND(
+ RecordType.Name = "CSC Worksheet - Auto",
+ NOT(CONTAINS(Segment__c , "Auto"))))</errorConditionFormula>
+        <errorMessage>You must select the proper CW type for the Account Segment - please change to the proper segment</errorMessage>
     </validationRules><webLinks>
         <fullName>OBC_Swap</fullName>
         <availability>online</availability>

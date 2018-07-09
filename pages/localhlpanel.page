@@ -122,7 +122,8 @@ Account.Product_Type_Transactional__c == 'Other' || Account.Product_Type_Transac
 Account.Rogers_IMS_Rep_text__c}</div></td></tr>
         <tr><td><div class="slds-text-body--small">Product Type:</div></td><td><div class="slds-text-body--small">{!
 
-Account.Product_Type_Transactional__c}</div></td></tr>     
+Account.Product_Type_Transactional__c}</div></td></tr>    
+ 
             <tr><td><div class="slds-text-body--small">
              Nex Bill Date: &nbsp; </div></td><td><div class="slds-text-body--small"><apex:outputText value="{0,date,MM/dd/yyyy}">
                    <apex:param value="{!Account.Next_Billing_Date__c}" />
@@ -186,6 +187,7 @@ Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div><
  <apex:outputText ><span class="{!IF((Account.Legacy_Branding__c != ''),"legacybranding","")}">{!IF
 
 ((Account.Legacy_Branding__c != ''),"Legacy Branding: "&Account.Legacy_Branding__c,"")}</span></apex:outputText>
+     
        
         <div class="slds-text-body--small"><strong>Account Description</strong>
         <div class="helpOrb tooltip">
@@ -269,7 +271,11 @@ Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div><
                 </div></td></tr>
             </apex:outputPanel>
 
-           <tr><td><div class="slds-text-body--small">Product Type:</div></td><td><div class="slds-text-body--small">{!Account.Product_Type_Transactional__c}</div></td></tr> 
+<!-- Added by AMM TEAM-11356 7/3/2018-->
+                       <tr><td><div class="slds-text-body--small">Segment:</div></td><td><div class="slds-text-body--small">{!Account.Secondary_Segments__c}</div></td></tr> 
+<!-- End Change 7/3/2018-->
+                       
+            <tr><td><div class="slds-text-body--small">Product Type:</div></td><td><div class="slds-text-body--small">{!Account.Product_Type_Transactional__c}</div></td></tr> 
    
          <tr><td><div class="slds-text-body--small">Client ID:</div></td><td><div class="slds-text-body--small">{!Account.Client_ID__c}</div></td></tr>
             <tr><td><div class="slds-text-body--small">{!IF((Account.LH_360_ID__c != ''), "Sugar ID:", "")}</div></td><td><div class="slds-text-body--small">
