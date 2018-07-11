@@ -2381,6 +2381,19 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields><fields>
+        <fullName>Location_PPL_Goal__c</fullName>
+        <description>Location PPL Goal ($)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location PPL Goal ($)</inlineHelpText>
+        <label>Location PPL Goal ($)</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>This object is initially created to take input from a Performance Analysis engine to proactively optimize our customers' performance results</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Performance Analysis</label><nameField>
         <displayFormat>PA-{000000}</displayFormat>
         <label>Performance Analysis Name</label>
