@@ -14,7 +14,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     public Set<String> ownerTypeIncludeSet = new Set<String>{'User'};
     public Set<String> profileExcludeSet = new Set<String>{'System Administrator', 'API Integration Read/Write'};
     public Id logRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
-    public String query = 'SELECT Id, Status, RecordType.Name ' +
+    public String query = 'SELECT Id, Status, RecordType.Name, CreatedDate ' +
                           'FROM Case ' +
                           'WHERE RecordType.Name IN :recordTypeNameIncludeSet AND ' +
                           'IsClosed = false AND ' +
