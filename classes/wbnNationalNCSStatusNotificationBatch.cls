@@ -2,7 +2,8 @@
   Company/ Author ....: E. Ross
   Date Created .......: 19-Jun-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 19-Jun-2018
+  Last Modified Date .: 12-Jul-2018
+  Last Mod Description: Updated code to check for null value exceptions
   Description ........: Sends a notification to specified internal users if the status of a
   National - New Client Setup Case has not changed within the last 3 days
 *****************************************************************************/
@@ -14,7 +15,7 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
     public Set<String> ownerTypeIncludeSet = new Set<String>{'User'};
     public Set<String> profileExcludeSet = new Set<String>{'System Administrator', 'API Integration Read/Write'};
     public Id logRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
-    public String query = 'SELECT Id, Status, RecordType.Name ' +
+    public String query = 'SELECT Id, Status, RecordType.Name, CreatedDate ' +
                           'FROM Case ' +
                           'WHERE RecordType.Name IN :recordTypeNameIncludeSet AND ' +
                           'IsClosed = false AND ' +
@@ -77,10 +78,10 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
         for(Case c : (List<Case>) scope){
             
             // only check Cases created 3 days ago from the in scope list of Cases
-            if(c.CreatedDate.date() == d){
+            if(c.Id != null && c.CreatedDate.date() == d){
             
-                // check for the Case not in the current Case History or Case record being in the Notification Log and the Status not changed
-                if(!caseHistMap.containsKey(c.Id) || (notificationLogMap.get(c.Id).Record_Id__c == c.Id && notificationLogMap.get(c.Id).Trigger_Value__c == c.Status)){
+                // check for the Case not in the current Case History
+                if(!caseHistMap.containsKey(c.Id)){
                     
                     // Add new record to List
                     Notification_Log__c newChangeLog = new Notification_Log__c();
@@ -92,6 +93,24 @@ global class wbnNationalNCSStatusNotificationBatch implements Database.Batchable
                     newChangeLog.Trigger_Value__c = c.Status;
                     newChangeLog.Notification_Sent_Date__c = System.Now();
                     dmlChangeLogs.add(newChangeLog);
+                }
+                // check Case record being in the Notification Log and the Status not changed
+                if(!String.isBlank(notificationLogMap.get(c.Id).Record_Id__c) && !String.isBlank(notificationLogMap.get(c.Id).Trigger_Value__c)){
+                
+                    if(notificationLogMap.get(c.Id).Record_Id__c == c.Id && notificationLogMap.get(c.Id).Trigger_Value__c == c.Status){
+                    
+                        // Add new record to List
+                        Notification_Log__c newChangeLog = new Notification_Log__c();
+                        newChangeLog.RecordTypeId = logRecordTypeId;
+                        newChangeLog.Record_Id__c = c.Id;
+                        newChangeLog.Record_Type_Name__c = 'National - New Client Setup';
+                        newChangeLog.SObject_Name__c = 'Case';
+                        newChangeLog.Trigger_Field_Name__c = 'Status';
+                        newChangeLog.Trigger_Value__c = c.Status;
+                        newChangeLog.Notification_Sent_Date__c = System.Now();
+                        dmlChangeLogs.add(newChangeLog);
+                    
+                    }
                 }
             }
         }
