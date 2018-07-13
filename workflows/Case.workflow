@@ -3233,6 +3233,15 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Escalation_Standard_Email</template>
+    </alerts><alerts>
+        <fullName>NCS_case_notify_owner_on_Status_change</fullName>
+        <description>NCS case notify owner on Status change</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/NCS_case_notify_owner_on_Status_change</template>
     </alerts><fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
@@ -14579,6 +14588,25 @@ ISCHANGED(Estimated_Completion_Date__c)
         </criteriaItems>
         <description>Updated with https://jira.yodle.com/browse/YO-60625</description>
         <triggerType>onCreateOnly</triggerType>
+    </rules><rules>
+        <fullName>TORCHx NCS Case Sub Status change notification</fullName>
+        <actions>
+            <name>NCS_case_notify_owner_on_Status_change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>TORCHx NCS - AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Site Build</value>
+        </criteriaItems>
+        <description>Notify NCS Case owner when the NCS case sub status is changed to "Site Build"</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><tasks>
         <fullName>Mary_Case_Task</fullName>
         <assignedTo>mary.kellum@yodle.com</assignedTo>

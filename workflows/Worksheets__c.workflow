@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
         <fullName>MLS_Worksheet_Email_Completed_Notice</fullName>
         <description>MLS Worksheet - Email Completed Notice</description>
         <protected>false</protected>
@@ -50,25 +50,6 @@
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
     </rules><rules>
-        <fullName>MLS Worksheet - Email Setup Team When Complete</fullName>
-        <actions>
-            <name>MLS_Worksheet_Email_Completed_Notice</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Worksheets__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>MLS Worksheet</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Worksheets__c.Status__c</field>
-            <operation>equals</operation>
-            <value>Complete</value>
-        </criteriaItems>
-        <description>This WFR emails the MLS Setup team when ticket is Completed</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
         <fullName>Populate Client%27s Phone Number</fullName>
         <actions>
             <name>Populate_Client_s_Phone_Number</name>
@@ -92,4 +73,23 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
+    </rules><rules>
+        <fullName>MLS Worksheet - Email Setup Team When Complete</fullName>
+        <actions>
+            <name>MLS_Worksheet_Email_Completed_Notice</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Worksheets__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>MLS Worksheet</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Worksheets__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <description>This WFR emails the MLS Setup team when ticket is Completed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules></Workflow>

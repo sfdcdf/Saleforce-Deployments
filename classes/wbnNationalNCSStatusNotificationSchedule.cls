@@ -9,10 +9,7 @@ public class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
 
   public void execute(SchedulableContext sc) {
   
-    wbnNationalNCSStatusNotificationBatch b = new wbnNationalNCSStatusNotificationBatch();
     
-    // execute batch and control batch size
-    Database.executeBatch(b, 75);
     
   }
   
