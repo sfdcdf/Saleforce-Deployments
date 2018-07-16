@@ -200,6 +200,7 @@
     <tabs>zzContract__c</tabs>
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Google_Location_Group__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Best_Practice_Evaluation__c</tab>
@@ -221,6 +222,9 @@
         </mappings>
         <mappings>
             <tab>CorpSDR_Demo_Questionaire__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Google_Location_Group__c</tab>
         </mappings>
         <mappings>
             <tab>Lighthouse_Worksheets__c</tab>

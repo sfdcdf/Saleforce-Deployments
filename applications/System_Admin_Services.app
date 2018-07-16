@@ -207,6 +207,7 @@
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Notification_Log__c</tabs>
+    <tabs>Google_Location_Group__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>CS_Operations__c</tab>
@@ -217,6 +218,9 @@
         <mappings>
             <fieldName>Account_Name__c</fieldName>
             <tab>Cancellation_Request__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Google_Location_Group__c</tab>
         </mappings>
         <mappings>
             <fieldName>Practice_Name__c</fieldName>

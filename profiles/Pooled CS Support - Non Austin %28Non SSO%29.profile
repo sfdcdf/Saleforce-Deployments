@@ -24759,6 +24759,10 @@
         <editable>true</editable>
         <field>Cancellation_Request__c.Cancel_Type__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Organic_Analysis__c.Location_Group_Id__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>
@@ -26054,6 +26058,8 @@
     </layoutAssignments><layoutAssignments>
         <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -27929,4 +27935,7 @@
     </tabVisibilities><tabVisibilities>
         <tab>Notification_Log__c</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Google_Location_Group__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities></Profile>

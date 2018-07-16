@@ -196,9 +196,13 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Chatter</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Google_Location_Group__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>CS_Operations__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Google_Location_Group__c</tab>
         </mappings>
         <mappings>
             <fieldName>Account_Name__c</fieldName>

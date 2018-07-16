@@ -29,4 +29,5 @@
     <tabs>zzContract__c</tabs>
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Google_Location_Group__c</tabs>
 </CustomApplication>

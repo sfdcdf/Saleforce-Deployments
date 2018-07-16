@@ -30,4 +30,5 @@
     <tabs>Touchplan__c</tabs>
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Google_Location_Group__c</tabs>
 </CustomApplication>

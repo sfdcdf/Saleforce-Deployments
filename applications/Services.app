@@ -216,6 +216,7 @@
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Notification_Log__c</tabs>
+    <tabs>Google_Location_Group__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_MLS__c</tab>
@@ -236,6 +237,9 @@
         <mappings>
             <fieldName>Account__c</fieldName>
             <tab>Customer_Surveys__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Google_Location_Group__c</tab>
         </mappings>
         <mappings>
             <fieldName>Practice_Name__c</fieldName>

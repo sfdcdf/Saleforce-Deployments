@@ -19,4 +19,5 @@
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Notification_Log__c</tabs>
+    <tabs>Google_Location_Group__c</tabs>
 </CustomApplication>

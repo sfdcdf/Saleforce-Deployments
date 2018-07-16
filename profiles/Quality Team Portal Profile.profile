@@ -3641,6 +3641,8 @@
     </layoutAssignments><layoutAssignments>
         <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
     </layoutAssignments><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -5026,5 +5028,8 @@
         <visibility>Hidden</visibility>
     </tabVisibilities><tabVisibilities>
         <tab>Notification_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Google_Location_Group__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities></Profile>

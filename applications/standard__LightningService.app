@@ -18,9 +18,13 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-home</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Google_Location_Group__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Google_Location_Group__c</tab>
+        </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>
         </mappings>

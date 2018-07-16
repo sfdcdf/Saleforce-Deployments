@@ -29809,6 +29809,10 @@
         <editable>true</editable>
         <field>Performance_Analysis__c.Location_PPL_Goal__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Organic_Analysis__c.Location_Group_Id__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -31113,6 +31117,8 @@
     </layoutAssignments><layoutAssignments>
         <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
+    </layoutAssignments><layoutAssignments>
+        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -32490,5 +32496,8 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities><tabVisibilities>
         <tab>Notification_Log__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Google_Location_Group__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities></Profile>
