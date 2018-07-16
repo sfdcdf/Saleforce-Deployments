@@ -18,4 +18,5 @@
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Notification_Log__c</tabs>
 </CustomApplication>

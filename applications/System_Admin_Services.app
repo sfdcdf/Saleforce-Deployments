@@ -206,6 +206,7 @@
     <tabs>Cancellation_Request__c</tabs>
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Notification_Log__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>CS_Operations__c</tab>
@@ -220,6 +221,9 @@
         <mappings>
             <fieldName>Practice_Name__c</fieldName>
             <tab>Lighthouse_Worksheets__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Notification_Log__c</tab>
         </mappings>
         <mappings>
             <fieldName>Account_Name__c</fieldName>

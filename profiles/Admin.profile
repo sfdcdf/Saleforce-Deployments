@@ -32488,4 +32488,7 @@
     </tabVisibilities><tabVisibilities>
         <tab>Quality_Team_Rep_Management</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Notification_Log__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities></Profile>

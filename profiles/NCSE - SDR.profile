@@ -29154,4 +29154,7 @@
     </tabVisibilities><tabVisibilities>
         <tab>Quality_Team_Rep_Management</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>Notification_Log__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities></Profile>

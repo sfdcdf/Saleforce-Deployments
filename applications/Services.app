@@ -215,6 +215,7 @@
     <tabs>MLS_Name__c</tabs>
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Notification_Log__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_MLS__c</tab>
@@ -245,6 +246,9 @@
         </mappings>
         <mappings>
             <tab>MLS__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Notification_Log__c</tab>
         </mappings>
         <mappings>
             <tab>ObjectHistory__c</tab>
