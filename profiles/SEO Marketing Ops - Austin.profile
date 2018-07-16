@@ -24621,6 +24621,10 @@
         <editable>false</editable>
         <field>Notification_Log__c.Trigger_Value__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Organic_Analysis__c.Location_Group_Id__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
