@@ -931,6 +931,9 @@
     </classAccesses><classAccesses>
         <apexClass>wbnNationalNCSStatusNotificationSchedule</apexClass>
         <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>wbnNationalNCSCreateNotificationSchedule</apexClass>
+        <enabled>true</enabled>
     </classAccesses><pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>

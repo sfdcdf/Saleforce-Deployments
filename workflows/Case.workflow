@@ -3242,6 +3242,17 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/NCS_case_notify_owner_on_Status_change</template>
+    </alerts><alerts>
+        <fullName>TORCHx_Optimization_case_Status_notification_to_Client</fullName>
+        <description>TORCHx Optimization case notify Client when the performance team completes/closes the Optimization Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>client_email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>support@torchx.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>TorchX_Onboarding_Engagement_Test/TORCHx_Service_Performance_Request_Completed</template>
     </alerts><fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
@@ -14606,6 +14617,25 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>Site Build</value>
         </criteriaItems>
         <description>Notify NCS Case owner when the NCS case sub status is changed to "Site Build"</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>TORCHx Optimization Case completed Email notification to Client</fullName>
+        <actions>
+            <name>TORCHx_Optimization_case_Status_notification_to_Client</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Optimization</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed - Opt Complete</value>
+        </criteriaItems>
+        <description>Once the TORCHx Service Performance Team completes/closes an Optimization Case. This sends an email notification to the client email address on the Account.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><tasks>
         <fullName>Mary_Case_Task</fullName>
