@@ -3,7 +3,7 @@
   Date Created .......: 21-Jun-2018
   Last Modified By ...: E. Ross
   Last Modified Date .: 16-Jul-2018
-  Description ........: Schedulable class to execute batch wbnNationalNCSStatusNotificationBatch on a daily schedule.
+  Description ........: Schedulable class to execute WBN Notifications on a daily schedule.
 *****************************************************************************/
 global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
 
@@ -17,6 +17,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
     
         Set<Id> caseIds = new Set<Id>();
         List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
+        Set<String> toAddressSet = new Set<String>();
         List<String> toAddress = new List<String>();
         List<Apex_Debug_Log__c> dmlDebugLog = new List<Apex_Debug_Log__c>();
         Map<Id, User> ownerMgrsMap = new Map<Id, User>();
@@ -68,15 +69,23 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                        FROM Case
                       WHERE Id IN :caseIds]){
                           
-                    // build list of email addresses to send to
+                    // build list of email addresses to send to; first add to set to ensure unique values
                     if(!String.isBlank(c.Account.IMS_Rep__r.Email)){
-                        toAddress.add(c.Account.IMS_Rep__r.Email);
+                        toAddressSet.add(c.Account.IMS_Rep__r.Email);
                     }
                     if(ownerMgrsMap.containsKey(c.OwnerId) && !String.isBlank(ownerMgrsMap.get(c.OwnerId).Manager.Email)){
-                        toAddress.add(ownerMgrsMap.get(c.OwnerId).Manager.Email);
+                        toAddressSet.add(ownerMgrsMap.get(c.OwnerId).Manager.Email);
                     }
                     if(!String.isBlank(c.Owner.Email)){
-                        toAddress.add(c.Owner.Email);
+                        toAddressSet.add(c.Owner.Email);
+                    }
+                    
+                    // loop through set and add to list
+                    for(String s : toAddressSet){
+                    
+                        if(!String.isBlank(s)){
+                            toAddress.add(s);
+                        }
                     }
                     
                      // check to ensure there are recipients to send notification to
