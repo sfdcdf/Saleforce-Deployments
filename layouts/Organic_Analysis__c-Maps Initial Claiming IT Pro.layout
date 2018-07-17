@@ -64,10 +64,6 @@
                 <behavior>Readonly</behavior>
                 <field>Country__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Location_Group_Id__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -232,6 +228,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Google_Listing_Issue_Needs_Updating__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Location_Group_Id__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
