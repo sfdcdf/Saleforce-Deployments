@@ -25,6 +25,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         String fromDisplayName = 'Salesforce Notifications';
         String subjectLine = '';
         OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+        //Id emailTemplateId = [SELECT Id FROM EmailTemplate WHERE DeveloperName = 'WBN_NCS_Status_Has_Not_Changed' LIMIT 1].Id;
         
         // populate Managers from User into Map to obtain Case Owner Manager details
         for(User u : 
@@ -64,8 +65,15 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                             Account.IMS_Rep__r.Name, 
                             Account.IMS_Rep__r.Email, 
                             Account.Name,
+                            Account.Client_ID__c,
                             CaseNumber,
-                            Status
+                            Status,
+                            Sub_Status__c,
+                            Next_Action_Date__c,
+                            SEO_Product__c,
+                            Status_Notes__c,
+                            Account.IMS_Rep__c,
+                            Sales_Person__c
                        FROM Case
                       WHERE Id IN :caseIds]){
                           
@@ -107,6 +115,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                         message.setToAddresses(toAddress);
                         message.setReplyTo(fromAddress);
                         message.setOrgWideEmailAddressId(owea.get(0).Id);
+                        //message.setTemplateId(emailTemplateId);
                         message.setSubject(subjectLine);
                         message.setHtmlBody(body);
                         
