@@ -12701,6 +12701,20 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields><fields>
+        <fullName>Location_Group_Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Google Location Group Id custom object</description>
+        <externalId>false</externalId>
+        <label>Location Group Id</label>
+        <referenceTo>Google_Location_Group__c</referenceTo>
+        <relationshipLabel>Organic Cases</relationshipLabel>
+        <relationshipName>Organic_Cases_Location_Group</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Used to track our maps verification and pin collection</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Organic Case</label><nameField>
         <displayFormat>YO-{0000}</displayFormat>
         <label>YO ID</label>
