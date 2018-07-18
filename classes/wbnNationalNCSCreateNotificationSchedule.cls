@@ -17,7 +17,7 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
     
         Id wbnLogRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
         Set<Id> caseIds = new Set<Id>();
-        List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
+        List<Messaging.SingleEmailMessage> notificationsCrtDtLst = new List<Messaging.SingleEmailMessage>();
         //Set<String> toAddressSet = new Set<String>();
         List<String> toAddress = new List<String>();
         List<Apex_Debug_Log__c> dmlDebugLog = new List<Apex_Debug_Log__c>();
@@ -104,13 +104,14 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                         message.setHtmlBody(body);
                         
                         // add message to notification list
-                        notificationsLst.add(message);
+                        notificationsCrtDtLst.add(message);
                         
                         // ensure there are messages to be sent
-                        if(notificationsLst.size() > 0){
+                        if(notificationsCrtDtLst.size() > 0){
                         
                             // send notifications
-                            Messaging.sendEmail(notificationsLst);
+                            Messaging.sendEmail(notificationsCrtDtLst);
+                            notificationsCrtDtLst.clear();
                         }
                     }
                 }

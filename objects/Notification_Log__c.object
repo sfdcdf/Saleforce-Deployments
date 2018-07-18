@@ -100,6 +100,14 @@
         <customTabListAdditionalFields>Notification_Sent_Date__c</customTabListAdditionalFields>
     </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>SObject_Name__c</columns>
+        <columns>Record_Type_Name__c</columns>
+        <columns>Record_Id__c</columns>
+        <columns>Trigger_Field_Name__c</columns>
+        <columns>Trigger_Value__c</columns>
+        <columns>Notification_Sent_Date__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews><recordTypes>

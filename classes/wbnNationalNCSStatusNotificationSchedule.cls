@@ -141,6 +141,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                         
                             // send notifications
                             Messaging.sendEmail(notificationsLst);
+                            notificationsLst.clear();
                         }
                     }
                 }
