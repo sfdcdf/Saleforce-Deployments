@@ -15,6 +15,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
     
     public void sendWBNNotification(){
     
+        Id wbnLogRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
         Set<Id> caseIds = new Set<Id>();
         List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
         Set<String> toAddressSet = new Set<String>();
@@ -42,15 +43,18 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
             ownerMgrsMap.put(u.Id, u);
         }
         
-        // get records in Notification Log for current day only
+        // get records in Notification Log for WBN Log Record Type, Case object, National NCS Cases, 
+        // based on status, and for the current day only
         for(Notification_Log__c nl :
             [SELECT Record_Id__c
                FROM Notification_Log__c
-              WHERE Record_Type_Name__c = 'National - New Client Setup' AND
+              WHERE RecordTypeId = :wbnLogRecordTypeId AND
+                    Record_Type_Name__c = 'National - New Client Setup' AND
                     SObject_Name__c = 'Case' AND
                     Trigger_Field_Name__c = 'Status' AND
                     Notification_Sent_Date__c = TODAY]){
             
+            // the Notification Log Record Id values are Case Ids
             caseIds.add(nl.Record_Id__c);
         }
         
@@ -104,8 +108,8 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                     
                         // send notifications
                         Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-                        String body = 'Hello <br/><br/>';
-                        body += 'This NCS Case # ' + c.CaseNumber + 'needs review. The case status has not changed in 3 business days. Please add any pertinent notes as comments within the case for stakeholders to reference.<br/><br/>';
+                        String body = 'Hello, <br/><br/>';
+                        body += 'This NCS Case # ' + c.CaseNumber + ' needs review. The case status has not changed in 3 business days. Please add any pertinent notes as comments within the case for stakeholders to reference.<br/><br/>';
                         body += '<b>Account:</b> ' + c.Account.Client_ID__c + ' - ' + c.Account.Name + '<br/>';
                         body += '<b>Subject:</b> ' + c.Subject + '<br/><br/>';
                         body += '<b>Status:</b> ' + c.Status + '<br/>';

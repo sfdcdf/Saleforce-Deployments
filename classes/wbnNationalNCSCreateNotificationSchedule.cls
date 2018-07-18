@@ -15,6 +15,7 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
     
     public void sendWBNNotification(){
     
+        Id wbnLogRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
         Set<Id> caseIds = new Set<Id>();
         List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
         //Set<String> toAddressSet = new Set<String>();
@@ -28,11 +29,13 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
         OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
         //Id emailTemplateId = [SELECT Id FROM EmailTemplate WHERE DeveloperName = 'WBN_NCS_Status_Has_Not_Changed' LIMIT 1].Id;
         
-        // get records in Notification Log for current day only
+        // get records in Notification Log for WBN Log Record Type, Case object, National NCS Cases, 
+        // based on Created Date, and for the current day only
         for(Notification_Log__c nl :
             [SELECT Record_Id__c
                FROM Notification_Log__c
-              WHERE Record_Type_Name__c = 'National - New Client Setup' AND
+              WHERE RecordTypeId = :wbnLogRecordTypeId AND
+                    Record_Type_Name__c = 'National - New Client Setup' AND
                     SObject_Name__c = 'Case' AND
                     Trigger_Field_Name__c = 'CreatedDate' AND
                     Notification_Sent_Date__c = TODAY]){
@@ -76,8 +79,8 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                     
                         // send notifications
                         Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-                        String body = 'Hello <br/><br/>';
-                        body += 'This NCS Case # ' + c.CaseNumber + 'is still owned by you. Please change the Ownership.<br/><br/>';
+                        String body = 'Hello, <br/><br/>';
+                        body += 'This NCS Case # ' + c.CaseNumber + ' is still owned by you. Please change the Ownership.<br/><br/>';
                         body += '<b>Account:</b> ' + c.Account.Client_ID__c + ' - ' + c.Account.Name + '<br/>';
                         body += '<b>Subject:</b> ' + c.Subject + '<br/>';
                         body += '<b>Product:</b> ' + c.SEO_Product__c + '<br/><br/>';

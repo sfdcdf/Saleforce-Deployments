@@ -90,7 +90,15 @@
         <displayFormat>NL-{00000000}</displayFormat>
         <label>Notification Log Name</label>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Notification Logs</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </nameField><pluralLabel>Notification Logs</pluralLabel><searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SObject_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Record_Id__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Record_Type_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Trigger_Field_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Trigger_Value__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Notification_Sent_Date__c</customTabListAdditionalFields>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
