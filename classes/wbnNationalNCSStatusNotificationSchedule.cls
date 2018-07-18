@@ -15,6 +15,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
     
     public void sendWBNNotification(){
     
+        Id wbnLogRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
         Set<Id> caseIds = new Set<Id>();
         List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
         Set<String> toAddressSet = new Set<String>();
@@ -24,7 +25,9 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         String fromAddress = 'sfdc@yodle.com';
         String fromDisplayName = 'Salesforce Notifications';
         String subjectLine = '';
+        String sfdcURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
         OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+        //Id emailTemplateId = [SELECT Id FROM EmailTemplate WHERE DeveloperName = 'WBN_NCS_Status_Has_Not_Changed' LIMIT 1].Id;
         
         // populate Managers from User into Map to obtain Case Owner Manager details
         for(User u : 
@@ -40,15 +43,18 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
             ownerMgrsMap.put(u.Id, u);
         }
         
-        // get records in Notification Log for current day only
+        // get records in Notification Log for WBN Log Record Type, Case object, National NCS Cases, 
+        // based on status, and for the current day only
         for(Notification_Log__c nl :
             [SELECT Record_Id__c
                FROM Notification_Log__c
-              WHERE Record_Type_Name__c = 'National - New Client Setup' AND
+              WHERE RecordTypeId = :wbnLogRecordTypeId AND
+                    Record_Type_Name__c = 'National - New Client Setup' AND
                     SObject_Name__c = 'Case' AND
                     Trigger_Field_Name__c = 'Status' AND
                     Notification_Sent_Date__c = TODAY]){
             
+            // the Notification Log Record Id values are Case Ids
             caseIds.add(nl.Record_Id__c);
         }
         
@@ -64,8 +70,17 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                             Account.IMS_Rep__r.Name, 
                             Account.IMS_Rep__r.Email, 
                             Account.Name,
+                            Account.Client_ID__c,
                             CaseNumber,
-                            Status
+                            Subject,
+                            Status,
+                            Sub_Status__c,
+                            Next_Action_Date__c,
+                            SEO_Product__c,
+                            Status_Notes__c,
+                            Account.IMS_Rep__c,
+                            Sales_Person__c,
+                            Sales_Person__r.Name
                        FROM Case
                       WHERE Id IN :caseIds]){
                           
@@ -93,20 +108,28 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                     
                         // send notifications
                         Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-                        String body = 'You are being sent this notification because the status of the Case detail listed below has not changed for at least 3 days. Please review and ensure no action is required.<br/><br/><br/>';
-                        body += '<b>Case #:</b> ' + c.CaseNumber + '<br/><br/>';
-                        body += '<b>Account:</b> ' + c.Account.Name + '<br/><br/>';
-                        body += '<b>Case Status:</b> ' + c.Status + '<br/><br/>';
-                        body += '<b>Case Owner:</b> ' + c.Owner.Name + '<br/><br/>';
-                        body += '<b>Created Date:</b> ' + c.CreatedDate.format() + '<br/><br/>';
+                        String body = 'Hello, <br/><br/>';
+                        body += 'This NCS Case # ' + c.CaseNumber + ' needs review. The case status has not changed in 3 business days. Please add any pertinent notes as comments within the case for stakeholders to reference.<br/><br/>';
+                        body += '<b>Account:</b> ' + c.Account.Client_ID__c + ' - ' + c.Account.Name + '<br/>';
+                        body += '<b>Subject:</b> ' + c.Subject + '<br/><br/>';
+                        body += '<b>Status:</b> ' + c.Status + '<br/>';
+                        body += '<b>Sub Status:</b> ' + (String.isBlank(c.Sub_Status__c) ? null : c.Sub_Status__c) + '<br/></br>';
+                        body += '<b>Next Action Date:</b> ' + (String.isBlank(String.valueOf(c.Next_Action_Date__c)) ? null : c.Next_Action_Date__c.format()) + '<br/><br/>';
+                        body += '<b>Product:</b> ' + c.SEO_Product__c + '<br/>';
+                        body += '<b>Status Notes:</b> ' + c.Status_Notes__c + '<br/></br>';
+                        body += '<b>Case Owner:</b> ' + c.Owner.Name + '<br/>';
+                        body += '<b>IMS Rep:</b> ' + c.Account.IMS_Rep__r.Name + '<br/>';
+                        body += '<b>Sales Person:</b> ' + c.Sales_Person__r.Name + '<br/></br></br>';
+                        body += '<b>Link to Case:</b> ' + sfdcURL + c.Id + '<br/>';
                         
                         // Dynamic Subject Line
-                        subjectLine = c.Account.Name + ' - No Change to New Client Setup Case Status';
+                        subjectLine = 'NCS - Case Status Has Not Changed: ' + c.Account.Name + ' : ' + c.Status;
                         
                         // set message content
                         message.setToAddresses(toAddress);
                         message.setReplyTo(fromAddress);
                         message.setOrgWideEmailAddressId(owea.get(0).Id);
+                        //message.setTemplateId(emailTemplateId);
                         message.setSubject(subjectLine);
                         message.setHtmlBody(body);
                         
