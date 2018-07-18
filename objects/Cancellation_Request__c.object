@@ -8064,11 +8064,12 @@ false)</formula>
         <columns>Cancel_Outcome_Sub_Status__c</columns>
         <columns>Cancellation_Code__c</columns>
         <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Account_Product_Type__c</field>
-            <operation>contains</operation>
-            <value>torchx</value>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Cancellation_Request__c.WBN_Cancellation_Request</value>
         </filters>
         <label>AMM - Working List</label>
         <sharedTo>
