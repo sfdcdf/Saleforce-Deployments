@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -90,7 +90,20 @@
         <displayFormat>NL-{00000000}</displayFormat>
         <label>Notification Log Name</label>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Notification Logs</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><recordTypes>
+    </nameField><pluralLabel>Notification Logs</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>SObject_Name__c</columns>
+        <columns>Record_Type_Name__c</columns>
+        <columns>Record_Id__c</columns>
+        <columns>Trigger_Field_Name__c</columns>
+        <columns>Trigger_Value__c</columns>
+        <columns>Notification_Sent_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews><recordTypes>
         <fullName>WBN_Log</fullName>
         <active>true</active>
         <description>WBN Notification Logs Record Type</description>
