@@ -111,6 +111,7 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                         
                             // send notifications
                             Messaging.sendEmail(notificationsCrtDtLst);
+                            notificationsCrtDtLst.clear();
                         }
                     }
                 }
