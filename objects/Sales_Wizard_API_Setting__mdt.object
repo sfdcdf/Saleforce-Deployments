@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Consumer_Key_Field__c</fullName>
+        <description>Defines the Consumer Key used when opening Sales Wizard URL</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Consumer Key Identifier</label>
+        <length>25</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Consumer_Name__c</fullName>
+        <description>Consumer Name used in Sales Wizard URL for consumer reference</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Consumer Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><description>Settings leveraged/ needed when the Sales Wizard URL is launched from Salesforce</description><label>Sales Wizard API Setting</label><pluralLabel>Sales Wizard API Settings</pluralLabel><visibility>Public</visibility></CustomObject>

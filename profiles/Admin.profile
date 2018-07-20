@@ -937,6 +937,9 @@
     </classAccesses><classAccesses>
         <apexClass>NCSStatusNotificationScheduleTest</apexClass>
         <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>LaunchSalesWizardController</apexClass>
+        <enabled>true</enabled>
     </classAccesses><pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -1134,6 +1137,9 @@
         <enabled>true</enabled>
     </pageAccesses><pageAccesses>
         <apexPage>QualityTeam_RepMgmt</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses><pageAccesses>
+        <apexPage>LaunchSalesWizard</apexPage>
         <enabled>true</enabled>
     </pageAccesses><applicationVisibilities>
         <application>Clicktools</application>
@@ -31125,6 +31131,8 @@
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
     </layoutAssignments><layoutAssignments>
         <layout>Google_Location_Group__c-Google Location Group Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

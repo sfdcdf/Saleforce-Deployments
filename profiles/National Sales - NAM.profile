@@ -26848,6 +26848,8 @@
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
     </layoutAssignments><layoutAssignments>
         <layout>Google_Location_Group__c-Google Location Group Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -27999,6 +28001,14 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Google_Location_Group__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Sales_Wizard_API_Setting__mdt</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>

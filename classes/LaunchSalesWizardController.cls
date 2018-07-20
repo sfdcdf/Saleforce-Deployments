@@ -1,0 +1,72 @@
+/****************************************************************************
+  Company/ Author ....: E. Ross
+  Date Created .......: 20-Jul-2018
+  Last Modified By ...: E. Ross
+  Last Modified Date .: 20-Jul-2018
+  Description ........: Launched Sales Wizard URL with proper URL tokens and parameters to auto-populate
+                        the Sales Wizard form with data from Salesforce
+*****************************************************************************/
+public with sharing class LaunchSalesWizardController {
+
+    public LaunchSalesWizardController(ApexPages.StandardController controller) {
+
+    }
+
+    // http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/SOME_CONSUMER_NAME/SOME_UNIQUE_KEY_FOR_THE_CONSUMER?corporate.id=1700000000
+
+    Id recordId = ApexPages.currentPage().getParameters().get('id');
+    String acctCorpId {get; set;}
+    String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
+    String salesWizardBaseURL = 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
+    
+    // method to build URL for Sales Wizard properly and redirect to that URL
+    public PageReference validateAndRedirect(){
+    
+        System.Debug('** Opportunity Id** ' + recordId);
+    
+        // call string method
+        getCorpId(recordId);
+    
+        // build URL from base and retrieved data
+        PageReference retURL = new PageReference(salesWizardBaseURL + consumerName + '/' + recordId + '?corporate.id=' + acctCorpId);
+        retURL.setRedirect(true);
+        
+        return retURL;
+    }
+    
+    // method used to get Account Corporate Id based on the Opportunity Id
+    public String getCorpId(Id opportunityId){
+    
+        Set<Id> acctIds = new Set<Id>();
+    
+        // get AccountId from the Opportunity passed in URL
+        for(Opportunity opp :
+            [SELECT Id,
+                    AccountId
+               FROM Opportunity
+              WHERE Id = :opportunityId]){
+            
+            // ensure Account Id is not null on the Opportunity record and then add to Set list
+            if(!String.IsBlank(opp.AccountId)){
+                acctIds.add(opp.AccountId);
+            }
+        }
+    
+        // Get Corp Id from Account related to Opportunity
+        for(Account a :
+            [SELECT Id,
+                    Relationship_ID__c
+               FROM Account
+              WHERE Id IN :acctIds LIMIT 1]){
+              
+              // field data type is an Integer/ Number
+              if(a.Relationship_ID__c != null && a.Relationship_ID__c > 0){
+                  
+                  // get string value of number
+                  acctCorpId = String.valueOf(a.Relationship_ID__c);
+              }
+        }
+    
+        return acctCorpId;
+    }
+}
