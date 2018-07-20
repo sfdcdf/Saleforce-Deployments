@@ -27,6 +27,9 @@ public with sharing class LaunchSalesWizardController {
         // call string method
         getCorpId(recordId);
     
+        System.Debug('** Account Corporate Id **' + acctCorpId);
+        System.Debug('** Built URL **' + salesWizardBaseURL + consumerName + '/' + recordId + '?corporate.id=' + acctCorpId);
+        
         // build URL from base and retrieved data
         PageReference retURL = new PageReference(salesWizardBaseURL + consumerName + '/' + recordId + '?corporate.id=' + acctCorpId);
         retURL.setRedirect(true);
@@ -55,15 +58,15 @@ public with sharing class LaunchSalesWizardController {
         // Get Corp Id from Account related to Opportunity
         for(Account a :
             [SELECT Id,
-                    Relationship_ID__c
+                    Corp_Acct_in_YL_Parent_Account__c
                FROM Account
               WHERE Id IN :acctIds LIMIT 1]){
               
               // field data type is an Integer/ Number
-              if(a.Relationship_ID__c != null && a.Relationship_ID__c > 0){
+              if(a.Corp_Acct_in_YL_Parent_Account__c != null){
                   
                   // get string value of number
-                  acctCorpId = String.valueOf(a.Relationship_ID__c);
+                  acctCorpId = String.valueOf(a.Corp_Acct_in_YL_Parent_Account__c);
               }
         }
     

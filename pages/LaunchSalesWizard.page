@@ -1,3 +1,3 @@
-<apex:page showHeader="false" sidebar="false" Controller="LaunchSalesWizardController" action="{!validateAndRedirect}">
+<apex:page showHeader="false" sidebar="false" standardController="Opportunity" extensions="LaunchSalesWizardController" action="{!validateAndRedirect}">
 
 </apex:page>

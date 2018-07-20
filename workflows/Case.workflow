@@ -14635,6 +14635,11 @@ ISCHANGED(Estimated_Completion_Date__c)
             <operation>equals</operation>
             <value>Closed - Opt Complete</value>
         </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>TORCHx</value>
+        </criteriaItems>
         <description>Once the TORCHx Service Performance Team completes/closes an Optimization Case. This sends an email notification to the client email address on the Account.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><tasks>
