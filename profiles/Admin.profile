@@ -29728,6 +29728,10 @@
         <editable>true</editable>
         <field>Organic_Analysis__c.Location_Group_Id__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Notification_Log__c.Record_Link__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

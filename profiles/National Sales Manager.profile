@@ -25606,6 +25606,10 @@
         <editable>true</editable>
         <field>Organic_Analysis__c.Location_Group_Id__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Link__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
