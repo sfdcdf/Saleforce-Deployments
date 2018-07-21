@@ -21281,6 +21281,10 @@
         <editable>false</editable>
         <field>Notification_Log__c.Trigger_Value__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Link__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

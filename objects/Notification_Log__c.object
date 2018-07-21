@@ -86,6 +86,14 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>Record_Link__c</fullName>
+        <description>Link to Salesforce record</description>
+        <externalId>false</externalId>
+        <label>Record Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
     </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Object used to store metadata about automated notifications sent through custom logic. Can be leveraged for any sObject and/ or Record Type</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Notification Log</label><nameField>
         <displayFormat>NL-{00000000}</displayFormat>
         <label>Notification Log Name</label>
@@ -97,6 +105,7 @@
         <columns>SObject_Name__c</columns>
         <columns>Record_Type_Name__c</columns>
         <columns>Record_Id__c</columns>
+        <columns>Record_Link__c</columns>
         <columns>Trigger_Field_Name__c</columns>
         <columns>Trigger_Value__c</columns>
         <columns>Notification_Sent_Date__c</columns>

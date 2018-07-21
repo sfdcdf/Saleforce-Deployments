@@ -21274,6 +21274,10 @@
         <editable>false</editable>
         <field>Notification_Log__c.Trigger_Value__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Link__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
