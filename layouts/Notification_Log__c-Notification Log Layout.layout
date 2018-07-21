@@ -25,6 +25,16 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Record_Link__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Record_Type_Name__c</field>
             </layoutItems>
             <layoutItems>
@@ -38,12 +48,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Notification_Sent_Date__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OwnerId</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

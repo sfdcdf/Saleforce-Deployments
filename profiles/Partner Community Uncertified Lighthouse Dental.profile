@@ -21390,6 +21390,10 @@
         <editable>true</editable>
         <field>Cancellation_Request__c.Cancel_Type__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Notification_Log__c.Record_Link__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>
