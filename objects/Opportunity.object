@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>AddInfluence</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -78052,6 +78052,13 @@ ISPICKVAL(StageName,"Closed Won"),
 (LEN(Name) &gt; 80)
 )</errorConditionFormula>
         <errorMessage>The Opportunity Name cannot be greater than 80 characters (includes spaces).</errorMessage>
+    </validationRules><validationRules>
+        <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.Id = "012600000009YRT"
+ &amp;&amp; 
+NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
+        <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
     </validationRules><webLinks>
         <fullName>Create_in_YL_Local</fullName>
         <availability>online</availability>
