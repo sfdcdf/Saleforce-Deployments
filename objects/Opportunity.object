@@ -77649,6 +77649,13 @@ ISPICKVAL(StageName,"Closed Won"),
   NOT(ISCHANGED(Lost_Reason__c))
 )</errorConditionFormula>
         <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.Id = "012600000009YRT"
+ &amp;&amp; 
+NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
+        <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
     </validationRules><webLinks>
         <fullName>Create_in_YL_Local</fullName>
         <availability>online</availability>
