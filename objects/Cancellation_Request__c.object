@@ -8042,6 +8042,11 @@ false)</formula>
                     <label>Client Refuses to Sign Contract</label>
                 </value>
                 <value>
+                    <fullName>Client wanted to approve site before launch</fullName>
+                    <default>false</default>
+                    <label>Client wanted to approve site before launch</label>
+                </value>
+                <value>
                     <fullName>Closing Business</fullName>
                     <default>false</default>
                     <label>Closing Business</label>
@@ -8770,6 +8775,10 @@ false)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Product-Related</controllingFieldValue>
+                <valueName>Client wanted to approve site before launch</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product-Related</controllingFieldValue>
                 <valueName>CRM Functionality</valueName>
             </valueSettings>
             <valueSettings>
@@ -9142,12 +9151,17 @@ false)</formula>
                     <default>false</default>
                     <label>Corporate Cancellation</label>
                 </value>
+                <value>
+                    <fullName>unknown</fullName>
+                    <default>false</default>
+                    <label>unknown</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Customer Service Issue</valueName>
             </valueSettings>
@@ -9155,7 +9169,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Performance</valueName>
             </valueSettings>
@@ -9163,7 +9177,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Sales Expectations</valueName>
             </valueSettings>
@@ -9171,7 +9185,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Unable To Make Contact</valueName>
             </valueSettings>
@@ -9179,7 +9193,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Other</valueName>
             </valueSettings>
@@ -9187,7 +9201,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Product-Related</valueName>
             </valueSettings>
@@ -9195,7 +9209,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Out of Business</valueName>
             </valueSettings>
@@ -9203,7 +9217,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Client Cost-Cutting</valueName>
             </valueSettings>
@@ -9211,7 +9225,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Buyer's Remorse</valueName>
             </valueSettings>
@@ -9219,7 +9233,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Lost to Competitor</valueName>
             </valueSettings>
@@ -9229,7 +9243,7 @@ false)</formula>
                 <valueName>Pricing</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <valueName>MLS Feed Denied</valueName>
             </valueSettings>
             <valueSettings>
@@ -9868,6 +9882,11 @@ false)</formula>
                     <default>false</default>
                     <label>Work Not Completed</label>
                 </value>
+                <value>
+                    <fullName>Client wanted to approve site before launch</fullName>
+                    <default>false</default>
+                    <label>Client wanted to approve site before launch</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>MLS Feed Denied</controllingFieldValue>
@@ -10283,6 +10302,10 @@ false)</formula>
                 <valueName>Website Functionality</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Product-Related</controllingFieldValue>
+                <valueName>Client wanted to approve site before launch</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>Out of Business</controllingFieldValue>
                 <valueName>Closing Business</valueName>
             </valueSettings>
@@ -10449,7 +10472,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Customer Service Issue</valueName>
             </valueSettings>
@@ -10457,7 +10480,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Performance</valueName>
             </valueSettings>
@@ -10465,7 +10488,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Sales Expectations</valueName>
             </valueSettings>
@@ -10473,7 +10496,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Unable To Make Contact</valueName>
             </valueSettings>
@@ -10481,7 +10504,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Other</valueName>
             </valueSettings>
@@ -10489,7 +10512,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Product-Related</valueName>
             </valueSettings>
@@ -10497,7 +10520,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Out of Business</valueName>
             </valueSettings>
@@ -10505,7 +10528,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Client Cost-Cutting</valueName>
             </valueSettings>
@@ -10513,7 +10536,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Buyer's Remorse</valueName>
             </valueSettings>
@@ -10521,7 +10544,7 @@ false)</formula>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <controllingFieldValue>Lighthouse</controllingFieldValue>
                 <controllingFieldValue>Max / Essentials</controllingFieldValue>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <controllingFieldValue>WBN</controllingFieldValue>
                 <valueName>Lost to Competitor</valueName>
             </valueSettings>
@@ -10531,7 +10554,7 @@ false)</formula>
                 <valueName>Pricing</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>TorchX</controllingFieldValue>
+                <controllingFieldValue>TORCHx</controllingFieldValue>
                 <valueName>MLS Feed Denied</valueName>
             </valueSettings>
             <valueSettings>
@@ -10570,9 +10593,9 @@ false)</formula>
                     <label>Max / Essentials</label>
                 </value>
                 <value>
-                    <fullName>TorchX</fullName>
+                    <fullName>TORCHx</fullName>
                     <default>false</default>
-                    <label>TorchX</label>
+                    <label>TORCHx</label>
                 </value>
                 <value>
                     <fullName>WBN</fullName>
@@ -10723,6 +10746,7 @@ false)</formula>
     </listViews><recordTypes>
         <fullName>Cancellation_Request</fullName>
         <active>true</active>
+        <description>For Lead Stream and Max Essentials Cancellations</description>
         <label>Cancellation Request</label>
         <picklistValues>
             <picklist>Account_in_Save_Mode__c</picklist>
@@ -12620,6 +12644,7 @@ false)</formula>
     </recordTypes><recordTypes>
         <fullName>LH_Cancellation_Request</fullName>
         <active>true</active>
+        <description>Lighthouse Cancellations</description>
         <label>LH Cancellation Request</label>
         <picklistValues>
             <picklist>Account_in_Save_Mode__c</picklist>
@@ -16212,6 +16237,7 @@ false)</formula>
     </recordTypes><recordTypes>
         <fullName>Rogers_Cancellation_Request</fullName>
         <active>true</active>
+        <description>Rogers Cancellations</description>
         <label>Rogers Cancellation Request</label>
         <picklistValues>
             <picklist>Account_in_Save_Mode__c</picklist>
@@ -17497,7 +17523,7 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
-                <fullName>TorchX</fullName>
+                <fullName>TORCHx</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18467,6 +18493,7 @@ false)</formula>
     </recordTypes><recordTypes>
         <fullName>TORCHx_Cancellation_Request</fullName>
         <active>true</active>
+        <description>TORCHx Cancellations</description>
         <label>TORCHx Cancellation Request</label>
         <picklistValues>
             <picklist>Account_in_Save_Mode__c</picklist>
@@ -18595,6 +18622,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Client Did Not Disclose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client wanted to approve site before launch</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18877,6 +18908,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Client Did Not Disclose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client wanted to approve site before launch</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19184,7 +19219,7 @@ false)</formula>
         <picklistValues>
             <picklist>Cancel_Type__c</picklist>
             <values>
-                <fullName>TorchX</fullName>
+                <fullName>TORCHx</fullName>
                 <default>true</default>
             </values>
         </picklistValues>
@@ -20311,6 +20346,7 @@ false)</formula>
     </recordTypes><recordTypes>
         <fullName>WBN_Cancellation_Request</fullName>
         <active>true</active>
+        <description>WBN Cancellations</description>
         <label>WBN Cancellation Request</label>
         <picklistValues>
             <picklist>Account_in_Save_Mode__c</picklist>
@@ -21952,28 +21988,6 @@ false)</formula>
             </values>
         </picklistValues>
     </recordTypes><validationRules>
-        <fullName>Cancel_Code_is_Lost_to_Competitor</fullName>
-        <active>true</active>
-        <description>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</description>
-        <errorConditionFormula>and(
-or(
-ispickval( Cancel_Code__c ,"Lost to Competitor"),
-ispickval( Second_Cancel_Code__c ,"Lost to Competitor")),
-isblank( Competitor_Name__c ))</errorConditionFormula>
-        <errorDisplayField>Competitor_Name__c</errorDisplayField>
-        <errorMessage>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</errorMessage>
-    </validationRules><validationRules>
-        <fullName>Cancel_Code_is_Other_must_fill_out_Other</fullName>
-        <active>true</active>
-        <description>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
-        <errorConditionFormula>and(
-or(
-ispickval( Cancel_Code__c ,"Other"),
-ispickval( Second_Cancel_Code__c ,"Other")),
-isblank( Other_Cancel_Code__c ))</errorConditionFormula>
-        <errorDisplayField>Other_Cancel_Code__c</errorDisplayField>
-        <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
-    </validationRules><validationRules>
         <fullName>Cannot_Change_Owner_for_LWB</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -22064,18 +22078,6 @@ not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate
 or(
 ispickval( Attempts_to_Contact__c ,"")))</errorConditionFormula>
         <errorMessage>When closing this record, you must fill in the Attempts to Contact field.</errorMessage>
-    </validationRules><validationRules>
-        <fullName>Closing_must_fill_out_Cancel_Code</fullName>
-        <active>true</active>
-        <errorConditionFormula>and(
-$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
-RecordType.Name &lt;&gt; "LH Cancellation Request", 
-RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
-NOT($User.Email = "sfdc@yodle.com"),  
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( Cancel_Code__c , "")))</errorConditionFormula>
-        <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
     </validationRules><validationRules>
         <fullName>Closing_must_fill_out_Client_into_dash</fullName>
         <active>true</active>
@@ -22243,27 +22245,6 @@ OR(
         <errorDisplayField>Last_TP_Completed__c</errorDisplayField>
         <errorMessage>Must Fill Out "Last TP Completed?" for LBW Accounts</errorMessage>
     </validationRules><validationRules>
-        <fullName>LH_Cancel_Churned_Required_Fields</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
-ISPICKVAL(Outcome__c, "Churned"), 
-OR(ISPICKVAL(Cancellation_Date_Entered__c, ""),
-ISPICKVAL(Cancellation_Code__c, ""), 
-ISBLANK(Cancellation_Code_Details__c), 
-ISBLANK(Current_Monthly_Revenue__c),
-ISBLANK(Date_to_Stop_Service_Date__c)))</errorConditionFormula>
-        <errorMessage>When Cancel Outcome is Churned, Cancellation Date Entered, Cancellation Code, Cancellation Code Details, Current Monthly Revenue, Date to Stop Service (Date) must be filled in.</errorMessage>
-    </validationRules><validationRules>
-        <fullName>LH_Cancel_Free_Time_Require_Contact_Date</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request",
-ISPICKVAL(Outcome__c, "Dollar Sync Period"),
-OR(ISBLANK(Next_Scheduled_Contact_Date__c),
-ISPICKVAL(Cancellation_Code__c, ""), 
-ISBLANK(Cancellation_Code_Details__c), 
-ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
-        <errorMessage>When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue.</errorMessage>
-    </validationRules><validationRules>
         <fullName>LH_Cancel_Future_Monthly_Rev_Required</fullName>
         <active>true</active>
         <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
@@ -22303,26 +22284,6 @@ Future_Monthly_Revenue__c &lt;= 0))</errorConditionFormula>
         <errorDisplayField>Future_Monthly_Revenue__c</errorDisplayField>
         <errorMessage>When closing a LH Cancel Request case, you must fill out Future Monthly Revenue</errorMessage>
     </validationRules><validationRules>
-        <fullName>LH_Cancel_Required_Fields_Cancel_Codes</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
-
-OR( 
-ISPICKVAL(Outcome__c,"Saved with No Concessions"), 
-ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Standard"), 
-ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Custom"), 
-ISPICKVAL(Outcome__c,"Saved with Discount"), 
-ISPICKVAL(Outcome__c,"Saved with OBC Package"), 
-ISPICKVAL(Outcome__c,"Downsold to LH Only"), 
-ISPICKVAL(Outcome__c,"Downsold to LH+ProPack"), 
-ISPICKVAL(Outcome__c,"Downsold to LH+ProPack+Mobile Manager"), 
-ISPICKVAL(Outcome__c,"Ad Station Credit")), 
-
-OR(ISPICKVAL(Cancellation_Code__c, ""),
-ISBLANK(Cancellation_Code_Details__c),
-ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
-        <errorMessage>When closing a LH Cancel Request case, you must fill out the Cancellation Code, Cancellation Code Details, and Current Monthly Revenue</errorMessage>
-    </validationRules><validationRules>
         <fullName>LH_Free_Time_Requires_Switching_Systems</fullName>
         <active>false</active>
         <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
@@ -22338,28 +22299,6 @@ RecordType.Id = "012600000009cOa", /*Cancellation Request*/
 ISPICKVAL(Refund2__c, "Requested"), 
 NOT(ISPICKVAL( Outcome__c , 'In Progress')))</errorConditionFormula>
         <errorMessage>Please update Refund field to the correct approved/declined value.</errorMessage>
-    </validationRules><validationRules>
-        <fullName>Must_fill_out_Cancel_Code_Notes</fullName>
-        <active>true</active>
-        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
-        <errorConditionFormula>and(
-RecordType.Name &lt;&gt; "WBN Cancellation Request",
-RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
-RecordType.Name &lt;&gt; "LH Cancellation Request", 
-ISBlank(First_Cancel_Code_Notes__c),
-NOT(ispickval(Cancel_Code__c,"")))</errorConditionFormula>
-        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
-        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
-    </validationRules><validationRules>
-        <fullName>Must_fill_out_Cancel_Code_Notes_2</fullName>
-        <active>true</active>
-        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
-        <errorConditionFormula>and(
-RecordType.Name &lt;&gt; "WBN Cancellation Request",
-ISBlank(Second_Cancel_Code_Notes__c),
-NOT(ispickval( Second_Cancel_Code__c ,"")))</errorConditionFormula>
-        <errorDisplayField>Second_Cancel_Code_Notes__c</errorDisplayField>
-        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
     </validationRules><validationRules>
         <fullName>Must_fill_out_case_on_cancellation_LBW</fullName>
         <active>true</active>
@@ -22609,71 +22548,6 @@ not(ispickval( Scheduled_Adoption_Call__c ,"Did Not Offer"))))</errorConditionFo
         <errorDisplayField>Outcome__c</errorDisplayField>
         <errorMessage>If choosing Saved with no Concessions, you cannot mark a concession below as true.</errorMessage>
     </validationRules><validationRules>
-        <fullName>TORCHx_Fields_that_Must_Be_Filled_Out</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(RecordTypeId = "012320000005P4X", 
-NOT(ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info")), 
-NOT(ISPICKVAL(Outcome__c , "In Progress")), 
-NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")), 
-
-OR(ISBLANK(Additional_Notes__c), 
-ISBLANK(Retention_Consultant__c), 
-ISPICKVAL(Attempts_to_Contact__c ,""),
-ISPICKVAL(Cancellation_Code__c,""),
-ISBLANK(Cancellation_Code_Details__c)
-))</errorConditionFormula>
-        <errorMessage>Please fill in the Additional Notes, Attempts to Contact, Cancellation Code, Cancelaltion Code Details, and Retention Consultant fields.</errorMessage>
-    </validationRules><validationRules>
-        <fullName>TORCHx_Must_Fill_out_PreLaunch_Cancel</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request", 
-ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),
-Pre_Launch_Cancel__c = FALSE,
-NOT(ISPICKVAL(Outcome__c , "In Progress")), 
-NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
-        <errorMessage>Please fill out the Pre Launch Cancel Field.</errorMessage>
-    </validationRules><validationRules>
-        <fullName>TORCHx_Must_fill_out_Cancel_Code_Notes</fullName>
-        <active>true</active>
-        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
-        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request",
-NOT(ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info")),
-ISBLANK(First_Cancel_Code_Notes__c),
-NOT(ispickval(Cancellation_Code__c,"")))</errorConditionFormula>
-        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
-        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
-    </validationRules><validationRules>
-        <fullName>WBN_Additional_Notes_Required</fullName>
-        <active>true</active>
-        <description>For WBN the additional notes field is required when certain cancellation codes are selected.</description>
-        <errorConditionFormula>AND(
-  RecordType.Name = "WBN Cancellation Request",
-  ISBLANK(Additional_Notes__c),
-  OR(
-    CASE(Cancel_Code__c,
-    "Price", 1, 
-    "Lost to Competitor", 1,
-    "Performance", 1,
-    "Corporate Mandate Departure", 1,
-    "Dashboard Functionality", 1,
-    "Product Expectations", 1,
-    "Product Performance", 1,
-    0) = 1,
-
-    CASE(Second_Cancel_Code__c,
-    "Price", 1, 
-    "Lost to Competitor", 1,
-    "Performance", 1,
-    "Corporate Mandate Departure", 1,
-    "Dashboard Functionality", 1,
-    "Product Expectations", 1,
-    "Product Performance", 1,
-    0) = 1
-  )
-)</errorConditionFormula>
-        <errorDisplayField>Additional_Notes__c</errorDisplayField>
-        <errorMessage>Additional Notes are required for the cancellation codes selected.</errorMessage>
-    </validationRules><validationRules>
         <fullName>WBN_must_fill_out_revenue_lost</fullName>
         <active>true</active>
         <errorConditionFormula>and(
@@ -22720,6 +22594,321 @@ CASE( Future_Product__c ,
 0))</errorConditionFormula>
         <errorDisplayField>Product_Change2__c</errorDisplayField>
         <errorMessage>When the future product is different than the initial product, please change the selection for Product Change to 'Offered and Accepted'.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Cancel_Code_is_Lost_to_Competitor</fullName>
+        <active>false</active>
+        <description>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</description>
+        <errorConditionFormula>and(
+or(
+ispickval( Cancel_Code__c ,"Lost to Competitor"),
+ispickval( Second_Cancel_Code__c ,"Lost to Competitor")),
+isblank( Competitor_Name__c ))</errorConditionFormula>
+        <errorDisplayField>Competitor_Name__c</errorDisplayField>
+        <errorMessage>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Cancel_Code_is_Lost_to_Competitor_new</fullName>
+        <active>true</active>
+        <description>Using Cancel Code 1 
+If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</description>
+        <errorConditionFormula>and(
+or(
+ispickval(  Cancel_Code_1__c ,"Lost to Competitor"),
+ispickval( Cancel_Code_2__c ,"Lost to Competitor")),
+isblank( Competitor_Name__c ))</errorConditionFormula>
+        <errorDisplayField>Competitor_Name__c</errorDisplayField>
+        <errorMessage>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Cancel_Code_is_Other_fill_out_Other_new</fullName>
+        <active>true</active>
+        <description>Using New Cancel Codes
+If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
+        <errorConditionFormula>and(
+or(
+ispickval(  Cancel_Code_1__c ,"Other"),
+ispickval( Cancel_Code_2__c ,"Other")),
+isblank( Other_Cancel_Code__c ))</errorConditionFormula>
+        <errorDisplayField>Other_Cancel_Code__c</errorDisplayField>
+        <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Cancel_Code_is_Other_must_fill_out_Other</fullName>
+        <active>false</active>
+        <description>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
+        <errorConditionFormula>and(
+or(
+ispickval( Cancel_Code__c ,"Other"),
+ispickval( Second_Cancel_Code__c ,"Other")),
+isblank( Other_Cancel_Code__c ))</errorConditionFormula>
+        <errorDisplayField>Other_Cancel_Code__c</errorDisplayField>
+        <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Cancel_Codes_Code_2_Requires_Details</fullName>
+        <active>true</active>
+        <description>New Cancel Codes - if the secondary Cancel code is selected, then the details are required as well.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(TEXT(Cancel_Code_2__c ))),
+ISPICKVAL(Cancel_Code_2_Details__c , "")
+)</errorConditionFormula>
+        <errorDisplayField>Cancel_Code_2_Details__c</errorDisplayField>
+        <errorMessage>If you select a second Cancel Code, please also select a Cancel Code 2 Detail</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Closing_must_fill_out_Cancel_Code</fullName>
+        <active>false</active>
+        <errorConditionFormula>and(
+$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
+RecordType.Name &lt;&gt; "LH Cancellation Request", 
+RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
+NOT($User.Email = "sfdc@yodle.com"),  
+not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
+or(
+ispickval( Cancel_Code__c , "")))</errorConditionFormula>
+        <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Closing_must_fill_out_Cancel_Code_new</fullName>
+        <active>true</active>
+        <description>New Cancel Codes. Must fill out at least one cancel code</description>
+        <errorConditionFormula>and(
+$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
+RecordType.Name &lt;&gt; "Rogers Cancellation Request", 
+NOT($User.Email = "sfdc@yodle.com"),  
+not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
+or(
+ispickval(  Cancel_Code_1__c , "")))</errorConditionFormula>
+        <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>LH_Cancel_Churned_Required_Fields</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
+ISPICKVAL(Outcome__c, "Churned"), 
+OR(ISPICKVAL(Cancellation_Date_Entered__c, ""),
+ISPICKVAL(Cancellation_Code__c, ""), 
+ISBLANK(Cancellation_Code_Details__c), 
+ISBLANK(Current_Monthly_Revenue__c),
+ISBLANK(Date_to_Stop_Service_Date__c)))</errorConditionFormula>
+        <errorMessage>When Cancel Outcome is Churned, Cancellation Date Entered, Cancellation Code, Cancellation Code Details, Current Monthly Revenue, Date to Stop Service (Date) must be filled in.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>LH_Cancel_Churned_Required_Fields_new</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
+ISPICKVAL(Outcome__c, "Churned"), 
+OR(
+ISPICKVAL(Cancellation_Date_Entered__c, ""),
+ISBLANK(TEXT(Cancel_Code_1__c )),
+ISBLANK(TEXT(Cancel_Code_1_Details__c )), 
+ISBLANK(Current_Monthly_Revenue__c),
+ISBLANK(Date_to_Stop_Service_Date__c)))</errorConditionFormula>
+        <errorMessage>When Cancel Outcome is Churned, Cancellation Date Entered, Cancel Code 1, Cancel Code 1 Details, Current Monthly Revenue, Date to Stop Service (Date) must be filled in.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>LH_Cancel_FreeTime_Req_Contact_Date_new</fullName>
+        <active>true</active>
+        <description>New Cancel Codes</description>
+        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request",
+ISPICKVAL(Outcome__c, "Dollar Sync Period"),
+OR(ISBLANK(Next_Scheduled_Contact_Date__c),
+ISPICKVAL( Cancel_Code_1__c , ""), 
+ISBLANK(Text(Cancel_Code_1_Details__c )), 
+ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
+        <errorMessage>When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>LH_Cancel_Free_Time_Require_Contact_Date</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request",
+ISPICKVAL(Outcome__c, "Dollar Sync Period"),
+OR(ISBLANK(Next_Scheduled_Contact_Date__c),
+ISPICKVAL(Cancellation_Code__c, ""), 
+ISBLANK(Cancellation_Code_Details__c), 
+ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
+        <errorMessage>When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>LH_Cancel_Reqd_Fields_Cancel_Codes_new</fullName>
+        <active>true</active>
+        <description>New Cancel Codes</description>
+        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
+
+OR( 
+ISPICKVAL(Outcome__c,"Saved with No Concessions"), 
+ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Standard"), 
+ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Custom"), 
+ISPICKVAL(Outcome__c,"Saved with Discount"), 
+ISPICKVAL(Outcome__c,"Saved with OBC Package"), 
+ISPICKVAL(Outcome__c,"Downsold to LH Only"), 
+ISPICKVAL(Outcome__c,"Downsold to LH+ProPack"), 
+ISPICKVAL(Outcome__c,"Downsold to LH+ProPack+Mobile Manager"), 
+ISPICKVAL(Outcome__c,"Ad Station Credit")), 
+
+OR(ISPICKVAL( Cancel_Code_1__c , ""),
+ISBLANK(Text( Cancel_Code_1_Details__c )),
+ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
+        <errorMessage>When closing a LH Cancel Request case, you must fill out the Cancellation Code, Cancellation Code Details, and Current Monthly Revenue</errorMessage>
+    </validationRules><validationRules>
+        <fullName>LH_Cancel_Required_Fields_Cancel_Codes</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
+
+OR( 
+ISPICKVAL(Outcome__c,"Saved with No Concessions"), 
+ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Standard"), 
+ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Custom"), 
+ISPICKVAL(Outcome__c,"Saved with Discount"), 
+ISPICKVAL(Outcome__c,"Saved with OBC Package"), 
+ISPICKVAL(Outcome__c,"Downsold to LH Only"), 
+ISPICKVAL(Outcome__c,"Downsold to LH+ProPack"), 
+ISPICKVAL(Outcome__c,"Downsold to LH+ProPack+Mobile Manager"), 
+ISPICKVAL(Outcome__c,"Ad Station Credit")), 
+
+OR(ISPICKVAL(Cancellation_Code__c, ""),
+ISBLANK(Cancellation_Code_Details__c),
+ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
+        <errorMessage>When closing a LH Cancel Request case, you must fill out the Cancellation Code, Cancellation Code Details, and Current Monthly Revenue</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Must_fill_out_Cancel_Code_Notes</fullName>
+        <active>false</active>
+        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
+        <errorConditionFormula>and(
+RecordType.Name &lt;&gt; "WBN Cancellation Request",
+RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
+RecordType.Name &lt;&gt; "LH Cancellation Request", 
+ISBlank(First_Cancel_Code_Notes__c),
+NOT(ispickval(Cancel_Code__c,"")))</errorConditionFormula>
+        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
+        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Must_fill_out_Cancel_Code_Notes_2</fullName>
+        <active>false</active>
+        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
+        <errorConditionFormula>and(
+RecordType.Name &lt;&gt; "WBN Cancellation Request",
+ISBlank(Second_Cancel_Code_Notes__c),
+NOT(ispickval( Second_Cancel_Code__c ,"")))</errorConditionFormula>
+        <errorDisplayField>Second_Cancel_Code_Notes__c</errorDisplayField>
+        <errorMessage>You must fill out Second Cancel Code Notes field if you select a Cancel Code</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Must_fill_out_Cancel_Code_Notes_2_new</fullName>
+        <active>true</active>
+        <description>New Cancel Code
+You must fill out Cancel Code Notes if you select a Cancel Code</description>
+        <errorConditionFormula>and(
+$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/ 
+RecordType.Name &lt;&gt; "Rogers Cancellation Request", 
+NOT($User.Email = "sfdc@yodle.com"), 
+ISBlank(Second_Cancel_Code_Notes__c),
+NOT(ispickval(  Cancel_Code_2__c ,"")))</errorConditionFormula>
+        <errorDisplayField>Second_Cancel_Code_Notes__c</errorDisplayField>
+        <errorMessage>You must fill out Second Cancel Code Notes field if you select a Cancel Code 2 option</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Must_fill_out_Cancel_Code_Notes_new</fullName>
+        <active>true</active>
+        <description>New Cancel Codes
+You must fill out Cancel Code Notes if you select a Cancel Code</description>
+        <errorConditionFormula>and(
+$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/ 
+RecordType.Name &lt;&gt; "Rogers Cancellation Request", 
+NOT($User.Email = "sfdc@yodle.com"), 
+ISBlank(First_Cancel_Code_Notes__c),
+NOT(ispickval( Cancel_Code_1__c,"")))</errorConditionFormula>
+        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
+        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code 1 option</errorMessage>
+    </validationRules><validationRules>
+        <fullName>TORCHx_Fields_that_Must_Be_FilledOut_new</fullName>
+        <active>true</active>
+        <description>New Cancel Codes</description>
+        <errorConditionFormula>AND(RecordTypeId = "012320000005P4X", 
+
+NOT(ISPICKVAL( Cancel_Code_1_Details__c , "Unresponsive to Fulfillment")), 
+
+NOT(ISPICKVAL(Outcome__c , "In Progress")), 
+NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")), 
+
+OR(ISBLANK(Additional_Notes__c), 
+ISBLANK(Retention_Consultant__c), 
+ISPICKVAL(Attempts_to_Contact__c ,""),
+ISPICKVAL( Cancel_Code_1__c ,""),
+ISBLANK(TEXT( Cancel_Code_1_Details__c) )
+))</errorConditionFormula>
+        <errorMessage>Please fill in the Additional Notes, Attempts to Contact, Cancellation Code, Cancelaltion Code Details, and Retention Consultant fields.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>TORCHx_Fields_that_Must_Be_Filled_Out</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordTypeId = "012320000005P4X", 
+NOT(ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info")), 
+NOT(ISPICKVAL(Outcome__c , "In Progress")), 
+NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")), 
+
+OR(ISBLANK(Additional_Notes__c), 
+ISBLANK(Retention_Consultant__c), 
+ISPICKVAL(Attempts_to_Contact__c ,""),
+ISPICKVAL(Cancellation_Code__c,""),
+ISBLANK(Cancellation_Code_Details__c)
+))</errorConditionFormula>
+        <errorMessage>Please fill in the Additional Notes, Attempts to Contact, Cancellation Code, Cancelaltion Code Details, and Retention Consultant fields.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>TORCHx_Must_FillOut_PreLaunch_Cancel_new</fullName>
+        <active>true</active>
+        <description>New Cancel codes</description>
+        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request",
+OR(
+ AND( 
+   ISPICKVAL( Cancel_Code_1__c , "Unable To Make Contact"),
+   ISPICKVAL( Cancel_Code_1_Details__c , "Unresponsive to Fulfillment")
+  ),
+ AND( 
+   ISPICKVAL( Cancel_Code_2__c , "Unable To Make Contact"),
+   ISPICKVAL( Cancel_Code_2_Details__c , "Unresponsive to Fulfillment")
+ )
+),
+Pre_Launch_Cancel__c = FALSE,
+NOT(ISPICKVAL(Outcome__c , "In Progress")), 
+NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
+        <errorMessage>Please fill out the Pre Launch Cancel Field.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>TORCHx_Must_Fill_out_PreLaunch_Cancel</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request", 
+ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),
+Pre_Launch_Cancel__c = FALSE,
+NOT(ISPICKVAL(Outcome__c , "In Progress")), 
+NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
+        <errorMessage>Please fill out the Pre Launch Cancel Field.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>TORCHx_Must_fill_out_Cancel_Code_Notes</fullName>
+        <active>false</active>
+        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
+        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request",
+NOT(ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info")),
+ISBLANK(First_Cancel_Code_Notes__c),
+NOT(ispickval(Cancellation_Code__c,"")))</errorConditionFormula>
+        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
+        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
+    </validationRules><validationRules>
+        <fullName>WBN_Additional_Notes_Required</fullName>
+        <active>false</active>
+        <description>For WBN the additional notes field is required when certain cancellation codes are selected.</description>
+        <errorConditionFormula>AND(
+  RecordType.Name = "WBN Cancellation Request",
+  ISBLANK(Additional_Notes__c),
+  OR(
+    CASE(Cancel_Code__c,
+    "Price", 1, 
+    "Lost to Competitor", 1,
+    "Performance", 1,
+    "Corporate Mandate Departure", 1,
+    "Dashboard Functionality", 1,
+    "Product Expectations", 1,
+    "Product Performance", 1,
+    0) = 1,
+
+    CASE(Second_Cancel_Code__c,
+    "Price", 1, 
+    "Lost to Competitor", 1,
+    "Performance", 1,
+    "Corporate Mandate Departure", 1,
+    "Dashboard Functionality", 1,
+    "Product Expectations", 1,
+    "Product Performance", 1,
+    0) = 1
+  )
+)</errorConditionFormula>
+        <errorDisplayField>Additional_Notes__c</errorDisplayField>
+        <errorMessage>Additional Notes are required for the cancellation codes selected.</errorMessage>
     </validationRules><webLinks>
         <fullName>Approve_Duplicate_Form</fullName>
         <availability>online</availability>
