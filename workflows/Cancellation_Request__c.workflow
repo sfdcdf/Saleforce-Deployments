@@ -406,6 +406,15 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>Cancel_Code_1_unknown</fullName>
+        <description>New Cancel Codes.  Originally from workflow  - First Cancel Code = unknown and Field update Leadstream Auto Close First Cancel Code</description>
+        <field>Cancel_Code_1__c</field>
+        <literalValue>unknown</literalValue>
+        <name>Cancel Code 1 = unknown</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
     </fieldUpdates><rules>
         <fullName>Add Phone Number to Cancel Form</fullName>
         <actions>
@@ -812,44 +821,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><rules>
-        <fullName>Leadstream Auto Close First Cancel Code</fullName>
-        <actions>
-            <name>First_Cancel_Code_unknown</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Cancellation Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Account_Product_Type__c</field>
-            <operation>equals</operation>
-            <value>Leads By Web</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Outcome__c</field>
-            <operation>equals</operation>
-            <value>Cancelled</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Auto_Close_Date__c</field>
-            <operation>lessOrEqual</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>User.ProfileId</field>
-            <operation>equals</operation>
-            <value>System Administrator</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Cancel_Code__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules><rules>
         <fullName>Leadstream Auto Close Related Fields</fullName>
         <actions>
             <name>Future_Product_to_None</name>
@@ -890,15 +861,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>System Administrator</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
-        <fullName>TORCHx Back Down%2FNever Went Live</fullName>
-        <actions>
-            <name>TORCHx_Back_Down_Never_Went_Live</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(  Account_Name__r.Product_Type_Transactional__c = "TORCHx",  ISPICKVAL( Outcome__c , "Cancelled"),  ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),  Includes(Cancellation_Code_Details__c, "Never Went Live"))</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><rules>
         <fullName>TORCHx Cancel Form fill out Client Email from Accout</fullName>
         <actions>
@@ -979,6 +941,103 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <operation>notEqual</operation>
             <value>In Progress,Duplicate Retention Case</value>
         </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>Leadstream Auto Close Cancel Code 1</fullName>
+        <actions>
+            <name>Cancel_Code_1_unknown</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Cancellation_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cancellation Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Account_Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Leads By Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Outcome__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Auto_Close_Date__c</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>System Administrator,API Integration Read/Write</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Cancel_Code_1__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Updated Cancel Codes  
+Original Leadstream Auto Close First Cancel Code</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules><rules>
+        <fullName>Leadstream Auto Close First Cancel Code</fullName>
+        <actions>
+            <name>First_Cancel_Code_unknown</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Cancellation_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cancellation Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Account_Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Leads By Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Outcome__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Auto_Close_Date__c</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Cancel_Code__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules><rules>
+        <fullName>TORCHx Back Down%2FNever Went Live</fullName>
+        <actions>
+            <name>TORCHx_Back_Down_Never_Went_Live</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  Account_Name__r.Product_Type_Transactional__c = "TORCHx",  ISPICKVAL( Outcome__c , "Cancelled"),  ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),  Includes(Cancellation_Code_Details__c, "Never Went Live"))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>TORCHx Back Down%2FNever Went Live New</fullName>
+        <actions>
+            <name>TORCHx_Back_Down_Never_Went_Live</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>New Cancel Codes Sends email to Customer when Cancellation Closed do to no response.</description>
+        <formula>AND(   Account_Name__r.Product_Type_Transactional__c = "TORCHx",   ISPICKVAL( Outcome__c , "Cancelled"),    OR(   AND(/*old codes*/     ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),       Includes(Cancellation_Code_Details__c, "Never Went Live")      ),   AND( /*new codes*/     ISPICKVAL( Cancel_Code_1__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_1_Details__c  , "Unresponsive to Fulfillment")     ),   AND(    ISPICKVAL( Cancel_Code_2__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_2_Details__c  , "Unresponsive to Fulfillment")     )   ) )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><tasks>
         <fullName>Test_Task</fullName>

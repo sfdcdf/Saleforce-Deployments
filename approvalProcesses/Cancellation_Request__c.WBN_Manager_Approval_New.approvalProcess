@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -8,10 +8,12 @@
     <approvalPageFields>
         <field>Name</field>
         <field>Owner</field>
-        <field>Cancel_Code__c</field>
-        <field>First_Cancel_Code_Details__c</field>
-        <field>Second_Cancel_Code__c</field>
-        <field>Second_Cancel_Code_Details__c</field>
+        <field>Cancel_Code_1__c</field>
+        <field>Cancel_Code_1_Details__c</field>
+        <field>First_Cancel_Code_Notes__c</field>
+        <field>Cancel_Code_2__c</field>
+        <field>Cancel_Code_2_Details__c</field>
+        <field>Second_Cancel_Code_Notes__c</field>
         <field>Additional_Notes__c</field>
     </approvalPageFields>
     <approvalStep>
@@ -24,6 +26,7 @@
         <label>Manager Approval</label>
         <name>Manager_Approval</name>
     </approvalStep>
+    <description>Using New Cancel Codes</description>
     <emailTemplate>Support/Cancel_Form_Approval_Process</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
@@ -65,7 +68,7 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>WBN Manager Approval</label>
+    <label>WBN Manager Approval_New</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>

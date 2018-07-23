@@ -25867,6 +25867,9 @@
         <layout>Google_Location_Group__c-Google Location Group Layout</layout>
     </layoutAssignments><layoutAssignments>
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
+        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
