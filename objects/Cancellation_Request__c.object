@@ -22080,18 +22080,6 @@ or(
 ispickval( Attempts_to_Contact__c ,"")))</errorConditionFormula>
         <errorMessage>When closing this record, you must fill in the Attempts to Contact field.</errorMessage>
     </validationRules><validationRules>
-        <fullName>Closing_must_fill_out_Cancel_Code</fullName>
-        <active>true</active>
-        <errorConditionFormula>and(
-$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
-RecordType.Name &lt;&gt; "LH Cancellation Request", 
-RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
-NOT($User.Email = "sfdc@yodle.com"),  
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( Cancel_Code__c , "")))</errorConditionFormula>
-        <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
-    </validationRules><validationRules>
         <fullName>Closing_must_fill_out_Client_into_dash</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -22910,6 +22898,18 @@ Pre_Launch_Cancel__c = FALSE,
 NOT(ISPICKVAL(Outcome__c , "In Progress")), 
 NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
         <errorMessage>Please fill out the Pre Launch Cancel Field.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Closing_must_fill_out_Cancel_Code</fullName>
+        <active>false</active>
+        <errorConditionFormula>and(
+$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
+RecordType.Name &lt;&gt; "LH Cancellation Request", 
+RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
+NOT($User.Email = "sfdc@yodle.com"),  
+not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
+or(
+ispickval( Cancel_Code__c , "")))</errorConditionFormula>
+        <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
     </validationRules><webLinks>
         <fullName>Approve_Duplicate_Form</fullName>
         <availability>online</availability>
