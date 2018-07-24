@@ -25770,6 +25770,14 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Google_Location_Group__c</object>
         <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Sales_Wizard_API_Setting__mdt</object>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

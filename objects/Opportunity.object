@@ -78484,4 +78484,22 @@ freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
 }
 
 calcTime(sOffset,freq,sEnd,"tz__local_time_opp_btn");</url>
+    </webLinks><webLinks>
+        <fullName>Launch_Sales_Wizard</fullName>
+        <availability>online</availability>
+        <description>Button used to launch Sales Wizard and pass necessary data to URL</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Launch Sales Wizard</masterLabel>
+        <openType>newWindow</openType>
+        <page>LaunchSalesWizard</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
     </webLinks></CustomObject>
