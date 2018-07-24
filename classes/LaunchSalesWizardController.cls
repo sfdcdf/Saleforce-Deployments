@@ -12,12 +12,12 @@ public with sharing class LaunchSalesWizardController {
 
     }
 
-    // http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/SOME_CONSUMER_NAME/SOME_UNIQUE_KEY_FOR_THE_CONSUMER?corporate.id=1700000000
+    // https://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/SOME_CONSUMER_NAME/SOME_UNIQUE_KEY_FOR_THE_CONSUMER?corporate.id=1700000000
 
     Id recordId = ApexPages.currentPage().getParameters().get('id');
     String acctCorpId {get; set;}
     String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
-    String salesWizardBaseURL = 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
+    String salesWizardBaseURL = 'https://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
     
     // method to build URL for Sales Wizard properly and redirect to that URL
     public PageReference validateAndRedirect(){
