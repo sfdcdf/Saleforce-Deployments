@@ -25078,6 +25078,10 @@
         <editable>false</editable>
         <field>Notification_Log__c.Record_Link__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CSC_Rep__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
