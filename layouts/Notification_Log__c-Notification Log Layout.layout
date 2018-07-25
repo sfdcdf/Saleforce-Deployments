@@ -16,11 +16,11 @@
                 <field>RecordTypeId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>SObject_Name__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Record_Id__c</field>
             </layoutItems>
             <layoutItems>
@@ -34,11 +34,11 @@
                 <field>OwnerId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Record_Type_Name__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Trigger_Field_Name__c</field>
             </layoutItems>
             <layoutItems>
@@ -46,7 +46,7 @@
                 <field>Trigger_Value__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Notification_Sent_Date__c</field>
             </layoutItems>
         </layoutColumns>
