@@ -29696,6 +29696,10 @@
         <editable>true</editable>
         <field>Notification_Log__c.Record_Link__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CSC_Rep__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
