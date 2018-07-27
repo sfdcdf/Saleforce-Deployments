@@ -5352,6 +5352,14 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>Subject_to_NCS_Product_Type</fullName>
+        <field>Subject</field>
+        <formula>"NCS - " + TEXT(SEO_Product__c)</formula>
+        <name>Subject to NCS - Product Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
     </fieldUpdates><outboundMessages>
         <fullName>AlpenhornCaseChange_Case</fullName>
         <apiVersion>27.0</apiVersion>
@@ -9231,24 +9239,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><rules>
-        <fullName>LH Master - Bounce List</fullName>
-        <actions>
-            <name>Case_Owner_to_Tricia_Valadez</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Clear Bounce List</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
         <fullName>LH Master - Config Detail - Marks as Escalated</fullName>
         <actions>
             <name>Mark_Escalated_Field</name>
@@ -10328,24 +10318,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <field>Case.Manager_Approved_Changes__c</field>
             <operation>equals</operation>
             <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
-        <fullName>National New Client Setup Create - Subject</fullName>
-        <actions>
-            <name>Subject_Line_for_NCS</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>National - New Client Setup</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><rules>
@@ -14581,25 +14553,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules><rules>
-        <fullName>LH - Assign to LH Support Sugar Hill</fullName>
-        <actions>
-            <name>Case_Owner_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
-        </criteriaItems>
-        <description>Updated with https://jira.yodle.com/browse/YO-60625</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
         <fullName>TORCHx NCS Case Sub Status change notification</fullName>
         <actions>
             <name>NCS_case_notify_owner_on_Status_change</name>
@@ -14641,6 +14594,65 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>TORCHx</value>
         </criteriaItems>
         <description>Once the TORCHx Service Performance Team completes/closes an Optimization Case. This sends an email notification to the client email address on the Account.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>LH - Assign to LH Support Sugar Hill</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
+        </criteriaItems>
+        <description>Updated with https://jira.yodle.com/browse/YO-60625</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules><rules>
+        <fullName>LH Master - Bounce List</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Clear Bounce List</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules><rules>
+        <fullName>National New Client Setup Create - Subject</fullName>
+        <actions>
+            <name>Subject_to_NCS_Product_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>National - New Client Setup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>equals</operation>
+        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules><tasks>
         <fullName>Mary_Case_Task</fullName>

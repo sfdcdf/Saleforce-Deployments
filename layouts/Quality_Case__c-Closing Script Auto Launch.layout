@@ -67,6 +67,10 @@
                 <field>Product_Type__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_Product_Type__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Segment__c</field>
             </layoutItems>
@@ -119,15 +123,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Fail_Details__c</field>
+                <field>CS_Fail_Details__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Fail_Timestamp__c</field>
+                <field>CS_Potential_Quality_Offense__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Potential_Quality_Offense__c</field>
+                <field>Kickback__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -141,11 +145,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Closing_Script_Call_Recorded__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>QO_Timestamp__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CS_Timestamp__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Fail_Timestamp__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -194,7 +206,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h1b000000EoCS</masterLabel>
+        <masterLabel>00h0e00000Fa4zN</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
