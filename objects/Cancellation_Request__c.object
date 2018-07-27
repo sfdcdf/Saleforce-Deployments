@@ -22618,18 +22618,6 @@ isblank( Competitor_Name__c ))</errorConditionFormula>
         <errorDisplayField>Competitor_Name__c</errorDisplayField>
         <errorMessage>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</errorMessage>
     </validationRules><validationRules>
-        <fullName>Cancel_Code_is_Other_fill_out_Other_new</fullName>
-        <active>true</active>
-        <description>Using New Cancel Codes
-If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
-        <errorConditionFormula>and(
-or(
-ispickval(  Cancel_Code_1__c ,"Other"),
-ispickval( Cancel_Code_2__c ,"Other")),
-isblank( Other_Cancel_Code__c ))</errorConditionFormula>
-        <errorDisplayField>Other_Cancel_Code__c</errorDisplayField>
-        <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
-    </validationRules><validationRules>
         <fullName>Cancel_Code_is_Other_must_fill_out_Other</fullName>
         <active>false</active>
         <description>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
@@ -22909,6 +22897,18 @@ NOT(ispickval(Cancellation_Code__c,"")))</errorConditionFormula>
 )</errorConditionFormula>
         <errorDisplayField>Additional_Notes__c</errorDisplayField>
         <errorMessage>Additional Notes are required for the cancellation codes selected.</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Cancel_Code_is_Other_fill_out_Other_new</fullName>
+        <active>false</active>
+        <description>Using New Cancel Codes
+If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
+        <errorConditionFormula>and(
+or(
+ispickval(  Cancel_Code_1__c ,"Other"),
+ispickval( Cancel_Code_2__c ,"Other")),
+isblank( Other_Cancel_Code__c ))</errorConditionFormula>
+        <errorDisplayField>Other_Cancel_Code__c</errorDisplayField>
+        <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
     </validationRules><webLinks>
         <fullName>Approve_Duplicate_Form</fullName>
         <availability>online</availability>
