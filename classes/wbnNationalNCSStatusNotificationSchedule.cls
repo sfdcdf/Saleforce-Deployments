@@ -135,15 +135,15 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                         
                         // add message to notification list
                         notificationsLst.add(message);
-                        
-                        // ensure there are messages to be sent
-                        if(notificationsLst.size() > 0){
-                        
-                            // send notifications
-                            Messaging.sendEmail(notificationsLst);
-                            notificationsLst.clear();
-                        }
                     }
+                }
+                
+                // ensure there are messages to be sent
+                if(notificationsLst.size() > 0){
+                
+                    // send notifications
+                    Messaging.sendEmail(notificationsLst);
+                    notificationsLst.clear();   
                 }
             }
         }
