@@ -8066,11 +8066,6 @@ false)</formula>
         <columns>CREATED_DATE</columns>
         <columns>RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Cancellation_Request__c.WBN_Cancellation_Request</value>
-        </filters>
         <label>AMM - Working List</label>
         <sharedTo>
             <group>Sys_Local_Admin</group>
