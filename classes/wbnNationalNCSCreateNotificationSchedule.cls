@@ -105,15 +105,15 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                         
                         // add message to notification list
                         notificationsCrtDtLst.add(message);
-                        
-                        // ensure there are messages to be sent
-                        if(notificationsCrtDtLst.size() > 0){
-                        
-                            // send notifications
-                            Messaging.sendEmail(notificationsCrtDtLst);
-                            notificationsCrtDtLst.clear();
-                        }
                     }
+                }
+                
+                // ensure there are messages to be sent
+                if(notificationsCrtDtLst.size() > 0){
+                        
+                    // send notifications
+                    Messaging.sendEmail(notificationsCrtDtLst);
+                    notificationsCrtDtLst.clear();
                 }
             }
         }
