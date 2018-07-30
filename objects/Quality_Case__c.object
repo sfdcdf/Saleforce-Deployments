@@ -2778,62 +2778,6 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields><fields>
-        <fullName>Fail_Reason__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Fail Reason</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Closing script not recorded in full</fullName>
-                    <default>false</default>
-                    <label>Closing script not recorded in full</label>
-                </value>
-                <value>
-                    <fullName>CSC incorrectly scheduled</fullName>
-                    <default>false</default>
-                    <label>CSC incorrectly scheduled</label>
-                </value>
-                <value>
-                    <fullName>3 day review discrepancy</fullName>
-                    <default>false</default>
-                    <label>3 day review discrepancy</label>
-                </value>
-                <value>
-                    <fullName>Incorrect billing</fullName>
-                    <default>false</default>
-                    <label>Incorrect billing</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Closing script not read in full</fullName>
-                    <default>false</default>
-                    <label>Closing script not read in full</label>
-                </value>
-                <value>
-                    <fullName>Install incorrectly scheduled</fullName>
-                    <default>false</default>
-                    <label>Install incorrectly scheduled</label>
-                </value>
-                <value>
-                    <fullName>Install phone number incorrect</fullName>
-                    <default>false</default>
-                    <label>Install phone number incorrect</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>5</visibleLines>
-    </fields><fields>
         <fullName>Fail_Timestamp__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2845,56 +2789,6 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>Fine_Amount__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Fine Amount</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>$0.00W</fullName>
-                    <default>false</default>
-                    <label>$0.00W</label>
-                </value>
-                <value>
-                    <fullName>$0.00R</fullName>
-                    <default>false</default>
-                    <label>$0.00R</label>
-                </value>
-                <value>
-                    <fullName>$20.00</fullName>
-                    <default>false</default>
-                    <label>$20.00</label>
-                </value>
-                <value>
-                    <fullName>$30.00</fullName>
-                    <default>false</default>
-                    <label>$30.00</label>
-                </value>
-                <value>
-                    <fullName>$40.00</fullName>
-                    <default>false</default>
-                    <label>$40.00</label>
-                </value>
-                <value>
-                    <fullName>$50.00</fullName>
-                    <default>false</default>
-                    <label>$50.00</label>
-                </value>
-                <value>
-                    <fullName>$0.00SL</fullName>
-                    <default>false</default>
-                    <label>$0.00SL</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields><fields>
         <fullName>Outcome__c</fullName>
         <description>For Closing Script - Auto Launch</description>
@@ -2975,6 +2869,751 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>Sales_Date__c</fullName>
+        <description>Date of Sale</description>
+        <externalId>false</externalId>
+        <label>Sales Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Sales_Director__c</fullName>
+        <description>Sales Director Name associated to record</description>
+        <externalId>false</externalId>
+        <label>Sales Director</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Sales_Rep__c</fullName>
+        <description>For Closing Script - Auto Launch Case</description>
+        <externalId>false</externalId>
+        <label>Sales Rep</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Segment__c</fullName>
+        <description>For Closing Script - Auto Launch Case</description>
+        <externalId>false</externalId>
+        <label>Segment</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Account_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Product_Type_Transactional__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>CS_Fail_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>CS Fail Details</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Address entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Address entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Address left blank</fullName>
+                    <default>false</default>
+                    <label>Address left blank</label>
+                </value>
+                <value>
+                    <fullName>Address not verified</fullName>
+                    <default>false</default>
+                    <label>Address not verified</label>
+                </value>
+                <value>
+                    <fullName>Address visibility entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Address visibility entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Address visibility left blank</fullName>
+                    <default>false</default>
+                    <label>Address visibility left blank</label>
+                </value>
+                <value>
+                    <fullName>Address visibility was not verified</fullName>
+                    <default>false</default>
+                    <label>Address visibility was not verified</label>
+                </value>
+                <value>
+                    <fullName>Business hours entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Business hours entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Business hours left blank</fullName>
+                    <default>false</default>
+                    <label>Business hours left blank</label>
+                </value>
+                <value>
+                    <fullName>Business hours not verified</fullName>
+                    <default>false</default>
+                    <label>Business hours not verified</label>
+                </value>
+                <value>
+                    <fullName>Business name entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Business name entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Business name left blank</fullName>
+                    <default>false</default>
+                    <label>Business name left blank</label>
+                </value>
+                <value>
+                    <fullName>Business name not verified</fullName>
+                    <default>false</default>
+                    <label>Business name not verified</label>
+                </value>
+                <value>
+                    <fullName>Business years open entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Business years open entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Business years open not verified</fullName>
+                    <default>false</default>
+                    <label>Business years open not verified</label>
+                </value>
+                <value>
+                    <fullName>Closing script not recorded</fullName>
+                    <default>false</default>
+                    <label>Closing script not recorded</label>
+                </value>
+                <value>
+                    <fullName>Commitment length not verified</fullName>
+                    <default>false</default>
+                    <label>Commitment length not verified</label>
+                </value>
+                <value>
+                    <fullName>Contact phone number entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Contact phone number entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Contact phone number not verified</fullName>
+                    <default>false</default>
+                    <label>Contact phone number not verified</label>
+                </value>
+                <value>
+                    <fullName>CSC call time discrepancy</fullName>
+                    <default>false</default>
+                    <label>CSC call time discrepancy</label>
+                </value>
+                <value>
+                    <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
+                    <default>false</default>
+                    <label>CSC scheduled outside of the 3 to 5 business day time window</label>
+                </value>
+                <value>
+                    <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
+                    <default>false</default>
+                    <label>Questionnaire not emailed to Quality on the day of the sale</label>
+                </value>
+                <value>
+                    <fullName>Current verison of Closing Script not read</fullName>
+                    <default>false</default>
+                    <label>Current verison of Closing Script not read</label>
+                </value>
+                <value>
+                    <fullName>Email address not verified</fullName>
+                    <default>false</default>
+                    <label>Email address not verified</label>
+                </value>
+                <value>
+                    <fullName>Email entered incorrectly or not spelled out</fullName>
+                    <default>false</default>
+                    <label>Email entered incorrectly or not spelled out</label>
+                </value>
+                <value>
+                    <fullName>Email left blank</fullName>
+                    <default>false</default>
+                    <label>Email left blank</label>
+                </value>
+                <value>
+                    <fullName>Emergency call availability entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Emergency call availability entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Emergency call availability not verified</fullName>
+                    <default>false</default>
+                    <label>Emergency call availability not verified</label>
+                </value>
+                <value>
+                    <fullName>Launch Timeline not verified</fullName>
+                    <default>false</default>
+                    <label>Launch Timeline not verified</label>
+                </value>
+                <value>
+                    <fullName>Lead phone number entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Lead phone number entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Lead phone number left blank</fullName>
+                    <default>false</default>
+                    <label>Lead phone number left blank</label>
+                </value>
+                <value>
+                    <fullName>Lead phone number not verified</fullName>
+                    <default>false</default>
+                    <label>Lead phone number not verified</label>
+                </value>
+                <value>
+                    <fullName>Lead range entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Lead range entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Lead range left blank</fullName>
+                    <default>false</default>
+                    <label>Lead range left blank</label>
+                </value>
+                <value>
+                    <fullName>Lead range not verified</fullName>
+                    <default>false</default>
+                    <label>Lead range not verified</label>
+                </value>
+                <value>
+                    <fullName>License, bond or insurance details entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>License, bond or insurance details entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
+                    <default>false</default>
+                    <label>Master Service Agreement not read accordingly or clear YES was not received</label>
+                </value>
+                <value>
+                    <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
+                    <default>false</default>
+                    <label>Terms and Billing section not read accordingly or clear YES was not received</label>
+                </value>
+                <value>
+                    <fullName>MLS Fees Section not read</fullName>
+                    <default>false</default>
+                    <label>MLS Fees Section not read</label>
+                </value>
+                <value>
+                    <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
+                    <default>false</default>
+                    <label>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</label>
+                </value>
+                <value>
+                    <fullName>More than 10 Services entered in Sales Wizard</fullName>
+                    <default>false</default>
+                    <label>More than 10 Services entered in Sales Wizard</label>
+                </value>
+                <value>
+                    <fullName>Payment processed incorrectly</fullName>
+                    <default>false</default>
+                    <label>Payment processed incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Pricing left blank</fullName>
+                    <default>false</default>
+                    <label>Pricing left blank</label>
+                </value>
+                <value>
+                    <fullName>Pricing not verified</fullName>
+                    <default>false</default>
+                    <label>Pricing not verified</label>
+                </value>
+                <value>
+                    <fullName>Radius entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Radius entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Radius left blank</fullName>
+                    <default>false</default>
+                    <label>Radius left blank</label>
+                </value>
+                <value>
+                    <fullName>Radius not verified</fullName>
+                    <default>false</default>
+                    <label>Radius not verified</label>
+                </value>
+                <value>
+                    <fullName>Segment entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Segment entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Segment left blank</fullName>
+                    <default>false</default>
+                    <label>Segment left blank</label>
+                </value>
+                <value>
+                    <fullName>Segment not verified</fullName>
+                    <default>false</default>
+                    <label>Segment not verified</label>
+                </value>
+                <value>
+                    <fullName>Services not fully entered in Sales Wizard</fullName>
+                    <default>false</default>
+                    <label>Services not fully entered in Sales Wizard</label>
+                </value>
+                <value>
+                    <fullName>Services not to advertise for entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Services not to advertise for entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Services not to advertise not verified</fullName>
+                    <default>false</default>
+                    <label>Services not to advertise not verified</label>
+                </value>
+                <value>
+                    <fullName>Services not verified</fullName>
+                    <default>false</default>
+                    <label>Services not verified</label>
+                </value>
+                <value>
+                    <fullName>Target area entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>Target area entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Target area left blank</fullName>
+                    <default>false</default>
+                    <label>Target area left blank</label>
+                </value>
+                <value>
+                    <fullName>Target area not verified</fullName>
+                    <default>false</default>
+                    <label>Target area not verified</label>
+                </value>
+                <value>
+                    <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
+                    <default>false</default>
+                    <label>Unconfirmed Services entered in Sales Wizard</label>
+                </value>
+                <value>
+                    <fullName>USP entered incorrectly</fullName>
+                    <default>false</default>
+                    <label>USP entered incorrectly</label>
+                </value>
+                <value>
+                    <fullName>USP left blank</fullName>
+                    <default>false</default>
+                    <label>USP left blank</label>
+                </value>
+                <value>
+                    <fullName>USP not verified</fullName>
+                    <default>false</default>
+                    <label>USP not verified</label>
+                </value>
+                <value>
+                    <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
+                    <default>false</default>
+                    <label>Rep did not read the Installation Scheduling Section in full</label>
+                </value>
+                <value>
+                    <fullName>Rep did not read the Referral Section in full</fullName>
+                    <default>false</default>
+                    <label>Rep did not read the Referral Section in full</label>
+                </value>
+                <value>
+                    <fullName>Rep did not read the Prepay Section in full</fullName>
+                    <default>false</default>
+                    <label>Rep did not read the Prepay Section in full</label>
+                </value>
+                <value>
+                    <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
+                    <default>false</default>
+                    <label>Rep selected incorrect product in the Sales Wizard</label>
+                </value>
+                <value>
+                    <fullName>Rep did not read the Business Information Section in full</fullName>
+                    <default>false</default>
+                    <label>Rep did not read the Business Information Section in full</label>
+                </value>
+                <value>
+                    <fullName>Rep did not read the Initial Training Call Section in full</fullName>
+                    <default>false</default>
+                    <label>Rep did not read the Initial Training Call Section in full</label>
+                </value>
+                <value>
+                    <fullName>Rep did not read the MLS Fees Section in full</fullName>
+                    <default>false</default>
+                    <label>Rep did not read the MLS Fees Section in full</label>
+                </value>
+                <value>
+                    <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report </fullName>
+                    <default>false</default>
+                    <label>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report </label>
+                </value>
+                <value>
+                    <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
+                    <default>false</default>
+                    <label>Initial Training Call was scheduled outside of approved 48-96 hour window</label>
+                </value>
+                <value>
+                    <fullName>Install call time discrepancy</fullName>
+                    <default>false</default>
+                    <label>Install call time discrepancy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>CS_Potential_Quality_Offense__c</fullName>
+        <externalId>false</externalId>
+        <label>CS Potential Quality Offense</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Billing: Assumptive Prepay</fullName>
+                    <default>false</default>
+                    <label>Billing: Assumptive Prepay</label>
+                </value>
+                <value>
+                    <fullName>Leads: Calls/Jobs</fullName>
+                    <default>false</default>
+                    <label>Leads: Calls/Jobs</label>
+                </value>
+                <value>
+                    <fullName>Leads: Guaranteed Lead Range</fullName>
+                    <default>false</default>
+                    <label>Leads: Guaranteed Lead Range</label>
+                </value>
+                <value>
+                    <fullName>Address: Business Address Not Used</fullName>
+                    <default>false</default>
+                    <label>Address: Business Address Not Used</label>
+                </value>
+                <value>
+                    <fullName>Address: PO Box</fullName>
+                    <default>false</default>
+                    <label>Address: PO Box</label>
+                </value>
+                <value>
+                    <fullName>Address: Target Metro Beyond 20 Miles</fullName>
+                    <default>false</default>
+                    <label>Address: Target Metro Beyond 20 Miles</label>
+                </value>
+                <value>
+                    <fullName>Billing: Change Mind POS</fullName>
+                    <default>false</default>
+                    <label>Billing: Change Mind POS</label>
+                </value>
+                <value>
+                    <fullName>Billing: Contract Length</fullName>
+                    <default>false</default>
+                    <label>Billing: Contract Length</label>
+                </value>
+                <value>
+                    <fullName>Billing: Invoice/Call/Automatic Billing</fullName>
+                    <default>false</default>
+                    <label>Billing: Invoice/Call/Automatic Billing</label>
+                </value>
+                <value>
+                    <fullName>Billing: Payment Dates</fullName>
+                    <default>false</default>
+                    <label>Billing: Payment Dates</label>
+                </value>
+                <value>
+                    <fullName>Billing: Refund Discussion</fullName>
+                    <default>false</default>
+                    <label>Billing: Refund Discussion</label>
+                </value>
+                <value>
+                    <fullName>Disciplinary: PCI</fullName>
+                    <default>false</default>
+                    <label>Disciplinary: PCI</label>
+                </value>
+                <value>
+                    <fullName>Disciplinary: ROE Breach</fullName>
+                    <default>false</default>
+                    <label>Disciplinary: ROE Breach</label>
+                </value>
+                <value>
+                    <fullName>Disciplinary: Unauthorized Charge</fullName>
+                    <default>false</default>
+                    <label>Disciplinary: Unauthorized Charge</label>
+                </value>
+                <value>
+                    <fullName>Disciplinary Offense</fullName>
+                    <default>false</default>
+                    <label>Disciplinary Offense</label>
+                </value>
+                <value>
+                    <fullName>Disciplinary - Professionalism</fullName>
+                    <default>false</default>
+                    <label>Disciplinary - Professionalism</label>
+                </value>
+                <value>
+                    <fullName>Leads: Jobs vs. Calls/Emails</fullName>
+                    <default>false</default>
+                    <label>Leads: Jobs vs. Calls/Emails</label>
+                </value>
+                <value>
+                    <fullName>Leads: Non PSG Focus</fullName>
+                    <default>false</default>
+                    <label>Leads: Non PSG Focus</label>
+                </value>
+                <value>
+                    <fullName>Leads: Not Advertised for Segment</fullName>
+                    <default>false</default>
+                    <label>Leads: Not Advertised for Segment</label>
+                </value>
+                <value>
+                    <fullName>Misc: AA Breach</fullName>
+                    <default>false</default>
+                    <label>Misc: AA Breach</label>
+                </value>
+                <value>
+                    <fullName>Misc: Product Misrepresentation</fullName>
+                    <default>false</default>
+                    <label>Misc: Product Misrepresentation</label>
+                </value>
+                <value>
+                    <fullName>Other Offenses: Program Release</fullName>
+                    <default>false</default>
+                    <label>Other Offenses: Program Release</label>
+                </value>
+                <value>
+                    <fullName>Placement: Rank Outside of Target Metro</fullName>
+                    <default>false</default>
+                    <label>Placement: Rank Outside of Target Metro</label>
+                </value>
+                <value>
+                    <fullName>Placement: Specific Keywords</fullName>
+                    <default>false</default>
+                    <label>Placement: Specific Keywords</label>
+                </value>
+                <value>
+                    <fullName>Placement: Specific Placement</fullName>
+                    <default>false</default>
+                    <label>Placement: Specific Placement</label>
+                </value>
+                <value>
+                    <fullName>Timeline: Launch Timeframe</fullName>
+                    <default>false</default>
+                    <label>Timeline: Launch Timeframe</label>
+                </value>
+                <value>
+                    <fullName>Timeline: Organic Placement</fullName>
+                    <default>false</default>
+                    <label>Timeline: Organic Placement</label>
+                </value>
+                <value>
+                    <fullName>Website: Current SEO – No Impact</fullName>
+                    <default>false</default>
+                    <label>Website: Current SEO – No Impact</label>
+                </value>
+                <value>
+                    <fullName>Website: SEO on Client's Website</fullName>
+                    <default>false</default>
+                    <label>Website: SEO on Client's Website</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Closing_Script_Call_Recorded__c</fullName>
+        <externalId>false</externalId>
+        <label>Closing Script Call Recorded?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Fail_Reason__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Fail Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Closing script not recorded in full</fullName>
+                    <default>false</default>
+                    <label>Closing script not recorded in full</label>
+                </value>
+                <value>
+                    <fullName>CSC incorrectly scheduled</fullName>
+                    <default>false</default>
+                    <label>CSC incorrectly scheduled</label>
+                </value>
+                <value>
+                    <fullName>Incorrect billing</fullName>
+                    <default>false</default>
+                    <label>Incorrect billing</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Closing script not read in full</fullName>
+                    <default>false</default>
+                    <label>Closing script not read in full</label>
+                </value>
+                <value>
+                    <fullName>Install incorrectly scheduled</fullName>
+                    <default>false</default>
+                    <label>Install incorrectly scheduled</label>
+                </value>
+                <value>
+                    <fullName>Install phone number incorrect</fullName>
+                    <default>false</default>
+                    <label>Install phone number incorrect</label>
+                </value>
+                <value>
+                    <fullName>Info Mismatch</fullName>
+                    <default>false</default>
+                    <label>Info Mismatch</label>
+                </value>
+                <value>
+                    <fullName>Questionnaire not emailed to Quality</fullName>
+                    <default>false</default>
+                    <label>Questionnaire not emailed to Quality</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields><fields>
+        <fullName>Fine_Amount__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Fine Amount</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>$20.00</fullName>
+                    <default>false</default>
+                    <label>$20.00</label>
+                </value>
+                <value>
+                    <fullName>$30.00</fullName>
+                    <default>false</default>
+                    <label>$30.00</label>
+                </value>
+                <value>
+                    <fullName>$40.00</fullName>
+                    <default>false</default>
+                    <label>$40.00</label>
+                </value>
+                <value>
+                    <fullName>$50.00</fullName>
+                    <default>false</default>
+                    <label>$50.00</label>
+                </value>
+                <value>
+                    <fullName>$0.00</fullName>
+                    <default>false</default>
+                    <label>$0.00</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>Kickback__c</fullName>
+        <externalId>false</externalId>
+        <label>Kickback</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields><fields>
         <fullName>Rep_Emailed_QA__c</fullName>
         <description>For Closing Script - Auto Launch Case</description>
@@ -3068,55 +3707,19 @@ false)</formula>
                     <default>false</default>
                     <label>Tradeshow</label>
                 </value>
+                <value>
+                    <fullName>Exception</fullName>
+                    <default>false</default>
+                    <label>Exception</label>
+                </value>
+                <value>
+                    <fullName>Business Info</fullName>
+                    <default>false</default>
+                    <label>Business Info</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
-        <fullName>Sales_Date__c</fullName>
-        <description>Date of Sale</description>
-        <externalId>false</externalId>
-        <label>Sales Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields><fields>
-        <fullName>Sales_Director__c</fullName>
-        <description>Sales Director Name associated to record</description>
-        <externalId>false</externalId>
-        <label>Sales Director</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
-        <fullName>Sales_Rep__c</fullName>
-        <description>For Closing Script - Auto Launch Case</description>
-        <externalId>false</externalId>
-        <label>Sales Rep</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
-        <fullName>Segment__c</fullName>
-        <description>For Closing Script - Auto Launch Case</description>
-        <externalId>false</externalId>
-        <label>Segment</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Quality Case</label><nameField>
         <displayFormat>Q-{0000}</displayFormat>
         <label>Quality Case Name</label>
@@ -3176,6 +3779,423 @@ false)</formula>
         <description>QA Closing Script Cases</description>
         <label>Closing Script - Auto Launch</label>
         <picklistValues>
+            <picklist>CS_Fail_Details__c</picklist>
+            <values>
+                <fullName>Address entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility was not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commitment length not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current verison of Closing Script not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email entered incorrectly or not spelled out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch Timeline not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License%2C bond or insurance details entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Fees Section not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>More than 10 Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment processed incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Business Information Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Initial Training Call Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the MLS Fees Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Prepay Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Referral Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not fully entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise for entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CS_Potential_Quality_Offense__c</picklist>
+            <values>
+                <fullName>Address%3A Business Address Not Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A PO Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A Target Metro Beyond 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A PCI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A Unauthorized Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Calls%2FJobs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Guaranteed Lead Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Jobs vs%2E Calls%2FEmails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Non PSG Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Offenses%3A Program Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Rank Outside of Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Keywords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Closing_Script_Call_Recorded__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demo_Recorded__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -3192,10 +4212,6 @@ false)</formula>
         </picklistValues>
         <picklistValues>
             <picklist>Fail_Reason__c</picklist>
-            <values>
-                <fullName>3 day review discrepancy</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>CSC incorrectly scheduled</fullName>
                 <default>false</default>
@@ -3228,18 +4244,6 @@ false)</formula>
         <picklistValues>
             <picklist>Fine_Amount__c</picklist>
             <values>
-                <fullName>%240%2E00R</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00SL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00W</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>%2420%2E00</fullName>
                 <default>false</default>
             </values>
@@ -3253,6 +4257,21 @@ false)</formula>
             </values>
             <values>
                 <fullName>%2450%2E00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Kickback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4204,6 +5223,423 @@ false)</formula>
         <active>true</active>
         <label>Lighthouse Master Quality</label>
         <picklistValues>
+            <picklist>CS_Fail_Details__c</picklist>
+            <values>
+                <fullName>Address entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility was not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commitment length not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current verison of Closing Script not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email entered incorrectly or not spelled out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch Timeline not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License%2C bond or insurance details entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Fees Section not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>More than 10 Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment processed incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Business Information Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Initial Training Call Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the MLS Fees Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Prepay Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Referral Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not fully entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise for entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CS_Potential_Quality_Offense__c</picklist>
+            <values>
+                <fullName>Address%3A Business Address Not Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A PO Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A Target Metro Beyond 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A PCI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A Unauthorized Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Calls%2FJobs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Guaranteed Lead Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Jobs vs%2E Calls%2FEmails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Non PSG Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Offenses%3A Program Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Rank Outside of Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Keywords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Closing_Script_Call_Recorded__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demo_Recorded__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -4220,10 +5656,6 @@ false)</formula>
         </picklistValues>
         <picklistValues>
             <picklist>Fail_Reason__c</picklist>
-            <values>
-                <fullName>3 day review discrepancy</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>CSC incorrectly scheduled</fullName>
                 <default>false</default>
@@ -4256,18 +5688,6 @@ false)</formula>
         <picklistValues>
             <picklist>Fine_Amount__c</picklist>
             <values>
-                <fullName>%240%2E00R</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00SL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00W</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>%2420%2E00</fullName>
                 <default>false</default>
             </values>
@@ -4281,6 +5701,21 @@ false)</formula>
             </values>
             <values>
                 <fullName>%2450%2E00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Kickback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5064,6 +6499,423 @@ false)</formula>
         <active>true</active>
         <label>Local Master Quality</label>
         <picklistValues>
+            <picklist>CS_Fail_Details__c</picklist>
+            <values>
+                <fullName>Address entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility was not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commitment length not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current verison of Closing Script not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email entered incorrectly or not spelled out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch Timeline not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License%2C bond or insurance details entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Fees Section not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>More than 10 Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment processed incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Business Information Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Initial Training Call Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the MLS Fees Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Prepay Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Referral Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not fully entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise for entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CS_Potential_Quality_Offense__c</picklist>
+            <values>
+                <fullName>Address%3A Business Address Not Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A PO Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A Target Metro Beyond 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A PCI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A Unauthorized Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Calls%2FJobs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Guaranteed Lead Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Jobs vs%2E Calls%2FEmails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Non PSG Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Offenses%3A Program Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Rank Outside of Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Keywords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Closing_Script_Call_Recorded__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demo_Recorded__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -5080,10 +6932,6 @@ false)</formula>
         </picklistValues>
         <picklistValues>
             <picklist>Fail_Reason__c</picklist>
-            <values>
-                <fullName>3 day review discrepancy</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>CSC incorrectly scheduled</fullName>
                 <default>false</default>
@@ -5116,18 +6964,6 @@ false)</formula>
         <picklistValues>
             <picklist>Fine_Amount__c</picklist>
             <values>
-                <fullName>%240%2E00R</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00SL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00W</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>%2420%2E00</fullName>
                 <default>false</default>
             </values>
@@ -5141,6 +6977,21 @@ false)</formula>
             </values>
             <values>
                 <fullName>%2450%2E00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Kickback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6024,6 +7875,423 @@ false)</formula>
         <active>true</active>
         <label>TORCHx Master Quality</label>
         <picklistValues>
+            <picklist>CS_Fail_Details__c</picklist>
+            <values>
+                <fullName>Address entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility was not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commitment length not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current verison of Closing Script not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email entered incorrectly or not spelled out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch Timeline not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License%2C bond or insurance details entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Fees Section not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>More than 10 Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment processed incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Business Information Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Initial Training Call Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the MLS Fees Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Prepay Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Referral Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not fully entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise for entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CS_Potential_Quality_Offense__c</picklist>
+            <values>
+                <fullName>Address%3A Business Address Not Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A PO Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A Target Metro Beyond 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A PCI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A Unauthorized Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Calls%2FJobs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Guaranteed Lead Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Jobs vs%2E Calls%2FEmails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Non PSG Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Offenses%3A Program Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Rank Outside of Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Keywords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Closing_Script_Call_Recorded__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Demo_Recorded__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -6040,10 +8308,6 @@ false)</formula>
         </picklistValues>
         <picklistValues>
             <picklist>Fail_Reason__c</picklist>
-            <values>
-                <fullName>3 day review discrepancy</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>CSC incorrectly scheduled</fullName>
                 <default>false</default>
@@ -6076,18 +8340,6 @@ false)</formula>
         <picklistValues>
             <picklist>Fine_Amount__c</picklist>
             <values>
-                <fullName>%240%2E00R</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00SL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%240%2E00W</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>%2420%2E00</fullName>
                 <default>false</default>
             </values>
@@ -6101,6 +8353,21 @@ false)</formula>
             </values>
             <values>
                 <fullName>%2450%2E00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Kickback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
