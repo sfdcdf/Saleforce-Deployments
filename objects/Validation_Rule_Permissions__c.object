@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
         <fullName>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 1 Cases</description>
@@ -40,4 +40,20 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>Lead_Stream_TP_1_Owner_Update_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for updating owner for Lead Stream Touch Plan Cases</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP 1 Owner Update Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Lead_Stream_TP_From_DNC_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status from 'Did Not Complete'</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP From DNC Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility></CustomObject>
