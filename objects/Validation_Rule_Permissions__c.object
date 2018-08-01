@@ -56,4 +56,12 @@
         <label>Lead Stream TP From DNC Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Lead_Stream_TP_Churn_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status to 'Churned'</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP Churned Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility></CustomObject>
