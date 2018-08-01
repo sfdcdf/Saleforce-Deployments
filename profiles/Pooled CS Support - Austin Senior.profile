@@ -24854,6 +24854,26 @@
         <editable>false</editable>
         <field>Notification_Log__c.Record_Link__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Quality_Case__c.Account_Product_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.CS_Fail_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.CS_Potential_Quality_Offense__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Closing_Script_Call_Recorded__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Quality_Case__c.Kickback__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>
