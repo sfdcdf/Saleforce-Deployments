@@ -17,7 +17,9 @@ public with sharing class LaunchSalesWizardController {
     Id recordId = ApexPages.currentPage().getParameters().get('id');
     String oppId = recordId;
     String acctId {get; set;}
+    String parentAcctName {get; set;}
     String acctName {get; set;}
+    String acctSegment {get; set;}
     String contactPhone {get; set;}
     String contactFullNm {get; set;}
     String contactFirstNm {get; set;}
@@ -33,6 +35,7 @@ public with sharing class LaunchSalesWizardController {
     String acctCorpId {get; set;}
     String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
     String salesWizardBaseURL = 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
+    String urlParams {get; set;}
     
     // method to build URL for Sales Wizard properly and redirect to that URL
     public PageReference validateAndRedirect(){
@@ -41,11 +44,18 @@ public with sharing class LaunchSalesWizardController {
     
         // call method to assign Sales Wizard data
         getSalesWizardData(oppId);
+        
+        urlParams = '?corporate.id=' + acctCorpId + '&corporate.accountName=' + parentAcctName + '&clientSalesforceId=' + acctId + '&business.name=' 
+                    + acctName + '&business.contact.firstName=' + contactFirstNm + '&business.contact.lastName=' + contactLastNm + '&business.contact.phoneNumber=' 
+                    + contactPhone + '&business.contact.email=' + contactEmail + '&business.address.line1=' + acctAddressLn1 + '&business.address.line2='
+                    + acctAddressLn2 + '&business.address.city=' + acctCity + '&business.address.state=' + acctState + '&business.address.postalCode='
+                    + acctZipCode + '&business.address.country=' + acctCountry + '&business.segment=' + acctSegment + '&contractLength=' + contractLength;
     
-        System.Debug('** Built URL: ' + salesWizardBaseURL + consumerName + '/' + oppId + '?corporate.id=' + acctCorpId);
+    
+        System.Debug('** Built URL: ' + salesWizardBaseURL + consumerName + '/' + oppId + urlParams);
         
         // build URL from base and retrieved data
-        PageReference retURL = new PageReference(salesWizardBaseURL + consumerName + '/' + oppId + '?corporate.id=' + acctCorpId);
+        PageReference retURL = new PageReference(salesWizardBaseURL + consumerName + '/' + oppId + urlParams);
         retURL.setRedirect(true);
         
         return retURL;
@@ -59,7 +69,11 @@ public with sharing class LaunchSalesWizardController {
         // get AccountId from the Opportunity passed in URL
         for(Opportunity opp :
             [SELECT Id,
-                    AccountId
+                    AccountId,
+                    Client_Phone__c,
+                    Client_Email__c,
+                    Client_Full_Name__c,
+                    Contract_Term_in_months__c
                FROM Opportunity
               WHERE Id = :opportunityId]){
             
@@ -94,12 +108,14 @@ public with sharing class LaunchSalesWizardController {
             for(Account a :
                 [SELECT Id,
                         Corp_Acct_in_YL_Parent_Account__c,
+                        Parent.Name,
                         Name, 
                         BillingStreet, 
                         BillingCity, 
                         BillingState, 
                         BillingPostalCode,
-                        BillingCountry
+                        BillingCountry,
+                        Secondary_Segments__c
                    FROM Account
                   WHERE Id IN :acctIds LIMIT 1]){
                   
@@ -109,7 +125,8 @@ public with sharing class LaunchSalesWizardController {
                       acctCorpId = String.valueOf(a.Corp_Acct_in_YL_Parent_Account__c);
                   }
                   
-                  // Account address information
+                  // Account information
+                  parentAcctName = (!String.IsBlank(a.Parent.Name) ? a.Parent.Name : a.Name);
                   acctId = a.Id;
                   acctName = a.Name;
                   acctAddressLn1 = a.BillingStreet;
@@ -117,8 +134,12 @@ public with sharing class LaunchSalesWizardController {
                   acctState = a.BillingState;
                   acctZipCode = a.BillingPostalCode;
                   acctCountry = a.BillingCountry;
+                  acctSegment = a.Secondary_Segments__c;
                   
                   System.Debug('*** Account Corporate Id: ' + acctCorpId);
+                  System.Debug('*** Parent Account: ' + parentAcctName);
+                  System.Debug('*** Account Segment: ' + acctSegment);
+                  System.Debug('*** Ind Location Account: ' + acctName);
                   System.Debug('*** Client Address: ' + a.BillingStreet + ' ' + a.BillingCity + ', ' + a.BillingState + '  ' + a.BillingPostalCode + '  ' + a.BillingCountry);
             }
         }
