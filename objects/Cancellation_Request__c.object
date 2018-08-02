@@ -22931,7 +22931,7 @@ isblank( Other_Cancel_Code__c ))</errorConditionFormula>
         <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
     </validationRules><validationRules>
         <fullName>WBN_Additional_Notes_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Updated to New Cancel Codes
 For WBN the additional notes field is required when certain cancellation codes are selected.</description>
         <errorConditionFormula>AND(
