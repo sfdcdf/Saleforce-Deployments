@@ -873,6 +873,29 @@
             <value>1</value>
         </filters>
         <label>Admin Users</label>
+    </listViews><listViews>
+        <fullName>IT_Setup_New_SF_User_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_BY_ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>LAST_UPDATE_BY_ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>IT Setup - New SF User</value>
+        </filters>
+        <label>IT Setup - New SF User Users</label>
     </listViews><webLinks>
         <fullName>Loop__Change_DS_Cred</fullName>
         <availability>online</availability>
