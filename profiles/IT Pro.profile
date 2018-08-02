@@ -24049,6 +24049,14 @@
         <editable>true</editable>
         <field>Quality_Case__c.Kickback__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Client_First_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Client_Last_Name__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>

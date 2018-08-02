@@ -2,7 +2,7 @@
   Company/ Author ....: E. Ross
   Date Created .......: 20-Jul-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 01-Aug-2018
+  Last Modified Date .: 02-Aug-2018
   Description ........: Launched Sales Wizard URL with proper URL tokens and parameters to auto-populate
                         the Sales Wizard form with data from Salesforce
 *****************************************************************************/
@@ -73,6 +73,8 @@ public with sharing class LaunchSalesWizardController {
                     Client_Phone__c,
                     Client_Email__c,
                     Client_Full_Name__c,
+                    Client_First_Name__c,
+                    Client_Last_Name__c,
                     Contract_Term_in_months__c
                FROM Opportunity
               WHERE Id = :opportunityId]){
@@ -87,20 +89,21 @@ public with sharing class LaunchSalesWizardController {
             contactPhone = opp.Client_Phone__c;
             contactEmail = opp.Client_Email__c;
             contactFullNm = opp.Client_Full_Name__c;
+            contactFirstNm = opp.Client_First_Name__c;
+            contactLastNm = opp.Client_Last_Name__c;
             contractLength = ((opp.Contract_Term_in_months__c != null && opp.Contract_Term_in_months__c > 0) ? String.valueOf(opp.Contract_Term_in_months__c) : String.valueOf(6));
             
+            System.Debug('*** Full Name: ' + contactFullNm);
+            System.Debug('*** First Name: ' + contactFirstNm);
+            System.Debug('*** Last Name: ' + contactLastNm);
             System.Debug('** Contract Length: ' + contractLength);
             
             // parse out first and last name from Full Name
-            if(contactFullNm.trim().length() > 0 && contactFullNm.Contains(' ')){
+            //if(contactFullNm.trim().length() > 0 && contactFullNm.Contains(' ')){
             
-                contactFirstNm = contactFullNm.Substring(0, contactFullNm.indexOf(' '));
-                contactLastNm = contactFullNm.Substring(contactFullNm.indexOf(' '), contactFullNm.length());
-            
-                System.Debug('*** Full Name: ' + contactFullNm);
-                System.Debug('*** First Name: ' + contactFirstNm);
-                System.Debug('*** Last Name: ' + contactLastNm);
-            }
+                //contactFirstNm = contactFullNm.Substring(0, contactFullNm.indexOf(' '));
+                //contactLastNm = contactFullNm.Substring(contactFullNm.indexOf(' '), contactFullNm.length());
+            //}
         }
     
         if(acctIds.size() > 0){
