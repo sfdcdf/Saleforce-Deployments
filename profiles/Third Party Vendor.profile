@@ -23965,26 +23965,6 @@
         <field>Case.Recurring_Fees__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>
         <readable>true</readable>
@@ -24040,6 +24020,26 @@
         <editable>true</editable>
         <field>Quality_Case__c.Kickback__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Type__c</field>
+        <readable>false</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>true</allowDelete>

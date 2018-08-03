@@ -21164,10 +21164,6 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
-        <field>Task.Type</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
         <field>Task.WhatId</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
@@ -21403,26 +21399,6 @@
         <field>Case.Recurring_Fees__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>
         <readable>true</readable>
@@ -21454,6 +21430,30 @@
         <editable>true</editable>
         <field>Case.CSC_Rep__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Type</field>
+        <readable>false</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
