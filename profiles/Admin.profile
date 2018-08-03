@@ -940,6 +940,24 @@
     </classAccesses><classAccesses>
         <apexClass>LaunchSalesWizardController</apexClass>
         <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>icScheduleOptimizationCasesAutom</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>icServiceOptimizeAccountsDay7</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>icServiceWBNOptimizationCasesAutomation</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>icTestScheduleOptimizationCasesAutom</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>icTestServiceOptimizeAccountsDay7</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>icTestServiceWBNOptimizationCasesAutom</apexClass>
+        <enabled>true</enabled>
     </classAccesses><pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>

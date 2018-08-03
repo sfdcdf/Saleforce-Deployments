@@ -36,6 +36,7 @@ public with sharing class LaunchSalesWizardController {
     String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
     String salesWizardBaseURL = 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
     String urlParams {get; set;}
+    String finalURL {get; set;}
     
     // method to build URL for Sales Wizard properly and redirect to that URL
     public PageReference validateAndRedirect(){
@@ -49,13 +50,13 @@ public with sharing class LaunchSalesWizardController {
                     + acctName + '&business.contact.firstName=' + contactFirstNm + '&business.contact.lastName=' + contactLastNm + '&business.contact.phoneNumber=' 
                     + contactPhone + '&business.contact.email=' + contactEmail + '&business.address.line1=' + acctAddressLn1 + '&business.address.line2='
                     + acctAddressLn2 + '&business.address.city=' + acctCity + '&business.address.state=' + acctState + '&business.address.postalCode='
-                    + acctZipCode + '&business.address.country=' + acctCountry + '&business.segment=' + acctSegment + '&contractLength=' + contractLength;
+                    + acctZipCode + '&business.address.country=' + acctCountry + '&contractLength=' + contractLength;
     
-    
-        System.Debug('** Built URL: ' + salesWizardBaseURL + consumerName + '/' + oppId + urlParams);
+        finalURL = salesWizardBaseURL + consumerName + '/' + oppId + urlParams;
+        System.Debug('** Built URL: ' + finalURL);
         
         // build URL from base and retrieved data
-        PageReference retURL = new PageReference(salesWizardBaseURL + consumerName + '/' + oppId + urlParams);
+        PageReference retURL = new PageReference(finalURL);
         retURL.setRedirect(true);
         
         return retURL;
