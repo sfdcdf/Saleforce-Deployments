@@ -23999,26 +23999,6 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Cancellation_Request__c.Cancel_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
         <field>Organic_Analysis__c.Location_Group_Id__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
@@ -24057,6 +24037,26 @@
         <editable>false</editable>
         <field>Opportunity.Client_Last_Name__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
+        <readable>false</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.Cancel_Type__c</field>
+        <readable>false</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments><layoutAssignments>
