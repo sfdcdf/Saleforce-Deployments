@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>Sys_Local_Admin</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Account</field>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Amount</field>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <field>Approval_Notes__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>WBN_APRVL_Notes_Update_Step1_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step1_Approve</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Step 1 is sending an email to the Opportunity Owner to see if they can save the sale</description>
+        <entryCriteria>
+            <formula>AND(
+OR(
+     AND(
+      CONTAINS(Owner.Profile_Name__c, &quot;Sales&quot;),
+      CONTAINS(Owner.Profile_Name__c, &quot;National&quot;)
+     )
+  ,
+  CONTAINS(Owner.Profile_Name__c, &quot;National IMS&quot;)
+),
+Owner.IsActive=TRUE
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>1 - Opp Owner Approval</label>
+        <name>Step1_Opp_Owner_Approval</name>
+        <rejectionActions>
+            <action>
+                <name>WBN_APRVL_Notes_Update_Step1_Rejected</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step1_Reject</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>WBN_APRVL_Notes_Update_Step2_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step2_Approve</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>After the Sales Rep Approves, the Manager is given the option to try and Save the Opportunity (REJECT) or Approve moving forward with the closing of the opportunity.</description>
+        <entryCriteria>
+            <formula>AND( 
+Owner.Manager.IsActive=TRUE
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>2 - Manager Approval</label>
+        <name>Step_2_Manager_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>WBN_APRVL_Notes_Update_Step2_Rejected</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step2_Reject</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>WBN_APRVL_Notes_Update_Step3_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step3_Approve</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>patrick.quinlan@web.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Enter only if the Owner&apos;s Manager was not the Sales Manager. Send to Patrick Quilan</description>
+        <entryCriteria>
+            <formula>Owner.Manager.Role_Name__c &lt;&gt; &quot;YBN: Sales Manager&quot;</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>3 - Sales Manager</label>
+        <name>Step_3_Sales_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>WBN_APRVL_Notes_Update_Step3_Rejected</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step3_Reject</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step4_Approve</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>WBN_NCS_Never_Launch_Final_Sales_Ops</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>emily.garza@web.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Final Step - Sales Operations should finalize the Opportunity - Either Close Lost or Modify to remove the products which are to be removed.
+Send to Emily Garza</description>
+        <label>4 - Sales Operations</label>
+        <name>Step_4_Sales_Operations</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>WBN_APRVL_Status_Update_Step4_Reject</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>Approval process for when an IL site never launched and the opportunity should be changed from Closed Won to Closed Lost.</description>
+    <emailTemplate>WBN_Templates/WBN_NCS_Approval_Template</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>YBN - Individual Location</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Approval_Opp_List_Review_Status__c</field>
+            <operation>equals</operation>
+            <value>Submit</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>WBN_APRVL_Status_Update_Step4_Approve</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Approval</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>WBN_Never_Launched_Opportunity_Lost</name>
+            <type>Task</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>WBN_APRVL_Status_Update_Step4_Reject</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Rejection</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>WBN_APRVL_Status_Update_Step0_InProgrss</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>WBN IL Sales - Never Launched</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

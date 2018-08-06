@@ -14865,6 +14865,111 @@ Used by YBN.</description>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>Approval_Notes__c</fullName>
+        <description>Approval Process Notes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Add to this field for the approval process</inlineHelpText>
+        <label>Approval Notes</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields><fields>
+        <fullName>Approval_Opp_List_Review_Status__c</fullName>
+        <description>Status of the WBN Approval Process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will move automatically during approval process, some users will be able to adjust the status</inlineHelpText>
+        <label>Approval: Opp List Review Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Owner Approved</fullName>
+                    <default>false</default>
+                    <label>Owner Approved</label>
+                </value>
+                <value>
+                    <fullName>Owner Rejected</fullName>
+                    <default>false</default>
+                    <label>Owner Rejected</label>
+                </value>
+                <value>
+                    <fullName>Manager Approved</fullName>
+                    <default>false</default>
+                    <label>Manager Approved</label>
+                </value>
+                <value>
+                    <fullName>Manager Rejected</fullName>
+                    <default>false</default>
+                    <label>Manager Rejected</label>
+                </value>
+                <value>
+                    <fullName>Sales Manager Approved</fullName>
+                    <default>false</default>
+                    <label>Sales Manager Approved</label>
+                </value>
+                <value>
+                    <fullName>Sales Manager Rejected</fullName>
+                    <default>false</default>
+                    <label>Sales Manager Rejected</label>
+                </value>
+                <value>
+                    <fullName>Final Approval</fullName>
+                    <default>false</default>
+                    <label>Final Approval</label>
+                </value>
+                <value>
+                    <fullName>Final Rejection</fullName>
+                    <default>false</default>
+                    <label>Final Rejection</label>
+                </value>
+                <value>
+                    <fullName>Sales Ops Oppty Closed Lost</fullName>
+                    <default>false</default>
+                    <label>Sales Ops Oppty Closed Lost</label>
+                </value>
+                <value>
+                    <fullName>Sales Ops Oppty Updated</fullName>
+                    <default>false</default>
+                    <label>Sales Ops Oppty Updated</label>
+                </value>
+                <value>
+                    <fullName>Closed - Oppty Saved</fullName>
+                    <default>false</default>
+                    <label>Closed - Oppty Saved</label>
+                </value>
+                <value>
+                    <fullName>Submit</fullName>
+                    <default>false</default>
+                    <label>Submit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields><fields>
+        <fullName>IMS_Email__c</fullName>
+        <description>CSC and IMS Rep Email Field from Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CSC and IMS Rep Email Field from Account - populated by automation from account</inlineHelpText>
+        <label>IMS Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -15402,6 +15507,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -15807,29 +15967,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -20296,6 +20434,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -20701,29 +20894,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -25111,6 +25282,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -25516,29 +25742,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -29962,6 +30166,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -30326,29 +30585,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -31056,106 +31293,43 @@ Used by YBN.</description>
                 <fullName>CLOSED LOST</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M000 - Conversation Initiation</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M001 - Discovery call</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M001 - Webinar</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M002 - Internal download call</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M002 - Set local demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M003 - Complete local demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M004 - Contract</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
             <values>
                 <fullName>M005 - Audit download</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M010 - Solution plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M011 - Present solution plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M014 - Contract commercials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M015 - Contract creation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M016 - Deliver contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M017 - Contract signed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M018 - Forecast future opportunities</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
+            
+            
+            
+            
             <values>
                 <fullName>M100 - Deal closes</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M101 - Corporate account  in YL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M102 - Detailed project plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M103 - Stakeholder kick off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M104 - Customer kick off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M105 - Design consultation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M106 - Custom template creation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M107 - Bulk onboarding</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M108 - Launch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M109 - Implementation audit</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </picklistValues>
         <picklistValues>
             <picklist>Mobile_Implementation__c</picklist>
@@ -33390,10 +33564,7 @@ Used by YBN.</description>
                 <fullName>Seasonal Fixed Length Campaign</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Weak - Preferred Partner Agreement</fullName>
-                <default>false</default>
-            </values>
+            
         </picklistValues>
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
@@ -33445,6 +33616,61 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33949,29 +34175,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -36609,29 +36813,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>SE_Location_Disposition__c</picklist>
-            <values>
-                <fullName>A - Highly Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>B - Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>C - Neutral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>D - Undetermined</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>F - Not Interested</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -38566,6 +38748,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -38930,29 +39167,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -40196,106 +40411,43 @@ Used by YBN.</description>
                 <fullName>CLOSED LOST</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M000 - Conversation Initiation</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M001 - Discovery call</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M001 - Webinar</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M002 - Internal download call</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M002 - Set local demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M003 - Complete local demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M004 - Contract</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
             <values>
                 <fullName>M005 - Audit download</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M010 - Solution plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M011 - Present solution plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M014 - Contract commercials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M015 - Contract creation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M016 - Deliver contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M017 - Contract signed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M018 - Forecast future opportunities</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
+            
+            
+            
+            
             <values>
                 <fullName>M100 - Deal closes</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M101 - Corporate account  in YL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M102 - Detailed project plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M103 - Stakeholder kick off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M104 - Customer kick off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M105 - Design consultation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M106 - Custom template creation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M107 - Bulk onboarding</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M108 - Launch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M109 - Implementation audit</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </picklistValues>
         <picklistValues>
             <picklist>Mobile_Implementation__c</picklist>
@@ -42850,10 +43002,7 @@ Used by YBN.</description>
                 <fullName>Seasonal Fixed Length Campaign</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Weak - Preferred Partner Agreement</fullName>
-                <default>false</default>
-            </values>
+            
         </picklistValues>
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
@@ -42905,6 +43054,61 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -43314,29 +43518,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -45956,29 +46138,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>SE_Location_Disposition__c</picklist>
-            <values>
-                <fullName>A - Highly Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>B - Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>C - Neutral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>D - Undetermined</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>F - Not Interested</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -47881,6 +48041,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -48286,29 +48501,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -52775,6 +52968,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -53275,29 +53523,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -55920,29 +56146,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>SE_Location_Disposition__c</picklist>
-            <values>
-                <fullName>A - Highly Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>B - Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>C - Neutral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>D - Undetermined</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>F - Not Interested</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -57878,6 +58082,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -58363,29 +58622,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -61761,6 +61998,57 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -62242,29 +62530,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -63587,29 +63853,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>SE_Location_Disposition__c</picklist>
-            <values>
-                <fullName>A - Highly Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>B - Interested</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>C - Neutral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>D - Undetermined</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>F - Not Interested</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -65450,6 +65694,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -65935,29 +66234,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -69332,6 +69609,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -69817,29 +70149,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -73174,6 +73484,61 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Approval_Opp_List_Review_Status__c</picklist>
+            <values>
+                <fullName>Closed - Oppty Saved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Final Rejection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Ops Oppty Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Are_there_Territory_Restrictions__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -73579,29 +73944,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Type__c</picklist>
             <values>
@@ -74118,10 +74461,7 @@ Used by YBN.</description>
                 <fullName>Demo%2FValue Prop</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M000 - Conversation Initiation</fullName>
-                <default>true</default>
-            </values>
+            
             <values>
                 <fullName>M001 - Discovery call</fullName>
                 <default>false</default>
@@ -74162,18 +74502,12 @@ Used by YBN.</description>
                 <fullName>M010 - Present Proposal %26 SOW</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M010 - Solution plan</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M011 - Moving to Close</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M011 - Present solution plan</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M012 - Proof of Value Agreement</fullName>
                 <default>false</default>
@@ -74182,30 +74516,15 @@ Used by YBN.</description>
                 <fullName>M013 - Contract Creation</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M014 - Contract commercials</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>M014 - Deliver Contract to the Customer</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M015 - Contract creation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M016 - Deliver contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M017 - Contract signed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M018 - Forecast future opportunities</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
+            
             <values>
                 <fullName>M1 - Discovery</fullName>
                 <default>false</default>
@@ -74214,42 +74533,15 @@ Used by YBN.</description>
                 <fullName>M100 - Deal closes</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>M101 - Corporate account  in YL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M102 - Detailed project plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M103 - Stakeholder kick off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M104 - Customer kick off</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M105 - Design consultation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M106 - Custom template creation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M107 - Bulk onboarding</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M108 - Launch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>M109 - Implementation audit</fullName>
-                <default>false</default>
-            </values>
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <values>
                 <fullName>M2 - Demo %26 Value Presentation</fullName>
                 <default>false</default>

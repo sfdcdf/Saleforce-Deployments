@@ -448,6 +448,64 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Contract_Signed</template>
+    </alerts><alerts>
+        <fullName>WBN_NCS_Never_Launch_Final_Sales_Ops</fullName>
+        <description>WBN - NCS - Never Launch - Final Sales Ops</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>WBN_Templates/WBN_NCS_Approval_Final_Sales_Ops_Tasks</template>
+    </alerts><alerts>
+        <fullName>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Approval</fullName>
+        <description>WBN - NCS Never Launch - Opportunity Approval - Final Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_Sales_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>WBN_Templates/WBN_NCS_Lost_Approval_Final_Approval</template>
+    </alerts><alerts>
+        <fullName>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Rejection</fullName>
+        <description>WBN - NCS Never Launch - Opportunity Approval - Final Rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <field>IMS_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_Sales_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>WBN_Templates/WBN_NCS_Lost_Approval_Final_Rejection</template>
+    </alerts><alerts>
+        <fullName>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</fullName>
+        <description>WBN - NCS Never Launch - Opportunity Approval - Notify Sales Ops</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>WBN_Templates/WBN_NCS_Approval_Notification_Sales_Ops</template>
     </alerts><fieldUpdates>
         <fullName>CPP_Update_Probability_to_10</fullName>
         <field>Probability</field>
@@ -1575,6 +1633,150 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Notes_Update_Step1_Approved</fullName>
+        <description>Update the Notes for Step 1 Approval</description>
+        <field>Approval_Notes__c</field>
+        <formula>Approval_Notes__c &amp; "* " &amp; TEXT(TODAY()) &amp; " Owner Approves moving forward to the Closed Lost"</formula>
+        <name>WBN APRVL: Notes Update Step1-Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Notes_Update_Step1_Rejected</fullName>
+        <description>Update the Notes for Step 1 Rejected</description>
+        <field>Approval_Notes__c</field>
+        <formula>Approval_Notes__c &amp; "* " &amp; TEXT(TODAY()) &amp; " Owner Rejected - Oppty Saved"</formula>
+        <name>WBN APRVL: Notes Update Step1-Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Notes_Update_Step2_Approved</fullName>
+        <description>Update the Notes for Step 2 Approval</description>
+        <field>Approval_Notes__c</field>
+        <formula>Approval_Notes__c &amp; " * " &amp; TEXT(TODAY()) &amp; " Manager Approves "</formula>
+        <name>WBN APRVL: Notes Update Step2-Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Notes_Update_Step2_Rejected</fullName>
+        <description>Update the Notes for Step 2 Rejected</description>
+        <field>Approval_Notes__c</field>
+        <formula>Approval_Notes__c &amp; " * " &amp; TEXT(TODAY()) &amp; " Manager Rejected"</formula>
+        <name>WBN APRVL: Notes Update Step2-Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Notes_Update_Step3_Approved</fullName>
+        <description>Update the Notes for Step 3 Approval</description>
+        <field>Approval_Notes__c</field>
+        <formula>Approval_Notes__c &amp; "* " &amp; TEXT(TODAY()) &amp; " Sales Manager Approves "</formula>
+        <name>WBN APRVL: Notes Update Step3-Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Notes_Update_Step3_Rejected</fullName>
+        <description>Update the Notes for Step 3 Rejection</description>
+        <field>Approval_Notes__c</field>
+        <formula>Approval_Notes__c &amp; "* " &amp; TEXT(TODAY()) &amp; " Sales Manager Rejected "</formula>
+        <name>WBN APRVL: Notes Update Step3-Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Saved</fullName>
+        <description>WBN Opportunity Approval process Status = Closed - Oppty Saved</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Closed - Oppty Saved</literalValue>
+        <name>WBN APRVL: Status Update - Saved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step0_InProgrss</fullName>
+        <description>WBN Opportunity Approval Process Status = In Progress</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>In Progress</literalValue>
+        <name>WBN APRVL: Status Update Step0 InProgrss</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step1_Approve</fullName>
+        <description>Sales Reps or IMS Rep has approved that this moves forward to be Closed Lost</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Owner Approved</literalValue>
+        <name>WBN APRVL: Status Update Step1 - Approve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step1_Reject</fullName>
+        <description>Step 1 - Owner - Rejected</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Owner Rejected</literalValue>
+        <name>WBN APRVL: Status Update Step1 - Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step2_Approve</fullName>
+        <description>WBN Opportunity Approval Process Status = Manager Approved</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Manager Approved</literalValue>
+        <name>WBN APRVL: Status Update Step2 - Approve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step2_Reject</fullName>
+        <description>WBN Opportunity Approval process Status = Manager Rejected</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Manager Rejected</literalValue>
+        <name>WBN APRVL: Status Update Step2 -Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step3_Approve</fullName>
+        <description>WBN Opportunity Approval Process Status = Sales Manager Approved</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Sales Manager Approved</literalValue>
+        <name>WBN APRVL: Status Update Step3 - Approve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step3_Reject</fullName>
+        <description>WBN Opportunity Approval Process Status = Manager Rejected</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Sales Manager Rejected</literalValue>
+        <name>WBN APRVL: Status Update Step3 - Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step4_Approve</fullName>
+        <description>Final Approval Step - This means the Opportunity should be marked as Closed Lost</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Final Approval</literalValue>
+        <name>WBN APRVL: Status Update Step4 - Approve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates><fieldUpdates>
+        <fullName>WBN_APRVL_Status_Update_Step4_Reject</fullName>
+        <description>Final Rejection - Opportunity was SAVED! Product NCS case should be put back into Progress</description>
+        <field>Approval_Opp_List_Review_Status__c</field>
+        <literalValue>Final Rejection</literalValue>
+        <name>WBN APRVL: Status Update Step4 - Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
     </fieldUpdates><rules>
         <fullName>Add Client Phone Number to Opportunity</fullName>
         <actions>
@@ -3920,4 +4122,15 @@ CreatedBy.ProfileId ="00e60000000ibuQ",
         <protected>false</protected>
         <status>Completed</status>
         <subject>Solution Achitect Requested</subject>
+    </tasks><tasks>
+        <fullName>WBN_Never_Launched_Opportunity_Lost</fullName>
+        <assignedTo>emily.garza@web.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please update the Opportunity to reflect it as a Partial or Complete Closed Lost Opportunity.</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>WBN - Never Launched - Opportunity Lost</subject>
     </tasks></Workflow>

@@ -21815,22 +21815,6 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.tz__Local_Time_24_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.tz__Local_Time_24__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.tz__Local_Time_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.tz__Local_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.webinar_email_subject__c</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
@@ -25709,6 +25693,30 @@
         <editable>false</editable>
         <field>Opportunity.Client_Last_Name__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Approval_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Approval_Opp_List_Review_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.tz__Local_Time_24_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.tz__Local_Time_24__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.tz__Local_Time_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.tz__Local_Time__c</field>
+        <readable>true</readable>
     </fieldPermissions><layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -27615,14 +27623,6 @@
         <object>Objection__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Opportunity</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
@@ -28037,6 +28037,14 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>zzContract__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Opportunity</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>
@@ -28916,10 +28924,6 @@
         <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities><recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Opportunity.YBN_Individual_Location</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.YBN_Initial_Transaction</recordType>
         <visible>false</visible>
@@ -29149,6 +29153,11 @@
         <default>false</default>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Opportunity.YBN_Individual_Location</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>AboutClicktools</tab>
         <visibility>Hidden</visibility>
