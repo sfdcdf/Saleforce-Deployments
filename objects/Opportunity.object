@@ -77960,29 +77960,6 @@ isblank( Estimated_Revenue_for_PV__c )))</errorConditionFormula>
 )</errorConditionFormula>
         <errorMessage>Close Date cannot be prior to today.</errorMessage>
     </validationRules><validationRules>
-        <fullName>YBN_Lock_Opp_Closed_Won_Stage</fullName>
-        <active>true</active>
-        <description>Lock the opportunity from being edited when the stage is set to Closed Won</description>
-        <errorConditionFormula>AND(
-  ISPICKVAL(PRIORVALUE(StageName), "Closed Won"),
-  OR(
-    RecordTypeId = "012600000009YRT",  /* YBN - Individual Location */
-    RecordTypeId = "012600000009YRJ",  /* YBN - Growth Opportunity */
-    RecordTypeId = "012600000009YRE",  /* YBN - Initial Transaction */
-    RecordTypeId = "012600000009YRT"  /* YBN - Renewal */
-  ),
-  $Profile.Id &lt;&gt; "00e60000000iy7K",  /* YBN System Administrator */
-  $Profile.Id &lt;&gt; "00e60000000nQe9",  /* System Administrators */
-  $Profile.Id &lt;&gt; "00e60000000imvV",  /* Training Executive */
-  NOT($Permission.WBN_SalesOpsPermission), /* WBN Ops Permission Set */ 
-  NOT(ISCHANGED(Total_of_Activities__c)), 
-  NOT(ISCHANGED(First_Activity_DateTime__c)),
-  NOT(ISCHANGED(Strategic_Project_Manager__c)),
-  NOT(ISCHANGED( Contract_Auto_Created__c )),
-  NOT(ISCHANGED(Lost_Reason__c))
-)</errorConditionFormula>
-        <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
-    </validationRules><validationRules>
         <fullName>YBN_On_Hold_Reason_Required</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -78322,6 +78299,35 @@ ISPICKVAL(StageName,"Closed Won"),
  &amp;&amp; 
 NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
         <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
+    </validationRules><validationRules>
+        <fullName>YBN_Lock_Opp_Closed_Won_Stage</fullName>
+        <active>true</active>
+        <description>Lock the opportunity from being edited when the stage is set to Closed Won</description>
+        <errorConditionFormula>AND(
+  ISPICKVAL(PRIORVALUE(StageName), "Closed Won"),
+  OR(
+    RecordTypeId = "012600000009YRT",  /* YBN - Individual Location */
+    RecordTypeId = "012600000009YRJ",  /* YBN - Growth Opportunity */
+    RecordTypeId = "012600000009YRE",  /* YBN - Initial Transaction */
+    RecordTypeId = "012600000009YRT"  /* YBN - Renewal */
+  ),
+  $Profile.Id &lt;&gt; "00e60000000iy7K",  /* YBN System Administrator */
+  $Profile.Id &lt;&gt; "00e60000000nQe9",  /* System Administrators */
+  $Profile.Id &lt;&gt; "00e60000000imvV",  /* Training Executive */
+  NOT($Permission.WBN_SalesOpsPermission), /* WBN Ops Permission Set */ 
+  NOT(ISCHANGED(Total_of_Activities__c)), 
+  NOT(ISCHANGED(First_Activity_DateTime__c)),
+  NOT(ISCHANGED(Strategic_Project_Manager__c)),
+  NOT(ISCHANGED( Contract_Auto_Created__c )),
+  NOT(ISCHANGED(Lost_Reason__c)),
+/* begin added for Approval Process*/
+AND(
+  NOT(ISCHANGED(Approval_Opp_List_Review_Status__c)),
+  NOT(Text(Approval_Opp_List_Review_Status__c)= "Submit")
+)
+/* end added for Approval Process*/
+)</errorConditionFormula>
+        <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
     </validationRules><webLinks>
         <fullName>Create_in_YL_Local</fullName>
         <availability>online</availability>
