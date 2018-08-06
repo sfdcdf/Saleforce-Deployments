@@ -92,9 +92,7 @@ Owner.IsActive=TRUE
         </assignedApprover>
         <description>After the Sales Rep Approves, the Manager is given the option to try and Save the Opportunity (REJECT) or Approve moving forward with the closing of the opportunity.</description>
         <entryCriteria>
-            <formula>AND( 
-Owner.Manager.IsActive=TRUE
-)</formula>
+            <formula>Owner.IsActive=TRUE</formula>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
         <label>2 - Manager Approval</label>
