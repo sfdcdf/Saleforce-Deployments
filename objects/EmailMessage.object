@@ -1,57 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>BccAddress</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CcAddress</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ClonedEmail__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Designates if an email was cloned via Apex Code.</description>
         <externalId>false</externalId>
         <label>Cloned Email</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DoNotReopen__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Do Not Reopen</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FromAddress</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FromName</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HasAttachment</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Headers</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HtmlBody</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Incoming</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsExternallyVisible</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MessageDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MessageSize</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NewEmailId__c</fullName>
         <externalId>false</externalId>
         <label>New Email Id</label>
@@ -59,7 +79,8 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OriginalEmailId__c</fullName>
         <externalId>false</externalId>
         <label>Original Email Id</label>
@@ -67,21 +88,28 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ParentId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RelatedToId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Subject</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TextBody</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ToAddress</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ValidatedFromAddress</fullName>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
         <customTabListAdditionalFields>Status</customTabListAdditionalFields>
@@ -103,4 +131,5 @@
         <searchResultsAdditionalFields>ToAddress</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Subject</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>MessageDate</searchResultsAdditionalFields>
-    </searchLayouts></CustomObject>
+    </searchLayouts>
+</CustomObject>
