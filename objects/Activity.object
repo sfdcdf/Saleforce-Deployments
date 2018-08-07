@@ -1,28 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ComposeGmail</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>LogCall</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>MailMerge</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>RequestUpdate</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SendEmail</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ViewAll</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>AM_Type__c</fullName>
         <externalId>false</externalId>
         <label>AM Type</label>
@@ -53,13 +62,15 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Action_Items__c</fullName>
         <externalId>false</externalId>
         <label>Action Items</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Activity_Lead_Source__c</fullName>
         <externalId>false</externalId>
         <label>Activity Lead Source</label>
@@ -95,7 +106,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Activity_Type__c</fullName>
         <externalId>false</externalId>
         <label>Activity Type</label>
@@ -241,7 +253,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Activity_Value__c</fullName>
         <externalId>false</externalId>
         <formula>IF( 
@@ -254,7 +267,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Activity_time__c</fullName>
         <externalId>false</externalId>
         <formula>CreatedDate</formula>
@@ -262,7 +276,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <label>Activity time</label>
         <required>false</required>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Actual_Lead_Volume_Per_Month__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Total number of unique contacts per month</inlineHelpText>
@@ -272,7 +287,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Actual_New_Customers_Per_Month__c</fullName>
         <externalId>false</externalId>
         <label>Actual New Customers Per Month</label>
@@ -281,7 +297,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Actual_PPL__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Monthly PPL data pulled from the FMA dashboard</inlineHelpText>
@@ -290,7 +307,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Actual_ROI__c</fullName>
         <externalId>false</externalId>
         <label>Actual ROI</label>
@@ -299,7 +317,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Add_to_Cold_Call_Blitz__c</fullName>
         <externalId>false</externalId>
         <label>Add to Cold Call Blitz?</label>
@@ -325,7 +344,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Annual_Contract_Value_Opp__c</fullName>
         <externalId>false</externalId>
         <label>Annual Contract Value (Opp)</label>
@@ -333,7 +353,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Assigned_To_Manager__c</fullName>
         <externalId>false</externalId>
         <formula>Owner:User.Manager.Full_Name__c</formula>
@@ -341,7 +362,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Assigned_To_Role__c</fullName>
         <externalId>false</externalId>
         <formula>Owner:User.UserRole.Name</formula>
@@ -349,13 +371,15 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Bottoms_Up_Program__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Bottoms Up Program</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Business_Name__c</fullName>
         <externalId>false</externalId>
         <label>Business Name</label>
@@ -363,7 +387,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CS_Customer_Satisfaction_Score__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>1 being the lowest 10 being the highest, rating should reflect how satisfied you think the customer is with this specific call/meeting</inlineHelpText>
@@ -373,7 +398,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Type__c</fullName>
         <externalId>false</externalId>
         <label>Call Type</label>
@@ -404,7 +430,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <label>Client ID</label>
@@ -413,7 +440,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_Project_Details__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>For client services only, details on the client project they are logging minutes for</inlineHelpText>
@@ -495,25 +523,29 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Close_Date_Time__c</fullName>
         <externalId>false</externalId>
         <label>Close Date/Time</label>
         <required>false</required>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Close_Date__c</fullName>
         <externalId>false</externalId>
         <label>Close Date</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Closed_Deal__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Closed Deal</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Communication_Type__c</fullName>
         <externalId>false</externalId>
         <label>Communication Type</label>
@@ -544,14 +576,16 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contract_Sent__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Used to designate if a contract was sent to client.  Used by YBN IL Sales.</description>
         <externalId>false</externalId>
         <label>Contract Sent</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corp_Acct_ID_in_YL__c</fullName>
         <externalId>false</externalId>
         <label>Corp Acct ID in YL</label>
@@ -560,7 +594,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Created_DateTime__c</fullName>
         <externalId>false</externalId>
         <formula>CreatedDate</formula>
@@ -568,7 +603,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <label>Created DateTime</label>
         <required>false</required>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Created_by_new_hire_class__c</fullName>
         <externalId>false</externalId>
         <formula>text(CreatedBy.Training_Class__c)</formula>
@@ -576,7 +612,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Customer_Rated_Satisfaction_Score__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>1 being the lowest 10 being the highest, rating should reflect customer's response to how satisfied they are with this specific meeting/call</inlineHelpText>
@@ -586,19 +623,22 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Demo_Held__c</fullName>
         <externalId>false</externalId>
         <label>Demo Held</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Demo_Set__c</fullName>
         <externalId>false</externalId>
         <label>Demo Set</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Demo_Showed_Up__c</fullName>
         <externalId>false</externalId>
         <label>Demo - Show/No Show</label>
@@ -619,7 +659,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Demo_d_Products__c</fullName>
         <externalId>false</externalId>
         <label>Demo'd Products</label>
@@ -646,13 +687,15 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Eliminate_from_Intro_Call_compliance__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Eliminate from Intro Call compliance</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Initial_Touch_Connected_w_target_and__c</fullName>
         <externalId>false</externalId>
         <label>Initial Touch: Connected w/ target and</label>
@@ -699,7 +742,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>7</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Interaction_Type__c</fullName>
         <externalId>false</externalId>
         <label>Interaction Type</label>
@@ -730,7 +774,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Issue_Resolution_Detail__c</fullName>
         <externalId>false</externalId>
         <label>Issue Resolution Detail</label>
@@ -802,7 +847,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Issues_or_Concerns_Raised__c</fullName>
         <externalId>false</externalId>
         <label>Issues or Concerns Raised</label>
@@ -823,7 +869,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Consultant__c</fullName>
         <description>Should only be marked as yes when activity creator is also the lead consultant adn they're doing lead consultant specific work, NOT just servicing owned accounts within that lead relationship.</description>
         <externalId>false</externalId>
@@ -845,7 +892,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Location_ID__c</fullName>
         <externalId>false</externalId>
         <label>Location ID</label>
@@ -853,13 +901,15 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Mark_for_Deletion__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Mark for Deletion</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketing_Campaign_Inbound_Lead_Source__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Campaign Inbound Lead Source</label>
@@ -880,7 +930,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketing_Campaign_Name__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Campaign Name</label>
@@ -897,7 +948,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>10</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketing_Campaign_Outcome__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Campaign Outcome</label>
@@ -923,7 +975,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Meeting__c</fullName>
         <externalId>false</externalId>
         <label>Internal Meeting Attendees</label>
@@ -995,7 +1048,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Milestone__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What meeting/call/activity are you logging here?</inlineHelpText>
@@ -2786,7 +2840,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 <valueName>User Sign Up</valueName>
             </valueSettings>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Modified_Milestone__c</fullName>
         <externalId>false</externalId>
         <label>Milestone #</label>
@@ -2794,13 +2849,15 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Monthly_Contact__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Monthly Contact</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>National_Client_Status__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(Account.National_Account_Status__c)</formula>
@@ -2809,7 +2866,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Owner_Name__c</fullName>
         <externalId>false</externalId>
         <formula>Owner:User.Full_Name__c</formula>
@@ -2818,13 +2876,15 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Number__c</fullName>
         <externalId>false</externalId>
         <label>Phone Number</label>
         <required>false</required>
         <type>Phone</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Result__c</fullName>
         <externalId>false</externalId>
         <label>Phone Result</label>
@@ -2885,7 +2945,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Portal_Outreach_Outcome__c</fullName>
         <externalId>false</externalId>
         <label>Portal Outreach Outcome</label>
@@ -2906,7 +2967,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Posted_By__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>for Marketing/PR</inlineHelpText>
@@ -2915,7 +2977,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pre_Cold_Call_Prep_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Pre Cold Call Prep Notes</label>
@@ -2923,7 +2986,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Priority__c</fullName>
         <externalId>false</externalId>
         <label>Priority</label>
@@ -2949,7 +3013,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Proactive_vs_Reactive__c</fullName>
         <externalId>false</externalId>
         <label>Proactive or Reactive</label>
@@ -2970,7 +3035,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Products_upsold__c</fullName>
         <externalId>false</externalId>
         <label>Products upsold</label>
@@ -2997,7 +3063,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reason__c</fullName>
         <externalId>false</externalId>
         <label>Reason</label>
@@ -3043,7 +3110,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Related_to_ID__c</fullName>
         <externalId>false</externalId>
         <formula>LEFT(WhatId, 3)</formula>
@@ -3052,7 +3120,8 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Related_to_Object__c</fullName>
         <externalId>false</externalId>
         <formula>IF(
@@ -3061,7 +3130,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Relationship_Name__c</fullName>
         <externalId>false</externalId>
         <label>Relationship Name</label>
@@ -3069,7 +3139,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SA_demo_type__c</fullName>
         <externalId>false</externalId>
         <label>SA demo type</label>
@@ -3090,7 +3161,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Customer_Satisfaction_Score__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>1 being the lowest 10 being the highest, rating should reflect how satisfied you think the customer is with this specific call/meeting</inlineHelpText>
@@ -3100,7 +3172,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Lab__c</fullName>
         <externalId>false</externalId>
         <label>Sales Lab</label>
@@ -3136,14 +3209,16 @@ BEGINS(WhatId, "001"), "Account","")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Send_Email_Alert_to_SD_AD__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <inlineHelpText>Check this button to send an email notification to the SD or AD on the account with a summary of the call notes</inlineHelpText>
         <label>Send Email Alert to SD/AD</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -3204,20 +3279,23 @@ BEGINS(WhatId, "001"), "Account","")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Summary_of_Discussion_Items__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Notes on all items discussed during the activity</inlineHelpText>
         <label>Summary of Discussion Items</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Summary_of_Issues_Client_Concerns__c</fullName>
         <externalId>false</externalId>
         <label>Issues &amp; Client Concerns Details</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Summary_of_Issues_or_Concerns__c</fullName>
         <externalId>false</externalId>
         <label>Summary of Issues or Concerns</label>
@@ -3249,7 +3327,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Time_To_Complete_Activity_Minutes__c</fullName>
         <externalId>false</externalId>
         <label>Time To Complete Activity (Minutes)</label>
@@ -3258,13 +3337,15 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Win_Back_Customer__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Win Back Customer</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X1st_Attempt_By_del__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -3273,13 +3354,15 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <relationshipName>Activities_del</relationshipName>
         <required>false</required>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X1st_Attempt_Date__c</fullName>
         <externalId>false</externalId>
         <label>1st Attempt Date</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X1st_Attempt_Result__c</fullName>
         <externalId>false</externalId>
         <label>1st Attempt Result</label>
@@ -3305,13 +3388,15 @@ BEGINS(WhatId, "001"), "Account","")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X2nd_Attempt_Date__c</fullName>
         <externalId>false</externalId>
         <label>2nd Attempt Date</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X2nd_Attempt_Result__c</fullName>
         <externalId>false</externalId>
         <label>2nd Attempt Result</label>
@@ -3337,13 +3422,15 @@ BEGINS(WhatId, "001"), "Account","")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X5_in_60__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>5 in 60</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>created_by_profile__c</fullName>
         <externalId>false</externalId>
         <formula>CreatedBy.Profile.Name</formula>
@@ -3351,7 +3438,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>internal_external_activity__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Is this an activity for an internal meeting/call or external customer facing meeting/call</inlineHelpText>
@@ -3373,20 +3461,23 @@ BEGINS(WhatId, "001"), "Account","")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>link_to_comment__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>for marketing/PR use</inlineHelpText>
         <label>link to comment</label>
         <required>false</required>
         <type>Url</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Event_Start_time__c</fullName>
         <externalId>false</externalId>
         <label>Event Start time</label>
         <required>false</required>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Start_time__c</fullName>
         <description>Start time of the event/ used in reports to group by time.</description>
         <externalId>false</externalId>
@@ -3396,7 +3487,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Activity_Start_Time__c</fullName>
         <description>Time field for Event Start Time field Uses Central Time Zone - 5 hour Offset (Dalylight Savings Time)</description>
         <externalId>false</externalId>
@@ -3415,7 +3507,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ControlledByParent</sharingModel><listViews>
+    </searchLayouts><sharingModel>ControlledByParent</sharingModel>
+    <listViews>
         <fullName>Griswold</fullName>
         <columns>TASK.SUBJECT</columns>
         <columns>TASK.WHO_NAME</columns>
@@ -3443,7 +3536,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             <value>Griswold</value>
         </filters>
         <label>Griswold</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyActivities</fullName>
         <filterScope>Mine</filterScope>
         <filters>
@@ -3452,7 +3546,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             <value>Completed</value>
         </filters>
         <label>My Activities</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyCallBacks</fullName>
         <columns>TASK.SUBJECT</columns>
         <columns>TASK.WHO_NAME</columns>
@@ -3475,15 +3570,18 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             <value>Completed</value>
         </filters>
         <label>My Call Backs</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyDelegatedActivities</fullName>
         <filterScope>Delegated</filterScope>
         <label>My Delegated Activities</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyTeamsActivities</fullName>
         <filterScope>Team</filterScope>
         <label>My Team's Activities</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Next30DaysTasks</fullName>
         <columns>TASK.SUBJECT</columns>
         <columns>TASK.WHO_NAME</columns>
@@ -3501,7 +3599,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             <value>NEXT_N_DAYS:30</value>
         </filters>
         <label>Next 30 Days Tasks</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Retention_Calendar_Events</fullName>
         <columns>TASK.SUBJECT</columns>
         <columns>TASK.WHO_NAME</columns>
@@ -3528,7 +3627,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <sharedTo>
             <role>RetentionConsultant294541</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>TodaysTasks</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -3552,7 +3652,8 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             <value>Sarah</value>
         </filters>
         <label>Today's Tasks</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>UpcomingEvents</fullName>
         <filterScope>Mine</filterScope>
         <filters>
@@ -3566,4 +3667,5 @@ BEGINS(WhatId, "001"), "Account","")</formula>
             <value>YESTERDAY</value>
         </filters>
         <label>Upcoming Events</label>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

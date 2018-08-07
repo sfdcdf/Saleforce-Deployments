@@ -1,53 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CallHighlightAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>DeleteBannerPhotoAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>EditUserAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>EmailHighlightAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>FreezeUserAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>LinkToSetupUserDetailAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ManagePermSetsAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>PasswordUnlockAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ResetPasswordAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SmsHighlightAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>UpdateBannerPhotoAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>UserActivationAction</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Ability_to_Complete_Install_Wrkst__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Ability to Complete Install Wrkst</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Annual_Quota__c</fullName>
         <externalId>false</externalId>
         <label>Annual Quota</label>
@@ -57,14 +73,16 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Collections__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Collections</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Custom_Report_Executive_View__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Flag/ indicator signifying if the user has Executive view to Custom reporting</description>
@@ -72,7 +90,8 @@
         <label>Custom Report Executive View</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>EMS_ID__c</fullName>
         <externalId>false</externalId>
         <label>EMS ID</label>
@@ -81,7 +100,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Full_Name__c</fullName>
         <externalId>false</externalId>
         <formula>FirstName + " " + LastName</formula>
@@ -89,7 +109,8 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Industry__c</fullName>
         <externalId>false</externalId>
         <label>Industry</label>
@@ -98,7 +119,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Last_Initial__c</fullName>
         <externalId>false</externalId>
         <formula>LEFT(LastName, 1)</formula>
@@ -107,7 +129,8 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LiveOps_ID__c</fullName>
         <externalId>false</externalId>
         <label>LiveOps ID</label>
@@ -116,18 +139,21 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ManagerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Hierarchy</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Official_Hire_Date__c</fullName>
         <externalId>false</externalId>
         <label>Official Hire Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Plan_Type__c</fullName>
         <externalId>false</externalId>
         <label>Plan Type</label>
@@ -184,7 +210,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Previous_Employer__c</fullName>
         <externalId>false</externalId>
         <label>Previous Employer</label>
@@ -193,7 +220,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Profile_Name__c</fullName>
         <externalId>false</externalId>
         <formula>Profile.Name</formula>
@@ -202,7 +230,8 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Recruiter__c</fullName>
         <externalId>false</externalId>
         <label>Recruiter</label>
@@ -244,7 +273,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Retention_Associate__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Used to identify retention associates so we can properly assign Live Ops routing.</description>
@@ -252,7 +282,8 @@
         <label>Retention Associate</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Role_Name__c</fullName>
         <externalId>false</externalId>
         <formula>UserRole.Name</formula>
@@ -261,7 +292,8 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>School__c</fullName>
         <externalId>false</externalId>
         <label>School</label>
@@ -270,7 +302,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Source_Detail__c</fullName>
         <externalId>false</externalId>
         <label>Source Detail</label>
@@ -279,7 +312,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Source__c</fullName>
         <externalId>false</externalId>
         <label>Source</label>
@@ -366,7 +400,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Team_Assignment__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Team Assignments for LiveOps routing and reporting in Salesforce</inlineHelpText>
@@ -405,14 +440,16 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Term_Date__c</fullName>
         <externalId>false</externalId>
         <label>Term Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Term_Reason__c</fullName>
         <externalId>false</externalId>
         <label>Term Reason</label>
@@ -421,7 +458,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Today_s_Year__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT( YEAR(TODAY()) )</formula>
@@ -429,7 +467,8 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Training_Class__c</fullName>
         <externalId>false</externalId>
         <label>Training Class</label>
@@ -561,14 +600,16 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Winback_Team__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Winback Team</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>YBN_Consultant_Team__c</fullName>
         <externalId>false</externalId>
         <label>YBN Consultant Team</label>
@@ -610,7 +651,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Years_of_Experience__c</fullName>
         <externalId>false</externalId>
         <label>Years of Experience</label>
@@ -650,7 +692,8 @@
         <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ACTIVE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>MANAGER</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Read</sharingModel><listViews>
+    </searchLayouts><sharingModel>Read</sharingModel>
+    <listViews>
         <fullName>ActiveUsers1</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.TITLE</columns>
@@ -668,7 +711,8 @@
             <value>1</value>
         </filters>
         <label>Active Users</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>AdminUsers</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -689,7 +733,8 @@
             <value>1</value>
         </filters>
         <label>Admin Users</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>AllUsers</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -705,7 +750,8 @@
         <sharedTo>
             <role>ExecutiveVP</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>CPP_Portal</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -725,7 +771,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Partner_Portal</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -745,7 +792,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Stale_Users</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -772,4 +820,5 @@
             <value>Communit</value>
         </filters>
         <label>Stale Users</label>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

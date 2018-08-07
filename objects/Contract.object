@@ -1,51 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Activate</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ChangeStatus</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Terminate</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><compactLayouts>
+    </actionOverrides>
+    <compactLayouts>
         <fullName>Default</fullName>
         <fields>AccountId</fields>
         <fields>StartDate</fields>
         <fields>EndDate</fields>
         <fields>ContractTerm</fields>
         <label>Default</label>
-    </compactLayouts><fields>
+    </compactLayouts>
+    <fields>
         <fullName>AccountId</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Setup_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Account Setup Fee Per Location</label>
@@ -54,7 +69,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Setup_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Account Setup # of Locations</label>
@@ -64,14 +80,17 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ActivatedById</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ActivatedDate</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Adversite_Setup_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Adversite Setup Fee Per Location</label>
@@ -80,7 +99,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Adversite_Setup_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Adversite Setup # of Locations</label>
@@ -90,7 +110,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agreement_Type__c</fullName>
         <externalId>false</externalId>
         <label>Agreement Type</label>
@@ -148,7 +169,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Auto_Renewal__c</fullName>
         <externalId>false</externalId>
         <label>Auto-Renewal</label>
@@ -170,10 +192,12 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>BillingAddress</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CM_Lite_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>CM Lite Fee Per Location</label>
@@ -182,7 +206,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CM_Lite_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>CM Lite # of Locations</label>
@@ -192,7 +217,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Centermark_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Centermark Fee Per Location</label>
@@ -201,7 +227,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Centermark_Setup_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Centermark Setup Fee Per Location</label>
@@ -210,7 +237,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Centermark_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Centermark # of Locations</label>
@@ -220,7 +248,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Centermark_of_Locations_to_Setup__c</fullName>
         <externalId>false</externalId>
         <label>Centermark # of Locations to Setup</label>
@@ -230,7 +259,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <formula>Account.Client_ID__c</formula>
@@ -240,14 +270,17 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CompanySignedDate</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CompanySignedId</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Content_Creation_and_Installation_Fee_Pa__c</fullName>
         <externalId>false</externalId>
         <label>Content Creation and Installation Fee/Pa</label>
@@ -256,17 +289,20 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ContractTerm</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contract_Oppty__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Contract-Oppty</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contract_Value__c</fullName>
         <description>Setup for Biz Dev RecordType</description>
         <externalId>false</externalId>
@@ -277,7 +313,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_Site_Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>Corporate Site Contract Length</label>
@@ -287,7 +324,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_Site_Monthly_Fee__c</fullName>
         <externalId>false</externalId>
         <label>Corporate Site Monthly Fee</label>
@@ -296,7 +334,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_Website_Design_Build__c</fullName>
         <externalId>false</externalId>
         <label>Corporate Website Design &amp; Build</label>
@@ -305,7 +344,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_vs_Individual__c</fullName>
         <externalId>false</externalId>
         <label>Corporate vs Individual</label>
@@ -327,17 +367,21 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CustomerSignedDate</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CustomerSignedId</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CustomerSignedTitle</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Customer_Main_Contact_Email__c</fullName>
         <externalId>false</externalId>
         <label>Customer Main Contact Email</label>
@@ -345,14 +389,16 @@
         <trackHistory>false</trackHistory>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Customer_Main_Contact_Phone__c</fullName>
         <externalId>false</externalId>
         <label>Customer Main Contact Phone</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Phone</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Customer_Main_Contact__c</fullName>
         <description>Main contact at relationship signing the contract</description>
         <externalId>false</externalId>
@@ -362,10 +408,12 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Display_Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>Display Contract Length</label>
@@ -375,7 +423,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Display_Creative_Fee__c</fullName>
         <externalId>false</externalId>
         <label>Display Creative Fee</label>
@@ -384,7 +433,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Display_Monthly_Budget__c</fullName>
         <externalId>false</externalId>
         <label>Display Monthly Budget</label>
@@ -393,7 +443,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Document_Name__c</fullName>
         <description>What type of Agreement is this? YSA / Preferred Vendor Agreement</description>
         <externalId>false</externalId>
@@ -403,7 +454,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Early_Termination_Description__c</fullName>
         <externalId>false</externalId>
         <label>Early Termination Description</label>
@@ -411,7 +463,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Early_Termination__c</fullName>
         <externalId>false</externalId>
         <label>Early Termination</label>
@@ -433,7 +486,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>Email Contract Length</label>
@@ -443,7 +497,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Email Fee Per Location</label>
@@ -452,7 +507,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Email # of Locations</label>
@@ -462,10 +518,12 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>EndDate</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fees_to_Customer__c</fullName>
         <externalId>false</externalId>
         <label>Fees to Customer</label>
@@ -473,7 +531,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Foundations_Fee_Per_Location_over_100__c</fullName>
         <externalId>false</externalId>
         <label>Foundations Fee Per Location over 100</label>
@@ -482,7 +541,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Foundations_Fee_Per_Location_up_to_100__c</fullName>
         <externalId>false</externalId>
         <label>Foundations Fee Per Location up to 100</label>
@@ -491,7 +551,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Included_Services_Description__c</fullName>
         <externalId>false</externalId>
         <label>Included Services Description</label>
@@ -499,7 +560,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Included_Services__c</fullName>
         <externalId>false</externalId>
         <label>Included Services</label>
@@ -521,7 +583,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Internal_Business_Owner__c</fullName>
         <description>Web.com Internal Business Owner - Contract - internal person who owns the account/manages relationship</description>
         <externalId>false</externalId>
@@ -532,7 +595,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Maps_Optimization_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Maps Optimization Fee Per Location</label>
@@ -541,7 +605,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Maps_Optimization_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Maps Optimization # of Locations</label>
@@ -551,7 +616,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Media_Mgmt_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Media Mgmt Fee Per Location</label>
@@ -560,7 +626,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Media_Mgmt_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Media Mgmt # of Locations</label>
@@ -570,10 +637,12 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Non_Compete__c</fullName>
         <externalId>false</externalId>
         <label>Non-Compete</label>
@@ -595,7 +664,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Number of Locations</label>
@@ -605,7 +675,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Onboarding_SLA__c</fullName>
         <externalId>false</externalId>
         <label>Onboarding SLA</label>
@@ -613,7 +684,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>One_Time_Shared_Landing_Page_Web_Dev_F__c</fullName>
         <externalId>false</externalId>
         <label>One-Time Shared Landing Page &amp; Web Dev</label>
@@ -622,7 +694,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opportunity__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>.</description>
@@ -643,7 +716,8 @@
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Organic_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Organic Fee Per Location</label>
@@ -652,7 +726,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Organic_Setup_Fee_per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Organic Setup Fee per Location</label>
@@ -661,7 +736,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Organic_Setup_of_Location__c</fullName>
         <externalId>false</externalId>
         <label>Organic Setup # of Location</label>
@@ -671,7 +747,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Organic_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Organic # of Locations</label>
@@ -681,14 +758,17 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerExpirationNotice</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPC_Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>PPC Contract Length</label>
@@ -698,7 +778,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPC_Montly_Budget__c</fullName>
         <externalId>false</externalId>
         <label>PPC Montly Budget</label>
@@ -707,7 +788,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ParentContract__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -718,7 +800,8 @@
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Parent_Account__c</fullName>
         <externalId>false</externalId>
         <formula>Account.Parent.Name</formula>
@@ -728,7 +811,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Payment_Method__c</fullName>
         <externalId>false</externalId>
         <label>Payment Method</label>
@@ -750,14 +834,16 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Renewal_Notice_Date__c</fullName>
         <externalId>false</externalId>
         <label>Renewal Notice Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Renewal_Term__c</fullName>
         <description>Auto Renewal Term</description>
         <externalId>false</externalId>
@@ -896,7 +982,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reporting_Obligation_Description__c</fullName>
         <externalId>false</externalId>
         <label>Reporting Obligation Description</label>
@@ -904,7 +991,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reporting_Obligation__c</fullName>
         <externalId>false</externalId>
         <label>Reporting Obligation</label>
@@ -926,7 +1014,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Revenue_Share_Description__c</fullName>
         <externalId>false</externalId>
         <label>Revenue Share Description</label>
@@ -934,7 +1023,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Revenue_Share__c</fullName>
         <externalId>false</externalId>
         <label>Revenue Share</label>
@@ -957,7 +1047,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Review_Mgmt_Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>Review Mgmt Contract Length</label>
@@ -967,7 +1058,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Review_Mgmt_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Review Mgmt Fee Per Location</label>
@@ -976,7 +1068,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Review_Mgmt_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Review Mgmt # of Locations</label>
@@ -986,7 +1079,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Setup_Account_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Setup Account Fee Per Location</label>
@@ -995,7 +1089,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Setup_Account_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Adversite Setup Account # of Locations</label>
@@ -1005,7 +1100,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Setup_Fee_for_Local_Website_per_page__c</fullName>
         <externalId>false</externalId>
         <label>Setup Fee for Local Website per page</label>
@@ -1014,13 +1110,16 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ShippingAddress</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SpecialTerms</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Special_Pricing_Terms_Description__c</fullName>
         <externalId>false</externalId>
         <label>Special Pricing Terms Description</label>
@@ -1028,7 +1127,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Special_Pricing_Terms__c</fullName>
         <externalId>false</externalId>
         <label>Special Pricing Terms</label>
@@ -1050,14 +1150,17 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StartDate</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Support_SLA__c</fullName>
         <externalId>false</externalId>
         <label>Support SLA</label>
@@ -1084,7 +1187,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Termination_Notice__c</fullName>
         <description>How many days are required for a termination notice?</description>
         <externalId>false</externalId>
@@ -1119,7 +1223,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tiered_Pricing__c</fullName>
         <externalId>false</externalId>
         <label>Tiered Pricing</label>
@@ -1127,7 +1232,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Trade_Show_Sponsorship_Description__c</fullName>
         <externalId>false</externalId>
         <label>Trade Show Sponsorship Description</label>
@@ -1135,7 +1241,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Trade_Show_Sponsorship__c</fullName>
         <externalId>false</externalId>
         <label>Trade Show Sponsorship</label>
@@ -1157,7 +1264,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Ads_PPC_Monthly_Budget_Location__c</fullName>
         <externalId>false</externalId>
         <label>Yodle Ads (PPC) Monthly Budget/Location</label>
@@ -1166,7 +1274,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Ads_PPC_Setup_Fee_Location__c</fullName>
         <externalId>false</externalId>
         <label>Yodle Ads (PPC) Setup Fee/Location</label>
@@ -1175,7 +1284,8 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Ads_PPC_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Yodle Ads (PPC) # of Locations</label>
@@ -1185,7 +1295,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Web_Fee_Per_Location__c</fullName>
         <externalId>false</externalId>
         <label>Yodle Web Fee Per Location</label>
@@ -1194,7 +1305,8 @@
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Web_of_Locations__c</fullName>
         <externalId>false</externalId>
         <label>Yodle Web # of Locations</label>
@@ -1204,7 +1316,11 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    
+    <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
@@ -1223,7 +1339,9 @@
         <searchResultsAdditionalFields>CONTRACT.START_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.END_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>AllActivatedContracts</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -1232,7 +1350,8 @@
             <value>A</value>
         </filters>
         <label>All Activated Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>AllContracts</fullName>
         <columns>CONTRACT.CONTRACT_NUMBER</columns>
         <columns>SALES.ACCOUNT.NAME</columns>
@@ -1244,7 +1363,8 @@
         <columns>CONTRACT.RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <label>All Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>AllDraftContracts</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -1253,7 +1373,8 @@
             <value>D</value>
         </filters>
         <label>All Draft Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>AllInApprovalContracts</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -1262,7 +1383,8 @@
             <value>P</value>
         </filters>
         <label>All In Approval Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyActivatedContracts</fullName>
         <columns>SALES.ACCOUNT.NAME</columns>
         <filterScope>Mine</filterScope>
@@ -1272,7 +1394,8 @@
             <value>A</value>
         </filters>
         <label>My Activated Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyDraftContracts</fullName>
         <filterScope>Mine</filterScope>
         <filters>
@@ -1281,7 +1404,8 @@
             <value>D</value>
         </filters>
         <label>My Draft Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyInApprovalContracts</fullName>
         <filterScope>Mine</filterScope>
         <filters>
@@ -1290,7 +1414,8 @@
             <value>P</value>
         </filters>
         <label>My In Approval Contracts</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>biz_dev_agreements</fullName>
         <columns>CONTRACT.CONTRACT_NUMBER</columns>
         <columns>CONTRACT.NAME</columns>
@@ -1311,7 +1436,8 @@
         <sharedTo>
             <role>PartnerManager</role>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Amendments</fullName>
         <active>true</active>
         <label>Amendments</label>
@@ -1558,7 +1684,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Biz_Dev_Agreement</fullName>
         <active>true</active>
         <description>Business Development</description>
@@ -1868,7 +1995,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Service_Agreement</fullName>
         <active>true</active>
         <description>.</description>
@@ -2116,4 +2244,5 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>
