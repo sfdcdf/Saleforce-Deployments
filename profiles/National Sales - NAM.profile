@@ -33793,6 +33793,13 @@
         <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Activity_Log__c-Activity Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Activity_Log__c-Activity Log Layout</layout>
+        <recordType>Activity_Log__c.Custom_Code</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35096,6 +35103,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Sales_Wizard_API_Setting__mdt</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Activity_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>
@@ -36486,6 +36502,11 @@
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Activity_Log__c.Custom_Code</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>AboutClicktools</tab>
         <visibility>Hidden</visibility>
@@ -36832,6 +36853,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Google_Location_Group__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Activity_Log__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>

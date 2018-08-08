@@ -129,7 +129,7 @@ Owner.Manager.IsActive=TRUE
                 <type>FieldUpdate</type>
             </action>
             <action>
-                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <name>WBN_NCS_Never_Launch_Final_Sales_Ops</name>
                 <type>Alert</type>
             </action>
         </approvalActions>
@@ -160,7 +160,7 @@ Owner.Manager.IsActive=TRUE
                 <type>FieldUpdate</type>
             </action>
             <action>
-                <name>WBN_NCS_Never_Launch_Opportunity_Approval_Notify_Sales_Ops</name>
+                <name>WBN_NCS_Never_Launch_Final_Sales_Ops</name>
                 <type>Alert</type>
             </action>
         </rejectionActions>
@@ -171,10 +171,6 @@ Owner.Manager.IsActive=TRUE
             <action>
                 <name>WBN_APRVL_Status_Update_Step4_Approve</name>
                 <type>FieldUpdate</type>
-            </action>
-            <action>
-                <name>WBN_NCS_Never_Launch_Final_Sales_Ops</name>
-                <type>Alert</type>
             </action>
         </approvalActions>
         <assignedApprover>

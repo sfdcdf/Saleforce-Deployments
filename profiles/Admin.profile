@@ -39258,6 +39258,13 @@
     <layoutAssignments>
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Activity_Log__c-Activity Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Activity_Log__c-Activity Log Layout</layout>
+        <recordType>Activity_Log__c.Custom_Code</recordType>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -40654,6 +40661,11 @@
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Activity_Log__c.Custom_Code</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>AboutClicktools</tab>
         <visibility>DefaultOn</visibility>
@@ -41001,5 +41013,9 @@
     <tabVisibilities>
         <tab>Google_Location_Group__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Activity_Log__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
 </Profile>

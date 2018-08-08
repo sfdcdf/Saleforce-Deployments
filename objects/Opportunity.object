@@ -79185,6 +79185,7 @@ NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
   NOT(ISCHANGED(Strategic_Project_Manager__c)),
   NOT(ISCHANGED( Contract_Auto_Created__c )),
   NOT(ISCHANGED(Lost_Reason__c)),
+  NOT(ISCHANGED(IMS_Email__c )),
 /* begin added for Approval Process*/
 AND(
   NOT(ISCHANGED(Approval_Opp_List_Review_Status__c)),
