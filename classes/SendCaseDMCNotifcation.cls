@@ -19,6 +19,7 @@ public class SendCaseDMCNotifcation
                 Map<Id, Case> caseDetailsMap = new Map<Id, Case>();
                 List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
                 OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+                String[] bccAddress = new String[]{'eugene.ross@web.com', 'sgadhams@networksolutions.com'};
                 
                 // get Account Ids and add to set
                 for(Case c :
@@ -71,6 +72,7 @@ public class SendCaseDMCNotifcation
      
                             // set message content
                             message.setToAddresses(toAddress);
+                            message.setBccAddresses(bccAddress);
                             message.setReplyTo(fromAddress);
                             message.setOrgWideEmailAddressId(owea.get(0).Id);
                             message.setSubject(subjectLine);

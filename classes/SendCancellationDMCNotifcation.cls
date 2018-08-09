@@ -19,6 +19,7 @@ public class SendCancellationDMCNotifcation
                 Map<Id, Cancellation_Request__c> cancelRequestDetailsMap = new Map<Id, Cancellation_Request__c>();
                 List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
                 OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+                String[] bccAddress = new String[]{'eugene.ross@web.com', 'sgadhams@networksolutions.com'};
                 
                 // get Account Ids and add to set
                 for(Cancellation_Request__c c :
@@ -70,6 +71,7 @@ public class SendCancellationDMCNotifcation
      
                             // set message content
                             message.setToAddresses(toAddress);
+                            message.setBccAddresses(bccAddress);
                             message.setReplyTo(fromAddress);
                             message.setOrgWideEmailAddressId(owea.get(0).Id);
                             message.setSubject(subjectLine);
