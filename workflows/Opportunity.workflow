@@ -487,24 +487,6 @@
         <template>WBN_Templates/WBN_NCS_Approval_Final_Sales_Ops_Tasks_HTML</template>
     </alerts>
     <alerts>
-        <fullName>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Approval</fullName>
-        <description>WBN - NCS Never Launch - Opportunity Approval - Final Approval</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>YBN_Operations</recipient>
-            <type>group</type>
-        </recipients>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <recipients>
-            <recipient>YBN_Sales_Manager</recipient>
-            <type>role</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>WBN_Templates/WBN_NCS_Lost_Approval_Final_Approval_HTML</template>
-    </alerts>
-    <alerts>
         <fullName>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Rejection</fullName>
         <description>WBN - NCS Never Launch - Opportunity Approval - Final Rejection</description>
         <protected>false</protected>
@@ -536,6 +518,28 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>WBN_Templates/WBN_NCS_Approval_Notification_Sales_Ops_HTML</template>
+    </alerts>
+    <alerts>
+        <fullName>WBN_NCS_Never_Launch_Opportunity_Approval_Final_Approval</fullName>
+        <description>WBN - NCS Never Launch - Opportunity Approval - Final Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>IMS_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>YBN_Sales_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>WBN_Templates/WBN_NCS_Lost_Approval_Final_Approval_HTML</template>
     </alerts>
     <fieldUpdates>
         <fullName>CPP_Update_Probability_to_10</fullName>
