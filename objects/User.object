@@ -402,46 +402,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Team_Assignment__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Team Assignments for LiveOps routing and reporting in Salesforce</inlineHelpText>
-        <label>Team Assignment</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Blue Team (AMP)</fullName>
-                    <default>false</default>
-                    <label>Blue Team (AMP)</label>
-                </value>
-                <value>
-                    <fullName>Red Team (AMP)</fullName>
-                    <default>false</default>
-                    <label>Red Team (AMP)</label>
-                </value>
-                <value>
-                    <fullName>New Glasgow (AMP)</fullName>
-                    <default>false</default>
-                    <label>New Glasgow (AMP)</label>
-                </value>
-                <value>
-                    <fullName>AMJax (AMP)</fullName>
-                    <default>false</default>
-                    <label>AMJax (AMP)</label>
-                </value>
-                <value>
-                    <fullName>Inbound (AMP)</fullName>
-                    <default>false</default>
-                    <label>Inbound (AMP)</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Term_Date__c</fullName>
         <externalId>false</externalId>
         <label>Term Date</label>
@@ -676,6 +636,56 @@
                     <fullName>5+</fullName>
                     <default>false</default>
                     <label>5+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Team_Assignment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Team Assignments for LiveOps routing and reporting in Salesforce</inlineHelpText>
+        <label>Team Assignment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blue Team (AMP)</fullName>
+                    <default>false</default>
+                    <label>Blue Team (AMP)</label>
+                </value>
+                <value>
+                    <fullName>Red Team (AMP)</fullName>
+                    <default>false</default>
+                    <label>Red Team (AMP)</label>
+                </value>
+                <value>
+                    <fullName>New Glasgow (AMP)</fullName>
+                    <default>false</default>
+                    <label>New Glasgow (AMP)</label>
+                </value>
+                <value>
+                    <fullName>AMJax (AMP)</fullName>
+                    <default>false</default>
+                    <label>AMJax (AMP)</label>
+                </value>
+                <value>
+                    <fullName>Inbound (AMP)</fullName>
+                    <default>false</default>
+                    <label>Inbound (AMP)</label>
+                </value>
+                <value>
+                    <fullName>AM Red Beard</fullName>
+                    <default>false</default>
+                    <label>AM Red Beard</label>
+                </value>
+                <value>
+                    <fullName>AM No Beard</fullName>
+                    <default>false</default>
+                    <label>AM No Beard</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
