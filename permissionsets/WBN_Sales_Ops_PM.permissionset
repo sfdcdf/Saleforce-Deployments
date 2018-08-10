@@ -1,168 +1,236 @@
-﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>This permission set is to replace some of the rules which were removed when removed from a WBN Admin Set</description><hasActivationRequired>false</hasActivationRequired><label>WBN Sales Ops/PM</label><license>Salesforce</license><pageAccesses>
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>This permission set is to replace some of the rules which were removed when removed from a WBN Admin Set</description><hasActivationRequired>false</hasActivationRequired><label>WBN Sales Ops/PM</label><license>Salesforce</license>
+    <pageAccesses>
         <apexPage>TopPanelYBNConsole_Master</apexPage>
         <enabled>true</enabled>
-    </pageAccesses><pageAccesses>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>TopPanelYBNConsole_Standard</apexPage>
         <enabled>true</enabled>
-    </pageAccesses><pageAccesses>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>TopPanelYBNOpportunity_Standard</apexPage>
         <enabled>true</enabled>
-    </pageAccesses><customPermissions>
+    </pageAccesses>
+    <customPermissions>
         <enabled>true</enabled>
         <name>WBN_SalesOpsPermission</name>
-    </customPermissions><fieldPermissions>
+    </customPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Hold_Status__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Rating__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Franchise_Influencer__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Hold_Status_Date__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.NCE__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.National_Account_Status__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Relationship_ID__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Relationship_Service_Level_C__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.YBN_High_Importance_Account__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Integration__c.Description__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Integration__c.Other_Type_of_Integration__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Integration__c.Type_of_Integration_s__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Average_Monthly_Charge__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.CRV_One_Time_Sum__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.CRV_PPC_Seasonal_Average__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.CRV_Recurring_Sum__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Commission_NCSE_Split__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Commission_NCSE__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Commission_QA_d__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Commissionable_Revenue_Amount__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Commissionable_Revenue__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Commissions_Paid__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Contract_Expiration_Date__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Contract_Term_in_months__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Current_Monthly_PPC_Budget__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.IL_PPC_Estimated_Avg_Budget__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Monthly_Average_Revenue__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.NCSE_Commission__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Renewal_Term_in_months__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.SDR__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Total_Initial_Charge__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Total_Monthly_Charges__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Total_PPC_Seasonal_Charge__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.WBN_Commissionable_Revenue_CRV__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.WBN_Opp_Amount_TEMP__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.YBN_Max_PPC_Budget_Opportunity__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Approval_Notes__c</field>
         <readable>true</readable>
-    </fieldPermissions><fieldPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Approval_Opp_List_Review_Status__c</field>
         <readable>true</readable>
-    </fieldPermissions><objectPermissions>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.PPC_Market_Opp_Budget__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.PPC_Recommendations_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.PPC_Recommended_Budget__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.WBN_PPC_Restricted_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.WBN_SE_Last_Activity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
@@ -170,7 +238,8 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Account</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions><objectPermissions>
+    </objectPermissions>
+    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
@@ -178,7 +247,8 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Contact</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions><objectPermissions>
+    </objectPermissions>
+    <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
@@ -186,7 +256,8 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Contract</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions><objectPermissions>
+    </objectPermissions>
+    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
@@ -194,7 +265,8 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Lead</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions><objectPermissions>
+    </objectPermissions>
+    <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
@@ -202,133 +274,177 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Opportunity</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions><recordTypeVisibilities>
+    </objectPermissions>
+    <recordTypeVisibilities>
         <recordType>Account.Rogers_National_Account</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Account.Standard</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Account.YBN_Corporate_Relationship</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Account.YBN_Strategic_Partner_Account</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Campaign.Dialing_Campaign_Record_Type</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Campaign.Standard_Campaign_Record_Type</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Event.YBN_Client_Services_Event</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Event.YBN_Corporate_Location_Event</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Event.YBN_Individual_Location_Event</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Event.YBN_Prospecting</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Event.YBN_Sales_Event_Corporate</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Event.YBN_Sales_Event_IL</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Lead.Sales</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Lead.WBN_Corporate_Lead</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Lead.WBN_Lead</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Opportunity.YBN_Individual_Location</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Opportunity.YBN_Initial_Transaction</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Opportunity.YBN_Renewal</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Client_Services</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Corporate_Relationship</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Individual_Location</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Interaction</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Professional_Services</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Prospecting_Task</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Sales_Corporate</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><recordTypeVisibilities>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Task.YBN_Sales_IL</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities><userPermissions>
+    </recordTypeVisibilities>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ActivateContract</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>AllowViewEditConvertedLeads</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ConvertLeads</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>EditOppLineItemUnitPrice</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>EditOwnQuota</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>EditTask</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ImportLeads</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ImportPersonal</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>LightningExperienceUser</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ManageLeads</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>RunReports</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ScheduleJob</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>ScheduleReports</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>TransferAnyLead</name>
-    </userPermissions><userPermissions>
+    </userPermissions>
+    <userPermissions>
         <enabled>true</enabled>
         <name>UseTeamReassignWizards</name>
-    </userPermissions></PermissionSet>
+    </userPermissions>
+</PermissionSet>

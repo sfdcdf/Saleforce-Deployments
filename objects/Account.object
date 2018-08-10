@@ -12570,6 +12570,65 @@ CASE(
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>PPC_Market_Opp_Budget__c</fullName>
+        <description>WBN PPC Market Opportunity Budget for Upsell</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This budget is imported from the Monthly Recommendation Spreadsheet</inlineHelpText>
+        <label>PPC Market Opp Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PPC_Recommendations_Date__c</fullName>
+        <description>WBN PPC Budget Recommendations Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the PPC Budget Recommendations were updated</inlineHelpText>
+        <label>PPC Recommendations Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PPC_Recommended_Budget__c</fullName>
+        <description>WBN Recommended PPC Budget for Upsell</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This budget is imported from the Monthly Recommendation Spreadsheet</inlineHelpText>
+        <label>PPC Recommended Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>WBN_PPC_Restricted_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WBN Restricticted Accounts from PPC Upsell Program - This is set on the Master/Parent Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Restrictions are based on the Master Account value</inlineHelpText>
+        <label>WBN PPC Restricted Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WBN_SE_Last_Activity__c</fullName>
+        <description>Rollup of last day an SE created an activity on the account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup of last day an SE created an activity on the account</inlineHelpText>
+        <label>WBN SE Last Activity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
