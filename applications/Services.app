@@ -182,7 +182,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isServiceCloudConsole>true</isServiceCloudConsole>
     <label>Services</label>
-    <logo>Images/SF_Yodle_Logo.gif</logo>
+    <logo>Images/Web_com_Logo_for_Services_and_WBN_Console.png</logo>
     <preferences>
         <enableCustomizeMyTabs>true</enableCustomizeMyTabs>
         <enableKeyboardShortcuts>true</enableKeyboardShortcuts>

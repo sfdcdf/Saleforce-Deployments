@@ -286,6 +286,10 @@
                 <field>Location_Group_Id__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Location_Group_Code__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Google_Login_Email__c</field>
             </layoutItems>

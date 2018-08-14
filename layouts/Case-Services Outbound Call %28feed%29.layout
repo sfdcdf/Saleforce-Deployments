@@ -84,6 +84,10 @@
                 <field>Reason</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Reason_Detail__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Channel_Type__c</field>
             </layoutItems>
