@@ -172,7 +172,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isServiceCloudConsole>true</isServiceCloudConsole>
     <label>WBN Console</label>
-    <logo>Images/SF_Web_com_Logo.png</logo>
+    <logo>echosign_dev1__ButtonsLogosImages/Web_com_Logo_for_Services_and_WBN_Console.png</logo>
     <preferences>
         <enableCustomizeMyTabs>true</enableCustomizeMyTabs>
         <enableKeyboardShortcuts>true</enableKeyboardShortcuts>
