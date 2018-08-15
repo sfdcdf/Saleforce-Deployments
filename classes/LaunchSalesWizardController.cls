@@ -34,7 +34,7 @@ public with sharing class LaunchSalesWizardController {
     String contractLength {get; set;}
     String acctCorpId {get; set;}
     String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
-    String salesWizardBaseURL = 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
+    String salesWizardBaseURL = 'http://live.yodle.com/sales/wizard/packages/WBN/orders/';  // QA: 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/'
     String urlParams {get; set;}
     String finalURL {get; set;}
     
