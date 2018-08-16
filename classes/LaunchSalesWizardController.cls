@@ -2,7 +2,7 @@
   Company/ Author ....: E. Ross
   Date Created .......: 20-Jul-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 01-Aug-2018
+  Last Modified Date .: 02-Aug-2018
   Description ........: Launched Sales Wizard URL with proper URL tokens and parameters to auto-populate
                         the Sales Wizard form with data from Salesforce
 *****************************************************************************/
@@ -34,8 +34,9 @@ public with sharing class LaunchSalesWizardController {
     String contractLength {get; set;}
     String acctCorpId {get; set;}
     String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
-    String salesWizardBaseURL = 'http://live.yodle.com/sales/wizard/packages/WBN/orders/';  // QA: 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/';
+    String salesWizardBaseURL = 'http://live.yodle.com/sales/wizard/packages/WBN/orders/';  // QA: 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/'
     String urlParams {get; set;}
+    String finalURL {get; set;}
     
     // method to build URL for Sales Wizard properly and redirect to that URL
     public PageReference validateAndRedirect(){
@@ -49,13 +50,13 @@ public with sharing class LaunchSalesWizardController {
                     + acctName + '&business.contact.firstName=' + contactFirstNm + '&business.contact.lastName=' + contactLastNm + '&business.contact.phoneNumber=' 
                     + contactPhone + '&business.contact.email=' + contactEmail + '&business.address.line1=' + acctAddressLn1 + '&business.address.line2='
                     + acctAddressLn2 + '&business.address.city=' + acctCity + '&business.address.state=' + acctState + '&business.address.postalCode='
-                    + acctZipCode + '&business.address.country=' + acctCountry + '&business.segment=' + acctSegment + '&contractLength=' + contractLength;
+                    + acctZipCode + '&business.address.country=' + acctCountry + '&contractLength=' + contractLength;
     
-    
-        System.Debug('** Built URL: ' + salesWizardBaseURL + consumerName + '/' + oppId + urlParams);
+        finalURL = salesWizardBaseURL + consumerName + '/' + oppId + urlParams;
+        System.Debug('** Built URL: ' + finalURL);
         
         // build URL from base and retrieved data
-        PageReference retURL = new PageReference(salesWizardBaseURL + consumerName + '/' + oppId + urlParams);
+        PageReference retURL = new PageReference(finalURL);
         retURL.setRedirect(true);
         
         return retURL;
@@ -73,6 +74,8 @@ public with sharing class LaunchSalesWizardController {
                     Client_Phone__c,
                     Client_Email__c,
                     Client_Full_Name__c,
+                    Client_First_Name__c,
+                    Client_Last_Name__c,
                     Contract_Term_in_months__c
                FROM Opportunity
               WHERE Id = :opportunityId]){
@@ -87,20 +90,21 @@ public with sharing class LaunchSalesWizardController {
             contactPhone = opp.Client_Phone__c;
             contactEmail = opp.Client_Email__c;
             contactFullNm = opp.Client_Full_Name__c;
+            contactFirstNm = opp.Client_First_Name__c;
+            contactLastNm = opp.Client_Last_Name__c;
             contractLength = ((opp.Contract_Term_in_months__c != null && opp.Contract_Term_in_months__c > 0) ? String.valueOf(opp.Contract_Term_in_months__c) : String.valueOf(6));
             
+            System.Debug('*** Full Name: ' + contactFullNm);
+            System.Debug('*** First Name: ' + contactFirstNm);
+            System.Debug('*** Last Name: ' + contactLastNm);
             System.Debug('** Contract Length: ' + contractLength);
             
             // parse out first and last name from Full Name
-            if(contactFullNm.trim().length() > 0 && contactFullNm.Contains(' ')){
+            //if(contactFullNm.trim().length() > 0 && contactFullNm.Contains(' ')){
             
-                contactFirstNm = contactFullNm.Substring(0, contactFullNm.indexOf(' '));
-                contactLastNm = contactFullNm.Substring(contactFullNm.indexOf(' '), contactFullNm.length());
-            
-                System.Debug('*** Full Name: ' + contactFullNm);
-                System.Debug('*** First Name: ' + contactFirstNm);
-                System.Debug('*** Last Name: ' + contactLastNm);
-            }
+                //contactFirstNm = contactFullNm.Substring(0, contactFullNm.indexOf(' '));
+                //contactLastNm = contactFullNm.Substring(contactFullNm.indexOf(' '), contactFullNm.length());
+            //}
         }
     
         if(acctIds.size() > 0){

@@ -103,6 +103,10 @@
         <apexPage>PerfectCall_Dialer</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>LaunchSalesWizard</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
