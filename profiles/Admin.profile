@@ -1271,6 +1271,10 @@
         <apexClass>icTestServiceWBNOptimizationCasesAutom</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LaunchSalesWizardController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -1533,6 +1537,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>QualityTeam_RepMgmt</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>LaunchSalesWizard</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <fieldPermissions>
