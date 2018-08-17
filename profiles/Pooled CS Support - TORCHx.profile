@@ -31060,6 +31060,11 @@
         <field>Organic_Analysis__c.Location_Group_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.ageWeekdayHours__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments>
