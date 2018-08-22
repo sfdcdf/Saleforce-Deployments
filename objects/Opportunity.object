@@ -8949,183 +8949,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
-        <fullName>Products__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>What products are being purchased in this opportunity?</inlineHelpText>
-        <label>Products Sold</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Call Miner</fullName>
-                    <default>false</default>
-                    <label>Call Miner</label>
-                </value>
-                <value>
-                    <fullName>Centermark</fullName>
-                    <default>false</default>
-                    <label>Centermark</label>
-                </value>
-                <value>
-                    <fullName>Centermark Lite</fullName>
-                    <default>false</default>
-                    <label>Centermark Lite</label>
-                </value>
-                <value>
-                    <fullName>Client Side Organic</fullName>
-                    <default>false</default>
-                    <label>Client Side Organic</label>
-                </value>
-                <value>
-                    <fullName>Corporate Funded Display</fullName>
-                    <default>false</default>
-                    <label>Corporate Funded Display</label>
-                </value>
-                <value>
-                    <fullName>Corporate Funded Organic</fullName>
-                    <default>false</default>
-                    <label>Corporate Funded Organic</label>
-                </value>
-                <value>
-                    <fullName>Corporate Funded PPC</fullName>
-                    <default>false</default>
-                    <label>Corporate Funded PPC</label>
-                </value>
-                <value>
-                    <fullName>Corporate Website</fullName>
-                    <default>false</default>
-                    <label>Corporate Website</label>
-                </value>
-                <value>
-                    <fullName>Corp Paid Reviews</fullName>
-                    <default>false</default>
-                    <label>Corp Paid Reviews</label>
-                </value>
-                <value>
-                    <fullName>Custom Implementation</fullName>
-                    <default>false</default>
-                    <label>Custom Implementation</label>
-                </value>
-                <value>
-                    <fullName>Display</fullName>
-                    <default>false</default>
-                    <label>Display</label>
-                </value>
-                <value>
-                    <fullName>Email</fullName>
-                    <default>false</default>
-                    <label>Email</label>
-                </value>
-                <value>
-                    <fullName>Email (Integrated)</fullName>
-                    <default>false</default>
-                    <label>Email (Integrated)</label>
-                </value>
-                <value>
-                    <fullName>Email (Non-Integrated)</fullName>
-                    <default>false</default>
-                    <label>Email (Non-Integrated)</label>
-                </value>
-                <value>
-                    <fullName>Facebook</fullName>
-                    <default>false</default>
-                    <label>Facebook</label>
-                </value>
-                <value>
-                    <fullName>Foundations</fullName>
-                    <default>false</default>
-                    <label>Foundations</label>
-                </value>
-                <value>
-                    <fullName>Get Found</fullName>
-                    <default>false</default>
-                    <label>Get Found</label>
-                </value>
-                <value>
-                    <fullName>Google 360</fullName>
-                    <default>false</default>
-                    <label>Google 360</label>
-                </value>
-                <value>
-                    <fullName>IL Paid Foundations</fullName>
-                    <default>false</default>
-                    <label>IL Paid Foundations</label>
-                </value>
-                <value>
-                    <fullName>IL Paid PPC</fullName>
-                    <default>false</default>
-                    <label>IL Paid PPC</label>
-                </value>
-                <value>
-                    <fullName>IL Paid Reviews</fullName>
-                    <default>false</default>
-                    <label>IL Paid Reviews</label>
-                </value>
-                <value>
-                    <fullName>Leads by Web / G1</fullName>
-                    <default>false</default>
-                    <label>Leads by Web / G1</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse</fullName>
-                    <default>false</default>
-                    <label>Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>Local Business Listings</fullName>
-                    <default>false</default>
-                    <label>Local Business Listings</label>
-                </value>
-                <value>
-                    <fullName>Local SEO</fullName>
-                    <default>false</default>
-                    <label>Local SEO</label>
-                </value>
-                <value>
-                    <fullName>National SEO</fullName>
-                    <default>false</default>
-                    <label>National SEO</label>
-                </value>
-                <value>
-                    <fullName>None</fullName>
-                    <default>false</default>
-                    <label>None</label>
-                </value>
-                <value>
-                    <fullName>Organic</fullName>
-                    <default>false</default>
-                    <label>Organic</label>
-                </value>
-                <value>
-                    <fullName>PPC</fullName>
-                    <default>false</default>
-                    <label>PPC</label>
-                </value>
-                <value>
-                    <fullName>Reviews</fullName>
-                    <default>false</default>
-                    <label>Reviews</label>
-                </value>
-                <value>
-                    <fullName>Website</fullName>
-                    <default>false</default>
-                    <label>Website</label>
-                </value>
-                <value>
-                    <fullName>Website Template</fullName>
-                    <default>false</default>
-                    <label>Website Template</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>5</visibleLines>
-    </fields>
-    <fields>
         <fullName>Projected_Revenue__c</fullName>
         <externalId>false</externalId>
         <formula>Total_Amount__c  *  Probability</formula>
@@ -15769,6 +15592,188 @@ Used by YBN.</description>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Products__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What products are being purchased in this opportunity?</inlineHelpText>
+        <label>Products Sold</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Miner</fullName>
+                    <default>false</default>
+                    <label>Call Miner</label>
+                </value>
+                <value>
+                    <fullName>Centermark</fullName>
+                    <default>false</default>
+                    <label>Centermark</label>
+                </value>
+                <value>
+                    <fullName>Centermark Lite</fullName>
+                    <default>false</default>
+                    <label>Centermark Lite</label>
+                </value>
+                <value>
+                    <fullName>Client Side Organic</fullName>
+                    <default>false</default>
+                    <label>Client Side Organic</label>
+                </value>
+                <value>
+                    <fullName>Corporate Funded Display</fullName>
+                    <default>false</default>
+                    <label>Corporate Funded Display</label>
+                </value>
+                <value>
+                    <fullName>Corporate Funded Organic</fullName>
+                    <default>false</default>
+                    <label>Corporate Funded Organic</label>
+                </value>
+                <value>
+                    <fullName>Corporate Funded PPC</fullName>
+                    <default>false</default>
+                    <label>Corporate Funded PPC</label>
+                </value>
+                <value>
+                    <fullName>Corporate Website</fullName>
+                    <default>false</default>
+                    <label>Corporate Website</label>
+                </value>
+                <value>
+                    <fullName>Corp Paid Reviews</fullName>
+                    <default>false</default>
+                    <label>Corp Paid Reviews</label>
+                </value>
+                <value>
+                    <fullName>Custom Implementation</fullName>
+                    <default>false</default>
+                    <label>Custom Implementation</label>
+                </value>
+                <value>
+                    <fullName>Display</fullName>
+                    <default>false</default>
+                    <label>Display</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Email (Integrated)</fullName>
+                    <default>false</default>
+                    <label>Email (Integrated)</label>
+                </value>
+                <value>
+                    <fullName>Email (Non-Integrated)</fullName>
+                    <default>false</default>
+                    <label>Email (Non-Integrated)</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+                <value>
+                    <fullName>Foundations</fullName>
+                    <default>false</default>
+                    <label>Foundations</label>
+                </value>
+                <value>
+                    <fullName>Get Found</fullName>
+                    <default>false</default>
+                    <label>Get Found</label>
+                </value>
+                <value>
+                    <fullName>Google 360</fullName>
+                    <default>false</default>
+                    <label>Google 360</label>
+                </value>
+                <value>
+                    <fullName>IL Paid Foundations</fullName>
+                    <default>false</default>
+                    <label>IL Paid Foundations</label>
+                </value>
+                <value>
+                    <fullName>IL Paid PPC</fullName>
+                    <default>false</default>
+                    <label>IL Paid PPC</label>
+                </value>
+                <value>
+                    <fullName>IL Paid Reviews</fullName>
+                    <default>false</default>
+                    <label>IL Paid Reviews</label>
+                </value>
+                <value>
+                    <fullName>Leads by Web / G1</fullName>
+                    <default>false</default>
+                    <label>Leads by Web / G1</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>false</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>Local Business Listings</fullName>
+                    <default>false</default>
+                    <label>Local Business Listings</label>
+                </value>
+                <value>
+                    <fullName>Local SEO</fullName>
+                    <default>false</default>
+                    <label>Local SEO</label>
+                </value>
+                <value>
+                    <fullName>National SEO</fullName>
+                    <default>false</default>
+                    <label>National SEO</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Organic</fullName>
+                    <default>false</default>
+                    <label>Organic</label>
+                </value>
+                <value>
+                    <fullName>PPC</fullName>
+                    <default>false</default>
+                    <label>PPC</label>
+                </value>
+                <value>
+                    <fullName>PPC Location Adoption</fullName>
+                    <default>false</default>
+                    <label>PPC Location Adoption</label>
+                </value>
+                <value>
+                    <fullName>Reviews</fullName>
+                    <default>false</default>
+                    <label>Reviews</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+                <value>
+                    <fullName>Website Template</fullName>
+                    <default>false</default>
+                    <label>Website Template</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -64573,6 +64578,10 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>PPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPC Location Adoption</fullName>
                 <default>false</default>
             </values>
             <values>
