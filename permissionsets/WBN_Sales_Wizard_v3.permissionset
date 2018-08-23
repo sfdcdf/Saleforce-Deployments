@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access to the VisualForce Page which launches the Sales Wizard for Yodle Live.  Permissions for this ill also need to be coordinated with a COMP Ticket to grant user access to YL</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>WBN Sales Wizard v3</label>
+    <license>Salesforce</license>
+    <pageAccesses>
+        <apexPage>LaunchSalesWizard</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>
