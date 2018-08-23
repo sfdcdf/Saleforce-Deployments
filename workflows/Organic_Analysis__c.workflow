@@ -3174,10 +3174,6 @@ not(OwnerId = "00560000001ua2i"))</formula>
     </rules>
     <rules>
         <fullName>Pin Added to Maps Initial Claiming Object</fullName>
-        <actions>
-            <name>Maps_Initial_Claiming_Pin_Added</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
