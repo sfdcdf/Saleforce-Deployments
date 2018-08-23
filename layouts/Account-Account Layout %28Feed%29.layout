@@ -46,7 +46,8 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
@@ -1584,10 +1585,15 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Subject__c</fields>
         <fields>Status__c</fields>
+        <fields>Outcome__c</fields>
         <fields>QA_Type__c</fields>
+        <fields>RECORDTYPE</fields>
         <fields>Created_Date__c</fields>
         <relatedList>Quality_Case__c.Account_Name__c</relatedList>
+        <sortField>Created_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedContentNoteList</relatedList>

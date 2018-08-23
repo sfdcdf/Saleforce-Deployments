@@ -46,8 +46,7 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
@@ -1389,6 +1388,18 @@
         <fields>OPPORTUNITY.AMOUNT</fields>
         <fields>OPPORTUNITY.CLOSE_DATE</fields>
         <relatedList>RelatedOpportunityList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Subject__c</fields>
+        <fields>Status__c</fields>
+        <fields>Outcome__c</fields>
+        <fields>QA_Type__c</fields>
+        <fields>RECORDTYPE</fields>
+        <fields>Created_Date__c</fields>
+        <relatedList>Quality_Case__c.Account_Name__c</relatedList>
+        <sortField>Created_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>MLS__c.NAME</fields>
