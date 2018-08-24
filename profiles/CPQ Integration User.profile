@@ -32047,10 +32047,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-DuplicateRecordSet</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Entitlement</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -32121,5 +32117,9 @@
     <tabVisibilities>
         <tab>standard-UserProvisioningRequest</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DuplicateRecordSet</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

@@ -32634,17 +32634,17 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
