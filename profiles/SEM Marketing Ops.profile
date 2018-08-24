@@ -32707,6 +32707,9 @@
         <layout>Activity_Log__c-Activity Log Layout</layout>
         <recordType>Activity_Log__c.Custom_Code</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>API_Integration_Setting__mdt-API Integration Setting Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

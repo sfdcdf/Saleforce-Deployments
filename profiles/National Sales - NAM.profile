@@ -33840,6 +33840,9 @@
         <layout>Activity_Log__c-Activity Log Layout</layout>
         <recordType>Activity_Log__c.Custom_Code</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>API_Integration_Setting__mdt-API Integration Setting Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35152,6 +35155,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Activity_Log__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>API_Integration_Setting__mdt</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>

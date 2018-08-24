@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Application_Name__c</fullName>
+        <description>Name of application setting is relevant for</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Application Name</label>
+        <length>50</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Security_Token__c</fullName>
+        <description>Security token used to validate communication to external endpoint</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Security Token</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <description>API Integration attributes for communicating with external endpoints</description>
+    <label>API Integration Setting</label>
+    <pluralLabel>API Integration Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -33301,6 +33301,9 @@
         <layout>Quality_Case__c-Local Master Quality</layout>
         <recordType>Quality_Case__c.Local_Master_Quality</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>API_Integration_Setting__mdt-API Integration Setting Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35970,10 +35973,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Quality_Case__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>SMS_Tracking__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -36136,5 +36135,9 @@
     <tabVisibilities>
         <tab>Activity_Log__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Quality_Case__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
 </Profile>
