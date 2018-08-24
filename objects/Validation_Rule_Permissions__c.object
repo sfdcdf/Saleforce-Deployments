@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
         <fullName>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 1 Cases</description>
@@ -6,7 +7,8 @@
         <label>Lead Stream TP 1 Scheduled Call Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 2 Cases</description>
@@ -14,7 +16,8 @@
         <label>Lead Stream TP 2 Scheduled Call Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Stream_TP_3_Scheduled_Call_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for scheduling Lead Stream Touch Plan 3 Cases</description>
@@ -22,7 +25,8 @@
         <label>Lead Stream TP 3 Scheduled Call Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Stream_TP_Did_Not_Complete_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status to 'Did Not Complete'</description>
@@ -30,7 +34,8 @@
         <label>Lead Stream TP Did Not Complete Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Permission_Summary__c</fullName>
         <description>Short summary/ description for the use of the permission</description>
         <externalId>false</externalId>
@@ -40,7 +45,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Stream_TP_1_Owner_Update_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for updating owner for Lead Stream Touch Plan Cases</description>
@@ -48,7 +54,8 @@
         <label>Lead Stream TP 1 Owner Update Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Stream_TP_Churn_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status to 'Churned'</description>
@@ -56,4 +63,32 @@
         <label>Lead Stream TP Churned Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility></CustomObject>
+    </fields>
+    <fields>
+        <fullName>Lead_Stream_TP_From_DNC_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status from 'Did Not Complete'</description>
+        <externalId>false</externalId>
+        <label>Lead Stream TP From DNC Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
+    <listViews>
+        <fullName>All_Details</fullName>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</columns>
+        <columns>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</columns>
+        <columns>Lead_Stream_TP_3_Scheduled_Call_Bypass__c</columns>
+        <columns>Lead_Stream_TP_Did_Not_Complete_Bypass__c</columns>
+        <columns>Lead_Stream_TP_1_Owner_Update_Bypass__c</columns>
+        <columns>Lead_Stream_TP_Churn_Bypass__c</columns>
+        <columns>Lead_Stream_TP_From_DNC_Bypass__c</columns>
+        <columns>Permission_Summary__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All -Details</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+</CustomObject>
