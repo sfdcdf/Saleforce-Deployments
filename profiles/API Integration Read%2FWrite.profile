@@ -38415,27 +38415,6 @@
     <recordTypeVisibilities>
         <default>true</default>
         <personAccountDefault>true</personAccountDefault>
-        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>Case.Master</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -38444,6 +38423,26 @@
         <personAccountDefault>true</personAccountDefault>
         <recordType>Notification_Log__c.WBN_Log</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
