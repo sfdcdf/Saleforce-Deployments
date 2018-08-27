@@ -11269,34 +11269,6 @@ ispickval( Reason_Detail__c , "40 Day Touch")))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Outbound Call - Auto Close After 14 days</fullName>
-        <actions>
-            <name>Outbound_Call_Auto_Close_After_14_days</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Days_Open__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>14</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Scheduled_Call__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>notEqual</operation>
-            <value>Adoption Call</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Outbound Call - Auto Close After 24 days</fullName>
         <actions>
             <name>Outbound_Call_Auto_Close_After_14_days</name>
@@ -15455,6 +15427,34 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Status</field>
             <operation>equals</operation>
             <value>Unscheduled - Reattempt,Unscheduled - 4+ Attempts</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Outbound Call - Auto Close After 14 days</fullName>
+        <actions>
+            <name>Outbound_Call_Auto_Close_After_14_days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Days_Open__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>14</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Scheduled_Call__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>notEqual</operation>
+            <value>Adoption Call</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
