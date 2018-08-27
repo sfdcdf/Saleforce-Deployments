@@ -15748,6 +15748,32 @@ Used by YBN.</description>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Approval_Notes__c</fullName>
+        <description>Approval Process Notes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Add to this field for the approval process</inlineHelpText>
+        <label>Approval Notes</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IMS_Email__c</fullName>
+        <description>CSC and IMS Rep Email Field from Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CSC and IMS Rep Email Field from Account - populated by automation from account</inlineHelpText>
+        <label>IMS Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -79195,6 +79221,14 @@ ISPICKVAL(StageName,"Closed Won"),
         <errorMessage>The Opportunity Name cannot be greater than 80 characters (includes spaces).</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.Id = "012600000009YRT"
+ &amp;&amp; 
+NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
+        <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>YBN_Lock_Opp_Closed_Won_Stage</fullName>
         <active>true</active>
         <description>Lock the opportunity from being edited when the stage is set to Closed Won</description>
@@ -79214,17 +79248,16 @@ ISPICKVAL(StageName,"Closed Won"),
   NOT(ISCHANGED(First_Activity_DateTime__c)),
   NOT(ISCHANGED(Strategic_Project_Manager__c)),
   NOT(ISCHANGED( Contract_Auto_Created__c )),
-  NOT(ISCHANGED(Lost_Reason__c))
+  NOT(ISCHANGED(Lost_Reason__c)),
+  NOT(ISCHANGED(IMS_Email__c )),
+/* begin added for Approval Process*/
+AND(
+  NOT(ISCHANGED(Approval_Opp_List_Review_Status__c)),
+  NOT(Text(Approval_Opp_List_Review_Status__c)= "Submit")
+)
+/* end added for Approval Process*/
 )</errorConditionFormula>
         <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
-        <active>true</active>
-        <errorConditionFormula>RecordType.Id = "012600000009YRT"
- &amp;&amp; 
-NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
-        <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
