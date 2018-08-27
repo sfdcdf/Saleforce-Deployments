@@ -6,6 +6,9 @@
         <submitter>Sys_Local_Admin</submitter>
         <type>group</type>
     </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
     <approvalPageFields>
         <field>Account</field>
         <field>Name</field>
@@ -228,7 +231,7 @@ Send to Emily Garza</description>
             <type>Task</type>
         </action>
     </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
             <name>WBN_APRVL_Status_Update_Step4_Reject</name>
@@ -239,7 +242,7 @@ Send to Emily Garza</description>
             <type>Alert</type>
         </action>
     </finalRejectionActions>
-    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
             <name>WBN_APRVL_Status_Update_Step0_InProgrss</name>
