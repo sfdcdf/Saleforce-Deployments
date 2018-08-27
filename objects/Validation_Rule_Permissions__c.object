@@ -91,4 +91,20 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>WORKING_Check</fullName>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Stream_TP_Did_Not_Complete_Bypass__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>WORKING-Check</label>
+        <sharedTo>
+            <group>Sys_Local_Admin</group>
+        </sharedTo>
+    </listViews>
 </CustomObject>
