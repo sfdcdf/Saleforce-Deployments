@@ -39,6 +39,69 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <fields>
+        <fullName>Application_Name__c</fullName>
+        <description>Name of the external application/ resource</description>
+        <externalId>false</externalId>
+        <label>Application Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Description__c</fullName>
+        <description>Description/ summary of how the configuration record is used/ applied</description>
+        <externalId>false</externalId>
+        <label>Configuration Description</label>
+        <length>500</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Configuration_Key__c</fullName>
+        <description>Configuration key related to the value (of the key-value pair)</description>
+        <externalId>false</externalId>
+        <label>Configuration Key</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Name__c</fullName>
+        <description>Name of the configuration/ setting for the external application/ resource</description>
+        <externalId>false</externalId>
+        <label>Configuration Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Value__c</fullName>
+        <description>Configuration value related to the key (of the key-value pair)</description>
+        <externalId>false</externalId>
+        <label>Configuration Value</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Flag/ indicator signifying of the configuration record is active</description>
+        <externalId>false</externalId>
+        <label>Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -60,7 +123,16 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Application Configurations</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Application_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Configuration_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Configuration_Key__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Configuration_Value__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Configuration_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Is_Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
@@ -68,4 +140,16 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <recordTypes>
+        <fullName>Salesforce_NET_Services</fullName>
+        <active>true</active>
+        <description>Record Type used for Salesforce .NET Service Configurations</description>
+        <label>Salesforce .NET Services</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Yodle_Live_Services</fullName>
+        <active>true</active>
+        <description>Record Type used for Yodle Live Service Configurations</description>
+        <label>Yodle Live Services</label>
+    </recordTypes>
 </CustomObject>

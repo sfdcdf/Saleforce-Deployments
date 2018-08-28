@@ -4728,6 +4728,14 @@
     <layoutAssignments>
         <layout>Application_Configuration__c-Application Configuration Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Application_Configuration__c-Application Configuration Layout</layout>
+        <recordType>Application_Configuration__c.Salesforce_NET_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Application_Configuration__c-Application Configuration Layout</layout>
+        <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -6138,6 +6146,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Activity_Log__c.Custom_Code</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Application_Configuration__c.Salesforce_NET_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>

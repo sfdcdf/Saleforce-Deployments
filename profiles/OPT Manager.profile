@@ -31526,6 +31526,16 @@
         <field>Case.ageWeekdayHours__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Application_Configuration__c.Configuration_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Application_Configuration__c.Is_Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
         <recordType>Account.Standard</recordType>
@@ -33306,6 +33316,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Application_Configuration__c-Application Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Application_Configuration__c-Application Configuration Layout</layout>
+        <recordType>Application_Configuration__c.Salesforce_NET_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Application_Configuration__c-Application Configuration Layout</layout>
+        <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
@@ -35789,6 +35807,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Application_Configuration__c.Salesforce_NET_Services</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
