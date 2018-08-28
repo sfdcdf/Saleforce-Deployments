@@ -209,9 +209,13 @@
     <tabs>Notification_Log__c</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Activity_Log__c</tabs>
+    <tabs>Application_Configuration__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Activity_Log__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Application_Configuration__c</tab>
         </mappings>
         <mappings>
             <tab>CS_Operations__c</tab>

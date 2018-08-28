@@ -32386,6 +32386,9 @@
     <layoutAssignments>
         <layout>API_Integration_Setting__mdt-API Integration Setting Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Application_Configuration__c-Application Configuration Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -34127,6 +34130,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Activity_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Application_Configuration__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>

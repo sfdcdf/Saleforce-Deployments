@@ -218,12 +218,16 @@
     <tabs>Notification_Log__c</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Activity_Log__c</tabs>
+    <tabs>Application_Configuration__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_MLS__c</tab>
         </mappings>
         <mappings>
             <tab>Activity_Log__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Application_Configuration__c</tab>
         </mappings>
         <mappings>
             <tab>Attempts_Made__c</tab>

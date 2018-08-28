@@ -11,4 +11,5 @@
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Activity_Log__c</tabs>
+    <tabs>Application_Configuration__c</tabs>
 </CustomApplication>

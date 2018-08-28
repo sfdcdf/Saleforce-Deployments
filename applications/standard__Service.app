@@ -42,4 +42,5 @@
     <tabs>Notification_Log__c</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Activity_Log__c</tabs>
+    <tabs>Application_Configuration__c</tabs>
 </CustomApplication>

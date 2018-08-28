@@ -20,11 +20,15 @@
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Activity_Log__c</tabs>
+    <tabs>Application_Configuration__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>Activity_Log__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Application_Configuration__c</tab>
         </mappings>
         <mappings>
             <tab>Google_Location_Group__c</tab>

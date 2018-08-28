@@ -201,7 +201,11 @@
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
+    <tabs>Application_Configuration__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Application_Configuration__c</tab>
+        </mappings>
         <mappings>
             <tab>Best_Practice_Evaluation__c</tab>
         </mappings>

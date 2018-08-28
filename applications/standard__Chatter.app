@@ -16,4 +16,5 @@
     <tabs>CorpSDR_Demo_Questionaire__c</tabs>
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Application_Configuration__c</tabs>
 </CustomApplication>
