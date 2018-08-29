@@ -355,7 +355,9 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                     newEvent.RecordTypeId = calendarBlockerEventRecordTypeId;
                     newEvent.WhatId = record.Id;
                     newEvent.OwnerId = record.OwnerId;
-                    newEvent.DurationInMinutes = ((String.isNotBlank(record.Reason) && record.Reason.equalsIgnoreCase('CSC')) || (!record.Product_Type__c.equalsIgnoreCase('Leads By Web') || !record.Product_Type__c.equalsIgnoreCase('Lead Stream ATV'))) ? 60 : 30;
+                    //newEvent.DurationInMinutes = ((String.isNotBlank(record.Reason) && record.Reason.equalsIgnoreCase('CSC')) || (!record.Product_Type__c.equalsIgnoreCase('Leads By Web') || !record.Product_Type__c.equalsIgnoreCase('Lead Stream ATV'))) ? 60 : 30;
+                    //newEvent.DurationInMinutes = ((String.isNotBlank(record.Reason) && record.Reason.equalsIgnoreCase('CSC')) || (!record.Product_Type__c.contains('Lead'))) ? 60 : 30;
+                    newEvent.DurationInMinutes = (String.isNotBlank(record.Reason) && record.Reason.equalsIgnoreCase('CS Touch Plan')) ? 30 : 60;
                     newEvent.StartDateTime = record.Scheduled_Call__c;
                     newEvent.Subject = record.Client_ID__c + ' | ' + record.Reason;
                     newEvent.IsVisibleInSelfService = true;
@@ -385,6 +387,7 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                 if(record.RecordTypeId == wbnOutboundTouchpointRecordType && !record.IsClosed && record.Scheduled_Call__c != oldRecord.Scheduled_Call__c){
                     wbnTouchpointCaseIdSet.add(record.Id);
                 }else if(record.RecordTypeId == outboundCallCaseId && !record.IsClosed && (record.Scheduled_Call__c != oldRecord.Scheduled_Call__c || record.OwnerId != oldRecord.OwnerId)){
+
                     touchpointCaseIdSet.add(record.Id);
                 }
 
@@ -477,18 +480,23 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                 }
 
                 if(!updateEventList.isEmpty()){
+                    system.debug('*** in update event list ****');
                     update updateEventList;
                 }
                 if(!touchpointCaseIdSet.isEmpty()){
+                    system.debug('in 1 ****');
                     List<Event> newEventBlocker = new List<Event>();
                     for(Case cs : [select Id, AccountId, Client_ID__c, Reason, OwnerId, Owner.Type, Scheduled_Call__c, Product_Type__c from Case where Id in : touchpointCaseIdSet]){
                         system.debug(cs.OwnerId);
                         if((Test.isRunningTest() && !System.isBatch() && cs.Scheduled_Call__c != null && String.valueof(cs.OwnerId).startsWith('005')) || (cs.Scheduled_Call__c != null && String.valueof(cs.OwnerId).startsWith('005'))){
+                            system.debug('**** before new event *** in update');
                             Event newEvent = new Event();
                             newEvent.RecordTypeId = calendarBlockerEventRecordTypeId;
                             newEvent.WhatId = cs.Id;
                             newEvent.OwnerId = cs.OwnerId;
-                            newEvent.DurationInMinutes = ((String.isNotBlank(cs.Reason) && cs.Reason.equalsIgnoreCase('CSC')) || (!cs.Product_Type__c.equalsIgnoreCase('Leads By Web') || !cs.Product_Type__c.equalsIgnoreCase('Lead Stream ATV'))) ? 60 : 30;
+                            //newEvent.DurationInMinutes = ((String.isNotBlank(cs.Reason) && cs.Reason.equalsIgnoreCase('CSC')) || (!cs.Product_Type__c.equalsIgnoreCase('Leads By Web') || !cs.Product_Type__c.equalsIgnoreCase('Lead Stream ATV'))) ? 60 : 30;
+                            //newEvent.DurationInMinutes = ((String.isNotBlank(cs.Reason) && cs.Reason.equalsIgnoreCase('CSC')) || (!cs.Product_Type__c.contains('Lead'))) ? 60 : 30;
+                            newEvent.DurationInMinutes = (String.isNotBlank(cs.Reason) && cs.Reason.equalsIgnoreCase('CS Touch Plan')) ? 30 : 60;
                             newEvent.StartDateTime = cs.Scheduled_Call__c;
                             newEvent.Subject = cs.Client_ID__c + ' | ' + cs.Reason;
                             newEvent.IsVisibleInSelfService = true;
