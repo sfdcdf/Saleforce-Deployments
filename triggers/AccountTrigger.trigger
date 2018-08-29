@@ -1,4 +1,4 @@
-trigger AccountTrigger on Account (before insert, after insert, before update, after update) {
+trigger AccountTrigger on Account (before insert, after insert, before update, after update, after delete) {
     if(Test.isRunningTest()){
         TestCustomSettingInitializer testInit = new TestCustomSettingInitializer();
     }
@@ -20,6 +20,31 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
     Set<String> wbnClientTypeSet = new Set<String>{'YBN', 'National Account', 'National Master Account'};
     Set<Id> wbnRecordTypeIdSet = new Set<Id>{Schema.SObjectType.Account.getRecordTypeInfosByName().get('Standard').getRecordTypeId(), Schema.SObjectType.Account.getRecordTypeInfosByName().get('YBN Master Account').getRecordTypeId()};
 
+    Id multiLocationParentRecordTypeID = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Multi Location Parent').getRecordTypeId();
+
+    Map<String, String> mapAccountIdMlpId = new Map<String, String>();
+    List<Id> parentsIdsToGetChilds = new List<Id>();
+
+    Integer maxMlpId = 0;
+
+    for(Account a : [SELECT Id, Multiple_Location_Parent_ID__c FROM Account WHERE RecordTypeId =: multiLocationParentRecordTypeID]){
+        if(String.isNotBlank(a.Multiple_Location_Parent_ID__c)) {
+            mapAccountIdMlpId.put(a.Id, a.Multiple_Location_Parent_ID__c);
+            Integer currentMlpId = Integer.valueOf(a.Multiple_Location_Parent_ID__c.right(a.Multiple_Location_Parent_ID__c.length() - 4));
+            if (currentMlpId > maxMlpId) {
+                maxMlpId = currentMlpId;
+            }
+        }
+    }
+
+    system.debug('Trigger is before ' + Trigger.isBefore );
+    system.debug('Trigger is insert ' + Trigger.isInsert );
+    system.debug('Trigger is update ' + Trigger.isUpdate );
+    system.debug('Trigger is delete ' + Trigger.isDelete );
+    system.debug('trigger new ===> ' + Trigger.new);
+    System.debug('trigger old ===> ' + Trigger.old);
+    system.debug('mapAccountIdMlpId ===> ' + mapAccountIdMlpId);
+
     Set<Id> partnerParentAccountId = new Set<Id>();
     for(SFDC_Account_to_Marketo_Field_Mappings__c sfdcAccountMarketoFieldMap : SFDC_Account_to_Marketo_Field_Mappings__c.getAll().values()){
         if(sfdcAccountMarketoFieldMap.Sync_Field__c){
@@ -27,10 +52,12 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
         }
     }
 
+
     Set<String> zipCodeNeedPopIdSet = new Set<String>();
 
     if(trigger.isBefore && (trigger.isInsert || trigger.isUpdate)){
         for(Account record : trigger.New){
+
             if(String.isNotBlank(record.BillingPostalCode)){
                 if(trigger.isInsert){
                     zipCodeNeedPopIdSet.add(record.BillingPostalCode);
@@ -38,7 +65,22 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
                     zipCodeNeedPopIdSet.add(record.BillingPostalCode);
                 }
             }
+            if(record.RecordTypeId == multiLocationParentRecordTypeID && String.isBlank(record.Multiple_Location_Parent_ID__c)){
+                maxMlpId++;
+                record.Multiple_Location_Parent_ID__c = 'MLP-' + maxMlpId;
+                mapAccountIdMlpId.put(record.Id, record.Multiple_Location_Parent_ID__c);
+                parentsIdsToGetChilds.add(record.Id);
+            }
+
+            if(mapAccountIdMlpId.containsKey(record.ParentId)){
+
+                record.MLP_Group_ID__c = mapAccountIdMlpId.get(record.ParentId);
+
+            }
+
         }
+
+
     }
 
     Map<String, Id> zipCodeToPopIdMap = new Map<String, Id>();
@@ -71,6 +113,13 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
 
             if(oldRecord.Multi_Location_Account__c && UserInfo.getUserId() == '005320000053VLfAAM' && record.ParentId != oldRecord.ParentId && String.isBlank(record.ParentId)){
                 record.ParentId = oldRecord.ParentId;
+            }
+
+            if(mapAccountIdMlpId.containsKey(record.ParentId)){
+                record.MLP_Group_ID__c = mapAccountIdMlpId.get(record.ParentId);
+            }
+            else {
+                record.MLP_Group_ID__c = '';
             }
 
             if(record.Sync_to_Marketo__c && String.isBlank(record.Email__c)){
@@ -195,6 +244,10 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
         for (Account record : trigger.New) {
             Account oldRecord = trigger.oldMap.get(record.Id);
 
+            if(record.RecordTypeId == multiLocationParentRecordTypeID && (record.Multiple_Location_Parent_ID__c != oldRecord.Multiple_Location_Parent_ID__c)){
+                parentsIdsToGetChilds.add(record.Id);
+            }
+
             if(String.isNotBlank(record.ParentId) && record.Status__c != oldRecord.Status__c && (record.Status__c == 'LIVE' || oldRecord.Status__c == 'LIVE')){
                 partnerParentAccountId.add(record.ParentId);
             }
@@ -298,6 +351,29 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
             }
         }
 
+        if(parentsIdsToGetChilds.size()>0){
+            List<Account> childrenToUpdate = new List<Account>();
+            childrenToUpdate = [
+                    SELECT  Id,
+                            ParentId
+                    FROM    Account
+                    WHERE   ParentId in :parentsIdsToGetChilds
+            ];
+            system.debug('childrenToUpdate before ===> ' + childrenToUpdate);
+            for(Account a : childrenToUpdate){
+                if(mapAccountIdMlpId.containsKey(a.ParentId)){
+                    a.MLP_Group_ID__c = mapAccountIdMlpId.get(a.ParentId);
+                }
+                else {
+                    a.MLP_Group_ID__c = '';
+                }
+
+            }
+            system.debug('childrenToUpdate after ===> ' + childrenToUpdate);
+
+            update childrenToUpdate;
+        }
+
         if(!newEventCalendarBlockerMap.isEmpty()){
             for(Event e : [select WhatId, Id, Subject from Event where Subject in: newEventCalendarBlockerMap.keySet()]){
                 if(newEventCalendarBlockerMap.containsKey(e.Subject)){
@@ -331,6 +407,36 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
                 update updateAccountMLSList;
             }
         }
+    }
+
+    if(Trigger.isAfter && Trigger.isDelete){
+        List<String> mlpIds = new List<String>();
+
+        for(Account a : Trigger.old){
+
+            //if(a.RecordTypeId == multiLocationParentRecordTypeID){
+                mlpIds.add(a.Multiple_Location_Parent_ID__c);
+            //}
+        }
+
+
+
+        if(mlpIds.size()>0){
+            List<Account> childrenToUpdate = new List<Account>();
+            childrenToUpdate = [
+                    SELECT  Id,
+                            ParentId
+                    FROM    Account
+                    WHERE   MLP_Group_ID__c IN :mlpIds
+            ];
+
+            for(Account a : childrenToUpdate){
+                a.MLP_Group_ID__c = '';
+            }
+
+            update childrenToUpdate;
+        }
+
     }
 
     if(!partnerParentAccountId.isEmpty()){

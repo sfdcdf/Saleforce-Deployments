@@ -157,6 +157,10 @@ Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div><
   
   <div class="slds-float--left" style="width:25%">
     <p><apex:image url="{!$Resource.CanadaFlag}" rendered="{!Account.BillingCountry =='CA'}" style="margin-right:5px;"/>
+
+<apex:outputText ><span class="{!IF((Account.Parent.RecordType.Name == "Multi Location Parent"),"lhfsssuhighlight","")}">{!IF
+
+((Account.Parent.RecordType.Name == "Multi Location Parent"),"LOCAL MULTI","")}</span></apex:outputText>
   
 
      <apex:outputText ><span class="{!IF((Account.Parent.RecordTypeId == '01232000000JMzfAAG'),"cpphighlight","")}">{!IF

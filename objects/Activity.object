@@ -3501,6 +3501,14 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <label>Activity Start Time</label>
         <required>false</required>
         <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Related_to_Oppty__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT( WhatId ,3)= '006'</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related to Oppty</label>
+        <type>Checkbox</type>
     </fields><enableFeeds>false</enableFeeds><searchLayouts>
         <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
