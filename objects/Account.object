@@ -12651,7 +12651,27 @@ CASE(
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>Current_Monthly_Revenue__c</fullName>
+        <description>Current monthly revenue for the Account based on business rules and criteria around Days Live</description>
+        <externalId>false</externalId>
+        <label>Current Monthly Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
         <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
@@ -12687,6 +12707,7 @@ CASE(
         <searchFilterFields>SellFire__c</searchFilterFields>
         <searchFilterFields>LH_360_ID__c</searchFilterFields>
         <searchFilterFields>IMS_Rep__c</searchFilterFields>
+        <searchFilterFields>MLP_Group_ID__c</searchFilterFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
@@ -12695,7 +12716,9 @@ CASE(
         <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel>
+        <searchResultsAdditionalFields>MLP_Group_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>A_Plus_Transmissions</fullName>
         <columns>ACCOUNT.NAME</columns>
