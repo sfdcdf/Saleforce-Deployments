@@ -38,9 +38,6 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
@@ -361,6 +358,10 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>WBN_PPC_Restricted_Relationship__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>WBN_SE_Last_Activity__c</field>
@@ -929,7 +930,7 @@
             <quickActionName>FeedItem.ContentNote</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>Account.WBN_Create_Upsell_Opportunity</quickActionName>
+            <quickActionName>Account.WBN_Upsell_Opportunity</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <relatedLists>

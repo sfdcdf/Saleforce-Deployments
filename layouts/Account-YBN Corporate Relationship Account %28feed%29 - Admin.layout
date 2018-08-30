@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Log_Prospecting_Activity_Corporate</customButtons>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -106,10 +107,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Integration__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>WBN_PPC_Restricted_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -404,6 +401,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Competitor__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>WBN_PPC_Restricted_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

@@ -9817,45 +9817,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>LH Master - Disable Newsletter Promo Created</fullName>
-        <actions>
-            <name>Account_Email_Populate_to_Case</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Case_Origin_to_Internal</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Case_Owner_to_LH_Marketing_Associates</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Description_for_Disable_Newsletter_Promo</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Due_Date_to_1_Year_from_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Subject_for_Disable_Newsletter_Promo</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Remove Newsletter Special Pricing</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>LH Master - Escalated</fullName>
         <actions>
             <name>Escalated_Priority</name>
@@ -15442,10 +15403,6 @@ ISCHANGED(Estimated_Completion_Date__c)
     </rules>
     <rules>
         <fullName>LH Master - Custom Message Migration</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Marketing_Associates</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Reason</field>
@@ -15461,10 +15418,6 @@ ISCHANGED(Estimated_Completion_Date__c)
     </rules>
     <rules>
         <fullName>LH Master - Delayed Consumable</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Future_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -15475,6 +15428,41 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Reason</field>
             <operation>equals</operation>
             <value>Delayed Consumables,Site/Listings Teardown,Transports On/Off</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Disable Newsletter Promo Created</fullName>
+        <actions>
+            <name>Account_Email_Populate_to_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Origin_to_Internal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Description_for_Disable_Newsletter_Promo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Due_Date_to_1_Year_from_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Subject_for_Disable_Newsletter_Promo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Remove Newsletter Special Pricing</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

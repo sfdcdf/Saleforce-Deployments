@@ -191,6 +191,10 @@
                 <behavior>Edit</behavior>
                 <field>NAICS__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>WBN_PPC_Restricted_Relationship__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -33,7 +33,8 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -138,10 +139,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>TEMP_WBN_CSD__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>WBN_PPC_Restricted_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -440,6 +437,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Competitor__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>WBN_PPC_Restricted_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

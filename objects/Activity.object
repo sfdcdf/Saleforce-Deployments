@@ -3504,6 +3504,7 @@ BEGINS(WhatId, "001"), "Account","")</formula>
     </fields>
     <fields>
         <fullName>Related_to_Oppty__c</fullName>
+        <description>Used in WBN Upsell Process</description>
         <externalId>false</externalId>
         <formula>LEFT( WhatId ,3)= '006'</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
