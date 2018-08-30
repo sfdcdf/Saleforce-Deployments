@@ -8,6 +8,7 @@ private class OpportunityClosedWonActionsTest
         List<SObject> acctList = Test.LoadData(Account.sObjectType, 'testAccounts');
         List<SObject> oppList = Test.LoadData(Opportunity.sObjectType, 'testOpportunities');
         List<Id> oppIds = new List<Id>();
+        List<Account> dmlAccts = new List<Account>();
         List<Opportunity> dmlOpps = new List<Opportunity>();
         List<Product2> dmlProds = new List<Product2>();
         List<PricebookEntry> dmlPBEs = new List<PricebookEntry>();
@@ -20,7 +21,8 @@ private class OpportunityClosedWonActionsTest
         Id acctId = acct.Id;
         acct.IMS_Rep__c = oppOwner;
         acct.Sales_Rep_Name_YL__c = 'Eugene Ross';
-        update acct;
+        dmlAccts.add(acct);
+        update dmlAccts;
         
         Opportunity opp = (Opportunity)oppList[0];
         Id oppId = opp.Id;
