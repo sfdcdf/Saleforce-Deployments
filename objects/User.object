@@ -1026,6 +1026,37 @@
         </filters>
         <label>Subba Salseforce Active Users</label>
     </listViews>
+    <listViews>
+        <fullName>Subba_Active_API_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>API</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Full_Name__c</field>
+            <operation>contains</operation>
+            <value>WEB</value>
+        </filters>
+        <label>Subba Active API Users</label>
+    </listViews>
     <webLinks>
         <fullName>Loop__Change_DS_Cred</fullName>
         <availability>online</availability>
