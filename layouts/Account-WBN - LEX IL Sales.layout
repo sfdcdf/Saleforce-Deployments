@@ -48,6 +48,9 @@
     </customConsoleComponents>
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -534,13 +537,13 @@
             <quickActionName>New_Demo_Event_WBN_IL_Global</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
+            <quickActionName>Account.WBN_Upsell_Opportunity</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
             <quickActionName>FeedItem.ContentPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.ContentNote</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>Account.WBN_Upsell_Opportunity</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.MobileSmartActions</quickActionName>
