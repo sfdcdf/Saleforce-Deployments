@@ -9817,44 +9817,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>LH Master - Custom Message Migration</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Marketing_Associates</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Custom Message Migration</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Delayed Consumable</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Future_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Delayed Consumables,Site/Listings Teardown,Transports On/Off</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>LH Master - Disable Newsletter Promo Created</fullName>
         <actions>
             <name>Account_Email_Populate_to_Case</name>
@@ -15455,6 +15417,64 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Reason</field>
             <operation>notEqual</operation>
             <value>Adoption Call</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Change to LH Future Request</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Future_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Custom Message Migration,Delayed Consumables,Remove Newsletter Special Pricing,Site/Listings Teardown,Transports On/Off</value>
+        </criteriaItems>
+        <description>Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Custom Message Migration</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Marketing_Associates</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Custom Message Migration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Delayed Consumable</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Future_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Delayed Consumables,Site/Listings Teardown,Transports On/Off</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
