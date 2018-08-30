@@ -12861,7 +12861,15 @@ CASE(
         <label>WBN PPC Restricted Relationship</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
         <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
@@ -12905,7 +12913,9 @@ CASE(
         <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel>
+        <searchResultsAdditionalFields>MLP_Group_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>A_Plus_Transmissions</fullName>
         <columns>ACCOUNT.NAME</columns>
