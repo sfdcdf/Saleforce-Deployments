@@ -11,7 +11,7 @@
     </fieldOverrides>
     <fieldOverrides>
         <field>Name</field>
-        <formula>Account.Name  + &quot; &quot; + &quot;Upsell&quot;</formula>
+        <formula>LEFT(Account.Name,50)&amp; &quot; &quot; &amp; &quot;Upsell&quot; &amp; &quot; &quot; &amp; TEXT(TODAY())</formula>
     </fieldOverrides>
     <fieldOverrides>
         <field>Opportunity_Detail__c</field>
