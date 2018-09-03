@@ -15382,26 +15382,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>LH Master - Change to LH Future Request</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Future_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Custom Message Migration,Delayed Consumables,Remove Newsletter Special Pricing,Site/Listings Teardown,Transports On/Off</value>
-        </criteriaItems>
-        <description>Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>LH Master - Custom Message Migration</fullName>
         <active>false</active>
         <criteriaItems>
@@ -15465,6 +15445,17 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>Remove Newsletter Special Pricing</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Change to LH Future Request</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Future_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one. Using Case to compare if values not in the list</description>
+        <formula>AND( RecordTypeId = "012600000009bZX", /* LH Master RT */ TEXT(PRIORVALUE(Reason)) &lt;&gt; TEXT(Reason) /*True = ISCHANGED*/, /*check if the reason changed to something outside this list */ AND(     Case(      TEXT(Reason),      "Custom Message Migration",1,       "Delayed Consumables", 1,      "Remove Newsletter Special Pricing", 1,      "Site/Listings Teardown", 1,      "Transports On/Off",1,      0)    &lt;&gt;    Case(      TEXT(PRIORVALUE(Reason)),      "Custom Message Migration",1,       "Delayed Consumables", 1,      "Remove Newsletter Special Pricing", 1,      "Site/Listings Teardown", 1,      "Transports On/Off",1,      0) ))</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <tasks>
         <fullName>Mary_Case_Task</fullName>
