@@ -9817,26 +9817,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>LH Master - Escalated</fullName>
-        <actions>
-            <name>Escalated_Priority</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Awaiting Customer Response,Escalated (Dev),Escalated (Internal)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <description>Need to indicate escalated for LH Master cases when in status Awaiting Customer Response and Escalated (Dev)</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>LH Master - Production Team Mistake</fullName>
         <actions>
             <name>Mark_Escalated_Field</name>
@@ -15456,6 +15436,26 @@ ISCHANGED(Estimated_Completion_Date__c)
         <description>Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one. Using Case to compare if values not in the list</description>
         <formula>AND( RecordTypeId = "012600000009bZX", /* LH Master RT */ OR(      ISPICKVAL(Reason, "Custom Message Migration"),     ISPICKVAL(Reason, "Delayed Consumables"),     ISPICKVAL(Reason, "Remove Newsletter Special Pricing"),     ISPICKVAL(Reason, "Site/Listings Teardown"),     ISPICKVAL(Reason, "Transports On/Off") ),  OR(     ISNEW() ,   /*check if the reason changed to something outside this list */   AND(             NOT(ISNEW()), 	   Case( 		 TEXT(Reason), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	   &lt;&gt; 	   Case( 		 TEXT(PRIORVALUE(Reason)), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	) ) )</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Escalated</fullName>
+        <actions>
+            <name>Escalated_Priority</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Awaiting Customer Response,Escalated (Dev),Escalated (Internal),Awaiting Internal Response,Bug Reported</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <description>Need to indicate escalated for LH Master cases when in status Awaiting Customer Response, Awaiting Internal Response, Escalated (Internal), Bug Reported and Escalated (Dev)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>
         <fullName>Mary_Case_Task</fullName>
