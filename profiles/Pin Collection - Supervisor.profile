@@ -31017,6 +31017,11 @@
         <field>Account.Current_Monthly_Revenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Live_Date_Constant__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Austin Client Services %28Feed%29</layout>
     </layoutAssignments>

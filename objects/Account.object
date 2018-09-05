@@ -12676,6 +12676,16 @@ CASE(
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
+    <fields>
+        <fullName>Live_Date_Constant__c</fullName>
+        <description>Live Date that never gets reset if a client gets reactivated</description>
+        <externalId>false</externalId>
+        <label>Live Date Constant</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
