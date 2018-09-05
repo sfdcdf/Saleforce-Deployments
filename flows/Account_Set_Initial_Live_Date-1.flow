@@ -13,12 +13,12 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>isChangedDecision2_myRule_1_Status_c</targetReference>
+            <targetReference>isChangedDecision2_myRule_1_Live_Date_c</targetReference>
         </connector>
     </assignments>
     <decisions>
-        <name>isChangedDecision2_myRule_1_Status_c</name>
-        <label>isChangedDecision2_myRule_1_Status_c</label>
+        <name>isChangedDecision2_myRule_1_Live_Date_c</name>
+        <label>isChangedDecision2_myRule_1_Live_Date_c</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
@@ -26,7 +26,7 @@
         </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
-            <name>isChangedRule_2_myRule_1_Status_c</name>
+            <name>isChangedRule_2_myRule_1_Live_Date_c</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>myVariable_old</leftValueReference>
@@ -36,16 +36,16 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>myVariable_old.Status__c</leftValueReference>
+                <leftValueReference>myVariable_old.Live_Date__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <elementReference>myVariable_current.Status__c</elementReference>
+                    <elementReference>myVariable_current.Live_Date__c</elementReference>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>myDecision</targetReference>
             </connector>
-            <label>isChangedRule_2_myRule_1_Status_c</label>
+            <label>isChangedRule_2_myRule_1_Live_Date_c</label>
         </rules>
     </decisions>
     <decisions>
@@ -104,13 +104,13 @@
                 <processMetadataValues>
                     <name>leftHandSideType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Date</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>operatorDataType</name>
                     <value>
-                        <stringValue>String</stringValue>
+                        <stringValue>Date</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
@@ -119,7 +119,7 @@
                         <stringValue>Boolean</stringValue>
                     </value>
                 </processMetadataValues>
-                <leftValueReference>isChangedRule_2_myRule_1_Status_c</leftValueReference>
+                <leftValueReference>isChangedRule_2_myRule_1_Live_Date_c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -129,31 +129,31 @@
                 <processMetadataValues>
                     <name>inputDataType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Boolean</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>leftHandSideType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Date</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>operatorDataType</name>
                     <value>
-                        <stringValue>String</stringValue>
+                        <stringValue>Date</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>rightHandSideType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Boolean</stringValue>
                     </value>
                 </processMetadataValues>
-                <leftValueReference>myVariable_current.Status__c</leftValueReference>
-                <operator>EqualTo</operator>
+                <leftValueReference>myVariable_current.Live_Date__c</leftValueReference>
+                <operator>IsNull</operator>
                 <rightValue>
-                    <stringValue>LIVE</stringValue>
+                    <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -162,18 +162,7 @@
             <label>Initial Live Date Validation</label>
         </rules>
     </decisions>
-    <description>Sets the Initial Live Date on the Account record when the status goes LIVE for the first time and never gets reset once populated</description>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>TODAY() </stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_3_myRule_1_A1_6421624977</name>
-        <dataType>Date</dataType>
-        <expression>TODAY()</expression>
-    </formulas>
+    <description>Sets the Initial Live Date on the Account when the Live Date is synced from Yodle Live and never gets changed thereafter</description>
     <interviewLabel>Account_Set_Initial_Live_Date-1_InterviewLabel</interviewLabel>
     <label>Account - Set Initial Live Date</label>
     <processMetadataValues>
@@ -221,7 +210,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Populate Initial Live Date</label>
+        <label>Set Initial Live Date</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <filters>
@@ -265,12 +254,12 @@
             <processMetadataValues>
                 <name>rightHandSideType</name>
                 <value>
-                    <stringValue>Formula</stringValue>
+                    <stringValue>Reference</stringValue>
                 </value>
             </processMetadataValues>
             <field>Initial_Live_Date__c</field>
             <value>
-                <elementReference>formula_3_myRule_1_A1_6421624977</elementReference>
+                <elementReference>myVariable_current.Live_Date__c</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
