@@ -162,16 +162,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Account_Description__c</fullName>
-        <externalId>false</externalId>
-        <label>Account Description</label>
-        <length>1250</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>Account_Director__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -12855,6 +12845,16 @@ LiveOps_VM_ID_Standard__c,
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Account_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Description</label>
+        <length>1250</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
