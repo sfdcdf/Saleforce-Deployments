@@ -61,6 +61,19 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         try{
         
             if(caseIds.size() > 0){
+            
+                // Clear Lists before populating if necessary
+                if(toAddress.size() > 0){
+                
+                    // clear recipient list
+                    toAddress.clear();
+                }
+                if(notificationsLst.size() > 0){
+                
+                    // clear notifications list
+                    notificationsLst.clear();
+                }
+            
                 for(Case c :
                     [SELECT Id,
                             CreatedDate, 
@@ -88,9 +101,9 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                     if(!String.isBlank(c.Account.IMS_Rep__r.Email)){
                         toAddressSet.add(c.Account.IMS_Rep__r.Email);
                     }
-                    if(ownerMgrsMap.containsKey(c.OwnerId) && !String.isBlank(ownerMgrsMap.get(c.OwnerId).Manager.Email)){
+                    /*if(ownerMgrsMap.containsKey(c.OwnerId) && !String.isBlank(ownerMgrsMap.get(c.OwnerId).Manager.Email)){
                         toAddressSet.add(ownerMgrsMap.get(c.OwnerId).Manager.Email);
-                    }
+                    }*/
                     if(!String.isBlank(c.Owner.Email)){
                         toAddressSet.add(c.Owner.Email);
                     }
@@ -143,7 +156,6 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                 
                     // send notifications
                     Messaging.sendEmail(notificationsLst);
-                    notificationsLst.clear();   
                 }
             }
         }

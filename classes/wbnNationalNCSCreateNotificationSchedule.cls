@@ -18,8 +18,8 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
         Id wbnLogRecordTypeId = Schema.SObjectType.Notification_Log__c.getRecordTypeInfosByName().get('WBN Log').getRecordTypeId();
         Set<Id> caseIds = new Set<Id>();
         List<Messaging.SingleEmailMessage> notificationsCrtDtLst = new List<Messaging.SingleEmailMessage>();
-        //Set<String> toAddressSet = new Set<String>();
-        List<String> toAddress = new List<String>();
+        //Set<String> toAddressCrtDtSet = new Set<String>();
+        List<String> toAddressCrtDt = new List<String>();
         List<Apex_Debug_Log__c> dmlDebugLog = new List<Apex_Debug_Log__c>();
         Map<Id, User> ownerMgrsMap = new Map<Id, User>();
         String fromAddress = 'sfdc@yodle.com';
@@ -46,6 +46,19 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
         try{
         
             if(caseIds.size() > 0){
+            
+                // Clear Lists before populating if necessary
+                if(toAddressCrtDt.size() > 0){
+                
+                    // clear recipient list
+                    toAddressCrtDt.clear();
+                }
+                if(notificationsCrtDtLst.size() > 0){
+                
+                    // clear notifications list
+                    notificationsCrtDtLst.clear();
+                }
+            
                 for(Case c :
                     [SELECT Id,
                             CreatedDate, 
@@ -71,11 +84,11 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                           
                     // build list of email addresses to send to
                     if(!String.isBlank(c.Owner.Email)){
-                        toAddress.add(c.Owner.Email);
+                        toAddressCrtDt.add(c.Owner.Email);
                     }
                     
                      // check to ensure there are recipients to send notification to
-                    if(toAddress.size() > 0){
+                    if(toAddressCrtDt.size() > 0){
                     
                         // send notifications
                         Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
@@ -96,7 +109,7 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                         subjectLine =  'NCS - Ownership Change Needed: # ' + c.CaseNumber;
                         
                         // set message content
-                        message.setToAddresses(toAddress);
+                        message.setToAddresses(toAddressCrtDt);
                         message.setReplyTo(fromAddress);
                         message.setOrgWideEmailAddressId(owea.get(0).Id);
                         //message.setTemplateId(emailTemplateId);
@@ -113,7 +126,6 @@ global class wbnNationalNCSCreateNotificationSchedule Implements Schedulable {
                         
                     // send notifications
                     Messaging.sendEmail(notificationsCrtDtLst);
-                    notificationsCrtDtLst.clear();
                 }
             }
         }
