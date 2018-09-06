@@ -12856,6 +12856,17 @@ LiveOps_VM_ID_Standard__c,
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
     </fields>
+    <fields>
+        <fullName>Initial_Live_Date__c</fullName>
+        <description>Live Date that never gets reset if an Account goes from OFF to LIVE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Live Date that never gets reset if an Account goes from OFF to LIVE</inlineHelpText>
+        <label>Initial Live Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
