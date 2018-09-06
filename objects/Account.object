@@ -3388,19 +3388,6 @@ IF(CONTAINS(Product_Type_Transactional__c ,'TORCHx'), (TODAY() - CSC_Completed_D
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Days_Since_Live__c</fullName>
-        <externalId>false</externalId>
-        <formula>today()- Live_Date__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Days Since Live</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Days_Since_Organic_Live_Date__c</fullName>
         <externalId>false</externalId>
         <formula>TODAY()-Organic_Live_Date__c</formula>
@@ -12861,6 +12848,30 @@ CASE(
         <label>WBN PPC Restricted Relationship</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Live__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - Initial_Live_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Since Live</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Initial_Live_Date__c</fullName>
+        <description>Live Date that never gets reset if an Account goes from OFF to LIVE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Live Date that never gets reset if an Account goes from OFF to LIVE</inlineHelpText>
+        <label>Initial Live Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
