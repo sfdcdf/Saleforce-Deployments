@@ -12688,8 +12688,9 @@ CASE(
     </fields>
     <fields>
         <fullName>Initial_Live_Date__c</fullName>
-        <description>Live Date that never gets reset if a client gets reactivated</description>
+        <description>Live Date that never gets reset if an Account goes from OFF to LIVE</description>
         <externalId>false</externalId>
+        <inlineHelpText>Live Date that never gets reset if an Account goes from OFF to LIVE</inlineHelpText>
         <label>Initial Live Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
