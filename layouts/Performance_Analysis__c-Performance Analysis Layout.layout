@@ -46,16 +46,20 @@
                 <field>Status__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Date_Opt_Completed__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Reviewed_by_CS__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>RecordTypeId</field>
+                <behavior>Edit</behavior>
+                <field>Reviewed_by_CS_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Date_Opt_Completed__c</field>
+                <field>RecordTypeId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -64,6 +68,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Time_To_Complete_Minutes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Days_Reviewed_After_Complete__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

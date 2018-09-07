@@ -282,11 +282,19 @@
                 <behavior>Readonly</behavior>
                 <field>Last_Attempt_Date__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Days_Since_Completed__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>In_Progress__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Completed_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
