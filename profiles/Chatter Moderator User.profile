@@ -6039,6 +6039,9 @@
         <layout>Application_Configuration__c-Application Configuration Layout</layout>
         <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CommunityMemberLayout-Community Member Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
