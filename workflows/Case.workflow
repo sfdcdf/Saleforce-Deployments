@@ -3434,6 +3434,17 @@
         <senderType>OrgWideEmailAddress</senderType>
         <template>TorchX_Onboarding_Engagement_Test/TORCHx_Service_Performance_Request_Completed</template>
     </alerts>
+    <alerts>
+        <fullName>NCS_Case_Notify_Premium_Escalations_Group</fullName>
+        <description>NCS Case - Notify Premium Escalations Group</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>LeadStream_Escalations</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/new_client_setup_sales</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
@@ -6414,30 +6425,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
             <value>SFDC Sync</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>AutoLaunch NCS - Escalated</fullName>
-        <actions>
-            <name>NCS_AutoLaunch_to_Sales</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>NCS - AutoLaunch</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Escalated</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>AutoLaunch NCS Adversite and Pro</fullName>
@@ -15455,6 +15442,34 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>LH Master</value>
         </criteriaItems>
         <description>Need to indicate escalated for LH Master cases when in status Awaiting Customer Response, Awaiting Internal Response, Escalated (Internal), Bug Reported and Escalated (Dev)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>AutoLaunch NCS - Escalated</fullName>
+        <actions>
+            <name>NCS_AutoLaunch_to_Sales</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>NCS_Case_Notify_Premium_Escalations_Group</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NCS - AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.IMS_Rep__c</field>
+            <operation>notContain</operation>
+            <value>Lighthouse</value>
+        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>

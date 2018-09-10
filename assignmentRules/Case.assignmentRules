@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata"><assignmentRule>
+<?xml version="1.0" encoding="utf-8"?><AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
         <fullName>Basic assignments</fullName>
         <active>true</active>
         <ruleEntry>
@@ -96,32 +97,6 @@
                 <operation>includes</operation>
                 <value>YBN Email Marketing Template Creation,YBN Email Marketing Template Update/Change,YBN Presale Pricing Request</value>
             </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>YBN_Operations</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 OR (2 AND 3 AND 4)</booleanFilter>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>SalesForce Bulk Update,SalesForce + Yodle Live Bulk Update,SalesForce Bulk Setup,SalesFroce + Yodle Live Bulk Setup</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.OwnerId</field>
-                <operation>notEqual</operation>
-                <value>YBN Operations</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>YBN Outbound Touch Point</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Attempt_1_Method__c</field>
-                <operation>equals</operation>
-                <value>Auto-Email</value>
-            </criteriaItems>
-            <template>National_Templates/ybn_bulk_onboarding_update_needed</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>MarketingOps</assignedTo>
@@ -291,21 +266,6 @@
                 <operation>equals</operation>
                 <value>SE Request</value>
             </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>sarah.mctate@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>New Client Setup,National - New Client Setup</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Channel_Type__c</field>
-                <operation>equals</operation>
-                <value>National</value>
-            </criteriaItems>
-            <template>Support/SUPPORTNewassignmentnotificationSAMPLE</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>AutoLaunchQueue</assignedTo>
@@ -721,31 +681,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>kyee@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Account Update</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.SEO_Product__c</field>
-                <operation>equals</operation>
-                <value>Outrank</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Requested_Campaign_Updates__c</field>
-                <operation>includes</operation>
-                <value>Metro Move / Geo Template Update,Segment/Subcat Update</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Requested_Updates__c</field>
-                <operation>includes</operation>
-                <value>Domain Swap</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>WebDev</assignedTo>
             <assignedToType>Queue</assignedToType>
             <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
@@ -1020,15 +955,6 @@
                 <field>Case.Reason</field>
                 <operation>equals</operation>
                 <value>Free Time Guarantee Request,Free Time Performance Request</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>reid.beck@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>Billing QA For Launch</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -1415,42 +1341,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sarah.mctate@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Account Update</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Status</field>
-                <operation>equals</operation>
-                <value>New</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Requested_Campaign_Updates__c</field>
-                <operation>includes</operation>
-                <value>None</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Requested_Updates__c</field>
-                <operation>includes</operation>
-                <value>None</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Requested_Website_Updates__c</field>
-                <operation>includes</operation>
-                <value>None</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Client_Type__c</field>
-                <operation>contains</operation>
-                <value>YBN</value>
-            </criteriaItems>
-            <template>Support/SUPPORTNewassignmentnotificationSAMPLE</template>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>anne.fulton@yodle.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
@@ -1542,11 +1432,6 @@
             <assignedTo>joshua.fortunatus@yodle.com</assignedTo>
             <assignedToType>User</assignedToType>
             <formula>OR(   AND(     RecordType.Name = "National - New Client Setup",     ISPICKVAL(Channel_Type__c, "National"),     OR(       ISPICKVAL(SEO_Product__c, "Facebook"),       ISPICKVAL(SEO_Product__c, "New Product Addition: Facebook Ads"),       ISPICKVAL(SEO_Product__c, "Winback: Facebook Ads")     )   ),   AND(     RecordType.Name = "YBN Request",     ISPICKVAL(Type, "Work Item"),     ISPICKVAL(YBNRequestReason__c, "Performance Team"),     OR(       ISPICKVAL(YBNRequestDetail__c, "Facebook Ads Support"),       ISPICKVAL(YBNRequestDetail__c, "Display Strategy Support"),       ISPICKVAL(YBNRequestDetail__c, "Enhanced SEO Strategy + Support")      )   ) )</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>YBN_Operations</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <formula>AND(  RecordType.Name = "YBN Request",  ISPICKVAL(Type, "Work Item"),  ISPICKVAL(YBNRequestReason__c, "Operations")  )</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>AccountPerformanceQueue295311</assignedTo>
@@ -1805,25 +1690,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sarah.mctate@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Master</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Created_by_Role__c</field>
-                <operation>equals</operation>
-                <value>Inbound Specialist,Outbound Specialist,Pin Collection Associate,Services Inbound,Services Outbound</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Client_Type__c</field>
-                <operation>equals</operation>
-                <value>YBN</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>Local_Email_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
@@ -1948,8 +1814,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>kelly.hall@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Case.Origin</field>
                 <operation>equals</operation>
@@ -2013,4 +1877,5 @@
             <assignedToType>Queue</assignedToType>
             <formula>OwnerId = '00G60000001CJm2'</formula>
         </ruleEntry>
-    </assignmentRule></AssignmentRules>
+    </assignmentRule>
+</AssignmentRules>
