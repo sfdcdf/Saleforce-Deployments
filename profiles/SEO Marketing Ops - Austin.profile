@@ -31011,12 +31011,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Performance_Analysis__c.Reviewed_by_CS_Date__c</field>
+        <field>Performance_Analysis__c.Time_To_Complete_Minutes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Performance_Analysis__c.Time_To_Complete_Minutes__c</field>
+        <editable>false</editable>
+        <field>Performance_Analysis__c.Reviewed_by_CS_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
