@@ -1,34 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>Which account was this report initially generated for?</description>
@@ -43,7 +54,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Average_Unpaid_Search_Traffic_Last_16Wks__c</fullName>
         <description>Average Unpaid Search Traffic Last 16 Weeks</description>
         <externalId>false</externalId>
@@ -55,7 +67,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CPC_Change_vs_Last_30_Day_Avg__c</fullName>
         <description>CPC Change Last Week vs 30 Day Avg ($)</description>
         <externalId>false</externalId>
@@ -68,7 +81,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CPC_Change_vs_Previous_Week__c</fullName>
         <description>CPC Change Last Week vs Previous Week ($)</description>
         <externalId>false</externalId>
@@ -81,7 +95,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CPC_Last_7_Days__c</fullName>
         <description>CPC ($) Last 7 Days</description>
         <externalId>false</externalId>
@@ -94,7 +109,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CTR_Change_vs_Last_4_weeks_Avg__c</fullName>
         <description>CTR% Change Last Week vs 4 weeks Avg (%)</description>
         <externalId>false</externalId>
@@ -107,7 +123,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CTR_Change_vs_Previous_Week__c</fullName>
         <description>CTR% Change Last Week vs Previous Week (%)</description>
         <externalId>false</externalId>
@@ -120,7 +137,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CTR_Last_7_Days__c</fullName>
         <description>CTR % Last 7 Days</description>
         <externalId>false</externalId>
@@ -133,7 +151,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CV_Change_vs_Last_4_weeks_Avg__c</fullName>
         <description>CV% Change Last Week vs 4 weeks Avg (%)</description>
         <externalId>false</externalId>
@@ -146,7 +165,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CV_Change_vs_Previous_Week__c</fullName>
         <description>CV% Change Last Week vs Previous Week (%)</description>
         <externalId>false</externalId>
@@ -159,7 +179,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CV_Last_7_Days__c</fullName>
         <description>CVR % Last 7 Days</description>
         <externalId>false</externalId>
@@ -172,7 +193,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Channel__c</fullName>
         <description>from import.</description>
         <externalId>false</externalId>
@@ -219,7 +241,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <description>External Matching for Account ID - Location ID</description>
         <externalId>true</externalId>
@@ -232,7 +255,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corp_Acct_ID_in_YL__c</fullName>
         <description>Corporate ID</description>
         <externalId>false</externalId>
@@ -246,7 +270,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Opt_Completed__c</fullName>
         <description>Date the Optimization was completed</description>
         <externalId>false</externalId>
@@ -257,7 +282,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_Into_Billing_Period__c</fullName>
         <description>Days Into Billing Period</description>
         <externalId>false</externalId>
@@ -270,7 +296,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_until_Next_Bill_Date__c</fullName>
         <description>Days until Next Bill Date.</description>
         <externalId>false</externalId>
@@ -287,7 +314,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Delta_to_PPL_Goal__c</fullName>
         <description>% to PPL Goal</description>
         <externalId>false</externalId>
@@ -299,7 +327,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Added_Removd_Context_Card_for_Lead_Ad__c</fullName>
         <externalId>false</externalId>
         <label>Added/Removed Context Card for Lead Ads?</label>
@@ -312,7 +341,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Added_Removed_Custom_Lookalike_Audien__c</fullName>
         <externalId>false</externalId>
         <label>Added/Removed Custom &amp;Lookalike Audience</label>
@@ -325,7 +355,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Added_Removed_qualifying_for_Lead_Ads__c</fullName>
         <externalId>false</externalId>
         <label>Added/Removed qualifying for Lead Ads?</label>
@@ -338,7 +369,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Added_behavior_Interest_Targeting__c</fullName>
         <externalId>false</externalId>
         <label>Added behavior/Interest Targeting</label>
@@ -351,7 +383,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Adjustments_Made_for_Ad_Relevance__c</fullName>
         <externalId>false</externalId>
         <label>Adjustments Made for Ad Relevance</label>
@@ -364,7 +397,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Decreased_Geo_Targeting__c</fullName>
         <externalId>false</externalId>
         <label>FB Decreased Geo Targeting</label>
@@ -377,7 +411,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Fixed_Ad_Copy_Typos__c</fullName>
         <externalId>false</externalId>
         <label>Fixed Ad Copy Typos</label>
@@ -390,7 +425,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Fixed_Facebook_Errors__c</fullName>
         <externalId>false</externalId>
         <label>Fixed Facebook Errors</label>
@@ -403,7 +439,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Increased_Geo_Targeting__c</fullName>
         <externalId>false</externalId>
         <label>FB Increased Geo Targeting</label>
@@ -416,7 +453,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Recommended_Budget_Changes__c</fullName>
         <externalId>false</externalId>
         <label>FB Recommended Budget Changes</label>
@@ -429,7 +467,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>No_Recmnd_Upsell_Downsell</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Recommended_Conversion_Tactics__c</fullName>
         <externalId>false</externalId>
         <label>FB Recommended Conversion Tactics</label>
@@ -442,7 +481,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Refreshed_Ad_Copy__c</fullName>
         <description>Refreshed Ad Copy</description>
         <externalId>false</externalId>
@@ -457,7 +497,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Removed_Behavior_Interest_Targeting__c</fullName>
         <externalId>false</externalId>
         <label>Removed Behavior / Interest Targeting</label>
@@ -470,7 +511,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Responded_to_Negative_Feedback_on_Ads__c</fullName>
         <externalId>false</externalId>
         <label>Responded to Negative Feedback on Ads</label>
@@ -483,7 +525,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Updated_Copy_for_Quality__c</fullName>
         <externalId>false</externalId>
         <label>Updated Copy for Quality</label>
@@ -496,7 +539,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Updated_Images_for_Quality__c</fullName>
         <externalId>false</externalId>
         <label>Updated Images for Quality</label>
@@ -509,7 +553,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FB_Updated_Landing_Pages__c</fullName>
         <externalId>false</externalId>
         <label>Updated Landing Pages</label>
@@ -522,7 +567,8 @@ Next_Billing_Date__c-Today()))</formula>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FMA_ID__c</fullName>
         <description>FMA is 6 digits and unique to a corp account, This is in Yodle Live.  This can be see as the ID in Yodle live</description>
         <externalId>false</externalId>
@@ -535,7 +581,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Facebook_Last_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>Facebook Last End Date</label>
@@ -544,7 +591,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Facebook_Last_Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>Facebook Last Start Date</label>
@@ -553,7 +601,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Facebook_Optimization_Notes__c</fullName>
         <description>Please Add Notes before Closing Facebook Optimizations.</description>
         <externalId>false</externalId>
@@ -565,7 +614,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>False_Positive_Notes__c</fullName>
         <description>If there was a False Positive Report - what caused this?</description>
         <externalId>false</externalId>
@@ -577,7 +627,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Foundations_Last_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>Foundations Last End Date</label>
@@ -586,7 +637,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Foundations_Last_Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>Foundations Last Start Date</label>
@@ -595,7 +647,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Foundations_Live_Date__c</fullName>
         <description>Foundations Live Date</description>
         <externalId>false</externalId>
@@ -606,7 +659,8 @@ Next_Billing_Date__c-Today()))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HC_First_Page_Ranking_Below_Target__c</fullName>
         <description>WBN Hero Metric Unpaid Search
 Keyword Ranking</description>
@@ -623,7 +677,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HC_Low_Lead_Range_Paid_Unpaid__c</fullName>
         <description>Prem Services Hero Metric Paid &amp; Unpaid
 Low Lead Range (Paid + Unpaid)</description>
@@ -638,7 +693,8 @@ Low Lead Range (Paid + Unpaid)</description>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HC_PPL_Above_Expected_Goal__c</fullName>
         <description>WBN Hero Metric Paid Search
 PPL Above Expected Goal</description>
@@ -656,7 +712,8 @@ Fill Out Paid Section and Paid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HC_Projected_to_Miss_Lead_Range_Goal__c</fullName>
         <description>WBN Hero Metric Paid Search
 Projected to Miss Lead Range Goal?</description>
@@ -672,7 +729,8 @@ Projected to Miss Lead Range Goal?</description>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HC_Underspending__c</fullName>
         <description>Hero Metric - Please Fill out Paid Section and Paid Notes</description>
         <externalId>false</externalId>
@@ -688,7 +746,8 @@ Please Fill out Paid Section and Paid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HC_Unpaid_Lead_Drop__c</fullName>
         <description>WBN Hero Metric Unpaid Search
 Unpaid Lead Drop</description>
@@ -705,7 +764,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Initial_Date_Time_Completed__c</fullName>
         <description>updated by process builder.date and time this was initially closed</description>
         <externalId>false</externalId>
@@ -716,7 +776,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Issue_Type__c</fullName>
         <description>Proactive or Reactive</description>
         <externalId>false</externalId>
@@ -743,7 +804,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LR_Lead_Target_Maximum__c</fullName>
         <description>Lead Range Symptom - Lead Target Maximum</description>
         <externalId>false</externalId>
@@ -755,7 +817,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LR_Lead_Target_Minimum__c</fullName>
         <description>Lead range Symptoms - Lead Target Minimum</description>
         <externalId>false</externalId>
@@ -767,7 +830,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LR_No_of_Leads_PUP_ToDate_Billing_Prd__c</fullName>
         <description># of Leads (Paid + Unpaid) Delivered to Date During the Billing Period</description>
         <externalId>false</externalId>
@@ -780,7 +844,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Last_Billing_Date__c</fullName>
         <description>Last Billing Date</description>
         <externalId>false</externalId>
@@ -791,7 +856,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Range_Goal__c</fullName>
         <description>Lead Range Goal (#)</description>
         <externalId>false</externalId>
@@ -804,7 +870,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Next_Billing_Date__c</fullName>
         <description>Next Billing Date from the Import Report.</description>
         <externalId>false</externalId>
@@ -815,7 +882,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes__c</fullName>
         <description>Performance Team Notes</description>
         <externalId>false</externalId>
@@ -826,7 +894,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_Leads_Delivered_to_Date__c</fullName>
         <description># of Leads (Paid + Unpaid) Delivered to Date During the Billing Period</description>
         <externalId>false</externalId>
@@ -839,7 +908,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opt_Completed_By__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>Who Completed this Optimization?</description>
@@ -853,7 +923,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPC_Budget__c</fullName>
         <description>PPC Budget</description>
         <externalId>false</externalId>
@@ -866,7 +937,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPC_Spend_Last_7_Days__c</fullName>
         <description>PPC ($) Spend Last 7 Days</description>
         <externalId>false</externalId>
@@ -879,7 +951,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPC_Spend_vs_4_weeks_Avg__c</fullName>
         <description>PPC Spend Change Last Week vs 4 weeks Avg ($)</description>
         <externalId>false</externalId>
@@ -892,7 +965,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPC_Spend_vs_Previous_Week__c</fullName>
         <description>PPC Spend Change Last Week vs Previous Week ($)</description>
         <externalId>false</externalId>
@@ -905,7 +979,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPL_Change_vs_Last_4_weeks_Avg__c</fullName>
         <description>PPL change Last Week vs 4 weeks Avg ($)</description>
         <externalId>false</externalId>
@@ -918,7 +993,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPL_Change_vs_Previous_Week__c</fullName>
         <description>PPL Change Last Week vs Previous Week ($)</description>
         <externalId>false</externalId>
@@ -931,7 +1007,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPL_Goal_PPL_Last_7_Days__c</fullName>
         <description>Difference of Goal vs Actual ($)</description>
         <externalId>false</externalId>
@@ -944,7 +1021,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPL_Goal__c</fullName>
         <description>Customers PPL Goal ($) Network Median PPL</description>
         <externalId>false</externalId>
@@ -957,7 +1035,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPL_Last_4_weeks__c</fullName>
         <description>PPL Last 4 weeks ($)</description>
         <externalId>false</externalId>
@@ -970,7 +1049,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PPL_Last_7_Days__c</fullName>
         <description>PPL Last 7 Days ($)</description>
         <externalId>false</externalId>
@@ -983,7 +1063,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Added_Call_only__c</fullName>
         <externalId>false</externalId>
         <label>Added Call only</label>
@@ -996,7 +1077,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Added_Keywords__c</fullName>
         <externalId>false</externalId>
         <label>Added Keywords</label>
@@ -1009,7 +1091,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Added_Negatives__c</fullName>
         <externalId>false</externalId>
         <label>Added Negatives</label>
@@ -1022,7 +1105,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Added_Pending_Keywords__c</fullName>
         <externalId>false</externalId>
         <label>Added Pending Keywords</label>
@@ -1035,7 +1119,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Added_Service_Category__c</fullName>
         <externalId>false</externalId>
         <label>Added Service Category</label>
@@ -1048,7 +1133,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Adjusted_Site_Link_Extensions__c</fullName>
         <externalId>false</externalId>
         <label>Adjusted Site Link Extensions</label>
@@ -1061,7 +1147,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Adjusted_VPL_Caps__c</fullName>
         <externalId>false</externalId>
         <label>Adjusted VPL Caps</label>
@@ -1074,7 +1161,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Algo_Added_Negative_Bid_Multiplier__c</fullName>
         <externalId>false</externalId>
         <label>Algo: Added Negative Bid Multiplier</label>
@@ -1087,7 +1175,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Algo_Added_Positive_Bid_Multiplier__c</fullName>
         <externalId>false</externalId>
         <label>Algo: Added Positive Bid Multiplier</label>
@@ -1100,7 +1189,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Checked_Lead_Quality__c</fullName>
         <description>Checked Lead Quality</description>
         <externalId>false</externalId>
@@ -1114,7 +1204,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Checked_for_Adwords_Disapprovals__c</fullName>
         <externalId>false</externalId>
         <label>Checked for Adwords Disapprovals</label>
@@ -1127,7 +1218,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Checked_for_Limited_Ad_status_in_Adw__c</fullName>
         <externalId>false</externalId>
         <label>Checked for Limited Ad status in Adwords</label>
@@ -1140,7 +1232,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Checked_for_Site_Suspensions__c</fullName>
         <externalId>false</externalId>
         <label>Checked for Site Suspensions</label>
@@ -1153,7 +1246,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Cleared_Spend_Blockers__c</fullName>
         <externalId>false</externalId>
         <label>Cleared Spend Blockers</label>
@@ -1166,7 +1260,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Corrected_Ad_Copy_Typos__c</fullName>
         <description>Corrected Ad Copy Typos</description>
         <externalId>false</externalId>
@@ -1180,7 +1275,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Decreased_Geo_Targeting__c</fullName>
         <description>Decreased Geo Targeting</description>
         <externalId>false</externalId>
@@ -1194,7 +1290,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Deleted_Call_Only__c</fullName>
         <externalId>false</externalId>
         <label>Deleted Call Only</label>
@@ -1207,7 +1304,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Deleted_Paused_Keywords__c</fullName>
         <externalId>false</externalId>
         <label>Deleted/Paused Keywords</label>
@@ -1220,7 +1318,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Deleted_paused_Service_Category__c</fullName>
         <externalId>false</externalId>
         <label>Deleted/paused Service Category</label>
@@ -1233,7 +1332,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Fixed_Call_Tracking_Issues__c</fullName>
         <externalId>false</externalId>
         <label>Fixed Call Tracking Issues</label>
@@ -1246,7 +1346,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Implemented_Business_Hour_Only_Bidding__c</fullName>
         <externalId>false</externalId>
         <label>Implemented Business Hour Only Bidding</label>
@@ -1259,7 +1360,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Implemented_No_Listing_Left_Behind__c</fullName>
         <externalId>false</externalId>
         <label>Implemented No Listing Left Behind</label>
@@ -1272,7 +1374,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Increased_Geo_Targeting__c</fullName>
         <externalId>false</externalId>
         <label>Increased Geo Targeting</label>
@@ -1285,7 +1388,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Paused_Provider_Outlets__c</fullName>
         <description>Paused Provider Outlets</description>
         <externalId>false</externalId>
@@ -1299,7 +1403,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Paused_Spend_Monitoring__c</fullName>
         <description>Paused Spend Monitoring</description>
         <externalId>false</externalId>
@@ -1313,7 +1418,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Recommended_Budget_Changes__c</fullName>
         <externalId>false</externalId>
         <label>Recommended Budget Changes</label>
@@ -1326,7 +1432,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>No_Recmnd_Upsell_Downsell</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Recommended_Conversion_Tactics__c</fullName>
         <externalId>false</externalId>
         <label>Recommended Conversion Tactics</label>
@@ -1339,7 +1446,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Removed_Negatives__c</fullName>
         <externalId>false</externalId>
         <label>Removed Negatives</label>
@@ -1352,7 +1460,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Resolved_KW_Conflicts__c</fullName>
         <description>Resolved KW Conflicts</description>
         <externalId>false</externalId>
@@ -1366,7 +1475,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Updated_Bulk_URL_Manager__c</fullName>
         <externalId>false</externalId>
         <label>Updated Bulk URL Manager</label>
@@ -1379,7 +1489,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Updated_Geo_Messaging__c</fullName>
         <externalId>false</externalId>
         <label>Updated Geo Messaging</label>
@@ -1392,7 +1503,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>P_Updated_Refreshed_Ad_Copy__c</fullName>
         <externalId>false</externalId>
         <label>Updated/Refreshed Ad Copy</label>
@@ -1405,7 +1517,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Paid_Leads_Last_7_Days__c</fullName>
         <description>Paid Leads Last 7 Days (#)</description>
         <externalId>false</externalId>
@@ -1418,7 +1531,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Paid_Leads_vs_Previous_4_weeks_Avg__c</fullName>
         <description>Paid Lead Count vs Previous 4 weeks Avg</description>
         <externalId>false</externalId>
@@ -1431,7 +1545,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Paid_Leads_vs_Previous_Week__c</fullName>
         <description>Paid Leads Change Last Week vs Previous Week (#)</description>
         <externalId>false</externalId>
@@ -1444,7 +1559,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Paid_Optimization_Notes__c</fullName>
         <description>Please Add Notes before Closing Paid Optimizations.</description>
         <externalId>false</externalId>
@@ -1456,7 +1572,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Parent_Account__c</fullName>
         <externalId>false</externalId>
         <formula>Account__r.Parent_Name__c</formula>
@@ -1467,7 +1584,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Perc_to_Spend_Goal__c</fullName>
         <description>% to Spend Goal</description>
         <externalId>false</externalId>
@@ -1480,7 +1598,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product__c</fullName>
         <externalId>false</externalId>
         <label>Product</label>
@@ -1510,7 +1629,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_Lead_Total_Within_Bill_Period__c</fullName>
         <description>Projected Lead Total Within Billing Period</description>
         <externalId>false</externalId>
@@ -1523,7 +1643,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_Lead_Total__c</fullName>
         <description>Projected # of Leads (Paid + Unpaid) To Be Delivered During the Billing Period</description>
         <externalId>false</externalId>
@@ -1536,7 +1657,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_Spend_for_Billing_Period__c</fullName>
         <description>Projected Spend for Billing Period</description>
         <externalId>false</externalId>
@@ -1548,7 +1670,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_To_Lead_Range_Goal__c</fullName>
         <description>Projected % Lead Range Attainment W/in Billing Period</description>
         <externalId>false</externalId>
@@ -1560,7 +1683,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_To_or_From_Lead_Goal__c</fullName>
         <description>Projected % From Lead Range Goal During The Billing Period</description>
         <externalId>false</externalId>
@@ -1573,7 +1697,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Report_Issue_ID__c</fullName>
         <description>Issue ID for record of Performance Analysis Report</description>
         <externalId>true</externalId>
@@ -1586,7 +1711,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Report_Version_ID__c</fullName>
         <description>This is the ID for the report that was generated.  This will be unique to each performance batch run</description>
         <externalId>false</externalId>
@@ -1599,7 +1725,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reviewed_by_CS__c</fullName>
         <defaultValue>false</defaultValue>
         <description>This field would allow CS managers to create report logic to filter out oracle cases that have already been reviewed by their team</description>
@@ -1609,7 +1736,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SEM_Last_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>SEM Last End Date</label>
@@ -1618,7 +1746,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SEM_Last_Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>SEM Last Start Date</label>
@@ -1627,7 +1756,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SEM_Live_Date__c</fullName>
         <description>SEM Live Date</description>
         <externalId>false</externalId>
@@ -1638,7 +1768,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SEO_Last_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>SEO Last End Date</label>
@@ -1647,7 +1778,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SEO_Last_Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>SEO Last Start Date</label>
@@ -1656,7 +1788,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_No_of_KWs_Ranking_on_the_1st_Page__c</fullName>
         <description>Number of KW Ranking on the first page for Google/GEO (#)</description>
         <externalId>false</externalId>
@@ -1669,7 +1802,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_No_of_KWs_Trying_to_Rank_For__c</fullName>
         <description>Number of KW we are Trying to Rank For (#)</description>
         <externalId>false</externalId>
@@ -1682,7 +1816,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Noof_KW_Rnking_on_the_first_page_Chng__c</fullName>
         <description>zz_# of KWs Ranking on the 1st Page Change Last 7 Days</description>
         <externalId>false</externalId>
@@ -1695,7 +1830,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Num_KW_Rank_1st_Page_4_weeks_Change__c</fullName>
         <description># of KWs Ranking on the 1st Page Change vs Last 4 weeks.</description>
         <externalId>false</externalId>
@@ -1708,7 +1844,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Num_KW_Rank_1st_Page_7Day_Change__c</fullName>
         <description># of KWs Ranking on the 1st Page Change Last 7 Days..</description>
         <externalId>false</externalId>
@@ -1721,7 +1858,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Num_KW_Rank_1st_Page_GoogleGeo__c</fullName>
         <description>Number of KW Ranking on the first page for Google/GEO (#).</description>
         <externalId>false</externalId>
@@ -1734,7 +1872,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Perc_of_Keywords_We_Are_Ranking_For__c</fullName>
         <description>Keyword Ranking For / Total Keyword Trying Rank For</description>
         <externalId>false</externalId>
@@ -1747,7 +1886,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Unpaid_Leads_Last_7_Days__c</fullName>
         <description>Unpaid Leads Last 7 Days (#)</description>
         <externalId>false</externalId>
@@ -1760,7 +1900,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Unpaid_Leads_vs_Previous_4_weeks_Avg__c</fullName>
         <description>Unpaid Leads Change Last Week vs 4 weeks Avg (#)</description>
         <externalId>false</externalId>
@@ -1773,7 +1914,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_Unpaid_Leads_vs_Previous_Week__c</fullName>
         <description>Unpaid Leads Change Last Week vs Previous Week (#)</description>
         <externalId>false</externalId>
@@ -1786,7 +1928,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SU_of_KW_Rnkng_on_the_first_page_Change__c</fullName>
         <description>Number of Keyword Last 7 Days s Pervious 30 Day Avg</description>
         <externalId>false</externalId>
@@ -1799,7 +1942,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Save_Mode__c</fullName>
         <externalId>false</externalId>
         <label>Save Mode</label>
@@ -1810,7 +1954,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Segment__c</fullName>
         <description>What Segment are we in</description>
         <externalId>false</externalId>
@@ -1823,7 +1968,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Spend_During_Billing_Period__c</fullName>
         <externalId>false</externalId>
         <label>Spend During Billing Period</label>
@@ -1834,7 +1980,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -1868,7 +2015,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Time_To_Complete_Minutes__c</fullName>
         <description>Time To Complete (Minutes)</description>
         <externalId>false</externalId>
@@ -1882,7 +2030,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Clicks_During_the_Billing_Period__c</fullName>
         <description>Total Clicks During the Billing Period (#)</description>
         <externalId>false</externalId>
@@ -1895,7 +2044,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Clicks_Over_the_Last_4_weeks__c</fullName>
         <description>Total Clicks over the last 4 weeks (#)</description>
         <externalId>false</externalId>
@@ -1908,7 +2058,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Spent_During_the_Billing_Period__c</fullName>
         <description>Total spent During the Billing Period ($)</description>
         <externalId>false</externalId>
@@ -1921,7 +2072,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_of_Days_in_Billing_Period__c</fullName>
         <description>Total # of Days in Billing Period</description>
         <externalId>false</externalId>
@@ -1934,7 +2086,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Added_Schema_Mark_Up__c</fullName>
         <externalId>false</externalId>
         <label>Added Schema Mark-Up</label>
@@ -1947,7 +2100,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Checked_Site_Speed__c</fullName>
         <externalId>false</externalId>
         <label>Checked Site Speed</label>
@@ -1960,7 +2114,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Checked_non_200_ok_or_non_301_codes__c</fullName>
         <externalId>false</externalId>
         <label>Checked for non 200 ok or non 301 codes</label>
@@ -1973,7 +2128,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Cleaned_Up_Schema_Mark_up__c</fullName>
         <externalId>false</externalId>
         <label>Cleaned Up Schema Mark-up</label>
@@ -1986,7 +2142,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Created_Custom_Content_Case__c</fullName>
         <description>Created Custom Content Case</description>
         <externalId>false</externalId>
@@ -2000,7 +2157,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Fixed_Broken_Links__c</fullName>
         <externalId>false</externalId>
         <label>Fixed Broken Links</label>
@@ -2013,7 +2171,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Performed_Code_Clean_up__c</fullName>
         <description>Performed Code Clean-up</description>
         <externalId>false</externalId>
@@ -2027,7 +2186,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Published_Site__c</fullName>
         <externalId>false</externalId>
         <label>Published Site</label>
@@ -2040,7 +2200,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Recommended_Website_Updates__c</fullName>
         <externalId>false</externalId>
         <label>Recommended Website Updates</label>
@@ -2053,7 +2214,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Resolved_Crawl_Errors__c</fullName>
         <externalId>false</externalId>
         <label>Resolved Crawl Errors</label>
@@ -2066,7 +2228,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Resolved_Sitemap_Errors__c</fullName>
         <externalId>false</externalId>
         <label>Resolved Sitemap Errors</label>
@@ -2079,7 +2242,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Submitted_to_G_B_Webmaster_Tools__c</fullName>
         <externalId>false</externalId>
         <label>Submitted to G&amp;B Webmaster Tools</label>
@@ -2092,7 +2256,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Bing_Listing__c</fullName>
         <externalId>false</externalId>
         <label>Updated Bing Listing</label>
@@ -2105,7 +2270,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Bing_Webmaster_Tools__c</fullName>
         <externalId>false</externalId>
         <label>Updated Bing Webmaster Tools</label>
@@ -2118,7 +2284,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_GMB_Listing__c</fullName>
         <externalId>false</externalId>
         <label>Updated GMB Listing</label>
@@ -2131,7 +2298,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Google_Search_Console__c</fullName>
         <externalId>false</externalId>
         <label>Updated Google Search Console</label>
@@ -2144,7 +2312,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_H_Tags__c</fullName>
         <externalId>false</externalId>
         <label>Updated H Tags</label>
@@ -2157,7 +2326,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Images_Title_Alt_Tags__c</fullName>
         <externalId>false</externalId>
         <label>Updated Images (Title/Alt Tags)</label>
@@ -2170,7 +2340,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Meta_Data__c</fullName>
         <externalId>false</externalId>
         <label>Updated Meta Data</label>
@@ -2183,7 +2354,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Unpaid_Tracking__c</fullName>
         <externalId>false</externalId>
         <label>Updated Unpaid Tracking #</label>
@@ -2196,7 +2368,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Updated_Yext__c</fullName>
         <externalId>false</externalId>
         <label>Updated Yext</label>
@@ -2209,7 +2382,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Vendor_Built_Additional_Citations__c</fullName>
         <externalId>false</externalId>
         <label>Vendor: Built Additional Citations</label>
@@ -2222,7 +2396,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Vendor_Built_Backlinks__c</fullName>
         <externalId>false</externalId>
         <label>Vendor: Built Backlinks</label>
@@ -2235,7 +2410,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Vendor_Cleaned_Up_Citations__c</fullName>
         <externalId>false</externalId>
         <label>Vendor: Cleaned Up Citations</label>
@@ -2248,7 +2424,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Vendor_Produced_Enhanced_Content__c</fullName>
         <externalId>false</externalId>
         <label>Vendor: Produced / Enhanced Content</label>
@@ -2261,7 +2438,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UP_Vendor_Reclaimed_Backlinks__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Reclaimed Backlinks</label>
@@ -2274,7 +2452,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
             <restricted>true</restricted>
             <valueSetName>Yes_No_Recommended</valueSetName>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Unpaid_Optimization_Notes__c</fullName>
         <description>Please Add Notes before Closing Unpaid Optimizations.</description>
         <externalId>false</externalId>
@@ -2286,7 +2465,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Unpaid_Search_Traffic_Drop_Percent__c</fullName>
         <description>Unpaid Search Traffic Drop %</description>
         <externalId>false</externalId>
@@ -2298,7 +2478,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Unpaid_Search_Traffic_Drop__c</fullName>
         <externalId>false</externalId>
         <label>Unpaid Search Traffic Drop</label>
@@ -2309,7 +2490,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Unpaid_Search_Traffic_Last_7_Days__c</fullName>
         <description>Unpaid Search Traffic Last 7 Days</description>
         <externalId>false</externalId>
@@ -2321,7 +2503,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Weekly_Spend_Change_vs_Last_4_weeks_Avg__c</fullName>
         <description>Weekly Spend ($) Change vs Last 4 weeks Avg. ($)</description>
         <externalId>false</externalId>
@@ -2334,7 +2517,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Weekly_Spend_Change_vs_Previous_Week__c</fullName>
         <description>Weekly Spend ($) Change vs Previous Week ($)</description>
         <externalId>false</externalId>
@@ -2347,7 +2531,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Weekly_Spend_Last_7_Days__c</fullName>
         <description>Weekly Spend ($) Last 7 Days ($)</description>
         <externalId>false</externalId>
@@ -2360,7 +2545,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>isClosed__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Will be triggered if the Status changes to a completed status</description>
@@ -2370,7 +2556,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Last_Optimization_Date__c</fullName>
         <description>Last Optimization Date</description>
         <externalId>false</externalId>
@@ -2381,7 +2568,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Location_PPL_Goal__c</fullName>
         <description>Location PPL Goal ($)</description>
         <externalId>false</externalId>
@@ -2394,6 +2582,32 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Reviewed_After_Complete__c</fullName>
+        <description>Number of days between complete and CS Reviewed box being checked.</description>
+        <externalId>false</externalId>
+        <formula>Reviewed_by_CS_Date__c -  Date_Opt_Completed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Reviewed After Complete</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reviewed_by_CS_Date__c</fullName>
+        <description>Date box was checked for Reviewed by CS</description>
+        <externalId>false</externalId>
+        <label>Reviewed by CS Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>This object is initially created to take input from a Performance Analysis engine to proactively optimize our customers' performance results</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Performance Analysis</label><nameField>
         <displayFormat>PA-{000000}</displayFormat>
         <label>Performance Analysis Name</label>
@@ -2407,7 +2621,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility>
+    <listViews>
         <fullName>AccountPerformanceQueue295311_Performance_Analysis</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2424,7 +2639,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Account_Performance_New</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2456,7 +2672,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Account_Performance_Open</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2483,7 +2700,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2499,7 +2717,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>NationalCharlotte_Performance_Analysis</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2517,7 +2736,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>National_Performance_New</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2549,7 +2769,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>National_Performance_Open</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -2576,7 +2797,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Auto_Performance_Insights</fullName>
         <active>true</active>
         <description>default record type for proactive analysis</description>
@@ -3832,7 +4054,8 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><validationRules>
+    </recordTypes>
+    <validationRules>
         <fullName>Close_Notes_Required</fullName>
         <active>false</active>
         <description>Add Notes before closing. This was deactivated and notes for each section are now required.</description>
@@ -3843,7 +4066,8 @@ ISPICKVAL(Status__c, "Relevant Issue &amp; Work Completed"),
 LEN(Notes__c)&lt;10)</errorConditionFormula>
         <errorDisplayField>Notes__c</errorDisplayField>
         <errorMessage>Please add Notes before Closing this Issue</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>False_Positive_Notes_Required</fullName>
         <active>true</active>
         <description>If there is a False Positive Status than False Positive Notes are required.</description>
@@ -3854,7 +4078,8 @@ ISPICKVAL(Status__c, "False Positive - Work Not Completed"),
 LEN(False_Positive_Notes__c)&lt;10)</errorConditionFormula>
         <errorDisplayField>False_Positive_Notes__c</errorDisplayField>
         <errorMessage>This had a status of False Positive, False Positive Notes are required.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Paid_Optimization_Checks</fullName>
         <active>true</active>
         <description>All Paid Optimization must be filled in.</description>
@@ -3904,7 +4129,8 @@ ISBLANK(TEXT(P_Updated_Geo_Messaging__c)),
 )
 )</errorConditionFormula>
         <errorMessage>Please fill out all fields in the Paid Optimization Tactics and Paid Optimization Notes</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Performance_No_Changes_after_Closed</fullName>
         <active>false</active>
         <description>prevent users from reopening these records.</description>
@@ -3919,7 +4145,8 @@ ISPICKVAL(PRIORVALUE(Status__c), "False Positive - Work Not Completed")
 
 )</errorConditionFormula>
         <errorMessage>You can not modify this record if it's already closed. Please contact @Salesforce Support in the Chatter Feed on this record if you closed by mistake or need assistance!</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Time_to_Complete_required</fullName>
         <active>true</active>
         <description>Time to complete is required on Closed and Relevant opportunities for Oracle</description>
@@ -3930,7 +4157,8 @@ ISBLANK(Time_To_Complete_Minutes__c)
 )</errorConditionFormula>
         <errorDisplayField>Time_To_Complete_Minutes__c</errorDisplayField>
         <errorMessage>Please enter in the Time to Complete in Minutes</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Unpaid_Optimization_Checks</fullName>
         <active>false</active>
         <description>All Unpaid Optimization must be filled in.</description>
@@ -3977,4 +4205,5 @@ ISBLANK(TEXT(UP_Checked_non_200_ok_or_non_301_codes__c)),
 LEN(Unpaid_Optimization_Notes__c)&lt;10
 ))</errorConditionFormula>
         <errorMessage>Please fill out all fields in the Unpaid Optimization Tactics and Unpaid Optimization Notes</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>
