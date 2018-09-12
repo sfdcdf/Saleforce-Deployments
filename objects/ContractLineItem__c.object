@@ -1,47 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
-        <fullName>Contract__c</fullName>
-        <description>Relationship Id to the Contract Object</description>
-        <externalId>false</externalId>
-        <label>Contract</label>
-        <referenceTo>Contract</referenceTo>
-        <relationshipLabel>Contract Lines</relationshipLabel>
-        <relationshipName>Contract_Lines</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields><fields>
+    </actionOverrides>
+    <fields>
         <fullName>End_Date__c</fullName>
         <description>End Date for the Contract Line Item.</description>
         <externalId>false</externalId>
@@ -49,7 +47,8 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LineDescription__c</fullName>
         <description>Description of the Contract Line.</description>
         <externalId>false</externalId>
@@ -59,7 +58,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opportunity__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <description>Opportunity associated to the Contract Line.</description>
@@ -71,7 +71,8 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product2__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>Lookup to the Product2 object.</description>
@@ -83,7 +84,8 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Quantity__c</fullName>
         <description>Quantity of the Contract Line.</description>
         <externalId>false</externalId>
@@ -94,7 +96,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Start_Date__c</fullName>
         <description>Start Date for the Contract Line Item.</description>
         <externalId>false</externalId>
@@ -102,7 +105,8 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <description>Status of the Contract Line Item based on the End Date.</description>
         <externalId>false</externalId>
@@ -126,7 +130,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Price__c</fullName>
         <description>Total Price of the Contract Line.</description>
         <externalId>false</externalId>
@@ -136,8 +141,61 @@
         <scale>2</scale>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Corporate_Sponsored__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Corporate Sponsored</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Preferred_Vendor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract includes a Preferred Vendor agreement</inlineHelpText>
+        <label>Preferred Vendor</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>of_Locations__c</fullName>
+        <externalId>false</externalId>
+        <label># of Locations</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract__c</fullName>
+        <description>Relationship Id to the Contract Object</description>
+        <externalId>false</externalId>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Contract Lines</relationshipLabel>
+        <relationshipName>Contract_Lines</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Product lines associated to the Contract which originated from the Closed Won Opportunity</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Contract Line</label><nameField>
         <displayFormat>CL-{000000000}</displayFormat>
         <label>Contract Line Name</label>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Contract Lines</pluralLabel><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility></CustomObject>
+    </nameField><pluralLabel>Contract Lines</pluralLabel><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility>
+</CustomObject>

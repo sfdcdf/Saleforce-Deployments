@@ -33325,6 +33325,14 @@
     <layoutAssignments>
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.WBN_Amendment</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.WBN_MSA</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35393,6 +35401,16 @@
         <default>false</default>
         <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.WBN_Amendment</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.WBN_MSA</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>AboutClicktools</tab>

@@ -112,65 +112,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Agreement_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Agreement Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Addendum</fullName>
-                    <default>false</default>
-                    <label>Addendum</label>
-                </value>
-                <value>
-                    <fullName>Change Order</fullName>
-                    <default>false</default>
-                    <label>Change Order</label>
-                </value>
-                <value>
-                    <fullName>Letter</fullName>
-                    <default>false</default>
-                    <label>Letter</label>
-                </value>
-                <value>
-                    <fullName>MSA</fullName>
-                    <default>false</default>
-                    <label>MSA</label>
-                </value>
-                <value>
-                    <fullName>NDA</fullName>
-                    <default>false</default>
-                    <label>NDA</label>
-                </value>
-                <value>
-                    <fullName>Renewal/Amendment</fullName>
-                    <default>false</default>
-                    <label>Renewal/Amendment</label>
-                </value>
-                <value>
-                    <fullName>Sales Order</fullName>
-                    <default>false</default>
-                    <label>Sales Order</label>
-                </value>
-                <value>
-                    <fullName>SOW</fullName>
-                    <default>false</default>
-                    <label>SOW</label>
-                </value>
-                <value>
-                    <fullName>Termination</fullName>
-                    <default>false</default>
-                    <label>Termination</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Auto_Renewal__c</fullName>
         <externalId>false</externalId>
         <label>Auto-Renewal</label>
@@ -1317,6 +1258,150 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Agreement_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Agreement Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Addendum</fullName>
+                    <default>false</default>
+                    <label>Addendum</label>
+                </value>
+                <value>
+                    <fullName>Change Order</fullName>
+                    <default>false</default>
+                    <label>Change Order</label>
+                </value>
+                <value>
+                    <fullName>Letter</fullName>
+                    <default>false</default>
+                    <label>Letter</label>
+                </value>
+                <value>
+                    <fullName>MSA</fullName>
+                    <default>false</default>
+                    <label>MSA</label>
+                </value>
+                <value>
+                    <fullName>NDA</fullName>
+                    <default>false</default>
+                    <label>NDA</label>
+                </value>
+                <value>
+                    <fullName>Renewal/Amendment</fullName>
+                    <default>false</default>
+                    <label>Renewal/Amendment</label>
+                </value>
+                <value>
+                    <fullName>Sales Order</fullName>
+                    <default>false</default>
+                    <label>Sales Order</label>
+                </value>
+                <value>
+                    <fullName>SOW</fullName>
+                    <default>false</default>
+                    <label>SOW</label>
+                </value>
+                <value>
+                    <fullName>Termination</fullName>
+                    <default>false</default>
+                    <label>Termination</label>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+                <value>
+                    <fullName>Amendment</fullName>
+                    <default>false</default>
+                    <label>Amendment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Corp_Acct_ID_in_YL__c</fullName>
+        <description>Formula Field from Account Object (YBN Master Accounts) - Yodle Live Corporate Account ID</description>
+        <externalId>false</externalId>
+        <formula>Account.Relationship_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Corp Acct ID in YL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fulfillment__c</fullName>
+        <description>Shows which division is fulfilling the product.</description>
+        <externalId>false</externalId>
+        <label>Fulfillment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency</fullName>
+                    <default>false</default>
+                    <label>Agency</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>WBN</fullName>
+                    <default>false</default>
+                    <label>WBN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_Go_Live_Date__c</fullName>
+        <description>THIS IS THE INITIAL START OF THE MONTHLY BILLING OF THE CONTRACT - CONTRACT LENGTH - Contract Start Date should match this on initial contracts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Initial Start of Monthly Billing for the contract.</inlineHelpText>
+        <label>Initial Go Live Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Monthly_Recurring_Revenue_MRR__c</fullName>
+        <description>Monthly revenue associated with contract.</description>
+        <externalId>false</externalId>
+        <label>Monthly Recurring Revenue (MRR)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Contract_Value_TCV__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Contract Value (TCV)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     
@@ -1471,6 +1556,21 @@
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fulfillment__c</picklist>
+            <values>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBN</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1763,6 +1863,21 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fulfillment__c</picklist>
+            <values>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Included_Services__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -2035,6 +2150,21 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Fulfillment__c</picklist>
+            <values>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Included_Services__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -2245,4 +2375,625 @@
             </values>
         </picklistValues>
     </recordTypes>
+    <recordTypes>
+        <fullName>WBN_Amendment</fullName>
+        <active>true</active>
+        <description>For any additional product that is purchased after Master Service Agreement is signed an amendment is created that sits as another product line item in the MSA.</description>
+        <label>WBN Amendment</label>
+        <picklistValues>
+            <picklist>Agreement_Type__c</picklist>
+            <values>
+                <fullName>Addendum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amendment</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Auto_Renewal__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Corporate_vs_Individual__c</picklist>
+            <values>
+                <fullName>Corporate Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_Termination__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fulfillment__c</picklist>
+            <values>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Included_Services__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Non_Compete__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Term__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reporting_Obligation__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Share__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Special_Pricing_Terms__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Support_SLA__c</picklist>
+            <values>
+                <fullName>Tier I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier III</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Termination_Notice__c</picklist>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Trade_Show_Sponsorship__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>WBN_MSA</fullName>
+        <active>true</active>
+        <description>WBN (Web Brand Networks) Master Service Agreement shows information once the Contract record is created: Contract Information, Rev Details, Addtl Contract Details, Signature Information</description>
+        <label>WBN MSA</label>
+        <picklistValues>
+            <picklist>Agreement_Type__c</picklist>
+            <values>
+                <fullName>MSA</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Auto_Renewal__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Corporate_vs_Individual__c</picklist>
+            <values>
+                <fullName>Corporate Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_Termination__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fulfillment__c</picklist>
+            <values>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Included_Services__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Non_Compete__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Term__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reporting_Obligation__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Share__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Special_Pricing_Terms__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Support_SLA__c</picklist>
+            <values>
+                <fullName>Tier I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier III</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Termination_Notice__c</picklist>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Trade_Show_Sponsorship__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Required_fields_for_Activating_Contract</fullName>
+        <active>true</active>
+        <description>Cannot activate contract/amendment unless all defined fields are filled in</description>
+        <errorConditionFormula>AND(
+OR(RecordType.Id = "012W00000005Kgl",
+RecordType.Id = "012W00000005Kgq"),
+AND(ISCHANGED(Status),
+ISPICKVAL(Status, "Activated")), 
+OR(ISBLANK(TEXT(Fulfillment__c)), 
+ISBLANK(Opportunity__c),
+ISBLANK(Total_Contract_Value_TCV__c),
+ISBLANK(Monthly_Recurring_Revenue_MRR__c), 
+ISBLANK(TEXT(Revenue_Share__c)),
+ISBLANK(TEXT(Special_Pricing_Terms__c)),
+ISBLANK(TEXT(Early_Termination__c)),
+ISBLANK(TEXT(Reporting_Obligation__c)),
+ISBLANK(TEXT(Trade_Show_Sponsorship__c)),
+ISBLANK(CustomerSignedId),
+ISBLANK(CustomerSignedDate),
+ISBLANK(CustomerSignedTitle),
+ISBLANK(CompanySignedId),
+ISBLANK(CompanySignedDate)))</errorConditionFormula>
+        <errorMessage>All fields except from description ones MUST be filled in before activating an MSA Contract or Amendment.</errorMessage>
+    </validationRules>
 </CustomObject>

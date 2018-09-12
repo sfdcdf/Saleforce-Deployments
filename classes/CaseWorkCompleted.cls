@@ -1,25 +1,29 @@
 /****************************************************************************
   Company/ Author ....: E. Ross
   Date Created .......: 19-Dec-2017
-  Last Modified By ...: E. Ross
-  Last Modified Date .: 3-Mar-2018
+  Last Modified By ...: F. Poirier
+  Last Modified Date .: 12-Sept-2018
   Description ........: Class contains invocable method to update status and work completed date of Parent Case 
   when all associated child Cases are closed.
 *****************************************************************************/
 public class CaseWorkCompleted
 {
     @InvocableMethod
-    public static void UpdateParentCaseWorkCompleted(List<Id> caseIds)
+    public static void UpdateParentCaseWorkCompleted(List<Id> parentIds)
     {
         try{
         
-            if(caseIds.size() > 0){
+            if(parentIds.size() > 0){
             
                 Set<Id> parentCaseIdsSet = new Set<Id>();
                 Set<String> parentRecordTypes = new Set<String>();
                 Set<String> statusExceptions = new Set<String>{'Awaiting Customer Response','Bug Reported'};
                 Boolean isParentCaseType = false;
                 List<Case> dmlCases = new List<Case>();
+                List<Case> allChildCases = new List<Case>();
+                List<Organic_Analysis__c> allChildOrganicCases = new List<Organic_Analysis__c>();
+                List<Call_Quality_Concern__c> allChildCallQualityConcerns = new List<Call_Quality_Concern__c>();
+                List<Quality_Case__c> allChildQualityCases = new List<Quality_Case__c>();
                 Integer allChildOrganicCasesCnt = 0;
                 Integer allChildCallQltyConcernCnt = 0;
                 Integer allChildQualityCasesCnt = 0;
@@ -42,114 +46,124 @@ public class CaseWorkCompleted
                     }
                 }
                 
-                for(Case c :
-                    [SELECT Id,
-                            ParentId
-                       FROM Case
-                      WHERE Id IN :caseIds]){
-                    
-                    // Case is related Child
-                    if(c.ParentId != null){
-                        parentCaseIdsSet.add(c.ParentId);
-                    }
-                    // Case is Parent
-                    if(c.ParentId == null && c.Id != null){
-                        parentCaseIdsSet.add(c.Id);
-                    }
-                }
-                
+               parentCaseIdsSet.addAll(parentIds);
+
                 if(parentCaseIdsSet.size() > 0){
                 
-                    // TOTAL CHILD CASE COUNTS //
-                    // get total Default Case Counts regardless of any valid Status
-                    allChildDefaultCasesCnt =
-                        [SELECT COUNT()
-                           FROM Case
-                          WHERE ParentId IN :parentCaseIdsSet AND
-                                Status != 'Delete Case'];
-                              
-                    // get total Organic Case Counts regardless of Status
-                    allChildOrganicCasesCnt =
-                        [SELECT COUNT()
-                           FROM Organic_Analysis__c
-                          WHERE Case_URL__c IN :parentCaseIdsSet];
-                              
-                    // get total Call Quality Concern Counts regardless of Status
-                    allChildCallQltyConcernCnt =
-                        [SELECT COUNT()
-                           FROM Call_Quality_Concern__c
-                          WHERE Case__c IN :parentCaseIdsSet];
-                              
-                    // get total Quality Case Counts regardless of Status
-                    allChildQualityCasesCnt =
-                        [SELECT COUNT()
-                           FROM Quality_Case__c
-                          WHERE Parent_Case__c IN :parentCaseIdsSet];
-                        
-                    // total of all child Cases
-                    allChildTotal = allChildDefaultCasesCnt + allChildOrganicCasesCnt + allChildCallQltyConcernCnt + allChildQualityCasesCnt;
-                        
-                    // TOTAL CHILD CASES CLOSED COUNTS //
-                    // get total Default Case Counts Closed
-                    closedChildDefaultCasesCnt =
-                        [SELECT COUNT()
-                           FROM Case
-                          WHERE ParentId IN :parentCaseIdsSet AND
-                                IsClosed = true AND
-                                Status != 'Delete Case'];
-                              
-                    // get total Organic Case Counts Closed
-                    closedChildOrganicCasesCnt =
-                        [SELECT COUNT()
-                           FROM Organic_Analysis__c
-                          WHERE Case_URL__c IN :parentCaseIdsSet AND
-                                IsClosed__c = true];
-                              
-                    // get total Call Quality Concern Counts Closed
-                    closedChildCallQltyConcernCnt =
-                        [SELECT COUNT()
-                           FROM Call_Quality_Concern__c
-                          WHERE Case__c IN :parentCaseIdsSet AND
-                                Status__c = 'Closed'];
-                              
-                    // get total Quality Case Counts Closed
-                    closedChildQualityCasesCnt =
-                        [SELECT COUNT()
-                           FROM Quality_Case__c
-                          WHERE Parent_Case__c IN :parentCaseIdsSet AND
-                                IsClosed__c = true];
-                    
-                    // total of all child Cases Closed
-                    allClosedChildTotal = closedChildDefaultCasesCnt + closedChildOrganicCasesCnt + closedChildCallQltyConcernCnt + closedChildQualityCasesCnt;
-                        
-                    System.Debug('Total Child Cases: ' + String.valueOf(allChildTotal));
-                    System.Debug('Total Child Cases Closed: ' + String.valueOf(allClosedChildTotal));
-                        
-                    // Check totals for match
-                    if(allChildTotal == allClosedChildTotal && allClosedChildTotal > 0){
-                            
-                        // Update Parent Cases
-                        for(Case cu :
-                            [SELECT Id,
-                                    Status,
-                                    Date_Work_Completed__c
-                               FROM Case
-                              WHERE Id IN :parentCaseIdsSet AND
-                                    IsClosed = false AND
-                                    RecordType.Name IN :parentRecordTypes]){
-                            
-                            if(cu.Id != null && !statusExceptions.contains(cu.Status)){
-                                
-                                cu.Status = 'All Work Completed – Contact Client';
-                                cu.Date_Work_Completed__c = System.Now();
-                                    
-                                // add Case to update List
-                                dmlCases.add(cu);
+                    if(parentCaseIdsSet.size() > 0){
+
+                        //Francois Poirier Refactor September 11 2018
+                        // Get List of all child cases needed
+                        allChildCases =
+                        [
+                                SELECT  Id,
+                                        ParentId,
+                                        Status,
+                                        IsClosed
+                                FROM    Case
+                                WHERE   ParentId IN :parentCaseIdsSet
+                        ];
+
+                        for(Case c : allChildCases){
+
+                            if(c.Status != 'Delete Case'){
+                                allChildDefaultCasesCnt ++;
+                                if(c.IsClosed){
+                                    closedChildDefaultCasesCnt++;
+                                }
+                            }
+
+                        }
+
+                        system.debug('allChidlDefaultCasesCbt ===> ' + allChildDefaultCasesCnt);
+                        system.debug('closedChildDefaultCasesCnt ===> ' + closedChildDefaultCasesCnt);
+
+                        allChildOrganicCases =
+                        [
+                                SELECT  Id,
+                                        IsClosed__c
+                                FROM    Organic_Analysis__c
+                                WHERE   Case_URL__c IN :parentCaseIdsSet
+                        ];
+
+                        allChildOrganicCasesCnt = allChildOrganicCases.size();
+
+                        for(Organic_Analysis__c o : allChildOrganicCases){
+                            if(o.IsClosed__c){
+                                closedChildOrganicCasesCnt++;
                             }
                         }
+
+                        system.debug('allChildOrganicCasesCnt ===> ' + allChildOrganicCasesCnt);
+                        system.debug('closedChildOrganicCasesCnt ===> ' + closedChildOrganicCasesCnt);
+                        allChildCallQualityConcerns =
+                        [
+                                SELECT  Id,
+                                        Status__c
+                                FROM Call_Quality_Concern__c
+                                WHERE Case__c IN :parentCaseIdsSet
+
+                        ];
+
+                        allChildCallQltyConcernCnt = allChildCallQualityConcerns.size();
+
+                        for(Call_Quality_Concern__c call : allChildCallQualityConcerns){
+                            if(call.Status__c == 'Closed'){
+                                closedChildCallQltyConcernCnt++;
+                            }
+                        }
+
+                        allChildQualityCases = [
+                                SELECT  Id,
+                                        IsClosed__c
+                                FROM Quality_Case__c
+                                WHERE Parent_Case__c IN :parentCaseIdsSet
+
+                        ];
+
+                        allChildQualityCasesCnt = allChildQualityCases.size();
+
+                        for(Quality_Case__c q : allChildQualityCases){
+                            if(q.IsClosed__c){
+                                closedChildQualityCasesCnt++;
+                            }
+                        }
+                        
+                        // total of all child Cases
+                        allChildTotal = allChildDefaultCasesCnt + allChildOrganicCasesCnt + allChildCallQltyConcernCnt + allChildQualityCasesCnt;
+                    
+                        // total of all child Cases Closed
+                        allClosedChildTotal = closedChildDefaultCasesCnt + closedChildOrganicCasesCnt + closedChildCallQltyConcernCnt + closedChildQualityCasesCnt;
+                        
+                        System.Debug('Total Child Cases: ' + String.valueOf(allChildTotal));
+                        System.Debug('Total Child Cases Closed: ' + String.valueOf(allClosedChildTotal));
+                        
+                        // Check totals for match
+                        if(allChildTotal == allClosedChildTotal && allClosedChildTotal > 0){
                             
-                        if(dmlCases.size() > 0){
-                            update dmlCases;
+                            // Update Parent Cases
+                            for(Case cu :
+                                [SELECT Id,
+                                        Status,
+                                        Date_Work_Completed__c
+                                   FROM Case
+                                  WHERE Id IN :parentCaseIdsSet AND
+                                        IsClosed = false AND
+                                        RecordType.Name IN :parentRecordTypes]){
+                            
+                                if(cu.Id != null && !statusExceptions.contains(cu.Status)){
+                                
+                                    cu.Status = 'All Work Completed – Contact Client';
+                                    cu.Date_Work_Completed__c = System.Now();
+                                    
+                                    // add Case to update List
+                                    dmlCases.add(cu);
+                                }
+                            }
+                            
+                            if(dmlCases.size() > 0){
+                                update dmlCases;
+                            }
                         }
                     }
                 }

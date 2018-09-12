@@ -4679,6 +4679,14 @@
     <layoutAssignments>
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.WBN_Amendment</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.WBN_MSA</recordType>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -6072,6 +6080,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Application_Configuration__c.Yodle_Live_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.WBN_Amendment</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.WBN_MSA</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
