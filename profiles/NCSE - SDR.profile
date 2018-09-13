@@ -32166,6 +32166,36 @@
         <field>ContractLineItem__c.of_Locations__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Agreement_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.Corp_Acct_ID_in_YL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Fulfillment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Initial_Go_Live_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Monthly_Recurring_Revenue_MRR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Total_Contract_Value_TCV__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -33958,6 +33988,17 @@
         <layout>Contract-Contract Layout</layout>
         <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-WBN Amendment</layout>
+        <recordType>Contract.WBN_Amendment</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-WBN MSA</layout>
+        <recordType>Contract.WBN_MSA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContractLineItem__c-WBN Contract Line Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35038,6 +35079,15 @@
         <object>zzContract__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ContractLineItem__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -35736,11 +35786,6 @@
         <default>false</default>
         <recordType>Contract.Biz_Dev_Agreement</recordType>
         <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Contract.Service_Agreement</recordType>
-        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -36442,13 +36487,19 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Contract.WBN_Amendment</recordType>
-        <visible>false</visible>
+        <recordType>Contract.Service_Agreement</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Contract.WBN_Amendment</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Contract.WBN_MSA</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>AboutClicktools</tab>

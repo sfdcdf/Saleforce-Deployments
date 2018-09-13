@@ -2976,8 +2976,8 @@
         <active>true</active>
         <description>Cannot activate contract/amendment unless all defined fields are filled in</description>
         <errorConditionFormula>AND(
-OR(RecordType.Id = "012W00000005Kgl",
-RecordType.Id = "012W00000005Kgq"),
+OR( RecordType.Name = "WBN MSA",
+RecordType.Name = "WBN Amendment"),
 AND(ISCHANGED(Status),
 ISPICKVAL(Status, "Activated")), 
 OR(ISBLANK(TEXT(Fulfillment__c)), 
