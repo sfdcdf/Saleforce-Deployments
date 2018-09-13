@@ -1401,7 +1401,11 @@
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    
+    <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
@@ -1420,7 +1424,8 @@
         <searchResultsAdditionalFields>CONTRACT.START_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.END_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>AllActivatedContracts</fullName>
         <filterScope>Everything</filterScope>
