@@ -2,8 +2,10 @@
   Company/ Author ....: E. Ross
   Date Created .......: 21-Jun-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 16-Jul-2018
+  Last Modified Date .: 14-Sep-2018
   Description ........: Schedulable class to execute WBN Notifications on a daily schedule.
+  
+  14-Sep-18 ER: updates to recipient list; ensure list and set is cleared prioir to populating
 *****************************************************************************/
 global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
 
@@ -26,6 +28,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         String fromDisplayName = 'Salesforce Notifications';
         String subjectLine = '';
         String sfdcURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
+        String cecilyBEmail = 'cbolton@yodle.com';
         OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
         //Id emailTemplateId = [SELECT Id FROM EmailTemplate WHERE DeveloperName = 'WBN_NCS_Status_Has_Not_Changed' LIMIT 1].Id;
         
@@ -61,6 +64,20 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         try{
         
             if(caseIds.size() > 0){
+            
+                // Clear Lists before populating if necessary
+                toAddressSet.clear(); // clear Set
+                if(toAddress.size() > 0){
+                
+                    // clear recipient list
+                    toAddress.clear();
+                }
+                if(notificationsLst.size() > 0){
+                
+                    // clear notifications list
+                    notificationsLst.clear();
+                }
+            
                 for(Case c :
                     [SELECT Id,
                             CreatedDate, 
@@ -85,12 +102,14 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                       WHERE Id IN :caseIds]){
                           
                     // build list of email addresses to send to; first add to set to ensure unique values
+                    toAddressSet.add(cecilyBEmail); // Cecily Bolton
+                    
                     if(!String.isBlank(c.Account.IMS_Rep__r.Email)){
                         toAddressSet.add(c.Account.IMS_Rep__r.Email);
                     }
-                    if(ownerMgrsMap.containsKey(c.OwnerId) && !String.isBlank(ownerMgrsMap.get(c.OwnerId).Manager.Email)){
+                    /*if(ownerMgrsMap.containsKey(c.OwnerId) && !String.isBlank(ownerMgrsMap.get(c.OwnerId).Manager.Email)){
                         toAddressSet.add(ownerMgrsMap.get(c.OwnerId).Manager.Email);
-                    }
+                    }*/
                     if(!String.isBlank(c.Owner.Email)){
                         toAddressSet.add(c.Owner.Email);
                     }
@@ -143,7 +162,6 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                 
                     // send notifications
                     Messaging.sendEmail(notificationsLst);
-                    notificationsLst.clear();   
                 }
             }
         }
