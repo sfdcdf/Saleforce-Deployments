@@ -65,19 +65,6 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         
             if(caseIds.size() > 0){
             
-                // Clear Lists before populating if necessary
-                toAddressSet.clear(); // clear Set
-                if(toAddress.size() > 0){
-                
-                    // clear recipient list
-                    toAddress.clear();
-                }
-                if(notificationsLst.size() > 0){
-                
-                    // clear notifications list
-                    notificationsLst.clear();
-                }
-            
                 for(Case c :
                     [SELECT Id,
                             CreatedDate, 
@@ -100,7 +87,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                             Sales_Person__r.Name
                        FROM Case
                       WHERE Id IN :caseIds]){
-                          
+                    
                     // build list of email addresses to send to; first add to set to ensure unique values
                     toAddressSet.add(cecilyBEmail); // Cecily Bolton
                     
@@ -154,6 +141,10 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                         
                         // add message to notification list
                         notificationsLst.add(message);
+                        
+                        // clear recipient list
+                        toAddressSet.clear(); // clear Set
+                        toAddress.clear(); // clear list
                     }
                 }
                 
