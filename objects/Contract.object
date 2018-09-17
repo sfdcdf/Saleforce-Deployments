@@ -56,8 +56,45 @@
         <label>Default</label>
     </compactLayouts>
     <fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Client_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Client ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Parent.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corp_Acct_ID_in_YL__c</fullName>
+        <description>Formula Field from Account Object (YBN Master Accounts) - Yodle Live Corporate Account ID</description>
+        <externalId>false</externalId>
+        <formula>Account.Relationship_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Corp Acct ID in YL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>AccountId</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
         <type>Lookup</type>
     </fields>
     <fields>
@@ -67,6 +104,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -77,17 +115,20 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
         <fullName>ActivatedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ActivatedDate</fullName>
+        
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -97,6 +138,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -107,15 +149,87 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Agreement_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Agreement Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Addendum</fullName>
+                    <default>false</default>
+                    <label>Addendum</label>
+                </value>
+                <value>
+                    <fullName>Change Order</fullName>
+                    <default>false</default>
+                    <label>Change Order</label>
+                </value>
+                <value>
+                    <fullName>Letter</fullName>
+                    <default>false</default>
+                    <label>Letter</label>
+                </value>
+                <value>
+                    <fullName>MSA</fullName>
+                    <default>false</default>
+                    <label>MSA</label>
+                </value>
+                <value>
+                    <fullName>NDA</fullName>
+                    <default>false</default>
+                    <label>NDA</label>
+                </value>
+                <value>
+                    <fullName>Renewal/Amendment</fullName>
+                    <default>false</default>
+                    <label>Renewal/Amendment</label>
+                </value>
+                <value>
+                    <fullName>Sales Order</fullName>
+                    <default>false</default>
+                    <label>Sales Order</label>
+                </value>
+                <value>
+                    <fullName>SOW</fullName>
+                    <default>false</default>
+                    <label>SOW</label>
+                </value>
+                <value>
+                    <fullName>Termination</fullName>
+                    <default>false</default>
+                    <label>Termination</label>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+                <value>
+                    <fullName>Amendment</fullName>
+                    <default>false</default>
+                    <label>Amendment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Auto_Renewal__c</fullName>
         <externalId>false</externalId>
         <label>Auto-Renewal</label>
         <required>false</required>
+        
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -136,7 +250,8 @@
     </fields>
     <fields>
         <fullName>BillingAddress</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>CM_Lite_Fee_Per_Location__c</fullName>
@@ -145,6 +260,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -155,6 +271,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -166,6 +283,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -176,6 +294,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -186,6 +305,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -197,28 +317,20 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Client_ID__c</fullName>
-        <externalId>false</externalId>
-        <formula>Account.Client_ID__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Client ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CompanySignedDate</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>CompanySignedId</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
         <type>Lookup</type>
     </fields>
     <fields>
@@ -228,18 +340,21 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
         <fullName>ContractTerm</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Contract_Oppty__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Contract-Oppty</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -252,6 +367,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -262,6 +378,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -273,6 +390,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -283,6 +401,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -291,6 +410,7 @@
         <externalId>false</externalId>
         <label>Corporate vs Individual</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -311,22 +431,26 @@
     </fields>
     <fields>
         <fullName>CustomerSignedDate</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>CustomerSignedId</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>CustomerSignedTitle</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Customer_Main_Contact_Email__c</fullName>
         <externalId>false</externalId>
         <label>Customer Main Contact Email</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Email</type>
         <unique>false</unique>
@@ -336,6 +460,7 @@
         <externalId>false</externalId>
         <label>Customer Main Contact Phone</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Phone</type>
     </fields>
@@ -346,13 +471,15 @@
         <label>Customer Main Contact</label>
         <length>100</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
         <fullName>Description</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Display_Contract_Length__c</fullName>
@@ -361,6 +488,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -372,6 +500,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -382,6 +511,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -392,6 +522,7 @@
         <label>Document Name</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -401,6 +532,7 @@
         <externalId>false</externalId>
         <label>Early Termination Description</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -410,6 +542,7 @@
         <externalId>false</externalId>
         <label>Early Termination</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -435,6 +568,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -446,6 +580,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -456,19 +591,22 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
         <fullName>EndDate</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Fees_to_Customer__c</fullName>
         <externalId>false</externalId>
         <label>Fees to Customer</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -480,6 +618,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -490,14 +629,47 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Fulfillment__c</fullName>
+        <description>Shows which division is fulfilling the product.</description>
+        <externalId>false</externalId>
+        <label>Fulfillment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency</fullName>
+                    <default>false</default>
+                    <label>Agency</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>WBN</fullName>
+                    <default>false</default>
+                    <label>WBN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Included_Services_Description__c</fullName>
         <externalId>false</externalId>
         <label>Included Services Description</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -507,6 +679,7 @@
         <externalId>false</externalId>
         <label>Included Services</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -526,6 +699,17 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Initial_Go_Live_Date__c</fullName>
+        <description>THIS IS THE INITIAL START OF THE MONTHLY BILLING OF THE CONTRACT - CONTRACT LENGTH - Contract Start Date should match this on initial contracts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Initial Start of Monthly Billing for the contract.</inlineHelpText>
+        <label>Initial Go Live Date</label>
+        <required>false</required>
+        
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Internal_Business_Owner__c</fullName>
         <description>Web.com Internal Business Owner - Contract - internal person who owns the account/manages relationship</description>
         <externalId>false</externalId>
@@ -533,6 +717,7 @@
         <label>Internal Business Owner</label>
         <length>200</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -544,6 +729,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -554,6 +740,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -565,6 +752,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -575,19 +763,34 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Monthly_Recurring_Revenue_MRR__c</fullName>
+        <description>Monthly revenue associated with contract.</description>
+        <externalId>false</externalId>
+        <label>Monthly Recurring Revenue (MRR)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Non_Compete__c</fullName>
         <externalId>false</externalId>
         <label>Non-Compete</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -613,6 +816,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -622,6 +826,7 @@
         <externalId>false</externalId>
         <label>Onboarding SLA</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -633,6 +838,7 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -655,6 +861,7 @@
         <relationshipLabel>Contracts</relationshipLabel>
         <relationshipName>Contract</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -665,6 +872,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -675,6 +883,7 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -685,6 +894,7 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -696,17 +906,20 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
         <fullName>OwnerExpirationNotice</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
         <type>Lookup</type>
     </fields>
     <fields>
@@ -716,6 +929,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -727,6 +941,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -739,25 +954,16 @@
         <relationshipLabel>Contracts</relationshipLabel>
         <relationshipName>Contracts</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Parent_Account__c</fullName>
-        <externalId>false</externalId>
-        <formula>Account.Parent.Name</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Parent Account</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Payment_Method__c</fullName>
         <externalId>false</externalId>
         <label>Payment Method</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -781,6 +987,7 @@
         <externalId>false</externalId>
         <label>Renewal Notice Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -790,6 +997,7 @@
         <externalId>false</externalId>
         <label>Renewal Term</label>
         <required>false</required>
+        
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -929,6 +1137,7 @@
         <externalId>false</externalId>
         <label>Reporting Obligation Description</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -938,6 +1147,7 @@
         <externalId>false</externalId>
         <label>Reporting Obligation</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -961,6 +1171,7 @@
         <externalId>false</externalId>
         <label>Revenue Share Description</label>
         <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
@@ -970,6 +1181,7 @@
         <externalId>false</externalId>
         <label>Revenue Share</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -996,6 +1208,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1007,6 +1220,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1017,6 +1231,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1028,6 +1243,7 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1038,6 +1254,7 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1049,22 +1266,26 @@
         <precision>6</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
         <fullName>ShippingAddress</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>SpecialTerms</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Special_Pricing_Terms_Description__c</fullName>
         <externalId>false</externalId>
         <label>Special Pricing Terms Description</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -1074,6 +1295,7 @@
         <externalId>false</externalId>
         <label>Special Pricing Terms</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -1094,11 +1316,13 @@
     </fields>
     <fields>
         <fullName>StartDate</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
     </fields>
     <fields>
         <fullName>Status</fullName>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        
         <type>Picklist</type>
     </fields>
     <fields>
@@ -1106,6 +1330,7 @@
         <externalId>false</externalId>
         <label>Support SLA</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -1136,6 +1361,7 @@
         <inlineHelpText>How many days are required for a termination notice?</inlineHelpText>
         <label>Termination Notice</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -1170,15 +1396,28 @@
         <externalId>false</externalId>
         <label>Tiered Pricing</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Total_Contract_Value_TCV__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Contract Value (TCV)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Trade_Show_Sponsorship_Description__c</fullName>
         <externalId>false</externalId>
         <label>Trade Show Sponsorship Description</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -1188,6 +1427,7 @@
         <externalId>false</externalId>
         <label>Trade Show Sponsorship</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -1213,6 +1453,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1223,6 +1464,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1233,6 +1475,7 @@
         <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1244,6 +1487,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1254,154 +1498,16 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Agreement_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Agreement Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Addendum</fullName>
-                    <default>false</default>
-                    <label>Addendum</label>
-                </value>
-                <value>
-                    <fullName>Change Order</fullName>
-                    <default>false</default>
-                    <label>Change Order</label>
-                </value>
-                <value>
-                    <fullName>Letter</fullName>
-                    <default>false</default>
-                    <label>Letter</label>
-                </value>
-                <value>
-                    <fullName>MSA</fullName>
-                    <default>false</default>
-                    <label>MSA</label>
-                </value>
-                <value>
-                    <fullName>NDA</fullName>
-                    <default>false</default>
-                    <label>NDA</label>
-                </value>
-                <value>
-                    <fullName>Renewal/Amendment</fullName>
-                    <default>false</default>
-                    <label>Renewal/Amendment</label>
-                </value>
-                <value>
-                    <fullName>Sales Order</fullName>
-                    <default>false</default>
-                    <label>Sales Order</label>
-                </value>
-                <value>
-                    <fullName>SOW</fullName>
-                    <default>false</default>
-                    <label>SOW</label>
-                </value>
-                <value>
-                    <fullName>Termination</fullName>
-                    <default>false</default>
-                    <label>Termination</label>
-                </value>
-                <value>
-                    <fullName>Renewal</fullName>
-                    <default>false</default>
-                    <label>Renewal</label>
-                </value>
-                <value>
-                    <fullName>Amendment</fullName>
-                    <default>false</default>
-                    <label>Amendment</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Corp_Acct_ID_in_YL__c</fullName>
-        <description>Formula Field from Account Object (YBN Master Accounts) - Yodle Live Corporate Account ID</description>
-        <externalId>false</externalId>
-        <formula>Account.Relationship_ID__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Corp Acct ID in YL</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Fulfillment__c</fullName>
-        <description>Shows which division is fulfilling the product.</description>
-        <externalId>false</externalId>
-        <label>Fulfillment</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Agency</fullName>
-                    <default>false</default>
-                    <label>Agency</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>WBN</fullName>
-                    <default>false</default>
-                    <label>WBN</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Initial_Go_Live_Date__c</fullName>
-        <description>THIS IS THE INITIAL START OF THE MONTHLY BILLING OF THE CONTRACT - CONTRACT LENGTH - Contract Start Date should match this on initial contracts.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Initial Start of Monthly Billing for the contract.</inlineHelpText>
-        <label>Initial Go Live Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Monthly_Recurring_Revenue_MRR__c</fullName>
-        <description>Monthly revenue associated with contract.</description>
-        <externalId>false</externalId>
-        <label>Monthly Recurring Revenue (MRR)</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Total_Contract_Value_TCV__c</fullName>
-        <externalId>false</externalId>
-        <label>Total Contract Value (TCV)</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    
+    <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
@@ -1420,7 +1526,8 @@
         <searchResultsAdditionalFields>CONTRACT.START_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.END_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>AllActivatedContracts</fullName>
         <filterScope>Everything</filterScope>
