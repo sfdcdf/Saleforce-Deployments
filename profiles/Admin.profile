@@ -1547,6 +1547,10 @@
         <apexPage>LaunchSalesWizard</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>DreamforcePortalHome</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <applicationVisibilities>
         <application>Clicktools</application>
         <default>false</default>
