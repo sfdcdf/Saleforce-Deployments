@@ -1210,12 +1210,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>AccountId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>ActivatedDate</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1245,53 +1239,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>BillingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CompanySignedDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CompanySignedId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ContractTerm</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CustomerSignedDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CustomerSignedId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>CustomerSignedTitle</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>Description</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>EndDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
         <fullName>Initial_Go_Live_Date__c</fullName>
         <description>THIS IS THE INITIAL START OF THE MONTHLY BILLING OF THE CONTRACT - CONTRACT LENGTH - Contract Start Date should match this on initial contracts.</description>
         <externalId>false</externalId>
@@ -1313,22 +1260,6 @@
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>OwnerExpirationNotice</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Renewal_Term__c</fullName>
@@ -1472,6 +1403,86 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Total_Contract_Value_TCV__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Contract Value (TCV)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CompanySignedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CompanySignedId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractTerm</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CustomerSignedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CustomerSignedId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerSignedTitle</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>OwnerExpirationNotice</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ShippingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         
@@ -1491,17 +1502,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         
         <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Total_Contract_Value_TCV__c</fullName>
-        <externalId>false</externalId>
-        <label>Total Contract Value (TCV)</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
