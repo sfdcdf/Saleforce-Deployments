@@ -1,34 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -40,7 +51,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cancellation_Parent__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -53,7 +65,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Ag_Bus_Days__c</fullName>
         <externalId>false</externalId>
         <formula>CASE(MOD( DateValue(CreatedDate) - DATE(1985,6,24),7), 0 , 
@@ -74,7 +87,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Age__c</fullName>
         <externalId>false</externalId>
         <formula>NOW() - CreatedDate</formula>
@@ -86,7 +100,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Closed_By__c</fullName>
         <externalId>false</externalId>
         <label>Case Closed By</label>
@@ -97,7 +112,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Closed_Date_Time__c</fullName>
         <externalId>false</externalId>
         <label>Case Closed Date/Time</label>
@@ -106,7 +122,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <formula>Account_Name__r.Client_ID__c</formula>
@@ -117,7 +134,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID_del__c</fullName>
         <externalId>false</externalId>
         <label>Client ID</label>
@@ -128,7 +146,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Created_Date__c</fullName>
         <externalId>false</externalId>
         <formula>CreatedDate</formula>
@@ -138,7 +157,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Processed_QA__c</fullName>
         <externalId>false</externalId>
         <label>Date Processed QA</label>
@@ -147,7 +167,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description__c</fullName>
         <externalId>false</externalId>
         <label>Description</label>
@@ -157,7 +178,8 @@ CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999)
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>6</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsClosed__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -169,7 +191,8 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Minutes_Recorded__c</fullName>
         <externalId>false</externalId>
         <label>Minutes Recorded</label>
@@ -224,7 +247,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Offense_Details__c</fullName>
         <externalId>false</externalId>
         <label>Offense Details</label>
@@ -1171,7 +1195,8 @@ false)</formula>
             </valueSettings>
         </valueSet>
         <visibleLines>6</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Original_Case_ID__c</fullName>
         <externalId>false</externalId>
         <label>Original Case ID</label>
@@ -1182,7 +1207,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Original_Case_Number__c</fullName>
         <externalId>false</externalId>
         <label>Original Case Number</label>
@@ -1193,7 +1219,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Parent_Case__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1205,7 +1232,8 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Priority__c</fullName>
         <externalId>false</externalId>
         <label>Priority</label>
@@ -1240,7 +1268,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>QA_Action_Taken__c</fullName>
         <externalId>false</externalId>
         <label>QA Action Taken</label>
@@ -1290,7 +1319,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>QA_Product_Type__c</fullName>
         <externalId>false</externalId>
         <label>QA Product Type</label>
@@ -1405,7 +1435,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>QA_Type__c</fullName>
         <externalId>false</externalId>
         <label>QA Type</label>
@@ -1435,7 +1466,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reason_for_QA__c</fullName>
         <externalId>false</externalId>
         <label>Reason for QA</label>
@@ -1761,7 +1793,8 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>6</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Result_of_QA__c</fullName>
         <externalId>false</externalId>
         <label>Result of QA</label>
@@ -1811,7 +1844,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_Date_Processed_QA__c</fullName>
         <externalId>false</externalId>
         <label>SR1 Date Processed QA</label>
@@ -1820,7 +1854,8 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_E_mail_Address__c</fullName>
         <externalId>false</externalId>
         <label>SR1 E-mail Address</label>
@@ -1830,7 +1865,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_Manager__c</fullName>
         <externalId>false</externalId>
         <label>SR1 Manager</label>
@@ -1841,7 +1877,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_Name_text__c</fullName>
         <externalId>false</externalId>
         <label>SR1 Name (text)</label>
@@ -1852,7 +1889,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_Offense_Details__c</fullName>
         <externalId>false</externalId>
         <label>SR1 Offense Details</label>
@@ -2445,7 +2483,8 @@ false)</formula>
             </valueSettings>
         </valueSet>
         <visibleLines>5</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_QA_Action_Taken__c</fullName>
         <externalId>false</externalId>
         <label>SR1 QA Action Taken</label>
@@ -2495,7 +2534,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SR1_Sales_Office__c</fullName>
         <externalId>false</externalId>
         <label>SR1 Sales Office</label>
@@ -2535,7 +2575,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Manager__c</fullName>
         <externalId>false</externalId>
         <label>Sales Manager</label>
@@ -2546,7 +2587,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Office__c</fullName>
         <externalId>false</externalId>
         <label>Sales Office</label>
@@ -2586,7 +2628,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Person_text__c</fullName>
         <externalId>false</externalId>
         <label>Sales Person (text)</label>
@@ -2597,7 +2640,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Rep_E_mail_Address__c</fullName>
         <externalId>false</externalId>
         <label>Sales Rep E-mail Address</label>
@@ -2607,7 +2651,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -2643,7 +2688,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Subject__c</fullName>
         <externalId>false</externalId>
         <label>Subject</label>
@@ -2654,7 +2700,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Words_Transcribed__c</fullName>
         <externalId>false</externalId>
         <label>Words Transcribed</label>
@@ -2704,17 +2751,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
-        <fullName>Additional_Notes__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Additional Notes</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CS_Timestamp__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2726,7 +2764,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Found_Under__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2736,7 +2775,8 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Demo_Recorded__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2767,7 +2807,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fail_Details__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2777,19 +2818,8 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
-        <fullName>Fail_Timestamp__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Fail Timestamp</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outcome__c</fullName>
         <description>For Closing Script - Auto Launch</description>
         <externalId>false</externalId>
@@ -2819,7 +2849,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Potential_Quality_Offense__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2845,7 +2876,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product_Type__c</fullName>
         <description>For Closing Script - Auto Launch Case</description>
         <externalId>false</externalId>
@@ -2857,7 +2889,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>QO_Timestamp__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2869,7 +2902,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Date__c</fullName>
         <description>Date of Sale</description>
         <externalId>false</externalId>
@@ -2879,7 +2913,8 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Director__c</fullName>
         <description>Sales Director Name associated to record</description>
         <externalId>false</externalId>
@@ -2891,7 +2926,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Rep__c</fullName>
         <description>For Closing Script - Auto Launch Case</description>
         <externalId>false</externalId>
@@ -2903,7 +2939,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Segment__c</fullName>
         <description>For Closing Script - Auto Launch Case</description>
         <externalId>false</externalId>
@@ -2915,7 +2952,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Product_Type__c</fullName>
         <externalId>false</externalId>
         <formula>Account_Name__r.Product_Type_Transactional__c</formula>
@@ -2926,7 +2964,8 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CS_Fail_Details__c</fullName>
         <externalId>false</externalId>
         <label>CS Fail Details</label>
@@ -3292,7 +3331,8 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CS_Potential_Quality_Offense__c</fullName>
         <externalId>false</externalId>
         <label>CS Potential Quality Offense</label>
@@ -3453,7 +3493,8 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Closing_Script_Call_Recorded__c</fullName>
         <externalId>false</externalId>
         <label>Closing Script Call Recorded?</label>
@@ -3483,7 +3524,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fail_Reason__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -3544,7 +3586,8 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>5</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fine_Amount__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -3584,7 +3627,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Kickback__c</fullName>
         <externalId>false</externalId>
         <label>Kickback</label>
@@ -3614,7 +3658,8 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Rep_Emailed_QA__c</fullName>
         <description>For Closing Script - Auto Launch Case</description>
         <externalId>false</externalId>
@@ -3720,13 +3765,41 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Additional_Notes__c</fullName>
+        <description>For Closing Script - Auto Close Case
+ These fields are utilized to notate discrepancies (and their call timestamps) between the closing script questionnaire and audio recording of the closing script providing the fulfillment/cs teams with insight on the sale.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>These fields are utilized to notate discrepancies (and their call timestamps) between the closing script questionnaire and audio recording of the closing script providing the fulfillment/cs teams with insight on the sale.</inlineHelpText>
+        <label>Additional Notes</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fail_Timestamp__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Fail Timestamp</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Quality Case</label><nameField>
         <displayFormat>Q-{0000}</displayFormat>
         <label>Quality Case Name</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Quality Case</pluralLabel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </nameField><pluralLabel>Quality Case</pluralLabel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>RECORDTYPE</columns>
@@ -3734,7 +3807,8 @@ false)</formula>
         <columns>Client_ID_del__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Local_Quality_Cases_All</fullName>
         <columns>NAME</columns>
         <columns>Case_Age__c</columns>
@@ -3749,7 +3823,8 @@ false)</formula>
             <value>Quality_Case__c.Local_Master_Quality</value>
         </filters>
         <label>Local Quality Cases - All</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>QualityTeam295311_Quality_Case_Open</fullName>
         <columns>NAME</columns>
         <columns>Account_Name__c</columns>
@@ -3765,7 +3840,8 @@ false)</formula>
         </filters>
         <label>Quality Team - Open</label>
         <queue>QualityTeam295311</queue>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Quality_Closing_Scripts_Quality_Case</fullName>
         <filterScope>Queue</filterScope>
         <label>Quality Closing Scripts</label>
@@ -3773,7 +3849,8 @@ false)</formula>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Lighthouse_Master_Quality</fullName>
         <active>true</active>
         <label>Lighthouse Master Quality</label>
@@ -5049,7 +5126,8 @@ false)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Local_Master_Quality</fullName>
         <active>true</active>
         <label>Local Master Quality</label>
@@ -6425,7 +6503,8 @@ false)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>TORCHx_Master_Quality</fullName>
         <active>true</active>
         <label>TORCHx Master Quality</label>
@@ -7793,7 +7872,8 @@ false)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Closing_Script_Auto_Launch</fullName>
         <active>true</active>
         <description>QA Closing Script Cases</description>
@@ -9246,4 +9326,5 @@ false)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

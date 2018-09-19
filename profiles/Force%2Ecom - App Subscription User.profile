@@ -28728,6 +28728,11 @@
         <field>Performance_Analysis__c.Time_To_Complete_Minutes__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

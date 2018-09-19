@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>ACL_Guidelines_Followed2__c</fullName>
         <externalId>false</externalId>
         <label>ACL Guidelines Followed</label>
@@ -51,7 +62,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ACL_Guidelines_Followed__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>all ads are created using ACL, and all ad copy template values are filled out</inlineHelpText>
@@ -62,7 +74,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Able_to_Get_Lead_s_Contact_Information__c</fullName>
         <externalId>false</externalId>
         <label>Able to Get Lead's Contact Information?</label>
@@ -85,7 +98,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Acceptance_Exception__c</fullName>
         <externalId>false</externalId>
         <label>Account Acceptance Exception</label>
@@ -109,7 +123,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Acceptance_Issues__c</fullName>
         <externalId>false</externalId>
         <label>Account Acceptance Issues</label>
@@ -132,7 +147,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Channel_Type__c</fullName>
         <externalId>false</externalId>
         <label>Account Channel Type</label>
@@ -165,7 +181,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Issue__c</fullName>
         <externalId>false</externalId>
         <label>Account Issue</label>
@@ -203,7 +220,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -215,7 +233,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Originally_Set_Up_By__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -226,7 +245,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account_Setup_For__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -237,7 +257,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Ad_Copy_Formatting__c</fullName>
         <externalId>false</externalId>
         <label>Ad Copy Formatting</label>
@@ -265,7 +286,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Ad_Extensions__c</fullName>
         <externalId>false</externalId>
         <label>Ad Extensions</label>
@@ -288,7 +310,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Address_Consistency__c</fullName>
         <externalId>false</externalId>
         <label>Address Consistency</label>
@@ -311,7 +334,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Ads_Overall_Grade2__c</fullName>
         <description>Average of the Ads grades for the setup evaluation</description>
         <externalId>false</externalId>
@@ -325,7 +349,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>All_Errors_Fixed__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>all provider errors are fixed</inlineHelpText>
@@ -336,7 +361,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Analyst_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Analyst Notes</label>
@@ -345,7 +371,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Appropriate_Banner_Images__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate Banner Images</label>
@@ -373,7 +400,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Appropriate_Campaign_Selection__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate Campaign Selection</label>
@@ -401,7 +429,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Appropriate_Error_Free_Business_Descript__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate/Error Free Business Descript</label>
@@ -429,7 +458,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Appropriate_Name_Campaign__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate Name Campaign</label>
@@ -452,7 +482,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Area_Served_Description_Single_City__c</fullName>
         <externalId>false</externalId>
         <label>Area Served Description Single City</label>
@@ -475,7 +506,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Assigned_User_Roles__c</fullName>
         <externalId>false</externalId>
         <label>Assigned User Roles</label>
@@ -498,7 +530,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Audit_Fix_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Audit Fix Notes</label>
@@ -507,7 +540,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Avoided_Site_Content_Overlap__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>If similar client IDs were noted on questionnaire, site layout, colors, and content do not overlap.</inlineHelpText>
@@ -532,7 +566,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>BPM_Overall_Grade2__c</fullName>
         <description>Average of the BPM grading fields on the setup evaluation</description>
         <externalId>false</externalId>
@@ -545,7 +580,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Banner_Customization__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>To track Website Tier Compliance - LOCAL accounts only</inlineHelpText>
@@ -569,7 +605,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Batch_Added_Terms2__c</fullName>
         <externalId>false</externalId>
         <label>Batch Added Terms</label>
@@ -597,7 +634,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Batch_Added_Terms__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>no geo terms were batch added (exceptions apply to cities and abbreviations not present in our system).</inlineHelpText>
@@ -608,7 +646,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Best_source_for_List_of_Live_SEO_accou__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What is the BEST source for newly updated account Information?</inlineHelpText>
@@ -647,7 +686,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Broken_Links2__c</fullName>
         <externalId>false</externalId>
         <label>Broken Links</label>
@@ -675,7 +715,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Broken_Links__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -683,7 +724,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Build_Process_Differences__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Describe any situation where the build process was customized or otherwise deviated from build processes for Local.</inlineHelpText>
@@ -694,7 +736,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Build_Process_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Add any relevant notes here.</inlineHelpText>
@@ -704,7 +747,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Build_Process_Used__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Which build process was implemented for this relationship?</inlineHelpText>
@@ -733,7 +777,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Built_Process_Timeframe__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>When were the most listings built for this relationship?</inlineHelpText>
@@ -742,7 +787,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Bulk_Campaign_Tool__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -750,7 +796,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Bulk_URL__c</fullName>
         <externalId>false</externalId>
         <label>Bulk URL</label>
@@ -773,7 +820,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Bulk_vs_Individual_Google_Accounts__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Were the franchisees Google Local accounts build under a master login or individual logins?</inlineHelpText>
@@ -802,7 +850,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Business_Description__c</fullName>
         <externalId>false</externalId>
         <label>Business Description</label>
@@ -825,7 +874,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CS_Manager__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -836,7 +886,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Tracking_all_numbers_configured__c</fullName>
         <externalId>false</externalId>
         <label>Call Tracking - local numbers configured</label>
@@ -859,7 +910,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Calls_to_Action__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>website conversion best practices are followed</inlineHelpText>
@@ -870,7 +922,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Capitalization_Issues__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -878,7 +931,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Flow_Followed__c</fullName>
         <externalId>false</externalId>
         <label>Case Flow Followed</label>
@@ -906,7 +960,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_in_Review__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -918,7 +973,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Categories__c</fullName>
         <externalId>false</externalId>
         <label>Categories</label>
@@ -941,7 +997,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Channel__c</fullName>
         <externalId>false</externalId>
         <label>Channel</label>
@@ -974,7 +1031,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Citations_Build_Time_Period_approx__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Around what date were the most listings built for this relationship?</inlineHelpText>
@@ -983,7 +1041,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Claim_Status__c</fullName>
         <externalId>false</externalId>
         <label>Claim Status</label>
@@ -1006,7 +1065,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <label>Client ID</label>
@@ -1016,7 +1076,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_works_with_existing_or_prev__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Does the client have a previous or existing vendor for SEO?</inlineHelpText>
@@ -1040,7 +1101,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Clients_metrics_for_SEO_reporting__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Select all that apply</inlineHelpText>
@@ -1085,7 +1147,8 @@
             </valueSetDefinition>
         </valueSet>
         <visibleLines>6</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Color_Customization__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>To track Website Tier Compliance - LOCAL accounts only</inlineHelpText>
@@ -1109,7 +1172,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Colors_for_Scoring__c</fullName>
         <externalId>false</externalId>
         <formula>IMAGE ("https://na4.salesforce.com/servlet/servlet.FileDownload?file=015600000009Hmo", "Green", 35, 35)</formula>
@@ -1120,7 +1184,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Company_Name_in_Video__c</fullName>
         <externalId>false</externalId>
         <label>Company Name in Video</label>
@@ -1143,7 +1208,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Company_Name_on_YouTube__c</fullName>
         <externalId>false</externalId>
         <label>Company Name on YouTube</label>
@@ -1166,7 +1232,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Consistency__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>a. ads speak specifically to every SC
@@ -1180,7 +1247,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Consistent_Geo_Messaging__c</fullName>
         <externalId>false</externalId>
         <label>Consistent Geo Messaging</label>
@@ -1203,7 +1271,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contact_Form__c</fullName>
         <externalId>false</externalId>
         <label>Contact Form (%)</label>
@@ -1213,7 +1282,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contact_Forms_Present_if_applicable__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>contact form present on website</inlineHelpText>
@@ -1224,7 +1294,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contact_form_tested__c</fullName>
         <externalId>false</externalId>
         <label>Contact form tested?</label>
@@ -1247,7 +1318,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Content_Contains_Keyword__c</fullName>
         <externalId>false</externalId>
         <label>Content Contains Keywords</label>
@@ -1270,7 +1342,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Content_Contains_Keywords__c</fullName>
         <externalId>false</externalId>
         <label>Content Contains Keywords OLD</label>
@@ -1293,7 +1366,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_Branding_Standards__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Describe any corporate or branding standards required by the client</inlineHelpText>
@@ -1304,7 +1378,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_FMA_ID__c</fullName>
         <externalId>false</externalId>
         <label>Corporate FMA ID</label>
@@ -1314,7 +1389,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_Relationship_Agreement_Type__c</fullName>
         <externalId>false</externalId>
         <label>Corporate Relationship Agreement Type</label>
@@ -1347,7 +1423,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Corporate_Type__c</fullName>
         <externalId>false</externalId>
         <label>Corporate Type</label>
@@ -1380,7 +1457,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Comp__c</fullName>
         <externalId>false</externalId>
         <label>Correct Company Name</label>
@@ -1403,7 +1481,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Company_Name__c</fullName>
         <externalId>false</externalId>
         <label>Company Name Correct</label>
@@ -1426,7 +1505,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Domain__c</fullName>
         <externalId>false</externalId>
         <label>Correct Domain</label>
@@ -1449,7 +1529,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Number_of_Service_Groups__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>account has optimal amount of SGs without causing overspend/underspend</inlineHelpText>
@@ -1460,7 +1541,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Segment_Implementation__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Is this client setup under a logical segment?</inlineHelpText>
@@ -1484,7 +1566,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_phone_number_in_header__c</fullName>
         <externalId>false</externalId>
         <label>Correct phone number in header?</label>
@@ -1507,7 +1590,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Current_Citation_Build_Process_Used__c</fullName>
         <externalId>false</externalId>
         <label>Current Citation Build Process Used</label>
@@ -1535,7 +1619,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Custom_Template_Used__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Are custom YO templates used?</inlineHelpText>
@@ -1559,7 +1644,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Dangerous_Duplicates2__c</fullName>
         <externalId>false</externalId>
         <label>Dangerous Terms</label>
@@ -1587,7 +1673,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Dangerous_Duplicates__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>no dangerous duplicates are present within the geo template</inlineHelpText>
@@ -1598,7 +1685,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Data_Sync_with_ASW__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Is all data found in ASW the same as on-page or do differences exist?</inlineHelpText>
@@ -1622,7 +1710,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Errors_Corrected__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What is the date the errors were corrected on</inlineHelpText>
@@ -1631,7 +1720,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Evaluation_QA_Completed__c</fullName>
         <externalId>false</externalId>
         <label>Date Evaluation QA Completed</label>
@@ -1639,7 +1729,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Sent_to_Queue__c</fullName>
         <externalId>false</externalId>
         <label>Date Sent to Queue</label>
@@ -1647,7 +1738,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_YCN_Activated__c</fullName>
         <externalId>false</externalId>
         <label>Date YCN Activated</label>
@@ -1655,7 +1747,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_Open__c</fullName>
         <externalId>false</externalId>
         <formula>ROUND((NOW() - CreatedDate),0)</formula>
@@ -1668,7 +1761,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description__c</fullName>
         <externalId>false</externalId>
         <label>Description</label>
@@ -1701,7 +1795,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description_contains_Name_Domain_on_Yout__c</fullName>
         <externalId>false</externalId>
         <label>Description contains Name/Domain on Yout</label>
@@ -1724,7 +1819,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Detailed_OPT_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>MPA provided enough information, suggestions, and reasoning regarding the optimization</inlineHelpText>
@@ -1735,7 +1831,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Did_our_client_get_lead_s_contact_info__c</fullName>
         <externalId>false</externalId>
         <label>Did our client get lead's contact info?</label>
@@ -1758,7 +1855,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Did_they_follow_a_specific_script__c</fullName>
         <externalId>false</externalId>
         <label>Did they follow a specific script?</label>
@@ -1786,7 +1884,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Display_URL__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>display URL within the ASW is accurate</inlineHelpText>
@@ -1797,7 +1896,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Does_client_have_proprietary_store_IDs__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Are client-generated store IDs used as unique identifiers for location names in Yodle Live, in any listings, or custom reports?</inlineHelpText>
@@ -1808,7 +1908,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Domain_Correct_in_Video__c</fullName>
         <externalId>false</externalId>
         <label>Domain Correct in Video</label>
@@ -1831,7 +1932,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Domain_Correct_on_YouTube__c</fullName>
         <externalId>false</externalId>
         <label>Domain Correct on YouTube</label>
@@ -1854,7 +1956,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Enhance_Build__c</fullName>
         <externalId>false</externalId>
         <label>Enhance Build</label>
@@ -1882,7 +1985,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Enhanced_Build_Not_Enhanced__c</fullName>
         <externalId>false</externalId>
         <label>Enhanced Build/Not Enhanced</label>
@@ -1905,7 +2009,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Errors_Corrected_By__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1916,7 +2021,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Evaluation_Status__c</fullName>
         <externalId>false</externalId>
         <label>Evaluation Status</label>
@@ -1949,7 +2055,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Evaluation_for__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>IMS who completed the optimization or setup in review.</description>
@@ -1961,7 +2068,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Filled_Out_Published__c</fullName>
         <externalId>false</externalId>
         <label>Filled Out &amp; Published</label>
@@ -1984,7 +2092,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Followed_Sales_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Followed Sales Notes</label>
@@ -2007,7 +2116,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Friendly_Helpful_and_Professional__c</fullName>
         <externalId>false</externalId>
         <label>Friendly, Helpful and Professional?</label>
@@ -2030,7 +2140,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_Radius_20_miles__c</fullName>
         <externalId>false</externalId>
         <label>Geo Radius Miles Appropriate</label>
@@ -2053,7 +2164,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_Radius__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>IP targeting radius is set according to the 20 mile best practice, and 10 miles for NYC, SF, and Chicago</inlineHelpText>
@@ -2064,7 +2176,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_Template_Grade2__c</fullName>
         <description>Average of the Geo template scores on the setup evaluation.</description>
         <externalId>false</externalId>
@@ -2080,7 +2193,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_Terms_Compliant__c</fullName>
         <description>10 mile terms for stationary business and 20 mile terms for mobile clients.</description>
         <externalId>false</externalId>
@@ -2109,7 +2223,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_Terms_Consistency__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Consistency between geo terms and landing page.</inlineHelpText>
@@ -2120,7 +2235,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_Terms__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Goe terms are selected appropriately based on the stationary or mobile business type.</inlineHelpText>
@@ -2131,7 +2247,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_message_clear_and_consistent__c</fullName>
         <externalId>false</externalId>
         <label>Geo message clear and consistent</label>
@@ -2154,7 +2271,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Geo_terms_consistent_w_landing_page__c</fullName>
         <externalId>false</externalId>
         <label>Geo terms consistent w/ landing page</label>
@@ -2177,7 +2295,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Grammar_Error_s__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2185,7 +2304,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guarantees__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Describe any contractual or verbal guarantees given to the client.</inlineHelpText>
@@ -2196,7 +2316,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>How_are_custom_reports_generated__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Describe the way custom reports are generated</inlineHelpText>
@@ -2207,7 +2328,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>How_does_CS_publish_websites__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What does CS use to publish websites for this relationship?</inlineHelpText>
@@ -2236,7 +2358,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>How_does_Web_Dev_publish_websites__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What does webdev use to publish websites for this relationship?</inlineHelpText>
@@ -2265,7 +2388,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>How_many_rings_did_they_answer_in__c</fullName>
         <externalId>false</externalId>
         <label>How many rings did they answer in?</label>
@@ -2276,7 +2400,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IMS_on_Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2287,7 +2412,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_NAP_doesn_t_match_list_inconsistency__c</fullName>
         <externalId>false</externalId>
         <label>If NAP doesn't match, list inconsistency</label>
@@ -2297,7 +2423,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_no_describe_the_cur__c</fullName>
         <externalId>false</externalId>
         <label>If yes, list the missing service(s)</label>
@@ -2307,7 +2434,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_no_list_Yodle_best_practices_not_met__c</fullName>
         <externalId>false</externalId>
         <label>If no, list Yodle standards not met</label>
@@ -2317,7 +2445,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_no_list_global_issues_seen__c</fullName>
         <externalId>false</externalId>
         <label>If no, list global issues seen</label>
@@ -2327,7 +2456,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_no_state_current_and_ideal_segment__c</fullName>
         <externalId>false</externalId>
         <label>If no, state current and ideal segment</label>
@@ -2337,7 +2467,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_non_compliant_what_are_the_issues__c</fullName>
         <externalId>false</externalId>
         <label>If non-compliant, what are the issues?</label>
@@ -2347,7 +2478,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_sync_issues_found_please_list__c</fullName>
         <externalId>false</externalId>
         <label>If sync issues found, please list</label>
@@ -2355,7 +2487,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_vendor_issues_please_list__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>If Yes, please describe the areas where other vendors may be affecting our SEO performance.</inlineHelpText>
@@ -2366,7 +2499,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Image_Not_Reflective_of_Service__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Image doesn't reflect landing page/service/segment</description>
@@ -2375,7 +2509,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Images_Reflective_of_Service__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Images are reflective of service and are clear and not pixelated.</inlineHelpText>
@@ -2399,7 +2534,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Images__c</fullName>
         <externalId>false</externalId>
         <label>Images</label>
@@ -2422,7 +2558,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Implementation_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Add any relevant implementation notes here.</inlineHelpText>
@@ -2432,7 +2569,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Inconsistent_Fonts2__c</fullName>
         <description>More than 1 font type in 1 text widget</description>
         <externalId>false</externalId>
@@ -2462,7 +2600,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Inconsistent_Fonts__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2470,7 +2609,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Incorrect_Tracking_Number_Displayed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2478,7 +2618,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Initial_Citation_Build_Process_Used__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Which built process was implemented for this relationship?</inlineHelpText>
@@ -2507,7 +2648,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>KW_Ad_Landing_Page_Relevancy__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>a. ads speak specifically to every SC
@@ -2521,7 +2663,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Keyword_Rich_Domain_Used__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate Domain</label>
@@ -2544,7 +2687,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Landing_Pages_Match__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>landing pages are appropriate and relevant to SCs</inlineHelpText>
@@ -2555,7 +2699,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Landing_Pgs_Match__c</fullName>
         <description>No errors in bulk URL manager</description>
         <externalId>false</externalId>
@@ -2579,7 +2724,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Launched_Correctly__c</fullName>
         <externalId>false</externalId>
         <label>Launched Correctly</label>
@@ -2602,7 +2748,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_CS_Team_Member_1__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2613,7 +2760,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_CS_Team_Member_2__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2624,7 +2772,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_CS_Team_Member_3__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2635,7 +2784,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Legal_disclaimer_for_lawyers__c</fullName>
         <externalId>false</externalId>
         <label>Legal disclaimer for lawyers</label>
@@ -2663,7 +2813,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>List_Google_guidelines_violated__c</fullName>
         <externalId>false</externalId>
         <label>List Google guidelines violated</label>
@@ -2673,7 +2824,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Listing_Best_Practices_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Listing Best Practice Notes</label>
@@ -2682,7 +2834,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Listings_meet_Google_Quality_Guidelines__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do all listings comply with all published Google Quality Guidelines?</inlineHelpText>
@@ -2706,7 +2859,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Listings_meet_Yodle_standards__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do all listings comply with Yodle’s best practices?</inlineHelpText>
@@ -2730,7 +2884,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MA_Manager__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2741,7 +2896,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MIC_Category_Selection__c</fullName>
         <externalId>false</externalId>
         <label>MIC Category Selection</label>
@@ -2769,7 +2925,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MIC_Listing_Status_Accuracy__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do data inaccuracies exist between the MIC case and actual listing status?</inlineHelpText>
@@ -2793,7 +2950,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MPA_Manager__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2804,7 +2962,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Main_Issue_OPT__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Not mentioned as an issue – 0%
@@ -2819,7 +2978,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Manager_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Manager Notes</label>
@@ -2828,7 +2988,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>10</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Maps_Evaluation_For__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -2839,7 +3000,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Meta_Descriptions__c</fullName>
         <externalId>false</externalId>
         <label>Meta Descriptions</label>
@@ -2862,7 +3024,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Missing_Characters_Apostrophe_Comma__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2870,7 +3033,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Missing_Content__c</fullName>
         <description>Blank pages, content that is cut off</description>
         <externalId>false</externalId>
@@ -2895,7 +3059,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Mobile_Business_Targeting__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do the Maps listings have Yodle’s mobile best practices implemented?</inlineHelpText>
@@ -2919,7 +3084,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Must_have_a_name_campaign__c</fullName>
         <externalId>false</externalId>
         <label>Must have a name campaign</label>
@@ -2947,7 +3113,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Must_have_a_principal_service_group__c</fullName>
         <externalId>false</externalId>
         <label>Must have a principal service group</label>
@@ -2970,7 +3137,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NAP_Standardization__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do the Name, Address, Phone and business descriptions for each listing match what is in the ASW?</inlineHelpText>
@@ -2994,7 +3162,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NCS_Sent_to_Correct_Queue__c</fullName>
         <externalId>false</externalId>
         <label>NCS Sent to Correct Queue</label>
@@ -3017,7 +3186,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name_Address_Phone_in_Footer__c</fullName>
         <externalId>false</externalId>
         <label>Name, Address &amp; Phone in Footer</label>
@@ -3045,7 +3215,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Natpal_Tracking_Code_Present__c</fullName>
         <externalId>false</externalId>
         <label>Natpal Tracking Code Present</label>
@@ -3068,7 +3239,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Negatives_Overall_Grade2__c</fullName>
         <description>Average of negatives grades for the setup evaluation</description>
         <externalId>false</externalId>
@@ -3080,7 +3252,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>No_Global_Negatives_Added__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>no global negatives added during setup (except geo term negatives)</inlineHelpText>
@@ -3091,7 +3264,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>No_Global_Negs_Added__c</fullName>
         <externalId>false</externalId>
         <label>No Global Negs Added</label>
@@ -3114,7 +3288,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_Campaigns_Relevant_to_Budget__c</fullName>
         <description>$200 per campaign</description>
         <externalId>false</externalId>
@@ -3148,7 +3323,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_Strikes__c</fullName>
         <externalId>false</externalId>
         <label>Number of Strikes</label>
@@ -3181,7 +3357,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OPO_Standards_Followed__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do all on-page optimizations follow Yodle best practices?</inlineHelpText>
@@ -3210,7 +3387,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>One_Geo_Template2__c</fullName>
         <externalId>false</externalId>
         <label>One Geo Template</label>
@@ -3233,7 +3411,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>One_Geo_Template__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>one geo template is used, unless 2 locations with over 30 miles distance are present</inlineHelpText>
@@ -3244,7 +3423,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opt_Protocols__c</fullName>
         <externalId>false</externalId>
         <label>Optimization Protocols Followed</label>
@@ -3254,7 +3434,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Organic_Evaluation_For__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -3265,7 +3446,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Other__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3273,7 +3455,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Overall_Opt_Score__c</fullName>
         <description>Average of the optimization evaluation percentages</description>
         <externalId>false</externalId>
@@ -3285,7 +3468,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Overall_Setup_Grade__c</fullName>
         <description>Average of the 6 grading fields on the Setup Evaluation case</description>
         <externalId>false</externalId>
@@ -3297,7 +3481,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Page_Count__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>To track Website Tier Compliance - LOCAL accounts only</inlineHelpText>
@@ -3321,7 +3506,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Correct_in_Video__c</fullName>
         <externalId>false</externalId>
         <label>Phone Correct in Video</label>
@@ -3344,7 +3530,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Correct_on_YouTube__c</fullName>
         <externalId>false</externalId>
         <label>Phone Correct on YouTube</label>
@@ -3367,7 +3554,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Number_Not_Displayed_in_Header__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3375,7 +3563,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Numbers__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>phone numbers are tagged correctly and display properly on website</inlineHelpText>
@@ -3386,7 +3575,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Photo_Gallery__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>To track Website Tier Compliance - LOCAL accounts only</inlineHelpText>
@@ -3410,7 +3600,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Poor_Page_Formatting__c</fullName>
         <description>Anything that disrupts the flow of the page (excessive spacing, poor image alignment, etc.)</description>
         <externalId>false</externalId>
@@ -3440,7 +3631,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Poor_Pg_Formatting__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Bullets, Spacing, etc.</description>
@@ -3449,7 +3641,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product__c</fullName>
         <externalId>false</externalId>
         <label>Product</label>
@@ -3497,7 +3690,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Products_Selected_for_Relationship__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Which product set is the client set up on?</inlineHelpText>
@@ -3526,7 +3720,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pronounce_Company_Name_Correctly__c</fullName>
         <externalId>false</externalId>
         <label>Pronounce Company Name Correctly?</label>
@@ -3549,7 +3744,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Proper_HTML__c</fullName>
         <externalId>false</externalId>
         <label>Proper HTML</label>
@@ -3572,7 +3768,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Proper_SC_Amount__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>all necessary steps to clean up traffic were taken (match types, negatives, etc)</inlineHelpText>
@@ -3583,7 +3780,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Read_Correctly_No_Typos_Grammar_Errors__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Includes Camelcasing Ads.</inlineHelpText>
@@ -3607,7 +3805,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Read_Correctly__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>good character limit utilization across all ads, no typos present</inlineHelpText>
@@ -3618,7 +3817,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Relevant_Images__c</fullName>
         <externalId>false</externalId>
         <label>Relevant Images (%)</label>
@@ -3628,7 +3828,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reporting_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Reporting Notes</label>
@@ -3637,7 +3838,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Robots_txt_No_Index__c</fullName>
         <externalId>false</externalId>
         <label>Robots.txt &amp; No Index</label>
@@ -3660,7 +3862,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Segment_Specific_Changes__c</fullName>
         <externalId>false</externalId>
         <label>Segment/Locale Specific Changes</label>
@@ -3688,7 +3891,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Segment__c</fullName>
         <externalId>false</externalId>
         <label>Segment</label>
@@ -3698,7 +3902,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Service_Group_Grade__c</fullName>
         <externalId>false</externalId>
         <formula>Correct_Number_of_Service_Groups__c</formula>
@@ -3709,7 +3914,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Services_Requested_on_Site__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>all advertised services exist on the website (except dynamic mirrors)</inlineHelpText>
@@ -3720,7 +3926,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Serving_Area_Displayed_in_Header__c</fullName>
         <externalId>false</externalId>
         <label>Serving Area Displayed in Header</label>
@@ -3743,7 +3950,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Serving_Area_Not_Displayed_in_Header__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3751,7 +3959,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Serving_Area__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>serving area is present and accurately depicts mobile vs. stationary</inlineHelpText>
@@ -3762,7 +3971,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Serving_Area_bpm__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>serving area within the ASW is accurate</inlineHelpText>
@@ -3773,7 +3983,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Setup_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Add any relevant account setup notes here.</inlineHelpText>
@@ -3783,7 +3994,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sitelinks_Up_to_Date__c</fullName>
         <externalId>false</externalId>
         <label>Sitelinks Up to Date</label>
@@ -3806,7 +4018,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Source_for_up_to_date_location_NAP_data__c</fullName>
         <externalId>false</externalId>
         <label>Source for up-to-date location NAP data?</label>
@@ -3816,7 +4029,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Spell_Check__c</fullName>
         <externalId>false</externalId>
         <label>Spell Check</label>
@@ -3839,7 +4053,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Spelling_Error_s__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3847,7 +4062,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Spelling_Grammar_Errors__c</fullName>
         <description>Typos, incorrect punctuation, etc.</description>
         <externalId>false</externalId>
@@ -3877,7 +4093,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -3935,7 +4152,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Strange_Characters2__c</fullName>
         <externalId>false</externalId>
         <label>Strange Characters</label>
@@ -3963,7 +4181,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Strange_Characters__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3971,7 +4190,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Suggested_Improvement_for_IMS__c</fullName>
         <externalId>false</externalId>
         <label>Suggested Improvement for IMS</label>
@@ -3980,7 +4200,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>10</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Suggested_Steps_to_Correct_Issue__c</fullName>
         <externalId>false</externalId>
         <label>Suggested Steps to Correct Issue</label>
@@ -3989,7 +4210,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>10</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Summarize_scope_of_vendor_s_work__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>If yes, summarize the scope of the vendors work</inlineHelpText>
@@ -3999,7 +4221,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Taxonomies__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Describe special taxonomy requirements for the relationship if any.</inlineHelpText>
@@ -4010,7 +4233,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Taxonomy_gaps_exist__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do gaps exist between the expected taxonomy and the actual taxonomy used?</inlineHelpText>
@@ -4034,7 +4258,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Template_Out_of_Segment__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>To track Website Tier Compliance - LOCAL accounts only</inlineHelpText>
@@ -4058,7 +4283,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Text_Too_Close_to_Image2__c</fullName>
         <description>Text right up against edge of image or widget column</description>
         <externalId>false</externalId>
@@ -4088,7 +4314,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Text_Too_Close_to_Image__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -4096,7 +4323,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Three_Ads_DKI_Ad_Copies_for_Mobile__c</fullName>
         <externalId>false</externalId>
         <label>Three Ads - DKI Ad Copies for Mobile</label>
@@ -4119,7 +4347,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Three_Ads__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>3 ads are present in every SC</inlineHelpText>
@@ -4130,7 +4359,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Title_Tags__c</fullName>
         <externalId>false</externalId>
         <label>Title Tags</label>
@@ -4153,7 +4383,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Too_Much_White_Space2__c</fullName>
         <description>70% of the body content section of a page is white</description>
         <externalId>false</externalId>
@@ -4183,7 +4414,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Too_Much_White_Space__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -4191,7 +4423,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tracking_Code_Present__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>correct tracking code is present on every page</inlineHelpText>
@@ -4202,7 +4435,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Typos__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>no typos are present on the website</inlineHelpText>
@@ -4213,7 +4447,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>USPs_Added__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>all USPs are present within the ASW</inlineHelpText>
@@ -4224,7 +4459,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>USPs_added2__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate USPs</label>
@@ -4252,7 +4488,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Unpaid_Number__c</fullName>
         <externalId>false</externalId>
         <label>Unpaid Number</label>
@@ -4275,7 +4512,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>User__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>User completing the evaluation.</description>
@@ -4287,7 +4525,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Valid_address_no_PO_Boxes_for_SEO_Combo__c</fullName>
         <externalId>false</externalId>
         <label>Valid Address</label>
@@ -4310,7 +4549,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Partner_Issues__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Are there observable vendor issue within this relationship? Are third parties interfering with the overall SEO performance?</inlineHelpText>
@@ -4334,7 +4574,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>If the client has a previous or existing vendor please list.</inlineHelpText>
@@ -4345,7 +4586,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Web_to_Email_Form_Customization__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>To track Website Tier Compliance - LOCAL accounts only</inlineHelpText>
@@ -4369,7 +4611,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Built_By__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -4380,7 +4623,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Fufillment_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Website Fufillment Notes</label>
@@ -4389,7 +4633,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Implementation_Type__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What type of website setup was implemented?</inlineHelpText>
@@ -4423,7 +4668,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Overall_Grade3__c</fullName>
         <description>Average of the website and landing page quality evaluation grades.</description>
         <externalId>false</externalId>
@@ -4435,7 +4681,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_indexed_on_Google__c</fullName>
         <externalId>false</externalId>
         <label>Website indexed on Google</label>
@@ -4458,7 +4705,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Which_CMS_Used__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Which CMS is used to publish the websites?</inlineHelpText>
@@ -4487,7 +4735,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Who_generates_the_raw_report__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Who creates the raw data file used in custom reporting?</inlineHelpText>
@@ -4526,7 +4775,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Who_produces_the_report__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Who is directly responsible for any SEO performance reporting shared with client?</inlineHelpText>
@@ -4570,7 +4820,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Word_s_Missing__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -4578,7 +4829,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yellowbot_Enabled__c</fullName>
         <externalId>false</externalId>
         <label>Yellowbot Enabled</label>
@@ -4601,7 +4853,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Relationship_Manager__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -4612,7 +4865,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_corporate_contact__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Add the name of Yodle’s corporate contact here.</inlineHelpText>
@@ -4623,7 +4877,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>change_management_process__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Describe the process by which accounts get changed, added or deleted.</inlineHelpText>
@@ -4633,7 +4888,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>citation_fulfillment_notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>List any relevant MIC issue notes here.</inlineHelpText>
@@ -4643,7 +4899,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>htaccess_file_functioning__c</fullName>
         <externalId>false</externalId>
         <label>.htaccess file functioning</label>
@@ -4666,7 +4923,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>https_na4_salesforce_com_p_setup_field__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Does Maps Initial Claim case match ASW for all clients?</inlineHelpText>
@@ -4695,7 +4953,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_locations_with_inaccurate_selection__c</fullName>
         <externalId>false</externalId>
         <label>% and # of inaccurate locations</label>
@@ -4705,7 +4964,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_locations_with_incomplete_selection__c</fullName>
         <externalId>false</externalId>
         <label>% and # of incomplete locations</label>
@@ -4715,7 +4975,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_non_compliant_locations_NAP__c</fullName>
         <externalId>false</externalId>
         <label>% and # of non-compliant locations - NAP</label>
@@ -4725,7 +4986,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_non_compliant_locations_google__c</fullName>
         <externalId>false</externalId>
         <label>% and # of non-compliant locals - google</label>
@@ -4735,7 +4997,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_non_compliant_locations_listings__c</fullName>
         <externalId>false</externalId>
         <label>% and # of non-compliant locals-listings</label>
@@ -4745,7 +5008,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_non_compliant_locations_mic__c</fullName>
         <externalId>false</externalId>
         <label>% and # of non-compliant locations - mic</label>
@@ -4755,7 +5019,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_non_compliant_locations_opo__c</fullName>
         <externalId>false</externalId>
         <label>% and # of non-compliant locations</label>
@@ -4765,7 +5030,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>of_non_compliant_locations_yodle__c</fullName>
         <externalId>false</externalId>
         <label>% and # of non-compliant locations-yodle</label>
@@ -4775,7 +5041,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>performance_reports_are__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What (if any) custom SEO performance reporting is being producing today for the client? Attach sample reports to this case.</inlineHelpText>
@@ -4784,6 +5051,20 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Performance_Analysis_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This is a lookup to the related Performance Analysis record for the best practice evaluation</description>
+        <externalId>false</externalId>
+        <label>Performance Analysis Name</label>
+        <referenceTo>Performance_Analysis__c</referenceTo>
+        <relationshipLabel>Best Practice Evaluations</relationshipLabel>
+        <relationshipName>Best_Practice_Evaluations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Used to evaluate best practices for Analysts in regards to New Client Setups and Optimizations.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Best Practice Evaluation</label><nameField>
         <displayFormat>E-{0000}</displayFormat>
         <label>Evaluation ID</label>
@@ -4822,7 +5103,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Evaluation_for__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility>
+    <listViews>
         <fullName>Global</fullName>
         <columns>NAME</columns>
         <columns>OBJECT_ID</columns>
@@ -4831,7 +5113,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <columns>Client_ID__c</columns>
         <filterScope>Everything</filterScope>
         <label>Global</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Last_Week_s_Upload</fullName>
         <columns>NAME</columns>
         <columns>Account_Channel_Type__c</columns>
@@ -4856,7 +5139,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <sharedTo>
             <role>CSOperations</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>My_Best_Practice_Evaluations</fullName>
         <columns>CREATED_DATE</columns>
         <columns>Evaluation_Status__c</columns>
@@ -4872,7 +5156,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
             <value>Closed</value>
         </filters>
         <label>My Best Practice Evaluations</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Rogers_Support_Best_Practice_Evaluation</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -4880,7 +5165,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Best_Practice_Evaluation</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -4888,7 +5174,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>National_Audit</fullName>
         <active>true</active>
         <label>National Audit</label>
@@ -6616,7 +6903,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Optimization_Review</fullName>
         <active>true</active>
         <description>Evaluation of a completed optimization</description>
@@ -8265,7 +8553,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>QA_Audit</fullName>
         <active>true</active>
         <label>QA Audit</label>
@@ -9967,7 +10256,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Setup_Evaluation</fullName>
         <active>false</active>
         <description>For evaluation of a completed new client setup</description>
@@ -11608,7 +11898,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Website_Audit</fullName>
         <active>false</active>
         <label>Website Audit</label>
@@ -13248,7 +13539,8 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><validationRules>
+    </recordTypes>
+    <validationRules>
         <fullName>Local_Auditors_to_fill_in_Website_Tiers</fullName>
         <active>false</active>
         <errorConditionFormula>and(
@@ -13270,7 +13562,8 @@ ispickval( Color_Customization__c, "" ),
 ispickval( Photo_Gallery__c, "" )))</errorConditionFormula>
         <errorDisplayField>Page_Count__c</errorDisplayField>
         <errorMessage>For Local Accounts, you must fill in the 6 Website Tier fields for Compliance.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Implementation_Data_Sync</fullName>
         <active>true</active>
         <description>If data sync with ASW equals sync mismatches, must list issues</description>
@@ -13280,7 +13573,8 @@ ISPICKVAL(   Data_Sync_with_ASW__c  , "Sync Mismatches"),
 isblank(   If_sync_issues_found_please_list__c  ))</errorConditionFormula>
         <errorDisplayField>If_sync_issues_found_please_list__c</errorDisplayField>
         <errorMessage>Please list ASW sync issues</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Implementation_Segment</fullName>
         <active>true</active>
         <description>If you correct segment implementation field is no, must list current and ideal segment.</description>
@@ -13290,7 +13584,8 @@ ISPICKVAL(  Correct_Segment_Implementation__c   , "No"),
 isblank(  If_no_state_current_and_ideal_segment__c  ))</errorConditionFormula>
         <errorDisplayField>Correct_Segment_Implementation__c</errorDisplayField>
         <errorMessage>Please fill out current and ideal segment below.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Implementation_Taxonomy</fullName>
         <active>true</active>
         <description>If taxonomy gaps exist is yes, must list missing service</description>
@@ -13300,7 +13595,8 @@ ISPICKVAL(   Taxonomy_gaps_exist__c  , "Yes"),
 isblank(  If_no_describe_the_cur__c ))</errorConditionFormula>
         <errorDisplayField>If_no_describe_the_cur__c</errorDisplayField>
         <errorMessage>Please list missing services</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_Listing_Google</fullName>
         <active>true</active>
         <description>If you pick "No" for Listings Meet Google Guidelines, list guidelines violated and % of non-compliant locations.</description>
@@ -13314,7 +13610,8 @@ isblank( of_non_compliant_locations_google__c )
 )</errorConditionFormula>
         <errorDisplayField>Listings_meet_Google_Quality_Guidelines__c</errorDisplayField>
         <errorMessage>Please fill out all Google listing info below</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_MIC_Category_Acc</fullName>
         <active>true</active>
         <description>If MIC Category selection equals Category Selection Inaccurate, fill out % of inaccurate locations</description>
@@ -13324,7 +13621,8 @@ ISPICKVAL( MIC_Category_Selection__c   , "Category Selection Inaccurate"),
 isblank(   of_locations_with_inaccurate_selection__c  ))</errorConditionFormula>
         <errorDisplayField>of_locations_with_inaccurate_selection__c</errorDisplayField>
         <errorMessage>Please fill out estimated % of inaccurate locations</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_MIC_Category_Inc</fullName>
         <active>true</active>
         <description>If MIC Category selection equals Category Selection Incomplete, fill out % of incomplete locations</description>
@@ -13334,7 +13632,8 @@ ISPICKVAL( MIC_Category_Selection__c   , "Category Selection Incomplete"),
 isblank(  of_locations_with_incomplete_selection__c ))</errorConditionFormula>
         <errorDisplayField>of_locations_with_incomplete_selection__c</errorDisplayField>
         <errorMessage>Please fill out estimated % of incomplete locations</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_Mobile_Business</fullName>
         <active>true</active>
         <description>If you pick "Non-Compliant" for Mobile Business Targeting, list out global issues and include % locations.</description>
@@ -13348,7 +13647,8 @@ isblank(  of_non_compliant_locations_listings__c )
 )</errorConditionFormula>
         <errorDisplayField>Mobile_Business_Targeting__c</errorDisplayField>
         <errorMessage>Please fill out all Mobile Business Targeting info below</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_NAP</fullName>
         <active>true</active>
         <description>If you pick a NAP standards matches ASW equals false, must fill out inconsistency and % locations.</description>
@@ -13362,7 +13662,8 @@ isblank(of_non_compliant_locations_NAP__c)
 )</errorConditionFormula>
         <errorDisplayField>If_NAP_doesn_t_match_list_inconsistency__c</errorDisplayField>
         <errorMessage>Please fill out all NAP information.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_Vendor_Issue</fullName>
         <active>true</active>
         <description>If you pick "Yes" for Listings Vendor Issues, list issues.</description>
@@ -13373,7 +13674,8 @@ isblank(  If_vendor_issues_please_list__c )
 )</errorConditionFormula>
         <errorDisplayField>Vendor_Partner_Issues__c</errorDisplayField>
         <errorMessage>Please fill out Vendor info below</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Listings_Yodle_Standards</fullName>
         <active>true</active>
         <description>If you pick "No" for meets Yodle standards, list out  and include % locations.</description>
@@ -13387,7 +13689,8 @@ isblank( If_no_list_Yodle_best_practices_not_met__c )
 )</errorConditionFormula>
         <errorDisplayField>Listings_meet_Yodle_standards__c</errorDisplayField>
         <errorMessage>Please fill out all Yodle Standards information below</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_OPO_Standards</fullName>
         <active>true</active>
         <description>If OPO Standards Followed is non-compliant, list issues.</description>
@@ -13400,7 +13703,8 @@ isblank(  of_non_compliant_locations_opo__c )
 ))</errorConditionFormula>
         <errorDisplayField>OPO_Standards_Followed__c</errorDisplayField>
         <errorMessage>Please list OPO issues below</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>National_Audit_Vendor</fullName>
         <active>true</active>
         <description>If client work has previous or existing vendor, list the vendor field needs to be filled out.</description>
@@ -13410,7 +13714,8 @@ ISPICKVAL(  Client_works_with_existing_or_prev__c  , "Yes"),
 isblank(  Vendor__c ))</errorConditionFormula>
         <errorDisplayField>Vendor__c</errorDisplayField>
         <errorMessage>Please list the vendor</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Setup_Eval_Channel_Fields</fullName>
         <active>false</active>
         <errorConditionFormula>AND ( 
@@ -13421,4 +13726,5 @@ NOT(ispickval( Account_Channel_Type__c , "National")),
 (RecordTypeId = "012600000009ThM"))</errorConditionFormula>
         <errorDisplayField>Account_Channel_Type__c</errorDisplayField>
         <errorMessage>For Local and Partner accounts, all fields must be filled in with a value.</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>
