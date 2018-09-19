@@ -903,6 +903,16 @@
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>RECORDTYPE</fields>
+        <fields>NAME</fields>
+        <fields>Client_ID__c</fields>
+        <fields>Case_in_Review__c</fields>
+        <fields>User__c</fields>
+        <fields>Evaluation_for__c</fields>
+        <fields>CREATED_DATE</fields>
+        <relatedList>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
