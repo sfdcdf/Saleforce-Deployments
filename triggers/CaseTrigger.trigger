@@ -362,6 +362,8 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                     newEvent.Subject = record.Client_ID__c + ' | ' + record.Reason;
                     newEvent.IsVisibleInSelfService = true;
                     newEvent.IsPrivate = false;
+                    newEvent.ReminderDateTime = newEvent.StartDateTime.addMinutes(-15);
+                    newEvent.IsReminderSet = true;
                     newEventMap.put(newEvent.Subject, newEvent);
                 }
             }
@@ -449,6 +451,7 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                             newEvent.Subject = cs.Client_ID__c + ': Scheduled Proactive Touch';
                             newEvent.IsVisibleInSelfService = true;
                             newEvent.IsPrivate = false;
+                           // newEvent.IsReminderSet = true;
                             newWBNEventBlocker.add(newEvent);
                         }
                     }
@@ -471,6 +474,8 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                     }else if(!queueIdSet.contains(trigger.newMap.get(eventBlocker.WhatId).OwnerId)){
                         eventBlocker.StartDateTime = trigger.newMap.get(eventBlocker.WhatId).Scheduled_Call__c;
                         eventBlocker.ShowAs = 'Busy';
+                        eventBlocker.ReminderDateTime = eventBlocker.StartDateTime.addMinutes(-15);
+                        eventBlocker.IsReminderSet = true;
                         eventBlocker.OwnerId = trigger.newMap.get(eventBlocker.WhatId).OwnerId;
                         updateEventList.add(eventBlocker);
                     }else{
@@ -501,6 +506,8 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
                             newEvent.Subject = cs.Client_ID__c + ' | ' + cs.Reason;
                             newEvent.IsVisibleInSelfService = true;
                             newEvent.IsPrivate = false;
+                            newEvent.ReminderDateTime = newEvent.StartDateTime.addMinutes(-15);
+                            newEvent.IsReminderSet = true;
                             newEventBlocker.add(newEvent);
                         }
                     }
