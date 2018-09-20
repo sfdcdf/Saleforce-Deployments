@@ -454,7 +454,7 @@
             <operation>notContain</operation>
             <value>Lead,TORCHx,Lighthouse,Rogers,LBW</value>
         </criteriaItems>
-        <description>This moves replied emails that didn't thread into the correct queue.(9/20/2018 updated last criteria to include LBW and removed 's' from Lead)</description>
+        <description>This moves replied emails that didn't thread into the correct queue</description>
         <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>
