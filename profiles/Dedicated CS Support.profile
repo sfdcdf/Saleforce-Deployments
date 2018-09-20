@@ -31061,6 +31061,11 @@
         <field>Contract.Total_Contract_Value_TCV__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

@@ -2712,17 +2712,6 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Additional_Notes__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Additional Notes</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>CS_Timestamp__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
@@ -2788,19 +2777,6 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Fail_Timestamp__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Fail Timestamp</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Outcome__c</fullName>
@@ -3794,6 +3770,33 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Additional_Notes__c</fullName>
+        <description>For Closing Script - Auto Close Case
+ These fields are utilized to notate discrepancies (and their call timestamps) between the closing script questionnaire and audio recording of the closing script providing the fulfillment/cs teams with insight on the sale.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>These fields are utilized to notate discrepancies (and their call timestamps) between the closing script questionnaire and audio recording of the closing script providing the fulfillment/cs teams with insight on the sale.</inlineHelpText>
+        <label>Additional Notes</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fail_Timestamp__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Fail Timestamp</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Quality Case</label><nameField>
         <displayFormat>Q-{0000}</displayFormat>
         <label>Quality Case Name</label>
