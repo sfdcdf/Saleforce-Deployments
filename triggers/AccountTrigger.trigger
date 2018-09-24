@@ -347,6 +347,8 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
                 newEvent.Subject = record.Client_ID__c + ' | CS Touch Plan';
                 newEvent.IsVisibleInSelfService = true;
                 newEvent.IsPrivate = false;
+                newEvent.ReminderDateTime = newEvent.StartDateTime.addMinutes(-15);
+                newEvent.IsReminderSet = true;
                 newEventCalendarBlockerMap.put(newEvent.Subject, newEvent);
             }
         }
