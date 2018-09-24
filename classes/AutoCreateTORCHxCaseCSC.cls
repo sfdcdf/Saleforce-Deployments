@@ -16,8 +16,6 @@ public class AutoCreateTORCHxCaseCSC
         
             if(caseIds.size() > 0){
             
-                System.Debug('*** Entering variables');
-            
                 Id ncsCaseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('TORCHx NCS - AutoLaunch').getRecordTypeId();    
                 Id cscCaseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Outbound Call').getRecordTypeId();
                 Id cscQueueId = [SELECT Id FROM Group WHERE DeveloperName = 'TORCHx_Outbound' LIMIT 1].Id;
@@ -27,8 +25,6 @@ public class AutoCreateTORCHxCaseCSC
                 Map<Id, Integer> cscCaseCntMap = new Map<Id, Integer>();
                 List<Case> dmlCasesCSC = new List<Case>();
                 
-                System.Debug('*** Selecting NCS data');
-                
                 // Check for valid Open NCS Cases by Account Id key
                 for(Case ncs : 
                     [SELECT Id,
@@ -36,7 +32,7 @@ public class AutoCreateTORCHxCaseCSC
                             CaseNumber,
                             Created_Outbound_Call_Case__c,
                             Next_Scheduled_Call__c,
-                            Next_Scheduled_CSC2__c,
+                            GCC1_Date_Time__c,
                             Sales_Notes__c,
                             Winback_CSC_Script__c,
                             X3_Day_Approval__c,
@@ -51,11 +47,9 @@ public class AutoCreateTORCHxCaseCSC
                             IsClosed = false AND
                             (NOT Product_Type__c LIKE :prodExcludeSet) AND
                             (NOT Client_Type__c LIKE :clientExcludeSet) AND
-                            Next_Scheduled_CSC2__c != NULL AND
-                            Next_Scheduled_CSC2__c >= TODAY AND
+                            //GCC1_Date_Time__c != NULL AND
+                            //GCC1_Date_Time__c >= TODAY AND
                             Created_Outbound_Call_Case__c = false]){
-                
-                    System.Debug('*** NCS Scheduled Call: ' + ncs.Next_Scheduled_CSC2__c);
                 
                     // add data to Map
                     if(ncs.Id != NULL){
@@ -63,7 +57,6 @@ public class AutoCreateTORCHxCaseCSC
                     }
                     
                     System.Debug('Case Number added: ' + ncs.CaseNumber);
-                    
                 }
                 
                 System.Debug('NCS Map Size: ' + ncsCaseMap.size());
@@ -76,6 +69,7 @@ public class AutoCreateTORCHxCaseCSC
                                 COUNT(Id) cscCount
                            FROM Case
                           WHERE RecordTypeId = :cscCaseRecordTypeId AND
+                                Subject = 'TORCHx #1 Call' AND
                                 IsClosed = false AND
                                 AccountId IN :ncsCaseMap.keySet()
                        GROUP BY AccountId]){
@@ -98,14 +92,14 @@ public class AutoCreateTORCHxCaseCSC
                             newCaseCSC.Reason = 'CSC';
                             newCaseCSC.Subject = 'TORCHx #1 Call';
                             newCaseCSC.OwnerId = cscQueueId; //TORCHx Outbound Touch queue
-                            newCaseCSC.Scheduled_Call__c = c.Next_Scheduled_CSC2__c;
+                            newCaseCSC.Scheduled_Call__c = c.Next_Scheduled_Call__c;
                             newCaseCSC.ParentId = c.Id;
                             newCaseCSC.X3_Day_Approval__c = c.X3_Day_Approval__c;
                             newCaseCSC.Sales_Notes__c = c.Sales_Notes__c;
                             newCaseCSC.Winback_CSC_Script__c = c.Winback_CSC_Script__c;
                             newCaseCSC.Channel_Type__c = (c.Channel_Type__c == 'Transactional' ? 'Local' : c.Channel_Type__c);
                             newCaseCSC.MA_Notes__c = c.MA_Notes__c;
-                            newCaseCSC.Budget__c = c.Budget__c;
+                            newCaseCSC.Budget__c = c.Budget__c != null ? c.Budget__c : 0;
                             newCaseCSC.Website_Type2__c = c.Website_Type2__c;
                             
                             // update boolean value on NCS Case
