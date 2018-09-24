@@ -31193,6 +31193,14 @@
         <layout>Contract-Contract Layout</layout>
         <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
+        <recordType>Case.LBW_Content_Organic_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
+        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

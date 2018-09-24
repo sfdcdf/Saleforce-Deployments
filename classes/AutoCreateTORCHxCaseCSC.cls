@@ -16,14 +16,18 @@ public class AutoCreateTORCHxCaseCSC
         
             if(caseIds.size() > 0){
             
+                System.Debug('*** Entering variables');
+            
                 Id ncsCaseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('TORCHx NCS - AutoLaunch').getRecordTypeId();    
                 Id cscCaseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Outbound Call').getRecordTypeId();
                 Id cscQueueId = [SELECT Id FROM Group WHERE DeveloperName = 'TORCHx_Outbound' LIMIT 1].Id;
-                //String[] prodExcludeSet = new String[]{'%Lighthouse%', '%YBN%'};
-                //String[] clientExcludeSet = new String[]{'%Lighthouse%', '%YBN%'};
+                String[] prodExcludeSet = new String[]{'%Lighthouse%', '%YBN%'};
+                String[] clientExcludeSet = new String[]{'%Lighthouse%', '%YBN%'};
                 Map<Id, Case> ncsCaseMap = new Map<Id, Case>();
                 Map<Id, Integer> cscCaseCntMap = new Map<Id, Integer>();
                 List<Case> dmlCasesCSC = new List<Case>();
+                
+                System.Debug('*** Selecting NCS data');
                 
                 // Check for valid Open NCS Cases by Account Id key
                 for(Case ncs : 
@@ -32,6 +36,7 @@ public class AutoCreateTORCHxCaseCSC
                             CaseNumber,
                             Created_Outbound_Call_Case__c,
                             Next_Scheduled_Call__c,
+                            Next_Scheduled_CSC2__c,
                             Sales_Notes__c,
                             Winback_CSC_Script__c,
                             X3_Day_Approval__c,
@@ -44,20 +49,24 @@ public class AutoCreateTORCHxCaseCSC
                       WHERE Id IN :caseIds AND
                             RecordTypeId = :ncsCaseRecordTypeId AND
                             IsClosed = false AND
-                            //(NOT Product_Type__c LIKE :prodExcludeSet) AND
-                            //(NOT Client_Type__c LIKE :clientExcludeSet) AND
-                            Next_Scheduled_Call__c != NULL AND
-                            Next_Scheduled_Call__c >= TODAY AND
+                            (NOT Product_Type__c LIKE :prodExcludeSet) AND
+                            (NOT Client_Type__c LIKE :clientExcludeSet) AND
+                            Next_Scheduled_CSC2__c != NULL AND
+                            Next_Scheduled_CSC2__c >= TODAY AND
                             Created_Outbound_Call_Case__c = false]){
+                
+                    System.Debug('*** NCS Scheduled Call: ' + ncs.Next_Scheduled_CSC2__c);
                 
                     // add data to Map
                     if(ncs.Id != NULL){
                         ncsCaseMap.put(ncs.AccountId, ncs);
                     }
                     
-                    //System.Debug('Case Number added: ' + ncs.CaseNumber);
-                    //System.Debug('NCS Map Size: ' + ncsCaseMap.size());
+                    System.Debug('Case Number added: ' + ncs.CaseNumber);
+                    
                 }
+                
+                System.Debug('NCS Map Size: ' + ncsCaseMap.size());
                 
                 if(ncsCaseMap.size() > 0){
                 
@@ -78,7 +87,7 @@ public class AutoCreateTORCHxCaseCSC
                     // Create CSC Cases for Accounts meeting logic
                     for(Case c : ncsCaseMap.values()){
                     
-                        //System.Debug('CSC Open Case Count: ' + String.valueOf(cscCaseCntMap.get(c.AccountId)));
+                        System.Debug('CSC Open Case Count: ' + String.valueOf(cscCaseCntMap.get(c.AccountId)));
                     
                         // if no existing CSC Case, create one
                         if(cscCaseCntMap.get(c.AccountId) == 0 || cscCaseCntMap.get(c.AccountId) == null){
@@ -87,8 +96,9 @@ public class AutoCreateTORCHxCaseCSC
                             newCaseCSC.RecordTypeId = cscCaseRecordTypeId;
                             newCaseCSC.AccountId = c.AccountId;
                             newCaseCSC.Reason = 'CSC';
+                            newCaseCSC.Subject = 'TORCHx #1 Call';
                             newCaseCSC.OwnerId = cscQueueId; //TORCHx Outbound Touch queue
-                            newCaseCSC.Scheduled_Call__c = c.Next_Scheduled_Call__c;
+                            newCaseCSC.Scheduled_Call__c = c.Next_Scheduled_CSC2__c;
                             newCaseCSC.ParentId = c.Id;
                             newCaseCSC.X3_Day_Approval__c = c.X3_Day_Approval__c;
                             newCaseCSC.Sales_Notes__c = c.Sales_Notes__c;
