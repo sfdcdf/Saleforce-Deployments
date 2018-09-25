@@ -78789,23 +78789,6 @@ isblank( Estimated_Revenue_for_PV__c )))</errorConditionFormula>
         <errorMessage>"Forecasted Revenue" or "Estimated Revenue for PV" must be filled out</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBN_IL_Close_Date_Not_Prior_to_Today</fullName>
-        <active>true</active>
-        <description>YBN Individual Opportunities cannot me moved to Closed Won with a close date prior to the current day.</description>
-        <errorConditionFormula>AND( 
-  RecordType.Id = "012600000009YRT", /* YBN - Individual Location */
-  $Profile.Id &lt;&gt; "00e60000000iy7K", /* Profile YBN System Administrator */
-  $Profile.Id &lt;&gt; "00e60000000nQe9", /*  System Administrators  */
-  $Profile.Id &lt;&gt; "00e60000000imvV", /* Training Executive */
-  NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */ , 
-  ispickval(StageName ,"Closed Won"),  
-  CloseDate &lt;  TODAY(),
-  NOT(ISCHANGED(Total_of_Activities__c)),
-  NOT(ISCHANGED(First_Activity_DateTime__c))
-)</errorConditionFormula>
-        <errorMessage>Close Date cannot be prior to today.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>YBN_On_Hold_Reason_Required</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -79203,6 +79186,29 @@ AND(
 /* end added for Approval Process*/
 )</errorConditionFormula>
         <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_IL_Close_Date_Not_Prior_to_Today</fullName>
+        <active>true</active>
+        <description>YBN Individual Opportunities cannot me moved to Closed Won with a close date prior to the current day.</description>
+        <errorConditionFormula>AND( 
+  RecordType.Id = "012600000009YRT", /* YBN - Individual Location */
+  $Profile.Id &lt;&gt; "00e60000000iy7K", /* Profile YBN System Administrator */
+  $Profile.Id &lt;&gt; "00e60000000nQe9", /*  System Administrators  */
+  $Profile.Id &lt;&gt; "00e60000000imvV", /* Training Executive */
+  NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */ , 
+  ispickval(StageName ,"Closed Won"),  
+  CloseDate &lt;  TODAY(),
+  NOT(ISCHANGED(Total_of_Activities__c)),
+  NOT(ISCHANGED(First_Activity_DateTime__c)),
+/* begin added for Approval Process*/
+AND(
+NOT(ISCHANGED(Approval_Opp_List_Review_Status__c)),
+NOT(Text(Approval_Opp_List_Review_Status__c)= "Submit")
+)
+/* end added for Approval Process*/
+)</errorConditionFormula>
+        <errorMessage>Close Date cannot be prior to today.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
