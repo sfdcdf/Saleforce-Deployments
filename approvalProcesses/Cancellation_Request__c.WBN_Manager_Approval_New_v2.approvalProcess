@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Cancel_Code_1__c</field>
+        <field>Cancel_Code_1_Details__c</field>
+        <field>First_Cancel_Code_Notes__c</field>
+        <field>Cancel_Code_2__c</field>
+        <field>Cancel_Code_2_Details__c</field>
+        <field>Second_Cancel_Code_Notes__c</field>
+        <field>Additional_Notes__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Sales_Rep__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>*Excluding Duplicate Retention Case and Cancel Codes 1 or 2 as Out of Business*  + Sales Rep role is Sales Exec + IsActive, then go to Sales Steps (otherwise to CSC Manager)</description>
+        <entryCriteria>
+            <formula>AND(
+Sales_Rep__r.IsActive = TRUE,
+OR(Sales_Rep__r.Role_Name__c = &quot;YBN: Sales Executive&quot;,
+Sales_Rep__r.Role_Name__c = &quot;YBN: Sales Executive II&quot;),
+OR(
+NOT(ispickval(Outcome__c ,&quot;Duplicate Retention Case&quot;)),
+NOT(ispickval(Cancel_Code_1__c , &quot;Out of Business&quot;)),
+NOT(ispickval(Cancel_Code_2__c , &quot;Out of Business&quot;))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Approval from SE</label>
+        <name>Approval_from_SE</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>patrick.quinlan@web.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>*Excluding Duplicate Retention Case and Cancel Codes 1 or 2 as Out of Business*  + Sales Rep role is Sales Exec, then go to Sales Manager Steps (otherwise to CSC Manager)</description>
+        <entryCriteria>
+            <formula>AND( 
+OR(Sales_Rep__r.Role_Name__c = &quot;YBN: Sales Executive&quot;,
+Sales_Rep__r.Role_Name__c = &quot;YBN: Sales Executive II&quot;),  
+OR( 
+NOT(ispickval(Outcome__c ,&quot;Duplicate Retention Case&quot;)), 
+NOT(ispickval(Cancel_Code_1__c , &quot;Out of Business&quot;)), 
+NOT(ispickval(Cancel_Code_2__c , &quot;Out of Business&quot;)) 
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Approval from Sales Manager</label>
+        <name>Approval_from_Sales_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Record_owner_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval from Record&apos;s owner Manager</description>
+        <label>Manager Approval</label>
+        <name>Manager_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Using New Cancel Codes + including Sales steps</description>
+    <emailTemplate>Support/WBN_Cancellation_Approval_Process_HTML</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Cancellation_Request__c.RecordType</field>
+            <operation>equals</operation>
+            <value>WBN Cancellation Request</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Set_Approved_checked</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Cancel_Outcome_Cancelled</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WBN_Alert_Owner_of_Approval</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Cancel_Outcome_In_Progress</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WBN_Alert_Owner_of_Rejection</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Approval_By_Manager</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Cancel_Outcome_In_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>WBN Manager Approval_New_v2</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>Update_Cancel_Outcome_In_Progress</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

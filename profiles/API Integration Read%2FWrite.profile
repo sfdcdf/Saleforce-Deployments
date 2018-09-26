@@ -37959,6 +37959,9 @@
         <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LS_ATV_Organic_Setup</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

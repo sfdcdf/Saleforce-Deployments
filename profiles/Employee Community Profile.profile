@@ -4687,6 +4687,9 @@
         <layout>Contract-Contract Layout</layout>
         <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

@@ -58,6 +58,10 @@
                 <behavior>Readonly</behavior>
                 <field>Total_CS_Time__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CTS_Ticket_Number__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>

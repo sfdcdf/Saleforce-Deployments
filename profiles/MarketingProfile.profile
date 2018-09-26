@@ -30860,6 +30860,11 @@
         <field>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CTS_Ticket_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
@@ -32583,6 +32588,9 @@
     <layoutAssignments>
         <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LS_ATV_Organic_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>

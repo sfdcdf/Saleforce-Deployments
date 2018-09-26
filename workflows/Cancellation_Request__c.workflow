@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>LBW_Cancellation_Alert</fullName>
         <description>LBW Cancellation Alert</description>
         <protected>false</protected>
@@ -8,7 +9,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/LBW_New_Cancellation_Alert</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>LH_Cancel_Ownership_Change_Alert</fullName>
         <description>LH Cancel - Ownership Change Alert</description>
         <protected>false</protected>
@@ -17,7 +19,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Cancellation_Case_has_been_Assigned</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>LH_Cancellation_Request_Churned</fullName>
         <description>LH Cancellation Request - Churned</description>
         <protected>false</protected>
@@ -28,7 +31,8 @@
         <senderAddress>cancel@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/LH_Cancellation_Request_Churned</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>LSFS_Cancellation_Reqeust_Notification</fullName>
         <description>LSFS Cancellation Reqeust Notification</description>
         <protected>false</protected>
@@ -39,7 +43,8 @@
         <senderAddress>leadstreamsupport@web.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lead_Stream_Templates/LSFS_Cancellation_Request_Notification</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>New_LH_Auto_Cancel_Request_has_been_created</fullName>
         <description>New LH Auto Cancel Request has been created</description>
         <protected>false</protected>
@@ -50,7 +55,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Field_Service_Retention/Cancellation_Confirmation_Field_Service</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>TORCHx_Back_Down_Never_Went_Live</fullName>
         <description>TORCHx Back Down/Never Went Live - Send Email</description>
         <protected>false</protected>
@@ -61,7 +67,8 @@
         <senderAddress>support@torchx.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/TORCHx_Unresponsive_Client_Cancellation_Email</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>WBN_Alert_Owner_of_Approval</fullName>
         <description>WBN - Alert Owner of Approval</description>
         <protected>false</protected>
@@ -70,7 +77,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>YBN_Cancellation_Requests/Alert_Owner_Request_Approved</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>WBN_Alert_Owner_of_Rejection</fullName>
         <description>WBN - Alert Owner of Rejection</description>
         <protected>false</protected>
@@ -79,7 +87,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>YBN_Cancellation_Requests/Alert_Owner_Request_Rejected</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Yodle_Gold_Service_Cancel_Closed_Email</fullName>
         <description>Yodle Gold Service Cancel Closed Email</description>
         <protected>false</protected>
@@ -90,7 +99,8 @@
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Agent_Emails_Retention/Yodle_Gold_Cancel_Request_Closed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>TORCHx_Cancellation_Resolution_Email</fullName>
         <description>TORCHx Cancellation Resolution Email</description>
         <protected>false</protected>
@@ -108,7 +118,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Admin_Email_Templates/TORCHx_Cancellation_Email</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>Approval_By_Manager</fullName>
         <field>Approval_By__c</field>
         <formula>Owner:User.Manager.Full_Name__c</formula>
@@ -116,7 +127,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Assign_to_Local_Pod</fullName>
         <field>OwnerId</field>
         <lookupValue>Local_Pod_Queue</lookupValue>
@@ -125,7 +137,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Assign_to_Rogers_Queue</fullName>
         <field>OwnerId</field>
         <lookupValue>Rogers_Outrank</lookupValue>
@@ -134,7 +147,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Attempts_to_Contact_to_0</fullName>
         <field>Attempts_to_Contact__c</field>
         <literalValue>0</literalValue>
@@ -142,7 +156,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Auto_Close_Date_Filler</fullName>
         <field>Auto_Close_Date__c</field>
         <formula>IF(Next_Scheduled_Contact_Date__c &gt; CreatedDate + 32, Next_Scheduled_Contact_Date__c + 1, CreatedDate +32
@@ -151,7 +166,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CF_Days_Live_at_Created_Date</fullName>
         <field>Days_Live_at__c</field>
         <formula>Account_Name__r.Days_Live__c</formula>
@@ -160,7 +176,8 @@
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CF_Populate_current_monthly_revenue</fullName>
         <field>Current_Monthly_Revenue__c</field>
         <formula>Account_Name__r.Monthly_Budget__c +  Account_Name__r.Essentials_Fee__c +  Account_Name__r.OutRank_Fees__c</formula>
@@ -168,7 +185,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CR_Client_ID_to_Account_Client_ID</fullName>
         <field>Client_ID__c</field>
         <formula>Account_Name__r.Client_ID__c</formula>
@@ -177,7 +195,8 @@
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CR_Closed_Date</fullName>
         <field>Closed_Date__c</field>
         <formula>today()</formula>
@@ -185,7 +204,8 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CR_Initial_Product_to_New_Record</fullName>
         <field>Initial_Product__c</field>
         <formula>IF(Account_Name__r.Account_Product_Sub_Type__c = "Lead Stream - Platform Only", 
@@ -195,7 +215,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CR_Next_Bill_Date_to_Account_Bill_Date</fullName>
         <field>Next_Bill_Date__c</field>
         <formula>Account_Name__r.Next_Billing_Date__c</formula>
@@ -204,14 +225,16 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Cancellation_Auto_Close_Clear_Date</fullName>
         <field>Auto_Close_Date__c</field>
         <name>Cancellation - Auto Close Clear Date</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Client_Email_from_Account</fullName>
         <field>Client_Email_from_Account__c</field>
         <formula>Account_Name__r.Email__c</formula>
@@ -219,7 +242,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>First_Cancel_Code_unknown</fullName>
         <field>Cancel_Code__c</field>
         <literalValue>Unknown</literalValue>
@@ -227,7 +251,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Free_Time_Period_Checkbox</fullName>
         <field>Free_Time__c</field>
         <literalValue>1</literalValue>
@@ -235,14 +260,16 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Future_Product_to_None</fullName>
         <field>Future_Product__c</field>
         <name>Future Product to None</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Future_Revenue_to_0</fullName>
         <field>Future_Monthly_Revenue__c</field>
         <formula>0</formula>
@@ -250,7 +277,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>LBW_AMP_Cancellation_Auto_Close</fullName>
         <field>Outcome__c</field>
         <literalValue>Cancelled</literalValue>
@@ -258,7 +286,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>LH_Cancel_Free_Time_Period</fullName>
         <field>Free_Time__c</field>
         <literalValue>1</literalValue>
@@ -266,7 +295,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>LH_Cancel_Free_Time_Period_CallDate</fullName>
         <field>Next_Scheduled_Contact_Date__c</field>
         <formula>NOW()+30</formula>
@@ -274,7 +304,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>LH_Cancel_Free_Time_Period_Checkbox</fullName>
         <field>Free_Time__c</field>
         <literalValue>1</literalValue>
@@ -282,7 +313,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>LH_Cancellation_Fill_in_Date_of_Cancel</fullName>
         <field>Date_of_Cancellation_Request__c</field>
         <formula>TODAY()</formula>
@@ -290,7 +322,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>LH_Cancellation_Request_Churned</fullName>
         <field>Future_Monthly_Revenue__c</field>
         <formula>0</formula>
@@ -298,7 +331,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Office_Phone_FillIn</fullName>
         <field>Client_s_Phone__c</field>
         <formula>Account_Name__r.Phone</formula>
@@ -306,7 +340,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>PreLaunch_Cancel_Select</fullName>
         <field>Pre_Launch_Cancel__c</field>
         <literalValue>1</literalValue>
@@ -314,7 +349,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Products_in_Cancel_to_All</fullName>
         <field>Account_in_Save_Mode__c</field>
         <literalValue>All</literalValue>
@@ -322,14 +358,16 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Retention_Agent_Change</fullName>
         <field>Retention_Consultant__c</field>
         <name>Retention Agent Change</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Retention_Duplicate_Owner_Queue</fullName>
         <field>OwnerId</field>
         <lookupValue>Retention_Duplicate_Audit_Queue</lookupValue>
@@ -338,7 +376,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Cancel_Outcome_Cancelled</fullName>
         <field>Outcome__c</field>
         <literalValue>Cancelled</literalValue>
@@ -346,7 +385,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Cancel_Outcome_Duplicate_Case</fullName>
         <field>Outcome__c</field>
         <literalValue>Duplicate Retention Case</literalValue>
@@ -354,7 +394,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Cancel_Outcome_In_Progress</fullName>
         <field>Outcome__c</field>
         <literalValue>In Progress</literalValue>
@@ -362,7 +403,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Cancel_Outcome_In_Review</fullName>
         <field>Outcome__c</field>
         <literalValue>In Review</literalValue>
@@ -370,7 +412,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Owner_to_LBW_Customer_Care</fullName>
         <field>OwnerId</field>
         <lookupValue>LBW_Customer_Service</lookupValue>
@@ -379,7 +422,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Owner_to_TORCHx_Retention_Queue</fullName>
         <field>OwnerId</field>
         <lookupValue>TORCHx_Retention</lookupValue>
@@ -388,7 +432,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Ownership</fullName>
         <field>OwnerId</field>
         <lookupValue>RetentionTeam275821</lookupValue>
@@ -397,7 +442,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Ownership_Retention_Dupldate</fullName>
         <field>OwnerId</field>
         <lookupValue>Retention_Duplicate_Audit_Queue</lookupValue>
@@ -406,7 +452,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Cancel_Code_1_unknown</fullName>
         <description>New Cancel Codes.  Originally from workflow  - First Cancel Code = unknown and Field update Leadstream Auto Close First Cancel Code</description>
         <field>Cancel_Code_1__c</field>
@@ -415,7 +462,18 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Approved_checked</fullName>
+        <description>Sets the Approved field to TRUE. Used in validation rule on Cancellation Form, together with custom permission = only users with permission can edit approved records.</description>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Approved (checked)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
         <fullName>Add Phone Number to Cancel Form</fullName>
         <actions>
             <name>Office_Phone_FillIn</name>
@@ -427,7 +485,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Auto Assign to LBW Retention Team</fullName>
         <actions>
             <name>Update_Owner_to_LBW_Customer_Care</name>
@@ -446,7 +505,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <description>Assigns LBW cancel forms to LBW Customer Care Team</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Auto Assign to Local Retention Team</fullName>
         <actions>
             <name>Update_Ownership</name>
@@ -475,7 +535,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <description>Assigns local cancel forms to Local Retention Queue</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Auto Assign to Pod Retention Team</fullName>
         <actions>
             <name>Assign_to_Local_Pod</name>
@@ -494,7 +555,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <description>Assigns local cancel forms to Pod Retention Team</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Auto Assign to Rogers Retention Team</fullName>
         <actions>
             <name>Assign_to_Rogers_Queue</name>
@@ -517,7 +579,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Rogers Cancellation Request</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Auto Assign to TORCHx Retention Team</fullName>
         <actions>
             <name>Update_Owner_to_TORCHx_Retention_Queue</name>
@@ -531,7 +594,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <description>Assigns TORCHx cancel forms to TORCHx Retention Queue</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CF - Days Live at Created Date</fullName>
         <actions>
             <name>CF_Days_Live_at_Created_Date</name>
@@ -543,7 +607,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CF - Populate current monthly revenue</fullName>
         <actions>
             <name>CF_Populate_current_monthly_revenue</name>
@@ -556,7 +621,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Cancellation Request</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CR - Client ID to Account Client ID</fullName>
         <actions>
             <name>CR_Client_ID_to_Account_Client_ID</name>
@@ -568,7 +634,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CR - Closed Date</fullName>
         <actions>
             <name>CR_Closed_Date</name>
@@ -581,7 +648,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CR - Initial Product to New Record</fullName>
         <actions>
             <name>CR_Initial_Product_to_New_Record</name>
@@ -594,7 +662,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Cancellation Request</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CR - Next Bill Date to Account Bill Date</fullName>
         <actions>
             <name>CR_Next_Bill_Date_to_Account_Bill_Date</name>
@@ -606,7 +675,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Cancellation - LBW Auto Close Clear Date</fullName>
         <actions>
             <name>Cancellation_Auto_Close_Clear_Date</name>
@@ -645,7 +715,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Requested</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Cancellation Case LBW Auto Close Filler</fullName>
         <actions>
             <name>Auto_Close_Date_Filler</name>
@@ -673,7 +744,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Requested</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Cancellation Form Reopened Attempts to Contact to 0</fullName>
         <actions>
             <name>Attempts_to_Contact_to_0</name>
@@ -691,7 +763,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>In Progress</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Free Time Period Checkbox</fullName>
         <actions>
             <name>Free_Time_Period_Checkbox</name>
@@ -704,7 +777,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Free Time Period</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>LBW Cancellation Email Alert</fullName>
         <actions>
             <name>LBW_Cancellation_Alert</name>
@@ -722,7 +796,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Cancelled</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>LBW%2FPOD Cancel Form Auto Close</fullName>
         <actions>
             <name>LBW_AMP_Cancellation_Auto_Close</name>
@@ -745,7 +820,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>TODAY</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>LH Cancel - Free Time Period</fullName>
         <actions>
             <name>LH_Cancel_Free_Time_Period</name>
@@ -776,7 +852,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <description>.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>LH Cancel - Ownership Change Alert</fullName>
         <actions>
             <name>LH_Cancel_Ownership_Change_Alert</name>
@@ -785,7 +862,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <active>true</active>
         <formula>AND(RecordType.Name = "LH Cancellation Request", ISCHANGED( OwnerId ), LEFT(PRIORVALUE(OwnerId),3) = '00G', LEFT(OwnerId,3) = '005' )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>LH Cancellation - Fill in Date of Cancellation Request</fullName>
         <actions>
             <name>LH_Cancellation_Fill_in_Date_of_Cancel</name>
@@ -798,7 +876,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>LH Cancellation Request</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>LH Cancellation Request - Churned</fullName>
         <actions>
             <name>LH_Cancellation_Request_Churned</name>
@@ -820,7 +899,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Churned</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Leadstream Auto Close Related Fields</fullName>
         <actions>
             <name>Future_Product_to_None</name>
@@ -861,7 +941,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>System Administrator</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>TORCHx Cancel Form fill out Client Email from Accout</fullName>
         <actions>
             <name>Client_Email_from_Account</name>
@@ -874,7 +955,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>TORCHx Cancellation Request</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>TORCHx Cancellation Email</fullName>
         <actions>
             <name>TORCHx_Cancellation_Resolution_Email</name>
@@ -893,7 +975,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         </criteriaItems>
         <description>Fires Email Alert When TORCH Cancel Is Closed</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>TORCHx PreLaunch Cancel Auto Check</fullName>
         <actions>
             <name>PreLaunch_Cancel_Select</name>
@@ -911,7 +994,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>TORCHx Cancellation Request</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Ownership to Duplicate Team</fullName>
         <actions>
             <name>Update_Ownership_Retention_Dupldate</name>
@@ -924,7 +1008,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>Duplicate Retention Case</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Yodle Gold Cancel Request Closed</fullName>
         <actions>
             <name>Yodle_Gold_Service_Cancel_Closed_Email</name>
@@ -942,7 +1027,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <value>In Progress,Duplicate Retention Case</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Leadstream Auto Close Cancel Code 1</fullName>
         <actions>
             <name>Cancel_Code_1_unknown</name>
@@ -982,7 +1068,8 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <description>Updated Cancel Codes  
 Original Leadstream Auto Close First Cancel Code</description>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Leadstream Auto Close First Cancel Code</fullName>
         <actions>
             <name>First_Cancel_Code_unknown</name>
@@ -1020,7 +1107,8 @@ Original Leadstream Auto Close First Cancel Code</description>
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>TORCHx Back Down%2FNever Went Live</fullName>
         <actions>
             <name>TORCHx_Back_Down_Never_Went_Live</name>
@@ -1029,7 +1117,8 @@ Original Leadstream Auto Close First Cancel Code</description>
         <active>false</active>
         <formula>AND(  Account_Name__r.Product_Type_Transactional__c = "TORCHx",  ISPICKVAL( Outcome__c , "Cancelled"),  ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),  Includes(Cancellation_Code_Details__c, "Never Went Live"))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>TORCHx Back Down%2FNever Went Live New</fullName>
         <actions>
             <name>TORCHx_Back_Down_Never_Went_Live</name>
@@ -1039,7 +1128,8 @@ Original Leadstream Auto Close First Cancel Code</description>
         <description>New Cancel Codes Sends email to Customer when Cancellation Closed do to no response.</description>
         <formula>AND(   Account_Name__r.Product_Type_Transactional__c = "TORCHx",   ISPICKVAL( Outcome__c , "Cancelled"),    OR(   AND(/*old codes*/     ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),       Includes(Cancellation_Code_Details__c, "Never Went Live")      ),   AND( /*new codes*/     ISPICKVAL( Cancel_Code_1__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_1_Details__c  , "Unresponsive to Fulfillment")     ),   AND(    ISPICKVAL( Cancel_Code_2__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_2_Details__c  , "Unresponsive to Fulfillment")     )   ) )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><tasks>
+    </rules>
+    <tasks>
         <fullName>Test_Task</fullName>
         <assignedTo>awoodul@yodle.com</assignedTo>
         <assignedToType>user</assignedToType>
@@ -1049,4 +1139,5 @@ Original Leadstream Auto Close First Cancel Code</description>
         <protected>false</protected>
         <status>Not Started</status>
         <subject>Test Task</subject>
-    </tasks></Workflow>
+    </tasks>
+</Workflow>

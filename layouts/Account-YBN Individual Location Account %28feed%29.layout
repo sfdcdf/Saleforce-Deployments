@@ -256,6 +256,14 @@
                 <field>Next_Billing_Date__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>invoiced_last_mtd__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>invoiced_this_MTD__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Days_Since_Live__c</field>
             </layoutItems>
@@ -330,6 +338,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>WBN_JAX_CUST_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>WBN_Last_Opp_Sold_By__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -1057,6 +1069,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>Cancel_Code_1__c</fields>
+        <fields>Outcome__c</fields>
+        <fields>CREATEDBY_USER</fields>
         <relatedList>Cancellation_Request__c.Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>
