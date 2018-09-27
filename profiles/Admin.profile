@@ -39529,6 +39529,9 @@
     <layoutAssignments>
         <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-YBN Individual Location Account %28feed%29</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

@@ -3451,7 +3451,7 @@
         <description>CTS - Send Organic cases to  CopywritingCTS@web.com</description>
         <protected>false</protected>
         <recipients>
-            <recipient>annemarie.messineo@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>copywritingsfdc@web.com</senderAddress>

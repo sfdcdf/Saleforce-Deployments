@@ -12,7 +12,7 @@
     </values>
     <values>
         <field>Configuration_Value__c</field>
-        <value xsi:type="xsd:string">ContentCompleted</value>
+        <value xsi:type="xsd:string">Completed</value>
     </values>
     <values>
         <field>Data_Type__c</field>
