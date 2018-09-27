@@ -12,6 +12,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     Map<String, Integration_Configuration__mdt> configsMap = new Map<String, Integration_Configuration__mdt>();
     List<Case> dmlCasesToUpdateAR = new List<Case>();
     List<Case> dmlCasesToUpdateCC = new List<Case>();
+    List<DebugInfo__c> dmlDebugLogsToInsert = new List<DebugInfo__c>();
+    //String externalSystem = '';
     String ctsEmailConst = '';
     String sfdcEmailConst = '';
     String autoRespConst = '';
@@ -55,14 +57,14 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         // Populate Configuration Map
         for(Integration_Configuration__mdt ic :
             [SELECT Id, 
-                   External_System_Name__c, 
-                   MasterLabel, 
-                   Configuration_Label__c, 
-                   Data_Type__c, 
-                   Configuration_Value__c 
-              FROM Integration_Configuration__mdt 
-             WHERE Is_Active__c = true AND
-                   External_System_Name__c = 'CTS']){
+                    External_System_Name__c, 
+                    MasterLabel, 
+                    Configuration_Label__c, 
+                    Data_Type__c, 
+                    Configuration_Value__c 
+               FROM Integration_Configuration__mdt 
+              WHERE Is_Active__c = true AND
+                    External_System_Name__c = 'CTS']){
                 
             configsMap.put(ic.Configuration_Label__c, ic);
         }
@@ -74,8 +76,10 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
             sfdcEmailConst = configsMap.get('ServiceAddressEmail_sfdc').Configuration_Value__c;
             autoRespConst = configsMap.get('SubjectLineParse_armail').Configuration_Value__c;
             complTktConst = configsMap.get('SubjectLineParse_contentcomplete').Configuration_Value__c;
+            //externalSystem = configsMap.get('ServiceAddressEmail_cts').External_System_Name__c;
         }
         
+        //System.Debug('*** External System Name: ' + externalSystem);
         System.Debug('*** CTS Email: ' + ctsEmailConst);
         System.Debug('*** SFDC Email: ' + sfdcEmailConst);
         System.Debug('*** Auto Response Parse: ' + autoRespConst);
@@ -114,16 +118,18 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 for(Case arc : 
                                     [SELECT Id,
                                             AccountId,
-                                            CTS_Ticket_Number__c,
+                                            External_Ticket_ID__c,
+                                            External_Ticket_System__c,
                                             CaseNumber,
                                             OwnerId
                                        FROM Case
                                       WHERE CaseNumber = :sfdcCaseNumber AND
-                                            CTS_Ticket_Number__c = NULL AND
+                                            External_Ticket_ID__c = NULL AND
                                             isClosed = false]){
                                 
                                     // set update value
-                                    arc.CTS_Ticket_Number__c = ctsTicketNumber;
+                                    arc.External_Ticket_ID__c = ctsTicketNumber;
+                                    //arc.External_Ticket_System__c = externalSystem;
                                     
                                     // add to update list
                                     dmlCasesToUpdateAR.add(arc);
@@ -135,14 +141,39 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 // both CTS Ticket Number and SFDC Case Number are missing
                                 if(String.isBlank(sfdcCaseNumber) && String.isBlank(ctsTicketNumber)){
                                 
+                                    System.Debug('**Error: Missing both Case and Ticket Number');
+                                    
+                                    // prepare to write to Debug Info Log
+                                    DebugInfo__c debugInfo = new DebugInfo__c();
+                                    debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number and SFDC Case Number';
+                                    dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                                    // send error email to CTS and SFDC Support
+                                    
                                 }
                                 // only CTS Ticket Number is missing
                                 else if(String.isBlank(sfdcCaseNumber) && !String.isBlank(ctsTicketNumber)){
                                 
+                                    System.Debug('**Error: Missing Ticket Number');
+                                    
+                                    // prepare to write to Debug Info Log
+                                    DebugInfo__c debugInfo = new DebugInfo__c();
+                                    debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number';
+                                    dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                                    // send error email to CTS and SFDC Support
                                 }
                                 // only SFDC Case Number is missing
                                 else{
                                 
+                                    System.Debug('**Error: Missing Case Number');
+                                    
+                                    // prepare to write to Debug Info Log
+                                    DebugInfo__c debugInfo = new DebugInfo__c();
+                                    debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing SFDC Case Number';
+                                    dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                                    // send error email to CTS and SFDC Support
                                 }
                             }
                         }
@@ -157,11 +188,12 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 for(Case ccc : 
                                     [SELECT Id,
                                             AccountId,
-                                            CTS_Ticket_Number__c,
+                                            External_Ticket_ID__c,
+                                            External_Ticket_System__c,
                                             CaseNumber,
                                             OwnerId
                                        FROM Case
-                                      WHERE CTS_Ticket_Number__c = :ctsTicketNumber AND
+                                      WHERE External_Ticket_ID__c = :ctsTicketNumber AND
                                             OwnerId != :itProQueue AND
                                             isClosed = false]){
                                 
@@ -181,14 +213,38 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 // both CTS Ticket Number and attachment missing
                                 if(String.isBlank(ctsTicketNumber) && email.binaryAttachments == null && email.binaryAttachments.size() < 1){
                                 
+                                    System.Debug('**Error: Missing both Ticket Number and Attachment');
+                                    
+                                    // prepare to write to Debug Info Log
+                                    DebugInfo__c debugInfo = new DebugInfo__c();
+                                    debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number and Attachment';
+                                    dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                                    // send error email to CTS and SFDC Support
                                 }
                                 // only CTS Ticket Number is missing
                                 else if(String.isBlank(ctsTicketNumber) && email.binaryAttachments != null && email.binaryAttachments.size() > 0){
                                 
+                                    System.Debug('**Error: Missing Ticket Number');
+                                    
+                                    // prepare to write to Debug Info Log
+                                    DebugInfo__c debugInfo = new DebugInfo__c();
+                                    debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number';
+                                    dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                                    // send error email to CTS and SFDC Support
                                 }
                                 // only attachment is missing
                                 else{
                                 
+                                    System.Debug('**Error: Missing Attachment');
+                                    
+                                    // prepare to write to Debug Info Log
+                                    DebugInfo__c debugInfo = new DebugInfo__c();
+                                    debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing Attachment';
+                                    dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                                    // send error email to CTS and SFDC Support
                                 }
                             }
                         }
