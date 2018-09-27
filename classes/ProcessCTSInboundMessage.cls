@@ -9,15 +9,37 @@
 global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
 
     List<Attachment> dmlAttachmentsToInsert = new List<Attachment>();
-
-    //Method to add Voicemail attachment to the create Case
-    void addAttachment(Case insertedCase, Messaging.InboundEmail email){
+    Map<String, Integration_Configuration__mdt> configsMap = new Map<String, Integration_Configuration__mdt>();
+    List<Case> dmlCasesToUpdateAR = new List<Case>();
+    List<Case> dmlCasesToUpdateCC = new List<Case>();
+    String ctsEmailConst = '';
+    String sfdcEmailConst = '';
+    String autoRespConst = '';
+    String complTktConst = '';
+    String fromAddress = '';
+    String[] toAddresses;
+    String subjectLine = '';
+    String emailBody = '';
+    String ctsTicketNumber = '';
+    String sfdcCaseNumber = '';
+    Integer ticketStart;
+    Integer subjectLen;
+    Integer caseStart;
+    Integer caseEnd;
+    Id itProQueue = [SELECT Id FROM Group WHERE Name = 'IT Pro SEO Optimization' LIMIT 1].Id;
+    Id organicSetupId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId(); 
+    Id lsAtvOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId(); 
+    Id lbwOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(); 
+    Set<Id> organicSetupIdsSet = new Set<Id>{organicSetupId, lsAtvOrganicId, lbwOrganicId};
+        
+    // Method to add attachment to related Case
+    void addAttachment(Case relatedCase, Messaging.InboundEmail email){
         if (email.binaryAttachments != null && email.binaryAttachments.size() > 0) {
             for (integer i = 0 ; i < email.binaryAttachments.size() ; i++) {
                 Attachment attachment = new Attachment();
                     
-                // Attach to the newly created Case record
-                attachment.ParentId = insertedCase.Id;
+                // Attach to the related Case record
+                attachment.ParentId = relatedCase.Id;
                 attachment.Name = email.binaryAttachments[i].filename;
                 attachment.Body = email.binaryAttachments[i].body;
                 dmlAttachmentsToInsert.add(attachment);
@@ -29,27 +51,35 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
  
         // Define variables used
         Messaging.InboundEmailResult result = new Messaging.InboundEmailResult();
-        List<Case> dmlCasesToUpdateAR = new List<Case>();
-        List<Case> dmlCasesToUpdateCC = new List<Case>();
-        String ctsEmailConst = 'copywritingcts@web.com';
-        String sfdcEmailConst = 'copywritingsfdc@web.com';
-        String autoRespConst = 'ARMail';
-        String complTktConst = 'ContentCompleted';
-        String fromAddress = '';
-        String[] toAddresses;
-        String subjectLine = '';
-        String emailBody = '';
-        String ctsTicketNumber = '';
-        String sfdcCaseNumber = '';
-        Integer ticketStart;
-        Integer subjectLen;
-        Integer caseStart;
-        Integer caseEnd;
-        Id itProQueue = [SELECT Id FROM Group WHERE Name = 'IT Pro SEO Optimization' LIMIT 1].Id;
-        Id organicSetupId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId(); 
-        Id lsAtvOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId(); 
-        Id lbwOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(); 
-        Set<Id> organicSetupIdsSet = new Set<Id>{organicSetupId, lsAtvOrganicId, lbwOrganicId};
+        
+        // Populate Configuration Map
+        for(Integration_Configuration__mdt ic :
+            [SELECT Id, 
+                   External_System_Name__c, 
+                   MasterLabel, 
+                   Configuration_Label__c, 
+                   Data_Type__c, 
+                   Configuration_Value__c 
+              FROM Integration_Configuration__mdt 
+             WHERE Is_Active__c = true AND
+                   External_System_Name__c = 'CTS']){
+                
+            configsMap.put(ic.Configuration_Label__c, ic);
+        }
+        
+        for(Integration_Configuration__mdt conf : configsMap.values()){
+        
+            // set configuration variables from integration configuration metadata
+            ctsEmailConst = configsMap.get('ServiceAddressEmail_cts').Configuration_Value__c;
+            sfdcEmailConst = configsMap.get('ServiceAddressEmail_sfdc').Configuration_Value__c;
+            autoRespConst = configsMap.get('SubjectLineParse_armail').Configuration_Value__c;
+            complTktConst = configsMap.get('SubjectLineParse_contentcomplete').Configuration_Value__c;
+        }
+        
+        System.Debug('*** CTS Email: ' + ctsEmailConst);
+        System.Debug('*** SFDC Email: ' + sfdcEmailConst);
+        System.Debug('*** Auto Response Parse: ' + autoRespConst);
+        System.Debug('*** Ticket Complete Parse: ' + complTktConst);
         
         // set email message variable values
         fromAddress = email.fromAddress;
@@ -72,7 +102,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                         caseEnd = subjectLine.IndexOf(']');
                         sfdcCaseNumber = subjectLine.substring(caseStart, caseEnd).replace('SFDCCase:', '').replace(']', '');
                         
-                        System.Debug('**** CTS Ticket Number: ' + ctsTicketNumber);
+                        System.Debug('*** CTS Ticket Number: ' + ctsTicketNumber);
                         
                         // AUTO RESPONSE PROCESS
                         if(subjectLine.contains(autoRespConst)){
@@ -89,7 +119,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             OwnerId
                                        FROM Case
                                       WHERE CaseNumber = :sfdcCaseNumber AND
-                                            CTS_Ticket_Number__c = NULL]){
+                                            CTS_Ticket_Number__c = NULL AND
+                                            isClosed = false]){
                                 
                                     // set update value
                                     arc.CTS_Ticket_Number__c = ctsTicketNumber;
@@ -122,7 +153,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                             // subject data validation; Need only Ticket # and need to check for attachment
                             if(!String.isBlank(ctsTicketNumber) && email.binaryAttachments != null && email.binaryAttachments.size() > 0){
                             
-                                // get related Case by CTS Ticket Number and update the Owner
+                                // get related Case by CTS Ticket Number and update the Owner if not already itProQue
                                 for(Case ccc : 
                                     [SELECT Id,
                                             AccountId,
@@ -130,8 +161,9 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             CaseNumber,
                                             OwnerId
                                        FROM Case
-                                      WHERE CaseNumber = :sfdcCaseNumber AND
-                                            CTS_Ticket_Number__c = NULL]){
+                                      WHERE CTS_Ticket_Number__c = :ctsTicketNumber AND
+                                            OwnerId != :itProQueue AND
+                                            isClosed = false]){
                                 
                                     // set update value
                                     ccc.OwnerId = itProQueue;
@@ -179,7 +211,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
             }
         }
         catch (Exception e) {
-            System.debug('Issue: ' + e);
+            System.debug('An Error occurred: ' + e);
         }
    
         // Set the result to true. No need to send an email back to the user with an error message

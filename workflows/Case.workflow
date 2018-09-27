@@ -3445,6 +3445,19 @@
         <senderType>CurrentUser</senderType>
         <template>Support/new_client_setup_sales</template>
     </alerts>
+    <alerts>
+        <fullName>CTS_Send_Organic_cases_to_CopywritingCTS_web_com</fullName>
+        <ccEmails>ticketingtest@web.com</ccEmails>
+        <description>CTS - Send Organic cases to  CopywritingCTS@web.com</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>annemarie.messineo@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>copywritingsfdc@web.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CTS_Templates/CTS_OrganicCases_Send</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
