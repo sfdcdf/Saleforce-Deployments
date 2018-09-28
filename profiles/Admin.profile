@@ -39532,6 +39532,10 @@
     <layoutAssignments>
         <layout>Account-YBN Individual Location Account %28feed%29</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-YBN Individual Location Account %28feed%29</layout>
+        <recordType>Account.Standard</recordType>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
