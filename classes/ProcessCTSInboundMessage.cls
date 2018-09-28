@@ -133,9 +133,12 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 
                                 // add to update list
                                 dmlCasesToUpdateAR.add(arc);
+                                
+                                // add to success task activity list
                             }
                         }
                         else{
+                        
                             // send error email template and log errors
                                 
                             // both CTS Ticket Number and SFDC Case Number are missing
@@ -148,7 +151,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number and SFDC Case Number';
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
-                                // send error email to CTS and SFDC Support
+                                // send error email to SFDC Support
+                                
                                     
                             }
                             // only CTS Ticket Number is missing
@@ -161,7 +165,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number';
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
-                                // send error email to CTS and SFDC Support
+                                // send error email SFDC Support and create Error Task Activity on Case
+                                
                             }
                             // only SFDC Case Number is missing
                             else{
@@ -176,10 +181,9 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 // send error email to CTS and SFDC Support
                             }
                         }
-                    }
-                            
+                    }      
                     // CONTENT COMPLETED RESPONSE PROCESS
-                    if(subjectLine.contains(complTktConst)){
+                    else if(subjectLine.contains(complTktConst)){
                         
                         // subject data validation; Need only Ticket # and need to check for attachment
                         if(!String.isBlank(ctsTicketNumber) && email.binaryAttachments != null && email.binaryAttachments.size() > 0){
@@ -205,6 +209,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                    
                                 // add to attachment update list
                                 addAttachment(ccc, email);
+                                
+                                // add to success task activity list
                             }
                         }
                         else{
@@ -220,7 +226,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number and Attachment';
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
-                                // send error email to CTS and SFDC Support
+                                // send error email to SFDC Support
+                                
                             }
                             // only CTS Ticket Number is missing
                             else if(String.isBlank(ctsTicketNumber) && email.binaryAttachments != null && email.binaryAttachments.size() > 0){
@@ -247,6 +254,17 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 // send error email to CTS and SFDC Support
                             }
                         }
+                    }
+                    else{
+                    
+                        System.Debug('**Error: Missing Keywords in Subject Line');
+                                    
+                        // prepare to write to Debug Info Log
+                        DebugInfo__c debugInfo = new DebugInfo__c();
+                        debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing Keywords in Subject Line to identify Auto Response or Completion';
+                        dmlDebugLogsToInsert.add(debugInfo);
+                                    
+                        // send error email to CTS and SFDC Support
                     }
                         
                     // DML OPERATIONS
