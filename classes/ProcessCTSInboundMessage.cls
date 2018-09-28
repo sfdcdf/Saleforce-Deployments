@@ -13,7 +13,11 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     List<Case> dmlCasesToUpdateAR = new List<Case>();
     List<Case> dmlCasesToUpdateCC = new List<Case>();
     List<DebugInfo__c> dmlDebugLogsToInsert = new List<DebugInfo__c>();
+    List<Task> dmlErrorTasks = new List<Task>();
+    List<Task> dmlSuccessTasks = new List<Task>();
+    List<String> notifToAddress = new List<String>();
     List<Messaging.SingleEmailMessage> notificationsLst = new List<Messaging.SingleEmailMessage>();
+    List<EmailMessage> dmlEmailMsgs = new List<EmailMessage>();
     //String externalSystem = '';
     String ctsEmailConst = '';
     String sfdcEmailConst = '';
@@ -25,16 +29,23 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     String emailBody = '';
     String ctsTicketNumber = '';
     String sfdcCaseNumber = '';
+    String notifFromAddress = '';
+    String fromDisplayName = '';
+    String notifSubjectLine = '';
+    String notifBody = '';
     Integer ticketStart;
     Integer subjectLen;
     Integer caseStart;
     Integer caseEnd;
+    Id caseId = '';
+    Id automationAdminUser = [SELECT Id FROM User WHERE Alias = 'sauto' LIMIT 1].Id;
     Id itProQueue = [SELECT Id FROM Group WHERE Name = 'IT Pro SEO Optimization' LIMIT 1].Id;
     Id organicSetupId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId(); 
     Id lsAtvOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId(); 
     Id lbwOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(); 
     Set<Id> organicSetupIdsSet = new Set<Id>{organicSetupId, lsAtvOrganicId, lbwOrganicId};
-        
+    OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+       
     // Method to add attachment to related Case
     void addAttachment(Case relatedCase, Messaging.InboundEmail email){
         if (email.binaryAttachments != null && email.binaryAttachments.size() > 0) {
@@ -135,6 +146,14 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 dmlCasesToUpdateAR.add(arc);
                                 
                                 // add to success task activity list
+                                Task newTsk = new Task();
+                                newTsk.OwnerId = automationAdminUser;
+                                newTsk.Description = 'Success receipt for Case # ' + arc.CaseNumber + ' from CTS Auto-response and updated the CTS Ticket # on the Case.';
+                                newTsk.Subject = 'CTS Auto-response Successfully Received';
+                                newTsk.Priority = 'Normal';
+                                newTsk.Status = 'Completed';
+                                newTsk.WhatId = arc.Id;
+                                dmlSuccessTasks.add(newTsk);
                             }
                         }
                         else{
@@ -152,11 +171,32 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
                                 // send error email to SFDC Support
+                                Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
                                 
+                                notifFromAddress = 'sfdc@yodle.com';
+                                fromDisplayName = 'Salesforce Notifications for CTS';
+                                notifSubjectLine = 'CTS Integration Error: Both Case and Ticket Number Missing';
+                                notifToAddress.add('sfdc@yodle.com');
+                                notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
+                                notifBody += '<b>Subject Line from Auto-response Message:</b> ' + subjectLine + '<br/><br/>';
+                                notifBody += '<b>Error Details:</b> The Salesforce process <em>(ProcessCTSInboundMessage)</em> failed when receiving an auto-response email from CTS. The email subject line was missing the Case Number and Ticket Number<br/><br/>';
+         
+                                // set message content
+                                message.setToAddresses(notifToAddress);
+                                message.setReplyTo(notifFromAddress);
+                                message.setOrgWideEmailAddressId(owea.get(0).Id);
+                                message.setSubject(notifSubjectLine);
+                                message.setHtmlBody(notifBody);
+                                //message.ParentId = ;
+    
+                                notificationsLst.add(message);
                                     
                             }
                             // only CTS Ticket Number is missing
-                            else if(String.isBlank(sfdcCaseNumber) && !String.isBlank(ctsTicketNumber)){
+                            else if(!String.isBlank(sfdcCaseNumber) && String.isBlank(ctsTicketNumber)){
+                                
+                                // get Case Id to add to Case Related Email List
+                                caseId = [SELECT Id FROM Case WHERE CaseNumber = :sfdcCaseNumber LIMIT 1].Id;
                                 
                                 System.Debug('**Error: Missing Ticket Number');
                                     
@@ -166,6 +206,45 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
                                 // send error email SFDC Support and create Error Task Activity on Case
+                                Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                                
+                                notifFromAddress = 'sfdc@yodle.com';
+                                fromDisplayName = 'Salesforce Notifications for CTS';
+                                notifSubjectLine = 'CTS Integration Error: Ticket Number Missing';
+                                notifToAddress.add('sfdc@yodle.com');
+                                notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
+                                notifBody += '<b>Subject Line from Auto-response Message:</b> ' + subjectLine + '<br/><br/>';
+                                notifBody += '<b>Error Details:</b> The Salesforce process <em>(ProcessCTSInboundMessage)</em> failed when receiving an auto-response email from CTS. The email subject line was missing the Ticket Number<br/><br/>';
+         
+                                // set message content
+                                message.setToAddresses(notifToAddress);
+                                message.setReplyTo(notifFromAddress);
+                                message.setOrgWideEmailAddressId(owea.get(0).Id);
+                                message.setSubject(notifSubjectLine);
+                                message.setHtmlBody(notifBody);
+                                
+                                // add email notification to list to be sent
+                                notificationsLst.add(message);
+                                
+                                // add email message to list to be related to Case
+                                EmailMessage emailMsg = new EmailMessage();
+                                emailMsg.ToAddress = String.valueOf(notifToAddress);
+                                emailMsg.Subject = notifSubjectLine;
+                                emailMsg.HtmlBody = notifBody;
+                                emailMsg.ParentId = caseId;
+                                emailMsg.MessageDate = System.Now();
+                                emailMsg.Status = '0';
+                                dmlEmailMsgs.add(emailMsg);
+                                
+                                // add to error task activity list
+                                Task newTsk = new Task();
+                                newTsk.OwnerId = automationAdminUser;
+                                newTsk.Description = 'Error receipt for Case # ' + sfdcCaseNumber + ' from CTS Auto-response. The CTS Ticket Number is Missing in the Subject Line.';
+                                newTsk.Subject = 'CTS Auto-response Error Message';
+                                newTsk.Priority = 'Normal';
+                                newTsk.Status = 'Completed';
+                                newTsk.WhatId = caseId;
+                                dmlErrorTasks.add(newTsk);
                                 
                             }
                             // only SFDC Case Number is missing
@@ -179,6 +258,25 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
                                 // send error email to CTS and SFDC Support
+                                Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                                
+                                notifFromAddress = 'sfdc@yodle.com';
+                                fromDisplayName = 'Salesforce Notifications for CTS';
+                                notifSubjectLine = 'CTS Integration Error: Case Number Missing for CTS Ticket [tkt:' + ctsTicketNumber + ']';
+                                notifToAddress.add('sfdc@yodle.com');
+                                notifToAddress.add('copywritingcts@web.com');
+                                notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
+                                notifBody += '<b>Subject Line from Auto-response Message:</b> ' + subjectLine + '<br/><br/>';
+                                notifBody += '<b>Error Details:</b> The Salesforce process <em>(ProcessCTSInboundMessage)</em> failed when receiving an auto-response email from CTS. The email subject line was missing the Case Number<br/><br/>';
+         
+                                // set message content
+                                message.setToAddresses(notifToAddress);
+                                message.setReplyTo(notifFromAddress);
+                                message.setOrgWideEmailAddressId(owea.get(0).Id);
+                                message.setSubject(notifSubjectLine);
+                                message.setHtmlBody(notifBody);
+    
+                                notificationsLst.add(message);
                             }
                         }
                     }      
@@ -239,7 +337,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing CTS Ticket Number';
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
-                                // send error email to CTS and SFDC Support
+                                // send error email to SFDC Support
                             }
                             // only attachment is missing
                             else{
@@ -251,7 +349,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 debugInfo.DebugData__c = 'Subject: ' + subjectLine + ' | Error: Missing Attachment';
                                 dmlDebugLogsToInsert.add(debugInfo);
                                     
-                                // send error email to CTS and SFDC Support
+                                // send error email to CTS and SFDC Support; create Error Task Activity on Case
                             }
                         }
                     }
