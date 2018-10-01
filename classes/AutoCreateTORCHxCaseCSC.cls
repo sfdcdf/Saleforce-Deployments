@@ -45,10 +45,8 @@ public class AutoCreateTORCHxCaseCSC
                       WHERE Id IN :caseIds AND
                             RecordTypeId = :ncsCaseRecordTypeId AND
                             IsClosed = false AND
-                            (NOT Product_Type__c LIKE :prodExcludeSet) AND
-                            (NOT Client_Type__c LIKE :clientExcludeSet) AND
-                            //GCC1_Date_Time__c != NULL AND
-                            //GCC1_Date_Time__c >= TODAY AND
+                            GCC1_Date_Time__c != NULL AND
+                            GCC1_Date_Time__c >= TODAY AND
                             Created_Outbound_Call_Case__c = false]){
                 
                     // add data to Map
@@ -97,10 +95,10 @@ public class AutoCreateTORCHxCaseCSC
                             newCaseCSC.X3_Day_Approval__c = c.X3_Day_Approval__c;
                             newCaseCSC.Sales_Notes__c = c.Sales_Notes__c;
                             newCaseCSC.Winback_CSC_Script__c = c.Winback_CSC_Script__c;
-                            newCaseCSC.Channel_Type__c = (c.Channel_Type__c == 'Transactional' ? 'Local' : c.Channel_Type__c);
+                            newCaseCSC.Channel_Type__c = (String.isBlank(c.Channel_Type__c) ? 'Transactional' : c.Channel_Type__c);
                             newCaseCSC.MA_Notes__c = c.MA_Notes__c;
-                            newCaseCSC.Budget__c = c.Budget__c != null ? c.Budget__c : 0;
-                            newCaseCSC.Website_Type2__c = c.Website_Type2__c;
+                            newCaseCSC.Budget__c = (c.Budget__c != null ? c.Budget__c : 0);
+                            newCaseCSC.Website_Type2__c = (String.isBlank(c.Website_Type2__c) ? 'Adversite' : c.Website_Type2__c);
                             
                             // update boolean value on NCS Case
                             c.Created_Outbound_Call_Case__c = true;
