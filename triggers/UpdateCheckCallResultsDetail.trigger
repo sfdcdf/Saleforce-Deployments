@@ -1,10 +1,23 @@
 trigger UpdateCheckCallResultsDetail on Task (before insert, before update) {
 	
+	Set<Id> taskWhatIdsSet = new Set<Id>();
+	
+	for (Task newTask : Trigger.new) {
+		taskWhatIdsSet.add(newTask.WhatId);
+	}
+	
+	Map<Id, Call_Result_Detail__c> callResults = new Map<Id, Call_Result_Detail__c>(
+		[SELECT Id,Lead__c, Contact__c, Campaign__c, Comments__c, Call_Status__c, Task_Processed__c
+		FROM Call_Result_Detail__c 
+		WHERE (Id IN :taskWhatIdsSet)]);
+	
+	
 	for (Task newTask : Trigger.new) {
 		System.Debug('************ What Obj Id: ' + newTask.WhatId + '\n What Type: \n' + newTask);
 		Call_Result_Detail__c callResult;
 		try {
-			callResult = [Select Id,Lead__c, Contact__c, Campaign__c, Comments__c, Call_Status__c, Task_Processed__c From Call_Result_Detail__c WHERE Id = :newTask.WhatId];
+			//callResult = [Select Id,Lead__c, Contact__c, Campaign__c, Comments__c, Call_Status__c, Task_Processed__c From Call_Result_Detail__c WHERE Id = :newTask.WhatId];
+			callResult = callResults.get(newTask.WhatId);
 		}
 		catch (Exception e) {
 			System.Debug(e);
