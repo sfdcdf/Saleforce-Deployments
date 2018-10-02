@@ -1275,6 +1275,10 @@
         <apexClass>icTestServiceWBNOptimizationCasesAutom</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>ProcessCTSInboundMessage</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -37516,6 +37520,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Days_Since_Initial_Live__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.External_Ticket_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.External_Ticket_System__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <recordTypeVisibilities>
