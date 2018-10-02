@@ -16,7 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-mask/1.8.7/mask.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.11/smart-table.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.11/smart-table.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.4/interact.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
         
@@ -113,10 +113,10 @@
          <div style="padding: 0 15px 0 15px">
          
              <div class="table-responsive" style="border: 1px solid #a0abb9;">
-                 <table st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
+                 <table id="acctsTable" st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
                      <thead>
                          <tr>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CaseNumber" title="Sort by Case Number" st-sort-default="true">Case #</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CaseNumber" title="Sort by Case Number" st-sort-default="reverse">Case #</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="RecordType.Name" title="Sort by Record Type">Record Type</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Subject" title="Sort by Subject">Subject</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Status" title="Sort by Status">Status</th>
@@ -124,12 +124,13 @@
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Reason" title="Sort by Reason">Reason</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Origin" title="Sort by Origin">Origin</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Parent.CaseNumber" title="Sort by Parent Case">Parent Case</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CreatedDate" title="Sort by CreatedDate">Created</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CreatedDate" title="Sort by Created Date">Created</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="ClosedDate" title="Sort by Closed Date">Closed</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Owner.Name" title="Sort by Owner">Owner</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Description" title="Sort by Description">Description</th>
                          </tr>
                      </thead>
-                     <tbody style="width: 100%; font-size: 14px; color: #000033">
+                     <tbody style="width: 100%; font-size: 13px; color: #000033">
                          <tr data-ng-repeat="c in displayedCases">
                              <td>
                                  <p>{{c.CaseNumber}}</p>
@@ -159,6 +160,9 @@
                                  <p>{{c.CreatedDate | date:'MM/dd/yyyy @ h:mm a'}}</p>
                              </td>
                              <td>
+                                 <p>{{c.ClosedDate | date:'MM/dd/yyyy @ h:mm a'}}</p>
+                             </td>
+                             <td>
                                  <p>{{c.Owner.Name}}</p>
                              </td>
                              <td>
@@ -168,7 +172,7 @@
                      </tbody>
                      <tfoot>
                          <tr>
-                             <td colspan="11" class="text-left">
+                             <td colspan="12" class="text-left">
                                  <center>
                                      <div st-items-by-page="10" st-pagination=""></div>
                                  </center>

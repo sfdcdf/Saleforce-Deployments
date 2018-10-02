@@ -1,4 +1,4 @@
-public with sharing class DreamforcePortalHomeController {
+public without sharing class DreamforcePortalHomeController {
 
     public String clientId {get; set;}
     public String accountId {get; set;}
