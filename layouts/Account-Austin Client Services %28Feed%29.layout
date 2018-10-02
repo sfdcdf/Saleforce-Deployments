@@ -621,6 +621,10 @@
                 <field>Initial_Live_Date__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Days_Since_Initial_Live__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Live_Date__c</field>
             </layoutItems>
