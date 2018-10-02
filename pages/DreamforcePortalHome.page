@@ -1,3 +1,185 @@
 <apex:page showHeader="false" sidebar="false" applyHtmlTag="false" action="{!onPageLoad}" standardStylesheets="false" controller="DreamforcePortalHomeController" title="Dreamforce Portal Home - Salesforce">
-  Dreamforce Portal Home Page
+<head>
+        <title>Dreamforce Portal - Account Details</title>
+        
+        <style>
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+        </style>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-mask/1.8.7/mask.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.11/smart-table.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.4/interact.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+        
+        <script>
+         var app = angular.module('dfPortalApp', ['smart-table', 'ui.bootstrap', 'ngAnimate', 'ui.mask']);//set and get the angular module
+         app.controller('acctCtrl', ['$scope', '$uibModal', acctCtrl]);
+         
+         function acctCtrl($scope, $filter) {
+             
+             $scope.accountDetails = {!AccountDetails};
+             $scope.acctCases = {!AccountCaseList};
+             
+             var acctDetails = $scope.accountDetails;
+             
+             for(var i = 0; i < acctDetails.length; i++){
+             
+                 $scope.recordType = acctDetails[i].RecordType.Name;
+                 $scope.imsRep = acctDetails[i].IMS_Rep__r.Name;
+                 $scope.clientType = acctDetails[i].Client_Type__c;
+                 $scope.productType = acctDetails[i].Product_Type_Transactional__c;
+             }
+             
+         }
+       </script>
+       
+    </head>
+    <body data-ng-app="dfPortalApp" data-ng-controller="acctCtrl">
+        
+        <!-- Account Header View -->
+        
+        <nav class="navbar navbar-default">
+                <div class="container-fluid" style="background-color: #375660">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header navbar-brand">
+                        <div style="color: #e8edef; font-weight: bolder; font-size: 22px">
+                            {!accountName}
+                        </div>
+                    </div>
+               </div>
+         </nav> 
+         <div style="font-weight:bold; font-size: 20px; padding: 0 0 15px 15px">
+             Account Information
+         </div>
+         <div style="font-size: 13px; padding: 0 0 7px 15px" id="acctDetails">
+             <table style="width:100%">
+                 <tr>
+                     <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top">
+                         Account Name:
+                     </td>
+                     <td style="padding-bottom: 10px; vertical-align: top; width: 498px">
+                          <p>{!accountName}</p>
+                     </td>
+                     <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top">
+                         Client Id:
+                     </td>
+                     <td style="padding-bottom: 10px; vertical-align: top">
+                         {!clientId}
+                     </td>
+                 </tr>
+                 <tr>
+                     <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top">
+                         Account Type:
+                     </td>
+                     <td style="padding-bottom: 10px; vertical-align: top; width: 498px">
+                         <p>{{recordType}}</p>
+                     </td>
+                     <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top">
+                         IMS Rep:
+                     </td>
+                     <td style="padding-bottom: 10px; vertical-align: top">
+                         <p>{{imsRep}}</p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top; width: 498px">
+                         Client Type:
+                     </td>
+                     <td style="padding-bottom: 10px; vertical-align: top">
+                         <p>{{clientType}}</p>
+                     </td>
+                     <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top">
+                         Product Type:
+                     </td>
+                     <td style="padding-bottom: 10px; vertical-align: top;">
+                         <p>{{productType}}</p>
+                     </td>
+                 </tr>
+             </table>
+         </div>
+         <div style="font-weight:bold; font-size: 20px; padding: 10px 0 15px 15px">
+             Case List
+         </div>
+         
+         <div style="padding: 0 15px 0 15px">
+         
+             <div class="table-responsive" style="border: 1px solid #a0abb9;">
+                 <table st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
+                     <thead>
+                         <tr>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CaseNumber" title="Sort by Case Number" st-sort-default="true">Case #</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="RecordType.Name" title="Sort by Record Type">Record Type</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Subject" title="Sort by Subject">Subject</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Status" title="Sort by Status">Status</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Sub_Status__c" title="Sort by Sub Status">Sub Status</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Reason" title="Sort by Reason">Reason</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Origin" title="Sort by Origin">Origin</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Parent.CaseNumber" title="Sort by Parent Case">Parent Case</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CreatedDate" title="Sort by CreatedDate">Created</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Owner.Name" title="Sort by Owner">Owner</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Description" title="Sort by Description">Description</th>
+                         </tr>
+                     </thead>
+                     <tbody style="width: 100%; font-size: 14px; color: #000033">
+                         <tr data-ng-repeat="c in displayedCases">
+                             <td>
+                                 <p>{{c.CaseNumber}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.RecordType.Name}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Subject}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Status}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Sub_Status__c}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Reason}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Origin}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Parent.CaseNumber}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.CreatedDate | date:'MM/dd/yyyy @ h:mm a'}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Owner.Name}}</p>
+                             </td>
+                             <td>
+                                 <p>{{c.Description}}</p>
+                             </td>
+                         </tr>
+                     </tbody>
+                     <tfoot>
+                         <tr>
+                             <td colspan="11" class="text-left">
+                                 <center>
+                                     <div st-items-by-page="10" st-pagination=""></div>
+                                 </center>
+                             </td>
+                         </tr>
+                     </tfoot>
+                 </table>
+             </div>
+         
+         </div>
+         
+    </body>
+
 </apex:page>

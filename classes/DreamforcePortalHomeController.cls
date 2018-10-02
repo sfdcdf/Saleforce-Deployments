@@ -2,6 +2,8 @@ public with sharing class DreamforcePortalHomeController {
 
     public String clientId {get; set;}
     public String accountId {get; set;}
+    public String accountName {get; set;}
+    public String userIPAddress {get; set;}
     
     public DreamforcePortalHomeController() {
     
@@ -13,30 +15,34 @@ public with sharing class DreamforcePortalHomeController {
         // get Salesforce Account Id based on Client Id from method
         getAccountIdByClientId(clientId);
         
-        if(!String.isBlank(accountId)){
+        // get IP address of user viewing page
+        getUserIpAddress();
         
-            getAccountDetails(accountId);
-            getAccountCaseList(accountId);
-        
-        }
+        System.Debug('*** Client Id: ' + clientId);
+        System.Debug('*** Account Id: ' + accountId);
+        System.Debug('*** Account Name: ' + accountName);
+        System.Debug('*** User IP Address: ' + userIPAddress);
         
         return null;
     }
     
     // method to return Salesforce Account Id based on the Client Id passed
-    public Id getAccountIdByClientId(String clientIdParam){
+    public void getAccountIdByClientId(String clientIdParam){
     
         accountId = [SELECT Id FROM Account WHERE Client_ID__c = :clientIdParam LIMIT 1].Id;
+        accountName = [SELECT Name FROM Account WHERE Id = :accountId LIMIT 1].Name;
         
         if(String.isBlank(accountId)){
             accountId = '';
+            accountName = '';
         }
-        
-        return accountId;
     }
     
     // method to return JSON response of Account Details
-    public static String getAccountDetails(Id accountId){
+    public static String getAccountDetails(){
+    
+        String clientId = apexpages.currentpage().getparameters().get('clientId');
+        String accountId = [SELECT Id FROM Account WHERE Client_ID__c = :clientId LIMIT 1].Id;
     
         // return JSON for API client UI
         return JSON.serialize( 
@@ -54,7 +60,10 @@ public with sharing class DreamforcePortalHomeController {
     }
     
     // method to return JSON response of Case List based on Account Id
-    public static String getAccountCaseList(Id accountId){
+    public static String getAccountCaseList(){
+    
+        String clientId = apexpages.currentpage().getparameters().get('clientId');
+        String accountId = [SELECT Id FROM Account WHERE Client_ID__c = :clientId LIMIT 1].Id;
     
         // return JSON for API client UI
         return JSON.serialize( 
@@ -78,20 +87,16 @@ public with sharing class DreamforcePortalHomeController {
     }
     
     // method to return the viewing user's IP address
-    public static String getUserIpAddress() {
+    public void getUserIpAddress() {
     
-        string returnValue = '';
+        userIPAddress = ApexPages.currentPage().getHeaders().get('True-Client-IP');
         
-        returnValue = ApexPages.currentPage().getHeaders().get('True-Client-IP');
+        if (String.IsBlank(userIPAddress)) {
         
-        if (String.IsBlank(returnValue)) {
-        
-            returnValue = ApexPages.currentPage().getHeaders().get('X-Salesforce-SIP');
+            userIPAddress = ApexPages.currentPage().getHeaders().get('X-Salesforce-SIP');
         }
         
-        System.Debug('USER IP ADDRESS: ' + returnValue);
-        
-        return returnValue;
+        System.Debug('USER IP ADDRESS: ' + userIPAddress);
     }
     
     // Class for parsing and validating IP address
