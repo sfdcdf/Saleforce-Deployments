@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Used in WBN validation rule on Cancellation Form</description>
+    <description>Used in WBN validation rule on Cancellation Form.
+Edit permission to object + custom permission WBN-Cancellation_Edit_Approved</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Cancellation - Edit Approved</label>
     <license>Salesforce</license>
@@ -7,4 +8,13 @@
         <enabled>true</enabled>
         <name>WBN_Cancellation_Edit_Approved</name>
     </customPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Cancellation_Request__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
 </PermissionSet>

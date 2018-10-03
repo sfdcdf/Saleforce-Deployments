@@ -2,7 +2,7 @@ public class ATVContentSetupCaseBatch implements Database.Batchable<sObject>, Da
     
     private static Batch_Automation_Settings__c batchSetting = Batch_Automation_Settings__c.getValues('ATV Content Setup Case');
 
-    private static Set<String> segmentExcludeServicesOffered {
+    /*private static Set<String> segmentExcludeServicesOffered {
         get{
             if(segmentExcludeServicesOffered == null){
                 segmentExcludeServicesOffered = new Set<String>();
@@ -14,7 +14,7 @@ public class ATVContentSetupCaseBatch implements Database.Batchable<sObject>, Da
             return segmentExcludeServicesOffered;
         }
         set;
-    }
+    }*/
     //private static Id devRecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Development').getRecordTypeId();
 
     public ATVContentSetupCaseBatch() {
@@ -60,7 +60,7 @@ public class ATVContentSetupCaseBatch implements Database.Batchable<sObject>, Da
                 newCase.Services_Offered__c = '';
                 newCase.Number_of_Pages_Text__c = 1;
                 Integer pageNumber = 2; // Added to address ,YO-68088 by Subba on 8/8/2017,Home Page will be Pg1,so seq will start from 2, PreFix Page# to each serviceGroup added in Case.Services_Offered__c
-                if(String.isNotBlank(newCase.Segment__c) && !segmentExcludeServicesOffered.contains(newCase.Segment__c)){
+                if(String.isNotBlank(newCase.Segment__c)){
                     for(Object obj : (List<Object>)clientResponseMap.get('serviceGroups')){
                         Map<String, Object> clientServiceMap = (Map<String, Object>)obj;
                         newCase.Services_Offered__c +='Page ' + String.valueOf(pageNumber) + ' - ' +(String)clientServiceMap.get('name') + ' - ' + newCase.Geographic_Areas_To_Service__c + ' ' + (clientServiceMap.get('keyword') != null ? (String)clientServiceMap.get('keyword') : (String)clientServiceMap.get('name')) + '\r\n';
