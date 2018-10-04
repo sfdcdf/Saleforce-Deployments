@@ -3504,9 +3504,12 @@ BEGINS(WhatId, "001"), "Account","")</formula>
     </fields>
     <fields>
         <fullName>Related_to_Oppty__c</fullName>
-        <description>Used in WBN Upsell Process</description>
+        <description>Used in WBN Upsell Process: Shows Opportunities and Accounts.</description>
         <externalId>false</externalId>
-        <formula>LEFT( WhatId ,3)= '006'</formula>
+        <formula>AND (
+LEFT( WhatId ,3)= '006',
+LEFT( WhatId ,3)= '001'
+)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Related to Oppty</label>
         <type>Checkbox</type>
