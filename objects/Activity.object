@@ -3506,7 +3506,7 @@ BEGINS(WhatId, "001"), "Account","")</formula>
         <fullName>Related_to_Oppty__c</fullName>
         <description>Used in WBN Upsell Process: Shows Opportunities and Accounts.</description>
         <externalId>false</externalId>
-        <formula>AND (
+        <formula>OR(
 LEFT( WhatId ,3)= '006',
 LEFT( WhatId ,3)= '001'
 )</formula>

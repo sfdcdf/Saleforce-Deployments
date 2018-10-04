@@ -4,6 +4,8 @@ public without sharing class DreamforcePortalHomeController {
     public String accountId {get; set;}
     public String accountName {get; set;}
     public String userIPAddress {get; set;}
+    public String errRedirURL {get; set;}
+    public Boolean setRedirectTrue {get; set;}
     
     public DreamforcePortalHomeController() {
     
@@ -11,6 +13,13 @@ public without sharing class DreamforcePortalHomeController {
     }
 
     public PageReference onPageLoad(){
+        
+        if(clientId.trim().length() < 1){
+            setRedirectTrue = true;
+        }
+        else{
+            setRedirectTrue = false;
+        }
         
         // get Salesforce Account Id based on Client Id from method
         getAccountIdByClientId(clientId);
@@ -22,6 +31,18 @@ public without sharing class DreamforcePortalHomeController {
         System.Debug('*** Account Id: ' + accountId);
         System.Debug('*** Account Name: ' + accountName);
         System.Debug('*** User IP Address: ' + userIPAddress);
+        
+        // if client Id is invalid
+        if(setRedirectTrue){
+            
+            errRedirURL = 'https://dreamforce-yodle.cs25.force.com/dfPortal/DreamforcePortalCustomErr';
+        
+            // redirect to errorpage
+            PageReference retURL = new PageReference(errRedirURL);
+            retURL.setRedirect(true);
+            
+            return retURL;
+        }
         
         return null;
     }

@@ -1579,6 +1579,10 @@
         <apexPage>DreamforcePortalHome</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>DreamforcePortalCustomErr</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <applicationVisibilities>
         <application>Clicktools</application>
         <default>false</default>
