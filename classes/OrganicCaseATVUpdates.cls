@@ -123,9 +123,11 @@ public without sharing class OrganicCaseATVUpdates
                          }
                          
                          System.Debug('*** vertical(s) Description: ' + verticalsDescrText.removeEnd(', '));
-                         //System.Debug('*** Updating Number of Pages to : ' + String.valueOf(count) + ' ***');
+                         System.Debug('*** Updating Number of Pages to : ' + String.valueOf(count) + ' ***');
                          
-                         c.Number_of_Pages_Text__c = 1; // currently all segments for ATV are 1 page for Text Broker. In future will need to update logic to look at specific segments when business reqs change
+                         String currPageNumStr = String.valueOf(count);
+                         
+                         c.Number_of_Pages_Text__c = Integer.valueOf(currPageNumStr.trim()); // number data type
                          verticalsDescrText = verticalsDescrText.removeEnd(', ');
                          verticalsDescrText = verticalsDescrText.replace('No Vertical Mapped, ', '');
                          c.Homepage__c = verticalsDescrText.replace('No Vertical Mapped', '');

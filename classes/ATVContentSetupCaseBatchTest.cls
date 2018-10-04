@@ -1,0 +1,64 @@
+@isTest
+private class ATVContentSetupCaseBatchTest {
+    
+    @isTest static void test_ATVContentSetupCaseBatch() {
+        TestCustomSettingInitializer testInit = new TestCustomSettingInitializer();
+
+        Batch_Automation_Settings__c batchSetting = new Batch_Automation_Settings__c();
+        batchSetting.Name = 'ATV Content Setup Case';
+        batchSetting.SOQL_Criteria__c = 'SELECT Id, Client_ID__c, Days_Since_Initial_Live__c FROM Account WHERE Status__c = \'LIVE\' AND Product_Type_Transactional__c = \'Lead Stream ATV\' AND Days_Since_Initial_Live__c = 3';
+        batchSetting.Default_Values__c = 'RecordTypeId:' + Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId() + ', OwnerId:00G60000001kt6g, Subject:LS ATV Content Setup, Description:Please write custom content for the homepage and all listed service pages outlined in this case';
+        insert batchSetting;
+
+        String responseExample = '{"235470": { "clientId": 235470, "businessName": "Court\'s Snaggle Tooth DDS", "servingAreaTagline": "Austin, TX", "segmentName": "Dentist", "sellingPropositions": ["Highly trained staff", "Comfortable, relaxing environment", "Friendly and helpful office staff" ], "serviceGroups": [{"id": 177239071, "name": "General Dentistry","keyword": "dental care" },{ "id": 225193704, "name": "Emergency Dentistry", "keyword": "emergency dentist"}]}}';
+        Test.setMock(HttpCalloutMock.class, new YodleLiveIntegrationCalloutMock(200, 'OK', responseExample, new Map<String, String>{'Content-Type' => 'application/json'}));
+
+        Account newAccount = new Account();
+        newAccount.Name = 'Test Account';
+        newAccount.Client_ID__c = '235470';
+        newAccount.Email__c = String.valueof(DateTime.now().millisecondGMT()*0.05) + '@test.com';
+        newAccount.Client_Type__c = 'Local';
+        newAccount.Status__c = 'LIVE';
+        newAccount.Marketo_ID__c = '235470';
+        newAccount.Product_Plan_Id__c = 'Lead Stream ATV';
+        newAccount.Client_Experience_Key__c = 'web.com-main';
+        newAccount.Live_Date__c = Date.today().addDays(-3);
+        insert newAccount;
+
+        Test.startTest();
+        ATVContentSetupCaseSchedule s = new ATVContentSetupCaseSchedule();
+        s.execute(null);
+        Test.stopTest();
+    }
+
+    @isTest static void test_ATVContentSetupCaseBatchError() {
+        TestCustomSettingInitializer testInit = new TestCustomSettingInitializer();
+
+        Batch_Automation_Settings__c batchSetting = new Batch_Automation_Settings__c();
+        batchSetting.Name = 'ATV Content Setup Case';
+        batchSetting.SOQL_Criteria__c = 'SELECT Id, Client_ID__c, Days_Since_Initial_Live__c FROM Account WHERE Status__c = \'LIVE\' AND Product_Type_Transactional__c = \'Lead Stream ATV\' AND Days_Since_Initial_Live__c = 3';
+        batchSetting.Default_Values__c = 'RecordTypeId:' + Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId() + ', OwnerId:00G60000001kt6g, Subject:LS ATV Content Setup, Description:Please write custom content for the homepage and all listed service pages outlined in this case';
+        insert batchSetting;
+        
+        String responseExample = '{"235470": { "clientId": 235470, "businessName": "Court\'s Snaggle Tooth DDS", "servingAreaTagline": "Austin, TX", "segmentName": "Dentist", "sellingPropositions": ["Highly trained staff", "Comfortable, relaxing environment", "Friendly and helpful office staff" ], "serviceGroups": [{"id": 177239071, "name": "General Dentistry","keyword": "dental care" },{ "id": 225193704, "name": "Emergency Dentistry", "keyword": "emergency dentist"}]}}';
+        Test.setMock(HttpCalloutMock.class, new YodleLiveIntegrationCalloutMock(200, 'OK', responseExample, new Map<String, String>{'Content-Type' => 'application/json'}));
+
+        Account newAccount = new Account();
+        newAccount.Name = 'Test Account';
+        newAccount.Client_ID__c = '3';
+        newAccount.Email__c = String.valueof(DateTime.now().millisecondGMT()*0.08) + '@test.com';
+        newAccount.Client_Type__c = 'Local';
+        newAccount.Status__c = 'LIVE';
+        newAccount.Marketo_ID__c = '23547430';
+        newAccount.Product_Plan_Id__c = 'Lead Stream ATV';
+        newAccount.Client_Experience_Key__c = 'web.com-main';
+        newAccount.Live_Date__c = Date.today().addDays(-3);
+        insert newAccount;
+
+        Test.startTest();
+        ATVContentSetupCaseSchedule s = new ATVContentSetupCaseSchedule();
+        s.execute(null);
+        Test.stopTest();
+    }
+    
+}
