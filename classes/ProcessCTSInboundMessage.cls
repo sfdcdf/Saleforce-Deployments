@@ -332,24 +332,85 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                         OwnerId != :itProQueue AND
                                         isClosed = false]){
                                 
-                                // set update value
-                                ccc.OwnerId = itProQueue;
-                                    
-                                // add to update list
-                                dmlCasesToUpdateCC.add(ccc);
-                                   
-                                // add to attachment update list
-                                addAttachment(ccc, email);
+                                // because the process is async; check for owner already being IT Pro
+                                if(ccc.OwnerId == itProQueue){
                                 
-                                // add to success task activity list
-                                Task newTsk = new Task();
-                                newTsk.OwnerId = automationAdminUser;
-                                newTsk.Description = 'Success receipt for Case # ' + ccc.CaseNumber + ' from CTS Content Completed and updated the Owner on the Case to IT Pro.';
-                                newTsk.Subject = 'SUCCESS: CTS Content Completed Message Received';
-                                newTsk.Priority = 'Normal';
-                                newTsk.Status = 'Completed';
-                                newTsk.WhatId = ccc.Id;
-                                dmlSuccessTasks.add(newTsk);
+                                    // Send CTS and Internal users error notification; another attachment request sent
+                                    Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                                    
+                                    notifFromAddress = 'sfdc@yodle.com';
+                                    fromDisplayName = 'Salesforce Notifications for CTS';
+                                    notifSubjectLine = 'CTS Integration Error: Multiple Attachment Requests for CTS Ticket #' + ctsTicketNumber;
+                                    notifToAddress.add('sfdc@yodle.com');
+                                    notifToAddress.add('copywritingcts@web.com');
+                                    notifToAddress.add('kowens@yodle.com');
+                                    notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
+                                    notifBody += '<b>Subject Line from Content Completed Message:</b> ' + subjectLine + '<br/><br/>';
+                                    notifBody += '<b>Error Details:</b> Multiple attachment requests have been made for CTS Ticket #' + ctsTicketNumber + ' related to Salesforce Case #' + ccc.CaseNumber + '<br/><br/>';
+             
+                                    // set message content
+                                    message.setToAddresses(notifToAddress);
+                                    message.setReplyTo(notifFromAddress);
+                                    message.setOrgWideEmailAddressId(owea.get(0).Id);
+                                    message.setSubject(notifSubjectLine);
+                                    message.setHtmlBody(notifBody);
+                                    
+                                    // add email notification to list to be sent
+                                    notificationsLst.add(message);
+                                    
+                                    // add to attachment update list
+                                    addAttachment(ccc, email);
+                                    
+                                    // add EmailMessage record related to Case
+                                    EmailMessage newMsg = new EmailMessage();
+                                    newMsg.FromAddress = notifFromAddress;
+                                    newMsg.ToAddress = ctsEmailConst;
+                                    newMsg.HtmlBody = notifBody;
+                                    newMsg.Incoming = false;
+                                    newMsg.MessageDate = System.Now();
+                                    newMsg.ParentId = ccc.Id;
+                                    newMsg.Status = '3';
+                                    newMsg.Subject = 'CTS Integration Error: Multiple Attachment Requests for CTS Ticket #' + ctsTicketNumber;
+                                
+                                    // add message to list for insert
+                                    dmlEmailMsgs.add(newMsg);
+                                    
+                                }
+                                else{
+                                
+                                    // set new owner value
+                                    ccc.OwnerId = itProQueue;
+                                
+                                    // add to update list
+                                    dmlCasesToUpdateCC.add(ccc);
+                                       
+                                    // add to attachment update list
+                                    addAttachment(ccc, email);
+                                    
+                                    // add to success task activity list
+                                    Task newTsk = new Task();
+                                    newTsk.OwnerId = automationAdminUser;
+                                    newTsk.Description = 'Success receipt for Case # ' + ccc.CaseNumber + ' from CTS Content Completed and updated the Owner on the Case to IT Pro.';
+                                    newTsk.Subject = 'SUCCESS: CTS Content Completed Message Received';
+                                    newTsk.Priority = 'Normal';
+                                    newTsk.Status = 'Completed';
+                                    newTsk.WhatId = ccc.Id;
+                                    dmlSuccessTasks.add(newTsk);
+                                    
+                                    // add EmailMessage record related to Case
+                                    EmailMessage newMsg = new EmailMessage();
+                                    newMsg.FromAddress = ctsEmailConst;
+                                    newMsg.ToAddress = sfdcEmailConst;
+                                    newMsg.HtmlBody = 'CTS Ticket # [' + ctsTicketNumber + '] Content Completed notification with valid attachment.';
+                                    newMsg.Incoming = true;
+                                    newMsg.MessageDate = System.Now();
+                                    newMsg.ParentId = ccc.Id;
+                                    newMsg.Status = '1';
+                                    newMsg.Subject = subjectLine;
+                                
+                                    // add message to list for insert
+                                    dmlEmailMsgs.add(newMsg);
+                                }
                             }
                         }
                         else{
