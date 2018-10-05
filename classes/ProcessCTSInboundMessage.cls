@@ -350,6 +350,20 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 newTsk.Status = 'Completed';
                                 newTsk.WhatId = ccc.Id;
                                 dmlSuccessTasks.add(newTsk);
+                                
+                                // add EmailMessage record related to Case
+                                EmailMessage newMsg = new EmailMessage();
+                                newMsg.FromAddress = ctsEmailConst;
+                                newMsg.ToAddress = sfdcEmailConst;
+                                newMsg.HtmlBody = 'CTS Ticket # [' + ctsTicketNumber + '] Content Completed notification with valid attachment.';
+                                newMsg.Incoming = true;
+                                newMsg.MessageDate = System.Now();
+                                newMsg.ParentId = ccc.Id;
+                                newMsg.Status = '1';
+                                newMsg.Subject = subjectLine;
+                            
+                                // add message to list for insert
+                                dmlEmailMsgs.add(newMsg);
                             }
                         }
                         else{
