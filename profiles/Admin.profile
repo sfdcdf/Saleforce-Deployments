@@ -1291,6 +1291,10 @@
         <apexClass>ATVContentSetupCaseSchedule</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>AutoCreateCaseEmailMessage</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>

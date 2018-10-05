@@ -2,9 +2,13 @@
   Company/ Author ....: E. Ross
   Date Created .......: 25-Sept-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 25-Sept-2018
+  Last Modified Date .: 4-Oct-2018
   Description ........: Class is used to parse the CTS Email contents/ details and
   update Case data and attachments on the Case record
+  
+  Oct 4 2018 Edit: Adding insert of EmailMessage on Auto Response message from CTS and
+                   relates to Case record for visibility through UI in Email related list
+                   on Page Layout
 *****************************************************************************/
 global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
 
@@ -25,6 +29,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     String complTktConst = '';
     String fromAddress = '';
     String[] toAddresses;
+    String toAddress = '';
     String subjectLine = '';
     String emailBody = '';
     String ctsTicketNumber = '';
@@ -102,6 +107,13 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         subjectLine = email.subject;
         emailBody = email.plainTextBody;
         
+        for(String s : toAddresses){
+        
+            toAddress += s + ', ';
+        }
+        
+        toAddress = toAddress.removeEnd(', ');
+        
         // parse the Email message properties for relevant Case data after validating
         try {
             
@@ -153,6 +165,21 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 newTsk.Status = 'Completed';
                                 newTsk.WhatId = arc.Id;
                                 dmlSuccessTasks.add(newTsk);
+                                
+                                // add EmailMessage record related to Case
+                                EmailMessage newMsg = new EmailMessage();
+                                newMsg.FromAddress = ctsEmailConst;
+                                newMsg.ToAddress = sfdcEmailConst;
+                                newMsg.HtmlBody = 'CTS New Ticket # [' + ctsTicketNumber + '] auto-response notification confirming the receipt of SFDC Case details for new Ticket creation';
+                                newMsg.Incoming = true;
+                                newMsg.MessageDate = System.Now();
+                                newMsg.ParentId = arc.Id;
+                                newMsg.Status = '1';
+                                newMsg.Subject = subjectLine;
+                            
+                                // add message to list for insert
+                                dmlEmailMsgs.add(newMsg);
+                            
                             }
                         }
                         else{
@@ -197,6 +224,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 System.Debug('**Error: Missing Ticket Number');
                                 
                                 String caseId = [SELECT Id FROM Case WHERE CaseNumber = :sfdcCaseNumber LIMIT 1].Id;
+                                String concatNotifString = '';
                                 
                                 // prepare to write to Debug Info Log
                                 DebugInfo__c debugInfo = new DebugInfo__c();
@@ -224,9 +252,15 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 // add email notification to list to be sent
                                 notificationsLst.add(message);
                                 
+                                for(String ns : notifToAddress){
+                                    concatNotifString += ns + ', ';
+                                }
+                                
+                                concatNotifString = concatNotifString.removeEnd(', ');
+                                
                                 // add email message to list to be related to Case
                                 EmailMessage emailMsg = new EmailMessage();
-                                emailMsg.ToAddress = String.valueOf(notifToAddress);
+                                emailMsg.ToAddress = concatNotifString;
                                 emailMsg.Subject = notifSubjectLine;
                                 emailMsg.HtmlBody = notifBody;
                                 emailMsg.ParentId = caseId;
@@ -390,6 +424,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 
                                 String caseId = [SELECT Id FROM Case WHERE External_Ticket_ID__c = :ctsTicketNumber LIMIT 1].Id;   
                                 String cNumber = [SELECT CaseNumber FROM Case WHERE Id = :caseId LIMIT 1].Id;
+                                String concatNotifString = '';
                                 
                                 // prepare to write to Debug Info Log
                                 DebugInfo__c debugInfo = new DebugInfo__c();
@@ -417,9 +452,15 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     
                                 notificationsLst.add(message);
                                 
+                                for(String ns : notifToAddress){
+                                    concatNotifString += ns + ', ';
+                                }
+                                
+                                concatNotifString = concatNotifString.removeEnd(', ');
+                                
                                 // add email message to list to be related to Case
                                 EmailMessage emailMsg = new EmailMessage();
-                                emailMsg.ToAddress = String.valueOf(notifToAddress);
+                                emailMsg.ToAddress = concatNotifString;
                                 emailMsg.Subject = notifSubjectLine;
                                 emailMsg.HtmlBody = notifBody;
                                 emailMsg.ParentId = caseId;
