@@ -2,9 +2,6 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Log_Prospecting_Activity_Corporate</customButtons>
     <customButtons>Schedule_Demo_Event_IL</customButtons>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
@@ -1027,6 +1024,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>Cancel_Code_1__c</fields>
+        <fields>Outcome__c</fields>
+        <fields>CREATEDBY_USER</fields>
         <relatedList>Cancellation_Request__c.Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>

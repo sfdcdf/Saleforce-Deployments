@@ -48,6 +48,9 @@
     </customConsoleComponents>
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -505,16 +508,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>New_Event_WBN_IL_Global</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>2</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>New_Demo_Event_WBN_IL_Global</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>New_Task_WBN_IL_Global</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
@@ -523,6 +516,16 @@
             <actionName>New_Completed_Task_WBN_IL_Global</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>New_Event_WBN_IL_Global</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>2</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>New_Demo_Event_WBN_IL_Global</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>3</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -678,6 +681,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>Cancel_Code_1__c</fields>
+        <fields>Outcome__c</fields>
+        <fields>CREATEDBY_USER</fields>
         <relatedList>Cancellation_Request__c.Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>
