@@ -28,6 +28,7 @@
              
              $scope.accountDetails = {!AccountDetails};
              $scope.acctCases = {!AccountCaseList};
+             $scope.showCaseList = false;
              
              var acctDetails = $scope.accountDetails;
              
@@ -39,24 +40,50 @@
                  $scope.productType = acctDetails[i].Product_Type_Transactional__c;
              }
              
+             // button click actions
+             
+             $scope.showDefault = function () {
+                 $scope.showCaseList = false;
+             }
+             
+             $scope.showCases = function () {
+                 $scope.showCaseList = true;
+             }
+             
          }
        </script>
        
     </head>
     <body data-ng-app="dfPortalApp" data-ng-controller="acctCtrl">
         
-        <!-- Account Header View -->
+         <!-- Account Header -->
+         <nav class="navbar navbar-default" style="background-color: #1c293d">
+           <div class="container-fluid">
+             <!-- Brand and toggle get grouped for better mobile display -->
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" ng-click="showDefault()" style="font-weight: bolder; color: #f0f0f0; text-transform: uppercase;" href="javascript:;" title="{!accountName} Default View">
+                   {!accountName}
+               </a>
+             </div>
         
-        <nav class="navbar navbar-default">
-                <div class="container-fluid" style="background-color: #375660">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header navbar-brand">
-                        <div style="color: #e8edef; font-weight: bolder; font-size: 22px">
-                            {!accountName}
-                        </div>
-                    </div>
-               </div>
-         </nav> 
+             <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                 <li style="padding: 10px 0 0 0">
+                     <button ng-click="showCases()" class="btn btn-sm btn-default" style="border: solid 1px #9a9a9a;" title="View {!accountName} Cases">
+                         Case List
+                     </button>
+                 </li>
+               </ul>
+             </div><!-- /.navbar-collapse -->
+           </div><!-- /.container-fluid -->
+         </nav>
          <div style="font-weight:bold; font-size: 20px; padding: 0 0 15px 15px">
              Account Information
          </div>
@@ -106,28 +133,24 @@
                  </tr>
              </table>
          </div>
-         <div style="font-weight:bold; font-size: 20px; padding: 10px 0 15px 15px">
-             Case List
-         </div>
          
-         <div style="padding: 0 15px 0 15px">
+         <div style="padding: 0 15px 0 15px" ng-show="showCaseList">
          
+             <div style="font-weight:bold; font-size: 20px; padding: 10px 0 5px 0">
+                 Case List
+             </div>
              <div class="table-responsive" style="border: 1px solid #a0abb9;">
                  <table id="acctsTable" st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
                      <thead>
                          <tr>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CaseNumber" title="Sort by Case Number" st-sort-default="reverse">Case #</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="RecordType.Name" title="Sort by Record Type">Record Type</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="RecordType.Name" title="Sort by Record Type">Type</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Subject" title="Sort by Subject">Subject</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Status" title="Sort by Status">Status</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Sub_Status__c" title="Sort by Sub Status">Sub Status</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Reason" title="Sort by Reason">Reason</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Origin" title="Sort by Origin">Origin</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Parent.CaseNumber" title="Sort by Parent Case">Parent Case</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CreatedDate" title="Sort by Created Date">Created</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="ClosedDate" title="Sort by Closed Date">Closed</th>
-                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Owner.Name" title="Sort by Owner">Owner</th>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Description" title="Sort by Description">Description</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Status" title="Sort by Status">Status</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Reason" title="Sort by Reason">Reason</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CreatedDate" title="Sort by Created Date">Created</th>
+                             <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="Owner.Name" title="Sort by Owner">Owner</th>
                          </tr>
                      </thead>
                      <tbody style="width: 100%; font-size: 13px; color: #000033">
@@ -142,31 +165,19 @@
                                  <p>{{c.Subject}}</p>
                              </td>
                              <td>
-                                 <p>{{c.Status}}</p>
+                                 <p>{{c.Description}}</p>
                              </td>
                              <td>
-                                 <p>{{c.Sub_Status__c}}</p>
+                                 <p>{{c.Status}}</p>
                              </td>
                              <td>
                                  <p>{{c.Reason}}</p>
                              </td>
                              <td>
-                                 <p>{{c.Origin}}</p>
-                             </td>
-                             <td>
-                                 <p>{{c.Parent.CaseNumber}}</p>
-                             </td>
-                             <td>
                                  <p>{{c.CreatedDate | date:'MM/dd/yyyy @ h:mm a'}}</p>
                              </td>
                              <td>
-                                 <p>{{c.ClosedDate | date:'MM/dd/yyyy @ h:mm a'}}</p>
-                             </td>
-                             <td>
                                  <p>{{c.Owner.Name}}</p>
-                             </td>
-                             <td>
-                                 <p>{{c.Description}}</p>
                              </td>
                          </tr>
                      </tbody>

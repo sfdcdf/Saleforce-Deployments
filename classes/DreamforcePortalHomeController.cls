@@ -52,11 +52,6 @@ public without sharing class DreamforcePortalHomeController {
     
         accountId = [SELECT Id FROM Account WHERE Client_ID__c = :clientIdParam LIMIT 1].Id;
         accountName = [SELECT Name FROM Account WHERE Id = :accountId LIMIT 1].Name;
-        
-        if(String.isBlank(accountId)){
-            accountId = '';
-            accountName = '';
-        }
     }
     
     // method to return JSON response of Account Details
@@ -64,7 +59,7 @@ public without sharing class DreamforcePortalHomeController {
     
         String clientId = apexpages.currentpage().getparameters().get('clientId');
         String accountId = [SELECT Id FROM Account WHERE Client_ID__c = :clientId LIMIT 1].Id;
-    
+        
         // return JSON for API client UI
         return JSON.serialize( 
             [SELECT Id,
