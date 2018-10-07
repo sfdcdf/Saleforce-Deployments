@@ -67,27 +67,24 @@
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" ng-click="showDefault()" style="font-weight: bolder; color: #f0f0f0; text-transform: uppercase;" href="javascript:;" title="{!accountName} Default View">
+               <a class="navbar-brand" ng-click="showDefault()" style="font-weight: bolder; font-size:22px; color: #f0f0f0; text-transform: uppercase;" href="javascript:;" title="{!accountName} Default View">
                    {!accountName}
                </a>
              </div>
         
              <!-- Collect the nav links, forms, and other content for toggling -->
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                 <li style="padding: 10px 0 0 0">
-                     <button ng-click="showCases()" class="btn btn-sm btn-default" style="border: solid 1px #9a9a9a;" title="View {!accountName} Cases">
-                         Case List
-                     </button>
-                 </li>
+               <ul class="nav navbar-nav">
+                 <li><a style="color: #dae1e8" href="javascript:;" title="View {!accountName} Details" ng-click="showDefault()">Account Information</a></li>
+                 <li><a style="color: #dae1e8" href="javascript:;" title="View {!accountName} Case List" ng-click="showCases()">Cases</a></li>
                </ul>
              </div><!-- /.navbar-collapse -->
            </div><!-- /.container-fluid -->
          </nav>
-         <div style="font-weight:bold; font-size: 20px; padding: 0 0 15px 15px">
+         <div style="font-weight:bold; font-size: 20px; padding: 0 0 15px 15px" ng-show="!showCaseList">
              Account Information
          </div>
-         <div style="font-size: 13px; padding: 0 0 7px 15px" id="acctDetails">
+         <div style="font-size: 13px; padding: 0 0 7px 15px" id="acctDetails" ng-show="!showCaseList">
              <table style="width:100%">
                  <tr>
                      <td style="width: 10%; padding-bottom: 10px; font-weight: bold; vertical-align: top">
@@ -136,8 +133,8 @@
          
          <div style="padding: 0 15px 0 15px" ng-show="showCaseList">
          
-             <div style="font-weight:bold; font-size: 20px; padding: 10px 0 5px 0">
-                 Case List
+             <div style="font-weight:bold; font-size: 20px; padding: 0 0 5px 0">
+                 {!accountName} Case List
              </div>
              <div class="table-responsive" style="border: 1px solid #a0abb9;">
                  <table id="acctsTable" st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
