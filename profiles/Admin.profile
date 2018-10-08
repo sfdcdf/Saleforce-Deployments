@@ -39569,6 +39569,10 @@
         <layout>Account-YBN Individual Location Account %28feed%29</layout>
         <recordType>Account.Standard</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Acquisio Master Quality</layout>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -40988,6 +40992,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contract.WBN_MSA</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>

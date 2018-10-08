@@ -31244,6 +31244,10 @@
     <layoutAssignments>
         <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Acquisio Master Quality</layout>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -32753,6 +32757,11 @@
         <default>false</default>
         <recordType>Contract.WBN_MSA</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>AboutClicktools</tab>
