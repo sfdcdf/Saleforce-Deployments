@@ -1522,6 +1522,23 @@
             <role>PartnerManager</role>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>AMM_Test</fullName>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>CONTRACT.START_DATE</columns>
+        <columns>CONTRACT.END_DATE</columns>
+        <columns>CONTRACT.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CONTRACT.RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contract.WBN_Amendment,Contract.WBN_MSA</value>
+        </filters>
+        <label>AMM-Test</label>
+    </listViews>
     <recordTypes>
         <fullName>Amendments</fullName>
         <active>true</active>
