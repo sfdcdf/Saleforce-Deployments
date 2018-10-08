@@ -47,6 +47,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     Integer caseEnd;
     Id automationAdminUser = [SELECT Id FROM User WHERE Alias = 'sauto' LIMIT 1].Id;
     Id itProQueue = [SELECT Id FROM Group WHERE Name = 'IT Pro SEO Optimization' LIMIT 1].Id;
+    Id webCopywrite = [SELECT Id FROM User WHERE Alias = 'webcopy' LIMIT 1].Id;
     Id organicSetupId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId(); 
     Id lsAtvOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId(); 
     Id lbwOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(); 
@@ -351,11 +352,10 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             OwnerId
                                        FROM Case
                                       WHERE Id = :cId AND
-                                            OwnerId != :itProQueue AND
                                             isClosed = false]){
                                     
-                                    // Check for existing attachment and owner
-                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0){
+                                    // Check for existing attachment and IT Pro owner
+                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0 && ccc.OwnerId == itProQueue){
                                     
                                         System.Debug('*** MORE THAN ONE SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT');
                                     
@@ -406,8 +406,47 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                         dmlEmailMsgs.add(newMsg);
                                     }
                                     
-                                    // Check for existing attachment and owner
-                                    if(!String.IsBlank(ccc.Id) && ccc.OwnerId != itProQueue && currDocCount == 0){
+                                    // Check for existing attachment and owner; initial submission
+                                    if(!String.IsBlank(ccc.Id) && ccc.OwnerId == webCopywrite){
+                                        
+                                        System.Debug('*** INITIAL SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT; OWNER UPDATED');
+                                        
+                                        // set new owner value
+                                        ccc.OwnerId = itProQueue;
+                                            
+                                        // add to update list
+                                        dmlCasesToUpdateCC.add(ccc);
+                                             
+                                        // add to attachment update list
+                                        addAttachment(ccc, email);
+                                            
+                                        // add to success task activity list
+                                        Task newTsk = new Task();
+                                        newTsk.OwnerId = automationAdminUser;
+                                        newTsk.Description = 'Success receipt for Case # ' + ccc.CaseNumber + ' from CTS Content Completed and updated the Owner on the Case to IT Pro.';
+                                        newTsk.Subject = 'SUCCESS: CTS Content Completed Message Received';
+                                        newTsk.Priority = 'Normal';
+                                        newTsk.Status = 'Completed';
+                                        newTsk.WhatId = ccc.Id;
+                                        dmlSuccessTasks.add(newTsk);
+                                            
+                                        // add EmailMessage record related to Case
+                                        EmailMessage newMsg = new EmailMessage();
+                                        newMsg.FromAddress = ctsEmailConst;
+                                        newMsg.ToAddress = sfdcEmailConst;
+                                        newMsg.HtmlBody = 'CTS Ticket # [' + ctsTicketNumber + '] Content Completed notification with valid attachment.';
+                                        newMsg.Incoming = true;
+                                        newMsg.MessageDate = System.Now();
+                                        newMsg.ParentId = ccc.Id;
+                                        newMsg.Status = '1';
+                                        newMsg.Subject = subjectLine;
+                                     
+                                        // add message to list for insert
+                                        dmlEmailMsgs.add(newMsg);
+                                    }
+                                    
+                                    // Check for existing user; not Web Copy or IT Pro; do not process and send notification
+                                    if(!String.IsBlank(ccc.Id) && ccc.OwnerId != webCopywrite && ccc.OwnerId != itProQueue){
                                         
                                         System.Debug('*** INITIAL SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT; OWNER UPDATED');
                                         
@@ -448,8 +487,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                             }
                         }
                         else{
-                            // send error email template and log errors; CTS Ticket Number is missing
-                                
+                            
                             // both CTS Ticket Number and attachment missing
                             if(String.isBlank(ctsTicketNumber) && email.binaryAttachments == null && email.binaryAttachments.size() < 1){
                                 

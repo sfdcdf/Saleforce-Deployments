@@ -46,8 +46,7 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
@@ -427,6 +426,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Product_Type_Transactional__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IDSetting__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
