@@ -2,13 +2,13 @@
   Company/ Author ....: E. Ross
   Date Created .......: 25-Sept-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 4-Oct-2018
+  Last Modified Date .: 8-Oct-2018
   Description ........: Class is used to parse the CTS Email contents/ details and
   update Case data and attachments on the Case record
   
-  Oct 4 2018 Edit: Adding insert of EmailMessage on Auto Response message from CTS and
+  Oct 8 2018 Edit: Adding insert of EmailMessage on Auto Response message from CTS and
                    relates to Case record for visibility through UI in Email related list
-                   on Page Layout
+                   on Page Layout; Error handling
 *****************************************************************************/
 global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
 
@@ -28,6 +28,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     String autoRespConst = '';
     String complTktConst = '';
     String kowensEmailConst = '';
+    String itProAdmin1EmailConst = '';
     String sfdcSupportEmailConst = '';
     String fromAddress = '';
     String[] toAddresses;
@@ -94,8 +95,9 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
             sfdcEmailConst = configsMap.get('ServiceAddressEmail_sfdc').Configuration_Value__c;
             autoRespConst = configsMap.get('SubjectLineParse_armail').Configuration_Value__c;
             complTktConst = configsMap.get('SubjectLineParse_contentcomplete').Configuration_Value__c;
-            kowensEmailConst = configsMap.get('UserEmail_kowens').Configuration_Value__c;
             sfdcSupportEmailConst = configsMap.get('SupportEmail_sfdc').Configuration_Value__c;
+            kowensEmailConst = configsMap.get('UserEmail_kowens').Configuration_Value__c;
+            itProAdmin1EmailConst = configsMap.get('ITProEmail_agomez').Configuration_Value__c;
             //externalSystem = configsMap.get('ServiceAddressEmail_cts').External_System_Name__c;
         }
         
@@ -106,6 +108,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         System.Debug('*** Ticket Complete Parse: ' + complTktConst);
         System.Debug('*** Salesforce Support Email: ' + sfdcSupportEmailConst);
         System.Debug('*** Kami Owens Email: ' + kowensEmailConst);
+        System.Debug('*** It Pro Admin A. Gomez Email: ' + itProAdmin1EmailConst);
         
         // set email message variable values
         fromAddress = email.fromAddress;
@@ -343,6 +346,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             External_Ticket_ID__c,
                                             External_Ticket_System__c,
                                             CaseNumber,
+                                            Account.Client_ID__c,
+                                            Account.Name,
                                             OwnerId
                                        FROM Case
                                       WHERE Id = :cId AND
@@ -350,7 +355,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             isClosed = false]){
                                     
                                     // Check for existing attachment and owner
-                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0 && ccc.OwnerId == itProQueue){
+                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0){
                                     
                                         System.Debug('*** MORE THAN ONE SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT');
                                     
@@ -359,13 +364,19 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                         
                                         notifFromAddress = sfdcSupportEmailConst;
                                         fromDisplayName = 'Salesforce Notifications for CTS';
-                                        notifSubjectLine = 'CTS Integration Error: Multiple Attachment Requests for CTS Ticket #' + ctsTicketNumber;
+                                        notifSubjectLine = 'CTS Integration Error: Multiple Attachment Requests for CTS Ticket # [tkt:' + ctsTicketNumber + ']';
                                         notifToAddress.add(sfdcSupportEmailConst);
                                         notifToAddress.add(ctsEmailConst);
                                         notifToAddress.add(kowensEmailConst);
+                                        notifToAddress.add(itProAdmin1EmailConst);
                                         notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
                                         notifBody += '<b>Subject Line from Content Completed Message:</b> ' + subjectLine + '<br/><br/>';
                                         notifBody += '<b>Error Details:</b> Multiple attachment requests have been made for CTS Ticket #' + ctsTicketNumber + ' related to Salesforce Case #' + ccc.CaseNumber + '<br/><br/>';
+                                        notifBody += '<b>Account Name:</b> ' + ccc.Account.Name + '<br/><br/>';
+                                        notifBody += '<b>Client Id:</b> ' + ccc.Account.Client_ID__c + '<br/><br/>';
+                                        notifBody += '<b>Case Number:</b> ' + ccc.CaseNumber + '<br/><br/>';
+                                        notifBody += '<b>Ticket Number:</b> ' + ctsTicketNumber + '<br/><br/><br/>';
+                                        notifBody += 'A new file has been added to this case. Please stop work if already In Progress and use the new file labeled <b>2_Final…</b> to complete the <b>LBW Content & BWT Tasks</b> process (for Lead Stream) or the <b>Content & BWT Tasks</b> process (for Yodle). If you have any questions, please reach out to Dana Parker or Kami Owens.<br/><br/>';
                  
                                         // set message content
                                         message.setToAddresses(notifToAddress);
@@ -389,7 +400,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                         newMsg.MessageDate = System.Now();
                                         newMsg.ParentId = ccc.Id;
                                         newMsg.Status = '3';
-                                        newMsg.Subject = 'CTS Integration Error: Multiple Attachment Requests for CTS Ticket #' + ctsTicketNumber;
+                                        newMsg.Subject = 'CTS Integration Error: Multiple Attachment Requests for CTS Ticket # [tkt:' + ctsTicketNumber + ']';
                                     
                                         // add message to list for insert
                                         dmlEmailMsgs.add(newMsg);
@@ -556,7 +567,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                 Task newTsk = new Task();
                                 newTsk.OwnerId = automationAdminUser;
                                 newTsk.Description = 'Error receipt for Case # ' + cNumber + ' from CTS Content Completed message. The attachment is missing from the email message.';
-                                newTsk.Subject = 'CTS Content Completes Error Message';
+                                newTsk.Subject = 'ERROR: CTS Content Completed Error Message Generated';
                                 newTsk.Priority = 'Normal';
                                 newTsk.Status = 'Completed';
                                 newTsk.WhatId = caseId;
