@@ -350,7 +350,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             isClosed = false]){
                                     
                                     // Check for existing attachment and owner
-                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0 && ccc.OwnerId == itProQueue){
+                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0){
                                     
                                         System.Debug('*** MORE THAN ONE SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT');
                                     
