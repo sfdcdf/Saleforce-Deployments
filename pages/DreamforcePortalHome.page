@@ -74,7 +74,7 @@
         
              <!-- Collect the nav links, forms, and other content for toggling -->
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav">
+               <ul class="nav navbar-nav navbar-right">
                  <li><a style="color: #dae1e8" href="javascript:;" title="View {!accountName} Details" ng-click="showDefault()">Account Information</a></li>
                  <li><a style="color: #dae1e8" href="javascript:;" title="View {!accountName} Case List" ng-click="showCases()">Cases</a></li>
                </ul>
