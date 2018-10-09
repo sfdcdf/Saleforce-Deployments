@@ -29,32 +29,46 @@ public class AutoClosePANOrganicCases
                             ]){
                 
                     // add data to Map
-                    if(micCase.Id != NULL){                    	
+                    if(micCase.Id != NULL){                     
                         micCaseMap.put(micCase.Account_Name__c, micCase);
                     }                                     
              }
              
+             System.Debug('*** MIC Case Map size ' + String.valueOf(micCaseMap.size()));
+             
              if(micCaseMap.size() > 0){
-             	 for(Organic_Analysis__c panCase :
-             		[SELECT Id,
-             		        Account_Name__c,
-             		        OwnerId,
-             		        IsClosed__c,
-             		        Status__c
-             		 FROM Organic_Analysis__c
-             		 WHERE Account_Name__c in :micCaseMap.keySet() AND
-             		 	   RecordTypeId = :panCaseRecordTypeId AND
-                           IsClosed__c = false]){             		        	
-		                    if(panCase.Id != NULL){
-		                    	panCase.IsClosed__c = true;
-		                    	//panCase.Status__c = 'Completed';
-		                    	panCase.OwnerId = micCaseMap.get(panCase.Account_Name__c).OwnerId;
-		                        panCaseList.add(panCase);
-                    		}                          
-             		 }
+                 for(Organic_Analysis__c panCase :
+                    [SELECT Id,
+                            Account_Name__c,
+                            Attempts_to_Contact__c,
+                            Pin_Action_Taken__c,
+                            PIN_Action_Owner__c,
+                            OwnerId,
+                            IsClosed__c,
+                            Status__c
+                     FROM Organic_Analysis__c
+                     WHERE Account_Name__c in :micCaseMap.keySet() AND
+                           RecordTypeId = :panCaseRecordTypeId AND
+                           IsClosed__c = false]){ 
+                                                         
+                            if(panCase.Id != NULL){
+                                System.Debug('*** PAN Case Id: ' + panCase.Id);
+                                panCase.Attempts_to_Contact__c = (String.IsBlank(panCase.Attempts_to_Contact__c) || Integer.valueOf(panCase.Attempts_to_Contact__c) < 1 ? '1' : panCase.Attempts_to_Contact__c);
+                                panCase.Pin_Action_Taken__c = (String.IsBlank(panCase.Pin_Action_Taken__c) ? 'Not Actionable' : panCase.Pin_Action_Taken__c);
+                                panCase.PIN_Action_Owner__c = (String.IsBlank(panCase.PIN_Action_Owner__c) ? micCaseMap.get(panCase.Account_Name__c).OwnerId : panCase.PIN_Action_Owner__c);
+                                panCase.Status__c = 'Completed';
+                                panCase.IsClosed__c = true;
+                                panCase.OwnerId = micCaseMap.get(panCase.Account_Name__c).OwnerId;
+                                panCaseList.add(panCase);
+                            }                          
+                     }
              }
              
-             update(panCaseList);
+             System.Debug('*** PAN Case List size ' + String.valueOf(panCaseList.size()));
+             
+             if(panCaseList.size() > 0){
+                 update(panCaseList);
+             }
             
         }
         catch(Exception e){
