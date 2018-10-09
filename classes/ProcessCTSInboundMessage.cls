@@ -41,6 +41,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     String fromDisplayName = '';
     String notifSubjectLine = '';
     String notifBody = '';
+    String oweaEmailConst = '';
     Integer ticketStart;
     Integer subjectLen;
     Integer caseStart;
@@ -52,7 +53,6 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     Id lsAtvOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId(); 
     Id lbwOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(); 
     Set<Id> organicSetupIdsSet = new Set<Id>{organicSetupId, lsAtvOrganicId, lbwOrganicId};
-    OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
        
     // Method to add attachment to related Case
     void addAttachment(Case relatedCase, Messaging.InboundEmail email){
@@ -94,6 +94,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
             // set configuration variables from integration configuration metadata
             ctsEmailConst = configsMap.get('ServiceAddressEmail_cts').Configuration_Value__c;
             sfdcEmailConst = configsMap.get('ServiceAddressEmail_sfdc').Configuration_Value__c;
+            oweaEmailConst = configsMap.get('OWEAEmail_sfdc').Configuration_Value__c;
             autoRespConst = configsMap.get('SubjectLineParse_armail').Configuration_Value__c;
             complTktConst = configsMap.get('SubjectLineParse_contentcomplete').Configuration_Value__c;
             sfdcSupportEmailConst = configsMap.get('SupportEmail_sfdc').Configuration_Value__c;
@@ -105,6 +106,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         //System.Debug('*** External System Name: ' + externalSystem);
         System.Debug('*** CTS Email: ' + ctsEmailConst);
         System.Debug('*** SFDC Email: ' + sfdcEmailConst);
+        System.Debug('*** SFDC OWEA Email: ' + oweaEmailConst);
         System.Debug('*** Auto Response Parse: ' + autoRespConst);
         System.Debug('*** Ticket Complete Parse: ' + complTktConst);
         System.Debug('*** Salesforce Support Email: ' + sfdcSupportEmailConst);
@@ -112,6 +114,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         System.Debug('*** It Pro Admin A. Gomez Email: ' + itProAdmin1EmailConst);
         
         // set email message variable values
+        OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = :oweaEmailConst LIMIT 1];
         fromAddress = email.fromAddress;
         toAddresses = email.toAddresses;
         subjectLine = email.subject;
@@ -448,37 +451,53 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                     // Check for existing user; not Web Copy or IT Pro; do not process and send notification
                                     if(!String.IsBlank(ccc.Id) && ccc.OwnerId != webCopywrite && ccc.OwnerId != itProQueue){
                                         
-                                        System.Debug('*** INITIAL SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT; OWNER UPDATED');
+                                        System.Debug('*** CASE OWNER UNEXPECTED; DO NOT PROCESS; SEND NOTIFICATIONS');
                                         
-                                        // set new owner value
-                                        ccc.OwnerId = itProQueue;
-                                            
-                                        // add to update list
-                                        dmlCasesToUpdateCC.add(ccc);
-                                             
-                                        // add to attachment update list
-                                        addAttachment(ccc, email);
-                                            
-                                        // add to success task activity list
-                                        Task newTsk = new Task();
-                                        newTsk.OwnerId = automationAdminUser;
-                                        newTsk.Description = 'Success receipt for Case # ' + ccc.CaseNumber + ' from CTS Content Completed and updated the Owner on the Case to IT Pro.';
-                                        newTsk.Subject = 'SUCCESS: CTS Content Completed Message Received';
-                                        newTsk.Priority = 'Normal';
-                                        newTsk.Status = 'Completed';
-                                        newTsk.WhatId = ccc.Id;
-                                        dmlSuccessTasks.add(newTsk);
-                                            
+                                        // Send CTS and Internal users error notification; another attachment request sent
+                                        Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                                        
+                                        String concatNotifString = '';
+                                        
+                                        notifFromAddress = sfdcSupportEmailConst;
+                                        fromDisplayName = 'Salesforce Notifications for CTS';
+                                        notifSubjectLine = 'CTS Integration Error: Unexpected Owner for Case # ' + ccc.CaseNumber + '/ CTS Ticket # [tkt:' + ctsTicketNumber + ']';
+                                        notifToAddress.add(sfdcSupportEmailConst);
+                                        notifToAddress.add(ctsEmailConst);
+                                        notifToAddress.add(kowensEmailConst);
+                                        notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
+                                        notifBody += '<b>Subject Line from Content Completed Message:</b> ' + subjectLine + '<br/><br/>';
+                                        notifBody += '<b>Error Details:</b> There is an unexpected Case owner for Salesforce Case #' + ccc.CaseNumber + ' related to CTS Ticket #' + ctsTicketNumber + '. Salesforce did not process anything due to the error.<br/><br/>';
+                                        notifBody += '<b>Account Name:</b> ' + ccc.Account.Name + '<br/><br/>';
+                                        notifBody += '<b>Client Id:</b> ' + ccc.Account.Client_ID__c + '<br/><br/>';
+                                        notifBody += '<b>Case Number:</b> ' + ccc.CaseNumber + '<br/><br/>';
+                                        notifBody += '<b>Ticket Number:</b> ' + ctsTicketNumber + '<br/><br/><br/>';
+                 
+                                        // set message content
+                                        message.setToAddresses(notifToAddress);
+                                        message.setReplyTo(notifFromAddress);
+                                        message.setOrgWideEmailAddressId(owea.get(0).Id);
+                                        message.setSubject(notifSubjectLine);
+                                        message.setHtmlBody(notifBody);
+                                        
+                                        // add email notification to list to be sent
+                                        notificationsLst.add(message);
+                                        
+                                        for(String ns : notifToAddress){
+                                            concatNotifString += ns + ', ';
+                                        }
+                                
+                                        concatNotifString = concatNotifString.removeEnd(', ');
+                                        
                                         // add EmailMessage record related to Case
                                         EmailMessage newMsg = new EmailMessage();
-                                        newMsg.FromAddress = ctsEmailConst;
-                                        newMsg.ToAddress = sfdcEmailConst;
-                                        newMsg.HtmlBody = 'CTS Ticket # [' + ctsTicketNumber + '] Content Completed notification with valid attachment.';
-                                        newMsg.Incoming = true;
+                                        newMsg.FromAddress = notifFromAddress;
+                                        newMsg.ToAddress = concatNotifString;
+                                        newMsg.HtmlBody = notifBody;
+                                        newMsg.Incoming = false;
                                         newMsg.MessageDate = System.Now();
                                         newMsg.ParentId = ccc.Id;
-                                        newMsg.Status = '1';
-                                        newMsg.Subject = subjectLine;
+                                        newMsg.Status = '3';
+                                        newMsg.Subject = notifSubjectLine;
                                      
                                         // add message to list for insert
                                         dmlEmailMsgs.add(newMsg);
