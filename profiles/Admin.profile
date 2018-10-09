@@ -1295,6 +1295,14 @@
         <apexClass>AutoCreateCaseEmailMessage</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>AutoClosePANOrganicCases</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AutoClosePANOrganicCasesTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -37546,6 +37554,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.External_Ticket_System__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.IDSetting__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <recordTypeVisibilities>
