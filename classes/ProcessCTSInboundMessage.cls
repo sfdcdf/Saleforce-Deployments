@@ -41,17 +41,18 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
     String fromDisplayName = '';
     String notifSubjectLine = '';
     String notifBody = '';
+    String oweaEmailConst = '';
     Integer ticketStart;
     Integer subjectLen;
     Integer caseStart;
     Integer caseEnd;
     Id automationAdminUser = [SELECT Id FROM User WHERE Alias = 'sauto' LIMIT 1].Id;
     Id itProQueue = [SELECT Id FROM Group WHERE Name = 'IT Pro SEO Optimization' LIMIT 1].Id;
+    Id webCopywrite = [SELECT Id FROM User WHERE Alias = 'webcopy' LIMIT 1].Id;
     Id organicSetupId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId(); 
     Id lsAtvOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId(); 
     Id lbwOrganicId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(); 
     Set<Id> organicSetupIdsSet = new Set<Id>{organicSetupId, lsAtvOrganicId, lbwOrganicId};
-    OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
        
     // Method to add attachment to related Case
     void addAttachment(Case relatedCase, Messaging.InboundEmail email){
@@ -93,6 +94,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
             // set configuration variables from integration configuration metadata
             ctsEmailConst = configsMap.get('ServiceAddressEmail_cts').Configuration_Value__c;
             sfdcEmailConst = configsMap.get('ServiceAddressEmail_sfdc').Configuration_Value__c;
+            oweaEmailConst = configsMap.get('OWEAEmail_sfdc').Configuration_Value__c;
             autoRespConst = configsMap.get('SubjectLineParse_armail').Configuration_Value__c;
             complTktConst = configsMap.get('SubjectLineParse_contentcomplete').Configuration_Value__c;
             sfdcSupportEmailConst = configsMap.get('SupportEmail_sfdc').Configuration_Value__c;
@@ -104,6 +106,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         //System.Debug('*** External System Name: ' + externalSystem);
         System.Debug('*** CTS Email: ' + ctsEmailConst);
         System.Debug('*** SFDC Email: ' + sfdcEmailConst);
+        System.Debug('*** SFDC OWEA Email: ' + oweaEmailConst);
         System.Debug('*** Auto Response Parse: ' + autoRespConst);
         System.Debug('*** Ticket Complete Parse: ' + complTktConst);
         System.Debug('*** Salesforce Support Email: ' + sfdcSupportEmailConst);
@@ -111,6 +114,7 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
         System.Debug('*** It Pro Admin A. Gomez Email: ' + itProAdmin1EmailConst);
         
         // set email message variable values
+        OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = :oweaEmailConst LIMIT 1];
         fromAddress = email.fromAddress;
         toAddresses = email.toAddresses;
         subjectLine = email.subject;
@@ -351,11 +355,10 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                             OwnerId
                                        FROM Case
                                       WHERE Id = :cId AND
-                                            OwnerId != :itProQueue AND
                                             isClosed = false]){
                                     
-                                    // Check for existing attachment and owner
-                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0){
+                                    // Check for existing attachment and IT Pro owner
+                                    if(!String.IsBlank(ccc.Id) && currDocCount > 0 && ccc.OwnerId == itProQueue){
                                     
                                         System.Debug('*** MORE THAN ONE SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT');
                                     
@@ -406,8 +409,8 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                         dmlEmailMsgs.add(newMsg);
                                     }
                                     
-                                    // Check for existing attachment and owner
-                                    if(!String.IsBlank(ccc.Id) && ccc.OwnerId != itProQueue && currDocCount == 0){
+                                    // Check for existing attachment and owner; initial submission
+                                    if(!String.IsBlank(ccc.Id) && ccc.OwnerId == webCopywrite){
                                         
                                         System.Debug('*** INITIAL SUBMISSION FOR CONTENT COMPLETE WITH ATTACHMENT; OWNER UPDATED');
                                         
@@ -444,12 +447,66 @@ global class ProcessCTSInboundMessage implements Messaging.InboundEmailHandler{
                                         // add message to list for insert
                                         dmlEmailMsgs.add(newMsg);
                                     }
+                                    
+                                    // Check for existing user; not Web Copy or IT Pro; do not process and send notification
+                                    if(!String.IsBlank(ccc.Id) && ccc.OwnerId != webCopywrite && ccc.OwnerId != itProQueue){
+                                        
+                                        System.Debug('*** CASE OWNER UNEXPECTED; DO NOT PROCESS; SEND NOTIFICATIONS');
+                                        
+                                        // Send CTS and Internal users error notification; another attachment request sent
+                                        Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                                        
+                                        String concatNotifString = '';
+                                        
+                                        notifFromAddress = sfdcSupportEmailConst;
+                                        fromDisplayName = 'Salesforce Notifications for CTS';
+                                        notifSubjectLine = 'CTS Integration Error: Unexpected Owner for Case # ' + ccc.CaseNumber + '/ CTS Ticket # [tkt:' + ctsTicketNumber + ']';
+                                        notifToAddress.add(sfdcSupportEmailConst);
+                                        notifToAddress.add(ctsEmailConst);
+                                        notifToAddress.add(kowensEmailConst);
+                                        notifBody = 'Below are the Error details related to the CTS Integration Process: <br/><br/>';
+                                        notifBody += '<b>Subject Line from Content Completed Message:</b> ' + subjectLine + '<br/><br/>';
+                                        notifBody += '<b>Error Details:</b> There is an unexpected Case owner for Salesforce Case #' + ccc.CaseNumber + ' related to CTS Ticket #' + ctsTicketNumber + '. Salesforce did not process anything due to the error.<br/><br/>';
+                                        notifBody += '<b>Account Name:</b> ' + ccc.Account.Name + '<br/><br/>';
+                                        notifBody += '<b>Client Id:</b> ' + ccc.Account.Client_ID__c + '<br/><br/>';
+                                        notifBody += '<b>Case Number:</b> ' + ccc.CaseNumber + '<br/><br/>';
+                                        notifBody += '<b>Ticket Number:</b> ' + ctsTicketNumber + '<br/><br/><br/>';
+                 
+                                        // set message content
+                                        message.setToAddresses(notifToAddress);
+                                        message.setReplyTo(notifFromAddress);
+                                        message.setOrgWideEmailAddressId(owea.get(0).Id);
+                                        message.setSubject(notifSubjectLine);
+                                        message.setHtmlBody(notifBody);
+                                        
+                                        // add email notification to list to be sent
+                                        notificationsLst.add(message);
+                                        
+                                        for(String ns : notifToAddress){
+                                            concatNotifString += ns + ', ';
+                                        }
+                                
+                                        concatNotifString = concatNotifString.removeEnd(', ');
+                                        
+                                        // add EmailMessage record related to Case
+                                        EmailMessage newMsg = new EmailMessage();
+                                        newMsg.FromAddress = notifFromAddress;
+                                        newMsg.ToAddress = concatNotifString;
+                                        newMsg.HtmlBody = notifBody;
+                                        newMsg.Incoming = false;
+                                        newMsg.MessageDate = System.Now();
+                                        newMsg.ParentId = ccc.Id;
+                                        newMsg.Status = '3';
+                                        newMsg.Subject = notifSubjectLine;
+                                     
+                                        // add message to list for insert
+                                        dmlEmailMsgs.add(newMsg);
+                                    }
                                 }
                             }
                         }
                         else{
-                            // send error email template and log errors; CTS Ticket Number is missing
-                                
+                            
                             // both CTS Ticket Number and attachment missing
                             if(String.isBlank(ctsTicketNumber) && email.binaryAttachments == null && email.binaryAttachments.size() < 1){
                                 
