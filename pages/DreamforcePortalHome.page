@@ -132,12 +132,9 @@
          </div>
          
          <div style="padding: 0 15px 0 15px" ng-show="showCaseList">
-         
-             <div style="font-weight:bold; font-size: 20px; padding: 0 0 5px 0">
-                 {!accountName} Case List
-             </div>
+           <form name="caseListForm" style="width:100%; margin:0px auto;">
              <div class="table-responsive" style="border: 1px solid #a0abb9;">
-                 <table id="acctsTable" st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
+                 <table id="casesTable" st-table="displayedCases" st-safe-src="acctCases" class="table table-striped" style="width: 100%;">
                      <thead>
                          <tr>
                              <th style="background-color: #4c7886; cursor: pointer; color: #f0f0f0; text-transform: uppercase" st-sort="CaseNumber" title="Sort by Case Number" st-sort-default="reverse">Case #</th>
@@ -180,16 +177,16 @@
                      </tbody>
                      <tfoot>
                          <tr>
-                             <td colspan="12" class="text-left">
+                             <td colspan="10" class="text-left">
                                  <center>
-                                     <div st-items-by-page="10" st-pagination=""></div>
+                                     <div st-pagination="" st-items-by-page="10" st-displayed-pages="10"></div>
                                  </center>
                              </td>
                          </tr>
                      </tfoot>
                  </table>
              </div>
-         
+           </form>
          </div>
          
     </body>
