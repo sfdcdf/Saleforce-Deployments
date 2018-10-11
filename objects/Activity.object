@@ -3656,9 +3656,12 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
     </fields>
     <fields>
         <fullName>Related_to_Oppty__c</fullName>
-        <description>Used in WBN Upsell Process</description>
+        <description>Used in WBN Upsell Process: Shows Opportunities and Accounts.</description>
         <externalId>false</externalId>
-        <formula>LEFT( WhatId ,3)= '006'</formula>
+        <formula>OR(
+LEFT( WhatId ,3)= '006', /*Opportunity */
+LEFT( WhatId ,3)= '001' /* Account */
+)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Related to Oppty</label>
         <type>Checkbox</type>
