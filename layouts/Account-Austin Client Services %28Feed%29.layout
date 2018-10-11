@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Historical_Client_Issues</customButtons>
     <customButtons>Consolidated_Case_View</customButtons>
@@ -142,10 +142,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Product_Type_Transactional__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>IDSetting__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -626,10 +622,6 @@
                 <field>Initial_Live_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Days_Since_Initial_Live__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Live_Date__c</field>
             </layoutItems>
@@ -717,7 +709,7 @@
                 <field>OwnerId</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns />
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -1049,7 +1041,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Website Specs</label>
-        <layoutColumns />
+        <layoutColumns/>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -1160,7 +1152,7 @@
                 <field>WPP_Completion_Date__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns />
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -1219,7 +1211,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>false</editHeading>
         <label>Emails</label>
-        <layoutColumns />
+        <layoutColumns/>
         <style>OneColumn</style>
     </layoutSections>
     <miniLayout>
@@ -1262,7 +1254,6 @@
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
-        
         <fields>ACTIVITY.TASK</fields>
         <fields>TASK.DUE_DATE</fields>
         <fields>CORE.USERS.FULL_NAME</fields>
@@ -1422,6 +1413,7 @@
         <fields>MLS__c.NAME</fields>
         <fields>Active_Connection__c</fields>
         <fields>NAME</fields>
+        <fields>MLS_Datasource__c</fields>
         <relatedList>Account_MLS__c.Account__c</relatedList>
         <sortField>Active_Connection__c</sortField>
         <sortOrder>Desc</sortOrder>

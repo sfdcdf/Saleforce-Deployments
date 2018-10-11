@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Historical_Client_Issues</customButtons>
     <customButtons>Consolidated_Case_View</customButtons>
@@ -426,10 +426,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Product_Type_Transactional__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>IDSetting__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -1442,7 +1438,7 @@
                 <field>Pictimonial_Password__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns />
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -1532,7 +1528,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>false</editHeading>
         <label>Emails</label>
-        <layoutColumns />
+        <layoutColumns/>
         <style>OneColumn</style>
     </layoutSections>
     <miniLayout>
@@ -1611,7 +1607,6 @@
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
-        
         <fields>ACTIVITY.TASK</fields>
         <fields>TASK.DUE_DATE</fields>
         <fields>TASK.STATUS</fields>
@@ -1622,7 +1617,6 @@
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
-        
         <fields>ACTIVITY.TASK</fields>
         <fields>TASK.DUE_DATE</fields>
         <fields>CORE.USERS.FULL_NAME</fields>
@@ -1714,6 +1708,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>MLS_Datasource__c</fields>
         <relatedList>Account_MLS__c.Account__c</relatedList>
     </relatedLists>
     <relatedLists>
