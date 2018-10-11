@@ -26644,6 +26644,16 @@
         <field>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.External_Ticket_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.External_Ticket_System__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

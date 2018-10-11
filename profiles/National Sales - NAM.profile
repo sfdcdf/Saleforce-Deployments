@@ -105,7 +105,7 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>LaunchSalesWizard</apexPage>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </pageAccesses>
     <fieldPermissions>
         <editable>false</editable>
@@ -32055,6 +32055,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Days_Since_Initial_Live__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.External_Ticket_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.External_Ticket_System__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <objectPermissions>
