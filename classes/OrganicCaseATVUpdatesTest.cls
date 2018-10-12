@@ -10,7 +10,7 @@ private class OrganicCaseATVUpdatesTest
         List<Case> dmlCases = new List<Case>();
         List<Account> dmlAccounts = new List<Account>();
         Date todayDt = Date.Today();
-        Id caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId();
+        Id caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId();
         
         Account acct = (Account)acctList[0];
         Id acctId = acct.Id;
@@ -26,7 +26,7 @@ private class OrganicCaseATVUpdatesTest
         Id caseId = caseData.Id;
         caseData.RecordTypeId = caseRecordTypeId;
         caseData.AccountId = acctId;
-        caseData.Services_Offered__c = 'Divorce Law\r\n Debt Law';
+        caseData.Services_Offered__c = 'Divorce Law\r\n Family Law';
         dmlCases.add(caseData);
         
         if(dmlCases.size() > 0){
