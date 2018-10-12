@@ -5065,12 +5065,30 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Used to evaluate best practices for Analysts in regards to New Client Setups and Optimizations.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Best Practice Evaluation</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to evaluate best practices for Analysts in regards to New Client Setups and Optimizations.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Best Practice Evaluation</label>
+    <nameField>
         <displayFormat>E-{0000}</displayFormat>
         <label>Evaluation ID</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Best Practice Evaluations</pluralLabel><recordTypeTrackHistory>true</recordTypeTrackHistory><searchLayouts>
+    </nameField>
+    <pluralLabel>Best Practice Evaluations</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
         <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Case_in_Review__c</customTabListAdditionalFields>
@@ -5103,7 +5121,9 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Evaluation_for__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>Global</fullName>
         <columns>NAME</columns>

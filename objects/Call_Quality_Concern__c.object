@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -40,7 +51,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Action_T__c</fullName>
         <externalId>false</externalId>
         <label>Action Taken</label>
@@ -83,7 +95,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Quality_Action__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -116,7 +129,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Quality_Issue_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Call Quality Issue to MOPs</label>
@@ -125,7 +139,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Callers_are_Often_Calling_For__c</fullName>
         <externalId>false</externalId>
         <label>Callers Are Often Calling For:</label>
@@ -135,7 +150,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Calls_for_Wrong_Business__c</fullName>
         <externalId>false</externalId>
         <label>Calls for Wrong Business:</label>
@@ -167,7 +183,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 <valueName>Are Many of the Calls for the Same Business</valueName>
             </valueSettings>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Calls_for_Wrong_Service__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Are these:
@@ -202,7 +219,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 <valueName>Multiple Calls for Consistently the Same Wrong Service</valueName>
             </valueSettings>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -214,7 +232,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Channel_Type__c</fullName>
         <externalId>false</externalId>
         <formula>text(Account_Name__r.Client_Type__c)</formula>
@@ -224,7 +243,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <label>Client ID</label>
@@ -234,7 +254,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Completion_Date__c</fullName>
         <externalId>false</externalId>
         <label>Completion Date</label>
@@ -242,7 +263,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Consultant_Channel__c</fullName>
         <externalId>false</externalId>
         <formula>Account_Name__r.IMS_Rep_Role__c</formula>
@@ -253,7 +275,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Custom_Call_Tracking__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(Account_Name__r.Custom_Call_TrackingPL__c)</formula>
@@ -264,7 +287,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Escalated__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -273,7 +297,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Example_Bad_Calls__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Can you point out some of the calls that have been bad?</inlineHelpText>
@@ -283,7 +308,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>First_Call_Concern__c</fullName>
         <externalId>false</externalId>
         <label>First Call Concern</label>
@@ -291,7 +317,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Hang_Up_Calls__c</fullName>
         <externalId>false</externalId>
         <label>Hang Up Calls?</label>
@@ -314,7 +341,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IMS_Consultant__c</fullName>
         <externalId>false</externalId>
         <label>IMS Consultant</label>
@@ -323,7 +351,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IT_Pro_Member__c</fullName>
         <externalId>false</externalId>
         <label>IT Pro Member</label>
@@ -701,7 +730,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Manager_Approved_Changes__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -709,7 +739,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketing_Ops_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Close Notes</label>
@@ -718,7 +749,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes__c</fullName>
         <externalId>false</externalId>
         <label>Notes</label>
@@ -726,7 +758,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Numbers_to_be_blacklisted__c</fullName>
         <description>Any numbers that need to be blacklisted.</description>
         <externalId>false</externalId>
@@ -738,7 +771,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Out_of_Area_Calls_Are__c</fullName>
         <externalId>false</externalId>
         <label>Out of Area Calls Are:</label>
@@ -788,7 +822,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 <valueName>All different areas &amp; NOT for your service</valueName>
             </valueSettings>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Out_of_Area_Calls__c</fullName>
         <externalId>false</externalId>
         <label>Out of Area Calls?</label>
@@ -811,7 +846,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Number_Label__c</fullName>
         <externalId>false</externalId>
         <label>Phone Number Label</label>
@@ -860,7 +896,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
             </valueSetDefinition>
         </valueSet>
         <visibleLines>6</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Priority__c</fullName>
         <externalId>false</externalId>
         <label>Priority</label>
@@ -883,7 +920,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reason_1__c</fullName>
         <externalId>false</externalId>
         <label>Reason 1</label>
@@ -936,7 +974,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reason_2__c</fullName>
         <externalId>false</externalId>
         <label>Reason 2</label>
@@ -989,7 +1028,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Resolution_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Resolution Notes</label>
@@ -997,7 +1037,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Resolved_By__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1008,7 +1049,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Second_Call_Concern__c</fullName>
         <externalId>false</externalId>
         <label>Second Call Concern</label>
@@ -1016,7 +1058,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Solicitor_Calls__c</fullName>
         <externalId>false</externalId>
         <label>Solicitor Calls?</label>
@@ -1039,7 +1082,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -1062,7 +1106,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tracking_Name_Label__c</fullName>
         <externalId>false</externalId>
         <label>Tracking # Name/Label</label>
@@ -1110,7 +1155,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tracking_Number__c</fullName>
         <externalId>false</externalId>
         <label>Tracking Number</label>
@@ -1120,7 +1166,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Wrong_Business__c</fullName>
         <externalId>false</externalId>
         <label>Wrong Business?</label>
@@ -1143,7 +1190,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Wrong_Service__c</fullName>
         <externalId>false</externalId>
         <label>Wrong Service?</label>
@@ -1166,17 +1214,37 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>To submit call quality concerns from clients to Marketing Ops team to review for potential paused distribution outlets.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Call Quality Concern</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To submit call quality concerns from clients to Marketing Ops team to review for potential paused distribution outlets.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Call Quality Concern</label>
+    <nameField>
         <displayFormat>Q-{00000}</displayFormat>
         <label>Call Quality Concern ID</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Call Quality Concerns</pluralLabel><searchLayouts>
+    </nameField>
+    <pluralLabel>Call Quality Concerns</pluralLabel>
+    <searchLayouts>
         <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>Client_ID__c</columns>
         <columns>Channel_Type__c</columns>
@@ -1184,7 +1252,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <columns>NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Rogers_Support_Call_Quality_Concern</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -1192,7 +1261,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Call_Quality_Concern</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -1200,7 +1270,8 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><validationRules>
+    </listViews>
+    <validationRules>
         <fullName>Blacklist_Number_Must_Be_Numbers</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -1208,13 +1279,15 @@ NOT (ISBLANK( Numbers_to_be_blacklisted__c )),
 NOT(ISNUMBER( Numbers_to_be_blacklisted__c )))</errorConditionFormula>
         <errorDisplayField>Numbers_to_be_blacklisted__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Blacklist Number fields. Please edit accordingly.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Blacklist_Number_Must_Be_only_11</fullName>
         <active>true</active>
         <errorConditionFormula>IF( LEN( Numbers_to_be_blacklisted__c ) &gt;11, true, false)</errorConditionFormula>
         <errorDisplayField>Numbers_to_be_blacklisted__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Blacklist Number fields. Please edit accordingly.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Escalated_Priority_Needs_Approval</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -1223,7 +1296,8 @@ Escalated__c=False,
 Manager_Approved_Changes__c=False),
 ISPICKVAL( Priority__c,"Escalated"))</errorConditionFormula>
         <errorMessage>Your manager must select "Manager Approved Changes" in order to escalate this request.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Notes_Required</fullName>
         <active>true</active>
         <description>You must enter the notes field if you select "multiple lines same issue", "multiple lines different issue"  or "Other".</description>
@@ -1237,26 +1311,30 @@ ISPICKVAL( Reason_2__c , "Multiple Lines Same Issue"),
 ISPICKVAL( Reason_2__c , "Other"),
 ISPICKVAL( Reason_2__c , "Multiple Lines Different Issue")))</errorConditionFormula>
         <errorMessage>You must enter the notes field if you select "multiple lines same issue", "multiple lines different issue"  or "Other".</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Solicitor_Calls_Opens_Numbers_Blacklist</fullName>
         <active>false</active>
         <description>When you select that the client is receiving solicitor calls, it opens the field for numbers to be blacklisted.</description>
         <errorConditionFormula>AND(ispickval(Solicitor_Calls__c,"Yes"),
 isblank(Numbers_to_be_blacklisted__c))</errorConditionFormula>
         <errorMessage>You must enter numbers to be blacklisted when there have been solicitor calls.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Tracking_Number_Must_Be_Numbers</fullName>
         <active>true</active>
         <errorConditionFormula>NOT(ISNUMBER( Tracking_Number__c ))</errorConditionFormula>
         <errorDisplayField>Tracking_Number__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Tracking Number fields. Please edit accordingly.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Tracking_Number_Must_Be_only_11</fullName>
         <active>true</active>
         <errorConditionFormula>IF( LEN( Tracking_Number__c ) &gt;11, true, false)</errorConditionFormula>
         <errorDisplayField>Tracking_Number__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Tracking Number fields. Please edit accordingly.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Wrong_ServiceWrong_Business_Must_Enter</fullName>
         <active>true</active>
         <description>If you indicate that the clients are calling for one business, you must enter what business the callers are actually calling for.</description>
@@ -1265,4 +1343,5 @@ isblank(Numbers_to_be_blacklisted__c))</errorConditionFormula>
 isblank(Callers_are_Often_Calling_For__c ))</errorConditionFormula>
         <errorDisplayField>Callers_are_Often_Calling_For__c</errorDisplayField>
         <errorMessage>You must fill in Callers are Often Calling For if you indicate that many of the calls for the same business.</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

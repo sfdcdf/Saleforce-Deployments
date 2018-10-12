@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Airline__c</fullName>
         <externalId>false</externalId>
         <label>Airline</label>
@@ -71,7 +82,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Arrival_Date__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>platinum arrival = 3/16/11.  regular = 3/17/11</inlineHelpText>
@@ -80,7 +92,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Birthdate__c</fullName>
         <externalId>false</externalId>
         <label>Birthdate</label>
@@ -88,7 +101,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Bookings__c</fullName>
         <externalId>false</externalId>
         <label>Bookings</label>
@@ -98,20 +112,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
-        <fullName>Contest__c</fullName>
-        <externalId>false</externalId>
-        <label>Contest</label>
-        <referenceTo>Contest__c</referenceTo>
-        <relationshipLabel>Prize Winners</relationshipLabel>
-        <relationshipName>Prize_Winners</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Deals__c</fullName>
         <externalId>false</externalId>
         <label>Deals</label>
@@ -122,7 +124,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Departure_Date__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>standard = 3/20/11</inlineHelpText>
@@ -131,7 +134,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Dials__c</fullName>
         <externalId>false</externalId>
         <label>Dials</label>
@@ -142,7 +146,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Flight_Confirmation__c</fullName>
         <externalId>false</externalId>
         <label>Flight Confirmation</label>
@@ -152,7 +157,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Flight_Cost__c</fullName>
         <externalId>false</externalId>
         <label>Flight Cost</label>
@@ -162,7 +168,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Gender__c</fullName>
         <externalId>false</externalId>
         <label>Gender</label>
@@ -185,7 +192,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Airline__c</fullName>
         <externalId>false</externalId>
         <label>Guest Airline</label>
@@ -228,7 +236,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Arrival_Date__c</fullName>
         <externalId>false</externalId>
         <label>Guest Arrival Date</label>
@@ -236,7 +245,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Birthdate__c</fullName>
         <externalId>false</externalId>
         <label>Guest Birthdate</label>
@@ -244,7 +254,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Confirmation__c</fullName>
         <externalId>false</externalId>
         <label>Guest Confirmation</label>
@@ -254,7 +265,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Departure_Date__c</fullName>
         <externalId>false</externalId>
         <label>Guest Departure Date</label>
@@ -262,7 +274,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_First_Name__c</fullName>
         <externalId>false</externalId>
         <label>Guest First Name</label>
@@ -272,7 +285,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Flight_Cost__c</fullName>
         <externalId>false</externalId>
         <label>Guest Flight Cost</label>
@@ -282,7 +296,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Gender__c</fullName>
         <externalId>false</externalId>
         <label>Guest Gender</label>
@@ -305,7 +320,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Last_Name__c</fullName>
         <externalId>false</externalId>
         <label>Guest Last Name</label>
@@ -315,7 +331,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Outbound_Flight_Arrival__c</fullName>
         <externalId>false</externalId>
         <label>Guest Outbound Flight Arrival</label>
@@ -323,7 +340,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Outbound_Flight_Depature__c</fullName>
         <externalId>false</externalId>
         <label>Guest Outbound Flight Depature</label>
@@ -331,7 +349,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Outbound_Flight_Number__c</fullName>
         <externalId>false</externalId>
         <label>Guest Outbound Flight Number</label>
@@ -341,7 +360,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Passport_Expiration_Date__c</fullName>
         <externalId>false</externalId>
         <label>Guest Passport Expiration Date</label>
@@ -349,7 +369,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Passport_Number__c</fullName>
         <externalId>false</externalId>
         <label>Guest Passport Number</label>
@@ -359,7 +380,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Return_Airport__c</fullName>
         <externalId>false</externalId>
         <label>Guest Return Airport</label>
@@ -369,7 +391,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Return_Flight_Arrival__c</fullName>
         <externalId>false</externalId>
         <label>Guest Return Flight Arrival</label>
@@ -377,7 +400,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Return_Flight_Depature__c</fullName>
         <externalId>false</externalId>
         <label>Guest Return Flight Depature</label>
@@ -385,7 +409,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_Return_Flight_Number__c</fullName>
         <externalId>false</externalId>
         <label>Guest Return Flight Number</label>
@@ -395,7 +420,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Guest_T_Shirt_Size__c</fullName>
         <externalId>false</externalId>
         <label>Guest T-Shirt Size</label>
@@ -438,7 +464,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Included_in_Commission_Check__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -446,7 +473,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Launches__c</fullName>
         <externalId>false</externalId>
         <label>Launches</label>
@@ -456,7 +484,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outbound_Airport__c</fullName>
         <externalId>false</externalId>
         <label>Outbound Airport</label>
@@ -466,7 +495,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outbound_Flight_Arrival__c</fullName>
         <externalId>false</externalId>
         <label>Outbound Flight Arrival</label>
@@ -474,7 +504,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outbound_Flight_Depature__c</fullName>
         <externalId>false</externalId>
         <label>Outbound Flight Depature</label>
@@ -482,7 +513,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outbound_Flight_Number__c</fullName>
         <externalId>false</externalId>
         <label>Outbound Flight Number</label>
@@ -492,7 +524,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Passport_Expiration_Date__c</fullName>
         <externalId>false</externalId>
         <label>Passport Expiration Date</label>
@@ -500,7 +533,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Passport_Number__c</fullName>
         <externalId>false</externalId>
         <label>Passport Number</label>
@@ -510,7 +544,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Percent_To_Goal__c</fullName>
         <externalId>false</externalId>
         <label>Percent To Goal</label>
@@ -520,7 +555,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Platinum__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -528,7 +564,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Prez_Club_Type__c</fullName>
         <externalId>false</externalId>
         <label>Prez Club Type</label>
@@ -596,7 +633,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Prize_Value__c</fullName>
         <externalId>false</externalId>
         <label>Prize Value</label>
@@ -606,7 +644,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Prize_Won__c</fullName>
         <externalId>false</externalId>
         <label>Prize Won</label>
@@ -614,7 +653,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Quota__c</fullName>
         <externalId>false</externalId>
         <label>Quota</label>
@@ -624,7 +664,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Received_Date__c</fullName>
         <externalId>false</externalId>
         <label>Received Date</label>
@@ -632,7 +673,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Received__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -640,7 +682,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Return_Airport__c</fullName>
         <externalId>false</externalId>
         <label>Return Airport</label>
@@ -650,7 +693,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Return_Flight_Arrival__c</fullName>
         <externalId>false</externalId>
         <label>Return Flight Arrival</label>
@@ -658,7 +702,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Return_Flight_Depature__c</fullName>
         <externalId>false</externalId>
         <label>Return Flight Depature</label>
@@ -666,7 +711,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Return_Flight_Number__c</fullName>
         <externalId>false</externalId>
         <label>Return Flight Number</label>
@@ -676,7 +722,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Room_Type__c</fullName>
         <externalId>false</externalId>
         <label>Room-Type</label>
@@ -709,7 +756,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Salesrep_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -720,7 +768,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TalkTime__c</fullName>
         <externalId>false</externalId>
         <label>TalkTime</label>
@@ -731,7 +780,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Team__c</fullName>
         <externalId>false</externalId>
         <label>Team</label>
@@ -834,7 +884,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Flight_Costs__c</fullName>
         <externalId>false</externalId>
         <formula>Guest_Flight_Cost__c + Flight_Cost__c</formula>
@@ -846,7 +897,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>guest_outbound_airport__c</fullName>
         <externalId>false</externalId>
         <label>guest outbound airport</label>
@@ -856,7 +908,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>tshirt_Size__c</fullName>
         <externalId>false</externalId>
         <label>T-Shirt Size</label>
@@ -899,12 +952,47 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>tracks winning people/teams from sales contests</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Prize Winner</label><nameField>
+    </fields>
+    <fields>
+        <fullName>Contest__c</fullName>
+        <externalId>false</externalId>
+        <label>Contest</label>
+        <referenceTo>Contest__c</referenceTo>
+        <relationshipLabel>Prize Winners</relationshipLabel>
+        <relationshipName>Prize_Winners</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>tracks winning people/teams from sales contests</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Prize Winner</label>
+    <nameField>
         <displayFormat>{YY} - {MM} - {000}</displayFormat>
         <label>Prize Winner ID</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Prize Winners</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility><recordTypes>
+    </nameField>
+    <pluralLabel>Prize Winners</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <recordTypes>
         <fullName>President_s_Club</fullName>
         <active>true</active>
         <description>specific for President's Club info</description>
@@ -1180,7 +1268,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>master</fullName>
         <active>true</active>
         <label>master</label>
@@ -1455,4 +1544,5 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

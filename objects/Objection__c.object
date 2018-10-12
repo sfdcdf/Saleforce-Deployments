@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Example__c</fullName>
         <externalId>false</externalId>
         <label>Example</label>
@@ -37,7 +48,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Full_Objection_Description__c</fullName>
         <externalId>false</externalId>
         <label>Full Objection Description</label>
@@ -45,7 +57,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Objection_Category__c</fullName>
         <externalId>false</externalId>
         <label>Objection Category</label>
@@ -55,7 +68,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Objection_Number__c</fullName>
         <externalId>false</externalId>
         <label>Objection Number</label>
@@ -65,11 +79,30 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>List of common client objections and client service standard rebuttals.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Objection Handling</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>List of common client objections and client service standard rebuttals.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Objection Handling</label>
+    <nameField>
         <label>Objection Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Objection Handling</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </nameField>
+    <pluralLabel>Objection Handling</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>Full_Objection_Description__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Objection_Category__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Objection_Number__c</customTabListAdditionalFields>
@@ -88,7 +121,11 @@
         <searchResultsAdditionalFields>Full_Objection_Description__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Objection_Category__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Objection_Number__c</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><startsWith>Vowel</startsWith><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>Objection_Number__c</columns>
         <columns>Full_Objection_Description__c</columns>
@@ -97,7 +134,8 @@
         <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Objection_List</fullName>
         <columns>Objection_Number__c</columns>
         <columns>Full_Objection_Description__c</columns>
@@ -105,7 +143,8 @@
         <columns>NAME</columns>
         <filterScope>Everything</filterScope>
         <label>Objection List</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Rogers_Support_Objection</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -113,7 +152,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Objection</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -121,8 +161,10 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Objection</fullName>
         <active>true</active>
         <label>Objection</label>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

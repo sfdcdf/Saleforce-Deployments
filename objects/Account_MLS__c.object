@@ -84,20 +84,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>MLS__c</fullName>
-        <externalId>false</externalId>
-        <label>MLS</label>
-        <referenceTo>MLS__c</referenceTo>
-        <relationshipLabel>Account MLS's</relationshipLabel>
-        <relationshipName>Account_MLS_s</relationshipName>
-        <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>MLS_Datasource__c</fullName>
         <description>Pulls the current Picklist Value from the MLS Object for the Data Source Field.</description>
         <externalId>false</externalId>
@@ -122,12 +108,45 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Account MLS</label><nameField>
+    </fields>
+    <fields>
+        <fullName>MLS__c</fullName>
+        <externalId>false</externalId>
+        <label>MLS</label>
+        <referenceTo>MLS__c</referenceTo>
+        <relationshipLabel>Account MLS's</relationshipLabel>
+        <relationshipName>Account_MLS_s</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Account MLS</label>
+    <nameField>
         <displayFormat>AM-{0}</displayFormat>
         <label>Account MLS Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Account MLS'</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility>
+    </nameField>
+    <pluralLabel>Account MLS'</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
