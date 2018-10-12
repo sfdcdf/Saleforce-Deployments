@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Submitter&apos;s Manager to Approve</description>
+        <label>Step 1</label>
+        <name>Step_1</name>
+    </approvalStep>
+    <description>WBN Cancellation process for Duplicates</description>
+    <emailTemplate>Support/Cancel_Form_Approval_Process</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Cancellation_Request__c.RecordType</field>
+            <operation>equals</operation>
+            <value>WBN Cancellation Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Outcome__c</field>
+            <operation>equals</operation>
+            <value>Duplicate Retention Case</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Set_Approved_checked</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WBN_Alert_Owner_of_Approval</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Cancel_Outcome_In_Progress</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WBN_Alert_Owner_of_Rejection</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Approval_By_Manager</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Cancel_Outcome_In_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>WBN Duplicate Cancellations</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>Update_Cancel_Outcome_In_Progress</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>
