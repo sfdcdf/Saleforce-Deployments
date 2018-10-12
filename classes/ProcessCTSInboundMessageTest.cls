@@ -100,6 +100,50 @@ private class ProcessCTSInboundMessageTest
         ProcessCTSInboundMessage emailProcess2 = new ProcessCTSInboundMessage();
         emailProcess2.handleInboundEmail(email2, env2);
         
+        Test.stopTest();
+    }
+    
+    private static testMethod void webCopyOwnerValTests()
+    {
+       // load test data from static resources
+        List<SObject> acctList = Test.LoadData(Account.sObjectType, 'testAccounts');
+        List<SObject> caseList = Test.LoadData(Case.sObjectType, 'testCases');
+        List<Id> caseIds = new List<Id>();
+        List<Case> dmlCases = new List<Case>();
+        List<String> toAddresses = new List<String>();
+        Date todayDt = Date.Today();
+        Id caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Organic Setup').getRecordTypeId();
+        Id webCopywrite = [SELECT Id FROM User WHERE Alias = 'webcopy' LIMIT 1].Id;
+        
+        Account acct = (Account)acctList[0];
+        Id acctId = acct.Id;
+        String acctName = acct.Name;
+        
+        System.Debug('Account from (Account): ' + acctName);
+        
+        Case caseData = (Case)caseList[0];
+        Id caseId = caseData.Id;
+        String caseNumber = caseData.CaseNumber;
+        caseData.RecordTypeId = caseRecordTypeId;
+        caseData.AccountId = acctId;
+        caseData.OwnerId = webCopywrite;
+        dmlCases.add(caseData);
+        
+        System.Debug('Account from (Case): ' + caseData.Account.Name);
+        
+        if(dmlCases.size() > 0){
+            update dmlCases;
+            
+            for(Case c : dmlCases){
+                caseIds.add(c.Id);
+            }
+        }
+        
+        // start test
+        Test.startTest();
+        
+        toAddresses.add('copywritingsfdc@web.com');
+        
         // AR: MISSING CASE NUMBER
         
         // Create a new email and envelope object
