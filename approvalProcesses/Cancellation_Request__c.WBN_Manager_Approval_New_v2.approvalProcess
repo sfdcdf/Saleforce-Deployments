@@ -32,9 +32,14 @@ Sales_Rep__r.IsActive = TRUE,
 OR(Sales_Rep__r.Role_Name__c = &quot;YBN: Sales Executive&quot;,
 Sales_Rep__r.Role_Name__c = &quot;YBN: Sales Executive II&quot;),
 OR(
+/*
 NOT(ispickval(Outcome__c ,&quot;Duplicate Retention Case&quot;)),
 NOT(ispickval(Cancel_Code_1__c , &quot;Out of Business&quot;)),
 NOT(ispickval(Cancel_Code_2__c , &quot;Out of Business&quot;))
+*/
+TEXT(Outcome__c) &lt;&gt; &quot;Duplicate Retention Case&quot;,
+TEXT(Cancel_Code_1__c) &lt;&gt; &quot;Out of Business&quot;,
+TEXT(Cancel_Code_2__c) &lt;&gt; &quot;Out of Business&quot;
 ))</formula>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
