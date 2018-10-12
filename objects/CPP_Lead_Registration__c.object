@@ -1,36 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <content>CreateCPPLeadRegistration</content>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Visualforce</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>CP_Needs__c</fullName>
         <externalId>false</externalId>
         <label>CP Needs</label>
@@ -39,7 +54,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Child_Account__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
@@ -50,7 +66,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Claimed_in_GN__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -58,7 +75,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Current_PMS__c</fullName>
         <externalId>false</externalId>
         <label>Current PMS</label>
@@ -68,7 +86,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Demo_Scheduled_Given__c</fullName>
         <externalId>false</externalId>
         <label>Date Demo Scheduled/Given</label>
@@ -76,7 +95,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Submitted__c</fullName>
         <externalId>false</externalId>
         <label>Date Submitted</label>
@@ -84,7 +104,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Expected_Close_Date__c</fullName>
         <externalId>false</externalId>
         <label>Expected Close Date</label>
@@ -92,7 +113,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>GN_Link__c</fullName>
         <externalId>false</externalId>
         <formula>IF(NOT(ISBLANK( Gold_Nugget_Client_ID__c )), HYPERLINK('http://live.yodle.com/app/clientconfig/home/clientsummary?clientId='+ Gold_Nugget_Client_ID__c ,'View Client Record in Yodle Live', '_blank'), IF(NOT(ISBLANK( Gold_Nugget_Prospect_ID__c )), 'http://live.yodle.com/app/sales/prospects/prospect/view?prospectId=' + Gold_Nugget_Prospect_ID__c, ''))</formula>
@@ -102,7 +124,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Gold_Nugget_Client_ID__c</fullName>
         <externalId>false</externalId>
         <label>Gold Nugget Client ID</label>
@@ -112,7 +135,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Gold_Nugget_Prospect_ID__c</fullName>
         <externalId>false</externalId>
         <label>Gold Nugget Prospect ID</label>
@@ -122,7 +146,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>In_a_Contract__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -130,7 +155,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Contact_Name__c</fullName>
         <externalId>false</externalId>
         <label>Lead Contact Name</label>
@@ -140,7 +166,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Phone_Number__c</fullName>
         <externalId>false</externalId>
         <label>Lead Phone Number</label>
@@ -148,80 +175,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
-    </fields><fields>
-        <fullName>Lead_Registration_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Lead Registration Status</label>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Newly Registered</fullName>
-                    <default>true</default>
-                    <label>Newly Registered</label>
-                </value>
-                <value>
-                    <fullName>In Progress</fullName>
-                    <default>false</default>
-                    <label>In Progress</label>
-                </value>
-                <value>
-                    <fullName>Approved</fullName>
-                    <default>false</default>
-                    <label>Approved</label>
-                </value>
-                <value>
-                    <fullName>Denied</fullName>
-                    <default>false</default>
-                    <label>Denied</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
-        <fullName>Opportunity_Stage__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>You can't set the Opportunity Stage until this Lead has been approved!</inlineHelpText>
-        <label>Opportunity Stage</label>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Lead_Registration_Status__c</controllingField>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>New Opportunity</fullName>
-                    <default>false</default>
-                    <label>New Opportunity</label>
-                </value>
-                <value>
-                    <fullName>Closed Won</fullName>
-                    <default>false</default>
-                    <label>Closed Won</label>
-                </value>
-                <value>
-                    <fullName>Closed Lost</fullName>
-                    <default>false</default>
-                    <label>Closed Lost</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Approved</controllingFieldValue>
-                <valueName>Closed Won</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Approved</controllingFieldValue>
-                <valueName>Closed Lost</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opportunity__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -232,7 +187,122 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
+        <fullName>Primary_Concern__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Concern</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Split_Rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Split Rep</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Submitted_By__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Submitted By</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Lead Registration</relationshipLabel>
+        <relationshipName>Lead_Registration</relationshipName>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Registration_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Registration Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Newly Registered</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>You can't set the Opportunity Stage until this Lead has been approved!</inlineHelpText>
+        <label>Opportunity Stage</label>
+        <picklist>
+            <controllingField>Lead_Registration_Status__c</controllingField>
+            <picklistValues>
+                <fullName>New Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <controllingFieldValues>Approved</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <controllingFieldValues>Approved</controllingFieldValues>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Split_with_Sales_Rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Split with Sales Rep</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Partner_Account__c</fullName>
         <externalId>false</externalId>
         <label>Partner Account</label>
@@ -253,91 +323,57 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>true</writeRequiresMasterRead>
-    </fields><fields>
-        <fullName>Primary_Concern__c</fullName>
-        <externalId>false</externalId>
-        <label>Primary Concern</label>
-        <length>255</length>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
-        <fullName>Split_Rep__c</fullName>
-        <externalId>false</externalId>
-        <label>Split Rep</label>
-        <length>255</length>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
-        <fullName>Split_with_Sales_Rep__c</fullName>
-        <externalId>false</externalId>
-        <label>Split with Sales Rep</label>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
-        <fullName>Submitted_By__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Submitted By</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Lead Registration</relationshipLabel>
-        <relationshipName>Lead_Registration</relationshipName>
-        <required>true</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Lead Registration</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Lead Registration</label>
+    <nameField>
         <label>Lead Company Name</label>
         <trackHistory>true</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Lead Registration</pluralLabel><searchLayouts>
+    </nameField>
+    <pluralLabel>Lead Registration</pluralLabel>
+    <searchLayouts>
         <customTabListAdditionalFields>Lead_Registration_Status__c</customTabListAdditionalFields>
-    </searchLayouts><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Lead_Registration_Status__c</columns>
         <columns>LAST_ACTIVITY</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><validationRules>
+    </listViews>
+    <validationRules>
         <fullName>Date_Submitted_Validation</fullName>
         <active>true</active>
         <errorConditionFormula>ISCHANGED( Date_Submitted__c ) &amp;&amp; NOT(ISNEW())</errorConditionFormula>
         <errorDisplayField>Date_Submitted__c</errorDisplayField>
         <errorMessage>You can't change the submission date!</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Expected_Close_Date_Required_to_Approve</fullName>
         <active>true</active>
         <errorConditionFormula>ISPICKVAL( Lead_Registration_Status__c ,'Approved') &amp;&amp;  ISNULL( Expected_Close_Date__c )</errorConditionFormula>
         <errorDisplayField>Expected_Close_Date__c</errorDisplayField>
         <errorMessage>Please enter an Expected Close Date to Approve this Lead!</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Split_with_Sales_Rep</fullName>
         <active>true</active>
         <errorConditionFormula>ISPICKVAL( Split_with_Sales_Rep__c ,'Yes') &amp;&amp; ISBLANK( Split_Rep__c )</errorConditionFormula>
         <errorDisplayField>Split_with_Sales_Rep__c</errorDisplayField>
         <errorMessage>Please enter the Sales Rep's name</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

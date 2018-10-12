@@ -1,34 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>Additional_MLS_Name__c</fullName>
         <externalId>false</externalId>
         <label>Additional MLS Name</label>
@@ -38,7 +53,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agent_Broker_Annual_Fee__c</fullName>
         <externalId>false</externalId>
         <label>Agent/Broker Annual Fee</label>
@@ -48,19 +64,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
-        <fullName>Agent_Broker_Initiates_Process__c</fullName>
-        <externalId>false</externalId>
-        <label>Agent/Broker Initiates Process</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>Yes_No</valueSetName>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agent_Broker_Monthly_Fee_from_IDX_Broker__c</fullName>
         <externalId>false</externalId>
         <label>Agent/Broker Monthly Fee from IDX Broker</label>
@@ -70,7 +75,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agent_Broker_Monthly_Fee_from_MLS__c</fullName>
         <externalId>false</externalId>
         <label>Agent/Broker Monthly Fee from MLS</label>
@@ -80,7 +86,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agent_Broker_Setup_Fee__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Billed by MLS to client direct</inlineHelpText>
@@ -91,7 +98,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agent_Fees__c</fullName>
         <externalId>false</externalId>
         <formula>IF(
@@ -109,7 +117,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Authorized_RETS_Servers__c</fullName>
         <externalId>false</externalId>
         <label>Authorized RETS Servers</label>
@@ -119,35 +128,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>Brokers_Only__c</fullName>
-        <externalId>false</externalId>
-        <label>Brokers Only?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Unknown</fullName>
-                    <default>true</default>
-                    <label>Unknown</label>
-                </value>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_to_MLS_Date__c</fullName>
         <externalId>false</externalId>
         <label>Call to MLS Date</label>
@@ -155,7 +137,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cannot_Sync_Reason__c</fullName>
         <externalId>false</externalId>
         <label>Cannot Sync Reason</label>
@@ -165,7 +148,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cannot_Sync__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -173,19 +157,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
-        <fullName>Compliance_Review_Required_For_Approval__c</fullName>
-        <externalId>false</externalId>
-        <label>Compliance Review Required For Approval</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>Yes_No</valueSetName>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Config_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Config Notes</label>
@@ -194,36 +167,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
-        <fullName>Credential_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Credential Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Vendor Credentials</fullName>
-                    <default>false</default>
-                    <label>Vendor Credentials</label>
-                </value>
-                <value>
-                    <fullName>Broker Credentials</fullName>
-                    <default>false</default>
-                    <label>Broker Credentials</label>
-                </value>
-                <value>
-                    <fullName>Individual/Agent Credentials</fullName>
-                    <default>false</default>
-                    <label>Individual/Agent Credentials</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Digital_Signature__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -232,7 +177,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email__c</fullName>
         <externalId>false</externalId>
         <label>Email</label>
@@ -241,36 +187,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>FTP_RETS__c</fullName>
-        <externalId>false</externalId>
-        <label>FTP/ RETS</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>FTP</fullName>
-                    <default>false</default>
-                    <label>FTP</label>
-                </value>
-                <value>
-                    <fullName>RETS</fullName>
-                    <default>false</default>
-                    <label>RETS</label>
-                </value>
-                <value>
-                    <fullName>FTP &amp; RETS</fullName>
-                    <default>false</default>
-                    <label>FTP &amp; RETS</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Form_Needed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -278,7 +196,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Integrated_in_the_Past__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -286,7 +205,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Integration__c</fullName>
         <externalId>false</externalId>
         <label>Integration</label>
@@ -296,7 +216,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Known__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -304,7 +225,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MLS_Application_Link__c</fullName>
         <externalId>false</externalId>
         <label>MLS Application Link</label>
@@ -314,7 +236,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MLS_Code__c</fullName>
         <externalId>false</externalId>
         <label>MLS Code</label>
@@ -324,7 +247,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Minimum_Clients_Required_to_Sync__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What is the minimum number of brokers or agents we need to be eligible to sync with this MLS?</inlineHelpText>
@@ -336,7 +260,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_Clients_ALL_TIME_per_MLS__c</fullName>
         <externalId>false</externalId>
         <label>Number of Clients ALL TIME per MLS</label>
@@ -347,7 +272,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_LIVE_Clients__c</fullName>
         <externalId>false</externalId>
         <label>Number of LIVE Clients</label>
@@ -358,7 +284,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_Members__c</fullName>
         <externalId>false</externalId>
         <label>Number of Members</label>
@@ -369,7 +296,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone_Number__c</fullName>
         <externalId>false</externalId>
         <label>Phone Number</label>
@@ -377,7 +305,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Process_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Process / Notes</label>
@@ -386,7 +315,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Prospects_in_Area_Covered_by_MLS__c</fullName>
         <externalId>false</externalId>
         <label>Prospects in Area Covered by MLS</label>
@@ -396,7 +326,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_Login__c</fullName>
         <externalId>false</externalId>
         <label>RETS Login</label>
@@ -406,7 +337,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_Password__c</fullName>
         <externalId>false</externalId>
         <label>RETS Password</label>
@@ -416,7 +348,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_URL__c</fullName>
         <externalId>false</externalId>
         <label>RETS URL</label>
@@ -424,7 +357,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_User_Agent_Login__c</fullName>
         <externalId>false</externalId>
         <label>RETS User Agent Login</label>
@@ -434,7 +368,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_User_Agent_Password__c</fullName>
         <externalId>false</externalId>
         <label>RETS User Agent Password</label>
@@ -444,7 +379,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_User_Agent__c</fullName>
         <externalId>false</externalId>
         <label>RETS User Agent</label>
@@ -454,7 +390,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RETS_Version__c</fullName>
         <externalId>false</externalId>
         <label>RETS Version</label>
@@ -464,35 +401,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>Requires_Broker_Approval__c</fullName>
-        <externalId>false</externalId>
-        <label>Requires Broker Approval?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Unknown</fullName>
-                    <default>true</default>
-                    <label>Unknown</label>
-                </value>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sample_Site_s__c</fullName>
         <externalId>false</externalId>
         <label>Sample Site(s)</label>
@@ -501,7 +411,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sold_Data_Process__c</fullName>
         <externalId>false</externalId>
         <label>Sold Data Process</label>
@@ -510,7 +421,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Special_Photo_Type__c</fullName>
         <externalId>false</externalId>
         <label>Special Photo Type</label>
@@ -518,20 +430,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
-        <fullName>State__c</fullName>
-        <externalId>false</externalId>
-        <label>State</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>State</valueSetName>
-        </valueSet>
-        <visibleLines>6</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TORCHx_Approved_Vendor__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -539,7 +439,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Active_Account_MLS_Connection__c</fullName>
         <externalId>false</externalId>
         <label>Total Active Account MLS Connection</label>
@@ -558,7 +459,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_All_Time_Account_MLS_Connection__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Total of all Account MLS connection (active or inactive).</inlineHelpText>
@@ -568,7 +470,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Turn_Around_Time__c</fullName>
         <externalId>false</externalId>
         <label>Turn Around Time</label>
@@ -578,7 +481,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Undisclosed_Agent_Broker_Fees__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -586,7 +490,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Annual_Fee__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Annual Fee</label>
@@ -596,7 +501,8 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Fees__c</fullName>
         <externalId>false</externalId>
         <formula>IF(
@@ -613,7 +519,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Monthly_Fee__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Monthly Fee</label>
@@ -623,7 +530,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Quarterly_Fee__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Quarterly Fee</label>
@@ -633,7 +541,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Setup_Fee_Per_Client__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Setup Fee (Per Client)</label>
@@ -643,7 +552,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor_Setup_Fee_one_time__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Setup Fee (one time)</label>
@@ -653,7 +563,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vendor__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>examples: Flexmls, Rapattoni, Paragon</inlineHelpText>
@@ -664,7 +575,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Address__c</fullName>
         <externalId>false</externalId>
         <label>Website Address</label>
@@ -672,7 +584,8 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Considerations__c</fullName>
         <externalId>false</externalId>
         <label>Website Considerations</label>
@@ -681,29 +594,167 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>MLS</label><nameField>
+    </fields>
+    <fields>
+        <fullName>Agent_Broker_Initiates_Process__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No</globalPicklist>
+        <label>Agent/Broker Initiates Process</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Brokers_Only__c</fullName>
+        <externalId>false</externalId>
+        <label>Brokers Only?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Compliance_Review_Required_For_Approval__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Yes_No</globalPicklist>
+        <label>Compliance Review Required For Approval</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Credential_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Credential Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Vendor Credentials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Broker Credentials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Individual/Agent Credentials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>FTP_RETS__c</fullName>
+        <externalId>false</externalId>
+        <label>FTP/ RETS</label>
+        <picklist>
+            <picklistValues>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RETS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FTP &amp; RETS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Broker_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Requires Broker Approval?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>State</globalPicklist>
+        <label>State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>MLS</label>
+    <nameField>
         <label>MLS Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>MLS</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </nameField>
+    <pluralLabel>MLS</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>MLS</fullName>
         <active>true</active>
         <label>MLS</label>
-        <picklistValues>
-            <picklist>Agent_Broker_Initiates_Process__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
         <picklistValues>
             <picklist>Brokers_Only__c</picklist>
             <values>
@@ -713,17 +764,6 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
             <values>
                 <fullName>Unknown</fullName>
                 <default>true</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Compliance_Review_Required_For_Approval__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
             </values>
             <values>
                 <fullName>Yes</fullName>
@@ -776,7 +816,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>State__c</picklist>
+            <picklist>State</picklist>
             <values>
                 <fullName>AK</fullName>
                 <default>false</default>
@@ -978,10 +1018,23 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><validationRules>
+        <picklistValues>
+            <picklist>Yes_No</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
         <fullName>Cannot_Sync_Reason</fullName>
         <active>true</active>
         <errorConditionFormula>Cannot_Sync__c = TRUE &amp;&amp; ISBLANK(Cannot_Sync_Reason__c)</errorConditionFormula>
         <errorDisplayField>Cannot_Sync_Reason__c</errorDisplayField>
         <errorMessage>Please put a Cannot Sync Reason</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

@@ -1,34 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>Definition__c</fullName>
         <externalId>false</externalId>
         <label>Definition</label>
@@ -37,7 +52,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Last_Local_Status_Change__c</fullName>
         <externalId>false</externalId>
         <label>Last Local Status Change</label>
@@ -45,7 +61,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Last_National_Status_Change__c</fullName>
         <externalId>false</externalId>
         <label>Last National Status Change</label>
@@ -53,7 +70,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Local_Segment_Color__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -71,35 +89,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>Local_Segment_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Local Segment Status</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>RED</fullName>
-                    <default>false</default>
-                    <label>RED</label>
-                </value>
-                <value>
-                    <fullName>YELLOW</fullName>
-                    <default>false</default>
-                    <label>YELLOW</label>
-                </value>
-                <value>
-                    <fullName>GREEN</fullName>
-                    <default>false</default>
-                    <label>GREEN</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>National_Segment_Color__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -117,35 +108,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>National_Segment_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>National Segment Status</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>RED</fullName>
-                    <default>false</default>
-                    <label>RED</label>
-                </value>
-                <value>
-                    <fullName>YELLOW</fullName>
-                    <default>false</default>
-                    <label>YELLOW</label>
-                </value>
-                <value>
-                    <fullName>GREEN</fullName>
-                    <default>false</default>
-                    <label>GREEN</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Potential_Yellow__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -153,67 +117,124 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
+        <fullName>Local_Segment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Segment Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>RED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YELLOW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GREEN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>National_Segment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>National Segment Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>RED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YELLOW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GREEN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Prior_Local_Status__c</fullName>
         <externalId>false</externalId>
         <label>Prior Local Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>RED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YELLOW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GREEN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>RED</fullName>
-                    <default>false</default>
-                    <label>RED</label>
-                </value>
-                <value>
-                    <fullName>YELLOW</fullName>
-                    <default>false</default>
-                    <label>YELLOW</label>
-                </value>
-                <value>
-                    <fullName>GREEN</fullName>
-                    <default>false</default>
-                    <label>GREEN</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Prior_National_Status__c</fullName>
         <externalId>false</externalId>
         <label>Prior National Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>RED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YELLOW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GREEN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>RED</fullName>
-                    <default>false</default>
-                    <label>RED</label>
-                </value>
-                <value>
-                    <fullName>YELLOW</fullName>
-                    <default>false</default>
-                    <label>YELLOW</label>
-                </value>
-                <value>
-                    <fullName>GREEN</fullName>
-                    <default>false</default>
-                    <label>GREEN</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>For segment status in YL</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Segment</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For segment status in YL</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Segment</label>
+    <nameField>
         <label>Segment Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Segments</pluralLabel><searchLayouts>
+    </nameField>
+    <pluralLabel>Segments</pluralLabel>
+    <searchLayouts>
         <customTabListAdditionalFields>Definition__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Local_Segment_Color__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>National_Segment_Color__c</customTabListAdditionalFields>
@@ -229,7 +250,9 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <searchResultsAdditionalFields>Definition__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Local_Segment_Status__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>National_Segment_Status__c</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>National_Segment_Color__c</columns>
@@ -238,7 +261,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>All_National_Green_Segments</fullName>
         <columns>NAME</columns>
         <columns>Definition__c</columns>
@@ -258,7 +282,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
             <role>NationalClientPartnerSales</role>
             <role>VPNationalAccountsSales</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>All_National_Red_Segments</fullName>
         <columns>NAME</columns>
         <columns>Definition__c</columns>
@@ -277,7 +302,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
             <role>NationalClientPartnerSales</role>
             <role>VPNationalAccountsSales</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>All_National_Yellow_Segments</fullName>
         <columns>NAME</columns>
         <columns>Definition__c</columns>
@@ -296,7 +322,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
             <role>NationalClientPartnerSales</role>
             <role>VPNationalAccountsSales</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Rogers_Support_Segment</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -304,7 +331,8 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Segment</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -312,4 +340,5 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

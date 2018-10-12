@@ -33,81 +33,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Data_Type__c</fullName>
-        <description>Data type of the value for the label/ value pair</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <label>Data Type</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Date</fullName>
-                    <default>true</default>
-                    <label>Date</label>
-                </value>
-                <value>
-                    <fullName>DateTime</fullName>
-                    <default>false</default>
-                    <label>DateTime</label>
-                </value>
-                <value>
-                    <fullName>Decimal</fullName>
-                    <default>false</default>
-                    <label>Decimal</label>
-                </value>
-                <value>
-                    <fullName>Integer</fullName>
-                    <default>false</default>
-                    <label>Integer</label>
-                </value>
-                <value>
-                    <fullName>String</fullName>
-                    <default>false</default>
-                    <label>String</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>External_System_Name__c</fullName>
-        <description>Name selection for the external system/ platform integrated with Salesforce (Yodle SFDC)</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <label>External System Name</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>CTS</fullName>
-                    <default>true</default>
-                    <label>CTS</label>
-                </value>
-                <value>
-                    <fullName>Marketo</fullName>
-                    <default>false</default>
-                    <label>Marketo</label>
-                </value>
-                <value>
-                    <fullName>Yodle Live</fullName>
-                    <default>false</default>
-                    <label>Yodle Live</label>
-                </value>
-                <value>
-                    <fullName>Acquisio SFDC</fullName>
-                    <default>false</default>
-                    <label>Acquisio SFDC</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Is_Active__c</fullName>
         <defaultValue>true</defaultValue>
         <description>Flag/ indicator signifying if the configuration setting is active or inactive; inactive configurations should not be used</description>
@@ -115,6 +40,68 @@
         <fieldManageability>DeveloperControlled</fieldManageability>
         <label>Is Active</label>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_Type__c</fullName>
+        <description>Data type of the value for the label/ value pair</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Data Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Date</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DateTime</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decimal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>String</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>External_System_Name__c</fullName>
+        <description>Name selection for the external system/ platform integrated with Salesforce (Yodle SFDC)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>External System Name</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CTS</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yodle Live</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Acquisio SFDC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
     </fields>
     <description>Configurations and settings for various integrations between Salesforce and external systems/ platforms.</description>
     <label>Integration Configuration</label>

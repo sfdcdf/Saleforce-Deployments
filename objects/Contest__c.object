@@ -1,34 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>Complete__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -36,7 +51,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Count_of_Yodlers__c</fullName>
         <externalId>false</externalId>
         <label>Count of Yodlers</label>
@@ -45,7 +61,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description__c</fullName>
         <externalId>false</externalId>
         <label>Description</label>
@@ -54,7 +71,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>End_Date__c</fullName>
         <externalId>false</externalId>
         <label>End Date</label>
@@ -62,7 +80,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Feedback_Potential_Changes__c</fullName>
         <externalId>false</externalId>
         <label>Feedback/Potential Changes</label>
@@ -71,7 +90,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Money_Allotted__c</fullName>
         <externalId>false</externalId>
         <label>Money Allotted</label>
@@ -81,7 +101,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes__c</fullName>
         <externalId>false</externalId>
         <label>Notes</label>
@@ -90,7 +111,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Percent_Spent__c</fullName>
         <externalId>false</externalId>
         <formula>Total_Spent__c / Money_Allotted__c</formula>
@@ -102,7 +124,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Prize_s__c</fullName>
         <externalId>false</externalId>
         <label>Prize(s)</label>
@@ -110,73 +133,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
-        <fullName>Rating__c</fullName>
-        <externalId>false</externalId>
-        <label>Rating</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>1-not effective. no impact on rep performance</fullName>
-                    <default>false</default>
-                    <label>1-not effective. no impact on rep performance</label>
-                </value>
-                <value>
-                    <fullName>2-Somewhat effective.  Some of the team worked harder to win</fullName>
-                    <default>false</default>
-                    <label>2-Somewhat effective.  Some of the team worked harder to win</label>
-                </value>
-                <value>
-                    <fullName>3-Effective.  Most of the team was working to win</fullName>
-                    <default>false</default>
-                    <label>3-Effective.  Most of the team was working to win</label>
-                </value>
-                <value>
-                    <fullName>4-Very effective.  Whole team was excited &amp; invested</fullName>
-                    <default>false</default>
-                    <label>4-Very effective.  Whole team was excited &amp; invested</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
-        <fullName>Region__c</fullName>
-        <externalId>false</externalId>
-        <label>Region</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>ALL</fullName>
-                    <default>false</default>
-                    <label>ALL</label>
-                </value>
-                <value>
-                    <fullName>National</fullName>
-                    <default>false</default>
-                    <label>National</label>
-                </value>
-                <value>
-                    <fullName>South</fullName>
-                    <default>false</default>
-                    <label>South</label>
-                </value>
-                <value>
-                    <fullName>North</fullName>
-                    <default>false</default>
-                    <label>North</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>Start Date</label>
@@ -184,174 +142,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
-        <fullName>Team__c</fullName>
-        <externalId>false</externalId>
-        <label>Team</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Region__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>ALL</fullName>
-                    <default>false</default>
-                    <label>ALL</label>
-                </value>
-                <value>
-                    <fullName>Association</fullName>
-                    <default>false</default>
-                    <label>Association</label>
-                </value>
-                <value>
-                    <fullName>AZ-Teitelman</fullName>
-                    <default>false</default>
-                    <label>AZ-Teitelman</label>
-                </value>
-                <value>
-                    <fullName>AZ-Venneri</fullName>
-                    <default>false</default>
-                    <label>AZ-Venneri</label>
-                </value>
-                <value>
-                    <fullName>BOS-Albee</fullName>
-                    <default>false</default>
-                    <label>BOS-Albee</label>
-                </value>
-                <value>
-                    <fullName>BOS-Gross</fullName>
-                    <default>false</default>
-                    <label>BOS-Gross</label>
-                </value>
-                <value>
-                    <fullName>BOS-Williams</fullName>
-                    <default>false</default>
-                    <label>BOS-Williams</label>
-                </value>
-                <value>
-                    <fullName>CLT-Eaton</fullName>
-                    <default>false</default>
-                    <label>CLT-Eaton</label>
-                </value>
-                <value>
-                    <fullName>CLT-Pirrone</fullName>
-                    <default>false</default>
-                    <label>CLT-Pirrone</label>
-                </value>
-                <value>
-                    <fullName>National-Sherry</fullName>
-                    <default>false</default>
-                    <label>National-Sherry</label>
-                </value>
-                <value>
-                    <fullName>National-Zang</fullName>
-                    <default>false</default>
-                    <label>National-Zang</label>
-                </value>
-                <value>
-                    <fullName>NYC-Defina</fullName>
-                    <default>false</default>
-                    <label>NYC-Defina</label>
-                </value>
-                <value>
-                    <fullName>NYC-Depatria</fullName>
-                    <default>false</default>
-                    <label>NYC-Depatria</label>
-                </value>
-                <value>
-                    <fullName>NYC-Rosner</fullName>
-                    <default>false</default>
-                    <label>NYC-Rosner</label>
-                </value>
-                <value>
-                    <fullName>PHL</fullName>
-                    <default>false</default>
-                    <label>PHL</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>National</controllingFieldValue>
-                <controllingFieldValue>South</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>ALL</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>South</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>Association</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>South</controllingFieldValue>
-                <valueName>AZ-Teitelman</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>South</controllingFieldValue>
-                <valueName>AZ-Venneri</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>BOS-Albee</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>BOS-Gross</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>BOS-Williams</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>South</controllingFieldValue>
-                <valueName>CLT-Eaton</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>South</controllingFieldValue>
-                <valueName>CLT-Pirrone</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>National-Sherry</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>National-Zang</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>NYC-Defina</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>NYC-Depatria</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>NYC-Rosner</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>ALL</controllingFieldValue>
-                <controllingFieldValue>North</controllingFieldValue>
-                <valueName>PHL</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Flight_Costs__c</fullName>
         <externalId>false</externalId>
         <label>Total Flight Costs</label>
@@ -361,7 +153,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Total_Spent__c</fullName>
         <externalId>false</externalId>
         <label>Total Spent</label>
@@ -371,97 +164,265 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1-not effective. no impact on rep performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2-Somewhat effective.  Some of the team worked harder to win</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3-Effective.  Most of the team was working to win</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4-Very effective.  Whole team was excited &amp; invested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ALL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Team</label>
+        <picklist>
+            <controllingField>Region__c</controllingField>
+            <picklistValues>
+                <fullName>ALL</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>National</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+                <controllingFieldValues>South</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Association</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+                <controllingFieldValues>South</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AZ-Teitelman</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>South</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AZ-Venneri</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>South</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BOS-Albee</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BOS-Gross</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BOS-Williams</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLT-Eaton</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>South</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLT-Pirrone</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>South</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National-Sherry</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>National</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National-Zang</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>National</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NYC-Defina</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NYC-Depatria</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NYC-Rosner</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHL</fullName>
+                <default>false</default>
+                <controllingFieldValues>ALL</controllingFieldValues>
+                <controllingFieldValues>North</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Type__c</fullName>
         <externalId>false</externalId>
         <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Team</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Region</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Promo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Hire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Individual</fullName>
-                    <default>false</default>
-                    <label>Individual</label>
-                </value>
-                <value>
-                    <fullName>Team</fullName>
-                    <default>false</default>
-                    <label>Team</label>
-                </value>
-                <value>
-                    <fullName>Region</fullName>
-                    <default>false</default>
-                    <label>Region</label>
-                </value>
-                <value>
-                    <fullName>Customer Promo</fullName>
-                    <default>false</default>
-                    <label>Customer Promo</label>
-                </value>
-                <value>
-                    <fullName>New Hire</fullName>
-                    <default>false</default>
-                    <label>New Hire</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>parameters__c</fullName>
         <externalId>false</externalId>
         <label>Parameters</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Deal #</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bookings Revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Launches Revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demos</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Talk-Time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>% to Goal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Deal #</fullName>
-                    <default>false</default>
-                    <label>Deal #</label>
-                </value>
-                <value>
-                    <fullName>Bookings Revenue</fullName>
-                    <default>false</default>
-                    <label>Bookings Revenue</label>
-                </value>
-                <value>
-                    <fullName>Launches Revenue</fullName>
-                    <default>false</default>
-                    <label>Launches Revenue</label>
-                </value>
-                <value>
-                    <fullName>Dials</fullName>
-                    <default>false</default>
-                    <label>Dials</label>
-                </value>
-                <value>
-                    <fullName>Demos</fullName>
-                    <default>false</default>
-                    <label>Demos</label>
-                </value>
-                <value>
-                    <fullName>Talk-Time</fullName>
-                    <default>false</default>
-                    <label>Talk-Time</label>
-                </value>
-                <value>
-                    <fullName>% to Goal</fullName>
-                    <default>false</default>
-                    <label>% to Goal</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Used for tracking sales contests and promos</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Contest</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used for tracking sales contests and promos</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Contest</label>
+    <nameField>
         <label>Contest Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Contests</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </nameField>
+    <pluralLabel>Contests</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>Rogers_Support_Contest</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -469,7 +430,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Contest</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -477,7 +439,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Events</fullName>
         <active>true</active>
         <label>Events</label>
@@ -636,7 +599,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>master</fullName>
         <active>true</active>
         <label>master</label>
@@ -795,4 +759,5 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

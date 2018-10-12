@@ -1,31 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Add</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><compactLayouts>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayouts>
         <fullName>Product</fullName>
         <fields>Name</fields>
         <fields>IsActive</fields>
@@ -33,7 +47,8 @@
         <fields>IncludeProductsSold__c</fields>
         <fields>ProductChargeType__c</fields>
         <label>Product</label>
-    </compactLayouts><fields>
+    </compactLayouts>
+    <fields>
         <fullName>Create_NCS_Case__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Decides wether an NCS Case should be created based on the Product</description>
@@ -42,51 +57,45 @@
         <label>Create NCS Case</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DisplayUrl</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ExternalDataSourceId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ExternalId</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
-        <fullName>Family</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IncludeProductsSold__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Include Products Sold</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsActive</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
-        <fullName>ProductChargeType__c</fullName>
-        <externalId>false</externalId>
-        <label>Product Charge Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>ProductChargeType</valueSetName>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductCode</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductDescriptionClient__c</fullName>
         <description>Client Facing Product Description</description>
         <externalId>false</externalId>
@@ -95,7 +104,8 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductNameClient__c</fullName>
         <description>Default Client Facing Product Description</description>
         <externalId>false</externalId>
@@ -105,13 +115,75 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
-        <fullName>QuantityUnitOfMeasure</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StockKeepingUnit</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foundations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Get Found</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Local Business Listings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Local SEO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pay per Click</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPC Seasonal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Setup Fee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ProductChargeType__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>ProductChargeType</globalPicklist>
+        <label>Product Charge Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Each</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
         <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>PRODUCT2.FAMILY</customTabListAdditionalFields>
@@ -134,7 +206,8 @@
         <searchResultsAdditionalFields>ProductChargeType__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT2.ACTIVE</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><listViews>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>AllProducts</fullName>
         <columns>PRODUCT2.NAME</columns>
         <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
@@ -143,4 +216,5 @@
         <columns>PRODUCT2.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All Products</label>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

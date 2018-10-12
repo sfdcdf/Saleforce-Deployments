@@ -1,25 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
         <fullName>Active__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Active</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Additional_Default_Values__c</fullName>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Additional Default Values</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Additional_SOQL_Criteria__c</fullName>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Additional SOQL Criteria</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Default_Values__c</fullName>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
@@ -27,7 +31,8 @@
         <label>Default Values</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lookup_Relationships__c</fullName>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
@@ -35,7 +40,8 @@
         <label>Lookup Relationships</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Push_New_Record_Data_To_Marketo__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -43,37 +49,36 @@
         <inlineHelpText>Use caution when checking this check box! Talk to developer, if unsure if you should check this box or not.</inlineHelpText>
         <label>Push New Record Data To Marketo</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SOQL__c</fullName>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <label>SOQL</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Supported_Objects_for_Record_Auto_Create__c</fullName>
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Supported Objects for Record Auto Create</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Case</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organic_Analysis__c</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
         <required>true</required>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Case</fullName>
-                    <default>true</default>
-                    <label>Case</label>
-                </value>
-                <value>
-                    <fullName>Organic_Analysis__c</fullName>
-                    <default>false</default>
-                    <label>Organic Case</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><label>Daily Scheduled Record Auto Create</label><pluralLabel>Daily Scheduled Record Auto Create</pluralLabel><visibility>Public</visibility><listViews>
+    </fields><label>Daily Scheduled Record Auto Create</label><pluralLabel>Daily Scheduled Record Auto Create</pluralLabel><visibility>Public</visibility>
+    <listViews>
         <fullName>All_More_Details</fullName>
         <columns>MasterLabel</columns>
         <columns>DeveloperName</columns>
@@ -87,4 +92,5 @@
         <sharedTo>
             <group>Sys_Local_Admin</group>
         </sharedTo>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

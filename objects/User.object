@@ -55,6 +55,10 @@
         <actionName>UserActivationAction</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Ability_to_Complete_Install_Wrkst__c</fullName>
         <defaultValue>false</defaultValue>
@@ -186,64 +190,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Plan_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Plan Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Mgr</fullName>
-                    <default>false</default>
-                    <label>Mgr</label>
-                </value>
-                <value>
-                    <fullName>NAE</fullName>
-                    <default>false</default>
-                    <label>NAE</label>
-                </value>
-                <value>
-                    <fullName>NAM</fullName>
-                    <default>false</default>
-                    <label>NAM</label>
-                </value>
-                <value>
-                    <fullName>non-sales</fullName>
-                    <default>false</default>
-                    <label>non-sales</label>
-                </value>
-                <value>
-                    <fullName>SDR</fullName>
-                    <default>false</default>
-                    <label>SDR</label>
-                </value>
-                <value>
-                    <fullName>SE-BOB</fullName>
-                    <default>false</default>
-                    <label>SE-BOB</label>
-                </value>
-                <value>
-                    <fullName>SE-NB</fullName>
-                    <default>false</default>
-                    <label>SE-NB</label>
-                </value>
-                <value>
-                    <fullName>SR-BoB</fullName>
-                    <default>false</default>
-                    <label>SR-BoB</label>
-                </value>
-                <value>
-                    <fullName>SR-NB</fullName>
-                    <default>false</default>
-                    <label>SR-NB</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Previous_Employer__c</fullName>
         <externalId>false</externalId>
         <label>Previous Employer</label>
@@ -262,49 +208,6 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Recruiter__c</fullName>
-        <externalId>false</externalId>
-        <label>Recruiter</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Aaron Cain</fullName>
-                    <default>false</default>
-                    <label>Aaron Cain</label>
-                </value>
-                <value>
-                    <fullName>Evan Anger</fullName>
-                    <default>false</default>
-                    <label>Evan Anger</label>
-                </value>
-                <value>
-                    <fullName>Heather Sorrels</fullName>
-                    <default>false</default>
-                    <label>Heather Sorrels</label>
-                </value>
-                <value>
-                    <fullName>Kristin Abraham</fullName>
-                    <default>false</default>
-                    <label>Kristin Abraham</label>
-                </value>
-                <value>
-                    <fullName>Nicole Comas</fullName>
-                    <default>false</default>
-                    <label>Nicole Comas</label>
-                </value>
-                <value>
-                    <fullName>Pam Russo</fullName>
-                    <default>false</default>
-                    <label>Pam Russo</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Retention_Associate__c</fullName>
@@ -346,94 +249,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Source__c</fullName>
-        <externalId>false</externalId>
-        <label>Source</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Agency</fullName>
-                    <default>false</default>
-                    <label>Agency</label>
-                </value>
-                <value>
-                    <fullName>CareerBuilder Applicant</fullName>
-                    <default>false</default>
-                    <label>CareerBuilder Applicant</label>
-                </value>
-                <value>
-                    <fullName>CareerBuilder Sourced</fullName>
-                    <default>false</default>
-                    <label>CareerBuilder Sourced</label>
-                </value>
-                <value>
-                    <fullName>Craigslist</fullName>
-                    <default>false</default>
-                    <label>Craigslist</label>
-                </value>
-                <value>
-                    <fullName>Hotjobs Applicant</fullName>
-                    <default>false</default>
-                    <label>Hotjobs Applicant</label>
-                </value>
-                <value>
-                    <fullName>HotJobs Sourced</fullName>
-                    <default>false</default>
-                    <label>HotJobs Sourced</label>
-                </value>
-                <value>
-                    <fullName>Ladders</fullName>
-                    <default>false</default>
-                    <label>Ladders</label>
-                </value>
-                <value>
-                    <fullName>Linked In</fullName>
-                    <default>false</default>
-                    <label>Linked In</label>
-                </value>
-                <value>
-                    <fullName>Monster Applicant</fullName>
-                    <default>false</default>
-                    <label>Monster Applicant</label>
-                </value>
-                <value>
-                    <fullName>Monster Sourced</fullName>
-                    <default>false</default>
-                    <label>Monster Sourced</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Outside Referral</fullName>
-                    <default>false</default>
-                    <label>Outside Referral</label>
-                </value>
-                <value>
-                    <fullName>Referral</fullName>
-                    <default>false</default>
-                    <label>Referral</label>
-                </value>
-                <value>
-                    <fullName>Word of Mouth</fullName>
-                    <default>false</default>
-                    <label>Word of Mouth</label>
-                </value>
-                <value>
-                    <fullName>Yodle Careers</fullName>
-                    <default>false</default>
-                    <label>Yodle Careers</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Term_Date__c</fullName>
         <externalId>false</externalId>
         <label>Term Date</label>
@@ -461,216 +276,12 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Training_Class__c</fullName>
-        <externalId>false</externalId>
-        <label>Training Class</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>July 2012</fullName>
-                    <default>false</default>
-                    <label>July 2012</label>
-                </value>
-                <value>
-                    <fullName>August 2012</fullName>
-                    <default>false</default>
-                    <label>August 2012</label>
-                </value>
-                <value>
-                    <fullName>September 2012</fullName>
-                    <default>false</default>
-                    <label>September 2012</label>
-                </value>
-                <value>
-                    <fullName>October 2012</fullName>
-                    <default>false</default>
-                    <label>October 2012</label>
-                </value>
-                <value>
-                    <fullName>November 2012</fullName>
-                    <default>false</default>
-                    <label>November 2012</label>
-                </value>
-                <value>
-                    <fullName>December 2012</fullName>
-                    <default>false</default>
-                    <label>December 2012</label>
-                </value>
-                <value>
-                    <fullName>Jul-08</fullName>
-                    <default>false</default>
-                    <label>Jul-08</label>
-                </value>
-                <value>
-                    <fullName>Aug-08</fullName>
-                    <default>false</default>
-                    <label>Aug-08</label>
-                </value>
-                <value>
-                    <fullName>Sep-08</fullName>
-                    <default>false</default>
-                    <label>Sep-08</label>
-                </value>
-                <value>
-                    <fullName>Oct-08</fullName>
-                    <default>false</default>
-                    <label>Oct-08</label>
-                </value>
-                <value>
-                    <fullName>Nov-08</fullName>
-                    <default>false</default>
-                    <label>Nov-08</label>
-                </value>
-                <value>
-                    <fullName>Dec-08</fullName>
-                    <default>false</default>
-                    <label>Dec-08</label>
-                </value>
-                <value>
-                    <fullName>Jan-09</fullName>
-                    <default>false</default>
-                    <label>Jan-09</label>
-                </value>
-                <value>
-                    <fullName>Feb-09</fullName>
-                    <default>false</default>
-                    <label>Feb-09</label>
-                </value>
-                <value>
-                    <fullName>Mar-09</fullName>
-                    <default>false</default>
-                    <label>Mar-09</label>
-                </value>
-                <value>
-                    <fullName>Apr-09</fullName>
-                    <default>false</default>
-                    <label>Apr-09</label>
-                </value>
-                <value>
-                    <fullName>May-09</fullName>
-                    <default>false</default>
-                    <label>May-09</label>
-                </value>
-                <value>
-                    <fullName>Jun-09</fullName>
-                    <default>false</default>
-                    <label>Jun-09</label>
-                </value>
-                <value>
-                    <fullName>Jul-09</fullName>
-                    <default>false</default>
-                    <label>Jul-09</label>
-                </value>
-                <value>
-                    <fullName>Aug-09</fullName>
-                    <default>false</default>
-                    <label>Aug-09</label>
-                </value>
-                <value>
-                    <fullName>Sep-09</fullName>
-                    <default>false</default>
-                    <label>Sep-09</label>
-                </value>
-                <value>
-                    <fullName>Oct-09</fullName>
-                    <default>false</default>
-                    <label>Oct-09</label>
-                </value>
-                <value>
-                    <fullName>Nov-09</fullName>
-                    <default>false</default>
-                    <label>Nov-09</label>
-                </value>
-                <value>
-                    <fullName>Dec-09</fullName>
-                    <default>false</default>
-                    <label>Dec-09</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Winback_Team__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Winback Team</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>YBN_Consultant_Team__c</fullName>
-        <externalId>false</externalId>
-        <label>YBN Consultant Team</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Miracle-Ear</fullName>
-                    <default>false</default>
-                    <label>Miracle-Ear</label>
-                </value>
-                <value>
-                    <fullName>Dwyer</fullName>
-                    <default>false</default>
-                    <label>Dwyer</label>
-                </value>
-                <value>
-                    <fullName>Tier 2 - Team A</fullName>
-                    <default>false</default>
-                    <label>Tier 2 - Team A</label>
-                </value>
-                <value>
-                    <fullName>Tier 2 - Team B</fullName>
-                    <default>false</default>
-                    <label>Tier 2 - Team B</label>
-                </value>
-                <value>
-                    <fullName>Tier 3 - IB/OB</fullName>
-                    <default>false</default>
-                    <label>Tier 3 - IB/OB</label>
-                </value>
-                <value>
-                    <fullName>Tier 3 - IB Only</fullName>
-                    <default>false</default>
-                    <label>Tier 3 - IB Only</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Years_of_Experience__c</fullName>
-        <externalId>false</externalId>
-        <label>Years of Experience</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>0-2</fullName>
-                    <default>false</default>
-                    <label>0-2</label>
-                </value>
-                <value>
-                    <fullName>3-5</fullName>
-                    <default>false</default>
-                    <label>3-5</label>
-                </value>
-                <value>
-                    <fullName>5+</fullName>
-                    <default>false</default>
-                    <label>5+</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</fullName>
@@ -695,54 +306,363 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Plan_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Mgr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NAE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>non-sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SDR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SE-BOB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SE-NB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SR-BoB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SR-NB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Recruiter__c</fullName>
+        <externalId>false</externalId>
+        <label>Recruiter</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Aaron Cain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Evan Anger</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Heather Sorrels</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kristin Abraham</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nicole Comas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pam Russo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CareerBuilder Applicant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CareerBuilder Sourced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Craigslist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hotjobs Applicant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HotJobs Sourced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ladders</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Linked In</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Monster Applicant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Monster Sourced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outside Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of Mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yodle Careers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Team_Assignment__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Team Assignments for LiveOps routing and reporting in Salesforce</inlineHelpText>
         <label>Team Assignment</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Blue Team (AMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red Team (AMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Glasgow (AMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AMJax (AMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inbound (AMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AM Red Beard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AM No Beard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Blue Team (AMP)</fullName>
-                    <default>false</default>
-                    <label>Blue Team (AMP)</label>
-                </value>
-                <value>
-                    <fullName>Red Team (AMP)</fullName>
-                    <default>false</default>
-                    <label>Red Team (AMP)</label>
-                </value>
-                <value>
-                    <fullName>New Glasgow (AMP)</fullName>
-                    <default>false</default>
-                    <label>New Glasgow (AMP)</label>
-                </value>
-                <value>
-                    <fullName>AMJax (AMP)</fullName>
-                    <default>false</default>
-                    <label>AMJax (AMP)</label>
-                </value>
-                <value>
-                    <fullName>Inbound (AMP)</fullName>
-                    <default>false</default>
-                    <label>Inbound (AMP)</label>
-                </value>
-                <value>
-                    <fullName>AM Red Beard</fullName>
-                    <default>false</default>
-                    <label>AM Red Beard</label>
-                </value>
-                <value>
-                    <fullName>AM No Beard</fullName>
-                    <default>false</default>
-                    <label>AM No Beard</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Training_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Training Class</label>
+        <picklist>
+            <picklistValues>
+                <fullName>July 2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>August 2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>September 2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>October 2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>November 2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>December 2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jul-08</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aug-08</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sep-08</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oct-08</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nov-08</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dec-08</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jan-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feb-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mar-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apr-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>May-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jun-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jul-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aug-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sep-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oct-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nov-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dec-09</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>YBN_Consultant_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>YBN Consultant Team</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Miracle-Ear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dwyer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2 - Team A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2 - Team B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 3 - IB/OB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 3 - IB Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Years_of_Experience__c</fullName>
+        <externalId>false</externalId>
+        <label>Years of Experience</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0-2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3-5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5+</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><externalSharingModel>Private</externalSharingModel><searchLayouts>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>

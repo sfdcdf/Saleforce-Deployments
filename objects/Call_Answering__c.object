@@ -39,6 +39,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
@@ -106,55 +110,6 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Call_Answering_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Call Answering Status</label>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>New Setup</fullName>
-                    <default>true</default>
-                    <label>New Setup</label>
-                </value>
-                <value>
-                    <fullName>Change Requested</fullName>
-                    <default>false</default>
-                    <label>Change Requested</label>
-                </value>
-                <value>
-                    <fullName>Question/Issue</fullName>
-                    <default>false</default>
-                    <label>Question/Issue</label>
-                </value>
-                <value>
-                    <fullName>Cancel Service</fullName>
-                    <default>false</default>
-                    <label>Cancel Service</label>
-                </value>
-                <value>
-                    <fullName>Setup In Progress</fullName>
-                    <default>false</default>
-                    <label>Setup In Progress</label>
-                </value>
-                <value>
-                    <fullName>Active</fullName>
-                    <default>false</default>
-                    <label>Active</label>
-                </value>
-                <value>
-                    <fullName>Deactivated</fullName>
-                    <default>false</default>
-                    <label>Deactivated</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Cancel_Complete_Date__c</fullName>
@@ -460,30 +415,6 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Emergency_Hours__c</fullName>
-        <externalId>false</externalId>
-        <label>Available 24/7?</label>
-        <required>false</required>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>First_Response__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What do you want the call answering representative's first response to be following the caller's response to the greeting?</inlineHelpText>
@@ -633,119 +564,172 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>Call_Answering_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Answering Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New Setup</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Change Requested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Question/Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Setup In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deactivated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Emergency_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Available 24/7?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Setup_Type__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText># of Rings - Call is transferred to call answering after a certain number of rings
 Full Forward - Call is directly forwarded to call answering 
 After Hours - Call goes to call answering during specified time</inlineHelpText>
         <label>Setup Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName># of Rings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Full Forward</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>After Hours</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName># of Rings</fullName>
-                    <default>false</default>
-                    <label># of Rings</label>
-                </value>
-                <value>
-                    <fullName>Full Forward</fullName>
-                    <default>false</default>
-                    <label>Full Forward</label>
-                </value>
-                <value>
-                    <fullName>After Hours</fullName>
-                    <default>false</default>
-                    <label>After Hours</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Yodle_Call_Tracking_Numbers__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What are the call tracking lines associated with the account in Yodle Live that you would like associated with the Call Answering service?</inlineHelpText>
         <label>Yodle Call Tracking Numbers:</label>
+        <picklist>
+            <picklistValues>
+                <fullName>All Yodle Tracking Lines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specific Lines Below</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>All Yodle Tracking Lines</fullName>
-                    <default>false</default>
-                    <label>All Yodle Tracking Lines</label>
-                </value>
-                <value>
-                    <fullName>Specific Lines Below</fullName>
-                    <default>false</default>
-                    <label>Specific Lines Below</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>of_Rings_Before_Answer__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please note that if your voicemail picks up in the same amount of rings as you choose here than that might answer the call first</inlineHelpText>
         <label># of Rings Before Answer</label>
+        <picklist>
+            <controllingField>Setup_Type__c</controllingField>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+                <controllingFieldValues># of Rings</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+                <controllingFieldValues># of Rings</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+                <controllingFieldValues># of Rings</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+                <controllingFieldValues># of Rings</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <controllingField>Setup_Type__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>1</fullName>
-                    <default>false</default>
-                    <label>1</label>
-                </value>
-                <value>
-                    <fullName>2</fullName>
-                    <default>false</default>
-                    <label>2</label>
-                </value>
-                <value>
-                    <fullName>3</fullName>
-                    <default>false</default>
-                    <label>3</label>
-                </value>
-                <value>
-                    <fullName>4</fullName>
-                    <default>false</default>
-                    <label>4</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue># of Rings</controllingFieldValue>
-                <valueName>1</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue># of Rings</controllingFieldValue>
-                <valueName>2</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue># of Rings</controllingFieldValue>
-                <valueName>3</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue># of Rings</controllingFieldValue>
-                <valueName>4</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Call answering setup requests.</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Call Answering</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Call answering setup requests.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Call Answering</label>
+    <nameField>
         <displayFormat>CA-{0000}</displayFormat>
         <label>Call Answering Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Call Answering</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><startsWith>Vowel</startsWith><visibility>Public</visibility>
+    </nameField>
+    <pluralLabel>Call Answering</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <listViews>
         <fullName>Active_Call_Answering</fullName>
         <columns>NAME</columns>

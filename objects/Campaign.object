@@ -1,37 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>AddCampaign</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>AdvancedSetup</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <description>What Account is this Campaign associated with?</description>
@@ -42,83 +58,201 @@
         <relationshipName>Campaigns</relationshipName>
         <required>false</required>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ActualCost</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AmountAllOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AmountWonOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>BudgetedCost</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CampaignImageId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CampaignMemberRecordTypeId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>EndDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ExpectedResponse</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ExpectedRevenue</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyActualCost</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyAmountAllOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyAmountWonOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyBudgetedCost</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyExpectedRevenue</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberOfContacts</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberOfConvertedLeads</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberOfLeads</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberOfOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberOfResponses</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberOfWonOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HierarchyNumberSent</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsActive</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfContacts</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfConvertedLeads</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfLeads</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfResponses</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfWonOpportunities</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberSent</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ParentId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StartDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telemarketing</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thought Leadership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guerilla marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Print Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><searchLayouts>
         <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
@@ -134,7 +268,8 @@
         <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Read</sharingModel><listViews>
+    </searchLayouts><sharingModel>Read</sharingModel>
+    <listViews>
         <fullName>AllActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
         <columns>CAMPAIGN.START_DATE</columns>
@@ -174,7 +309,8 @@
             <role>YBN_Consultant</role>
             <role>YodleTeam</role>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>All_Campaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
         <columns>CAMPAIGN.START_DATE</columns>
@@ -188,7 +324,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
         <columns>CAMPAIGN.START_DATE</columns>
@@ -202,7 +339,8 @@
             <value>1</value>
         </filters>
         <label>My Active Campaigns</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>WBN_Campaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
         <columns>CAMPAIGN.START_DATE</columns>
@@ -223,7 +361,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Dialing_Campaign_Record_Type</fullName>
         <active>true</active>
         <description>Dialing Campaign used for Perfect Call.</description>
@@ -258,7 +397,8 @@
                 <default>true</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Marketing_Campaign_Record_Type</fullName>
         <active>true</active>
         <description>Use this record type for YBN Marketing Department Campaigns</description>
@@ -345,7 +485,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Standard_Campaign_Record_Type</fullName>
         <active>true</active>
         <description>Record Type for all campaigns not associated with PerfectCall.</description>
@@ -428,7 +569,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><webLinks>
+    </recordTypes>
+    <webLinks>
         <fullName>Dial_Campaign</fullName>
         <availability>online</availability>
         <description>Dial this Campaign using PerfectCall</description>
@@ -439,7 +581,8 @@
         <openType>replace</openType>
         <protected>false</protected>
         <url>/apex/PerfectCall_Dialer?cId={!Campaign.Id}</url>
-    </webLinks><webLinks>
+    </webLinks>
+    <webLinks>
         <fullName>ViewAllCampaignMembers</fullName>
         <availability>online</availability>
         <displayType>link</displayType>
@@ -458,4 +601,5 @@
         <showsStatus>false</showsStatus>
         <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
         <width>500</width>
-    </webLinks></CustomObject>
+    </webLinks>
+</CustomObject>

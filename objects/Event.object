@@ -1,40 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Decline</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>DeleteSeries</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>NewEvent</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>NewSfdcEvent</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Today</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><compactLayouts>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Subject</fields>
         <fields>ActivityDateTime</fields>
@@ -44,74 +61,148 @@
         <fields>Milestone__c</fields>
         <fields>Status__c</fields>
         <label>WBN-IL</label>
-    </compactLayouts><fields>
+    </compactLayouts>
+    <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ActivityDateTime</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ClientGuid</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DurationInMinutes</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>EndDateTime</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>EventSubtype</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsAllDayEvent</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsException</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsPrivate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsReminderSet</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsVisibleInSelfService</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Location</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OriginalInstanceDateTime</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ShowAs</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StartDateTime</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
-        <fullName>Subject</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields><fields>
-        <fullName>Type</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>WhatId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>WhoId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><sharingModel>ControlledByParent</sharingModel><recordTypes>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Letter/Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><sharingModel>ControlledByParent</sharingModel>
+    <recordTypes>
         <fullName>Calendar_Blocker</fullName>
         <active>true</active>
         <label>Calendar Blocker</label>
@@ -1745,7 +1836,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Retention_Events</fullName>
         <active>true</active>
         <description>Used for tracking Retention Meeting Events.</description>
@@ -2464,7 +2556,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>WBN_Calendar_Blocker</fullName>
         <active>true</active>
         <description>For blocking WBN Calendar</description>
@@ -4099,7 +4192,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Client_Services_Event</fullName>
         <active>true</active>
         <description>WBN</description>
@@ -5126,7 +5220,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Corporate_Location_Event</fullName>
         <active>true</active>
         <description>WBN</description>
@@ -6005,7 +6100,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Individual_Location_Event</fullName>
         <active>true</active>
         <compactLayoutAssignment>WBN_IL</compactLayoutAssignment>
@@ -6781,7 +6877,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Prospecting</fullName>
         <active>true</active>
         <description>WBN.</description>
@@ -7480,7 +7577,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Sales_Event_Corporate</fullName>
         <active>true</active>
         <description>WBn.</description>
@@ -8263,7 +8361,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Sales_Event_IL</fullName>
         <active>true</active>
         <compactLayoutAssignment>WBN_IL</compactLayoutAssignment>
@@ -8955,7 +9054,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><validationRules>
+    </recordTypes>
+    <validationRules>
         <fullName>Activity_detail_must_be_filled_out</fullName>
         <active>true</active>
         <errorConditionFormula>And(
@@ -8970,7 +9070,8 @@ ispickval( Activity_Type__c ,"Account Support"),
 ispickval( Activity_Type__c ,"Presale/Onboarding Work"), 
 ispickval( Activity_Type__c ,"Internal YBN Activities"))))</errorConditionFormula>
         <errorMessage>Activity Detail is Required</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Issue_Resolution_Detail_Required</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
@@ -8979,7 +9080,8 @@ ISPICKVAL(Status__c,"Completed"),
 ISblank( Issue_Resolution_Detail__c ))</errorConditionFormula>
         <errorDisplayField>Issue_Resolution_Detail__c</errorDisplayField>
         <errorMessage>Issue Resolution Detail is Required when Activity Detail = Issue Resolution</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Issues_or_Concerns_Summary_Required</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
@@ -8990,7 +9092,8 @@ ISPICKVAL( Issues_or_Concerns_Raised__c,"Yes" ),
 ISblank( Summary_of_Issues_or_Concerns__c ))</errorConditionFormula>
         <errorDisplayField>Summary_of_Issues_or_Concerns__c</errorDisplayField>
         <errorMessage>Summary of Issues or Concerns Required when Issues or Concerns Raised = Yes</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Issues_or_concerns_raised_required</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
@@ -9000,7 +9103,8 @@ ISPICKVAL(Status__c,"Completed"),
 ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
         <errorDisplayField>Issues_or_Concerns_Raised__c</errorDisplayField>
         <errorMessage>Issues or Concerns Raised Field Required</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Time_To_Complete_Activity_Required</fullName>
         <active>true</active>
         <errorConditionFormula>AND((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
@@ -9009,7 +9113,8 @@ ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
 (ISPICKVAL( Activity_Type__c, "Presale/Onboarding Work")))),ispickval( Status__c , "Completed"), 
 isnull( Time_To_Complete_Activity_Minutes__c ))</errorConditionFormula>
         <errorMessage>Must fill out time to complete activity (minutes)</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>activity_detail</fullName>
         <active>true</active>
         <errorConditionFormula>And(
@@ -9018,7 +9123,8 @@ ispickval( Status__c , "Completed"),
 ispickval( Milestone__c ,""),
 NOT(CONTAINS( Subject , "email:")))</errorConditionFormula>
         <errorMessage>"Activity Detail" field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>proactive_or_reactive</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -9026,7 +9132,8 @@ ispickval(Activity_Type__c ,"Client Services Activity"),
 ispickval( Status__c , "Completed"),
 ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
         <errorMessage>"Proactive or Reactive" field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_Interaction_Type_blank_event</fullName>
         <active>false</active>
         <errorConditionFormula>AND(
@@ -9041,7 +9148,8 @@ Or(
  ISPICKVAL( Milestone__c ,"M008 - Solutions in Action Presentation"),
  ISPICKVAL( Milestone__c ,"M010 - Present Proposal &amp; SOW"))))</errorConditionFormula>
         <errorMessage>"Interaction Type" must be filled out.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_description_field_mus_be_filled_out</fullName>
         <active>true</active>
         <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
@@ -9051,7 +9159,8 @@ Or(
 isblank( Description ),
 ISPICKVAL(  Status__c , "Completed"))</errorConditionFormula>
         <errorMessage>Description field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_project_details_required</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -9059,4 +9168,5 @@ ISPICKVAL(  Status__c , "Completed"))</errorConditionFormula>
 ispickval( Status__c ,"Completed"),
 ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
         <errorMessage>"Project Details" field must be filled out</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

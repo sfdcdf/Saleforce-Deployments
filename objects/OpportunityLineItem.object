@@ -1,32 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>AddProduct</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ChoosePricebook</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>EditAllProduct</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Opportunity_Product</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-    </actionOverrides><compactLayouts>
+    </actionOverrides>
+    <compactLayouts>
         <fullName>Oppty_Product</fullName>
         <fields>Product2Id</fields>
         <fields>OpportunityId</fields>
@@ -34,7 +43,8 @@
         <fields>UnitPrice</fields>
         <fields>ProductChargeType__c</fields>
         <label>Oppty Product</label>
-    </compactLayouts><fields>
+    </compactLayouts>
+    <fields>
         <fullName>AnnualProductValue__c</fullName>
         <externalId>false</externalId>
         <label>Annual Product Value</label>
@@ -42,7 +52,8 @@
         <required>false</required>
         <scale>2</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CRV_One_Time__c</fullName>
         <description>Product Charge Type is One-Time, multiply the Total Price by 0.25.</description>
         <externalId>false</externalId>
@@ -56,7 +67,8 @@ TEXT(ProductChargeType__c),"One-Time",TotalPrice * 0.25, 0
         <required>false</required>
         <scale>2</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CRV_Recurring_Multiplier__c</fullName>
         <description>Determines the multiplier for commission based on the contract term..</description>
         <externalId>false</externalId>
@@ -90,7 +102,8 @@ TEXT(ProductChargeType__c),"One-Time",TotalPrice * 0.25, 0
         <scale>2</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CRV_Recurring__c</fullName>
         <description>Product Charge Type is Recurring, multiply the Total Price by the Commission Recurring Multiplier.</description>
         <externalId>false</externalId>
@@ -106,7 +119,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>2</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ContractLength__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Use this for WBN Corporate Opportunities</inlineHelpText>
@@ -116,17 +130,21 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Converted_to_Asset__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Converted to Asset?</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Discount</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fulfillment__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -136,14 +154,16 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <relationshipName>Opportunity_Product</relationshipName>
         <required>false</required>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IncludeProductsSold__c</fullName>
         <externalId>false</externalId>
         <formula>PricebookEntry.Product2.IncludeProductsSold__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Include Products Sold</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Initial_Charge__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Would this product be considered part of an initial charge on the invoice</description>
@@ -151,27 +171,22 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <inlineHelpText>For WBN IL Oppty - Check this box is this is an initial charge or is the first billable month of a PPC Schedule</inlineHelpText>
         <label>Initial Charge</label>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ListPrice</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OpportunityId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product2Id</fullName>
         <type>Lookup</type>
-    </fields><fields>
-        <fullName>ProductChargeType__c</fullName>
-        <externalId>false</externalId>
-        <label>Product Charge Type</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>ProductChargeType</valueSetName>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductCode</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductCost__c</fullName>
         <externalId>false</externalId>
         <label>Product Cost</label>
@@ -179,7 +194,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductDescriptionClient__c</fullName>
         <description>Client Facing Product Description</description>
         <externalId>false</externalId>
@@ -187,7 +203,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <label>Product Description (Client)</label>
         <required>false</required>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductNameClient__c</fullName>
         <description>Client facing Product Name</description>
         <externalId>false</externalId>
@@ -196,7 +213,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductName__c</fullName>
         <externalId>false</externalId>
         <formula>PricebookEntry.Product2.Name</formula>
@@ -205,7 +223,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product_Description__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -215,13 +234,15 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProjectedAdoptionEndDate__c</fullName>
         <externalId>false</externalId>
         <label>Adoption End Date</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProjectedAdoptionLengthMth__c</fullName>
         <externalId>false</externalId>
         <formula>IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdoptionStartDate__c))
@@ -235,7 +256,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <scale>0</scale>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProjectedAdoptionMonthlyValue__c</fullName>
         <externalId>false</externalId>
         <label>Projected Adoption Monthly Value</label>
@@ -243,7 +265,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProjectedAdoptionPct__c</fullName>
         <externalId>false</externalId>
         <label>Projected Adoption %</label>
@@ -251,13 +274,15 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>0</scale>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProjectedAdoptionStartDate__c</fullName>
         <externalId>false</externalId>
         <label>Adoption Start Date</label>
         <required>false</required>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_Adoption_Total_Value__c</fullName>
         <externalId>false</externalId>
         <label>Projected Adoption Total Value</label>
@@ -265,7 +290,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Promotion__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -275,16 +301,21 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <relationshipName>Opportunity_Product</relationshipName>
         <required>false</required>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Quantity</fullName>
         <inlineHelpText>For WBN IL Sales - use this for Month Terms.</inlineHelpText>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ServiceDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Subtotal</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TotalPrice</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TotalProductCost__c</fullName>
         <externalId>false</externalId>
         <label>Total Product Cost</label>
@@ -292,7 +323,8 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>2</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TotalProductValue__c</fullName>
         <externalId>false</externalId>
         <label>Total Product Value</label>
@@ -300,9 +332,11 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <required>false</required>
         <scale>2</scale>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UnitPrice</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>WBN_2018_Commission__c</fullName>
         <defaultValue>true</defaultValue>
         <description>If Close date is after 4/1 - check box and use 2018 commission</description>
@@ -310,7 +344,16 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
         <inlineHelpText>If Close date is after 4/1 - check box and use 2018 commission</inlineHelpText>
         <label>WBN 2018 Commission</label>
         <type>Checkbox</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><validationRules>
+    </fields>
+    <fields>
+        <fullName>ProductChargeType__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>ProductChargeType</globalPicklist>
+        <label>Product Charge Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds>
+    <validationRules>
         <fullName>YBN_Contract_Length_Must_Be_Greater_0</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -326,4 +369,5 @@ CONTAINS(Product2.Name, " Setup")
 )</errorConditionFormula>
         <errorDisplayField>ContractLength__c</errorDisplayField>
         <errorMessage>Must be greater than zero. Place a value of one for "Setup" products.</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

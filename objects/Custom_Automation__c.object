@@ -1,34 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -40,50 +55,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
-        <fullName>Automation_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Automation Status</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Waiting on Outcome</fullName>
-                    <default>true</default>
-                    <label>Waiting on Outcome</label>
-                </value>
-                <value>
-                    <fullName>Evaluating</fullName>
-                    <default>false</default>
-                    <label>Evaluating</label>
-                </value>
-                <value>
-                    <fullName>Scheduled</fullName>
-                    <default>false</default>
-                    <label>Scheduled</label>
-                </value>
-                <value>
-                    <fullName>Aborted</fullName>
-                    <default>false</default>
-                    <label>Aborted</label>
-                </value>
-                <value>
-                    <fullName>Completed</fullName>
-                    <default>false</default>
-                    <label>Completed</label>
-                </value>
-                <value>
-                    <fullName>No Action Needed</fullName>
-                    <default>false</default>
-                    <label>No Action Needed</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automation_Trigger_Date__c</fullName>
         <externalId>false</externalId>
         <label>Automation Trigger Date</label>
@@ -91,76 +64,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
-        <fullName>Automation_Type_API_Name_External_ID__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Use the Touchplan API Name for Custom Metadata Types or the assigned External ID for Marketo Email Campaign</inlineHelpText>
-        <label>Automation Type API Name/External ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Create_Day_40_LBW_Account_Performance</fullName>
-                    <default>false</default>
-                    <label>Create_Day_40_LBW_Account_Performance</label>
-                </value>
-                <value>
-                    <fullName>Create_Monthly_LBW_Account_Performance</fullName>
-                    <default>false</default>
-                    <label>Create_Monthly_LBW_Account_Performance</label>
-                </value>
-                <value>
-                    <fullName>TORCHX_TRAINING_DAY_7</fullName>
-                    <default>false</default>
-                    <label>TORCHX_TRAINING_DAY_7</label>
-                </value>
-                <value>
-                    <fullName>TORCHX_TRAINING_DAY_27</fullName>
-                    <default>false</default>
-                    <label>TORCHX_TRAINING_DAY_27</label>
-                </value>
-                <value>
-                    <fullName>TORCHX_MONTHLY_REVIEW_DAY_40</fullName>
-                    <default>false</default>
-                    <label>TORCHX_MONTHLY_REVIEW_DAY_40</label>
-                </value>
-                <value>
-                    <fullName>TORCHX_MONTHLY_REVIEW_EVERY_30</fullName>
-                    <default>false</default>
-                    <label>TORCHX_MONTHLY_REVIEW_EVERY_30</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
-        <fullName>Automation_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Automation Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Marketo_Email_Campaign__c</fullName>
-                    <default>false</default>
-                    <label>Marketo_Email_Campaign__c</label>
-                </value>
-                <value>
-                    <fullName>Daily_Scheduled_Record_Auto_Create__mdt</fullName>
-                    <default>false</default>
-                    <label>Daily_Scheduled_Record_Auto_Create__mdt</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cancellation_Request__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -172,7 +77,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_Since_Live_Equivalent_on_Request__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Days Since Live when a Cancellation Request was created for LBW and the number of days since the CSC was created and the Cancellation Request was created for TORCHx.</inlineHelpText>
@@ -184,7 +90,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_in_Cancellation__c</fullName>
         <externalId>false</externalId>
         <label>Days in Cancellation</label>
@@ -195,12 +102,126 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Custom Automation</label><nameField>
+    </fields>
+    <fields>
+        <fullName>Automation_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Automation Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Waiting on Outcome</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Evaluating</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Action Needed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Automation_Type_API_Name_External_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Use the Touchplan API Name for Custom Metadata Types or the assigned External ID for Marketo Email Campaign</inlineHelpText>
+        <label>Automation Type API Name/External ID</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Create_Day_40_LBW_Account_Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Create_Monthly_LBW_Account_Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TORCHX_TRAINING_DAY_7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TORCHX_TRAINING_DAY_27</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TORCHX_MONTHLY_REVIEW_DAY_40</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TORCHX_MONTHLY_REVIEW_EVERY_30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Automation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Automation Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Marketo_Email_Campaign__c</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Daily_Scheduled_Record_Auto_Create__mdt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Custom Automation</label>
+    <nameField>
         <displayFormat>AAN-{0000000}</displayFormat>
         <label>Custom Automation Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Custom Automations</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </nameField>
+    <pluralLabel>Custom Automations</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -211,7 +232,8 @@
         <columns>Cancellation_Request__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Account_Automation_Save_Mode</fullName>
         <active>true</active>
         <label>Account Automation Save Mode</label>
@@ -280,4 +302,5 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

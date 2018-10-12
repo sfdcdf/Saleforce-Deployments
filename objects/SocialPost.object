@@ -1,173 +1,258 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CreateCase</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Ignore</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>MassApprovePosts</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>MassCreateCase</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>MassIgnore</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>MassRejectPosts</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>AnalyzerScore</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AssignedTo</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AttachmentType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AttachmentUrl</fullName>
-    </fields><fields>
-        <fullName>Classification</fullName>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CommentCount</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Content</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DeletedById</fullName>
         <type>Lookup</type>
-    </fields><fields>
-        <fullName>EngagementLevel</fullName>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ExternalPostId</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Handle</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HarvestDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Headline</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HiddenById</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>InboundLinkCount</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsOutbound</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>KeywordGroupName</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Language</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LikedBy</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LikesAndVotes</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MediaProvider</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MediaType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MessageType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OutboundSocialAccountId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ParentId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PersonaId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PostPriority</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PostTags</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PostUrl</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Posted</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Provider</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>R6PostId</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>R6SourceId</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>R6TopicId</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Recipient</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RecipientType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ReplyToId</fullName>
         <type>Hierarchy</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ResponseContextExternalId</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ReviewScale</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ReviewScore</fullName>
-    </fields><fields>
-        <fullName>ReviewedStatus</fullName>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sentiment</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Shares</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SourceTags</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SpamRating</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StatusMessage</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ThreadSize</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TopicProfileName</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TopicType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TruncatedContent</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UniqueCommentors</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ViewCount</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>WhoId</fullName>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Classification</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>EngagementLevel</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ReviewedStatus</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><searchLayouts>
         <customTabListAdditionalFields>Persona</customTabListAdditionalFields>
         <customTabListAdditionalFields>Content</customTabListAdditionalFields>
@@ -181,4 +266,5 @@
         <searchResultsAdditionalFields>Parent</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ReviewedStatus</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Notes</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Private</sharingModel></CustomObject>
+    </searchLayouts><sharingModel>Private</sharingModel>
+</CustomObject>

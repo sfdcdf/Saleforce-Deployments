@@ -1,28 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Close</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>DeleteSeries</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>NewTask</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><compactLayouts>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Subject</fields>
         <fields>WhoId</fields>
@@ -32,64 +45,236 @@
         <fields>Milestone__c</fields>
         <fields>Status__c</fields>
         <label>WBN-IL</label>
-    </compactLayouts><fields>
+    </compactLayouts>
+    <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CallDisposition</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CallDurationInSeconds</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CallObject</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CallType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsRecurrence</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsReminderSet</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsVisibleInSelfService</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
-    </fields><fields>
-        <fullName>Priority</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RecurrenceInterval</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RecurrenceRegeneratedType</fullName>
-    </fields><fields>
-        <fullName>Status</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields><fields>
-        <fullName>Subject</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TaskSubtype</fullName>
-    </fields><fields>
-        <fullName>Type</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>WhatId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>WhoId</fullName>
         <type>Lookup</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><searchLayouts /><sharingModel>ControlledByParent</sharingModel><recordTypes>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+                <highPriority>true</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <default>true</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Needs 2nd Attempt</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rescheduled</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled Meeting</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Show</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Connected with Gatekeeper</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Connected with Target</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed - Not Completed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Call Back</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Get Content</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Get New Credit Card</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Updated Pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Collateral Follow Up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>General To Do</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed Call Summary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed Fact Find Summary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed Appointment Summary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed Demo Summary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <sharingModel>ControlledByParent</sharingModel>
+    <recordTypes>
         <fullName>Executive_Sponsor_Activity</fullName>
         <active>true</active>
         <label>Executive Sponsor Activity</label>
@@ -849,7 +1034,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Interaction</fullName>
         <active>true</active>
         <label>Interaction</label>
@@ -2457,7 +2643,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Network_Communications_Portal</fullName>
         <active>true</active>
         <description>.</description>
@@ -3158,7 +3345,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Sales_Manager_Cadence</fullName>
         <active>true</active>
         <label>Sales Manager Cadence</label>
@@ -4706,7 +4894,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Services</fullName>
         <active>true</active>
         <label>Services</label>
@@ -5502,7 +5691,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Standard</fullName>
         <active>true</active>
         <label>Standard</label>
@@ -6298,7 +6488,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Client_Services</fullName>
         <active>true</active>
         <description>.</description>
@@ -7543,7 +7734,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Corporate_Relationship</fullName>
         <active>true</active>
         <description>wbn</description>
@@ -8532,7 +8724,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Individual_Location</fullName>
         <active>true</active>
         <compactLayoutAssignment>WBN_IL</compactLayoutAssignment>
@@ -9370,7 +9563,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Interaction</fullName>
         <active>true</active>
         <description>Used for LO calls on YBN.</description>
@@ -10979,7 +11173,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Professional_Services</fullName>
         <active>true</active>
         <description>WBN</description>
@@ -12264,7 +12459,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Prospecting_Task</fullName>
         <active>true</active>
         <compactLayoutAssignment>WBN_IL</compactLayoutAssignment>
@@ -12998,7 +13194,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Sales_Corporate</fullName>
         <active>true</active>
         <description>WBN.</description>
@@ -14083,7 +14280,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>YBN_Sales_IL</fullName>
         <active>true</active>
         <compactLayoutAssignment>WBN_IL</compactLayoutAssignment>
@@ -15101,7 +15299,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><validationRules>
+    </recordTypes>
+    <validationRules>
         <fullName>Activity_detail_for_prospecting_external</fullName>
         <active>true</active>
         <errorConditionFormula>And(
@@ -15110,7 +15309,8 @@ ispickval(Milestone__c ,""),
 ispickval( Status ,"Completed"),
 CONTAINS(RecordType.Name, "YBN"))</errorConditionFormula>
         <errorMessage>Activity Detail Must Be Filled Out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Comments_Required</fullName>
         <active>true</active>
         <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
@@ -15120,7 +15320,8 @@ CONTAINS(RecordType.Name, "YBN"))</errorConditionFormula>
 isblank( Description ), 
 ISPICKVAL( Status, "Completed"))</errorConditionFormula>
         <errorMessage>Comments are required</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Issue_Resolution_Detail_Required</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
@@ -15129,7 +15330,8 @@ ISPICKVAL(Status,"Completed"),
 ISblank( Issue_Resolution_Detail__c ))</errorConditionFormula>
         <errorDisplayField>Issue_Resolution_Detail__c</errorDisplayField>
         <errorMessage>Issue Resolution Detail is Required when Activity Detail = Issue Resolution</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Issues_or_concerns_raised_required</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -15139,7 +15341,8 @@ ISPICKVAL(Status,"Completed"),
 ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
         <errorDisplayField>Issues_or_Concerns_Raised__c</errorDisplayField>
         <errorMessage>This Field Must Be Filled Out for All Completed Tasks</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Issues_or_concerns_summary_required</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
@@ -15150,7 +15353,8 @@ ISPICKVAL( Issues_or_Concerns_Raised__c,"Yes" ),
 ISblank( Summary_of_Issues_or_Concerns__c ))</errorConditionFormula>
         <errorDisplayField>Summary_of_Issues_or_Concerns__c</errorDisplayField>
         <errorMessage>This Field Must Be Filled Out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Require_Initial_Touch_part_of_squeeze</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
@@ -15159,7 +15363,8 @@ ISPICKVAL( Milestone__c, "Introduction Call/CSC" ),
 ISPICKVAL(Status,"Completed"),
 ISblank(Initial_Touch_Connected_w_target_and__c))</errorConditionFormula>
         <errorMessage>Must fill out Initial Touch field</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>YBN_notes_must_be_filled_out</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -15168,14 +15373,16 @@ isblank( Summary_of_Issues_Client_Concerns__c ),
 isblank( Action_Items__c ),
 isblank( Description ))</errorConditionFormula>
         <errorMessage>Please include "call/meeting notes" or "email notes"</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Ybn_related_to_field_must_be_filled_out</fullName>
         <active>false</active>
         <errorConditionFormula>And(
 ispickval(Status ,"Completed"),
 isblank(WhatId ))</errorConditionFormula>
         <errorMessage>"Related To" field must be filled out with the corporate account</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>activity_detail</fullName>
         <active>true</active>
         <errorConditionFormula>And(
@@ -15190,7 +15397,8 @@ ispickval( Activity_Type__c ,"Account Support"),
 ispickval( Activity_Type__c ,"Presale/Onboarding Work"),
 ispickval( Activity_Type__c ,"Internal YBN Activities"))))</errorConditionFormula>
         <errorMessage>"Activity Detail" field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>proactive_or_reactive</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -15198,21 +15406,24 @@ ispickval( Activity_Type__c ,"Internal YBN Activities"))))</errorConditionFormul
 ispickval( Status , "Completed"),
 ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
         <errorMessage>"Proactive or Reactive" field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>require_demod_products</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
 INCLUDES(Initial_Touch_Connected_w_target_and__c, "Demo'd products - Sales" ), 
 ISblank(Demo_d_Products__c))</errorConditionFormula>
         <errorMessage>Must fill out the Demo'd Products field</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>require_products_sold</fullName>
         <active>true</active>
         <errorConditionFormula>And( 
 INCLUDES(Initial_Touch_Connected_w_target_and__c, "Upsold additional products - Sales" ), 
 ISblank(Products_upsold__c))</errorConditionFormula>
         <errorMessage>Must fill out Products Upsold field</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_Interaction_Type_blank</fullName>
         <active>false</active>
         <errorConditionFormula>AND(
@@ -15227,7 +15438,8 @@ Or(
  ISPICKVAL( Milestone__c ,"M008 - Solutions in Action Presentation"),
  ISPICKVAL( Milestone__c ,"M010 - Present Proposal &amp; SOW"))))</errorConditionFormula>
         <errorMessage>"Interaction Type" Must be filled in.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_comments_field_mus_be_filled_out</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -15287,7 +15499,8 @@ ispickval( Milestone__c ,"Monthly Touch Point"),
 ispickval( Milestone__c ,"Status Update"),
 ispickval( Milestone__c ,"Project"))))</errorConditionFormula>
         <errorMessage>Comments field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_project_details_required</fullName>
         <active>false</active>
         <errorConditionFormula>And(
@@ -15295,7 +15508,8 @@ ispickval( Milestone__c ,"Project"))))</errorConditionFormula>
 ispickval( Status ,"Completed"),
 ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
         <errorMessage>"Project Details" field must be filled out</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>ybn_time_to_complete_activities_filled_o</fullName>
         <active>true</active>
         <errorConditionFormula>AND((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )),
@@ -15304,7 +15518,8 @@ ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
 (ISPICKVAL( Activity_Type__c, "Presale/Onboarding Work")))),ispickval( Status , "Completed"),
 isnull( Time_To_Complete_Activity_Minutes__c ))</errorConditionFormula>
         <errorMessage>"Time to Complete Activity" field must be filled out</errorMessage>
-    </validationRules><webLinks>
+    </validationRules>
+    <webLinks>
         <fullName>Log_Past_Activity</fullName>
         <availability>online</availability>
         <displayType>button</displayType>
@@ -15322,7 +15537,8 @@ isnull( Time_To_Complete_Activity_Minutes__c ))</errorConditionFormula>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>/00T/e?title=Enter Activity Subject Here&amp;what_id={!Account.Id}&amp;followup=1&amp;tsk5=Enter Activity Subject Here&amp;retURL=%2F{!Account.Id}</url>
-    </webLinks><webLinks>
+    </webLinks>
+    <webLinks>
         <fullName>New_Case_Button_on_Activity</fullName>
         <availability>online</availability>
         <displayType>button</displayType>
@@ -15334,4 +15550,5 @@ isnull( Time_To_Complete_Activity_Minutes__c ))</errorConditionFormula>
         <protected>false</protected>
         <url>/500/e?RecordType=012600000009N9m
 &amp;cas11=Phone</url>
-    </webLinks></CustomObject>
+    </webLinks>
+</CustomObject>

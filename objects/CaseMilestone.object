@@ -1,83 +1,122 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>ActualElapsedTimeInDays</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ActualElapsedTimeInHrs</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ActualElapsedTimeInMins</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>BusinessHoursId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CaseId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CompletionDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ElapsedTimeInDays</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ElapsedTimeInHrs</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ElapsedTimeInMins</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsCompleted</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsViolated</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MilestoneId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SlaProcessId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StartDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StoppedTimeInDays</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StoppedTimeInHrs</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StoppedTimeInMins</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TargetDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TargetResponseInDays</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TargetResponseInHrs</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TargetResponseInMins</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeRemainingInDays</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeRemainingInHrs</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeRemainingInMins</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeSinceTargetInDays</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeSinceTargetInHrs</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeSinceTargetInMins</fullName>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><validationRules>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds>
+    <validationRules>
         <fullName>YBN_Dates_Cannot_Be_Changed</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -99,7 +138,8 @@
   )
 )</errorConditionFormula>
         <errorMessage>Dates cannot be changed manually.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>YBN_Values_Needed_To_Complete_MS</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -115,4 +155,5 @@
   ISCHANGED(CompletionDate)
 )</errorConditionFormula>
         <errorMessage>Cannot manually complete milestone.</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

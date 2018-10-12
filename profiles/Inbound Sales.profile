@@ -1,14 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><categoryGroupVisibilities>
-        <dataCategoryGroup>Department</dataCategoryGroup>
-        <visibility>ALL</visibility>
-    </categoryGroupVisibilities><categoryGroupVisibilities>
-        <dataCategoryGroup>Channel</dataCategoryGroup>
-        <visibility>ALL</visibility>
-    </categoryGroupVisibilities><categoryGroupVisibilities>
-        <dataCategoryGroup>Product</dataCategoryGroup>
-        <visibility>ALL</visibility>
-    </categoryGroupVisibilities><custom>true</custom><userLicense>Salesforce</userLicense>
-    <classAccesses xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <custom>true</custom>
+    <userLicense>Salesforce</userLicense>
+    <classAccesses>
         <apexClass>PC_ConvertLead</apexClass>
         <enabled>true</enabled>
     </classAccesses>
