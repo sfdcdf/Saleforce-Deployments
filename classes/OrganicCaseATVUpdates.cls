@@ -2,9 +2,11 @@
   Company/ Author ....: E. Ross
   Date Created .......: 27-Mar-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 08-May-2018
+  Last Modified Date .: 11-Oct-2018
   Description ........: Class contains invocable method to update Case record type, add services offered and verticals to related list
   if the Case Account has an Account Product Type of LS ATV.
+  
+  Modification 11-Oct-2018: Removed other Organic Case record types from logic; updated Page numbering
 *****************************************************************************/
 public without sharing class OrganicCaseATVUpdates
 {
@@ -14,7 +16,6 @@ public without sharing class OrganicCaseATVUpdates
         try{
         
              Id lsATVCaseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId();
-             Set<Id> organicCaseRecordTypeIds = new Set<Id>{Schema.SObjectType.Case.getRecordTypeInfosByName().get('LBW Content Organic Setup').getRecordTypeId(), Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId()};
              List<Services_Offered_Vertical__c> dmlServicesOffered = new List<Services_Offered_Vertical__c>();
              List<Case> dmlCases = new List<Case>();
              List<String> caseServicesOfferedList = new List<String>();
@@ -62,7 +63,7 @@ public without sharing class OrganicCaseATVUpdates
                              Description
                         FROM Case
                        WHERE Id IN: caseIds AND
-                             RecordTypeId IN: organicCaseRecordTypeIds AND
+                             RecordTypeId = :lsATVCaseRecordTypeId AND
                              Account.Product_Type_Transactional__c = :acctProductType AND
                              IsClosed = false]){
                      
@@ -70,16 +71,6 @@ public without sharing class OrganicCaseATVUpdates
                      c.taskId__c = c.Account.Client_ID__c + '-002'; // 002 for LS ATV Accounts
                      c.OwnerId = contentPilotOwner;
                      c.Subject = 'LS ATV Content Setup';
-                     
-                     
-                     // check to ensure the Case is not already the correct record type
-                     if(c.RecordTypeId != lsATVCaseRecordTypeId){
-                     
-                         System.Debug('*** Adding Case to Update List for Record type change ***');
-                     
-                         // update Case to LS ATV Record Type
-                         c.RecordTypeId = lsATVCaseRecordTypeId;
-                     }
                         
                      if(!String.IsEmpty(c.Services_Offered__c)){
                      
@@ -123,9 +114,11 @@ public without sharing class OrganicCaseATVUpdates
                          }
                          
                          System.Debug('*** vertical(s) Description: ' + verticalsDescrText.removeEnd(', '));
-                         //System.Debug('*** Updating Number of Pages to : ' + String.valueOf(count) + ' ***');
+                         System.Debug('*** Updating Number of Pages to : ' + String.valueOf(count) + ' ***');
                          
-                         c.Number_of_Pages_Text__c = 1; // currently all segments for ATV are 1 page for Text Broker. In future will need to update logic to look at specific segments when business reqs change
+                         String currPageNumStr = String.valueOf(count);
+                         
+                         c.Number_of_Pages_Text__c = Integer.valueOf(currPageNumStr.trim()); // number data type
                          verticalsDescrText = verticalsDescrText.removeEnd(', ');
                          verticalsDescrText = verticalsDescrText.replace('No Vertical Mapped, ', '');
                          c.Homepage__c = verticalsDescrText.replace('No Vertical Mapped', '');

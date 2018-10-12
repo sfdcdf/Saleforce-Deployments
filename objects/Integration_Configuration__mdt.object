@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Configuration_Description__c</fullName>
+        <description>High level description of the label/ value pair</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Configuration Description</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Label__c</fullName>
+        <description>Label/ Name portion of the label/ value pair</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Configuration Label</label>
+        <length>100</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Value__c</fullName>
+        <description>Value of the label/ value pair</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Configuration Value</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Type__c</fullName>
+        <description>Data type of the value for the label/ value pair</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Data Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Date</fullName>
+                    <default>true</default>
+                    <label>Date</label>
+                </value>
+                <value>
+                    <fullName>DateTime</fullName>
+                    <default>false</default>
+                    <label>DateTime</label>
+                </value>
+                <value>
+                    <fullName>Decimal</fullName>
+                    <default>false</default>
+                    <label>Decimal</label>
+                </value>
+                <value>
+                    <fullName>Integer</fullName>
+                    <default>false</default>
+                    <label>Integer</label>
+                </value>
+                <value>
+                    <fullName>String</fullName>
+                    <default>false</default>
+                    <label>String</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_System_Name__c</fullName>
+        <description>Name selection for the external system/ platform integrated with Salesforce (Yodle SFDC)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>External System Name</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CTS</fullName>
+                    <default>true</default>
+                    <label>CTS</label>
+                </value>
+                <value>
+                    <fullName>Marketo</fullName>
+                    <default>false</default>
+                    <label>Marketo</label>
+                </value>
+                <value>
+                    <fullName>Yodle Live</fullName>
+                    <default>false</default>
+                    <label>Yodle Live</label>
+                </value>
+                <value>
+                    <fullName>Acquisio SFDC</fullName>
+                    <default>false</default>
+                    <label>Acquisio SFDC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Flag/ indicator signifying if the configuration setting is active or inactive; inactive configurations should not be used</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <description>Configurations and settings for various integrations between Salesforce and external systems/ platforms.</description>
+    <label>Integration Configuration</label>
+    <pluralLabel>Integration Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

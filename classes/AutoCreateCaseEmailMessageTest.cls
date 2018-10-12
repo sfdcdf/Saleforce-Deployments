@@ -1,33 +1,30 @@
 @isTest(seeAllData=true)
-private class OrganicCaseATVUpdatesTest
+private class AutoCreateCaseEmailMessageTest
 {
-    private static testMethod void updateATVAttributesTest()
+    private static testMethod void createEmailMessageTest()
     {
        // load test data from static resources
         List<SObject> acctList = Test.LoadData(Account.sObjectType, 'testAccounts');
         List<SObject> caseList = Test.LoadData(Case.sObjectType, 'testCases');
         List<Id> caseIds = new List<Id>();
         List<Case> dmlCases = new List<Case>();
-        List<Account> dmlAccounts = new List<Account>();
+        List<Account> dmlAccts = new List<Account>();
         Date todayDt = Date.Today();
         Id caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('LS ATV Organic Setup').getRecordTypeId();
         
-        Account acct = (Account)acctList[0];
-        Id acctId = acct.Id;
-        String acctName = acct.Name;
-        acct.Product_Type__c = 'Lead Stream ATV';
-        dmlAccounts.add(acct);
-        
-        if(dmlAccounts.size() > 0){
-            update dmlAccounts;
-        }
+        Account acctData = (Account)acctList[0];
+        Id acctId = acctData.Id;
+        String acctName = acctData.Name;
         
         Case caseData = (Case)caseList[0];
         Id caseId = caseData.Id;
         caseData.RecordTypeId = caseRecordTypeId;
         caseData.AccountId = acctId;
-        caseData.Services_Offered__c = 'Divorce Law\r\n Family Law';
+        caseData.Name_of_Business_for_Name_Campaign__c = acctName;
+        caseData.Services_Offered__c = 'Business Law';
         dmlCases.add(caseData);
+        
+        System.Debug('Account from (Case): ' + caseData.Account.Name);
         
         if(dmlCases.size() > 0){
             update dmlCases;
@@ -41,7 +38,7 @@ private class OrganicCaseATVUpdatesTest
         Test.startTest();
         
         // execute Invocable method
-        OrganicCaseATVUpdates.LSATVUpdates(caseIds);
+        AutoCreateCaseEmailMessage.CreateEmailMessage(caseIds);
         
         Test.stopTest();
     }
