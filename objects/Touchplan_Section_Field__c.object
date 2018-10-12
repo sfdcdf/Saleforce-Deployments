@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Boolean_Pass_Fail_Criteria__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -36,7 +47,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Boolean_Value__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -44,7 +56,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Time_Pass_Fail_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>Date/Time Pass/Fail Criteria</label>
@@ -55,7 +68,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Date_Time_Value__c</fullName>
         <externalId>false</externalId>
         <label>Date/Time Value</label>
@@ -63,7 +77,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Evaluate__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -71,7 +86,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Evaluation_Status__c</fullName>
         <externalId>false</externalId>
         <label>Evaluation Status</label>
@@ -94,7 +110,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Field_Order__c</fullName>
         <externalId>false</externalId>
         <label>Field Order</label>
@@ -105,7 +122,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>In_Checklist__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -113,7 +131,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketo_Field_Mapping__c</fullName>
         <externalId>false</externalId>
         <label>Marketo Field Mapping</label>
@@ -123,7 +142,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_Pass_Fail_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>Number Pass/Fail Criteria</label>
@@ -134,7 +154,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_Value__c</fullName>
         <externalId>false</externalId>
         <label>Number Value</label>
@@ -145,7 +166,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pass_Fail_Operator__c</fullName>
         <externalId>false</externalId>
         <label>Pass/Fail Operator</label>
@@ -188,7 +210,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Salesforce_Data_Source__c</fullName>
         <externalId>false</externalId>
         <label>Salesforce Data Source</label>
@@ -198,7 +221,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>String_Pass_Fail_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>String Pass/Fail Criteria</label>
@@ -208,7 +232,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>String_Value__c</fullName>
         <externalId>false</externalId>
         <label>String Value</label>
@@ -218,7 +243,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Template_ID__c</fullName>
         <externalId>false</externalId>
         <label>Template ID</label>
@@ -228,7 +254,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Touchplan_Section__c</fullName>
         <externalId>false</externalId>
         <label>Touchplan Section</label>
@@ -241,11 +268,31 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Touchplan Section Field</label><nameField>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Touchplan Section Field</label>
+    <nameField>
         <label>Touchplan Section Field Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Touchplan Section Fields</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility><recordTypes>
+    </nameField>
+    <pluralLabel>Touchplan Section Fields</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <recordTypes>
         <fullName>Boolean</fullName>
         <active>true</active>
         <label>Boolean</label>
@@ -283,7 +330,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Date_Time</fullName>
         <active>true</active>
         <label>Date/Time</label>
@@ -325,7 +373,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Number</fullName>
         <active>true</active>
         <label>Number</label>
@@ -363,7 +412,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>String</fullName>
         <active>true</active>
         <label>String</label>
@@ -405,4 +455,5 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

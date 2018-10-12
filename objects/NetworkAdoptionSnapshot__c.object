@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>AccountId__c</fullName>
         <externalId>false</externalId>
         <label>Account Id</label>
@@ -37,7 +48,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AccountName__c</fullName>
         <externalId>false</externalId>
         <label>Account Name</label>
@@ -46,7 +58,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LiveCount__c</fullName>
         <externalId>false</externalId>
         <label>Live Count</label>
@@ -56,14 +69,16 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LiveDate__c</fullName>
         <externalId>false</externalId>
         <label>Live Date</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NetworkCount__c</fullName>
         <externalId>false</externalId>
         <label>Network Count</label>
@@ -73,7 +88,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PpcCount__c</fullName>
         <externalId>false</externalId>
         <label>PPC Count</label>
@@ -83,14 +99,16 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RunDate__c</fullName>
         <externalId>false</externalId>
         <label>Run Date</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>YBNRelationship__c</fullName>
         <externalId>false</externalId>
         <label>YBN Relationship</label>
@@ -99,8 +117,28 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Captures accounts with their live dates and relationship and used by YBN to display network adoption</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Network Adoption Snapshot</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Captures accounts with their live dates and relationship and used by YBN to display network adoption</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Network Adoption Snapshot</label>
+    <nameField>
         <displayFormat>YRS-{0000000}</displayFormat>
         <label>YBN Relationship Snapshot Name</label>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Network Adoption Snapshots</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility></CustomObject>
+    </nameField>
+    <pluralLabel>Network Adoption Snapshots</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

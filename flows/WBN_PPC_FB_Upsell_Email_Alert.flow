@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Facebook_Email</name>
+        <label>Send Facebook Email</label>
+        <locationX>806</locationX>
+        <locationY>502</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>FacebookUpsellEmailTempalte</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Action Needed: FB Upsell for {!soAccount.Client_ID__c}: {!soAccount.Name}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varIMSEmail</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_PPC_Email</name>
+        <label>Send PPC Email</label>
+        <locationX>394</locationX>
+        <locationY>526</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Facebook_Upsell</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>PPCUpsellEmailTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>{!soAccount.Client_ID__c}: {!soAccount.Name} has just upsold their PPC by {!varPPCAmount} for {!varPPCQuantity} months</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varIMSEmail</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Account_IMS_Rep</name>
+        <label>Account IMS Rep</label>
+        <locationX>68</locationX>
+        <locationY>247</locationY>
+        <assignmentItems>
+            <assignToReference>varIMSRepName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>soAccount.IMS_Rep_Full_Name__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varIMSEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>soAccount.IMS_Rep_Email__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Does_IMS_Rep_Exists</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Does_IMS_Rep_Exists</name>
+        <label>Does IMS Rep Exists</label>
+        <locationX>68</locationX>
+        <locationY>347</locationY>
+        <defaultConnector>
+            <targetReference>Find_Alternative_IMS_Default_Emails</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>IMS_Rep_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>soAccount.IMS_Rep_Email__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>@</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PPC_Lookup</targetReference>
+            </connector>
+            <label>IMS Rep Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>PPC_Upsell_Sold</name>
+        <label>PPC Upsell Sold</label>
+        <locationX>397</locationX>
+        <locationY>342</locationY>
+        <defaultConnector>
+            <targetReference>Facebook_Upsell</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>PPC_Upsell_is_greater_than_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varPPCAmount</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_PPC_Email</targetReference>
+            </connector>
+            <label>PPC Upsell is greater than 0</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Was_PPC_Upsell_Sold</name>
+        <label>Was PPC Upsell Sold</label>
+        <locationX>807</locationX>
+        <locationY>343</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Facebook_Upsell_Greater_than_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varFBAmount</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Facebook_Email</targetReference>
+            </connector>
+            <label>Facebook Upsell Greater than 0</label>
+        </rules>
+    </decisions>
+    <description>WBN Email Alerts to CS on Closed Won Upsell Product Opportunity. added Default IMS Custom Settings
+removed extra no ims email</description>
+    <interviewLabel>WBN - PPC/FB Upsell Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>WBN - PPC/FB Upsell Email Alert</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Account_Information</name>
+        <label>Account Information</label>
+        <locationX>68</locationX>
+        <locationY>153</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Account_IMS_Rep</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAccountID</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>soAccount</outputReference>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>IMS_Rep_Full_Name__c</queriedFields>
+        <queriedFields>IMS_Rep_Email__c</queriedFields>
+        <queriedFields>Client_ID__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Facebook_Upsell</name>
+        <label>Facebook Upsell</label>
+        <locationX>801</locationX>
+        <locationY>181</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Was_PPC_Upsell_Sold</targetReference>
+        </connector>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOppID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ProductName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Facebook Upsell</stringValue>
+            </value>
+        </filters>
+        <object>OpportunityLineItem</object>
+        <outputAssignments>
+            <assignToReference>varFBQuantity</assignToReference>
+            <field>Quantity</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varFBAmount</assignToReference>
+            <field>UnitPrice</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Find_Alternative_IMS_Default_Emails</name>
+        <label>Find Alternative IMS Default Emails</label>
+        <locationX>59</locationX>
+        <locationY>464</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>PPC_Lookup</targetReference>
+        </connector>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>WBN_Upsell_Alert</stringValue>
+            </value>
+        </filters>
+        <object>Flow_EMail_Defaults__c</object>
+        <outputAssignments>
+            <assignToReference>varIMSEmail</assignToReference>
+            <field>Default_Email__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varIMSRepName</assignToReference>
+            <field>Default_User_Name__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Opportunity_Information</name>
+        <label>Opportunity Information</label>
+        <locationX>67</locationX>
+        <locationY>58</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Account_Information</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOppID</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputAssignments>
+            <assignToReference>varAccountID</assignToReference>
+            <field>AccountId</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varContractTerms</assignToReference>
+            <field>Contract_Term_in_months__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>PPC_Lookup</name>
+        <label>PPC Lookup</label>
+        <locationX>404</locationX>
+        <locationY>201</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>PPC_Upsell_Sold</targetReference>
+        </connector>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOppID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ProductName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PPC Upsell</stringValue>
+            </value>
+        </filters>
+        <object>OpportunityLineItem</object>
+        <outputAssignments>
+            <assignToReference>varPPCQuantity</assignToReference>
+            <field>Quantity</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varPPCAmount</assignToReference>
+            <field>UnitPrice</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Opportunity_Information</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>FacebookUpsellEmailTempalte</name>
+        <text>Hi {!varIMSRepName},
+
+Client ID: {!soAccount.Client_ID__c}
+
+{!soAccount.Name} has just upsold their Facebook by {!varFBAmount}  for {!varFBQuantity} months.
+
+Please work on the following action items:
+
+1. Submit a Facebook Change / Update case to the Performance team to make necessary adjustments in the TP platform for the new package amount and any adjustments to ad type / objective if relevant.
+
+2. Adjust the YL recurring billing amount to reflect the new package amount.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NoIMSRepOnAccount</name>
+        <text>There is no IMS Rep on the account 
+Account Name: {!soAccount.Name}
+Opportunity ID: {!varOppID}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PPCUpsellEmailTemplate</name>
+        <text>Hi {!varIMSRepName},
+Client ID: {!soAccount.Client_ID__c}
+
+{!soAccount.Name} has just upsold their PPC by {!varPPCAmount} for {!varPPCQuantity} months. 
+
+This is an FYI for you.</text>
+    </textTemplates>
+    <variables>
+        <name>soAccount</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>soIMSRep</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+    <variables>
+        <description>Opportunity Object</description>
+        <name>soOpportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>Get Opportunity account ID</description>
+        <name>varAccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Contract Terms on the Opportunity</description>
+        <name>varContractTerms</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The Facebook Upsell amount</description>
+        <name>varFBAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varFBProductID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varFBQuantity</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varIMSEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Get the IMS Rep for the Account</description>
+        <name>varIMSRepID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varIMSRepName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varOppID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The PPC Upsell amount</description>
+        <name>varPPCAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varPPCProductID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varPPCQuantity</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

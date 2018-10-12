@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -40,7 +51,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automation_Status__c</fullName>
         <externalId>false</externalId>
         <label>Automation Status</label>
@@ -83,7 +95,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automation_Trigger_Date__c</fullName>
         <externalId>false</externalId>
         <label>Automation Trigger Date</label>
@@ -91,7 +104,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automation_Type_API_Name_External_ID__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Use the Touchplan API Name for Custom Metadata Types or the assigned External ID for Marketo Email Campaign</inlineHelpText>
@@ -136,7 +150,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automation_Type__c</fullName>
         <externalId>false</externalId>
         <label>Automation Type</label>
@@ -160,7 +175,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cancellation_Request__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -172,7 +188,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_Since_Live_Equivalent_on_Request__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Days Since Live when a Cancellation Request was created for LBW and the number of days since the CSC was created and the Cancellation Request was created for TORCHx.</inlineHelpText>
@@ -184,7 +201,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Days_in_Cancellation__c</fullName>
         <externalId>false</externalId>
         <label>Days in Cancellation</label>
@@ -195,12 +213,32 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Custom Automation</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Custom Automation</label>
+    <nameField>
         <displayFormat>AAN-{0000000}</displayFormat>
         <label>Custom Automation Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Custom Automations</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </nameField>
+    <pluralLabel>Custom Automations</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Account__c</columns>
@@ -211,7 +249,8 @@
         <columns>Cancellation_Request__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Account_Automation_Save_Mode</fullName>
         <active>true</active>
         <label>Account Automation Save Mode</label>
@@ -280,4 +319,5 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

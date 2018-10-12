@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Is_Active__c</fullName>
         <defaultValue>true</defaultValue>
         <description>Flag/ indicator signifying if the record is actively used</description>
@@ -37,7 +48,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Offering_Id__c</fullName>
         <description>Offering Id associated to the Offering for the record</description>
         <externalId>false</externalId>
@@ -48,7 +60,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Offering_Name__c</fullName>
         <description>Name of the Service Offered</description>
         <externalId>false</externalId>
@@ -59,7 +72,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Segment__c</fullName>
         <description>Segment associated to the Offering -&gt; Vertical</description>
         <externalId>false</externalId>
@@ -70,7 +84,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Vertical_Name__c</fullName>
         <description>Name of the associated Vertical</description>
         <externalId>false</externalId>
@@ -81,16 +96,37 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Mapping of Services Offered to Verticals from Aquisio custom sync</description><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Offering to Vertical Map</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Mapping of Services Offered to Verticals from Aquisio custom sync</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Offering to Vertical Map</label>
+    <nameField>
         <displayFormat>OVM-{000000}</displayFormat>
         <label>Offering to Vertical Map Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Offerings to Verticals Maps</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </nameField>
+    <pluralLabel>Offerings to Verticals Maps</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>Segment__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Offering_Name__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Vertical_Name__c</customTabListAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Segment__c</columns>
@@ -99,9 +135,11 @@
         <columns>Is_Active__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Default</fullName>
         <active>true</active>
         <description>Default Record Type for Offering to Vertical Map</description>
         <label>Default</label>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

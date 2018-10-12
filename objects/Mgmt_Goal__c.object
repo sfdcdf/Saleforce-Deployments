@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Active_Goal__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -36,7 +47,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Actual_Bookings__c</fullName>
         <externalId>false</externalId>
         <label>Actual Bookings</label>
@@ -46,7 +58,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Commit_Change__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -58,7 +71,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>First_Commit__c</fullName>
         <externalId>false</externalId>
         <label>First Commit</label>
@@ -68,7 +82,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Manager__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -79,7 +94,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Month_End__c</fullName>
         <externalId>false</externalId>
         <label>Month End</label>
@@ -102,7 +118,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Month_Start__c</fullName>
         <externalId>false</externalId>
         <label>Month Start</label>
@@ -110,7 +127,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Monthly_Quota__c</fullName>
         <externalId>false</externalId>
         <label>Monthly Quota</label>
@@ -120,7 +138,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Percent_to_quota__c</fullName>
         <externalId>false</externalId>
         <formula>Actual_Bookings__c / Monthly_Quota__c</formula>
@@ -132,7 +151,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Stretch_Commit__c</fullName>
         <externalId>false</externalId>
         <label>Stretch Commit</label>
@@ -142,7 +162,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Updated_Commit__c</fullName>
         <externalId>false</externalId>
         <label>Updated Commit</label>
@@ -152,7 +173,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Weekly_Commit__c</fullName>
         <externalId>false</externalId>
         <label>This Week's Commit</label>
@@ -162,16 +184,35 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Mgmt Goal</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Mgmt Goal</label>
+    <nameField>
         <label>Goal Name</label>
         <trackHistory>true</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Mgmt Goals</pluralLabel><searchLayouts>
+    </nameField>
+    <pluralLabel>Mgmt Goals</pluralLabel>
+    <searchLayouts>
         <customTabListAdditionalFields>Monthly_Quota__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>First_Commit__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Actual_Bookings__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Percent_to_quota__c</customTabListAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>Rogers_Support_Mgmt_Goal</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -179,7 +220,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Mgmt_Goal</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -187,4 +229,5 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

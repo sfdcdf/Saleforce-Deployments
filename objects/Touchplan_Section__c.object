@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Auto_Close_Date_Mapping__c</fullName>
         <externalId>false</externalId>
         <label>Auto Close Date Mapping</label>
@@ -38,7 +49,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Auto_Close_Day_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>Auto Close Day Criteria</label>
@@ -49,7 +61,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Auto_Evaluate_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>Auto Evaluate Criteria</label>
@@ -58,7 +71,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Script__c</fullName>
         <externalId>false</externalId>
         <label>Call Script</label>
@@ -66,7 +80,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Campaign_ID__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>If an email campaign needs to be sent, set this with the Campaign ID value</inlineHelpText>
@@ -77,7 +92,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Created__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -85,7 +101,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Reason__c</fullName>
         <externalId>false</externalId>
         <label>Case Reason</label>
@@ -95,7 +112,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case_Record_Type_Name__c</fullName>
         <externalId>false</externalId>
         <label>Case Record Type Name</label>
@@ -105,7 +123,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -117,7 +136,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Create_Case_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>Create Case Criteria</label>
@@ -185,7 +205,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Default_Case_Values__c</fullName>
         <externalId>false</externalId>
         <label>Default Case Values</label>
@@ -194,7 +215,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Evaluate_Pass_Fail__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -202,7 +224,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>On_Case_Create_Clone_For_Next_30_Day_TP__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -210,7 +233,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>On_Fail_Set_Case_Status__c</fullName>
         <externalId>false</externalId>
         <label>On Fail Set Case Status</label>
@@ -220,7 +244,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>On_Pass_Set_Case_Status__c</fullName>
         <externalId>false</externalId>
         <label>On Pass Set Case Status</label>
@@ -230,7 +255,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pass_Fail_OR_Logic__c</fullName>
         <externalId>false</externalId>
         <label>Pass Fail OR Logic</label>
@@ -238,7 +264,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Passed__c</fullName>
         <externalId>false</externalId>
         <label># Passed</label>
@@ -252,7 +279,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Required_to_Pass__c</fullName>
         <externalId>false</externalId>
         <label># Required to Pass</label>
@@ -266,7 +294,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Section_Complete__c</fullName>
         <externalId>false</externalId>
         <formula>Required_to_Pass__c = Passed__c</formula>
@@ -274,7 +303,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Section_Order__c</fullName>
         <externalId>false</externalId>
         <label>Section Order</label>
@@ -285,7 +315,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Set_Next_Section_Evaluation_Date__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Number of days to set next section's evaluation date when this section's Case is closed.</inlineHelpText>
@@ -297,7 +328,8 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Template_ID__c</fullName>
         <externalId>false</externalId>
         <label>Template ID</label>
@@ -307,7 +339,27 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
+        <fullName>Trigger_Case_Creation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Trigger Case Creation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Validate_If_Case_Already_Exist__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for Validating if a Case of this type already exists, if it does, use that Case and relate it to this record.</inlineHelpText>
+        <label>Validate If Case Already Exist</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Touchplan__c</fullName>
         <externalId>false</externalId>
         <label>Touchplan</label>
@@ -320,25 +372,27 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields><fields>
-        <fullName>Trigger_Case_Creation_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Trigger Case Creation Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields><fields>
-        <fullName>Validate_If_Case_Already_Exist__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <inlineHelpText>Used for Validating if a Case of this type already exists, if it does, use that Case and relate it to this record.</inlineHelpText>
-        <label>Validate If Case Already Exist</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>false</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Touchplan Section</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Touchplan Section</label>
+    <nameField>
         <label>Touchplan Section Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>Touchplan Sections</pluralLabel><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility></CustomObject>
+    </nameField>
+    <pluralLabel>Touchplan Sections</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

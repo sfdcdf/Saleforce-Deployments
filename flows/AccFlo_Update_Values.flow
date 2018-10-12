@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>AccFlo - Update Values {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AccFlo - Update Values</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Opp_Obj</name>
+        <label>Get Opp Obj</label>
+        <locationX>228</locationX>
+        <locationY>54</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Account</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOppId</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputReference>objOpp</outputReference>
+        <queriedFields>AccountId</queriedFields>
+        <queriedFields>SE_Location_Disposition__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account</name>
+        <label>Update Account</label>
+        <locationX>227</locationX>
+        <locationY>205</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>objOpp.AccountId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SE_Location_Disposition__c</field>
+            <value>
+                <elementReference>objOpp.SE_Location_Disposition__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Get_Opp_Obj</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>objOpp</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>varOppId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

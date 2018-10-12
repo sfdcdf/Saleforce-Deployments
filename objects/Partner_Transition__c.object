@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Additional_team_members_to_involve__c</fullName>
         <externalId>false</externalId>
         <label>Additional team members to involve?</label>
@@ -37,7 +48,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Been_part_of_reseller_program_before__c</fullName>
         <externalId>false</externalId>
         <label>Been part of reseller program before?</label>
@@ -60,7 +72,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Bundling_integrating_w_other_products__c</fullName>
         <externalId>false</externalId>
         <label>Bundling/integrating w/ other products?</label>
@@ -83,7 +96,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Do_you_have_a_sales_team__c</fullName>
         <externalId>false</externalId>
         <label>Do you have a sales team?</label>
@@ -106,7 +120,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Do_you_have_specific_prospects_in_mind__c</fullName>
         <externalId>false</externalId>
         <label>Do you have specific prospects in mind?</label>
@@ -129,7 +144,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>How_are_you_currently_marketing__c</fullName>
         <externalId>false</externalId>
         <label>How are you currently marketing?</label>
@@ -138,7 +154,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>How_long_have_you_been_in_business__c</fullName>
         <externalId>false</externalId>
         <label>How long have you been in business?</label>
@@ -181,7 +198,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IF_YES_what_products__c</fullName>
         <externalId>false</externalId>
         <label>IF YES, what products?</label>
@@ -190,7 +208,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IF_YES_which_one__c</fullName>
         <externalId>false</externalId>
         <label>IF YES: which one?</label>
@@ -199,7 +218,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_Other__c</fullName>
         <externalId>false</externalId>
         <label>If Other:</label>
@@ -208,7 +228,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_yes_who__c</fullName>
         <externalId>false</externalId>
         <label>If yes- who?</label>
@@ -217,7 +238,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketing_commitments_in_1st_month__c</fullName>
         <externalId>false</externalId>
         <label>Marketing commitments in 1st month?</label>
@@ -271,7 +293,8 @@
             </valueSetDefinition>
         </valueSet>
         <visibleLines>8</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Number_of_employees__c</fullName>
         <externalId>false</externalId>
         <label>Number of employees?</label>
@@ -309,7 +332,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opportunity__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -321,7 +345,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Personality_traits_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Personality traits/Notes:</label>
@@ -330,7 +355,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Projected_of_your_clients_to_buy_lh_yo__c</fullName>
         <externalId>false</externalId>
         <label>Projected # of your clients to buy lh/yo</label>
@@ -373,7 +399,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_strategy_for_introducing_lh_yo__c</fullName>
         <externalId>false</externalId>
         <label>Sales strategy for introducing lh/yo?</label>
@@ -382,7 +409,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -405,7 +433,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Training_call_scheduled_on__c</fullName>
         <externalId>false</externalId>
         <label>Training call scheduled on</label>
@@ -413,7 +442,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>What_is_your_current_sales_strategy__c</fullName>
         <externalId>false</externalId>
         <label>What is your current sales strategy?</label>
@@ -422,7 +452,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>What_resources_do_you_need_from_us__c</fullName>
         <externalId>false</externalId>
         <label>What resources do you need from us?</label>
@@ -431,7 +462,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Who_is_selling_supporting_lh_yo__c</fullName>
         <externalId>false</externalId>
         <label>Who is selling/supporting lh/yo?</label>
@@ -440,7 +472,8 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>how_will_you_comp_your_reps__c</fullName>
         <externalId>false</externalId>
         <label>how will you comp your reps?</label>
@@ -449,17 +482,38 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Used to document the Partner Closing Script and transition to training.</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Partner Transition</label><nameField>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to document the Partner Closing Script and transition to training.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Partner Transition</label>
+    <nameField>
         <displayFormat>PT-{0000}</displayFormat>
         <label>Partner Transition  Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Partner Transition</pluralLabel><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><validationRules>
+    </nameField>
+    <pluralLabel>Partner Transition</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <validationRules>
         <fullName>If_Other_Required</fullName>
         <active>true</active>
         <errorConditionFormula>AND( INCLUDES(  Marketing_commitments_in_1st_month__c  , "Other"),  ISBLANK(  If_Other__c  ))</errorConditionFormula>
         <errorMessage>You specified Other in Marketing Commitments - Please share what the other is.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Must_have_all_details_to_complete</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -483,19 +537,23 @@ ISPICKVAL( Do_you_have_specific_prospects_in_mind__c ,""),
 ISPICKVAL( Projected_of_your_clients_to_buy_lh_yo__c ,""),
 ISBLANK( Personality_traits_Notes__c )))</errorConditionFormula>
         <errorMessage>Please fill in all the details before marking this as complete.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Partner_Programs</fullName>
         <active>true</active>
         <errorConditionFormula>AND(ISPICKVAL(  Been_part_of_reseller_program_before__c  , "YES"),  ISBLANK(  IF_YES_which_one__c  ))</errorConditionFormula>
         <errorMessage>Please answer which programs they have participated in.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Require_Products</fullName>
         <active>true</active>
         <errorConditionFormula>AND(ISPICKVAL( Bundling_integrating_w_other_products__c , "YES"),  ISBLANK( IF_YES_what_products__c ))</errorConditionFormula>
         <errorMessage>Please fill in what Products they will be bundling with.</errorMessage>
-    </validationRules><validationRules>
+    </validationRules>
+    <validationRules>
         <fullName>Specific_Clients</fullName>
         <active>true</active>
         <errorConditionFormula>AND(ISPICKVAL(  Do_you_have_specific_prospects_in_mind__c  , "YES"),  ISBLANK(  If_yes_who__c  ))</errorConditionFormula>
         <errorMessage>Please specify who the specific clients are.</errorMessage>
-    </validationRules></CustomObject>
+    </validationRules>
+</CustomObject>

@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Account_Information__c</fullName>
         <externalId>false</externalId>
         <label>Account Information</label>
@@ -63,7 +74,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -76,7 +88,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Acknowledge_Reason_for_Call__c</fullName>
         <externalId>false</externalId>
         <label>Acknowledge Reason for Call</label>
@@ -110,7 +123,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Activity_History__c</fullName>
         <externalId>false</externalId>
         <label>Activity History</label>
@@ -140,7 +154,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Adherence_Grade__c</fullName>
         <externalId>false</externalId>
         <label>Adherence Grade</label>
@@ -151,7 +166,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Ads_Upsell_Pitched__c</fullName>
         <externalId>false</externalId>
         <label>Ads Upsell Pitched</label>
@@ -186,7 +202,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Ads__c</fullName>
         <externalId>false</externalId>
         <label>Ads</label>
@@ -226,7 +243,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agenda__c</fullName>
         <externalId>false</externalId>
         <label>Agenda</label>
@@ -261,7 +279,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agent_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -273,7 +292,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Agreement_Details__c</fullName>
         <externalId>false</externalId>
         <label>Agreement Details</label>
@@ -307,7 +327,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Alert_Others_of_Mail__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>“Are you the person that normally handles the mail for your office? Please let anyone else who might have access to that mailbox know that you are expecting something from Google. Please have them save it for you when they receive it, OK?”</inlineHelpText>
@@ -343,7 +364,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>All_Client_Issue_s_Resolved__c</fullName>
         <externalId>false</externalId>
         <label>All Client Issue(s) Resolved</label>
@@ -377,7 +399,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Appropriate_downsell__c</fullName>
         <externalId>false</externalId>
         <label>Appropriate downsell solution offered</label>
@@ -411,7 +434,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Are_we_manager_Not_Comm_Manager__c</fullName>
         <externalId>false</externalId>
         <label>Are we manager (Not Comm. Manager?)</label>
@@ -441,7 +465,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Assigned_To_Manager__c</fullName>
         <externalId>false</externalId>
         <formula>Agent_Name__r.Manager.Full_Name__c</formula>
@@ -452,7 +477,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Attempt_Log_in__c</fullName>
         <externalId>false</externalId>
         <label>Attempt Dashboard Log in</label>
@@ -486,7 +512,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Attempts_to_Contact__c</fullName>
         <externalId>false</externalId>
         <label>Attempts to Contact</label>
@@ -516,7 +543,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Attitude_Tone_Empathy__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -557,7 +585,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Authorized_Users__c</fullName>
         <externalId>false</externalId>
         <label>Authorized Users</label>
@@ -592,7 +621,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automated_Email__c</fullName>
         <externalId>false</externalId>
         <label>Automated Email</label>
@@ -627,7 +657,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Automated_Message_Overview__c</fullName>
         <externalId>false</externalId>
         <label>Automated Messages</label>
@@ -662,7 +693,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Backend_Login__c</fullName>
         <externalId>false</externalId>
         <label>Backend Login</label>
@@ -702,7 +734,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Basic_setup__c</fullName>
         <externalId>false</externalId>
         <label>Basic setup</label>
@@ -736,7 +769,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Best_Practices__c</fullName>
         <externalId>false</externalId>
         <label>Best Practices</label>
@@ -771,7 +805,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Birthday__c</fullName>
         <externalId>false</externalId>
         <label>Birthday Messages</label>
@@ -806,7 +841,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Blogging__c</fullName>
         <externalId>false</externalId>
         <label>Blogging</label>
@@ -841,7 +877,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Build_Value_in_Product__c</fullName>
         <externalId>false</externalId>
         <label>Build Value in Product</label>
@@ -876,7 +913,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CCall_Flow_Adherence1__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3bu', 
@@ -942,7 +980,8 @@ IF(ISPICKVAL( Proper_Closing_Transfer__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CCall_Flow_Adherence_Qualitative_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>CSC_Monitoring_Forms_Formula_1__c/CSC_Monitoring_Forms_Formula_2__c</formula>
@@ -954,7 +993,8 @@ IF(ISPICKVAL( Proper_Closing_Transfer__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CCall_Flow_Adherence__c</fullName>
         <externalId>false</externalId>
         <formula>CCall_Flow_Adherence1__c/CSC_Monitoring_Forms_Text_Formula_2_1__c</formula>
@@ -966,7 +1006,8 @@ IF(ISPICKVAL( Proper_Closing_Transfer__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CSC_Monitoring_Forms_Formula_1__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3bu', 
@@ -1053,7 +1094,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CSC_Monitoring_Forms_Formula_21__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL( Introduction__c ,"0"),100,0)+ 
@@ -1122,7 +1164,8 @@ IF(ISPICKVAL( Proper_Closing_Transfer__c  ,"2"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CSC_Monitoring_Forms_Formula_22__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL( Attitude_Tone_Empathy__c ,"0"),100,0)+ 
@@ -1152,7 +1195,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CSC_Monitoring_Forms_Formula_2__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3bu', CSC_Monitoring_Forms_Text_Formula_2_1__c +  CSC_Monitoring_Forms_Text_Formula_2_2__c, 0)</formula>
@@ -1165,7 +1209,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CSC_Monitoring_Forms_Text_Formula_2_1__c</fullName>
         <externalId>false</externalId>
         <label>CSC Monitoring Forms Text Formula 2.1</label>
@@ -1177,7 +1222,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CSC_Monitoring_Forms_Text_Formula_2_2__c</fullName>
         <externalId>false</externalId>
         <label>CSC Monitoring Forms Text Formula 2.2</label>
@@ -1189,7 +1235,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Calendar_Integration__c</fullName>
         <externalId>false</externalId>
         <label>Calendar Integration</label>
@@ -1224,7 +1271,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Attached__c</fullName>
         <externalId>false</externalId>
         <label>Call Attached</label>
@@ -1254,7 +1302,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Date_Time__c</fullName>
         <externalId>false</externalId>
         <label>Call Date/Time</label>
@@ -1263,7 +1312,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Flow_Adherence_Formula_1_Text__c</fullName>
         <externalId>false</externalId>
         <label>Call Flow Adherence Formula 1 Text</label>
@@ -1275,7 +1325,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Flow_Adherence_Formula_1__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3bz',
@@ -1312,7 +1363,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Flow_Adherence_Formula_2_Text__c</fullName>
         <externalId>false</externalId>
         <label>Call Flow Adherence Formula 2 Text</label>
@@ -1324,7 +1376,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Flow_Adherence_Formula_2__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3bz', 
@@ -1372,7 +1425,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Grade__c</fullName>
         <externalId>false</externalId>
         <formula>IF(RecordTypeId = '01232000000M3bu',  CCall_Flow_Adherence_Qualitative_Formula__c, 
@@ -1386,7 +1440,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_Type__c</fullName>
         <externalId>false</externalId>
         <label>Call Type</label>
@@ -1415,7 +1470,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Call_control__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -1455,7 +1511,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cancellation_Form__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1468,7 +1525,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Cannot_Complete_Reason__c</fullName>
         <externalId>false</externalId>
         <label>Cannot Complete Reason</label>
@@ -1508,7 +1566,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Case__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1521,7 +1580,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Changes_Completed_Correctly__c</fullName>
         <externalId>false</externalId>
         <label>Changes Completed Correctly</label>
@@ -1555,7 +1615,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Chat_Control__c</fullName>
         <externalId>false</externalId>
         <label>Chat Control</label>
@@ -1594,7 +1655,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Child_Case_and_Response_Attached_Correct__c</fullName>
         <externalId>false</externalId>
         <label>Child Case and Response Attached Correct</label>
@@ -1628,7 +1690,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Child_Cases_Chat_Transcript_Attached__c</fullName>
         <externalId>false</externalId>
         <label>Child Cases &amp; Chat Transcript Attached</label>
@@ -1662,7 +1725,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <label>Client ID</label>
@@ -1673,7 +1737,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Client_s_Issues_Questions_Restated__c</fullName>
         <externalId>false</externalId>
         <label>Client's Issues/Questions Restated</label>
@@ -1707,7 +1772,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Co_Management_Access__c</fullName>
         <description>Maps Owner Verified</description>
         <externalId>false</externalId>
@@ -1743,7 +1809,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Co_Management_Walkthrough__c</fullName>
         <description>Maps Owner Verified</description>
         <externalId>false</externalId>
@@ -1779,7 +1846,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Co_Mange_Email_Check_and_Accepted__c</fullName>
         <externalId>false</externalId>
         <label>Co-Mange Email Check and Accepted</label>
@@ -1814,7 +1882,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Complete_notes__c</fullName>
         <externalId>false</externalId>
         <label>Complete notes</label>
@@ -1853,7 +1922,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Concerns__c</fullName>
         <externalId>false</externalId>
         <label>Acknowledge Concerns</label>
@@ -1887,7 +1957,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Confirm_Ability_to_Help__c</fullName>
         <externalId>false</externalId>
         <label>Confirm Ability to Help</label>
@@ -1921,7 +1992,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Confirm_Segment_Services__c</fullName>
         <externalId>false</externalId>
         <label>Confirm Segment &amp; Services</label>
@@ -1955,7 +2027,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Confirms_Main_Issue_Addressed__c</fullName>
         <externalId>false</externalId>
         <label>Confirms Main Issue Addressed</label>
@@ -1989,7 +2062,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Confirms_No_Outstanding_Questions__c</fullName>
         <externalId>false</externalId>
         <label>Confirms No Outstanding Questions</label>
@@ -2028,7 +2102,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contact_Date__c</fullName>
         <externalId>false</externalId>
         <label>Contact Date</label>
@@ -2063,7 +2138,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Contacts__c</fullName>
         <externalId>false</externalId>
         <label>Contacts</label>
@@ -2097,7 +2173,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Conversational_Ability__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -2137,7 +2214,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Grammar_Spelling__c</fullName>
         <externalId>false</externalId>
         <label>Correct Grammar &amp; Spelling</label>
@@ -2171,7 +2249,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Correct_Status__c</fullName>
         <externalId>false</externalId>
         <label>Correct Status</label>
@@ -2211,7 +2290,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Custom_Listing_Content__c</fullName>
         <externalId>false</externalId>
         <label>Custom Listing Content</label>
@@ -2246,7 +2326,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Custom_Messages__c</fullName>
         <externalId>false</externalId>
         <label>Custom Messages</label>
@@ -2281,7 +2362,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DB_Login_Overview__c</fullName>
         <externalId>false</externalId>
         <label>DB Login &amp; Overview</label>
@@ -2315,7 +2397,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DB_Wrap_Up__c</fullName>
         <externalId>false</externalId>
         <label>DB Wrap Up</label>
@@ -2350,7 +2433,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Dashboard_Walkthrough__c</fullName>
         <externalId>false</externalId>
         <label>Dashboard Walkthrough</label>
@@ -2385,7 +2469,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Detailed_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Detailed Notes</label>
@@ -2420,7 +2505,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Drip_Campaigns__c</fullName>
         <externalId>false</externalId>
         <label>Drip Campaigns</label>
@@ -2455,7 +2541,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Integration__c</fullName>
         <externalId>false</externalId>
         <label>Email Integration</label>
@@ -2490,7 +2577,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Marketing__c</fullName>
         <externalId>false</externalId>
         <label>Email Marketing/Automated</label>
@@ -2524,7 +2612,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Settings__c</fullName>
         <externalId>false</externalId>
         <label>Email Settings</label>
@@ -2559,7 +2648,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Templates__c</fullName>
         <externalId>false</externalId>
         <label>Email Templates</label>
@@ -2594,7 +2684,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email_Tracking__c</fullName>
         <externalId>false</externalId>
         <label>Email Tracking</label>
@@ -2629,7 +2720,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Essentials_Feature_Transition__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -2665,7 +2757,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Essentials_Value_Props__c</fullName>
         <externalId>false</externalId>
         <label>Essentials Value Props</label>
@@ -2700,7 +2793,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Existing_Listing_Information__c</fullName>
         <externalId>false</externalId>
         <label>Existing Listing Information</label>
@@ -2730,7 +2824,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Existing_Listings_in_Pan_Notated__c</fullName>
         <externalId>false</externalId>
         <label>Existing Listings in Pan Notated?</label>
@@ -2760,7 +2855,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Explain_Co_Management__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Rep explains that we need to walk client through process of adding us as a manager to the Google listing, giving us the ability to update it for optimization purposes.</inlineHelpText>
@@ -2796,7 +2892,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FAIR_Communication__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>CONSIDERATIONS: acknowledging statements (more than "yes, uh huh", focused and responding appropriately to statements, probing questions, investigates to get client talking, provides resolution &amp; actionables to questions, schedules follow ups</inlineHelpText>
@@ -2837,7 +2934,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Feature_Wrap_Up__c</fullName>
         <externalId>false</externalId>
         <label>Feature Wrap Up</label>
@@ -2872,7 +2970,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Feedback_Review_Solicitation__c</fullName>
         <externalId>false</externalId>
         <label>Feedback/Review Solicitation</label>
@@ -2907,7 +3006,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Feedback__c</fullName>
         <externalId>false</externalId>
         <label>Feedback</label>
@@ -2942,7 +3042,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fill_in_Feature__c</fullName>
         <externalId>false</externalId>
         <label>Fill-in Feature</label>
@@ -2977,7 +3078,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Final_Score__c</fullName>
         <externalId>false</externalId>
         <label>Final Score</label>
@@ -2988,7 +3090,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Formula_2_Text__c</fullName>
         <externalId>false</externalId>
         <label>Formula 2 Text</label>
@@ -3000,7 +3103,8 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Formula_2__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL( Opening__c ,"0"),100,0)+
@@ -3066,7 +3170,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Formula_Text__c</fullName>
         <externalId>false</externalId>
         <label>Formula Text</label>
@@ -3078,7 +3183,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Formula__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL( Opening__c ,"1"),50,0)+
@@ -3126,7 +3232,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>GMBL_Account_Status__c</fullName>
         <externalId>false</externalId>
         <label>GMBL Account Status</label>
@@ -3156,7 +3263,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>GMBL_Business_Type__c</fullName>
         <externalId>false</externalId>
         <label>GMBL Business Type</label>
@@ -3186,7 +3294,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>GMBL_Listing_Data__c</fullName>
         <externalId>false</externalId>
         <label>GMBL Listing Status</label>
@@ -3216,7 +3325,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>GMBL_Owner_Conflict_Status__c</fullName>
         <externalId>false</externalId>
         <label>GMBL Owner Conflict Status</label>
@@ -3246,7 +3356,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Google_Account__c</fullName>
         <externalId>false</externalId>
         <label>Google Account</label>
@@ -3276,7 +3387,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Google_Listing_Status__c</fullName>
         <externalId>false</externalId>
         <label>Google Listing Status</label>
@@ -3311,7 +3423,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Google_Status__c</fullName>
         <externalId>false</externalId>
         <label>Google Status</label>
@@ -3341,7 +3454,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Greeting_and_Goals__c</fullName>
         <externalId>false</externalId>
         <label>Greeting and Goals</label>
@@ -3376,7 +3490,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Home_screen__c</fullName>
         <externalId>false</externalId>
         <label>Home screen</label>
@@ -3410,7 +3525,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ICall_Flow_Adherence_Formula1__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3c4',
@@ -3441,7 +3557,8 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ICall_Flow_Adherence_Formula_2__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3c4', 
@@ -3481,7 +3598,8 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ICall_Flow_Adherence_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>ICall_Flow_Adherence_Formula1__c/ICall_Flow_Adherence_Formula_2__c</formula>
@@ -3493,7 +3611,8 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ICall_Flow_Adherence_Qualitative_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>Inbound_Monitoring_Text_Formula__c/Inbound_Monitoring_Text_Formula_2__c</formula>
@@ -3505,7 +3624,8 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>If_Other_List_Objection_s__c</fullName>
         <externalId>false</externalId>
         <label>If Other - List Objection(s)</label>
@@ -3515,7 +3635,8 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Impression_Share__c</fullName>
         <description>LBW Performance Call Quality Process</description>
         <externalId>false</externalId>
@@ -3551,7 +3672,8 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Inbound_Monitoring_Formula_2__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3c4', 
@@ -3609,7 +3731,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Inbound_Monitoring_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>IF( RecordTypeId = '01232000000M3c4', 
@@ -3652,7 +3775,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Inbound_Monitoring_Text_Formula_2__c</fullName>
         <externalId>false</externalId>
         <label>Inbound Monitoring Text Formula 2</label>
@@ -3664,7 +3788,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Inbound_Monitoring_Text_Formula__c</fullName>
         <externalId>false</externalId>
         <label>Inbound Monitoring Text Formula</label>
@@ -3676,7 +3801,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0),0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Information_Accuracy__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Some Issues - Info that is not in line w/ best practices as will have some negative impact on the client’s understanding.
@@ -3718,7 +3844,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Introduction__c</fullName>
         <externalId>false</externalId>
         <label>Introduction</label>
@@ -3757,7 +3884,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Is_Google_Account_listed_in_MIC__c</fullName>
         <externalId>false</externalId>
         <label>Is Google Account listed in MIC?</label>
@@ -3787,7 +3915,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Issues_Resolved__c</fullName>
         <description>(Properly attempted to resolved)</description>
         <externalId>false</externalId>
@@ -3823,7 +3952,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Join_me_Login__c</fullName>
         <externalId>false</externalId>
         <label>Join.me &amp; Login</label>
@@ -3858,7 +3988,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Junk_Mail_Warning__c</fullName>
         <externalId>false</externalId>
         <label>Junk Mail Warning</label>
@@ -3893,7 +4024,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Landing_Pages__c</fullName>
         <externalId>false</externalId>
         <label>Landing Pages</label>
@@ -3928,7 +4060,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Details_Properties__c</fullName>
         <externalId>false</externalId>
         <label>Lead Details - Properties</label>
@@ -3963,7 +4096,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Details_Searches__c</fullName>
         <externalId>false</externalId>
         <label>Lead Details - Searches</label>
@@ -3998,7 +4132,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Details_Send_Listings__c</fullName>
         <externalId>false</externalId>
         <label>Lead Details - Send Listings</label>
@@ -4033,7 +4168,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Details_Timeline__c</fullName>
         <externalId>false</externalId>
         <label>Lead Details - Timeline</label>
@@ -4068,7 +4204,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Overview__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -4109,7 +4246,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lead_Rating__c</fullName>
         <description>LBW Performance Call Quality Process</description>
         <externalId>false</externalId>
@@ -4145,7 +4283,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lighthouse_Portal_Login__c</fullName>
         <externalId>false</externalId>
         <label>Lighthouse Portal Login</label>
@@ -4180,7 +4319,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Listing_1_2_4_Status__c</fullName>
         <externalId>false</externalId>
         <label>Listing 1 (2-4) Status</label>
@@ -4210,7 +4350,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Listing_Rider__c</fullName>
         <externalId>false</externalId>
         <label>Listing Rider</label>
@@ -4245,7 +4386,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Lists__c</fullName>
         <externalId>false</externalId>
         <label>Lists</label>
@@ -4280,7 +4422,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MIC_Updated_for_listing_to_be_claimed__c</fullName>
         <externalId>false</externalId>
         <label>MIC Updated for listing to be claimed</label>
@@ -4310,7 +4453,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Maps_Education__c</fullName>
         <externalId>false</externalId>
         <label>Maps Education</label>
@@ -4344,7 +4488,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Maps_Initial_Claiming_Updated_Correctly__c</fullName>
         <externalId>false</externalId>
         <label>Maps Initial Claiming Updated Correctly</label>
@@ -4379,7 +4524,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Maps_Listing__c</fullName>
         <externalId>false</externalId>
         <label>Maps Listing</label>
@@ -4414,7 +4560,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Marketing_Features__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Features</label>
@@ -4449,7 +4596,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Mass_Email__c</fullName>
         <externalId>false</externalId>
         <label>Mass Email</label>
@@ -4484,7 +4632,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Message_Activation__c</fullName>
         <externalId>false</externalId>
         <label>Message Activation</label>
@@ -4519,7 +4668,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Messages__c</fullName>
         <externalId>false</externalId>
         <label>Messages</label>
@@ -4554,7 +4704,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Mobile__c</fullName>
         <externalId>false</externalId>
         <label>Mobile</label>
@@ -4588,7 +4739,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>My_Account__c</fullName>
         <externalId>false</externalId>
         <label>My Account</label>
@@ -4622,7 +4774,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Necessary_Casework_Submitted__c</fullName>
         <externalId>false</externalId>
         <label>Necessary Casework Submitted</label>
@@ -4656,7 +4809,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Necessary_Follow_Up_Work__c</fullName>
         <externalId>false</externalId>
         <label>Necessary Follow-Up Work</label>
@@ -4690,7 +4844,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>New_Feature_Information_Discussed__c</fullName>
         <externalId>false</externalId>
         <label>New Feature/Information Discussed</label>
@@ -4725,7 +4880,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>New_Patient_Acquisition__c</fullName>
         <externalId>false</externalId>
         <label>New Patient Acquisition</label>
@@ -4760,7 +4916,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Newsletters__c</fullName>
         <externalId>false</externalId>
         <label>Newsletters</label>
@@ -4795,7 +4952,8 @@ Misinformation - Inaccurate product info to client. Expectations set had negativ
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Next_Action_for_Client__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>If no pin, notify the client to ignore the instructions on the post card and call/email us with the pin number.
@@ -4833,7 +4991,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Next_Steps__c</fullName>
         <externalId>false</externalId>
         <label>Next Steps</label>
@@ -4843,7 +5002,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>2</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Next_Touch_Point__c</fullName>
         <externalId>false</externalId>
         <label>Next Touch Point</label>
@@ -4877,7 +5037,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>No_concession__c</fullName>
         <externalId>false</externalId>
         <label>No concession save attempt</label>
@@ -4911,7 +5072,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes__c</fullName>
         <externalId>false</externalId>
         <label>Notes</label>
@@ -4921,7 +5083,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes_for_Pin_Team__c</fullName>
         <externalId>false</externalId>
         <label>Notes for Pin Team</label>
@@ -4961,7 +5124,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notes_in_Issue_Tracker__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Notes in Yodle Live (Verify Note Quality)</inlineHelpText>
@@ -4997,7 +5161,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Notifications__c</fullName>
         <externalId>false</externalId>
         <label>Notifications</label>
@@ -5032,7 +5197,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OV_Max_Attempts__c</fullName>
         <externalId>false</externalId>
         <label>OV Max Attempts</label>
@@ -5067,7 +5233,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Objection_Handling_Skills__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>CONSIDERATIONS FOR SCORING: objections acknowledged &amp; addressed, appropriate obj. handling tactics used, providing too much/too little information, not addressing directly/speaking in circles, are we closing the loop &amp; confirming understanding</inlineHelpText>
@@ -5108,7 +5275,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Offers__c</fullName>
         <externalId>false</externalId>
         <label>Offers</label>
@@ -5143,7 +5311,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opening__c</fullName>
         <externalId>false</externalId>
         <label>Proper Opening</label>
@@ -5177,7 +5346,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Opportunity__c</fullName>
         <externalId>false</externalId>
         <label>Opportunity</label>
@@ -5187,7 +5357,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>2</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Organic__c</fullName>
         <externalId>false</externalId>
         <label>Organic</label>
@@ -5227,7 +5398,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Other_Features__c</fullName>
         <externalId>false</externalId>
         <label>Other Features</label>
@@ -5262,7 +5434,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Other_SEO_Company_Listed__c</fullName>
         <externalId>false</externalId>
         <label>Other SEO Company Listed?</label>
@@ -5292,7 +5465,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outbound_Dial_if_necessary__c</fullName>
         <externalId>false</externalId>
         <label>Outbound Dial (if necessary)</label>
@@ -5326,7 +5500,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outstanding_Casework_Reviewed__c</fullName>
         <externalId>false</externalId>
         <label>Outstanding Casework Reviewed</label>
@@ -5360,7 +5535,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Outstanding_questions__c</fullName>
         <externalId>false</externalId>
         <label>Outstanding client questions</label>
@@ -5394,7 +5570,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Owner_Verified_Status__c</fullName>
         <externalId>false</externalId>
         <label>Owner Verified Status</label>
@@ -5424,7 +5601,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Ownership__c</fullName>
         <externalId>false</externalId>
         <label>Expressed Ownership</label>
@@ -5458,7 +5636,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PAN_Notes_in_Salesforce__c</fullName>
         <externalId>false</externalId>
         <label>PAN Notes in Salesforce</label>
@@ -5493,7 +5672,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>PIN_Action_Details__c</fullName>
         <externalId>false</externalId>
         <label>PIN Action Details</label>
@@ -5523,7 +5703,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pace__c</fullName>
         <description>.</description>
         <externalId>false</externalId>
@@ -5563,7 +5744,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Payment_Collection__c</fullName>
         <description>Collections call</description>
         <externalId>false</externalId>
@@ -5599,7 +5781,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Performance_Opinion__c</fullName>
         <externalId>false</externalId>
         <label>Performance Opinion</label>
@@ -5634,7 +5817,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Perspective__c</fullName>
         <externalId>false</externalId>
         <label>Perspective</label>
@@ -5669,7 +5853,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Photo_Upload__c</fullName>
         <externalId>false</externalId>
         <label>Photo Upload</label>
@@ -5703,7 +5888,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pin_Action_Owner__c</fullName>
         <externalId>false</externalId>
         <label>PIN Action Owner</label>
@@ -5733,7 +5919,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pin_Action_Taken__c</fullName>
         <externalId>false</externalId>
         <label>PIN Action Taken</label>
@@ -5763,7 +5950,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Possible_PIN_Coming_After_Update__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Set expectations on possible pin coming after update</inlineHelpText>
@@ -5799,7 +5987,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Post_Call_Tasks__c</fullName>
         <externalId>false</externalId>
         <label>Post-Call Tasks</label>
@@ -5834,7 +6023,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Precall_Work__c</fullName>
         <description>LBW Performance Call Quality Process</description>
         <externalId>false</externalId>
@@ -5870,7 +6060,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Product_Type__c</fullName>
         <externalId>false</externalId>
         <label>Product Type</label>
@@ -5920,7 +6111,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Profile_Page_Agent_Page_Customization__c</fullName>
         <externalId>false</externalId>
         <label>Profile Page - Agent Page Customization</label>
@@ -5955,7 +6147,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Profile_Page_Contact_Info__c</fullName>
         <externalId>false</externalId>
         <label>Profile Page - Contact Info</label>
@@ -5990,7 +6183,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Profile_Page_Site_Info__c</fullName>
         <externalId>false</externalId>
         <label>Profile Page - Site Info</label>
@@ -6025,7 +6219,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Proper_Case_Reason_Statuses_Used__c</fullName>
         <externalId>false</externalId>
         <label>Proper Case Reason &amp; Statuses Used</label>
@@ -6059,7 +6254,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Proper_Closing_Transfer__c</fullName>
         <externalId>false</externalId>
         <label>Proper Closing/Transfer</label>
@@ -6093,7 +6289,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Proper_Template_Used__c</fullName>
         <externalId>false</externalId>
         <label>Proper Template Used</label>
@@ -6127,7 +6324,8 @@ If you received the pin, encourage client to upload photos to their Dashboard an
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Qualitative_Formula_1__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL( Attitude_Tone_Empathy__c ,"2"),50,0)+ 
@@ -6151,7 +6349,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Qualitative_Formula_2__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL( Attitude_Tone_Empathy__c ,"0"),100,0)+ 
@@ -6181,7 +6380,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Qualitative_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>Qualitative_Formula_1__c/Qualitative_Formula_2__c</formula>
@@ -6192,7 +6392,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Qualitative_Grade__c</fullName>
         <externalId>false</externalId>
         <label>Qualitative Grade</label>
@@ -6203,7 +6404,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Quick_Text_Used_When_Applicable__c</fullName>
         <externalId>false</externalId>
         <label>Quick Text Used (When Applicable)</label>
@@ -6237,7 +6439,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Radius_Geo__c</fullName>
         <externalId>false</externalId>
         <label>Radius/Geo</label>
@@ -6272,7 +6475,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reactivation__c</fullName>
         <externalId>false</externalId>
         <label>Reactivation</label>
@@ -6307,7 +6511,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Recall_Notices__c</fullName>
         <externalId>false</externalId>
         <label>Recall Notices</label>
@@ -6342,7 +6547,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Reporting_Non_Comanageable_Listing__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Set expectations on reporting non-comanageable listing and rebuilding</inlineHelpText>
@@ -6378,7 +6584,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Requests_Reason_for_Clients_Call__c</fullName>
         <externalId>false</externalId>
         <label>Requests Reason for Clients Call</label>
@@ -6413,7 +6620,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Resolution_Skills__c</fullName>
         <description>(FAIR Communication / Objection Handling Skills / Resolution Skills).</description>
         <externalId>false</externalId>
@@ -6454,7 +6662,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Restate_the_Issue__c</fullName>
         <externalId>false</externalId>
         <label>Restate the Issue</label>
@@ -6489,7 +6698,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Review_Calls__c</fullName>
         <description>LBW Performance Call Quality Process</description>
         <externalId>false</externalId>
@@ -6525,7 +6735,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Review_Pending_Cases_in_Account__c</fullName>
         <externalId>false</externalId>
         <label>Review Pending Cases in Account</label>
@@ -6559,7 +6770,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Review_Solicitation__c</fullName>
         <externalId>false</externalId>
         <label>Review Solicitation</label>
@@ -6593,7 +6805,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SCall_Flow_Adherence_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>Call_Flow_Adherence_Formula_1_Text__c/ Call_Flow_Adherence_Formula_2_Text__c</formula>
@@ -6606,7 +6819,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SCall_Flow_Adherence_Qualitative_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>Formula_Text__c/Formula_2_Text__c</formula>
@@ -6618,7 +6832,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Salesforce_Work__c</fullName>
         <description>Maps Owner Verified</description>
         <externalId>false</externalId>
@@ -6654,7 +6869,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Save_Attempt__c</fullName>
         <description>Collections Call</description>
         <externalId>false</externalId>
@@ -6690,7 +6906,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Schedule__c</fullName>
         <externalId>false</externalId>
         <label>Schedule</label>
@@ -6725,7 +6942,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Searching_Leads__c</fullName>
         <externalId>false</externalId>
         <label>Searching Leads</label>
@@ -6760,7 +6978,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Services_Sub_Categories__c</fullName>
         <externalId>false</externalId>
         <label>Services/Sub Categories</label>
@@ -6795,7 +7014,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Setup_Completion_Call__c</fullName>
         <externalId>false</externalId>
         <label>Setup Completion Call</label>
@@ -6830,7 +7050,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Setup_Date__c</fullName>
         <externalId>false</externalId>
         <label>Setup Date</label>
@@ -6860,7 +7081,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Social__c</fullName>
         <externalId>false</externalId>
         <label>Social</label>
@@ -6894,7 +7116,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -6924,7 +7147,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Strengths__c</fullName>
         <externalId>false</externalId>
         <label>Strengths</label>
@@ -6934,7 +7158,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>2</visibleLines>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Success_Measurement__c</fullName>
         <description>LBW Performance Call Quality Process</description>
         <externalId>false</externalId>
@@ -6970,7 +7195,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Support_Info__c</fullName>
         <externalId>false</externalId>
         <label>Support Info</label>
@@ -7005,7 +7231,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tab_Views__c</fullName>
         <externalId>false</externalId>
         <label>Tab Views</label>
@@ -7040,7 +7267,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tasks__c</fullName>
         <externalId>false</externalId>
         <label>Tasks</label>
@@ -7075,7 +7303,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Template_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Template Notes</label>
@@ -7109,7 +7338,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Text_Templates__c</fullName>
         <externalId>false</externalId>
         <label>Text Templates</label>
@@ -7144,7 +7374,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Thank_Client__c</fullName>
         <externalId>false</externalId>
         <label>Thank Client</label>
@@ -7179,7 +7410,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Top_Campaigns__c</fullName>
         <description>LBW Performance Call Quality Process</description>
         <externalId>false</externalId>
@@ -7215,7 +7447,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Training_Recap__c</fullName>
         <externalId>false</externalId>
         <label>Training Recap</label>
@@ -7250,7 +7483,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Treatment_Plan__c</fullName>
         <externalId>false</externalId>
         <label>Treatment Plan</label>
@@ -7285,7 +7519,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>USPs_Business_Qualifiers__c</fullName>
         <externalId>false</externalId>
         <label>USPs &amp; Business Qualifiers</label>
@@ -7319,7 +7554,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Uncover_the_Issue__c</fullName>
         <externalId>false</externalId>
         <label>Uncover the Issue</label>
@@ -7353,7 +7589,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Upsell_Pitch__c</fullName>
         <externalId>false</externalId>
         <label>Upsell Pitch</label>
@@ -7387,7 +7624,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Verify_Access_to_Listing__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Verify Access to Listing" to read, "Rep attempts to log client into Google account to check for listing.</inlineHelpText>
@@ -7423,7 +7661,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Verify_Address_Sent__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Rep verifies address on 1st Attempt.</inlineHelpText>
@@ -7459,7 +7698,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Verify_PIN__c</fullName>
         <externalId>false</externalId>
         <label>Verify PIN</label>
@@ -7494,7 +7734,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Verify_Time_Frame__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>"We requested it to be sent on _____. (US) It usually takes about 7-10 days but can take longer. (Canada) It usually takes 12-15 days but can take longer."</inlineHelpText>
@@ -7530,7 +7771,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Web_Presence__c</fullName>
         <externalId>false</externalId>
         <label>Web Presence</label>
@@ -7565,7 +7807,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Webinar__c</fullName>
         <externalId>false</externalId>
         <label>Webinar</label>
@@ -7600,7 +7843,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Design__c</fullName>
         <externalId>false</externalId>
         <label>Website Design</label>
@@ -7634,7 +7878,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Overview__c</fullName>
         <externalId>false</externalId>
         <label>Website - Overview</label>
@@ -7674,7 +7919,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Review__c</fullName>
         <externalId>false</externalId>
         <label>Website Review</label>
@@ -7708,7 +7954,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Website_Search_Page__c</fullName>
         <externalId>false</externalId>
         <label>Website - Search Page</label>
@@ -7743,7 +7990,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X1_Appropriate_Rebuttals_Utilized__c</fullName>
         <externalId>false</externalId>
         <label>1. Appropriate Rebuttals Utilized</label>
@@ -7778,7 +8026,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X1_Objection__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -7791,7 +8040,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X1_satisfied_with_response__c</fullName>
         <externalId>false</externalId>
         <label>1. Client Satisfied With Response</label>
@@ -7826,7 +8076,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X2_Appropriate_Rebuttals_Utilized__c</fullName>
         <externalId>false</externalId>
         <label>2. Appropriate Rebuttals Utilized</label>
@@ -7861,7 +8112,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X2_Client_Satisfied_With_Response__c</fullName>
         <externalId>false</externalId>
         <label>2. Client Satisfied With Response</label>
@@ -7896,7 +8148,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X2_Objection__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -7909,7 +8162,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X3_Appropriate_Rebuttals_Utilized__c</fullName>
         <externalId>false</externalId>
         <label>3. Appropriate Rebuttals Utilized</label>
@@ -7944,7 +8198,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X3_Client_Satisfied_With_Response__c</fullName>
         <externalId>false</externalId>
         <label>3. Client Satisfied With Response</label>
@@ -7979,7 +8234,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X3_Objection__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -7992,7 +8248,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X4_Appropriate_Rebuttals_Utilized__c</fullName>
         <externalId>false</externalId>
         <label>4. Appropriate Rebuttals Utilized</label>
@@ -8027,7 +8284,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X4_Client_Satisfied_With_Response__c</fullName>
         <externalId>false</externalId>
         <label>4. Client Satisfied With Response</label>
@@ -8062,7 +8320,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>X4_Objection__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -8075,7 +8334,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>closing__c</fullName>
         <externalId>false</externalId>
         <label>Proper Closing</label>
@@ -8114,17 +8374,38 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Call Grading Form 2.0</label><nameField>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Call Grading Form 2.0</label>
+    <nameField>
         <displayFormat>GF-{000000}</displayFormat>
         <label>Call Grading Form 2.0 Name</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Call Grading Form 2.0</pluralLabel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </nameField>
+    <pluralLabel>Call Grading Form 2.0</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>Agent_Name__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Case__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Final_Score__c</customTabListAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>RECORDTYPE</columns>
@@ -8134,7 +8415,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
         <columns>Final_Score__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Adoption_Call</fullName>
         <active>true</active>
         <label>Adoption Call</label>
@@ -11206,7 +11488,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>CSC_Monitoring_Forms</fullName>
         <active>true</active>
         <label>CSC Monitoring Forms</label>
@@ -12637,7 +12920,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Collections_Call</fullName>
         <active>true</active>
         <label>Collections Call</label>
@@ -15769,7 +16053,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Essentials_Setup_Completion_Call</fullName>
         <active>true</active>
         <label>Essentials Setup Completion Call</label>
@@ -19335,7 +19620,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Inbound_Monitoring_Forms</fullName>
         <active>true</active>
         <label>Inbound Monitoring Forms</label>
@@ -20524,7 +20810,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>LBW_Onboarding_Quality_Process</fullName>
         <active>true</active>
         <label>LBW Onboarding Quality Process</label>
@@ -23725,7 +24012,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>LBW_Performance_Call_Quality_Process</fullName>
         <active>true</active>
         <label>LBW Performance Call Quality Process</label>
@@ -27071,7 +27359,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Lighthouse_CSC</fullName>
         <active>true</active>
         <label>Lighthouse CSC</label>
@@ -29079,7 +29368,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Lighthouse_CSC_Essentials</fullName>
         <active>true</active>
         <label>Lighthouse CSC + Essentials</label>
@@ -31501,7 +31791,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Lighthouse_Inbound_Call</fullName>
         <active>true</active>
         <label>Lighthouse Inbound Call</label>
@@ -34627,7 +34918,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Lighthouse_Save_Call</fullName>
         <active>true</active>
         <label>Lighthouse Save Call</label>
@@ -38419,7 +38711,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Local_Email_Monitoring_Form</fullName>
         <active>true</active>
         <label>Local - Email Monitoring Form</label>
@@ -39628,7 +39921,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Local_Live_Chat_Monitoring_Form</fullName>
         <active>true</active>
         <label>Local - Live Chat Monitoring Form</label>
@@ -40817,7 +41111,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Local_Max_CSC_Grading_Form</fullName>
         <active>true</active>
         <label>Local - Max CSC Grading Form</label>
@@ -42245,7 +42540,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Maps_Owner_Verified</fullName>
         <active>true</active>
         <label>Maps - Owner Verified</label>
@@ -44083,7 +44379,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Maps_PIN_Collection</fullName>
         <active>true</active>
         <label>Maps - PIN Collection</label>
@@ -45649,7 +45946,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Maps_Quality_Assurance_Form</fullName>
         <active>true</active>
         <label>Maps - Quality Assurance Form</label>
@@ -48035,7 +48333,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>Save_Call_Monitoring_Forms</fullName>
         <active>true</active>
         <label>Save Call Monitoring Forms</label>
@@ -49224,7 +49523,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>TORCHx_CSC_Advanced_Features</fullName>
         <active>true</active>
         <label>TORCHx CSC - Advanced Features</label>
@@ -52914,7 +53214,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>TORCHx_CSC_Building_Awareness_and_Driving_Leads</fullName>
         <active>true</active>
         <label>TORCHx CSC - Building Awareness and Driving Leads</label>
@@ -55907,7 +56208,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>TORCHx_CSC_Managing_Relationships</fullName>
         <active>true</active>
         <label>TORCHx CSC - Managing Relationships</label>
@@ -58900,7 +59202,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>TORCHx_Inbound_Call</fullName>
         <active>true</active>
         <label>TORCHx Inbound Call</label>
@@ -61950,7 +62253,8 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><recordTypes>
+    </recordTypes>
+    <recordTypes>
         <fullName>TORCHx_Save_Call</fullName>
         <active>true</active>
         <label>TORCHx Save Call</label>
@@ -65742,4 +66046,5 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

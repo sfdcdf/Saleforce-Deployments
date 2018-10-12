@@ -46,6 +46,9 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -1274,6 +1277,8 @@
         <fields>MLS__c.NAME</fields>
         <fields>Active_Connection__c</fields>
         <fields>NAME</fields>
+        <fields>MLS_Datasource__c</fields>
+        <fields>MLS__c.DataSource__c</fields>
         <relatedList>Account_MLS__c.Account__c</relatedList>
         <sortField>Active_Connection__c</sortField>
         <sortOrder>Desc</sortOrder>

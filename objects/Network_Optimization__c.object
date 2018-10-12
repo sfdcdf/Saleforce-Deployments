@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -40,7 +51,42 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
+        <fullName>Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Primary Report Account</description>
+        <externalId>false</externalId>
+        <label>Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Performance_Report__r.Product__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Performance_Report__r.Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Performance_Report__c</fullName>
         <description>The related performance report</description>
         <externalId>false</externalId>
@@ -55,49 +101,41 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields><fields>
-        <fullName>Primary__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Primary Report Account</description>
-        <externalId>false</externalId>
-        <label>Primary</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields><fields>
-        <fullName>Product__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT(Performance_Report__r.Product__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Product</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><fields>
-        <fullName>Status__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT(Performance_Report__r.Status__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Status</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields><allowInChatterGroups>true</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><description>Network Optimizations for Performance Analysis</description><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ControlledByParent</externalSharingModel><label>Network Optimization</label><nameField>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Network Optimizations for Performance Analysis</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Network Optimization</label>
+    <nameField>
         <displayFormat>NOPT-{000000}</displayFormat>
         <label>Network Optimizations Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Network Optimizations</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ControlledByParent</sharingModel><visibility>Public</visibility><listViews>
+    </nameField>
+    <pluralLabel>Network Optimizations</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>Performance_Analysis</fullName>
         <active>true</active>
         <description>For auto performance analysis.</description>
         <label>Performance Analysis</label>
-    </recordTypes></CustomObject>
+    </recordTypes>
+</CustomObject>

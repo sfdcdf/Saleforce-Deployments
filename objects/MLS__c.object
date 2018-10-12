@@ -784,11 +784,30 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>MLS</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>MLS</label>
+    <nameField>
         <label>MLS Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-    </nameField><pluralLabel>MLS</pluralLabel><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts /><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility>
+    </nameField>
+    <pluralLabel>MLS</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Address_1__c</fullName>
         <externalId>false</externalId>
         <label>Address 1</label>
@@ -38,7 +49,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Address_2__c</fullName>
         <externalId>false</externalId>
         <label>Address 2</label>
@@ -48,7 +60,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>City__c</fullName>
         <externalId>false</externalId>
         <label>City</label>
@@ -58,7 +71,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Company__c</fullName>
         <externalId>false</externalId>
         <label>Company</label>
@@ -68,7 +82,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Designated_Sales_Rep_Role__c</fullName>
         <externalId>false</externalId>
         <formula>Designated_Sales_Rep__r.UserRole.Name</formula>
@@ -78,7 +93,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Designated_Sales_Rep__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -89,7 +105,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email__c</fullName>
         <externalId>false</externalId>
         <label>Email</label>
@@ -98,7 +115,8 @@
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IMS_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -109,7 +127,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Mobile__c</fullName>
         <externalId>false</externalId>
         <label>Mobile</label>
@@ -117,7 +136,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>New_Partners_after_8_14__c</fullName>
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
@@ -125,7 +145,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Other_Plan__c</fullName>
         <externalId>false</externalId>
         <label>Other Plan</label>
@@ -135,7 +156,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Partner_Full_Name__c</fullName>
         <externalId>false</externalId>
         <label>Partner Full Name</label>
@@ -145,7 +167,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Partner_Plan__c</fullName>
         <externalId>false</externalId>
         <label>Partner Plan</label>
@@ -183,7 +206,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Payable_to__c</fullName>
         <externalId>false</externalId>
         <label>Payable to</label>
@@ -193,7 +217,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Payment_Method__c</fullName>
         <externalId>false</externalId>
         <label>Payment Method</label>
@@ -216,7 +241,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone__c</fullName>
         <externalId>false</externalId>
         <label>Phone</label>
@@ -224,7 +250,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Sales_Rep__c</fullName>
         <externalId>false</externalId>
         <label>Sales Rep</label>
@@ -234,7 +261,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Send_W9__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -243,7 +271,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>State__c</fullName>
         <externalId>false</externalId>
         <label>State</label>
@@ -253,7 +282,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -286,7 +316,8 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Tax_ID_SSN__c</fullName>
         <externalId>false</externalId>
         <label>Tax ID/SSN</label>
@@ -296,7 +327,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>W9_Received__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -304,7 +336,8 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Yodle_Customer__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -312,7 +345,8 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Zip__c</fullName>
         <externalId>false</externalId>
         <label>Zip</label>
@@ -322,7 +356,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>lead_partner_id__c</fullName>
         <externalId>false</externalId>
         <formula>Name</formula>
@@ -332,12 +367,29 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>true</enableActivities><enableBulkApi>true</enableBulkApi><enableChangeDataCapture>false</enableChangeDataCapture><enableEnhancedLookup>false</enableEnhancedLookup><enableFeeds>false</enableFeeds><enableHistory>true</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><externalSharingModel>ReadWrite</externalSharingModel><label>Partner</label><nameField>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Partner</label>
+    <nameField>
         <displayFormat>{0000}</displayFormat>
         <label>Partner  ID</label>
         <trackHistory>true</trackHistory>
         <type>AutoNumber</type>
-    </nameField><pluralLabel>Partners</pluralLabel><searchLayouts>
+    </nameField>
+    <pluralLabel>Partners</pluralLabel>
+    <searchLayouts>
         <customTabListAdditionalFields>Partner_Full_Name__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Company__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
@@ -353,7 +405,10 @@
         <searchFilterFields>Phone__c</searchFilterFields>
         <searchResultsAdditionalFields>Partner_Full_Name__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><visibility>Public</visibility><listViews>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Partner_Full_Name__c</columns>
@@ -367,7 +422,8 @@
         <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Rogers_Support_Partner_Name</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -375,7 +431,8 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Send_To_Rogers_Partner_Name</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
@@ -383,4 +440,5 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>
