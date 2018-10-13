@@ -598,130 +598,159 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
     <fields>
         <fullName>Agent_Broker_Initiates_Process__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <label>Agent/Broker Initiates Process</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Brokers_Only__c</fullName>
         <externalId>false</externalId>
         <label>Brokers Only?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Unknown</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>true</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Compliance_Review_Required_For_Approval__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <label>Compliance Review Required For Approval</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Credential_Type__c</fullName>
         <externalId>false</externalId>
         <label>Credential Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Vendor Credentials</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Broker Credentials</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Individual/Agent Credentials</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Vendor Credentials</fullName>
+                    <default>false</default>
+                    <label>Vendor Credentials</label>
+                </value>
+                <value>
+                    <fullName>Broker Credentials</fullName>
+                    <default>false</default>
+                    <label>Broker Credentials</label>
+                </value>
+                <value>
+                    <fullName>Individual/Agent Credentials</fullName>
+                    <default>false</default>
+                    <label>Individual/Agent Credentials</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FTP_RETS__c</fullName>
         <externalId>false</externalId>
         <label>FTP/ RETS</label>
-        <picklist>
-            <picklistValues>
-                <fullName>FTP</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RETS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>FTP &amp; RETS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FTP</fullName>
+                    <default>false</default>
+                    <label>FTP</label>
+                </value>
+                <value>
+                    <fullName>RETS</fullName>
+                    <default>false</default>
+                    <label>RETS</label>
+                </value>
+                <value>
+                    <fullName>FTP &amp; RETS</fullName>
+                    <default>false</default>
+                    <label>FTP &amp; RETS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Requires_Broker_Approval__c</fullName>
         <externalId>false</externalId>
         <label>Requires Broker Approval?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Unknown</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>true</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>State__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>State</globalPicklist>
         <label>State</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>State</valueSetName>
+        </valueSet>
         <visibleLines>6</visibleLines>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -746,6 +775,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -755,6 +785,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <fullName>MLS</fullName>
         <active>true</active>
         <label>MLS</label>
+        
         <picklistValues>
             <picklist>Brokers_Only__c</picklist>
             <values>
@@ -770,6 +801,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
                 <default>false</default>
             </values>
         </picklistValues>
+        
         <picklistValues>
             <picklist>Credential_Type__c</picklist>
             <values>
@@ -815,220 +847,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>State</picklist>
-            <values>
-                <fullName>AK</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>AL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>AR</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>AZ</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>FL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>HI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ID</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IN</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>KS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MD</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ME</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MN</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ND</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NJ</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NV</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>NY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OK</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OR</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>RI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SD</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TN</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TX</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>UT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WV</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WY</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Yes_No</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
     </recordTypes>
     <validationRules>
         <fullName>Cannot_Sync_Reason</fullName>

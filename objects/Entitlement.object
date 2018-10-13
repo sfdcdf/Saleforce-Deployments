@@ -98,17 +98,6 @@
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Phone Support</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -116,28 +105,34 @@
         <fullName>Type__c</fullName>
         <externalId>false</externalId>
         <label>SLA Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>YBNStd</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>YBNCus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>YBNStd</fullName>
+                    <default>false</default>
+                    <label>YBNStd</label>
+                </value>
+                <value>
+                    <fullName>YBNCus</fullName>
+                    <default>false</default>
+                    <label>YBNCus</label>
+                </value>
+                <value>
+                    <fullName>Local</fullName>
+                    <default>false</default>
+                    <label>Local</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>AccountId</fullName>

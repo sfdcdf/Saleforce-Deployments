@@ -169,21 +169,25 @@
         <fullName>Month_End__c</fullName>
         <externalId>false</externalId>
         <label>Month End</label>
-        <picklist>
-            <picklistValues>
-                <fullName>15th</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>31st</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>15th</fullName>
+                    <default>false</default>
+                    <label>15th</label>
+                </value>
+                <value>
+                    <fullName>31st</fullName>
+                    <default>false</default>
+                    <label>31st</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -211,6 +215,7 @@
         <customTabListAdditionalFields>Percent_to_quota__c</customTabListAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>Rogers_Support_Mgmt_Goal</fullName>
         <filterScope>Queue</filterScope>

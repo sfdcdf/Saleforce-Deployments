@@ -216,113 +216,138 @@
         <fullName>MDF_Status__c</fullName>
         <externalId>false</externalId>
         <label>MDF Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Requested</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Request Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Request Denied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Request Expired</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Claim Submitted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Claim In Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Claim Needs More Information</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Claim Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Claim Denied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Claim Expired</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>true</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Request Approved</fullName>
+                    <default>false</default>
+                    <label>Request Approved</label>
+                </value>
+                <value>
+                    <fullName>Request Denied</fullName>
+                    <default>false</default>
+                    <label>Request Denied</label>
+                </value>
+                <value>
+                    <fullName>Request Expired</fullName>
+                    <default>false</default>
+                    <label>Request Expired</label>
+                </value>
+                <value>
+                    <fullName>Claim Submitted</fullName>
+                    <default>false</default>
+                    <label>Claim Submitted</label>
+                </value>
+                <value>
+                    <fullName>Claim In Review</fullName>
+                    <default>false</default>
+                    <label>Claim In Review</label>
+                </value>
+                <value>
+                    <fullName>Claim Needs More Information</fullName>
+                    <default>false</default>
+                    <label>Claim Needs More Information</label>
+                </value>
+                <value>
+                    <fullName>Claim Approved</fullName>
+                    <default>false</default>
+                    <label>Claim Approved</label>
+                </value>
+                <value>
+                    <fullName>Claim Denied</fullName>
+                    <default>false</default>
+                    <label>Claim Denied</label>
+                </value>
+                <value>
+                    <fullName>Claim Expired</fullName>
+                    <default>false</default>
+                    <label>Claim Expired</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Type_of_Activity__c</fullName>
         <externalId>false</externalId>
         <label>Type of Activity</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Testimonial Videos</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>White Papers</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Research Docs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Advertising</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Events</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Promotional Items</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Online Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsorships</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Direct Mail/Email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Testimonial Videos</fullName>
+                    <default>false</default>
+                    <label>Testimonial Videos</label>
+                </value>
+                <value>
+                    <fullName>White Papers</fullName>
+                    <default>false</default>
+                    <label>White Papers</label>
+                </value>
+                <value>
+                    <fullName>Research Docs</fullName>
+                    <default>false</default>
+                    <label>Research Docs</label>
+                </value>
+                <value>
+                    <fullName>Advertising</fullName>
+                    <default>false</default>
+                    <label>Advertising</label>
+                </value>
+                <value>
+                    <fullName>Events</fullName>
+                    <default>false</default>
+                    <label>Events</label>
+                </value>
+                <value>
+                    <fullName>Promotional Items</fullName>
+                    <default>false</default>
+                    <label>Promotional Items</label>
+                </value>
+                <value>
+                    <fullName>Online Marketing</fullName>
+                    <default>false</default>
+                    <label>Online Marketing</label>
+                </value>
+                <value>
+                    <fullName>Sponsorships</fullName>
+                    <default>false</default>
+                    <label>Sponsorships</label>
+                </value>
+                <value>
+                    <fullName>Direct Mail/Email</fullName>
+                    <default>false</default>
+                    <label>Direct Mail/Email</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -347,6 +372,7 @@
     <pluralLabel>Partner Marketing Development Funds</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

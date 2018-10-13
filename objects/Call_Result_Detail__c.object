@@ -89,40 +89,49 @@
         <fullName>Call_Status__c</fullName>
         <externalId>false</externalId>
         <label>Call Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>LVM for Target</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LVM for Exec. Assistant</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LVM for Attendant</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NVM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Connected with Target</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Connected with Executive Assistant</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Connected with Attendant</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>LVM for Target</fullName>
+                    <default>false</default>
+                    <label>LVM for Target</label>
+                </value>
+                <value>
+                    <fullName>LVM for Exec. Assistant</fullName>
+                    <default>false</default>
+                    <label>LVM for Exec. Assistant</label>
+                </value>
+                <value>
+                    <fullName>LVM for Attendant</fullName>
+                    <default>false</default>
+                    <label>LVM for Attendant</label>
+                </value>
+                <value>
+                    <fullName>NVM</fullName>
+                    <default>false</default>
+                    <label>NVM</label>
+                </value>
+                <value>
+                    <fullName>Connected with Target</fullName>
+                    <default>false</default>
+                    <label>Connected with Target</label>
+                </value>
+                <value>
+                    <fullName>Connected with Executive Assistant</fullName>
+                    <default>false</default>
+                    <label>Connected with Executive Assistant</label>
+                </value>
+                <value>
+                    <fullName>Connected with Attendant</fullName>
+                    <default>false</default>
+                    <label>Connected with Attendant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Campaign__c</fullName>
@@ -175,4 +184,5 @@
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

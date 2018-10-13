@@ -160,58 +160,71 @@
         <externalId>false</externalId>
         <inlineHelpText>The response from the client.</inlineHelpText>
         <label>Client Response</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Confirm</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reschedule</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Opt Out</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Opt In</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unrecognized Response</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Confirm</fullName>
+                    <default>false</default>
+                    <label>Confirm</label>
+                </value>
+                <value>
+                    <fullName>Reschedule</fullName>
+                    <default>false</default>
+                    <label>Reschedule</label>
+                </value>
+                <value>
+                    <fullName>Opt Out</fullName>
+                    <default>false</default>
+                    <label>Opt Out</label>
+                </value>
+                <value>
+                    <fullName>Opt In</fullName>
+                    <default>false</default>
+                    <label>Opt In</label>
+                </value>
+                <value>
+                    <fullName>Unrecognized Response</fullName>
+                    <default>false</default>
+                    <label>Unrecognized Response</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Intro_Sent__c</fullName>
         <description>Intro message was/not sent.  The message informs the client about the standard rates may apply when receiving/sending a text.</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>Intro message was/not sent.  The message informs the client about the standard rates may apply when receiving/sending a text.</inlineHelpText>
         <label>Intro Sent?</label>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Invalid_Phone_Number__c</fullName>
         <description>The phone number provide is not valid.</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>The phone number provide is not valid.</inlineHelpText>
         <label>Invalid Phone Number?</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -262,6 +275,7 @@
         <searchResultsAdditionalFields>Twilio_Id__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -307,16 +321,7 @@
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Yes_No</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>true</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
+        
     </recordTypes>
 </CustomObject>

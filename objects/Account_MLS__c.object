@@ -88,20 +88,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>MLS__c</fullName>
-        <externalId>false</externalId>
-        <label>MLS</label>
-        <referenceTo>MLS__c</referenceTo>
-        <relationshipLabel>Account MLS's</relationshipLabel>
-        <relationshipName>Account_MLS_s</relationshipName>
-        <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>Account__c</fullName>
         <externalId>false</externalId>
         <label>Account</label>
@@ -109,6 +95,20 @@
         <relationshipLabel>Account MLS's</relationshipLabel>
         <relationshipName>Account_MLS_s</relationshipName>
         <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>MLS__c</fullName>
+        <externalId>false</externalId>
+        <label>MLS</label>
+        <referenceTo>MLS__c</referenceTo>
+        <relationshipLabel>Account MLS's</relationshipLabel>
+        <relationshipName>Account_MLS_s</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -138,6 +138,7 @@
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

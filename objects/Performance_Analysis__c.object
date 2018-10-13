@@ -1311,167 +1311,207 @@ Next_Billing_Date__c-Today()))</formula>
         <description>from import.</description>
         <externalId>false</externalId>
         <label>Channel</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Lead Stream</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Max</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>LBW</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Franchise</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TorchX</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WBN</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead Stream</fullName>
+                    <default>false</default>
+                    <label>Lead Stream</label>
+                </value>
+                <value>
+                    <fullName>Max</fullName>
+                    <default>false</default>
+                    <label>Max</label>
+                </value>
+                <value>
+                    <fullName>LBW</fullName>
+                    <default>false</default>
+                    <label>LBW</label>
+                </value>
+                <value>
+                    <fullName>Franchise</fullName>
+                    <default>false</default>
+                    <label>Franchise</label>
+                </value>
+                <value>
+                    <fullName>TorchX</fullName>
+                    <default>false</default>
+                    <label>TorchX</label>
+                </value>
+                <value>
+                    <fullName>WBN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>WBN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Added_Removd_Context_Card_for_Lead_Ad__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added/Removed Context Card for Lead Ads?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Added_Removed_Custom_Lookalike_Audien__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added/Removed Custom &amp;Lookalike Audience</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Added_Removed_qualifying_for_Lead_Ads__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added/Removed qualifying for Lead Ads?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Added_behavior_Interest_Targeting__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added behavior/Interest Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Adjustments_Made_for_Ad_Relevance__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Adjustments Made for Ad Relevance</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Decreased_Geo_Targeting__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>FB Decreased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Fixed_Ad_Copy_Typos__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Fixed Ad Copy Typos</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Fixed_Facebook_Errors__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Fixed Facebook Errors</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Increased_Geo_Targeting__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>FB Increased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Recommended_Budget_Changes__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>No_Recmnd_Upsell_Downsell</globalPicklist>
         <label>FB Recommended Budget Changes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>No_Recmnd_Upsell_Downsell</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Recommended_Conversion_Tactics__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>FB Recommended Conversion Tactics</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Refreshed_Ad_Copy__c</fullName>
         <description>Refreshed Ad Copy</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <inlineHelpText>.</inlineHelpText>
         <label>Refreshed Ad Copy</label>
         <required>false</required>
@@ -1479,68 +1519,86 @@ Next_Billing_Date__c-Today()))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Removed_Behavior_Interest_Targeting__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Removed Behavior / Interest Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Responded_to_Negative_Feedback_on_Ads__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Responded to Negative Feedback on Ads</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Updated_Copy_for_Quality__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Copy for Quality</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Updated_Images_for_Quality__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Images for Quality</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>FB_Updated_Landing_Pages__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Landing Pages</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>HC_First_Page_Ranking_Below_Target__c</fullName>
         <description>WBN Hero Metric Unpaid Search
 Keyword Ranking</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>Rule: 80% of KWs are ranking on the first page for Google / GEO
 Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>First Page Ranking Below Target</label>
@@ -1549,26 +1607,32 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>HC_Low_Lead_Range_Paid_Unpaid__c</fullName>
         <description>Prem Services Hero Metric Paid &amp; Unpaid
 Low Lead Range (Paid + Unpaid)</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <label>Low Lead Range (Paid + Unpaid)</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>HC_PPL_Above_Expected_Goal__c</fullName>
         <description>WBN Hero Metric Paid Search
 PPL Above Expected Goal</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>Rule: PPL is above the expected goal.
 Expected Goal is Network Median PPL
 Fill Out Paid Section and Paid Notes</inlineHelpText>
@@ -1578,13 +1642,16 @@ Fill Out Paid Section and Paid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>HC_Projected_to_Miss_Lead_Range_Goal__c</fullName>
         <description>WBN Hero Metric Paid Search
 Projected to Miss Lead Range Goal?</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>Fill Out Paid Section and Paid Notes</inlineHelpText>
         <label>Projected to Miss Lead Range Goal?</label>
         <required>false</required>
@@ -1592,12 +1659,15 @@ Projected to Miss Lead Range Goal?</description>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>HC_Underspending__c</fullName>
         <description>Hero Metric - Please Fill out Paid Section and Paid Notes</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>Rule: At least 15 days have passed in the billing period AND the “spent projection” at the end of the billing period is lower than 70% of the budget.
 Please Fill out Paid Section and Paid Notes</inlineHelpText>
         <label>Underspending</label>
@@ -1606,13 +1676,16 @@ Please Fill out Paid Section and Paid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>HC_Unpaid_Lead_Drop__c</fullName>
         <description>WBN Hero Metric Unpaid Search
 Unpaid Lead Drop</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <inlineHelpText>Rule: Unpaid Leads are down by 30% or more over the last 14 days
 Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Unpaid Lead Drop</label>
@@ -1621,6 +1694,10 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Issue_Type__c</fullName>
@@ -1628,724 +1705,913 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Is this a proactive analysis or reaction(Case)</inlineHelpText>
         <label>Issue Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Proactive</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reactive</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Proactive</fullName>
+                    <default>false</default>
+                    <label>Proactive</label>
+                </value>
+                <value>
+                    <fullName>Reactive</fullName>
+                    <default>false</default>
+                    <label>Reactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Added_Call_only__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added Call only</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Added_Keywords__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added Keywords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Added_Negatives__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added Negatives</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Added_Pending_Keywords__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added Pending Keywords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Added_Service_Category__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added Service Category</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Adjusted_Site_Link_Extensions__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Adjusted Site Link Extensions</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Adjusted_VPL_Caps__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Adjusted VPL Caps</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Algo_Added_Negative_Bid_Multiplier__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Algo: Added Negative Bid Multiplier</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Algo_Added_Positive_Bid_Multiplier__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Algo: Added Positive Bid Multiplier</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Checked_Lead_Quality__c</fullName>
         <description>Checked Lead Quality</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No</globalPicklist>
         <label>Checked Lead Quality</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Checked_for_Adwords_Disapprovals__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Checked for Adwords Disapprovals</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Checked_for_Limited_Ad_status_in_Adw__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Checked for Limited Ad status in Adwords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Checked_for_Site_Suspensions__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Checked for Site Suspensions</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Cleared_Spend_Blockers__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Cleared Spend Blockers</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Corrected_Ad_Copy_Typos__c</fullName>
         <description>Corrected Ad Copy Typos</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Corrected Ad Copy Typos</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Decreased_Geo_Targeting__c</fullName>
         <description>Decreased Geo Targeting</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Decreased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Deleted_Call_Only__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Deleted Call Only</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Deleted_Paused_Keywords__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Deleted/Paused Keywords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Deleted_paused_Service_Category__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Deleted/paused Service Category</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Fixed_Call_Tracking_Issues__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Fixed Call Tracking Issues</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Implemented_Business_Hour_Only_Bidding__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Implemented Business Hour Only Bidding</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Implemented_No_Listing_Left_Behind__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Implemented No Listing Left Behind</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Increased_Geo_Targeting__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Increased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Paused_Provider_Outlets__c</fullName>
         <description>Paused Provider Outlets</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Paused Provider Outlets</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Paused_Spend_Monitoring__c</fullName>
         <description>Paused Spend Monitoring</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Paused Spend Monitoring</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Recommended_Budget_Changes__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>No_Recmnd_Upsell_Downsell</globalPicklist>
         <label>Recommended Budget Changes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>No_Recmnd_Upsell_Downsell</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Recommended_Conversion_Tactics__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Recommended Conversion Tactics</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Removed_Negatives__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Removed Negatives</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Resolved_KW_Conflicts__c</fullName>
         <description>Resolved KW Conflicts</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Resolved KW Conflicts</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Updated_Bulk_URL_Manager__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Bulk URL Manager</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Updated_Geo_Messaging__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Geo Messaging</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>P_Updated_Refreshed_Ad_Copy__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated/Refreshed Ad Copy</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Product__c</fullName>
         <externalId>false</externalId>
         <label>Product</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Pay Per Click</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Facebook</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pay Per Click</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click</label>
+                </value>
+                <value>
+                    <fullName>SEO</fullName>
+                    <default>false</default>
+                    <label>SEO</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Imported</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Relevant Issue &amp; Work Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>False Positive - Work Not Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Imported</fullName>
+                    <default>false</default>
+                    <label>Imported</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Relevant Issue &amp; Work Completed</fullName>
+                    <default>false</default>
+                    <label>Relevant Issue &amp; Work Completed</label>
+                </value>
+                <value>
+                    <fullName>False Positive - Work Not Completed</fullName>
+                    <default>false</default>
+                    <label>False Positive - Work Not Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Added_Schema_Mark_Up__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Added Schema Mark-Up</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Checked_Site_Speed__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Checked Site Speed</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Checked_non_200_ok_or_non_301_codes__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Checked for non 200 ok or non 301 codes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Cleaned_Up_Schema_Mark_up__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Cleaned Up Schema Mark-up</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Created_Custom_Content_Case__c</fullName>
         <description>Created Custom Content Case</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Created Custom Content Case</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Fixed_Broken_Links__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Fixed Broken Links</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Performed_Code_Clean_up__c</fullName>
         <description>Performed Code Clean-up</description>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Performed Code Clean-up</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Published_Site__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Published Site</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Recommended_Website_Updates__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Recommended Website Updates</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Resolved_Crawl_Errors__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Resolved Crawl Errors</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Resolved_Sitemap_Errors__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Resolved Sitemap Errors</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Submitted_to_G_B_Webmaster_Tools__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Submitted to G&amp;B Webmaster Tools</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Bing_Listing__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Bing Listing</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Bing_Webmaster_Tools__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Bing Webmaster Tools</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_GMB_Listing__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated GMB Listing</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Google_Search_Console__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Google Search Console</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_H_Tags__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated H Tags</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Images_Title_Alt_Tags__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Images (Title/Alt Tags)</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Meta_Data__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Meta Data</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Unpaid_Tracking__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Unpaid Tracking #</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Updated_Yext__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Updated Yext</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Vendor_Built_Additional_Citations__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Vendor: Built Additional Citations</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Vendor_Built_Backlinks__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Vendor: Built Backlinks</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Vendor_Cleaned_Up_Citations__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Vendor: Cleaned Up Citations</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Vendor_Produced_Enhanced_Content__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Vendor: Produced / Enhanced Content</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UP_Vendor_Reclaimed_Backlinks__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Yes_No_Recommended</globalPicklist>
         <label>Vendor Reclaimed Backlinks</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Yes_No_Recommended</valueSetName>
+        </valueSet>
     </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -2380,6 +2646,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>AccountPerformanceQueue295311_Performance_Analysis</fullName>
         <columns>NAME</columns>
@@ -2584,6 +2851,29 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <picklistValues>
             <picklist>Issue_Type__c</picklist>
             <values>
@@ -2595,21 +2885,38 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>No_Recmnd_Upsell_Downsell</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recommend Downsell</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recommend Upsell</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <picklistValues>
             <picklist>Product__c</picklist>
             <values>
@@ -2640,32 +2947,32 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Yes_No</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Yes_No_Recommended</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recommended</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </recordTypes>
     <validationRules>
         <fullName>Close_Notes_Required</fullName>

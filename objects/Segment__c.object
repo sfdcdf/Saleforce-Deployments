@@ -122,97 +122,117 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <fullName>Local_Segment_Status__c</fullName>
         <externalId>false</externalId>
         <label>Local Segment Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>RED</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>YELLOW</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GREEN</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RED</fullName>
+                    <default>false</default>
+                    <label>RED</label>
+                </value>
+                <value>
+                    <fullName>YELLOW</fullName>
+                    <default>false</default>
+                    <label>YELLOW</label>
+                </value>
+                <value>
+                    <fullName>GREEN</fullName>
+                    <default>false</default>
+                    <label>GREEN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>National_Segment_Status__c</fullName>
         <externalId>false</externalId>
         <label>National Segment Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>RED</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>YELLOW</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GREEN</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RED</fullName>
+                    <default>false</default>
+                    <label>RED</label>
+                </value>
+                <value>
+                    <fullName>YELLOW</fullName>
+                    <default>false</default>
+                    <label>YELLOW</label>
+                </value>
+                <value>
+                    <fullName>GREEN</fullName>
+                    <default>false</default>
+                    <label>GREEN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Prior_Local_Status__c</fullName>
         <externalId>false</externalId>
         <label>Prior Local Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>RED</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>YELLOW</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GREEN</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RED</fullName>
+                    <default>false</default>
+                    <label>RED</label>
+                </value>
+                <value>
+                    <fullName>YELLOW</fullName>
+                    <default>false</default>
+                    <label>YELLOW</label>
+                </value>
+                <value>
+                    <fullName>GREEN</fullName>
+                    <default>false</default>
+                    <label>GREEN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Prior_National_Status__c</fullName>
         <externalId>false</externalId>
         <label>Prior National Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>RED</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>YELLOW</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GREEN</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RED</fullName>
+                    <default>false</default>
+                    <label>RED</label>
+                </value>
+                <value>
+                    <fullName>YELLOW</fullName>
+                    <default>false</default>
+                    <label>YELLOW</label>
+                </value>
+                <value>
+                    <fullName>GREEN</fullName>
+                    <default>false</default>
+                    <label>GREEN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -252,6 +272,7 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <searchResultsAdditionalFields>National_Segment_Status__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>

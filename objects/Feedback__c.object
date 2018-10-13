@@ -158,249 +158,302 @@
         <fullName>Likelihood_to_Continue__c</fullName>
         <externalId>false</externalId>
         <label>Likelihood to Continue</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Very Likely</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Somewhat Likely</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unlikely</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Very Unlikely</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Very Likely</fullName>
+                    <default>false</default>
+                    <label>Very Likely</label>
+                </value>
+                <value>
+                    <fullName>Somewhat Likely</fullName>
+                    <default>false</default>
+                    <label>Somewhat Likely</label>
+                </value>
+                <value>
+                    <fullName>Unlikely</fullName>
+                    <default>false</default>
+                    <label>Unlikely</label>
+                </value>
+                <value>
+                    <fullName>Very Unlikely</fullName>
+                    <default>false</default>
+                    <label>Very Unlikely</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Number_of_Leads__c</fullName>
         <externalId>false</externalId>
         <label>Number of Leads</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Overall_Satisfaction2__c</fullName>
         <externalId>false</externalId>
         <label>Sales Satisfaction</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Quality_of_Campaigns2__c</fullName>
         <externalId>false</externalId>
         <label>Quality of Campaigns</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Quality_of_IMS__c</fullName>
         <externalId>false</externalId>
         <label>Quality of IMS</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Quality_of_Leads__c</fullName>
         <externalId>false</externalId>
         <label>Quality of Leads</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Resolved__c</fullName>
         <externalId>false</externalId>
         <label>Resolved?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Time_to_Live2__c</fullName>
         <externalId>false</externalId>
         <label>Time to Live</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Website_Quality3__c</fullName>
         <externalId>false</externalId>
         <label>Website Quality</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Delighted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Extremely Dissatisfied</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yodle did not create my website</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delighted</fullName>
+                    <default>false</default>
+                    <label>Delighted</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Extremely Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>Extremely Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>Yodle did not create my website</fullName>
+                    <default>false</default>
+                    <label>Yodle did not create my website</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Case__c</fullName>
@@ -438,4 +491,5 @@
     <pluralLabel>Feedback</pluralLabel>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

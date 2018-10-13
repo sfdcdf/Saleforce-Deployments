@@ -530,353 +530,432 @@
         <fullName>Airline__c</fullName>
         <externalId>false</externalId>
         <label>Airline</label>
-        <picklist>
-            <picklistValues>
-                <fullName>American</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Continental</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Delta</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>JetBlue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>United</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>US Airways</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>American</fullName>
+                    <default>false</default>
+                    <label>American</label>
+                </value>
+                <value>
+                    <fullName>Continental</fullName>
+                    <default>false</default>
+                    <label>Continental</label>
+                </value>
+                <value>
+                    <fullName>Delta</fullName>
+                    <default>false</default>
+                    <label>Delta</label>
+                </value>
+                <value>
+                    <fullName>JetBlue</fullName>
+                    <default>false</default>
+                    <label>JetBlue</label>
+                </value>
+                <value>
+                    <fullName>United</fullName>
+                    <default>false</default>
+                    <label>United</label>
+                </value>
+                <value>
+                    <fullName>US Airways</fullName>
+                    <default>false</default>
+                    <label>US Airways</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Gender__c</fullName>
         <externalId>false</externalId>
         <label>Gender</label>
-        <picklist>
-            <picklistValues>
-                <fullName>male</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>female</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>male</fullName>
+                    <default>false</default>
+                    <label>male</label>
+                </value>
+                <value>
+                    <fullName>female</fullName>
+                    <default>false</default>
+                    <label>female</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Guest_Airline__c</fullName>
         <externalId>false</externalId>
         <label>Guest Airline</label>
-        <picklist>
-            <picklistValues>
-                <fullName>American</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Continental</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Delta</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>JetBlue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>United</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>US AIrways</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>American</fullName>
+                    <default>false</default>
+                    <label>American</label>
+                </value>
+                <value>
+                    <fullName>Continental</fullName>
+                    <default>false</default>
+                    <label>Continental</label>
+                </value>
+                <value>
+                    <fullName>Delta</fullName>
+                    <default>false</default>
+                    <label>Delta</label>
+                </value>
+                <value>
+                    <fullName>JetBlue</fullName>
+                    <default>false</default>
+                    <label>JetBlue</label>
+                </value>
+                <value>
+                    <fullName>United</fullName>
+                    <default>false</default>
+                    <label>United</label>
+                </value>
+                <value>
+                    <fullName>US AIrways</fullName>
+                    <default>false</default>
+                    <label>US AIrways</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Guest_Gender__c</fullName>
         <externalId>false</externalId>
         <label>Guest Gender</label>
-        <picklist>
-            <picklistValues>
-                <fullName>male</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>female</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>male</fullName>
+                    <default>false</default>
+                    <label>male</label>
+                </value>
+                <value>
+                    <fullName>female</fullName>
+                    <default>false</default>
+                    <label>female</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Guest_T_Shirt_Size__c</fullName>
         <externalId>false</externalId>
         <label>Guest T-Shirt Size</label>
-        <picklist>
-            <picklistValues>
-                <fullName>x-small</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>small</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>medium</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>large</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>x-large</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>xx-large</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>x-small</fullName>
+                    <default>false</default>
+                    <label>x-small</label>
+                </value>
+                <value>
+                    <fullName>small</fullName>
+                    <default>false</default>
+                    <label>small</label>
+                </value>
+                <value>
+                    <fullName>medium</fullName>
+                    <default>false</default>
+                    <label>medium</label>
+                </value>
+                <value>
+                    <fullName>large</fullName>
+                    <default>false</default>
+                    <label>large</label>
+                </value>
+                <value>
+                    <fullName>x-large</fullName>
+                    <default>false</default>
+                    <label>x-large</label>
+                </value>
+                <value>
+                    <fullName>xx-large</fullName>
+                    <default>false</default>
+                    <label>xx-large</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Prez_Club_Type__c</fullName>
         <externalId>false</externalId>
         <label>Prez Club Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Exec</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Staff</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>National-Platinum</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Local-Platinum</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>National</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IMS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rookie</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Wild Card</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manager</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Exec</fullName>
+                    <default>false</default>
+                    <label>Exec</label>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                    <label>Staff</label>
+                </value>
+                <value>
+                    <fullName>National-Platinum</fullName>
+                    <default>false</default>
+                    <label>National-Platinum</label>
+                </value>
+                <value>
+                    <fullName>Local-Platinum</fullName>
+                    <default>false</default>
+                    <label>Local-Platinum</label>
+                </value>
+                <value>
+                    <fullName>National</fullName>
+                    <default>false</default>
+                    <label>National</label>
+                </value>
+                <value>
+                    <fullName>Local</fullName>
+                    <default>false</default>
+                    <label>Local</label>
+                </value>
+                <value>
+                    <fullName>IMS</fullName>
+                    <default>false</default>
+                    <label>IMS</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Rookie</fullName>
+                    <default>false</default>
+                    <label>Rookie</label>
+                </value>
+                <value>
+                    <fullName>Wild Card</fullName>
+                    <default>false</default>
+                    <label>Wild Card</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Room_Type__c</fullName>
         <externalId>false</externalId>
         <label>Room-Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>SUP-King</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SUP-DBL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SUP-King-Concierge</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>SUP-DBL-Concierge</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SUP-King</fullName>
+                    <default>false</default>
+                    <label>SUP-King</label>
+                </value>
+                <value>
+                    <fullName>SUP-DBL</fullName>
+                    <default>false</default>
+                    <label>SUP-DBL</label>
+                </value>
+                <value>
+                    <fullName>SUP-King-Concierge</fullName>
+                    <default>false</default>
+                    <label>SUP-King-Concierge</label>
+                </value>
+                <value>
+                    <fullName>SUP-DBL-Concierge</fullName>
+                    <default>false</default>
+                    <label>SUP-DBL-Concierge</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Team__c</fullName>
         <externalId>false</externalId>
         <label>Team</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Association</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AZ-Teitelman</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AZ-Venneri</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BOS-Albee</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BOS-Gross</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BOS-Williams</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CLT-Eaton</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CLT-Pirrone</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>National-Sherry</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>National-Zang</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NYC-Defina</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NYC-Depatria</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NYC-Rosner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PHL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ALL North</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ALL South</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ALL National</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer Promo</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Association</fullName>
+                    <default>false</default>
+                    <label>Association</label>
+                </value>
+                <value>
+                    <fullName>AZ-Teitelman</fullName>
+                    <default>false</default>
+                    <label>AZ-Teitelman</label>
+                </value>
+                <value>
+                    <fullName>AZ-Venneri</fullName>
+                    <default>false</default>
+                    <label>AZ-Venneri</label>
+                </value>
+                <value>
+                    <fullName>BOS-Albee</fullName>
+                    <default>false</default>
+                    <label>BOS-Albee</label>
+                </value>
+                <value>
+                    <fullName>BOS-Gross</fullName>
+                    <default>false</default>
+                    <label>BOS-Gross</label>
+                </value>
+                <value>
+                    <fullName>BOS-Williams</fullName>
+                    <default>false</default>
+                    <label>BOS-Williams</label>
+                </value>
+                <value>
+                    <fullName>CLT-Eaton</fullName>
+                    <default>false</default>
+                    <label>CLT-Eaton</label>
+                </value>
+                <value>
+                    <fullName>CLT-Pirrone</fullName>
+                    <default>false</default>
+                    <label>CLT-Pirrone</label>
+                </value>
+                <value>
+                    <fullName>National-Sherry</fullName>
+                    <default>false</default>
+                    <label>National-Sherry</label>
+                </value>
+                <value>
+                    <fullName>National-Zang</fullName>
+                    <default>false</default>
+                    <label>National-Zang</label>
+                </value>
+                <value>
+                    <fullName>NYC-Defina</fullName>
+                    <default>false</default>
+                    <label>NYC-Defina</label>
+                </value>
+                <value>
+                    <fullName>NYC-Depatria</fullName>
+                    <default>false</default>
+                    <label>NYC-Depatria</label>
+                </value>
+                <value>
+                    <fullName>NYC-Rosner</fullName>
+                    <default>false</default>
+                    <label>NYC-Rosner</label>
+                </value>
+                <value>
+                    <fullName>PHL</fullName>
+                    <default>false</default>
+                    <label>PHL</label>
+                </value>
+                <value>
+                    <fullName>ALL North</fullName>
+                    <default>false</default>
+                    <label>ALL North</label>
+                </value>
+                <value>
+                    <fullName>ALL South</fullName>
+                    <default>false</default>
+                    <label>ALL South</label>
+                </value>
+                <value>
+                    <fullName>ALL National</fullName>
+                    <default>false</default>
+                    <label>ALL National</label>
+                </value>
+                <value>
+                    <fullName>Customer Promo</fullName>
+                    <default>false</default>
+                    <label>Customer Promo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>tshirt_Size__c</fullName>
         <externalId>false</externalId>
         <label>T-Shirt Size</label>
-        <picklist>
-            <picklistValues>
-                <fullName>x-small</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>small</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>medium</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>large</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>x-large</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>xx-large</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>x-small</fullName>
+                    <default>false</default>
+                    <label>x-small</label>
+                </value>
+                <value>
+                    <fullName>small</fullName>
+                    <default>false</default>
+                    <label>small</label>
+                </value>
+                <value>
+                    <fullName>medium</fullName>
+                    <default>false</default>
+                    <label>medium</label>
+                </value>
+                <value>
+                    <fullName>large</fullName>
+                    <default>false</default>
+                    <label>large</label>
+                </value>
+                <value>
+                    <fullName>x-large</fullName>
+                    <default>false</default>
+                    <label>x-large</label>
+                </value>
+                <value>
+                    <fullName>xx-large</fullName>
+                    <default>false</default>
+                    <label>xx-large</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Contest__c</fullName>
@@ -916,6 +995,7 @@
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <recordTypes>
         <fullName>President_s_Club</fullName>
         <active>true</active>

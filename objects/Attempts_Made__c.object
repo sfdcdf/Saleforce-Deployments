@@ -89,34 +89,41 @@
         <fullName>Attempt_Result__c</fullName>
         <externalId>false</externalId>
         <label>Attempt Result</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Call + Email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Left VM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Connected - Rescheduled</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call + Email</fullName>
+                    <default>false</default>
+                    <label>Call + Email</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Left VM</fullName>
+                    <default>false</default>
+                    <label>Left VM</label>
+                </value>
+                <value>
+                    <fullName>Connected - Rescheduled</fullName>
+                    <default>false</default>
+                    <label>Connected - Rescheduled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Case__c</fullName>
@@ -153,6 +160,7 @@
     <pluralLabel>Attempts Made</pluralLabel>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

@@ -125,127 +125,153 @@
         <fullName>Campaign_Outreach__c</fullName>
         <externalId>false</externalId>
         <label>Campaign Outreach</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Telephone</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Social Media</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Trade Show</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Telephone</fullName>
+                    <default>false</default>
+                    <label>Telephone</label>
+                </value>
+                <value>
+                    <fullName>Social Media</fullName>
+                    <default>false</default>
+                    <label>Social Media</label>
+                </value>
+                <value>
+                    <fullName>Trade Show</fullName>
+                    <default>false</default>
+                    <label>Trade Show</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>ClientStatus__c</fullName>
         <externalId>false</externalId>
         <label>Client Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New Clients</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Existing Clients</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Both</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Clients</fullName>
+                    <default>false</default>
+                    <label>New Clients</label>
+                </value>
+                <value>
+                    <fullName>Existing Clients</fullName>
+                    <default>false</default>
+                    <label>Existing Clients</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Products_Services__c</fullName>
         <externalId>false</externalId>
         <label>Products / Services</label>
-        <picklist>
-            <picklistValues>
-                <fullName>PPC</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Centermark</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Foundations</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PPC</fullName>
+                    <default>false</default>
+                    <label>PPC</label>
+                </value>
+                <value>
+                    <fullName>Centermark</fullName>
+                    <default>false</default>
+                    <label>Centermark</label>
+                </value>
+                <value>
+                    <fullName>Foundations</fullName>
+                    <default>false</default>
+                    <label>Foundations</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Term__c</fullName>
         <externalId>false</externalId>
         <label>Term</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>9 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>12 Month</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 Month</fullName>
+                    <default>false</default>
+                    <label>1 Month</label>
+                </value>
+                <value>
+                    <fullName>2 Month</fullName>
+                    <default>false</default>
+                    <label>2 Month</label>
+                </value>
+                <value>
+                    <fullName>3 Month</fullName>
+                    <default>false</default>
+                    <label>3 Month</label>
+                </value>
+                <value>
+                    <fullName>4 Month</fullName>
+                    <default>false</default>
+                    <label>4 Month</label>
+                </value>
+                <value>
+                    <fullName>5 Month</fullName>
+                    <default>false</default>
+                    <label>5 Month</label>
+                </value>
+                <value>
+                    <fullName>6 Month</fullName>
+                    <default>false</default>
+                    <label>6 Month</label>
+                </value>
+                <value>
+                    <fullName>9 Month</fullName>
+                    <default>false</default>
+                    <label>9 Month</label>
+                </value>
+                <value>
+                    <fullName>12 Month</fullName>
+                    <default>false</default>
+                    <label>12 Month</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -270,6 +296,7 @@
     <pluralLabel>Promotions</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

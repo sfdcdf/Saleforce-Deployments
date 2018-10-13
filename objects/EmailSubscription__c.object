@@ -89,18 +89,21 @@
         <fullName>Unsubscribe__c</fullName>
         <externalId>false</externalId>
         <label>Unsubscribe</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Issue Resolution Survey</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Issue Resolution Survey</fullName>
+                    <default>false</default>
+                    <label>Issue Resolution Survey</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -126,6 +129,7 @@
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>

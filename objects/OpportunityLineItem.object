@@ -348,10 +348,13 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
     <fields>
         <fullName>ProductChargeType__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>ProductChargeType</globalPicklist>
         <label>Product Charge Type</label>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ProductChargeType</valueSetName>
+        </valueSet>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds>
     <validationRules>
         <fullName>YBN_Contract_Length_Must_Be_Greater_0</fullName>

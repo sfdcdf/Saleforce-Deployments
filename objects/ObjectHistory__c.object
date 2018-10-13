@@ -329,6 +329,7 @@ IF(MOD(TODAY() - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) )
     <pluralLabel>Object History</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

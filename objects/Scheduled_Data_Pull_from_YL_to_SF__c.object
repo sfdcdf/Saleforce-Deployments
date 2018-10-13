@@ -81,18 +81,21 @@
         <externalId>false</externalId>
         <inlineHelpText>Supported classes to be invoked</inlineHelpText>
         <label>Class to Invoke</label>
-        <picklist>
-            <picklistValues>
-                <fullName>YodleLiveSyncClientEngagementDataHelper</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>YodleLiveSyncClientEngagementDataHelper</fullName>
+                    <default>false</default>
+                    <label>YodleLiveSyncClientEngagementDataHelper</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -116,6 +119,7 @@
     <pluralLabel>Scheduled Data Pulls from YL to SF</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

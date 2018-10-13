@@ -199,32 +199,39 @@
     <fields>
         <fullName>Client_Type__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>Client_Type_Picklist</globalPicklist>
         <label>Client Type</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Client_Type_Picklist</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Touchplan_Type__c</fullName>
         <externalId>false</externalId>
         <label>Touchplan Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Test Group</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Control</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Test Group</fullName>
+                    <default>false</default>
+                    <label>Test Group</label>
+                </value>
+                <value>
+                    <fullName>Control</fullName>
+                    <default>false</default>
+                    <label>Control</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -248,6 +255,7 @@
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -287,53 +295,7 @@
         <fullName>Default</fullName>
         <active>true</active>
         <label>Default</label>
-        <picklistValues>
-            <picklist>Client_Type_Picklist</picklist>
-            <values>
-                <fullName>Lighthouse</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National Master Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM National</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Service Task</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YBN</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yodle Core</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yodle Submit</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Touchplan_Type__c</picklist>
             <values>
@@ -350,53 +312,7 @@
         <fullName>Template</fullName>
         <active>true</active>
         <label>Template</label>
-        <picklistValues>
-            <picklist>Client_Type_Picklist</picklist>
-            <values>
-                <fullName>Lighthouse</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National Master Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM National</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Service Task</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YBN</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yodle Core</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yodle Submit</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Touchplan_Type__c</picklist>
             <values>

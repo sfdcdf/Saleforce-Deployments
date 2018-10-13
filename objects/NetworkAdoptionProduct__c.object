@@ -136,49 +136,60 @@
         <fullName>Product__c</fullName>
         <externalId>false</externalId>
         <label>Product</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Enhanced SEO</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Facebook</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Facebook Setup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Foundations</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Location Setup</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Paid Per Click (PPC)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reviews</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yodle Web</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Media Management</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>true</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enhanced SEO</fullName>
+                    <default>false</default>
+                    <label>Enhanced SEO</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+                <value>
+                    <fullName>Facebook Setup</fullName>
+                    <default>false</default>
+                    <label>Facebook Setup</label>
+                </value>
+                <value>
+                    <fullName>Foundations</fullName>
+                    <default>false</default>
+                    <label>Foundations</label>
+                </value>
+                <value>
+                    <fullName>Location Setup</fullName>
+                    <default>false</default>
+                    <label>Location Setup</label>
+                </value>
+                <value>
+                    <fullName>Paid Per Click (PPC)</fullName>
+                    <default>false</default>
+                    <label>Paid Per Click (PPC)</label>
+                </value>
+                <value>
+                    <fullName>Reviews</fullName>
+                    <default>false</default>
+                    <label>Reviews</label>
+                </value>
+                <value>
+                    <fullName>Yodle Web</fullName>
+                    <default>false</default>
+                    <label>Yodle Web</label>
+                </value>
+                <value>
+                    <fullName>Media Management</fullName>
+                    <default>false</default>
+                    <label>Media Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Opportunity__c</fullName>
@@ -216,6 +227,7 @@
     <pluralLabel>Network Adoption Products</pluralLabel>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <validationRules>
         <fullName>AdoptionLen_Greater_Than_0</fullName>
         <active>false</active>

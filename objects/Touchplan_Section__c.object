@@ -298,57 +298,70 @@
         <fullName>Create_Case_Criteria__c</fullName>
         <externalId>false</externalId>
         <label>Create Case Criteria</label>
-        <picklist>
-            <picklistValues>
-                <fullName>On Yodle Path Assignment</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Last Section Any Close Status</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Last Section Complete Status</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Last Section Did Not Complete Status</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Last Section Complete Status Create Case on Days Live: 38</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>On Last Section Any Close Status Create Case on Days Live: 68</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Do not create Case</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Case Create on Days Live: 35</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Case Create on Days Live: 38</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Case Create on Days Live: 65</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Case Create on Days Live: 68</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Yodle Path Assignment</fullName>
+                    <default>true</default>
+                    <label>On Yodle Path Assignment</label>
+                </value>
+                <value>
+                    <fullName>On Last Section Any Close Status</fullName>
+                    <default>false</default>
+                    <label>On Last Section Any Close Status</label>
+                </value>
+                <value>
+                    <fullName>On Last Section Complete Status</fullName>
+                    <default>false</default>
+                    <label>On Last Section Complete Status</label>
+                </value>
+                <value>
+                    <fullName>On Last Section Did Not Complete Status</fullName>
+                    <default>false</default>
+                    <label>On Last Section Did Not Complete Status</label>
+                </value>
+                <value>
+                    <fullName>On Last Section Complete Status Create Case on Days Live: 38</fullName>
+                    <default>false</default>
+                    <label>On Last Section Complete Status Create Case on Days Live: 38</label>
+                </value>
+                <value>
+                    <fullName>On Last Section Any Close Status Create Case on Days Live: 68</fullName>
+                    <default>false</default>
+                    <label>On Last Section Any Close Status Create Case on Days Live: 68</label>
+                </value>
+                <value>
+                    <fullName>Do not create Case</fullName>
+                    <default>false</default>
+                    <label>Do not create Case</label>
+                </value>
+                <value>
+                    <fullName>Case Create on Days Live: 35</fullName>
+                    <default>false</default>
+                    <label>Case Create on Days Live: 35</label>
+                </value>
+                <value>
+                    <fullName>Case Create on Days Live: 38</fullName>
+                    <default>false</default>
+                    <label>Case Create on Days Live: 38</label>
+                </value>
+                <value>
+                    <fullName>Case Create on Days Live: 65</fullName>
+                    <default>false</default>
+                    <label>Case Create on Days Live: 65</label>
+                </value>
+                <value>
+                    <fullName>Case Create on Days Live: 68</fullName>
+                    <default>false</default>
+                    <label>Case Create on Days Live: 68</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Touchplan__c</fullName>
@@ -385,4 +398,5 @@
     <pluralLabel>Touchplan Sections</pluralLabel>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

@@ -161,121 +161,147 @@
         <fullName>Fix_Needed__c</fullName>
         <externalId>false</externalId>
         <label>Fix Needed?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Issue_Resolved__c</fullName>
         <externalId>false</externalId>
         <label>Issue Resolved?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pending Client</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Pending Client</fullName>
+                    <default>false</default>
+                    <label>Pending Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Results_of_QA__c</fullName>
         <externalId>false</externalId>
         <label>Results of QA</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Call Quality Concern</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA - Poor Audio Quality</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>NA - Call Not Recorded</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Errors</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Request Denied - Product Limitation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Request Denied - Knowledge Limitation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Work Completed Incorrectly (CS)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Work Completed Incorrectly (OPT)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Work Not Completed (CS)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Work Not Completed (OPT)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Quality Concern</fullName>
+                    <default>false</default>
+                    <label>Call Quality Concern</label>
+                </value>
+                <value>
+                    <fullName>NA - Poor Audio Quality</fullName>
+                    <default>false</default>
+                    <label>NA - Poor Audio Quality</label>
+                </value>
+                <value>
+                    <fullName>NA - Call Not Recorded</fullName>
+                    <default>false</default>
+                    <label>NA - Call Not Recorded</label>
+                </value>
+                <value>
+                    <fullName>No Errors</fullName>
+                    <default>false</default>
+                    <label>No Errors</label>
+                </value>
+                <value>
+                    <fullName>Request Denied - Product Limitation</fullName>
+                    <default>false</default>
+                    <label>Request Denied - Product Limitation</label>
+                </value>
+                <value>
+                    <fullName>Request Denied - Knowledge Limitation</fullName>
+                    <default>false</default>
+                    <label>Request Denied - Knowledge Limitation</label>
+                </value>
+                <value>
+                    <fullName>Work Completed Incorrectly (CS)</fullName>
+                    <default>false</default>
+                    <label>Work Completed Incorrectly (CS)</label>
+                </value>
+                <value>
+                    <fullName>Work Completed Incorrectly (OPT)</fullName>
+                    <default>false</default>
+                    <label>Work Completed Incorrectly (OPT)</label>
+                </value>
+                <value>
+                    <fullName>Work Not Completed (CS)</fullName>
+                    <default>false</default>
+                    <label>Work Not Completed (CS)</label>
+                </value>
+                <value>
+                    <fullName>Work Not Completed (OPT)</fullName>
+                    <default>false</default>
+                    <label>Work Not Completed (OPT)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -300,6 +326,7 @@
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>

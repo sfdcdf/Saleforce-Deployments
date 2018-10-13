@@ -57,24 +57,6 @@
     </fields>
     <fields>
         <fullName>Status</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Draft</fullName>
-                <default>true</default>
-                <reviewed>false</reviewed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reviewed</fullName>
-                <default>false</default>
-                <reviewed>true</reviewed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Duplicate</fullName>
-                <default>false</default>
-                <reviewed>false</reviewed>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         
         <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>

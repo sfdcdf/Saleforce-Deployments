@@ -189,250 +189,303 @@
         <fullName>Been_part_of_reseller_program_before__c</fullName>
         <externalId>false</externalId>
         <label>Been part of reseller program before?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Bundling_integrating_w_other_products__c</fullName>
         <externalId>false</externalId>
         <label>Bundling/integrating w/ other products?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Do_you_have_a_sales_team__c</fullName>
         <externalId>false</externalId>
         <label>Do you have a sales team?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Do_you_have_specific_prospects_in_mind__c</fullName>
         <externalId>false</externalId>
         <label>Do you have specific prospects in mind?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>How_long_have_you_been_in_business__c</fullName>
         <externalId>false</externalId>
         <label>How long have you been in business?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>&gt;1 year</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2-3 years</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4-5 years</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6-10 years</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11-15 years</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>16+ years</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&gt;1 year</fullName>
+                    <default>false</default>
+                    <label>&gt;1 year</label>
+                </value>
+                <value>
+                    <fullName>2-3 years</fullName>
+                    <default>false</default>
+                    <label>2-3 years</label>
+                </value>
+                <value>
+                    <fullName>4-5 years</fullName>
+                    <default>false</default>
+                    <label>4-5 years</label>
+                </value>
+                <value>
+                    <fullName>6-10 years</fullName>
+                    <default>false</default>
+                    <label>6-10 years</label>
+                </value>
+                <value>
+                    <fullName>11-15 years</fullName>
+                    <default>false</default>
+                    <label>11-15 years</label>
+                </value>
+                <value>
+                    <fullName>16+ years</fullName>
+                    <default>false</default>
+                    <label>16+ years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Marketing_commitments_in_1st_month__c</fullName>
         <externalId>false</externalId>
         <label>Marketing commitments in 1st month?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>webinar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>newsletter</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>direct mailer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>calls to existing clients</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ads</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>social campaign</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OTHER</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>email</fullName>
+                    <default>false</default>
+                    <label>email</label>
+                </value>
+                <value>
+                    <fullName>webinar</fullName>
+                    <default>false</default>
+                    <label>webinar</label>
+                </value>
+                <value>
+                    <fullName>newsletter</fullName>
+                    <default>false</default>
+                    <label>newsletter</label>
+                </value>
+                <value>
+                    <fullName>direct mailer</fullName>
+                    <default>false</default>
+                    <label>direct mailer</label>
+                </value>
+                <value>
+                    <fullName>calls to existing clients</fullName>
+                    <default>false</default>
+                    <label>calls to existing clients</label>
+                </value>
+                <value>
+                    <fullName>ads</fullName>
+                    <default>false</default>
+                    <label>ads</label>
+                </value>
+                <value>
+                    <fullName>social campaign</fullName>
+                    <default>false</default>
+                    <label>social campaign</label>
+                </value>
+                <value>
+                    <fullName>OTHER</fullName>
+                    <default>false</default>
+                    <label>OTHER</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>8</visibleLines>
     </fields>
     <fields>
         <fullName>Number_of_employees__c</fullName>
         <externalId>false</externalId>
         <label>Number of employees?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1-10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11-20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>21-50</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>51-100</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>101+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1-10</fullName>
+                    <default>false</default>
+                    <label>1-10</label>
+                </value>
+                <value>
+                    <fullName>11-20</fullName>
+                    <default>false</default>
+                    <label>11-20</label>
+                </value>
+                <value>
+                    <fullName>21-50</fullName>
+                    <default>false</default>
+                    <label>21-50</label>
+                </value>
+                <value>
+                    <fullName>51-100</fullName>
+                    <default>false</default>
+                    <label>51-100</label>
+                </value>
+                <value>
+                    <fullName>101+</fullName>
+                    <default>false</default>
+                    <label>101+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Projected_of_your_clients_to_buy_lh_yo__c</fullName>
         <externalId>false</externalId>
         <label>Projected # of your clients to buy lh/yo</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1-5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6-10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11-25</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>26-50</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>51-100</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>101+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1-5</fullName>
+                    <default>false</default>
+                    <label>1-5</label>
+                </value>
+                <value>
+                    <fullName>6-10</fullName>
+                    <default>false</default>
+                    <label>6-10</label>
+                </value>
+                <value>
+                    <fullName>11-25</fullName>
+                    <default>false</default>
+                    <label>11-25</label>
+                </value>
+                <value>
+                    <fullName>26-50</fullName>
+                    <default>false</default>
+                    <label>26-50</label>
+                </value>
+                <value>
+                    <fullName>51-100</fullName>
+                    <default>false</default>
+                    <label>51-100</label>
+                </value>
+                <value>
+                    <fullName>101+</fullName>
+                    <default>false</default>
+                    <label>101+</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -457,6 +510,7 @@
     <pluralLabel>Partner Transition</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <validationRules>
         <fullName>If_Other_Required</fullName>
         <active>true</active>

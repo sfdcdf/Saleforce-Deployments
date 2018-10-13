@@ -135,21 +135,25 @@
         <fullName>Action__c</fullName>
         <externalId>false</externalId>
         <label>Action</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Changed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Changed</fullName>
+                    <default>false</default>
+                    <label>Changed</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Touchplan_Section__c</fullName>
@@ -186,6 +190,7 @@
     <pluralLabel>TP Section Auto Evaluate Criterias</pluralLabel>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>

@@ -305,60 +305,78 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <fullName>Action_T__c</fullName>
         <externalId>false</externalId>
         <label>Action Taken</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Re-provisioned</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Blacklisted</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Escalated</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>None</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Outlet Paused</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sent to Vendor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Re-provisioned</fullName>
+                    <default>false</default>
+                    <label>Re-provisioned</label>
+                </value>
+                <value>
+                    <fullName>Blacklisted</fullName>
+                    <default>false</default>
+                    <label>Blacklisted</label>
+                </value>
+                <value>
+                    <fullName>Escalated</fullName>
+                    <default>false</default>
+                    <label>Escalated</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Outlet Paused</fullName>
+                    <default>false</default>
+                    <label>Outlet Paused</label>
+                </value>
+                <value>
+                    <fullName>Sent to Vendor</fullName>
+                    <default>false</default>
+                    <label>Sent to Vendor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Calls_for_Wrong_Business__c</fullName>
         <externalId>false</externalId>
         <label>Calls for Wrong Business:</label>
-        <picklist>
-            <controllingField>Wrong_Business__c</controllingField>
-            <picklistValues>
-                <fullName>Is it All Different Businesses</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Are Many of the Calls for the Same Business</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Wrong_Business__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Is it All Different Businesses</fullName>
+                    <default>false</default>
+                    <label>Is it All Different Businesses</label>
+                </value>
+                <value>
+                    <fullName>Are Many of the Calls for the Same Business</fullName>
+                    <default>false</default>
+                    <label>Are Many of the Calls for the Same Business</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Is it All Different Businesses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Are Many of the Calls for the Same Business</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Calls_for_Wrong_Service__c</fullName>
@@ -367,670 +385,839 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
 -many calls all for different services
 -many calls for the wrong service but generally the same wrong service</inlineHelpText>
         <label>Calls for Wrong Service:</label>
-        <picklist>
-            <controllingField>Wrong_Service__c</controllingField>
-            <picklistValues>
-                <fullName>Multiple Calls for All Different Services</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple Calls for Consistently the Same Wrong Service</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Wrong_Service__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Multiple Calls for All Different Services</fullName>
+                    <default>false</default>
+                    <label>Multiple Calls for All Different Services</label>
+                </value>
+                <value>
+                    <fullName>Multiple Calls for Consistently the Same Wrong Service</fullName>
+                    <default>false</default>
+                    <label>Multiple Calls for Consistently the Same Wrong Service</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Multiple Calls for All Different Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Multiple Calls for Consistently the Same Wrong Service</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Hang_Up_Calls__c</fullName>
         <externalId>false</externalId>
         <label>Hang Up Calls?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IT_Pro_Member__c</fullName>
         <externalId>false</externalId>
         <label>IT Pro Member</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Albert</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Antoney Selvaraj.R</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Arun Sami</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Azhagarasan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bala Murugan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bramma Giri</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chandra Sekar.S</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chenna Krishnan.C</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Deepa</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dilip S</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dimalson</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dinesh Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dominic Sylvester</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>G.Ashok</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ganesan.M</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Glenny Joseph</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gopala Krishnan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Gunasekar.T</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hari Prasath.T</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ibrahim Badusha B</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Irshad Ahmed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Jagatha</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>John Paul</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Joseph</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Karpagam</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Karthick K</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M.Karthick</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Maheshwaran</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Maheswaran</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manigandan.S</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Manikandan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mithun Mathew</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mohan Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Mohanraj M</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Muthu Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other User</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ponraj</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prabhakaran</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prabhu S</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pradhap</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Priya</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>R.Sarath Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Raghul V R.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Raja</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rajesh Anand</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rajesh Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rajkumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ram Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ravi Shankar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rusanthan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ryan De Cruz</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sambath Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Santosh Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sateesh Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sathishkumar K</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sathya</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Satish</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Savio</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sebastian Jerome</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Selva Ganesh</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Senthil Raja</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Shankar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sugantha Kumar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sujith</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Syed Suraj.N</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Thanasekar.R</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Thangaraj</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Thyagu</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Vanmathi</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Vidhya Lakshmi</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Vijayanandh</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Vishnu Prasanth.K</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Vivek Anand</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Albert</fullName>
+                    <default>false</default>
+                    <label>Albert</label>
+                </value>
+                <value>
+                    <fullName>Antoney Selvaraj.R</fullName>
+                    <default>false</default>
+                    <label>Antoney Selvaraj.R</label>
+                </value>
+                <value>
+                    <fullName>Arun Sami</fullName>
+                    <default>false</default>
+                    <label>Arun Sami</label>
+                </value>
+                <value>
+                    <fullName>Azhagarasan</fullName>
+                    <default>false</default>
+                    <label>Azhagarasan</label>
+                </value>
+                <value>
+                    <fullName>Bala Murugan</fullName>
+                    <default>false</default>
+                    <label>Bala Murugan</label>
+                </value>
+                <value>
+                    <fullName>Bramma Giri</fullName>
+                    <default>false</default>
+                    <label>Bramma Giri</label>
+                </value>
+                <value>
+                    <fullName>Chandra Sekar.S</fullName>
+                    <default>false</default>
+                    <label>Chandra Sekar.S</label>
+                </value>
+                <value>
+                    <fullName>Chenna Krishnan.C</fullName>
+                    <default>false</default>
+                    <label>Chenna Krishnan.C</label>
+                </value>
+                <value>
+                    <fullName>Deepa</fullName>
+                    <default>false</default>
+                    <label>Deepa</label>
+                </value>
+                <value>
+                    <fullName>Dilip S</fullName>
+                    <default>false</default>
+                    <label>Dilip S</label>
+                </value>
+                <value>
+                    <fullName>Dimalson</fullName>
+                    <default>false</default>
+                    <label>Dimalson</label>
+                </value>
+                <value>
+                    <fullName>Dinesh Kumar</fullName>
+                    <default>false</default>
+                    <label>Dinesh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Dominic Sylvester</fullName>
+                    <default>false</default>
+                    <label>Dominic Sylvester</label>
+                </value>
+                <value>
+                    <fullName>G.Ashok</fullName>
+                    <default>false</default>
+                    <label>G.Ashok</label>
+                </value>
+                <value>
+                    <fullName>Ganesan.M</fullName>
+                    <default>false</default>
+                    <label>Ganesan.M</label>
+                </value>
+                <value>
+                    <fullName>Glenny Joseph</fullName>
+                    <default>false</default>
+                    <label>Glenny Joseph</label>
+                </value>
+                <value>
+                    <fullName>Gopala Krishnan</fullName>
+                    <default>false</default>
+                    <label>Gopala Krishnan</label>
+                </value>
+                <value>
+                    <fullName>Gunasekar.T</fullName>
+                    <default>false</default>
+                    <label>Gunasekar.T</label>
+                </value>
+                <value>
+                    <fullName>Hari Prasath.T</fullName>
+                    <default>false</default>
+                    <label>Hari Prasath.T</label>
+                </value>
+                <value>
+                    <fullName>Ibrahim Badusha B</fullName>
+                    <default>false</default>
+                    <label>Ibrahim Badusha B</label>
+                </value>
+                <value>
+                    <fullName>Irshad Ahmed</fullName>
+                    <default>false</default>
+                    <label>Irshad Ahmed</label>
+                </value>
+                <value>
+                    <fullName>Jagatha</fullName>
+                    <default>false</default>
+                    <label>Jagatha</label>
+                </value>
+                <value>
+                    <fullName>John Paul</fullName>
+                    <default>false</default>
+                    <label>John Paul</label>
+                </value>
+                <value>
+                    <fullName>Joseph</fullName>
+                    <default>false</default>
+                    <label>Joseph</label>
+                </value>
+                <value>
+                    <fullName>Karpagam</fullName>
+                    <default>false</default>
+                    <label>Karpagam</label>
+                </value>
+                <value>
+                    <fullName>Karthick K</fullName>
+                    <default>false</default>
+                    <label>Karthick K</label>
+                </value>
+                <value>
+                    <fullName>M.Karthick</fullName>
+                    <default>false</default>
+                    <label>M.Karthick</label>
+                </value>
+                <value>
+                    <fullName>Maheshwaran</fullName>
+                    <default>false</default>
+                    <label>Maheshwaran</label>
+                </value>
+                <value>
+                    <fullName>Maheswaran</fullName>
+                    <default>false</default>
+                    <label>Maheswaran</label>
+                </value>
+                <value>
+                    <fullName>Manigandan.S</fullName>
+                    <default>false</default>
+                    <label>Manigandan.S</label>
+                </value>
+                <value>
+                    <fullName>Manikandan</fullName>
+                    <default>false</default>
+                    <label>Manikandan</label>
+                </value>
+                <value>
+                    <fullName>Mithun Mathew</fullName>
+                    <default>false</default>
+                    <label>Mithun Mathew</label>
+                </value>
+                <value>
+                    <fullName>Mohan Kumar</fullName>
+                    <default>false</default>
+                    <label>Mohan Kumar</label>
+                </value>
+                <value>
+                    <fullName>Mohanraj M</fullName>
+                    <default>false</default>
+                    <label>Mohanraj M</label>
+                </value>
+                <value>
+                    <fullName>Muthu Kumar</fullName>
+                    <default>false</default>
+                    <label>Muthu Kumar</label>
+                </value>
+                <value>
+                    <fullName>Other User</fullName>
+                    <default>false</default>
+                    <label>Other User</label>
+                </value>
+                <value>
+                    <fullName>Ponraj</fullName>
+                    <default>false</default>
+                    <label>Ponraj</label>
+                </value>
+                <value>
+                    <fullName>Prabhakaran</fullName>
+                    <default>false</default>
+                    <label>Prabhakaran</label>
+                </value>
+                <value>
+                    <fullName>Prabhu S</fullName>
+                    <default>false</default>
+                    <label>Prabhu S</label>
+                </value>
+                <value>
+                    <fullName>Pradhap</fullName>
+                    <default>false</default>
+                    <label>Pradhap</label>
+                </value>
+                <value>
+                    <fullName>Priya</fullName>
+                    <default>false</default>
+                    <label>Priya</label>
+                </value>
+                <value>
+                    <fullName>R.Sarath Kumar</fullName>
+                    <default>false</default>
+                    <label>R.Sarath Kumar</label>
+                </value>
+                <value>
+                    <fullName>Raghul V R.</fullName>
+                    <default>false</default>
+                    <label>Raghul V R.</label>
+                </value>
+                <value>
+                    <fullName>Raja</fullName>
+                    <default>false</default>
+                    <label>Raja</label>
+                </value>
+                <value>
+                    <fullName>Rajesh Anand</fullName>
+                    <default>false</default>
+                    <label>Rajesh Anand</label>
+                </value>
+                <value>
+                    <fullName>Rajesh Kumar</fullName>
+                    <default>false</default>
+                    <label>Rajesh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Rajkumar</fullName>
+                    <default>false</default>
+                    <label>Rajkumar</label>
+                </value>
+                <value>
+                    <fullName>Ram Kumar</fullName>
+                    <default>false</default>
+                    <label>Ram Kumar</label>
+                </value>
+                <value>
+                    <fullName>Ravi Shankar</fullName>
+                    <default>false</default>
+                    <label>Ravi Shankar</label>
+                </value>
+                <value>
+                    <fullName>Rusanthan</fullName>
+                    <default>false</default>
+                    <label>Rusanthan</label>
+                </value>
+                <value>
+                    <fullName>Ryan De Cruz</fullName>
+                    <default>false</default>
+                    <label>Ryan De Cruz</label>
+                </value>
+                <value>
+                    <fullName>Sambath Kumar</fullName>
+                    <default>false</default>
+                    <label>Sambath Kumar</label>
+                </value>
+                <value>
+                    <fullName>Santosh Kumar</fullName>
+                    <default>false</default>
+                    <label>Santosh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Sateesh Kumar</fullName>
+                    <default>false</default>
+                    <label>Sateesh Kumar</label>
+                </value>
+                <value>
+                    <fullName>Sathishkumar K</fullName>
+                    <default>false</default>
+                    <label>Sathishkumar K</label>
+                </value>
+                <value>
+                    <fullName>Sathya</fullName>
+                    <default>false</default>
+                    <label>Sathya</label>
+                </value>
+                <value>
+                    <fullName>Satish</fullName>
+                    <default>false</default>
+                    <label>Satish</label>
+                </value>
+                <value>
+                    <fullName>Savio</fullName>
+                    <default>false</default>
+                    <label>Savio</label>
+                </value>
+                <value>
+                    <fullName>Sebastian Jerome</fullName>
+                    <default>false</default>
+                    <label>Sebastian Jerome</label>
+                </value>
+                <value>
+                    <fullName>Selva Ganesh</fullName>
+                    <default>false</default>
+                    <label>Selva Ganesh</label>
+                </value>
+                <value>
+                    <fullName>Senthil Raja</fullName>
+                    <default>false</default>
+                    <label>Senthil Raja</label>
+                </value>
+                <value>
+                    <fullName>Shankar</fullName>
+                    <default>false</default>
+                    <label>Shankar</label>
+                </value>
+                <value>
+                    <fullName>Sugantha Kumar</fullName>
+                    <default>false</default>
+                    <label>Sugantha Kumar</label>
+                </value>
+                <value>
+                    <fullName>Sujith</fullName>
+                    <default>false</default>
+                    <label>Sujith</label>
+                </value>
+                <value>
+                    <fullName>Syed Suraj.N</fullName>
+                    <default>false</default>
+                    <label>Syed Suraj.N</label>
+                </value>
+                <value>
+                    <fullName>Thanasekar.R</fullName>
+                    <default>false</default>
+                    <label>Thanasekar.R</label>
+                </value>
+                <value>
+                    <fullName>Thangaraj</fullName>
+                    <default>false</default>
+                    <label>Thangaraj</label>
+                </value>
+                <value>
+                    <fullName>Thyagu</fullName>
+                    <default>false</default>
+                    <label>Thyagu</label>
+                </value>
+                <value>
+                    <fullName>Vanmathi</fullName>
+                    <default>false</default>
+                    <label>Vanmathi</label>
+                </value>
+                <value>
+                    <fullName>Vidhya Lakshmi</fullName>
+                    <default>false</default>
+                    <label>Vidhya Lakshmi</label>
+                </value>
+                <value>
+                    <fullName>Vijayanandh</fullName>
+                    <default>false</default>
+                    <label>Vijayanandh</label>
+                </value>
+                <value>
+                    <fullName>Vishnu Prasanth.K</fullName>
+                    <default>false</default>
+                    <label>Vishnu Prasanth.K</label>
+                </value>
+                <value>
+                    <fullName>Vivek Anand</fullName>
+                    <default>false</default>
+                    <label>Vivek Anand</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Out_of_Area_Calls_Are__c</fullName>
         <externalId>false</externalId>
         <label>Out of Area Calls Are:</label>
-        <picklist>
-            <controllingField>Out_of_Area_Calls__c</controllingField>
-            <picklistValues>
-                <fullName>All the same area &amp; for your service</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>All the same area &amp; NOT for your service</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>All different areas &amp; for your service</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>All different areas &amp; NOT for your service</fullName>
-                <default>false</default>
-                <controllingFieldValues>Yes</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <controllingField>Out_of_Area_Calls__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All the same area &amp; for your service</fullName>
+                    <default>false</default>
+                    <label>All the same area &amp; for your service</label>
+                </value>
+                <value>
+                    <fullName>All the same area &amp; NOT for your service</fullName>
+                    <default>false</default>
+                    <label>All the same area &amp; NOT for your service</label>
+                </value>
+                <value>
+                    <fullName>All different areas &amp; for your service</fullName>
+                    <default>false</default>
+                    <label>All different areas &amp; for your service</label>
+                </value>
+                <value>
+                    <fullName>All different areas &amp; NOT for your service</fullName>
+                    <default>false</default>
+                    <label>All different areas &amp; NOT for your service</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All the same area &amp; for your service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All the same area &amp; NOT for your service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All different areas &amp; for your service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>All different areas &amp; NOT for your service</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Out_of_Area_Calls__c</fullName>
         <externalId>false</externalId>
         <label>Out of Area Calls?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Phone_Number_Label__c</fullName>
         <externalId>false</externalId>
         <label>Phone Number Label</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Jingle</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ingenio</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>City Search</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Google Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Paid</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unpaid</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Jingle</fullName>
+                    <default>false</default>
+                    <label>Jingle</label>
+                </value>
+                <value>
+                    <fullName>Ingenio</fullName>
+                    <default>false</default>
+                    <label>Ingenio</label>
+                </value>
+                <value>
+                    <fullName>City Search</fullName>
+                    <default>false</default>
+                    <label>City Search</label>
+                </value>
+                <value>
+                    <fullName>Google Mobile</fullName>
+                    <default>false</default>
+                    <label>Google Mobile</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Unpaid</fullName>
+                    <default>false</default>
+                    <label>Unpaid</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>6</visibleLines>
     </fields>
     <fields>
         <fullName>Priority__c</fullName>
         <externalId>false</externalId>
         <label>Priority</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Major</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Escalated</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                    <label>Major</label>
+                </value>
+                <value>
+                    <fullName>Escalated</fullName>
+                    <default>false</default>
+                    <label>Escalated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Reason_1__c</fullName>
         <externalId>false</externalId>
         <label>Reason 1</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Wrong Number: Business or Service Unrelated to Segment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Wrong Number: Business Related to Segment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Robo Calls</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Caller On The Line</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple Lines Same Issue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple Lines Different Issue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unsupported Service but Related to Segment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wrong Number: Business or Service Unrelated to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business or Service Unrelated to Segment</label>
+                </value>
+                <value>
+                    <fullName>Wrong Number: Business Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business Related to Segment</label>
+                </value>
+                <value>
+                    <fullName>Robo Calls</fullName>
+                    <default>false</default>
+                    <label>Robo Calls</label>
+                </value>
+                <value>
+                    <fullName>No Caller On The Line</fullName>
+                    <default>false</default>
+                    <label>No Caller On The Line</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Same Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Same Issue</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Different Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Different Issue</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Unsupported Service but Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Unsupported Service but Related to Segment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Reason_2__c</fullName>
         <externalId>false</externalId>
         <label>Reason 2</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Wrong Number: Business or Service Unrelated to Segment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Wrong Number: Business Related to Segment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Robo Calls</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Call On The Line</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple Lines Same Issue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple Lines Different Issue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unsupported Service but Related to Segment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wrong Number: Business or Service Unrelated to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business or Service Unrelated to Segment</label>
+                </value>
+                <value>
+                    <fullName>Wrong Number: Business Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Wrong Number: Business Related to Segment</label>
+                </value>
+                <value>
+                    <fullName>Robo Calls</fullName>
+                    <default>false</default>
+                    <label>Robo Calls</label>
+                </value>
+                <value>
+                    <fullName>No Call On The Line</fullName>
+                    <default>false</default>
+                    <label>No Call On The Line</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Same Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Same Issue</label>
+                </value>
+                <value>
+                    <fullName>Multiple Lines Different Issue</fullName>
+                    <default>false</default>
+                    <label>Multiple Lines Different Issue</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Unsupported Service but Related to Segment</fullName>
+                    <default>false</default>
+                    <label>Unsupported Service but Related to Segment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Solicitor_Calls__c</fullName>
         <externalId>false</externalId>
         <label>Solicitor Calls?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Tracking_Name_Label__c</fullName>
         <externalId>false</externalId>
         <label>Tracking # Name/Label</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Paid</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unpaid</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Jingle</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ingenio</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Google Mobile</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>City Search</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Unpaid</fullName>
+                    <default>false</default>
+                    <label>Unpaid</label>
+                </value>
+                <value>
+                    <fullName>Jingle</fullName>
+                    <default>false</default>
+                    <label>Jingle</label>
+                </value>
+                <value>
+                    <fullName>Ingenio</fullName>
+                    <default>false</default>
+                    <label>Ingenio</label>
+                </value>
+                <value>
+                    <fullName>Google Mobile</fullName>
+                    <default>false</default>
+                    <label>Google Mobile</label>
+                </value>
+                <value>
+                    <fullName>City Search</fullName>
+                    <default>false</default>
+                    <label>City Search</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Wrong_Business__c</fullName>
         <externalId>false</externalId>
         <label>Wrong Business?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Wrong_Service__c</fullName>
         <externalId>false</externalId>
         <label>Wrong Service?</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -1060,6 +1247,7 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>Client_ID__c</columns>

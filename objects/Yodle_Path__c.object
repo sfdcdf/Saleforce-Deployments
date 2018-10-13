@@ -798,166 +798,201 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Not Started</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Churned</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Churned</fullName>
+                    <default>false</default>
+                    <label>Churned</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X1st_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>1st Attempt Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Complete - Full Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Complete - Short Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - LVM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Could Not Reach</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Reschedule</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete - Full Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Full Script</label>
+                </value>
+                <value>
+                    <fullName>Complete - Short Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Short Script</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - LVM</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - LVM</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Could Not Reach</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Could Not Reach</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Reschedule</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Reschedule</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X2nd_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>2nd Attempt Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Complete - Full Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Complete - Short Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - LVM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Could Not Reach</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Reschedule</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete - Full Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Full Script</label>
+                </value>
+                <value>
+                    <fullName>Complete - Short Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Short Script</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - LVM</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - LVM</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Could Not Reach</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Could Not Reach</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Reschedule</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Reschedule</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X3rd_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>3rd Attempt Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Complete - Full Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Complete - Short Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - LVM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Could Not Reach</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Reschedule</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete - Full Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Full Script</label>
+                </value>
+                <value>
+                    <fullName>Complete - Short Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Short Script</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - LVM</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - LVM</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Could Not Reach</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Could Not Reach</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Reschedule</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Reschedule</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X4th_or_More_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>4th or More Attempt Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Complete - Full Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Complete - Short Script</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - LVM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Could Not Reach</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Did Not Complete - Reschedule</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete - Full Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Full Script</label>
+                </value>
+                <value>
+                    <fullName>Complete - Short Script</fullName>
+                    <default>false</default>
+                    <label>Complete - Short Script</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - LVM</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - LVM</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Could Not Reach</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Could Not Reach</label>
+                </value>
+                <value>
+                    <fullName>Did Not Complete - Reschedule</fullName>
+                    <default>false</default>
+                    <label>Did Not Complete - Reschedule</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -986,6 +1021,7 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
         <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <recordTypes>
         <fullName>Coaching_Call</fullName>
         <active>true</active>

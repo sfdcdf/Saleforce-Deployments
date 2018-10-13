@@ -63,20 +63,24 @@
         <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Supported Objects for Record Auto Create</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Case</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Organic_Analysis__c</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>true</required>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>true</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Organic_Analysis__c</fullName>
+                    <default>false</default>
+                    <label>Organic Case</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields><label>Daily Scheduled Record Auto Create</label><pluralLabel>Daily Scheduled Record Auto Create</pluralLabel><visibility>Public</visibility>
     <listViews>
         <fullName>All_More_Details</fullName>
