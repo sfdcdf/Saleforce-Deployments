@@ -869,12 +869,6 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>AccountId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Agreement_Type__c</fullName>
         <externalId>false</externalId>
         <label>Agreement Type</label>
@@ -969,27 +963,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>BillingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CompanySignedDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CompanySignedId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ContractTerm</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
         <fullName>Corporate_vs_Individual__c</fullName>
         <externalId>false</externalId>
         <label>Corporate vs Individual</label>
@@ -1014,27 +987,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>CustomerSignedDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>CustomerSignedId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>CustomerSignedTitle</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>Description</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
         <fullName>Early_Termination__c</fullName>
         <externalId>false</externalId>
         <label>Early Termination</label>
@@ -1057,11 +1009,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>EndDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
     </fields>
     <fields>
         <fullName>Fulfillment__c</fullName>
@@ -1119,11 +1066,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
         <fullName>Non_Compete__c</fullName>
         <externalId>false</externalId>
         <label>Non-Compete</label>
@@ -1146,17 +1088,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>OwnerExpirationNotice</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Payment_Method__c</fullName>
@@ -1373,16 +1304,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>ShippingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>SpecialTerms</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
         <fullName>Special_Pricing_Terms__c</fullName>
         <externalId>false</externalId>
         <label>Special Pricing Terms</label>
@@ -1405,17 +1326,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>StartDate</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-    </fields>
-    <fields>
-        <fullName>Status</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        
-        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Support_SLA__c</fullName>
@@ -1506,6 +1416,96 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CompanySignedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CompanySignedId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractTerm</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CustomerSignedDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>CustomerSignedId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerSignedTitle</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>OwnerExpirationNotice</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>SpecialTerms</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        
+        <type>Picklist</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
