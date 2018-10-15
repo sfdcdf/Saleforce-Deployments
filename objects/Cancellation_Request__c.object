@@ -10794,6 +10794,55 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox to be used in validation rule for edit permission after approval.</description>
+        <externalId>false</externalId>
+        <label>Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Record_owner_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used for Approval process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for Approval Process</inlineHelpText>
+        <label>Record owner Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Record_Owner_Manager</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cancellation_Requests_Sales_Rep</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -21829,7 +21878,7 @@ false)</formula>
             <picklist>Refund2__c</picklist>
             <values>
                 <fullName>Did Not Offer</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Offered and Accepted</fullName>
@@ -22450,19 +22499,6 @@ ispickval( Within_SLA__c  ,"")))</errorConditionFormula>
         <errorMessage>When closing this record, you must fill in the Within SLA field.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Closing_must_fill_out_future_Product</fullName>
-        <active>true</active>
-        <errorConditionFormula>and(
-$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
-not( RecordType.Name = "TORCHx Cancellation Request"),
-NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT($User.Email = "sfdc@yodle.com"), 
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval ( Future_Product__c  ,"")))</errorConditionFormula>
-        <errorMessage>When closing this record, you must fill in the Future Product field.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Duplicate_Cancel_Request</fullName>
         <active>true</active>
         <description>Used for Duplicate Cancel Requests</description>
@@ -22767,86 +22803,6 @@ NOT($User.Email   = "sfdc@yodle.com"),
  ISPICKVAL( Outcome__c , 'Cancelled'))
  )</errorConditionFormula>
         <errorMessage>Please specify a refund offer for this cancellation request.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Saved_with_Hard_Concessions_None_Checked</fullName>
-        <active>true</active>
-        <description>If you save an account as Saved with Hard Concessions, you must choose a Hard Concession below.</description>
-        <errorConditionFormula>and(
-ispickval( Outcome__c ,"Saved with Hard Concessions"),
- ispickval( Product_Change2__c , "Did Not Offer"), 
- ispickval(Price_Change2__c, "Did Not Offer"), 
- ispickval(Free_Time2__c ,"Did Not Offer"), 
- ispickval(Web_Only2__c ,"Did Not Offer"),
- ispickval(Refund2__c ,"Did Not Offer"))</errorConditionFormula>
-        <errorDisplayField>Outcome__c</errorDisplayField>
-        <errorMessage>If choosing Saved with Hard Concessions, you must choose a hard concession below.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Saved_with_Soft_Concessions_Check</fullName>
-        <active>true</active>
-        <description>If you save an account as Saved with no Concessions, you cannot check a Concessions box.</description>
-        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"), 
-ispickval( Outcome__c ,"Saved with Soft Concessions"),
-or(
-not(ispickval( Product_Change2__c ,"Did Not Offer")),
-not(ispickval( Price_Change2__c ,"Did Not Offer")),
-not(ispickval(  Free_Time2__c  ,"Did Not Offer")),
-not(ispickval(  Web_Only2__c ,"Did Not Offer")),
-AND(
-not(ispickval(  Refund2__c ,"Did Not Offer")),
-not(ispickval(  Refund2__c ,"Not Requested")),
-not(ispickval(  Refund2__c ,"Requested and Denied")),
-not(ispickval(  Refund2__c ,"Requested, Countered and Denied")))))</errorConditionFormula>
-        <errorDisplayField>Outcome__c</errorDisplayField>
-        <errorMessage>If choosing Saved with Soft Concessions, you cannot mark a Hard concession below as true.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Saved_with_Soft_Concessions_None_Checked</fullName>
-        <active>true</active>
-        <description>If you save an account as Saved with Soft Concessions, you must choose a Soft Concession below.</description>
-        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"), 
-ispickval( Outcome__c ,"Saved with Soft Concessions"),
-ispickval( Rerouted_Funds_Same_Products__c ,"Did Not Offer"),
-ispickval( Adstation_Credit2__c ,"Did Not Offer"),
-ispickval( SEM_Optimization2__c ,"Did Not Offer"),
-ispickval( SEO_Optimization2__c ,"Did Not Offer"),
-ispickval( Call_Answering2__c ,"Did Not Offer"),
-ispickval( Essentials_Upgrade2__c ,"Did Not Offer"),
-ispickval( Website_Updates2__c ,"Did Not Offer"),
-ispickval( Reduced_Contract_Term2__c ,"Did Not Offer"),
-ispickval( Scheduled_Adoption_Call__c ,"Did Not Offer"))</errorConditionFormula>
-        <errorDisplayField>Outcome__c</errorDisplayField>
-        <errorMessage>If choosing Saved with Soft Concessions, you must choose a soft concession below.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Saved_with_no_Concessions_No_Check</fullName>
-        <active>true</active>
-        <description>If you save an account as Saved with no Concessions, you cannot check a Concessions box.</description>
-        <errorConditionFormula>AND(NOT(RecordType.Name = "LH Cancellation Request"),
-NOT(RecordType.Name = "TORCHx Cancellation Request"),
-ispickval( Outcome__c ,"Saved with no Concessions"),
-OR(
- not(ispickval ( Product_Change2__c ,"Did Not Offer")),
- not(ispickval (  Price_Change2__c ,"Did Not Offer")),
- not(ispickval (  Free_Time2__c ,"Did Not Offer")),
- not(ispickval (  Web_Only2__c  ,"Did Not Offer")),
-AND(
- not(ispickval (  Refund2__c ,"Did Not Offer")),
- not(ispickval (  Refund2__c ,"Requested and Denied")),
- not(ispickval (  Refund2__c ,"Requested, Countered and Denied")),
- not(ispickval (  Refund2__c ,"Not Requested"))),
- not(ispickval (  Rerouted_Funds_Same_Products__c ,"Did Not Offer")),
- not(ispickval (  Adstation_Credit2__c ,"Did Not Offer")),
- not(ispickval (  SEM_Optimization2__c ,"Did Not Offer")),
- not(ispickval (  SEO_Optimization2__c ,"Did Not Offer")),
- not(ispickval (  Call_Answering2__c ,"Did Not Offer")),
- not(ispickval (  Essentials_Upgrade2__c ,"Did Not Offer")),
- not(ispickval (  Website_Updates2__c ,"Did Not Offer")),
- not(ispickval ( Reduced_Contract_Term2__c ,"Did Not Offer")),
-not(ispickval( Scheduled_Adoption_Call__c ,"Did Not Offer"))))</errorConditionFormula>
-        <errorDisplayField>Outcome__c</errorDisplayField>
-        <errorMessage>If choosing Saved with no Concessions, you cannot mark a concession below as true.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>WBN_must_fill_out_revenue_lost</fullName>
@@ -23221,6 +23177,185 @@ NOT(ispickval(Cancellation_Code__c,"")))</errorConditionFormula>
 )</errorConditionFormula>
         <errorDisplayField>Additional_Notes__c</errorDisplayField>
         <errorMessage>Additional Notes are required for the cancellation codes selected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Closing_must_fill_out_future_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(
+$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
+not( RecordType.Name = "TORCHx Cancellation Request"),
+NOT(RecordType.Name = "LH Cancellation Request"),
+NOT(RecordType.Name = "WBN Cancellation Request"), 
+NOT($User.Email = "sfdc@yodle.com"), 
+not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
+or(
+ispickval ( Future_Product__c  ,"")))</errorConditionFormula>
+        <errorMessage>When closing this record, you must fill in the Future Product field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Edit_Approved_records</fullName>
+        <active>true</active>
+        <description>Users who do not have the permission to edit approved records will get an error message</description>
+        <errorConditionFormula>AND(
+Approved__c ,
+NOT( $Permission.WBN_Cancellation_Edit_Approved ) 
+)</errorConditionFormula>
+        <errorMessage>You do not have the permission to edit approved records.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_w_HardConcessions_None_Checked_WBN</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with Hard Concessions, you must choose a Hard Concession below.</description>
+        <errorConditionFormula>and(
+RecordType.Name = "WBN Cancellation Request",
+ispickval( Outcome__c ,"Saved with Hard Concessions"), 
+ispickval(Price_Change2__c, "Did Not Offer"),  
+ispickval(Web_Only2__c ,"Did Not Offer"),
+ispickval(Refund2__c ,"Did Not Offer"))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with Hard Concessions, you must choose a hard concession below.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_w_SoftConcessions_None_Checked_WBN</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with Soft Concessions, you must choose a Soft Concession below.</description>
+        <errorConditionFormula>and(
+RecordType.Name = "WBN Cancellation Request",  
+ispickval( Outcome__c ,"Saved with Soft Concessions"),
+ispickval( Adstation_Credit2__c ,"Did Not Offer"),
+ispickval( SEM_Optimization2__c ,"Did Not Offer"),
+ispickval( SEO_Optimization2__c ,"Did Not Offer"),
+ispickval( Website_Updates2__c ,"Did Not Offer"),
+ispickval( Reduced_Contract_Term2__c ,"Did Not Offer")
+)</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with Soft Concessions, you must choose a soft concession below.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_with_Hard_Concessions_None_Checked</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with Hard Concessions, you must choose a Hard Concession below.</description>
+        <errorConditionFormula>and(
+NOT(RecordType.Name = "WBN Cancellation Request"), 
+ispickval( Outcome__c ,"Saved with Hard Concessions"),
+ ispickval( Product_Change2__c , "Did Not Offer"), 
+ ispickval(Price_Change2__c, "Did Not Offer"), 
+ ispickval(Free_Time2__c ,"Did Not Offer"), 
+ ispickval(Web_Only2__c ,"Did Not Offer"),
+ ispickval(Refund2__c ,"Did Not Offer"))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with Hard Concessions, you must choose a hard concession below.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_with_Soft_Concessions_Check</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with no Concessions, you cannot check a Concessions box.</description>
+        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"),
+NOT(RecordType.Name = "WBN Cancellation Request"),  
+ispickval( Outcome__c ,"Saved with Soft Concessions"),
+or(
+not(ispickval( Product_Change2__c ,"Did Not Offer")),
+not(ispickval( Price_Change2__c ,"Did Not Offer")),
+not(ispickval(  Free_Time2__c  ,"Did Not Offer")),
+not(ispickval(  Web_Only2__c ,"Did Not Offer")),
+AND(
+not(ispickval(  Refund2__c ,"Did Not Offer")),
+not(ispickval(  Refund2__c ,"Not Requested")),
+not(ispickval(  Refund2__c ,"Requested and Denied")),
+not(ispickval(  Refund2__c ,"Requested, Countered and Denied")))))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with Soft Concessions, you cannot mark a Hard concession below as true.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_with_Soft_Concessions_Check_WBN</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with no Concessions, you cannot check a Concessions box.</description>
+        <errorConditionFormula>and(
+RecordType.Name = "WBN Cancellation Request",  
+ispickval( Outcome__c ,"Saved with Soft Concessions"),
+or(
+not(ispickval( Price_Change2__c ,"Did Not Offer")),
+not(ispickval(  Web_Only2__c ,"Did Not Offer")),
+AND(
+not(ispickval(  Refund2__c ,"Did Not Offer")),
+not(ispickval(  Refund2__c ,"Not Requested")),
+not(ispickval(  Refund2__c ,"Requested and Denied")),
+not(ispickval(  Refund2__c ,"Requested, Countered and Denied")))))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with Soft Concessions, you cannot mark a Hard concession below as true.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_with_Soft_Concessions_None_Checked</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with Soft Concessions, you must choose a Soft Concession below.</description>
+        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"),
+NOT(RecordType.Name = "WBN Cancellation Request"),  
+ispickval( Outcome__c ,"Saved with Soft Concessions"),
+ispickval( Rerouted_Funds_Same_Products__c ,"Did Not Offer"),
+ispickval( Adstation_Credit2__c ,"Did Not Offer"),
+ispickval( SEM_Optimization2__c ,"Did Not Offer"),
+ispickval( SEO_Optimization2__c ,"Did Not Offer"),
+ispickval( Call_Answering2__c ,"Did Not Offer"),
+ispickval( Essentials_Upgrade2__c ,"Did Not Offer"),
+ispickval( Website_Updates2__c ,"Did Not Offer"),
+ispickval( Reduced_Contract_Term2__c ,"Did Not Offer"),
+ispickval( Scheduled_Adoption_Call__c ,"Did Not Offer"))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with Soft Concessions, you must choose a soft concession below.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_with_no_Concessions_No_Check</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with no Concessions, you cannot check a Concessions box.</description>
+        <errorConditionFormula>AND(NOT(RecordType.Name = "LH Cancellation Request"),
+NOT(RecordType.Name = "TORCHx Cancellation Request"),
+NOT(RecordType.Name = "WBN Cancellation Request"), 
+ispickval( Outcome__c ,"Saved with no Concessions"),
+OR(
+ not(ispickval ( Product_Change2__c ,"Did Not Offer")),
+ not(ispickval (  Price_Change2__c ,"Did Not Offer")),
+ not(ispickval (  Free_Time2__c ,"Did Not Offer")),
+ not(ispickval (  Web_Only2__c  ,"Did Not Offer")),
+AND(
+ not(ispickval (  Refund2__c ,"Did Not Offer")),
+ not(ispickval (  Refund2__c ,"Requested and Denied")),
+ not(ispickval (  Refund2__c ,"Requested, Countered and Denied")),
+ not(ispickval (  Refund2__c ,"Not Requested"))),
+ not(ispickval (  Rerouted_Funds_Same_Products__c ,"Did Not Offer")),
+ not(ispickval (  Adstation_Credit2__c ,"Did Not Offer")),
+ not(ispickval (  SEM_Optimization2__c ,"Did Not Offer")),
+ not(ispickval (  SEO_Optimization2__c ,"Did Not Offer")),
+ not(ispickval (  Call_Answering2__c ,"Did Not Offer")),
+ not(ispickval (  Essentials_Upgrade2__c ,"Did Not Offer")),
+ not(ispickval (  Website_Updates2__c ,"Did Not Offer")),
+ not(ispickval ( Reduced_Contract_Term2__c ,"Did Not Offer")),
+not(ispickval( Scheduled_Adoption_Call__c ,"Did Not Offer"))))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with no Concessions, you cannot mark a concession below as true.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Saved_with_no_Concessions_No_Check_WBN</fullName>
+        <active>true</active>
+        <description>If you save an account as Saved with no Concessions, you cannot check a Concessions box.</description>
+        <errorConditionFormula>AND(
+RecordType.Name = "WBN Cancellation Request", 
+ispickval( Outcome__c ,"Saved with no Concessions"),
+OR(
+ not(ispickval (  Price_Change2__c ,"Did Not Offer")),
+ not(ispickval (  Web_Only2__c  ,"Did Not Offer")),
+AND(
+ not(ispickval (  Refund2__c ,"Did Not Offer")),
+ not(ispickval (  Refund2__c ,"Requested and Denied")),
+ not(ispickval (  Refund2__c ,"Requested, Countered and Denied")),
+ not(ispickval (  Refund2__c ,"Not Requested"))),
+ not(ispickval (  Adstation_Credit2__c ,"Did Not Offer")),
+ not(ispickval (  SEM_Optimization2__c ,"Did Not Offer")),
+ not(ispickval (  SEO_Optimization2__c ,"Did Not Offer")),
+ not(ispickval (  Website_Updates2__c ,"Did Not Offer")),
+ not(ispickval ( Reduced_Contract_Term2__c ,"Did Not Offer"))
+))</errorConditionFormula>
+        <errorDisplayField>Outcome__c</errorDisplayField>
+        <errorMessage>If choosing Saved with no Concessions, you cannot mark a concession below as true.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Approve_Duplicate_Form</fullName>

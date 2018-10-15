@@ -12904,6 +12904,20 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         </valueSet>
         <visibleLines>7</visibleLines>
     </fields>
+    <fields>
+        <fullName>WBN_Last_Opp_Sold_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity owner of Last Closed Won Opportunity (Closed Won Automation process) - Field used in Cancellation  approval process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity owner of Last Closed Won Opportunity (Closed Won Automation process) - Field used in Cancellation  approval process.</inlineHelpText>
+        <label>WBN Last Opp Sold By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>WBNLastOppSoldBy</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
