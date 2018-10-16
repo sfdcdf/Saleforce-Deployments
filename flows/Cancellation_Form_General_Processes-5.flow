@@ -328,7 +328,7 @@
             <value>
                 <stringValue>AND(
 [Cancellation_Request__c].RecordTypeId = &apos;01232000000Q89lAAC&apos;,
-LEFT([Cancellation_Request__c].OwnerId,3) = &apos;00G&apos;,
+LEFT([Cancellation_Request__c].OwnerId,3) = &apos;005&apos;,
 NOT(ISBLANK([Cancellation_Request__c].Owner:User.ManagerId)) ,
 ISCHANGED([Cancellation_Request__c].OwnerId)
 )</stringValue>
@@ -338,12 +338,12 @@ ISCHANGED([Cancellation_Request__c].OwnerId)
         <dataType>Boolean</dataType>
         <expression>AND(
 {!myVariable_current.RecordTypeId} = &apos;01232000000Q89lAAC&apos;,
-LEFT({!myVariable_current.OwnerId},3) = &apos;00G&apos;,
+LEFT({!myVariable_current.OwnerId},3) = &apos;005&apos;,
 NOT(ISBLANK({!myVariable_current.Owner:User.ManagerId})) ,
 ISCHANGED({!myVariable_current.OwnerId})
 )</expression>
     </formulas>
-    <interviewLabel>Cancellation_Form_General_Processes-4_InterviewLabel</interviewLabel>
+    <interviewLabel>Cancellation_Form_General_Processes-5_InterviewLabel</interviewLabel>
     <label>Cancellation Form - General Processes</label>
     <processMetadataValues>
         <name>ObjectType</name>
