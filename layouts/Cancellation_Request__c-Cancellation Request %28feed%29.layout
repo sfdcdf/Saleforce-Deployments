@@ -104,6 +104,10 @@
                 <behavior>Edit</behavior>
                 <field>Hit_Lead_Range__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Auto_Close_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
