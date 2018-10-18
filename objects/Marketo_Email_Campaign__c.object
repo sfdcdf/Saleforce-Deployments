@@ -331,22 +331,6 @@
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>TORCHx</fullName>
-        <columns>NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>NAME</field>
-            <operation>contains</operation>
-            <value>TORCHx</value>
-        </filters>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Marketo_Email_Campaign__c.Template</value>
-        </filters>
-        <label>TORCHx</label>
-    </listViews>
-    <listViews>
         <fullName>Template</fullName>
         <columns>NAME</columns>
         <columns>Active__c</columns>
@@ -407,6 +391,22 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TORCHx</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>TORCHx,TX</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template</value>
+        </filters>
+        <label>TORCHx</label>
     </listViews>
     <recordTypes>
         <fullName>Default</fullName>

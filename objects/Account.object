@@ -3884,18 +3884,6 @@ IF (
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Marketo_ID__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
-        <label>Marketo ID</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
         <fullName>Mobile_Implementation_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Details on custom mobile implementation</inlineHelpText>
@@ -6522,15 +6510,6 @@ IMS_Rep__r.Id = "00532000005P6l3"), /*LeadStream Support*/
         <label>Survey Opt Out</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Sync_to_Marketo__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Sync to Marketo</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -12917,6 +12896,27 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Marketo_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Marketo ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Sync_to_Marketo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync to Marketo</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
