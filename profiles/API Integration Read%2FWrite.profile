@@ -37780,11 +37780,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Case.New_Client_Setup</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -37837,16 +37832,6 @@
         <default>false</default>
         <recordType>Case.Survey_Send</recordType>
         <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.TORCHx_Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
-        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -38652,6 +38637,21 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_Master</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>

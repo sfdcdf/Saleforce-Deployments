@@ -23370,7 +23370,7 @@ AND(
     </validationRules>
     <validationRules>
         <fullName>Teardown_Date_Missing_on_Cancel</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Tear-down date must be populated with a date in the future if the outcome is changed to Cancelled. This date is used to automate the creation of Teardown Cases being created for the removal of websites.</description>
         <errorConditionFormula>AND(
     RecordType.Name = "TORCHx Cancellation Request",
