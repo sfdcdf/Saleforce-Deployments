@@ -1121,18 +1121,6 @@
         <template>WBN_Templates/WBN_NCS_Status_Has_Not_Changed</template>
     </alerts>
     <alerts>
-        <fullName>WBN_NCS_Never_Launch</fullName>
-        <description>WBN - NCS - Never Launch</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Sales_Person__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderAddress>no-reply@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>WBN_Templates/WBN_NCS_Never_Launched</template>
-    </alerts>
-    <alerts>
         <fullName>WBN_NCS_Notify_Ownership_needs_changing</fullName>
         <description>WBN - NCS - Ownership needs changing</description>
         <protected>false</protected>
@@ -1168,18 +1156,6 @@
         <senderAddress>no-reply@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>WBN_Templates/WBN_NCS_Launch_Date_Approaching</template>
-    </alerts>
-    <alerts>
-        <fullName>WBN_NCS_Status_Change_issues</fullName>
-        <description>WBN - NCS - Status Change (issues)</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Sales_Person__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderAddress>no-reply@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>WBN_Templates/WBN_NCS_Status_Changes</template>
     </alerts>
     <alerts>
         <fullName>Web_Dev_Escalated</fullName>
@@ -3461,6 +3437,38 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Escalation_Standard_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>WBN_NCS_Never_Launch</fullName>
+        <description>WBN - NCS - Never Launch</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Person__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>no-reply@yodle.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WBN_Templates/WBN_NCS_Never_Launched</template>
+    </alerts>
+    <alerts>
+        <fullName>WBN_NCS_Status_Change_issues</fullName>
+        <description>WBN - NCS - Status Change (issues)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>YBN_Operations</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Person__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>no-reply@yodle.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WBN_Templates/WBN_NCS_Status_Changes</template>
     </alerts>
     <fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
