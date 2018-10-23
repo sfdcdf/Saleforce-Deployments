@@ -6,7 +6,7 @@
   Description ........: Class contains invocable method to update child Account 
   specific fields based Parent Account.
 *****************************************************************************/
-public class wbnParentAcctUpdateForStandard
+public class WBNParentAcctUpdateForStandard
 {
     @InvocableMethod
     public static void newParentForStandard(List<Id> acctIds)

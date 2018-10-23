@@ -1328,7 +1328,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>wbnParentAcctUpdateForStandard</apexClass>
+        <apexClass>WBNParentAcctUpdateForStandard</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>WBNChildAcctUpdateForMaster</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <pageAccesses>
