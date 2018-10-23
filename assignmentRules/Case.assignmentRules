@@ -1429,7 +1429,7 @@
             <formula>AND(  RecordType.Name = "YBN Request",  ISPICKVAL(Type, "Work Item"),  ISPICKVAL(YBNRequestReason__c, "Miscellaneous"),  ISPICKVAL(YBNRequestDetail__c, "Taxonomy")  )</formula>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>joshua.fortunatus@yodle.com</assignedTo>
+            <assignedTo>scott.forsythe@web.com</assignedTo>
             <assignedToType>User</assignedToType>
             <formula>OR(   AND(     RecordType.Name = "National - New Client Setup",     ISPICKVAL(Channel_Type__c, "National"),     OR(       ISPICKVAL(SEO_Product__c, "Facebook"),       ISPICKVAL(SEO_Product__c, "New Product Addition: Facebook Ads"),       ISPICKVAL(SEO_Product__c, "Winback: Facebook Ads")     )   ),   AND(     RecordType.Name = "YBN Request",     ISPICKVAL(Type, "Work Item"),     ISPICKVAL(YBNRequestReason__c, "Performance Team"),     OR(       ISPICKVAL(YBNRequestDetail__c, "Facebook Ads Support"),       ISPICKVAL(YBNRequestDetail__c, "Display Strategy Support"),       ISPICKVAL(YBNRequestDetail__c, "Enhanced SEO Strategy + Support")      )   ) )</formula>
         </ruleEntry>

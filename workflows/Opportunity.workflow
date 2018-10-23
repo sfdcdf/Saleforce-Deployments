@@ -541,6 +541,17 @@
         <senderType>CurrentUser</senderType>
         <template>WBN_Templates/WBN_NCS_Lost_Approval_Final_Approval_HTML</template>
     </alerts>
+    <alerts>
+        <fullName>Upsell_Addition_notification_to_Steve_Marshall</fullName>
+        <description>Upsell Addition notification to Steve Marshall</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>smarshall@web.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/Alert_for_Opportunity_Upsell_Addition_Approval</template>
+    </alerts>
     <fieldUpdates>
         <fullName>CPP_Update_Probability_to_10</fullName>
         <field>Probability</field>

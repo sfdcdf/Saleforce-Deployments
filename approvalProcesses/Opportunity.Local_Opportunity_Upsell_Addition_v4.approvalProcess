@@ -13,12 +13,12 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Upsell_Addition_Pending</name>
-                <type>FieldUpdate</type>
+                <name>Upsell_Addition_notification_to_Steve_Marshall</name>
+                <type>Alert</type>
             </action>
             <action>
-                <name>Upsell_Addition_to_Josh_Cummings</name>
-                <type>Alert</type>
+                <name>Upsell_Addition_Pending</name>
+                <type>FieldUpdate</type>
             </action>
             <action>
                 <name>Upsell_approved_notification</name>
@@ -61,13 +61,13 @@
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>jcummings@yodle.com</name>
+                <name>smarshall@web.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Upsell Addition Approval to Josh Cummings</label>
-        <name>Upsell_Addition_Approval_to_Josh_Cunningham</name>
+        <label>Upsell Addition Approval to Steve Marshall</label>
+        <name>Upsell_Addition_Approval_to_Steve_Marshall</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>

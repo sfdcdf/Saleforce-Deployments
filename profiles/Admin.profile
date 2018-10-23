@@ -1327,6 +1327,10 @@
         <apexClass>AutoCreateCaseEmailMessageTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>wbnParentAcctUpdateForStandard</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
