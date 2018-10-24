@@ -466,7 +466,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_4</name>
-            <conditionLogic>(1 AND 2 AND 3 AND 4) OR 5 OR 6</conditionLogic>
+            <conditionLogic>(1 AND 2 AND 3) OR 4 OR 5</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -533,37 +533,6 @@
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <processMetadataValues>
-                    <name>inputDataType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>leftHandSideType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>operatorDataType</name>
-                    <value>
-                        <stringValue>String</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>rightHandSideType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <leftValueReference>myVariable_current.Client_Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>YBN</stringValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -666,7 +635,7 @@
         </rules>
     </decisions>
     <description>Syncs data between WBN Master and Standard Accounts based on business rules and logic</description>
-    <interviewLabel>Account_WBN_Account_Hierarchy_Data_Sync-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Account_WBN_Account_Hierarchy_Data_Sync-2_InterviewLabel</interviewLabel>
     <label>Account - WBN Account Hierarchy Data Sync</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -694,7 +663,7 @@
     </processMetadataValues>
     <processType>Workflow</processType>
     <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

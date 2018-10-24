@@ -17,7 +17,6 @@ public class WBNParentAcctUpdateForStandard
             Map<Id, Account> childAcctsMap = new Map<Id, Account>();
             Map<Id, Account> parentAcctsMap = new Map<Id, Account>();
             List<Account> dmlAccounts = new List<Account>();
-            Boolean hasUpdatedData = false;
             
             for(Account a :
                 [SELECT ParentId,
@@ -29,6 +28,8 @@ public class WBNParentAcctUpdateForStandard
                         Sales_Director__c
                    FROM Account
                   WHERE Id IN :acctIds]){
+                
+                System.Debug('*** Parent Id: ' + a.ParentId);
                       
                 if(!String.IsBlank(a.ParentId)){
                     
@@ -41,8 +42,6 @@ public class WBNParentAcctUpdateForStandard
             }
             
             if(parentIdsSet.size() > 0){
-            
-                System.Debug('Changes Required?: ' + hasUpdatedData);
             
                 // populate Map based on Parent Ids
                 for(Account a :
@@ -65,6 +64,8 @@ public class WBNParentAcctUpdateForStandard
                 
                     for(Account ca : childAcctsMap.values()){
                     
+                       System.Debug('*** Inside Parent/ Child: ' + pa.Individual_Location_Service_Level__c + '/ ' + ca.Individual_Location_Service_Level__c);
+                    
                         if(pa.Id == ca.ParentId){
                             
                             // check for Service Level being blank on child and update only if blank
@@ -72,31 +73,16 @@ public class WBNParentAcctUpdateForStandard
                             
                                 // update child value to match parent
                                 ca.Individual_Location_Service_Level__c = pa.Individual_Location_Service_Level__c;
-                                hasUpdatedData = true;
                             }
                             
-                            // check Bulk Bing Account on Parent and update to match
-                            if(!String.IsBlank(pa.Bulk_Bing_AccountPL__c)){
+                            // update child value to match parent
+                            ca.Bulk_Bing_AccountPL__c = pa.Bulk_Bing_AccountPL__c;
                             
-                                // update child value to match parent
-                                ca.Bulk_Bing_AccountPL__c = pa.Bulk_Bing_AccountPL__c;
-                                hasUpdatedData = true;
-                            }
+                            // update child value to match parent
+                            ca.Bulk_Google_AccountPL__c = pa.Bulk_Google_AccountPL__c;
                             
-                            // check Bulk Google Account on Parent and update to match
-                            if(!String.IsBlank(pa.Bulk_Google_AccountPL__c)){
-                            
-                                // update child value to match parent
-                                ca.Bulk_Google_AccountPL__c= pa.Bulk_Google_AccountPL__c;
-                                hasUpdatedData = true;
-                            }
-                            
-                            System.Debug('Changes Required?: ' + hasUpdatedData);
-                            
-                            // check to see if anything was actually updated before adding to DMl List for update
-                            if(hasUpdatedData){
-                                dmlAccounts.add(ca);
-                            }
+                            // add Account to update list
+                            dmlAccounts.add(ca);
                         }
                     }
                 }
