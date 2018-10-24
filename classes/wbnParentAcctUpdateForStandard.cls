@@ -17,6 +17,7 @@ public class WBNParentAcctUpdateForStandard
             Map<Id, Account> childAcctsMap = new Map<Id, Account>();
             Map<Id, Account> parentAcctsMap = new Map<Id, Account>();
             List<Account> dmlAccounts = new List<Account>();
+            Id ybnMasterAcct = Schema.SObjectType.Account.getRecordTypeInfosByName().get('YBN Master Account').getRecordTypeId();
             
             for(Account a :
                 [SELECT ParentId,
@@ -25,7 +26,8 @@ public class WBNParentAcctUpdateForStandard
                         Bulk_Bing_AccountPL__c,
                         Bulk_Google_AccountPL__c,
                         Lead_Analyst__c,
-                        Sales_Director__c
+                        Sales_Director__c,
+                        Account_Director__c
                    FROM Account
                   WHERE Id IN :acctIds]){
                 
@@ -41,6 +43,8 @@ public class WBNParentAcctUpdateForStandard
                 }
             }
             
+            System.Debug('*** Parent Id Set Size: ' + String.valueOf(parentIdsSet.size()));
+            
             if(parentIdsSet.size() > 0){
             
                 // populate Map based on Parent Ids
@@ -51,9 +55,11 @@ public class WBNParentAcctUpdateForStandard
                             Bulk_Bing_AccountPL__c,
                             Bulk_Google_AccountPL__c,
                             Lead_Analyst__c,
-                            Sales_Director__c
+                            Sales_Director__c,
+                            Account_Director__c
                        FROM Account
-                      WHERE Id IN :parentIdsSet]){
+                      WHERE Id IN :parentIdsSet AND
+                            RecordTypeId = :ybnMasterAcct]){
                     
                     // populate parent Map
                     parentAcctsMap.put(a.Id, a);
@@ -64,15 +70,28 @@ public class WBNParentAcctUpdateForStandard
                 
                     for(Account ca : childAcctsMap.values()){
                     
-                       System.Debug('*** Inside Parent/ Child: ' + pa.Individual_Location_Service_Level__c + '/ ' + ca.Individual_Location_Service_Level__c);
+                       System.Debug('*** Inside Parent/ Child Maps Loop');
                     
                         if(pa.Id == ca.ParentId){
+                            
+                            System.Debug('*** Match on Parent Child Maps');
                             
                             // check for Service Level being blank on child and update only if blank
                             if(String.IsBlank(ca.Individual_Location_Service_Level__c) && !String.IsBlank(pa.Individual_Location_Service_Level__c)){
                             
+                                System.Debug('*** Individual Location Update Criteria Met');
+                            
                                 // update child value to match parent
                                 ca.Individual_Location_Service_Level__c = pa.Individual_Location_Service_Level__c;
+                            }
+                            
+                            // check for Account Director being blank on child and update only if blank
+                            if(String.IsBlank(ca.Account_Director__c) && !String.IsBlank(pa.Account_Director__c)){
+                            
+                                System.Debug('*** Account Director Criteria Met');
+                            
+                                // update child value to match parent
+                                ca.Account_Director__c= pa.Account_Director__c;
                             }
                             
                             // update child value to match parent
@@ -95,22 +114,7 @@ public class WBNParentAcctUpdateForStandard
         }
         catch(Exception ex){
         
-            List<Apex_Debug_Log__c> dmlDebugLogs  = new List<Apex_Debug_Log__c>();
             System.Debug('An error occurred: ' + ex.getMessage());
-            
-            Apex_Debug_Log__c dbLog = new Apex_Debug_Log__c();
-            dbLog.Apex_Class__c = 'CreateCasesCSC';
-            dbLog.Message__c = ex.getMessage();
-            dbLog.Method__c = 'CreateCasesCSC(Invocable)';
-            dbLog.Record_Id__c = '';
-            dbLog.Stack_Trace__c = ex.getMessage();
-            dbLog.Type__c = 'Error';
-        
-            dmlDebugLogs.add(dbLog);
-            
-            if(dmlDebugLogs.size() > 0){
-                insert dmlDebugLogs;
-            }
         }
     }
 }

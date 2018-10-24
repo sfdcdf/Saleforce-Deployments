@@ -31,6 +31,8 @@ public class WBNChildAcctUpdateForMaster
                 }
             }
             
+            System.Debug('*** Parent Map Size: ' + String.valueOf(parentAcctsMap.size()));
+            
             if(parentAcctsMap.size() > 0){
             
                 // populate Child Map based on Parent Ids
@@ -51,6 +53,8 @@ public class WBNChildAcctUpdateForMaster
                 
                     for(Account ca : childAcctsMap.values()){
                     
+                        System.Debug('*** Inside Parent/ Child Maps Loop');
+                    
                         if(pa.Id == ca.ParentId){
                             
                             // update child field values to match parent
@@ -70,22 +74,7 @@ public class WBNChildAcctUpdateForMaster
         }
         catch(Exception ex){
         
-            List<Apex_Debug_Log__c> dmlDebugLogs  = new List<Apex_Debug_Log__c>();
             System.Debug('An error occurred: ' + ex.getMessage());
-            
-            Apex_Debug_Log__c dbLog = new Apex_Debug_Log__c();
-            dbLog.Apex_Class__c = 'CreateCasesCSC';
-            dbLog.Message__c = ex.getMessage();
-            dbLog.Method__c = 'CreateCasesCSC(Invocable)';
-            dbLog.Record_Id__c = '';
-            dbLog.Stack_Trace__c = ex.getMessage();
-            dbLog.Type__c = 'Error';
-        
-            dmlDebugLogs.add(dbLog);
-            
-            if(dmlDebugLogs.size() > 0){
-                insert dmlDebugLogs;
-            }
         }
     }
 }
