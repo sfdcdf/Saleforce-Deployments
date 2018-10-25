@@ -1343,6 +1343,14 @@
         <apexClass>WBNParentAcctUpdateForStandardTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>WBNChildAcctUpdateForMasterFuture</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>WBNChildAcctUpdateForMasterFutureTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
