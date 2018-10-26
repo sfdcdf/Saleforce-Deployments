@@ -26866,6 +26866,21 @@
         <field>MLS__c.DataSource__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Surveys__c.Manager_of_YBN_CSD__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Surveys__c.YBN_CSD_email_alert__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Surveys__c.YBN_Consultant_email_alert__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
