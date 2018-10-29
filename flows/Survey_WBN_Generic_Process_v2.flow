@@ -485,22 +485,20 @@ ISPICKVAL({!myVariable_current.Status__c}, &quot;New&quot;),
             <name>originalFormula</name>
             <value>
                 <stringValue>AND(
-[Customer_Surveys__c].RecordType.Name = &quot;NPS Survey YBN&quot;,
+NOT(ISBLANK([Customer_Surveys__c].Account__c.IMS_Rep__c )), [Customer_Surveys__c].RecordType.Name = &quot;NPS Survey YBN&quot;,
 [Customer_Surveys__c].Customer_Survey_Name__c = &quot;NPS Survey WBN&quot;,
 ISPICKVAL([Customer_Surveys__c].Status__c, &quot;New&quot;),
-[Customer_Surveys__c].How_likely_are_you_to_recommend_NPS__c &gt;  6,
-NOT(ISBLANK([Customer_Surveys__c].Account__c.IMS_Rep__c )) 
+[Customer_Surveys__c].How_likely_are_you_to_recommend_NPS__c &gt;  6
 )</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_15</name>
         <dataType>Boolean</dataType>
         <expression>AND(
-{!myVariable_current.RecordType.Name} = &quot;NPS Survey YBN&quot;,
+NOT(ISBLANK({!myVariable_current.Account__r.IMS_Rep__c} )), {!myVariable_current.RecordType.Name} = &quot;NPS Survey YBN&quot;,
 {!myVariable_current.Customer_Survey_Name__c} = &quot;NPS Survey WBN&quot;,
 ISPICKVAL({!myVariable_current.Status__c}, &quot;New&quot;),
-{!myVariable_current.How_likely_are_you_to_recommend_NPS__c} &gt;  6,
-NOT(ISBLANK({!myVariable_current.Account__r.IMS_Rep__c} )) 
+{!myVariable_current.How_likely_are_you_to_recommend_NPS__c} &gt;  6
 )</expression>
     </formulas>
     <formulas>
@@ -626,7 +624,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
 {!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;10&quot;)
 )</expression>
     </formulas>
-    <interviewLabel>Survey_WBN_Generic_Process_v2-3_InterviewLabel</interviewLabel>
+    <interviewLabel>Survey_WBN_Generic_Process_v2-2_InterviewLabel</interviewLabel>
     <label>Survey - WBN - Generic Process v2</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -692,42 +690,6 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
                 <elementReference>myVariable_current.Id</elementReference>
             </value>
         </filters>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>YBN CSD (email alert)</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue>User</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Reference</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>YBN_CSD_email_alert__c</field>
-            <value>
-                <elementReference>myVariable_current.Account__r.Parent.Account_Director__r.Id</elementReference>
-            </value>
-        </inputAssignments>
         <inputAssignments>
             <processMetadataValues>
                 <name>dataType</name>
