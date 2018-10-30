@@ -35984,6 +35984,9 @@
         <layout>Quality_Case__c-Acquisio Master Quality</layout>
         <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjectTriggerMap__mdt-CTSObjectTriggerMap Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -37134,6 +37137,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Integration_Configuration__mdt</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CTSObjectTriggerMap__mdt</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>

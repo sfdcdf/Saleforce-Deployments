@@ -38073,6 +38073,9 @@
         <layout>CaseClose-Account Update Close</layout>
         <recordType>Case.YBN_Request</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjectTriggerMap__mdt-CTSObjectTriggerMap Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

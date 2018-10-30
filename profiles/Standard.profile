@@ -32761,6 +32761,9 @@
         <layout>Quality_Case__c-Acquisio Master Quality</layout>
         <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjectTriggerMap__mdt-CTSObjectTriggerMap Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AutoClose__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag/ Indicator signifying if the Salesforce record should be auto-closed</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Flag/ Indicator signifying if the Salesforce record should be auto-closed</inlineHelpText>
+        <label>Auto Close</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CTSAPIIdentifier__c</fullName>
+        <description>CTS API Endpoint URL referenced for CTS Ticket creation (if API Integration Type)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>CTS API Endpoint URL referenced for CTS Ticket creation (if API Integration Type)</inlineHelpText>
+        <label>CTS API Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTSAssignedToLoginName__c</fullName>
+        <description>Login Name used to reference a CTS User</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Login Name used to reference a CTS User</inlineHelpText>
+        <label>CTS Assigned To Login Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTSEmailAddress__c</fullName>
+        <description>CTS Email Address referenced for CTS Ticket creation (if Email Integration Type)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>CTS Email Address referenced for CTS Ticket creation (if Email Integration Type)</inlineHelpText>
+        <label>CTS Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTSNoteType__c</fullName>
+        <description>CTS Note Type referenced for CTS Ticket creation (if API Integration Type)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>CTS Note Type referenced for CTS Ticket creation (if API Integration Type)</inlineHelpText>
+        <label>CTS Note Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal Note</fullName>
+                    <default>true</default>
+                    <label>Internal Note</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseOrigin__c</fullName>
+        <description>Salesforce Case Origin referenced for CTS Ticket creation (if applicable)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Case Origin referenced for CTS Ticket creation (if applicable)</inlineHelpText>
+        <label>Case Origin</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chat</fullName>
+                    <default>true</default>
+                    <label>Chat</label>
+                </value>
+                <value>
+                    <fullName>customercare@yodle.com</fullName>
+                    <default>false</default>
+                    <label>customercare@yodle.com</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Self</fullName>
+                    <default>false</default>
+                    <label>Self</label>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <label>Web</label>
+                </value>
+                <value>
+                    <fullName>YodleGoldService@yodle.com</fullName>
+                    <default>false</default>
+                    <label>YodleGoldService@yodle.com</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseReason__c</fullName>
+        <description>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</inlineHelpText>
+        <label>Case Reason</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>true</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Adoption Call</fullName>
+                    <default>false</default>
+                    <label>Adoption Call</label>
+                </value>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Client Communication</fullName>
+                    <default>false</default>
+                    <label>Client Communication</label>
+                </value>
+                <value>
+                    <fullName>Client Escalation</fullName>
+                    <default>false</default>
+                    <label>Client Escalation</label>
+                </value>
+                <value>
+                    <fullName>CSC</fullName>
+                    <default>false</default>
+                    <label>CSC</label>
+                </value>
+                <value>
+                    <fullName>CS Touchplan</fullName>
+                    <default>false</default>
+                    <label>CS Touchplan</label>
+                </value>
+                <value>
+                    <fullName>Maps Verification</fullName>
+                    <default>false</default>
+                    <label>Maps Verification</label>
+                </value>
+                <value>
+                    <fullName>MLS</fullName>
+                    <default>false</default>
+                    <label>MLS</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Proactive Touch</fullName>
+                    <default>false</default>
+                    <label>Proactive Touch</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseSubject__c</fullName>
+        <description>Salesforce Object Subject Line referenced for CTS Ticket creation (if applicable)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Object Subject Line referenced for CTS Ticket creation (if applicable)</inlineHelpText>
+        <label>Case Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Any description, comments or notes about the mapping record</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Any description, comments or notes about the mapping record</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DetailsTemplateId__c</fullName>
+        <description>Salesforce Email Template Id reference that includes all the data elements and values for CTS Ticket creation; used for both API and Email Integration types</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Email Template Id reference that includes all the data elements and values for CTS Ticket creation; used for both API and Email Integration types</inlineHelpText>
+        <label>Details Template Id</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DetailsTemplateName__c</fullName>
+        <description>Salesforce Email Template Name corresponding to the Details Template Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Email Template Name corresponding to the Details Template Id</inlineHelpText>
+        <label>Details Template Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IntegrationType__c</fullName>
+        <description>Integration Type referenced for what process is used to create the CTS Ticket (Email or API)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Integration Type referenced for what process is used to create the CTS Ticket (Email or API)</inlineHelpText>
+        <label>Integration Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>API</fullName>
+                    <default>true</default>
+                    <label>API</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsActive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Flag/ indicator signifying if the mapping record is Active; integration code references only look for Active records as criteria</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Flag/ indicator signifying if the mapping record is Active</inlineHelpText>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsCreateCTSNote__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag/ Indicator signifying if an associated CTS Ticket Note should be created when creating the CTS Ticket (API Integration Type only)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Flag/ Indicator signifying if an associated CTS Ticket Note should be created when creating the CTS Ticket (API Integration Type only)</inlineHelpText>
+        <label>Is Create CTS Note</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ManagementType__c</fullName>
+        <description>Salesforce/ CTS Business Unit responsible for management of Mapping record referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce/ CTS Business Unit responsible for management of Mapping record referenced for CTS Ticket creation</inlineHelpText>
+        <label>Management Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Management</fullName>
+                    <default>true</default>
+                    <label>Account Management</label>
+                </value>
+                <value>
+                    <fullName>Fulfillment</fullName>
+                    <default>false</default>
+                    <label>Fulfillment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NoteDetailsTemplateId__c</fullName>
+        <description>Salesforce Email Template Id reference that includes all the data elements and values for CTS Note creation; used for API Integration type only</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Email Template Id reference that includes all the data elements and values for CTS Note creation</inlineHelpText>
+        <label>Note Details Template Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NoteDetailsTemplateName__c</fullName>
+        <description>Salesforce Email Template Name corresponding to the Note Details Template Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Email Template Name corresponding to the Note Details Template Id</inlineHelpText>
+        <label>Note Details Template Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ObjectName__c</fullName>
+        <description>Name of the Salesforce object to be referenced for source ticket creation data</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of the Salesforce object to be referenced for source ticket creation data</inlineHelpText>
+        <label>Object Name</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Best Practice Evaluation</fullName>
+                    <default>true</default>
+                    <label>Best Practice Evaluation</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Customer Surveys</fullName>
+                    <default>false</default>
+                    <label>Customer Surveys</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Worksheet</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Worksheet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RecordTypeName__c</fullName>
+        <description>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</inlineHelpText>
+        <label>Record Type Name</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Update</fullName>
+                    <default>true</default>
+                    <label>Account Update</label>
+                </value>
+                <value>
+                    <fullName>Charge Failure</fullName>
+                    <default>false</default>
+                    <label>Charge Failure</label>
+                </value>
+                <value>
+                    <fullName>Closing Script - Auto Launch</fullName>
+                    <default>false</default>
+                    <label>Closing Script - Auto Launch</label>
+                </value>
+                <value>
+                    <fullName>Installation Worksheet</fullName>
+                    <default>false</default>
+                    <label>Installation Worksheet</label>
+                </value>
+                <value>
+                    <fullName>LBW Content Organic Setup</fullName>
+                    <default>false</default>
+                    <label>LBW Content Organic Setup</label>
+                </value>
+                <value>
+                    <fullName>LH Closing Script – Auto Launch</fullName>
+                    <default>false</default>
+                    <label>LH Closing Script – Auto Launch</label>
+                </value>
+                <value>
+                    <fullName>LH Master</fullName>
+                    <default>false</default>
+                    <label>LH Master</label>
+                </value>
+                <value>
+                    <fullName>LH OOS</fullName>
+                    <default>false</default>
+                    <label>LH OOS</label>
+                </value>
+                <value>
+                    <fullName>Maps Initial Claiming</fullName>
+                    <default>false</default>
+                    <label>Maps Initial Claiming</label>
+                </value>
+                <value>
+                    <fullName>Master</fullName>
+                    <default>false</default>
+                    <label>Master</label>
+                </value>
+                <value>
+                    <fullName>NCS - AutoLaunch</fullName>
+                    <default>false</default>
+                    <label>NCS - AutoLaunch</label>
+                </value>
+                <value>
+                    <fullName>NPS Survey LBW</fullName>
+                    <default>false</default>
+                    <label>NPS Survey LBW</label>
+                </value>
+                <value>
+                    <fullName>NPS Survey Lighthouse</fullName>
+                    <default>false</default>
+                    <label>NPS Survey Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>Optimization</fullName>
+                    <default>false</default>
+                    <label>Optimization</label>
+                </value>
+                <value>
+                    <fullName>Organic Setup</fullName>
+                    <default>false</default>
+                    <label>Organic Setup</label>
+                </value>
+                <value>
+                    <fullName>Outbound Call</fullName>
+                    <default>false</default>
+                    <label>Outbound Call</label>
+                </value>
+                <value>
+                    <fullName>PIN Action Needed</fullName>
+                    <default>false</default>
+                    <label>PIN Action Needed</label>
+                </value>
+                <value>
+                    <fullName>QA Audit</fullName>
+                    <default>false</default>
+                    <label>QA Audit</label>
+                </value>
+                <value>
+                    <fullName>TORCHx Master</fullName>
+                    <default>false</default>
+                    <label>TORCHx Master</label>
+                </value>
+                <value>
+                    <fullName>TORCHx NCS - AutoLaunch</fullName>
+                    <default>false</default>
+                    <label>TORCHx NCS - AutoLaunch</label>
+                </value>
+                <value>
+                    <fullName>Yodle Gold Service</fullName>
+                    <default>false</default>
+                    <label>Yodle Gold Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <description>Used as reference to determine how a CTS Ticket should be created, what data elements should be included and the source of the ticket data from Salesforce data</description>
+    <label>CTSObjectTriggerMap</label>
+    <pluralLabel>CTSObjectTriggerMaps</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
