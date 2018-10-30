@@ -488,8 +488,126 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>Additional_Filter__c</fullName>
+        <description>Additional Filter placeholder</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Additional Filter placeholder</inlineHelpText>
+        <label>Additional Filter</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClientType__c</fullName>
+        <description>Salesforce Client Type referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Client Type referenced for CTS Ticket creation</inlineHelpText>
+        <label>Client Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>true</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>Local</fullName>
+                    <default>false</default>
+                    <label>Local</label>
+                </value>
+                <value>
+                    <fullName>WBN</fullName>
+                    <default>false</default>
+                    <label>WBN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsAutoClose__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag/ Indicator signifying if the Salesforce record should be auto-closed</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Flag/ Indicator signifying if the Salesforce record should be auto-closed</inlineHelpText>
+        <label>Is Auto Close</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsExcludeWBN__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Flag/ indicator signifying that WBN records will be excluded from the specified mapping record processing</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Flag/ indicator signifying that WBN records will be excluded from the specified mapping record processing</inlineHelpText>
+        <label>Is Exclude WBN</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ProductType__c</fullName>
+        <description>Salesforce Product Type referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Product Type referenced for CTS Ticket creation</inlineHelpText>
+        <label>Product Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead Stream</fullName>
+                    <default>true</default>
+                    <label>Lead Stream</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>false</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>TORCHx</fullName>
+                    <default>false</default>
+                    <label>TORCHx</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <description>Used as reference to determine how a CTS Ticket should be created, what data elements should be included and the source of the ticket data from Salesforce data</description>
     <label>CTSObjectTriggerMap</label>
     <pluralLabel>CTSObjectTriggerMaps</pluralLabel>
     <visibility>Public</visibility>
+    <validationRules>
+        <fullName>CTS_API_Identifier_Required</fullName>
+        <active>true</active>
+        <description>Ensures that the CTS API Identifier field is required if the Integration Type is API</description>
+        <errorConditionFormula>AND
+(
+    TEXT(IntegrationType__c) = "API",
+    ISBLANK(CTSAPIIdentifier__c)
+)</errorConditionFormula>
+        <errorDisplayField>CTSAPIIdentifier__c</errorDisplayField>
+        <errorMessage>CTS API Identifier is required when the Integration Type selected is API</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CTS_Email_Address_Required</fullName>
+        <active>true</active>
+        <description>Ensures that the CTS Email Address field is required if the Integration Type is EMAIL</description>
+        <errorConditionFormula>AND
+(
+     TEXT(IntegrationType__c) = "Email",
+     ISBLANK(CTSEmailAddress__c)
+)</errorConditionFormula>
+        <errorDisplayField>CTSEmailAddress__c</errorDisplayField>
+        <errorMessage>CTS Email Address is required when the Integration Type selected is EMAIL.</errorMessage>
+    </validationRules>
 </CustomObject>
