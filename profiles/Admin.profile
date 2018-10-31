@@ -41142,10 +41142,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Custom_Report_Hierarchy__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Customer_Surveys__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -41423,6 +41419,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Application_Configuration__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Custom_Report_Hierarchy__c</tab>
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
 </Profile>
