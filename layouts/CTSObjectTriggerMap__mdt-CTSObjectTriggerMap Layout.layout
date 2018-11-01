@@ -20,10 +20,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>ManagementType__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>DetailsTemplateId__c</field>
             </layoutItems>
             <layoutItems>
@@ -81,10 +77,6 @@
         <editHeading>true</editHeading>
         <label>Case Specific Details</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CaseSubject__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CaseOrigin__c</field>

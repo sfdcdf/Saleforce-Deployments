@@ -1321,122 +1321,6 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
-        <fullName>QA_Product_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>QA Product Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Max</fullName>
-                    <default>false</default>
-                    <label>Max</label>
-                </value>
-                <value>
-                    <fullName>Ads Only</fullName>
-                    <default>false</default>
-                    <label>Ads Only</label>
-                </value>
-                <value>
-                    <fullName>Yodle Organic</fullName>
-                    <default>false</default>
-                    <label>Yodle Organic</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse</fullName>
-                    <default>false</default>
-                    <label>Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>Yodle Medical</fullName>
-                    <default>false</default>
-                    <label>Yodle Medical</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Essentials</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Essentials</label>
-                </value>
-                <value>
-                    <fullName>Essentials Only</fullName>
-                    <default>false</default>
-                    <label>Essentials Only</label>
-                </value>
-                <value>
-                    <fullName>Essentials Only (Down-sell)</fullName>
-                    <default>false</default>
-                    <label>Essentials Only (Down-sell)</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Dental</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Dental</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Chiro</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Chiro</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Auto</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Auto</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Essentials - Chiro</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Essentials - Chiro</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Essentials - Auto</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Essentials - Auto</label>
-                </value>
-                <value>
-                    <fullName>TORCHx for Agent</fullName>
-                    <default>false</default>
-                    <label>TORCHx for Agent</label>
-                </value>
-                <value>
-                    <fullName>TORCHx + Ads for Agent</fullName>
-                    <default>false</default>
-                    <label>TORCHx + Ads for Agent</label>
-                </value>
-                <value>
-                    <fullName>TORCHx for Team</fullName>
-                    <default>false</default>
-                    <label>TORCHx for Team</label>
-                </value>
-                <value>
-                    <fullName>TORCHx + Ads for Team</fullName>
-                    <default>false</default>
-                    <label>TORCHx + Ads for Team</label>
-                </value>
-                <value>
-                    <fullName>TORCHx for Broker</fullName>
-                    <default>false</default>
-                    <label>TORCHx for Broker</label>
-                </value>
-                <value>
-                    <fullName>TORCHx + Ads for Broker</fullName>
-                    <default>false</default>
-                    <label>TORCHx + Ads for Broker</label>
-                </value>
-                <value>
-                    <fullName>Lead Stream</fullName>
-                    <default>false</default>
-                    <label>Lead Stream</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>QA_Type__c</fullName>
         <externalId>false</externalId>
         <label>QA Type</label>
@@ -3798,6 +3682,127 @@ false)</formula>
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>QA_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Product Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Max</fullName>
+                    <default>false</default>
+                    <label>Max</label>
+                </value>
+                <value>
+                    <fullName>Ads Only</fullName>
+                    <default>false</default>
+                    <label>Ads Only</label>
+                </value>
+                <value>
+                    <fullName>Yodle Organic</fullName>
+                    <default>false</default>
+                    <label>Yodle Organic</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>false</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>Yodle Medical</fullName>
+                    <default>false</default>
+                    <label>Yodle Medical</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Essentials</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Essentials</label>
+                </value>
+                <value>
+                    <fullName>Essentials Only</fullName>
+                    <default>false</default>
+                    <label>Essentials Only</label>
+                </value>
+                <value>
+                    <fullName>Essentials Only (Down-sell)</fullName>
+                    <default>false</default>
+                    <label>Essentials Only (Down-sell)</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Dental</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Dental</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Vision</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Vision</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Chiro</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Chiro</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Auto</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Auto</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Essentials - Chiro</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Essentials - Chiro</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Essentials - Auto</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Essentials - Auto</label>
+                </value>
+                <value>
+                    <fullName>TORCHx for Agent</fullName>
+                    <default>false</default>
+                    <label>TORCHx for Agent</label>
+                </value>
+                <value>
+                    <fullName>TORCHx + Ads for Agent</fullName>
+                    <default>false</default>
+                    <label>TORCHx + Ads for Agent</label>
+                </value>
+                <value>
+                    <fullName>TORCHx for Team</fullName>
+                    <default>false</default>
+                    <label>TORCHx for Team</label>
+                </value>
+                <value>
+                    <fullName>TORCHx + Ads for Team</fullName>
+                    <default>false</default>
+                    <label>TORCHx + Ads for Team</label>
+                </value>
+                <value>
+                    <fullName>TORCHx for Broker</fullName>
+                    <default>false</default>
+                    <label>TORCHx for Broker</label>
+                </value>
+                <value>
+                    <fullName>TORCHx + Ads for Broker</fullName>
+                    <default>false</default>
+                    <label>TORCHx + Ads for Broker</label>
+                </value>
+                <value>
+                    <fullName>Lead Stream</fullName>
+                    <default>false</default>
+                    <label>Lead Stream</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -3876,1283 +3881,6 @@ false)</formula>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
-    <recordTypes>
-        <fullName>Lighthouse_Master_Quality</fullName>
-        <active>true</active>
-        <label>Lighthouse Master Quality</label>
-        <picklistValues>
-            <picklist>CS_Fail_Details__c</picklist>
-            <values>
-                <fullName>Address entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address visibility entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address visibility left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address visibility was not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business hours entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business hours left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business hours not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business name entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business name left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business name not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business years open entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business years open not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC call time discrepancy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closing script not recorded</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commitment length not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contact phone number entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contact phone number not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Current verison of Closing Script not read</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email address not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email entered incorrectly or not spelled out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Emergency call availability entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Emergency call availability not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Install call time discrepancy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Launch Timeline not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead phone number entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead phone number left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead phone number not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead range entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead range left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead range not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>License%2C bond or insurance details entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MLS Fees Section not read</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report%C2%A0</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>More than 10 Services entered in Sales Wizard</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment processed incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pricing left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pricing not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radius entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radius left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radius not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep did not read the Business Information Section in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep did not read the Initial Training Call Section in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep did not read the MLS Fees Section in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep did not read the Prepay Section in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep did not read the Referral Section in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Segment entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Segment left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Segment not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Services not fully entered in Sales Wizard</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Services not to advertise for entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Services not to advertise not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Services not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Target area entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Target area left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Target area not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>USP entered incorrectly</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>USP left blank</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>USP not verified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>CS_Potential_Quality_Offense__c</picklist>
-            <values>
-                <fullName>Address%3A Business Address Not Used</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address%3A PO Box</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Address%3A Target Metro Beyond 20 Miles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Assumptive Prepay</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Change Mind POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Contract Length</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Payment Dates</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Refund Discussion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - Professionalism</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary Offense</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary%3A PCI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary%3A ROE Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary%3A Unauthorized Charge</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leads%3A Calls%2FJobs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leads%3A Guaranteed Lead Range</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leads%3A Jobs vs%2E Calls%2FEmails</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leads%3A Non PSG Focus</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leads%3A Not Advertised for Segment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A AA Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A Product Misrepresentation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other Offenses%3A Program Release</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Placement%3A Rank Outside of Target Metro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Placement%3A Specific Keywords</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Placement%3A Specific Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeline%3A Launch Timeframe</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeline%3A Organic Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Website%3A Current SEO %E2%80%93 No Impact</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Website%3A SEO on Client%27s Website</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Closing_Script_Call_Recorded__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unknown</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Demo_Recorded__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unknown</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Fail_Reason__c</picklist>
-            <values>
-                <fullName>CSC incorrectly scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closing script not read in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closing script not recorded in full</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incorrect billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Install incorrectly scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Install phone number incorrect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Fine_Amount__c</picklist>
-            <values>
-                <fullName>%2420%2E00</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%2430%2E00</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%2440%2E00</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%2450%2E00</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Kickback__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>None</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Minutes_Recorded__c</picklist>
-            <values>
-                <fullName>%3C15</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C150</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C30</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C60</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C90</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3E150</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3E90</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Offense_Details__c</picklist>
-            <values>
-                <fullName>%24100 Fine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Change Mind POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Contract Length</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Payment Dates</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Refund Discussion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary Offense</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A AA Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A Non English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A Product Misrepresentation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeline%3A Launch Timeframe</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Outcome__c</picklist>
-            <values>
-                <fullName>Fail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Recording</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pass</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_Quality_Offense__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Priority__c</picklist>
-            <values>
-                <fullName>Blocker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Critical</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Escalated</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Major</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>QA_Action_Taken__c</picklist>
-            <values>
-                <fullName>%24100 Fine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Coaching</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Full Commission Loss</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incomplete</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inconclusive</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>None</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>QA_Product_Type__c</picklist>
-            <values>
-                <fullName>Lighthouse</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse - Auto</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse - Chiro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse - Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse Essentials - Auto</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lighthouse Essentials - Chiro</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>QA_Type__c</picklist>
-            <values>
-                <fullName>Closing Script QA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Developmental Monitor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>QA Request</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Reason_for_QA__c</picklist>
-            <values>
-                <fullName>%24100 Fine - Professionalism</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24100 Fine - Referencing National</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>AA Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Assumptive Prepay</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>BRO - Incorrect Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Address Not Used</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CS Touch Plan</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Calls%2FJobs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cancellation Policy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Change Mind POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Competing Ads Campaign</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Complaint %E2%80%93 Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Complaint %E2%80%93 Online</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Length</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Current SEO %E2%80%93 No Impact</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - Email Signature</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - PCI</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - Pitch Against Company</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - Professionalism</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - Save Attempt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary - Unauthorized Charge</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary Offense</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Exclusivity</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Found Outside of 20 Miles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Guaranteed Organic Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Half Chargeback</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Highest Level Offense</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Invoice%2FCall%2FAutomatic Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>LR - Specific Number of Leads</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Launch%2FPause</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Averaging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Conservative</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Guaranteed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Incorrect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Jobs vs%2E Calls%2FEmails</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Product Participation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non PSG Focus%2FResults</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Advertised for Segment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PO Box</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Dates</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Price Tilt Not Clarified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Misrepresentation %231</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Misrepresentation %232</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Misrepresentation %233</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Providing Lead Conversion Rate</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ROE Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rank Outside of Target Metro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refund Discussion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Replicating Website</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO on Client%27s Website</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sales Update%2FComm Log</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Same Address%2FTwo Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specific Keywords</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specific Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Target Metro Beyond 20 Miles</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeframe - Calls within 24-48</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeframe - Front page%2FResults</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeframe - Launch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Zero Tolerance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>eContract</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Rep_Emailed_QA__c</picklist>
-            <values>
-                <fullName>CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commitment Length</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contact Info</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>E-Contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Launch Date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple Calls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Reading the Entire Script Verbatim</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pricing%2FBilling</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reactivation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reading Incorrect Sections</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recording Issue</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Segment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TBC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Target Metro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tradeshow</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Result_of_QA__c</picklist>
-            <values>
-                <fullName>%24100 Fine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inconclusive</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No ZTO Found</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ZTO</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>SR1_Offense_Details__c</picklist>
-            <values>
-                <fullName>%24100 Fine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Active Client Owned Domain</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Assumptive Prepay</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Change Mind POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Contract Length</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Payment Dates</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Billing%3A Refund Discussion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Calls%2FJobs TORCHx Only</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Current SEO %E2%80%93 No Impact</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Disciplinary Offense</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Guaranteed Organic Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incorrect Lead Ranges</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incorrect Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Launch%2FPause</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Conversion Rate</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range %E2%80%93 Prospects vs%2E Clients</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Conservative</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Range - Guaranteed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A AA Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A Non English</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Misc%3A Product Misrepresentation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Non PSG Focus%2FResults</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Advertised for Segment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Organic Results</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ROE Breach</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Replicating Website</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO on Client%27s Website</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Specific Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeframe - Calls within 24-48</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeline for Organic Placement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Timeline%3A Launch Timeframe</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>SR1_QA_Action_Taken__c</picklist>
-            <values>
-                <fullName>%24100 Fine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Coaching</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Full Commission Loss</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Incomplete</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inconclusive</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>None</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>SR1_Sales_Office__c</picklist>
-            <values>
-                <fullName>Austin</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Charlotte</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>New York</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scottsdale</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Sales_Office__c</picklist>
-            <values>
-                <fullName>Austin</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>New</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Words_Transcribed__c</picklist>
-            <values>
-                <fullName>%3C1000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C1500</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C2000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C250</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C50</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3C500</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%3E2000</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
     <recordTypes>
         <fullName>Local_Master_Quality</fullName>
         <active>true</active>
@@ -10778,6 +9506,1287 @@ false)</formula>
             <values>
                 <fullName>Scottsdale</fullName>
                 <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Words_Transcribed__c</picklist>
+            <values>
+                <fullName>%3C1000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C1500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C2000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C250</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E2000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Lighthouse_Master_Quality</fullName>
+        <active>true</active>
+        <label>Lighthouse Master Quality</label>
+        <picklistValues>
+            <picklist>CS_Fail_Details__c</picklist>
+            <values>
+                <fullName>Address entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address visibility was not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business hours not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business name not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business years open not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSC scheduled outside of the 3 to 5 business day time window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commitment length not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current verison of Closing Script not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email address not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email entered incorrectly or not spelled out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency call availability not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Training Call was scheduled outside of approved 48-96 hour window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install call time discrepancy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch Timeline not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead phone number not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead range not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License%2C bond or insurance details entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Fees Section not read</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Service Agreement not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>More than 10 Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment processed incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Questionnaire not emailed to Quality on the day of the sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radius not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Business Information Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Initial Training Call Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Installation Scheduling Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the MLS Fees Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Prepay Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep did not read the Referral Section in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep selected incorrect product in the Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not fully entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise for entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not to advertise not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target area not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms and Billing section not read accordingly or clear YES was not received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP entered incorrectly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP left blank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USP not verified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed Services entered in Sales Wizard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CS_Potential_Quality_Offense__c</picklist>
+            <values>
+                <fullName>Address%3A Business Address Not Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A PO Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Address%3A Target Metro Beyond 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A PCI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary%3A Unauthorized Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Calls%2FJobs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Guaranteed Lead Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Jobs vs%2E Calls%2FEmails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Non PSG Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leads%3A Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Offenses%3A Program Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Rank Outside of Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Keywords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placement%3A Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website%3A SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Closing_Script_Call_Recorded__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demo_Recorded__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fail_Reason__c</picklist>
+            <values>
+                <fullName>CSC incorrectly scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not read in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing script not recorded in full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install incorrectly scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install phone number incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fine_Amount__c</picklist>
+            <values>
+                <fullName>%2420%2E00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2430%2E00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2440%2E00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2E00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Kickback__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Minutes_Recorded__c</picklist>
+            <values>
+                <fullName>%3C15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C60</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C90</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E90</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Offense_Details__c</picklist>
+            <values>
+                <fullName>%24100 Fine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Non English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outcome__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Recording</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Potential_Quality_Offense__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority__c</picklist>
+            <values>
+                <fullName>Blocker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Major</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QA_Action_Taken__c</picklist>
+            <values>
+                <fullName>%24100 Fine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Commission Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconclusive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QA_Product_Type__c</picklist>
+            <values>
+                <fullName>Lighthouse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse - Auto</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse - Chiro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse - Dental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse - Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse Essentials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse Essentials - Auto</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lighthouse Essentials - Chiro</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QA_Type__c</picklist>
+            <values>
+                <fullName>Closing Script QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Developmental Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_QA__c</picklist>
+            <values>
+                <fullName>%24100 Fine - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24100 Fine - Referencing National</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BRO - Incorrect Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Address Not Used</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS Touch Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Calls%2FJobs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competing Ads Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint %E2%80%93 Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint %E2%80%93 Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Email Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - PCI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Pitch Against Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Professionalism</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Save Attempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary - Unauthorized Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exclusivity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Found Outside of 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guaranteed Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Chargeback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Highest Level Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LR - Specific Number of Leads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch%2FPause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Averaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Conservative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Guaranteed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Incorrect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Jobs vs%2E Calls%2FEmails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Product Participation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non PSG Focus%2FResults</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PO Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Tilt Not Clarified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Misrepresentation %231</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Misrepresentation %232</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Misrepresentation %233</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Providing Lead Conversion Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rank Outside of Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replicating Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Update%2FComm Log</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Address%2FTwo Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specific Keywords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Metro Beyond 20 Miles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeframe - Calls within 24-48</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeframe - Front page%2FResults</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeframe - Launch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zero Tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eContract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Emailed_QA__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commitment Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Contract</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Reading the Entire Script Verbatim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing%2FBilling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reactivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reading Incorrect Sections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Metro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tradeshow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Result_of_QA__c</picklist>
+            <values>
+                <fullName>%24100 Fine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconclusive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No ZTO Found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ZTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SR1_Offense_Details__c</picklist>
+            <values>
+                <fullName>%24100 Fine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Active Client Owned Domain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assumptive Prepay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Change Mind POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Contract Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Invoice%2FCall%2FAutomatic Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Payment Dates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing%3A Refund Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Calls%2FJobs TORCHx Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current SEO %E2%80%93 No Impact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disciplinary Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guaranteed Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Lead Ranges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Launch%2FPause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Conversion Rate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range %E2%80%93 Prospects vs%2E Clients</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Conservative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Range - Guaranteed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A AA Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Non English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Misc%3A Product Misrepresentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non PSG Focus%2FResults</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Advertised for Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Organic Results</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ROE Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replicating Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO on Client%27s Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specific Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeframe - Calls within 24-48</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline for Organic Placement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timeline%3A Launch Timeframe</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SR1_QA_Action_Taken__c</picklist>
+            <values>
+                <fullName>%24100 Fine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Commission Loss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inconclusive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SR1_Sales_Office__c</picklist>
+            <values>
+                <fullName>Austin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Charlotte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scottsdale</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Office__c</picklist>
+            <values>
+                <fullName>Austin</fullName>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>

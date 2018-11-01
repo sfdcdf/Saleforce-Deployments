@@ -10,18 +10,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>CTSAPIIdentifier__c</fullName>
-        <description>CTS API Endpoint URL referenced for CTS Ticket creation (if API Integration Type)</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>CTS API Endpoint URL referenced for CTS Ticket creation (if API Integration Type)</inlineHelpText>
-        <label>CTS API Identifier</label>
-        <length>255</length>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CTSAssignedToLoginName__c</fullName>
         <description>Login Name used to reference a CTS User</description>
         <externalId>false</externalId>
@@ -581,6 +569,18 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CTSAPIIdentifier__c</fullName>
+        <description>CTS API Identifier referenced for CTS Ticket creation (if API Integration Type)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>CTS API Identifier referenced for CTS Ticket creation (if API Integration Type)</inlineHelpText>
+        <label>CTS API Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <description>Used as reference to determine how a CTS Ticket should be created, what data elements should be included and the source of the ticket data from Salesforce data</description>
     <label>CTSObjectTriggerMap</label>
