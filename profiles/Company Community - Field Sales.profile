@@ -24,16 +24,16 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>FieldSales_CustomReporting</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>HermesAccountRedirect</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>NCSCaseAccountView</apexPage>
         <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FieldSales_CustomReporting</apexPage>
+        <enabled>false</enabled>
     </pageAccesses>
     <fieldPermissions>
         <editable>false</editable>
