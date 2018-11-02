@@ -582,6 +582,20 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Object__c</fullName>
+        <description>Object Reference Metadata Type Lookup Relationship</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Object Reference Metadata Type Lookup Relationship</inlineHelpText>
+        <label>Object Reference</label>
+        <referenceTo>CTS_Salesforce_Object_Ref__mdt</referenceTo>
+        <relationshipLabel>CTSObjectTriggerMaps</relationshipLabel>
+        <relationshipName>CTSObjectTriggerMaps_SFDCObjectRef</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
     <description>Used as reference to determine how a CTS Ticket should be created, what data elements should be included and the source of the ticket data from Salesforce data</description>
     <label>CTSObjectTriggerMap</label>
     <pluralLabel>CTSObjectTriggerMaps</pluralLabel>

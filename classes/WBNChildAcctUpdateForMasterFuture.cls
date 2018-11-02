@@ -8,6 +8,7 @@ public class WBNChildAcctUpdateForMasterFuture
             Map<Id, Account> childAcctsMap = new Map<Id, Account>();
             Map<Id, Account> parentAcctsMap = new Map<Id, Account>();
             List<Account> dmlAccounts = new List<Account>();
+            Id acctStandardRecTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Standard').getRecordTypeId();
             
             for(Account a :
                 [SELECT Id,
@@ -34,7 +35,8 @@ public class WBNChildAcctUpdateForMasterFuture
                             Bulk_Bing_AccountPL__c,
                             Bulk_Google_AccountPL__c
                        FROM Account
-                      WHERE ParentId IN :acctIds]){
+                      WHERE ParentId IN :acctIds AND
+                            RecordTypeId = :acctStandardRecTypeId]){
                     
                     // populate Child Map
                     childAcctsMap.put(a.Id, a);

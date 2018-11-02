@@ -34,6 +34,10 @@
                 <behavior>Edit</behavior>
                 <field>IsExcludeWBN__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Object__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -51,10 +55,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>ProductType__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>ObjectName__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
