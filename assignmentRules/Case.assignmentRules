@@ -467,6 +467,30 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
+            <assignedTo>AccountPerformanceQueue295311</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Account Update</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Client_Type__c</field>
+                <operation>notContain</operation>
+                <value>National,YBN,Lighthouse</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Product_Type__c</field>
+                <operation>notContain</operation>
+                <value>Outrank 1.0,YBN,Torchx,ATV</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Requested_Campaign_Updates__c</field>
+                <operation>includes</operation>
+                <value>Geo Template Update</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
             <assignedTo>TORCHx_Post_Launch_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>

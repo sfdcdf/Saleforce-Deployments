@@ -33967,6 +33967,12 @@
     <layoutAssignments>
         <layout>CTSObjectTriggerMap__mdt-CTSObjectTriggerMap Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Integration_Setting__mdt-CTS Integration Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
