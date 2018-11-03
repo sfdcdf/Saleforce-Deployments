@@ -2,11 +2,12 @@
   Company/ Author ....: E. Ross
   Date Created .......: 27-Mar-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 11-Oct-2018
+  Last Modified Date .: 3-Nov-2018
   Description ........: Class contains invocable method to update Case record type, add services offered and verticals to related list
   if the Case Account has an Account Product Type of LS ATV.
   
   Modification 11-Oct-2018: Removed other Organic Case record types from logic; updated Page numbering
+  Modification 3-Nov-2018: Updated Case description; auto-populate Case website/ domain from Account
 *****************************************************************************/
 public without sharing class OrganicCaseATVUpdates
 {
@@ -22,6 +23,7 @@ public without sharing class OrganicCaseATVUpdates
              Map<String, Offering_to_Vertical_Map__c> offeringMasterMap = new Map<String, Offering_to_Vertical_Map__c>();
              String acctProductType = 'Lead Stream ATV';
              String verticalsDescrText = '';
+             String caseDescrText = 'Please write custom content for the listed service pages and the homepage based on these Vertical(s):';
              Set<String> verticalsSet = new Set<String>();
              
              Id contentPilotOwner = [SELECT Id FROM Group WHERE DeveloperName = 'Content_Pilot' LIMIT 1].Id;
@@ -54,6 +56,8 @@ public without sharing class OrganicCaseATVUpdates
                              RecordType.Name,
                              AccountId,
                              Account.Product_Type_Transactional__c,
+                             Account.Website,
+                             Domain_Name_to_be_used_for_YO__c,
                              Services_Offered__c,
                              Number_of_Pages_Text__c,
                              IsClosed,
@@ -67,11 +71,12 @@ public without sharing class OrganicCaseATVUpdates
                              Account.Product_Type_Transactional__c = :acctProductType AND
                              IsClosed = false]){
                      
-                     // always update Task Id and owner for Textbroker
+                     // always update Task Id and owner for CTS pre launch
                      c.taskId__c = c.Account.Client_ID__c + '-002'; // 002 for LS ATV Accounts
                      c.OwnerId = contentPilotOwner;
                      c.Subject = 'LS ATV Content Setup';
-                        
+                     c.Domain_Name_to_be_used_for_YO__c = c.Account.Website;
+                     
                      if(!String.IsEmpty(c.Services_Offered__c)){
                      
                          System.Debug('*** Parsing Services Offered Text area field ***');
@@ -122,7 +127,7 @@ public without sharing class OrganicCaseATVUpdates
                          verticalsDescrText = verticalsDescrText.removeEnd(', ');
                          verticalsDescrText = verticalsDescrText.replace('No Vertical Mapped, ', '');
                          c.Homepage__c = verticalsDescrText.replace('No Vertical Mapped', '');
-                         c.Description = 'Please write custom content for the homepage only based on these Vertical(s): ' + c.Homepage__c;
+                         c.Description = caseDescrText  + ' ' + c.Homepage__c;
                      }
                      
                      // add case to update list
