@@ -4146,17 +4146,6 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Fee_Essentials__c</fullName>
-        <externalId>false</externalId>
-        <label>Essentials Fee</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>First_rep_role__c</fullName>
         <externalId>false</externalId>
         <formula>Sales_Person__r.UserRole.Name</formula>
@@ -5804,18 +5793,6 @@ IF (
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Marketo_ID__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
-        <label>Marketo ID</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
         <fullName>Mobile_Implementation_Notes__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Details on custom mobile implementation</inlineHelpText>
@@ -7018,17 +6995,6 @@ Null))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>OutRank_Fees__c</fullName>
-        <externalId>false</externalId>
-        <label>OutRank Fees</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Overspend_Optimizations_Exhausted_del__c</fullName>
@@ -9803,15 +9769,6 @@ IMS_Rep__r.Id = "00532000005P6l3"), /*LeadStream Support*/
         <label>Survey Opt Out</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Sync_to_Marketo__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Sync to Marketo</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -12737,6 +12694,49 @@ CASE(
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fee_Essentials__c</fullName>
+        <externalId>false</externalId>
+        <label>Essentials Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marketo_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Marketo ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>OutRank_Fees__c</fullName>
+        <externalId>false</externalId>
+        <label>OutRank Fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sync_to_Marketo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync to Marketo</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
