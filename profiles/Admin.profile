@@ -37812,6 +37812,11 @@
         <field>ObjectHistory__c.Opp_Weighted_Pipeline_Value__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ATV_Customer_Reference_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>
@@ -37837,10 +37842,10 @@
         <recordType>Account.Rogers_National_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Services %28Feed%29</layout>
+        <layout>Account-YBN Individual Location Account %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Services %28Feed%29</layout>
+        <layout>Account-YBN Individual Location Account %28feed%29</layout>
         <recordType>Account.Standard</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -38250,7 +38255,7 @@
         <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -38310,7 +38315,7 @@
         <recordType>Case.Facebook_Post_For_You</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LBW Content Organic Setup</layout>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LBW_Content_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -38334,7 +38339,7 @@
         <recordType>Case.LH_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LS ATV Organic Setup %28feed%29</layout>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LS_ATV_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -39200,7 +39205,7 @@
         <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>OpportunityLineItem-WBN - LEX IL Sales</layout>
+        <layout>OpportunityLineItem-WBN Corp%2FIndividual Opportunities</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunitySplit-Opportunity Split Layout</layout>
@@ -39595,10 +39600,6 @@
         <recordType>Notification_Log__c.WBN_Log</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Vision</recordType>
     </layoutAssignments>
@@ -39633,14 +39634,6 @@
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-WBN - LEX IL Sales</layout>
-        <recordType>Contract.WBN_Amendment</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contract-WBN - LEX IL Sales</layout>
-        <recordType>Contract.WBN_MSA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Contract-WBN Amendment</layout>
         <recordType>Contract.WBN_Amendment</recordType>
     </layoutAssignments>
@@ -39649,22 +39642,7 @@
         <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-YBN Individual Location Account %28feed%29</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-YBN Individual Location Account %28feed%29</layout>
-        <recordType>Account.Standard</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Quality_Case__c-Acquisio Master Quality</layout>
@@ -39678,9 +39656,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OpportunityLineItem-WBN Corp%2FIndividual Opportunities</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
