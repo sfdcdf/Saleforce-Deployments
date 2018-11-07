@@ -36120,6 +36120,11 @@
         <field>ObjectHistory__c.Opp_Weighted_Pipeline_Value__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ATV_Customer_Reference_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

@@ -12914,6 +12914,19 @@ CASE(
         <trackHistory>true</trackHistory>
         <type>Checkbox</type>
     </fields>
+    <fields>
+        <fullName>ATV_Customer_Reference_Id__c</fullName>
+        <description>Customer reference UUID for ATV/ Acquisio Accounts to reference Acquisio services</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer reference UUID for ATV/ Acquisio Accounts to reference Acquisio services</inlineHelpText>
+        <label>ATV Customer Reference Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
