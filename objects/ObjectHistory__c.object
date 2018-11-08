@@ -308,6 +308,64 @@ IF(MOD(TODAY() - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) )
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>Opp_Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Close Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Stage_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Stage Detail</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opp_Total_Forecasted_Adoption_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Total Forecasted Adoption Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Total_Monthly_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Total Monthly Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Total_One_Time_Fees__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Total One-Time Fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Weighted_Pipeline_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Opp Weighted Pipeline Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
