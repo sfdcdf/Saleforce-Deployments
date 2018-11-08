@@ -166,4 +166,21 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>TODAY</fullName>
+        <columns>NAME</columns>
+        <columns>Case__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Current_Sub_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>TODAY</label>
+        <sharedTo>
+            <group>Sys_Local_Admin</group>
+        </sharedTo>
+    </listViews>
 </CustomObject>
