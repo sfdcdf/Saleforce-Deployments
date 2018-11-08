@@ -11898,30 +11898,6 @@ OwnerId = "00G60000001CJm2"))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Pro Website Care to Post Launch Queue</fullName>
-        <actions>
-            <name>Case_Owner_to_Post_Launch_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Account Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Pro_Website_Care__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>notContain</operation>
-            <value>TORCHX</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Proactive Touch IMS Rep</fullName>
         <active>false</active>
         <criteriaItems>
@@ -15494,6 +15470,35 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Account.IMS_Rep__c</field>
             <operation>notContain</operation>
             <value>Lighthouse</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pro Website Care to Post Launch Queue</fullName>
+        <actions>
+            <name>Case_Owner_to_Post_Launch_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Update</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Pro_Website_Care__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type_Transactional__c</field>
+            <operation>notContain</operation>
+            <value>TORCHX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Requested_Campaign_Updates__c</field>
+            <operation>excludes</operation>
+            <value>Geo Template Update</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
