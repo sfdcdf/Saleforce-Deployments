@@ -12,8 +12,9 @@ global class ATVCustomerRefIdAPIInvokeSchedule Implements Schedulable {
         invokeATVCustRefIdUpdtService();
     }
     
-    public PageReference invokeATVCustRefIdUpdtService()
+    public void invokeATVCustRefIdUpdtService()
     {
+        // get endpoint URL value from Custom Metadata Type
         String endpointUrl = 
             [SELECT Configuration_Value__c 
                FROM Integration_Configuration__mdt 
@@ -21,8 +22,15 @@ global class ATVCustomerRefIdAPIInvokeSchedule Implements Schedulable {
                     External_System_Name__c = 'Dreamforce API' AND
                     Configuration_Label__c = 'AccountUUIDUpdateURL' LIMIT 1].Configuration_Value__c;
         
-        PageReference apiSrvcPage = new PageReference(endpointUrl);
-        apiSrvcPage.setRedirect(true);
-        return apiSrvcPage;
+        // Instantiate a new http object
+        Http h = new Http();
+        
+        //Instantiate a new HTTP request, specify the method (GET) as well as the endpoint
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint(endpointUrl);
+        req.setMethod('GET');
+        
+        // send Http Request; no response needed
+        h.send(req);
     }
 }
