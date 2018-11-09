@@ -73,6 +73,15 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Flag/ indicator signifying if the configuration setting is active or inactive; inactive configurations should not be used</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>External_System_Name__c</fullName>
         <description>Name selection for the external system/ platform integrated with Salesforce (Yodle SFDC)</description>
         <externalId>false</externalId>
@@ -104,17 +113,13 @@
                     <default>false</default>
                     <label>Acquisio SFDC</label>
                 </value>
+                <value>
+                    <fullName>Dreamforce API</fullName>
+                    <default>false</default>
+                    <label>Dreamforce API</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Is_Active__c</fullName>
-        <defaultValue>true</defaultValue>
-        <description>Flag/ indicator signifying if the configuration setting is active or inactive; inactive configurations should not be used</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <label>Is Active</label>
-        <type>Checkbox</type>
     </fields>
     <description>Configurations and settings for various integrations between Salesforce and external systems/ platforms.</description>
     <label>Integration Configuration</label>

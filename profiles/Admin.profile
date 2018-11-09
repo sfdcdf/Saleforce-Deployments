@@ -1351,6 +1351,14 @@
         <apexClass>WBNChildAcctUpdateForMasterFutureTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>ATVCustRefIdAPIInvokeSchedTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ATVCustomerRefIdAPIInvokeSchedule</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
