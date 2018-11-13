@@ -540,37 +540,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>ProductType__c</fullName>
-        <description>Salesforce Product Type referenced for CTS Ticket creation</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Product Type referenced for CTS Ticket creation</inlineHelpText>
-        <label>Product Type</label>
-        <required>true</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Lead Stream</fullName>
-                    <default>true</default>
-                    <label>Lead Stream</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse</fullName>
-                    <default>false</default>
-                    <label>Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>TORCHx</fullName>
-                    <default>false</default>
-                    <label>TORCHx</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>CTSAPIIdentifier__c</fullName>
         <description>CTS API Identifier referenced for CTS Ticket creation (if API Integration Type)</description>
         <externalId>false</externalId>
@@ -595,6 +564,32 @@
         <required>true</required>
         <type>MetadataRelationship</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductType__c</fullName>
+        <description>Salesforce Product Type referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Product Type referenced for CTS Ticket creation</inlineHelpText>
+        <label>Product Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>false</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>TORCHx</fullName>
+                    <default>false</default>
+                    <label>TORCHx</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <description>Used as reference to determine how a CTS Ticket should be created, what data elements should be included and the source of the ticket data from Salesforce data</description>
     <label>CTSObjectTriggerMap</label>
