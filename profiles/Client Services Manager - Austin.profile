@@ -31808,6 +31808,11 @@
         <field>Customer_Surveys__c.YBN_Consultant_email_alert__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.ATV_Customer_Reference_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
@@ -32250,7 +32255,7 @@
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32310,7 +32315,7 @@
         <recordType>Case.Facebook_Post_For_You</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LBW Content Organic Setup</layout>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LBW_Content_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32341,7 +32346,7 @@
         <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Master %28feed%29</layout>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LS_ATV_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33565,10 +33570,6 @@
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Activity_Log__c-Activity Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -33599,14 +33600,6 @@
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
         <recordType>Contract.WBN_MSA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>

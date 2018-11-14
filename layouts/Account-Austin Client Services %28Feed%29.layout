@@ -46,7 +46,8 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
@@ -914,6 +915,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Rep_market__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ATV_Customer_Reference_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

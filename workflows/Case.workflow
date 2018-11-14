@@ -3470,6 +3470,17 @@
         <senderType>OrgWideEmailAddress</senderType>
         <template>WBN_Templates/WBN_NCS_Status_Changes</template>
     </alerts>
+    <alerts>
+        <fullName>YBN_Requests_Escalated_for_Production_Specialists</fullName>
+        <description>YBN Requests Escalated for Production Specialists</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jared.pfaff@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support/Escalation_Standard_Email</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
@@ -15500,6 +15511,37 @@ ISCHANGED(Estimated_Completion_Date__c)
             <operation>excludes</operation>
             <value>Geo Template Update</value>
         </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Request Escalation for Production Specialists</fullName>
+        <actions>
+            <name>YBN_Requests_Escalated_for_Production_Specialists</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 and 2 and 3) or (2 and 3 and 4)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Jared Pfaff,YBN Production Specialists</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>National - New Client Setup</value>
+        </criteriaItems>
+        <description>This will send email alerts for YBN Requests and NCS Cases that are escalated for the Production Specialists team. These will go to Jared Pfaff</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>
