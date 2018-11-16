@@ -31517,7 +31517,7 @@
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -31577,7 +31577,7 @@
         <recordType>Case.Facebook_Post_For_You</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LBW Content Organic Setup</layout>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LBW_Content_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -31608,7 +31608,7 @@
         <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Master %28feed%29</layout>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
         <recordType>Case.LS_ATV_Organic_Setup</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32832,10 +32832,6 @@
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Activity_Log__c-Activity Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -32868,14 +32864,6 @@
         <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -32890,6 +32878,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>

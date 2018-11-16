@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Field_Names__c</fullName>
+        <description>List of field names separated by a new line</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>List of field names separated by a new line</inlineHelpText>
+        <label>Field Names</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Object_Map_Reference__c</fullName>
+        <description>Association/ reference to the CTS Trigger Map Object record</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Association/ reference to the CTS Trigger Map Object record</inlineHelpText>
+        <label>Object Map Reference</label>
+        <referenceTo>CTSObjectTriggerMap__mdt</referenceTo>
+        <relationshipLabel>CTSObjecFieldsTriggerMaps</relationshipLabel>
+        <relationshipName>CTSObjecFieldsTriggerMaps_ObjectMapRef</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <description>Used to retrieve the necessary Object Trigger Map fields to retrieve the data to send for creating a CTS Ticket</description>
+    <label>CTSObjecFieldsTriggerMap</label>
+    <pluralLabel>CTSObjecFieldsTriggerMaps</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

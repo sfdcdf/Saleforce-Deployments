@@ -4703,6 +4703,9 @@
     <layoutAssignments>
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

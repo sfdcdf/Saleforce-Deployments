@@ -29375,7 +29375,7 @@
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -30614,10 +30614,6 @@
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Activity_Log__c-Activity Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -30664,6 +30660,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>

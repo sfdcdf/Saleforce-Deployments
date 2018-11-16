@@ -1359,6 +1359,10 @@
         <apexClass>ATVCustomerRefIdAPIInvokeSchedule</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>CTSSyncService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -37853,10 +37857,6 @@
         <layout>Account-YBN Individual Location Account %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-YBN Individual Location Account %28feed%29</layout>
-        <recordType>Account.Standard</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-YBN Corporate Relationship Account %28feed%29 - Admin</layout>
         <recordType>Account.YBN_Corporate_Relationship</recordType>
     </layoutAssignments>
@@ -39664,6 +39664,13 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Services %28Feed%29</layout>
+        <recordType>Account.Standard</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>

@@ -59,10 +59,6 @@
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
-        <field>NoteDetailsTemplateId__c</field>
-        <value xsi:nil="true"/>
-    </values>
-    <values>
         <field>NoteDetailsTemplateName__c</field>
         <value xsi:nil="true"/>
     </values>
