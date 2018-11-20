@@ -8,15 +8,8 @@
 *****************************************************************************/
 public without sharing class CTSSyncService{
 
-    
-
-    // returns dynamic SObject List for ticket data
-    public static List<sObject> getTicketDataToSend(string SFDCObjectName, string RoutingTableObjectInstance){
-
-        Schema.SObjectType sObj = Schema.getGlobalDescribe().get(SFDCObjectName);
-        sObject sfdcObject = sObj.newSObject();
-        List<sObject> tktData = new List<sObject>();
-        
+    public static void getCTSTicket(string SFDCObjectName, string SFDCObjectInstance, string SFDCObjectId, string RoutingTableObjectInstance){
+ 
         Map<String, CTSObjectTriggerMap__mdt> routeObjMap = new Map<String, CTSObjectTriggerMap__mdt>
            ([SELECT Additional_Filter__c,
                     CaseOrigin__c,
@@ -39,16 +32,10 @@ public without sharing class CTSSyncService{
                     MasterLabel
                FROM CTSObjectTriggerMap__mdt 
               WHERE MasterLabel = :RoutingTableObjectInstance LIMIT 1]);
-        
-        Map<String, CTSObjecFieldsTriggerMap__mdt> routeObjFieldsMap = new Map<String, CTSObjecFieldsTriggerMap__mdt>
-           ([SELECT Field_Names__c,
-                    Object_Map_Reference__c
-               FROM CTSObjecFieldsTriggerMap__mdt
-              WHERE Object_Map_Reference__r.MasterLabel = :RoutingTableObjectInstance LIMIT 1]);
-        
-        
-        System.Debug('*** List Returned: ' + tktData);
-        
-        return tktData;
+              
+        for(CTSObjectTriggerMap__mdt objMap : routeObjMap.values()){
+            
+            
+        }
     }
 }
