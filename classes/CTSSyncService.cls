@@ -10,8 +10,12 @@ public without sharing class CTSSyncService{
 
     public static void getCTSTicket(string SFDCObjectName, string SFDCObjectInstance, string SFDCObjectId, string RoutingTableObjectInstance){
  
-        Map<String, CTSObjectTriggerMap__mdt> routeObjMap = new Map<String, CTSObjectTriggerMap__mdt>
-           ([SELECT Additional_Filter__c,
+        Map<String, CTSObjectTriggerMap__mdt> routeObjMap = new Map<String, CTSObjectTriggerMap__mdt>();
+        Map<Id, EmailTemplate> emailTemplatesMap = new Map<Id, EmailTemplate>();
+        Id ctsEmailTemplateFolderId = [SELECT Id FROM Folder WHERE Name = 'CTS Templates'].Id;
+        
+        for(CTSObjectTriggerMap__mdt om :
+            [SELECT Additional_Filter__c,
                     CaseOrigin__c,
                     CaseReason__c,
                     CTSAPIIdentifier__c,
@@ -27,15 +31,42 @@ public without sharing class CTSSyncService{
                     IsExcludeWBN__c,
                     NoteDetailsTemplateName__c,
                     Object__c,
+                    Object__r.Object_API_Name__c,
                     ProductType__c,
                     RecordTypeName__c,
                     MasterLabel
                FROM CTSObjectTriggerMap__mdt 
-              WHERE MasterLabel = :RoutingTableObjectInstance LIMIT 1]);
+              WHERE MasterLabel = :RoutingTableObjectInstance LIMIT 1]){
+        
+            routeObjMap.put(om.MasterLabel, om);
+        }
               
-        for(CTSObjectTriggerMap__mdt objMap : routeObjMap.values()){
+        if(routeObjMap.size() > 0){
+        
+            for(EmailTemplate et :
+                [SELECT Id,
+                        DeveloperName,
+                        FolderId
+                   FROM EmailTemplate
+                  WHERE FolderId = :ctsEmailTemplateFolderId]){
             
-            
+                emailTemplatesMap.put(et.Id, et);
+            }
+        
+            for(CTSObjectTriggerMap__mdt rom : routeObjMap.values()){
+                for(EmailTemplate etm : emailTemplatesMap.values()){
+                
+                    if(routeObjMap.get(RoutingTableObjectInstance).IntegrationType__c == 'Email'){
+                        
+                        
+                    }
+                    else{
+                    
+                        //API
+                    }
+                
+                }
+            }
         }
     }
 }
