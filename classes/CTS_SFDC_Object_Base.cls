@@ -10,14 +10,24 @@ public virtual class CTS_SFDC_Object_Base
         this.Id = objId;
         this.ObjectName = objName;
         Messaging.SingleEmailMessage mail = PopulateEmailSubjectBody(mappingInstance.DetailsTemplateName__c);
-        this.Subject = mail.getSubject();
-        this.Detail = mail.getPlainTextBody();       
+        if (mail != null)
+        {
+            this.Subject = mail.getSubject();
+            this.Detail = mail.getPlainTextBody(); 
+            system.debug('email subject: ' + this.Subject);
+            system.debug('email body: ' + this.Detail);   
+        }           
     }
     
     private Messaging.SingleEmailMessage PopulateEmailSubjectBody(String emailTemplateName)
-    {
-        EmailTemplate et=[SELECT id FROM EmailTemplate where name = :emailTemplateName LIMIT 1];
-        Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et.Id, null, Id, Messaging.AttachmentRetrievalOption.NONE);
-        return mail;      
+    {        
+        List<EmailTemplate> et = [SELECT id FROM EmailTemplate where name = :emailTemplateName LIMIT 1];
+        if (et.size() > 0)
+        {
+            Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et[0].Id, null, Id, Messaging.AttachmentRetrievalOption.NONE);
+            return mail;
+        }
+        return null;
+              
     }
 }

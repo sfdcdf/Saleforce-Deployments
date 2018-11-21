@@ -9,7 +9,6 @@ public class CTSSFDCCase extends CTS_SFDC_Object_Base
     public string ReferenceCustomerId { get; set; }
     public string CaseNumber { get; set; }
     public string Domain { get; set; }    
-    public string Detail { get; set; }
     public string ReferenceProductCodes { get; set; }
     public string TicketType { get; set; }
     public string Status { get; set; }
@@ -30,7 +29,7 @@ public class CTSSFDCCase extends CTS_SFDC_Object_Base
         if (sfCase != null)
         {
             Account acc = [SELECT Id, Client_First_Name__c, Client_Last_Name__c, Phone, Client_E_mail__c, Name, Client_ID__c, 
-                       Website, Product_Type_Transactional__c FROM ACCOUNT WHERE Id = :sfCase.AccountId];
+                       Website, Product_Type_Transactional__c, Email__c FROM ACCOUNT WHERE Id = :sfCase.AccountId];
         
             if (acc != null )
             {                                                     
@@ -48,10 +47,10 @@ public class CTSSFDCCase extends CTS_SFDC_Object_Base
                this.Status = sfCase.Status;
                this.SubStatus = sfCase.Sub_Status__c;
                this.AlternateContactEmailAddress = acc.Email__c;  
-               EmailTemplate et = [SELECT id FROM EmailTemplate where name = :mappingInstance.NoteDetailsTemplateName__c LIMIT 1];
-               if (et != null)
+               List<EmailTemplate> et = [SELECT id FROM EmailTemplate where name = :mappingInstance.NoteDetailsTemplateName__c LIMIT 1];
+               if (et.size() > 0)
                {
-                   Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et.Id, null, caseId);
+                   Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et[0].Id, null, caseId);
                    this.TicketingTicketNotes = mail.getPlainTextBody();  
                }                                                                   
             }                       
