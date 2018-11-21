@@ -12923,6 +12923,12 @@ AdStation_Status__c = 'OFF')),
 'Pending Cancellation After Spendout', 
 
 if(
+AND(
+ISPICKVAL(YO_Status__c,'Off'),
+Sponsored_Save_Mode_Status__c = 'IN_SAVE_MODE'),
+'Pending Cancellation', 
+
+if(
 or(
  Product_Type__c = 'FIELD_SERVICE_TEAM',
  Product_Type__c = 'FIELD_SERVICE',
@@ -12931,7 +12937,7 @@ or(
  Product_Type__c = 'LIGHTHOUSE,PRO_PACK',
  Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
 'Lighthouse/Field Service - Check Sugar/Cases',
-'Not in Cancel Status'))))</formula>
+'Not in Cancel Status')))))</formula>
         <label>Cancellation Status</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
