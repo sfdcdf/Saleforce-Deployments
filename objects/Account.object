@@ -12723,35 +12723,41 @@ CASE(
     <fields>
         <fullName>Cancellation_Status__c</fullName>
         <externalId>false</externalId>
-        <formula>if(
-ISPICKVAL(Status__c,'OFF'),'Cancelled',
+        <formula>if( 
+ISPICKVAL(Status__c,'OFF'),'Cancelled', 
 
-if(
-AND(
-Organic_Cancel_Status__c = 'DEACTIVATE_AT_END_OF_CURRENT_BILLING_CYCLE',
-OR (
-Sponsored_Save_Mode_Status__c = 'IN_SAVE_MODE',
-AdStation_Status__c = 'OFF')),
+if( 
+AND( 
+Organic_Cancel_Status__c = 'DEACTIVATE_AT_END_OF_CURRENT_BILLING_CYCLE', 
+OR ( 
+Sponsored_Save_Mode_Status__c = 'IN_SAVE_MODE', 
+AdStation_Status__c = 'OFF')), 
 'Pending Cancellation', 
 
-if(
-AND(
-Organic_Cancel_Status__c = 'DEACTIVATE_ON_PREPAY_DEPLETION',
-OR (
-Sponsored_Save_Mode_Status__c = 'IN_SAVE_MODE',
-AdStation_Status__c = 'OFF')),
+if( 
+AND( 
+Organic_Cancel_Status__c = 'DEACTIVATE_ON_PREPAY_DEPLETION', 
+OR ( 
+Sponsored_Save_Mode_Status__c = 'IN_SAVE_MODE', 
+AdStation_Status__c = 'OFF')), 
 'Pending Cancellation After Spendout', 
 
-if(
-or(
- Product_Type__c = 'FIELD_SERVICE_TEAM',
- Product_Type__c = 'FIELD_SERVICE',
- Product_Type__c = 'LIGHTHOUSE',
- Product_Type__c = 'Lighthouse',
- Product_Type__c = 'LIGHTHOUSE,PRO_PACK',
- Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
-'Lighthouse/Field Service - Check Sugar/Cases',
-'Not in Cancel Status'))))</formula>
+if( 
+AND( 
+ISPICKVAL(YO_Status__c,'Off'), 
+Sponsored_Save_Mode_Status__c = 'IN_SAVE_MODE'), 
+'Pending Cancellation', 
+
+if( 
+or( 
+Product_Type__c = 'FIELD_SERVICE_TEAM', 
+Product_Type__c = 'FIELD_SERVICE', 
+Product_Type__c = 'LIGHTHOUSE', 
+Product_Type__c = 'Lighthouse', 
+Product_Type__c = 'LIGHTHOUSE,PRO_PACK', 
+Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'), 
+'Lighthouse/Field Service - Check Sugar/Cases', 
+'Not in Cancel Status')))))</formula>
         <label>Cancellation Status</label>
         <required>false</required>
         <trackHistory>false</trackHistory>

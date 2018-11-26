@@ -8,7 +8,7 @@
 *****************************************************************************/
 public without sharing class CTSSyncService{
 
-    public static void getCTSTicket(string SFDCObjectName, string SFDCObjectInstance, string SFDCObjectId, string RoutingTableObjectInstance){
+    public static void GetCTSTicket(string SFDCObjectName, string SFDCObjectInstance, string SFDCObjectId, string RoutingTableObjectInstance){
  
         Map<String, CTSObjectTriggerMap__mdt> routeObjMap = new Map<String, CTSObjectTriggerMap__mdt>();
         Map<Id, EmailTemplate> emailTemplatesMap = new Map<Id, EmailTemplate>();
@@ -70,7 +70,7 @@ public without sharing class CTSSyncService{
         }
     }
     
-     public static CTS_SFDC_Object_Base GetSFDCObject(string objectName, Id objectId, CTSObjectTriggerMap__mdt mappingInstance, string CTSIntegrationType)    
+    public static CTS_SFDC_Object_Base GetSFDCObject(string objectName, Id objectId, CTSObjectTriggerMap__mdt mappingInstance, string CTSIntegrationType)    
     {          
     
        CTS_SFDC_Object_Base baseObject;
