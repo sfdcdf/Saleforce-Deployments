@@ -78460,18 +78460,6 @@ isblank( Products__c)</errorConditionFormula>
         <errorMessage>"Products Sold" field must be filled out with all products reflected in the contract</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>WBN_Solution_Stage_Detail_Default</fullName>
-        <active>true</active>
-        <description>Default value of Stage Detail for Solution stage</description>
-        <errorConditionFormula>AND( 
-NOT(ISPICKVAL(PRIORVALUE(StageName), "Solution")), 
-ISPICKVAL(StageName, "Solution"), 
-NOT(ISPICKVAL(Stage_Detail__c, "Internal Download")) 
-)</errorConditionFormula>
-        <errorDisplayField>Stage_Detail__c</errorDisplayField>
-        <errorMessage>Solution stage must start with "Internal Download".</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>WBN_Stage_Detail_Requirements</fullName>
         <active>true</active>
         <errorConditionFormula>AND( 
@@ -79240,6 +79228,18 @@ NOT(Text(Approval_Opp_List_Review_Status__c)= "Submit")
 /* end added for Approval Process*/
 )</errorConditionFormula>
         <errorMessage>Close Date cannot be prior to today.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_Solution_Stage_Detail_Default</fullName>
+        <active>true</active>
+        <description>Default value of Stage Detail for Solution stage</description>
+        <errorConditionFormula>AND( 
+NOT(ISPICKVAL(PRIORVALUE(StageName), "Solution")), 
+ISPICKVAL(StageName, "Solution"), 
+NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery")) 
+)</errorConditionFormula>
+        <errorDisplayField>Stage_Detail__c</errorDisplayField>
+        <errorMessage>Solution stage must start with "SA Client Discovery".</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
