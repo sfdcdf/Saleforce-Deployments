@@ -17,4 +17,5 @@
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Application_Configuration__c</tabs>
+    <tabs>Acct_Email_Sub_to_Survey__c</tabs>
 </CustomApplication>

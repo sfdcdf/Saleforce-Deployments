@@ -68,6 +68,13 @@
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>Customer_Surveys__c.NAME</fields>
+        <fields>Customer_Surveys__c.Account__c</fields>
+        <fields>Customer_Surveys__c.CREATED_DATE</fields>
+        <fields>NAME</fields>
+        <relatedList>Acct_Email_Sub_to_Survey__c.Email_Sub_ID__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

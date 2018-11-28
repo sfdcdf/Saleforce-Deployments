@@ -197,7 +197,11 @@
     <tabs>standard-Chatter</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
+    <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Acct_Email_Sub_to_Survey__c</tab>
+        </mappings>
         <mappings>
             <tab>CS_Operations__c</tab>
         </mappings>

@@ -26,4 +26,5 @@
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Activity_Log__c</tabs>
     <tabs>Application_Configuration__c</tabs>
+    <tabs>Acct_Email_Sub_to_Survey__c</tabs>
 </CustomApplication>

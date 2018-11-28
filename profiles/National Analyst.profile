@@ -34064,6 +34064,9 @@
     <layoutAssignments>
         <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -36932,5 +36935,9 @@
     <tabVisibilities>
         <tab>Application_Configuration__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Acct_Email_Sub_to_Survey__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
 </Profile>

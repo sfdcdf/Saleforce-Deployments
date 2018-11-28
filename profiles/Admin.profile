@@ -39693,6 +39693,9 @@
     <layoutAssignments>
         <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -41474,5 +41477,9 @@
     <tabVisibilities>
         <tab>Custom_Report_Hierarchy__c</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Acct_Email_Sub_to_Survey__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

@@ -8,6 +8,7 @@
 *****************************************************************************/
 public without sharing class CTSSyncService{
 
+    // will return object triggered by scheduled job; not void
     public static void GetCTSTicket(string SFDCObjectName, string SFDCObjectInstance, string SFDCObjectId, string RoutingTableObjectInstance){
  
         Map<String, CTSObjectTriggerMap__mdt> routeObjMap = new Map<String, CTSObjectTriggerMap__mdt>();
@@ -59,10 +60,11 @@ public without sharing class CTSSyncService{
                     if(routeObjMap.get(RoutingTableObjectInstance).IntegrationType__c == 'Email'){
                         
                         
+                        
                     }
                     else{
                     
-                        //API
+                        // API
                     }
                 
                 }

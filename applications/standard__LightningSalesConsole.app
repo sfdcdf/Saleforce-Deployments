@@ -26,9 +26,13 @@
     <tabs>standard-File</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
+    <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Acct_Email_Sub_to_Survey__c</tab>
+        </mappings>
         <mappings>
             <tab>Google_Location_Group__c</tab>
         </mappings>

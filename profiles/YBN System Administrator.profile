@@ -36522,6 +36522,9 @@
     <layoutAssignments>
         <layout>CTSObjecFieldsTriggerMap__mdt-CTSObjecFieldsTriggerMap Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -37627,6 +37630,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Application_Configuration__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Acct_Email_Sub_to_Survey__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>
@@ -39402,5 +39414,9 @@
     <tabVisibilities>
         <tab>Application_Configuration__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Acct_Email_Sub_to_Survey__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
 </Profile>

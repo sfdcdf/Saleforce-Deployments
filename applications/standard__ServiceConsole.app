@@ -202,7 +202,11 @@
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Application_Configuration__c</tabs>
+    <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Acct_Email_Sub_to_Survey__c</tab>
+        </mappings>
         <mappings>
             <tab>Application_Configuration__c</tab>
         </mappings>
