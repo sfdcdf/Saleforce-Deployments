@@ -53,6 +53,19 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>AsyncDelayInterval__c</fullName>
+        <description>Defines the interval/ delay for batch records to create CTS tickets</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Defines the interval/ delay for batch records to create CTS tickets</inlineHelpText>
+        <label>AsyncDelayInterval</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <description>Integration Settings for the Salesforce to CTS configurations</description>
     <label>CTS Integration Setting</label>
     <pluralLabel>CTS Integration Settings</pluralLabel>

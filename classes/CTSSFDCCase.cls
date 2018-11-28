@@ -47,7 +47,7 @@ public class CTSSFDCCase extends CTS_SFDC_Object_Base
                this.Status = sfCase.Status;
                this.SubStatus = sfCase.Sub_Status__c;
                this.AlternateContactEmailAddress = acc.Email__c;  
-               List<EmailTemplate> et = [SELECT id FROM EmailTemplate where name = :mappingInstance.NoteDetailsTemplateName__c LIMIT 1];
+               List<EmailTemplate> et = [SELECT id FROM EmailTemplate where name = :mappingInstance.DetailsTemplateName__c LIMIT 1];
                if (et.size() > 0)
                {
                    Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et[0].Id, null, caseId);
