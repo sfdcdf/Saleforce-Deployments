@@ -13256,6 +13256,20 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>External_Ticket_ID__c</fullName>
+        <description>Ticket ID for this case in an External Ticketing System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticket ID for this case in an External Ticketing System</inlineHelpText>
+        <label>External Ticket ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>

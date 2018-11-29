@@ -95,6 +95,10 @@
                 <behavior>Readonly</behavior>
                 <field>Country__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>External_Ticket_ID__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
