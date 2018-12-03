@@ -52,4 +52,14 @@ private class CTSSyncServiceTest {
         
     }
     
+    
+    @isTest static void test_GetRoutingTableObject() {
+        
+        Test.startTest();
+        CTSObjectTriggerMap__mdt routingObj = CTSSyncService.GetRoutingTableObject('Case', 'Charge Failure', '', '', 'Leads By Web');       
+        Test.stopTest();
+        system.debug('Mapping instance: ' + routingObj);
+        system.assert(routingObj != null && routingObj.MasterLabel == 'LBW Charge Failures');
+        
+    }
 }
