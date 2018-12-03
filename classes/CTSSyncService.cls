@@ -8,68 +8,25 @@
 *****************************************************************************/
 public without sharing class CTSSyncService{
 
+    private class CTSTicket{
+    
+        public String apiIdentifier {get; set;}
+        public String contactFirstName {get; set;}
+        public String contactLastName {get; set;}
+        public String contactPhone {get; set;}
+        public String contactEmailAddress {get; set;}
+        public String referenceAccountId {get; set;}
+        public String referenceCustomerId {get; set;}
+    
+    }
+
     // will return object triggered by scheduled job; not void
-    public static void GetCTSTicket(string SFDCObjectName, string SFDCObjectInstance, string SFDCObjectId, string RoutingTableObjectInstance){
+    public static CTSTicket GetCTSTicket(string objectName, CTS_SFDC_Object_Base objectInstance, Id objectId, CTSObjectTriggerMap__mdt routingTableObjectInstance){
  
-        Map<String, CTSObjectTriggerMap__mdt> routeObjMap = new Map<String, CTSObjectTriggerMap__mdt>();
-        Map<Id, EmailTemplate> emailTemplatesMap = new Map<Id, EmailTemplate>();
-        Id ctsEmailTemplateFolderId = [SELECT Id FROM Folder WHERE Name = 'CTS Templates'].Id;
+        CTSTicket ctsTicketInstance;
         
-        for(CTSObjectTriggerMap__mdt om :
-            [SELECT Additional_Filter__c,
-                    CaseOrigin__c,
-                    CaseReason__c,
-                    CTSAPIIdentifier__c,
-                    CTSAssignedToLoginName__c,
-                    CTSEmailAddress__c,
-                    CTSNoteType__c,
-                    Description__c,
-                    DetailsTemplateName__c,
-                    IntegrationType__c,
-                    IsActive__c,
-                    IsAutoClose__c,
-                    IsCreateCTSNote__c,
-                    IsExcludeWBN__c,
-                    NoteDetailsTemplateName__c,
-                    Object__c,
-                    Object__r.Object_API_Name__c,
-                    ProductType__c,
-                    RecordTypeName__c,
-                    MasterLabel
-               FROM CTSObjectTriggerMap__mdt 
-              WHERE MasterLabel = :RoutingTableObjectInstance LIMIT 1]){
+        return ctsTicketInstance;
         
-            routeObjMap.put(om.MasterLabel, om);
-        }
-              
-        if(routeObjMap.size() > 0){
-        
-            for(EmailTemplate et :
-                [SELECT Id,
-                        DeveloperName,
-                        FolderId
-                   FROM EmailTemplate
-                  WHERE FolderId = :ctsEmailTemplateFolderId]){
-            
-                emailTemplatesMap.put(et.Id, et);
-            }
-        
-            for(CTSObjectTriggerMap__mdt rom : routeObjMap.values()){
-                for(EmailTemplate etm : emailTemplatesMap.values()){
-                
-                    if(routeObjMap.get(RoutingTableObjectInstance).IntegrationType__c == 'Email'){
-                        
-                        
-                        
-                    }
-                    else{
-                    
-                        // API
-                    }
-                
-                }
-            }
-        }
     }
     
     public static CTS_SFDC_Object_Base GetSFDCObject(string objectName, Id objectId, CTSObjectTriggerMap__mdt mappingInstance, string CTSIntegrationType)    
