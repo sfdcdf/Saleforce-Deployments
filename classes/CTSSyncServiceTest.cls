@@ -40,7 +40,7 @@ private class CTSSyncServiceTest {
         system.debug('Mapping instance: ' + mapping);
         
         Test.startTest();
-        CTSSFDCCase obj = (CTSSFDCCase)CTSSyncService.GetSFDCObject('Case', newCase.Id, mapping, 'API');       
+        CTSSFDCCase obj = (CTSSFDCCase)CTSSyncService.GetSFDCObject('Case', newCase.Id, mapping);       
         Test.stopTest();
                  
         system.assert(obj.Id == newCase.Id);
