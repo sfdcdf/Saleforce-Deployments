@@ -21373,6 +21373,9 @@
     <layoutAssignments>
         <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -23148,6 +23151,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Acct_Email_Sub_to_Survey__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SFDCToCTSAsynchRequest__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>

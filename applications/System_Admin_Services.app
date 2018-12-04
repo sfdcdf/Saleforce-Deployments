@@ -211,6 +211,7 @@
     <tabs>Activity_Log__c</tabs>
     <tabs>Application_Configuration__c</tabs>
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
+    <tabs>SFDCToCTSAsynchRequest__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Acct_Email_Sub_to_Survey__c</tab>
@@ -247,6 +248,9 @@
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>
+        </mappings>
+        <mappings>
+            <tab>SFDCToCTSAsynchRequest__c</tab>
         </mappings>
         <mappings>
             <tab>Worksheets__c</tab>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>API_Identifier__c</fullName>
+        <description>Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API</inlineHelpText>
+        <label>API Identifier</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTS_Email_Address__c</fullName>
+        <description>Email address used to send object data to for creating CTS ticket when the Integration type is Email; required when Integration type is Email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email address used to send object data to for creating CTS ticket when the Integration type is Email; required when Integration type is Email</inlineHelpText>
+        <label>CTS Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ErrorDescription__c</fullName>
+        <description>Used to capture any error responses/ details for the request record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture any error responses/ details for the request record</inlineHelpText>
+        <label>Error Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Integration_Type__c</fullName>
+        <description>Integration Type (API or Email) which determines the internal process methods to be called for ticket creation in CTS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration Type (API or Email) which determines the internal process methods to be called for ticket creation in CTS</inlineHelpText>
+        <label>Integration Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>API</fullName>
+                    <default>false</default>
+                    <label>API</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ObjectId__c</fullName>
+        <description>The corresponding record Id based on the Object Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The corresponding record Id based on the Object Name</inlineHelpText>
+        <label>Object Id</label>
+        <length>18</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <description>Salesforce Objects integrated with CTS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce Objects integrated with CTS</inlineHelpText>
+        <label>Object Name</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Best Practice Evaluation</fullName>
+                    <default>false</default>
+                    <label>Best Practice Evaluation</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Customer Surveys</fullName>
+                    <default>false</default>
+                    <label>Customer Surveys</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Worksheets</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Worksheets</label>
+                </value>
+                <value>
+                    <fullName>Organic Case</fullName>
+                    <default>false</default>
+                    <label>Organic Case</label>
+                </value>
+                <value>
+                    <fullName>Quality Case</fullName>
+                    <default>false</default>
+                    <label>Quality Case</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProcessedDateTime__c</fullName>
+        <description>Date/ time the record was processed to CTS for ticket creation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date/ time the record was processed to CTS for ticket creation</inlineHelpText>
+        <label>Processed Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ScheduledDateTime__c</fullName>
+        <description>The scheduled date/ time of the Async Record to be triggered to create the CTS ticket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The scheduled date/ time of the Async Record to be triggered to create the CTS ticket</inlineHelpText>
+        <label>Scheduled Date Time</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <defaultValue>"NEW"</defaultValue>
+        <description>Async Request Status indicating the current state of the record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Async Request Status indicating the current state of the record</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ERROR</fullName>
+                    <default>false</default>
+                    <label>ERROR</label>
+                </value>
+                <value>
+                    <fullName>INPROCESS</fullName>
+                    <default>false</default>
+                    <label>INPROCESS</label>
+                </value>
+                <value>
+                    <fullName>NEW</fullName>
+                    <default>false</default>
+                    <label>NEW</label>
+                </value>
+                <value>
+                    <fullName>SUCCESS</fullName>
+                    <default>false</default>
+                    <label>SUCCESS</label>
+                </value>
+                <value>
+                    <fullName>UNQUALIFIED</fullName>
+                    <default>false</default>
+                    <label>UNQUALIFIED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores DE-normalized CTS Ticket data to be executed by BULK job on a schedule to create CTS Tickets</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>SFDCToCTSAsynchRequest</label>
+    <nameField>
+        <displayFormat>AR-{000000000}</displayFormat>
+        <label>Asynch Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SFDCToCTSAsynchRequests</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+</CustomObject>

@@ -44,4 +44,5 @@
     <tabs>Activity_Log__c</tabs>
     <tabs>Application_Configuration__c</tabs>
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
+    <tabs>SFDCToCTSAsynchRequest__c</tabs>
 </CustomApplication>

@@ -64,8 +64,11 @@ public without sharing class CTSSyncService{
                 
                 for(EmailTemplate et : emailTemplateMap.values()){
                     
-                    templateName = emailTemplateMap.get(rt.DetailsTemplateName__c).Name;
-                    break;
+                    if(et.Name == emailTemplateMap.get(rt.DetailsTemplateName__c).Name){
+                    
+                        templateName = emailTemplateMap.get(rt.DetailsTemplateName__c).Name;
+                        break;
+                    }
                 }
                 
                 integrationType = rt.IntegrationType__c;

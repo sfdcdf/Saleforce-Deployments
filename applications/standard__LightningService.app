@@ -22,6 +22,7 @@
     <tabs>Activity_Log__c</tabs>
     <tabs>Application_Configuration__c</tabs>
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
+    <tabs>SFDCToCTSAsynchRequest__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -39,6 +40,9 @@
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>
+        </mappings>
+        <mappings>
+            <tab>SFDCToCTSAsynchRequest__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>
