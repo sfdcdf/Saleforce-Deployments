@@ -14466,6 +14466,43 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </valueSet>
         <visibleLines>6</visibleLines>
     </fields>
+    <fields>
+        <fullName>External_Ticket_ID__c</fullName>
+        <description>Ticket ID for this case in an External Ticketing System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticket ID for this case in an External Ticketing System</inlineHelpText>
+        <label>External Ticket ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Ticket_System__c</fullName>
+        <description>Relationship was created between Salesforce and this external ticketing system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relationship was created between Salesforce and this external ticketing system</inlineHelpText>
+        <label>External Ticket System</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CTS</fullName>
+                    <default>false</default>
+                    <label>CTS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -16223,6 +16260,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20264,6 +20308,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Fast_Track_Picklist__c</picklist>
             <values>
                 <fullName>Attempted - Needed to Call</fullName>
@@ -24272,6 +24323,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28445,6 +28503,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Fast_Track_Picklist__c</picklist>
             <values>
                 <fullName>Attempted - Needed to Call</fullName>
@@ -32608,6 +32673,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Fast_Track_Picklist__c</picklist>
             <values>
                 <fullName>Attempted - Needed to Call</fullName>
@@ -36580,6 +36652,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40700,6 +40779,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -45093,6 +45179,13 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Ticket_System__c</picklist>
+            <values>
+                <fullName>CTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
