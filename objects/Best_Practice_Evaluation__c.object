@@ -5164,16 +5164,6 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
-        <fullName>Global</fullName>
-        <columns>NAME</columns>
-        <columns>OBJECT_ID</columns>
-        <columns>User__c</columns>
-        <columns>Evaluation_for__c</columns>
-        <columns>Client_ID__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>Global</label>
-    </listViews>
-    <listViews>
         <fullName>Last_Week_s_Upload</fullName>
         <columns>NAME</columns>
         <columns>Account_Channel_Type__c</columns>
@@ -5233,6 +5223,18 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Global</fullName>
+        <columns>Account_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>User__c</columns>
+        <columns>Evaluation_for__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Global</label>
     </listViews>
     <recordTypes>
         <fullName>National_Audit</fullName>
