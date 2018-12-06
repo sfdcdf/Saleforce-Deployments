@@ -331,6 +331,43 @@ public without sharing class CTSSyncService_ERWorking{
         return ctsTicketList;
     }
     
+    public void CallOutCTSForEmail(string objectName, List<Id> objectIds, List<CTSObjectTriggerMap__mdt> routingTableObjectInstance)
+    {
+        
+        Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
+        List<CTSTicket> ctsTicketData = new List<CTSTicket>();
+        String ctsTemplateFolder = GetConfigValue('CTSTemplatesFolder'); // retrieved from GetConfigValue private method
+        String ctsEmailAddress;
+        ctsTicketData = GetCTSTicket(objectName, objectIds, routingTableObjectInstance);
+        
+        for(EmailTemplate e:
+            [SELECT Id,
+                    Name
+               FROM EmailTemplate 
+              WHERE Folder.Name = :ctsTemplateFolder]){
+        
+            emailTemplateMap.put(e.Id, e);  
+        }
+        
+        for(CTSTicket cts : ctsTicketData){
+            for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance){
+        
+                if(!String.IsBlank(rt.CTSEmailAddress__c) && rt.IntegrationType__c == 'Email'){
+                
+                    ctsEmailAddress = rt.CTSEmailAddress__c;
+                    
+                    for(EmailTemplate et : emailTemplateMap.values()){
+            
+                        if(cts.sfdcTemplateIdForDetails == emailTemplateMap.get(et.Id).Id){
+                        
+                            // send email using email template data
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     private static String GetConfigValue(string configLabel)
     {
         String configValue = 
