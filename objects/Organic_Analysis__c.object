@@ -64259,28 +64259,6 @@ ISBLANK( Created_Email_PW__c)
         <errorMessage>All Listing 1 Fields must be filled in.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>MICC_Listing_2_Required</fullName>
-        <active>true</active>
-        <description>All "Listing X" fields must be filled out if either one is already populated.</description>
-        <errorConditionFormula>AND(
-  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
-  DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
-  OR(
-    NOT(ISBLANK(Listing_2_URL_IT_Pro__c)),
-    NOT(ISBLANK(Listing_2_Phone_Number__c)),  
-    NOT(ISBLANK(Listing_2_Business_Name_Address__c))
-  ),
-  OR(
-    TEXT(Listing_2_Action_Completed__c) = "None",
-    ISBLANK(TEXT(Listing_2_Action_Completed__c)),
-    ISBLANK(Listing_2_URL_IT_Pro__c),
-    ISBLANK(Listing_2_Phone_Number__c),  
-    ISBLANK(Listing_2_Business_Name_Address__c)
-  )
-)</errorConditionFormula>
-        <errorMessage>All Listing 2 Fields must be filled in.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>MICC_Listing_3_Required</fullName>
         <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
@@ -64591,6 +64569,29 @@ ISPICKVAL( Submission_Reason__c ,"G&amp;B Login Issues")))</errorConditionFormul
 Escalated__c = true,
 ISBLANK(Client_Services_Manager__c))</errorConditionFormula>
         <errorMessage>Must fill out Client Services Manager</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MICC_Listing_2_Required</fullName>
+        <active>true</active>
+        <description>All "Listing X" fields must be filled out if either one is already populated.</description>
+        <errorConditionFormula>AND(
+  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
+  DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
+  OR(
+    NOT(ISBLANK(Listing_2_URL_IT_Pro__c)),
+    NOT(ISBLANK(Listing_2_Phone_Number__c)),  
+    NOT(ISBLANK(Listing_2_Business_Name_Address__c))
+  ),
+  OR(
+    TEXT(Listing_2_Action_Completed__c) = "None",
+    ISBLANK(TEXT(Listing_2_Action_Completed__c)),
+    ISBLANK(Listing_2_URL_IT_Pro__c),
+    ISBLANK(Listing_2_Phone_Number__c),  
+    ISBLANK(Listing_2_Business_Name_Address__c)
+  )
+)</errorConditionFormula>
+        <errorDisplayField>Htaccess_File_Functioning__c</errorDisplayField>
+        <errorMessage>All Listing 2 Fields must be filled in.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Update_Lead_in_Marketo_ADMIN_ONLY</fullName>
