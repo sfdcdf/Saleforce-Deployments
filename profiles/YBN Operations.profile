@@ -34614,6 +34614,16 @@
         <field>SFDCToCTSAsynchRequest__c.ProcessedDateTime__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.ExternalTicketId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.NumberOfRetryAttempts__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>

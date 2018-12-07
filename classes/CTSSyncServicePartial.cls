@@ -1,9 +1,19 @@
 public without sharing class CTSSyncServicePartial
 {
-   
-    public static CTSObjectTriggerMap__mdt GetRoutingTableObject(string objName, string objRecordType, string caseReason, string caseOrigin, string productType)
+       
+    public class CTSObjectAttributes{
+    
+        public String ObjName {get; set;}
+        public String ObjRecordType {get; set;}
+        public String CaseReason {get; set;}
+        public String CaseOrigin{get; set;}
+        public String ProductType {get; set;}            
+    } 
+
+    public static List<CTSObjectTriggerMap__mdt> GetRoutingTableObject(List<CTSObjectAttributes> attributes)
     {
         CTSObjectTriggerMap__mdt routingObj;
+        List<CTSObjectTriggerMap__mdt> routingObjs = new List<CTSObjectTriggerMap__mdt>();
         
         List<SObject> routeMappings = [SELECT Id, 
                         Additional_Filter__c,
@@ -27,62 +37,88 @@ public without sharing class CTSSyncServicePartial
                         RecordTypeName__c,
                         MasterLabel
                    FROM CTSObjectTriggerMap__mdt];
+                   
+         Map<String, Id> ctsObjectsMap = new Map<String, Id>();
+         for (CTS_Salesforce_Object_Ref__mdt ctsObject : [SELECT Id, Object_API_Name__c FROM CTS_Salesforce_Object_Ref__mdt])
+             ctsObjectsMap.put(ctsObject.Object_API_Name__c, ctsObject.Id);
          
          /*0  Object Name
          1 Object Record Type
          2. Case Reason
          3. Case Origin
          4. Product Type*/
-                
-         Map<String, String> fieldMap = new Map<String, String>();
-         fieldMap.put('Object__c', objName);
-         fieldMap.put('RecordTypeName__c', objRecordType);
-         fieldMap.put('CaseReason__c', caseReason);
-         fieldMap.put('CaseOrigin__c', caseOrigin);
-         fieldMap.put('ProductType__c', productType);
          
-         //A. 0 & 1 & 2 & 3 & 4 
-         routingObj = FindRoutingObject(routeMappings, fieldMap);
-         if (routingObj != null)
-             return routingObj;
-          
-         //B. 0 & 1 & 2 & 4    
-         fieldMap.remove('CaseOrigin__c');         
-         routingObj = FindRoutingObject(routeMappings, fieldMap);
-         if (routingObj != null)
-             return routingObj;
-             
-         //C. 0 & 1 & 3 & 4
-         fieldMap.remove('CaseReason__c');
-         fieldMap.put('CaseReason__c', caseReason); 
-         routingObj = FindRoutingObject(routeMappings, fieldMap);
-         if (routingObj != null)
-             return routingObj;  
-             
-         //D. 0 & 1 & 4
-         fieldMap.remove('CaseOrigin__c');
-         fieldMap.remove('CaseReason__c');
-         routingObj = FindRoutingObject(routeMappings, fieldMap);
-         if (routingObj != null)
-             return routingObj;
-             
-         //E. 0 & 1  
-         fieldMap.remove('ProductType__c');
-         routingObj = FindRoutingObject(routeMappings, fieldMap);
-         if (routingObj != null)
-             return routingObj;
-             
-         //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
-         for(SObject obj : routeMappings) {
-             if (obj.get('RecordTypeName__c') == 'CATCHALL')
+         for (CTSObjectAttributes attribute : attributes)
+         {             
+             Map<String, String> fieldMap = new Map<String, String>();
+             fieldMap.put('Object__c', ctsObjectsMap.get(attribute.ObjName));
+             fieldMap.put('RecordTypeName__c', attribute.ObjRecordType);
+             fieldMap.put('CaseReason__c', attribute.CaseReason);
+             fieldMap.put('CaseOrigin__c', attribute.CaseOrigin);
+             fieldMap.put('ProductType__c', attribute.ProductType);
+         
+             //A. 0 & 1 & 2 & 3 & 4 
+             routingObj = FindRoutingObject(routeMappings, fieldMap);
+             if (routingObj != null)
              {
-                 return (CTSObjectTriggerMap__mdt)obj; 
+                 routingObjs.add(routingObj);
+                 break;
+             }
+                
+              
+             //B. 0 & 1 & 2 & 4    
+             fieldMap.remove('CaseOrigin__c');         
+             routingObj = FindRoutingObject(routeMappings, fieldMap);
+             if (routingObj != null)
+             {
+                 routingObjs.add(routingObj);
+                 break;
+             }                           
+                 
+             //C. 0 & 1 & 3 & 4
+             fieldMap.remove('CaseReason__c');
+             fieldMap.put('CaseOrigin__c', attribute.CaseOrigin); 
+             routingObj = FindRoutingObject(routeMappings, fieldMap);
+             if (routingObj != null)
+             {
+                 routingObjs.add(routingObj);
+                 break;
+             }                 
+                 
+             //D. 0 & 1 & 4
+             fieldMap.remove('CaseOrigin__c');        
+             routingObj = FindRoutingObject(routeMappings, fieldMap);
+             if (routingObj != null)
+             {
+                 routingObjs.add(routingObj);
+                 break;
+             }                 
+                 
+             //E. 0 & 1  
+             fieldMap.remove('ProductType__c');
+             routingObj = FindRoutingObject(routeMappings, fieldMap);
+             if (routingObj != null)
+             {
+                 routingObjs.add(routingObj);
+                 break;
              }
                  
+                 
+             //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
+             for(SObject obj : routeMappings) {
+                 if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(attribute.ObjName))
+                 {                     
+                     routingObjs.add(routingObj);
+                     break;
+                 }
+                     
+             }
+             
+             // should we add a empty instance as placeholder?
+             routingObjs.add(new CTSObjectTriggerMap__mdt());
          }
          
-         return routingObj;
-
+         return routingObjs;                                        
                            
     }
    
@@ -104,60 +140,7 @@ public without sharing class CTSSyncServicePartial
         } 
         
         return null;
-    }
-    
-    
-    public class CTSTicket{
-    
-        public String apiIdentifier {get; set;}
-        public String contactFirstName {get; set;}
-        public String contactLastName {get; set;}
-        public String contactPhone {get; set;}
-        public String contactEmailAddress {get; set;}
-        public String referenceAccountId {get; set;}
-        public String referenceCustomerId {get; set;}
-        public String referenceProductInstanceId {get; set;}
-        public String domain {get; set;}
-        public String subject {get; set;}
-        public String detail {get; set;}
-        public String referenceProductCode {get; set;}
-        public String status {get; set;}
-        public string alternateContactEmailAddress {get; set;}
-        public Id sfdcTemplateIdForDetails {get; set;}
-    
-    } 
-
-    
-    public static List<String> GetCTSTicketJSON(List<CTSTicket> ctsTickets)
-    {
-       List<String> jsonTickets = new List<String>();
-       
-       for (CTSTicket ticket : ctsTickets)
-       {
-           JSONGenerator bodyJSON = JSON.createGenerator(false); 
-           bodyJSON.writeStartObject();
-           bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
-           bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
-           bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
-           bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
-           bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
-           bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
-           bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
-           bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
-           bodyJSON.writeObjectField('domain', ticket.domain.length() > 255 ? ticket.domain.substring(0, 255): ticket.domain);
-           bodyJSON.writeObjectField('subject', ticket.subject.length() > 100 ? ticket.subject.substring(0, 100): ticket.subject);
-           bodyJSON.writeObjectField('detail', ticket.detail);
-           bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
-           bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
-           bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
-           // categoryId? mandatory
-           // sfdcTemplateIdForDetails?
-           bodyJSON.writeEndObject();
-           jsonTickets.add(bodyJSON.getAsString());
-       }
-       
-       
-       return jsonTickets;
-    }
+    }  
+   
     
 }
