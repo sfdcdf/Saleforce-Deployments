@@ -364,20 +364,14 @@ public without sharing class CTSSyncService{
     }     
     
     
-     public class CTSObjectAttributes{
-    
-        public String ObjName {get; set;}
-        public String ObjRecordType {get; set;}
-        public String CaseReason {get; set;}
-        public String CaseOrigin{get; set;}
-        public String ProductType {get; set;}            
-    } 
-
-    public static List<CTSObjectTriggerMap__mdt> GetRoutingTableObject(List<CTSObjectAttributes> attributes)
+    public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
     {
         CTSObjectTriggerMap__mdt routingObj;
-        List<CTSObjectTriggerMap__mdt> routingObjs = new List<CTSObjectTriggerMap__mdt>();
+        Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
         
+        String query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM ' + objName + ' WHERE Id in :objIds';        
+        List<SObject> ctsSalesforceObjectList = Database.query(query);
+                                   
         List<SObject> routeMappings = [SELECT Id, 
                         Additional_Filter__c,
                         CaseOrigin__c,
@@ -411,41 +405,40 @@ public without sharing class CTSSyncService{
          3. Case Origin
          4. Product Type*/
          
-         for (CTSObjectAttributes attribute : attributes)
+         for (SObject sfObj : ctsSalesforceObjectList)
          {             
              Map<String, String> fieldMap = new Map<String, String>();
-             fieldMap.put('Object__c', ctsObjectsMap.get(attribute.ObjName));
-             fieldMap.put('RecordTypeName__c', attribute.ObjRecordType);
-             fieldMap.put('CaseReason__c', attribute.CaseReason);
-             fieldMap.put('CaseOrigin__c', attribute.CaseOrigin);
-             fieldMap.put('ProductType__c', attribute.ProductType);
+             fieldMap.put('Object__c', ctsObjectsMap.get(objName));
+             fieldMap.put('RecordTypeName__c', (String)sfObj.get('RecordType'));
+             fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
+             fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
+             fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
          
              //A. 0 & 1 & 2 & 3 & 4 
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {
-                 routingObjs.add(routingObj);
-                 break;
+                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                 continue;
              }
-                
-              
+                              
              //B. 0 & 1 & 2 & 4    
              fieldMap.remove('CaseOrigin__c');         
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {
-                 routingObjs.add(routingObj);
-                 break;
+                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                 continue;
              }                           
                  
              //C. 0 & 1 & 3 & 4
              fieldMap.remove('CaseReason__c');
-             fieldMap.put('CaseOrigin__c', attribute.CaseOrigin); 
+             fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {
-                 routingObjs.add(routingObj);
-                 break;
+                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                 continue;
              }                 
                  
              //D. 0 & 1 & 4
@@ -453,8 +446,8 @@ public without sharing class CTSSyncService{
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {
-                 routingObjs.add(routingObj);
-                 break;
+                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                 continue;
              }                 
                  
              //E. 0 & 1  
@@ -462,26 +455,23 @@ public without sharing class CTSSyncService{
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {
-                 routingObjs.add(routingObj);
-                 break;
+                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                 continue;
              }
-                 
-                 
+                                  
              //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
              for(SObject obj : routeMappings) {
-                 if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(attribute.ObjName))
+                 if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
                  {                     
-                     routingObjs.add(routingObj);
+                     routingObjMap.put((Id)sfObj.get('Id'), (CTSObjectTriggerMap__mdt)obj);
                      break;
                  }
                      
              }
-             
-             // should we add a empty instance as placeholder?
-             routingObjs.add(new CTSObjectTriggerMap__mdt());
+          
          }
          
-         return routingObjs;                                        
+         return routingObjMap;                                        
                            
     }
    
