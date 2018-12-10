@@ -331,40 +331,52 @@ public without sharing class CTSSyncService_ERWorking{
         return ctsTicketList;
     }
     
-    public void CallOutCTSForEmail(string objectName, List<Id> objectIds, List<CTSObjectTriggerMap__mdt> routingTableObjectInstance)
+    public void CallOutCTSForEmail(String objectId, String emailTemplateId, String ctsEmailAddress)
     {
+        try{
         
-        Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
-        List<CTSTicket> ctsTicketData = new List<CTSTicket>();
-        String ctsTemplateFolder = GetConfigValue('CTSTemplatesFolder'); // retrieved from GetConfigValue private method
-        String ctsEmailAddress;
-        ctsTicketData = GetCTSTicket(objectName, objectIds, routingTableObjectInstance);
-        
-        for(EmailTemplate e:
-            [SELECT Id,
-                    Name
-               FROM EmailTemplate 
-              WHERE Folder.Name = :ctsTemplateFolder]){
-        
-            emailTemplateMap.put(e.Id, e);  
-        }
-        
-        for(CTSTicket cts : ctsTicketData){
-            for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance){
-        
-                if(!String.IsBlank(rt.CTSEmailAddress__c) && rt.IntegrationType__c == 'Email'){
-                
-                    ctsEmailAddress = rt.CTSEmailAddress__c;
-                    
-                    for(EmailTemplate et : emailTemplateMap.values()){
+            List<Messaging.SingleEmailMessage> ctsNotificationsLst = new List<Messaging.SingleEmailMessage>();
+            OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+            String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
+            Set<String> uniqueEmailAddressesSet = new Set<String>();
+            String messageSubject;
+            String messageBody;
             
-                        if(cts.sfdcTemplateIdForDetails == emailTemplateMap.get(et.Id).Id){
-                        
-                            // send email using email template data
-                        }
-                    }
-                }
+            // Render template data and bind elements to variables
+            Messaging.SingleEmailMessage renderedDetails = Messaging.renderStoredEmailTemplate(emailTemplateId, null, objectId);
+            messageSubject = renderedDetails.getSubject();
+            messageBody = renderedDetails.getPlainTextBody();
+            
+            // set message content from email template for CTS
+            Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+            List<String> toAddress = new List<String>();
+            String fromAddress = GetConfigValue('ServiceAddressEmail_sfdc');
+            String fromDisplayName = 'Salesforce Notifications';
+            uniqueEmailAddressesSet.add(ctsEmailAddress);
+            uniqueEmailAddressesSet.add(sfdcEmailAddress);
+            for(String s : uniqueEmailAddressesSet){
+                toAddress.add(s);
             }
+         
+            message.setToAddresses(toAddress);
+            message.setReplyTo(fromAddress);
+            message.setOrgWideEmailAddressId(owea.get(0).Id);
+            message.setSubject(messageSubject);
+            message.setHtmlBody(messageBody);
+    
+            ctsNotificationsLst.add(message);
+            
+            if(ctsNotificationsLst.size() > 0){
+                            
+                // send notifications
+                Messaging.sendEmail(ctsNotificationsLst);
+            }
+        
+        }
+        catch(Exception e){
+        
+            // log error
+            System.Debug('* An error occurred: ' + e.getMessage());
         }
     }
     

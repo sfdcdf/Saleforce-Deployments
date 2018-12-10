@@ -554,4 +554,55 @@ public without sharing class CTSSyncService{
        
        return jsonTickets;
     }
+    
+    public void CallOutCTSForEmail(String objectId, String emailTemplateId, String ctsEmailAddress)
+    {
+        try{
+        
+            List<Messaging.SingleEmailMessage> ctsNotificationsLst = new List<Messaging.SingleEmailMessage>();
+            OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+            String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
+            Set<String> uniqueEmailAddressesSet = new Set<String>();
+            String messageSubject;
+            String messageBody;
+            
+            // Render template data and bind elements to variables
+            Messaging.SingleEmailMessage renderedDetails = Messaging.renderStoredEmailTemplate(emailTemplateId, null, objectId);
+            messageSubject = renderedDetails.getSubject();
+            messageBody = renderedDetails.getPlainTextBody();
+            
+            if(!String.IsBlank(messageSubject) && !String.IsBlank(messageBody)){
+            
+                // set message content from email template for CTS
+                Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                List<String> toAddress = new List<String>();
+                String fromAddress = GetConfigValue('ServiceAddressEmail_sfdc');
+                String fromDisplayName = 'Salesforce Notifications';
+                uniqueEmailAddressesSet.add(ctsEmailAddress);
+                uniqueEmailAddressesSet.add(sfdcEmailAddress);
+                for(String s : uniqueEmailAddressesSet){
+                    toAddress.add(s);
+                }
+             
+                message.setToAddresses(toAddress);
+                message.setReplyTo(fromAddress);
+                message.setOrgWideEmailAddressId(owea.get(0).Id);
+                message.setSubject(messageSubject);
+                message.setHtmlBody(messageBody);
+        
+                ctsNotificationsLst.add(message);
+                
+                if(ctsNotificationsLst.size() > 0){
+                                
+                    // send notifications
+                    Messaging.sendEmail(ctsNotificationsLst);
+                }
+            }
+        }
+        catch(Exception e){
+        
+            // log error
+            System.Debug('* An error occurred: ' + e.getMessage());
+        }
+    }
 }
