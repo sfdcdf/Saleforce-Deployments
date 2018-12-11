@@ -380,6 +380,12 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
+    public void CreateSFDCToCTSAsynchRequest(string integrationType, string objectName, List<Id> objectIds, List<CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    
+        
+    
+    }
+    
     private static String GetConfigValue(string configLabel)
     {
         String configValue = 
