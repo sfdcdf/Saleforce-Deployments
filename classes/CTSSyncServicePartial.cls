@@ -9,6 +9,26 @@ public without sharing class CTSSyncServicePartial
         public String CaseOrigin{get; set;}
         public String ProductType {get; set;}            
     } */
+    
+    public class CTSTicket{
+    
+        public String apiIdentifier {get; set;}
+        public String contactFirstName {get; set;}
+        public String contactLastName {get; set;}
+        public String contactPhone {get; set;}
+        public String contactEmailAddress {get; set;}
+        public String referenceAccountId {get; set;}
+        public String referenceCustomerId {get; set;}
+        public String referenceProductInstanceId {get; set;}
+        public String domain {get; set;}
+        public String subject {get; set;}
+        public String detail {get; set;}
+        public String referenceProductCode {get; set;}
+        public String status {get; set;}
+        public string alternateContactEmailAddress {get; set;}
+        public Id sfdcTemplateIdForDetails {get; set;}
+    
+    }
 
     public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
     {
@@ -141,6 +161,77 @@ public without sharing class CTSSyncServicePartial
         
         return null;
     }  
-   
     
+    
+    public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
+       
+        Http h = new Http();
+       
+        HttpRequest req = new HttpRequest();        
+        req.setEndpoint(integrationSetting.ESBAPIEndPoint__c);
+        req.setBody(requestBody);
+        req.setMethod('POST');
+        req.setHeader('Content-Type', 'application/json');
+        req.setTimeout(120000);
+
+        // Send the request, and return a response
+        HttpResponse res = h.send(req);       
+
+        return res;
+    }
+    
+    
+    public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
+    {
+    
+       /* {
+            "clientInfo": {
+                "apiAccessKey": " SAMPLE number",
+                "aplicationName" : "CTS",
+                "messageId": "qwdv-lusm-oqps"
+            },
+            "request": []
+          } */                 
+       
+       JSONGenerator bodyJSON = JSON.createGenerator(false);
+       bodyJSON.writeStartObject();
+       
+       //clientInfo
+       bodyJSON.writeFieldName('clientInfo');
+       bodyJSON.writeStartObject();
+       bodyJSON.writeObjectField('apiAccessKey', '');
+       bodyJSON.writeObjectField('aplicationName', 'YodelSalesforce');
+       bodyJSON.writeObjectField('messageId', '');
+       bodyJSON.writeEndObject();
+       
+       //request
+       bodyJSON.writeFieldName('request');
+       bodyJSON.writeStartArray();
+           for (CTSTicket ticket : ctsTickets)
+           {           
+               bodyJSON.writeStartObject();
+               bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
+               bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
+               bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
+               bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
+               bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
+               bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
+               bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
+               bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
+               bodyJSON.writeObjectField('domain', ticket.domain.length() > 255 ? ticket.domain.substring(0, 255): ticket.domain);
+               bodyJSON.writeObjectField('subject', ticket.subject.length() > 100 ? ticket.subject.substring(0, 100): ticket.subject);
+               bodyJSON.writeObjectField('detail', ticket.detail);
+               bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
+               bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
+               bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
+               // categoryId? mandatory
+               // sfdcTemplateIdForDetails?
+               bodyJSON.writeEndObject();           
+           }
+       bodyJSON.writeEndArray();    
+       
+       bodyJSON.writeEndObject();
+                                  
+       return bodyJSON.getAsString();
+    }       
 }

@@ -23,7 +23,7 @@ public without sharing class CTSSyncService_ERWorking{
     
     }
 
-    public static List<CTSTicket> GetCTSTicket(string objectName, List<Id> objectIds, List<CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    public static List<CTSTicket> GetCTSTicket(string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
  
         CTSTicket ctsTicketInstance;
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
@@ -38,7 +38,7 @@ public without sharing class CTSSyncService_ERWorking{
         
         // retrieved from GetConfigValue private method
         String ctsTemplateFolder = GetConfigValue('CTSTemplatesFolder');
-        String initStatus = GetConfigValue('CTSTicketStatusDefault');
+        String initStatus = GetConfigValue('CTSTicketStatusDefault').toUppercase();
         
         for(EmailTemplate e:
             [SELECT Id,
@@ -50,14 +50,17 @@ public without sharing class CTSSyncService_ERWorking{
         
         }
         
-        for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance){
+        for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
             
             if(emailTemplateMap.size() > 0){
                 
                 for(EmailTemplate et : emailTemplateMap.values()){
                     
-                    templateName = emailTemplateMap.get(rt.DetailsTemplateName__c).Name;
-                    break;
+                    if(et.Name == emailTemplateMap.get(rt.DetailsTemplateName__c).Name){
+                    
+                        templateName = emailTemplateMap.get(rt.DetailsTemplateName__c).Name;
+                        break;
+                    }
                 }
                 
                 integrationType = rt.IntegrationType__c;
@@ -279,51 +282,6 @@ public without sharing class CTSSyncService_ERWorking{
                             }
                         }             
                     }
-                    when 'Lighthouse_Worksheets__c' {
-                       for(Lighthouse_Worksheets__c lhw :
-                           [SELECT Id,
-                                   Name,
-                                   Subject__c,
-                                   Client_Email__c,
-                                   Primary_website__c,
-                                   Client_Email_from_Acct__c,
-                                   Practice_Name__r.Client_First_Name__c,
-                                   Practice_Name__r.Client_Last_Name__c,
-                                   Practice_Name__r.Phone,
-                                   Practice_Name__r.Email__c,
-                                   Practice_Name__r.Client_E_mail__c,
-                                   Practice_Name__r.Id,
-                                   Practice_Name__r.Client_ID__c,
-                                   Practice_Name__r.Product_Type_Transactional__c,
-                                   Practice_Name__r.Name,
-                                   RecordType.Name
-                              FROM Lighthouse_Worksheets__c
-                             WHERE Id IN :objectIds]){
-                                
-                            if (lhw.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, lhw.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                        
-                                ctsTicketInstance.contactFirstName = lhw.Practice_Name__r.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = lhw.Practice_Name__r.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = lhw.Practice_Name__r.Phone;
-                                ctsTicketInstance.contactEmailAddress = lhw.Client_Email__c;
-                                ctsTicketInstance.referenceAccountId = lhw.Practice_Name__r.Name;
-                                ctsTicketInstance.referenceCustomerId = lhw.Practice_Name__r.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = lhw.Name;
-                                ctsTicketInstance.domain = lhw.Primary_website__c;
-                                ctsTicketInstance.subject = lhw.Subject__c;
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = lhw.Practice_Name__r.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = lhw.Client_Email_from_Acct__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }
-                        }             
-                    }
                 }
             }
         }
@@ -380,10 +338,39 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void CreateSFDCToCTSAsynchRequest(string integrationType, string objectName, List<Id> objectIds, List<CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    public void CreateSFDCToCTSAsynchRequest(string integrationType, string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
     
+        List<CTSTicket> ctsTicket = GetCTSTicket(objectName, objectIds, routingTableObjectInstance);
+        List<SFDCToCTSAsynchRequest__c> newAsyncRecordsList = new List<SFDCToCTSAsynchRequest__c>();
         
-    
+        for(CTSTicket t : ctsTicket){
+        
+            for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
+            
+                if(rt.Object__r.Object_API_Name__c == objectName){
+                        
+                    for(Id objectId : objectIds){
+                            
+                        SFDCToCTSAsynchRequest__c asyncRecord = new SFDCToCTSAsynchRequest__c();
+                        asyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                        asyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
+                        asyncRecord.EmailTemplateId__c = t.sfdcTemplateIdForDetails;
+                        asyncRecord.Integration_Type__c = integrationType;
+                        asyncRecord.NumberOfRetryAttempts__c = 0;
+                        asyncRecord.ObjectId__c = objectId;
+                        asyncRecord.Object_Name__c = objectName;
+                        asyncRecord.ScheduledDateTime__c = System.Now();
+                        asyncRecord.Status__c = t.status;
+                        
+                        newAsyncRecordsList.add(asyncRecord);
+                    }
+                }
+            }   
+        }
+        
+        if(newAsyncRecordsList.size() > 0){
+            insert newAsyncRecordsList;
+        }
     }
     
     private static String GetConfigValue(string configLabel)

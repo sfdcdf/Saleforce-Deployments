@@ -31,7 +31,7 @@ public without sharing class CTSSyncService{
     
     }
 
-    public static List<CTSTicket> GetCTSTicket(string objectName, List<Id> objectIds, List<CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    public static List<CTSTicket> GetCTSTicket(string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
  
         CTSTicket ctsTicketInstance;
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
@@ -46,7 +46,7 @@ public without sharing class CTSSyncService{
         
         // retrieved from GetConfigValue private method
         String ctsTemplateFolder = GetConfigValue('CTSTemplatesFolder');
-        String initStatus = GetConfigValue('CTSTicketStatusDefault');
+        String initStatus = GetConfigValue('CTSTicketStatusDefault').toUppercase();
         
         for(EmailTemplate e:
             [SELECT Id,
@@ -58,7 +58,7 @@ public without sharing class CTSSyncService{
         
         }
         
-        for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance){
+        for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
             
             if(emailTemplateMap.size() > 0){
                 
@@ -290,51 +290,6 @@ public without sharing class CTSSyncService{
                             }
                         }             
                     }
-                    when 'Lighthouse_Worksheets__c' {
-                       for(Lighthouse_Worksheets__c lhw :
-                           [SELECT Id,
-                                   Name,
-                                   Subject__c,
-                                   Client_Email__c,
-                                   Primary_website__c,
-                                   Client_Email_from_Acct__c,
-                                   Practice_Name__r.Client_First_Name__c,
-                                   Practice_Name__r.Client_Last_Name__c,
-                                   Practice_Name__r.Phone,
-                                   Practice_Name__r.Email__c,
-                                   Practice_Name__r.Client_E_mail__c,
-                                   Practice_Name__r.Id,
-                                   Practice_Name__r.Client_ID__c,
-                                   Practice_Name__r.Product_Type_Transactional__c,
-                                   Practice_Name__r.Name,
-                                   RecordType.Name
-                              FROM Lighthouse_Worksheets__c
-                             WHERE Id IN :objectIds]){
-                                
-                            if (lhw.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, lhw.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                        
-                                ctsTicketInstance.contactFirstName = lhw.Practice_Name__r.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = lhw.Practice_Name__r.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = lhw.Practice_Name__r.Phone;
-                                ctsTicketInstance.contactEmailAddress = lhw.Client_Email__c;
-                                ctsTicketInstance.referenceAccountId = lhw.Practice_Name__r.Name;
-                                ctsTicketInstance.referenceCustomerId = lhw.Practice_Name__r.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = lhw.Name;
-                                ctsTicketInstance.domain = lhw.Primary_website__c;
-                                ctsTicketInstance.subject = lhw.Subject__c;
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = lhw.Practice_Name__r.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = lhw.Client_Email_from_Acct__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }
-                        }             
-                    }
                 }
             }
         }
@@ -495,55 +450,60 @@ public without sharing class CTSSyncService{
         return null;
     }    
     
-    private static String GetConfigValue(string configLabel)
+    public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
     {
-        String configValue = 
-            [SELECT Id, 
-                    External_System_Name__c, 
-                    MasterLabel, 
-                    Configuration_Label__c, 
-                    Data_Type__c, 
-                    Configuration_Value__c 
-               FROM Integration_Configuration__mdt 
-              WHERE Is_Active__c = true AND
-                    External_System_Name__c = 'CTS' AND
-                    Configuration_Label__c = :configLabel
-              LIMIT 1].Configuration_Value__c;
-              
-         return configValue;
-    }
     
-    public static List<String> GetCTSTicketJSON(List<CTSTicket> ctsTickets)
-    {
-       List<String> jsonTickets = new List<String>();
+       /* {
+            "clientInfo": {
+                "apiAccessKey": " SAMPLE number",
+                "aplicationName" : "CTS",
+                "messageId": "qwdv-lusm-oqps"
+            },
+            "request": []
+          } */                 
        
-       for (CTSTicket ticket : ctsTickets)
-       {
-           JSONGenerator bodyJSON = JSON.createGenerator(false); 
-           bodyJSON.writeStartObject();
-           bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
-           bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
-           bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
-           bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
-           bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
-           bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
-           bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
-           bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
-           bodyJSON.writeObjectField('domain', ticket.domain.length() > 255 ? ticket.domain.substring(0, 255): ticket.domain);
-           bodyJSON.writeObjectField('subject', ticket.subject.length() > 100 ? ticket.subject.substring(0, 100): ticket.subject);
-           bodyJSON.writeObjectField('detail', ticket.detail);
-           bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
-           bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
-           bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
-           // categoryId? mandatory
-           // sfdcTemplateIdForDetails?
-           bodyJSON.writeEndObject();
-           jsonTickets.add(bodyJSON.getAsString());
-       }
+       JSONGenerator bodyJSON = JSON.createGenerator(false);
+       bodyJSON.writeStartObject();
        
+       //clientInfo
+       bodyJSON.writeFieldName('clientInfo');
+       bodyJSON.writeStartObject();
+       bodyJSON.writeObjectField('apiAccessKey', '');
+       bodyJSON.writeObjectField('aplicationName', 'YodelSalesforce');
+       bodyJSON.writeObjectField('messageId', '');
+       bodyJSON.writeEndObject();
        
-       return jsonTickets;
-    }
+       //request
+       bodyJSON.writeFieldName('request');
+       bodyJSON.writeStartArray();
+           for (CTSTicket ticket : ctsTickets)
+           {           
+               bodyJSON.writeStartObject();
+               bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
+               bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
+               bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
+               bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
+               bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
+               bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
+               bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
+               bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
+               bodyJSON.writeObjectField('domain', ticket.domain.length() > 255 ? ticket.domain.substring(0, 255): ticket.domain);
+               bodyJSON.writeObjectField('subject', ticket.subject.length() > 100 ? ticket.subject.substring(0, 100): ticket.subject);
+               bodyJSON.writeObjectField('detail', ticket.detail);
+               bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
+               bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
+               bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
+               // categoryId? mandatory
+               // sfdcTemplateIdForDetails?
+               bodyJSON.writeEndObject();           
+           }
+       bodyJSON.writeEndArray();    
+       
+       bodyJSON.writeEndObject();
+                                  
+       return bodyJSON.getAsString();
+    } 
+    
     
     public void CallOutCTSForEmail(String objectId, String emailTemplateId, String ctsEmailAddress)
     {
@@ -594,5 +554,58 @@ public without sharing class CTSSyncService{
             // log error
             System.Debug('* An error occurred: ' + e.getMessage());
         }
+    }
+    
+    public void CreateSFDCToCTSAsynchRequest(string integrationType, string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    
+        List<CTSTicket> ctsTicket = GetCTSTicket(objectName, objectIds, routingTableObjectInstance);
+        List<SFDCToCTSAsynchRequest__c> newAsyncRecordsList = new List<SFDCToCTSAsynchRequest__c>();
+        
+        for(CTSTicket t : ctsTicket){
+        
+            for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
+            
+                if(rt.Object__r.Object_API_Name__c == objectName){
+                        
+                    for(Id objectId : objectIds){
+                            
+                        SFDCToCTSAsynchRequest__c asyncRecord = new SFDCToCTSAsynchRequest__c();
+                        asyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                        asyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
+                        asyncRecord.EmailTemplateId__c = t.sfdcTemplateIdForDetails;
+                        asyncRecord.Integration_Type__c = integrationType;
+                        asyncRecord.NumberOfRetryAttempts__c = 0;
+                        asyncRecord.ObjectId__c = objectId;
+                        asyncRecord.Object_Name__c = objectName;
+                        asyncRecord.ScheduledDateTime__c = System.Now(); // placeholder only; need to update
+                        asyncRecord.Status__c = t.status;
+                        
+                        newAsyncRecordsList.add(asyncRecord);
+                    }
+                }
+            }   
+        }
+        
+        if(newAsyncRecordsList.size() > 0){
+            insert newAsyncRecordsList;
+        }
+    }
+    
+    private static String GetConfigValue(string configLabel)
+    {
+        String configValue = 
+            [SELECT Id, 
+                    External_System_Name__c, 
+                    MasterLabel, 
+                    Configuration_Label__c, 
+                    Data_Type__c, 
+                    Configuration_Value__c 
+               FROM Integration_Configuration__mdt 
+              WHERE Is_Active__c = true AND
+                    External_System_Name__c = 'CTS' AND
+                    Configuration_Label__c = :configLabel
+              LIMIT 1].Configuration_Value__c;
+              
+         return configValue;
     }
 }
