@@ -1,15 +1,6 @@
 public without sharing class CTSSyncServicePartial
 {
        
-    /* public class CTSObjectAttributes{
-    
-        public String ObjName {get; set;}
-        public String ObjRecordType {get; set;}
-        public String CaseReason {get; set;}
-        public String CaseOrigin{get; set;}
-        public String ProductType {get; set;}            
-    } */
-    
     public class CTSTicket{
     
         public String apiIdentifier {get; set;}
@@ -29,7 +20,30 @@ public without sharing class CTSSyncServicePartial
         public Id sfdcTemplateIdForDetails {get; set;}
     
     }
+    
+    
+    public static CTS_SFDC_Object_Base GetSFDCObject(string objectName, Id objectId, CTSObjectTriggerMap__mdt mappingInstance)    
+    {          
+    
+       CTS_SFDC_Object_Base baseObject;
+       
+       switch on objectName {
+           when 'Case' {
+               baseObject = new CTSSFDCCase(objectId, objectName, mappingInstance);               
+           }
+           when 'Organic_Analysis__c', 'Quality_Case__c', 'Best_Practice_Evaluation__c', 'Customer_Surveys__c', 'Lighthouse_Worksheets__c' {
+               baseObject = new CTS_SFDC_Object_Base(objectId, objectName, mappingInstance);
+           }                     
+           when else {
+               system.debug('Not a valid object name: ' + objectName);                
+           }
+       }
+                     
+       return baseObject;
 
+    }     
+    
+    
     public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
     {
         CTSObjectTriggerMap__mdt routingObj;
@@ -124,8 +138,7 @@ public without sharing class CTSSyncServicePartial
                  routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                  continue;
              }
-                 
-                 
+                                  
              //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
              for(SObject obj : routeMappings) {
                  if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
@@ -160,10 +173,10 @@ public without sharing class CTSSyncServicePartial
         } 
         
         return null;
-    }  
+    }    
     
     
-    public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
+     public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
        
         Http h = new Http();
        
@@ -233,5 +246,27 @@ public without sharing class CTSSyncServicePartial
        bodyJSON.writeEndObject();
                                   
        return bodyJSON.getAsString();
-    }       
+    } 
+    
+    
+    
+    
+    
+    private static String GetConfigValue(string configLabel)
+    {
+        String configValue = 
+            [SELECT Id, 
+                    External_System_Name__c, 
+                    MasterLabel, 
+                    Configuration_Label__c, 
+                    Data_Type__c, 
+                    Configuration_Value__c 
+               FROM Integration_Configuration__mdt 
+              WHERE Is_Active__c = true AND
+                    External_System_Name__c = 'CTS' AND
+                    Configuration_Label__c = :configLabel
+              LIMIT 1].Configuration_Value__c;
+              
+         return configValue;
+    }     
 }
