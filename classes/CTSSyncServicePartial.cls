@@ -1,6 +1,15 @@
 public without sharing class CTSSyncServicePartial
 {
        
+    /* public class CTSObjectAttributes{
+    
+        public String ObjName {get; set;}
+        public String ObjRecordType {get; set;}
+        public String CaseReason {get; set;}
+        public String CaseOrigin{get; set;}
+        public String ProductType {get; set;}            
+    } */
+    
     public class CTSTicket{
     
         public String apiIdentifier {get; set;}
@@ -20,7 +29,6 @@ public without sharing class CTSSyncServicePartial
         public Id sfdcTemplateIdForDetails {get; set;}
     
     }
-    
     
     public static CTS_SFDC_Object_Base GetSFDCObject(string objectName, Id objectId, CTSObjectTriggerMap__mdt mappingInstance)    
     {          
@@ -42,14 +50,17 @@ public without sharing class CTSSyncServicePartial
        return baseObject;
 
     }     
-    
-    
+
     public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
     {
         CTSObjectTriggerMap__mdt routingObj;
         Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
         
-        String query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM ' + objName + ' WHERE Id in :objIds';        
+        String query;
+        if (objName.equals('Case'))        
+            query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM Case WHERE Id in :objIds';
+        else
+            query = 'SELECT Id, RecordType FROM ' + objName + ' WHERE Id in :objIds';    
         List<SObject> ctsSalesforceObjectList = Database.query(query);
                                    
         List<SObject> routeMappings = [SELECT Id, 
@@ -90,48 +101,55 @@ public without sharing class CTSSyncServicePartial
              Map<String, String> fieldMap = new Map<String, String>();
              fieldMap.put('Object__c', ctsObjectsMap.get(objName));
              fieldMap.put('RecordTypeName__c', (String)sfObj.get('RecordType'));
-             fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
-             fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
-             fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
-         
-             //A. 0 & 1 & 2 & 3 & 4 
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
+             if (objName.equals('Case'))
              {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
+                 fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
+                 fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
+                 fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
              }
-                              
-             //B. 0 & 1 & 2 & 4    
-             fieldMap.remove('CaseOrigin__c');         
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
+             
+             if (objName.equals('Case'))
              {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
-             }                           
+                 //A. 0 & 1 & 2 & 3 & 4 
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null)
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }
+                                                
+                 //B. 0 & 1 & 2 & 4    
+                 fieldMap.remove('CaseOrigin__c');         
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null)
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }     
+                                                                               
+                 //C. 0 & 1 & 3 & 4
+                 fieldMap.remove('CaseReason__c');
+                 fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null)
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }      
+                
+                 //D. 0 & 1 & 4
+                 fieldMap.remove('CaseOrigin__c');        
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null)
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }  
                  
-             //C. 0 & 1 & 3 & 4
-             fieldMap.remove('CaseReason__c');
-             fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
-             {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
-             }                 
+                 fieldMap.remove('ProductType__c');
+             }               
                  
-             //D. 0 & 1 & 4
-             fieldMap.remove('CaseOrigin__c');        
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
-             {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
-             }                 
-                 
-             //E. 0 & 1  
-             fieldMap.remove('ProductType__c');
+             //E. 0 & 1               
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {
@@ -173,10 +191,10 @@ public without sharing class CTSSyncServicePartial
         } 
         
         return null;
-    }    
+    }  
     
     
-     public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
+    public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
        
         Http h = new Http();
        
@@ -212,9 +230,8 @@ public without sharing class CTSSyncServicePartial
        //clientInfo
        bodyJSON.writeFieldName('clientInfo');
        bodyJSON.writeStartObject();
-       bodyJSON.writeObjectField('apiAccessKey', '');
-       bodyJSON.writeObjectField('aplicationName', 'YodelSalesforce');
-       bodyJSON.writeObjectField('messageId', '');
+       //to do, read from config
+       bodyJSON.writeObjectField('apiAccessKey', '453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991');      
        bodyJSON.writeEndObject();
        
        //request
@@ -222,6 +239,19 @@ public without sharing class CTSSyncServicePartial
        bodyJSON.writeStartArray();
            for (CTSTicket ticket : ctsTickets)
            {           
+               bodyJSON.writeStartObject();
+               
+               bodyJSON.writeObjectField('platformId', 'YODLE');
+               bodyJSON.writeObjectField('action', 'Create');
+               //To to, no obj name & obj id in CTSTicket object
+               bodyJSON.writeObjectField('clientRequestId', 'SFDC');
+               bodyJSON.writeObjectField('objectType', 'Ticket');
+               
+               bodyJSON.writeFieldName('data');
+               bodyJSON.writeStartObject();
+               //to do, read from config
+               bodyJSON.writeObjectField('crmId', '552e519a-1898-4f4b-b909-a223a916b876');
+               bodyJSON.writeFieldName('ticket');
                bodyJSON.writeStartObject();
                bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
                bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
@@ -237,8 +267,8 @@ public without sharing class CTSSyncServicePartial
                bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
                bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
                bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
-               // categoryId? mandatory
-               // sfdcTemplateIdForDetails?
+               bodyJSON.writeEndObject();
+               bodyJSON.writeEndObject();                                              
                bodyJSON.writeEndObject();           
            }
        bodyJSON.writeEndArray();    
@@ -246,27 +276,5 @@ public without sharing class CTSSyncServicePartial
        bodyJSON.writeEndObject();
                                   
        return bodyJSON.getAsString();
-    } 
-    
-    
-    
-    
-    
-    private static String GetConfigValue(string configLabel)
-    {
-        String configValue = 
-            [SELECT Id, 
-                    External_System_Name__c, 
-                    MasterLabel, 
-                    Configuration_Label__c, 
-                    Data_Type__c, 
-                    Configuration_Value__c 
-               FROM Integration_Configuration__mdt 
-              WHERE Is_Active__c = true AND
-                    External_System_Name__c = 'CTS' AND
-                    Configuration_Label__c = :configLabel
-              LIMIT 1].Configuration_Value__c;
-              
-         return configValue;
-    }     
+    }       
 }
