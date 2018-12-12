@@ -1,14 +1,5 @@
 public without sharing class CTSSyncServicePartial
-{
-       
-    /* public class CTSObjectAttributes{
-    
-        public String ObjName {get; set;}
-        public String ObjRecordType {get; set;}
-        public String CaseReason {get; set;}
-        public String CaseOrigin{get; set;}
-        public String ProductType {get; set;}            
-    } */
+{         
     
     public class CTSTicket{
     
@@ -30,24 +21,62 @@ public without sharing class CTSSyncServicePartial
     
     }
     
-    public static CTS_SFDC_Object_Base GetSFDCObject(string objectName, Id objectId, CTSObjectTriggerMap__mdt mappingInstance)    
+    public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, List<Id> objIds)    
     {          
     
        CTS_SFDC_Object_Base baseObject;
+       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();       
+       List<SFDCToCTSAsynchRequest__c> requestList = [SELECT ObjectId__c, API_Identifier__c, CTS_Email_Address__c, EmailTemplateId__c FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c IN :objIds];
+       Map<String, SFDCToCTSAsynchRequest__c> requestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
+       SFDCToCTSAsynchRequest__c asyncRequest;
        
+       for (SFDCToCTSAsynchRequest__c request : requestList)
+       {
+           requestMap.put(request.ObjectId__c, request); 
+       }
+                                                
        switch on objectName {
            when 'Case' {
-               baseObject = new CTSSFDCCase(objectId, objectName, mappingInstance);               
+              for (Case sfCase :  [SELECT Id,
+                                     Account.Client_First_Name__c,
+                                     Account.Client_Last_Name__c,
+                                     Account.Phone,
+                                     Account.Email__c,
+                                     Account.Product_Type_Transactional__c,
+                                     Account.Id,
+                                     Account.Name,
+                                     Account.Client_ID__c,
+                                     Account.Website,  
+                                     Client_Email__c,
+                                     Subject,
+                                     CaseNumber,                                       
+                                     RecordType.Name,
+                                     Status,
+                                     Sub_Status__c
+                               FROM Case
+                               WHERE Id IN :objIds])
+               {
+                   asyncRequest = requestMap.get((String)sfCase.Id);
+                   baseObject = new CTSSFDCCase(sfCase.Id, objectName, asyncRequest, sfCase);
+                   ctsSFDCObjectList.add(baseObject);                    
+               }
+               
            }
            when 'Organic_Analysis__c', 'Quality_Case__c', 'Best_Practice_Evaluation__c', 'Customer_Surveys__c', 'Lighthouse_Worksheets__c' {
-               baseObject = new CTS_SFDC_Object_Base(objectId, objectName, mappingInstance);
+               for (Id objId : objIds)
+               {
+                   asyncRequest = requestMap.get((String)objId);
+                   baseObject = new CTS_SFDC_Object_Base(objId, objectName, asyncRequest);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
            }                     
            when else {
                system.debug('Not a valid object name: ' + objectName);                
            }
        }
-                     
-       return baseObject;
+                                   
+       return ctsSFDCObjectList;
 
     }     
 
@@ -106,10 +135,7 @@ public without sharing class CTSSyncServicePartial
                  fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
                  fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
                  fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
-             }
-             
-             if (objName.equals('Case'))
-             {
+                        
                  //A. 0 & 1 & 2 & 3 & 4 
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
                  if (routingObj != null)

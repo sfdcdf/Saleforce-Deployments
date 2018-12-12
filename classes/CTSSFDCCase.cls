@@ -16,44 +16,33 @@ public class CTSSFDCCase extends CTS_SFDC_Object_Base
     public string AlternateContactEmailAddress { get; set; }
     public string TicketingTicketNotes { get; set; }
     
-    public CTSSFDCCase (Id objId, String objName, CTSObjectTriggerMap__mdt mappingInstance)
+    public CTSSFDCCase (Id objId, String objName, SFDCToCTSAsynchRequest__c requestInstance, Case sfCase)
     {
-        super(objId, objName, mappingInstance);
-        PopulateCaseFields(objId, mappingInstance);    
+        super(objId, objName, requestInstance);
+        PopulateCaseFields(objId, requestInstance, sfCase);    
     }
     
-    private void PopulateCaseFields(Id caseId, CTSObjectTriggerMap__mdt mappingInstance)
-    {
-        Case sfCase = [SELECT Id, AccountId, CaseNumber, Subject, Status, Sub_Status__c FROM Case WHERE Id = :caseId];
-        
-        if (sfCase != null)
+    private void PopulateCaseFields(Id caseId, SFDCToCTSAsynchRequest__c requestInstance, Case sfCase)
+    {                                                                             
+        this.ContactFirstName = sfCase.Account.Client_First_Name__c;
+        this.ContactLastName = sfCase.Account.Client_Last_Name__c;
+        this.ContactPhone = sfCase.Account.Phone;
+        this.ContactEmailAddress = sfCase.Client_Email__c;
+        this.ApiIdentifier = requestInstance.API_Identifier__c;
+        this.ReferenceAccountId = sfCase.Account.Id;
+        this.ReferenceCustomerId = sfCase.Account.Client_ID__c;
+        this.CaseNumber = sfCase.CaseNumber;
+        this.Domain = sfCase.Account.Website;
+        this.ReferenceProductCodes = sfCase.Account.Product_Type_Transactional__c;
+        this.TicketType = ''; //Which field of routing table?
+        this.Status = sfCase.Status;
+        this.SubStatus = sfCase.Sub_Status__c;
+        this.AlternateContactEmailAddress = sfCase.Account.Email__c;  
+        /* List<EmailTemplate> et = [SELECT id FROM EmailTemplate where name = :mappingInstance.NoteDetailsTemplateName__c LIMIT 1];
+        if (et.size() > 0)
         {
-            Account acc = [SELECT Id, Client_First_Name__c, Client_Last_Name__c, Phone, Client_E_mail__c, Name, Client_ID__c, 
-                       Website, Product_Type_Transactional__c, Email__c FROM ACCOUNT WHERE Id = :sfCase.AccountId];
-        
-            if (acc != null )
-            {                                                     
-               this.ContactFirstName = acc.Client_First_Name__c;
-               this.ContactLastName = acc.Client_Last_Name__c;
-               this.ContactPhone = acc.Phone;
-               this.ContactEmailAddress = acc.Client_E_mail__c;
-               this.ApiIdentifier = mappingInstance.CTSAPIIdentifier__c;
-               this.ReferenceAccountId = acc.Id;
-               this.ReferenceCustomerId = acc.Client_ID__c;
-               this.CaseNumber = sfCase.CaseNumber;
-               this.Domain = acc.Website;
-               this.ReferenceProductCodes = acc.Product_Type_Transactional__c;
-               this.TicketType = ''; //Which field of routing table?
-               this.Status = sfCase.Status;
-               this.SubStatus = sfCase.Sub_Status__c;
-               this.AlternateContactEmailAddress = acc.Email__c;  
-               List<EmailTemplate> et = [SELECT id FROM EmailTemplate where name = :mappingInstance.NoteDetailsTemplateName__c LIMIT 1];
-               if (et.size() > 0)
-               {
-                   Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et[0].Id, null, caseId);
-                   this.TicketingTicketNotes = mail.getPlainTextBody();  
-               }                                                                   
-            }                       
-        }                              
+            Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate((string)et[0].Id, null, caseId);
+            this.TicketingTicketNotes = mail.getPlainTextBody();  
+        } */                                                                                                                                          
     }       
 }
