@@ -20,8 +20,21 @@ public virtual class CTS_SFDC_Object_Base
     }
     
     private Messaging.SingleEmailMessage PopulateEmailSubjectBody(String emailTemplateId)
-    {                
-         Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateId, null, Id, Messaging.AttachmentRetrievalOption.NONE);
+    {    
+         //renderStoredEmailTemplate has the issue of SOQL governor limit
+         //Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateId, null, Id, Messaging.AttachmentRetrievalOption.NONE);
+                  
+         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+         String[] toAddresses = new String[]{'YodleSFDC@yopmail.com'};
+         mail.setToAddresses(toAddresses);
+         mail.setUseSignature(false);
+         mail.setSaveAsActivity(false);
+         mail.setSenderDisplayName('YodleSFDC');
+         mail.setTargetObjectId(This.Id);
+         mail.setTemplateId(emailTemplateId);
+         Savepoint sp = Database.setSavepoint();
+         Messaging.sendEmail(new Messaging.SingleEmailMessage[] {mail});
+         Database.rollback(sp);
          return mail;                      
     }
 }
