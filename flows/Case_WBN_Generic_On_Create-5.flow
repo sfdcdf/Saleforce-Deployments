@@ -264,12 +264,12 @@
             <processMetadataValues>
                 <name>rightHandSideType</name>
                 <value>
-                    <stringValue>ID</stringValue>
+                    <stringValue>Reference</stringValue>
                 </value>
             </processMetadataValues>
             <field>IMS_Rep__c</field>
             <value>
-                <stringValue>00532000004pLoeAAE</stringValue>
+                <elementReference>myVariable_current.Account.Account_Director__r.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

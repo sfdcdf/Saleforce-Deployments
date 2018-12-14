@@ -225,7 +225,7 @@ public without sharing class CTSSyncServicePartial
         Http h = new Http();
        
         HttpRequest req = new HttpRequest();        
-        req.setEndpoint(integrationSetting.ESBAPIEndPoint__c);
+        req.setEndpoint('callout:CTSSyncService');
         req.setBody(requestBody);
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
