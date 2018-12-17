@@ -21,20 +21,13 @@ public without sharing class CTSSyncServicePartial
     
     }
     
-    public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, List<Id> objIds)    
+    public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
     {          
     
        CTS_SFDC_Object_Base baseObject;
-       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();       
-       List<SFDCToCTSAsynchRequest__c> requestList = [SELECT ObjectId__c, API_Identifier__c, CTS_Email_Address__c, EmailTemplateId__c FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c IN :objIds];
-       Map<String, SFDCToCTSAsynchRequest__c> requestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
+       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();              
        SFDCToCTSAsynchRequest__c asyncRequest;
-       
-       for (SFDCToCTSAsynchRequest__c request : requestList)
-       {
-           requestMap.put(request.ObjectId__c, request); 
-       }
-                                                
+                                             
        switch on objectName {
            when 'Case' {
               for (Case sfCase :  [SELECT Id,
@@ -54,7 +47,7 @@ public without sharing class CTSSyncServicePartial
                                      Status,
                                      Sub_Status__c
                                FROM Case
-                               WHERE Id IN :objIds])
+                               WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get((String)sfCase.Id);
                    baseObject = new CTSSFDCCase(sfCase.Id, objectName, asyncRequest, sfCase);
@@ -62,15 +55,106 @@ public without sharing class CTSSyncServicePartial
                }
                
            }
-           when 'Organic_Analysis__c', 'Quality_Case__c', 'Best_Practice_Evaluation__c', 'Customer_Surveys__c', 'Lighthouse_Worksheets__c' {
-               for (Id objId : objIds)
+           when 'Organic_Analysis__c' {
+               for (Organic_Analysis__c organicCase : [SELECT Id,
+                                     Account_Name__r.Client_First_Name__c,
+                                     Account_Name__r.Client_Last_Name__c,
+                                     Account_Name__r.Phone,
+                                     Account_Name__r.Email__c,
+                                     Account_Name__r.Product_Type_Transactional__c,
+                                     Account_Name__r.Id,
+                                     Account_Name__r.Name,
+                                     Account_Name__r.Client_ID__c,
+                                     Account_Name__r.Website                                      
+                               FROM Organic_Analysis__c 
+                               WHERE Id IN : requestMap.keySet()])
                {
-                   asyncRequest = requestMap.get((String)objId);
-                   baseObject = new CTS_SFDC_Object_Base(objId, objectName, asyncRequest);
+                   asyncRequest = requestMap.get(organicCase.Id);
+                   baseObject = new CTS_SFDC_Object_Base(organicCase.Id, objectName, asyncRequest, organicCase);
                    ctsSFDCObjectList.add(baseObject);
                }
                
-           }                     
+           }  
+           when 'Quality_Case__c' {
+               for (Quality_Case__c qualityCase : [SELECT Id,
+                                     Account_Name__r.Client_First_Name__c,
+                                     Account_Name__r.Client_Last_Name__c,
+                                     Account_Name__r.Phone,
+                                     Account_Name__r.Email__c,
+                                     Account_Name__r.Product_Type_Transactional__c,
+                                     Account_Name__r.Id,
+                                     Account_Name__r.Name,
+                                     Account_Name__r.Client_ID__c,
+                                     Account_Name__r.Website                                      
+                               FROM Quality_Case__c
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(qualityCase.Id);
+                   baseObject = new CTS_SFDC_Object_Base(qualityCase.Id, objectName, asyncRequest, qualityCase);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }           
+           when 'Best_Practice_Evaluation__c' {
+              for (Best_Practice_Evaluation__c bpe: [SELECT Id,
+                                     Account_Name__r.Client_First_Name__c,
+                                     Account_Name__r.Client_Last_Name__c,
+                                     Account_Name__r.Phone,
+                                     Account_Name__r.Email__c,
+                                     Account_Name__r.Product_Type_Transactional__c,
+                                     Account_Name__r.Id,
+                                     Account_Name__r.Name,
+                                     Account_Name__r.Client_ID__c,
+                                     Account_Name__r.Website                                      
+                               FROM Best_Practice_Evaluation__c
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(bpe.Id);
+                   baseObject = new CTS_SFDC_Object_Base(bpe.Id, objectName, asyncRequest, bpe);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }           
+           when 'Customer_Surveys__c' {
+               for (Customer_Surveys__c customerSurvey: [SELECT Id,
+                                     Account__r.Client_First_Name__c,
+                                     Account__r.Client_Last_Name__c,
+                                     Account__r.Phone,
+                                     Account__r.Email__c,
+                                     Account__r.Product_Type_Transactional__c,
+                                     Account__r.Id,
+                                     Account__r.Name,
+                                     Account__r.Client_ID__c,
+                                     Account__r.Website                                      
+                               FROM Customer_Surveys__c 
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(customerSurvey.Id);
+                   baseObject = new CTS_SFDC_Object_Base(customerSurvey.Id, objectName, asyncRequest, customerSurvey);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }           
+           when 'Lighthouse_Worksheets__c' {
+               for (Lighthouse_Worksheets__c sheet: [SELECT Id,
+                                     Practice_Name__r.Client_First_Name__c,
+                                     Practice_Name__r.Client_Last_Name__c,
+                                     Practice_Name__r.Phone,
+                                     Practice_Name__r.Email__c,
+                                     Practice_Name__r.Product_Type_Transactional__c,
+                                     Practice_Name__r.Id,
+                                     Practice_Name__r.Name,
+                                     Practice_Name__r.Client_ID__c,
+                                     Practice_Name__r.Website                                      
+                               FROM Lighthouse_Worksheets__c
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(sheet.Id);
+                   baseObject = new CTS_SFDC_Object_Base(sheet.Id, objectName, asyncRequest, sheet);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }                              
            when else {
                system.debug('Not a valid object name: ' + objectName);                
            }

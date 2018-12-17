@@ -297,19 +297,12 @@ public without sharing class CTSSyncService{
         return ctsTicketList;
     }
     
-     public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, List<Id> objIds)    
+     public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, List<Id> objIds, Map<String, SFDCToCTSAsynchRequest__c> requestMap)    
     {          
     
        CTS_SFDC_Object_Base baseObject;
-       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();       
-       List<SFDCToCTSAsynchRequest__c> requestList = [SELECT ObjectId__c, API_Identifier__c, CTS_Email_Address__c, EmailTemplateId__c FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c IN :objIds];
-       Map<String, SFDCToCTSAsynchRequest__c> requestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
-       SFDCToCTSAsynchRequest__c asyncRequest;
-       
-       for (SFDCToCTSAsynchRequest__c request : requestList)
-       {
-           requestMap.put(request.ObjectId__c, request); 
-       }
+       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();              
+       SFDCToCTSAsynchRequest__c asyncRequest;            
                                                 
        switch on objectName {
            when 'Case' {
@@ -330,7 +323,7 @@ public without sharing class CTSSyncService{
                                      Status,
                                      Sub_Status__c
                                FROM Case
-                               WHERE Id IN :objIds])
+                               WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get((String)sfCase.Id);
                    baseObject = new CTSSFDCCase(sfCase.Id, objectName, asyncRequest, sfCase);
@@ -339,7 +332,7 @@ public without sharing class CTSSyncService{
                
            }
            when 'Organic_Analysis__c', 'Quality_Case__c', 'Best_Practice_Evaluation__c', 'Customer_Surveys__c', 'Lighthouse_Worksheets__c' {
-               for (Id objId : objIds)
+               for (Id objId : requestMap.keySet())
                {
                    asyncRequest = requestMap.get((String)objId);
                    baseObject = new CTS_SFDC_Object_Base(objId, objectName, asyncRequest);
