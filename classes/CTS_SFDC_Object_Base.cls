@@ -25,7 +25,7 @@ public virtual class CTS_SFDC_Object_Base
          //Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateId, null, Id, Messaging.AttachmentRetrievalOption.NONE);
                   
          Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-         String[] toAddresses = new String[]{'YodleSFDC@yopmail.com'};
+         String[] toAddresses = new String[]{'YodleSFDC@fake.com'};
          mail.setToAddresses(toAddresses);
          mail.setUseSignature(false);
          mail.setSaveAsActivity(false);

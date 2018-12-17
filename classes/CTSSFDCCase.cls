@@ -34,7 +34,7 @@ public class CTSSFDCCase extends CTS_SFDC_Object_Base
         this.CaseNumber = sfCase.CaseNumber;
         this.Domain = sfCase.Account.Website;
         this.ReferenceProductCodes = sfCase.Account.Product_Type_Transactional__c;
-        //this.TicketType = ''; //Which field of routing table?
+        //this.TicketType = ''; 
         this.Status = 'Open';
         //this.SubStatus = sfCase.Sub_Status__c;
         this.AlternateContactEmailAddress = sfCase.Account.Email__c;  
