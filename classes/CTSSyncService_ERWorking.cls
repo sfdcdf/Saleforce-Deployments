@@ -23,12 +23,13 @@ public without sharing class CTSSyncService_ERWorking{
     
     }
 
-    public static List<CTSTicket> GetCTSTicket(string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    public static List<CTSTicket> GetCTSTicket(List<CTS_SFDC_Object_Base> sfdcObjectList, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
  
         CTSTicket ctsTicketInstance;
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
         Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
         
+        String objectName;
         String ticketDetails;
         Id emailTemplateId;
         String integrationType;
@@ -70,6 +71,13 @@ public without sharing class CTSSyncService_ERWorking{
                 // default ticket values
                 ctsTicketInstance.apiIdentifier = apiIdentifier;
                 ctsTicketInstance.status = initStatus;
+                
+                for(CTS_SFDC_Object_Base sfdcObj : sfdcObjectList){
+                
+                    objectName = sfdcObj.ObjectName;
+                
+                }
+                
                 
                 switch on objectName{
                     when 'Case' {
@@ -335,41 +343,6 @@ public without sharing class CTSSyncService_ERWorking{
         
             // log error
             System.Debug('* An error occurred: ' + e.getMessage());
-        }
-    }
-    
-    public void CreateSFDCToCTSAsynchRequest(string integrationType, string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
-    
-        List<CTSTicket> ctsTicket = GetCTSTicket(objectName, objectIds, routingTableObjectInstance);
-        List<SFDCToCTSAsynchRequest__c> newAsyncRecordsList = new List<SFDCToCTSAsynchRequest__c>();
-        
-        for(CTSTicket t : ctsTicket){
-        
-            for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
-            
-                if(rt.Object__r.Object_API_Name__c == objectName){
-                        
-                    for(Id objectId : objectIds){
-                            
-                        SFDCToCTSAsynchRequest__c asyncRecord = new SFDCToCTSAsynchRequest__c();
-                        asyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
-                        asyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
-                        asyncRecord.EmailTemplateId__c = t.sfdcTemplateIdForDetails;
-                        asyncRecord.Integration_Type__c = integrationType;
-                        asyncRecord.NumberOfRetryAttempts__c = 0;
-                        asyncRecord.ObjectId__c = objectId;
-                        asyncRecord.Object_Name__c = objectName;
-                        asyncRecord.ScheduledDateTime__c = System.Now();
-                        asyncRecord.Status__c = t.status;
-                        
-                        newAsyncRecordsList.add(asyncRecord);
-                    }
-                }
-            }   
-        }
-        
-        if(newAsyncRecordsList.size() > 0){
-            insert newAsyncRecordsList;
         }
     }
     

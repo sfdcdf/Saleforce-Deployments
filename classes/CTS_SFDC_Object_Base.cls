@@ -120,8 +120,8 @@ public virtual class CTS_SFDC_Object_Base
          mail.setToAddresses(toAddresses);
          mail.setUseSignature(false);
          mail.setSaveAsActivity(false);
-         mail.setSenderDisplayName('YodleSFDC');
-         mail.setTargetObjectId(This.Id);
+         mail.setSenderDisplayName('YodleSFDC');         
+         mail.setWhatId(This.Id); 
          mail.setTemplateId(emailTemplateId);
          Savepoint sp = Database.setSavepoint();
          Messaging.sendEmail(new Messaging.SingleEmailMessage[] {mail});
