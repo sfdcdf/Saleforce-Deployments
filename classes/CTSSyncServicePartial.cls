@@ -135,7 +135,7 @@ public without sharing class CTSSyncServicePartial
                }
                
            }           
-           when 'Lighthouse_Worksheets__c' {
+           /*when 'Lighthouse_Worksheets__c' {
                for (Lighthouse_Worksheets__c sheet: [SELECT Id,
                                      Practice_Name__r.Client_First_Name__c,
                                      Practice_Name__r.Client_Last_Name__c,
@@ -154,7 +154,7 @@ public without sharing class CTSSyncServicePartial
                    ctsSFDCObjectList.add(baseObject);
                }
                
-           }                              
+           }  */                            
            when else {
                system.debug('Not a valid object name: ' + objectName);                
            }
