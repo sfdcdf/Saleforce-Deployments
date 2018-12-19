@@ -17,12 +17,14 @@ public virtual class CTSSFDCObjectBase
     public string ApiIdentifier { get; set; } 
     public string AlternateContactEmailAddress { get; set; } 
     public string CRMOrderNumber { get; set; }
+    public string CTSEmailAddress { get; set; }
     
     private void CTSSFDCObjectBase(Id objId, String objName, SFDCToCTSAsynchRequest__c requestInstance)
     {
         this.Id = objId;
         this.ObjectName = objName;
-        this.ApiIdentifier = requestInstance.API_Identifier__c; 
+        this.ApiIdentifier = requestInstance.API_Identifier__c;
+        this.CTSEmailAddress = requestInstance.CTS_Email_Address__c; 
         this.Status = 'Open';
         /*Messaging.SingleEmailMessage mail = PopulateEmailSubjectBody(requestInstance.EmailTemplateId__c);
         if (mail != null)
