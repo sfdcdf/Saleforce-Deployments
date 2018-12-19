@@ -13,295 +13,57 @@ public without sharing class CTSSyncService{
 
     public class CTSTicket{
     
+        public string alternateContactEmailAddress {get; set;}
         public String apiIdentifier {get; set;}
         public String contactFirstName {get; set;}
         public String contactLastName {get; set;}
         public String contactPhone {get; set;}
         public String contactEmailAddress {get; set;}
+        public string crmOrderNumber {get; set;}
+        public String detail {get; set;}
+        public String domain {get; set;}
         public String referenceAccountId {get; set;}
         public String referenceCustomerId {get; set;}
-        public String referenceProductInstanceId {get; set;}
-        public String domain {get; set;}
-        public String subject {get; set;}
-        public String detail {get; set;}
         public String referenceProductCode {get; set;}
+        public String referenceProductInstanceId {get; set;}
         public String status {get; set;}
-        public string alternateContactEmailAddress {get; set;}
-        public Id sfdcTemplateIdForDetails {get; set;}
-    
+        public String subject {get; set;}
     }
 
-    public static List<CTSTicket> GetCTSTicket(string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
+    public static List<CTSTicket> GetCTSTicket(List<CTSSFDCObjectBase> sfdcObjectList){
  
-        CTSTicket ctsTicketInstance;
+        CTSTicket ctsTicketInstance = new CTSTicket();
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
-        Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
         
-        String ticketDetails;
-        Id emailTemplateId;
-        String integrationType;
-        String apiIdentifier;
-        String templateName;
-        String recordTypeName;
-        
-        // retrieved from GetConfigValue private method
-        String ctsTemplateFolder = GetConfigValue('CTSTemplatesFolder');
-        String initStatus = GetConfigValue('CTSTicketStatusDefault').toUppercase();
-        
-        for(EmailTemplate e:
-            [SELECT Id,
-                    Name
-               FROM EmailTemplate 
-              WHERE Folder.Name = :ctsTemplateFolder]){
-        
-            emailTemplateMap.put(e.Name, e);    
-        
-        }
-        
-        for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
-            
-            if(emailTemplateMap.size() > 0){
+        for(CTSSFDCObjectBase sfdcObj : sfdcObjectList){
                 
-                for(EmailTemplate et : emailTemplateMap.values()){
-                    
-                    if(et.Name == emailTemplateMap.get(rt.DetailsTemplateName__c).Name){
-                    
-                        templateName = emailTemplateMap.get(rt.DetailsTemplateName__c).Name;
-                        break;
-                    }
-                }
-                
-                integrationType = rt.IntegrationType__c;
-                apiIdentifier = rt.CTSAPIIdentifier__c;
-                recordTypeName = rt.RecordTypeName__c;
-                
-                // default ticket values
-                ctsTicketInstance.apiIdentifier = apiIdentifier;
-                ctsTicketInstance.status = initStatus;
-                
-                switch on objectName{
-                    when 'Case' {
-                        for(Case c : 
-                            [SELECT Id,
-                                    Account.Client_First_Name__c,
-                                    Account.Client_Last_Name__c,
-                                    Account.Phone,
-                                    Account.Email__c,
-                                    Client_Email__c,
-                                    Account.Name,
-                                    Account.Client_ID__c,
-                                    Account.Website,
-                                    Subject,
-                                    CaseNumber,
-                                    Account.Product_Type_Transactional__c,
-                                    RecordType.Name
-                               FROM Case
-                              WHERE Id IN :objectIds]){
-                            
-                            if (c.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, c.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                    
-                                ctsTicketInstance.contactFirstName = c.Account.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = c.Account.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = c.Account.Phone;
-                                ctsTicketInstance.contactEmailAddress = c.Client_Email__c;
-                                ctsTicketInstance.referenceAccountId = c.Account.Name;
-                                ctsTicketInstance.referenceCustomerId = c.Account.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = c.CaseNumber;
-                                ctsTicketInstance.domain = c.Account.Website;
-                                ctsTicketInstance.subject = c.Subject;
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = c.Account.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = c.Account.Email__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }   
-                        }
-                    }
-                    when 'Organic_Analysis__c' {
-                       for(Organic_Analysis__c oc :
-                           [SELECT Id,
-                                   Name,
-                                   Account_Name__r.Client_First_Name__c,
-                                   Account_Name__r.Client_Last_Name__c,
-                                   Account_Name__r.Phone,
-                                   Account_Name__r.Email__c,
-                                   Client_Email_Address__c,
-                                   Account_Name__r.Id,
-                                   Account_Name__r.Client_ID__c,
-                                   Account_Name__r.Product_Type_Transactional__c,
-                                   Account_Name__r.Name,
-                                   RecordType.Name
-                              FROM Organic_Analysis__c 
-                             WHERE Id IN :objectIds]){
-                                
-                            if (oc.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, oc.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                    
-                                ctsTicketInstance.contactFirstName = oc.Account_Name__r.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = oc.Account_Name__r.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = oc.Account_Name__r.Phone;
-                                ctsTicketInstance.contactEmailAddress = oc.Client_Email_Address__c;
-                                ctsTicketInstance.referenceAccountId = oc.Account_Name__r.Name;
-                                ctsTicketInstance.referenceCustomerId = oc.Account_Name__r.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = oc.Name;
-                                ctsTicketInstance.domain = oc.Account_Name__r.Website;
-                                ctsTicketInstance.subject = recordTypeName + ' | ' + oc.Account_Name__r.Name;
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = oc.Account_Name__r.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = oc.Account_Name__r.Email__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }
-                        }             
-                    }
-                    when 'Quality_Case__c' {
-                       for(Quality_Case__c qc :
-                           [SELECT Id,
-                                   Name,
-                                   Subject__c,
-                                   Account_Name__r.Client_First_Name__c,
-                                   Account_Name__r.Client_Last_Name__c,
-                                   Account_Name__r.Phone,
-                                   Account_Name__r.Email__c,
-                                   Account_Name__r.Client_E_mail__c,
-                                   Account_Name__r.Id,
-                                   Account_Name__r.Client_ID__c,
-                                   Account_Name__r.Product_Type_Transactional__c,
-                                   Account_Name__r.Name,
-                                   RecordType.Name
-                              FROM Quality_Case__c
-                             WHERE Id IN :objectIds]){
-                                
-                            if (qc.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, qc.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                    
-                                ctsTicketInstance.contactFirstName = qc.Account_Name__r.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = qc.Account_Name__r.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = qc.Account_Name__r.Phone;
-                                ctsTicketInstance.contactEmailAddress = qc.Account_Name__r.Client_E_mail__c;
-                                ctsTicketInstance.referenceAccountId = qc.Account_Name__r.Name;
-                                ctsTicketInstance.referenceCustomerId = qc.Account_Name__r.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = qc.Name;
-                                ctsTicketInstance.domain = qc.Account_Name__r.Website;
-                                ctsTicketInstance.subject = qc.Subject__c + ' | ' + qc.Account_Name__r.Name;
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = qc.Account_Name__r.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = qc.Account_Name__r.Email__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }
-                        }             
-                    }
-                    when 'Best_Practice_Evaluation__c' {
-                       for(Best_Practice_Evaluation__c bpe :
-                           [SELECT Id,
-                                   Name,
-                                   Account_Name__r.Client_First_Name__c,
-                                   Account_Name__r.Client_Last_Name__c,
-                                   Account_Name__r.Phone,
-                                   Account_Name__r.Email__c,
-                                   Account_Name__r.Client_E_mail__c,
-                                   Account_Name__r.Id,
-                                   Account_Name__r.Client_ID__c,
-                                   Account_Name__r.Product_Type_Transactional__c,
-                                   Account_Name__r.Name,
-                                   RecordType.Name
-                              FROM Best_Practice_Evaluation__c
-                             WHERE Id IN :objectIds]){
-                                
-                            if (bpe.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, bpe.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                    
-                                ctsTicketInstance.contactFirstName = bpe.Account_Name__r.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = bpe.Account_Name__r.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = bpe.Account_Name__r.Phone;
-                                ctsTicketInstance.contactEmailAddress = bpe.Account_Name__r.Client_E_mail__c;
-                                ctsTicketInstance.referenceAccountId = bpe.Account_Name__r.Name;
-                                ctsTicketInstance.referenceCustomerId = bpe.Account_Name__r.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = bpe.Name;
-                                ctsTicketInstance.domain = bpe.Account_Name__r.Website;
-                                ctsTicketInstance.subject = '';
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = bpe.Account_Name__r.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = bpe.Account_Name__r.Email__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }
-                       }             
-                    }
-                    when 'Customer_Surveys__c' {
-                       for(Customer_Surveys__c cs :
-                           [SELECT Id,
-                                   Name,
-                                   Client_Email_Survey__c,
-                                   Client_ID__c,
-                                   Customer_Survey_Name__c,
-                                   Account__r.Client_First_Name__c,
-                                   Account__r.Client_Last_Name__c,
-                                   Account__r.Phone,
-                                   Account__r.Email__c,
-                                   Account__r.Client_E_mail__c,
-                                   Account__r.Id,
-                                   Account__r.Client_ID__c,
-                                   Account__r.Product_Type_Transactional__c,
-                                   Account__r.Name,
-                                   RecordType.Name
-                              FROM Customer_Surveys__c
-                             WHERE Id IN :objectIds]){
-                                
-                            if (cs.RecordType.Name == recordTypeName)
-                            {
-                                Messaging.SingleEmailMessage mail = Messaging.renderStoredEmailTemplate(emailTemplateMap.get(rt.DetailsTemplateName__c).Id, null, cs.Id);
-                                ticketDetails = mail.getPlainTextBody();
-                                emailTemplateId = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                                    
-                                ctsTicketInstance.contactFirstName = cs.Account__r.Client_First_Name__c;
-                                ctsTicketInstance.contactLastName = cs.Account__r.Client_Last_Name__c;
-                                ctsTicketInstance.contactPhone = cs.Account__r.Phone;
-                                ctsTicketInstance.contactEmailAddress = cs.Client_Email_Survey__c;
-                                ctsTicketInstance.referenceAccountId = cs.Account__r.Name;
-                                ctsTicketInstance.referenceCustomerId = cs.Client_ID__c;
-                                ctsTicketInstance.referenceProductInstanceId = cs.Name;
-                                ctsTicketInstance.domain = cs.Account__r.Website;
-                                ctsTicketInstance.subject = cs.Customer_Survey_Name__c + ' | ' + cs.Account__r.Name;
-                                ctsTicketInstance.detail = ticketDetails;
-                                ctsTicketInstance.referenceProductCode = cs.Account__r.Product_Type_Transactional__c;
-                                ctsTicketInstance.alternateContactEmailAddress = cs.Account__r.Email__c;
-                                ctsTicketInstance.sfdcTemplateIdForDetails = emailTemplateId;
-                                
-                                ctsTicketList.add(ctsTicketInstance);
-                            }
-                        }             
-                    }
-                }
-            }
+            ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
+            ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
+            ctsTicketInstance.contactFirstName = sfdcObj.ContactFirstName;
+            ctsTicketInstance.contactLastName = sfdcObj.ContactLastName;
+            ctsTicketInstance.contactPhone = sfdcObj.ContactPhone;
+            ctsTicketInstance.contactEmailAddress = sfdcObj.ContactEmailAddress;
+            ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
+            ctsTicketInstance.referenceCustomerId = sfdcObj.ReferenceCustomerId;
+            ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
+            ctsTicketInstance.domain = sfdcObj.Domain;
+            ctsTicketInstance.subject = sfdcObj.Subject;
+            ctsTicketInstance.status = sfdcObj.Status;
+            ctsTicketInstance.detail = sfdcObj.Detail;
+            ctsTicketInstance.referenceProductCode = sfdcObj.ReferenceProductCodes;
+            ctsTicketInstance.alternateContactEmailAddress = sfdcObj.AlternateContactEmailAddress;
+                                  
+            ctsTicketList.add(ctsTicketInstance);
         }
         
         return ctsTicketList;
     }
     
-    public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
+    public static List<CTSSFDCObjectBase> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
     {          
     
-       CTS_SFDC_Object_Base baseObject;
-       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();              
+       CTSSFDCObjectBase baseObject;
+       List<CTSSFDCObjectBase> ctsSFDCObjectList = new List<CTSSFDCObjectBase>();              
        SFDCToCTSAsynchRequest__c asyncRequest;
                                              
        switch on objectName {
@@ -326,7 +88,7 @@ public without sharing class CTSSyncService{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get((String)sfCase.Id);
-                   baseObject = new CTSSFDCCase(sfCase.Id, objectName, asyncRequest, sfCase);
+                   baseObject = new CTSSFDCObjectBase(sfCase.Id, objectName, asyncRequest, sfCase);
                    ctsSFDCObjectList.add(baseObject);                    
                }
                
@@ -346,7 +108,7 @@ public without sharing class CTSSyncService{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(organicCase.Id);
-                   baseObject = new CTS_SFDC_Object_Base(organicCase.Id, objectName, asyncRequest, organicCase);
+                   baseObject = new CTSSFDCObjectBase(organicCase.Id, objectName, asyncRequest, organicCase);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -366,7 +128,7 @@ public without sharing class CTSSyncService{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(qualityCase.Id);
-                   baseObject = new CTS_SFDC_Object_Base(qualityCase.Id, objectName, asyncRequest, qualityCase);
+                   baseObject = new CTSSFDCObjectBase(qualityCase.Id, objectName, asyncRequest, qualityCase);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -386,7 +148,7 @@ public without sharing class CTSSyncService{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(bpe.Id);
-                   baseObject = new CTS_SFDC_Object_Base(bpe.Id, objectName, asyncRequest, bpe);
+                   baseObject = new CTSSFDCObjectBase(bpe.Id, objectName, asyncRequest, bpe);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -406,12 +168,12 @@ public without sharing class CTSSyncService{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(customerSurvey.Id);
-                   baseObject = new CTS_SFDC_Object_Base(customerSurvey.Id, objectName, asyncRequest, customerSurvey);
+                   baseObject = new CTSSFDCObjectBase(customerSurvey.Id, objectName, asyncRequest, customerSurvey);
                    ctsSFDCObjectList.add(baseObject);
                }
                
            }           
-           when 'Lighthouse_Worksheets__c' {
+           /*when 'Lighthouse_Worksheets__c' {
                for (Lighthouse_Worksheets__c sheet: [SELECT Id,
                                      Practice_Name__r.Client_First_Name__c,
                                      Practice_Name__r.Client_Last_Name__c,
@@ -430,7 +192,7 @@ public without sharing class CTSSyncService{
                    ctsSFDCObjectList.add(baseObject);
                }
                
-           }                              
+           }  */                            
            when else {
                system.debug('Not a valid object name: ' + objectName);                
            }
@@ -715,38 +477,61 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public void CreateSFDCToCTSAsynchRequest(string integrationType, string objectName, List<Id> objectIds, Map<Id, CTSObjectTriggerMap__mdt> routingTableObjectInstance){
-    
-        List<CTSTicket> ctsTicket = GetCTSTicket(objectName, objectIds, routingTableObjectInstance);
-        List<SFDCToCTSAsynchRequest__c> newAsyncRecordsList = new List<SFDCToCTSAsynchRequest__c>();
-        
-        for(CTSTicket t : ctsTicket){
-        
-            for(CTSObjectTriggerMap__mdt rt : routingTableObjectInstance.values()){
+    public void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
+    {
+        try
+        {
+            Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
+            Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
+            List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
             
-                if(rt.Object__r.Object_API_Name__c == objectName){
+            for(EmailTemplate et :
+                [SELECT Id,
+                        DeveloperName
+                   FROM EmailTemplate
+                  WHERE Folder.Name = 'CTS Templates']){
+                  
+                emailTemplateMap.put(et.DeveloperName, et);
+            }
+            
+            for(CTSObjectTriggerMap__mdt rt : routingTable.values()){
+            
+                for(Id objId : objectIds){
+                
+                    SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+                    
+                    switch on rt.IntegrationType__c{
                         
-                    for(Id objectId : objectIds){
+                        when 'API' {
                             
-                        SFDCToCTSAsynchRequest__c asyncRecord = new SFDCToCTSAsynchRequest__c();
-                        asyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
-                        asyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
-                        asyncRecord.EmailTemplateId__c = t.sfdcTemplateIdForDetails;
-                        asyncRecord.Integration_Type__c = integrationType;
-                        asyncRecord.NumberOfRetryAttempts__c = 0;
-                        asyncRecord.ObjectId__c = objectId;
-                        asyncRecord.Object_Name__c = objectName;
-                        asyncRecord.ScheduledDateTime__c = System.Now(); // placeholder only; need to update
-                        asyncRecord.Status__c = t.status;
-                        
-                        newAsyncRecordsList.add(asyncRecord);
+                            newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                        }
+                        when else {
+                            
+                            newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
+                        }
                     }
+                    
+                    newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                    newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
+                    newAsyncRecord.NumberOfRetryAttempts__c = 0;
+                    newAsyncRecord.ObjectId__c = objId;
+                    newAsyncRecord.Object_Name__c = objectName;
+                    newAsyncRecord.ScheduledDateTime__c = System.Now();
+                    newAsyncRecord.Status__c ='NEW';
+                
+                    dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
                 }
-            }   
+            }
+            
+            if(dmlSFDCToCTSAsynchRequestList.size() > 0){
+            
+                insert dmlSFDCToCTSAsynchRequestList;
+            }
         }
-        
-        if(newAsyncRecordsList.size() > 0){
-            insert newAsyncRecordsList;
+        catch(Exception e)
+        {
+            System.Debug('An error occurred: ' + e.getMessage());
         }
     }
     
