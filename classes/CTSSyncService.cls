@@ -3,11 +3,6 @@
   Date Created .......: 16-Nov-2018
   Description ........: CTS Sync Service class provides the mapping and data elements to send data to CTS from Salesforce
   to create tickets and reference the ticket back to the SFDC object
-  
-  -- Modifications: --
-  Last Modified By ...: E. Ross
-  Last Modified Date .: 4-Dec-2018
-  Description: Updated GetCTSTicket to bulkify and ensure no SOQL queries inside of loops
 *****************************************************************************/
 public without sharing class CTSSyncService{
 
@@ -426,7 +421,7 @@ public without sharing class CTSSyncService{
         return res;
     }    
     
-    public void CallOutCTSForEmail(String objectId, String emailTemplateId, String ctsEmailAddress)
+    public void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
     {
         try{
         
@@ -434,46 +429,42 @@ public without sharing class CTSSyncService{
             OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
             String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
             Set<String> uniqueEmailAddressesSet = new Set<String>();
-            String messageSubject;
-            String messageBody;
             
-            // Render template data and bind elements to variables
-            Messaging.SingleEmailMessage renderedDetails = Messaging.renderStoredEmailTemplate(emailTemplateId, null, objectId);
-            messageSubject = renderedDetails.getSubject();
-            messageBody = renderedDetails.getPlainTextBody();
+            for(CTSSFDCObjectBase obj : baseObj){
             
-            if(!String.IsBlank(messageSubject) && !String.IsBlank(messageBody)){
-            
-                // set message content from email template for CTS
-                Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-                List<String> toAddress = new List<String>();
-                String fromAddress = GetConfigValue('ServiceAddressEmail_sfdc');
-                String fromDisplayName = 'Salesforce Notifications';
-                uniqueEmailAddressesSet.add(ctsEmailAddress);
-                uniqueEmailAddressesSet.add(sfdcEmailAddress);
-                for(String s : uniqueEmailAddressesSet){
-                    toAddress.add(s);
-                }
-             
-                message.setToAddresses(toAddress);
-                message.setReplyTo(fromAddress);
-                message.setOrgWideEmailAddressId(owea.get(0).Id);
-                message.setSubject(messageSubject);
-                message.setHtmlBody(messageBody);
-        
-                ctsNotificationsLst.add(message);
+                if(!String.IsBlank(obj.Subject) && !String.IsBlank(obj.Detail)){
                 
-                if(ctsNotificationsLst.size() > 0){
-                                
-                    // send notifications
-                    Messaging.sendEmail(ctsNotificationsLst);
+                    Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                    List<String> toAddress = new List<String>();
+                    String fromAddress = GetConfigValue('ServiceAddressEmail_sfdc');
+                    String fromDisplayName = 'SFDC CTS Notifications';
+                    uniqueEmailAddressesSet.add(obj.CTSEmailAddress);
+                    uniqueEmailAddressesSet.add(sfdcEmailAddress);
+                    
+                    for(String s : uniqueEmailAddressesSet){
+                        toAddress.add(s);
+                    }
+                 
+                    message.setToAddresses(toAddress);
+                    message.setReplyTo(fromAddress);
+                    message.setOrgWideEmailAddressId(owea.get(0).Id);
+                    message.setSubject(obj.Subject);
+                    message.setHtmlBody(obj.Detail);
+            
+                    ctsNotificationsLst.add(message);
                 }
+            }
+            
+            if(ctsNotificationsLst.size() > 0){
+                                    
+                // send notifications
+                Messaging.sendEmail(ctsNotificationsLst);
             }
         }
         catch(Exception e){
         
             // log error
-            System.Debug('* An error occurred: ' + e.getMessage());
+            System.Debug('An error occurred: ' + e.getMessage());
         }
     }
     
@@ -494,9 +485,9 @@ public without sharing class CTSSyncService{
                 emailTemplateMap.put(et.DeveloperName, et);
             }
             
-            for(CTSObjectTriggerMap__mdt rt : routingTable.values()){
+            for(Id objId : objectIds){
             
-                for(Id objId : objectIds){
+                for(CTSObjectTriggerMap__mdt rt : routingTable.values()){
                 
                     SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
                     
@@ -521,13 +512,87 @@ public without sharing class CTSSyncService{
                     newAsyncRecord.Status__c ='NEW';
                 
                     dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
+                
                 }
+            
             }
             
             if(dmlSFDCToCTSAsynchRequestList.size() > 0){
             
                 insert dmlSFDCToCTSAsynchRequestList;
             }
+        }
+        catch(Exception e)
+        {
+            System.Debug('An error occurred: ' + e.getMessage());
+        }
+    }
+    
+    public void ProcessSFDCToCTSAsynchRequest(String objectName, List <SFDCToCTSAsynchRequest__c> asyncRequestObj)
+    {
+        try
+        {
+            Map<Id, SFDCToCTSAsynchRequest__c> asyncRequestMap =  new Map<Id, SFDCToCTSAsynchRequest__c>();
+            List<CTSSFDCObjectBase> sfdcObjList = new List<CTSSFDCObjectBase>();
+            List<CTSTicket> ctsTicketList = new List<CTSTicket>();
+            CTS_Integration_Setting__mdt integrationSettings = 
+                [SELECT Id,
+                        MasterLabel,
+                        AsyncDelayInterval__c,
+                        AsyncRetrievalSize__c,
+                        BatchSize__c,
+                        CTScrmId__c,
+                        Description__c,
+                        ESBapiAccessKey__c
+                   FROM CTS_Integration_Setting__mdt
+                  WHERE IsActive__c = true];
+            
+            for(SFDCToCTSAsynchRequest__c ar : asyncRequestObj){
+                asyncRequestMap.put(ar.ObjectId__c, ar);
+            }
+            
+            if(asyncRequestMap.size() > 0){
+            
+                sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
+                ctsTicketList = GetCTSTicket(sfdcObjList);
+                
+                for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
+                
+                    switch on asr.Integration_Type__c{
+                    
+                        when 'API' {
+                        
+                            String ticketJSON = GetCTSTicketJSON(ctsTicketList);
+                            HttpResponse ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
+                            ProcessCreateTicketAPIResponse(ctsResp);
+                        }
+                        when else {
+                        
+                            CallOutCTSForEmail(sfdcObjList);
+                        }
+                    }
+                }
+            }
+        }
+        catch(Exception e)
+        {
+            System.Debug('An error occurred: ' + e.getMessage());
+        }
+    }
+    
+    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse)
+    {
+        try
+        {
+            String jsonString = ctsCreateTicketResponse.getBody();
+            CTSTicketResponse ctsTicketResp = (CTSTicketResponse)JSON.deserialize(jsonString, CTSTicketResponse.class);
+            
+            CTSTicketResponse.Response respMainNode;
+            CTSTicketResponse.Data respDataNode;
+            
+            String objRecordIdentifier = respMainNode.clientRequestId;
+            String ticketNumber = respDataNode.ticketNumber;
+            String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
         }
         catch(Exception e)
         {

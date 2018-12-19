@@ -66,6 +66,56 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>AsyncRetrievalSize__c</fullName>
+        <description>Used to determine the number of records that should be retrieved overall for batch processing through the CTS Sync Service</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Used to determine the number of records that should be retrieved overall for batch processing through the CTS Sync Service</inlineHelpText>
+        <label>Async Retrieval Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BatchSize__c</fullName>
+        <description>Used to determine the batch size dynamically through the CTS Sync Service</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Used to determine the batch size dynamically through the CTS Sync Service</inlineHelpText>
+        <label>Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTScrmId__c</fullName>
+        <description>UUID used to define the requesting CRM system when a ticket is created through the CTS ESB service</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>UUID used to define the requesting CRM system when a ticket is created through the CTS ESB service</inlineHelpText>
+        <label>CTS CRM Id</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ESBapiAccessKey__c</fullName>
+        <description>CTS ESB API Access Key used for securing the endpoint for only valid requests</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>CTS ESB API Access Key used for securing the endpoint for only valid requests</inlineHelpText>
+        <label>ESB API Access Key</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <description>Integration Settings for the Salesforce to CTS configurations</description>
     <label>CTS Integration Setting</label>
     <pluralLabel>CTS Integration Settings</pluralLabel>
