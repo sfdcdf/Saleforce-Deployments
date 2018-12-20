@@ -116,6 +116,18 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>DefaultContactId__c</fullName>
+        <description>Default Contact Id (WhoId) used for rendering Email Template; Savepoint sp = Database.setSavepoint(); Messaging.sendEmail(new Messaging.SingleEmailMessage[] {mail}); Database.rollback(sp);</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Default Contact Id (WhoId) used for rendering Email Template; Savepoint sp = Database.setSavepoint(); Messaging.sendEmail(new Messaging.SingleEmailMessage[] {mail}); Database.rollback(sp);</inlineHelpText>
+        <label>Default Contact Id</label>
+        <length>18</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <description>Integration Settings for the Salesforce to CTS configurations</description>
     <label>CTS Integration Setting</label>
     <pluralLabel>CTS Integration Settings</pluralLabel>

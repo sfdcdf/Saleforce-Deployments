@@ -42,6 +42,10 @@
                 <behavior>Edit</behavior>
                 <field>AsyncRetrievalSize__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>DefaultContactId__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
