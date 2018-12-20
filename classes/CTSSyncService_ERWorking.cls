@@ -527,7 +527,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void ProcessSFDCToCTSAsynchRequest(String objectName, List <SFDCToCTSAsynchRequest__c> asyncRequestObj)
+    public void ProcessSFDCToCTSAsynchRequest(String objectName, List<SFDCToCTSAsynchRequest__c> asyncRequestObj)
     {
         try
         {
@@ -588,8 +588,8 @@ public without sharing class CTSSyncService_ERWorking{
             CTSTicketResponse.Response respMainNode;
             CTSTicketResponse.Data respDataNode;
             
-            String objRecordIdentifier = respMainNode.clientRequestId;
-            String ticketNumber = respDataNode.ticketNumber;
+            String sfdcRecordIdentifier = respMainNode.clientRequestId;
+            String ctsTicketNumber = respDataNode.ticketNumber;
             String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
         }
         catch(Exception e)
