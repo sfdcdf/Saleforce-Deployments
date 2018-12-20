@@ -20,289 +20,7 @@ public without sharing class CTSSyncServicePartial
         public Id sfdcTemplateIdForDetails {get; set;}
     
     }
-    
-    public static List<CTS_SFDC_Object_Base> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
-    {          
-    
-       CTS_SFDC_Object_Base baseObject;
-       List<CTS_SFDC_Object_Base> ctsSFDCObjectList = new List<CTS_SFDC_Object_Base>();              
-       SFDCToCTSAsynchRequest__c asyncRequest;
-                                             
-       switch on objectName {
-           when 'Case' {
-              for (Case sfCase :  [SELECT Id,
-                                     Account.Client_First_Name__c,
-                                     Account.Client_Last_Name__c,
-                                     Account.Phone,
-                                     Account.Email__c,
-                                     Account.Product_Type_Transactional__c,
-                                     Account.Id,
-                                     Account.Name,
-                                     Account.Client_ID__c,
-                                     Account.Website,  
-                                     Client_Email__c,
-                                     Subject,
-                                     CaseNumber,                                       
-                                     RecordType.Name,
-                                     Status,
-                                     Sub_Status__c
-                               FROM Case
-                               WHERE Id IN : requestMap.keySet()])
-               {
-                   asyncRequest = requestMap.get((String)sfCase.Id);
-                   baseObject = new CTSSFDCCase(sfCase.Id, objectName, asyncRequest, sfCase);
-                   ctsSFDCObjectList.add(baseObject);                    
-               }
-               
-           }
-           when 'Organic_Analysis__c' {
-               for (Organic_Analysis__c organicCase : [SELECT Id,
-                                     Account_Name__r.Client_First_Name__c,
-                                     Account_Name__r.Client_Last_Name__c,
-                                     Account_Name__r.Phone,
-                                     Account_Name__r.Email__c,
-                                     Account_Name__r.Product_Type_Transactional__c,
-                                     Account_Name__r.Id,
-                                     Account_Name__r.Name,
-                                     Account_Name__r.Client_ID__c,
-                                     Account_Name__r.Website                                      
-                               FROM Organic_Analysis__c 
-                               WHERE Id IN : requestMap.keySet()])
-               {
-                   asyncRequest = requestMap.get(organicCase.Id);
-                   baseObject = new CTS_SFDC_Object_Base(organicCase.Id, objectName, asyncRequest, organicCase);
-                   ctsSFDCObjectList.add(baseObject);
-               }
-               
-           }  
-           when 'Quality_Case__c' {
-               for (Quality_Case__c qualityCase : [SELECT Id,
-                                     Account_Name__r.Client_First_Name__c,
-                                     Account_Name__r.Client_Last_Name__c,
-                                     Account_Name__r.Phone,
-                                     Account_Name__r.Email__c,
-                                     Account_Name__r.Product_Type_Transactional__c,
-                                     Account_Name__r.Id,
-                                     Account_Name__r.Name,
-                                     Account_Name__r.Client_ID__c,
-                                     Account_Name__r.Website                                      
-                               FROM Quality_Case__c
-                               WHERE Id IN : requestMap.keySet()])
-               {
-                   asyncRequest = requestMap.get(qualityCase.Id);
-                   baseObject = new CTS_SFDC_Object_Base(qualityCase.Id, objectName, asyncRequest, qualityCase);
-                   ctsSFDCObjectList.add(baseObject);
-               }
-               
-           }           
-           when 'Best_Practice_Evaluation__c' {
-              for (Best_Practice_Evaluation__c bpe: [SELECT Id,
-                                     Account_Name__r.Client_First_Name__c,
-                                     Account_Name__r.Client_Last_Name__c,
-                                     Account_Name__r.Phone,
-                                     Account_Name__r.Email__c,
-                                     Account_Name__r.Product_Type_Transactional__c,
-                                     Account_Name__r.Id,
-                                     Account_Name__r.Name,
-                                     Account_Name__r.Client_ID__c,
-                                     Account_Name__r.Website                                      
-                               FROM Best_Practice_Evaluation__c
-                               WHERE Id IN : requestMap.keySet()])
-               {
-                   asyncRequest = requestMap.get(bpe.Id);
-                   baseObject = new CTS_SFDC_Object_Base(bpe.Id, objectName, asyncRequest, bpe);
-                   ctsSFDCObjectList.add(baseObject);
-               }
-               
-           }           
-           when 'Customer_Surveys__c' {
-               for (Customer_Surveys__c customerSurvey: [SELECT Id,
-                                     Account__r.Client_First_Name__c,
-                                     Account__r.Client_Last_Name__c,
-                                     Account__r.Phone,
-                                     Account__r.Email__c,
-                                     Account__r.Product_Type_Transactional__c,
-                                     Account__r.Id,
-                                     Account__r.Name,
-                                     Account__r.Client_ID__c,
-                                     Account__r.Website                                      
-                               FROM Customer_Surveys__c 
-                               WHERE Id IN : requestMap.keySet()])
-               {
-                   asyncRequest = requestMap.get(customerSurvey.Id);
-                   baseObject = new CTS_SFDC_Object_Base(customerSurvey.Id, objectName, asyncRequest, customerSurvey);
-                   ctsSFDCObjectList.add(baseObject);
-               }
-               
-           }           
-           /*when 'Lighthouse_Worksheets__c' {
-               for (Lighthouse_Worksheets__c sheet: [SELECT Id,
-                                     Practice_Name__r.Client_First_Name__c,
-                                     Practice_Name__r.Client_Last_Name__c,
-                                     Practice_Name__r.Phone,
-                                     Practice_Name__r.Email__c,
-                                     Practice_Name__r.Product_Type_Transactional__c,
-                                     Practice_Name__r.Id,
-                                     Practice_Name__r.Name,
-                                     Practice_Name__r.Client_ID__c,
-                                     Practice_Name__r.Website                                      
-                               FROM Lighthouse_Worksheets__c
-                               WHERE Id IN : requestMap.keySet()])
-               {
-                   asyncRequest = requestMap.get(sheet.Id);
-                   baseObject = new CTS_SFDC_Object_Base(sheet.Id, objectName, asyncRequest, sheet);
-                   ctsSFDCObjectList.add(baseObject);
-               }
-               
-           }  */                            
-           when else {
-               system.debug('Not a valid object name: ' + objectName);                
-           }
-       }
-                                   
-       return ctsSFDCObjectList;
-
-    }     
-
-    public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
-    {
-        CTSObjectTriggerMap__mdt routingObj;
-        Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
-        
-        String query;
-        if (objName.equals('Case'))        
-            query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM Case WHERE Id in :objIds';
-        else
-            query = 'SELECT Id, RecordType FROM ' + objName + ' WHERE Id in :objIds';    
-        List<SObject> ctsSalesforceObjectList = Database.query(query);
-                                   
-        List<SObject> routeMappings = [SELECT Id, 
-                        Additional_Filter__c,
-                        CaseOrigin__c,
-                        CaseReason__c,
-                        CTSAPIIdentifier__c,
-                        CTSAssignedToLoginName__c,
-                        CTSEmailAddress__c,
-                        CTSNoteType__c,
-                        Description__c,
-                        DetailsTemplateName__c,
-                        IntegrationType__c,
-                        IsActive__c,
-                        IsAutoClose__c,
-                        IsCreateCTSNote__c,
-                        IsExcludeWBN__c,
-                        NoteDetailsTemplateName__c,
-                        Object__c,
-                        Object__r.Object_API_Name__c,
-                        ProductType__c,
-                        RecordTypeName__c,
-                        MasterLabel
-                   FROM CTSObjectTriggerMap__mdt];
-                   
-         Map<String, Id> ctsObjectsMap = new Map<String, Id>();
-         for (CTS_Salesforce_Object_Ref__mdt ctsObject : [SELECT Id, Object_API_Name__c FROM CTS_Salesforce_Object_Ref__mdt])
-             ctsObjectsMap.put(ctsObject.Object_API_Name__c, ctsObject.Id);
-         
-         /*0  Object Name
-         1 Object Record Type
-         2. Case Reason
-         3. Case Origin
-         4. Product Type*/
-         
-         for (SObject sfObj : ctsSalesforceObjectList)
-         {             
-             Map<String, String> fieldMap = new Map<String, String>();
-             fieldMap.put('Object__c', ctsObjectsMap.get(objName));
-             fieldMap.put('RecordTypeName__c', (String)sfObj.get('RecordType'));
-             if (objName.equals('Case'))
-             {
-                 fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
-                 fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
-                 fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
-                        
-                 //A. 0 & 1 & 2 & 3 & 4 
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }
-                                                
-                 //B. 0 & 1 & 2 & 4    
-                 fieldMap.remove('CaseOrigin__c');         
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }     
-                                                                               
-                 //C. 0 & 1 & 3 & 4
-                 fieldMap.remove('CaseReason__c');
-                 fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }      
-                
-                 //D. 0 & 1 & 4
-                 fieldMap.remove('CaseOrigin__c');        
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }  
-                 
-                 fieldMap.remove('ProductType__c');
-             }               
-                 
-             //E. 0 & 1               
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
-             {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
-             }
-                                  
-             //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
-             for(SObject obj : routeMappings) {
-                 if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
-                 {                     
-                     routingObjMap.put((Id)sfObj.get('Id'), (CTSObjectTriggerMap__mdt)obj);
-                     break;
-                 }
-                     
-             }
-          
-         }
-         
-         return routingObjMap;                                        
-                           
-    }
-   
-    private static CTSObjectTriggerMap__mdt FindRoutingObject(List<sObject> routingTableObjs, Map<string, string> fieldMap)
-    {                
-        for(SObject obj : routingTableObjs) {
-            Boolean matched = true;
-            for(string key : fieldMap.keySet()) {
-               string inputValue = fieldMap.get(key);
-               string routingObjFieldValue = (String)obj.get(key);
-               if (inputValue != routingObjFieldValue)
-               {
-                   matched = false;
-                   break;
-               }
-            }
-            if (matched)
-                return (CTSObjectTriggerMap__mdt)obj;        
-        } 
-        
-        return null;
-    }  
-    
+                  
     
     public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
        
@@ -386,5 +104,192 @@ public without sharing class CTSSyncServicePartial
        bodyJSON.writeEndObject();
                                   
        return bodyJSON.getAsString();
-    }       
+    }  
+    
+    
+    public static Map<Id, Messaging.SingleEmailMessage> GetEmailMap(Map<Id, SFDCToCTSAsynchRequest__c> requestMap)
+    {
+        Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
+        Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
+        
+        CTS_Integration_Setting__mdt integrationSettings = [SELECT DefaultContactId__c FROM CTS_Integration_Setting__mdt WHERE IsActive__c = true LIMIT 1];
+        
+        for (Id objId : requestMap.keySet())
+        {
+            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+            String[] toAddresses = new String[]{'YodleSFDC@fake.com'};
+            mail.setToAddresses(toAddresses);
+            mail.setUseSignature(false);
+            mail.setSaveAsActivity(false);
+            mail.setSenderDisplayName('YodleSFDC');   
+            mail.setTargetObjectId(integrationSettings.DefaultContactId__c);
+            mail.setWhatId(objId); 
+            mail.setTemplateId(requestMap.get(objId).EmailTemplateId__c);
+            mails.add(mail);
+        }
+        
+        Savepoint sp = Database.setSavepoint();
+        Messaging.sendEmail(mails);
+        Database.rollback(sp);
+        
+        Integer index = 0;
+        for (Id objId : requestMap.keySet())
+        {
+            emailMap.put(objId, mails[index]);
+            index++;
+        }
+        
+        return emailMap;
+    }    
+    
+    public static List<CTSSFDCObjectBase> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
+    {          
+    
+       CTSSFDCObjectBase baseObject;
+       List<CTSSFDCObjectBase> ctsSFDCObjectList = new List<CTSSFDCObjectBase>();              
+       SFDCToCTSAsynchRequest__c asyncRequest;
+       
+       //Render email subject and body in batch       
+       Map<Id, Messaging.SingleEmailMessage> emailMap = GetEmailMap(requestMap);
+                                             
+       switch on objectName {
+           when 'Case' {
+              for (Case sfCase :  [SELECT Id,
+                                     Account.Client_First_Name__c,
+                                     Account.Client_Last_Name__c,
+                                     Account.Phone,
+                                     Account.Email__c,
+                                     Account.Product_Type_Transactional__c,
+                                     Account.Id,
+                                     Account.Name,
+                                     Account.Client_ID__c,
+                                     Account.Website,  
+                                     Client_Email__c,
+                                     Subject,
+                                     CaseNumber,                                       
+                                     RecordType.Name,
+                                     Status,
+                                     Sub_Status__c
+                               FROM Case
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(sfCase.Id);
+                   Messaging.SingleEmailMessage mail = emailMap.get(sfCase.Id);
+                   baseObject = new CTSSFDCObjectBase(sfCase, objectName, asyncRequest, mail);
+                   ctsSFDCObjectList.add(baseObject);                    
+               }
+               
+           }
+           when 'Organic_Analysis__c' {
+               for (Organic_Analysis__c organicCase : [SELECT Id,
+                                     Account_Name__r.Client_First_Name__c,
+                                     Account_Name__r.Client_Last_Name__c,
+                                     Account_Name__r.Phone,
+                                     Account_Name__r.Email__c,
+                                     Account_Name__r.Product_Type_Transactional__c,
+                                     Account_Name__r.Id,
+                                     Account_Name__r.Name,
+                                     Account_Name__r.Client_ID__c,
+                                     Account_Name__r.Website                                      
+                               FROM Organic_Analysis__c 
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(organicCase.Id);
+                   Messaging.SingleEmailMessage mail = emailMap.get(organicCase.Id);
+                   baseObject = new CTSSFDCObjectBase(organicCase, objectName, asyncRequest, mail);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }  
+           when 'Quality_Case__c' {
+               for (Quality_Case__c qualityCase : [SELECT Id,
+                                     Account_Name__r.Client_First_Name__c,
+                                     Account_Name__r.Client_Last_Name__c,
+                                     Account_Name__r.Phone,
+                                     Account_Name__r.Email__c,
+                                     Account_Name__r.Product_Type_Transactional__c,
+                                     Account_Name__r.Id,
+                                     Account_Name__r.Name,
+                                     Account_Name__r.Client_ID__c,
+                                     Account_Name__r.Website                                      
+                               FROM Quality_Case__c
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(qualityCase.Id);
+                   Messaging.SingleEmailMessage mail = emailMap.get(qualityCase.Id);
+                   baseObject = new CTSSFDCObjectBase(qualityCase, objectName, asyncRequest, mail);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }           
+           when 'Best_Practice_Evaluation__c' {
+              for (Best_Practice_Evaluation__c bpe: [SELECT Id,
+                                     Account_Name__r.Client_First_Name__c,
+                                     Account_Name__r.Client_Last_Name__c,
+                                     Account_Name__r.Phone,
+                                     Account_Name__r.Email__c,
+                                     Account_Name__r.Product_Type_Transactional__c,
+                                     Account_Name__r.Id,
+                                     Account_Name__r.Name,
+                                     Account_Name__r.Client_ID__c,
+                                     Account_Name__r.Website                                      
+                               FROM Best_Practice_Evaluation__c
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(bpe.Id);
+                   Messaging.SingleEmailMessage mail = emailMap.get(bpe.Id);
+                   baseObject = new CTSSFDCObjectBase(bpe, objectName, asyncRequest, mail);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }           
+           when 'Customer_Surveys__c' {
+               for (Customer_Surveys__c customerSurvey: [SELECT Id,
+                                     Account__r.Client_First_Name__c,
+                                     Account__r.Client_Last_Name__c,
+                                     Account__r.Phone,
+                                     Account__r.Email__c,
+                                     Account__r.Product_Type_Transactional__c,
+                                     Account__r.Id,
+                                     Account__r.Name,
+                                     Account__r.Client_ID__c,
+                                     Account__r.Website                                      
+                               FROM Customer_Surveys__c 
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(customerSurvey.Id);
+                   Messaging.SingleEmailMessage mail = emailMap.get(customerSurvey.Id);
+                   baseObject = new CTSSFDCObjectBase(customerSurvey, objectName, asyncRequest, mail);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }           
+           /*when 'Lighthouse_Worksheets__c' {
+               for (Lighthouse_Worksheets__c sheet: [SELECT Id,
+                                     Practice_Name__r.Client_First_Name__c,
+                                     Practice_Name__r.Client_Last_Name__c,
+                                     Practice_Name__r.Phone,
+                                     Practice_Name__r.Email__c,
+                                     Practice_Name__r.Product_Type_Transactional__c,
+                                     Practice_Name__r.Id,
+                                     Practice_Name__r.Name,
+                                     Practice_Name__r.Client_ID__c,
+                                     Practice_Name__r.Website                                      
+                               FROM Lighthouse_Worksheets__c
+                               WHERE Id IN : requestMap.keySet()])
+               {
+                   asyncRequest = requestMap.get(sheet.Id);
+                   baseObject = new CTS_SFDC_Object_Base(sheet.Id, objectName, asyncRequest, sheet);
+                   ctsSFDCObjectList.add(baseObject);
+               }
+               
+           }  */                            
+           when else {
+               system.debug('Not a valid object name: ' + objectName);                
+           }
+       }
+                                   
+       return ctsSFDCObjectList;
+
+    } 
 }

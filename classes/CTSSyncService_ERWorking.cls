@@ -563,7 +563,7 @@ public without sharing class CTSSyncService_ERWorking{
                         
                             String ticketJSON = GetCTSTicketJSON(ctsTicketList);
                             HttpResponse ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
-                            ProcessCreateTicketAPIResponse(ctsResp);
+                            ProcessCreateTicketAPIResponse(ctsResp, asr);
                         }
                         when else {
                         
@@ -579,18 +579,53 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse)
+    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, SFDCToCTSAsynchRequest__c asyncRecord)
     {
         try
         {
             String jsonString = ctsCreateTicketResponse.getBody();
-            CTSTicketResponse ctsTicketResp = (CTSTicketResponse)JSON.deserialize(jsonString, CTSTicketResponse.class);
+            List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(jsonString, List<CTSTicketResponse>.class);
+            List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
+            
             CTSTicketResponse.Response respMainNode;
             CTSTicketResponse.Data respDataNode;
+            CTSTicketResponse.Errors respErrorNode;
             
-            String sfdcRecordIdentifier = respMainNode.clientRequestId;
-            String ctsTicketNumber = respDataNode.ticketNumber;
-            String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
+            for(CTSTicketResponse ctr : ctsTicketResp){
+            
+                String ctsTicketNumber = respDataNode.ticketNumber;
+                String objectName = respMainNode.clientRequestId.SubStringBefore('_');
+                String recordId = respMainNode.clientRequestId.SubStringAfter('_');
+                String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
+                String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
+                
+                if(asyncRecord.ObjectId__c == recordId){
+                    
+                    Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
+                    
+                    asyncRecord.Status__c = asyncStatus;
+                    asyncRecord.ProcessedDateTime__c = System.Now();
+                    
+                    if(asyncStatus == 'SUCCESS'){
+                        
+                        asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                    }
+                    else{
+                    
+                        retryAttempts += 1;
+                    
+                        asyncRecord.ErrorDescription__c = errorMsg;
+                        asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
+                    }
+                    
+                    dmlAsyncRecordsUpdate.add(asyncRecord);
+                }
+            }
+            
+            if(dmlAsyncRecordsUpdate.size() > 0){
+            
+                update dmlAsyncRecordsUpdate;
+            }
         }
         catch(Exception e)
         {
