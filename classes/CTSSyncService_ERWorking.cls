@@ -1,7 +1,5 @@
 /****************************************************************************
-  Company/ Author ....: E. Ross
-  Date Created .......: 16-Nov-2018
-  Description ........: CTS Sync Service Working class for Eugene
+  Working class
 *****************************************************************************/
 public without sharing class CTSSyncService_ERWorking{
 
@@ -53,12 +51,51 @@ public without sharing class CTSSyncService_ERWorking{
         return ctsTicketList;
     }
     
+    public static Map<Id, Messaging.SingleEmailMessage> GetEmailMap(Map<Id, SFDCToCTSAsynchRequest__c> requestMap)
+    {
+        Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
+        Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
+        
+        CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
+        
+        for (Id objId : requestMap.keySet())
+        {
+            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+            String[] toAddresses = new String[]{'YodleSFDC@fake.com'};
+            mail.setToAddresses(toAddresses);
+            mail.setUseSignature(false);
+            mail.setSaveAsActivity(false);
+            mail.setSenderDisplayName('YodleSFDC');   
+            mail.setTargetObjectId(integrationSetting.DefaultContactId__c);
+            mail.setWhatId(objId); 
+            mail.setTemplateId(requestMap.get(objId).EmailTemplateId__c);
+            mails.add(mail);
+        }
+        
+        Savepoint sp = Database.setSavepoint();
+        Messaging.sendEmail(mails);
+        Database.rollback(sp);
+        
+        Integer index = 0;
+        for (Id objId : requestMap.keySet())
+        {
+            emailMap.put(objId, mails[index]);
+            index++;
+        }
+        
+        return emailMap;
+    } 
+    
+    
     public static List<CTSSFDCObjectBase> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
     {          
     
        CTSSFDCObjectBase baseObject;
        List<CTSSFDCObjectBase> ctsSFDCObjectList = new List<CTSSFDCObjectBase>();              
        SFDCToCTSAsynchRequest__c asyncRequest;
+       
+       //Render email subject and body in batch       
+       Map<Id, Messaging.SingleEmailMessage> emailMap = GetEmailMap(requestMap);
                                              
        switch on objectName {
            when 'Case' {
@@ -81,8 +118,9 @@ public without sharing class CTSSyncService_ERWorking{
                                FROM Case
                                WHERE Id IN : requestMap.keySet()])
                {
-                   asyncRequest = requestMap.get((String)sfCase.Id);
-                   baseObject = new CTSSFDCObjectBase(sfCase.Id, objectName, asyncRequest, sfCase);
+                   asyncRequest = requestMap.get(sfCase.Id);
+                   Messaging.SingleEmailMessage mail = emailMap.get(sfCase.Id);
+                   baseObject = new CTSSFDCObjectBase(sfCase, objectName, asyncRequest, mail);
                    ctsSFDCObjectList.add(baseObject);                    
                }
                
@@ -102,7 +140,8 @@ public without sharing class CTSSyncService_ERWorking{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(organicCase.Id);
-                   baseObject = new CTSSFDCObjectBase(organicCase.Id, objectName, asyncRequest, organicCase);
+                   Messaging.SingleEmailMessage mail = emailMap.get(organicCase.Id);
+                   baseObject = new CTSSFDCObjectBase(organicCase, objectName, asyncRequest, mail);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -122,7 +161,8 @@ public without sharing class CTSSyncService_ERWorking{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(qualityCase.Id);
-                   baseObject = new CTSSFDCObjectBase(qualityCase.Id, objectName, asyncRequest, qualityCase);
+                   Messaging.SingleEmailMessage mail = emailMap.get(qualityCase.Id);
+                   baseObject = new CTSSFDCObjectBase(qualityCase, objectName, asyncRequest, mail);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -142,7 +182,8 @@ public without sharing class CTSSyncService_ERWorking{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(bpe.Id);
-                   baseObject = new CTSSFDCObjectBase(bpe.Id, objectName, asyncRequest, bpe);
+                   Messaging.SingleEmailMessage mail = emailMap.get(bpe.Id);
+                   baseObject = new CTSSFDCObjectBase(bpe, objectName, asyncRequest, mail);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -162,7 +203,8 @@ public without sharing class CTSSyncService_ERWorking{
                                WHERE Id IN : requestMap.keySet()])
                {
                    asyncRequest = requestMap.get(customerSurvey.Id);
-                   baseObject = new CTSSFDCObjectBase(customerSurvey.Id, objectName, asyncRequest, customerSurvey);
+                   Messaging.SingleEmailMessage mail = emailMap.get(customerSurvey.Id);
+                   baseObject = new CTSSFDCObjectBase(customerSurvey, objectName, asyncRequest, mail);
                    ctsSFDCObjectList.add(baseObject);
                }
                
@@ -194,7 +236,7 @@ public without sharing class CTSSyncService_ERWorking{
                                    
        return ctsSFDCObjectList;
 
-    }     
+    }    
     
     
     public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
@@ -309,6 +351,10 @@ public without sharing class CTSSyncService_ERWorking{
                  }
                      
              }
+             
+             //If no routing object can be found, we add NULL value to Map
+             if (!routingObjMap.keySet().contains((Id)sfObj.get('Id')))
+                 routingObjMap.put((Id)sfObj.get('Id'), null);
           
          }
          
@@ -346,16 +392,17 @@ public without sharing class CTSSyncService_ERWorking{
                 "messageId": "qwdv-lusm-oqps"
             },
             "request": []
-          } */                 
+          } */   
+          
+       CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();              
        
        JSONGenerator bodyJSON = JSON.createGenerator(false);
        bodyJSON.writeStartObject();
        
        //clientInfo
        bodyJSON.writeFieldName('clientInfo');
-       bodyJSON.writeStartObject();
-       //to do, read from config
-       bodyJSON.writeObjectField('apiAccessKey', '453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991');      
+       bodyJSON.writeStartObject();       
+       bodyJSON.writeObjectField('apiAccessKey', integrationSetting.ESBapiAccessKey__c);      
        bodyJSON.writeEndObject();
        
        //request
@@ -367,14 +414,13 @@ public without sharing class CTSSyncService_ERWorking{
                
                bodyJSON.writeObjectField('platformId', 'YODLE');
                bodyJSON.writeObjectField('action', 'Create');
-               //To to, no obj name & obj id in CTSTicket object
-               bodyJSON.writeObjectField('clientRequestId', 'SFDC');
+               //To to, no obj name CTSTicket object
+               bodyJSON.writeObjectField('clientRequestId', 'SFDC_' + ticket.referenceProductInstanceId);
                bodyJSON.writeObjectField('objectType', 'Ticket');
                
                bodyJSON.writeFieldName('data');
-               bodyJSON.writeStartObject();
-               //to do, read from config
-               bodyJSON.writeObjectField('crmId', '552e519a-1898-4f4b-b909-a223a916b876');
+               bodyJSON.writeStartObject();               
+               bodyJSON.writeObjectField('crmId', integrationSetting.CTScrmId__c);
                bodyJSON.writeFieldName('ticket');
                bodyJSON.writeStartObject();
                bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
@@ -419,6 +465,53 @@ public without sharing class CTSSyncService_ERWorking{
 
         return res;
     }    
+    
+    public void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
+    {
+        try{
+        
+            List<Messaging.SingleEmailMessage> ctsNotificationsLst = new List<Messaging.SingleEmailMessage>();
+            OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
+            String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
+            Set<String> uniqueEmailAddressesSet = new Set<String>();
+            
+            for(CTSSFDCObjectBase obj : baseObj){
+            
+                if(!String.IsBlank(obj.Subject) && !String.IsBlank(obj.Detail)){
+                
+                    Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+                    List<String> toAddress = new List<String>();
+                    String fromAddress = GetConfigValue('ServiceAddressEmail_sfdc');
+                    String fromDisplayName = 'SFDC CTS Notifications';
+                    uniqueEmailAddressesSet.add(obj.CTSEmailAddress);
+                    uniqueEmailAddressesSet.add(sfdcEmailAddress);
+                    
+                    for(String s : uniqueEmailAddressesSet){
+                        toAddress.add(s);
+                    }
+                 
+                    message.setToAddresses(toAddress);
+                    message.setReplyTo(fromAddress);
+                    message.setOrgWideEmailAddressId(owea.get(0).Id);
+                    message.setSubject(obj.Subject);
+                    message.setHtmlBody(obj.Detail);
+            
+                    ctsNotificationsLst.add(message);
+                }
+            }
+            
+            if(ctsNotificationsLst.size() > 0){
+                                    
+                // send notifications
+                Messaging.sendEmail(ctsNotificationsLst);
+            }
+        }
+        catch(Exception e){
+        
+            // log error
+            System.Debug('An error occurred: ' + e.getMessage());
+        }
+    }
     
     public void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
     {
@@ -480,53 +573,6 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
-    {
-        try{
-        
-            List<Messaging.SingleEmailMessage> ctsNotificationsLst = new List<Messaging.SingleEmailMessage>();
-            OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
-            String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
-            Set<String> uniqueEmailAddressesSet = new Set<String>();
-            
-            for(CTSSFDCObjectBase obj : baseObj){
-            
-                if(!String.IsBlank(obj.Subject) && !String.IsBlank(obj.Detail)){
-                
-                    Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-                    List<String> toAddress = new List<String>();
-                    String fromAddress = GetConfigValue('ServiceAddressEmail_sfdc');
-                    String fromDisplayName = 'SFDC CTS Notifications';
-                    uniqueEmailAddressesSet.add(obj.CTSEmailAddress);
-                    uniqueEmailAddressesSet.add(sfdcEmailAddress);
-                    
-                    for(String s : uniqueEmailAddressesSet){
-                        toAddress.add(s);
-                    }
-                 
-                    message.setToAddresses(toAddress);
-                    message.setReplyTo(fromAddress);
-                    message.setOrgWideEmailAddressId(owea.get(0).Id);
-                    message.setSubject(obj.Subject);
-                    message.setHtmlBody(obj.Detail);
-            
-                    ctsNotificationsLst.add(message);
-                }
-            }
-            
-            if(ctsNotificationsLst.size() > 0){
-                                    
-                // send notifications
-                Messaging.sendEmail(ctsNotificationsLst);
-            }
-        }
-        catch(Exception e){
-        
-            // log error
-            System.Debug('An error occurred: ' + e.getMessage());
-        }
-    }
-    
     public void ProcessSFDCToCTSAsynchRequest(String objectName, List<SFDCToCTSAsynchRequest__c> asyncRequestObj)
     {
         try
@@ -554,21 +600,18 @@ public without sharing class CTSSyncService_ERWorking{
             
                 sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
                 ctsTicketList = GetCTSTicket(sfdcObjList);
+                String ticketJSON ='';
+                HttpResponse ctsResp = new HttpResponse();
                 
                 for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
-                    switch on asr.Integration_Type__c{
-                    
-                        when 'API' {
-                        
-                            String ticketJSON = GetCTSTicketJSON(ctsTicketList);
-                            HttpResponse ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
-                            ProcessCreateTicketAPIResponse(ctsResp, asr);
-                        }
-                        when else {
-                        
-                            CallOutCTSForEmail(sfdcObjList);
-                        }
+                    if(asr.Integration_Type__c == 'API'){
+                        ticketJSON = GetCTSTicketJSON(ctsTicketList);
+                        ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
+                        ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
+                    }
+                    else{
+                        CallOutCTSForEmail(sfdcObjList);
                     }
                 }
             }
@@ -579,7 +622,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, SFDCToCTSAsynchRequest__c asyncRecord)
+    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, List<SFDCToCTSAsynchRequest__c> asyncRecords)
     {
         try
         {
@@ -599,26 +642,29 @@ public without sharing class CTSSyncService_ERWorking{
                 String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
                 String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
                 
-                if(asyncRecord.ObjectId__c == recordId){
-                    
-                    Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
-                    
-                    asyncRecord.Status__c = asyncStatus;
-                    asyncRecord.ProcessedDateTime__c = System.Now();
-                    
-                    if(asyncStatus == 'SUCCESS'){
+                for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
+                
+                    if(asyncRecord.ObjectId__c == recordId){
                         
-                        asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                        Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
+                        
+                        asyncRecord.Status__c = asyncStatus;
+                        asyncRecord.ProcessedDateTime__c = System.Now();
+                        
+                        if(asyncStatus == 'SUCCESS'){
+                            
+                            asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                        }
+                        else{
+                        
+                            retryAttempts += 1;
+                        
+                            asyncRecord.ErrorDescription__c = errorMsg;
+                            asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
+                        }
+                        
+                        dmlAsyncRecordsUpdate.add(asyncRecord);
                     }
-                    else{
-                    
-                        retryAttempts += 1;
-                    
-                        asyncRecord.ErrorDescription__c = errorMsg;
-                        asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
-                    }
-                    
-                    dmlAsyncRecordsUpdate.add(asyncRecord);
                 }
             }
             
@@ -631,6 +677,24 @@ public without sharing class CTSSyncService_ERWorking{
         {
             System.Debug('An error occurred: ' + e.getMessage());
         }
+    }
+    
+    private static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
+    {
+        CTS_Integration_Setting__mdt ctsIntSettings = 
+            [SELECT Id,
+                        MasterLabel,
+                        AsyncDelayInterval__c,
+                        AsyncRetrievalSize__c,
+                        BatchSize__c,
+                        CTScrmId__c,
+                        DefaultContactId__c,
+                        ESBapiAccessKey__c,
+                        IsActive__c
+                   FROM CTS_Integration_Setting__mdt
+                  LIMIT 1];
+                  
+        return ctsIntSettings;
     }
     
     private static String GetConfigValue(string configLabel)

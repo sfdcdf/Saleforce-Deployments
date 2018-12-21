@@ -59,7 +59,7 @@ public without sharing class CTSSyncService{
         Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
         Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
         
-        CTS_Integration_Setting__mdt integrationSettings = [SELECT DefaultContactId__c FROM CTS_Integration_Setting__mdt WHERE IsActive__c = true LIMIT 1];
+        CTS_Integration_Setting__mdt integrationSetting = [SELECT DefaultContactId__c FROM CTS_Integration_Setting__mdt WHERE IsActive__c = true LIMIT 1];
         
         for (Id objId : requestMap.keySet())
         {
@@ -69,7 +69,7 @@ public without sharing class CTSSyncService{
             mail.setUseSignature(false);
             mail.setSaveAsActivity(false);
             mail.setSenderDisplayName('YodleSFDC');   
-            mail.setTargetObjectId(integrationSettings.DefaultContactId__c);
+            mail.setTargetObjectId(integrationSetting.DefaultContactId__c);
             mail.setWhatId(objId); 
             mail.setTemplateId(requestMap.get(objId).EmailTemplateId__c);
             mails.add(mail);
@@ -395,16 +395,17 @@ public without sharing class CTSSyncService{
                 "messageId": "qwdv-lusm-oqps"
             },
             "request": []
-          } */                 
+          } */   
+          
+       CTS_Integration_Setting__mdt integrationSetting = [SELECT CTScrmId__c, ESBapiAccessKey__c FROM CTS_Integration_Setting__mdt WHERE IsActive__c = true LIMIT 1];              
        
        JSONGenerator bodyJSON = JSON.createGenerator(false);
        bodyJSON.writeStartObject();
        
        //clientInfo
        bodyJSON.writeFieldName('clientInfo');
-       bodyJSON.writeStartObject();
-       //to do, read from config
-       bodyJSON.writeObjectField('apiAccessKey', '453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991');      
+       bodyJSON.writeStartObject();       
+       bodyJSON.writeObjectField('apiAccessKey', integrationSetting.ESBapiAccessKey__c);      
        bodyJSON.writeEndObject();
        
        //request
@@ -416,14 +417,13 @@ public without sharing class CTSSyncService{
                
                bodyJSON.writeObjectField('platformId', 'YODLE');
                bodyJSON.writeObjectField('action', 'Create');
-               //To to, no obj name & obj id in CTSTicket object
-               bodyJSON.writeObjectField('clientRequestId', 'SFDC');
+               //To to, no obj name CTSTicket object
+               bodyJSON.writeObjectField('clientRequestId', 'SFDC_' + ticket.referenceProductInstanceId);
                bodyJSON.writeObjectField('objectType', 'Ticket');
                
                bodyJSON.writeFieldName('data');
-               bodyJSON.writeStartObject();
-               //to do, read from config
-               bodyJSON.writeObjectField('crmId', '552e519a-1898-4f4b-b909-a223a916b876');
+               bodyJSON.writeStartObject();               
+               bodyJSON.writeObjectField('crmId', integrationSetting.CTScrmId__c);
                bodyJSON.writeFieldName('ticket');
                bodyJSON.writeStartObject();
                bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
@@ -603,21 +603,18 @@ public without sharing class CTSSyncService{
             
                 sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
                 ctsTicketList = GetCTSTicket(sfdcObjList);
+                String ticketJSON ='';
+                HttpResponse ctsResp = new HttpResponse();
                 
                 for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
-                    switch on asr.Integration_Type__c{
-                    
-                        when 'API' {
-                        
-                            String ticketJSON = GetCTSTicketJSON(ctsTicketList);
-                            HttpResponse ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
-                            ProcessCreateTicketAPIResponse(ctsResp, asr);
-                        }
-                        when else {
-                        
-                            CallOutCTSForEmail(sfdcObjList);
-                        }
+                    if(asr.Integration_Type__c == 'API'){
+                        ticketJSON = GetCTSTicketJSON(ctsTicketList);
+                        ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
+                        ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
+                    }
+                    else{
+                        CallOutCTSForEmail(sfdcObjList);
                     }
                 }
             }
@@ -628,7 +625,7 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, SFDCToCTSAsynchRequest__c asyncRecord)
+    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, List<SFDCToCTSAsynchRequest__c> asyncRecords)
     {
         try
         {
@@ -648,26 +645,29 @@ public without sharing class CTSSyncService{
                 String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
                 String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
                 
-                if(asyncRecord.ObjectId__c == recordId){
-                    
-                    Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
-                    
-                    asyncRecord.Status__c = asyncStatus;
-                    asyncRecord.ProcessedDateTime__c = System.Now();
-                    
-                    if(asyncStatus == 'SUCCESS'){
+                for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
+                
+                    if(asyncRecord.ObjectId__c == recordId){
                         
-                        asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                        Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
+                        
+                        asyncRecord.Status__c = asyncStatus;
+                        asyncRecord.ProcessedDateTime__c = System.Now();
+                        
+                        if(asyncStatus == 'SUCCESS'){
+                            
+                            asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                        }
+                        else{
+                        
+                            retryAttempts += 1;
+                        
+                            asyncRecord.ErrorDescription__c = errorMsg;
+                            asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
+                        }
+                        
+                        dmlAsyncRecordsUpdate.add(asyncRecord);
                     }
-                    else{
-                    
-                        retryAttempts += 1;
-                    
-                        asyncRecord.ErrorDescription__c = errorMsg;
-                        asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
-                    }
-                    
-                    dmlAsyncRecordsUpdate.add(asyncRecord);
                 }
             }
             
@@ -680,6 +680,24 @@ public without sharing class CTSSyncService{
         {
             System.Debug('An error occurred: ' + e.getMessage());
         }
+    }
+    
+    private CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
+    {
+        CTS_Integration_Setting__mdt ctsIntSettings = 
+            [SELECT Id,
+                        MasterLabel,
+                        AsyncDelayInterval__c,
+                        AsyncRetrievalSize__c,
+                        BatchSize__c,
+                        CTScrmId__c,
+                        DefaultContactId__c,
+                        ESBapiAccessKey__c,
+                        IsActive__c
+                   FROM CTS_Integration_Setting__mdt
+                  LIMIT 1];
+                  
+        return ctsIntSettings;
     }
     
     private static String GetConfigValue(string configLabel)
