@@ -354,6 +354,10 @@ public without sharing class CTSSyncService{
                  }
                      
              }
+             
+             //If no routing object can be found, we add NULL value to Map
+             if (!routingObjMap.keySet().contains((Id)sfObj.get('Id')))
+                 routingObjMap.put((Id)sfObj.get('Id'), null);
           
          }
          
