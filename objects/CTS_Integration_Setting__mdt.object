@@ -128,6 +128,18 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>RequestedService__c</fullName>
+        <description>The CTS Ticket creation API version (XML, JSON)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The CTS Ticket creation API version (XML, JSON)</inlineHelpText>
+        <label>Requested Service</label>
+        <length>50</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <description>Integration Settings for the Salesforce to CTS configurations</description>
     <label>CTS Integration Setting</label>
     <pluralLabel>CTS Integration Settings</pluralLabel>

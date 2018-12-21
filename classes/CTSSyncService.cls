@@ -59,7 +59,7 @@ public without sharing class CTSSyncService{
         Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
         Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
         
-        CTS_Integration_Setting__mdt integrationSetting = [SELECT DefaultContactId__c FROM CTS_Integration_Setting__mdt WHERE IsActive__c = true LIMIT 1];
+        CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
         
         for (Id objId : requestMap.keySet())
         {
@@ -397,7 +397,7 @@ public without sharing class CTSSyncService{
             "request": []
           } */   
           
-       CTS_Integration_Setting__mdt integrationSetting = [SELECT CTScrmId__c, ESBapiAccessKey__c FROM CTS_Integration_Setting__mdt WHERE IsActive__c = true LIMIT 1];              
+       CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();              
        
        JSONGenerator bodyJSON = JSON.createGenerator(false);
        bodyJSON.writeStartObject();
@@ -419,12 +419,13 @@ public without sharing class CTSSyncService{
                bodyJSON.writeObjectField('action', 'Create');
                //To to, no obj name CTSTicket object
                bodyJSON.writeObjectField('clientRequestId', 'SFDC_' + ticket.referenceProductInstanceId);
-               bodyJSON.writeObjectField('objectType', 'Ticket');
+               bodyJSON.writeObjectField('objectType', 'TicketingTicket');
+               bodyJSON.writeObjectField('requestedService', integrationSetting.RequestedService__c);
                
                bodyJSON.writeFieldName('data');
                bodyJSON.writeStartObject();               
                bodyJSON.writeObjectField('crmId', integrationSetting.CTScrmId__c);
-               bodyJSON.writeFieldName('ticket');
+               bodyJSON.writeFieldName('ticketingTicket');
                bodyJSON.writeStartObject();
                bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
                bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
@@ -440,6 +441,7 @@ public without sharing class CTSSyncService{
                bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
                bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
                bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
+               bodyJSON.writeObjectField('crmOrderNumber', ticket.crmOrderNumber);              
                bodyJSON.writeEndObject();
                bodyJSON.writeEndObject();                                              
                bodyJSON.writeEndObject();           
@@ -583,17 +585,8 @@ public without sharing class CTSSyncService{
             Map<Id, SFDCToCTSAsynchRequest__c> asyncRequestMap =  new Map<Id, SFDCToCTSAsynchRequest__c>();
             List<CTSSFDCObjectBase> sfdcObjList = new List<CTSSFDCObjectBase>();
             List<CTSTicket> ctsTicketList = new List<CTSTicket>();
-            CTS_Integration_Setting__mdt integrationSettings = 
-                [SELECT Id,
-                        MasterLabel,
-                        AsyncDelayInterval__c,
-                        AsyncRetrievalSize__c,
-                        BatchSize__c,
-                        CTScrmId__c,
-                        Description__c,
-                        ESBapiAccessKey__c
-                   FROM CTS_Integration_Setting__mdt
-                  WHERE IsActive__c = true];
+            CTS_Integration_Setting__mdt integrationSettings = GetCTSIntegrationSettings();
+            Boolean alreadyProcessedApiRecords = false;
             
             for(SFDCToCTSAsynchRequest__c ar : asyncRequestObj){
                 asyncRequestMap.put(ar.ObjectId__c, ar);
@@ -608,10 +601,12 @@ public without sharing class CTSSyncService{
                 
                 for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
-                    if(asr.Integration_Type__c == 'API'){
+                    if(asr.Integration_Type__c == 'API' && !alreadyProcessedApiRecords){
                         ticketJSON = GetCTSTicketJSON(ctsTicketList);
                         ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
                         ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
+                        alreadyProcessedApiRecords = true;
+                        break;
                     }
                     else{
                         CallOutCTSForEmail(sfdcObjList);
@@ -647,7 +642,7 @@ public without sharing class CTSSyncService{
                 
                 for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
                 
-                    if(asyncRecord.ObjectId__c == recordId){
+                    if(asyncRecord.ObjectId__c == recordId && asyncRecord.NumberOfRetryAttempts__c < 3){
                         
                         Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
                         
@@ -682,20 +677,22 @@ public without sharing class CTSSyncService{
         }
     }
     
-    private CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
+    private static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
     {
         CTS_Integration_Setting__mdt ctsIntSettings = 
             [SELECT Id,
-                        MasterLabel,
-                        AsyncDelayInterval__c,
-                        AsyncRetrievalSize__c,
-                        BatchSize__c,
-                        CTScrmId__c,
-                        DefaultContactId__c,
-                        ESBapiAccessKey__c,
-                        IsActive__c
-                   FROM CTS_Integration_Setting__mdt
-                  LIMIT 1];
+                    MasterLabel,
+                    AsyncDelayInterval__c,
+                    AsyncRetrievalSize__c,
+                    BatchSize__c,
+                    CTScrmId__c,
+                    DefaultContactId__c,
+                    ESBapiAccessKey__c,
+                    RequestedService__c,
+                    IsActive__c
+               FROM CTS_Integration_Setting__mdt
+              WHERE IsActive__c = true
+              LIMIT 1];
                   
         return ctsIntSettings;
     }

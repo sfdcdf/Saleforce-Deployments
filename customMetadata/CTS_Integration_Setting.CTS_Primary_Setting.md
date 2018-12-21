@@ -34,4 +34,8 @@
         <field>IsActive__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
+    <values>
+        <field>RequestedService__c</field>
+        <value xsi:type="xsd:string">CTSv2</value>
+    </values>
 </CustomMetadata>

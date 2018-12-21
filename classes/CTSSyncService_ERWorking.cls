@@ -14,6 +14,7 @@ public without sharing class CTSSyncService_ERWorking{
         public string crmOrderNumber {get; set;}
         public String detail {get; set;}
         public String domain {get; set;}
+        public String objectName {get; set;}
         public String referenceAccountId {get; set;}
         public String referenceCustomerId {get; set;}
         public String referenceProductCode {get; set;}
@@ -21,7 +22,7 @@ public without sharing class CTSSyncService_ERWorking{
         public String status {get; set;}
         public String subject {get; set;}
     }
-
+    
     public static List<CTSTicket> GetCTSTicket(List<CTSSFDCObjectBase> sfdcObjectList){
  
         CTSTicket ctsTicketInstance = new CTSTicket();
@@ -35,6 +36,7 @@ public without sharing class CTSSyncService_ERWorking{
             ctsTicketInstance.contactLastName = sfdcObj.ContactLastName;
             ctsTicketInstance.contactPhone = sfdcObj.ContactPhone;
             ctsTicketInstance.contactEmailAddress = sfdcObj.ContactEmailAddress;
+            ctsTicketInstance.objectName = sfdcObj.ObjectName;
             ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
             ctsTicketInstance.referenceCustomerId = sfdcObj.ReferenceCustomerId;
             ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
@@ -414,8 +416,7 @@ public without sharing class CTSSyncService_ERWorking{
                
                bodyJSON.writeObjectField('platformId', 'YODLE');
                bodyJSON.writeObjectField('action', 'Create');
-               //To to, no obj name CTSTicket object
-               bodyJSON.writeObjectField('clientRequestId', 'SFDC_' + ticket.referenceProductInstanceId);
+               bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
                bodyJSON.writeObjectField('objectType', 'Ticket');
                
                bodyJSON.writeFieldName('data');
@@ -580,17 +581,8 @@ public without sharing class CTSSyncService_ERWorking{
             Map<Id, SFDCToCTSAsynchRequest__c> asyncRequestMap =  new Map<Id, SFDCToCTSAsynchRequest__c>();
             List<CTSSFDCObjectBase> sfdcObjList = new List<CTSSFDCObjectBase>();
             List<CTSTicket> ctsTicketList = new List<CTSTicket>();
-            CTS_Integration_Setting__mdt integrationSettings = 
-                [SELECT Id,
-                        MasterLabel,
-                        AsyncDelayInterval__c,
-                        AsyncRetrievalSize__c,
-                        BatchSize__c,
-                        CTScrmId__c,
-                        Description__c,
-                        ESBapiAccessKey__c
-                   FROM CTS_Integration_Setting__mdt
-                  WHERE IsActive__c = true];
+            CTS_Integration_Setting__mdt integrationSettings = GetCTSIntegrationSettings();
+            Boolean alreadyProcessedApiRecords = false;
             
             for(SFDCToCTSAsynchRequest__c ar : asyncRequestObj){
                 asyncRequestMap.put(ar.ObjectId__c, ar);
@@ -605,10 +597,12 @@ public without sharing class CTSSyncService_ERWorking{
                 
                 for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
-                    if(asr.Integration_Type__c == 'API'){
+                    if(asr.Integration_Type__c == 'API' && !alreadyProcessedApiRecords){
                         ticketJSON = GetCTSTicketJSON(ctsTicketList);
                         ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
                         ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
+                        alreadyProcessedApiRecords = true;
+                        break;
                     }
                     else{
                         CallOutCTSForEmail(sfdcObjList);
@@ -644,7 +638,7 @@ public without sharing class CTSSyncService_ERWorking{
                 
                 for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
                 
-                    if(asyncRecord.ObjectId__c == recordId){
+                    if(asyncRecord.ObjectId__c == recordId && asyncRecord.NumberOfRetryAttempts__c < 3){
                         
                         Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
                         
@@ -683,16 +677,18 @@ public without sharing class CTSSyncService_ERWorking{
     {
         CTS_Integration_Setting__mdt ctsIntSettings = 
             [SELECT Id,
-                        MasterLabel,
-                        AsyncDelayInterval__c,
-                        AsyncRetrievalSize__c,
-                        BatchSize__c,
-                        CTScrmId__c,
-                        DefaultContactId__c,
-                        ESBapiAccessKey__c,
-                        IsActive__c
-                   FROM CTS_Integration_Setting__mdt
-                  LIMIT 1];
+                    MasterLabel,
+                    AsyncDelayInterval__c,
+                    AsyncRetrievalSize__c,
+                    BatchSize__c,
+                    CTScrmId__c,
+                    DefaultContactId__c,
+                    ESBapiAccessKey__c,
+                    RequestedService__c,
+                    IsActive__c
+               FROM CTS_Integration_Setting__mdt
+              WHERE IsActive__c = true
+              LIMIT 1];
                   
         return ctsIntSettings;
     }

@@ -29,8 +29,8 @@ public virtual class CTSSFDCObjectBase
         this.Subject = mail.getSubject();
         this.Detail = mail.getPlainTextBody();
               
-        system.debug('email subject: ' + this.Subject);
-        system.debug('email body: ' + this.Detail);   
+        /*system.debug('email subject: ' + this.Subject);
+        system.debug('email body: ' + this.Detail); */  
                  
     }
     
