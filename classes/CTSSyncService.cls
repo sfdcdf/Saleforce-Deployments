@@ -1,5 +1,5 @@
 /****************************************************************************
-  Company/ Author ....: E. Ross
+  Company/ Author ....: E. Ross | R. Wang
   Date Created .......: 16-Nov-2018
   Description ........: CTS Sync Service class provides the mapping and data elements to send data to CTS from Salesforce
   to create tickets and reference the ticket back to the SFDC object
@@ -17,6 +17,7 @@ public without sharing class CTSSyncService{
         public string crmOrderNumber {get; set;}
         public String detail {get; set;}
         public String domain {get; set;}
+        public String objectName {get; set;}
         public String referenceAccountId {get; set;}
         public String referenceCustomerId {get; set;}
         public String referenceProductCode {get; set;}
@@ -24,7 +25,7 @@ public without sharing class CTSSyncService{
         public String status {get; set;}
         public String subject {get; set;}
     }
-
+    
     public static List<CTSTicket> GetCTSTicket(List<CTSSFDCObjectBase> sfdcObjectList){
  
         CTSTicket ctsTicketInstance = new CTSTicket();
@@ -34,19 +35,20 @@ public without sharing class CTSSyncService{
                 
             ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
             ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
-            ctsTicketInstance.contactFirstName = sfdcObj.ContactFirstName;
-            ctsTicketInstance.contactLastName = sfdcObj.ContactLastName;
-            ctsTicketInstance.contactPhone = sfdcObj.ContactPhone;
-            ctsTicketInstance.contactEmailAddress = sfdcObj.ContactEmailAddress;
+            ctsTicketInstance.contactFirstName = (sfdcObj.ContactFirstName != null ? sfdcObj.ContactFirstName : '');
+            ctsTicketInstance.contactLastName = (sfdcObj.ContactLastName != null ? sfdcObj.ContactLastName : '');
+            ctsTicketInstance.contactPhone = (sfdcObj.ContactPhone != null ? sfdcObj.ContactPhone : '');
+            ctsTicketInstance.contactEmailAddress = (sfdcObj.ContactEmailAddress != null ? sfdcObj.ContactEmailAddress : '');
+            ctsTicketInstance.objectName = sfdcObj.ObjectName;
             ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
             ctsTicketInstance.referenceCustomerId = sfdcObj.ReferenceCustomerId;
             ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
-            ctsTicketInstance.domain = sfdcObj.Domain;
-            ctsTicketInstance.subject = sfdcObj.Subject;
+            ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
+            ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
             ctsTicketInstance.status = sfdcObj.Status;
-            ctsTicketInstance.detail = sfdcObj.Detail;
+            ctsTicketInstance.detail = (sfdcObj.Detail != null ? sfdcObj.Detail : '');
             ctsTicketInstance.referenceProductCode = sfdcObj.ReferenceProductCodes;
-            ctsTicketInstance.alternateContactEmailAddress = sfdcObj.AlternateContactEmailAddress;
+            ctsTicketInstance.alternateContactEmailAddress = (sfdcObj.AlternateContactEmailAddress != null ? sfdcObj.AlternateContactEmailAddress : '');
                                   
             ctsTicketList.add(ctsTicketInstance);
         }
@@ -385,7 +387,7 @@ public without sharing class CTSSyncService{
         return null;
     }    
     
-     public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
+    public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
     {
     
        /* {
@@ -417,10 +419,8 @@ public without sharing class CTSSyncService{
                
                bodyJSON.writeObjectField('platformId', 'YODLE');
                bodyJSON.writeObjectField('action', 'Create');
-               //To to, no obj name CTSTicket object
-               bodyJSON.writeObjectField('clientRequestId', 'SFDC_' + ticket.referenceProductInstanceId);
+               bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
                bodyJSON.writeObjectField('objectType', 'TicketingTicket');
-               bodyJSON.writeObjectField('requestedService', integrationSetting.RequestedService__c);
                
                bodyJSON.writeFieldName('data');
                bodyJSON.writeStartObject();               
@@ -432,6 +432,7 @@ public without sharing class CTSSyncService{
                bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
                bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
                bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
+               bodyJSON.writeObjectField('crmOrderNumber', ticket.crmOrderNumber.length() > 50 ? ticket.crmOrderNumber.substring(0, 50): ticket.crmOrderNumber);
                bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
                bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
                bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
@@ -441,7 +442,6 @@ public without sharing class CTSSyncService{
                bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
                bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
                bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
-               bodyJSON.writeObjectField('crmOrderNumber', ticket.crmOrderNumber);              
                bodyJSON.writeEndObject();
                bodyJSON.writeEndObject();                                              
                bodyJSON.writeEndObject();           
@@ -451,7 +451,7 @@ public without sharing class CTSSyncService{
        bodyJSON.writeEndObject();
                                   
        return bodyJSON.getAsString();
-    } 
+    }
     
      public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
        

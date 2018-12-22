@@ -32,20 +32,20 @@ public without sharing class CTSSyncService_ERWorking{
                 
             ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
             ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
-            ctsTicketInstance.contactFirstName = sfdcObj.ContactFirstName;
-            ctsTicketInstance.contactLastName = sfdcObj.ContactLastName;
-            ctsTicketInstance.contactPhone = sfdcObj.ContactPhone;
-            ctsTicketInstance.contactEmailAddress = sfdcObj.ContactEmailAddress;
+            ctsTicketInstance.contactFirstName = (sfdcObj.ContactFirstName != null ? sfdcObj.ContactFirstName : '');
+            ctsTicketInstance.contactLastName = (sfdcObj.ContactLastName != null ? sfdcObj.ContactLastName : '');
+            ctsTicketInstance.contactPhone = (sfdcObj.ContactPhone != null ? sfdcObj.ContactPhone : '');
+            ctsTicketInstance.contactEmailAddress = (sfdcObj.ContactEmailAddress != null ? sfdcObj.ContactEmailAddress : '');
             ctsTicketInstance.objectName = sfdcObj.ObjectName;
             ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
             ctsTicketInstance.referenceCustomerId = sfdcObj.ReferenceCustomerId;
             ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
-            ctsTicketInstance.domain = sfdcObj.Domain;
-            ctsTicketInstance.subject = sfdcObj.Subject;
+            ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
+            ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
             ctsTicketInstance.status = sfdcObj.Status;
-            ctsTicketInstance.detail = sfdcObj.Detail;
+            ctsTicketInstance.detail = (sfdcObj.Detail != null ? sfdcObj.Detail : '');
             ctsTicketInstance.referenceProductCode = sfdcObj.ReferenceProductCodes;
-            ctsTicketInstance.alternateContactEmailAddress = sfdcObj.AlternateContactEmailAddress;
+            ctsTicketInstance.alternateContactEmailAddress = (sfdcObj.AlternateContactEmailAddress != null ? sfdcObj.AlternateContactEmailAddress : '');
                                   
             ctsTicketList.add(ctsTicketInstance);
         }
@@ -384,7 +384,7 @@ public without sharing class CTSSyncService_ERWorking{
         return null;
     }    
     
-     public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
+    public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
     {
     
        /* {
@@ -417,18 +417,19 @@ public without sharing class CTSSyncService_ERWorking{
                bodyJSON.writeObjectField('platformId', 'YODLE');
                bodyJSON.writeObjectField('action', 'Create');
                bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
-               bodyJSON.writeObjectField('objectType', 'Ticket');
+               bodyJSON.writeObjectField('objectType', 'TicketingTicket');
                
                bodyJSON.writeFieldName('data');
                bodyJSON.writeStartObject();               
                bodyJSON.writeObjectField('crmId', integrationSetting.CTScrmId__c);
-               bodyJSON.writeFieldName('ticket');
+               bodyJSON.writeFieldName('ticketingTicket');
                bodyJSON.writeStartObject();
                bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
                bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
                bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
                bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
                bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
+               bodyJSON.writeObjectField('crmOrderNumber', ticket.crmOrderNumber.length() > 50 ? ticket.crmOrderNumber.substring(0, 50): ticket.crmOrderNumber);
                bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
                bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
                bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
