@@ -468,7 +468,7 @@ public without sharing class CTSSyncService_ERWorking{
         return res;
     }    
     
-    public void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
+    public static void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
     {
         try{
         
@@ -515,7 +515,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
+    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
     {
         try
         {
@@ -575,7 +575,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void ProcessSFDCToCTSAsynchRequest(String objectName, List<SFDCToCTSAsynchRequest__c> asyncRequestObj)
+    public static void ProcessSFDCToCTSAsynchRequest(String objectName, List<SFDCToCTSAsynchRequest__c> asyncRequestObj)
     {
         try
         {
@@ -617,7 +617,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, List<SFDCToCTSAsynchRequest__c> asyncRecords)
+    public static void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, List<SFDCToCTSAsynchRequest__c> asyncRecords)
     {
         try
         {
@@ -639,21 +639,24 @@ public without sharing class CTSSyncService_ERWorking{
                 
                 for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
                 
-                    if(asyncRecord.ObjectId__c == recordId && asyncRecord.NumberOfRetryAttempts__c < 3){
+                    if(asyncRecord.ObjectId__c == recordId){
                         
                         Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
                         
                         asyncRecord.Status__c = asyncStatus;
                         asyncRecord.ProcessedDateTime__c = System.Now();
-                        
-                        if(asyncStatus == 'SUCCESS'){
                             
+                        if(asyncStatus == 'SUCCESS'){
+                                
                             asyncRecord.ExternalTicketId__c = ctsTicketNumber;
                         }
                         else{
                         
-                            retryAttempts += 1;
-                        
+                            if(asyncRecord.NumberOfRetryAttempts__c < 3){
+                            
+                                retryAttempts += 1;
+                            }
+                            
                             asyncRecord.ErrorDescription__c = errorMsg;
                             asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
                         }
@@ -671,6 +674,112 @@ public without sharing class CTSSyncService_ERWorking{
         catch(Exception e)
         {
             System.Debug('An error occurred: ' + e.getMessage());
+        }
+    }
+    
+    public static void UpdateSFDCObject(List<Id> objectIds)
+    {
+        List<Case> dmlCases = new List<Case>();
+        List<Quality_Case__c> dmlQualityCases = new List<Quality_Case__c>();
+        List<Organic_Analysis__c> dmlOrganicCases = new List<Organic_Analysis__c>();
+        List<Customer_Surveys__c> dmlCustomerSurveys = new List<Customer_Surveys__c>();
+        Map<String, SFDCToCTSAsynchRequest__c> asyncRequestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
+    
+        for(SFDCToCTSAsynchRequest__c ar :
+            [SELECT Id,
+                    ExternalTicketId__c,
+                    ObjectId__c,
+                    Object_Name__c
+               FROM SFDCToCTSAsynchRequest__c
+              WHERE Id IN: objectIds]){
+        
+            asyncRequestMap.put(ar.ObjectId__c, ar);
+        }
+        
+        if(asyncRequestMap.size() > 0){
+        
+            for(SFDCToCTSAsynchRequest__c arMap : asyncRequestMap.values()){
+            
+                switch on arMap.Object_Name__c{
+                    when 'Case' {
+                        
+                       for(Case c :
+                            [SELECT Id,
+                                    External_Ticket_ID__c,
+                                    External_Ticket_System__c
+                               FROM Case
+                              WHERE Id = :arMap.ObjectId__c]){
+                            
+                            c.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                            c.External_Ticket_System__c = 'CTS';
+                                    
+                            dmlCases.add(c);
+                        }
+                    }
+                    when 'Quality_Case__c' {
+                        
+                        for(Quality_Case__c qc :
+                            [SELECT Id,
+                                    External_Ticket_ID__c,
+                                    External_Ticket_System__c
+                               FROM Quality_Case__c
+                              WHERE Id = :arMap.ObjectId__c]){
+                            
+                            qc.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                            qc.External_Ticket_System__c = 'CTS';
+                                
+                            dmlQualityCases.add(qc);
+                        }
+                    }
+                    when 'Organic_Analysis__c' {
+                        
+                        for(Organic_Analysis__c oa :
+                            [SELECT Id,
+                                    External_Ticket_ID__c,
+                                    External_Ticket_System__c
+                               FROM Organic_Analysis__c
+                              WHERE Id = :arMap.ObjectId__c]){
+                            
+                            oa.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                            oa.External_Ticket_System__c = 'CTS';
+                                
+                            dmlOrganicCases.add(oa);
+                        }
+                    }
+                    when 'Customer_Surveys__c' {
+                        
+                        for(Customer_Surveys__c cs :
+                            [SELECT Id,
+                                    External_Ticket_ID__c,
+                                    External_Ticket_System__c
+                               FROM Customer_Surveys__c
+                              WHERE Id = :arMap.ObjectId__c]){
+                            
+                            cs.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                            cs.External_Ticket_System__c = 'CTS';
+                                
+                            dmlCustomerSurveys.add(cs);
+                        }
+                    }
+                }
+            }
+            
+            if(dmlCases.size() > 0)
+            {
+                update dmlCases;
+            }
+            if(dmlQualityCases.size() > 0)
+            {
+                update dmlQualityCases;
+            }
+            if(dmlOrganicCases.size() > 0)
+            {
+                update dmlOrganicCases;
+            }
+            if(dmlCustomerSurveys.size() > 0)
+            {
+                update dmlCustomerSurveys;
+            }
         }
     }
     
