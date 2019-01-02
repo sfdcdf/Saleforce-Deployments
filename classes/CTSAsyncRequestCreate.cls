@@ -25,15 +25,19 @@ public class CTSAsyncRequestCreate
                 
                     if(String.valueOf(objId).startsWith(caseSignature)){
                         objectName = 'Case';
+                        break;
                     }
                     if(String.valueOf(objId).startsWith(orgCaseSignature)){
                         objectName = 'Organic_Analysis__c';
+                        break;
                     }
                     if(String.valueOf(objId).startsWith(qualityCaseSignature)){
                         objectName = 'Quality_Case__c';
+                        break;
                     }
                     if(String.valueOf(objId).startsWith(customerSurveySignature)){
                         objectName = 'Customer_Surveys__c';
+                        break;
                     }
                 }
             

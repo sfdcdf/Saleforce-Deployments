@@ -103,53 +103,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Object_Name__c</fullName>
-        <description>Salesforce Objects integrated with CTS</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Salesforce Objects integrated with CTS</inlineHelpText>
-        <label>Object Name</label>
-        <required>true</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Best Practice Evaluation</fullName>
-                    <default>false</default>
-                    <label>Best Practice Evaluation</label>
-                </value>
-                <value>
-                    <fullName>Case</fullName>
-                    <default>false</default>
-                    <label>Case</label>
-                </value>
-                <value>
-                    <fullName>Customer Surveys</fullName>
-                    <default>false</default>
-                    <label>Customer Surveys</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Worksheets</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Worksheets</label>
-                </value>
-                <value>
-                    <fullName>Organic Case</fullName>
-                    <default>false</default>
-                    <label>Organic Case</label>
-                </value>
-                <value>
-                    <fullName>Quality Case</fullName>
-                    <default>false</default>
-                    <label>Quality Case</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>ProcessedDateTime__c</fullName>
         <description>Date/ time the record was processed to CTS for ticket creation</description>
         <externalId>false</externalId>
@@ -268,6 +221,43 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <description>Salesforce Objects integrated with CTS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce Objects integrated with CTS</inlineHelpText>
+        <label>Object Name</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Customer_Surveys__c</fullName>
+                    <default>false</default>
+                    <label>Customer_Surveys__c</label>
+                </value>
+                <value>
+                    <fullName>Organic_Analysis__c</fullName>
+                    <default>false</default>
+                    <label>Organic_Analysis__c</label>
+                </value>
+                <value>
+                    <fullName>Quality_Case__c</fullName>
+                    <default>false</default>
+                    <label>Quality_Case__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>

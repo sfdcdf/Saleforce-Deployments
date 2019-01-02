@@ -684,6 +684,10 @@ public without sharing class CTSSyncService{
         List<Organic_Analysis__c> dmlOrganicCases = new List<Organic_Analysis__c>();
         List<Customer_Surveys__c> dmlCustomerSurveys = new List<Customer_Surveys__c>();
         Map<String, SFDCToCTSAsynchRequest__c> asyncRequestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
+        Map<Id, Case> caseMap = new Map<Id, Case>();
+        Map<Id, Quality_Case__c> qualityCaseMap = new Map<Id, Quality_Case__c>();
+        Map<Id, Organic_Analysis__c> orgCaseMap = new Map<Id, Organic_Analysis__c>();
+        Map<Id, Customer_Surveys__c> custSurveysMap = new Map<Id, Customer_Surveys__c>();
     
         for(SFDCToCTSAsynchRequest__c ar :
             [SELECT Id,
@@ -698,67 +702,99 @@ public without sharing class CTSSyncService{
         
         if(asyncRequestMap.size() > 0){
         
+            for(Case c : 
+                [SELECT Id,
+                        External_Ticket_ID__c,
+                        External_Ticket_System__c
+                   FROM Case
+                  WHERE Id IN: objectIds]){
+            
+                caseMap.put(c.Id, c);
+            }
+            
+            for(Organic_Analysis__c oa :
+                [SELECT Id,
+                        External_Ticket_ID__c,
+                        External_Ticket_System__c
+                   FROM Organic_Analysis__c
+                  WHERE Id IN: objectIds]){
+            
+                orgCaseMap.put(oa.Id, oa);
+            }
+            
+            for(Quality_Case__c qc :
+                [SELECT Id,
+                        External_Ticket_ID__c,
+                        External_Ticket_System__c
+                   FROM Quality_Case__c
+                  WHERE Id IN: objectIds]){
+            
+                qualityCaseMap.put(qc.Id, qc);
+            }
+            
+            for(Customer_Surveys__c cs :
+                [SELECT Id,
+                        External_Ticket_ID__c,
+                        External_Ticket_System__c
+                   FROM Customer_Surveys__c
+                  WHERE Id IN: objectIds]){
+            
+                custSurveysMap.put(cs.Id, cs);
+            }
+        
             for(SFDCToCTSAsynchRequest__c arMap : asyncRequestMap.values()){
             
                 switch on arMap.Object_Name__c{
                     when 'Case' {
-                        
-                       for(Case c :
-                            [SELECT Id,
-                                    External_Ticket_ID__c,
-                                    External_Ticket_System__c
-                               FROM Case
-                              WHERE Id = :arMap.ObjectId__c]){
-                            
-                            c.External_Ticket_ID__c = arMap.ExternalTicketId__c;
-                            c.External_Ticket_System__c = 'CTS';
+                       
+                       for(Case c : caseMap.values()){
+                           
+                           if(arMap.ObjectId__c == String.valueOf(c.Id)){
+                           
+                               c.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                               c.External_Ticket_System__c = 'CTS';
                                     
-                            dmlCases.add(c);
+                               dmlCases.add(c);
+                           }
                         }
                     }
                     when 'Quality_Case__c' {
                         
-                        for(Quality_Case__c qc :
-                            [SELECT Id,
-                                    External_Ticket_ID__c,
-                                    External_Ticket_System__c
-                               FROM Quality_Case__c
-                              WHERE Id = :arMap.ObjectId__c]){
+                        for(Quality_Case__c qc : qualityCaseMap.values()){
                             
-                            qc.External_Ticket_ID__c = arMap.ExternalTicketId__c;
-                            qc.External_Ticket_System__c = 'CTS';
-                                
-                            dmlQualityCases.add(qc);
+                            if(arMap.ObjectId__c == String.valueOf(qc.Id)){
+                            
+                                qc.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                                qc.External_Ticket_System__c = 'CTS';
+                                    
+                                dmlQualityCases.add(qc);
+                            }
                         }
                     }
                     when 'Organic_Analysis__c' {
                         
-                        for(Organic_Analysis__c oa :
-                            [SELECT Id,
-                                    External_Ticket_ID__c,
-                                    External_Ticket_System__c
-                               FROM Organic_Analysis__c
-                              WHERE Id = :arMap.ObjectId__c]){
+                        for(Organic_Analysis__c oa : orgCaseMap.values()){
                             
-                            oa.External_Ticket_ID__c = arMap.ExternalTicketId__c;
-                            oa.External_Ticket_System__c = 'CTS';
-                                
-                            dmlOrganicCases.add(oa);
+                            if(arMap.ObjectId__c == String.valueOf(oa.Id)){
+                            
+                                oa.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                                oa.External_Ticket_System__c = 'CTS';
+                                    
+                                dmlOrganicCases.add(oa);
+                            }
                         }
                     }
                     when 'Customer_Surveys__c' {
                         
-                        for(Customer_Surveys__c cs :
-                            [SELECT Id,
-                                    External_Ticket_ID__c,
-                                    External_Ticket_System__c
-                               FROM Customer_Surveys__c
-                              WHERE Id = :arMap.ObjectId__c]){
+                        for(Customer_Surveys__c cs : custSurveysMap.values()){
                             
-                            cs.External_Ticket_ID__c = arMap.ExternalTicketId__c;
-                            cs.External_Ticket_System__c = 'CTS';
-                                
-                            dmlCustomerSurveys.add(cs);
+                            if(arMap.ObjectId__c == String.valueOf(cs.Id)){
+                            
+                                cs.External_Ticket_ID__c = arMap.ExternalTicketId__c;
+                                cs.External_Ticket_System__c = 'CTS';
+                                    
+                                dmlCustomerSurveys.add(cs);
+                            }
                         }
                     }
                 }
