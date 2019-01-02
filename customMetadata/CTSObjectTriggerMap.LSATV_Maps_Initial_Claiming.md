@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>CTSEmailAddress__c</field>
-        <value xsi:type="xsd:string">sf_to_cts_lead_stream_maps_initial_claiming@web.com</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>CTSNoteType__c</field>
@@ -40,7 +40,7 @@
     </values>
     <values>
         <field>IntegrationType__c</field>
-        <value xsi:type="xsd:string">Email</value>
+        <value xsi:type="xsd:string">API</value>
     </values>
     <values>
         <field>IsActive__c</field>
