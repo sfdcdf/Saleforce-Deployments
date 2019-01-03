@@ -38,7 +38,7 @@ public without sharing class CTSSyncService_ERWorking{
             ctsTicketInstance.contactEmailAddress = (sfdcObj.ContactEmailAddress != null ? sfdcObj.ContactEmailAddress : '');
             ctsTicketInstance.objectName = sfdcObj.ObjectName;
             ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
-            ctsTicketInstance.referenceCustomerId = sfdcObj.ReferenceCustomerId;
+            ctsTicketInstance.referenceCustomerId = (sfdcObj.ReferenceCustomerId != null ? sfdcObj.ReferenceCustomerId : '');
             ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
             ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
             ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
@@ -418,6 +418,7 @@ public without sharing class CTSSyncService_ERWorking{
                bodyJSON.writeObjectField('action', 'Create');
                bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
                bodyJSON.writeObjectField('objectType', 'TicketingTicket');
+               bodyJSON.writeObjectField('requestedService', integrationSetting.RequestedService__c);
                
                bodyJSON.writeFieldName('data');
                bodyJSON.writeStartObject();               
@@ -448,7 +449,7 @@ public without sharing class CTSSyncService_ERWorking{
        bodyJSON.writeEndObject();
                                   
        return bodyJSON.getAsString();
-    } 
+    }
     
      public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
        
@@ -583,7 +584,6 @@ public without sharing class CTSSyncService_ERWorking{
             List<CTSSFDCObjectBase> sfdcObjList = new List<CTSSFDCObjectBase>();
             List<CTSTicket> ctsTicketList = new List<CTSTicket>();
             CTS_Integration_Setting__mdt integrationSettings = GetCTSIntegrationSettings();
-            Boolean alreadyProcessedApiRecords = false;
             
             for(SFDCToCTSAsynchRequest__c ar : asyncRequestObj){
                 asyncRequestMap.put(ar.ObjectId__c, ar);
@@ -598,12 +598,10 @@ public without sharing class CTSSyncService_ERWorking{
                 
                 for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
-                    if(asr.Integration_Type__c == 'API' && !alreadyProcessedApiRecords){
+                    if(asr.Integration_Type__c == 'API'){
                         ticketJSON = GetCTSTicketJSON(ctsTicketList);
                         ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
                         ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
-                        alreadyProcessedApiRecords = true;
-                        break;
                     }
                     else{
                         CallOutCTSForEmail(sfdcObjList);
@@ -819,7 +817,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    private static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
+    public static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
     {
         CTS_Integration_Setting__mdt ctsIntSettings = 
             [SELECT Id,
