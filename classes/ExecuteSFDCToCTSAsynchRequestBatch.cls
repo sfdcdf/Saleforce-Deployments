@@ -37,11 +37,14 @@ public class ExecuteSFDCToCTSAsynchRequestBatch implements Database.Batchable<sO
     
     public Database.QueryLocator start(Database.BatchableContext BC) {
     
+        CTS_Integration_Setting__mdt integrationSetting = CTSSyncService.GetCTSIntegrationSettings();
         String query = batchSetting.SOQL_Criteria__c;
         
         if(String.isNotBlank(batchSetting.Additional_SOQL_Criteria__c)){
             query += ' ' + batchSetting.Additional_SOQL_Criteria__c;
         }
+        
+        query += ' LIMIT ' + String.valueOf(integrationSetting.AsyncRetrievalSize__c);
         
         return Database.getQueryLocator(query);
     }

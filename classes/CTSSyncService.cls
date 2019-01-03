@@ -41,7 +41,7 @@ public without sharing class CTSSyncService{
             ctsTicketInstance.contactEmailAddress = (sfdcObj.ContactEmailAddress != null ? sfdcObj.ContactEmailAddress : '');
             ctsTicketInstance.objectName = sfdcObj.ObjectName;
             ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
-            ctsTicketInstance.referenceCustomerId = sfdcObj.ReferenceCustomerId;
+            ctsTicketInstance.referenceCustomerId = (sfdcObj.ReferenceCustomerId != null ? sfdcObj.ReferenceCustomerId : '');
             ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
             ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
             ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
@@ -421,6 +421,7 @@ public without sharing class CTSSyncService{
                bodyJSON.writeObjectField('action', 'Create');
                bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
                bodyJSON.writeObjectField('objectType', 'TicketingTicket');
+               bodyJSON.writeObjectField('requestedService', integrationSetting.RequestedService__c);
                
                bodyJSON.writeFieldName('data');
                bodyJSON.writeStartObject();               
@@ -819,7 +820,7 @@ public without sharing class CTSSyncService{
         }
     }
     
-    private static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
+    public static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
     {
         CTS_Integration_Setting__mdt ctsIntSettings = 
             [SELECT Id,
