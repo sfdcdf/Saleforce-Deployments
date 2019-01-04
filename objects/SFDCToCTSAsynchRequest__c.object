@@ -286,6 +286,14 @@
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>EmailTemplateId__c</columns>
+        <columns>Integration_Type__c</columns>
+        <columns>ScheduledDateTime__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

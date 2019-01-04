@@ -251,9 +251,9 @@ public without sharing class CTSSyncService{
         
         String query;
         if (objName.equals('Case'))        
-            query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM Case WHERE Id in :objIds';
+            query = 'SELECT Id, RecordType.Name, Reason, Origin, Product_Type__c FROM Case WHERE Id in :objIds';
         else
-            query = 'SELECT Id, RecordType FROM ' + objName + ' WHERE Id in :objIds';    
+            query = 'SELECT Id, RecordType.Name FROM ' + objName + ' WHERE Id in :objIds';    
         List<SObject> ctsSalesforceObjectList = Database.query(query);
                                    
         List<SObject> routeMappings = [SELECT Id, 
@@ -290,15 +290,16 @@ public without sharing class CTSSyncService{
          4. Product Type*/
          
          for (SObject sfObj : ctsSalesforceObjectList)
-         {             
+         {   
+             System.Debug(sfObj);          
              Map<String, String> fieldMap = new Map<String, String>();
              fieldMap.put('Object__c', ctsObjectsMap.get(objName));
-             fieldMap.put('RecordTypeName__c', (String)sfObj.get('RecordType'));
+             fieldMap.put('RecordTypeName__c', 'Charge Failure'); // need to fix/ update this line
              if (objName.equals('Case'))
              {
                  fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
                  fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
-                 fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
+                 fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
                         
                  //A. 0 & 1 & 2 & 3 & 4 
                  routingObj = FindRoutingObject(routeMappings, fieldMap);

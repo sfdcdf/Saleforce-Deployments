@@ -17,8 +17,11 @@ public class ExecuteSFDCToCTSAsynchRequestBatch implements Database.Batchable<sO
     public ExecuteSFDCToCTSAsynchRequestBatch(string objectName) {
       
         objName = objectName;
-        
-        switch on objectName {
+    }
+    
+    public Database.QueryLocator start(Database.BatchableContext BC) {
+    
+        switch on objName{
         
             when 'Case' {
                 batchSetting = Batch_Automation_Settings__c.getValues('Async Request Cases');
@@ -33,9 +36,8 @@ public class ExecuteSFDCToCTSAsynchRequestBatch implements Database.Batchable<sO
                 batchSetting = Batch_Automation_Settings__c.getValues('Async Request Quality Cases');
             }
         }
-    }
-    
-    public Database.QueryLocator start(Database.BatchableContext BC) {
+        
+        
     
         CTS_Integration_Setting__mdt integrationSetting = CTSSyncService.GetCTSIntegrationSettings();
         String query = batchSetting.SOQL_Criteria__c;
@@ -46,14 +48,26 @@ public class ExecuteSFDCToCTSAsynchRequestBatch implements Database.Batchable<sO
         
         query += ' LIMIT ' + String.valueOf(integrationSetting.AsyncRetrievalSize__c);
         
+        System.Debug('**Batch Setting Query: ' + query);
+        System.Debug('**Object Name: ' + objName);
+        
         return Database.getQueryLocator(query);
     }
 
     public void execute(Database.BatchableContext BC, List<sObject> scope) {
     
-        for(SFDCToCTSAsynchRequest__c ar :  (List<SFDCToCTSAsynchRequest__c>) scope){
+        List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsToUpdate = new List<SFDCToCTSAsynchRequest__c>();
         
-            CTSSyncService.ProcessSFDCToCTSAsynchRequest(objName, scope);
+        for(SFDCToCTSAsynchRequest__c asyncRec : (List<SFDCToCTSAsynchRequest__c>) scope){
+        
+            asyncRec.Status__c = 'INPROCESS';
+            dmlAsyncRecordsToUpdate.add(asyncRec);
+        }
+    
+        CTSSyncService.ProcessSFDCToCTSAsynchRequest(objName, scope);
+        
+        if(dmlAsyncRecordsToUpdate.size() > 0){
+            update dmlAsyncRecordsToUpdate;
         }
     }
     

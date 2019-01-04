@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>CTSAPIIdentifier__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">SF_NETSOL_000001</value>
     </values>
     <values>
         <field>CTSAssignedToLoginName__c</field>
