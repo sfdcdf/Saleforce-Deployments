@@ -630,10 +630,21 @@ public without sharing class CTSSyncService_ERWorking{
             for(CTSTicketResponse ctr : ctsTicketResp){
             
                 String ctsTicketNumber = respDataNode.ticketNumber;
-                String objectName = respMainNode.clientRequestId.SubStringBefore('_');
-                String recordId = respMainNode.clientRequestId.SubStringAfter('_');
+                String objNameAndId = respMainNode.clientRequestId;
+                //String objectName;
+                String recordId;
                 String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
                 String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
+                
+                if(objNameAndId.startsWith('Case')){
+                    //objectName = objNameAndId.SubStringBefore('_');
+                    recordId = objNameAndId.SubStringAfter('_');
+                }
+                else{
+                    //objectName = objNameAndId.SubStringBefore('__c_');
+                    //objectName += '__c';
+                    recordId = objNameAndId.SubStringAfter('__c_');
+                }
                 
                 for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
                 

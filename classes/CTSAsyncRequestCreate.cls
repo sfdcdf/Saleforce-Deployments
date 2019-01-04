@@ -40,6 +40,8 @@ public class CTSAsyncRequestCreate
                         break;
                     }
                 }
+                
+                System.Debug('** Object Name: ' + objectName);
             
                 if(!String.IsBlank(objectName)){
                     CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objectIds);
