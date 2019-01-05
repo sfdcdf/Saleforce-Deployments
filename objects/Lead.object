@@ -2639,10 +2639,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>PartnerAccountId</fullName>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Partner_3rd_Party_Name__c</fullName>
         <externalId>false</externalId>
         <label>Partner/3rd Party Name</label>
@@ -8587,6 +8583,12 @@ if(
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>PartnerAccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
