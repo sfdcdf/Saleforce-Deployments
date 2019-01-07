@@ -299,11 +299,15 @@ public without sharing class CTSSyncServicePartial
         CTSObjectTriggerMap__mdt routingObj;
         Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
         
+        Map<Id, String> objRecordTypeMap = new Map<Id, String>();
+        for (RecordType type: [SELECT Id, Name FROM RecordType WHERE sObjectType = :objName])
+             objRecordTypeMap.put(type.Id, type.Name);        
+        
         String query;
         if (objName.equals('Case'))        
-            query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM Case WHERE Id in :objIds';
+            query = 'SELECT Id, RecordTypeId, Reason, Origin, Product_Type__C FROM Case WHERE Id in :objIds';
         else
-            query = 'SELECT Id, RecordType FROM ' + objName + ' WHERE Id in :objIds';    
+            query = 'SELECT Id, RecordTypeId FROM ' + objName + ' WHERE Id in :objIds';    
         List<SObject> ctsSalesforceObjectList = Database.query(query);
                                    
         List<SObject> routeMappings = [SELECT Id, 
@@ -343,7 +347,7 @@ public without sharing class CTSSyncServicePartial
          {             
              Map<String, String> fieldMap = new Map<String, String>();
              fieldMap.put('Object__c', ctsObjectsMap.get(objName));
-             fieldMap.put('RecordTypeName__c', (String)sfObj.get('RecordType'));
+             fieldMap.put('RecordTypeName__c', objRecordTypeMap.get((Id)sfObj.get('RecordTypeId')));
              if (objName.equals('Case'))
              {
                  fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));

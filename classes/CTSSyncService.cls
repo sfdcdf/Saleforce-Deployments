@@ -259,14 +259,18 @@ public without sharing class CTSSyncService{
     {
         System.Debug('*** Entering Method GetRoutingTableObject ***');
     
+        Map<Id, String> objRecordTypeMap = new Map<Id, String>();
+        for (RecordType type: [SELECT Id, Name FROM RecordType WHERE sObjectType = :objName])
+             objRecordTypeMap.put(type.Id, type.Name);   
+        
         CTSObjectTriggerMap__mdt routingObj;
         Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
-        
+                        
         String query;
         if (objName.equals('Case'))        
-            query = 'SELECT Id, RecordType.Name, Reason, Origin, Product_Type__c FROM Case WHERE Id in :objIds';
+            query = 'SELECT Id, RecordTypeId, Reason, Origin, Product_Type__c FROM Case WHERE Id in :objIds';
         else
-            query = 'SELECT Id, RecordType.Name FROM ' + objName + ' WHERE Id in :objIds';    
+            query = 'SELECT Id, RecordTypeId FROM ' + objName + ' WHERE Id in :objIds';    
         List<SObject> ctsSalesforceObjectList = Database.query(query);
                                    
         List<SObject> routeMappings = [SELECT Id, 
@@ -306,8 +310,8 @@ public without sharing class CTSSyncService{
          {   
              System.Debug(sfObj);          
              Map<String, String> fieldMap = new Map<String, String>();
-             fieldMap.put('Object__c', ctsObjectsMap.get(objName));
-             fieldMap.put('RecordTypeName__c', 'Charge Failure'); // need to fix/ update this line
+             fieldMap.put('Object__c', ctsObjectsMap.get(objName));             
+             fieldMap.put('RecordTypeName__c', objRecordTypeMap.get((Id)sfObj.get('RecordTypeId')));
              if (objName.equals('Case'))
              {
                  fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
@@ -469,13 +473,38 @@ public without sharing class CTSSyncService{
        
        bodyJSON.writeEndObject();
        
-       System.Debug('CTSTicketJSON Returned: ' + String.valueOf(bodyJSON));
+       System.Debug('CTSTicketJSON Returned: ' + bodyJSON.getAsString());
        System.Debug('*** End Method GetCTSTicketJSON ***');
                                   
        return bodyJSON.getAsString();
     }
     
-     public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
+     @future(callout = true)
+     public static void CallOutCTSForAPI(String requestBody){
+        
+        System.Debug('*** Entering Method CallOutCTSForAPI ***');
+        
+        CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
+        
+        Http h = new Http();
+       
+        HttpRequest req = new HttpRequest();        
+        //req.setEndpoint(integrationSetting.ESBAPIEndPoint__c);
+        req.setEndpoint('callout:CTSIntegrationService');
+        req.setBody(requestBody);
+        req.setMethod('POST');
+        req.setHeader('Content-Type', 'application/json');
+        req.setTimeout(120000);
+
+        // Send the request, and return a response
+        HttpResponse res = h.send(req);       
+
+        System.Debug('CallOutCTSForAPI Request: ' + requestBody);
+        System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
+        System.Debug('*** End Method CallOutCTSForAPI ***');
+    }       
+    
+     public static HttpResponse CallOutCTSForAPI_Original(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
         
         System.Debug('*** Entering Method CallOutCTSForAPI ***');
         
@@ -483,7 +512,7 @@ public without sharing class CTSSyncService{
        
         HttpRequest req = new HttpRequest();        
         //req.setEndpoint(integrationSetting.ESBAPIEndPoint__c);
-        req.setEndpoint('callout:CTSSyncService');
+        req.setEndpoint('callout:CTSIntegrationService');
         req.setBody(requestBody);
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
@@ -634,7 +663,11 @@ public without sharing class CTSSyncService{
                 String ticketJSON ='';
                 HttpResponse ctsResp = new HttpResponse();
                 
-                for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
+                ticketJSON = GetCTSTicketJSON(ctsTicketList);
+                //ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
+                ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
+                
+                /*for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
                     if(asr.Integration_Type__c == 'API'){
                         ticketJSON = GetCTSTicketJSON(ctsTicketList);
@@ -644,7 +677,7 @@ public without sharing class CTSSyncService{
                     else{
                         CallOutCTSForEmail(sfdcObjList);
                     }
-                }
+                }*/
             }
             System.Debug('Number of Records Processed: ' + String.valueOf(asyncRequestObj.size()));
             System.Debug('List of Records Processed: ' + asyncRequestObj);
