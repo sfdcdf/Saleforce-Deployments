@@ -25,6 +25,8 @@ public without sharing class CTSSyncService_ERWorking{
     
     public static List<CTSTicket> GetCTSTicket(List<CTSSFDCObjectBase> sfdcObjectList){
  
+        System.Debug('*** Entering Method GetCTSTicket ***');
+ 
         CTSTicket ctsTicketInstance = new CTSTicket();
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
         
@@ -49,6 +51,10 @@ public without sharing class CTSSyncService_ERWorking{
                                   
             ctsTicketList.add(ctsTicketInstance);
         }
+        
+        System.Debug('Number of Rows in Ticket List: ' + String.valueOf(ctsTicketList.size()));
+        System.Debug('CTS Ticket Returned: ' + ctsTicketList);
+        System.Debug('*** End Method GetCTSTicket ***');
         
         return ctsTicketList;
     }
@@ -91,6 +97,7 @@ public without sharing class CTSSyncService_ERWorking{
     
     public static List<CTSSFDCObjectBase> GetSFDCObject(string objectName, Map<Id, SFDCToCTSAsynchRequest__c> requestMap)    
     {          
+       System.Debug('*** Entering Method GetSFDCObject ***');
     
        CTSSFDCObjectBase baseObject;
        List<CTSSFDCObjectBase> ctsSFDCObjectList = new List<CTSSFDCObjectBase>();              
@@ -235,6 +242,10 @@ public without sharing class CTSSyncService_ERWorking{
                system.debug('Not a valid object name: ' + objectName);                
            }
        }
+       
+       System.Debug('Number of Rows in SFDCObject List: ' + String.valueOf(ctsSFDCObjectList.size()));
+       System.Debug('SFDCObject Returned: ' + ctsSFDCObjectList);
+       System.Debug('*** End Method GetSFDCObject ***');
                                    
        return ctsSFDCObjectList;
 
@@ -243,14 +254,16 @@ public without sharing class CTSSyncService_ERWorking{
     
     public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
     {
+        System.Debug('*** Entering Method GetRoutingTableObject ***');
+    
         CTSObjectTriggerMap__mdt routingObj;
         Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
         
         String query;
         if (objName.equals('Case'))        
-            query = 'SELECT Id, RecordType, Reason, Origin, Product_Type__C FROM Case WHERE Id in :objIds';
+            query = 'SELECT Id, RecordType.Name, Reason, Origin, Product_Type__c FROM Case WHERE Id in :objIds';
         else
-            query = 'SELECT Id, RecordType FROM ' + objName + ' WHERE Id in :objIds';    
+            query = 'SELECT Id, RecordType.Name FROM ' + objName + ' WHERE Id in :objIds';    
         List<SObject> ctsSalesforceObjectList = Database.query(query);
                                    
         List<SObject> routeMappings = [SELECT Id, 
@@ -287,15 +300,16 @@ public without sharing class CTSSyncService_ERWorking{
          4. Product Type*/
          
          for (SObject sfObj : ctsSalesforceObjectList)
-         {             
+         {   
+             System.Debug(sfObj);          
              Map<String, String> fieldMap = new Map<String, String>();
              fieldMap.put('Object__c', ctsObjectsMap.get(objName));
-             fieldMap.put('RecordTypeName__c', (String)sfObj.get('RecordType'));
+             fieldMap.put('RecordTypeName__c', 'Charge Failure'); // need to fix/ update this line
              if (objName.equals('Case'))
              {
                  fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
                  fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
-                 fieldMap.put('ProductType__c', (String)sfObj.get('ProductType__C'));
+                 fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
                         
                  //A. 0 & 1 & 2 & 3 & 4 
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
@@ -360,6 +374,10 @@ public without sharing class CTSSyncService_ERWorking{
           
          }
          
+         System.Debug('Number of Rows in RoutingTable Map: ' + String.valueOf(routingObjMap.size()));
+         System.Debug('RoutingTableObject Returned: ' + routingObjMap);
+         System.Debug('*** End Method GetRoutingTableObject ***');
+         
          return routingObjMap;                                        
                            
     }
@@ -386,7 +404,7 @@ public without sharing class CTSSyncService_ERWorking{
     
     public static String GetCTSTicketJSON(List<CTSTicket> ctsTickets)
     {
-    
+        System.Debug('*** Entering Method GetCTSTicketJSON ***');
        /* {
             "clientInfo": {
                 "apiAccessKey": " SAMPLE number",
@@ -447,12 +465,17 @@ public without sharing class CTSSyncService_ERWorking{
        bodyJSON.writeEndArray();    
        
        bodyJSON.writeEndObject();
+       
+       System.Debug('CTSTicketJSON Returned: ' + String.valueOf(bodyJSON));
+       System.Debug('*** End Method GetCTSTicketJSON ***');
                                   
        return bodyJSON.getAsString();
     }
     
      public static HttpResponse CallOutCTSForAPI(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
-       
+        
+        System.Debug('*** Entering Method CallOutCTSForAPI ***');
+        
         Http h = new Http();
        
         HttpRequest req = new HttpRequest();        
@@ -465,6 +488,10 @@ public without sharing class CTSSyncService_ERWorking{
 
         // Send the request, and return a response
         HttpResponse res = h.send(req);       
+
+        System.Debug('CallOutCTSForAPI Request: ' + requestBody);
+        System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
+        System.Debug('*** End Method CallOutCTSForAPI ***');
 
         return res;
     }    
@@ -512,12 +539,14 @@ public without sharing class CTSSyncService_ERWorking{
         catch(Exception e){
         
             // log error
-            System.Debug('An error occurred: ' + e.getMessage());
+            System.Debug('An error occurred in CallOutCTSForEmail: ' + e.getMessage());
         }
     }
     
     public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
     {
+        System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
+        
         try
         {
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
@@ -565,19 +594,25 @@ public without sharing class CTSSyncService_ERWorking{
             
             }
             
+            System.Debug('Number of Async Request Records Created: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
+            
             if(dmlSFDCToCTSAsynchRequestList.size() > 0){
             
                 insert dmlSFDCToCTSAsynchRequestList;
             }
+            
+            System.Debug('*** End Method CreateSFDCToCTSAsynchRequest ***');
         }
         catch(Exception e)
         {
-            System.Debug('An error occurred: ' + e.getMessage());
+            System.Debug('An error occurred in CreateSFDCToCTSAsynchRequest: ' + e.getMessage());
         }
     }
     
     public static void ProcessSFDCToCTSAsynchRequest(String objectName, List<SFDCToCTSAsynchRequest__c> asyncRequestObj)
     {
+        System.Debug('*** Entering Method ProcessSFDCToCTSAsynchRequest ***');
+    
         try
         {
             Map<Id, SFDCToCTSAsynchRequest__c> asyncRequestMap =  new Map<Id, SFDCToCTSAsynchRequest__c>();
@@ -608,15 +643,20 @@ public without sharing class CTSSyncService_ERWorking{
                     }
                 }
             }
+            System.Debug('Number of Records Processed: ' + String.valueOf(asyncRequestObj.size()));
+            System.Debug('List of Records Processed: ' + asyncRequestObj);
+            System.Debug('*** End Method ProcessSFDCToCTSAsynchRequest ***');
         }
         catch(Exception e)
         {
-            System.Debug('An error occurred: ' + e.getMessage());
+            System.Debug('An error occurred in ProcessSFDCToCTSAsynchRequest: ' + e.getMessage());
         }
     }
     
     public static void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, List<SFDCToCTSAsynchRequest__c> asyncRecords)
     {
+        System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
+    
         try
         {
             String jsonString = ctsCreateTicketResponse.getBody();
@@ -635,6 +675,11 @@ public without sharing class CTSSyncService_ERWorking{
                 String recordId;
                 String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
                 String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
+                
+                System.Debug('Ticket Number Returned: ' + ctsTicketNumber);
+                System.Debug('Client Request Id Returned: ' + objNameAndId);
+                System.Debug('Status Returned: ' + asyncStatus);
+                System.Debug('Error Message Returned: ' + errorMsg);
                 
                 if(objNameAndId.startsWith('Case')){
                     //objectName = objNameAndId.SubStringBefore('_');
@@ -679,15 +724,20 @@ public without sharing class CTSSyncService_ERWorking{
             
                 update dmlAsyncRecordsUpdate;
             }
+            
+            System.Debug('Number of Async Records Updated: ' + String.valueOf(dmlAsyncRecordsUpdate.size()));
+            System.Debug('*** End Method ProcessCreateTicketAPIResponse ***');
         }
         catch(Exception e)
         {
-            System.Debug('An error occurred: ' + e.getMessage());
+            System.Debug('An error occurred in ProcessCreateTicketAPIResponse: ' + e.getMessage());
         }
     }
     
     public static void UpdateSFDCObject(List<Id> objectIds)
     {
+        System.Debug('*** Entering Method UpdateSFDCObject ***');
+    
         List<Case> dmlCases = new List<Case>();
         List<Quality_Case__c> dmlQualityCases = new List<Quality_Case__c>();
         List<Organic_Analysis__c> dmlOrganicCases = new List<Organic_Analysis__c>();
@@ -752,6 +802,8 @@ public without sharing class CTSSyncService_ERWorking{
             }
         
             for(SFDCToCTSAsynchRequest__c arMap : asyncRequestMap.values()){
+            
+                System.Debug('Object to Update: ' + arMap.Object_Name__c);
             
                 switch on arMap.Object_Name__c{
                     when 'Case' {
@@ -826,6 +878,11 @@ public without sharing class CTSSyncService_ERWorking{
                 update dmlCustomerSurveys;
             }
         }
+        System.Debug('Number of Case Records: ' + String.valueOf(dmlCases.size()));
+        System.Debug('Number of Organic Case Records: ' + String.valueOf(dmlOrganicCases.size()));
+        System.Debug('Number of Quality Case Records: ' + String.valueOf(dmlQualityCases.size()));
+        System.Debug('Number of Customer Survey Records: ' + String.valueOf(dmlCustomerSurveys.size()));
+        System.Debug('*** End Method UpdateSFDCObject ***');
     }
     
     public static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
