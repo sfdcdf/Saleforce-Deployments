@@ -497,14 +497,15 @@ public without sharing class CTSSyncService{
         req.setTimeout(120000);
 
         // Send the request, and return a response
-        HttpResponse res = h.send(req);       
+        HttpResponse res = h.send(req);
+        ProcessCreateTicketAPIResponse(res);   
 
         System.Debug('CallOutCTSForAPI Request: ' + requestBody);
         System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
         System.Debug('*** End Method CallOutCTSForAPI ***');
     }       
     
-     public static HttpResponse CallOutCTSForAPI_Original(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
+     /*public static HttpResponse CallOutCTSForAPI_Original(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
         
         System.Debug('*** Entering Method CallOutCTSForAPI ***');
         
@@ -519,14 +520,14 @@ public without sharing class CTSSyncService{
         req.setTimeout(120000);
 
         // Send the request, and return a response
-        HttpResponse res = h.send(req);       
+        HttpResponse res = h.send(req);
 
         System.Debug('CallOutCTSForAPI Request: ' + requestBody);
         System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
         System.Debug('*** End Method CallOutCTSForAPI ***');
 
         return res;
-    }    
+    }*/ 
     
     public static void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
     {
@@ -664,8 +665,8 @@ public without sharing class CTSSyncService{
                 HttpResponse ctsResp = new HttpResponse();
                 
                 ticketJSON = GetCTSTicketJSON(ctsTicketList);
-                //ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
-                ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
+                CallOutCTSForAPI(ticketJSON);
+                //ProcessCreateTicketAPIResponse(ctsResp);
                 
                 /*for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
                 
@@ -689,7 +690,7 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public static void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse, List<SFDCToCTSAsynchRequest__c> asyncRecords)
+    public static void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
     
@@ -698,6 +699,24 @@ public without sharing class CTSSyncService{
             String jsonString = ctsCreateTicketResponse.getBody();
             List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(jsonString, List<CTSTicketResponse>.class);
             List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
+            
+            List<SFDCToCTSAsynchRequest__c> asyncRecords = 
+                [SELECT Id,
+                        API_Identifier__c,
+                        CTS_Email_Address__c,
+                        EmailTemplateId__c,
+                        ErrorDescription__c,
+                        ExternalTicketId__c,
+                        Integration_Type__c,
+                        Name,
+                        NumberOfRetryAttempts__c,
+                        ObjectId__c,
+                        Object_Name__c,
+                        ProcessedDateTime__c,
+                        ScheduledDateTime__c,
+                        Status__c
+                   FROM SFDCToCTSAsynchRequest__c
+                  WHERE ScheduledDateTime__c = TODAY];
             
             CTSTicketResponse.Response respMainNode;
             CTSTicketResponse.Data respDataNode;

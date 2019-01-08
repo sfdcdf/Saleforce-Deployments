@@ -27,7 +27,16 @@ public virtual class CTSSFDCObjectBase
         this.CTSEmailAddress = requestInstance.CTS_Email_Address__c; 
         this.Status = 'Open';
         this.Subject = mail.getSubject();
-        this.Detail = mail.getPlainTextBody();
+        this.Detail = mail.getPlainTextBody();        
+        //Manually append Account level info to Detail field
+        this.Detail = this.Detail + '\r\n Client Id: ' + ReferenceCustomerId;
+        this.Detail = this.Detail + '\r\n Client First Name: ' + ContactFirstName;
+        this.Detail = this.Detail + '\r\n Client Last Name: ' + ContactLastName;
+        this.Detail = this.Detail + '\r\n Client Email: ' + ContactEmailAddress;        
+        this.Detail = this.Detail + '\r\n Client Phone: ' + ContactPhone;
+        this.Detail = this.Detail + '\r\n Product Code: ' + ReferenceProductCodes;
+        this.Detail += '\r\n';
+                
               
         /*system.debug('email subject: ' + this.Subject);
         system.debug('email body: ' + this.Detail); */  
@@ -35,8 +44,7 @@ public virtual class CTSSFDCObjectBase
     }
     
     public CTSSFDCObjectBase(Case sfCase, String objName, SFDCToCTSAsynchRequest__c requestInstance, Messaging.SingleEmailMessage mail)
-    {
-        CTSSFDCObjectBase(sfCase.Id, objName, requestInstance, mail);
+    {        
         this.ContactFirstName = sfCase.Account.Client_First_Name__c;
         this.ContactLastName = sfCase.Account.Client_Last_Name__c;
         this.ContactEmailAddress = sfCase.Account.Email__c;
@@ -47,13 +55,13 @@ public virtual class CTSSFDCObjectBase
         this.Domain = sfCase.Account.Website;
         this.ReferenceProductCodes = sfCase.Account.Product_Type_Transactional__c;        
         this.AlternateContactEmailAddress = sfCase.Client_Email__c;
-        this.CRMOrderNumber = sfCase.CaseNumber;            
+        this.CRMOrderNumber = sfCase.CaseNumber;  
+        CTSSFDCObjectBase(sfCase.Id, objName, requestInstance, mail);          
     }
     
     
     public CTSSFDCObjectBase(Organic_Analysis__c organicCase, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
-    {
-        CTSSFDCObjectBase(organicCase.Id, objName, requestInstance, mail);
+    {        
         this.ContactFirstName = organicCase.Account_Name__r.Client_First_Name__c;
         this.ContactLastName = organicCase.Account_Name__r.Client_Last_Name__c;
         this.ContactEmailAddress = organicCase.Account_Name__r.Email__c; 
@@ -65,11 +73,11 @@ public virtual class CTSSFDCObjectBase
         this.ReferenceProductCodes = organicCase.Account_Name__r.Product_Type_Transactional__c;        
         this.AlternateContactEmailAddress = organicCase.Account_Name__r.Email__c;  
         this.CRMOrderNumber = organicCase.Name;         
+        CTSSFDCObjectBase(organicCase.Id, objName, requestInstance, mail);
     }
     
     public CTSSFDCObjectBase(Quality_Case__c qualityCase, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
-    {
-        CTSSFDCObjectBase(qualityCase.Id, objName, requestInstance, mail);
+    {        
         this.ContactFirstName = qualityCase.Account_Name__r.Client_First_Name__c;
         this.ContactLastName = qualityCase.Account_Name__r.Client_Last_Name__c;
         this.ContactEmailAddress = qualityCase.Account_Name__r.Email__c;     
@@ -80,12 +88,12 @@ public virtual class CTSSFDCObjectBase
         this.Domain = qualityCase.Account_Name__r.Website;
         this.ReferenceProductCodes = qualityCase.Account_Name__r.Product_Type_Transactional__c;        
         this.AlternateContactEmailAddress = qualityCase.Account_Name__r.Email__c;
-        this.CRMOrderNumber = qualityCase.Name;              
+        this.CRMOrderNumber = qualityCase.Name; 
+        CTSSFDCObjectBase(qualityCase.Id, objName, requestInstance, mail);             
     }
     
     public CTSSFDCObjectBase(Best_Practice_Evaluation__c bpe, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
-    {
-        CTSSFDCObjectBase(bpe.Id, objName, requestInstance, mail);
+    {        
         this.ContactFirstName = bpe.Account_Name__r.Client_First_Name__c;
         this.ContactLastName = bpe.Account_Name__r.Client_Last_Name__c;
         this.ContactEmailAddress = bpe.Account_Name__r.Email__c;    
@@ -96,12 +104,12 @@ public virtual class CTSSFDCObjectBase
         this.Domain = bpe.Account_Name__r.Website;
         this.ReferenceProductCodes = bpe.Account_Name__r.Product_Type_Transactional__c;        
         this.AlternateContactEmailAddress = bpe.Account_Name__r.Email__c;  
-        this.CRMOrderNumber = bpe.Name;            
+        this.CRMOrderNumber = bpe.Name;  
+        CTSSFDCObjectBase(bpe.Id, objName, requestInstance, mail);          
     }
     
     public CTSSFDCObjectBase(Customer_Surveys__c customerSurvey, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
-    {
-        CTSSFDCObjectBase(customerSurvey.Id, objName, requestInstance, mail);
+    {        
         this.ContactFirstName = customerSurvey.Account__r.Client_First_Name__c;
         this.ContactLastName = customerSurvey.Account__r.Client_Last_Name__c;
         this.ContactEmailAddress = customerSurvey.Account__r.Email__c;    
@@ -113,11 +121,11 @@ public virtual class CTSSFDCObjectBase
         this.ReferenceProductCodes = customerSurvey.Account__r.Product_Type_Transactional__c;        
         this.AlternateContactEmailAddress = customerSurvey.Account__r.Email__c; 
         this.CRMOrderNumber = customerSurvey.Name;           
+        CTSSFDCObjectBase(customerSurvey.Id, objName, requestInstance, mail);
     }
     
     /*public CTSSFDCObjectBase(Id objId, String objName, SFDCToCTSAsynchRequest__c requestInstance, Lighthouse_Worksheets__c sheet)
-    {
-        CTSSFDCObjectBase(objId, objName, requestInstance);
+    {        
         this.ContactFirstName = sheet.Practice_Name__r.Client_First_Name__c;
         this.ContactLastName = sheet.Practice_Name__r.Client_Last_Name__c;
         this.ContactPhone = sheet.Practice_Name__r.Phone;
@@ -125,7 +133,8 @@ public virtual class CTSSFDCObjectBase
         this.ReferenceCustomerId = sheet.Practice_Name__r.Client_ID__c;                                   
         this.Domain = sheet.Practice_Name__r.Website;
         this.ReferenceProductCodes = sheet.Practice_Name__r.Product_Type_Transactional__c;        
-        this.AlternateContactEmailAddress = sheet.Practice_Name__r.Email__c;             
+        this.AlternateContactEmailAddress = sheet.Practice_Name__r.Email__c;  
+        CTSSFDCObjectBase(objId, objName, requestInstance);           
     }
     */
     
