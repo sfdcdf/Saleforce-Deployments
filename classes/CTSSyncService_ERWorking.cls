@@ -659,7 +659,7 @@ public without sharing class CTSSyncService_ERWorking{
                 sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
                 ctsTicketList = GetCTSTicket(sfdcObjList);
                 String ticketJSON ='';
-                HttpResponse ctsResp = new HttpResponse();
+                //HttpResponse ctsResp = new HttpResponse();
                 
                 ticketJSON = GetCTSTicketJSON(ctsTicketList);
                 CallOutCTSForAPI(ticketJSON);

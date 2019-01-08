@@ -46,6 +46,9 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -406,6 +409,10 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Alternate_Email__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BillingAddress</field>

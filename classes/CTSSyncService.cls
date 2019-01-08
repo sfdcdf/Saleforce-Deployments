@@ -72,7 +72,7 @@ public without sharing class CTSSyncService{
         for (Id objId : requestMap.keySet())
         {
             Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-            String[] toAddresses = new String[]{'YodleSFDC@fake.com'};
+            String[] toAddresses = new String[]{'eugene.ross@web.com'};
             mail.setToAddresses(toAddresses);
             mail.setUseSignature(false);
             mail.setSaveAsActivity(false);
@@ -478,8 +478,8 @@ public without sharing class CTSSyncService{
                                   
        return bodyJSON.getAsString();
     }
-    
-     @future(callout = true)
+     
+     @future(callout=true)
      public static void CallOutCTSForAPI(String requestBody){
         
         System.Debug('*** Entering Method CallOutCTSForAPI ***');
@@ -497,8 +497,10 @@ public without sharing class CTSSyncService{
         req.setTimeout(120000);
 
         // Send the request, and return a response
+        System.Debug('*** Sending Request to CTS for Ticket ***');
         HttpResponse res = h.send(req);
-        ProcessCreateTicketAPIResponse(res);   
+        System.Debug('*** Request Sent from CallCTSOutForAPI***');
+        //ProcessCreateTicketAPIResponse(res.getBody());   
 
         System.Debug('CallOutCTSForAPI Request: ' + requestBody);
         System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
@@ -662,7 +664,7 @@ public without sharing class CTSSyncService{
                 sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
                 ctsTicketList = GetCTSTicket(sfdcObjList);
                 String ticketJSON ='';
-                HttpResponse ctsResp = new HttpResponse();
+                //HttpResponse ctsResp = new HttpResponse();
                 
                 ticketJSON = GetCTSTicketJSON(ctsTicketList);
                 CallOutCTSForAPI(ticketJSON);
@@ -690,13 +692,14 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public static void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse)
+    //@future(callout=true)
+    public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
     
         try
         {
-            String jsonString = ctsCreateTicketResponse.getBody();
+            String jsonString = ctsCreateTicketResponse;
             List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(jsonString, List<CTSTicketResponse>.class);
             List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
             
