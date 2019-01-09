@@ -64,7 +64,7 @@ public class ExecuteSFDCToCTSAsynchRequestBatch implements Database.Batchable<sO
             dmlAsyncRecordsToUpdate.add(asyncRec);
         }
     
-        CTSSyncService.ProcessSFDCToCTSAsynchRequest(objName, scope);
+        //CTSSyncService.ProcessSFDCToCTSAsynchRequest(objName, scope);
         
         if(dmlAsyncRecordsToUpdate.size() > 0){
             update dmlAsyncRecordsToUpdate;

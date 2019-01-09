@@ -32661,6 +32661,9 @@
     <layoutAssignments>
         <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFDCToCTSTrigger__c-SFDCToCTSTrigger Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>

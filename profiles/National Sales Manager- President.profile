@@ -34203,6 +34203,9 @@
     <layoutAssignments>
         <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFDCToCTSTrigger__c-SFDCToCTSTrigger Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

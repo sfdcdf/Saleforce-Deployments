@@ -69,7 +69,7 @@ public without sharing class CTSSyncService_ERWorking{
         for (Id objId : requestMap.keySet())
         {
             Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-            String[] toAddresses = new String[]{'YodleSFDC@fake.com'};
+            String[] toAddresses = new String[]{'eugene.ross@web.com'};
             mail.setToAddresses(toAddresses);
             mail.setUseSignature(false);
             mail.setSaveAsActivity(false);
@@ -475,18 +475,15 @@ public without sharing class CTSSyncService_ERWorking{
                                   
        return bodyJSON.getAsString();
     }
-    
-     @future(callout = true)
+     
+     @future(callout=true)
      public static void CallOutCTSForAPI(String requestBody){
         
         System.Debug('*** Entering Method CallOutCTSForAPI ***');
         
-        CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
-        
         Http h = new Http();
        
         HttpRequest req = new HttpRequest();        
-        //req.setEndpoint(integrationSetting.ESBAPIEndPoint__c);
         req.setEndpoint('callout:CTSIntegrationService');
         req.setBody(requestBody);
         req.setMethod('POST');
@@ -494,9 +491,26 @@ public without sharing class CTSSyncService_ERWorking{
         req.setTimeout(120000);
 
         // Send the request, and return a response
-        HttpResponse res = h.send(req);
-        ProcessCreateTicketAPIResponse(res);   
-
+        System.Debug('*** Sending Request to CTS for Ticket ***');
+        
+        Boolean isSuccessful = true;
+        HttpResponse res;
+        
+        try{
+            res = h.send(req);
+        }
+        catch(Exception e){
+            // create method to handle Async Request records (UpdateSFDCToCTSAsynchRequest)
+            isSuccessful = false;
+            System.Debug('An error occurred sending request to CTS: ' + e.getMessage());
+        }
+        finally{
+            if(isSuccessful){
+                ProcessCreateTicketAPIResponse(res.getBody());
+            }
+        }
+        
+        System.Debug('*** Request Sent from CallCTSOutForAPI***');
         System.Debug('CallOutCTSForAPI Request: ' + requestBody);
         System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
         System.Debug('*** End Method CallOutCTSForAPI ***');
@@ -687,15 +701,36 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public static void ProcessCreateTicketAPIResponse(HttpResponse ctsCreateTicketResponse)
+    public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
     
         try
         {
-            String jsonString = ctsCreateTicketResponse.getBody();
+            String jsonString = ctsCreateTicketResponse;
+            String objNameAndId;
+            String objectId;
             List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(jsonString, List<CTSTicketResponse>.class);
             List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
+            Set<String> objectIds = new Set<String>();
+            
+            CTSTicketResponse.Response respMainNode;
+            CTSTicketResponse.Data respDataNode;
+            CTSTicketResponse.Errors respErrorNode;
+            
+            for(CTSTicketResponse ctr : ctsTicketResp){
+            
+                objNameAndId = respMainNode.clientRequestId;
+            
+                if(objNameAndId.startsWith('Case')){
+                    objectIds.add(objNameAndId.SubStringAfter('_'));
+                }
+                else{
+                    objectIds.add(objNameAndId.SubStringAfter('__c_'));
+                }
+                
+                System.Debug('Object Ids in Set List: ' + objectIds);
+            }
             
             List<SFDCToCTSAsynchRequest__c> asyncRecords = 
                 [SELECT Id,
@@ -713,39 +748,30 @@ public without sharing class CTSSyncService_ERWorking{
                         ScheduledDateTime__c,
                         Status__c
                    FROM SFDCToCTSAsynchRequest__c
-                  WHERE ScheduledDateTime__c = TODAY];
-            
-            CTSTicketResponse.Response respMainNode;
-            CTSTicketResponse.Data respDataNode;
-            CTSTicketResponse.Errors respErrorNode;
+                  WHERE ObjectId__c IN :objectIds];
             
             for(CTSTicketResponse ctr : ctsTicketResp){
             
+                objNameAndId = respMainNode.clientRequestId;
                 String ctsTicketNumber = respDataNode.ticketNumber;
-                String objNameAndId = respMainNode.clientRequestId;
-                //String objectName;
-                String recordId;
                 String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
                 String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
                 
-                System.Debug('Ticket Number Returned: ' + ctsTicketNumber);
+                if(objNameAndId.startsWith('Case')){
+                    objectId = objNameAndId.SubStringAfter('_');
+                }
+                else{
+                    objectId = objNameAndId.SubStringAfter('__c_');
+                }
+                
                 System.Debug('Client Request Id Returned: ' + objNameAndId);
+                System.Debug('Ticket Number Returned: ' + ctsTicketNumber);
                 System.Debug('Status Returned: ' + asyncStatus);
                 System.Debug('Error Message Returned: ' + errorMsg);
                 
-                if(objNameAndId.startsWith('Case')){
-                    //objectName = objNameAndId.SubStringBefore('_');
-                    recordId = objNameAndId.SubStringAfter('_');
-                }
-                else{
-                    //objectName = objNameAndId.SubStringBefore('__c_');
-                    //objectName += '__c';
-                    recordId = objNameAndId.SubStringAfter('__c_');
-                }
-                
                 for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
                 
-                    if(asyncRecord.ObjectId__c == recordId){
+                    if(asyncRecord.ObjectId__c == objectId){
                         
                         Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
                         
