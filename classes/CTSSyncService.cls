@@ -488,7 +488,7 @@ public without sharing class CTSSyncService{
        
         HttpRequest req = new HttpRequest();        
         req.setEndpoint('callout:CTSIntegrationService');
-        //req.setClientCertificateName('CTSESBProxyCert'); // need to make sure certificate is setup in SFDC before uncommenting
+        req.setClientCertificateName('CTSESBProxyCert');
         req.setBody(requestBody);
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
