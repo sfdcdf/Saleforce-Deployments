@@ -441,6 +441,7 @@ public without sharing class CTSSyncServicePartial
         return null;
     }    
     
+    
     public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
@@ -450,18 +451,19 @@ public without sharing class CTSSyncServicePartial
             String jsonString = ctsCreateTicketResponse;
             String objNameAndId;
             String objectId;
-            List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(jsonString, List<CTSTicketResponse>.class);
-            System.Debug('ctsTicketResp: ' +  ctsTicketResp );
+            Map<String, Object> clientJSONMap = (Map<String, Object>)JSON.deserializeUntyped(jsonString);
+            string res = JSON.serialize(clientJSONMap.get('response'));
+            List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(res, List<CTSTicketResponse >.class);
             List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
             Set<String> objectIds = new Set<String>();
             
-            CTSTicketResponse.Response respMainNode;
-            CTSTicketResponse.Data respDataNode;
-            CTSTicketResponse.Errors respErrorNode;
+            //CTSTicketResponse.Response respMainNode;
+            //CTSTicketResponse.Data respDataNode;
+            //CTSTicketResponse.Errors respErrorNode;
             
             for(CTSTicketResponse ctr : ctsTicketResp){
             
-                objNameAndId = respMainNode.clientRequestId;
+                objNameAndId = ctr.clientRequestId;
             
                 if(objNameAndId.startsWith('Case')){
                     objectIds.add(objNameAndId.SubStringAfter('_'));
@@ -493,10 +495,10 @@ public without sharing class CTSSyncServicePartial
             
             for(CTSTicketResponse ctr : ctsTicketResp){
             
-                objNameAndId = respMainNode.clientRequestId;
-                String ctsTicketNumber = respDataNode.ticketNumber;
-                String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
-                String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
+                objNameAndId = ctr.clientRequestId;
+                String ctsTicketNumber = ctr.Data.details[0].ticketNumber;
+                String asyncStatus = (ctr.status == 'Success' ? 'SUCCESS' : 'ERROR');
+                String errorMsg = (ctr.errors != null ? ctr.errors.message : null);
                 
                 if(objNameAndId.startsWith('Case')){
                     objectId = objNameAndId.SubStringAfter('_');
