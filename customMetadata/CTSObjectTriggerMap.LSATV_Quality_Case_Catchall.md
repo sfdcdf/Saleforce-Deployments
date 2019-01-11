@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>LSATV Charge Failures</label>
+    <label>LSATV Quality Case CatchAll</label>
     <protected>false</protected>
     <values>
         <field>Additional_Filter__c</field>
@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>CTSAPIIdentifier__c</field>
-        <value xsi:type="xsd:string">SFDCY_CASE_000007</value>
+        <value xsi:type="xsd:string">SFDCY_QUALCASE_CATCHALL_000025</value>
     </values>
     <values>
         <field>CTSAssignedToLoginName__c</field>
@@ -24,19 +24,19 @@
     </values>
     <values>
         <field>CaseOrigin__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">Internal</value>
     </values>
     <values>
         <field>CaseReason__c</field>
-        <value xsi:type="xsd:string">Charge Failure</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Lead Stream ATV Charge Failures</value>
+        <value xsi:type="xsd:string">Lead Stream ATV Closing Script QA</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_ChargeFailure_Send</value>
+        <value xsi:type="xsd:string">CTS_OrganicCases_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>
@@ -64,7 +64,7 @@
     </values>
     <values>
         <field>Object__c</field>
-        <value xsi:type="xsd:string">Case</value>
+        <value xsi:type="xsd:string">Quality_Case</value>
     </values>
     <values>
         <field>ProductType__c</field>
@@ -72,6 +72,6 @@
     </values>
     <values>
         <field>RecordTypeName__c</field>
-        <value xsi:type="xsd:string">Charge Failure</value>
+        <value xsi:type="xsd:string">CATCHALL</value>
     </values>
 </CustomMetadata>
