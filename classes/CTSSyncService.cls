@@ -139,6 +139,7 @@ public without sharing class CTSSyncService{
            }
            when 'Organic_Analysis__c' {
                for (Organic_Analysis__c organicCase : [SELECT Id,
+                                     Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
                                      Account_Name__r.Phone,
@@ -160,6 +161,7 @@ public without sharing class CTSSyncService{
            }  
            when 'Quality_Case__c' {
                for (Quality_Case__c qualityCase : [SELECT Id,
+                                     Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
                                      Account_Name__r.Phone,
@@ -180,7 +182,7 @@ public without sharing class CTSSyncService{
                
            }           
            when 'Best_Practice_Evaluation__c' {
-              for (Best_Practice_Evaluation__c bpe: [SELECT Id,
+              for (Best_Practice_Evaluation__c bpe: [SELECT Id, Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
                                      Account_Name__r.Phone,
@@ -202,6 +204,7 @@ public without sharing class CTSSyncService{
            }           
            when 'Customer_Surveys__c' {
                for (Customer_Surveys__c customerSurvey: [SELECT Id,
+                                     Name,
                                      Account__r.Client_First_Name__c,
                                      Account__r.Client_Last_Name__c,
                                      Account__r.Phone,
@@ -887,6 +890,7 @@ public without sharing class CTSSyncService{
                     if(asyncRecord.ObjectId__c == objectId){
                         
                         Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
+                        String currErrorMsg = (asyncRecord.ErrorDescription__c != null ? asyncRecord.ErrorDescription__c : '');
                         
                         asyncRecord.Status__c = asyncStatus;
                         asyncRecord.ProcessedDateTime__c = System.Now();
@@ -897,13 +901,11 @@ public without sharing class CTSSyncService{
                         }
                         else{
                         
-                            if(asyncRecord.NumberOfRetryAttempts__c < 3){
-                            
-                                retryAttempts += 1;
-                            }
-                            
-                            asyncRecord.ErrorDescription__c = errorMsg;
+                            retryAttempts += 1;
+                            asyncRecord.ErrorDescription__c = currErrorMsg + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
                             asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
+                            // as the number of retry attempts increase, multiply by 15; need to figure out a process to retry request based on new Scheduled time
+                            asyncRecord.ScheduledDateTime__c = System.Now().addminutes(retryAttempts*15);
                         }
                         
                         dmlAsyncRecordsUpdate.add(asyncRecord);
@@ -928,6 +930,7 @@ public without sharing class CTSSyncService{
     public static void UpdateSFDCObject(List<Id> objectIds)
     {
         System.Debug('*** Entering Method UpdateSFDCObject ***');
+        System.Debug('*** Async Request Record Ids List: ' + objectIds);
     
         List<Case> dmlCases = new List<Case>();
         List<Quality_Case__c> dmlQualityCases = new List<Quality_Case__c>();
@@ -957,9 +960,11 @@ public without sharing class CTSSyncService{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Case
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 caseMap.put(c.Id, c);
+                
+                System.Debug('Case Id: ' + (!String.IsBlank(c.Id) ? c.Id : 'Not a Case Record'));
             }
             
             for(Organic_Analysis__c oa :
@@ -967,9 +972,11 @@ public without sharing class CTSSyncService{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Organic_Analysis__c
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 orgCaseMap.put(oa.Id, oa);
+                
+                System.Debug('Organic Case Id: ' + (!String.IsBlank(oa.Id) ? oa.Id : 'Not an Organic Case Record'));
             }
             
             for(Quality_Case__c qc :
@@ -977,9 +984,11 @@ public without sharing class CTSSyncService{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Quality_Case__c
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 qualityCaseMap.put(qc.Id, qc);
+                
+                System.Debug('Quality Case Id: ' + (!String.IsBlank(qc.Id) ? qc.Id : 'Not a Quality Case Record'));
             }
             
             for(Customer_Surveys__c cs :
@@ -987,9 +996,11 @@ public without sharing class CTSSyncService{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Customer_Surveys__c
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 custSurveysMap.put(cs.Id, cs);
+                
+                System.Debug('Customer Survey Id: ' + (!String.IsBlank(cs.Id) ? cs.Id : 'Not a Customer Survey Record'));
             }
         
             for(SFDCToCTSAsynchRequest__c arMap : asyncRequestMap.values()){

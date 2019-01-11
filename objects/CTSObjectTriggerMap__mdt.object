@@ -234,127 +234,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>RecordTypeName__c</fullName>
-        <description>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</inlineHelpText>
-        <label>Record Type Name</label>
-        <required>true</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Account Update</fullName>
-                    <default>true</default>
-                    <label>Account Update</label>
-                </value>
-                <value>
-                    <fullName>Charge Failure</fullName>
-                    <default>false</default>
-                    <label>Charge Failure</label>
-                </value>
-                <value>
-                    <fullName>Closing Script - Auto Launch</fullName>
-                    <default>false</default>
-                    <label>Closing Script - Auto Launch</label>
-                </value>
-                <value>
-                    <fullName>Installation Worksheet</fullName>
-                    <default>false</default>
-                    <label>Installation Worksheet</label>
-                </value>
-                <value>
-                    <fullName>LBW Content Organic Setup</fullName>
-                    <default>false</default>
-                    <label>LBW Content Organic Setup</label>
-                </value>
-                <value>
-                    <fullName>LH Closing Script – Auto Launch</fullName>
-                    <default>false</default>
-                    <label>LH Closing Script – Auto Launch</label>
-                </value>
-                <value>
-                    <fullName>LH Master</fullName>
-                    <default>false</default>
-                    <label>LH Master</label>
-                </value>
-                <value>
-                    <fullName>LH OOS</fullName>
-                    <default>false</default>
-                    <label>LH OOS</label>
-                </value>
-                <value>
-                    <fullName>Maps Initial Claiming</fullName>
-                    <default>false</default>
-                    <label>Maps Initial Claiming</label>
-                </value>
-                <value>
-                    <fullName>Master</fullName>
-                    <default>false</default>
-                    <label>Master</label>
-                </value>
-                <value>
-                    <fullName>NCS - AutoLaunch</fullName>
-                    <default>false</default>
-                    <label>NCS - AutoLaunch</label>
-                </value>
-                <value>
-                    <fullName>NPS Survey LBW</fullName>
-                    <default>false</default>
-                    <label>NPS Survey LBW</label>
-                </value>
-                <value>
-                    <fullName>NPS Survey Lighthouse</fullName>
-                    <default>false</default>
-                    <label>NPS Survey Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>Optimization</fullName>
-                    <default>false</default>
-                    <label>Optimization</label>
-                </value>
-                <value>
-                    <fullName>Organic Setup</fullName>
-                    <default>false</default>
-                    <label>Organic Setup</label>
-                </value>
-                <value>
-                    <fullName>Outbound Call</fullName>
-                    <default>false</default>
-                    <label>Outbound Call</label>
-                </value>
-                <value>
-                    <fullName>PIN Action Needed</fullName>
-                    <default>false</default>
-                    <label>PIN Action Needed</label>
-                </value>
-                <value>
-                    <fullName>QA Audit</fullName>
-                    <default>false</default>
-                    <label>QA Audit</label>
-                </value>
-                <value>
-                    <fullName>TORCHx Master</fullName>
-                    <default>false</default>
-                    <label>TORCHx Master</label>
-                </value>
-                <value>
-                    <fullName>TORCHx NCS - AutoLaunch</fullName>
-                    <default>false</default>
-                    <label>TORCHx NCS - AutoLaunch</label>
-                </value>
-                <value>
-                    <fullName>Yodle Gold Service</fullName>
-                    <default>false</default>
-                    <label>Yodle Gold Service</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Additional_Filter__c</fullName>
         <description>Additional Filter placeholder</description>
         <externalId>false</externalId>
@@ -612,6 +491,132 @@
                     <fullName>Website</fullName>
                     <default>false</default>
                     <label>Website</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RecordTypeName__c</fullName>
+        <description>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</inlineHelpText>
+        <label>Record Type Name</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Update</fullName>
+                    <default>true</default>
+                    <label>Account Update</label>
+                </value>
+                <value>
+                    <fullName>Charge Failure</fullName>
+                    <default>false</default>
+                    <label>Charge Failure</label>
+                </value>
+                <value>
+                    <fullName>Closing Script - Auto Launch</fullName>
+                    <default>false</default>
+                    <label>Closing Script - Auto Launch</label>
+                </value>
+                <value>
+                    <fullName>Installation Worksheet</fullName>
+                    <default>false</default>
+                    <label>Installation Worksheet</label>
+                </value>
+                <value>
+                    <fullName>LBW Content Organic Setup</fullName>
+                    <default>false</default>
+                    <label>LBW Content Organic Setup</label>
+                </value>
+                <value>
+                    <fullName>LH Closing Script – Auto Launch</fullName>
+                    <default>false</default>
+                    <label>LH Closing Script – Auto Launch</label>
+                </value>
+                <value>
+                    <fullName>LH Master</fullName>
+                    <default>false</default>
+                    <label>LH Master</label>
+                </value>
+                <value>
+                    <fullName>LH OOS</fullName>
+                    <default>false</default>
+                    <label>LH OOS</label>
+                </value>
+                <value>
+                    <fullName>Maps Initial Claiming</fullName>
+                    <default>false</default>
+                    <label>Maps Initial Claiming</label>
+                </value>
+                <value>
+                    <fullName>Master</fullName>
+                    <default>false</default>
+                    <label>Master</label>
+                </value>
+                <value>
+                    <fullName>NCS - AutoLaunch</fullName>
+                    <default>false</default>
+                    <label>NCS - AutoLaunch</label>
+                </value>
+                <value>
+                    <fullName>NPS Survey LBW</fullName>
+                    <default>false</default>
+                    <label>NPS Survey LBW</label>
+                </value>
+                <value>
+                    <fullName>NPS Survey Lighthouse</fullName>
+                    <default>false</default>
+                    <label>NPS Survey Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>Optimization</fullName>
+                    <default>false</default>
+                    <label>Optimization</label>
+                </value>
+                <value>
+                    <fullName>Organic Setup</fullName>
+                    <default>false</default>
+                    <label>Organic Setup</label>
+                </value>
+                <value>
+                    <fullName>Outbound Call</fullName>
+                    <default>false</default>
+                    <label>Outbound Call</label>
+                </value>
+                <value>
+                    <fullName>PIN Action Needed</fullName>
+                    <default>false</default>
+                    <label>PIN Action Needed</label>
+                </value>
+                <value>
+                    <fullName>QA Audit</fullName>
+                    <default>false</default>
+                    <label>QA Audit</label>
+                </value>
+                <value>
+                    <fullName>TORCHx Master</fullName>
+                    <default>false</default>
+                    <label>TORCHx Master</label>
+                </value>
+                <value>
+                    <fullName>TORCHx NCS - AutoLaunch</fullName>
+                    <default>false</default>
+                    <label>TORCHx NCS - AutoLaunch</label>
+                </value>
+                <value>
+                    <fullName>Yodle Gold Service</fullName>
+                    <default>false</default>
+                    <label>Yodle Gold Service</label>
+                </value>
+                <value>
+                    <fullName>CATCHALL</fullName>
+                    <default>false</default>
+                    <label>CATCHALL</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

@@ -65,17 +65,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>ErrorDescription__c</fullName>
-        <description>Used to capture any error responses/ details for the request record</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Used to capture any error responses/ details for the request record</inlineHelpText>
-        <label>Error Description</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Integration_Type__c</fullName>
         <description>Integration Type (API or Email) which determines the internal process methods to be called for ticket creation in CTS</description>
         <externalId>false</externalId>
@@ -259,6 +248,18 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>ErrorDescription__c</fullName>
+        <description>Used to capture any error responses/ details for the request record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture any error responses/ details for the request record</inlineHelpText>
+        <label>Error Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -281,7 +282,26 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>SFDCToCTSAsynchRequests</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Object_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ObjectId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ExternalTicketId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ErrorDescription__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NumberOfRetryAttempts__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Integration_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ScheduledDateTime__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProcessedDateTime__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Object_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ObjectId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ExternalTicketId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Integration_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ScheduledDateTime__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProcessedDateTime__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NumberOfRetryAttempts__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ErrorDescription__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
@@ -293,6 +313,8 @@
         <columns>Object_Name__c</columns>
         <columns>ObjectId__c</columns>
         <columns>API_Identifier__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
         <columns>EmailTemplateId__c</columns>
         <columns>Integration_Type__c</columns>
         <columns>ScheduledDateTime__c</columns>

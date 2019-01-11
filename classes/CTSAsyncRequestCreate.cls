@@ -11,6 +11,8 @@ public class CTSAsyncRequestCreate
     @InvocableMethod
     public static void CreateNewAsyncRequest(List<Id> objectIds)
     {
+        System.Debug('*** Entering Invocable CreateNewAsyncRequest ***');
+        
         String caseSignature = '500';
         String orgCaseSignature = 'a0m';
         String qualityCaseSignature = 'a2n';

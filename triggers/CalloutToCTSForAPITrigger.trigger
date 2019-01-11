@@ -6,9 +6,10 @@
 *****************************************************************************/
 trigger CalloutToCTSForAPITrigger on SFDCToCTSAsynchRequest__c (after insert) {
 
+    System.Debug('*** Entered CalloutToCTSForAPITrigger ***');
+
     List<SFDCToCTSAsynchRequest__c> asyncList = new List<SFDCToCTSAsynchRequest__c>();
     String objName;
-
 
     for(SFDCToCTSAsynchRequest__c record : trigger.New){ 
      
