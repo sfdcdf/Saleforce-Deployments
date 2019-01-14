@@ -24,7 +24,7 @@
     </values>
     <values>
         <field>CaseOrigin__c</field>
-        <value xsi:type="xsd:string">Internal</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>CaseReason__c</field>
@@ -32,11 +32,11 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Lead Stream ATV Closing Script QA</value>
+        <value xsi:type="xsd:string">Quality Case Catch All</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_OrganicCases_Send</value>
+        <value xsi:type="xsd:string">CTS_QualityCase_Generic</value>
     </values>
     <values>
         <field>IntegrationType__c</field>

@@ -32,11 +32,11 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Lead Stream ATV NPS Survey</value>
+        <value xsi:type="xsd:string">Customer Survey Generic</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_Generic_Send</value>
+        <value xsi:type="xsd:string">CTS_CustomerSurveyGeneric_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>

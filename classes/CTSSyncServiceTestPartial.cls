@@ -64,8 +64,9 @@ private class CTSSyncServiceTestPartial {
         newAsyncRecord.Status__c ='NEW';
         
         Insert newAsyncRecord;
-        
+                
         requestMap.put(newCase.Id, newAsyncRecord);        
+        system.debug('Async requests: ' + requestMap);
         
         Test.startTest();
         List<CTSSFDCObjectBase> objs = CTSSyncService.GetSFDCObject('Case', requestMap);       
@@ -81,20 +82,30 @@ private class CTSSyncServiceTestPartial {
     }
     
     
-    @isTest static void test_GetRoutingTableObject() {
+    @isTest static void test_GetRoutingTableObject() {    
+    
+        Account newAccount = new Account();
+        newAccount.Name = 'Testing CTS API integration';
+        newAccount.Client_First_Name__c = 'Test';
+        newAccount.Client_Last_Name__c = 'CTS';
+        newAccount.Client_ID__c = '1234';        
+        insert newAccount;
         
-       /* Test.startTest();
-        CTSObjectTriggerMap__mdt routingObj = CTSSyncService.GetRoutingTableObject('Case', 'Charge Failure', '', '', 'Leads By Web');       
+        Case newCase = new Case();                
+        newCase.AccountId = newAccount.Id;
+        insert newCase;
+    
+        Test.startTest();           
+        Map<Id,CTSObjectTriggerMap__mdt> routingObjs = CTSSyncService.GetRoutingTableObject('Case', new List<Id> { newCase.Id });       
         Test.stopTest();
-        system.debug('Mapping instance: ' + routingObj);
-        system.assert(routingObj != null && routingObj.MasterLabel == 'LBW Charge Failures'); */
-        
+        system.debug('Routing table instance: ' + routingObjs);
+        system.assert(routingObjs != null && routingObjs.get(newCase.Id).MasterLabel == 'LSATV Cases CatchAll');         
     }
            
     
     
     @isTest static void test_GetCTSTicketJSON() {
-       /* List<String> jsonTickets;
+        String jsonTickets;
         
         List<CTSSyncService.CTSTicket> ctsTickets = new list<CTSSyncService.CTSTicket>();
         
@@ -104,6 +115,7 @@ private class CTSSyncServiceTestPartial {
         ticket1.contactLastName  = 'contactLastName1';
         ticket1.contactPhone = '(1)514-1234567';        
         ticket1.contactEmailAddress = 'fake@yop.com';
+        ticket1.crmOrderNumber = '123456';
         ticket1.referenceAccountId = 'referenceAccountId1';
         ticket1.referenceCustomerId = 'referenceCustomerId1';
         ticket1.referenceProductInstanceId = 'referenceProductInstanceId1';
@@ -124,6 +136,7 @@ private class CTSSyncServiceTestPartial {
         ticket2.contactLastName  = 'contactLastName2';
         ticket2.contactPhone = '(1)514-1234567';        
         ticket2.contactEmailAddress = 'fake3@yop.com';
+        ticket2.crmOrderNumber = '234567';
         ticket2.referenceAccountId = 'referenceAccountId2';
         ticket2.referenceCustomerId = 'referenceCustomerId2';
         ticket2.referenceProductInstanceId = 'referenceProductInstanceId2';
@@ -139,12 +152,8 @@ private class CTSSyncServiceTestPartial {
         
         jsonTickets = CTSSyncService.GetCTSTicketJSON(ctsTickets);
         system.debug('Json tickets: ' + jsonTickets);
-        system.assert(jsonTickets != null && jsonTickets.size() > 0);
-        for (string jsonTicket : jsonTickets)
-        {
-            system.debug('Json ticket: ' + jsonTicket);
-            system.assert(!String.isBlank(jsonTicket));
-        } */            
+        system.assert(!String.isBlank(jsonTickets));
+                  
     } 
     
 }

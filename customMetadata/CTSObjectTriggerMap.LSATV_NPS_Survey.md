@@ -36,7 +36,7 @@
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_Generic_Send</value>
+        <value xsi:type="xsd:string">CTS_CustomerSurvey_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>
