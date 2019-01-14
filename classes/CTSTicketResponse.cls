@@ -45,11 +45,7 @@
         public String errorId {get; set;}
     }
     
-    //public class Errors {
-    //    public List<Error> errors { get; set; }
-    //}
-    
-    
+   
     public class ResponseDetail {
         public String ticketNumber {get; set;}
     }

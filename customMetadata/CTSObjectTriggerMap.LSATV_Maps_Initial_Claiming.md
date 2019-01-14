@@ -36,7 +36,7 @@
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_OrganicCases_Send</value>
+        <value xsi:type="xsd:string">CTS_OrganicCaseMICC_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>

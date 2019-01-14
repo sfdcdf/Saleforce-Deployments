@@ -1107,7 +1107,7 @@ public without sharing class CTSSyncService{
         return ctsIntSettings;
     }
     
-    private static String GetConfigValue(string configLabel)
+    public static String GetConfigValue(string configLabel)
     {
         String configValue = 
             [SELECT Id, 
