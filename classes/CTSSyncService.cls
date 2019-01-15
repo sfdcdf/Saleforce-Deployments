@@ -329,29 +329,29 @@ public without sharing class CTSSyncService{
                      continue;
                  }
                                                 
-                 //B. 0 & 1 & 2 & 4    
+                 //B. 0 & 1 & 2 & 4 & 3 = ""   
                  fieldMap.remove('CaseOrigin__c');         
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')))
                  {
                      routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                      continue;
                  }     
                                                                                
-                 //C. 0 & 1 & 3 & 4
+                 //C. 0 & 1 & 3 & 4 & 2 = ""
                  fieldMap.remove('CaseReason__c');
                  fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Reason')))
                  {
                      routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                      continue;
                  }      
                 
-                 //D. 0 & 1 & 4
+                 //D. 0 & 1 & 4 & 2 = "" & 3 = ""
                  fieldMap.remove('CaseOrigin__c');        
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
                  {
                      routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                      continue;
@@ -360,7 +360,7 @@ public without sharing class CTSSyncService{
                  fieldMap.remove('ProductType__c');
              }               
                  
-             //E. 0 & 1               
+             //E. 0 & 1              
              routingObj = FindRoutingObject(routeMappings, fieldMap);
              if (routingObj != null)
              {

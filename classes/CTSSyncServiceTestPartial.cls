@@ -1,6 +1,21 @@
 @isTest
 private class CTSSyncServiceTestPartial {
     
+    
+    public class MockHttpResponseGenerator implements HttpCalloutMock {
+        // Implement this interface method
+        public HTTPResponse respond(HTTPRequest req) {
+           
+            // Create a fake response
+            HttpResponse res = new HttpResponse();
+            res.setHeader('Content-Type', 'application/json');
+            res.setBody('{   \"originalMessageId\": \"ba74ff70-151f-11e9-b1ce-00505684b32f\",   \"platformId\": null,   \"actionType\": null,   \"client_ip\": \"136.147.62.8,10.40.177.20\",   \"applicationName\": \"SFDC Salesforce.com Yodle\",   \"esbServer\": \"qa1esb01.registeredsite.com\",   \"eventTimestamp\": \"2019-01-10T21:36:02.960Z\",   \"day\": \"2019-01-10T21:36:00.000Z\",   \"muleMessageId\": \"ba74ff70-151f-11e9-b1ce-00505684b32f\",   \"response\": [      {         \"providerApplicationName\": \"Ticketing\",         \"clientRequestId\": \"Case_5001b000005BprnAAC\",         \"status\": \"Failure\",         \"errors\": [            {               \"source\": \"ALL\",               \"statusCode\": \"ESB_GENERIC_FLOW_ERROR\",               \"message\": \"Message id = ba74ff70-151f-11e9-b1ce-00505684b32f from flow ESB_GENERIC_FLOW endpoint vm:messages.adapter.generic.wrapper got an error.Exception message is = The request cannot be processed, java.lang.Exception: REMOTE_SERVICE_INTERNAL_SERVER_ERROR\",               \"errorId\": null            }         ],         \"data\": null,         \"messageId\": \"ba74ff70-151f-11e9-b1ce-00505684b32f\"      }   ]}');
+            res.setStatusCode(200);
+            return res;
+        }
+    }
+    
+    
     @isTest 
     static void test_GetSFDCObject() {
         Map<Id, SFDCToCTSAsynchRequest__c> requestMap = new Map<Id, SFDCToCTSAsynchRequest__c>();
@@ -180,6 +195,10 @@ private class CTSSyncServiceTestPartial {
         List<CTSSyncService.CTSTicket> ctsTickets = CTSSyncService.GetCTSTicket(sfdcObjList);
         System.debug('CTS tickets: ' + ctsTickets);
         System.assert(ctsTickets.size() == 1);
+    }
+    
+    @isTest
+    static void test_CallOutCTSForAPI() {
     }
     
 }
