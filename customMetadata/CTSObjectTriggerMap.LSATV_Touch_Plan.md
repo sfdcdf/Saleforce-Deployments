@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">LS Touch Plan Case</value>
+        <value xsi:type="xsd:string">Lead Stream ATV Touch Plan Case</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>

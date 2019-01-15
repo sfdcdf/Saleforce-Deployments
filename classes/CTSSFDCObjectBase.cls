@@ -19,6 +19,11 @@ public virtual class CTSSFDCObjectBase
     public string CRMOrderNumber { get; set; }
     public string CTSEmailAddress { get; set; }
     
+    public CTSSFDCObjectBase()
+    {
+    }
+    
+    
     private void CTSSFDCObjectBase(Id objId, String objName, SFDCToCTSAsynchRequest__c requestInstance, Messaging.SingleEmailMessage mail)
     {
         this.Id = objId;
@@ -92,7 +97,7 @@ public virtual class CTSSFDCObjectBase
         CTSSFDCObjectBase(qualityCase.Id, objName, requestInstance, mail);             
     }
     
-    public CTSSFDCObjectBase(Best_Practice_Evaluation__c bpe, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
+    /*public CTSSFDCObjectBase(Best_Practice_Evaluation__c bpe, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
     {        
         this.ContactFirstName = bpe.Account_Name__r.Client_First_Name__c;
         this.ContactLastName = bpe.Account_Name__r.Client_Last_Name__c;
@@ -106,7 +111,7 @@ public virtual class CTSSFDCObjectBase
         this.AlternateContactEmailAddress = bpe.Account_Name__r.Email__c;  
         this.CRMOrderNumber = bpe.Name;  
         CTSSFDCObjectBase(bpe.Id, objName, requestInstance, mail);          
-    }
+    } */
     
     public CTSSFDCObjectBase(Customer_Surveys__c customerSurvey, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
     {        

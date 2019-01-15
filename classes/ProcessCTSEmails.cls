@@ -17,9 +17,12 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
     Id automationAdminUser = [SELECT Id FROM User WHERE Alias = 'sauto' LIMIT 1].Id;
     Integer objIdSubjStart;
     Integer objIdSubjEnd;
+    Integer ticketStart;
+    Integer ticketEnd;
     String closedStatus;
     String objIdSubj;
     String objName;
+    String ticketNumber;
     String fromAddress;
     String[] toAddresses;
     String subjectLine;
@@ -45,7 +48,7 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
         System.Debug('Quality Case Signature Config Value: ' + qualityCaseSignature);
         System.Debug('Customer Survey signature Config Value: ' + customerSurveySignature);
            
-        complTktConst = CTSSyncService.GetConfigValue('SubjectLineParse_contentcomplete');
+        complTktConst = CTSSyncService.GetConfigValue('SubjectLineParse_closesalesforcerecord');
         System.Debug('Completed Ticket Config Value: ' + complTktConst);
         
         sfdcListenerEmail = CTSSyncService.GetConfigValue('ListenerEmailSrvc_sfdc');
@@ -60,9 +63,15 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
             // only process if Subject Line contains correct pattern/ Keyword(s)
             if(subjectLine.contains(complTktConst)){
                 
+                // SFDC Record Id
                 objIdSubjStart = subjectLine.IndexOf(': ');
                 objIdSubjEnd = subjectLine.trim().IndexOf('[');
                 objIdSubj = subjectLine.substring(objIdSubjStart, objIdSubjEnd).replace(': ', '').trim();
+                
+                // CTS Ticket Number
+                ticketStart = subjectLine.IndexOf('[');
+                ticketEnd = subjectLine.IndexOf(']');
+                ticketNumber = subjectLine.substring(ticketStart, ticketEnd).replace('[Tkt: ', '').trim();
                 
                 // Get proper Closed status based on SFDC Object being updated and Object Name
                 if(objIdSubj.startsWith(caseSignature)){
@@ -94,6 +103,8 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                                 [SELECT Id,
                                         CaseNumber,
                                         Status,
+                                        External_Ticket_ID__c,
+                                        External_Ticket_System__c,
                                         IsClosed
                                    FROM Case
                                   WHERE Id = :objIdSubj AND
@@ -101,12 +112,18 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                                         
                                 if(!String.isBlank(c.Id)){
                                     c.Status = closedStatus;
+                                    
+                                    // Ensure CTS Ticket reference properties are updated
+                                    if(String.IsBlank(c.External_Ticket_ID__c) && !String.IsBlank(ticketNumber)){
+                                        c.External_Ticket_ID__c = ticketNumber;
+                                        c.External_Ticket_System__c = 'CTS';
+                                    }
                                     dmlCasesToUpdate.add(c);
                                     
                                     // add to new task activity list
                                     Task newTsk = new Task();
                                     newTsk.OwnerId = automationAdminUser;
-                                    newTsk.Description = 'CTS Inbound processing updated the status of Case ' + c.CaseNumber;
+                                    newTsk.Description = 'CTS Inbound processing updated the status of Case ' + c.CaseNumber + ' to ' + closedStatus;
                                     newTsk.Subject = 'Case Status Updated by Automation';
                                     newTsk.Priority = 'Normal';
                                     newTsk.Status = 'Completed';
@@ -120,6 +137,8 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                                 [SELECT Id,
                                         Name,
                                         Status__c,
+                                        External_Ticket_ID__c,
+                                        External_Ticket_System__c,
                                         IsClosed__c
                                    FROM Organic_Analysis__c
                                   WHERE Id = :objIdSubj AND
@@ -128,12 +147,18 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                             
                                 if(!String.isBlank(oa.Id)){
                                     oa.Status__c = closedStatus;
+                                    
+                                    // Ensure CTS Ticket reference properties are updated
+                                    if(String.IsBlank(oa.External_Ticket_ID__c) && !String.IsBlank(ticketNumber)){
+                                        oa.External_Ticket_ID__c = ticketNumber;
+                                        oa.External_Ticket_System__c = 'CTS';
+                                    }
                                     dmlOrganicCasesToUpdate.add(oa);
                                     
                                     // add to new task activity list
                                     Task newTsk = new Task();
                                     newTsk.OwnerId = automationAdminUser;
-                                    newTsk.Description = 'CTS Inbound processing updated the status of Organic Case ' + oa.Name;
+                                    newTsk.Description = 'CTS Inbound processing updated the status of Organic Case ' + oa.Name + ' to ' + closedStatus;
                                     newTsk.Subject = 'Organic Case Status Updated by Automation';
                                     newTsk.Priority = 'Normal';
                                     newTsk.Status = 'Completed';
@@ -147,6 +172,8 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                                 [SELECT Id,
                                         Name,
                                         Status__c,
+                                        External_Ticket_ID__c,
+                                        External_Ticket_System__c,
                                         IsClosed__c
                                    FROM Quality_Case__c
                                   WHERE Id = :objIdSubj AND
@@ -155,12 +182,18 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                             
                                 if(!String.isBlank(qc.Id)){
                                     qc.Status__c = closedStatus;
+                                    
+                                    // Ensure CTS Ticket reference properties are updated
+                                    if(String.IsBlank(qc.External_Ticket_ID__c) && !String.IsBlank(ticketNumber)){
+                                        qc.External_Ticket_ID__c = ticketNumber;
+                                        qc.External_Ticket_System__c = 'CTS';
+                                    }
                                     dmlQualityCasesToUpdate.add(qc);
                                     
                                     // add to new task activity list
                                     Task newTsk = new Task();
                                     newTsk.OwnerId = automationAdminUser;
-                                    newTsk.Description = 'CTS Inbound processing updated the status of Quality Case ' + qc.Name;
+                                    newTsk.Description = 'CTS Inbound processing updated the status of Quality Case ' + qc.Name + ' to ' + closedStatus;
                                     newTsk.Subject = 'Quality Case Status Updated by Automation';
                                     newTsk.Priority = 'Normal';
                                     newTsk.Status = 'Completed';
@@ -173,7 +206,9 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                             for(Customer_Surveys__c cs :
                                 [SELECT Id,
                                         Name,
-                                        Status__c
+                                        Status__c,
+                                        External_Ticket_ID__c,
+                                        External_Ticket_System__c
                                    FROM Customer_Surveys__c
                                   WHERE Id = :objIdSubj AND
                                         Status__c != :closedStatus
@@ -181,12 +216,18 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
                             
                                 if(!String.isBlank(cs.Id)){
                                     cs.Status__c = closedStatus;
+                                    
+                                    // Ensure CTS Ticket reference properties are updated
+                                    if(String.IsBlank(cs.External_Ticket_ID__c) && !String.IsBlank(ticketNumber)){
+                                        cs.External_Ticket_ID__c = ticketNumber;
+                                        cs.External_Ticket_System__c = 'CTS';
+                                    }
                                     dmlCustSurveysToUpdate.add(cs);
                                     
                                     // add to new task activity list
                                     Task newTsk = new Task();
                                     newTsk.OwnerId = automationAdminUser;
-                                    newTsk.Description = 'CTS Inbound processing updated the status of Customer Survey ' + cs.Name;
+                                    newTsk.Description = 'CTS Inbound processing updated the status of Customer Survey ' + cs.Name + ' to ' + closedStatus;
                                     newTsk.Subject = 'Customer Survey Status Updated by Automation';
                                     newTsk.Priority = 'Normal';
                                     newTsk.Status = 'Completed';

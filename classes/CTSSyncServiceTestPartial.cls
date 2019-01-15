@@ -156,4 +156,30 @@ private class CTSSyncServiceTestPartial {
                   
     } 
     
+    @isTest 
+    static void test_GetCTSTicket() {    
+        List<CTSSFDCObjectBase> sfdcObjList = new List<CTSSFDCObjectBase>();
+        CTSSFDCObjectBase sfdcObj = new CTSSFDCObjectBase();
+        sfdcObj.ApiIdentifier = 'SF_NETSOL_000001';
+        sfdcObj.CRMOrderNumber = '11284031';
+        sfdcObj.ContactFirstName = 'CTS FN';
+        sfdcObj.ContactLastName = 'CTS LN';
+        sfdcObj.ContactPhone = '123-4567890';
+        sfdcObj.ContactEmailAddress = 'ctsintegration@fake.com';
+        sfdcObj.ObjectName = 'Case';
+        sfdcObj.ReferenceAccountId = '0011b00000RzOEfAAN';
+        sfdcObj.ReferenceCustomerId = '9999999';
+        sfdcObj.ReferenceProductInstanceId = '5001b000005Bq5RAAS';
+        sfdcObj.Domain = 'www.testsite.com';
+        sfdcObj.Subject = 'Lead Stream TP 2 : 11284031';
+        sfdcObj.Status = 'Open';
+        sfdcObj.Detail = 'Outbound Call\r\n\r\nCase Number: 11284031\r\nSubject: Lead Stream TP 2\r\nAuto Close Date: \r\n\r\nDescription: CTS Test\r\n\r\nTotal Account Revenue: $0\r\n________________________________________________________________\r\n\r\nStatus: \r\nScheduled Call: \r\nClient Satisfaction: \r\nNotes:\r\n Client Id: 9999999\r\n Client First Name: CTS FN\r\n Client Last Name: CTS LN\r\n Client Email: eugene.ross@web.com\r\n Client Phone: (555) 345-6734\r\n Product Code: Lead Stream ATV\r\n';
+        sfdcObj.ReferenceProductCodes = 'Lead Stream ATV';
+        sfdcObj.AlternateContactEmailAddress = 'ctsintegration@fake.com';
+        sfdcObjList.add(sfdcObj);
+        List<CTSSyncService.CTSTicket> ctsTickets = CTSSyncService.GetCTSTicket(sfdcObjList);
+        System.debug('CTS tickets: ' + ctsTickets);
+        System.assert(ctsTickets.size() == 1);
+    }
+    
 }

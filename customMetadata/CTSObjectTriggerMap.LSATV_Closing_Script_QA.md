@@ -36,7 +36,7 @@
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_Closing_Script_QA</value>
+        <value xsi:type="xsd:string">CTS_Closing_Script_QA_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>

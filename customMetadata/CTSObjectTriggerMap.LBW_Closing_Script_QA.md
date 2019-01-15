@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>CTSAPIIdentifier__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">SF_NETSOL_000001</value>
     </values>
     <values>
         <field>CTSAssignedToLoginName__c</field>
@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>CTSEmailAddress__c</field>
-        <value xsi:type="xsd:string">sf_to_cts_lead_stream_closing_script_qa@web.com</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>CTSNoteType__c</field>
@@ -32,15 +32,15 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Leads by Web Closing Script QA</value>
+        <value xsi:type="xsd:string">Leads By Web Closing Script QA</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_OrganicCases_Send</value>
+        <value xsi:type="xsd:string">CTS_Closing_Script_QA_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>
-        <value xsi:type="xsd:string">Email</value>
+        <value xsi:type="xsd:string">API</value>
     </values>
     <values>
         <field>IsActive__c</field>

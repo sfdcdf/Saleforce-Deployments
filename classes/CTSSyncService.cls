@@ -181,7 +181,7 @@ public without sharing class CTSSyncService{
                }
                
            }           
-           when 'Best_Practice_Evaluation__c' {
+           /*when 'Best_Practice_Evaluation__c' {
               for (Best_Practice_Evaluation__c bpe: [SELECT Id, Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
@@ -201,7 +201,7 @@ public without sharing class CTSSyncService{
                    ctsSFDCObjectList.add(baseObject);
                }
                
-           }           
+           } */          
            when 'Customer_Surveys__c' {
                for (Customer_Surveys__c customerSurvey: [SELECT Id,
                                      Name,

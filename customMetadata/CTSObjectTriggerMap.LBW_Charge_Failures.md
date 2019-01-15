@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>CTSAPIIdentifier__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">SFDCY_CASE_000007</value>
     </values>
     <values>
         <field>CTSAssignedToLoginName__c</field>
@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>CTSEmailAddress__c</field>
-        <value xsi:type="xsd:string">sf_to_cts_lead_stream_charge_failure@web.com</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>CTSNoteType__c</field>
@@ -32,15 +32,15 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Leads by Web Charge Failures</value>
+        <value xsi:type="xsd:string">Leads By Web Charge Failures</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
-        <value xsi:type="xsd:string">CTS_OrganicCases_Send</value>
+        <value xsi:type="xsd:string">CTS_ChargeFailure_Send</value>
     </values>
     <values>
         <field>IntegrationType__c</field>
-        <value xsi:type="xsd:string">Email</value>
+        <value xsi:type="xsd:string">API</value>
     </values>
     <values>
         <field>IsActive__c</field>

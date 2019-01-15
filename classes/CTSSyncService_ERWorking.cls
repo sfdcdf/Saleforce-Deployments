@@ -1,5 +1,7 @@
 /****************************************************************************
-  Working class
+  Company/ Author ....: E. Ross
+  Description ........: CTS Sync Service class provides the mapping and data elements to send data to CTS from Salesforce
+  to create tickets and reference the ticket back to the SFDC object - WORKING COPY
 *****************************************************************************/
 public without sharing class CTSSyncService_ERWorking{
 
@@ -136,6 +138,7 @@ public without sharing class CTSSyncService_ERWorking{
            }
            when 'Organic_Analysis__c' {
                for (Organic_Analysis__c organicCase : [SELECT Id,
+                                     Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
                                      Account_Name__r.Phone,
@@ -157,6 +160,7 @@ public without sharing class CTSSyncService_ERWorking{
            }  
            when 'Quality_Case__c' {
                for (Quality_Case__c qualityCase : [SELECT Id,
+                                     Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
                                      Account_Name__r.Phone,
@@ -176,8 +180,8 @@ public without sharing class CTSSyncService_ERWorking{
                }
                
            }           
-           when 'Best_Practice_Evaluation__c' {
-              for (Best_Practice_Evaluation__c bpe: [SELECT Id,
+           /*when 'Best_Practice_Evaluation__c' {
+              for (Best_Practice_Evaluation__c bpe: [SELECT Id, Name,
                                      Account_Name__r.Client_First_Name__c,
                                      Account_Name__r.Client_Last_Name__c,
                                      Account_Name__r.Phone,
@@ -196,9 +200,10 @@ public without sharing class CTSSyncService_ERWorking{
                    ctsSFDCObjectList.add(baseObject);
                }
                
-           }           
+           } */          
            when 'Customer_Surveys__c' {
                for (Customer_Surveys__c customerSurvey: [SELECT Id,
+                                     Name,
                                      Account__r.Client_First_Name__c,
                                      Account__r.Client_Last_Name__c,
                                      Account__r.Phone,
@@ -485,7 +490,7 @@ public without sharing class CTSSyncService_ERWorking{
        
         HttpRequest req = new HttpRequest();        
         req.setEndpoint('callout:CTSIntegrationService');
-        //req.setClientCertificateName('CTSESBProxyCert'); // need to make sure certificate is setup in SFDC before uncommenting
+        req.setClientCertificateName('CTSESBProxyCert');
         req.setBody(requestBody);
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
@@ -702,7 +707,7 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
+    /* public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
     
@@ -811,11 +816,120 @@ public without sharing class CTSSyncService_ERWorking{
         {
             System.Debug('An error occurred in ProcessCreateTicketAPIResponse: ' + e.getMessage());
         }
+    } */
+    
+    public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
+    {
+        System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
+    
+        try
+        {
+            String jsonString = ctsCreateTicketResponse;
+            String objNameAndId;
+            String objectId;
+            Map<String, Object> clientJSONMap = (Map<String, Object>)JSON.deserializeUntyped(jsonString);
+            string res = JSON.serialize(clientJSONMap.get('response'));
+            List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(res, List<CTSTicketResponse>.class);
+            List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
+            Set<String> objectIds = new Set<String>();                       
+            
+            for(CTSTicketResponse ctr : ctsTicketResp){
+            
+                objNameAndId = ctr.clientRequestId;
+            
+                if(objNameAndId.startsWith('Case')){
+                    objectIds.add(objNameAndId.SubStringAfter('_'));
+                }
+                else{
+                    objectIds.add(objNameAndId.SubStringAfter('__c_'));
+                }
+                
+                System.Debug('Object Ids in Set List: ' + objectIds);
+            }
+            
+            List<SFDCToCTSAsynchRequest__c> asyncRecords = 
+                [SELECT Id,
+                        API_Identifier__c,
+                        CTS_Email_Address__c,
+                        EmailTemplateId__c,
+                        ErrorDescription__c,
+                        ExternalTicketId__c,
+                        Integration_Type__c,
+                        Name,
+                        NumberOfRetryAttempts__c,
+                        ObjectId__c,
+                        Object_Name__c,
+                        ProcessedDateTime__c,
+                        ScheduledDateTime__c,
+                        Status__c
+                   FROM SFDCToCTSAsynchRequest__c
+                  WHERE ObjectId__c IN :objectIds];
+            
+            for(CTSTicketResponse ctr : ctsTicketResp){
+            
+                objNameAndId = ctr.clientRequestId;
+                String ctsTicketNumber = (ctr.Data != null ? ctr.Data.details[0].ticketNumber : '');
+                String asyncStatus = (ctr.status == 'Success' ? 'SUCCESS' : 'ERROR');
+                String errorMsg = (ctr.errors != null ? ctr.errors[0].message : null);
+                
+                if(objNameAndId.startsWith('Case')){
+                    objectId = objNameAndId.SubStringAfter('_');
+                }
+                else{
+                    objectId = objNameAndId.SubStringAfter('__c_');
+                }
+                
+                System.Debug('Client Request Id Returned: ' + objNameAndId);
+                System.Debug('Ticket Number Returned: ' + ctsTicketNumber);
+                System.Debug('Status Returned: ' + asyncStatus);
+                System.Debug('Error Message Returned: ' + errorMsg);
+                
+                for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
+                
+                    if(asyncRecord.ObjectId__c == objectId){
+                        
+                        Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
+                        String currErrorMsg = (asyncRecord.ErrorDescription__c != null ? asyncRecord.ErrorDescription__c : '');
+                        
+                        asyncRecord.Status__c = asyncStatus;
+                        asyncRecord.ProcessedDateTime__c = System.Now();
+                            
+                        if(asyncStatus == 'SUCCESS'){
+                                
+                            asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                        }
+                        else{
+                        
+                            retryAttempts += 1;
+                            asyncRecord.ErrorDescription__c = currErrorMsg + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
+                            asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
+                            // as the number of retry attempts increase, multiply by 15; need to figure out a process to retry request based on new Scheduled time
+                            asyncRecord.ScheduledDateTime__c = System.Now().addminutes(retryAttempts*15);
+                        }
+                        
+                        dmlAsyncRecordsUpdate.add(asyncRecord);
+                    }
+                }
+            }
+            
+            if(dmlAsyncRecordsUpdate.size() > 0){
+            
+                update dmlAsyncRecordsUpdate;
+            }
+            
+            System.Debug('Number of Async Records Updated: ' + String.valueOf(dmlAsyncRecordsUpdate.size()));
+            System.Debug('*** End Method ProcessCreateTicketAPIResponse ***');
+        }
+        catch(Exception e)
+        {
+            System.Debug('An error occurred in ProcessCreateTicketAPIResponse: ' + e.getMessage());
+        }
     }
     
     public static void UpdateSFDCObject(List<Id> objectIds)
     {
         System.Debug('*** Entering Method UpdateSFDCObject ***');
+        System.Debug('*** Async Request Record Ids List: ' + objectIds);
     
         List<Case> dmlCases = new List<Case>();
         List<Quality_Case__c> dmlQualityCases = new List<Quality_Case__c>();
@@ -845,9 +959,11 @@ public without sharing class CTSSyncService_ERWorking{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Case
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 caseMap.put(c.Id, c);
+                
+                System.Debug('Case Id: ' + (!String.IsBlank(c.Id) ? c.Id : 'Not a Case Record'));
             }
             
             for(Organic_Analysis__c oa :
@@ -855,9 +971,11 @@ public without sharing class CTSSyncService_ERWorking{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Organic_Analysis__c
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 orgCaseMap.put(oa.Id, oa);
+                
+                System.Debug('Organic Case Id: ' + (!String.IsBlank(oa.Id) ? oa.Id : 'Not an Organic Case Record'));
             }
             
             for(Quality_Case__c qc :
@@ -865,9 +983,11 @@ public without sharing class CTSSyncService_ERWorking{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Quality_Case__c
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 qualityCaseMap.put(qc.Id, qc);
+                
+                System.Debug('Quality Case Id: ' + (!String.IsBlank(qc.Id) ? qc.Id : 'Not a Quality Case Record'));
             }
             
             for(Customer_Surveys__c cs :
@@ -875,9 +995,11 @@ public without sharing class CTSSyncService_ERWorking{
                         External_Ticket_ID__c,
                         External_Ticket_System__c
                    FROM Customer_Surveys__c
-                  WHERE Id IN: objectIds]){
+                  WHERE Id IN: asyncRequestMap.keySet()]){
             
                 custSurveysMap.put(cs.Id, cs);
+                
+                System.Debug('Customer Survey Id: ' + (!String.IsBlank(cs.Id) ? cs.Id : 'Not a Customer Survey Record'));
             }
         
             for(SFDCToCTSAsynchRequest__c arMap : asyncRequestMap.values()){
@@ -984,7 +1106,7 @@ public without sharing class CTSSyncService_ERWorking{
         return ctsIntSettings;
     }
     
-    private static String GetConfigValue(string configLabel)
+    public static String GetConfigValue(string configLabel)
     {
         String configValue = 
             [SELECT Id, 
