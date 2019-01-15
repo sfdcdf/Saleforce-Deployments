@@ -416,17 +416,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Additional_Comments__c</fullName>
-        <externalId>false</externalId>
-        <label>Additional Comments</label>
-        <length>4000</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
         <fullName>Additional_Expansion_Plans__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Beyond adding additional locations, does the company have other expansion plans? (i.e. mergers, etc.)</inlineHelpText>
@@ -1075,16 +1064,6 @@ Number_of_Products_PPC_Seasonal__c&gt;=12,
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Centermark_Estimated_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Centermark Estimated Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Centermark_Fee__c</fullName>
@@ -2275,12 +2254,6 @@ Corporate_Display_Fees__c + Corporate_Site_Maintenance_Fee__c + (Review_Manageme
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Description</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-    </fields>
-    <fields>
         <fullName>Dex__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3390,18 +3363,6 @@ IF(NOT(ISBLANK(Run_Rate__c)), CloseDate + ROUND(((Run_Rate__c/5)*7),0)  , CloseD
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Launch_Date_Change_Reason_Detail__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Elaborate on the reasons why the launch dates are changing</inlineHelpText>
-        <label>Launch Date Change Reason Detail</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
         <fullName>Lead_Gen_Rep__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -4005,18 +3966,6 @@ ISPICKVAL(StageName,"Implementation")),
         <type>Percent</type>
     </fields>
     <fields>
-        <fullName>Manager_Comments__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Weekly one on one notes</inlineHelpText>
-        <label>Manager Comments</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Html</type>
-        <visibleLines>10</visibleLines>
-    </fields>
-    <fields>
         <fullName>Maps_Claiming_and_Organic_History__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Details on any organic optimization completed in the past and whether or not listings were claimed</inlineHelpText>
@@ -4256,31 +4205,6 @@ ISPICKVAL(StageName,"Implementation")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Monthly_Advertising_Charges__c</fullName>
-        <defaultValue>0</defaultValue>
-        <externalId>false</externalId>
-        <label>Monthly PPC Budget</label>
-        <precision>12</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Monthly_Advertising_Spend__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Advertising Spend?</label>
-        <precision>12</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Monthly_Average_Revenue__c</fullName>
         <description>This is a WBN opportunity field.  It is calculating the total amount of the opportunity subtracting out one time fees to let us average the recurring revenue normalized over the total contract length.  This helps with the seasonal ppc values..</description>
         <externalId>false</externalId>
@@ -4307,19 +4231,6 @@ ISPICKVAL(StageName,"Implementation")),
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Monthly_Management_Fees__c</fullName>
-        <defaultValue>0</defaultValue>
-        <externalId>false</externalId>
-        <label>Yodle Web Fees</label>
-        <precision>6</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -4456,12 +4367,6 @@ ISPICKVAL(StageName,"Implementation")),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>NextStep</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
     </fields>
     <fields>
         <fullName>Next_Activity_Date__c</fullName>
@@ -4855,19 +4760,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Original_SDR_Exec__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Original SDR Exec</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Opportunities2</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Other_Competitors__c</fullName>
         <externalId>false</externalId>
         <label>Other Competitors</label>
@@ -4919,20 +4811,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>PPA_Contract_Length__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>contract length in months</inlineHelpText>
-        <label>PPA Contract Length</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>PPA_Executed_Date__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Date of signed PPA</inlineHelpText>
@@ -4969,19 +4847,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>PPA_Setup_Fee__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>setup fee for individual location as per PPA</inlineHelpText>
-        <label>Adoption / PPA Setup Fee</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>PPA_Website_Fee__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Fee for individual location website as per PPA</inlineHelpText>
@@ -4991,19 +4856,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>PPA_Yodle_Web_Fee__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Yodle Web Fee per location as per PPA</inlineHelpText>
-        <label>Adoption / PPA Yodle Web Fee</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -5065,29 +4917,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>PPC_Contract_Length__c</fullName>
-        <externalId>false</externalId>
-        <label>PPC Contract Length</label>
-        <precision>2</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>PPC_Estimated_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>PPC Estimated Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -5231,20 +5060,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
     </fields>
     <fields>
         <fullName>PartnerAccountId</fullName>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Partner_ID__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Partner/Referral ID</label>
-        <referenceTo>Partner_Name__c</referenceTo>
-        <relationshipLabel>Opportunities</relationshipLabel>
-        <relationshipName>Opportunities</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -5503,26 +5318,6 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Portal_Estimated_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Portal Estimated Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Portal_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Portal Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -6182,19 +5977,6 @@ If(Owner.UserRoleId ="00E60000001J40U","Brian Heppner","")))</formula>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Second_Rep__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Opp Second Rep</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Opportunities1</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Secondary_Lead_Source_Detail__c</fullName>
         <externalId>false</externalId>
         <label>Secondary Lead Source Detail</label>
@@ -6248,18 +6030,6 @@ If(Owner.UserRoleId ="00E60000001J40U","Brian Heppner","")))</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Setup_Fees__c</fullName>
-        <externalId>false</externalId>
-        <label>Setup Fees</label>
-        <precision>6</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Setup_Multiplier__c</fullName>
@@ -7076,16 +6846,6 @@ What is the end goal?</inlineHelpText>
         <visibleLines>7</visibleLines>
     </fields>
     <fields>
-        <fullName>Website_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Website Template Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Website_Need__c</fullName>
         <externalId>false</externalId>
         <label>Website Need</label>
@@ -7094,19 +6854,6 @@ What is the end goal?</inlineHelpText>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Website_Redesign_Fee__c</fullName>
-        <defaultValue>0</defaultValue>
-        <externalId>false</externalId>
-        <label>Website Redesign Fees</label>
-        <precision>10</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Website_Template_Estimated_Launch_date__c</fullName>
@@ -7181,16 +6928,6 @@ Annual_Contract_Value_Sum__c * Probability</formula>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>What_is_the_Potential_ROI__c</fullName>
-        <externalId>false</externalId>
-        <label>Projected Business Impact To The Custome</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>What_is_the_URL__c</fullName>
@@ -7446,16 +7183,6 @@ Annual_Contract_Value_Sum__c * Probability</formula>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Yodle_Web_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Yodle Web Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Yodle_Web_Multiplier__c</fullName>
@@ -8800,40 +8527,6 @@ Used by YBN.</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Demo_Status__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>-Pending: There isn't a specific time scheduled for the demo.
--Scheduled: There is a date and time set for the demo.
--Completed: The demo was complete.</inlineHelpText>
-        <label>Demo Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Pending</fullName>
-                    <default>false</default>
-                    <label>Pending</label>
-                </value>
-                <value>
-                    <fullName>Scheduled</fullName>
-                    <default>false</default>
-                    <label>Scheduled</label>
-                </value>
-                <value>
-                    <fullName>Completed</fullName>
-                    <default>false</default>
-                    <label>Completed</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Does_Corporate_Allow_Open_Territories_to__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Does corporate allow for open territories to be served by franchisees?</inlineHelpText>
@@ -9041,31 +8734,6 @@ Used by YBN.</description>
                     <fullName>No</fullName>
                     <default>false</default>
                     <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Launch_Date_Change_Reason__c</fullName>
-        <externalId>false</externalId>
-        <label>Launch Date Change Reason</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yodle Caused</fullName>
-                    <default>false</default>
-                    <label>Yodle Caused</label>
-                </value>
-                <value>
-                    <fullName>Client Caused</fullName>
-                    <default>false</default>
-                    <label>Client Caused</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -13279,44 +12947,6 @@ Used by YBN.</description>
         <visibleLines>6</visibleLines>
     </fields>
     <fields>
-        <fullName>Won_with__c</fullName>
-        <description>what tools were used in selling the prospect?</description>
-        <externalId>false</externalId>
-        <inlineHelpText>what tools were used in selling the prospect?</inlineHelpText>
-        <label>Won with:</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Face-to-Face</fullName>
-                    <default>false</default>
-                    <label>Face-to-Face</label>
-                </value>
-                <value>
-                    <fullName>GoToMeeting</fullName>
-                    <default>false</default>
-                    <label>GoToMeeting</label>
-                </value>
-                <value>
-                    <fullName>Phone (no demo)</fullName>
-                    <default>false</default>
-                    <label>Phone (no demo)</label>
-                </value>
-                <value>
-                    <fullName>Trade Show</fullName>
-                    <default>false</default>
-                    <label>Trade Show</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>Working_w_Financial_Decision_Maker__c</fullName>
         <externalId>false</externalId>
         <label>Working w/Financial Decision Maker</label>
@@ -15782,6 +15412,376 @@ Used by YBN.</description>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Additional_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Comments</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Centermark_Estimated_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Centermark Estimated Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>-Pending: There isn't a specific time scheduled for the demo.
+-Scheduled: There is a date and time set for the demo.
+-Completed: The demo was complete.</inlineHelpText>
+        <label>Demo Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Launch_Date_Change_Reason_Detail__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Elaborate on the reasons why the launch dates are changing</inlineHelpText>
+        <label>Launch Date Change Reason Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Launch_Date_Change_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Launch Date Change Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yodle Caused</fullName>
+                    <default>false</default>
+                    <label>Yodle Caused</label>
+                </value>
+                <value>
+                    <fullName>Client Caused</fullName>
+                    <default>false</default>
+                    <label>Client Caused</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manager_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Weekly one on one notes</inlineHelpText>
+        <label>Manager Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Monthly_Advertising_Charges__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Monthly PPC Budget</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Monthly_Advertising_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Advertising Spend?</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Monthly_Management_Fees__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Yodle Web Fees</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Original_SDR_Exec__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Original SDR Exec</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunities2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PPA_Contract_Length__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>contract length in months</inlineHelpText>
+        <label>PPA Contract Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PPA_Setup_Fee__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>setup fee for individual location as per PPA</inlineHelpText>
+        <label>Adoption / PPA Setup Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PPA_Yodle_Web_Fee__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Yodle Web Fee per location as per PPA</inlineHelpText>
+        <label>Adoption / PPA Yodle Web Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PPC_Contract_Length__c</fullName>
+        <externalId>false</externalId>
+        <label>PPC Contract Length</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PPC_Estimated_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>PPC Estimated Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Partner_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner/Referral ID</label>
+        <referenceTo>Partner_Name__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Portal_Estimated_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Portal Estimated Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Portal_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Portal Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Second_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opp Second Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Setup_Fees__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Fees</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Website_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Website Template Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Website_Redesign_Fee__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Website Redesign Fees</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>What_is_the_Potential_ROI__c</fullName>
+        <externalId>false</externalId>
+        <label>Projected Business Impact To The Custome</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Won_with__c</fullName>
+        <description>what tools were used in selling the prospect?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>what tools were used in selling the prospect?</inlineHelpText>
+        <label>Won with:</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Face-to-Face</fullName>
+                    <default>false</default>
+                    <label>Face-to-Face</label>
+                </value>
+                <value>
+                    <fullName>GoToMeeting</fullName>
+                    <default>false</default>
+                    <label>GoToMeeting</label>
+                </value>
+                <value>
+                    <fullName>Phone (no demo)</fullName>
+                    <default>false</default>
+                    <label>Phone (no demo)</label>
+                </value>
+                <value>
+                    <fullName>Trade Show</fullName>
+                    <default>false</default>
+                    <label>Trade Show</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Yodle_Web_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Yodle Web Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
