@@ -68,7 +68,7 @@
     </values>
     <values>
         <field>ProductType__c</field>
-        <value xsi:type="xsd:string">Lead Stream ATV</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>RecordTypeName__c</field>
