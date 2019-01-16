@@ -236,4 +236,70 @@ private class CTSSyncServiceTestPartial {
         System.assertEquals(1, invocations, 'An email has not been sent');
     }
     
+    @isTest 
+    static void test_CreateSFDCToCTSAsynchRequest(){
+        List<Id> objIdList = new List<Id>();
+    
+        Account newAccount = new Account();
+        newAccount.Name = 'Testing CTS API integration';
+        newAccount.Client_First_Name__c = 'Test';
+        newAccount.Client_Last_Name__c = 'CTS';
+        newAccount.Client_ID__c = '1234';        
+        insert newAccount;
+        
+        Case newCase = new Case();                
+        newCase.AccountId = newAccount.Id;
+        insert newCase;
+        
+        objIdList.add(newCase.Id);
+        
+        Test.StartTest();
+        CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', objIdList);
+        Test.stopTest();  
+        
+        List<SFDCToCTSAsynchRequest__c> requests = [SELECT Id, ObjectId__c, Object_Name__c, Status__c FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :newCase.Id AND Status__c = 'NEW']; 
+        
+        System.assertEquals(requests.size(), 1);    
+    
+    }
+    
+    @isTest
+    static void test_UpdateSFDCObject(){
+        List<Id> objIdList = new List<Id>();
+    
+        Account newAccount = new Account();
+        newAccount.Name = 'Testing CTS API integration';
+        newAccount.Client_First_Name__c = 'Test';
+        newAccount.Client_Last_Name__c = 'CTS';
+        newAccount.Client_ID__c = '1234';        
+        insert newAccount;
+        
+        Case newCase = new Case();                
+        newCase.AccountId = newAccount.Id;
+        insert newCase;
+        
+        SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();   
+        newAsyncRecord.API_Identifier__c = 'dfjdfcj76';
+        newAsyncRecord.EmailTemplateId__c = 'dfjdkfjd122';
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newCase.Id;
+        newAsyncRecord.Object_Name__c = 'Case';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='SUCCESS';
+        newAsyncRecord.ExternalTicketId__c = '12345678';
+        insert newAsyncRecord;  
+        
+        objIdList.add(newAsyncRecord.Id);
+        
+        Test.StartTest();
+        CTSSyncService.UpdateSFDCObject(objIdList);
+        Test.stopTest();    
+        
+        Case caseObj = [SELECT Id, External_Ticket_ID__c, External_Ticket_System__c FROM Case WHERE Id = :newCase.Id LIMIT 1];
+        System.assert(caseObj.External_Ticket_ID__c == '12345678');
+        System.assert(caseObj.External_Ticket_System__c == 'CTS');
+    }
+    
+    
 }

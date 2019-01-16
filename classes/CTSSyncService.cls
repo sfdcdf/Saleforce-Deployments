@@ -491,7 +491,6 @@ public without sharing class CTSSyncService{
        
         HttpRequest req = new HttpRequest();        
         req.setEndpoint('callout:CTSIntegrationService');
-        req.setClientCertificateName('CTSESBProxyCert');
         req.setBody(requestBody);
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
