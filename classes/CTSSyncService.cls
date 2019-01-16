@@ -555,6 +555,7 @@ public without sharing class CTSSyncService{
             OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
             String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
             Set<String> uniqueEmailAddressesSet = new Set<String>();
+            System.Debug('sfdcEmailAddress: ' + sfdcEmailAddress);
             
             for(CTSSFDCObjectBase obj : baseObj){
             
@@ -568,9 +569,10 @@ public without sharing class CTSSyncService{
                     uniqueEmailAddressesSet.add(sfdcEmailAddress);
                     
                     for(String s : uniqueEmailAddressesSet){
-                        toAddress.add(s);
+                        if (!String.isBlank(s))
+                            toAddress.add(s);
                     }
-                 
+                    System.Debug('toAddress: ' + toAddress);
                     message.setToAddresses(toAddress);
                     message.setReplyTo(fromAddress);
                     message.setOrgWideEmailAddressId(owea.get(0).Id);
@@ -581,8 +583,8 @@ public without sharing class CTSSyncService{
                 }
             }
             
-            if(ctsNotificationsLst.size() > 0){
-                                    
+            System.Debug('ctsNotificationsLst size: ' + ctsNotificationsLst.size());
+            if(ctsNotificationsLst.size() > 0){                
                 // send notifications
                 Messaging.sendEmail(ctsNotificationsLst);
             }
@@ -1109,7 +1111,7 @@ public without sharing class CTSSyncService{
     
     public static String GetConfigValue(string configLabel)
     {
-        String configValue = 
+        /*String configValue = 
             [SELECT Id, 
                     External_System_Name__c, 
                     MasterLabel, 
@@ -1122,6 +1124,24 @@ public without sharing class CTSSyncService{
                     Configuration_Label__c = :configLabel
               LIMIT 1].Configuration_Value__c;
               
-         return configValue;
+              return configValue;*/
+              
+         Integration_Configuration__mdt[] configs = [SELECT Id, 
+                                                         External_System_Name__c, 
+                                                         MasterLabel, 
+                                                         Configuration_Label__c, 
+                                                         Data_Type__c, 
+                                                         Configuration_Value__c 
+                                                         FROM Integration_Configuration__mdt 
+                                                         WHERE Is_Active__c = true AND
+                                                         External_System_Name__c = 'CTS' AND
+                                                         Configuration_Label__c = :configLabel
+                                                         ];
+         if (configs.size() > 0)
+             return configs[0].Configuration_Value__c;
+         else
+             return null;                                                
+                                                                 
+         
     }
 }

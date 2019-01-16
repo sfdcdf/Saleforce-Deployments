@@ -283,18 +283,5 @@ global class ProcessCTSEmails implements Messaging.InboundEmailHandler{
         return result;
     }
     
-    // Method to add attachment to related SObject
-    void addAttachment(SObject relatedObject, Messaging.InboundEmail email){
-        if (email.binaryAttachments != null && email.binaryAttachments.size() > 0) {
-            for (integer i = 0 ; i < email.binaryAttachments.size() ; i++) {
-                Attachment attachment = new Attachment();
-                    
-                // Attach to the related Object record
-                attachment.ParentId = relatedObject.Id;
-                attachment.Name = email.binaryAttachments[i].filename;
-                attachment.Body = email.binaryAttachments[i].body;
-                dmlAttachmentsToInsert.add(attachment);
-            }
-        }
-    }
+    
 }

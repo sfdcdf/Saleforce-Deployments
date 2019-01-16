@@ -1,6 +1,19 @@
 @isTest
 private class CTSSyncServiceTest {
     
+    public class MockHttpResponseGenerator implements HttpCalloutMock {
+        // Implement this interface method
+        public HTTPResponse respond(HTTPRequest req) {
+           
+            // Create a fake response
+            HttpResponse res = new HttpResponse();
+            res.setHeader('Content-Type', 'application/json');
+            res.setBody('{   \"originalMessageId\": \"ba74ff70-151f-11e9-b1ce-00505684b32f\",   \"platformId\": null,   \"actionType\": null,   \"client_ip\": \"136.147.62.8,10.40.177.20\",   \"applicationName\": \"SFDC Salesforce.com Yodle\",   \"esbServer\": \"qa1esb01.registeredsite.com\",   \"eventTimestamp\": \"2019-01-10T21:36:02.960Z\",   \"day\": \"2019-01-10T21:36:00.000Z\",   \"muleMessageId\": \"ba74ff70-151f-11e9-b1ce-00505684b32f\",   \"response\": [      {         \"providerApplicationName\": \"Ticketing\",         \"clientRequestId\": \"Case_5001b000005BprnAAC\",         \"status\": \"Failure\",         \"errors\": [            {               \"source\": \"ALL\",               \"statusCode\": \"ESB_GENERIC_FLOW_ERROR\",               \"message\": \"Message id = ba74ff70-151f-11e9-b1ce-00505684b32f from flow ESB_GENERIC_FLOW endpoint vm:messages.adapter.generic.wrapper got an error.Exception message is = The request cannot be processed, java.lang.Exception: REMOTE_SERVICE_INTERNAL_SERVER_ERROR\",               \"errorId\": null            }         ],         \"data\": null,         \"messageId\": \"ba74ff70-151f-11e9-b1ce-00505684b32f\"      }   ]}');
+            res.setStatusCode(200);
+            return res;
+        }
+    }
+    
     @isTest 
     static void test_GetSFDCObject() {
         Map<Id, SFDCToCTSAsynchRequest__c> requestMap = new Map<Id, SFDCToCTSAsynchRequest__c>();
@@ -180,6 +193,45 @@ private class CTSSyncServiceTest {
         List<CTSSyncService.CTSTicket> ctsTickets = CTSSyncService.GetCTSTicket(sfdcObjList);
         System.debug('CTS tickets: ' + ctsTickets);
         System.assert(ctsTickets.size() == 1);
+    }
+    
+    @isTest
+    static void test_CallOutCTSForAPI() {
+         Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
+         String requestBody = '{"clientInfo":{"apiAccessKey":"453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991"},"request":[{"platformId":"YODLE","action":"Create","clientRequestId":"Case_5001b000005Bq5RAAS","objectType":"TicketingTicket","requestedService":"CTSv2","data":{"crmId":"552e519a-1898-4f4b-b909-a223a916b876","ticketingTicket":{"apiIdentifier":"SF_NETSOL_000001","contactFirstName":"CTS FN","contactLastName":"CTS LN","contactPhone":"(555) 345-6734","contactEmailAddress":"eugene.ross@web.com","crmOrderNumber":"11284031","referenceAccountId":"0011b00000RzOEfAAN","referenceCustomerId":"9999999","referenceProductInstanceId":"5001b000005Bq5RAAS","domain":"www.testsite.com","subject":"Lead Stream TP 2 : 11284031","detail":"Outbound Call\r\n\r\nCase Number: 11284031\r\nSubject: Lead Stream TP 2\r\nAuto Close Date: \r\n\r\nDescription: CTS Test\r\n\r\nTotal Account Revenue: $0\r\n________________________________________________________________\r\n\r\nStatus: \r\nScheduled Call: \r\nClient Satisfaction: \r\nNotes:\r\n Client Id: 9999999\r\n Client First Name: CTS FN\r\n Client Last Name: CTS LN\r\n Client Email: eugene.ross@web.com\r\n Client Phone: (555) 345-6734\r\n Product Code: Lead Stream ATV\r\n","referenceProductCode":"Lead Stream ATV","status":"Open","alternateContactEmailAddress":"eugene.ross@web.com"}}}]}';
+         CTSSyncService.CallOutCTSForAPI(requestBody);
+    }
+    
+    @isTest
+    static void test_CallOutCTSForEmail() {
+        List<CTSSFDCObjectBase> objList = new List<CTSSFDCObjectBase>();
+        CTSSFDCObjectBase sfdcObj = new CTSSFDCObjectBase();
+        sfdcObj.ApiIdentifier = 'SF_NETSOL_000001';
+        sfdcObj.CRMOrderNumber = '11284031';
+        sfdcObj.ContactFirstName = 'CTS FN';
+        sfdcObj.ContactLastName = 'CTS LN';
+        sfdcObj.ContactPhone = '123-4567890';
+        sfdcObj.ContactEmailAddress = 'ctsintegration@fake.com';
+        sfdcObj.ObjectName = 'Case';
+        sfdcObj.ReferenceAccountId = '0011b00000RzOEfAAN';
+        sfdcObj.ReferenceCustomerId = '9999999';
+        sfdcObj.ReferenceProductInstanceId = '5001b000005Bq5RAAS';
+        sfdcObj.Domain = 'www.testsite.com';
+        sfdcObj.Subject = 'Lead Stream TP 2 : 11284031';
+        sfdcObj.Status = 'Open';
+        sfdcObj.Detail = 'Outbound Call\r\n\r\nCase Number: 11284031\r\nSubject: Lead Stream TP 2\r\nAuto Close Date: \r\n\r\nDescription: CTS Test\r\n\r\nTotal Account Revenue: $0\r\n________________________________________________________________\r\n\r\nStatus: \r\nScheduled Call: \r\nClient Satisfaction: \r\nNotes:\r\n Client Id: 9999999\r\n Client First Name: CTS FN\r\n Client Last Name: CTS LN\r\n Client Email: eugene.ross@web.com\r\n Client Phone: (555) 345-6734\r\n Product Code: Lead Stream ATV\r\n';
+        sfdcObj.ReferenceProductCodes = 'Lead Stream ATV';
+        sfdcObj.AlternateContactEmailAddress = 'ctsintegration@fake.com';
+        sfdcObj.CTSEmailAddress = 'ticketingtest@fake.com';
+        objList.add(sfdcObj);        
+        
+        Test.StartTest();
+        CTSSyncService.CallOutCTSForEmail(objList);
+        Integer invocations = Limits.getEmailInvocations();
+        System.Debug('Email invocations: ' + invocations);
+        Test.stopTest();
+ 
+        System.assertEquals(1, invocations, 'An email has not been sent');
     }
     
 }
