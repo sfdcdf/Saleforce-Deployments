@@ -199,6 +199,9 @@ private class CTSSyncServiceTestPartial {
     
     @isTest
     static void test_CallOutCTSForAPI() {
+         Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
+         String requestBody = '{"clientInfo":{"apiAccessKey":"453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991"},"request":[{"platformId":"YODLE","action":"Create","clientRequestId":"Case_5001b000005Bq5RAAS","objectType":"TicketingTicket","requestedService":"CTSv2","data":{"crmId":"552e519a-1898-4f4b-b909-a223a916b876","ticketingTicket":{"apiIdentifier":"SF_NETSOL_000001","contactFirstName":"CTS FN","contactLastName":"CTS LN","contactPhone":"(555) 345-6734","contactEmailAddress":"eugene.ross@web.com","crmOrderNumber":"11284031","referenceAccountId":"0011b00000RzOEfAAN","referenceCustomerId":"9999999","referenceProductInstanceId":"5001b000005Bq5RAAS","domain":"www.testsite.com","subject":"Lead Stream TP 2 : 11284031","detail":"Outbound Call\r\n\r\nCase Number: 11284031\r\nSubject: Lead Stream TP 2\r\nAuto Close Date: \r\n\r\nDescription: CTS Test\r\n\r\nTotal Account Revenue: $0\r\n________________________________________________________________\r\n\r\nStatus: \r\nScheduled Call: \r\nClient Satisfaction: \r\nNotes:\r\n Client Id: 9999999\r\n Client First Name: CTS FN\r\n Client Last Name: CTS LN\r\n Client Email: eugene.ross@web.com\r\n Client Phone: (555) 345-6734\r\n Product Code: Lead Stream ATV\r\n","referenceProductCode":"Lead Stream ATV","status":"Open","alternateContactEmailAddress":"eugene.ross@web.com"}}}]}';
+         CTSSyncService.CallOutCTSForAPI(requestBody);
     }
     
 }
