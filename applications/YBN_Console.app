@@ -198,12 +198,16 @@
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
+    <tabs>CTS_Error_Log__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Acct_Email_Sub_to_Survey__c</tab>
         </mappings>
         <mappings>
             <tab>CS_Operations__c</tab>
+        </mappings>
+        <mappings>
+            <tab>CTS_Error_Log__c</tab>
         </mappings>
         <mappings>
             <tab>Google_Location_Group__c</tab>

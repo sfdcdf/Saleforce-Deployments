@@ -6609,105 +6609,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Berry NCS Escalated To Berry</fullName>
-        <actions>
-            <name>SEM_Escalated_To_Berry</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 2 and 3 and 4 and 5</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Escalated</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>Escalated to Berry - Action Needed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry NCS Initial Req Fulfilled</fullName>
-        <actions>
-            <name>SEM_Initial_Req_Fulfilled</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Date_of_Initial_Req_Fulfilled__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry NCS No Contract after 7 Days</fullName>
-        <actions>
-            <name>Berry_no_contract_after_5_days</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) and 6</booleanFilter>
-        <criteriaItems>
-            <field>Case.Berry_Contract_Received__c</field>
-            <operation>equals</operation>
-            <value>No</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Days_Open__c</field>
-            <operation>equals</operation>
-            <value>7</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.GCC_1_Status__c</field>
-            <operation>equals</operation>
-            <value>Attempted and Successful</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.GCC_2_Status__c</field>
-            <operation>equals</operation>
-            <value>Attempted and Successful</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Berry New or Never Launch</fullName>
         <actions>
             <name>SEM_New_Client_Launched</name>
@@ -15541,6 +15442,105 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Sub_Status__c</field>
             <operation>equals</operation>
             <value>Additional Notes - Escalated to Berry</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry NCS Escalated To Berry</fullName>
+        <actions>
+            <name>SEM_Escalated_To_Berry</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 and 2 and 3 and 4 and 5</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Escalated to Berry - Action Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry NCS Initial Req Fulfilled</fullName>
+        <actions>
+            <name>SEM_Initial_Req_Fulfilled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Date_of_Initial_Req_Fulfilled__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry NCS No Contract after 7 Days</fullName>
+        <actions>
+            <name>Berry_no_contract_after_5_days</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) and 6</booleanFilter>
+        <criteriaItems>
+            <field>Case.Berry_Contract_Received__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Days_Open__c</field>
+            <operation>equals</operation>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.GCC_1_Status__c</field>
+            <operation>equals</operation>
+            <value>Attempted and Successful</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.GCC_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Attempted and Successful</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

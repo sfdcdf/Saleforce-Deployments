@@ -4771,6 +4771,9 @@
     <layoutAssignments>
         <layout>SFDCToCTSTrigger__c-SFDCToCTSTrigger Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -6570,6 +6573,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>SFDCToCTSAsynchRequest__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CTS_Error_Log__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>

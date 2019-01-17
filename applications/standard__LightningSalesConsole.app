@@ -28,11 +28,15 @@
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <tabs>SFDCToCTSAsynchRequest__c</tabs>
+    <tabs>CTS_Error_Log__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>Acct_Email_Sub_to_Survey__c</tab>
+        </mappings>
+        <mappings>
+            <tab>CTS_Error_Log__c</tab>
         </mappings>
         <mappings>
             <tab>Google_Location_Group__c</tab>

@@ -26,4 +26,5 @@
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
+    <tabs>CTS_Error_Log__c</tabs>
 </CustomApplication>

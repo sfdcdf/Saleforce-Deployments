@@ -30753,6 +30753,9 @@
     <layoutAssignments>
         <layout>SFDCToCTSTrigger__c-SFDCToCTSTrigger Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
@@ -32533,5 +32536,9 @@
     <tabVisibilities>
         <tab>SFDCToCTSAsynchRequest__c</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CTS_Error_Log__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>
