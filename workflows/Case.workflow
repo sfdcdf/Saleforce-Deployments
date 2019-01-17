@@ -6561,87 +6561,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Berry - SW Issue</fullName>
-        <actions>
-            <name>Berry_SW_Issue</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Berry Sales Wizard Issue</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry 72 Hour Email</fullName>
-        <actions>
-            <name>Berry_72_Hour_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Partner_Account4__c</field>
-            <operation>contains</operation>
-            <value>Berry</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>contains</operation>
-            <value>3-CSC AutoLaunch</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry Account Manager Email</fullName>
-        <actions>
-            <name>Berry_Account_Manager_Email</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Berry_Account_Manager_Email__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry Additional Notes - Escalated to Berry</fullName>
-        <actions>
-            <name>Berry_Additional_Notes_Escalated_to_Berry</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>Additional Notes - Escalation to Berry</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Berry Assign Web to Case</fullName>
         <actions>
             <name>Berry_Web_to_Case_Change_Owner</name>
@@ -6676,71 +6595,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Berry Escalation Closed</fullName>
-        <actions>
-            <name>Escalated_Closed</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Berry Escalation,Escalation</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Partner_Account4__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry Escalation%2C Escalated to Berry</fullName>
-        <actions>
-            <name>Escalation_Escalated_to_Berry</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 3 and 4 and (2 or 5)</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>Escalated to Berry - No Action,Escalated to Berry - Action Needed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Escalation</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Berry Escalations - Update Owner</fullName>
         <actions>
             <name>Berry_Escalations_Update_Owner</name>
@@ -6751,36 +6605,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
             <field>Case.Origin</field>
             <operation>equals</operation>
             <value>escalations@yodle.com,berrysupport@yodle.com</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry NCS Additional Notes - Escalated to Berry</fullName>
-        <actions>
-            <name>Berry_NCS_Additional_Notes_for_Escalation</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>Additional Notes - Escalated to Berry</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -15542,6 +15366,182 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>National - New Client Setup</value>
         </criteriaItems>
         <description>This will send email alerts for YBN Requests and NCS Cases that are escalated for the Production Specialists team. These will go to Jared Pfaff</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry - SW Issue</fullName>
+        <actions>
+            <name>Berry_SW_Issue</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Berry Sales Wizard Issue</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry 72 Hour Email</fullName>
+        <actions>
+            <name>Berry_72_Hour_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Partner_Account4__c</field>
+            <operation>contains</operation>
+            <value>Berry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>contains</operation>
+            <value>3-CSC AutoLaunch</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry Account Manager Email</fullName>
+        <actions>
+            <name>Berry_Account_Manager_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Berry_Account_Manager_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry Additional Notes - Escalated to Berry</fullName>
+        <actions>
+            <name>Berry_Additional_Notes_Escalated_to_Berry</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Additional Notes - Escalation to Berry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry Escalation Closed</fullName>
+        <actions>
+            <name>Escalated_Closed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Berry Escalation,Escalation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Partner_Account4__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry Escalation%2C Escalated to Berry</fullName>
+        <actions>
+            <name>Escalation_Escalated_to_Berry</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 and 3 and 4 and (2 or 5)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Escalated to Berry - No Action,Escalated to Berry - Action Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Escalation</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry NCS Additional Notes - Escalated to Berry</fullName>
+        <actions>
+            <name>Berry_NCS_Additional_Notes_for_Escalation</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Additional Notes - Escalated to Berry</value>
+        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>
