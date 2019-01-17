@@ -67,7 +67,7 @@ private class CTSSyncServiceTestPartial {
               
         system.debug('Routing table instance: ' + rt);
         
-        //Get async request table object
+        //Get async request table object 
         SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
         newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
         newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
@@ -84,8 +84,7 @@ private class CTSSyncServiceTestPartial {
         system.debug('Async requests: ' + requestMap);
         
         Test.startTest();
-        List<CTSSFDCObjectBase> objs = CTSSyncService.GetSFDCObject('Case', requestMap);       
-        Test.stopTest();
+        List<CTSSFDCObjectBase> objs = CTSSyncService.GetSFDCObject('Case', requestMap);               
                  
         system.assert(objs[0].Id == newCase.Id);
         system.assert(objs[0].ObjectName == 'Case');
@@ -94,6 +93,35 @@ private class CTSSyncServiceTestPartial {
         system.assert(objs[0].Status == 'Open');        
         system.assert(objs[0].Detail != null); 
         
+        //Test Organic Case
+        requestMap = new Map<Id, SFDCToCTSAsynchRequest__c>();
+        
+        Organic_Analysis__c newOrganicCase = new Organic_Analysis__c();        
+        newOrganicCase.Status__c = 'Open';
+        newOrganicCase.Account_Name__c = newAccount.Id;
+        insert newOrganicCase;
+        
+        newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+        newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+        newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newOrganicCase.Id;
+        newAsyncRecord.Object_Name__c = 'Organic_Analysis__c';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='NEW';       
+        Insert newAsyncRecord;
+                        
+        requestMap.put(newOrganicCase.Id, newAsyncRecord);              
+        objs = CTSSyncService.GetSFDCObject('Organic_Analysis__c', requestMap);       
+        Test.stopTest();
+        
+        system.assert(objs[0].Id == newOrganicCase.Id);
+        system.assert(objs[0].ObjectName == 'Organic_Analysis__c');
+        system.assert(objs[0].ContactFirstName == 'Test');
+        system.assert(objs[0].ContactLastName == 'CTS');
+        system.assert(objs[0].Status == 'Open');        
+        system.assert(objs[0].Detail != null); 
     }
     
     

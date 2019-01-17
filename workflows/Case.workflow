@@ -6609,64 +6609,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Berry New or Never Launch</fullName>
-        <actions>
-            <name>SEM_New_Client_Launched</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>LIVE,Never launched</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry Post-Setup Issue</fullName>
-        <actions>
-            <name>Berry_Post_Setup_Issue</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Berry Post-Setup Issue</value>
-        </criteriaItems>
-        <description>Sends email when Berry Post-Setup Issue is created</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry Red Segment Email</fullName>
-        <actions>
-            <name>Berry_Red_Segment_email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.BES_SLA__c</field>
-            <operation>equals</operation>
-            <value>18 days (Red)</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Berry VM Email to Case</fullName>
         <actions>
             <name>Owner_Updated_to_Berry_VM_Queue</name>
@@ -6680,41 +6622,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         </criteriaItems>
         <description>Changes owner of case with origin of Berry VM</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry WSO Open for 6 Days</fullName>
-        <actions>
-            <name>Berry_case_open_for_6_days</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 2 and 3 and 4 and 5</booleanFilter>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Days_Open__c</field>
-            <operation>equals</operation>
-            <value>6</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>notEqual</operation>
-            <value>LIVE</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Berry_Product_Type__c</field>
-            <operation>equals</operation>
-            <value>Website Only</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Bolt On Cancellation - Cancel All</fullName>
@@ -6743,26 +6650,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
             <field>Case.Sub_Status__c</field>
             <operation>equals</operation>
             <value>Downsold to LH Only</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Bolt On Cancellation - Welcome Station</fullName>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Cancel Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse + PP</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>Downsold to LH+ProPack,Downsold to LH+ProPack+Mobile Manager</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -7912,21 +7799,6 @@ ispickval(Status ,"Unscheduled - 4+ Attempts"))</formula>
             <operation>equals</operation>
             <value>Partner - New Client Setup</value>
         </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case Reason ViaMedia Assignment</fullName>
-        <actions>
-            <name>Case_Reason_ViaMedia_Assignment</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>ViaMedia Sales Issue</value>
-        </criteriaItems>
-        <description>Automatically Assigns Stephanie Smith, when ViaMedia Sales Issue is selected as the case reason.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -10672,25 +10544,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>New Greenskymerchant%40web%2Ecom email sent</fullName>
-        <actions>
-            <name>New_Greenskymerchant_web_com_email_sent</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>greenskymerchant@web.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Notify Case Owner of CS Touch Plan Scheduled Call Change</fullName>
         <actions>
             <name>CS_Touch_Plan_Email_Scheduled_Change_Email_Notification</name>
@@ -13093,41 +12946,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>YBN Credit or Refund Denied</fullName>
-        <actions>
-            <name>YBN_Credit_or_Refund_Denied_Email</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_credit_or_refund_denied_update</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Credit Request,Refund Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.CS_Approved__c</field>
-            <operation>equals</operation>
-            <value>Request Denied</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Finance_Approved__c</field>
-            <operation>equals</operation>
-            <value>Request Denied</value>
-        </criteriaItems>
-        <description>When either "CS Approved" or "Finance Approved" are denied update status owner and send notification email.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN Default Auto Assign</fullName>
         <actions>
             <name>YBN_Case_Owner_to_Sarah_Mc</name>
@@ -13164,155 +12982,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>YBN Inbound Inquiry</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Margin Change Request Denied</fullName>
-        <actions>
-            <name>YBN_Margin_Change_Request_Denied</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_credit_or_refund_denied_update</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Margin Change Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Finance_Approved__c</field>
-            <operation>equals</operation>
-            <value>Request Denied</value>
-        </criteriaItems>
-        <description>When "Finance Approved" is denied update status owner and send notification email.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated %241500%2B Refund</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_1500_Refund</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>$1500+</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated %24501-%241500 Refund</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_501_1500_Refund</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>$501-$1500</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated %3C%3D%24500 Refund</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_500_Refund</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>&lt;= $500</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Billing</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_Billing</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Billing</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Custom Implementation</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_Custom_Implementation</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Custom Implementation</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>YBN Master%3A Escalated Email Marketing Client Qualification</fullName>
@@ -14084,61 +13753,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>YBN credit or refund approved by VPs</fullName>
-        <actions>
-            <name>YBN_Credit_or_Refund_Approval_Email</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_credit_or_refund_approved_update</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 8 AND ((3 AND 5) OR (3 AND 4 AND 6) OR (3 AND 4 AND 7))</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Credit Request,Refund Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.CS_Approved__c</field>
-            <operation>equals</operation>
-            <value>Request Approved</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Finance_Approved__c</field>
-            <operation>equals</operation>
-            <value>Request Approved</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>&lt;= $500</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>$501-$1500</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>$1500+</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Credit_Refund_Reason__c</field>
-            <operation>notEqual</operation>
-            <value>Net Zero Refund: Payment mapping issue,Net Zero Refund: Wrong payment option billed,Net Zero Refund: Incorrectly billed upon CO acceptance,Credit: Sales Promotion</value>
-        </criteriaItems>
-        <description>When "CS Approved" and/or "Finance Approved" are checked update status owner and send notification email.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN custom implementation</fullName>
         <actions>
             <name>YBN_update_Status_of_Contract</name>
@@ -14192,35 +13806,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Date_Work_Completed__c</field>
             <operation>notEqual</operation>
         </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN margin change request approved by VPs</fullName>
-        <actions>
-            <name>YBN_Margin_Change_Request_Approved</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_credit_or_refund_approved_update</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Margin Change Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Finance_Approved__c</field>
-            <operation>equals</operation>
-            <value>Request Approved</value>
-        </criteriaItems>
-        <description>When "Finance Approved" is checked for a margin request update status owner and send notification email.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -15542,6 +15127,421 @@ ISCHANGED(Estimated_Completion_Date__c)
             <operation>equals</operation>
             <value>Berry Group</value>
         </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry New or Never Launch</fullName>
+        <actions>
+            <name>SEM_New_Client_Launched</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>LIVE,Never launched</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry Post-Setup Issue</fullName>
+        <actions>
+            <name>Berry_Post_Setup_Issue</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Berry Post-Setup Issue</value>
+        </criteriaItems>
+        <description>Sends email when Berry Post-Setup Issue is created</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry Red Segment Email</fullName>
+        <actions>
+            <name>Berry_Red_Segment_email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.BES_SLA__c</field>
+            <operation>equals</operation>
+            <value>18 days (Red)</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Berry WSO Open for 6 Days</fullName>
+        <actions>
+            <name>Berry_case_open_for_6_days</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 and 2 and 3 and 4 and 5</booleanFilter>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Days_Open__c</field>
+            <operation>equals</operation>
+            <value>6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>notEqual</operation>
+            <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - New Client Setup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Berry_Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Website Only</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Bolt On Cancellation - Welcome Station</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Cancel Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse + PP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Downsold to LH+ProPack,Downsold to LH+ProPack+Mobile Manager</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Reason ViaMedia Assignment</fullName>
+        <actions>
+            <name>Case_Reason_ViaMedia_Assignment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>ViaMedia Sales Issue</value>
+        </criteriaItems>
+        <description>Automatically Assigns Stephanie Smith, when ViaMedia Sales Issue is selected as the case reason.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Greenskymerchant%40web%2Ecom email sent</fullName>
+        <actions>
+            <name>New_Greenskymerchant_web_com_email_sent</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>greenskymerchant@web.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Credit or Refund Denied</fullName>
+        <actions>
+            <name>YBN_Credit_or_Refund_Denied_Email</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_credit_or_refund_denied_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Credit Request,Refund Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.CS_Approved__c</field>
+            <operation>equals</operation>
+            <value>Request Denied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Finance_Approved__c</field>
+            <operation>equals</operation>
+            <value>Request Denied</value>
+        </criteriaItems>
+        <description>When either "CS Approved" or "Finance Approved" are denied update status owner and send notification email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Margin Change Request Denied</fullName>
+        <actions>
+            <name>YBN_Margin_Change_Request_Denied</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_credit_or_refund_denied_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Margin Change Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Finance_Approved__c</field>
+            <operation>equals</operation>
+            <value>Request Denied</value>
+        </criteriaItems>
+        <description>When "Finance Approved" is denied update status owner and send notification email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated %241500%2B Refund</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_1500_Refund</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>$1500+</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated %24501-%241500 Refund</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_501_1500_Refund</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>$501-$1500</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated %3C%3D%24500 Refund</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_500_Refund</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>&lt;= $500</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Billing</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_Billing</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Billing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Custom Implementation</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_Custom_Implementation</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Custom Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN credit or refund approved by VPs</fullName>
+        <actions>
+            <name>YBN_Credit_or_Refund_Approval_Email</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_credit_or_refund_approved_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 8 AND ((3 AND 5) OR (3 AND 4 AND 6) OR (3 AND 4 AND 7))</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Credit Request,Refund Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.CS_Approved__c</field>
+            <operation>equals</operation>
+            <value>Request Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Finance_Approved__c</field>
+            <operation>equals</operation>
+            <value>Request Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>&lt;= $500</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>$501-$1500</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>$1500+</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Credit_Refund_Reason__c</field>
+            <operation>notEqual</operation>
+            <value>Net Zero Refund: Payment mapping issue,Net Zero Refund: Wrong payment option billed,Net Zero Refund: Incorrectly billed upon CO acceptance,Credit: Sales Promotion</value>
+        </criteriaItems>
+        <description>When "CS Approved" and/or "Finance Approved" are checked update status owner and send notification email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN margin change request approved by VPs</fullName>
+        <actions>
+            <name>YBN_Margin_Change_Request_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_credit_or_refund_approved_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Margin Change Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Finance_Approved__c</field>
+            <operation>equals</operation>
+            <value>Request Approved</value>
+        </criteriaItems>
+        <description>When "Finance Approved" is checked for a margin request update status owner and send notification email.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>

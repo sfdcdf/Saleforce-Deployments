@@ -67,6 +67,29 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Log_Message__c</fullName>
+        <description>Error Message associated to the log record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Error Message associated to the log record</inlineHelpText>
+        <label>Log Message</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Object_Record_Link__c</fullName>
+        <description>Link to the Salesforce record associated to the Error Log</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the Salesforce record associated to the Error Log</inlineHelpText>
+        <label>Object Record Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -89,6 +112,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>CTS Error Logs</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
@@ -97,4 +121,16 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <recordTypes>
+        <fullName>POST_CTS_Request_Log</fullName>
+        <active>true</active>
+        <description>Logs recorded in the process of sending the request to CTS for ticket creation</description>
+        <label>POST CTS Request Log</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PRE_CTS_Request_Log</fullName>
+        <active>true</active>
+        <description>Logs recorded prior to sending the CTS Request for ticket creation</description>
+        <label>PRE CTS Request Log</label>
+    </recordTypes>
 </CustomObject>

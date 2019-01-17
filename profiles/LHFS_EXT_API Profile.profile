@@ -5019,6 +5019,14 @@
     <layoutAssignments>
         <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -6463,6 +6471,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>

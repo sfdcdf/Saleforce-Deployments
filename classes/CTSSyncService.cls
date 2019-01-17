@@ -357,18 +357,38 @@ public without sharing class CTSSyncService{
                      continue;
                  }  
                  
-                 fieldMap.remove('ProductType__c');
-             }               
+                 //E. 0 & 1 & 2 = "" & 3 = "" & 4 = ""   
+                 fieldMap.remove('ProductType__c');                            
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')) && String.isBlank((String)sfObj.get('ProductType__c')))
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }
                  
-             //E. 0 & 1              
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
-             {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
+                 //F. 0 & 1 = "CATCHALL" & 2 = "" & 3 ="" & 4
+                 String objRecordTypeName = fieldMap.get('RecordTypeName__c');
+                 fieldMap.remove('RecordTypeName__c');  
+                 fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null && objRecordTypeName == 'CATCHALL' && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }                
              }
+             else
+             {
+                 //None Case objects, only compare Object Name & Object Record Type
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null)
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }
+             }                                            
                                   
-             //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
+             //G. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
              for(SObject obj : routeMappings) {
                  if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
                  {                     
