@@ -12984,30 +12984,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>YBN Master%3A Escalated Email Marketing Client Qualification</fullName>
-        <actions>
-            <name>YBN_Escalated_Email_Marketing_Client_Qualification</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Email Marketing Client Qualification</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN Master%3A Escalated Franchisee Issue</fullName>
         <actions>
             <name>YBN_Master_Escalated_Franchisee_Issue</name>
@@ -13023,179 +12999,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Reason</field>
             <operation>equals</operation>
             <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated IL budget estimates</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_IL_budget_estimates</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Budget estimate for existing IL account,Budget estimate for new IL account</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Margin Request</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_Margin_Request</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Margin Change Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Marketing</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_Marketing</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Marketing</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Organic Ops</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_Organic_Ops</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Organic Operations Request,Organic Audit Request,Custom SEO Keywords</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Organic Strategy</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_Organic_Strategy</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Organic Consultation,Pre-launch Custom Content Creation,Zoom Rank Custom Reporting,SEO Keyword Strategy,Organic Site Audit Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated PES Team</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_PES_Team</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Project</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notEqual</operation>
-            <value>Performance Reporting</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Performance Reporting</fullName>
-        <actions>
-            <name>YBN_Es</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Reporting</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.Escalated__c</field>
@@ -13229,78 +13032,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>YBN Master%3A Escalated SEO Lead Estimates</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_SEO_Lead_Estimates</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>SEO Lead Estimates</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated SF %2B YL Bulk Setup%2FUpdate</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_SF_YL_Bulk_Setup_Update</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>ybn master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>SalesFroce + Yodle Live Bulk Setup,SalesForce + Yodle Live Bulk Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated SF Bulk Setup%2FUpdate</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_SF_Bulk_Setup_Update</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>SalesForce Bulk Setup,SalesForce Bulk Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN Master%3A Escalated SOW</fullName>
         <actions>
             <name>YBN_Master_Escalated_SOW</name>
@@ -13316,79 +13047,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.YBNRequestDetail__c</field>
             <operation>equals</operation>
             <value>SOW</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated Taxonomy</fullName>
-        <actions>
-            <name>YBN_Master_Taxonomy_Escalated</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Taxonomy</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <description>when case reason = taxonomy and escalated checkbox is true</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated YL Bulk Setup%2FUpdate</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_YL_Bulk_Setup_Update</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Yodle Live Bulk Setup,Yodle Live Bulk Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Master%3A Escalated relationship budgets %26 ROI calc</fullName>
-        <actions>
-            <name>YBN_Master_Escalated_relationship_budgets_ROI_calc</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Relationship budget &amp; performance estimates,ROI Calculator</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.Escalated__c</field>
@@ -13471,35 +13129,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>Blank for Email Catch All</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN Relationship Budget Estimates Completed</fullName>
-        <actions>
-            <name>YBN_Relationship_Budget_Estimates_Completed</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Budget Estimate for Existing Relationship,Budget Estimate for New Relationship</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Budget &amp; Performance Estimates</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Work Completed,Closed</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>YBN SOW Approved</fullName>
@@ -13661,20 +13290,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>YBN Update Sales Case Creator Manager</fullName>
-        <actions>
-            <name>YBN_Update_Sale_Manager</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN VM To Case</fullName>
         <active>false</active>
         <criteriaItems>
@@ -13823,194 +13438,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>YBN%3A Budget Estimate for new relationship update substatus</fullName>
-        <actions>
-            <name>YBN_Update_status_to_In_Progress</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>YBN_sub_status_to_geo_targeting_analysi</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Budget Estimate for New Relationship</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Franchisee Issue Resolved %28Director%29</fullName>
-        <actions>
-            <name>YBN_Franchisee_Issue_Resolved_Director</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Michele Brevig</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Franchisee Issue Resolved %28Manager%29</fullName>
-        <actions>
-            <name>YBN_Franchisee_Issue_Resolved_Manager</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Mia Pagonas,Cecily Bolton,Kristen Krzesicki</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Franchisee Issue Resolved %28VP%29</fullName>
-        <actions>
-            <name>YBN_Franchisee_Issue_Resolved_VP</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Brandon Ramos</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Franchisee Issue Submitted %28Director%29</fullName>
-        <actions>
-            <name>YBN_Franchisee_Issue_Submitted_Director</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_Director_Level_Escalation</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Michele Brevig</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Fire_drill__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Franchisee Issue Submitted %28Manager%29</fullName>
-        <actions>
-            <name>YBN_Franchisee_Issue_Submitted_Manager</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_Manager_Level_Escalation</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Mia Pagonas,Cecily Bolton,Kristen Krzesicki</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Franchisee Issue Submitted %28VP%29</fullName>
-        <actions>
-            <name>YBN_Franchisee_Issue_Submitted_VP</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_VP_Level_Escalation</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Brandon Ramos</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Non-Escalation Path Issue Resolved</fullName>
-        <actions>
-            <name>YBN_Non_Escalation_Path_Issue_Resolved</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Franchisee Issue (General),Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>notEqual</operation>
-            <value>Kristen Krzesicki,Cecily Bolton,Mia Pagonas,Michele Brevig,Jennifer Hendrickson,Kelly Rix,Brandon Ramos</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN%3A Notify Consultant Managers when Case Owner %3D National Client Support</fullName>
         <actions>
             <name>YBN</name>
@@ -14031,205 +13458,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.RecordTypeId</field>
             <operation>equals</operation>
             <value>Master,YBN Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Relationship Issue Resolved %28Director%29</fullName>
-        <actions>
-            <name>YBN_Relationship_Issue_Resolved_Director</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Michele Brevig</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Relationship Issue Resolved %28Manager%29</fullName>
-        <actions>
-            <name>YBN_Relationship_Issue_Resolved_Manager</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Jennifer Hendrickson,Matthew Machado</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Relationship Issue Resolved %28VP%29</fullName>
-        <actions>
-            <name>YBN_Relationship_Issue_Resolved_VP</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Brandon Ramos</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Relationship Issue Submitted %28Director%29</fullName>
-        <actions>
-            <name>YBN_Relationship_Issue_Submitted_Director</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_Director_Level_Escalation</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Michele Brevig</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Fire_drill__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Relationship Issue Submitted %28Manager%29</fullName>
-        <actions>
-            <name>YBN_Relationship_Issue_Submitted_Manager</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_Manager_Level_Escalation</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Jennifer Hendrickson,Matthew Machado</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A Relationship Issue Submitted %28VP%29</fullName>
-        <actions>
-            <name>YBN_Relationship_Issue_Submitted_VP</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_VP_Level_Escalation</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Relationship Issue (General)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Brandon Ramos</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A VP Approval Case Assigned</fullName>
-        <actions>
-            <name>YBN_New_Case_In_VP_Approval_Queue</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>$1500+,$501-$1500</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Credit_Refund_Reason__c</field>
-            <operation>notEqual</operation>
-            <value>Net Zero Refund: Payment mapping issue,Net Zero Refund: Wrong payment option billed,Net Zero Refund: Incorrectly billed upon CO acceptance,Credit: Sales Promotion</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>VP Approval Queue</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>YBN%3A VP Margin Change Approval Case Assigned</fullName>
-        <actions>
-            <name>YBN_Margin_Change_Request_Submitted_for_approval</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Margin Change Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>VP Approval Queue</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -15542,6 +14770,778 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>Request Approved</value>
         </criteriaItems>
         <description>When "Finance Approved" is checked for a margin request update status owner and send notification email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Email Marketing Client Qualification</fullName>
+        <actions>
+            <name>YBN_Escalated_Email_Marketing_Client_Qualification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Email Marketing Client Qualification</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated IL budget estimates</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_IL_budget_estimates</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Budget estimate for existing IL account,Budget estimate for new IL account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Margin Request</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_Margin_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Margin Change Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Marketing</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_Marketing</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Marketing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Organic Ops</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_Organic_Ops</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Organic Operations Request,Organic Audit Request,Custom SEO Keywords</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Organic Strategy</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_Organic_Strategy</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Organic Consultation,Pre-launch Custom Content Creation,Zoom Rank Custom Reporting,SEO Keyword Strategy,Organic Site Audit Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated PES Team</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_PES_Team</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Project</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>notEqual</operation>
+            <value>Performance Reporting</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Performance Reporting</fullName>
+        <actions>
+            <name>YBN_Es</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Reporting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated SEO Lead Estimates</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_SEO_Lead_Estimates</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>SEO Lead Estimates</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated SF %2B YL Bulk Setup%2FUpdate</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_SF_YL_Bulk_Setup_Update</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ybn master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>SalesFroce + Yodle Live Bulk Setup,SalesForce + Yodle Live Bulk Update</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated SF Bulk Setup%2FUpdate</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_SF_Bulk_Setup_Update</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>SalesForce Bulk Setup,SalesForce Bulk Update</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated Taxonomy</fullName>
+        <actions>
+            <name>YBN_Master_Taxonomy_Escalated</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Taxonomy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>when case reason = taxonomy and escalated checkbox is true</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated YL Bulk Setup%2FUpdate</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_YL_Bulk_Setup_Update</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Yodle Live Bulk Setup,Yodle Live Bulk Update</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Master%3A Escalated relationship budgets %26 ROI calc</fullName>
+        <actions>
+            <name>YBN_Master_Escalated_relationship_budgets_ROI_calc</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Relationship budget &amp; performance estimates,ROI Calculator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Relationship Budget Estimates Completed</fullName>
+        <actions>
+            <name>YBN_Relationship_Budget_Estimates_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Budget Estimate for Existing Relationship,Budget Estimate for New Relationship</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Budget &amp; Performance Estimates</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Work Completed,Closed</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN Update Sales Case Creator Manager</fullName>
+        <actions>
+            <name>YBN_Update_Sale_Manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Budget Estimate for new relationship update substatus</fullName>
+        <actions>
+            <name>YBN_Update_status_to_In_Progress</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>YBN_sub_status_to_geo_targeting_analysi</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Budget Estimate for New Relationship</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Franchisee Issue Resolved %28Director%29</fullName>
+        <actions>
+            <name>YBN_Franchisee_Issue_Resolved_Director</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Michele Brevig</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Franchisee Issue Resolved %28Manager%29</fullName>
+        <actions>
+            <name>YBN_Franchisee_Issue_Resolved_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Mia Pagonas,Cecily Bolton,Kristen Krzesicki</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Franchisee Issue Resolved %28VP%29</fullName>
+        <actions>
+            <name>YBN_Franchisee_Issue_Resolved_VP</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Brandon Ramos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Franchisee Issue Submitted %28Director%29</fullName>
+        <actions>
+            <name>YBN_Franchisee_Issue_Submitted_Director</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_Director_Level_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Michele Brevig</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Fire_drill__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Franchisee Issue Submitted %28Manager%29</fullName>
+        <actions>
+            <name>YBN_Franchisee_Issue_Submitted_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_Manager_Level_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Mia Pagonas,Cecily Bolton,Kristen Krzesicki</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Franchisee Issue Submitted %28VP%29</fullName>
+        <actions>
+            <name>YBN_Franchisee_Issue_Submitted_VP</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_VP_Level_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Brandon Ramos</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Non-Escalation Path Issue Resolved</fullName>
+        <actions>
+            <name>YBN_Non_Escalation_Path_Issue_Resolved</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Franchisee Issue (General),Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>notEqual</operation>
+            <value>Kristen Krzesicki,Cecily Bolton,Mia Pagonas,Michele Brevig,Jennifer Hendrickson,Kelly Rix,Brandon Ramos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Relationship Issue Resolved %28Director%29</fullName>
+        <actions>
+            <name>YBN_Relationship_Issue_Resolved_Director</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Michele Brevig</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Relationship Issue Resolved %28Manager%29</fullName>
+        <actions>
+            <name>YBN_Relationship_Issue_Resolved_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Jennifer Hendrickson,Matthew Machado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Relationship Issue Resolved %28VP%29</fullName>
+        <actions>
+            <name>YBN_Relationship_Issue_Resolved_VP</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Brandon Ramos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Relationship Issue Submitted %28Director%29</fullName>
+        <actions>
+            <name>YBN_Relationship_Issue_Submitted_Director</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_Director_Level_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Michele Brevig</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Fire_drill__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Relationship Issue Submitted %28Manager%29</fullName>
+        <actions>
+            <name>YBN_Relationship_Issue_Submitted_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_Manager_Level_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Jennifer Hendrickson,Matthew Machado</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A Relationship Issue Submitted %28VP%29</fullName>
+        <actions>
+            <name>YBN_Relationship_Issue_Submitted_VP</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>YBN_VP_Level_Escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Relationship Issue (General)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Brandon Ramos</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A VP Approval Case Assigned</fullName>
+        <actions>
+            <name>YBN_New_Case_In_VP_Approval_Queue</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>$1500+,$501-$1500</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Credit_Refund_Reason__c</field>
+            <operation>notEqual</operation>
+            <value>Net Zero Refund: Payment mapping issue,Net Zero Refund: Wrong payment option billed,Net Zero Refund: Incorrectly billed upon CO acceptance,Credit: Sales Promotion</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>VP Approval Queue</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN%3A VP Margin Change Approval Case Assigned</fullName>
+        <actions>
+            <name>YBN_Margin_Change_Request_Submitted_for_approval</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Margin Change Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>VP Approval Queue</value>
+        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>

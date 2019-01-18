@@ -14,6 +14,7 @@ private class CTSSyncServiceTest {
         }
     }
     
+    
     @isTest 
     static void test_GetSFDCObject() {
         Map<Id, SFDCToCTSAsynchRequest__c> requestMap = new Map<Id, SFDCToCTSAsynchRequest__c>();
@@ -65,7 +66,7 @@ private class CTSSyncServiceTest {
               
         system.debug('Routing table instance: ' + rt);
         
-        //Get async request table object
+        //Get async request table object 
         SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
         newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
         newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
@@ -82,16 +83,44 @@ private class CTSSyncServiceTest {
         system.debug('Async requests: ' + requestMap);
         
         Test.startTest();
-        List<CTSSFDCObjectBase> objs = CTSSyncService.GetSFDCObject('Case', requestMap);       
-        Test.stopTest();
-                 
+        List<CTSSFDCObjectBase> objs = CTSSyncService.GetSFDCObject('Case', requestMap);                       
+           
         system.assert(objs[0].Id == newCase.Id);
         system.assert(objs[0].ObjectName == 'Case');
         system.assert(objs[0].ContactFirstName == 'Test');
         system.assert(objs[0].ContactLastName == 'CTS');
         system.assert(objs[0].Status == 'Open');        
-        system.assert(objs[0].Detail != null); 
+        system.assert(objs[0].Detail != null);        
         
+        //Test Organic Case
+        requestMap = new Map<Id, SFDCToCTSAsynchRequest__c>();       
+        
+        Organic_Analysis__c newOrganicCase = new Organic_Analysis__c();        
+        newOrganicCase.Status__c = 'Open';
+        newOrganicCase.Account_Name__c = newAccount.Id;
+        insert newOrganicCase;
+        
+        SFDCToCTSAsynchRequest__c newAsyncRecord2 = new SFDCToCTSAsynchRequest__c();
+        newAsyncRecord2.API_Identifier__c = rt.CTSAPIIdentifier__c;
+        newAsyncRecord2.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+        newAsyncRecord2.Integration_Type__c = 'Api';
+        newAsyncRecord2.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord2.ObjectId__c = newOrganicCase.Id;
+        newAsyncRecord2.Object_Name__c = 'Organic_Analysis__c';
+        newAsyncRecord2.ScheduledDateTime__c = System.Now();
+        newAsyncRecord2.Status__c ='NEW';       
+        Insert newAsyncRecord2;
+                        
+        requestMap.put(newOrganicCase.Id, newAsyncRecord2);              
+        objs = CTSSyncService.GetSFDCObject('Organic_Analysis__c', requestMap);       
+        Test.stopTest();
+        
+        system.assert(objs[0].Id == newOrganicCase.Id);
+        system.assert(objs[0].ObjectName == 'Organic_Analysis__c');
+        system.assert(objs[0].ContactFirstName == 'Test');
+        system.assert(objs[0].ContactLastName == 'CTS');
+        system.assert(objs[0].Status == 'Open');        
+        system.assert(objs[0].Detail != null); 
     }
     
     
@@ -197,9 +226,29 @@ private class CTSSyncServiceTest {
     
     @isTest
     static void test_CallOutCTSForAPI() {
-         Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
-         String requestBody = '{"clientInfo":{"apiAccessKey":"453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991"},"request":[{"platformId":"YODLE","action":"Create","clientRequestId":"Case_5001b000005Bq5RAAS","objectType":"TicketingTicket","requestedService":"CTSv2","data":{"crmId":"552e519a-1898-4f4b-b909-a223a916b876","ticketingTicket":{"apiIdentifier":"SF_NETSOL_000001","contactFirstName":"CTS FN","contactLastName":"CTS LN","contactPhone":"(555) 345-6734","contactEmailAddress":"eugene.ross@web.com","crmOrderNumber":"11284031","referenceAccountId":"0011b00000RzOEfAAN","referenceCustomerId":"9999999","referenceProductInstanceId":"5001b000005Bq5RAAS","domain":"www.testsite.com","subject":"Lead Stream TP 2 : 11284031","detail":"Outbound Call\r\n\r\nCase Number: 11284031\r\nSubject: Lead Stream TP 2\r\nAuto Close Date: \r\n\r\nDescription: CTS Test\r\n\r\nTotal Account Revenue: $0\r\n________________________________________________________________\r\n\r\nStatus: \r\nScheduled Call: \r\nClient Satisfaction: \r\nNotes:\r\n Client Id: 9999999\r\n Client First Name: CTS FN\r\n Client Last Name: CTS LN\r\n Client Email: eugene.ross@web.com\r\n Client Phone: (555) 345-6734\r\n Product Code: Lead Stream ATV\r\n","referenceProductCode":"Lead Stream ATV","status":"Open","alternateContactEmailAddress":"eugene.ross@web.com"}}}]}';
-         CTSSyncService.CallOutCTSForAPI(requestBody);
+                       
+        EmailTemplate et = [SELECT Id, DeveloperName FROM EmailTemplate WHERE Folder.Name = 'CTS Templates' AND DeveloperName = 'CTS_ChargeFailure_Send' LIMIT 1];          
+        SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();   
+        newAsyncRecord.API_Identifier__c = 'dfjdfcj76';
+        newAsyncRecord.EmailTemplateId__c = et.Id;
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = '5001b000005BprnAAC';
+        newAsyncRecord.Object_Name__c = 'Case';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='NEW';        
+        insert newAsyncRecord;   
+        
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());      
+        String requestBody = '{"clientInfo":{"apiAccessKey":"453bf6392c38444a98023807aaa5ea8d5bd32a80767c4098ba76955c83b2f991"},"request":[{"platformId":"YODLE","action":"Create","clientRequestId":"Case_5001b000005Bq5RAAS","objectType":"TicketingTicket","requestedService":"CTSv2","data":{"crmId":"552e519a-1898-4f4b-b909-a223a916b876","ticketingTicket":{"apiIdentifier":"SF_NETSOL_000001","contactFirstName":"CTS FN","contactLastName":"CTS LN","contactPhone":"(555) 345-6734","contactEmailAddress":"eugene.ross@web.com","crmOrderNumber":"11284031","referenceAccountId":"0011b00000RzOEfAAN","referenceCustomerId":"9999999","referenceProductInstanceId":"5001b000005Bq5RAAS","domain":"www.testsite.com","subject":"Lead Stream TP 2 : 11284031","detail":"Outbound Call\r\n\r\nCase Number: 11284031\r\nSubject: Lead Stream TP 2\r\nAuto Close Date: \r\n\r\nDescription: CTS Test\r\n\r\nTotal Account Revenue: $0\r\n________________________________________________________________\r\n\r\nStatus: \r\nScheduled Call: \r\nClient Satisfaction: \r\nNotes:\r\n Client Id: 9999999\r\n Client First Name: CTS FN\r\n Client Last Name: CTS LN\r\n Client Email: eugene.ross@web.com\r\n Client Phone: (555) 345-6734\r\n Product Code: Lead Stream ATV\r\n","referenceProductCode":"Lead Stream ATV","status":"Open","alternateContactEmailAddress":"eugene.ross@web.com"}}}]}';
+        Test.StartTest();
+        CTSSyncService.CallOutCTSForAPI(requestBody);
+        Test.stopTest();
+        
+        SFDCToCTSAsynchRequest__c request = [SELECT Id, Status__c FROM SFDCToCTSAsynchRequest__c WHERE Id = :newAsyncRecord.Id LIMIT 1];
+        System.Debug('Request Status: ' + request.Status__c);
+        System.assert(request.Status__c == 'ERROR');
+        
     }
     
     @isTest
@@ -252,7 +301,8 @@ private class CTSSyncServiceTest {
         objIdList.add(newCase.Id);
         
         Test.StartTest();
-        CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', objIdList);
+        //CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', objIdList);
+        CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', newCase.Id);
         Test.stopTest();  
         
         List<SFDCToCTSAsynchRequest__c> requests = [SELECT Id, ObjectId__c, Object_Name__c, Status__c FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :newCase.Id AND Status__c = 'NEW']; 
@@ -274,8 +324,7 @@ private class CTSSyncServiceTest {
         
         Case newCase = new Case();                
         newCase.AccountId = newAccount.Id;
-        insert newCase;
-        
+        insert newCase;               
         SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();   
         newAsyncRecord.API_Identifier__c = 'dfjdfcj76';
         newAsyncRecord.EmailTemplateId__c = 'dfjdkfjd122';
@@ -287,7 +336,54 @@ private class CTSSyncServiceTest {
         newAsyncRecord.Status__c ='SUCCESS';
         newAsyncRecord.ExternalTicketId__c = '12345678';
         insert newAsyncRecord;  
+        objIdList.add(newAsyncRecord.Id);
         
+        Quality_Case__c newQC = new Quality_Case__c();
+        newQC.Account_Name__c = newAccount.Id;
+        insert newQC;       
+        newAsyncRecord = new SFDCToCTSAsynchRequest__c();   
+        newAsyncRecord.API_Identifier__c = 'dfjdfcj76';
+        newAsyncRecord.EmailTemplateId__c = 'dfjdkfjd122';
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newQC.Id;
+        newAsyncRecord.Object_Name__c = 'Quality_Case__c';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='SUCCESS';
+        newAsyncRecord.ExternalTicketId__c = '12345678';
+        insert newAsyncRecord;                  
+        objIdList.add(newAsyncRecord.Id);
+        
+        Organic_Analysis__c newOC = new Organic_Analysis__c();
+        newOC.Account_Name__c = newAccount.Id;
+        insert newOC;       
+        newAsyncRecord = new SFDCToCTSAsynchRequest__c();   
+        newAsyncRecord.API_Identifier__c = 'dfjdfcj76';
+        newAsyncRecord.EmailTemplateId__c = 'dfjdkfjd122';
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newOC.Id;
+        newAsyncRecord.Object_Name__c = 'Organic_Analysis__c';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='SUCCESS';
+        newAsyncRecord.ExternalTicketId__c = '12345678';
+        insert newAsyncRecord;                  
+        objIdList.add(newAsyncRecord.Id);
+        
+        Customer_Surveys__c newCS = new Customer_Surveys__c();
+        newCS.Account__c = newAccount.Id;
+        insert newCS;       
+        newAsyncRecord = new SFDCToCTSAsynchRequest__c();   
+        newAsyncRecord.API_Identifier__c = 'dfjdfcj76';
+        newAsyncRecord.EmailTemplateId__c = 'dfjdkfjd122';
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newCS.Id;
+        newAsyncRecord.Object_Name__c = 'Customer_Surveys__c';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='SUCCESS';
+        newAsyncRecord.ExternalTicketId__c = '12345678';
+        insert newAsyncRecord;                  
         objIdList.add(newAsyncRecord.Id);
         
         Test.StartTest();
@@ -297,6 +393,18 @@ private class CTSSyncServiceTest {
         Case caseObj = [SELECT Id, External_Ticket_ID__c, External_Ticket_System__c FROM Case WHERE Id = :newCase.Id LIMIT 1];
         System.assert(caseObj.External_Ticket_ID__c == '12345678');
         System.assert(caseObj.External_Ticket_System__c == 'CTS');
+        
+        Quality_Case__c qcObj = [SELECT Id, External_Ticket_ID__c, External_Ticket_System__c FROM Quality_Case__c WHERE Id = :newQC.Id LIMIT 1];
+        System.assert(qcObj.External_Ticket_ID__c == '12345678');
+        System.assert(qcObj.External_Ticket_System__c == 'CTS');
+        
+        Organic_Analysis__c ocObj = [SELECT Id, External_Ticket_ID__c, External_Ticket_System__c FROM Organic_Analysis__c WHERE Id = :newOC.Id LIMIT 1];
+        System.assert(ocObj.External_Ticket_ID__c == '12345678');
+        System.assert(ocObj.External_Ticket_System__c == 'CTS');
+                
+        Customer_Surveys__c csObj = [SELECT Id, External_Ticket_ID__c, External_Ticket_System__c FROM Customer_Surveys__c WHERE Id = :newCS.Id LIMIT 1];
+        System.assert(csObj.External_Ticket_ID__c == '12345678');
+        System.assert(csObj.External_Ticket_System__c == 'CTS');
     }
     
 }

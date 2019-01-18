@@ -31,27 +31,36 @@ public without sharing class CTSSyncService_ERWorking{
  
         CTSTicket ctsTicketInstance = new CTSTicket();
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
+        String configKey = 'CTSRequestStage_errorpost';
+        String processStage = CTSSyncService.GetConfigValue(configKey);
         
         for(CTSSFDCObjectBase sfdcObj : sfdcObjectList){
+            
+            try{
+                ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
+                ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
+                ctsTicketInstance.contactFirstName = (sfdcObj.ContactFirstName != null ? sfdcObj.ContactFirstName : '');
+                ctsTicketInstance.contactLastName = (sfdcObj.ContactLastName != null ? sfdcObj.ContactLastName : '');
+                ctsTicketInstance.contactPhone = (sfdcObj.ContactPhone != null ? sfdcObj.ContactPhone : '');
+                ctsTicketInstance.contactEmailAddress = (sfdcObj.ContactEmailAddress != null ? sfdcObj.ContactEmailAddress : '');
+                ctsTicketInstance.objectName = sfdcObj.ObjectName;
+                ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
+                ctsTicketInstance.referenceCustomerId = (sfdcObj.ReferenceCustomerId != null ? sfdcObj.ReferenceCustomerId : '');
+                ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
+                ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
+                ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
+                ctsTicketInstance.status = sfdcObj.Status;
+                ctsTicketInstance.detail = (sfdcObj.Detail != null ? sfdcObj.Detail : '');
+                ctsTicketInstance.referenceProductCode = sfdcObj.ReferenceProductCodes;
+                ctsTicketInstance.alternateContactEmailAddress = (sfdcObj.AlternateContactEmailAddress != null ? sfdcObj.AlternateContactEmailAddress : '');
+                                      
+                ctsTicketList.add(ctsTicketInstance);
+            }
+            catch(Exception e){
                 
-            ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
-            ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
-            ctsTicketInstance.contactFirstName = (sfdcObj.ContactFirstName != null ? sfdcObj.ContactFirstName : '');
-            ctsTicketInstance.contactLastName = (sfdcObj.ContactLastName != null ? sfdcObj.ContactLastName : '');
-            ctsTicketInstance.contactPhone = (sfdcObj.ContactPhone != null ? sfdcObj.ContactPhone : '');
-            ctsTicketInstance.contactEmailAddress = (sfdcObj.ContactEmailAddress != null ? sfdcObj.ContactEmailAddress : '');
-            ctsTicketInstance.objectName = sfdcObj.ObjectName;
-            ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
-            ctsTicketInstance.referenceCustomerId = (sfdcObj.ReferenceCustomerId != null ? sfdcObj.ReferenceCustomerId : '');
-            ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
-            ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
-            ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
-            ctsTicketInstance.status = sfdcObj.Status;
-            ctsTicketInstance.detail = (sfdcObj.Detail != null ? sfdcObj.Detail : '');
-            ctsTicketInstance.referenceProductCode = sfdcObj.ReferenceProductCodes;
-            ctsTicketInstance.alternateContactEmailAddress = (sfdcObj.AlternateContactEmailAddress != null ? sfdcObj.AlternateContactEmailAddress : '');
-                                  
-            ctsTicketList.add(ctsTicketInstance);
+                // Log error
+                UpsertCTSErrorLog(processStage, sfdcObj.ReferenceProductInstanceId, 'GetCTSTicket', e.getMessage());
+            }
         }
         
         System.Debug('Number of Rows in Ticket List: ' + String.valueOf(ctsTicketList.size()));
@@ -65,21 +74,29 @@ public without sharing class CTSSyncService_ERWorking{
     {
         Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
         Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
-        
         CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
+        String configKey = 'CTSRequestStage_errorpost';
+        String processStage = CTSSyncService.GetConfigValue(configKey);
         
         for (Id objId : requestMap.keySet())
         {
-            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-            String[] toAddresses = new String[]{'eugene.ross@web.com'};
-            mail.setToAddresses(toAddresses);
-            mail.setUseSignature(false);
-            mail.setSaveAsActivity(false);
-            mail.setSenderDisplayName('YodleSFDC');   
-            mail.setTargetObjectId(integrationSetting.DefaultContactId__c);
-            mail.setWhatId(objId); 
-            mail.setTemplateId(requestMap.get(objId).EmailTemplateId__c);
-            mails.add(mail);
+            try{
+                Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+                String[] toAddresses = new String[]{'eugene.ross@web.com'};
+                mail.setToAddresses(toAddresses);
+                mail.setUseSignature(false);
+                mail.setSaveAsActivity(false);
+                mail.setSenderDisplayName('YodleSFDC');   
+                mail.setTargetObjectId(integrationSetting.DefaultContactId__c);
+                mail.setWhatId(objId); 
+                mail.setTemplateId(requestMap.get(objId).EmailTemplateId__c);
+                mails.add(mail);
+            }
+            catch(Exception e){
+            
+                // Log error
+                UpsertCTSErrorLog(processStage, objId, 'GetEmailMap', e.getMessage());
+            }
         }
         
         Savepoint sp = Database.setSavepoint();
@@ -104,6 +121,8 @@ public without sharing class CTSSyncService_ERWorking{
        CTSSFDCObjectBase baseObject;
        List<CTSSFDCObjectBase> ctsSFDCObjectList = new List<CTSSFDCObjectBase>();              
        SFDCToCTSAsynchRequest__c asyncRequest;
+       String configKey = 'CTSRequestStage_errorpost';
+       String processStage = CTSSyncService.GetConfigValue(configKey);
        
        //Render email subject and body in batch       
        Map<Id, Messaging.SingleEmailMessage> emailMap = GetEmailMap(requestMap);
@@ -129,10 +148,16 @@ public without sharing class CTSSyncService_ERWorking{
                                FROM Case
                                WHERE Id IN : requestMap.keySet()])
                {
-                   asyncRequest = requestMap.get(sfCase.Id);
-                   Messaging.SingleEmailMessage mail = emailMap.get(sfCase.Id);
-                   baseObject = new CTSSFDCObjectBase(sfCase, objectName, asyncRequest, mail);
-                   ctsSFDCObjectList.add(baseObject);                    
+                   try{
+                       asyncRequest = requestMap.get(sfCase.Id);
+                       Messaging.SingleEmailMessage mail = emailMap.get(sfCase.Id);
+                       baseObject = new CTSSFDCObjectBase(sfCase, objectName, asyncRequest, mail);
+                       ctsSFDCObjectList.add(baseObject);
+                   }
+                   catch(Exception e){
+                       // Log error
+                       UpsertCTSErrorLog(processStage, sfCase.Id, 'GetSFDCObject : Case', e.getMessage());
+                   }               
                }
                
            }
@@ -151,10 +176,16 @@ public without sharing class CTSSyncService_ERWorking{
                                FROM Organic_Analysis__c 
                                WHERE Id IN : requestMap.keySet()])
                {
-                   asyncRequest = requestMap.get(organicCase.Id);
-                   Messaging.SingleEmailMessage mail = emailMap.get(organicCase.Id);
-                   baseObject = new CTSSFDCObjectBase(organicCase, objectName, asyncRequest, mail);
-                   ctsSFDCObjectList.add(baseObject);
+                   try{
+                       asyncRequest = requestMap.get(organicCase.Id);
+                       Messaging.SingleEmailMessage mail = emailMap.get(organicCase.Id);
+                       baseObject = new CTSSFDCObjectBase(organicCase, objectName, asyncRequest, mail);
+                       ctsSFDCObjectList.add(baseObject);
+                   }
+                   catch(Exception e){
+                       // Log error
+                       UpsertCTSErrorLog(processStage, organicCase.Id, 'GetSFDCObject : Organic Case', e.getMessage());
+                   }
                }
                
            }  
@@ -173,12 +204,17 @@ public without sharing class CTSSyncService_ERWorking{
                                FROM Quality_Case__c
                                WHERE Id IN : requestMap.keySet()])
                {
-                   asyncRequest = requestMap.get(qualityCase.Id);
-                   Messaging.SingleEmailMessage mail = emailMap.get(qualityCase.Id);
-                   baseObject = new CTSSFDCObjectBase(qualityCase, objectName, asyncRequest, mail);
-                   ctsSFDCObjectList.add(baseObject);
+                   try{
+                       asyncRequest = requestMap.get(qualityCase.Id);
+                       Messaging.SingleEmailMessage mail = emailMap.get(qualityCase.Id);
+                       baseObject = new CTSSFDCObjectBase(qualityCase, objectName, asyncRequest, mail);
+                       ctsSFDCObjectList.add(baseObject);
+                   }
+                   catch(Exception e){
+                       // Log error
+                       UpsertCTSErrorLog(processStage, qualityCase.Id, 'GetSFDCObject : Quality Case', e.getMessage());
+                   }
                }
-               
            }           
            /*when 'Best_Practice_Evaluation__c' {
               for (Best_Practice_Evaluation__c bpe: [SELECT Id, Name,
@@ -216,10 +252,16 @@ public without sharing class CTSSyncService_ERWorking{
                                FROM Customer_Surveys__c 
                                WHERE Id IN : requestMap.keySet()])
                {
-                   asyncRequest = requestMap.get(customerSurvey.Id);
-                   Messaging.SingleEmailMessage mail = emailMap.get(customerSurvey.Id);
-                   baseObject = new CTSSFDCObjectBase(customerSurvey, objectName, asyncRequest, mail);
-                   ctsSFDCObjectList.add(baseObject);
+                   try{
+                       asyncRequest = requestMap.get(customerSurvey.Id);
+                       Messaging.SingleEmailMessage mail = emailMap.get(customerSurvey.Id);
+                       baseObject = new CTSSFDCObjectBase(customerSurvey, objectName, asyncRequest, mail);
+                       ctsSFDCObjectList.add(baseObject);
+                   }
+                   catch(Exception e){
+                       // Log error
+                       UpsertCTSErrorLog(processStage, customerSurvey.Id, 'GetSFDCObject : Customer Surveys', e.getMessage());
+                   }
                }
                
            }           
@@ -253,7 +295,6 @@ public without sharing class CTSSyncService_ERWorking{
        System.Debug('*** End Method GetSFDCObject ***');
                                    
        return ctsSFDCObjectList;
-
     }    
     
     
@@ -328,46 +369,66 @@ public without sharing class CTSSyncService_ERWorking{
                      continue;
                  }
                                                 
-                 //B. 0 & 1 & 2 & 4    
+                 //B. 0 & 1 & 2 & 4 & 3 = ""   
                  fieldMap.remove('CaseOrigin__c');         
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')))
                  {
                      routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                      continue;
                  }     
                                                                                
-                 //C. 0 & 1 & 3 & 4
+                 //C. 0 & 1 & 3 & 4 & 2 = ""
                  fieldMap.remove('CaseReason__c');
                  fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Reason')))
                  {
                      routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                      continue;
                  }      
                 
-                 //D. 0 & 1 & 4
+                 //D. 0 & 1 & 4 & 2 = "" & 3 = ""
                  fieldMap.remove('CaseOrigin__c');        
                  routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
                  {
                      routingObjMap.put((Id)sfObj.get('Id'), routingObj);
                      continue;
                  }  
                  
-                 fieldMap.remove('ProductType__c');
-             }               
+                 //E. 0 & 1 & 2 = "" & 3 = "" & 4 = ""   
+                 fieldMap.remove('ProductType__c');                            
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')) && String.isBlank((String)sfObj.get('ProductType__c')))
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }
                  
-             //E. 0 & 1               
-             routingObj = FindRoutingObject(routeMappings, fieldMap);
-             if (routingObj != null)
-             {
-                 routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                 continue;
+                 //F. 0 & 1 = "CATCHALL" & 2 = "" & 3 ="" & 4
+                 String objRecordTypeName = fieldMap.get('RecordTypeName__c');
+                 fieldMap.remove('RecordTypeName__c');  
+                 fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null && objRecordTypeName == 'CATCHALL' && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }                
              }
+             else
+             {
+                 //None Case objects, only compare Object Name & Object Record Type
+                 routingObj = FindRoutingObject(routeMappings, fieldMap);
+                 if (routingObj != null)
+                 {
+                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                     continue;
+                 }
+             }                                            
                                   
-             //F. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
+             //G. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
              for(SObject obj : routeMappings) {
                  if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
                  {                     
@@ -490,7 +551,6 @@ public without sharing class CTSSyncService_ERWorking{
        
         HttpRequest req = new HttpRequest();        
         req.setEndpoint('callout:CTSIntegrationService');
-        req.setClientCertificateName('CTSESBProxyCert');
         req.setBody(requestBody);
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
@@ -554,6 +614,7 @@ public without sharing class CTSSyncService_ERWorking{
             OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
             String sfdcEmailAddress = GetConfigValue('SFDC_Case_Email');
             Set<String> uniqueEmailAddressesSet = new Set<String>();
+            System.Debug('sfdcEmailAddress: ' + sfdcEmailAddress);
             
             for(CTSSFDCObjectBase obj : baseObj){
             
@@ -567,9 +628,10 @@ public without sharing class CTSSyncService_ERWorking{
                     uniqueEmailAddressesSet.add(sfdcEmailAddress);
                     
                     for(String s : uniqueEmailAddressesSet){
-                        toAddress.add(s);
+                        if (!String.isBlank(s))
+                            toAddress.add(s);
                     }
-                 
+                    System.Debug('toAddress: ' + toAddress);
                     message.setToAddresses(toAddress);
                     message.setReplyTo(fromAddress);
                     message.setOrgWideEmailAddressId(owea.get(0).Id);
@@ -580,8 +642,8 @@ public without sharing class CTSSyncService_ERWorking{
                 }
             }
             
-            if(ctsNotificationsLst.size() > 0){
-                                    
+            System.Debug('ctsNotificationsLst size: ' + ctsNotificationsLst.size());
+            if(ctsNotificationsLst.size() > 0){                
                 // send notifications
                 Messaging.sendEmail(ctsNotificationsLst);
             }
@@ -593,12 +655,14 @@ public without sharing class CTSSyncService_ERWorking{
         }
     }
     
-    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
+    public static void CreateSFDCToCTSAsynchRequest(String objectName, Id objectId)
     {
         System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
         
         try
         {
+            List<Id> objectIds = new List<Id>();
+            objectIds.add(objectId);
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
@@ -621,15 +685,15 @@ public without sharing class CTSSyncService_ERWorking{
                     switch on rt.IntegrationType__c{
                         
                         when 'API' {
-                            
+                                
                             newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
                         }
                         when else {
-                            
+                                
                             newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
                         }
                     }
-                    
+                        
                     newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
                     newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
                     newAsyncRecord.NumberOfRetryAttempts__c = 0;
@@ -637,19 +701,17 @@ public without sharing class CTSSyncService_ERWorking{
                     newAsyncRecord.Object_Name__c = objectName;
                     newAsyncRecord.ScheduledDateTime__c = System.Now();
                     newAsyncRecord.Status__c ='NEW';
-                
+                    
                     dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
-                
                 }
-            
             }
-            
-            System.Debug('Number of Async Request Records Created: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
             
             if(dmlSFDCToCTSAsynchRequestList.size() > 0){
             
                 insert dmlSFDCToCTSAsynchRequestList;
             }
+            
+            System.Debug('Number of Async Request Records: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
             
             System.Debug('*** End Method CreateSFDCToCTSAsynchRequest ***');
         }
@@ -1086,6 +1148,65 @@ public without sharing class CTSSyncService_ERWorking{
         System.Debug('*** End Method UpdateSFDCObject ***');
     }
     
+    public static void UpsertCTSErrorLog(string requestStage, Id objectId, string methodName, string errorMsg)
+    {
+        List<CTS_Error_Log__c> dmlCTSErrorLog = new List<CTS_Error_Log__c>();
+        Integer retryAttempts;
+        Map<String, SFDCToCTSAsynchRequest__c> asyncRequestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
+        Id preRequestRecordTypeId = Schema.SObjectType.CTS_Error_Log__c.getRecordTypeInfosByName().get('PRE CTS Request Log').getRecordTypeId();
+        Id postRequestRecordTypeId = Schema.SObjectType.CTS_Error_Log__c.getRecordTypeInfosByName().get('POST CTS Request Log').getRecordTypeId();
+        String baseURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
+        String objectIdStr = String.valueOf(objectId);
+        
+        CTS_Error_Log__c newErrLog = new CTS_Error_Log__c();
+        newErrLog.Log_Message__c = errorMsg;
+        newErrLog.Method_Name__c = methodName;
+        newErrLog.Object_Id__c = objectIdStr;
+        newErrLog.Object_Record_Link__c = baseURL + objectIdStr;
+        
+        switch on requestStage{
+                        
+            when 'PRE' {
+                newErrLog.RecordTypeId = preRequestRecordTypeId;
+            }
+            when else {
+                
+                for(SFDCToCTSAsynchRequest__c asr : 
+                    [SELECT Id, 
+                            ObjectId__c,
+                            ErrorDescription__c,
+                            NumberOfRetryAttempts__c,
+                            ProcessedDateTime__c,
+                            Status__c
+                       FROM SFDCToCTSAsynchRequest__c 
+                      WHERE ObjectId__c = :objectIdStr]){
+                
+                    asyncRequestMap.put(asr.ObjectId__c, asr);
+                }
+            
+                newErrLog.RecordTypeId = postRequestRecordTypeId;
+                newErrLog.Asynch_Request_Id__c = asyncRequestMap.get(objectIdStr).Id;
+            }
+        }
+        
+        dmlCTSErrorLog.add(newErrLog);
+        
+        if(dmlCTSErrorLog.size() > 0){
+        
+            insert dmlCTSErrorLog;
+        }
+        
+        if(asyncRequestMap.size() > 0){
+        
+            for(SFDCToCTSAsynchRequest__c asrMap : asyncRequestMap.values()){
+            
+                retryAttempts = Integer.valueOf(asrMap.NumberOfRetryAttempts__c);
+                asrMap.Status__c = 'ERROR';
+                asrMap.ErrorDescription__c = asrMap.ErrorDescription__c + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
+            }
+        }
+    }
+    
     public static CTS_Integration_Setting__mdt GetCTSIntegrationSettings()
     {
         CTS_Integration_Setting__mdt ctsIntSettings = 
@@ -1108,7 +1229,7 @@ public without sharing class CTSSyncService_ERWorking{
     
     public static String GetConfigValue(string configLabel)
     {
-        String configValue = 
+        /*String configValue = 
             [SELECT Id, 
                     External_System_Name__c, 
                     MasterLabel, 
@@ -1121,6 +1242,23 @@ public without sharing class CTSSyncService_ERWorking{
                     Configuration_Label__c = :configLabel
               LIMIT 1].Configuration_Value__c;
               
-         return configValue;
+              return configValue;*/
+              
+         Integration_Configuration__mdt[] configs = 
+             [SELECT Id, 
+                     External_System_Name__c, 
+                     MasterLabel, 
+                     Configuration_Label__c, 
+                     Data_Type__c, 
+                     Configuration_Value__c 
+                FROM Integration_Configuration__mdt 
+               WHERE Is_Active__c = true AND
+                     External_System_Name__c = 'CTS' AND
+                     Configuration_Label__c = :configLabel];
+                     
+         if (configs.size() > 0)
+             return configs[0].Configuration_Value__c;
+         else
+             return null;     
     }
 }

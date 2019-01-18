@@ -302,7 +302,8 @@ private class CTSSyncServiceTestPartial {
         objIdList.add(newCase.Id);
         
         Test.StartTest();
-        CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', objIdList);
+        //CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', objIdList);
+        CTSSyncService.CreateSFDCToCTSAsynchRequest('Case', newCase.Id);
         Test.stopTest();  
         
         List<SFDCToCTSAsynchRequest__c> requests = [SELECT Id, ObjectId__c, Object_Name__c, Status__c FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :newCase.Id AND Status__c = 'NEW']; 
