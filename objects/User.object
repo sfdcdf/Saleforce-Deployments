@@ -1036,7 +1036,8 @@
         <label>Subba Salseforce Active Users</label>
     </listViews>
     <listViews>
-        <fullName>Subba_Active_API_Users</fullName>
+        <fullName>API_and_Integration_Users</fullName>
+        <booleanFilter>(1 OR 2 OR 4) AND 3</booleanFilter>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CORE.USERS.USERNAME</columns>
@@ -1046,6 +1047,42 @@
         <columns>CORE.PROFILE.NAME</columns>
         <columns>MANAGER</columns>
         <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.DIVISION</field>
+            <operation>startsWith</operation>
+            <value>API</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.DIVISION</field>
+            <operation>equals</operation>
+            <value>TECHNOLOGY</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.DIVISION</field>
+            <operation>equals</operation>
+            <value>DREAMFORCE</value>
+        </filters>
+        <label>API ,Tech,DF and Integration Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Subba_Active_API_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
         <columns>CORE.USERS.DEPARTMENT</columns>
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
