@@ -315,6 +315,8 @@ public without sharing class CTSSyncService_ERWorking{
         else
             query = 'SELECT Id, RecordTypeId FROM ' + objName + ' WHERE Id in :objIds';    
         List<SObject> ctsSalesforceObjectList = Database.query(query);
+        String configKey = 'CTSRequestStage_errorpre';
+        String processStage = CTSSyncService.GetConfigValue(configKey);
                                    
         List<SObject> routeMappings = [SELECT Id, 
                         Additional_Filter__c,
@@ -350,106 +352,109 @@ public without sharing class CTSSyncService_ERWorking{
          4. Product Type*/
          
          for (SObject sfObj : ctsSalesforceObjectList)
-         {   
-             System.Debug(sfObj);          
-             Map<String, String> fieldMap = new Map<String, String>();
-             fieldMap.put('Object__c', ctsObjectsMap.get(objName));             
-             fieldMap.put('RecordTypeName__c', objRecordTypeMap.get((Id)sfObj.get('RecordTypeId')));
-             if (objName.equals('Case'))
-             {
-                 fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
-                 fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
-                 fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
-                        
-                 //A. 0 & 1 & 2 & 3 & 4 
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
+         {
+             try{
+                 System.Debug(sfObj);          
+                 Map<String, String> fieldMap = new Map<String, String>();
+                 fieldMap.put('Object__c', ctsObjectsMap.get(objName));             
+                 fieldMap.put('RecordTypeName__c', objRecordTypeMap.get((Id)sfObj.get('RecordTypeId')));
+                 if (objName.equals('Case'))
                  {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }
-                                                
-                 //B. 0 & 1 & 2 & 4 & 3 = ""   
-                 fieldMap.remove('CaseOrigin__c');         
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')))
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }     
-                                                                               
-                 //C. 0 & 1 & 3 & 4 & 2 = ""
-                 fieldMap.remove('CaseReason__c');
-                 fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null && String.isBlank((String)sfObj.get('Reason')))
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }      
-                
-                 //D. 0 & 1 & 4 & 2 = "" & 3 = ""
-                 fieldMap.remove('CaseOrigin__c');        
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }  
-                 
-                 //E. 0 & 1 & 2 = "" & 3 = "" & 4 = ""   
-                 fieldMap.remove('ProductType__c');                            
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')) && String.isBlank((String)sfObj.get('ProductType__c')))
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }
-                 
-                 //F. 0 & 1 = "CATCHALL" & 2 = "" & 3 ="" & 4
-                 String objRecordTypeName = fieldMap.get('RecordTypeName__c');
-                 fieldMap.remove('RecordTypeName__c');  
-                 fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null && objRecordTypeName == 'CATCHALL' && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }                
-             }
-             else
-             {
-                 //None Case objects, only compare Object Name & Object Record Type
-                 routingObj = FindRoutingObject(routeMappings, fieldMap);
-                 if (routingObj != null)
-                 {
-                     routingObjMap.put((Id)sfObj.get('Id'), routingObj);
-                     continue;
-                 }
-             }                                            
-                                  
-             //G. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
-             for(SObject obj : routeMappings) {
-                 if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
-                 {                     
-                     routingObjMap.put((Id)sfObj.get('Id'), (CTSObjectTriggerMap__mdt)obj);
-                     break;
-                 }
+                     fieldMap.put('CaseReason__c', (String)sfObj.get('Reason'));
+                     fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin'));
+                     fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
+                            
+                     //A. 0 & 1 & 2 & 3 & 4 
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null)
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }
+                                                    
+                     //B. 0 & 1 & 2 & 4 & 3 = ""   
+                     fieldMap.remove('CaseOrigin__c');         
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null && String.isBlank((String)sfObj.get('Origin')))
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }     
+                                                                                   
+                     //C. 0 & 1 & 3 & 4 & 2 = ""
+                     fieldMap.remove('CaseReason__c');
+                     fieldMap.put('CaseOrigin__c', (String)sfObj.get('Origin')); 
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null && String.isBlank((String)sfObj.get('Reason')))
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }      
+                    
+                     //D. 0 & 1 & 4 & 2 = "" & 3 = ""
+                     fieldMap.remove('CaseOrigin__c');        
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }  
                      
+                     //E. 0 & 1 & 2 = "" & 3 = "" & 4 = ""   
+                     fieldMap.remove('ProductType__c');                            
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')) && String.isBlank((String)sfObj.get('ProductType__c')))
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }
+                     
+                     //F. 0 & 1 = "CATCHALL" & 2 = "" & 3 ="" & 4
+                     String objRecordTypeName = fieldMap.get('RecordTypeName__c');
+                     fieldMap.remove('RecordTypeName__c');  
+                     fieldMap.put('ProductType__c', (String)sfObj.get('Product_Type__c'));
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null && objRecordTypeName == 'CATCHALL' && String.isBlank((String)sfObj.get('Origin')) && String.isBlank((String)sfObj.get('Reason')))
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }                
+                 }
+                 else
+                 {
+                     //None Case objects, only compare Object Name & Object Record Type
+                     routingObj = FindRoutingObject(routeMappings, fieldMap);
+                     if (routingObj != null)
+                     {
+                         routingObjMap.put((Id)sfObj.get('Id'), routingObj);
+                         continue;
+                     }
+                 }                                            
+                                      
+                 //G. If none of the criteria above are met we will route to a catch all queue , by searching for "Object Record Type = "CATCHALL"
+                 for(SObject obj : routeMappings) {
+                     if (obj.get('RecordTypeName__c') == 'CATCHALL' && obj.get('Object__c') == ctsObjectsMap.get(objName))
+                     {                     
+                         routingObjMap.put((Id)sfObj.get('Id'), (CTSObjectTriggerMap__mdt)obj);
+                         break;
+                     } 
+                 }
+                 
+                 //If no routing object can be found, we add NULL value to Map
+                 if (!routingObjMap.keySet().contains((Id)sfObj.get('Id')))
+                     routingObjMap.put((Id)sfObj.get('Id'), null);
              }
-             
-             //If no routing object can be found, we add NULL value to Map
-             if (!routingObjMap.keySet().contains((Id)sfObj.get('Id')))
-                 routingObjMap.put((Id)sfObj.get('Id'), null);
-          
+             catch(Exception e){
+                 // Log error
+                 UpsertCTSErrorLog(processStage, (Id)sfObj.get('Id'), 'GetRoutingTableObject', e.getMessage());
+             }
          }
          
          System.Debug('Number of Rows in RoutingTable Map: ' + String.valueOf(routingObjMap.size()));
          System.Debug('RoutingTableObject Returned: ' + routingObjMap);
          System.Debug('*** End Method GetRoutingTableObject ***');
          
-         return routingObjMap;                                        
-                           
+         return routingObjMap;
     }
    
     private static CTSObjectTriggerMap__mdt FindRoutingObject(List<sObject> routingTableObjs, Map<string, string> fieldMap)
@@ -484,6 +489,8 @@ public without sharing class CTSSyncService_ERWorking{
             "request": []
           } */   
           
+       String configKey = 'CTSRequestStage_errorpost';
+       String processStage = CTSSyncService.GetConfigValue(configKey);   
        CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();              
        
        JSONGenerator bodyJSON = JSON.createGenerator(false);
@@ -499,38 +506,45 @@ public without sharing class CTSSyncService_ERWorking{
        bodyJSON.writeFieldName('request');
        bodyJSON.writeStartArray();
            for (CTSTicket ticket : ctsTickets)
-           {           
-               bodyJSON.writeStartObject();
+           {
+               try{
                
-               bodyJSON.writeObjectField('platformId', 'YODLE');
-               bodyJSON.writeObjectField('action', 'Create');
-               bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
-               bodyJSON.writeObjectField('objectType', 'TicketingTicket');
-               bodyJSON.writeObjectField('requestedService', integrationSetting.RequestedService__c);
-               
-               bodyJSON.writeFieldName('data');
-               bodyJSON.writeStartObject();               
-               bodyJSON.writeObjectField('crmId', integrationSetting.CTScrmId__c);
-               bodyJSON.writeFieldName('ticketingTicket');
-               bodyJSON.writeStartObject();
-               bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
-               bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
-               bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
-               bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
-               bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
-               bodyJSON.writeObjectField('crmOrderNumber', ticket.crmOrderNumber.length() > 50 ? ticket.crmOrderNumber.substring(0, 50): ticket.crmOrderNumber);
-               bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
-               bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
-               bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
-               bodyJSON.writeObjectField('domain', ticket.domain.length() > 255 ? ticket.domain.substring(0, 255): ticket.domain);
-               bodyJSON.writeObjectField('subject', ticket.subject.length() > 100 ? ticket.subject.substring(0, 100): ticket.subject);
-               bodyJSON.writeObjectField('detail', ticket.detail.escapeHtml4());
-               bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
-               bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
-               bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
-               bodyJSON.writeEndObject();
-               bodyJSON.writeEndObject();                                              
-               bodyJSON.writeEndObject();           
+                   bodyJSON.writeStartObject();
+                   
+                   bodyJSON.writeObjectField('platformId', 'YODLE');
+                   bodyJSON.writeObjectField('action', 'Create');
+                   bodyJSON.writeObjectField('clientRequestId', ticket.objectName + '_' + ticket.referenceProductInstanceId);
+                   bodyJSON.writeObjectField('objectType', 'TicketingTicket');
+                   bodyJSON.writeObjectField('requestedService', integrationSetting.RequestedService__c);
+                   
+                   bodyJSON.writeFieldName('data');
+                   bodyJSON.writeStartObject();               
+                   bodyJSON.writeObjectField('crmId', integrationSetting.CTScrmId__c);
+                   bodyJSON.writeFieldName('ticketingTicket');
+                   bodyJSON.writeStartObject();
+                   bodyJSON.writeObjectField('apiIdentifier', ticket.apiIdentifier.length() > 100 ? ticket.apiIdentifier.substring(0, 100): ticket.apiIdentifier);
+                   bodyJSON.writeObjectField('contactFirstName', ticket.contactFirstName.length() > 100 ? ticket.contactFirstName.substring(0, 100): ticket.contactFirstName);
+                   bodyJSON.writeObjectField('contactLastName', ticket.contactLastName.length() > 100 ? ticket.contactLastName.substring(0, 100): ticket.contactLastName);
+                   bodyJSON.writeObjectField('contactPhone', ticket.contactPhone.length() > 50 ? ticket.contactPhone.substring(0, 50): ticket.contactPhone);
+                   bodyJSON.writeObjectField('contactEmailAddress', ticket.contactEmailAddress.length() > 320 ? ticket.contactEmailAddress.substring(0, 320): ticket.contactEmailAddress);
+                   bodyJSON.writeObjectField('crmOrderNumber', ticket.crmOrderNumber.length() > 50 ? ticket.crmOrderNumber.substring(0, 50): ticket.crmOrderNumber);
+                   bodyJSON.writeObjectField('referenceAccountId', ticket.referenceAccountId.length() > 320 ? ticket.referenceAccountId.substring(0, 320): ticket.referenceAccountId);
+                   bodyJSON.writeObjectField('referenceCustomerId', ticket.referenceCustomerId.length() > 320 ? ticket.referenceCustomerId.substring(0, 320): ticket.referenceCustomerId);
+                   bodyJSON.writeObjectField('referenceProductInstanceId', ticket.referenceProductInstanceId.length() > 320 ? ticket.referenceProductInstanceId.substring(0, 320): ticket.referenceProductInstanceId);
+                   bodyJSON.writeObjectField('domain', ticket.domain.length() > 255 ? ticket.domain.substring(0, 255): ticket.domain);
+                   bodyJSON.writeObjectField('subject', ticket.subject.length() > 100 ? ticket.subject.substring(0, 100): ticket.subject);
+                   bodyJSON.writeObjectField('detail', ticket.detail.escapeHtml4());
+                   bodyJSON.writeObjectField('referenceProductCode', ticket.referenceProductCode.length() > 100 ? ticket.referenceProductCode.substring(0, 100): ticket.referenceProductCode);
+                   bodyJSON.writeObjectField('status', ticket.status.length() > 100 ? ticket.status.substring(0, 100): ticket.status);
+                   bodyJSON.writeObjectField('alternateContactEmailAddress', ticket.alternateContactEmailAddress.length() > 100 ? ticket.alternateContactEmailAddress.substring(0, 100): ticket.alternateContactEmailAddress);
+                   bodyJSON.writeEndObject();
+                   bodyJSON.writeEndObject();                                              
+                   bodyJSON.writeEndObject();
+               }
+               catch(Exception e){
+                   // Log error
+                   UpsertCTSErrorLog(processStage, (Id)ticket.referenceProductInstanceId, 'GetCTSTicketJSON', e.getMessage());
+               }        
            }
        bodyJSON.writeEndArray();    
        
@@ -666,6 +680,8 @@ public without sharing class CTSSyncService_ERWorking{
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
+            String configKey = 'CTSRequestStage_errorpre';
+            String processStage = CTSSyncService.GetConfigValue(configKey);
             
             for(EmailTemplate et :
                 [SELECT Id,
@@ -678,31 +694,38 @@ public without sharing class CTSSyncService_ERWorking{
             
             for(Id objId : objectIds){
             
-                for(CTSObjectTriggerMap__mdt rt : routingTable.values()){
+                try{
                 
-                    SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+                    for(CTSObjectTriggerMap__mdt rt : routingTable.values()){
                     
-                    switch on rt.IntegrationType__c{
+                        SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
                         
-                        when 'API' {
-                                
-                            newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                        switch on rt.IntegrationType__c{
+                            
+                            when 'API' {
+                                    
+                                newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                            }
+                            when else {
+                                    
+                                newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
+                            }
                         }
-                        when else {
-                                
-                            newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
-                        }
+                            
+                        newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                        newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
+                        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+                        newAsyncRecord.ObjectId__c = objId;
+                        newAsyncRecord.Object_Name__c = objectName;
+                        newAsyncRecord.ScheduledDateTime__c = System.Now();
+                        newAsyncRecord.Status__c ='NEW';
+                        
+                        dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
                     }
-                        
-                    newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                    newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
-                    newAsyncRecord.NumberOfRetryAttempts__c = 0;
-                    newAsyncRecord.ObjectId__c = objId;
-                    newAsyncRecord.Object_Name__c = objectName;
-                    newAsyncRecord.ScheduledDateTime__c = System.Now();
-                    newAsyncRecord.Status__c ='NEW';
-                    
-                    dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
+                }
+                catch(Exception e){
+                    // Log error
+                    UpsertCTSErrorLog(processStage, objId, 'CreateSFDCToCTSAsynchRequest', e.getMessage());
                 }
             }
             
@@ -889,6 +912,8 @@ public without sharing class CTSSyncService_ERWorking{
             String jsonString = ctsCreateTicketResponse;
             String objNameAndId;
             String objectId;
+            String configKey = 'CTSRequestStage_errorpost';
+            String processStage = CTSSyncService.GetConfigValue(configKey);
             Map<String, Object> clientJSONMap = (Map<String, Object>)JSON.deserializeUntyped(jsonString);
             string res = JSON.serialize(clientJSONMap.get('response'));
             List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(res, List<CTSTicketResponse>.class);
@@ -948,28 +973,35 @@ public without sharing class CTSSyncService_ERWorking{
                 
                 for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
                 
-                    if(asyncRecord.ObjectId__c == objectId){
-                        
-                        Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
-                        String currErrorMsg = (asyncRecord.ErrorDescription__c != null ? asyncRecord.ErrorDescription__c : '');
-                        
-                        asyncRecord.Status__c = asyncStatus;
-                        asyncRecord.ProcessedDateTime__c = System.Now();
+                    try{
+                    
+                        if(asyncRecord.ObjectId__c == objectId){
                             
-                        if(asyncStatus == 'SUCCESS'){
+                            Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
+                            String currErrorMsg = (asyncRecord.ErrorDescription__c != null ? asyncRecord.ErrorDescription__c : '');
+                            
+                            asyncRecord.Status__c = asyncStatus;
+                            asyncRecord.ProcessedDateTime__c = System.Now();
                                 
-                            asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                            if(asyncStatus == 'SUCCESS'){
+                                    
+                                asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                            }
+                            else{
+                            
+                                retryAttempts += 1;
+                                asyncRecord.ErrorDescription__c = currErrorMsg + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
+                                asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
+                                // as the number of retry attempts increase, multiply by 15; need to figure out a process to retry request based on new Scheduled time
+                                asyncRecord.ScheduledDateTime__c = System.Now().addminutes(retryAttempts*15);
+                            }
+                            
+                            dmlAsyncRecordsUpdate.add(asyncRecord);
                         }
-                        else{
-                        
-                            retryAttempts += 1;
-                            asyncRecord.ErrorDescription__c = currErrorMsg + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
-                            asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
-                            // as the number of retry attempts increase, multiply by 15; need to figure out a process to retry request based on new Scheduled time
-                            asyncRecord.ScheduledDateTime__c = System.Now().addminutes(retryAttempts*15);
-                        }
-                        
-                        dmlAsyncRecordsUpdate.add(asyncRecord);
+                    }
+                    catch(Exception e){
+                        // Log error
+                        UpsertCTSErrorLog(processStage, objectId, 'ProcessCreateTicketAPIResponse', e.getMessage());
                     }
                 }
             }

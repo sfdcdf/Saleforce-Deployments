@@ -11,7 +11,9 @@ public class CTSAsyncRequestCreate
     @InvocableMethod
     public static void CreateNewAsyncRequest(List<Id> objectIds)
     {
-        System.Debug('*** Entering Invocable CreateNewAsyncRequest ***');
+        System.Debug('**CTS** Entering Invocable CreateNewAsyncRequest ***');
+        System.Debug('**CTS** Object Ids List Size: ' + String.valueOf(objectIds.size()));
+        System.Debug('**CTS** Object Ids List Values: ' + objectIds);
         
         String caseSignature = '500';
         String orgCaseSignature = 'a0m';
@@ -43,9 +45,10 @@ public class CTSAsyncRequestCreate
                     }
                 }
                 
-                System.Debug('** Object Name: ' + objectName);
+                System.Debug('**CTS** Object Name: ' + objectName);
                 
                 for(Id objId : objectIds){
+                
                     if(!String.IsBlank(objectName)){
                         CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objId);
                     }
@@ -54,7 +57,7 @@ public class CTSAsyncRequestCreate
         }
         catch(Exception e)
         {
-            System.Debug('An error occurred: ' + e);
+            System.Debug('**CTS** An error occurred: ' + e);
         }
     }
 }

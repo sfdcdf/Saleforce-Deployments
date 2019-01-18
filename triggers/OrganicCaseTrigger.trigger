@@ -1,4 +1,4 @@
-/*trigger OrganicCaseTrigger on Organic_Analysis__c (before insert, before update, after insert, after update) {
+trigger OrganicCaseTrigger on Organic_Analysis__c (before insert, before update, after insert, after update) {
     if(trigger.isBefore && trigger.isInsert){
         for(Organic_Analysis__c oa : trigger.New){
             if(String.isNotBlank(oa.Reason_for_Submission__c)){
@@ -20,11 +20,11 @@
             OrganicCaseObjectHelper.organicCaseMarketoSyncHelper(trigger.newMap, trigger.oldMap);
         }
     }
-}*/
+}
 
-trigger OrganicCaseTrigger on Organic_Analysis__c (after insert) {
+/*trigger OrganicCaseTrigger on Organic_Analysis__c (after insert) {
     for (Organic_Analysis__c record : trigger.New)
     {
         CTSSyncService.CreateSFDCToCTSAsynchRequest('Organic_Analysis__c', record.Id);
     }                  
-}
+}*/

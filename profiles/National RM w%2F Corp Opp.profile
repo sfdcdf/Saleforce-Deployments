@@ -32404,6 +32404,11 @@
         <field>CTS_Error_Log__c.Object_Record_Link__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CTS_Error_Log__c.Method_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>

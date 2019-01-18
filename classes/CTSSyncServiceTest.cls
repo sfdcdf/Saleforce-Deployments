@@ -38,7 +38,7 @@ private class CTSSyncServiceTest {
         Case newCase = new Case();        
         newCase.Status = 'Open';
         newCase.AccountId = newAccount.Id;
-        insert newCase;
+        Insert newCase;
         
         //Get routing table object
         CTSObjectTriggerMap__mdt rt = [SELECT Additional_Filter__c,
@@ -98,29 +98,58 @@ private class CTSSyncServiceTest {
         Organic_Analysis__c newOrganicCase = new Organic_Analysis__c();        
         newOrganicCase.Status__c = 'Open';
         newOrganicCase.Account_Name__c = newAccount.Id;
-        insert newOrganicCase;
+        Insert newOrganicCase;
         
-        SFDCToCTSAsynchRequest__c newAsyncRecord2 = new SFDCToCTSAsynchRequest__c();
-        newAsyncRecord2.API_Identifier__c = rt.CTSAPIIdentifier__c;
-        newAsyncRecord2.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-        newAsyncRecord2.Integration_Type__c = 'Api';
-        newAsyncRecord2.NumberOfRetryAttempts__c = 0;
-        newAsyncRecord2.ObjectId__c = newOrganicCase.Id;
-        newAsyncRecord2.Object_Name__c = 'Organic_Analysis__c';
-        newAsyncRecord2.ScheduledDateTime__c = System.Now();
-        newAsyncRecord2.Status__c ='NEW';       
-        Insert newAsyncRecord2;
+        newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+        newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+        newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newOrganicCase.Id;
+        newAsyncRecord.Object_Name__c = 'Organic_Analysis__c';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='NEW';       
+        Insert newAsyncRecord;
                         
-        requestMap.put(newOrganicCase.Id, newAsyncRecord2);              
-        objs = CTSSyncService.GetSFDCObject('Organic_Analysis__c', requestMap);       
-        Test.stopTest();
+        requestMap.put(newOrganicCase.Id, newAsyncRecord);              
+        objs = CTSSyncService.GetSFDCObject('Organic_Analysis__c', requestMap);  
         
         system.assert(objs[0].Id == newOrganicCase.Id);
         system.assert(objs[0].ObjectName == 'Organic_Analysis__c');
         system.assert(objs[0].ContactFirstName == 'Test');
         system.assert(objs[0].ContactLastName == 'CTS');
         system.assert(objs[0].Status == 'Open');        
-        system.assert(objs[0].Detail != null); 
+        system.assert(objs[0].Detail != null);  
+        
+        //Test Customer Survey
+        requestMap = new Map<Id, SFDCToCTSAsynchRequest__c>(); 
+        Customer_Surveys__c newCustomerSurveys = new Customer_Surveys__c();
+        newCustomerSurveys.Status__c = 'Open';
+        newCustomerSurveys.Account__c = newAccount.Id;
+        Insert newCustomerSurveys;
+        
+        newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+        newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+        newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newCustomerSurveys.Id;
+        newAsyncRecord.Object_Name__c = 'Customer_Surveys__c';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='NEW';       
+        Insert newAsyncRecord;
+        
+        requestMap.put(newCustomerSurveys.Id, newAsyncRecord);              
+        objs = CTSSyncService.GetSFDCObject('Customer_Surveys__c', requestMap);  
+        
+        system.assert(objs[0].Id == newCustomerSurveys.Id);
+        system.assert(objs[0].ObjectName == 'Customer_Surveys__c');
+        system.assert(objs[0].ContactFirstName == 'Test');
+        system.assert(objs[0].ContactLastName == 'CTS');
+        system.assert(objs[0].Status == 'Open');        
+        system.assert(objs[0].Detail != null);  
+                                                
+        Test.stopTest();
     }
     
     

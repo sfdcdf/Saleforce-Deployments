@@ -6244,20 +6244,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>Assign to LH CSC queue</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_CSC</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>AR Request</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Attempt 1 Field Updates</fullName>
         <actions>
             <name>Outbound_Touch_1st_Attempt_VM</name>
@@ -7262,30 +7248,6 @@ ispickval( Status ,"New"))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Case - Matthew Scott %26 Zach Bailey Email Notices</fullName>
-        <actions>
-            <name>Case_Updated_Changed_or_Assigned_to_you</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Zach Bailey,Matthew Scott,Rustin Fincke</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>User.Full_Name__c</field>
-            <operation>notEqual</operation>
-            <value>Zach Bailey,Matthew Scott,Rustin Fincke</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Case - Notification to Creator upon close or awaiting internal response</fullName>
         <actions>
             <name>Case_Notification_to_case_creator</name>
@@ -7430,20 +7392,6 @@ Case Reason - Proactive Touch</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Case - Send LH Winback Notification</fullName>
-        <actions>
-            <name>Case_Send_LH_Winback_Notification</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>LHWB@yodle.com</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Case - Start SLA Timer</fullName>
         <actions>
             <name>Case_Stopped_False</name>
@@ -7555,29 +7503,6 @@ ischanged(IMS_Rep__c),
 ISBLANK(IMS_Rep__c), 
 ispickval(Status ,"Unscheduled - 4+ Attempts"))</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case - YBN - Notify owner of approaching budget update</fullName>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Budget Change</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Due_Date__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-        <workflowTimeTriggers>
-            <actions>
-                <name>YBN_Send_Notification_Of_Budget_Change</name>
-                <type>Alert</type>
-            </actions>
-            <offsetFromField>Case.Due_Date__c</offsetFromField>
-            <timeLength>-3</timeLength>
-            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
     </rules>
     <rules>
         <fullName>Case Assignment Billing Notifications</fullName>
@@ -7784,20 +7709,6 @@ ispickval(Status ,"Unscheduled - 4+ Attempts"))</formula>
             <field>Case.Manager_Approved_Changes__c</field>
             <operation>equals</operation>
             <value>False</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case Reason Partner</fullName>
-        <actions>
-            <name>Ptnr_NCS_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -15541,6 +15452,95 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.OwnerId</field>
             <operation>equals</operation>
             <value>VP Approval Queue</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assign to LH CSC queue</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_CSC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>AR Request</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Matthew Scott %26 Zach Bailey Email Notices</fullName>
+        <actions>
+            <name>Case_Updated_Changed_or_Assigned_to_you</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Zach Bailey,Matthew Scott,Rustin Fincke</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Full_Name__c</field>
+            <operation>notEqual</operation>
+            <value>Zach Bailey,Matthew Scott,Rustin Fincke</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Send LH Winback Notification</fullName>
+        <actions>
+            <name>Case_Send_LH_Winback_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>LHWB@yodle.com</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - YBN - Notify owner of approaching budget update</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Budget Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Due_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>YBN_Send_Notification_Of_Budget_Change</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.Due_Date__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Case Reason Partner</fullName>
+        <actions>
+            <name>Ptnr_NCS_Case_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner - New Client Setup</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
