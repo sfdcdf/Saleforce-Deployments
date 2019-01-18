@@ -44,9 +44,11 @@ public class CTSAsyncRequestCreate
                 }
                 
                 System.Debug('** Object Name: ' + objectName);
-            
-                if(!String.IsBlank(objectName)){
-                    CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objectIds);
+                
+                for(Id objId : objectIds){
+                    if(!String.IsBlank(objectName)){
+                        CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objId);
+                    }
                 }
             }
         }

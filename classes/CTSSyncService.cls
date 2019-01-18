@@ -615,12 +615,14 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
+    public static void CreateSFDCToCTSAsynchRequest(String objectName, Id objectId)
     {
         System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
         
         try
         {
+            List<Id> objectIds = new List<Id>();
+            objectIds.add(objectId);
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
@@ -666,12 +668,12 @@ public without sharing class CTSSyncService{
             
             }
             
-            System.Debug('Number of Async Request Records Created: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
-            
             if(dmlSFDCToCTSAsynchRequestList.size() > 0){
             
                 insert dmlSFDCToCTSAsynchRequestList;
             }
+            
+            System.Debug('Number of Async Request Records: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
             
             System.Debug('*** End Method CreateSFDCToCTSAsynchRequest ***');
         }
