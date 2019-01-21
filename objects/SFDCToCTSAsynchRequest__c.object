@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>API_Identifier__c</fullName>
+        <description>Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API</inlineHelpText>
+        <label>API Identifier</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTS_Email_Address__c</fullName>
+        <description>Email address used to send object data to for creating CTS ticket when the Integration type is Email; required when Integration type is Email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email address used to send object data to for creating CTS ticket when the Integration type is Email; required when Integration type is Email</inlineHelpText>
+        <label>CTS Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EmailTemplateId__c</fullName>
+        <description>The Id of the Email Template being used to pass data elements to CTS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Id of the Email Template being used to pass data elements to CTS</inlineHelpText>
+        <label>Email Template Id</label>
+        <length>18</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ErrorDescription__c</fullName>
+        <description>Used to capture any error responses/ details for the request record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture any error responses/ details for the request record</inlineHelpText>
+        <label>Error Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ExternalTicketId__c</fullName>
+        <description>The Ticket Id created in the CTS system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Ticket Id created in the CTS system</inlineHelpText>
+        <label>External Ticket Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Integration_Type__c</fullName>
+        <description>Integration Type (API or Email) which determines the internal process methods to be called for ticket creation in CTS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration Type (API or Email) which determines the internal process methods to be called for ticket creation in CTS</inlineHelpText>
+        <label>Integration Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>API</fullName>
+                    <default>false</default>
+                    <label>API</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NumberOfRetryAttempts__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of attempts made to send a request to the CTS API for creating a ticket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of attempts made to send a request to the CTS API for creating a ticket</inlineHelpText>
+        <label>Number Of Retry Attempts</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ObjectId__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>The corresponding record Id based on the Object Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The corresponding record Id based on the Object Name</inlineHelpText>
+        <label>Object Id</label>
+        <length>18</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <description>Salesforce Objects integrated with CTS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce Objects integrated with CTS</inlineHelpText>
+        <label>Object Name</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Customer_Surveys__c</fullName>
+                    <default>false</default>
+                    <label>Customer_Surveys__c</label>
+                </value>
+                <value>
+                    <fullName>Organic_Analysis__c</fullName>
+                    <default>false</default>
+                    <label>Organic_Analysis__c</label>
+                </value>
+                <value>
+                    <fullName>Quality_Case__c</fullName>
+                    <default>false</default>
+                    <label>Quality_Case__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProcessedDateTime__c</fullName>
+        <description>Date/ time the record was processed to CTS for ticket creation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date/ time the record was processed to CTS for ticket creation</inlineHelpText>
+        <label>Processed Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ScheduledDateTime__c</fullName>
+        <description>The scheduled date/ time of the Async Record to be triggered to create the CTS ticket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The scheduled date/ time of the Async Record to be triggered to create the CTS ticket</inlineHelpText>
+        <label>Scheduled Date Time</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <defaultValue>"NEW"</defaultValue>
+        <description>Async Request Status indicating the current state of the record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Async Request Status indicating the current state of the record</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ERROR</fullName>
+                    <default>false</default>
+                    <label>ERROR</label>
+                </value>
+                <value>
+                    <fullName>INPROCESS</fullName>
+                    <default>false</default>
+                    <label>INPROCESS</label>
+                </value>
+                <value>
+                    <fullName>NEW</fullName>
+                    <default>false</default>
+                    <label>NEW</label>
+                </value>
+                <value>
+                    <fullName>SUCCESS</fullName>
+                    <default>false</default>
+                    <label>SUCCESS</label>
+                </value>
+                <value>
+                    <fullName>UNQUALIFIED</fullName>
+                    <default>false</default>
+                    <label>UNQUALIFIED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores DE-normalized CTS Ticket data to be executed by BULK job on a schedule to create CTS Tickets</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>SFDCToCTSAsynchRequest</label>
+    <nameField>
+        <displayFormat>AR-{000000000}</displayFormat>
+        <label>Asynch Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SFDCToCTSAsynchRequests</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Object_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ObjectId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ExternalTicketId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ErrorDescription__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NumberOfRetryAttempts__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Integration_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ScheduledDateTime__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProcessedDateTime__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Object_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ObjectId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ExternalTicketId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Integration_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ScheduledDateTime__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProcessedDateTime__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NumberOfRetryAttempts__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ErrorDescription__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ExternalTicketId__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
+        <columns>EmailTemplateId__c</columns>
+        <columns>Integration_Type__c</columns>
+        <columns>ScheduledDateTime__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ScheduledDateTime__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+</CustomObject>
