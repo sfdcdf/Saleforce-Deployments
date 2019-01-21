@@ -298,7 +298,6 @@ public without sharing class CTSSyncService{
        return ctsSFDCObjectList;
     }    
     
-    
     public static Map<Id,CTSObjectTriggerMap__mdt> GetRoutingTableObject(string objName, List<Id> objIds)
     {
         System.Debug('*** Entering Method GetRoutingTableObject ***');
@@ -311,7 +310,10 @@ public without sharing class CTSSyncService{
         Map<Id, CTSObjectTriggerMap__mdt> routingObjMap = new Map<Id, CTSObjectTriggerMap__mdt>();
                         
         String query;
-        if (objName.equals('Case'))        
+        // Field Product_Type__c is a formula field that looks at the Account level Product type Transactional; cannot go across objects using .dot 
+        // annotation (i.e. Account.Product_Type_Transactional__c) when building string queries 
+        
+        if (objName.equals('Case'))
             query = 'SELECT Id, RecordTypeId, Reason, Origin, Product_Type__c FROM Case WHERE Id in :objIds';
         else
             query = 'SELECT Id, RecordTypeId FROM ' + objName + ' WHERE Id in :objIds';    

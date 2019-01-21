@@ -28,7 +28,7 @@
     </values>
     <values>
         <field>CaseReason__c</field>
-        <value xsi:type="xsd:string">CS Touchplan</value>
+        <value xsi:type="xsd:string">CS Touch Plan</value>
     </values>
     <values>
         <field>Description__c</field>
