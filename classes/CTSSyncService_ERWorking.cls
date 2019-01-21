@@ -596,30 +596,6 @@ public without sharing class CTSSyncService_ERWorking{
         System.Debug('*** End Method CallOutCTSForAPI ***');
     }       
     
-     /*public static HttpResponse CallOutCTSForAPI_Original(String requestBody, CTS_Integration_Setting__mdt integrationSetting){
-        
-        System.Debug('*** Entering Method CallOutCTSForAPI ***');
-        
-        Http h = new Http();
-       
-        HttpRequest req = new HttpRequest();        
-        //req.setEndpoint(integrationSetting.ESBAPIEndPoint__c);
-        req.setEndpoint('callout:CTSIntegrationService');
-        req.setBody(requestBody);
-        req.setMethod('POST');
-        req.setHeader('Content-Type', 'application/json');
-        req.setTimeout(120000);
-
-        // Send the request, and return a response
-        HttpResponse res = h.send(req);
-
-        System.Debug('CallOutCTSForAPI Request: ' + requestBody);
-        System.Debug('CallOutCTSForAPI Response: ' + String.valueOf(res));
-        System.Debug('*** End Method CallOutCTSForAPI ***');
-
-        return res;
-    }*/ 
-    
     public static void CallOutCTSForEmail(List<CTSSFDCObjectBase> baseObj)
     {
         try{
@@ -764,23 +740,9 @@ public without sharing class CTSSyncService_ERWorking{
                 sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
                 ctsTicketList = GetCTSTicket(sfdcObjList);
                 String ticketJSON ='';
-                //HttpResponse ctsResp = new HttpResponse();
                 
                 ticketJSON = GetCTSTicketJSON(ctsTicketList);
                 CallOutCTSForAPI(ticketJSON);
-                //ProcessCreateTicketAPIResponse(ctsResp);
-                
-                /*for(SFDCToCTSAsynchRequest__c asr : asyncRequestObj){
-                
-                    if(asr.Integration_Type__c == 'API'){
-                        ticketJSON = GetCTSTicketJSON(ctsTicketList);
-                        ctsResp = CallOutCTSForAPI(ticketJSON, integrationSettings);
-                        ProcessCreateTicketAPIResponse(ctsResp, asyncRequestObj);
-                    }
-                    else{
-                        CallOutCTSForEmail(sfdcObjList);
-                    }
-                }*/
             }
             System.Debug('Number of Records Processed: ' + String.valueOf(asyncRequestObj.size()));
             System.Debug('List of Records Processed: ' + asyncRequestObj);
@@ -791,117 +753,6 @@ public without sharing class CTSSyncService_ERWorking{
             System.Debug('An error occurred in ProcessSFDCToCTSAsynchRequest: ' + e.getMessage());
         }
     }
-    
-    /* public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
-    {
-        System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
-    
-        try
-        {
-            String jsonString = ctsCreateTicketResponse;
-            String objNameAndId;
-            String objectId;
-            List<CTSTicketResponse> ctsTicketResp = (List<CTSTicketResponse>)JSON.deserialize(jsonString, List<CTSTicketResponse>.class);
-            List<SFDCToCTSAsynchRequest__c> dmlAsyncRecordsUpdate = new List<SFDCToCTSAsynchRequest__c>();
-            Set<String> objectIds = new Set<String>();
-            
-            CTSTicketResponse.Response respMainNode;
-            CTSTicketResponse.Data respDataNode;
-            CTSTicketResponse.Errors respErrorNode;
-            
-            for(CTSTicketResponse ctr : ctsTicketResp){
-            
-                objNameAndId = respMainNode.clientRequestId;
-            
-                if(objNameAndId.startsWith('Case')){
-                    objectIds.add(objNameAndId.SubStringAfter('_'));
-                }
-                else{
-                    objectIds.add(objNameAndId.SubStringAfter('__c_'));
-                }
-                
-                System.Debug('Object Ids in Set List: ' + objectIds);
-            }
-            
-            List<SFDCToCTSAsynchRequest__c> asyncRecords = 
-                [SELECT Id,
-                        API_Identifier__c,
-                        CTS_Email_Address__c,
-                        EmailTemplateId__c,
-                        ErrorDescription__c,
-                        ExternalTicketId__c,
-                        Integration_Type__c,
-                        Name,
-                        NumberOfRetryAttempts__c,
-                        ObjectId__c,
-                        Object_Name__c,
-                        ProcessedDateTime__c,
-                        ScheduledDateTime__c,
-                        Status__c
-                   FROM SFDCToCTSAsynchRequest__c
-                  WHERE ObjectId__c IN :objectIds];
-            
-            for(CTSTicketResponse ctr : ctsTicketResp){
-            
-                objNameAndId = respMainNode.clientRequestId;
-                String ctsTicketNumber = respDataNode.ticketNumber;
-                String asyncStatus = (respMainNode.status == 'Success' ? 'SUCCESS' : 'ERROR');
-                String errorMsg = (!String.IsBlank(respErrorNode.message) ? respErrorNode.message : null);
-                
-                if(objNameAndId.startsWith('Case')){
-                    objectId = objNameAndId.SubStringAfter('_');
-                }
-                else{
-                    objectId = objNameAndId.SubStringAfter('__c_');
-                }
-                
-                System.Debug('Client Request Id Returned: ' + objNameAndId);
-                System.Debug('Ticket Number Returned: ' + ctsTicketNumber);
-                System.Debug('Status Returned: ' + asyncStatus);
-                System.Debug('Error Message Returned: ' + errorMsg);
-                
-                for(SFDCToCTSAsynchRequest__c asyncRecord : asyncRecords){
-                
-                    if(asyncRecord.ObjectId__c == objectId){
-                        
-                        Integer retryAttempts = Integer.valueOf(asyncRecord.NumberOfRetryAttempts__c);
-                        
-                        asyncRecord.Status__c = asyncStatus;
-                        asyncRecord.ProcessedDateTime__c = System.Now();
-                            
-                        if(asyncStatus == 'SUCCESS'){
-                                
-                            asyncRecord.ExternalTicketId__c = ctsTicketNumber;
-                        }
-                        else{
-                        
-                            if(asyncRecord.NumberOfRetryAttempts__c < 3){
-                            
-                                retryAttempts += 1;
-                            }
-                            
-                            asyncRecord.ErrorDescription__c = errorMsg;
-                            asyncRecord.NumberOfRetryAttempts__c = retryAttempts;
-                        }
-                        
-                        dmlAsyncRecordsUpdate.add(asyncRecord);
-                    }
-                }
-            }
-            
-            if(dmlAsyncRecordsUpdate.size() > 0){
-            
-                update dmlAsyncRecordsUpdate;
-            }
-            
-            System.Debug('Number of Async Records Updated: ' + String.valueOf(dmlAsyncRecordsUpdate.size()));
-            System.Debug('*** End Method ProcessCreateTicketAPIResponse ***');
-        }
-        catch(Exception e)
-        {
-            System.Debug('An error occurred in ProcessCreateTicketAPIResponse: ' + e.getMessage());
-        }
-    } */
     
     public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
@@ -1182,60 +1033,67 @@ public without sharing class CTSSyncService_ERWorking{
     
     public static void UpsertCTSErrorLog(string requestStage, Id objectId, string methodName, string errorMsg)
     {
-        List<CTS_Error_Log__c> dmlCTSErrorLog = new List<CTS_Error_Log__c>();
-        Integer retryAttempts;
-        Map<String, SFDCToCTSAsynchRequest__c> asyncRequestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
-        Id preRequestRecordTypeId = Schema.SObjectType.CTS_Error_Log__c.getRecordTypeInfosByName().get('PRE CTS Request Log').getRecordTypeId();
-        Id postRequestRecordTypeId = Schema.SObjectType.CTS_Error_Log__c.getRecordTypeInfosByName().get('POST CTS Request Log').getRecordTypeId();
-        String baseURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
-        String objectIdStr = String.valueOf(objectId);
-        
-        CTS_Error_Log__c newErrLog = new CTS_Error_Log__c();
-        newErrLog.Log_Message__c = errorMsg;
-        newErrLog.Method_Name__c = methodName;
-        newErrLog.Object_Id__c = objectIdStr;
-        newErrLog.Object_Record_Link__c = baseURL + objectIdStr;
-        
-        switch on requestStage{
-                        
-            when 'PRE' {
-                newErrLog.RecordTypeId = preRequestRecordTypeId;
-            }
-            when else {
-                
-                for(SFDCToCTSAsynchRequest__c asr : 
-                    [SELECT Id, 
-                            ObjectId__c,
-                            ErrorDescription__c,
-                            NumberOfRetryAttempts__c,
-                            ProcessedDateTime__c,
-                            Status__c
-                       FROM SFDCToCTSAsynchRequest__c 
-                      WHERE ObjectId__c = :objectIdStr]){
-                
-                    asyncRequestMap.put(asr.ObjectId__c, asr);
+        try{
+            List<CTS_Error_Log__c> dmlCTSErrorLog = new List<CTS_Error_Log__c>();
+            Integer retryAttempts;
+            Map<String, SFDCToCTSAsynchRequest__c> asyncRequestMap = new Map<String, SFDCToCTSAsynchRequest__c>();
+            Id preRequestRecordTypeId = Schema.SObjectType.CTS_Error_Log__c.getRecordTypeInfosByName().get('PRE CTS Request Log').getRecordTypeId();
+            Id postRequestRecordTypeId = Schema.SObjectType.CTS_Error_Log__c.getRecordTypeInfosByName().get('POST CTS Request Log').getRecordTypeId();
+            String baseURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
+            String objectIdStr = String.valueOf(objectId);
+            
+            CTS_Error_Log__c newErrLog = new CTS_Error_Log__c();
+            newErrLog.Log_Message__c = errorMsg;
+            newErrLog.Method_Name__c = methodName;
+            newErrLog.Object_Id__c = objectIdStr;
+            newErrLog.Object_Record_Link__c = baseURL + objectIdStr;
+            
+            switch on requestStage{
+                            
+                when 'PRE' {
+                    newErrLog.RecordTypeId = preRequestRecordTypeId;
                 }
+                when else {
+                    
+                    for(SFDCToCTSAsynchRequest__c asr : 
+                        [SELECT Id, 
+                                ObjectId__c,
+                                ErrorDescription__c,
+                                NumberOfRetryAttempts__c,
+                                ProcessedDateTime__c,
+                                Status__c
+                           FROM SFDCToCTSAsynchRequest__c 
+                          WHERE ObjectId__c = :objectIdStr]){
+                    
+                        asyncRequestMap.put(asr.ObjectId__c, asr);
+                    }
+                
+                    newErrLog.RecordTypeId = postRequestRecordTypeId;
+                    newErrLog.Asynch_Request_Id__c = asyncRequestMap.get(objectIdStr).Id;
+                }
+            }
             
-                newErrLog.RecordTypeId = postRequestRecordTypeId;
-                newErrLog.Asynch_Request_Id__c = asyncRequestMap.get(objectIdStr).Id;
+            dmlCTSErrorLog.add(newErrLog);
+            
+            if(dmlCTSErrorLog.size() > 0){
+            
+                insert dmlCTSErrorLog;
+            }
+            
+            if(asyncRequestMap.size() > 0){
+            
+                for(SFDCToCTSAsynchRequest__c asrMap : asyncRequestMap.values()){
+                
+                    retryAttempts = Integer.valueOf(asrMap.NumberOfRetryAttempts__c);
+                    asrMap.Status__c = 'ERROR';
+                    asrMap.ErrorDescription__c = asrMap.ErrorDescription__c + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
+                }
             }
         }
+        catch(Exception e){
         
-        dmlCTSErrorLog.add(newErrLog);
+            System.Debug('**An error occurred logging an error: UpsertCTSErrorLog: ' + e.getMessage());
         
-        if(dmlCTSErrorLog.size() > 0){
-        
-            insert dmlCTSErrorLog;
-        }
-        
-        if(asyncRequestMap.size() > 0){
-        
-            for(SFDCToCTSAsynchRequest__c asrMap : asyncRequestMap.values()){
-            
-                retryAttempts = Integer.valueOf(asrMap.NumberOfRetryAttempts__c);
-                asrMap.Status__c = 'ERROR';
-                asrMap.ErrorDescription__c = asrMap.ErrorDescription__c + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
-            }
         }
     }
     

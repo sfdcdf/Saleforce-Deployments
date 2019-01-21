@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>CTSAPIIdentifier__c</field>
-        <value xsi:type="xsd:string">SFDCY_CASE_CATCHALL_000023</value>
+        <value xsi:type="xsd:string">SFDCY_CASE_000012</value>
     </values>
     <values>
         <field>CTSAssignedToLoginName__c</field>
