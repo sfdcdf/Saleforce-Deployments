@@ -659,8 +659,8 @@ public without sharing class CTSSyncService{
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
-            String configKey = 'CTSRequestStage_errorpre';
-            String processStage = CTSSyncService.GetConfigValue(configKey);
+            String processStage = CTSSyncService.GetConfigValue('CTSRequestStage_errorpre');
+            String baseURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
             
             for(EmailTemplate et :
                 [SELECT Id,
@@ -697,6 +697,7 @@ public without sharing class CTSSyncService{
                         newAsyncRecord.ObjectId__c = objId;
                         newAsyncRecord.Object_Name__c = objectName;
                         newAsyncRecord.ScheduledDateTime__c = System.Now();
+                        newAsyncRecord.SFDC_Record_URL__c = baseURL + objId;
                         newAsyncRecord.Status__c ='NEW';
                         
                         dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
@@ -792,6 +793,7 @@ public without sharing class CTSSyncService{
                 [SELECT Id,
                         API_Identifier__c,
                         CTS_Email_Address__c,
+                        CTS_Ticket_URL__c,
                         EmailTemplateId__c,
                         ErrorDescription__c,
                         ExternalTicketId__c,
@@ -802,6 +804,7 @@ public without sharing class CTSSyncService{
                         Object_Name__c,
                         ProcessedDateTime__c,
                         ScheduledDateTime__c,
+                        SFDC_Record_URL__c,
                         Status__c
                    FROM SFDCToCTSAsynchRequest__c
                   WHERE ObjectId__c IN :objectIds];
@@ -838,8 +841,14 @@ public without sharing class CTSSyncService{
                             asyncRecord.ProcessedDateTime__c = System.Now();
                                 
                             if(asyncStatus == 'SUCCESS'){
+                                
+                                String ctsqaURL = CTSSyncService.GetConfigValue('CTSUrl_qa');
+                                String ctsprodURL = CTSSyncService.GetConfigValue('CTSUrl_prod');
+                                String baseURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
+                                String ctsURL = (baseURL.toLowercase().contains('full') || baseURL.toLowercase().contains('dreamforce') ? ctsqaURL : ctsprodURL);
                                     
                                 asyncRecord.ExternalTicketId__c = ctsTicketNumber;
+                                asyncRecord.CTS_Ticket_URL__c = ctsURL + ctsTicketNumber;
                             }
                             else{
                             
