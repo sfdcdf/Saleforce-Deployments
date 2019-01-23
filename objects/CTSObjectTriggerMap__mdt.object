@@ -331,47 +331,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>ProductType__c</fullName>
-        <description>Salesforce Product Type referenced for CTS Ticket creation</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Product Type referenced for CTS Ticket creation</inlineHelpText>
-        <label>Product Type</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Lighthouse</fullName>
-                    <default>false</default>
-                    <label>Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>TORCHx</fullName>
-                    <default>false</default>
-                    <label>TORCHx</label>
-                </value>
-                <value>
-                    <fullName>Lead Stream ATV</fullName>
-                    <default>false</default>
-                    <label>Lead Stream ATV</label>
-                </value>
-                <value>
-                    <fullName>Leads By Web</fullName>
-                    <default>true</default>
-                    <label>Leads By Web</label>
-                </value>
-                <value>
-                    <fullName>ESSENTIALS_LITE,ESSENTIALS,YODLE_WEB,OUTRANK,ATV_SEM,WEBSITE</fullName>
-                    <default>false</default>
-                    <label>ESSENTIALS_LITE,ESSENTIALS,YODLE_WEB,OUTRANK,ATV_SEM,WEBSITE</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>RecordTypeName__c</fullName>
         <description>Name of the Salesforce Object Record Type referenced for CTS Ticket creation</description>
         <externalId>false</externalId>
@@ -493,6 +452,47 @@
                     <fullName>CATCHALL</fullName>
                     <default>false</default>
                     <label>CATCHALL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductType__c</fullName>
+        <description>Salesforce Product Type referenced for CTS Ticket creation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Product Type referenced for CTS Ticket creation</inlineHelpText>
+        <label>Product Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>false</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>TORCHx</fullName>
+                    <default>false</default>
+                    <label>TORCHx</label>
+                </value>
+                <value>
+                    <fullName>Lead Stream ATV</fullName>
+                    <default>false</default>
+                    <label>Lead Stream ATV</label>
+                </value>
+                <value>
+                    <fullName>Leads By Web</fullName>
+                    <default>true</default>
+                    <label>Leads By Web</label>
+                </value>
+                <value>
+                    <fullName>OUTRANK,YODLE_WEB,ESSENTIALS,WEBSITE,ESSENTIALS_LITE</fullName>
+                    <default>false</default>
+                    <label>OUTRANK,YODLE_WEB,ESSENTIALS,WEBSITE,ESSENTIALS_LITE</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
