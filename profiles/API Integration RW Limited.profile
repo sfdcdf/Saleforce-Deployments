@@ -34300,6 +34300,11 @@
         <field>SFDCToCTSAsynchRequest__c.SFDC_Record_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.Email_Template_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Business Development</layout>
         <recordType>Account.Business_Development</recordType>

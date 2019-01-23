@@ -31282,6 +31282,11 @@
         <field>SFDCToCTSAsynchRequest__c.SFDC_Record_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.Email_Template_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Austin Client Services %28Feed%29</layout>
     </layoutAssignments>
