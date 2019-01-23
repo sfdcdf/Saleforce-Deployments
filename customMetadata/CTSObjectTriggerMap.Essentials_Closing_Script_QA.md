@@ -68,7 +68,7 @@
     </values>
     <values>
         <field>ProductType__c</field>
-        <value xsi:type="xsd:string">OUTRANK,YODLE_WEB,ESSENTIALS,WEBSITE,ESSENTIALS_LITE</value>
+        <value xsi:type="xsd:string">Essentials</value>
     </values>
     <values>
         <field>RecordTypeName__c</field>

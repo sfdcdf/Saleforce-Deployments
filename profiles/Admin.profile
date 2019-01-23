@@ -1451,6 +1451,10 @@
         <apexClass>CTSSyncServiceTest_ERWorking</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>CTSSyncServiceReprocssScheduler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
