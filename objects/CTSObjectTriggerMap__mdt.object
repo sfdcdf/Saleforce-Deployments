@@ -470,6 +470,21 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>Essentials</fullName>
+                    <default>false</default>
+                    <label>Essentials</label>
+                </value>
+                <value>
+                    <fullName>Leads By Web</fullName>
+                    <default>true</default>
+                    <label>Leads By Web</label>
+                </value>
+                <value>
+                    <fullName>Lead Stream ATV</fullName>
+                    <default>false</default>
+                    <label>Lead Stream ATV</label>
+                </value>
+                <value>
                     <fullName>Lighthouse</fullName>
                     <default>false</default>
                     <label>Lighthouse</label>
@@ -480,19 +495,24 @@
                     <label>TORCHx</label>
                 </value>
                 <value>
-                    <fullName>Lead Stream ATV</fullName>
+                    <fullName>Yodle Ads</fullName>
                     <default>false</default>
-                    <label>Lead Stream ATV</label>
+                    <label>Yodle Ads</label>
                 </value>
                 <value>
-                    <fullName>Leads By Web</fullName>
-                    <default>true</default>
-                    <label>Leads By Web</label>
+                    <fullName>Yodle Max</fullName>
+                    <default>false</default>
+                    <label>Yodle Max</label>
                 </value>
                 <value>
-                    <fullName>OUTRANK,YODLE_WEB,ESSENTIALS,WEBSITE,ESSENTIALS_LITE</fullName>
+                    <fullName>Yodle Organic</fullName>
                     <default>false</default>
-                    <label>OUTRANK,YODLE_WEB,ESSENTIALS,WEBSITE,ESSENTIALS_LITE</label>
+                    <label>Yodle Organic</label>
+                </value>
+                <value>
+                    <fullName>Yodle Web</fullName>
+                    <default>false</default>
+                    <label>Yodle Web</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
