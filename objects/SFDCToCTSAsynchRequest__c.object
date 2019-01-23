@@ -282,6 +282,17 @@
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
+    <fields>
+        <fullName>Email_Template_URL__c</fullName>
+        <description>Click-able link to the Email Template used for the details of the API request for creating a CTS Ticket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Click-able link to the Email Template used for the details of the API request for creating a CTS Ticket</inlineHelpText>
+        <label>Email Template URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -341,6 +352,7 @@
         <columns>ErrorDescription__c</columns>
         <columns>NumberOfRetryAttempts__c</columns>
         <columns>EmailTemplateId__c</columns>
+        <columns>Email_Template_URL__c</columns>
         <columns>Integration_Type__c</columns>
         <columns>ScheduledDateTime__c</columns>
         <filterScope>Everything</filterScope>

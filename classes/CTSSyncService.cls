@@ -692,6 +692,7 @@ public without sharing class CTSSyncService{
                         }
                             
                         newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                        newAsyncRecord.Email_Template_URL__c = baseURL + emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
                         newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
                         newAsyncRecord.NumberOfRetryAttempts__c = 0;
                         newAsyncRecord.ObjectId__c = objId;
