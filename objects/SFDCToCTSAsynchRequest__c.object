@@ -335,14 +335,14 @@
         <columns>CREATED_DATE</columns>
         <columns>ExternalTicketId__c</columns>
         <columns>Object_Name__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>ScheduledDateTime__c</columns>
         <columns>ObjectId__c</columns>
         <columns>API_Identifier__c</columns>
         <columns>ErrorDescription__c</columns>
         <columns>NumberOfRetryAttempts__c</columns>
         <columns>EmailTemplateId__c</columns>
         <columns>Integration_Type__c</columns>
-        <columns>ScheduledDateTime__c</columns>
-        <columns>CREATEDBY_USER</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CREATED_DATE</field>
