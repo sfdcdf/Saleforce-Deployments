@@ -449,67 +449,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>CaseOrigin__c</fullName>
-        <description>Salesforce Case Origin referenced for CTS Ticket creation (if applicable)</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Case Origin referenced for CTS Ticket creation (if applicable)</inlineHelpText>
-        <label>Case Origin</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Chat</fullName>
-                    <default>false</default>
-                    <label>Chat</label>
-                </value>
-                <value>
-                    <fullName>customercare@yodle.com</fullName>
-                    <default>false</default>
-                    <label>customercare@yodle.com</label>
-                </value>
-                <value>
-                    <fullName>Internal</fullName>
-                    <default>true</default>
-                    <label>Internal</label>
-                </value>
-                <value>
-                    <fullName>Phone</fullName>
-                    <default>false</default>
-                    <label>Phone</label>
-                </value>
-                <value>
-                    <fullName>Self</fullName>
-                    <default>false</default>
-                    <label>Self</label>
-                </value>
-                <value>
-                    <fullName>Web</fullName>
-                    <default>false</default>
-                    <label>Web</label>
-                </value>
-                <value>
-                    <fullName>YodleGoldService@yodle.com</fullName>
-                    <default>false</default>
-                    <label>YodleGoldService@yodle.com</label>
-                </value>
-                <value>
-                    <fullName>Email</fullName>
-                    <default>false</default>
-                    <label>Email</label>
-                </value>
-                <value>
-                    <fullName>New Client</fullName>
-                    <default>false</default>
-                    <label>New Client</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>CaseReason__c</fullName>
         <description>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</description>
         <externalId>false</externalId>
@@ -652,6 +591,72 @@
                     <fullName>Yodle Web</fullName>
                     <default>false</default>
                     <label>Yodle Web</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseOrigin__c</fullName>
+        <description>Salesforce Case Origin referenced for CTS Ticket creation (if applicable)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Case Origin referenced for CTS Ticket creation (if applicable)</inlineHelpText>
+        <label>Case Origin</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chat</fullName>
+                    <default>false</default>
+                    <label>Chat</label>
+                </value>
+                <value>
+                    <fullName>Circuit Breaker</fullName>
+                    <default>false</default>
+                    <label>Circuit Breaker</label>
+                </value>
+                <value>
+                    <fullName>customercare@yodle.com</fullName>
+                    <default>false</default>
+                    <label>customercare@yodle.com</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>true</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>New Client</fullName>
+                    <default>false</default>
+                    <label>New Client</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Self</fullName>
+                    <default>false</default>
+                    <label>Self</label>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <label>Web</label>
+                </value>
+                <value>
+                    <fullName>YodleGoldService@yodle.com</fullName>
+                    <default>false</default>
+                    <label>YodleGoldService@yodle.com</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
