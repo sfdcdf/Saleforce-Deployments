@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>Yodle Ads 7 Day New Launch QA</label>
+    <label>Yodle Max Day New Launch QA</label>
     <protected>false</protected>
     <values>
         <field>Additional_Filter__c</field>
@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Yodle Ads 7 Day New Launch QA</value>
+        <value xsi:type="xsd:string">Yodle Max 7 Day New Launch QA</value>
     </values>
     <values>
         <field>DetailsTemplateName__c</field>
@@ -68,7 +68,7 @@
     </values>
     <values>
         <field>ProductType__c</field>
-        <value xsi:type="xsd:string">Yodle Ads</value>
+        <value xsi:type="xsd:string">Yodle Max</value>
     </values>
     <values>
         <field>RecordTypeName__c</field>

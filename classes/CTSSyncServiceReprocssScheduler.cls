@@ -3,13 +3,17 @@
         System.schedule('CTS Sync Service Reprocess Scheduler 1', '0 0 * * * ?', new CTSSyncServiceReprocssScheduler());        
         System.schedule('CTS Sync Service Reprocess Scheduler 2', '0 30 * * * ?', new CTSSyncServiceReprocssScheduler());        
  */
-global with sharing class CTSSyncServiceReprocssScheduler implements Schedulable {
-
-    global void execute(SchedulableContext sc) {    
+global with sharing class CTSSyncServiceReprocssScheduler implements Schedulable {    
+    
+    global void execute(SchedulableContext sc) {   
+        System.Debug('*** Entering Method execute of CTSSyncServiceReprocssScheduler ***');
+         
         Reprocess('Case');
         Reprocess('Organic_Analysis__c');
         Reprocess('Quality_Case__c');
-        Reprocess('Customer_Surveys__c');                                
+        Reprocess('Customer_Surveys__c');      
+        
+        System.Debug('*** End Method execute of CTSSyncServiceReprocssScheduler ***');                          
     }
     
     private void Reprocess(String objType)

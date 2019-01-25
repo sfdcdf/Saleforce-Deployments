@@ -436,4 +436,41 @@ private class CTSSyncServiceTest {
         System.assert(csObj.External_Ticket_System__c == 'CTS');
     }
     
+    @isTest
+    static void test_CTSSyncServiceReprocssScheduler(){
+        
+        Account newAccount = new Account();
+        newAccount.Name = 'Testing CTS API integration';
+        newAccount.Client_First_Name__c = 'Test';
+        newAccount.Client_Last_Name__c = 'CTS';
+        newAccount.Client_ID__c = '1234';        
+        insert newAccount;
+        
+        Case newCase = new Case();                
+        newCase.AccountId = newAccount.Id;
+        insert newCase; 
+                      
+        //Get async request table object 
+        SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+        newAsyncRecord.API_Identifier__c = 'fake_api_identifier';
+        newAsyncRecord.EmailTemplateId__c = 'email_template_1';
+        newAsyncRecord.Integration_Type__c = 'Api';
+        newAsyncRecord.NumberOfRetryAttempts__c = 0;
+        newAsyncRecord.ObjectId__c = newCase.Id;
+        newAsyncRecord.Object_Name__c = 'Case';
+        newAsyncRecord.ScheduledDateTime__c = System.Now();
+        newAsyncRecord.Status__c ='ERROR';
+        insert newAsyncRecord;
+        
+        test.starttest();
+        Datetime dt = Datetime.now().addMinutes(1);
+        String CRON_EXP = '0 '+ dt.minute() + ' * ' + dt.day() + ' ' + dt.month() + ' ? ' + dt.year();        
+        system.schedule('CTSSyncServiceReprocssScheduler Test', CRON_EXP, new CTSSyncServiceReprocssScheduler());
+        test.stoptest();  
+                
+        newAsyncRecord = [SELECT Id, Status__c FROM SFDCToCTSAsynchRequest__c WHERE Id = :newAsyncRecord.Id LIMIT 1];        
+        System.debug('Async Record Status: ' + newAsyncRecord.Status__c);
+        System.assert(newAsyncRecord.Status__c == 'REPROCESS');  
+    }
+    
 }
