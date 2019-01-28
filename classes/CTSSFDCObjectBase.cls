@@ -18,6 +18,8 @@ public virtual class CTSSFDCObjectBase
     public string AlternateContactEmailAddress { get; set; } 
     public string CRMOrderNumber { get; set; }
     public string CTSEmailAddress { get; set; }
+    public string SFAccountName { get; set; }
+    public string Segment { get; set; }
     
     public CTSSFDCObjectBase()
     {
@@ -34,6 +36,8 @@ public virtual class CTSSFDCObjectBase
         this.Subject = mail.getSubject();
         this.Detail = mail.getPlainTextBody();        
         //Manually append Account level info to Detail field
+        this.Detail = this.Detail + '\r\n SFDC Account Name: ' + SFAccountName;
+        this.Detail = this.Detail + '\r\n Segment: ' + Segment;
         this.Detail = this.Detail + '\r\n Client Id: ' + ReferenceCustomerId;
         this.Detail = this.Detail + '\r\n Client First Name: ' + ContactFirstName;
         this.Detail = this.Detail + '\r\n Client Last Name: ' + ContactLastName;
@@ -49,7 +53,9 @@ public virtual class CTSSFDCObjectBase
     }
     
     public CTSSFDCObjectBase(Case sfCase, String objName, SFDCToCTSAsynchRequest__c requestInstance, Messaging.SingleEmailMessage mail)
-    {        
+    {   
+        this.SFAccountName = sfCase.Account.Name;  
+        this.Segment = sfCase.Account.Secondary_Segments__c;  
         this.ContactFirstName = sfCase.Account.Client_First_Name__c;
         this.ContactLastName = sfCase.Account.Client_Last_Name__c;
         this.ContactEmailAddress = sfCase.Account.Email__c;
@@ -67,6 +73,8 @@ public virtual class CTSSFDCObjectBase
     
     public CTSSFDCObjectBase(Organic_Analysis__c organicCase, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
     {        
+        this.SFAccountName = organicCase.Account_Name__r.Name;
+        this.Segment = organicCase.Account_Name__r.Secondary_Segments__c;
         this.ContactFirstName = organicCase.Account_Name__r.Client_First_Name__c;
         this.ContactLastName = organicCase.Account_Name__r.Client_Last_Name__c;
         this.ContactEmailAddress = organicCase.Account_Name__r.Email__c; 
@@ -83,6 +91,8 @@ public virtual class CTSSFDCObjectBase
     
     public CTSSFDCObjectBase(Quality_Case__c qualityCase, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
     {        
+        this.SFAccountName = qualityCase.Account_Name__r.Name;
+        this.Segment = qualityCase.Account_Name__r.Secondary_Segments__c;
         this.ContactFirstName = qualityCase.Account_Name__r.Client_First_Name__c;
         this.ContactLastName = qualityCase.Account_Name__r.Client_Last_Name__c;
         this.ContactEmailAddress = qualityCase.Account_Name__r.Email__c;     
@@ -114,7 +124,9 @@ public virtual class CTSSFDCObjectBase
     } */
     
     public CTSSFDCObjectBase(Customer_Surveys__c customerSurvey, String objName, SFDCToCTSAsynchRequest__c requestInstance,  Messaging.SingleEmailMessage mail)
-    {        
+    {    
+        this.SFAccountName = customerSurvey.Account__r.Name;
+        this.Segment = customerSurvey.Account__r.Secondary_Segments__c;   
         this.ContactFirstName = customerSurvey.Account__r.Client_First_Name__c;
         this.ContactLastName = customerSurvey.Account__r.Client_Last_Name__c;
         this.ContactEmailAddress = customerSurvey.Account__r.Email__c;    
