@@ -130,6 +130,13 @@
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Asynch_Request_Id__c</columns>
+        <columns>Object_Id__c</columns>
+        <columns>Object_Record_Link__c</columns>
+        <columns>Method_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

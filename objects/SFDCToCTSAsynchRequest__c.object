@@ -265,6 +265,39 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>CTS_Ticket_URL__c</fullName>
+        <description>Click-able link to the correct CTS Ticket instance record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Click-able link to the correct CTS Ticket instance record</inlineHelpText>
+        <label>CTS Ticket URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Email_Template_URL__c</fullName>
+        <description>Click-able link to the Email Template used for the details of the API request for creating a CTS Ticket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Click-able link to the Email Template used for the details of the API request for creating a CTS Ticket</inlineHelpText>
+        <label>Email Template URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Record_URL__c</fullName>
+        <description>Click-able link to the Salesforce instance record associated to the Request record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Click-able link to the Salesforce instance record associated to the Request record</inlineHelpText>
+        <label>SFDC Record URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -309,30 +342,6 @@
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
-        <fullName>All</fullName>
-        <booleanFilter>1</booleanFilter>
-        <columns>NAME</columns>
-        <columns>Status__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>ExternalTicketId__c</columns>
-        <columns>Object_Name__c</columns>
-        <columns>ObjectId__c</columns>
-        <columns>API_Identifier__c</columns>
-        <columns>ErrorDescription__c</columns>
-        <columns>NumberOfRetryAttempts__c</columns>
-        <columns>EmailTemplateId__c</columns>
-        <columns>Integration_Type__c</columns>
-        <columns>ScheduledDateTime__c</columns>
-        <columns>CREATEDBY_USER</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ScheduledDateTime__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>All</label>
-    </listViews>
-    <listViews>
         <fullName>Last_7_Days</fullName>
         <booleanFilter>1</booleanFilter>
         <columns>NAME</columns>
@@ -355,5 +364,31 @@
             <value>LAST_N_DAYS:7</value>
         </filters>
         <label>Last 7 Days</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ExternalTicketId__c</columns>
+        <columns>CTS_Ticket_URL__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>SFDC_Record_URL__c</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
+        <columns>EmailTemplateId__c</columns>
+        <columns>Email_Template_URL__c</columns>
+        <columns>Integration_Type__c</columns>
+        <columns>ScheduledDateTime__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ScheduledDateTime__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All</label>
     </listViews>
 </CustomObject>
