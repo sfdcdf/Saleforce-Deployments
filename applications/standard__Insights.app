@@ -51,7 +51,6 @@
     <tabs>standard-Case</tabs>
     <tabs>Config_TLS_Warning</tabs>
     <tabs>CS_Operations__c</tabs>
-    <tabs>standard-AdvForecast</tabs>
     <tabs>standard-ContentSubscriptions</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>

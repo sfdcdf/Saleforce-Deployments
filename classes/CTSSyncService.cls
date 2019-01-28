@@ -138,6 +138,7 @@ public without sharing class CTSSyncService{
                                      Account.Product_Type_Transactional__c,
                                      Account.Id,
                                      Account.Name,
+                                     Account.Secondary_Segments__c,
                                      Account.Client_ID__c,
                                      Account.Website,  
                                      Client_Email__c,
@@ -172,6 +173,7 @@ public without sharing class CTSSyncService{
                                      Account_Name__r.Product_Type_Transactional__c,
                                      Account_Name__r.Id,
                                      Account_Name__r.Name,
+                                     Account_Name__r.Secondary_Segments__c,
                                      Account_Name__r.Client_ID__c,
                                      Account_Name__r.Website                                      
                                FROM Organic_Analysis__c 
@@ -200,6 +202,7 @@ public without sharing class CTSSyncService{
                                      Account_Name__r.Product_Type_Transactional__c,
                                      Account_Name__r.Id,
                                      Account_Name__r.Name,
+                                     Account_Name__r.Secondary_Segments__c,
                                      Account_Name__r.Client_ID__c,
                                      Account_Name__r.Website                                      
                                FROM Quality_Case__c
@@ -248,6 +251,7 @@ public without sharing class CTSSyncService{
                                      Account__r.Product_Type_Transactional__c,
                                      Account__r.Id,
                                      Account__r.Name,
+                                     Account__r.Secondary_Segments__c,
                                      Account__r.Client_ID__c,
                                      Account__r.Website                                      
                                FROM Customer_Surveys__c 
