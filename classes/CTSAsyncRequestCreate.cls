@@ -49,7 +49,7 @@ public class CTSAsyncRequestCreate
                 
                 for(Id objId : objectIds){
                 
-                    if(!String.IsBlank(objectName)){
+                    if(!String.IsBlank(objectName) && !Test.isRunningTest()){
                         CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objId);
                     }
                 }
