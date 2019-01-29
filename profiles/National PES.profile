@@ -32230,6 +32230,21 @@
         <field>User.SFDC_to_CTS_Sync_Enabled__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.CTS_Ticket_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.Email_Template_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.SFDC_Record_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
