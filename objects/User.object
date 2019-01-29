@@ -747,6 +747,16 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>SFDC_to_CTS_Sync_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicator/ flag signifying that any any CTS integration object will execute the CTS Sync Service to create a CTS Ticket if the related record is created by this user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicator/ flag signifying that any any CTS integration object will execute the CTS Sync Service to create a CTS Ticket if the related record is created by this user.</inlineHelpText>
+        <label>SFDC to CTS Sync Enabled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><externalSharingModel>Private</externalSharingModel><searchLayouts>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
