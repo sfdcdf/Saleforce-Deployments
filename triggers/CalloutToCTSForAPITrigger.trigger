@@ -8,6 +8,12 @@ trigger CalloutToCTSForAPITrigger on SFDCToCTSAsynchRequest__c (after insert, af
 
     
         System.Debug('*** Entered CalloutToCTSForAPITrigger ***');
+        
+        if (Test.isRunningTest())
+        {
+            System.Debug('In Test Mode, nothing was done');
+            return; 
+        }
 
         List<SFDCToCTSAsynchRequest__c> asyncList = new List<SFDCToCTSAsynchRequest__c>();
         String objName;
