@@ -72,6 +72,10 @@
                 <behavior>Edit</behavior>
                 <field>External_Ticket_System__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SFDC_to_CTS_Sync_Enabled__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

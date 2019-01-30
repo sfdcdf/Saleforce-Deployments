@@ -58,6 +58,10 @@
                 <behavior>Readonly</behavior>
                 <field>Total_CS_Time__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SFDC_to_CTS_Sync_Enabled__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

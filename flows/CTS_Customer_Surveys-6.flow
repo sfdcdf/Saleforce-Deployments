@@ -86,7 +86,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
-            <conditionLogic>1 AND 6 AND (3 OR 4 OR 5) AND (2 OR 7 OR 8)</conditionLogic>
+            <conditionLogic>1 AND 3 AND 4 AND 5 AND 6 AND (2 OR 7 OR 8)</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>

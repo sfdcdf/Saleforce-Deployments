@@ -90,6 +90,10 @@
                 <behavior>Edit</behavior>
                 <field>Segment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SFDC_to_CTS_Sync_Enabled__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

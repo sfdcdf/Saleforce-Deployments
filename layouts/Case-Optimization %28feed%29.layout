@@ -154,6 +154,10 @@
                 <behavior>Edit</behavior>
                 <field>Reson_For_Optimization_Submission__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SFDC_to_CTS_Sync_Enabled__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

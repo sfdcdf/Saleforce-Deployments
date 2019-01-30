@@ -100,6 +100,10 @@
                 <behavior>Edit</behavior>
                 <field>Number_of_Attempts_to_Complete_ICC__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>SFDC_to_CTS_Sync_Enabled__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
