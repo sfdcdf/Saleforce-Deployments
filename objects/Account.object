@@ -12944,6 +12944,19 @@ or(
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>IMS_Rep_Prior_to_CTS__c</fullName>
+        <description>IMS Rep prior to the CTS migration (snapshot)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>IMS Rep prior to the CTS migration (snapshot)</inlineHelpText>
+        <label>IMS Rep Prior to CTS</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
