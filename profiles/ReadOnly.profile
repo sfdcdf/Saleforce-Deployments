@@ -30837,6 +30837,11 @@
         <field>SFDCToCTSAsynchRequest__c.SFDC_Record_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.IMS_Rep_Prior_to_CTS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Affiliate</recordType>
