@@ -31307,6 +31307,11 @@
         <field>Quality_Case__c.SFDC_to_CTS_Sync_Enabled__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.IMS_Rep_Prior_to_CTS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Austin Client Services %28Feed%29</layout>
     </layoutAssignments>
