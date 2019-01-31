@@ -26261,11 +26261,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Probability</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Products_Discussed__c</field>
         <readable>true</readable>
@@ -32453,6 +32448,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Quality_Case__c.SFDC_to_CTS_Sync_Enabled__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Probability</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
