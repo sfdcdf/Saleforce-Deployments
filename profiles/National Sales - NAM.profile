@@ -26204,11 +26204,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Probability</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Product_Performance_Service_Leve__c</field>
         <readable>true</readable>
@@ -32306,6 +32301,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>SFDCToCTSAsynchRequest__c.SFDC_Record_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Probability</field>
         <readable>true</readable>
     </fieldPermissions>
     <objectPermissions>
