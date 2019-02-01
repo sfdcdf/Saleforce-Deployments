@@ -490,4 +490,28 @@
         <filterScope>Everything</filterScope>
         <label>All Requests</label>
     </listViews>
+    <listViews>
+        <fullName>Charge_Failure_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>SFDC_Record_URL__c</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>ExternalTicketId__c</columns>
+        <columns>CTS_Ticket_URL__c</columns>
+        <columns>Email_Template_URL__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>ScheduledDateTime__c</columns>
+        <columns>ProcessedDateTime__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>API_Identifier__c</field>
+            <operation>equals</operation>
+            <value>SFDCY_CASE_000007</value>
+        </filters>
+        <label>Charge Failure Requests</label>
+    </listViews>
 </CustomObject>
