@@ -367,7 +367,6 @@
     </listViews>
     <listViews>
         <fullName>All</fullName>
-        <booleanFilter>1</booleanFilter>
         <columns>NAME</columns>
         <columns>Status__c</columns>
         <columns>CREATED_DATE</columns>
@@ -384,11 +383,6 @@
         <columns>Integration_Type__c</columns>
         <columns>ScheduledDateTime__c</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>ScheduledDateTime__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
         <label>All</label>
     </listViews>
 </CustomObject>
