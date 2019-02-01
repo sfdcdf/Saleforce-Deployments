@@ -399,26 +399,6 @@
         <label>All_ERROR and New UnProcessed 7 Days</label>
     </listViews>
     <listViews>
-        <fullName>All_Requests</fullName>
-        <columns>NAME</columns>
-        <columns>Status__c</columns>
-        <columns>Object_Name__c</columns>
-        <columns>ObjectId__c</columns>
-        <columns>SFDC_Record_URL__c</columns>
-        <columns>API_Identifier__c</columns>
-        <columns>ExternalTicketId__c</columns>
-        <columns>CTS_Ticket_URL__c</columns>
-        <columns>Email_Template_URL__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>CREATEDBY_USER</columns>
-        <columns>ScheduledDateTime__c</columns>
-        <columns>ProcessedDateTime__c</columns>
-        <columns>NumberOfRetryAttempts__c</columns>
-        <columns>ErrorDescription__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Requests</label>
-    </listViews>
-    <listViews>
         <fullName>Requests_Today</fullName>
         <columns>NAME</columns>
         <columns>Status__c</columns>
@@ -489,5 +469,25 @@
             <value>SFDCY_CASE_000012,SFDCY_CASE_000013,SFDCY_CASE_000014</value>
         </filters>
         <label>Touch Plan Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>SFDC_Record_URL__c</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>ExternalTicketId__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <columns>CTS_Ticket_URL__c</columns>
+        <columns>Email_Template_URL__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>ScheduledDateTime__c</columns>
+        <columns>ProcessedDateTime__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Requests</label>
     </listViews>
 </CustomObject>
