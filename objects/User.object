@@ -1116,6 +1116,30 @@
         </filters>
         <label>CTS Sync Users</label>
     </listViews>
+    <listViews>
+        <fullName>Disabled_Users_Last_2_Days</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:2</value>
+        </filters>
+        <label>Disabled Users Last 2 Days</label>
+    </listViews>
     <webLinks>
         <fullName>Loop__Change_DS_Cred</fullName>
         <availability>online</availability>
