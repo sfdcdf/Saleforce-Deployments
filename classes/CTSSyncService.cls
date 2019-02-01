@@ -567,6 +567,7 @@ public without sharing class CTSSyncService{
      public static void CallOutCTSForAPI(String requestBody){
         
         System.Debug('*** Entering Method CallOutCTSForAPI ***');
+        System.Debug('Call Out Body: ' + requestBody);
         
         Http h = new Http();
        
@@ -583,19 +584,20 @@ public without sharing class CTSSyncService{
         Boolean isSuccessful = true;
         HttpResponse res;
         
-        try{
-            res = h.send(req);
-        }
-        catch(Exception e){
-            // create method to handle Async Request records (UpdateSFDCToCTSAsynchRequest)
-            isSuccessful = false;
-            System.Debug('An error occurred sending request to CTS: ' + e.getMessage());
-        }
-        finally{
-            if(isSuccessful){
-                ProcessCreateTicketAPIResponse(res.getBody());
+            try{
+                res = h.send(req);
             }
-        }
+            catch(Exception e){
+                // create method to handle Async Request records (UpdateSFDCToCTSAsynchRequest)
+                isSuccessful = false;
+                System.Debug('An error occurred sending request to CTS: ' + e.getMessage());
+            }
+            finally{
+                if(isSuccessful){
+                    ProcessCreateTicketAPIResponse(res.getBody());
+                }
+            }
+        
         
         System.Debug('*** Request Sent from CallCTSOutForAPI***');
         System.Debug('CallOutCTSForAPI Request: ' + requestBody);
@@ -766,6 +768,7 @@ public without sharing class CTSSyncService{
     public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
+        System.Debug('Call Out Response: ' + ctsCreateTicketResponse);
     
         try
         {
