@@ -514,4 +514,64 @@
         </filters>
         <label>Charge Failure Requests</label>
     </listViews>
+    <listViews>
+        <fullName>CTS_Error_Records_Retry_Required</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>CTS_Email_Address__c</columns>
+        <columns>CTS_Ticket_URL__c</columns>
+        <columns>EmailTemplateId__c</columns>
+        <columns>Email_Template_URL__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <columns>Integration_Type__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ProcessedDateTime__c</columns>
+        <columns>ScheduledDateTime__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>ERROR</value>
+        </filters>
+        <filters>
+            <field>NumberOfRetryAttempts__c</field>
+            <operation>lessThan</operation>
+            <value>3</value>
+        </filters>
+        <label>CTS - Error Records - Retry Required</label>
+    </listViews>
+    <listViews>
+        <fullName>CTS_Error_Records_Stop_Retry</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>API_Identifier__c</columns>
+        <columns>CTS_Email_Address__c</columns>
+        <columns>CTS_Ticket_URL__c</columns>
+        <columns>EmailTemplateId__c</columns>
+        <columns>Email_Template_URL__c</columns>
+        <columns>ErrorDescription__c</columns>
+        <columns>Integration_Type__c</columns>
+        <columns>NumberOfRetryAttempts__c</columns>
+        <columns>ObjectId__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>ProcessedDateTime__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>ERROR</value>
+        </filters>
+        <filters>
+            <field>NumberOfRetryAttempts__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>3</value>
+        </filters>
+        <label>CTS - Error Records - Stop Retry</label>
+    </listViews>
 </CustomObject>

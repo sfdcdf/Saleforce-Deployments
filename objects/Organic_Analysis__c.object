@@ -13327,6 +13327,16 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>SFDC_to_CTS_Sync_Enabled__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.SFDC_to_CTS_Sync_Enabled__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC to CTS Sync Enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
