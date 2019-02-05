@@ -47,12 +47,14 @@ public class CTSAsyncRequestCreate
                 
                 System.Debug('**CTS** Object Name: ' + objectName);
                 
-                for(Id objId : objectIds){
+                /*for(Id objId : objectIds){
                 
                     if(!String.IsBlank(objectName) && !Test.isRunningTest()){
                         CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objId);
                     }
-                }
+                }*/
+                
+                CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objectIds);
             }
         }
         catch(Exception e)
