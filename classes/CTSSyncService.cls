@@ -654,14 +654,15 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
+    
+    /* public static void CreateSFDCToCTSAsynchRequest(String objectName, Id objectId)
     {
         System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
         
         try
         {
-            //List<Id> objectIds = new List<Id>();
-            //objectIds.add(objectId);
+            List<Id> objectIds = new List<Id>();
+            objectIds.add(objectId);
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
@@ -717,8 +718,79 @@ public without sharing class CTSSyncService{
             }
             
             if(dmlSFDCToCTSAsynchRequestList.size() > 0){
-                System.Debug('Number of Async Request Records: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
-                System.Debug('Async Request Records: ' + dmlSFDCToCTSAsynchRequestList);
+            
+                insert dmlSFDCToCTSAsynchRequestList;
+            }
+            
+            System.Debug('Number of Async Request Records: ' + String.valueOf(dmlSFDCToCTSAsynchRequestList.size()));
+            
+            System.Debug('*** End Method CreateSFDCToCTSAsynchRequest ***');
+        }
+        catch(Exception e)
+        {
+            System.Debug('An error occurred in CreateSFDCToCTSAsynchRequest: ' + e.getMessage());
+        }
+    } */
+    
+    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
+    {
+        System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
+        
+        try
+        {            
+            Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
+            Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
+            List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
+            String processStage = CTSSyncService.GetConfigValue('CTSRequestStage_errorpre');
+            String baseURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
+            
+            for(EmailTemplate et :
+                [SELECT Id,
+                        DeveloperName
+                   FROM EmailTemplate
+                  WHERE Folder.Name = 'CTS Templates']){
+                  
+                emailTemplateMap.put(et.DeveloperName, et);
+            }
+            
+            for(Id objId : objectIds){
+            
+                try{                                                      
+                        CTSObjectTriggerMap__mdt rt = routingTable.get(objId);
+                        if (rt != null)
+                        {
+                            SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+                        
+                            switch on rt.IntegrationType__c{                                    
+                                when 'API' {                                            
+                                    newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                                }
+                                when else {                                            
+                                    newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
+                                }
+                            }
+                            
+                            newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                            newAsyncRecord.Email_Template_URL__c = baseURL + emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                            newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
+                            newAsyncRecord.NumberOfRetryAttempts__c = 0;
+                            newAsyncRecord.ObjectId__c = objId;
+                            newAsyncRecord.Object_Name__c = objectName;
+                            newAsyncRecord.ScheduledDateTime__c = System.Now();
+                            newAsyncRecord.SFDC_Record_URL__c = baseURL + objId;
+                            newAsyncRecord.Status__c ='NEW';
+                            
+                            dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
+                        }                                          
+                }
+                catch(Exception e){
+                    // Log error
+                    UpsertCTSErrorLog(processStage, objId, 'CreateSFDCToCTSAsynchRequest', e.getMessage());
+                }
+            }
+            
+            if(dmlSFDCToCTSAsynchRequestList.size() > 0){
+            
                 insert dmlSFDCToCTSAsynchRequestList;
             }
             
