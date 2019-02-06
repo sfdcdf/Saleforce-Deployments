@@ -654,14 +654,12 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public static void CreateSFDCToCTSAsynchRequest(String objectName, Id objectId)
+    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
     {
         System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
         
         try
-        {  
-            List<Id> objectIds = new List<Id>();
-            objectIds.add(objectId);          
+        {                       
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
@@ -712,7 +710,7 @@ public without sharing class CTSSyncService{
                         else
                         {
                             //Log error
-                            UpsertCTSErrorLog(processStage, objId, 'CreateSFDCToCTSAsynchRequest', 'Not abel to find Routing Table object');
+                            UpsertCTSErrorLog(processStage, objId, 'CreateSFDCToCTSAsynchRequest', 'Not able to find Routing Table object');
                         }                                            
                 }
                 catch(Exception e){
