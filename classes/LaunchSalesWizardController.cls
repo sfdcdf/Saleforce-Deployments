@@ -2,17 +2,21 @@
   Company/ Author ....: E. Ross
   Date Created .......: 20-Jul-2018
   Last Modified By ...: E. Ross
-  Last Modified Date .: 02-Aug-2018
+  Last Modified Date .: 05-Feb-2019
   Description ........: Launched Sales Wizard URL with proper URL tokens and parameters to auto-populate
                         the Sales Wizard form with data from Salesforce
+                        
+  Modifications:
+  
+  E. Ross Feb 05: 
+  Updated salesWizardBaseURL to pull from dynamic config value rather than static/ hard-coded so that it 
+  can be changed without updating and re-deploying code.
 *****************************************************************************/
 public with sharing class LaunchSalesWizardController {
 
     public LaunchSalesWizardController(ApexPages.StandardController controller) {
 
     }
-
-    // https://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/SOME_CONSUMER_NAME/SOME_UNIQUE_KEY_FOR_THE_CONSUMER?corporate.id=1700000000
 
     Id recordId = ApexPages.currentPage().getParameters().get('id');
     String oppId = recordId;
@@ -34,7 +38,7 @@ public with sharing class LaunchSalesWizardController {
     String contractLength {get; set;}
     String acctCorpId {get; set;}
     String consumerName = [SELECT Id, Consumer_Name__c FROM Sales_Wizard_API_Setting__mdt WHERE MasterLabel = 'WBN Sale' LIMIT 1].Consumer_Name__c;
-    String salesWizardBaseURL = 'http://live.yodle.com/sales/wizard/packages/WBN/orders/';  // QA: 'http://live.qa2.yodle.com/sales/wizard/packages/WBN/orders/'
+    String salesWizardBaseURL = [SELECT Configuration_Value__c FROM Integration_Configuration__mdt WHERE Configuration_Label__c = 'SW3URL' AND External_System_Name__c = 'Yodle Live'].Configuration_Value__c;
     String urlParams {get; set;}
     String finalURL {get; set;}
     
