@@ -125,9 +125,19 @@ public without sharing class CTSSyncService{
        String configKey = 'CTSRequestStage_errorpost';
        String processStage = CTSSyncService.GetConfigValue(configKey);
        
-       //Render email subject and body in batch       
-       Map<Id, Messaging.SingleEmailMessage> emailMap = GetEmailMap(requestMap);
-                                             
+       //Render email subject and body in batch
+       Map<Id, Messaging.SingleEmailMessage> emailMap;
+       try {
+           emailMap = GetEmailMap(requestMap);
+       }
+       catch(Exception e){                
+           // Log error
+           for (Id objId : requestMap.keySet()) {
+               UpsertCTSErrorLog(processStage, objId, 'GetEmailMap', e.getMessage());
+           } 
+           return null;               
+       }
+                                                                
        switch on objectName {
            when 'Case' {
               for (Case sfCase :  [SELECT Id,
@@ -752,6 +762,8 @@ public without sharing class CTSSyncService{
             if(asyncRequestMap.size() > 0){
             
                 sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
+                if (sfdcObjList == null || sfdcObjList.size() == 0)
+                    return;
                 ctsTicketList = GetCTSTicket(sfdcObjList);
                 String ticketJSON ='';
                 
