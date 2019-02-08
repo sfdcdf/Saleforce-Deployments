@@ -73,6 +73,11 @@ public without sharing class CTSSyncService{
     
     public static Map<Id, Messaging.SingleEmailMessage> GetEmailMap(Map<Id, SFDCToCTSAsynchRequest__c> requestMap)
     {
+        Integer numberOfEmailInvocationMade = Limits.getEmailInvocations();
+        Integer numberOfEmailInvocationLimit = Limits.getLimitEmailInvocations();
+        If (numberOfEmailInvocationMade >= numberOfEmailInvocationLimit)
+            throw new EmailException('Too many Email Invocations');
+        
         Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
         Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
         CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
@@ -1121,8 +1126,10 @@ public without sharing class CTSSyncService{
                 
                     retryAttempts = Integer.valueOf(asrMap.NumberOfRetryAttempts__c);
                     asrMap.Status__c = 'ERROR';
-                    asrMap.ErrorDescription__c = asrMap.ErrorDescription__c + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
+                    asrMap.ErrorDescription__c = String.isNotBlank(asrMap.ErrorDescription__c) ? asrMap.ErrorDescription__c : '' + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
                 }
+                
+                Update(asyncRequestMap.values());
             }
         }
         catch(Exception e){
