@@ -51,6 +51,10 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteFromThisEventOnwards</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Subject</fields>
@@ -154,6 +158,9 @@
         <fullName>Type</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Attendees</fullName>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><sharingModel>ControlledByParent</sharingModel>
     <recordTypes>
         <fullName>Calendar_Blocker</fullName>
