@@ -373,6 +373,7 @@ IF(MOD(TODAY() - DATE( 1900,1,6 ),7) = 0,1,-2 ) ) )
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
