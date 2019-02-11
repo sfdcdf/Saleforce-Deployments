@@ -30,7 +30,7 @@ public without sharing class CTSSyncService{
  
         System.Debug('*** Entering Method GetCTSTicket ***');
  
-        CTSTicket ctsTicketInstance = new CTSTicket();
+        //CTSTicket ctsTicketInstance = new CTSTicket();
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
         String configKey = 'CTSRequestStage_errorpost';
         String processStage = CTSSyncService.GetConfigValue(configKey);
@@ -38,6 +38,7 @@ public without sharing class CTSSyncService{
         for(CTSSFDCObjectBase sfdcObj : sfdcObjectList){
             
             try{
+                CTSTicket ctsTicketInstance = new CTSTicket();
                 ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
                 ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
                 ctsTicketInstance.contactFirstName = (sfdcObj.ContactFirstName != null ? sfdcObj.ContactFirstName : '');
@@ -47,7 +48,7 @@ public without sharing class CTSSyncService{
                 ctsTicketInstance.objectName = sfdcObj.ObjectName;
                 ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
                 ctsTicketInstance.referenceCustomerId = (sfdcObj.ReferenceCustomerId != null ? sfdcObj.ReferenceCustomerId : '');
-                ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
+                ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;                
                 ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
                 ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
                 ctsTicketInstance.status = sfdcObj.Status;
@@ -766,13 +767,12 @@ public without sharing class CTSSyncService{
             
             if(asyncRequestMap.size() > 0){
             
-                sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
+                sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);                
                 if (sfdcObjList == null || sfdcObjList.size() == 0)
                     return;
-                ctsTicketList = GetCTSTicket(sfdcObjList);
-                String ticketJSON ='';
-                
-                ticketJSON = GetCTSTicketJSON(ctsTicketList);
+                ctsTicketList = GetCTSTicket(sfdcObjList);                                
+                String ticketJSON ='';                
+                ticketJSON = GetCTSTicketJSON(ctsTicketList);                
                 CallOutCTSForAPI(ticketJSON);
             }
             System.Debug('Number of Records Processed: ' + String.valueOf(asyncRequestObj.size()));
@@ -1172,7 +1172,7 @@ public without sharing class CTSSyncService{
               WHERE Is_Active__c = true AND
                     External_System_Name__c = 'CTS' AND
                     Configuration_Label__c = :configLabel
-              LIMIT 1].Configuration_Value__c;
+              LIMIT 1].Configuration_
               
               return configValue;*/
               
