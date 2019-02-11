@@ -40,21 +40,6 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>Customer_Survey_ID__c</fullName>
-        <description>Provides the ID for the Customer Survey</description>
-        <externalId>false</externalId>
-        <label>Customer Survey ID</label>
-        <referenceTo>Customer_Surveys__c</referenceTo>
-        <relationshipLabel>Acct Email Sub to Surveys</relationshipLabel>
-        <relationshipName>Acct_Email_Sub_to_Surveys</relationshipName>
-        <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>true</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>Email_Sub_ID__c</fullName>
         <description>Email subscription ID</description>
         <externalId>false</externalId>
@@ -69,6 +54,21 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>true</writeRequiresMasterRead>
     </fields>
+    <fields>
+        <fullName>Customer_Survey_ID__c</fullName>
+        <description>Provides the ID for the Customer Survey</description>
+        <externalId>false</externalId>
+        <label>Customer Survey ID</label>
+        <referenceTo>Customer_Surveys__c</referenceTo>
+        <relationshipLabel>Acct Email Sub to Surveys</relationshipLabel>
+        <relationshipName>Acct_Email_Sub_to_Surveys</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -77,6 +77,7 @@
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
