@@ -777,6 +777,11 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
                     <label>MLS DC</label>
                 </value>
                 <value>
+                    <fullName>MLS FS</fullName>
+                    <default>false</default>
+                    <label>MLS FS</label>
+                </value>
+                <value>
                     <fullName>Third Party</fullName>
                     <default>false</default>
                     <label>Third Party</label>
@@ -862,6 +867,10 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
             </values>
             <values>
                 <fullName>MLS DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MLS FS</fullName>
                 <default>false</default>
             </values>
             <values>
