@@ -68,92 +68,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>CaseReason__c</fullName>
-        <description>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</inlineHelpText>
-        <label>Case Reason</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Account</fullName>
-                    <default>true</default>
-                    <label>Account</label>
-                </value>
-                <value>
-                    <fullName>Adoption Call</fullName>
-                    <default>false</default>
-                    <label>Adoption Call</label>
-                </value>
-                <value>
-                    <fullName>Billing</fullName>
-                    <default>false</default>
-                    <label>Billing</label>
-                </value>
-                <value>
-                    <fullName>Charge Failure</fullName>
-                    <default>false</default>
-                    <label>Charge Failure</label>
-                </value>
-                <value>
-                    <fullName>Client Communication</fullName>
-                    <default>false</default>
-                    <label>Client Communication</label>
-                </value>
-                <value>
-                    <fullName>Client Escalation</fullName>
-                    <default>false</default>
-                    <label>Client Escalation</label>
-                </value>
-                <value>
-                    <fullName>CSC</fullName>
-                    <default>false</default>
-                    <label>CSC</label>
-                </value>
-                <value>
-                    <fullName>CS Touch Plan</fullName>
-                    <default>false</default>
-                    <label>CS Touch Plan</label>
-                </value>
-                <value>
-                    <fullName>Maps Verification</fullName>
-                    <default>false</default>
-                    <label>Maps Verification</label>
-                </value>
-                <value>
-                    <fullName>MLS</fullName>
-                    <default>false</default>
-                    <label>MLS</label>
-                </value>
-                <value>
-                    <fullName>Performance</fullName>
-                    <default>false</default>
-                    <label>Performance</label>
-                </value>
-                <value>
-                    <fullName>Proactive Touch</fullName>
-                    <default>false</default>
-                    <label>Proactive Touch</label>
-                </value>
-                <value>
-                    <fullName>Website</fullName>
-                    <default>false</default>
-                    <label>Website</label>
-                </value>
-                <value>
-                    <fullName>New Client Setup</fullName>
-                    <default>false</default>
-                    <label>New Client Setup</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Description__c</fullName>
         <description>Any description, comments or notes about the mapping record</description>
         <externalId>false</externalId>
@@ -533,6 +447,97 @@
                     <fullName>Touch Plan 3</fullName>
                     <default>false</default>
                     <label>Touch Plan 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseReason__c</fullName>
+        <description>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Case Reason referenced for CTS Ticket creation (if applicable)</inlineHelpText>
+        <label>Case Reason</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>true</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Adoption Call</fullName>
+                    <default>false</default>
+                    <label>Adoption Call</label>
+                </value>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Charge Failure</fullName>
+                    <default>false</default>
+                    <label>Charge Failure</label>
+                </value>
+                <value>
+                    <fullName>Client Communication</fullName>
+                    <default>false</default>
+                    <label>Client Communication</label>
+                </value>
+                <value>
+                    <fullName>Client Escalation</fullName>
+                    <default>false</default>
+                    <label>Client Escalation</label>
+                </value>
+                <value>
+                    <fullName>CSC</fullName>
+                    <default>false</default>
+                    <label>CSC</label>
+                </value>
+                <value>
+                    <fullName>CS Touch Plan</fullName>
+                    <default>false</default>
+                    <label>CS Touch Plan</label>
+                </value>
+                <value>
+                    <fullName>Maps Verification</fullName>
+                    <default>false</default>
+                    <label>Maps Verification</label>
+                </value>
+                <value>
+                    <fullName>MLS</fullName>
+                    <default>false</default>
+                    <label>MLS</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Proactive Touch</fullName>
+                    <default>false</default>
+                    <label>Proactive Touch</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+                <value>
+                    <fullName>New Client Setup</fullName>
+                    <default>false</default>
+                    <label>New Client Setup</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
