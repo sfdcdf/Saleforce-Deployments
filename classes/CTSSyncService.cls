@@ -30,7 +30,7 @@ public without sharing class CTSSyncService{
  
         System.Debug('*** Entering Method GetCTSTicket ***');
  
-        CTSTicket ctsTicketInstance = new CTSTicket();
+        //CTSTicket ctsTicketInstance = new CTSTicket();
         List<CTSTicket> ctsTicketList = new List<CTSTicket>();
         String configKey = 'CTSRequestStage_errorpost';
         String processStage = CTSSyncService.GetConfigValue(configKey);
@@ -38,6 +38,7 @@ public without sharing class CTSSyncService{
         for(CTSSFDCObjectBase sfdcObj : sfdcObjectList){
             
             try{
+                CTSTicket ctsTicketInstance = new CTSTicket();
                 ctsTicketInstance.apiIdentifier = sfdcObj.ApiIdentifier;
                 ctsTicketInstance.crmOrderNumber = sfdcObj.CRMOrderNumber;
                 ctsTicketInstance.contactFirstName = (sfdcObj.ContactFirstName != null ? sfdcObj.ContactFirstName : '');
@@ -47,7 +48,7 @@ public without sharing class CTSSyncService{
                 ctsTicketInstance.objectName = sfdcObj.ObjectName;
                 ctsTicketInstance.referenceAccountId = sfdcObj.ReferenceAccountId;
                 ctsTicketInstance.referenceCustomerId = (sfdcObj.ReferenceCustomerId != null ? sfdcObj.ReferenceCustomerId : '');
-                ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;
+                ctsTicketInstance.referenceProductInstanceId = sfdcObj.ReferenceProductInstanceId;                
                 ctsTicketInstance.domain = (sfdcObj.Domain != null ? sfdcObj.Domain : '');
                 ctsTicketInstance.subject = (sfdcObj.Subject != null ? sfdcObj.Subject : '');
                 ctsTicketInstance.status = sfdcObj.Status;
@@ -73,6 +74,11 @@ public without sharing class CTSSyncService{
     
     public static Map<Id, Messaging.SingleEmailMessage> GetEmailMap(Map<Id, SFDCToCTSAsynchRequest__c> requestMap)
     {
+        Integer numberOfEmailInvocationMade = Limits.getEmailInvocations();
+        Integer numberOfEmailInvocationLimit = Limits.getLimitEmailInvocations();
+        If (numberOfEmailInvocationMade >= numberOfEmailInvocationLimit)
+            throw new EmailException('Too many Email Invocations');
+        
         Map<Id, Messaging.SingleEmailMessage> emailMap = new Map<Id, Messaging.SingleEmailMessage>();
         Messaging.SingleEmailMessage[] mails = new Messaging.SingleEmailMessage[] {};
         CTS_Integration_Setting__mdt integrationSetting = GetCTSIntegrationSettings();
@@ -125,9 +131,19 @@ public without sharing class CTSSyncService{
        String configKey = 'CTSRequestStage_errorpost';
        String processStage = CTSSyncService.GetConfigValue(configKey);
        
-       //Render email subject and body in batch       
-       Map<Id, Messaging.SingleEmailMessage> emailMap = GetEmailMap(requestMap);
-                                             
+       //Render email subject and body in batch
+       Map<Id, Messaging.SingleEmailMessage> emailMap;
+       try {
+           emailMap = GetEmailMap(requestMap);
+       }
+       catch(Exception e){                
+           // Log error
+           for (Id objId : requestMap.keySet()) {
+               UpsertCTSErrorLog(processStage, objId, 'GetEmailMap', e.getMessage());
+           } 
+           return null;               
+       }
+                                                                
        switch on objectName {
            when 'Case' {
               for (Case sfCase :  [SELECT Id,
@@ -567,6 +583,7 @@ public without sharing class CTSSyncService{
      public static void CallOutCTSForAPI(String requestBody){
         
         System.Debug('*** Entering Method CallOutCTSForAPI ***');
+        System.Debug('Call Out Body: ' + requestBody);
         
         Http h = new Http();
        
@@ -583,19 +600,20 @@ public without sharing class CTSSyncService{
         Boolean isSuccessful = true;
         HttpResponse res;
         
-        try{
-            res = h.send(req);
-        }
-        catch(Exception e){
-            // create method to handle Async Request records (UpdateSFDCToCTSAsynchRequest)
-            isSuccessful = false;
-            System.Debug('An error occurred sending request to CTS: ' + e.getMessage());
-        }
-        finally{
-            if(isSuccessful){
-                ProcessCreateTicketAPIResponse(res.getBody());
+            try{
+                res = h.send(req);
             }
-        }
+            catch(Exception e){
+                // create method to handle Async Request records (UpdateSFDCToCTSAsynchRequest)
+                isSuccessful = false;
+                System.Debug('An error occurred sending request to CTS: ' + e.getMessage());
+            }
+            finally{
+                if(isSuccessful){
+                    ProcessCreateTicketAPIResponse(res.getBody());
+                }
+            }
+        
         
         System.Debug('*** Request Sent from CallCTSOutForAPI***');
         System.Debug('CallOutCTSForAPI Request: ' + requestBody);
@@ -652,14 +670,12 @@ public without sharing class CTSSyncService{
         }
     }
     
-    public static void CreateSFDCToCTSAsynchRequest(String objectName, Id objectId)
+    public static void CreateSFDCToCTSAsynchRequest(String objectName, List<Id> objectIds)
     {
         System.Debug('*** Entering Method CreateSFDCToCTSAsynchRequest ***');
         
         try
-        {
-            List<Id> objectIds = new List<Id>();
-            objectIds.add(objectId);
+        {                       
             Map<Id,CTSObjectTriggerMap__mdt> routingTable = GetRoutingTableObject(objectName, objectIds);
             Map<String, EmailTemplate> emailTemplateMap = new Map<String, EmailTemplate>();
             List<SFDCToCTSAsynchRequest__c> dmlSFDCToCTSAsynchRequestList = new List<SFDCToCTSAsynchRequest__c>();
@@ -677,36 +693,41 @@ public without sharing class CTSSyncService{
             
             for(Id objId : objectIds){
             
-                try{
-                
-                    for(CTSObjectTriggerMap__mdt rt : routingTable.values()){
-                    
-                        SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
+                try{                                   
+                        CTSObjectTriggerMap__mdt rt = routingTable.get(objId);
+                        if (rt != null)
+                        {
+                            SFDCToCTSAsynchRequest__c newAsyncRecord = new SFDCToCTSAsynchRequest__c();
                         
-                        switch on rt.IntegrationType__c{
+                            switch on rt.IntegrationType__c{
                             
-                            when 'API' {
-                                    
-                                newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                                    when 'API' {
+                                        
+                                    newAsyncRecord.API_Identifier__c = rt.CTSAPIIdentifier__c;
+                                }
+                                when else {
+                                        
+                                    newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
+                                }
                             }
-                            when else {
-                                    
-                                newAsyncRecord.CTS_Email_Address__c = rt.CTSEmailAddress__c;
-                            }
+                            
+                            newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                            newAsyncRecord.Email_Template_URL__c = baseURL + emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
+                            newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
+                            newAsyncRecord.NumberOfRetryAttempts__c = 0;
+                            newAsyncRecord.ObjectId__c = objId;
+                            newAsyncRecord.Object_Name__c = objectName;
+                            newAsyncRecord.ScheduledDateTime__c = System.Now();
+                            newAsyncRecord.SFDC_Record_URL__c = baseURL + objId;
+                            newAsyncRecord.Status__c ='NEW';
+                            
+                            dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
                         }
-                            
-                        newAsyncRecord.EmailTemplateId__c = emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                        newAsyncRecord.Email_Template_URL__c = baseURL + emailTemplateMap.get(rt.DetailsTemplateName__c).Id;
-                        newAsyncRecord.Integration_Type__c = rt.IntegrationType__c;
-                        newAsyncRecord.NumberOfRetryAttempts__c = 0;
-                        newAsyncRecord.ObjectId__c = objId;
-                        newAsyncRecord.Object_Name__c = objectName;
-                        newAsyncRecord.ScheduledDateTime__c = System.Now();
-                        newAsyncRecord.SFDC_Record_URL__c = baseURL + objId;
-                        newAsyncRecord.Status__c ='NEW';
-                        
-                        dmlSFDCToCTSAsynchRequestList.add(newAsyncRecord);
-                    }
+                        else
+                        {
+                            //Log error
+                            UpsertCTSErrorLog(processStage, objId, 'CreateSFDCToCTSAsynchRequest', 'Not able to find Routing Table object');
+                        }                                            
                 }
                 catch(Exception e){
                     // Log error
@@ -746,11 +767,12 @@ public without sharing class CTSSyncService{
             
             if(asyncRequestMap.size() > 0){
             
-                sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);
-                ctsTicketList = GetCTSTicket(sfdcObjList);
-                String ticketJSON ='';
-                
-                ticketJSON = GetCTSTicketJSON(ctsTicketList);
+                sfdcObjList = GetSFDCObject(objectName, asyncRequestMap);                
+                if (sfdcObjList == null || sfdcObjList.size() == 0)
+                    return;
+                ctsTicketList = GetCTSTicket(sfdcObjList);                                
+                String ticketJSON ='';                
+                ticketJSON = GetCTSTicketJSON(ctsTicketList);                
                 CallOutCTSForAPI(ticketJSON);
             }
             System.Debug('Number of Records Processed: ' + String.valueOf(asyncRequestObj.size()));
@@ -766,6 +788,7 @@ public without sharing class CTSSyncService{
     public static void ProcessCreateTicketAPIResponse(String ctsCreateTicketResponse)
     {
         System.Debug('*** Entering Method ProcessCreateTicketAPIResponse ***');
+        System.Debug('Call Out Response: ' + ctsCreateTicketResponse);
     
         try
         {
@@ -1103,8 +1126,10 @@ public without sharing class CTSSyncService{
                 
                     retryAttempts = Integer.valueOf(asrMap.NumberOfRetryAttempts__c);
                     asrMap.Status__c = 'ERROR';
-                    asrMap.ErrorDescription__c = asrMap.ErrorDescription__c + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
+                    asrMap.ErrorDescription__c = String.isNotBlank(asrMap.ErrorDescription__c) ? asrMap.ErrorDescription__c : '' + ' Attempt #: ' + String.valueOf(retryAttempts) + ' ' + errorMsg;
                 }
+                
+                Update(asyncRequestMap.values());
             }
         }
         catch(Exception e){
@@ -1147,7 +1172,7 @@ public without sharing class CTSSyncService{
               WHERE Is_Active__c = true AND
                     External_System_Name__c = 'CTS' AND
                     Configuration_Label__c = :configLabel
-              LIMIT 1].Configuration_Value__c;
+              LIMIT 1].Configuration_
               
               return configValue;*/
               
