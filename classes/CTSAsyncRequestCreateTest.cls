@@ -8,13 +8,12 @@
 //@isTest(seeAllData=true)
 @isTest
 private class CTSAsyncRequestCreateTest
-{
+{   
     private static testMethod void createAsyncCase()
     {
         List<Id> caseIds = new List<Id>();
-        List<Account> dmlAccounts = new List<Account>();
-        Id acctId;
-        List<Case> dmlCases = new List<Case>();
+        
+        Id acctId;        
         Date todayDt = Date.Today();
         Date liveDate = todayDt.addDays(-10);
         Id IMSRepId = [SELECT Id FROM User WHERE Profile.Name = 'System Administrator' AND IsActive = true LIMIT 1].Id;
@@ -29,41 +28,27 @@ private class CTSAsyncRequestCreateTest
         acct.Email__c = 'fake@faketest.com';
         acct.Initial_Live_Date__c = liveDate;
         acct.Live_Date__c = liveDate;
-        dmlAccounts.add(acct);
         
-        if(dmlAccounts.size() > 0){
+        insert acct;
+       
         
-            insert dmlAccounts;
-            
-            for(Account a : dmlAccounts){
-                
-                acctId = a.Id;
-            }
-        }
-        
-        System.Debug('Account from (Account): ' + acct.Name);
+        System.Debug('Account Id: ' + acct.Id);
         
         Case caseData = new Case();
         caseData.RecordTypeId = caseRecordTypeId;
-        caseData.AccountId = acctId;
+        caseData.AccountId = acct.Id;
         caseData.Reason = 'CS Touch Plan';
         caseData.Origin = 'Touch Plan 1';
         caseData.OwnerId = IMSRepId;
         caseData.Status = 'New';
         caseData.Priority = 'Major';
         caseData.Subject = 'Lead Stream TP 1';
-        dmlCases.add(caseData);
+        insert caseData;
         
         System.Debug('Account from (Case): ' + caseData.Account.Name);
         
-        if(dmlCases.size() > 0){
-            insert dmlCases;
-            
-            for(Case c : dmlCases){
-                
-                caseIds.add(c.Id);
-            }
-        }
+        caseIds = new List<id> { caseData.Id};
+        System.debug('Case Ids:' + caseIds);
         
         // start test
         Test.StartTest();
