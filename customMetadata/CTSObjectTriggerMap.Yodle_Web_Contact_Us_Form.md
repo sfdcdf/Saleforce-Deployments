@@ -28,7 +28,7 @@
     </values>
     <values>
         <field>CaseReason__c</field>
-        <value xsi:type="xsd:string">Other</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>Description__c</field>

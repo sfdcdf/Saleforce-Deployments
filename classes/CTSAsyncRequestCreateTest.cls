@@ -5,10 +5,10 @@
   Last Modified Date .: 28-Jan-2019
   Description ........: Test Class for CTSAsyncRequestCreate
 *****************************************************************************/
-@isTest(seeAllData=true)
+//@isTest(seeAllData=true)
+@isTest
 private class CTSAsyncRequestCreateTest
 {
-    
     private static testMethod void createAsyncCase()
     {
         List<Id> caseIds = new List<Id>();
