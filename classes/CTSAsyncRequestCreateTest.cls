@@ -9,7 +9,8 @@
 @isTest
 private class CTSAsyncRequestCreateTest
 {   
-    private static testMethod void createAsyncCase()
+    @isTest
+    private static void createAsyncCase()
     {
         List<Id> caseIds = new List<Id>();
         
