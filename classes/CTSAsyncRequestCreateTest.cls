@@ -22,13 +22,20 @@ private class CTSAsyncRequestCreateTest
         Id caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Outbound Call').getRecordTypeId();
         
         Account acct = new Account();
-        acct.Name = 'Test Class Account 1';
+        /*acct.Name = 'Test Class Account 1';
         acct.Product_Type__c = 'LBW';
         acct.Secondary_Segments__c = 'Lawyer';
         acct.Status__c = 'LIVE';
         acct.Email__c = 'fake@faketest.com';
         acct.Initial_Live_Date__c = liveDate;
-        acct.Live_Date__c = liveDate;
+        acct.Live_Date__c = liveDate;*/
+        
+          
+        acct.Name = 'Testing CTS API integration';
+        acct.Client_First_Name__c = 'Test';
+        acct.Client_Last_Name__c = 'CTS';
+        acct.Client_ID__c = '1234';        
+        
         
         insert acct;
        
