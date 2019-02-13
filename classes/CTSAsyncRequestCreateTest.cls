@@ -43,11 +43,14 @@ private class CTSAsyncRequestCreateTest
         caseData.Status = 'New';
         caseData.Priority = 'Major';
         caseData.Subject = 'Lead Stream TP 1';
+        
+        Test.StartTest();
         insert caseData;
+        Test.stopTest();
         
         System.Debug('Account from (Case): ' + caseData.Account.Name);
         
-        caseIds = new List<id> { caseData.Id};
+        /*caseIds = new List<id> { caseData.Id};
         System.debug('Case Ids:' + caseIds);
         
         // start test
@@ -56,7 +59,7 @@ private class CTSAsyncRequestCreateTest
         // execute Invocable method
         CTSAsyncRequestCreate.CreateNewAsyncRequest(caseIds);
         
-        Test.stopTest();
+        Test.stopTest(); */
     }
     
     private static testMethod void createAsyncOrganicCase()
