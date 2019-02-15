@@ -5,17 +5,13 @@
   Last Modified Date .: 28-Jan-2019
   Description ........: Test Class for CTSAsyncRequestCreate
 *****************************************************************************/
-//@isTest(seeAllData=true)
 @isTest
 private class CTSAsyncRequestCreateTest
-{
-    
-    private static testMethod void createAsyncCase()
+{       
+    private static testMethod  void createAsyncCase()
     {
-        List<Id> caseIds = new List<Id>();
-        List<Account> dmlAccounts = new List<Account>();
-        Id acctId;
-        List<Case> dmlCases = new List<Case>();
+                
+        Id acctId;        
         Date todayDt = Date.Today();
         Date liveDate = todayDt.addDays(-10);
         Id IMSRepId = [SELECT Id FROM User WHERE Profile.Name = 'System Administrator' AND IsActive = true LIMIT 1].Id;
@@ -24,230 +20,144 @@ private class CTSAsyncRequestCreateTest
         
         Account acct = new Account();
         acct.Name = 'Test Class Account 1';
-        acct.Product_Type__c = 'LBW';
+        //acct.Product_Type__c = 'LBW';
         acct.Secondary_Segments__c = 'Lawyer';
         acct.Status__c = 'LIVE';
         acct.Email__c = 'fake@faketest.com';
         acct.Initial_Live_Date__c = liveDate;
-        acct.Live_Date__c = liveDate;
-        dmlAccounts.add(acct);
-        
-        if(dmlAccounts.size() > 0){
-        
-            insert dmlAccounts;
-            
-            for(Account a : dmlAccounts){
-                
-                acctId = a.Id;
-            }
-        }
-        
-        System.Debug('Account from (Account): ' + acct.Name);
+        acct.Live_Date__c = liveDate;                                       
+        insert acct;                       
         
         Case caseData = new Case();
         caseData.RecordTypeId = caseRecordTypeId;
-        caseData.AccountId = acctId;
+        caseData.AccountId = acct.Id;
         caseData.Reason = 'CS Touch Plan';
         caseData.Origin = 'Touch Plan 1';
         caseData.OwnerId = IMSRepId;
         caseData.Status = 'New';
         caseData.Priority = 'Major';
         caseData.Subject = 'Lead Stream TP 1';
-        dmlCases.add(caseData);
+        insert caseData;
         
-        System.Debug('Account from (Case): ' + caseData.Account.Name);
-        
-        if(dmlCases.size() > 0){
-            insert dmlCases;
-            
-            for(Case c : dmlCases){
-                
-                caseIds.add(c.Id);
-            }
-        }
-        
-        // start test
         Test.StartTest();
-        
-        // execute Invocable method
-        CTSAsyncRequestCreate.CreateNewAsyncRequest(caseIds);
-        
+        CTSAsyncRequestCreate.CreateNewAsyncRequest(new List<Id> { caseData.Id });
         Test.stopTest();
+                
+        List<SFDCToCTSAsynchRequest__c> asyncRecords = [SELECT Id FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :caseData.Id];
+        System.Debug('Case Async Records: ' + asyncRecords);
+                
+        System.Assert(asyncRecords != null && asyncRecords.Size() == 1);
+                                                      
     }
     
     private static testMethod void createAsyncOrganicCase()
     {
-        List<Account> dmlAccounts = new List<Account>();
-        Id acctId;
-        List<Id> orgCaseIds = new List<Id>();
-        List<Organic_Analysis__c> dmlOrgCases = new List<Organic_Analysis__c>();
+        
+        Id acctId;                
         Date todayDt = Date.Today();
         Date liveDate = todayDt.addDays(-10);
         Id orgCaseRecordTypeId = Schema.SObjectType.Organic_Analysis__c.getRecordTypeInfosByName().get('PIN Action Needed').getRecordTypeId();
         
         Account acct = new Account();
         acct.Name = 'Test Class Account 1';
-        acct.Product_Type__c = 'LBW';
+        //acct.Product_Type__c = 'LBW';
         acct.Secondary_Segments__c = 'Lawyer';
         acct.Status__c = 'LIVE';
         acct.Email__c = 'fake@faketest.com';
         acct.Initial_Live_Date__c = liveDate;
         acct.Live_Date__c = liveDate;
-        dmlAccounts.add(acct);
-        
-        if(dmlAccounts.size() > 0){
-        
-            insert dmlAccounts;
-            
-            for(Account a : dmlAccounts){
-                
-                acctId = a.Id;
-            }
-        }
-        
-        System.Debug('Account from (Account): ' + acct.Name);
+        insert acct;                
         
         Organic_Analysis__c orgCaseData = new Organic_Analysis__c();
         orgCaseData.RecordTypeId = orgCaseRecordTypeId;
         orgCaseData.Account_Name__c = acctId;
         orgCaseData.Subject__c = 'PAN - Maps Contact - Comanage';
         orgCaseData.Status__c = 'New';
-        dmlOrgCases.add(orgCaseData);
-        
-        System.Debug('Account from (Organic Case): ' + orgCaseData.Account_Name__r.Name);
-        
-        if(dmlOrgCases.size() > 0){
-            insert dmlOrgCases;
-            
-            for(Organic_Analysis__c oc : dmlOrgCases){
-                
-                orgCaseIds.add(oc.Id);
-            }
-        }
-        
+        insert orgCaseData;
+          
         // start test
-        Test.StartTest();
-        
+        Test.StartTest();        
         // execute Invocable method
-        CTSAsyncRequestCreate.CreateNewAsyncRequest(orgCaseIds);
-        
+        CTSAsyncRequestCreate.CreateNewAsyncRequest(new List<Id> {orgCaseData.Id});        
         Test.stopTest();
+        
+        List<SFDCToCTSAsynchRequest__c> asyncRecords = [SELECT Id FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :orgCaseData.Id];
+        System.Debug('Organic Case Async Records: ' + asyncRecords);
+                
+        System.Assert(asyncRecords != null && asyncRecords.Size() == 1);
     }
     
     private static testMethod void createAsyncQualityCase()
-    {
-        List<Account> dmlAccounts = new List<Account>();
-        Id acctId;
-        List<Id> qualityCaseIds = new List<Id>();
-        List<Quality_Case__c> dmlQualityCases = new List<Quality_Case__c>();
+    {        
+        Id acctId;                
         Date todayDt = Date.Today();
         Date liveDate = todayDt.addDays(-10);
         Id qualityCaseRecordTypeId = Schema.SObjectType.Quality_Case__c.getRecordTypeInfosByName().get('Closing Script - Auto Launch').getRecordTypeId();
         
         Account acct = new Account();
         acct.Name = 'Test Class Account 1';
-        acct.Product_Type__c = 'LBW';
+        //acct.Product_Type__c = 'LBW';
         acct.Secondary_Segments__c = 'Lawyer';
         acct.Status__c = 'LIVE';
         acct.Email__c = 'fake@faketest.com';
         acct.Initial_Live_Date__c = liveDate;
         acct.Live_Date__c = liveDate;
-        dmlAccounts.add(acct);
-        
-        if(dmlAccounts.size() > 0){
-        
-            insert dmlAccounts;
-            
-            for(Account a : dmlAccounts){
-                
-                acctId = a.Id;
-            }
-        }
-        
-        System.Debug('Account from (Account): ' + acct.Name);
+        insert acct;              
         
         Quality_Case__c qualityCaseData = new Quality_Case__c();
         qualityCaseData.RecordTypeId = qualityCaseRecordTypeId;
         qualityCaseData.Account_Name__c = acctId;
         qualityCaseData.Subject__c = 'QA Closing Script TEST';
         qualityCaseData.Status__c = 'New';
-        dmlQualityCases.add(qualityCaseData);
-        
-        System.Debug('Account from (Quality Case): ' + qualityCaseData.Account_Name__r.Name);
-        
-        if(dmlQualityCases.size() > 0){
-            insert dmlQualityCases;
-            
-            for(Quality_Case__c qc : dmlQualityCases){
-                
-                qualityCaseIds.add(qc.Id);
-            }
-        }
-        
+        insert qualityCaseData;
+               
         // start test
         Test.StartTest();
         
         // execute Invocable method
-        CTSAsyncRequestCreate.CreateNewAsyncRequest(qualityCaseIds);
+        CTSAsyncRequestCreate.CreateNewAsyncRequest(new List<Id> {qualityCaseData.Id});
         
         Test.stopTest();
+        
+        List<SFDCToCTSAsynchRequest__c> asyncRecords = [SELECT Id FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :qualityCaseData.Id];
+        System.Debug('Quality Case Async Records: ' + asyncRecords);
+                
+        System.Assert(asyncRecords != null && asyncRecords.Size() == 1);
     }
     
     private static testMethod void createAsyncCustomerSurvey()
-    {
-        List<Account> dmlAccounts = new List<Account>();
-        Id acctId;
-        List<Id> custSurveyIds = new List<Id>();
-        List<Customer_Surveys__c> dmlCustSurveys = new List<Customer_Surveys__c>();
+    {                     
         Date todayDt = Date.Today();
         Date liveDate = todayDt.addDays(-10);
-        Id custSurveyRecordTypeId = Schema.SObjectType.Customer_Surveys__c.getRecordTypeInfosByName().get('NPS Survey LBW').getRecordTypeId();
+        Id custSurveyRecordTypeId = Schema.SObjectType.Customer_Surveys__c.getRecordTypeInfosByName().get('Exit Survey').getRecordTypeId();
         
         Account acct = new Account();
         acct.Name = 'Test Class Account 1';
-        acct.Product_Type__c = 'LBW';
+        //acct.Product_Type__c = 'LBW';
         acct.Secondary_Segments__c = 'Lawyer';
         acct.Status__c = 'LIVE';
         acct.Email__c = 'fake@faketest.com';
         acct.Initial_Live_Date__c = liveDate;
         acct.Live_Date__c = liveDate;
-        dmlAccounts.add(acct);
-        
-        if(dmlAccounts.size() > 0){
-        
-            insert dmlAccounts;
-            
-            for(Account a : dmlAccounts){
-                
-                acctId = a.Id;
-            }
-        }
-        
-        System.Debug('Account from (Account): ' + acct.Name);
+        insert acct;    
         
         Customer_Surveys__c custSurveyData = new Customer_Surveys__c();
         custSurveyData.RecordTypeId = custSurveyRecordTypeId;
-        custSurveyData.Account__c = acctId;
+        custSurveyData.Account__c = acct.Id;
         custSurveyData.Status__c = 'New';
-        dmlCustSurveys.add(custSurveyData);
-        
-        System.Debug('Account from (Customer Survey): ' + custSurveyData.Account__r.Name);
-        
-        if(dmlCustSurveys.size() > 0){
-            insert dmlCustSurveys;
-            
-            for(Customer_Surveys__c cs : dmlCustSurveys){
-                
-                custSurveyIds.add(cs.Id);
-            }
-        }
-        
+        insert custSurveyData;
+                           
         // start test
         Test.StartTest();
         
         // execute Invocable method
-        CTSAsyncRequestCreate.CreateNewAsyncRequest(custSurveyIds);
+        CTSAsyncRequestCreate.CreateNewAsyncRequest(new List<Id> {custSurveyData.Id});
         
         Test.stopTest();
+        
+        List<SFDCToCTSAsynchRequest__c> asyncRecords = [SELECT Id FROM SFDCToCTSAsynchRequest__c WHERE ObjectId__c = :custSurveyData.Id];
+        System.Debug('Customer Survey Async Records: ' + asyncRecords);
+                
+        System.Assert(asyncRecords != null && asyncRecords.Size() == 1);
     }
 }
