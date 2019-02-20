@@ -68,22 +68,6 @@
             <template>Support/SUPPORTNewassignmentnotificationSAMPLE</template>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>YBN_estimates</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 OR 2</booleanFilter>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>Budget Estimate for New Relationship</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>PPL Investigation</value>
-            </criteriaItems>
-            <template>National_Templates/YBN_Estimates_Needed</template>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>WebDev</assignedTo>
             <assignedToType>Queue</assignedToType>
             <booleanFilter>1 OR 2</booleanFilter>
@@ -735,25 +719,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>jennifer.hendrickson@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>YBN Master</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Relationship Issue (General)</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Status</field>
-                <operation>equals</operation>
-                <value>New</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>WebDev</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
@@ -858,94 +823,12 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 OR 2 OR 3</booleanFilter>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>Budget estimate for existing IL account</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>Budget estimate for new IL account</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>Budget Estimate for Existing Relationship</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>YBN_PES_Team</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <booleanFilter>(1 OR 3) AND 2</booleanFilter>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Launch QA Document</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.IsClosed</field>
-                <operation>equals</operation>
-                <value>False</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>Yodle Live Bulk Update,Yodle Live Bulk Setup,YBN - Misc. Projects,YBN - Onboarding,YBN - QA,YBN - Reporting,YBN - Website Updates</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>YBN_SEO_Strategy</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Case.Reason_Detail__c</field>
                 <operation>equals</operation>
                 <value>Pre-launch Custom Content Creation,Zoom Rank Custom Reporting,SEO Keyword Strategy,Organic Site Audit Request</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>contains</operation>
-                <value>Organic Consultation,Organic Operations Request,Organic Audit Request,Custom SEO Keywords</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>YBN Master</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>VP_Approval_Queue</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Margin Change Request</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>VP_Approval_Queue</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Credit Request,Refund Request</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason_Detail__c</field>
-                <operation>equals</operation>
-                <value>$501-$1500,$1500+</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Credit_Refund_Reason__c</field>
-                <operation>notEqual</operation>
-                <value>Net Zero Refund: Payment mapping issue,Net Zero Refund: Wrong payment option billed,Net Zero Refund: Incorrectly billed upon CO acceptance,Credit: Sales Promotion</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -989,21 +872,6 @@
                 <operation>equals</operation>
                 <value>Email Marketing Client Qualification</value>
             </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>YBN_Reporting</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Reporting</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>YBN Master</value>
-            </criteriaItems>
-            <template>Support/SUPPORTNewassignmentnotificationSAMPLE</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>leadstreamsupport@web.com</assignedTo>
