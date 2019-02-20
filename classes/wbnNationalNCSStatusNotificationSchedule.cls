@@ -28,7 +28,7 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         String fromDisplayName = 'Salesforce Notifications';
         String subjectLine = '';
         String sfdcURL = System.Url.getSalesforceBaseURL().toExternalForm() + '/';
-        String cecilyBEmail = 'cbolton@yodle.com';
+        //String cecilyBEmail = 'cbolton@yodle.com';
         OrgWideEmailAddress[] owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'sfdc@yodle.com'];
         //Id emailTemplateId = [SELECT Id FROM EmailTemplate WHERE DeveloperName = 'WBN_NCS_Status_Has_Not_Changed' LIMIT 1].Id;
         
@@ -65,19 +65,6 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
         
             if(caseIds.size() > 0){
             
-                // Clear Lists before populating if necessary
-                toAddressSet.clear(); // clear Set
-                if(toAddress.size() > 0){
-                
-                    // clear recipient list
-                    toAddress.clear();
-                }
-                if(notificationsLst.size() > 0){
-                
-                    // clear notifications list
-                    notificationsLst.clear();
-                }
-            
                 for(Case c :
                     [SELECT Id,
                             CreatedDate, 
@@ -100,9 +87,9 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                             Sales_Person__r.Name
                        FROM Case
                       WHERE Id IN :caseIds]){
-                          
+                    
                     // build list of email addresses to send to; first add to set to ensure unique values
-                    toAddressSet.add(cecilyBEmail); // Cecily Bolton
+                    //toAddressSet.add(cecilyBEmail); // Cecily Bolton
                     
                     if(!String.isBlank(c.Account.IMS_Rep__r.Email)){
                         toAddressSet.add(c.Account.IMS_Rep__r.Email);
@@ -154,6 +141,10 @@ global class wbnNationalNCSStatusNotificationSchedule Implements Schedulable {
                         
                         // add message to notification list
                         notificationsLst.add(message);
+                        
+                        // clear recipient list
+                        toAddressSet.clear(); // clear Set
+                        toAddress.clear(); // clear list
                     }
                 }
                 
