@@ -47,12 +47,14 @@ public class CTSAsyncRequestCreate
                 
                 System.Debug('**CTS** Object Name: ' + objectName);
                 
-                for(Id objId : objectIds){
-                
+                //ESB Proxy not compatible with multi requests in one payload, have to send one by one
+                //Can't be more than 10 records in batch due to Email invocation upper limit
+                /*for(Id objId : objectIds){                
                     if(!String.IsBlank(objectName) && !Test.isRunningTest()){
-                        CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objId);
+                        CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, new List<Id> {objId});
                     }
-                }
+                }*/
+                CTSSyncService.CreateSFDCToCTSAsynchRequest(objectName, objectIds);
             }
         }
         catch(Exception e)
