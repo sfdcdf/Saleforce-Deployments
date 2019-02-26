@@ -13,6 +13,9 @@
         <locationY>200</locationY>
         <actionName>CTSAsyncRequestCreate</actionName>
         <actionType>apex</actionType>
+        <connector>
+            <targetReference>myDecision2</targetReference>
+        </connector>
         <inputParameters>
             <processMetadataValues>
                 <name>dataType</name>
@@ -145,7 +148,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
-            <conditionLogic>1 AND 2 AND 4 AND 5 AND 6 AND 7 AND 10 AND 11 AND 12 AND 13 AND (3 OR 8 OR 9)</conditionLogic>
+            <conditionLogic>1 AND 2 AND 4 AND 5 AND 6 AND 7 AND 10 AND 11 AND 12 AND 13 AND 14 AND (3 OR 8 OR 9)</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -553,6 +556,37 @@
                 <operator>NotEqualTo</operator>
                 <rightValue>
                     <stringValue>Circuit Breaker</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.RecordType.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>YBN Inbound Inquiry</stringValue>
                 </rightValue>
             </conditions>
             <connector>
