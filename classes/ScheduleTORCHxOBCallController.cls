@@ -192,9 +192,15 @@ public without sharing class ScheduleTORCHxOBCallController {
             dateTimeScheduleCount.put(record.CSC_Reschedule_Date_2__c.format(), startTimeAdded);
         }
 
+
+        system.debug('timeStringTimeMap: ' + timeStringTimeMap);
         for(Lighthouse_Worksheets__c record : [select Id, CSC_Date__c, CSC_Time__c from Lighthouse_Worksheets__c where RecordType.Name in ('CSC Worksheet - Dental', 'CSC Worksheet - Medical', 'AR Request Form', 'CSC Worksheet - Auto') and CSC_Date__c != null and CSC_Time__c != '' and CSC_Date__c >=: startDate and CSC_Date__c <=: endDate]){
             if(timeStringTimeMap.containsKey(record.CSC_Time__c)){
+            
+                
                 DateTime scheduleCallDateTime = DateTime.newInstanceGMT(record.CSC_Date__c, timeStringTimeMap.get(record.CSC_Time__c));
+                
+                system.debug('schedule call date time GMT: ' + scheduleCallDateTime);
 
                 if(record.CSC_Time__c.equalsIgnoreCase('7:00pm EST') && Timezone.getTimeZone('America/New_York').getOffset(Date.today())/3600000 == -5){
                     scheduleCallDateTime = scheduleCallDateTime.addDays(1);
@@ -207,10 +213,15 @@ public without sharing class ScheduleTORCHxOBCallController {
                 Integer startTimeAdded = dateTimeScheduleCount.get(scheduleCallDateTime.format()) + 1;
 
                 dateTimeScheduleCount.put(scheduleCallDateTime.format(), startTimeAdded);
+                
+                system.debug('scheduleCallDateTime: ' + scheduleCallDateTime);
+                system.debug('scheduleCallDateTime Local: ' + scheduleCallDateTime.format());
+                
+                system.debug('scheduleCallDateTime count: ' + startTimeAdded);
             }
         }
 
-        system.debug(dateTimeScheduleCount);
+        system.debug('dateTimeScheduleCount: ' + dateTimeScheduleCount);
     }
 
     public List<SelectOption> getOpenCases() {
