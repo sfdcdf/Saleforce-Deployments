@@ -106,6 +106,9 @@ public without sharing class ScheduleTORCHxOBCallController {
                 if(dateTimeNow.format('EEEE') == 'Monday'){
                     startTime = localBusinessHours.MondayStartTime.addMilliseconds(TimeZone.getTimeZone(UserInfo.getTimeZone().getID()).getOffset(DateTime.now()) - TimeZone.getTimeZone(localBusinessHours.TimeZoneSidKey).getOffset(DateTime.now()));
                     endTime = localBusinessHours.MondayEndTime.addMilliseconds(TimeZone.getTimeZone(UserInfo.getTimeZone().getID()).getOffset(DateTime.now()) - TimeZone.getTimeZone(localBusinessHours.TimeZoneSidKey).getOffset(DateTime.now()));
+                    system.debug('dateNow Monday:' + dateNow);
+                    system.debug('Start Time Monday: ' + startTime);
+                    system.debug('End Time Monday: ' + endTime);
                 }else if(dateTimeNow.format('EEEE') == 'Tuesday'){
                     startTime = localBusinessHours.TuesdayStartTime.addMilliseconds(TimeZone.getTimeZone(UserInfo.getTimeZone().getID()).getOffset(DateTime.now()) - TimeZone.getTimeZone(localBusinessHours.TimeZoneSidKey).getOffset(DateTime.now()));
                     endTime = localBusinessHours.TuesdayEndTime.addMilliseconds(TimeZone.getTimeZone(UserInfo.getTimeZone().getID()).getOffset(DateTime.now()) - TimeZone.getTimeZone(localBusinessHours.TimeZoneSidKey).getOffset(DateTime.now()));
@@ -136,7 +139,7 @@ public without sharing class ScheduleTORCHxOBCallController {
 
                     avDT.selectDateTimeId = avDT.startDateTime.format();
 
-                    avDT.availableDateTime = ((dateTimeScheduleCount.containsKey(avDT.startDateTime.format()) && torchxLimitMap.containsKey(avDT.convertedStartTimeForLimitMap) && dateTimeScheduleCount.get(avDT.startDateTime.format()) >= torchxLimitMap.get(avDT.convertedStartTimeForLimitMap)) || !torchxLimitMap.containsKey(avDT.convertedStartTimeForLimitMap) /*|| (dateTimeScheduleCount.containsKey(avDT.startDateTime.addMinutes(30).format()) && dateTimeScheduleCount.get(avDT.startDateTime.addMinutes(30).format()) >= torchxLimit.Limit__c)*/) ? false : true;
+                    avDT.availableDateTime = ((dateTimeScheduleCount.containsKey(avDT.startDateTime.format()) && torchxLimitMap.containsKey(avDT.convertedStartTimeForLimitMap) && dateTimeScheduleCount.get(avDT.startDateTime.format()) >= torchxLimitMap.get(avDT.convertedStartTimeForLimitMap)) || !torchxLimitMap.containsKey(avDT.convertedStartTimeForLimitMap)) ? false : true;
 
                     if(!BusinessHours.isWithin(localBusinessHours.Id, avDT.startDateTime)){
                         avDT.availableDateTime = false;
@@ -146,6 +149,9 @@ public without sharing class ScheduleTORCHxOBCallController {
                         avDT.availableDateTime = false;
                     }
 
+                    if(dateTimeNow.format('EEEE') == 'Monday'){
+                        system.debug('avDT: ' + avDT);
+                    }
                     businessHourDateTimeMap.get(dateNow).add(avDT);
 
                     selectTempIdToAvailableDateTimeMap.put(avDT.startDateTime.format(), avDT);
@@ -154,6 +160,8 @@ public without sharing class ScheduleTORCHxOBCallController {
                 }
             }
         }
+        
+        
     }
 
     private void currentScheduledOBCalls(){
@@ -198,8 +206,10 @@ public without sharing class ScheduleTORCHxOBCallController {
             if(timeStringTimeMap.containsKey(record.CSC_Time__c)){
             
                 
-                DateTime scheduleCallDateTime = DateTime.newInstanceGMT(record.CSC_Date__c, timeStringTimeMap.get(record.CSC_Time__c));
+                DateTime scheduleCallDateTime = DateTime.newInstanceGMT(record.CSC_Date__c, timeStringTimeMap.get(record.CSC_Time__c));                                                     
                 
+                system.debug('CSC_Date__c: ' + record.CSC_Date__c);
+                system.debug('CSC_Time__c: ' + record.CSC_Time__c);
                 system.debug('schedule call date time GMT: ' + scheduleCallDateTime);
 
                 if(record.CSC_Time__c.equalsIgnoreCase('7:00pm EST') && Timezone.getTimeZone('America/New_York').getOffset(Date.today())/3600000 == -5){
@@ -214,9 +224,8 @@ public without sharing class ScheduleTORCHxOBCallController {
 
                 dateTimeScheduleCount.put(scheduleCallDateTime.format(), startTimeAdded);
                 
-                system.debug('scheduleCallDateTime: ' + scheduleCallDateTime);
-                system.debug('scheduleCallDateTime Local: ' + scheduleCallDateTime.format());
                 
+                system.debug('scheduleCallDateTime Local: ' + scheduleCallDateTime.format());                
                 system.debug('scheduleCallDateTime count: ' + startTimeAdded);
             }
         }
