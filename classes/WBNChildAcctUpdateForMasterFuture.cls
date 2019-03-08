@@ -15,7 +15,7 @@ public class WBNChildAcctUpdateForMasterFuture
                         Bulk_Bing_AccountPL__c,
                         Bulk_Google_AccountPL__c
                    FROM Account
-                  WHERE Id IN :acctIds LIMIT 1]){
+                  WHERE Id IN :acctIds]){
                       
                 if(!String.IsBlank(a.Id)){
                     
@@ -42,27 +42,39 @@ public class WBNChildAcctUpdateForMasterFuture
                     childAcctsMap.put(a.Id, a);
                 }
             
-                // loop through Account Maps
-                for(Account pa : parentAcctsMap.values()){
+                if(childAcctsMap.size() > 0){
                 
+                    // loop through Account Maps
                     for(Account ca : childAcctsMap.values()){
                     
-                        System.Debug('*** Inside Parent/ Child Maps Loop');
-                    
-                        if(pa.Id == ca.ParentId){
-                            
+                        if(parentAcctsMap.get(ca.Id).Id == ca.ParentId){
+                        
                             // update child field values to match parent
-                            ca.Bulk_Bing_AccountPL__c = pa.Bulk_Bing_AccountPL__c;
-                            ca.Bulk_Google_AccountPL__c = pa.Bulk_Google_AccountPL__c;
-                            
+                            ca.Bulk_Bing_AccountPL__c = parentAcctsMap.get(ca.Id).Bulk_Bing_AccountPL__c;
+                            ca.Bulk_Google_AccountPL__c = parentAcctsMap.get(ca.Id).Bulk_Google_AccountPL__c;
+                                
                             dmlAccounts.add(ca);
                         }
+                    
+                        /** for(Account ca : childAcctsMap.values()){
+                        
+                            System.Debug('*** Inside Parent/ Child Maps Loop');
+                        
+                            if(pa.Id == ca.ParentId){
+                                
+                                // update child field values to match parent
+                                ca.Bulk_Bing_AccountPL__c = pa.Bulk_Bing_AccountPL__c;
+                                ca.Bulk_Google_AccountPL__c = pa.Bulk_Google_AccountPL__c;
+                                
+                                dmlAccounts.add(ca);
+                            }
+                        }**/
                     }
-                }
-                
-                // check for necessary updates and execute
-                if(dmlAccounts.size() > 0){
-                    update dmlAccounts;
+                    
+                    // check for necessary updates and execute
+                    if(dmlAccounts.size() > 0){
+                        update dmlAccounts;
+                    }
                 }
             }
         }
