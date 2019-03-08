@@ -87,6 +87,17 @@ public without sharing class ScheduleTORCHxOBCallController {
         }
     }
 
+    private Map<String, Time> getUTCTimeMap(Date scheduleDate){
+        Map<String, Time> utcMap;
+        if(Timezone.getTimeZone('America/New_York').getOffset(scheduleDate)/3600000 == -4){
+            utcMap = new Map<String, Time>{'8:00am EST' => Time.newInstance(13, 0, 0, 0),'9:00am EST' => Time.newInstance(13, 0, 0, 0), '10:00am EST' => Time.newInstance(14, 0, 0, 0), '11:00am EST' => Time.newInstance(15, 0, 0, 0), '12:00pm EST' => Time.newInstance(16, 0, 0, 0), '1:00pm EST' => Time.newInstance(17, 0, 0, 0), '2:00pm EST' => Time.newInstance(18, 0, 0, 0) ,'3:00pm EST' => Time.newInstance(19, 0, 0, 0) ,'4:00pm EST' => Time.newInstance(20, 0, 0, 0) ,'5:00pm EST' => Time.newInstance(21, 0, 0, 0) ,'6:00pm EST' => Time.newInstance(22, 0, 0, 0) ,'7:00pm EST' => Time.newInstance(23, 0, 0, 0)};
+        }else{
+            utcMap = new Map<String, Time>{'8:00am EST' => Time.newInstance(13, 0, 0, 0),'9:00am EST' => Time.newInstance(14, 0, 0, 0), '10:00am EST' => Time.newInstance(15, 0, 0, 0), '11:00am EST' => Time.newInstance(16, 0, 0, 0), '12:00pm EST' => Time.newInstance(17, 0, 0, 0), '1:00pm EST' => Time.newInstance(18, 0, 0, 0), '2:00pm EST' => Time.newInstance(19, 0, 0, 0) ,'3:00pm EST' => Time.newInstance(20, 0, 0, 0) ,'4:00pm EST' => Time.newInstance(21, 0, 0, 0) ,'5:00pm EST' => Time.newInstance(22, 0, 0, 0) ,'6:00pm EST' => Time.newInstance(23, 0, 0, 0) ,'7:00pm EST' => Time.newInstance(0, 0, 0, 0)};
+        }
+        
+        return utcMap;
+    }
+    
     private void populateBusinessHoursMap(){
         //Set<String> weekendString = new Set<String>{'Saturday', 'Sunday'};
         selectTempIdToAvailableDateTimeMap.clear();
@@ -194,7 +205,9 @@ public without sharing class ScheduleTORCHxOBCallController {
 
         for(Lighthouse_Worksheets__c record : [select Id, CSC_Date__c, CSC_Time__c from Lighthouse_Worksheets__c where RecordType.Name in ('CSC Worksheet - Dental', 'CSC Worksheet - Medical', 'AR Request Form', 'CSC Worksheet - Auto') and CSC_Date__c != null and CSC_Time__c != '' and CSC_Date__c >=: startDate and CSC_Date__c <=: endDate]){
             if(timeStringTimeMap.containsKey(record.CSC_Time__c)){
-                DateTime scheduleCallDateTime = DateTime.newInstanceGMT(record.CSC_Date__c, timeStringTimeMap.get(record.CSC_Time__c));
+                //DateTime scheduleCallDateTime = DateTime.newInstanceGMT(record.CSC_Date__c, timeStringTimeMap.get(record.CSC_Time__c));
+                Map<String, Time> utcTimeMap = getUTCTimeMap(record.CSC_Date__c);
+                DateTime scheduleCallDateTime = DateTime.newInstanceGMT(record.CSC_Date__c, utcTimeMap.get(record.CSC_Time__c));   
 
                 if(record.CSC_Time__c.equalsIgnoreCase('7:00pm EST') && Timezone.getTimeZone('America/New_York').getOffset(Date.today())/3600000 == -5){
                     scheduleCallDateTime = scheduleCallDateTime.addDays(1);
