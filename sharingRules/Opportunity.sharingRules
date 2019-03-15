@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"><sharingCriteriaRules>
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
         <fullName>WBN_Corp_Ops_SA_and_PrjMgmt_Managers</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Allow SA And Project manager Management to edit corp opportunities to assign roles</description>
@@ -11,7 +12,8 @@
             <operation>equals</operation>
             <value>YBN - Growth Opportunity,YBN - Initial Transaction,YBN - Renewal</value>
         </criteriaItems>
-    </sharingCriteriaRules><sharingOwnerRules>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
         <fullName>WBN_CS_Edit_Abilities</fullName>
         <accessLevel>Edit</accessLevel>
         <label>WBN CS Edit Abilities</label>
@@ -21,4 +23,17 @@
         <sharedFrom>
             <group>WBN_Sales_Teams</group>
         </sharedFrom>
-    </sharingOwnerRules></SharingRules>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>WBN_RW_to_Courtneys_team_opportunities</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Courtney has same role as her reps due to forecast hierarchy, but she needs to be able to view and edit her reps opportunities.</description>
+        <label>WBN R/W to Courtney's team opportunities</label>
+        <sharedTo>
+            <group>YBN_Courtney_Blackburn</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>Sales_Account_Director_D</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

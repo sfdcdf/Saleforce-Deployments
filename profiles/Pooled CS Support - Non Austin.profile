@@ -31532,6 +31532,11 @@
         <field>SFDCToCTSAsynchRequest__c.Object_Route_MDT_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Campaign_Name_Primary_Campaign_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments>
