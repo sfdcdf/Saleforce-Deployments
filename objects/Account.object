@@ -13607,6 +13607,19 @@ or(
         </filters>
         <label>submit</label>
     </listViews>
+    <listViews>
+        <fullName>Lighthouse_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse</value>
+        </filters>
+        <label>Lighthouse Accounts</label>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
