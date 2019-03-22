@@ -81,6 +81,16 @@
         <label>Do Not Call Status Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Probability_Edit_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to allow users/ profiles the ability to edit the Probability field on the Opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to allow users/ profiles the ability to edit the Probability field on the Opportunity</inlineHelpText>
+        <label>Opportunity Probability Edit Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
     <listViews>
         <fullName>All_Details</fullName>
@@ -100,5 +110,15 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Detailed_All</fullName>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>Opportunity_Probability_Edit_Bypass__c</columns>
+        <columns>Do_Not_Call_Status_Bypass__c</columns>
+        <columns>Permission_Summary__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Detailed - All</label>
     </listViews>
 </CustomObject>
