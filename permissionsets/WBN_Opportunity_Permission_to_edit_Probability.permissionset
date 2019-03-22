@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission to edit opportunity probability field. Requested for Corporate. Used by most users with National RM Profile.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>WBN Opportunity - Permission to edit Probability (%)</label>
+    <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Probability</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
