@@ -16241,20 +16241,6 @@ Used by YBN.</description>
         <label>Legacy Web</label>
     </listViews>
     <listViews>
-        <fullName>MyOpportunities</fullName>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Scheduled_Call__c</columns>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>Total_Amount__c</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Mine</filterScope>
-        <label>My Opportunities</label>
-    </listViews>
-    <listViews>
         <fullName>My_Opportunities_LH_Upsell</fullName>
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
@@ -16304,6 +16290,20 @@ Used by YBN.</description>
             <value>1</value>
         </filters>
         <label>Won</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Scheduled_Call__c</columns>
+        <columns>Total_of_Activities__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
     </listViews>
     <recordTypes>
         <fullName>Affiliate_Initial_Transaction</fullName>
@@ -79242,6 +79242,23 @@ NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery"))
 )</errorConditionFormula>
         <errorDisplayField>Stage_Detail__c</errorDisplayField>
         <errorMessage>Solution stage must start with "SA Client Discovery".</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Probabilty_override_rule</fullName>
+        <active>true</active>
+        <description>Probability field can only be overridden for Corporate opportunities and by National RM profile users (custom settings used)</description>
+        <errorConditionFormula>AND(
+ $Setup.Validation_Rule_Permissions__c.Opportunity_Probability_Edit_Bypass__c = True,
+
+NOT(OR(
+RecordType.Id = "012600000009YRE",
+RecordType.Id = "012600000009YRJ",
+RecordType.Id = "012600000009YRO")),
+
+ISCHANGED( Probability ) 
+
+)</errorConditionFormula>
+        <errorMessage>Probability can only be changed for Corporate Opportunities</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
