@@ -97,10 +97,6 @@
                 <behavior>Readonly</behavior>
                 <field>Primary_Multi_Location_Owner_For_TP__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>SFDC_to_CTS_Sync_Enabled__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -158,15 +154,15 @@
                 <field>X1st_Touch_Attempt_Made_By__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Attempt_1_Method__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Attempt_Date_1__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Resolution_Attempt_Status_1__c</field>
             </layoutItems>
             <layoutItems>
@@ -231,6 +227,18 @@
                 <behavior>Edit</behavior>
                 <field>Time_To_Complete_Task_Minutes__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Time_To_Complete_Pre_call_prep_work__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Time_To_Complete_Real_time_Call_work__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Time_To_Complete_After_Call_work__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -240,6 +248,14 @@
         <editHeading>true</editHeading>
         <label>Topics Covered</label>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>General_Value_Statement_discussed__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CSD_Value_Statement_discussed__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Account_Updates_Changes__c</field>
