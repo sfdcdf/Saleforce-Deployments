@@ -91,6 +91,16 @@
         <label>Opportunity Probability Edit Bypass</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Live_required_for_TP_Cases_Bypas__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To be used in Case validation rule YBN_Acct_Live_Required</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To be used in Case validation rule YBN_Acct_Live_Required</inlineHelpText>
+        <label>Account Live required for TP Cases Bypas</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
     <listViews>
         <fullName>All_Details</fullName>
