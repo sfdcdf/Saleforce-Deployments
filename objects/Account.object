@@ -13631,6 +13631,99 @@ or(
         </filters>
         <label>Lighthouse Accounts</label>
     </listViews>
+    <listViews>
+        <fullName>Subba_WBN_TouchPoint_All_Accounts</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND ( 4 or 5)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Product_Type_Transactional__c</columns>
+        <columns>Individual_Location_Service_Level__c</columns>
+        <columns>Next_TP_Trigger_Date__c</columns>
+        <columns>Client_Type__c</columns>
+        <columns>Marketo_ID__c</columns>
+        <columns>Marketo_ID_For_Touchplan__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>YBN_Relationship__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Multi_Location_Owner_Primary_CID__c</columns>
+        <columns>Primary_Multi_Location_Owner_For_TP__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Next_TP_Trigger_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <filters>
+            <field>Multi_Location_Owner_Primary_CID__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Primary_Multi_Location_Owner_For_TP__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Subba WBN TouchPoint All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Subba_WBN_TouchPoint_Triggered_Accounts</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND ( 5 or 6)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Product_Type_Transactional__c</columns>
+        <columns>Individual_Location_Service_Level__c</columns>
+        <columns>Next_TP_Trigger_Date__c</columns>
+        <columns>Client_Type__c</columns>
+        <columns>Marketo_ID__c</columns>
+        <columns>Marketo_ID_For_Touchplan__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>YBN_Relationship__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Multi_Location_Owner_Primary_CID__c</columns>
+        <columns>Primary_Multi_Location_Owner_For_TP__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Next_TP_Trigger_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>YBN_Relationship__c</field>
+            <operation>equals</operation>
+            <value>Hand &amp; Stone - Master,Senior Helpers,Maaco</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <filters>
+            <field>Multi_Location_Owner_Primary_CID__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Primary_Multi_Location_Owner_For_TP__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Subba WBN TouchPoint Triggered Accounts</label>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
