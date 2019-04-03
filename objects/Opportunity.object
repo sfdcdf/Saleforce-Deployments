@@ -10921,184 +10921,6 @@ If(Owner.UserRoleId ="00E60000001J40U","Brian Heppner","")))</formula>
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Stage_Detail__c</fullName>
-        <description>This field is dependent on the Stage field.</description>
-        <externalId>false</externalId>
-        <label>Stage Detail</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>StageName</controllingField>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Internal Download</fullName>
-                    <default>false</default>
-                    <label>Internal Download</label>
-                </value>
-                <value>
-                    <fullName>SA Client Discovery</fullName>
-                    <default>false</default>
-                    <label>SA Client Discovery</label>
-                </value>
-                <value>
-                    <fullName>SA Solution Created</fullName>
-                    <default>false</default>
-                    <label>SA Solution Created</label>
-                </value>
-                <value>
-                    <fullName>Draft</fullName>
-                    <default>false</default>
-                    <label>Draft</label>
-                </value>
-                <value>
-                    <fullName>Proposal Submitted for Approval</fullName>
-                    <default>false</default>
-                    <label>Proposal Submitted for Approval</label>
-                </value>
-                <value>
-                    <fullName>Proposal Approved By Manager</fullName>
-                    <default>false</default>
-                    <label>Proposal Approved By Manager</label>
-                </value>
-                <value>
-                    <fullName>Proposal Rejected By Manager</fullName>
-                    <default>false</default>
-                    <label>Proposal Rejected By Manager</label>
-                </value>
-                <value>
-                    <fullName>Proposal Approved By Committee</fullName>
-                    <default>false</default>
-                    <label>Proposal Approved By Committee</label>
-                </value>
-                <value>
-                    <fullName>Proposal Rejected By Committee</fullName>
-                    <default>false</default>
-                    <label>Proposal Rejected By Committee</label>
-                </value>
-                <value>
-                    <fullName>Proposal Approved By Executive</fullName>
-                    <default>false</default>
-                    <label>Proposal Approved By Executive</label>
-                </value>
-                <value>
-                    <fullName>Proposal Rejected By Executive</fullName>
-                    <default>false</default>
-                    <label>Proposal Rejected By Executive</label>
-                </value>
-                <value>
-                    <fullName>Proposal Sent to Client</fullName>
-                    <default>false</default>
-                    <label>Proposal Sent to Client</label>
-                </value>
-                <value>
-                    <fullName>Proposal Approved By Client</fullName>
-                    <default>false</default>
-                    <label>Proposal Approved By Client</label>
-                </value>
-                <value>
-                    <fullName>Proposal Rejected By Client</fullName>
-                    <default>false</default>
-                    <label>Proposal Rejected By Client</label>
-                </value>
-                <value>
-                    <fullName>Contract Submitted for Approval</fullName>
-                    <default>false</default>
-                    <label>Contract Submitted for Approval</label>
-                </value>
-                <value>
-                    <fullName>Contract Approved By Manager</fullName>
-                    <default>false</default>
-                    <label>Contract Approved By Manager</label>
-                </value>
-                <value>
-                    <fullName>Contract Rejected By Manager</fullName>
-                    <default>false</default>
-                    <label>Contract Rejected By Manager</label>
-                </value>
-                <value>
-                    <fullName>Contract Approved By Committee</fullName>
-                    <default>false</default>
-                    <label>Contract Approved By Committee</label>
-                </value>
-                <value>
-                    <fullName>Contract Rejected By Committee</fullName>
-                    <default>false</default>
-                    <label>Contract Rejected By Committee</label>
-                </value>
-                <value>
-                    <fullName>Contract Approved By Executive</fullName>
-                    <default>false</default>
-                    <label>Contract Approved By Executive</label>
-                </value>
-                <value>
-                    <fullName>Contract Rejected By Executive</fullName>
-                    <default>false</default>
-                    <label>Contract Rejected By Executive</label>
-                </value>
-                <value>
-                    <fullName>Contract Sent to Client</fullName>
-                    <default>false</default>
-                    <label>Contract Sent to Client</label>
-                </value>
-                <value>
-                    <fullName>Contract Approved By Client</fullName>
-                    <default>false</default>
-                    <label>Contract Approved By Client</label>
-                </value>
-                <value>
-                    <fullName>Contract Rejected By Client</fullName>
-                    <default>false</default>
-                    <label>Contract Rejected By Client</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>Internal Download</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>SA Client Discovery</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>SA Solution Created</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>Proposal Sent to Client</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>Proposal Approved By Client</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>Proposal Rejected By Client</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Contract</controllingFieldValue>
-                <valueName>Draft</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Contract</controllingFieldValue>
-                <valueName>Contract Sent to Client</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Contract</controllingFieldValue>
-                <valueName>Contract Approved By Client</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Contract</controllingFieldValue>
-                <valueName>Contract Rejected By Client</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Stage_Lost__c</fullName>
         <description>WBN. Last stage before an opportunity was set to closed lost.</description>
         <externalId>false</externalId>
@@ -15733,6 +15555,202 @@ Used by YBN.</description>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage_Detail__c</fullName>
+        <description>This field is dependent on the Stage field.</description>
+        <externalId>false</externalId>
+        <label>Stage Detail</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>StageName</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal Download</fullName>
+                    <default>false</default>
+                    <label>Internal Download</label>
+                </value>
+                <value>
+                    <fullName>SA Solution Created</fullName>
+                    <default>false</default>
+                    <label>SA Solution Created</label>
+                </value>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Proposal Submitted for Approval</fullName>
+                    <default>false</default>
+                    <label>Proposal Submitted for Approval</label>
+                </value>
+                <value>
+                    <fullName>Proposal Approved By Manager</fullName>
+                    <default>false</default>
+                    <label>Proposal Approved By Manager</label>
+                </value>
+                <value>
+                    <fullName>Proposal Rejected By Manager</fullName>
+                    <default>false</default>
+                    <label>Proposal Rejected By Manager</label>
+                </value>
+                <value>
+                    <fullName>Proposal Approved By Committee</fullName>
+                    <default>false</default>
+                    <label>Proposal Approved By Committee</label>
+                </value>
+                <value>
+                    <fullName>Proposal Rejected By Committee</fullName>
+                    <default>false</default>
+                    <label>Proposal Rejected By Committee</label>
+                </value>
+                <value>
+                    <fullName>Proposal Approved By Executive</fullName>
+                    <default>false</default>
+                    <label>Proposal Approved By Executive</label>
+                </value>
+                <value>
+                    <fullName>Proposal Rejected By Executive</fullName>
+                    <default>false</default>
+                    <label>Proposal Rejected By Executive</label>
+                </value>
+                <value>
+                    <fullName>Contract Submitted for Approval</fullName>
+                    <default>false</default>
+                    <label>Contract Submitted for Approval</label>
+                </value>
+                <value>
+                    <fullName>Contract Approved By Manager</fullName>
+                    <default>false</default>
+                    <label>Contract Approved By Manager</label>
+                </value>
+                <value>
+                    <fullName>Contract Rejected By Manager</fullName>
+                    <default>false</default>
+                    <label>Contract Rejected By Manager</label>
+                </value>
+                <value>
+                    <fullName>Contract Approved By Committee</fullName>
+                    <default>false</default>
+                    <label>Contract Approved By Committee</label>
+                </value>
+                <value>
+                    <fullName>Contract Rejected By Committee</fullName>
+                    <default>false</default>
+                    <label>Contract Rejected By Committee</label>
+                </value>
+                <value>
+                    <fullName>Contract Approved By Executive</fullName>
+                    <default>false</default>
+                    <label>Contract Approved By Executive</label>
+                </value>
+                <value>
+                    <fullName>Contract Rejected By Executive</fullName>
+                    <default>false</default>
+                    <label>Contract Rejected By Executive</label>
+                </value>
+                <value>
+                    <fullName>Contract Sent to Client</fullName>
+                    <default>false</default>
+                    <label>Contract Sent to Client</label>
+                </value>
+                <value>
+                    <fullName>Contract Approved By Client</fullName>
+                    <default>false</default>
+                    <label>Contract Approved By Client</label>
+                </value>
+                <value>
+                    <fullName>Contract Rejected By Client</fullName>
+                    <default>false</default>
+                    <label>Contract Rejected By Client</label>
+                </value>
+                <value>
+                    <fullName>SA Client Discovery</fullName>
+                    <default>false</default>
+                    <label>SA Client Discovery</label>
+                </value>
+                <value>
+                    <fullName>Deal Approval Requested</fullName>
+                    <default>false</default>
+                    <label>Deal Approval Requested</label>
+                </value>
+                <value>
+                    <fullName>Deal Approved</fullName>
+                    <default>false</default>
+                    <label>Deal Approved</label>
+                </value>
+                <value>
+                    <fullName>Proposal Sent to Client</fullName>
+                    <default>false</default>
+                    <label>Proposal Sent to Client</label>
+                </value>
+                <value>
+                    <fullName>Proposal Approved By Client</fullName>
+                    <default>false</default>
+                    <label>Proposal Approved By Client</label>
+                </value>
+                <value>
+                    <fullName>Proposal Rejected by Client</fullName>
+                    <default>false</default>
+                    <label>Proposal Rejected By Client</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>Internal Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>SA Solution Created</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>SA Client Discovery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>Deal Approval Requested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>Deal Approved</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>Proposal Sent to Client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>Proposal Approved By Client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solution</controllingFieldValue>
+                <valueName>Proposal Rejected by Client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract</controllingFieldValue>
+                <valueName>Draft</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract</controllingFieldValue>
+                <valueName>Contract Sent to Client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract</controllingFieldValue>
+                <valueName>Contract Approved By Client</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract</controllingFieldValue>
+                <valueName>Contract Rejected By Client</valueName>
+            </valueSettings>
+        </valueSet>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -61414,6 +61432,14 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Deal Approval Requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deal Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Draft</fullName>
                 <default>false</default>
             </values>
@@ -61434,10 +61460,6 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Proposal Rejected By Client</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Proposal Rejected By Committee</fullName>
                 <default>false</default>
             </values>
@@ -61447,6 +61469,10 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Rejected By Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Rejected by Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -69028,6 +69054,14 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Deal Approval Requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deal Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Draft</fullName>
                 <default>false</default>
             </values>
@@ -69048,10 +69082,6 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Proposal Rejected By Client</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Proposal Rejected By Committee</fullName>
                 <default>false</default>
             </values>
@@ -69061,6 +69091,10 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Rejected By Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Rejected by Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -72900,6 +72934,14 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Deal Approval Requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deal Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Draft</fullName>
                 <default>false</default>
             </values>
@@ -72920,10 +72962,6 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Proposal Rejected By Client</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Proposal Rejected By Committee</fullName>
                 <default>false</default>
             </values>
@@ -72933,6 +72971,10 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Rejected By Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Rejected by Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -76737,10 +76779,6 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Proposal Approved By Client</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Proposal Approved By Committee</fullName>
                 <default>false</default>
             </values>
@@ -76750,10 +76788,6 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Approved By Manager</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Proposal Rejected By Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -76769,15 +76803,7 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Proposal Sent to Client</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Proposal Submitted for Approval</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SA Client Discovery</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -79216,6 +79242,73 @@ ISCHANGED( Probability )
 
 )</errorConditionFormula>
         <errorMessage>Probability can only be changed for Corporate Opportunities</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Approved_to_Proposal_Sent_to_Client</fullName>
+        <active>true</active>
+        <description>Deal Approved to Proposal Sent to Client</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL((Stage_Detail__c),"Proposal Sent to Client"), 
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>You can move Proposal sent to Client from Deal Approved only</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Deal_approval_to_approved</fullName>
+        <active>true</active>
+        <description>Moving Stage detail values one by one</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL((Stage_Detail__c),"Deal Approved"), 
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>You can move Deal Approval requested to Deal Approved only</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Proposal_approved_Or_rejected</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( OR 
+(ISPICKVAL((Stage_Detail__c),"Proposal Approved By Client"), ISPICKVAL((Stage_Detail__c),"Proposal Rejected By Client")), 
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>Stage detail must be moved to 'Proposal Approved By Client' OR 'Proposal Rejected By Client' from 'Proposal Sent to Client'</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Reverse_Order_not_possible</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL((Stage_Detail__c),"SA Client Discovery"), 
+OR(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Rejected By Client"),ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Approved By Client")))</errorConditionFormula>
+        <errorMessage>Reverse Order not posible</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SAClientDiscovery</fullName>
+        <active>true</active>
+        <description>Solution stage must start with "SA Client Discovery</description>
+        <errorConditionFormula>OR ( 
+
+AND( 
+ISNEW(), 
+ISPICKVAL(StageName, "Solution"), 
+NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery")) 
+), 
+
+
+
+AND( 
+ISCHANGED (StageName) , 
+TEXT(PRIORVALUE(StageName)) &lt;&gt; "Solution", 
+TEXT(StageName) = "Solution", 
+TEXT(Stage_Detail__c) &lt;&gt; "SA Client Discovery" 
+) 
+
+)</errorConditionFormula>
+        <errorMessage>Solution stage must start with "SA Client Discovery</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SAto_Deal</fullName>
+        <active>true</active>
+        <description>Moving Stage detail values one by one</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL((Stage_Detail__c),"Deal Approval Requested"), 
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"SA Client Discovery")),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>You can move SA client Discovery to Deal Approval requested Only</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
