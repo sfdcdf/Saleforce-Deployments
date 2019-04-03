@@ -4,7 +4,6 @@
     <customButtons>Schedule_Activity_Corporate</customButtons>
     <customButtons>Log_Prospecting_Activity</customButtons>
     <excludeButtons>Delete</excludeButtons>
-    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
@@ -496,6 +495,14 @@
         <fields>SplitAmount</fields>
         <fields>SplitNote</fields>
         <relatedList>RelatedOpportunitySplits</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CreatedDate</fields>
+        <fields>StepStatus</fields>
+        <fields>OriginalActor</fields>
+        <fields>Actor</fields>
+        <fields>Comments</fields>
+        <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

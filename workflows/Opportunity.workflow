@@ -1973,6 +1973,24 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StageDetail</fullName>
+        <field>Stage_Detail__c</field>
+        <literalValue>Deal Approved</literalValue>
+        <name>StageDetail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StageDetailupdate</fullName>
+        <field>Stage_Detail__c</field>
+        <literalValue>Deal Approved</literalValue>
+        <name>StageDetailupdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <rules>
         <fullName>Add Client Phone Number to Opportunity</fullName>
         <actions>

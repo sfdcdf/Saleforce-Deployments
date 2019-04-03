@@ -3,7 +3,6 @@
     <customButtons>Create_in_Yodle_Live</customButtons>
     <customButtons>Create_in_YL_Natl_2</customButtons>
     <excludeButtons>Delete</excludeButtons>
-    <excludeButtons>Submit</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
         <compactFeed>true</compactFeed>
@@ -311,6 +310,14 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Forecast_SnapShot__c.Opportunity_Record_Type__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CreatedDate</fields>
+        <fields>StepStatus</fields>
+        <fields>OriginalActor</fields>
+        <fields>Actor</fields>
+        <fields>Comments</fields>
+        <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
