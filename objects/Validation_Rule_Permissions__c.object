@@ -103,25 +103,6 @@
         <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
     <listViews>
-        <fullName>All_Details</fullName>
-        <columns>SETUP_OWNER_NAME</columns>
-        <columns>SETUP_TYPE</columns>
-        <columns>Lead_Stream_TP_1_Owner_Update_Bypass__c</columns>
-        <columns>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</columns>
-        <columns>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</columns>
-        <columns>Lead_Stream_TP_3_Scheduled_Call_Bypass__c</columns>
-        <columns>Lead_Stream_TP_Churn_Bypass__c</columns>
-        <columns>Lead_Stream_TP_Did_Not_Complete_Bypass__c</columns>
-        <columns>Lead_Stream_TP_From_DNC_Bypass__c</columns>
-        <columns>Do_Not_Call_Status_Bypass__c</columns>
-        <columns>Permission_Summary__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Details</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Detailed_All</fullName>
         <columns>SETUP_OWNER_NAME</columns>
         <columns>SETUP_TYPE</columns>
@@ -130,5 +111,25 @@
         <columns>Permission_Summary__c</columns>
         <filterScope>Everything</filterScope>
         <label>Detailed - All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Details</fullName>
+        <columns>SETUP_TYPE</columns>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>Lead_Stream_TP_1_Owner_Update_Bypass__c</columns>
+        <columns>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</columns>
+        <columns>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</columns>
+        <columns>Lead_Stream_TP_3_Scheduled_Call_Bypass__c</columns>
+        <columns>Lead_Stream_TP_Churn_Bypass__c</columns>
+        <columns>Lead_Stream_TP_Did_Not_Complete_Bypass__c</columns>
+        <columns>Lead_Stream_TP_From_DNC_Bypass__c</columns>
+        <columns>Do_Not_Call_Status_Bypass__c</columns>
+        <columns>Opportunity_Probability_Edit_Bypass__c</columns>
+        <columns>Permission_Summary__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Details</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
 </CustomObject>
