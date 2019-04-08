@@ -4615,12 +4615,6 @@ Null))))))</formula>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>PEV_Penetration_Strategy__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>How are we going to get Centermark into the account or build out Cenetermark and growth the relationship?</inlineHelpText>
@@ -11761,35 +11755,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
-        <fullName>TORCHx_Client_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>TORCHx Client Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Agent</fullName>
-                    <default>false</default>
-                    <label>Agent</label>
-                </value>
-                <value>
-                    <fullName>Broker</fullName>
-                    <default>false</default>
-                    <label>Broker</label>
-                </value>
-                <value>
-                    <fullName>Team</fullName>
-                    <default>false</default>
-                    <label>Team</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Time_Zone__c</fullName>
         <externalId>false</externalId>
         <label>Time Zone</label>
@@ -12967,6 +12932,61 @@ or(
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Migrate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Migrate</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Source ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TORCHx_Client_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>TORCHx Client Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agent</fullName>
+                    <default>false</default>
+                    <label>Agent</label>
+                </value>
+                <value>
+                    <fullName>Broker</fullName>
+                    <default>false</default>
+                    <label>Broker</label>
+                </value>
+                <value>
+                    <fullName>Team</fullName>
+                    <default>false</default>
+                    <label>Team</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
