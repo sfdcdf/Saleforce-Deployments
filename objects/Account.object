@@ -12777,6 +12777,20 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>

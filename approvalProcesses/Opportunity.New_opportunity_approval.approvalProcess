@@ -10,7 +10,7 @@
         <field>Owner</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <name>dlynch@web.com</name>
@@ -40,12 +40,12 @@
                 <name>sravani.mutnuru@web.com</name>
                 <type>user</type>
             </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+            <whenMultipleApprovers>Unanimous</whenMultipleApprovers>
         </assignedApprover>
         <label>Approval process</label>
         <name>Approval_process</name>
     </approvalStep>
-    <emailTemplate>CS_Ops_Object/Call_Answering_ChangeCompleted</emailTemplate>
+    <emailTemplate>unfiled$public/Opt_Approval_Process</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>

@@ -15562,7 +15562,7 @@ Used by YBN.</description>
         <externalId>false</externalId>
         <label>Stage Detail</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -15697,19 +15697,11 @@ Used by YBN.</description>
                     <label>Proposal Approved By Client</label>
                 </value>
                 <value>
-                    <fullName>Proposal Rejected by Client</fullName>
+                    <fullName>Proposal Rejected By Client</fullName>
                     <default>false</default>
                     <label>Proposal Rejected By Client</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>Internal Download</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>SA Solution Created</valueName>
-            </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Solution</controllingFieldValue>
                 <valueName>SA Client Discovery</valueName>
@@ -15732,7 +15724,7 @@ Used by YBN.</description>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Solution</controllingFieldValue>
-                <valueName>Proposal Rejected by Client</valueName>
+                <valueName>Proposal Rejected By Client</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Contract</controllingFieldValue>
@@ -61460,6 +61452,10 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Proposal Rejected By Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Proposal Rejected By Committee</fullName>
                 <default>false</default>
             </values>
@@ -61469,10 +61465,6 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Rejected By Manager</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Proposal Rejected by Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -69082,6 +69074,10 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Proposal Rejected By Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Proposal Rejected By Committee</fullName>
                 <default>false</default>
             </values>
@@ -69091,10 +69087,6 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Rejected By Manager</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Proposal Rejected by Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -72962,6 +72954,10 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Proposal Rejected By Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Proposal Rejected By Committee</fullName>
                 <default>false</default>
             </values>
@@ -72971,10 +72967,6 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Proposal Rejected By Manager</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Proposal Rejected by Client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -79249,7 +79241,7 @@ ISCHANGED( Probability )
         <description>Deal Approved to Proposal Sent to Client</description>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"Proposal Sent to Client"), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()),NOT( $Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c ))</errorConditionFormula>
         <errorMessage>You can move Proposal sent to Client from Deal Approved only</errorMessage>
     </validationRules>
     <validationRules>
@@ -79258,7 +79250,7 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()))</error
         <description>Moving Stage detail values one by one</description>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"Deal Approved"), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW()))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW()), NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c) )</errorConditionFormula>
         <errorMessage>You can move Deal Approval requested to Deal Approved only</errorMessage>
     </validationRules>
     <validationRules>
@@ -79266,7 +79258,7 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW(
         <active>true</active>
         <errorConditionFormula>AND( OR 
 (ISPICKVAL((Stage_Detail__c),"Proposal Approved By Client"), ISPICKVAL((Stage_Detail__c),"Proposal Rejected By Client")), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW()))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW()),NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c))</errorConditionFormula>
         <errorMessage>Stage detail must be moved to 'Proposal Approved By Client' OR 'Proposal Rejected By Client' from 'Proposal Sent to Client'</errorMessage>
     </validationRules>
     <validationRules>
@@ -79274,21 +79266,22 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW(
         <active>true</active>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"SA Client Discovery"), 
-OR(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Rejected By Client"),ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Approved By Client")))</errorConditionFormula>
+OR(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Rejected By Client"),ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Approved By Client")),NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c))</errorConditionFormula>
         <errorMessage>Reverse Order not posible</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>SAClientDiscovery</fullName>
         <active>true</active>
         <description>Solution stage must start with "SA Client Discovery</description>
-        <errorConditionFormula>OR ( 
+        <errorConditionFormula>AND( NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),
+
+OR ( 
 
 AND( 
 ISNEW(), 
 ISPICKVAL(StageName, "Solution"), 
 NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery")) 
-), 
-
+),
 
 
 AND( 
@@ -79298,7 +79291,7 @@ TEXT(StageName) = "Solution",
 TEXT(Stage_Detail__c) &lt;&gt; "SA Client Discovery" 
 ) 
 
-)</errorConditionFormula>
+))</errorConditionFormula>
         <errorMessage>Solution stage must start with "SA Client Discovery</errorMessage>
     </validationRules>
     <validationRules>
@@ -79307,7 +79300,7 @@ TEXT(Stage_Detail__c) &lt;&gt; "SA Client Discovery"
         <description>Moving Stage detail values one by one</description>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"Deal Approval Requested"), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"SA Client Discovery")),NOT(ISNEW()))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"SA Client Discovery")),NOT(ISNEW()), NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c))</errorConditionFormula>
         <errorMessage>You can move SA client Discovery to Deal Approval requested Only</errorMessage>
     </validationRules>
     <webLinks>
