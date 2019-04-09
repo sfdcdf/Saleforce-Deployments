@@ -2548,43 +2548,6 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>YBN - Assign Solutions Architect</fullName>
-        <actions>
-            <name>YBN_Email_Alert_to_Assign_SA</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Solution_Achitect_Requested</name>
-            <type>Task</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Opportunity.Solutions_Architect__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN - Initial Transaction,YBN - Growth Opportunity,YBN - Renewal</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.StageName</field>
-            <operation>equals</operation>
-            <value>Solution</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.No_SA_Needed__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.On_Hold_Status__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Rule alerting the SA manager that an opportunity has been created and they need to assign a Solutions Architect</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>YBN - Assign Strategic Project Manager %28SPM%29</fullName>
         <actions>
             <name>YBN_Opp_in_Exec_Review_Call_Stage_Assign_CSM</name>
@@ -4448,6 +4411,43 @@ CreatedBy.ProfileId ="00e60000000ibuQ",
             <value>upsell</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>YBN - Assign Solutions Architect</fullName>
+        <actions>
+            <name>YBN_Email_Alert_to_Assign_SA</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Solution_Achitect_Requested</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Solutions_Architect__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN - Initial Transaction,YBN - Growth Opportunity,YBN - Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Solution</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.No_SA_Needed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.On_Hold_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Rule alerting the SA manager that an opportunity has been created and they need to assign a Solutions Architect</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>
         <fullName>Closed_Won_Opportunity</fullName>
