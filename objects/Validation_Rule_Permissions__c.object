@@ -101,6 +101,16 @@
         <label>Account Live required for TP Cases Bypas</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Perm_to_close_Inbound_Inquiry_cases__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Users who can bypass val rules on required fields and proceed to close case.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users who can bypass val rules on required fields and proceed to close case.</inlineHelpText>
+        <label>Perm. to close Inbound Inquiry cases</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
     <listViews>
         <fullName>Detailed_All</fullName>
