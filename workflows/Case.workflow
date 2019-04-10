@@ -5838,6 +5838,24 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Newly_Created_Case_Field</fullName>
+        <field>YBNRequestDetail__c</field>
+        <literalValue>Web Dev</literalValue>
+        <name>Update Newly Created Case Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>YBN_Request_Reason</fullName>
+        <field>YBNRequestReason__c</field>
+        <literalValue>Website Change/Update</literalValue>
+        <name>YBN Request Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <outboundMessages>
         <fullName>AlpenhornCaseChange_Case</fullName>
         <apiVersion>27.0</apiVersion>
@@ -15543,6 +15561,24 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>Partner - New Client Setup</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>email_To_case_field_update</fullName>
+        <actions>
+            <name>Update_Newly_Created_Case_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>YBN_Request_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>HomeTeamSupport@web.com</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <tasks>
         <fullName>Mary_Case_Task</fullName>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignmentRule>
         <fullName>Basic assignments</fullName>
-        <active>true</active>
+        <active>false</active>
         <ruleEntry>
             <formula>AND(   RecordType.Name = "YBN Request",   ISPICKVAL(Type, "Work Item"),   OR(     AND(       ISPICKVAL(YBNRequestReason__c, "SPMs"),       ISPICKVAL(YBNRequestDetail__c, "SOW")      ),     AND(       ISPICKVAL(YBNRequestReason__c, "Billing/Finance"),       OR(         ISPICKVAL(YBNRequestDetail__c, "Credit Approval"),         ISPICKVAL(YBNRequestDetail__c, "Refund Approval")       )     ),     AND(       ISPICKVAL(YBNRequestReason__c, "Production Specialists"),       ISPICKVAL(YBNRequestDetail__c, "Project"),       $User.UserRoleId &lt;&gt; "00E60000000umPx", /* YBN: Manager, Customer Success Consultants */        $User.UserRoleId &lt;&gt; "00E60000001J50u" /* YBN: Customer Success Director */      )   ) )</formula>
         </ruleEntry>
@@ -1909,6 +1909,20 @@
                 <operation>equals</operation>
                 <value>ybnpremiumsupport@web.com</value>
             </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>HomeTeamSupport</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>HomeTeamSupport</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>HomeTeamSupport@web.com</value>
+            </criteriaItems>
+            <template>Admin_Email_Templates/Bug_Issue_Follow_Up2</template>
         </ruleEntry>
     </assignmentRule>
 </AssignmentRules>
