@@ -13768,7 +13768,7 @@ or(
         </filters>
         <filters>
             <field>Status__c</field>
-            <operation>equals</operation>
+            <operation>notEqual</operation>
             <value>LIVE</value>
         </filters>
         <label>Subba LightHouse Accounts</label>
