@@ -13443,6 +13443,22 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
         </filters>
         <label>submit</label>
     </listViews>
+    <listViews>
+        <fullName>Standard_accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard</value>
+        </filters>
+        <label>Standard accounts</label>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
@@ -56148,16 +56164,15 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
 RecordTypeId = "012600000009Yy5", 
  $Setup.Validation_Rule_Permissions__c.Perm_to_edit_WBN_Jax_fields__c  = false, 
 
-NOT(
 OR( 
 ISCHANGED( Status__c ), 
 ISCHANGED( Account_Director__c ), 
-ISCHANGED( IMS_Rep__c ), 
+ISCHANGED( IMS_Rep__c ),
+ISCHANGED( Live_Date__c ), 
 ISCHANGED( WBN_JAX_CUST_ID__c )
 )
-)
 )</errorConditionFormula>
-        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
+        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Account_Document</fullName>
