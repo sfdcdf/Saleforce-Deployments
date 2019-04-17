@@ -101,6 +101,16 @@
         <label>Perm. to close Inbound Inquiry cases</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Perm_to_bypass_PAN_Case_Creation_Limit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Assigned users/profiles can bypass validation rule and create Maps PIN and Comanage cases</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Assigned users/profiles can bypass validation rule and create Maps PIN and Comanage cases</inlineHelpText>
+        <label>Perm. to bypass PAN Case Creation Limit</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
     <listViews>
         <fullName>All_Details</fullName>
