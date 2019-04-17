@@ -64534,29 +64534,6 @@ INCLUDES( OnPage_Adversite_Content__c ,"Other")))</errorConditionFormula>
         <errorMessage>If Other is chosen in the one of the Root Cause picklist fields, "Root Cause Other" field must be filled out.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>PAN_Case_Creation_Limit</fullName>
-        <active>true</active>
-        <description>Prohibits users from creating Maps Comanage and Pin Cases unless on Pin/SEO Team</description>
-        <errorConditionFormula>AND(
-  ISNEW(),
-  OR(
-    ISPICKVAL(Pin_Action_Reason__c, "Maps Contact - Pin"),
-    ISPICKVAL(Pin_Action_Reason__c, "Maps Contact - Comanage")
-  ),
-  CASE($Profile.Name, 
-    "Pin Collection", "0", 
-    "Pin Collection - Supervisor", "0", 
-    "SEO Marketing Ops - Austin", "0",
-    "OPT Manager", "0",
-    "System Administrator", "0",
-    "SEO Marketing Ops - Non Austin", "0", 
-    "SEO Marketing Ops Manager", "0",
-    "1") = "1",
-  NOT(BEGINS($Profile.Name, "National"))
-)</errorConditionFormula>
-        <errorMessage>Only MVT and SEO Members Can Create this Pin Action Reason Case Type</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>PAN_Enter_B_Pin_if_Collected</fullName>
         <active>true</active>
         <description>Must enter bpin # if marking case as google pin received.</description>
@@ -64657,6 +64634,22 @@ ISBLANK(Client_Services_Manager__c))</errorConditionFormula>
 )</errorConditionFormula>
         <errorDisplayField>Htaccess_File_Functioning__c</errorDisplayField>
         <errorMessage>All Listing 2 Fields must be filled in.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PAN_Case_Creation_Limit</fullName>
+        <active>true</active>
+        <description>Prohibits users from creating Maps Comanage and Pin Cases unless on Pin/SEO Team</description>
+        <errorConditionFormula>AND(
+
+ISNEW(),
+ $Setup.Validation_Rule_Permissions__c.Perm_to_bypass_PAN_Case_Creation_Limit__c = false,
+
+OR(
+ISPICKVAL(Pin_Action_Reason__c, "Maps Contact - Pin"),
+ISPICKVAL(Pin_Action_Reason__c, "Maps Contact - Comanage")
+)
+)</errorConditionFormula>
+        <errorMessage>Only MVT and SEO Members Can Create this Pin Action Reason Case Type</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Update_Lead_in_Marketo_ADMIN_ONLY</fullName>
