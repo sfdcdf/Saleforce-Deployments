@@ -14824,6 +14824,16 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>LH_Medical_Support</fullName>
+        <columns>NAME</columns>
+        <filterScope>Queue</filterScope>
+        <label>LH Medical Support</label>
+        <queue>LH_Medical_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>AR_Request_Form</fullName>
         <active>true</active>
