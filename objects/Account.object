@@ -56160,8 +56160,7 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
         <fullName>YBN_Restriction_to_edit_Jax_fields</fullName>
         <active>true</active>
         <description>Only specific users can edit these fields in Standard Accounts</description>
-        <errorConditionFormula>AND( 
-RecordTypeId = "012600000009Yy5", 
+        <errorConditionFormula>AND(  
  $Setup.Validation_Rule_Permissions__c.Perm_to_edit_WBN_Jax_fields__c  = false, 
 
 OR( 
