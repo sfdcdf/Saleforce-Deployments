@@ -56173,6 +56173,23 @@ ISCHANGED( WBN_JAX_CUST_ID__c )
 )</errorConditionFormula>
         <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
     </validationRules>
+    <validationRules>
+        <fullName>Restriction_to_edit_WBN_Jax_fields</fullName>
+        <active>true</active>
+        <description>Only specific users can edit these fields in Standard Accounts</description>
+        <errorConditionFormula>AND(  
+ $Setup.Validation_Rule_Permissions__c.Perm_to_edit_WBN_Jax_fields__c  = false, 
+
+OR( 
+ISCHANGED( Status__c ), 
+ISCHANGED( Account_Director__c ), 
+ISCHANGED( IMS_Rep__c ),
+ISCHANGED( Live_Date__c ), 
+ISCHANGED( WBN_JAX_CUST_ID__c )
+)
+)</errorConditionFormula>
+        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>Account_Document</fullName>
         <availability>online</availability>
