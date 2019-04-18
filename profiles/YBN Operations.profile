@@ -3530,11 +3530,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Sub_Status__c</field>
         <readable>true</readable>
@@ -34587,6 +34582,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>AccountBeacon__c.IdWebDC__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <objectPermissions>
