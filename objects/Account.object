@@ -13774,6 +13774,31 @@ or(
         </filters>
         <label>Subba LightHouse Accounts</label>
     </listViews>
+    <listViews>
+        <fullName>Subba_Recently_Created_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Client_ID__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Cancellation_Status__c</columns>
+        <columns>Product_Type_Transactional__c</columns>
+        <columns>Client_Type__c</columns>
+        <columns>Marketo_ID__c</columns>
+        <columns>Status__c</columns>
+        <columns>YO_Status__c</columns>
+        <columns>Client_E_mail__c</columns>
+        <columns>Contact_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:10</value>
+        </filters>
+        <label>Subba Recently Created Accounts</label>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
