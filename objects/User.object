@@ -714,25 +714,6 @@
         <searchResultsAdditionalFields>MANAGER</searchResultsAdditionalFields>
     </searchLayouts><sharingModel>Read</sharingModel>
     <listViews>
-        <fullName>ActiveUsers1</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.TITLE</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.USERS.ACTIVE</columns>
-        <columns>CORE.PROFILE.NAME</columns>
-        <columns>MANAGER</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ACTIVE</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>Active Users</label>
-    </listViews>
-    <listViews>
         <fullName>AdminUsers</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -840,5 +821,35 @@
             <value>Communit</value>
         </filters>
         <label>Stale Users</label>
+    </listViews>
+    <listViews>
+        <fullName>ActiveUsers1</fullName>
+        <booleanFilter>1 AND (2 or 3)</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Full_Name__c</field>
+            <operation>contains</operation>
+            <value>Ruox</value>
+        </filters>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>contains</operation>
+            <value>Gadhamsetty</value>
+        </filters>
+        <label>Active Users</label>
     </listViews>
 </CustomObject>
