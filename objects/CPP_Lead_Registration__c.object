@@ -378,6 +378,31 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>New_Leads_SInce_Last_7_Days_for_CPP</fullName>
+        <columns>NAME</columns>
+        <columns>Lead_Registration_Status__c</columns>
+        <columns>LAST_ACTIVITY</columns>
+        <columns>Partner_Account__c</columns>
+        <columns>Claimed_in_GN__c</columns>
+        <columns>CP_Needs__c</columns>
+        <columns>Current_PMS__c</columns>
+        <columns>Date_Demo_Scheduled_Given__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>GN_Link__c</columns>
+        <columns>Gold_Nugget_Client_ID__c</columns>
+        <columns>Gold_Nugget_Prospect_ID__c</columns>
+        <columns>In_a_Contract__c</columns>
+        <columns>Lead_Contact_Name__c</columns>
+        <columns>Opportunity__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:180</value>
+        </filters>
+        <label>New Leads SInce Last 7 Days for CPP</label>
+    </listViews>
     <validationRules>
         <fullName>Date_Submitted_Validation</fullName>
         <active>true</active>
