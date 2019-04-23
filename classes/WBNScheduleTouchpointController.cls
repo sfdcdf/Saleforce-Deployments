@@ -163,8 +163,6 @@ public without sharing class WBNScheduleTouchpointController {
             }
 
         }
-
-        system.debug('selectedDate: ' + selectedDate);
         
         for(Integer i = 0; i < 31; i++){
             Date dateNow = selectedDate.addDays(i);
