@@ -1220,34 +1220,6 @@
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Beacon_LH_CS_Business_Users</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>MANAGER</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.USERS.ACTIVE</columns>
-        <columns>CORE.PROFILE.NAME</columns>
-        <columns>CORE.USERS.DIVISION</columns>
-        <columns>CORE.USERS.DEPARTMENT</columns>
-        <columns>LAST_UPDATE</columns>
-        <columns>UPDATEDBY_USER.NAME</columns>
-        <columns>LAST_UPDATE_BY_ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ACTIVE</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.DIVISION</field>
-            <operation>startsWith</operation>
-            <value>LH</value>
-        </filters>
-        <label>Beacon LH CS &amp; Business Users</label>
-    </listViews>
-    <listViews>
         <fullName>WBN_W4E_Active_Users</fullName>
         <booleanFilter>2 AND (1 OR 3 OR 4)</booleanFilter>
         <columns>FULL_NAME</columns>
@@ -1281,6 +1253,36 @@
             <value>NCSE - SDR</value>
         </filters>
         <label>WBN/ W4E Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Beacon_LH_CS_Business_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>LAST_UPDATE_BY_ALIAS</columns>
+        <columns>KNOWLEDGE_USER</columns>
+        <columns>LIVEAGENT_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.DIVISION</field>
+            <operation>startsWith</operation>
+            <value>LH</value>
+        </filters>
+        <label>Beacon LH CS &amp; Business Users</label>
     </listViews>
     <webLinks>
         <fullName>Loop__Change_DS_Cred</fullName>
