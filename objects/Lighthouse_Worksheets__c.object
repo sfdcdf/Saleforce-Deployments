@@ -14834,6 +14834,26 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>Lighthouse_Worksheets_creation</fullName>
+        <columns>NAME</columns>
+        <columns>Practice_Name__c</columns>
+        <columns>Case__c</columns>
+        <columns>Schedule_Training__c</columns>
+        <columns>Date_Time_Closed__c</columns>
+        <columns>Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Yodle_ID__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>contains</operation>
+            <value>sync</value>
+        </filters>
+        <label>Lighthouse Worksheets creation</label>
+    </listViews>
     <recordTypes>
         <fullName>AR_Request_Form</fullName>
         <active>true</active>
