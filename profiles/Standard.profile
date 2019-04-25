@@ -1492,11 +1492,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.Monthly_Budget__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.Months_Live__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -31073,6 +31068,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Monthly_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <recordTypeVisibilities>

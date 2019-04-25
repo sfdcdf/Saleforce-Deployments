@@ -56355,10 +56355,11 @@ ISCHANGED( Status__c ),
 ISCHANGED( Account_Director__c ), 
 ISCHANGED( IMS_Rep__c ),
 ISCHANGED( Live_Date__c ), 
-ISCHANGED( WBN_JAX_CUST_ID__c )
+ISCHANGED( WBN_JAX_CUST_ID__c ),
+ISCHANGED( Monthly_Budget__c )
 )
 )</errorConditionFormula>
-        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
+        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date, Monthly Budget or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Account_Document</fullName>
