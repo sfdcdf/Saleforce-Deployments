@@ -15743,6 +15743,18 @@ Used by YBN.</description>
                 <valueName>Contract Rejected By Client</valueName>
             </valueSettings>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOE_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If a user checks the 'LOE Agreement' check box when the opp gets to Solution stage the new deal approval process should not be triggered.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If a user checks the 'LOE Agreement' check box when the opp gets to Solution stage the new deal approval process should not be triggered.</inlineHelpText>
+        <label>LOE Agreement</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -79241,7 +79253,7 @@ ISCHANGED( Probability )
         <description>Deal Approved to Proposal Sent to Client</description>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"Proposal Sent to Client"), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()),NOT( $Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c ))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()),NOT( $Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c ),	LOE_Agreement__c==false)</errorConditionFormula>
         <errorMessage>You can move Proposal sent to Client from Deal Approved only</errorMessage>
     </validationRules>
     <validationRules>
@@ -79250,7 +79262,7 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()),NOT( $S
         <description>Moving Stage detail values one by one</description>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"Deal Approved"), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW()), NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c) )</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW()), NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),LOE_Agreement__c==false )</errorConditionFormula>
         <errorMessage>You can move Deal Approval requested to Deal Approved only</errorMessage>
     </validationRules>
     <validationRules>
@@ -79258,7 +79270,7 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approval Requested")),NOT(ISNEW(
         <active>true</active>
         <errorConditionFormula>AND( OR 
 (ISPICKVAL((Stage_Detail__c),"Proposal Approved By Client"), ISPICKVAL((Stage_Detail__c),"Proposal Rejected By Client")), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW()),NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW()),NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),LOE_Agreement__c==false)</errorConditionFormula>
         <errorMessage>Stage detail must be moved to 'Proposal Approved By Client' OR 'Proposal Rejected By Client' from 'Proposal Sent to Client'</errorMessage>
     </validationRules>
     <validationRules>
@@ -79266,14 +79278,14 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Sent to Client")),NOT(ISNEW(
         <active>true</active>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"SA Client Discovery"), 
-OR(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Rejected By Client"),ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Approved By Client")),NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c))</errorConditionFormula>
+OR(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Rejected By Client"),ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Proposal Approved By Client")),NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),LOE_Agreement__c==false)</errorConditionFormula>
         <errorMessage>Reverse Order not posible</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>SAClientDiscovery</fullName>
         <active>true</active>
         <description>Solution stage must start with "SA Client Discovery</description>
-        <errorConditionFormula>AND( NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),
+        <errorConditionFormula>AND( NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),LOE_Agreement__c==false,
 
 OR ( 
 
@@ -79300,7 +79312,7 @@ TEXT(Stage_Detail__c) &lt;&gt; "SA Client Discovery"
         <description>Moving Stage detail values one by one</description>
         <errorConditionFormula>AND( 
 ISPICKVAL((Stage_Detail__c),"Deal Approval Requested"), 
-NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"SA Client Discovery")),NOT(ISNEW()), NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c))</errorConditionFormula>
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"SA Client Discovery")),NOT(ISNEW()), NOT($Setup.StageDetail_Approval__c.Opportunities_stageDetail_bypass__c),LOE_Agreement__c==false)</errorConditionFormula>
         <errorMessage>You can move SA client Discovery to Deal Approval requested Only</errorMessage>
     </validationRules>
     <webLinks>

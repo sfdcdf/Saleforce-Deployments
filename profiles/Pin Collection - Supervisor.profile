@@ -31347,6 +31347,11 @@
         <field>Account.Monthly_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.LOE_Agreement__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Austin Client Services %28Feed%29</layout>
     </layoutAssignments>

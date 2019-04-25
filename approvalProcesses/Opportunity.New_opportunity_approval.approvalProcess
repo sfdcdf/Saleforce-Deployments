@@ -63,6 +63,11 @@
             <operation>equals</operation>
             <value>Deal Approval Requested</value>
         </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.LOE_Agreement__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
         <action>
