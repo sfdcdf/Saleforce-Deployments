@@ -15776,6 +15776,18 @@ Used by YBN.</description>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LOE_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If a user checks the 'LOE Agreement' check box when the opp gets to Solution stage the new deal approval process should not be triggered.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If a user checks the 'LOE Agreement' check box when the opp gets to Solution stage the new deal approval process should not be triggered.</inlineHelpText>
+        <label>LOE Agreement</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -79259,6 +79271,37 @@ ISCHANGED( Probability )
 
 )</errorConditionFormula>
         <errorMessage>Probability can only be changed for Corporate Opportunities</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Approved_to_Proposal_Sent_to_Client</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL((Stage_Detail__c),"Proposal Sent to Client"), 
+NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"Deal Approved")),NOT(ISNEW()),LOE_Agreement__c == False)</errorConditionFormula>
+        <errorMessage>Deal Approved to Proposal Sent to Client</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SAClientDiscovery</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR (
+
+AND( 
+ISNEW(),
+ISPICKVAL(StageName, "Solution"), 
+NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery")),LOE_Agreement__c == False
+), 
+
+
+
+AND(
+ISCHANGED (StageName) ,
+TEXT(PRIORVALUE(StageName)) &lt;&gt; "Solution", 
+TEXT(StageName) = "Solution", 
+TEXT(Stage_Detail__c) &lt;&gt; "SA Client Discovery" ,LOE_Agreement__c == False
+)
+
+)</errorConditionFormula>
+        <errorMessage>Solution stage must start with "SA Client Discovery</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
