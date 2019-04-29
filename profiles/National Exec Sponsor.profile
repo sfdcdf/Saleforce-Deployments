@@ -1762,11 +1762,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.Monthly_Budget__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.Months_Live__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -32363,6 +32358,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>EmailSubscription__c.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Monthly_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <objectPermissions>
