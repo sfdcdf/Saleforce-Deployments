@@ -185,7 +185,13 @@
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:2</value>
+        </filters>
         <label>All</label>
     </listViews>
     <recordTypes>
