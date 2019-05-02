@@ -1270,7 +1270,7 @@
         <columns>UPDATEDBY_USER.NAME</columns>
         <columns>LAST_UPDATE_BY_ALIAS</columns>
         <columns>KNOWLEDGE_USER</columns>
-        <columns>LIVEAGENT_USER</columns>
+        <columns>CORE.PROFILE.USERTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
