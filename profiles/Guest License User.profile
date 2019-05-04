@@ -104,6 +104,11 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountSource</field>
@@ -4725,6 +4730,9 @@
     <layoutAssignments>
         <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
         <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>

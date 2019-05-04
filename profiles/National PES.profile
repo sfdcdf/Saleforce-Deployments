@@ -200,6 +200,11 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
@@ -34281,6 +34286,9 @@
     <layoutAssignments>
         <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
         <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
