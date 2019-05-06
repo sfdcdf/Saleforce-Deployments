@@ -3513,6 +3513,15 @@ LEFT( WhatId ,3)= '001' /* Account */
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Related to Oppty</label>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AlternateSFId__c</fullName>
+        <externalId>false</externalId>
+        <label>AlternateSFId</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields><enableFeeds>false</enableFeeds><searchLayouts>
         <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
