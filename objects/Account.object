@@ -12988,6 +12988,17 @@ or(
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>AlternateSFId__c</fullName>
+        <externalId>false</externalId>
+        <label>AlternateSFId</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
