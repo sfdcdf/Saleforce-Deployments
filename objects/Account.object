@@ -13810,6 +13810,26 @@ or(
         </filters>
         <label>Subba LightHouse Accounts</label>
     </listViews>
+    <listViews>
+        <fullName>Mara_Lighthouse_Accounts_LH_Migration</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse</value>
+        </filters>
+        <label>Mara Lighthouse Accounts - LH Migration</label>
+        <sharedTo>
+            <group>LH_Migration</group>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
