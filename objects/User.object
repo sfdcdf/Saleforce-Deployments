@@ -834,7 +834,6 @@
     </listViews>
     <listViews>
         <fullName>ActiveUsers1</fullName>
-        <booleanFilter>1 AND (2 or 3)</booleanFilter>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.TITLE</columns>
         <columns>CORE.USERS.USERNAME</columns>
@@ -849,16 +848,6 @@
             <field>CORE.USERS.ACTIVE</field>
             <operation>equals</operation>
             <value>1</value>
-        </filters>
-        <filters>
-            <field>Full_Name__c</field>
-            <operation>contains</operation>
-            <value>Ruox</value>
-        </filters>
-        <filters>
-            <field>FULL_NAME</field>
-            <operation>contains</operation>
-            <value>elysa</value>
         </filters>
         <label>Active Users</label>
     </listViews>
