@@ -34390,7 +34390,7 @@
         <layout>Individual-Individual Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseClose-YBN Request Close Layout</layout>
+        <layout>CaseClose-Main Close Layout</layout>
         <recordType>Case.YBN_Request</recordType>
     </layoutAssignments>
     <objectPermissions>

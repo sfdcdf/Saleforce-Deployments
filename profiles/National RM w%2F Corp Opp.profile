@@ -34354,6 +34354,10 @@
     <layoutAssignments>
         <layout>Individual-Individual Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Main Close Layout</layout>
+        <recordType>Case.YBN_Request</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
