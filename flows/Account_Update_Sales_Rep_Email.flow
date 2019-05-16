@@ -233,10 +233,10 @@
         <dataType>Boolean</dataType>
         <expression>AND(
      CONTAINS({!myVariable_current.Sales_Channel_YL__c} , &quot;FIELD&quot;),
-     NOT($Profile.Name = &apos;API Integration Read/Write&apos;)
+     NOT({!$Profile.Name} = &apos;API Integration Read/Write&apos;)
 )</expression>
     </formulas>
-    <interviewLabel>Account_Update_Sales_Rep_Email-5_InterviewLabel</interviewLabel>
+    <interviewLabel>Account_Update_Sales_Rep_Email-6_InterviewLabel</interviewLabel>
     <label>Account - Update Sales Rep Email</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -338,7 +338,7 @@
         <object>Account</object>
     </recordUpdates>
     <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

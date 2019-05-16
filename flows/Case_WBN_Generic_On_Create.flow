@@ -137,7 +137,7 @@
         </rules>
     </decisions>
     <description>Generic WBN Case Processes when a Case is Created</description>
-    <interviewLabel>Case_WBN_Generic_On_Create-4_InterviewLabel</interviewLabel>
+    <interviewLabel>Case_WBN_Generic_On_Create-5_InterviewLabel</interviewLabel>
     <label>Case - WBN - Generic - On Create</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -264,12 +264,12 @@
             <processMetadataValues>
                 <name>rightHandSideType</name>
                 <value>
-                    <stringValue>ID</stringValue>
+                    <stringValue>Reference</stringValue>
                 </value>
             </processMetadataValues>
             <field>IMS_Rep__c</field>
             <value>
-                <stringValue>00532000004pLoeAAE</stringValue>
+                <elementReference>myVariable_current.Account.Account_Director__r.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

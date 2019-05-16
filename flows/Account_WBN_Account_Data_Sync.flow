@@ -429,7 +429,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_4</name>
-            <conditionLogic>(1 AND 2 AND 3) OR 4 OR 5</conditionLogic>
+            <conditionLogic>1 AND 2 AND 3 AND (4 OR 5)</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -598,7 +598,7 @@
         </rules>
     </decisions>
     <description>Syncs data between WBN Master and Standard Accounts per Business Logic</description>
-    <interviewLabel>Account_WBN_Account_Data_Sync-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Account_WBN_Account_Data_Sync-2_InterviewLabel</interviewLabel>
     <label>Account - WBN Account Data Sync</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -626,7 +626,7 @@
     </processMetadataValues>
     <processType>Workflow</processType>
     <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>
