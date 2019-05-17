@@ -16309,6 +16309,28 @@ Used by YBN.</description>
         </filters>
         <label>Won</label>
     </listViews>
+    <listViews>
+        <fullName>X90_Day_Pipeline</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Total_Monthly_Spend_Sum__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Strategic_Project_Manager__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <label>90 Day Pipeline</label>
+        <sharedTo>
+            <group>YBN_Strategic_Project_Managers</group>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate_Initial_Transaction</fullName>
         <active>true</active>
