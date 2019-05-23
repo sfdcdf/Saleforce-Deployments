@@ -90,6 +90,10 @@
                 <behavior>Required</behavior>
                 <field>Marketing_Communication__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Mobile_Website__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -141,6 +145,14 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CSC_Scripting_Adherence__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Local_CSC_Script_Adherence_Points_new__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Partner_CSC_Script_Adherence_Section__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
