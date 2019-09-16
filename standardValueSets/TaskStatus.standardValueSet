@@ -2,8 +2,14 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Not Started</fullName>
+        <fullName>Open</fullName>
         <default>true</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Started</fullName>
+        <default>false</default>
         <label>Not Started</label>
         <closed>false</closed>
     </standardValue>
@@ -83,12 +89,12 @@
         <fullName>Closed - Not Completed</fullName>
         <default>false</default>
         <label>Closed - Not Completed</label>
-        <closed>true</closed>
+        <closed>false</closed>
     </standardValue>
     <standardValue>
         <fullName>Duplicate</fullName>
         <default>false</default>
         <label>Duplicate</label>
-        <closed>true</closed>
+        <closed>false</closed>
     </standardValue>
 </StandardValueSet>

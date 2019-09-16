@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request for additional tablets</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Gray_March_2016</letterhead>
+    <name>Features- Additional Mobile Manager Tablets - Auto</name>
+    <style>freeForm</style>
+    <subject>{!Case.Client_ID__c} {!Case.Account}: Additional MM Tablets</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

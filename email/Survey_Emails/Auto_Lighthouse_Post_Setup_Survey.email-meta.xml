@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TEAM-36711Lighthouse Post-Setup Survey for Auto</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Auto Lighthouse Post-Setup Survey</name>
+    <style>none</style>
+    <subject>We Value Your Feedback</subject>
+    <textOnly>Hello,
+
+Congratulations on having completed your initial setup with Lighthouse 360! You can now begin to take advantage of all of the features and services we provide. We look forward to your continued success!
+
+At Lighthouse 360, we are always looking for ways to further improve the services and products we provide to you. As a valued client, your feedback is essential to this goal. Please take a moment to provide us with feedback on your setup experience with Lighthouse 360. This survey, like the survey that followed your installation, should take only a few minutes to complete and will help us ensure your success with our services and products.
+
+Use the below link to access the survey.
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=2mtdm8v2k1cmf&amp;q1={!Lighthouse_Worksheets__c.Practice_NameId__c}&amp;q2={!Lighthouse_Worksheets__c.OwnerFirstName}
+
+
+Thank you,
+Lighthouse Support
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.
+12808 Gran Bay Parkway, West | Jacksonville, FL 32258
+Lighthouse is a Web.com Group, Inc. brand.    Manage Email Preferences</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

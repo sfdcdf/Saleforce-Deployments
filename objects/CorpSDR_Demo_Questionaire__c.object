@@ -43,6 +43,106 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
@@ -52,7 +152,6 @@
         <relationshipLabel>CorpSDR Demo Questionaires (Account Name)</relationshipLabel>
         <relationshipName>CorpSDR_Demo_Questionaires1</relationshipName>
         <required>true</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -61,191 +160,14 @@
         <externalId>false</externalId>
         <label>Additional Notes</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>COMPANY_OWNED__c</fullName>
-        <externalId>false</externalId>
-        <label>COMPANY OWNED</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Contact_Title__c</fullName>
-        <externalId>false</externalId>
-        <label>Contact Title</label>
-        <length>26</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Corporate_Demo_Questionaire__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Corporate Demo Questionaire</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>CorpSDR Demo Questionaires</relationshipLabel>
-        <relationshipName>CorpSDR_Demo_Questionaires</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>DIRECT_vs_DEALER__c</fullName>
-        <externalId>false</externalId>
-        <label>DIRECT vs. DEALER</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Demo_Date_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Demo Date/Time</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>Direct_Email__c</fullName>
-        <externalId>false</externalId>
-        <label>Direct Email</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Direct_Phone_Number__c</fullName>
-        <externalId>false</externalId>
-        <label>Direct Phone Number</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Phone</type>
-    </fields>
-    <fields>
-        <fullName>Do_you_currently_work_with_a_vendor__c</fullName>
-        <externalId>false</externalId>
-        <label>Do you currently work with a vendor?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>FRANCHISE__c</fullName>
-        <externalId>false</externalId>
-        <label>FRANCHISE</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>How_many_locations_do_they_have__c</fullName>
-        <externalId>false</externalId>
-        <label>How many locations do they have?</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Length_of_time_in_role__c</fullName>
-        <externalId>false</externalId>
-        <label>Length of time in role</label>
-        <length>26</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Role_Function__c</fullName>
-        <externalId>false</externalId>
-        <label>Role Function</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>What_does_the_company_do__c</fullName>
-        <externalId>false</externalId>
-        <label>What does the company do?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>What_is_the_segment__c</fullName>
-        <externalId>false</externalId>
-        <label>What is the segment?</label>
-        <length>26</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>What_is_your_current_digital_marketing__c</fullName>
-        <externalId>false</externalId>
-        <label>What is your current digital marketing?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>What_markets_are_most_important__c</fullName>
-        <externalId>false</externalId>
-        <label>What markets are most important?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Who_is_the_meeting_with__c</fullName>
-        <externalId>false</externalId>
-        <label>Who is the meeting with?</label>
-        <length>26</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Are_you_evaluating_marketing_vendors__c</fullName>
         <externalId>false</externalId>
         <label>Are you evaluating marketing vendors?</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -265,11 +187,116 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>COMPANY_OWNED__c</fullName>
+        <externalId>false</externalId>
+        <label>COMPANY OWNED</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Title</label>
+        <length>26</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Demo_Questionaire__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Corporate Demo Questionaire</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>CorpSDR Demo Questionaires</relationshipLabel>
+        <relationshipName>CorpSDR_Demo_Questionaires</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DIRECT_vs_DEALER__c</fullName>
+        <externalId>false</externalId>
+        <label>DIRECT vs. DEALER</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Date/Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Phone Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Do_you_currently_work_with_a_vendor__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you currently work with a vendor?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>FRANCHISE__c</fullName>
+        <externalId>false</externalId>
+        <label>FRANCHISE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>How_many_locations_do_they_have__c</fullName>
+        <externalId>false</externalId>
+        <label>How many locations do they have?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Length_of_time_in_role__c</fullName>
+        <externalId>false</externalId>
+        <label>Length of time in role</label>
+        <length>26</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Marketing_Funds__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Funds</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -294,16 +321,68 @@
         </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
+    <fields>
+        <fullName>Role_Function__c</fullName>
+        <externalId>false</externalId>
+        <label>Role Function</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_does_the_company_do__c</fullName>
+        <externalId>false</externalId>
+        <label>What does the company do?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_is_the_segment__c</fullName>
+        <externalId>false</externalId>
+        <label>What is the segment?</label>
+        <length>26</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_is_your_current_digital_marketing__c</fullName>
+        <externalId>false</externalId>
+        <label>What is your current digital marketing?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_markets_are_most_important__c</fullName>
+        <externalId>false</externalId>
+        <label>What markets are most important?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Who_is_the_meeting_with__c</fullName>
+        <externalId>false</externalId>
+        <label>Who is the meeting with?</label>
+        <length>26</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Used by the SDR to capture information about a prospect before the opportunity is created</description>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
+    <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
@@ -311,7 +390,6 @@
     <label>CorpSDR Demo Questionaire</label>
     <nameField>
         <label>CorpSDR Demo Questionaire Name</label>
-        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>CorpSDR Demo Questionaires</pluralLabel>
@@ -328,23 +406,5 @@
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews>
-    <listViews>
-        <fullName>Rogers_Support_CorpSDR_Demo_Questionaire</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Rogers Support</label>
-        <queue>Rogers_Support</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Send_To_Rogers_CorpSDR_Demo_Questionaire</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Send To Rogers</label>
-        <queue>Send_To_Rogers</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
     </listViews>
 </CustomObject>

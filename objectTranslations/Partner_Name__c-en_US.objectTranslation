@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designated Sales Rep Role --></label>
+        <name>Designated_Sales_Rep_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designated Sales Rep --></label>
+        <name>Designated_Sales_Rep__c</name>
+        <relationshipLabel><!-- Partners (Designated Sales Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMS Name --></label>
+        <name>IMS_Name__c</name>
+        <relationshipLabel><!-- Partners (IMS Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Partners after 8/14 --></label>
+        <name>New_Partners_after_8_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Plan --></label>
+        <name>Other_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Full Name --></label>
+        <name>Partner_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Plan --></label>
+        <name>Partner_Plan__c</name>
+        <picklistValues>
+            <masterLabel>$50-$200</masterLabel>
+            <translation><!-- $50-$200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4% rev share</masterLabel>
+            <translation><!-- 4% rev share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5% rev share</masterLabel>
+            <translation><!-- 5% rev share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6% rev share</masterLabel>
+            <translation><!-- 6% rev share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payable to --></label>
+        <name>Payable_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Check</masterLabel>
+            <translation><!-- Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep --></label>
+        <name>Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <help><!-- W9 email will be sent to partner when checked. --></help>
+        <label><!-- Send W9 --></label>
+        <name>Send_W9__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Contract Received</masterLabel>
+            <translation><!-- Contract Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Sent</masterLabel>
+            <translation><!-- Contract Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax ID/SSN --></label>
+        <name>Tax_ID_SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- W9 Received --></label>
+        <name>W9_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yodle Customer --></label>
+        <name>Yodle_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- lead partner id --></label>
+        <name>lead_partner_id__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partners</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

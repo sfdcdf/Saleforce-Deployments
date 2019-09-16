@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense>
+﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense>
     <pageAccesses xmlns="http://soap.sforce.com/2006/04/metadata">
         <apexPage>BandwidthExceeded</apexPage>
         <enabled>true</enabled>
@@ -4033,11 +4033,7 @@
         <field>Call_Result_Detail__c.Task_Processed__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.Account_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.ActualCost</field>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Auto Close Date Mapping --></label>
+        <name>Auto_Close_Date_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Close Day Criteria --></label>
+        <name>Auto_Close_Day_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Evaluate Criteria --></label>
+        <name>Auto_Evaluate_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Script --></label>
+        <name>Call_Script__c</name>
+    </fields>
+    <fields>
+        <help><!-- If an email campaign needs to be sent, set this with the Campaign ID value --></help>
+        <label><!-- Campaign ID --></label>
+        <name>Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Created --></label>
+        <name>Case_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Reason --></label>
+        <name>Case_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Record Type Name --></label>
+        <name>Case_Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Touchplan Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Case Criteria --></label>
+        <name>Create_Case_Criteria__c</name>
+        <picklistValues>
+            <masterLabel>Case Create on Days Live: 35</masterLabel>
+            <translation><!-- Case Create on Days Live: 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Create on Days Live: 38</masterLabel>
+            <translation><!-- Case Create on Days Live: 38 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Create on Days Live: 65</masterLabel>
+            <translation><!-- Case Create on Days Live: 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Create on Days Live: 68</masterLabel>
+            <translation><!-- Case Create on Days Live: 68 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not create Case</masterLabel>
+            <translation><!-- Do not create Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Last Section Any Close Status</masterLabel>
+            <translation><!-- On Last Section Any Close Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Last Section Any Close Status Create Case on Days Live: 68</masterLabel>
+            <translation><!-- On Last Section Any Close Status Create Case on Days Live: 68 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Last Section Complete Status</masterLabel>
+            <translation><!-- On Last Section Complete Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Last Section Complete Status Create Case on Days Live: 38</masterLabel>
+            <translation><!-- On Last Section Complete Status Create Case on Days Live: 38 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Last Section Did Not Complete Status</masterLabel>
+            <translation><!-- On Last Section Did Not Complete Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Yodle Path Assignment</masterLabel>
+            <translation><!-- On Yodle Path Assignment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Case Values --></label>
+        <name>Default_Case_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluate Pass/Fail --></label>
+        <name>Evaluate_Pass_Fail__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Case Create, Clone For Next 30 Day TP --></label>
+        <name>On_Case_Create_Clone_For_Next_30_Day_TP__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Fail Set Case Status --></label>
+        <name>On_Fail_Set_Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Pass Set Case Status --></label>
+        <name>On_Pass_Set_Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pass Fail OR Logic --></label>
+        <name>Pass_Fail_OR_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Passed --></label>
+        <name>Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Required to Pass --></label>
+        <name>Required_to_Pass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section Complete --></label>
+        <name>Section_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section Order --></label>
+        <name>Section_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days to set next section&apos;s evaluation date when this section&apos;s Case is closed. --></help>
+        <label><!-- Set Next Section Evaluation Date --></label>
+        <name>Set_Next_Section_Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template ID --></label>
+        <name>Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touchplan --></label>
+        <name>Touchplan__c</name>
+        <relationshipLabel><!-- Touchplan Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trigger Case Creation Date --></label>
+        <name>Trigger_Case_Creation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Validating if a Case of this type already exists, if it does, use that Case and relate it to this record. --></help>
+        <label><!-- Validate If Case Already Exist --></label>
+        <name>Validate_If_Case_Already_Exist__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Touchplan Section</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Touchplan Sections</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- SMS Trackings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The related touch point case. --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- SMS Trackings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client First Name --></label>
+        <name>Client_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Last Name --></label>
+        <name>Client_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The phone number that was texted. --></help>
+        <label><!-- Client Phone Number --></label>
+        <name>Client_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The response from the client. --></help>
+        <label><!-- Client Response --></label>
+        <name>Client_Response__c</name>
+        <picklistValues>
+            <masterLabel>Confirm</masterLabel>
+            <translation><!-- Confirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt In</masterLabel>
+            <translation><!-- Opt In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out</masterLabel>
+            <translation><!-- Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reschedule</masterLabel>
+            <translation><!-- Reschedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrecognized Response</masterLabel>
+            <translation><!-- Unrecognized Response --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Intro message was/not sent.  The message informs the client about the standard rates may apply when receiving/sending a text. --></help>
+        <label><!-- Intro Sent? --></label>
+        <name>Intro_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- The phone number provide is not valid. --></help>
+        <label><!-- Invalid Phone Number? --></label>
+        <name>Invalid_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Email Campaign --></label>
+        <name>Marketo_Email_Campaign__c</name>
+        <relationshipLabel><!-- SMS Trackings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketo Lead Id --></label>
+        <name>Marketo_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date/time the client responded to the text. --></help>
+        <label><!-- Response Date/Time --></label>
+        <name>Response_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twilio Id --></label>
+        <name>Twilio_Id__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>SMS Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SMS Trackings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <description><!-- Default record type --></description>
+        <label><!-- Default --></label>
+        <name>Default</name>
+    </recordTypes>
+</CustomObjectTranslation>

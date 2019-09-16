@@ -1,0 +1,21 @@
+Hello,
+
+The following case has been escalated:
+
+Account: {!Account.Client_ID__c} - {!Account.Name}
+
+Case Owner: {!Case.OwnerFullName}
+
+IMS Rep: {!Account.IMS_Rep__c}
+
+Case Age: {!Case.Case_Age__c}
+
+Case Record Type: {!Case.RecordType}
+
+Subject: {!Case.Subject}
+
+Description: {!Case.Description}
+
+Link to Case: {!Case.Link}
+
+Products: {!Account.Product_Type__c}

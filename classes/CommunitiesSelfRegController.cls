@@ -10,7 +10,12 @@ public class CommunitiesSelfRegController {
     public String confirmPassword {get; set { confirmPassword = value == null ? value : value.trim(); } }
     public String communityNickname {get; set { communityNickname = value == null ? value : value.trim(); } }
     
-    public CommunitiesSelfRegController() {}
+    public CommunitiesSelfRegController() {
+        String expid = ApexPages.currentPage().getParameters().get('expid');            
+        if (expId != null) {
+            Site.setExperienceId(expId); 
+        }    
+    }
     
     private boolean isValidPassword() {
         return password == confirmPassword;

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API --></help>
+        <label><!-- API Identifier --></label>
+        <name>API_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email address used to send object data to for creating CTS ticket when the Integration type is Email; required when Integration type is Email --></help>
+        <label><!-- CTS Email Address --></label>
+        <name>CTS_Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click-able link to the correct CTS Ticket instance record --></help>
+        <label><!-- CTS Ticket URL --></label>
+        <name>CTS_Ticket_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Id of the Email Template being used to pass data elements to CTS --></help>
+        <label><!-- Email Template Id --></label>
+        <name>EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click-able link to the Email Template used for the details of the API request for creating a CTS Ticket --></help>
+        <label><!-- Email Template URL --></label>
+        <name>Email_Template_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to capture any error responses/ details for the request record --></help>
+        <label><!-- Error Description --></label>
+        <name>ErrorDescription__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Ticket Id created in the CTS system --></help>
+        <label><!-- External Ticket Id --></label>
+        <name>ExternalTicketId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Integration Type (API or Email) which determines the internal process methods to be called for ticket creation in CTS --></help>
+        <label><!-- Integration Type --></label>
+        <name>Integration_Type__c</name>
+        <picklistValues>
+            <masterLabel>API</masterLabel>
+            <translation><!-- API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of attempts made to send a request to the CTS API for creating a ticket --></help>
+        <label><!-- Number Of Retry Attempts --></label>
+        <name>NumberOfRetryAttempts__c</name>
+    </fields>
+    <fields>
+        <help><!-- The corresponding record Id based on the Object Name --></help>
+        <label><!-- Object Id --></label>
+        <name>ObjectId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Objects integrated with CTS --></help>
+        <label><!-- Object Name --></label>
+        <name>Object_Name__c</name>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer_Surveys__c</masterLabel>
+            <translation><!-- Customer_Surveys__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic_Analysis__c</masterLabel>
+            <translation><!-- Organic_Analysis__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality_Case__c</masterLabel>
+            <translation><!-- Quality_Case__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Unique Id from the CTSObjectTriggerMap which represents the record used for the metadata populated for this record --></help>
+        <label><!-- Object Route MDT Id --></label>
+        <name>Object_Route_MDT_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/ time the record was processed to CTS for ticket creation --></help>
+        <label><!-- Processed Date Time --></label>
+        <name>ProcessedDateTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click-able link to the Salesforce instance record associated to the Request record --></help>
+        <label><!-- SFDC Record URL --></label>
+        <name>SFDC_Record_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The scheduled date/ time of the Async Record to be triggered to create the CTS ticket --></help>
+        <label><!-- Scheduled Date Time --></label>
+        <name>ScheduledDateTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Async Request Status indicating the current state of the record --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>ERROR</masterLabel>
+            <translation><!-- ERROR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INPROCESS</masterLabel>
+            <translation><!-- INPROCESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW</masterLabel>
+            <translation><!-- NEW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REPROCESS</masterLabel>
+            <translation><!-- REPROCESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNQUALIFIED</masterLabel>
+            <translation><!-- UNQUALIFIED --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDCToCTSAsynchRequest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SFDCToCTSAsynchRequests</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

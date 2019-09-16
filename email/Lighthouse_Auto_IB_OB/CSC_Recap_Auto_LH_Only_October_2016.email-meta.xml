@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>TEAM-36711Follow up to clients after the CSC that have LH ONLY product</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Recap- CSC- LH Auto Only</name>
+    <style>none</style>
+    <subject>Lighthouse Setup Call Recap {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <textOnly>Hello {!Lighthouse_Worksheets__c.Practice_Name__c},
+
+Thanks for taking the time to review your account with us today.  We&apos;re glad we could help you get started and want to make sure you have everything you need to get more customers and more revenue for the shop.  Here&apos;s a quick recap of the highlights of your Lighthouse account.
+
+Lighthouse Portal &amp; Automated Messages
+
+You can log in to your portal at home.lh360.com. Your username is {!Lighthouse_Worksheets__c.Portal_Username__c}. To recover your password click here.
+
+We have noted the automated messages that are currently active in your account. You can turn on the inactive features at any time, so feel free to reach out to us and we can get them set up for you. Prices referenced below may be subject to change upon advanced notice to you.
+
+*Time-Based Maintenance Reminder Postcards  ($1.00/postcard ) - {!Lighthouse_Worksheets__c.Maintenance_Reminder_PC__c}
+Postcards that get mailed three and six months after the vehicle owner’s last visit notifying them that they are due for maintenance and to schedule an appointment. 
+
+*Mileage-Based Maintenance Reminder Postcards  ($1.00/postcard ) - {!Lighthouse_Worksheets__c.Maintenance_Reminder_PC_mileage__c}
+Postcards that get mailed a month after we see a vehicle is within 2,000 miles of 30,000/60,000/90,000 miles in your SMS notifying them that they are due for maintenance and to schedule an appointment. 
+
+*Recommended Services Postcards ($1.00/postcard) - {!Lighthouse_Worksheets__c.Recommended_Services_PC__c}
+Postcards that get mailed one and two months after you have recommended a service asking them to schedule an appointment.
+
+Website &amp; Marketing Features
+
+As part of your Lighthouse package, we have built an advertising website for your shop. This is a separate website that will be used to get your business found in more places across the web.
+
+And remember that we’ve also included a number of marketing features for you to take advantage of. We encourage you to log in to send out custom email messages, monitor customer feedback, and manage your social presence.
+
+If you want to get even more out of your account, consider our shop operations product.  We can add additional features to the shop&apos;s workstations that will allow you automate lube sticker appointments, send text reminders and approval messages to your customers, and create custom invoices.  Check out the features here and let us know if you&apos;re interested.
+
+Support
+
+If you have any questions about your account, don&apos;t hesitate to give us a call at (855) 855-8728. Our team can assist you Monday - Friday from 9am to 7pm EST.
+
+Otherwise you can always visit the Need Help tab of the portal for access to How-to-Guides for the features.
+
+Thanks again for choosing Lighthouse. We look forward to working with you!
+
+
+{!User.Full_Name__c}
+Lighthouse Support
+(855) 855-8728
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Unique identifier signifying the target instance created Id for the corresponding source record --></help>
+        <label><!-- AlternateSFId --></label>
+        <name>AlternateSFId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email Address associated to Queue --></help>
+        <label><!-- QueueEmail --></label>
+        <name>QueueEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Group/ Queue --></help>
+        <label><!-- QueueName --></label>
+        <name>QueueName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Type associated to the Queue --></help>
+        <label><!-- QueueType --></label>
+        <name>QueueType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier signifying the source instance created Id for the corresponding source record --></help>
+        <label><!-- SourceSFId --></label>
+        <name>SourceSFId__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>GroupBeacon</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GroupsBeacon</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

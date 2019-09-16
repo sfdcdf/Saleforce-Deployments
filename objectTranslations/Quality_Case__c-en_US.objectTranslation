@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Quality Case --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Product Type --></label>
+        <name>Account_Product_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- These fields are utilized to notate discrepancies (and their call timestamps) between the closing script questionnaire and audio recording of the closing script providing the fulfillment/cs teams with insight on the sale. --></help>
+        <label><!-- Additional Notes --></label>
+        <name>Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- CS Fail Details --></label>
+        <name>CS_Fail_Details__c</name>
+        <picklistValues>
+            <masterLabel>Address entered incorrectly</masterLabel>
+            <translation><!-- Address entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address left blank</masterLabel>
+            <translation><!-- Address left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address not verified</masterLabel>
+            <translation><!-- Address not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address visibility entered incorrectly</masterLabel>
+            <translation><!-- Address visibility entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address visibility left blank</masterLabel>
+            <translation><!-- Address visibility left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address visibility was not verified</masterLabel>
+            <translation><!-- Address visibility was not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business hours entered incorrectly</masterLabel>
+            <translation><!-- Business hours entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business hours left blank</masterLabel>
+            <translation><!-- Business hours left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business hours not verified</masterLabel>
+            <translation><!-- Business hours not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business name entered incorrectly</masterLabel>
+            <translation><!-- Business name entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business name left blank</masterLabel>
+            <translation><!-- Business name left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business name not verified</masterLabel>
+            <translation><!-- Business name not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business years open entered incorrectly</masterLabel>
+            <translation><!-- Business years open entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business years open not verified</masterLabel>
+            <translation><!-- Business years open not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC call time discrepancy</masterLabel>
+            <translation><!-- CSC call time discrepancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC scheduled outside of the 3 to 5 business day time window</masterLabel>
+            <translation><!-- CSC scheduled outside of the 3 to 5 business day time window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing script not recorded</masterLabel>
+            <translation><!-- Closing script not recorded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commitment length not verified</masterLabel>
+            <translation><!-- Commitment length not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact phone number entered incorrectly</masterLabel>
+            <translation><!-- Contact phone number entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact phone number not verified</masterLabel>
+            <translation><!-- Contact phone number not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current verison of Closing Script not read</masterLabel>
+            <translation><!-- Current verison of Closing Script not read --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email address not verified</masterLabel>
+            <translation><!-- Email address not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email entered incorrectly or not spelled out</masterLabel>
+            <translation><!-- Email entered incorrectly or not spelled out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email left blank</masterLabel>
+            <translation><!-- Email left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency call availability entered incorrectly</masterLabel>
+            <translation><!-- Emergency call availability entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency call availability not verified</masterLabel>
+            <translation><!-- Emergency call availability not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Training Call was scheduled outside of approved 48-96 hour window</masterLabel>
+            <translation><!-- Initial Training Call was scheduled outside of approved 48-96 hour window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install call time discrepancy</masterLabel>
+            <translation><!-- Install call time discrepancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch Timeline not verified</masterLabel>
+            <translation><!-- Launch Timeline not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead phone number entered incorrectly</masterLabel>
+            <translation><!-- Lead phone number entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead phone number left blank</masterLabel>
+            <translation><!-- Lead phone number left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead phone number not verified</masterLabel>
+            <translation><!-- Lead phone number not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead range entered incorrectly</masterLabel>
+            <translation><!-- Lead range entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead range left blank</masterLabel>
+            <translation><!-- Lead range left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead range not verified</masterLabel>
+            <translation><!-- Lead range not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License, bond or insurance details entered incorrectly</masterLabel>
+            <translation><!-- License, bond or insurance details entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLS Fees Section not read</masterLabel>
+            <translation><!-- MLS Fees Section not read --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report</masterLabel>
+            <translation><!-- MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report </masterLabel>
+            <translation><!-- MLS Section read in closing script differs from MLS Fees verified in MLS Fee Report  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Service Agreement not read accordingly or clear YES was not received</masterLabel>
+            <translation><!-- Master Service Agreement not read accordingly or clear YES was not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 10 Services entered in Sales Wizard</masterLabel>
+            <translation><!-- More than 10 Services entered in Sales Wizard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment processed incorrectly</masterLabel>
+            <translation><!-- Payment processed incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing left blank</masterLabel>
+            <translation><!-- Pricing left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing not verified</masterLabel>
+            <translation><!-- Pricing not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionnaire not emailed to Quality on the day of the sale</masterLabel>
+            <translation><!-- Questionnaire not emailed to Quality on the day of the sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radius entered incorrectly</masterLabel>
+            <translation><!-- Radius entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radius left blank</masterLabel>
+            <translation><!-- Radius left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radius not verified</masterLabel>
+            <translation><!-- Radius not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep did not read the Business Information Section in full</masterLabel>
+            <translation><!-- Rep did not read the Business Information Section in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep did not read the Initial Training Call Section in full</masterLabel>
+            <translation><!-- Rep did not read the Initial Training Call Section in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep did not read the Installation Scheduling Section in full</masterLabel>
+            <translation><!-- Rep did not read the Installation Scheduling Section in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep did not read the MLS Fees Section in full</masterLabel>
+            <translation><!-- Rep did not read the MLS Fees Section in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep did not read the Prepay Section in full</masterLabel>
+            <translation><!-- Rep did not read the Prepay Section in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep did not read the Referral Section in full</masterLabel>
+            <translation><!-- Rep did not read the Referral Section in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep selected incorrect product in the Sales Wizard</masterLabel>
+            <translation><!-- Rep selected incorrect product in the Sales Wizard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Segment entered incorrectly</masterLabel>
+            <translation><!-- Segment entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Segment left blank</masterLabel>
+            <translation><!-- Segment left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Segment not verified</masterLabel>
+            <translation><!-- Segment not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services not fully entered in Sales Wizard</masterLabel>
+            <translation><!-- Services not fully entered in Sales Wizard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services not to advertise for entered incorrectly</masterLabel>
+            <translation><!-- Services not to advertise for entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services not to advertise not verified</masterLabel>
+            <translation><!-- Services not to advertise not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services not verified</masterLabel>
+            <translation><!-- Services not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target area entered incorrectly</masterLabel>
+            <translation><!-- Target area entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target area left blank</masterLabel>
+            <translation><!-- Target area left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target area not verified</masterLabel>
+            <translation><!-- Target area not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms and Billing section not read accordingly or clear YES was not received</masterLabel>
+            <translation><!-- Terms and Billing section not read accordingly or clear YES was not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USP entered incorrectly</masterLabel>
+            <translation><!-- USP entered incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USP left blank</masterLabel>
+            <translation><!-- USP left blank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USP not verified</masterLabel>
+            <translation><!-- USP not verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unconfirmed Services entered in Sales Wizard</masterLabel>
+            <translation><!-- Unconfirmed Services entered in Sales Wizard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CS Potential Quality Offense --></label>
+        <name>CS_Potential_Quality_Offense__c</name>
+        <picklistValues>
+            <masterLabel>Address: Business Address Not Used</masterLabel>
+            <translation><!-- Address: Business Address Not Used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address: PO Box</masterLabel>
+            <translation><!-- Address: PO Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address: Target Metro Beyond 20 Miles</masterLabel>
+            <translation><!-- Address: Target Metro Beyond 20 Miles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Assumptive Prepay</masterLabel>
+            <translation><!-- Billing: Assumptive Prepay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Change Mind POS</masterLabel>
+            <translation><!-- Billing: Change Mind POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Contract Length</masterLabel>
+            <translation><!-- Billing: Contract Length --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Invoice/Call/Automatic Billing</masterLabel>
+            <translation><!-- Billing: Invoice/Call/Automatic Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Payment Dates</masterLabel>
+            <translation><!-- Billing: Payment Dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Refund Discussion</masterLabel>
+            <translation><!-- Billing: Refund Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - Professionalism</masterLabel>
+            <translation><!-- Disciplinary - Professionalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary Offense</masterLabel>
+            <translation><!-- Disciplinary Offense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary: PCI</masterLabel>
+            <translation><!-- Disciplinary: PCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary: ROE Breach</masterLabel>
+            <translation><!-- Disciplinary: ROE Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary: Unauthorized Charge</masterLabel>
+            <translation><!-- Disciplinary: Unauthorized Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads: Calls/Jobs</masterLabel>
+            <translation><!-- Leads: Calls/Jobs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads: Guaranteed Lead Range</masterLabel>
+            <translation><!-- Leads: Guaranteed Lead Range --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads: Jobs vs. Calls/Emails</masterLabel>
+            <translation><!-- Leads: Jobs vs. Calls/Emails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads: Non PSG Focus</masterLabel>
+            <translation><!-- Leads: Non PSG Focus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads: Not Advertised for Segment</masterLabel>
+            <translation><!-- Leads: Not Advertised for Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: AA Breach</masterLabel>
+            <translation><!-- Misc: AA Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: Product Misrepresentation</masterLabel>
+            <translation><!-- Misc: Product Misrepresentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Offenses: Program Release</masterLabel>
+            <translation><!-- Other Offenses: Program Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placement: Rank Outside of Target Metro</masterLabel>
+            <translation><!-- Placement: Rank Outside of Target Metro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placement: Specific Keywords</masterLabel>
+            <translation><!-- Placement: Specific Keywords --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placement: Specific Placement</masterLabel>
+            <translation><!-- Placement: Specific Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline: Launch Timeframe</masterLabel>
+            <translation><!-- Timeline: Launch Timeframe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline: Organic Placement</masterLabel>
+            <translation><!-- Timeline: Organic Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website: Current SEO – No Impact</masterLabel>
+            <translation><!-- Website: Current SEO – No Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website: SEO on Client's Website</masterLabel>
+            <translation><!-- Website: SEO on Client&apos;s Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CS Timestamp --></label>
+        <name>CS_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Found Under --></label>
+        <name>Call_Found_Under__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Parent --></label>
+        <name>Cancellation_Parent__c</name>
+        <relationshipLabel><!-- Quality Case --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Ag (Bus Days) --></label>
+        <name>Case_Ag_Bus_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Age --></label>
+        <name>Case_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Closed By --></label>
+        <name>Case_Closed_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Closed Date/Time --></label>
+        <name>Case_Closed_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Script Call Recorded? --></label>
+        <name>Closing_Script_Call_Recorded__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Processed QA --></label>
+        <name>Date_Processed_QA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Recorded? --></label>
+        <name>Demo_Recorded__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ticket ID for this case in an External Ticketing System --></help>
+        <label><!-- External Ticket ID --></label>
+        <name>External_Ticket_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relationship was created between Salesforce and this external ticketing system --></help>
+        <label><!-- External Ticket System --></label>
+        <name>External_Ticket_System__c</name>
+        <picklistValues>
+            <masterLabel>CTS</masterLabel>
+            <translation><!-- CTS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fail Details --></label>
+        <name>Fail_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fail Reason --></label>
+        <name>Fail_Reason__c</name>
+        <picklistValues>
+            <masterLabel>CSC incorrectly scheduled</masterLabel>
+            <translation><!-- CSC incorrectly scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing script not read in full</masterLabel>
+            <translation><!-- Closing script not read in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing script not recorded in full</masterLabel>
+            <translation><!-- Closing script not recorded in full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect billing</masterLabel>
+            <translation><!-- Incorrect billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info Mismatch</masterLabel>
+            <translation><!-- Info Mismatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install incorrectly scheduled</masterLabel>
+            <translation><!-- Install incorrectly scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install phone number incorrect</masterLabel>
+            <translation><!-- Install phone number incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionnaire not emailed to Quality</masterLabel>
+            <translation><!-- Questionnaire not emailed to Quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fail Timestamp --></label>
+        <name>Fail_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fine Amount --></label>
+        <name>Fine_Amount__c</name>
+        <picklistValues>
+            <masterLabel>$0.00</masterLabel>
+            <translation><!-- $0.00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$20.00</masterLabel>
+            <translation><!-- $20.00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$30.00</masterLabel>
+            <translation><!-- $30.00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$40.00</masterLabel>
+            <translation><!-- $40.00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50.00</masterLabel>
+            <translation><!-- $50.00 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IsClosed --></label>
+        <name>IsClosed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kickback --></label>
+        <name>Kickback__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Minutes Recorded --></label>
+        <name>Minutes_Recorded__c</name>
+        <picklistValues>
+            <masterLabel>&lt;15</masterLabel>
+            <translation><!-- &lt;15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;150</masterLabel>
+            <translation><!-- &lt;150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;30</masterLabel>
+            <translation><!-- &lt;30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;5</masterLabel>
+            <translation><!-- &lt;5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;60</masterLabel>
+            <translation><!-- &lt;60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;90</masterLabel>
+            <translation><!-- &lt;90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;150</masterLabel>
+            <translation><!-- &gt;150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;90</masterLabel>
+            <translation><!-- &gt;90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Offense Details --></label>
+        <name>Offense_Details__c</name>
+        <picklistValues>
+            <masterLabel>$100 Fine</masterLabel>
+            <translation><!-- $100 Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Active Client Owned Domain</masterLabel>
+            <translation><!-- Active Client Owned Domain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assumptive Prepay</masterLabel>
+            <translation><!-- Assumptive Prepay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Change Mind POS</masterLabel>
+            <translation><!-- Billing: Change Mind POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Contract Length</masterLabel>
+            <translation><!-- Billing: Contract Length --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Invoice/Call/Automatic Billing</masterLabel>
+            <translation><!-- Billing: Invoice/Call/Automatic Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Payment Dates</masterLabel>
+            <translation><!-- Billing: Payment Dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Refund Discussion</masterLabel>
+            <translation><!-- Billing: Refund Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calls/Jobs TORCHx Only</masterLabel>
+            <translation><!-- Calls/Jobs TORCHx Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current SEO – No Impact</masterLabel>
+            <translation><!-- Current SEO – No Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary Offense</masterLabel>
+            <translation><!-- Disciplinary Offense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guaranteed Organic Placement</masterLabel>
+            <translation><!-- Guaranteed Organic Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Lead Ranges</masterLabel>
+            <translation><!-- Incorrect Lead Ranges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Pricing</masterLabel>
+            <translation><!-- Incorrect Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch/Pause</masterLabel>
+            <translation><!-- Launch/Pause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Conversion Rate</masterLabel>
+            <translation><!-- Lead Conversion Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Conservative</masterLabel>
+            <translation><!-- Lead Range - Conservative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Guaranteed</masterLabel>
+            <translation><!-- Lead Range - Guaranteed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range – Prospects vs. Clients</masterLabel>
+            <translation><!-- Lead Range – Prospects vs. Clients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: AA Breach</masterLabel>
+            <translation><!-- Misc: AA Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: Non English</masterLabel>
+            <translation><!-- Misc: Non English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: Product Misrepresentation</masterLabel>
+            <translation><!-- Misc: Product Misrepresentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non PSG Focus/Results</masterLabel>
+            <translation><!-- Non PSG Focus/Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Advertised for Segment</masterLabel>
+            <translation><!-- Not Advertised for Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Results</masterLabel>
+            <translation><!-- Organic Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROE Breach</masterLabel>
+            <translation><!-- ROE Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replicating Website</masterLabel>
+            <translation><!-- Replicating Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO on Client's Website</masterLabel>
+            <translation><!-- SEO on Client&apos;s Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Placement</masterLabel>
+            <translation><!-- Specific Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeframe - Calls within 24-48</masterLabel>
+            <translation><!-- Timeframe - Calls within 24-48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline for Organic Placement</masterLabel>
+            <translation><!-- Timeline for Organic Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline: Launch Timeframe</masterLabel>
+            <translation><!-- Timeline: Launch Timeframe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Original Case ID --></label>
+        <name>Original_Case_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Case Number --></label>
+        <name>Original_Case_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Recording</masterLabel>
+            <translation><!-- No Recording --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent Case --></label>
+        <name>Parent_Case__c</name>
+        <relationshipLabel><!-- Quality Case --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Potential Quality Offense --></label>
+        <name>Potential_Quality_Offense__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Blocker</masterLabel>
+            <translation><!-- Blocker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA Action Taken --></label>
+        <name>QA_Action_Taken__c</name>
+        <picklistValues>
+            <masterLabel>$100 Fine</masterLabel>
+            <translation><!-- $100 Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation><!-- Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Commission Loss</masterLabel>
+            <translation><!-- Full Commission Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inconclusive</masterLabel>
+            <translation><!-- Inconclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- QA Product Type --></label>
+        <name>QA_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ads Only</masterLabel>
+            <translation><!-- Ads Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essentials Only</masterLabel>
+            <translation><!-- Essentials Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essentials Only (Down-sell)</masterLabel>
+            <translation><!-- Essentials Only (Down-sell) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Stream</masterLabel>
+            <translation><!-- Lead Stream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse - Auto</masterLabel>
+            <translation><!-- Lighthouse - Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse - Chiro</masterLabel>
+            <translation><!-- Lighthouse - Chiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse - Dental</masterLabel>
+            <translation><!-- Lighthouse - Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse - Vision</masterLabel>
+            <translation><!-- Lighthouse - Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse Essentials</masterLabel>
+            <translation><!-- Lighthouse Essentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse Essentials - Auto</masterLabel>
+            <translation><!-- Lighthouse Essentials - Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse Essentials - Chiro</masterLabel>
+            <translation><!-- Lighthouse Essentials - Chiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation><!-- Max --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx + Ads for Agent</masterLabel>
+            <translation><!-- TORCHx + Ads for Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx + Ads for Broker</masterLabel>
+            <translation><!-- TORCHx + Ads for Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx + Ads for Team</masterLabel>
+            <translation><!-- TORCHx + Ads for Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx for Agent</masterLabel>
+            <translation><!-- TORCHx for Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx for Broker</masterLabel>
+            <translation><!-- TORCHx for Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx for Team</masterLabel>
+            <translation><!-- TORCHx for Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Medical</masterLabel>
+            <translation><!-- Yodle Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Organic</masterLabel>
+            <translation><!-- Yodle Organic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- QA Type --></label>
+        <name>QA_Type__c</name>
+        <picklistValues>
+            <masterLabel>Closing Script QA</masterLabel>
+            <translation><!-- Closing Script QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developmental Monitor</masterLabel>
+            <translation><!-- Developmental Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA Request</masterLabel>
+            <translation><!-- QA Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- QO Timestamp --></label>
+        <name>QO_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for QA --></label>
+        <name>Reason_for_QA__c</name>
+        <picklistValues>
+            <masterLabel>$100 Fine - Professionalism</masterLabel>
+            <translation><!-- $100 Fine - Professionalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100 Fine - Referencing National</masterLabel>
+            <translation><!-- $100 Fine - Referencing National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AA Breach</masterLabel>
+            <translation><!-- AA Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assumptive Prepay</masterLabel>
+            <translation><!-- Assumptive Prepay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRO - Incorrect Billing</masterLabel>
+            <translation><!-- BRO - Incorrect Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Address Not Used</masterLabel>
+            <translation><!-- Business Address Not Used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Touch Plan</masterLabel>
+            <translation><!-- CS Touch Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calls/Jobs</masterLabel>
+            <translation><!-- Calls/Jobs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation Policy</masterLabel>
+            <translation><!-- Cancellation Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Mind POS</masterLabel>
+            <translation><!-- Change Mind POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competing Ads Campaign</masterLabel>
+            <translation><!-- Competing Ads Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint – Call</masterLabel>
+            <translation><!-- Complaint – Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint – Online</masterLabel>
+            <translation><!-- Complaint – Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Length</masterLabel>
+            <translation><!-- Contract Length --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current SEO – No Impact</masterLabel>
+            <translation><!-- Current SEO – No Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - Email Signature</masterLabel>
+            <translation><!-- Disciplinary - Email Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - PCI</masterLabel>
+            <translation><!-- Disciplinary - PCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - Pitch Against Company</masterLabel>
+            <translation><!-- Disciplinary - Pitch Against Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - Professionalism</masterLabel>
+            <translation><!-- Disciplinary - Professionalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - Save Attempt</masterLabel>
+            <translation><!-- Disciplinary - Save Attempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary - Unauthorized Charge</masterLabel>
+            <translation><!-- Disciplinary - Unauthorized Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary Offense</masterLabel>
+            <translation><!-- Disciplinary Offense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusivity</masterLabel>
+            <translation><!-- Exclusivity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fine</masterLabel>
+            <translation><!-- Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Found Outside of 20 Miles</masterLabel>
+            <translation><!-- Found Outside of 20 Miles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guaranteed Organic Placement</masterLabel>
+            <translation><!-- Guaranteed Organic Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half Chargeback</masterLabel>
+            <translation><!-- Half Chargeback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highest Level Offense</masterLabel>
+            <translation><!-- Highest Level Offense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice/Call/Automatic Billing</masterLabel>
+            <translation><!-- Invoice/Call/Automatic Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LR - Specific Number of Leads</masterLabel>
+            <translation><!-- LR - Specific Number of Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch/Pause</masterLabel>
+            <translation><!-- Launch/Pause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Averaging</masterLabel>
+            <translation><!-- Lead Range - Averaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Conservative</masterLabel>
+            <translation><!-- Lead Range - Conservative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Guaranteed</masterLabel>
+            <translation><!-- Lead Range - Guaranteed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Incorrect</masterLabel>
+            <translation><!-- Lead Range - Incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Jobs vs. Calls/Emails</masterLabel>
+            <translation><!-- Lead Range - Jobs vs. Calls/Emails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Product Participation</masterLabel>
+            <translation><!-- No Product Participation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non English</masterLabel>
+            <translation><!-- Non English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non PSG Focus/Results</masterLabel>
+            <translation><!-- Non PSG Focus/Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Advertised for Segment</masterLabel>
+            <translation><!-- Not Advertised for Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Box</masterLabel>
+            <translation><!-- PO Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Dates</masterLabel>
+            <translation><!-- Payment Dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Tilt Not Clarified</masterLabel>
+            <translation><!-- Price Tilt Not Clarified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Misrepresentation #1</masterLabel>
+            <translation><!-- Product Misrepresentation #1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Misrepresentation #2</masterLabel>
+            <translation><!-- Product Misrepresentation #2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Misrepresentation #3</masterLabel>
+            <translation><!-- Product Misrepresentation #3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Providing Lead Conversion Rate</masterLabel>
+            <translation><!-- Providing Lead Conversion Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROE Breach</masterLabel>
+            <translation><!-- ROE Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rank Outside of Target Metro</masterLabel>
+            <translation><!-- Rank Outside of Target Metro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund Discussion</masterLabel>
+            <translation><!-- Refund Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replicating Website</masterLabel>
+            <translation><!-- Replicating Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO on Client's Website</masterLabel>
+            <translation><!-- SEO on Client&apos;s Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Update/Comm Log</masterLabel>
+            <translation><!-- Sales Update/Comm Log --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Address/Two Accounts</masterLabel>
+            <translation><!-- Same Address/Two Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Keywords</masterLabel>
+            <translation><!-- Specific Keywords --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Placement</masterLabel>
+            <translation><!-- Specific Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target Metro Beyond 20 Miles</masterLabel>
+            <translation><!-- Target Metro Beyond 20 Miles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeframe - Calls within 24-48</masterLabel>
+            <translation><!-- Timeframe - Calls within 24-48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeframe - Front page/Results</masterLabel>
+            <translation><!-- Timeframe - Front page/Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeframe - Launch</masterLabel>
+            <translation><!-- Timeframe - Launch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zero Tolerance</masterLabel>
+            <translation><!-- Zero Tolerance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eContract</masterLabel>
+            <translation><!-- eContract --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rep Emailed QA --></label>
+        <name>Rep_Emailed_QA__c</name>
+        <picklistValues>
+            <masterLabel>Business Info</masterLabel>
+            <translation><!-- Business Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC</masterLabel>
+            <translation><!-- CSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commitment Length</masterLabel>
+            <translation><!-- Commitment Length --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Info</masterLabel>
+            <translation><!-- Contact Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Contract</masterLabel>
+            <translation><!-- E-Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch Date</masterLabel>
+            <translation><!-- Launch Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Calls</masterLabel>
+            <translation><!-- Multiple Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Reading the Entire Script Verbatim</masterLabel>
+            <translation><!-- Not Reading the Entire Script Verbatim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing/Billing</masterLabel>
+            <translation><!-- Pricing/Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactivation</masterLabel>
+            <translation><!-- Reactivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reading Incorrect Sections</masterLabel>
+            <translation><!-- Reading Incorrect Sections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording Issue</masterLabel>
+            <translation><!-- Recording Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Segment</masterLabel>
+            <translation><!-- Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBC</masterLabel>
+            <translation><!-- TBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target Metro</masterLabel>
+            <translation><!-- Target Metro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tradeshow</masterLabel>
+            <translation><!-- Tradeshow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result of QA --></label>
+        <name>Result_of_QA__c</name>
+        <picklistValues>
+            <masterLabel>$100 Fine</masterLabel>
+            <translation><!-- $100 Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free - Suggestion</masterLabel>
+            <translation><!-- Error Free - Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inconclusive</masterLabel>
+            <translation><!-- Inconclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No ZTO Found</masterLabel>
+            <translation><!-- No ZTO Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZTO</masterLabel>
+            <translation><!-- ZTO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC to CTS Sync Enabled --></label>
+        <name>SFDC_to_CTS_Sync_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- SR1 Date Processed QA --></label>
+        <name>SR1_Date_Processed_QA__c</name>
+    </fields>
+    <fields>
+        <label><!-- SR1 E-mail Address --></label>
+        <name>SR1_E_mail_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- SR1 Manager --></label>
+        <name>SR1_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- SR1 Name (text) --></label>
+        <name>SR1_Name_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- SR1 Offense Details --></label>
+        <name>SR1_Offense_Details__c</name>
+        <picklistValues>
+            <masterLabel>$100 Fine</masterLabel>
+            <translation><!-- $100 Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Active Client Owned Domain</masterLabel>
+            <translation><!-- Active Client Owned Domain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assumptive Prepay</masterLabel>
+            <translation><!-- Assumptive Prepay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Change Mind POS</masterLabel>
+            <translation><!-- Billing: Change Mind POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Contract Length</masterLabel>
+            <translation><!-- Billing: Contract Length --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Invoice/Call/Automatic Billing</masterLabel>
+            <translation><!-- Billing: Invoice/Call/Automatic Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Payment Dates</masterLabel>
+            <translation><!-- Billing: Payment Dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing: Refund Discussion</masterLabel>
+            <translation><!-- Billing: Refund Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calls/Jobs TORCHx Only</masterLabel>
+            <translation><!-- Calls/Jobs TORCHx Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current SEO – No Impact</masterLabel>
+            <translation><!-- Current SEO – No Impact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disciplinary Offense</masterLabel>
+            <translation><!-- Disciplinary Offense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guaranteed Organic Placement</masterLabel>
+            <translation><!-- Guaranteed Organic Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Lead Ranges</masterLabel>
+            <translation><!-- Incorrect Lead Ranges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Pricing</masterLabel>
+            <translation><!-- Incorrect Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch/Pause</masterLabel>
+            <translation><!-- Launch/Pause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Conversion Rate</masterLabel>
+            <translation><!-- Lead Conversion Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Conservative</masterLabel>
+            <translation><!-- Lead Range - Conservative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range - Guaranteed</masterLabel>
+            <translation><!-- Lead Range - Guaranteed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Range – Prospects vs. Clients</masterLabel>
+            <translation><!-- Lead Range – Prospects vs. Clients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: AA Breach</masterLabel>
+            <translation><!-- Misc: AA Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: Non English</masterLabel>
+            <translation><!-- Misc: Non English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc: Product Misrepresentation</masterLabel>
+            <translation><!-- Misc: Product Misrepresentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non PSG Focus/Results</masterLabel>
+            <translation><!-- Non PSG Focus/Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Advertised for Segment</masterLabel>
+            <translation><!-- Not Advertised for Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Results</masterLabel>
+            <translation><!-- Organic Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROE Breach</masterLabel>
+            <translation><!-- ROE Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replicating Website</masterLabel>
+            <translation><!-- Replicating Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO on Client's Website</masterLabel>
+            <translation><!-- SEO on Client&apos;s Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Placement</masterLabel>
+            <translation><!-- Specific Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeframe - Calls within 24-48</masterLabel>
+            <translation><!-- Timeframe - Calls within 24-48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline for Organic Placement</masterLabel>
+            <translation><!-- Timeline for Organic Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline: Launch Timeframe</masterLabel>
+            <translation><!-- Timeline: Launch Timeframe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SR1 QA Action Taken --></label>
+        <name>SR1_QA_Action_Taken__c</name>
+        <picklistValues>
+            <masterLabel>$100 Fine</masterLabel>
+            <translation><!-- $100 Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation><!-- Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Commission Loss</masterLabel>
+            <translation><!-- Full Commission Loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inconclusive</masterLabel>
+            <translation><!-- Inconclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SR1 Sales Office --></label>
+        <name>SR1_Sales_Office__c</name>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jacksonville</masterLabel>
+            <translation><!-- Jacksonville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scottsdale</masterLabel>
+            <translation><!-- Scottsdale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Date --></label>
+        <name>Sales_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Director --></label>
+        <name>Sales_Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Sales</masterLabel>
+            <translation><!-- Field Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jacksonville</masterLabel>
+            <translation><!-- Jacksonville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scottsdale</masterLabel>
+            <translation><!-- Scottsdale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Person (text) --></label>
+        <name>Sales_Person_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep E-mail Address --></label>
+        <name>Sales_Rep_E_mail_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep --></label>
+        <name>Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Words Transcribed --></label>
+        <name>Words_Transcribed__c</name>
+        <picklistValues>
+            <masterLabel>&lt;1000</masterLabel>
+            <translation><!-- &lt;1000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;1500</masterLabel>
+            <translation><!-- &lt;1500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;2000</masterLabel>
+            <translation><!-- &lt;2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;250</masterLabel>
+            <translation><!-- &lt;250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;50</masterLabel>
+            <translation><!-- &lt;50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;500</masterLabel>
+            <translation><!-- &lt;500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;2000</masterLabel>
+            <translation><!-- &gt;2000 --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Quality Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quality Case</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <description><!-- Record Type used for Acquisio client issues --></description>
+        <label><!-- Acquisio Master Quality --></label>
+        <name>Acquisio_Master_Quality</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- QA Closing Script Cases --></description>
+        <label><!-- Closing Script - Auto Launch --></label>
+        <name>Closing_Script_Auto_Launch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lighthouse Master Quality --></label>
+        <name>Lighthouse_Master_Quality</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local Master Quality --></label>
+        <name>Local_Master_Quality</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TORCHx Master Quality --></label>
+        <name>TORCHx_Master_Quality</name>
+    </recordTypes>
+</CustomObjectTranslation>

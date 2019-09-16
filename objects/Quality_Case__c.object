@@ -43,6 +43,106 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -52,389 +152,8 @@
         <relationshipName>Quality_Team</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Cancellation_Parent__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Cancellation Parent</label>
-        <referenceTo>Cancellation_Request__c</referenceTo>
-        <relationshipLabel>Quality Case</relationshipLabel>
-        <relationshipName>Quality_Case</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Case_Ag_Bus_Days__c</fullName>
-        <externalId>false</externalId>
-        <formula>CASE(MOD( DateValue(CreatedDate) - DATE(1985,6,24),7), 0 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
-CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
-+ (FLOOR(( Today() - DateValue(CreatedDate) )/7)*5-1)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Case Ag (Bus Days)</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Case_Age__c</fullName>
-        <externalId>false</externalId>
-        <formula>NOW() - CreatedDate</formula>
-        <label>Case Age</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Case_Closed_By__c</fullName>
-        <externalId>false</externalId>
-        <label>Case Closed By</label>
-        <length>50</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Case_Closed_Date_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Case Closed Date/Time</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>Client_ID__c</fullName>
-        <externalId>false</externalId>
-        <formula>Account_Name__r.Client_ID__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Client ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Client_ID_del__c</fullName>
-        <externalId>false</externalId>
-        <label>Client ID</label>
-        <length>10</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Created_Date__c</fullName>
-        <externalId>false</externalId>
-        <formula>CreatedDate</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Created Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Date_Processed_QA__c</fullName>
-        <externalId>false</externalId>
-        <label>Date Processed QA</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Description__c</fullName>
-        <externalId>false</externalId>
-        <label>Description</label>
-        <length>32000</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>6</visibleLines>
-    </fields>
-    <fields>
-        <fullName>IsClosed__c</fullName>
-        <externalId>false</externalId>
-        <formula>if(
- ISPICKVAL( Status__c , "Closed") ,
-true,
-false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>IsClosed</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Original_Case_ID__c</fullName>
-        <externalId>false</externalId>
-        <label>Original Case ID</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Original_Case_Number__c</fullName>
-        <externalId>false</externalId>
-        <label>Original Case Number</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Parent_Case__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Parent Case</label>
-        <referenceTo>Case</referenceTo>
-        <relationshipName>Quality_Team</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>SR1_Date_Processed_QA__c</fullName>
-        <externalId>false</externalId>
-        <label>SR1 Date Processed QA</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>SR1_E_mail_Address__c</fullName>
-        <externalId>false</externalId>
-        <label>SR1 E-mail Address</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>SR1_Manager__c</fullName>
-        <externalId>false</externalId>
-        <label>SR1 Manager</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>SR1_Name_text__c</fullName>
-        <externalId>false</externalId>
-        <label>SR1 Name (text)</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Sales_Manager__c</fullName>
-        <externalId>false</externalId>
-        <label>Sales Manager</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Sales_Person_text__c</fullName>
-        <externalId>false</externalId>
-        <label>Sales Person (text)</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Sales_Rep_E_mail_Address__c</fullName>
-        <externalId>false</externalId>
-        <label>Sales Rep E-mail Address</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Subject__c</fullName>
-        <externalId>false</externalId>
-        <label>Subject</label>
-        <length>225</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CS_Timestamp__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>CS Timestamp</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Call_Found_Under__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Call Found Under</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Phone</type>
-    </fields>
-    <fields>
-        <fullName>Fail_Details__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Fail Details</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Product_Type__c</fullName>
-        <description>For Closing Script - Auto Launch Case</description>
-        <externalId>false</externalId>
-        <label>Product Type</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>QO_Timestamp__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>QO Timestamp</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Sales_Date__c</fullName>
-        <description>Date of Sale</description>
-        <externalId>false</externalId>
-        <label>Sales Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Sales_Director__c</fullName>
-        <description>Sales Director Name associated to record</description>
-        <externalId>false</externalId>
-        <label>Sales Director</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Sales_Rep__c</fullName>
-        <description>For Closing Script - Auto Launch Case</description>
-        <externalId>false</externalId>
-        <label>Sales Rep</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Segment__c</fullName>
-        <description>For Closing Script - Auto Launch Case</description>
-        <externalId>false</externalId>
-        <label>Segment</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Account_Product_Type__c</fullName>
@@ -443,7 +162,6 @@ false)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Account Product Type</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -457,23 +175,9 @@ false)</formula>
         <label>Additional Notes</label>
         <length>1000</length>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Fail_Timestamp__c</fullName>
-        <description>For Closing Script - Auto Close Case</description>
-        <externalId>false</externalId>
-        <label>Fail Timestamp</label>
-        <length>50</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CS_Fail_Details__c</fullName>
@@ -481,7 +185,6 @@ false)</formula>
         <label>CS Fail Details</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -848,7 +551,6 @@ false)</formula>
         <label>CS Potential Quality Offense</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -1005,12 +707,121 @@ false)</formula>
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
+        <fullName>CS_Timestamp__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>CS Timestamp</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Found_Under__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Call Found Under</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Parent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Cancellation Parent</label>
+        <referenceTo>Cancellation_Request__c</referenceTo>
+        <relationshipLabel>Quality Case</relationshipLabel>
+        <relationshipName>Quality_Case</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Ag_Bus_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MOD( DateValue(CreatedDate) - DATE(1985,6,24),7), 0 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 1 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 2 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 3 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 4 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 5 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 6 , 
+CASE( MOD( Today() - DateValue(CreatedDate) ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 999) 
++ (FLOOR(( Today() - DateValue(CreatedDate) )/7)*5-1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Ag (Bus Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOW() - CreatedDate</formula>
+        <label>Case Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Closed_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Closed By</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Closed_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Closed Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Client_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Client ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_ID_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Client ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Closing_Script_Call_Recorded__c</fullName>
         <externalId>false</externalId>
         <label>Closing Script Call Recorded?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1034,6 +845,25 @@ false)</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Processed_QA__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Processed QA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Demo_Recorded__c</fullName>
@@ -1042,7 +872,6 @@ false)</formula>
         <label>Demo Recorded?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1068,13 +897,67 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Ticket_ID__c</fullName>
+        <description>Ticket ID for this case in an External Ticketing System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticket ID for this case in an External Ticketing System</inlineHelpText>
+        <label>External Ticket ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Ticket_System__c</fullName>
+        <description>Relationship was created between Salesforce and this external ticketing system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relationship was created between Salesforce and this external ticketing system</inlineHelpText>
+        <label>External Ticket System</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CTS</fullName>
+                    <default>false</default>
+                    <label>CTS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fail_Details__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Fail Details</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Fail_Reason__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
         <label>Fail Reason</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -1130,13 +1013,24 @@ false)</formula>
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
+        <fullName>Fail_Timestamp__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>Fail Timestamp</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Fine_Amount__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
         <label>Fine Amount</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1171,12 +1065,23 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>IsClosed__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(
+ ISPICKVAL( Status__c , "Closed") ,
+true,
+false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsClosed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Kickback__c</fullName>
         <externalId>false</externalId>
         <label>Kickback</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1207,7 +1112,6 @@ false)</formula>
         <label>Minutes Recorded</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1263,12 +1167,10 @@ false)</formula>
         <label>Offense Details</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
             <controllingField>QA_Product_Type__c</controllingField>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -1431,74 +1333,9 @@ false)</formula>
                     <default>false</default>
                     <label>Timeline for Organic Placement</label>
                 </value>
-                <value>
-                    <fullName>$100 Fine: Professionalism</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>$100 Fine: Professionalism</label>
-                </value>
-                <value>
-                    <fullName>BRO - Incorrect Billing</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>BRO - Incorrect Billing</label>
-                </value>
-                <value>
-                    <fullName>Billing: Pricing/Cancellation Policy</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Billing: Pricing/Cancellation Policy</label>
-                </value>
-                <value>
-                    <fullName>Current SEO ? No Impact</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Current SEO ? No Impact</label>
-                </value>
-                <value>
-                    <fullName>LR - Specific Number of Leads</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>LR - Specific Number of Leads</label>
-                </value>
-                <value>
-                    <fullName>Lead Range ? Prospects vs. Clients</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Lead Range ? Prospects vs. Clients</label>
-                </value>
-                <value>
-                    <fullName>MO - Cell Phone</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>MO - Cell Phone</label>
-                </value>
-                <value>
-                    <fullName>OPO - FP Timeline discussion</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>OPO - FP Timeline discussion</label>
-                </value>
-                <value>
-                    <fullName>PO Box</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>PO Box</label>
-                </value>
-                <value>
-                    <fullName>Rank Outside of Target Metro</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Rank Outside of Target Metro</label>
-                </value>
-                <value>
-                    <fullName>Specific Keywords</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Specific Keywords</label>
-                </value>
             </valueSetDefinition>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1507,7 +1344,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1517,10 +1353,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>$100 Fine</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1529,7 +1366,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1539,10 +1375,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Misc: AA Breach</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1551,7 +1388,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1561,10 +1397,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Active Client Owned Domain</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1573,7 +1410,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1583,10 +1419,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Assumptive Prepay</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1595,7 +1432,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1605,10 +1441,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Billing: Change Mind POS</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1617,7 +1454,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1627,10 +1463,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Billing: Contract Length</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1639,7 +1476,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1649,10 +1485,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Calls/Jobs TORCHx Only</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1661,7 +1498,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1671,10 +1507,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Current SEO – No Impact</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1683,7 +1520,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1693,10 +1529,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Disciplinary Offense</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1705,7 +1542,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1715,10 +1551,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Guaranteed Organic Placement</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1727,7 +1564,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1737,10 +1573,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Incorrect Lead Ranges</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1749,7 +1586,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1759,10 +1595,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Incorrect Pricing</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1771,7 +1608,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1781,10 +1617,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Billing: Invoice/Call/Automatic Billing</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1793,7 +1630,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1803,10 +1639,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Launch/Pause</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1815,7 +1652,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1825,10 +1661,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Lead Conversion Rate</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1837,7 +1674,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1847,10 +1683,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Lead Range - Conservative</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1859,7 +1696,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1869,10 +1705,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Lead Range - Guaranteed</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1881,7 +1718,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1891,10 +1727,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Lead Range – Prospects vs. Clients</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1903,7 +1740,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1913,10 +1749,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Misc: Non English</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1925,7 +1762,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1935,10 +1771,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Non PSG Focus/Results</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1947,7 +1784,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1957,10 +1793,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Not Advertised for Segment</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1969,7 +1806,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -1979,10 +1815,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Organic Results</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -1991,7 +1828,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2001,10 +1837,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Billing: Payment Dates</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2013,7 +1850,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2023,10 +1859,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Misc: Product Misrepresentation</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2035,7 +1872,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2045,10 +1881,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Billing: Refund Discussion</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2057,7 +1894,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2067,10 +1903,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Replicating Website</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2079,7 +1916,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2089,10 +1925,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>ROE Breach</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2101,7 +1938,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2111,10 +1947,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>SEO on Client's Website</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2123,7 +1960,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2133,10 +1969,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Specific Placement</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2145,7 +1982,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2155,10 +1991,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Timeframe - Calls within 24-48</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2167,7 +2004,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2177,10 +2013,11 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Timeline: Launch Timeframe</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Auto</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Chiro</controllingFieldValue>
                 <controllingFieldValue>Lighthouse Essentials - Auto</controllingFieldValue>
@@ -2189,7 +2026,6 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Yodle Organic</controllingFieldValue>
@@ -2199,11 +2035,33 @@ false)</formula>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only (Down-sell)</controllingFieldValue>
                 <controllingFieldValue>Lighthouse - Dental</controllingFieldValue>
-                <controllingFieldValue>Lighthouse - Chiro</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <valueName>Timeline for Organic Placement</valueName>
             </valueSettings>
         </valueSet>
         <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Original_Case_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Case ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Case_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Case Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Outcome__c</fullName>
@@ -2212,7 +2070,6 @@ false)</formula>
         <label>Outcome</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2237,13 +2094,24 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Parent_Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>Quality_Team</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Potential_Quality_Offense__c</fullName>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
         <label>Potential Quality Offense</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2269,7 +2137,6 @@ false)</formula>
         <label>Priority</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2300,12 +2167,23 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Product_Type__c</fullName>
+        <description>For Closing Script - Auto Launch Case</description>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>QA_Action_Taken__c</fullName>
         <externalId>false</externalId>
         <label>QA Action Taken</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2351,12 +2229,131 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>QA_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Product Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Max</fullName>
+                    <default>false</default>
+                    <label>Max</label>
+                </value>
+                <value>
+                    <fullName>Ads Only</fullName>
+                    <default>false</default>
+                    <label>Ads Only</label>
+                </value>
+                <value>
+                    <fullName>Yodle Organic</fullName>
+                    <default>false</default>
+                    <label>Yodle Organic</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse</fullName>
+                    <default>false</default>
+                    <label>Lighthouse</label>
+                </value>
+                <value>
+                    <fullName>Yodle Medical</fullName>
+                    <default>false</default>
+                    <label>Yodle Medical</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Essentials</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Essentials</label>
+                </value>
+                <value>
+                    <fullName>Essentials Only</fullName>
+                    <default>false</default>
+                    <label>Essentials Only</label>
+                </value>
+                <value>
+                    <fullName>Essentials Only (Down-sell)</fullName>
+                    <default>false</default>
+                    <label>Essentials Only (Down-sell)</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Dental</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Dental</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Vision</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Vision</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Chiro</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Chiro</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse - Auto</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Auto</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Essentials - Chiro</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Essentials - Chiro</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Essentials - Auto</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Essentials - Auto</label>
+                </value>
+                <value>
+                    <fullName>TORCHx for Agent</fullName>
+                    <default>false</default>
+                    <label>TORCHx for Agent</label>
+                </value>
+                <value>
+                    <fullName>TORCHx + Ads for Agent</fullName>
+                    <default>false</default>
+                    <label>TORCHx + Ads for Agent</label>
+                </value>
+                <value>
+                    <fullName>TORCHx for Team</fullName>
+                    <default>false</default>
+                    <label>TORCHx for Team</label>
+                </value>
+                <value>
+                    <fullName>TORCHx + Ads for Team</fullName>
+                    <default>false</default>
+                    <label>TORCHx + Ads for Team</label>
+                </value>
+                <value>
+                    <fullName>TORCHx for Broker</fullName>
+                    <default>false</default>
+                    <label>TORCHx for Broker</label>
+                </value>
+                <value>
+                    <fullName>TORCHx + Ads for Broker</fullName>
+                    <default>false</default>
+                    <label>TORCHx + Ads for Broker</label>
+                </value>
+                <value>
+                    <fullName>Lead Stream</fullName>
+                    <default>false</default>
+                    <label>Lead Stream</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>QA_Type__c</fullName>
         <externalId>false</externalId>
         <label>QA Type</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2382,12 +2379,23 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>QO_Timestamp__c</fullName>
+        <description>For Closing Script - Auto Close Case</description>
+        <externalId>false</externalId>
+        <label>QO Timestamp</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Reason_for_QA__c</fullName>
         <externalId>false</externalId>
         <label>Reason for QA</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -2715,7 +2723,6 @@ false)</formula>
         <label>Rep Emailed QA</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -2821,7 +2828,6 @@ false)</formula>
         <label>Result of QA</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2867,12 +2873,61 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>SFDC_to_CTS_Sync_Enabled__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.SFDC_to_CTS_Sync_Enabled__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC to CTS Sync Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SR1_Date_Processed_QA__c</fullName>
+        <externalId>false</externalId>
+        <label>SR1 Date Processed QA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SR1_E_mail_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>SR1 E-mail Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SR1_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>SR1 Manager</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SR1_Name_text__c</fullName>
+        <externalId>false</externalId>
+        <label>SR1 Name (text)</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>SR1_Offense_Details__c</fullName>
         <externalId>false</externalId>
         <label>SR1 Offense Details</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -3047,10 +3102,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>$100 Fine</valueName>
             </valueSettings>
@@ -3060,10 +3115,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Misc: AA Breach</valueName>
             </valueSettings>
@@ -3073,10 +3128,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Active Client Owned Domain</valueName>
             </valueSettings>
@@ -3086,10 +3141,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Assumptive Prepay</valueName>
             </valueSettings>
@@ -3099,10 +3154,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Billing: Change Mind POS</valueName>
             </valueSettings>
@@ -3112,10 +3167,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Billing: Contract Length</valueName>
             </valueSettings>
@@ -3125,10 +3180,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Calls/Jobs TORCHx Only</valueName>
             </valueSettings>
@@ -3138,10 +3193,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Current SEO – No Impact</valueName>
             </valueSettings>
@@ -3151,10 +3206,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Disciplinary Offense</valueName>
             </valueSettings>
@@ -3164,10 +3219,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Guaranteed Organic Placement</valueName>
             </valueSettings>
@@ -3177,10 +3232,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Incorrect Lead Ranges</valueName>
             </valueSettings>
@@ -3190,10 +3245,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Incorrect Pricing</valueName>
             </valueSettings>
@@ -3203,10 +3258,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Billing: Invoice/Call/Automatic Billing</valueName>
             </valueSettings>
@@ -3216,10 +3271,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Launch/Pause</valueName>
             </valueSettings>
@@ -3229,10 +3284,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Lead Conversion Rate</valueName>
             </valueSettings>
@@ -3242,10 +3297,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Lead Range - Conservative</valueName>
             </valueSettings>
@@ -3255,10 +3310,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Lead Range - Guaranteed</valueName>
             </valueSettings>
@@ -3268,10 +3323,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Lead Range – Prospects vs. Clients</valueName>
             </valueSettings>
@@ -3281,10 +3336,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Misc: Non English</valueName>
             </valueSettings>
@@ -3294,10 +3349,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Non PSG Focus/Results</valueName>
             </valueSettings>
@@ -3307,10 +3362,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Not Advertised for Segment</valueName>
             </valueSettings>
@@ -3320,10 +3375,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Organic Results</valueName>
             </valueSettings>
@@ -3333,10 +3388,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Billing: Payment Dates</valueName>
             </valueSettings>
@@ -3346,10 +3401,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Misc: Product Misrepresentation</valueName>
             </valueSettings>
@@ -3359,10 +3414,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Billing: Refund Discussion</valueName>
             </valueSettings>
@@ -3372,10 +3427,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Replicating Website</valueName>
             </valueSettings>
@@ -3385,10 +3440,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>ROE Breach</valueName>
             </valueSettings>
@@ -3398,10 +3453,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>SEO on Client's Website</valueName>
             </valueSettings>
@@ -3411,10 +3466,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Specific Placement</valueName>
             </valueSettings>
@@ -3424,10 +3479,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Timeframe - Calls within 24-48</valueName>
             </valueSettings>
@@ -3437,10 +3492,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Timeline: Launch Timeframe</valueName>
             </valueSettings>
@@ -3450,10 +3505,10 @@ false)</formula>
                 <controllingFieldValue>TORCHx for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx + Ads for Team</controllingFieldValue>
                 <controllingFieldValue>TORCHx for Broker</controllingFieldValue>
-                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Max</controllingFieldValue>
                 <controllingFieldValue>Ads Only</controllingFieldValue>
                 <controllingFieldValue>Essentials Only</controllingFieldValue>
+                <controllingFieldValue>TORCHx + Ads for Broker</controllingFieldValue>
                 <controllingFieldValue>Lead Stream</controllingFieldValue>
                 <valueName>Timeline for Organic Placement</valueName>
             </valueSettings>
@@ -3466,7 +3521,6 @@ false)</formula>
         <label>SR1 QA Action Taken</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3517,7 +3571,6 @@ false)</formula>
         <label>SR1 Sales Office</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3553,12 +3606,44 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Sales_Date__c</fullName>
+        <description>Date of Sale</description>
+        <externalId>false</externalId>
+        <label>Sales Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Director__c</fullName>
+        <description>Sales Director Name associated to record</description>
+        <externalId>false</externalId>
+        <label>Sales Director</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Manager</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Sales_Office__c</fullName>
         <externalId>false</externalId>
         <label>Sales Office</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3599,12 +3684,56 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Sales_Person_text__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Person (text)</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_E_mail_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Rep E-mail Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep__c</fullName>
+        <description>For Closing Script - Auto Launch Case</description>
+        <externalId>false</externalId>
+        <label>Sales Rep</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment__c</fullName>
+        <description>For Closing Script - Auto Launch Case</description>
+        <externalId>false</externalId>
+        <label>Segment</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3636,12 +3765,22 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>225</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Words_Transcribed__c</fullName>
         <externalId>false</externalId>
         <label>Words Transcribed</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3686,183 +3825,15 @@ false)</formula>
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <fields>
-        <fullName>QA_Product_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>QA Product Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Max</fullName>
-                    <default>false</default>
-                    <label>Max</label>
-                </value>
-                <value>
-                    <fullName>Ads Only</fullName>
-                    <default>false</default>
-                    <label>Ads Only</label>
-                </value>
-                <value>
-                    <fullName>Yodle Organic</fullName>
-                    <default>false</default>
-                    <label>Yodle Organic</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse</fullName>
-                    <default>false</default>
-                    <label>Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>Yodle Medical</fullName>
-                    <default>false</default>
-                    <label>Yodle Medical</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Essentials</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Essentials</label>
-                </value>
-                <value>
-                    <fullName>Essentials Only</fullName>
-                    <default>false</default>
-                    <label>Essentials Only</label>
-                </value>
-                <value>
-                    <fullName>Essentials Only (Down-sell)</fullName>
-                    <default>false</default>
-                    <label>Essentials Only (Down-sell)</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Dental</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Dental</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Vision</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Vision</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Chiro</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Chiro</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse - Auto</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Auto</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Essentials - Chiro</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Essentials - Chiro</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Essentials - Auto</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Essentials - Auto</label>
-                </value>
-                <value>
-                    <fullName>TORCHx for Agent</fullName>
-                    <default>false</default>
-                    <label>TORCHx for Agent</label>
-                </value>
-                <value>
-                    <fullName>TORCHx + Ads for Agent</fullName>
-                    <default>false</default>
-                    <label>TORCHx + Ads for Agent</label>
-                </value>
-                <value>
-                    <fullName>TORCHx for Team</fullName>
-                    <default>false</default>
-                    <label>TORCHx for Team</label>
-                </value>
-                <value>
-                    <fullName>TORCHx + Ads for Team</fullName>
-                    <default>false</default>
-                    <label>TORCHx + Ads for Team</label>
-                </value>
-                <value>
-                    <fullName>TORCHx for Broker</fullName>
-                    <default>false</default>
-                    <label>TORCHx for Broker</label>
-                </value>
-                <value>
-                    <fullName>TORCHx + Ads for Broker</fullName>
-                    <default>false</default>
-                    <label>TORCHx + Ads for Broker</label>
-                </value>
-                <value>
-                    <fullName>Lead Stream</fullName>
-                    <default>false</default>
-                    <label>Lead Stream</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>External_Ticket_ID__c</fullName>
-        <description>Ticket ID for this case in an External Ticketing System</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Ticket ID for this case in an External Ticketing System</inlineHelpText>
-        <label>External Ticket ID</label>
-        <length>30</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>External_Ticket_System__c</fullName>
-        <description>Relationship was created between Salesforce and this external ticketing system</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Relationship was created between Salesforce and this external ticketing system</inlineHelpText>
-        <label>External Ticket System</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>CTS</fullName>
-                    <default>false</default>
-                    <label>CTS</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>SFDC_to_CTS_Sync_Enabled__c</fullName>
-        <externalId>false</externalId>
-        <formula>CreatedBy.SFDC_to_CTS_Sync_Enabled__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>SFDC to CTS Sync Enabled</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <allowInChatterGroups>true</allowInChatterGroups>
+    <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
+    <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
@@ -3872,12 +3843,10 @@ false)</formula>
         <displayFormat>Q-{0000}</displayFormat>
         <label>Quality Case Name</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Quality Case</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
@@ -3939,19 +3908,10 @@ false)</formula>
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Austin_Closing_Scripts_Quality_Case</fullName>
+        <fullName>QualityTeam295311_Quality_Case</fullName>
         <filterScope>Queue</filterScope>
-        <label>Austin Closing Scripts</label>
-        <queue>Austin_Closing_Scripts</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Trifecta_Closing_Scripts_Quality_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Trifecta Closing Scripts</label>
-        <queue>Trifecta_Closing_Scripts</queue>
+        <label>Quality Team</label>
+        <queue>QualityTeam295311</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

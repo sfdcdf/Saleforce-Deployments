@@ -31,15 +31,76 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
-    <fields>
-        <fullName>ActualElapsedTimeInDays</fullName>
-    </fields>
-    <fields>
-        <fullName>ActualElapsedTimeInHrs</fullName>
-    </fields>
-    <fields>
-        <fullName>ActualElapsedTimeInMins</fullName>
-    </fields>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>BusinessHoursId</fullName>
         <type>Lookup</type>
@@ -78,15 +139,6 @@
         <fullName>StartDate</fullName>
     </fields>
     <fields>
-        <fullName>StoppedTimeInDays</fullName>
-    </fields>
-    <fields>
-        <fullName>StoppedTimeInHrs</fullName>
-    </fields>
-    <fields>
-        <fullName>StoppedTimeInMins</fullName>
-    </fields>
-    <fields>
         <fullName>TargetDate</fullName>
     </fields>
     <fields>
@@ -115,7 +167,10 @@
     </fields>
     <fields>
         <fullName>TimeSinceTargetInMins</fullName>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds>
+    </fields>
+  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
+
     <validationRules>
         <fullName>YBN_Dates_Cannot_Be_Changed</fullName>
         <active>true</active>

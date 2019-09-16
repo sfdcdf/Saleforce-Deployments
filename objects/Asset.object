@@ -31,17 +31,76 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayouts>
-        <fullName>Default</fullName>
-        <fields>Name</fields>
-        <fields>AccountId</fields>
-        <fields>Status</fields>
-        <fields>PurchaseDate</fields>
-        <fields>Quantity</fields>
-        <fields>Price</fields>
-        <fields>SE_Eligible__c</fields>
-        <label>Default</label>
-    </compactLayouts>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>AccountId</fullName>
         <trackHistory>true</trackHistory>
@@ -122,10 +181,6 @@
         <trackHistory>true</trackHistory>
     </fields>
     <fields>
-        <fullName>Quantity</fullName>
-        <trackHistory>true</trackHistory>
-    </fields>
-    <fields>
         <fullName>RootAssetId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
@@ -157,7 +212,19 @@
         <fullName>Status</fullName>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
+  <searchLayouts>
         <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>ASSET.INSTALL_DATE</customTabListAdditionalFields>
@@ -179,7 +246,9 @@
         <searchResultsAdditionalFields>ASSET.INSTALL_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ControlledByParent</sharingModel>
+    </searchLayouts>
+  <sharingModel>ControlledByParent</sharingModel>
+
     <listViews>
         <fullName>AllAssets</fullName>
         <filterScope>Everything</filterScope>

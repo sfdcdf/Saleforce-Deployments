@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CP Needs --></label>
+        <name>CP_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Account --></label>
+        <name>Child_Account__c</name>
+        <relationshipLabel><!-- Lead Registration (Child Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claimed in GN? --></label>
+        <name>Claimed_in_GN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current PMS --></label>
+        <name>Current_PMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Demo Scheduled/Given --></label>
+        <name>Date_Demo_Scheduled_Given__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submitted --></label>
+        <name>Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Close Date --></label>
+        <name>Expected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- GN Link --></label>
+        <name>GN_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gold Nugget Client ID --></label>
+        <name>Gold_Nugget_Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gold Nugget Prospect ID --></label>
+        <name>Gold_Nugget_Prospect_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- In a Contract? --></label>
+        <name>In_a_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Contact Name --></label>
+        <name>Lead_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Phone Number --></label>
+        <name>Lead_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Registration Status --></label>
+        <name>Lead_Registration_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newly Registered</masterLabel>
+            <translation><!-- Newly Registered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- You can&apos;t set the Opportunity Stage until this Lead has been approved! --></help>
+        <label><!-- Opportunity Stage --></label>
+        <name>Opportunity_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Opportunity</masterLabel>
+            <translation><!-- New Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Lead Registration --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+        <relationshipLabel><!-- Lead Registration (Partner Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Concern --></label>
+        <name>Primary_Concern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Rep --></label>
+        <name>Split_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split with Sales Rep --></label>
+        <name>Split_with_Sales_Rep__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted By --></label>
+        <name>Submitted_By__c</name>
+        <relationshipLabel><!-- Lead Registration --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Lead Registration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lead Registration</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t change the submission date! --></errorMessage>
+        <name>Date_Submitted_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an Expected Close Date to Approve this Lead! --></errorMessage>
+        <name>Expected_Close_Date_Required_to_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Sales Rep&apos;s name --></errorMessage>
+        <name>Split_with_Sales_Rep</name>
+    </validationRules>
+</CustomObjectTranslation>

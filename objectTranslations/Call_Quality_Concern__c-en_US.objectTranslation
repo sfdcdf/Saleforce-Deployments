@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Call Quality Concerns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action Taken --></label>
+        <name>Action_T__c</name>
+        <picklistValues>
+            <masterLabel>Blacklisted</masterLabel>
+            <translation><!-- Blacklisted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outlet Paused</masterLabel>
+            <translation><!-- Outlet Paused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-provisioned</masterLabel>
+            <translation><!-- Re-provisioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Vendor</masterLabel>
+            <translation><!-- Sent to Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Quality Action --></label>
+        <name>Call_Quality_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Quality Issue to MOPs --></label>
+        <name>Call_Quality_Issue_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Callers Are Often Calling For: --></label>
+        <name>Callers_are_Often_Calling_For__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calls for Wrong Business: --></label>
+        <name>Calls_for_Wrong_Business__c</name>
+        <picklistValues>
+            <masterLabel>Are Many of the Calls for the Same Business</masterLabel>
+            <translation><!-- Are Many of the Calls for the Same Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is it All Different Businesses</masterLabel>
+            <translation><!-- Is it All Different Businesses --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Are these:
+-many calls all for different services
+-many calls for the wrong service but generally the same wrong service --></help>
+        <label><!-- Calls for Wrong Service: --></label>
+        <name>Calls_for_Wrong_Service__c</name>
+        <picklistValues>
+            <masterLabel>Multiple Calls for All Different Services</masterLabel>
+            <translation><!-- Multiple Calls for All Different Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Calls for Consistently the Same Wrong Service</masterLabel>
+            <translation><!-- Multiple Calls for Consistently the Same Wrong Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Call Quality Concerns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel Type --></label>
+        <name>Channel_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consultant Channel --></label>
+        <name>Consultant_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Call Tracking? --></label>
+        <name>Custom_Call_Tracking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ask your manager to check this box if you need to escalate --></help>
+        <label><!-- Escalated --></label>
+        <name>Escalated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can you point out some of the calls that have been bad? --></help>
+        <label><!-- Example Bad Calls --></label>
+        <name>Example_Bad_Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Call Concern --></label>
+        <name>First_Call_Concern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hang Up Calls? --></label>
+        <name>Hang_Up_Calls__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IMS Consultant --></label>
+        <name>IMS_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Pro Member --></label>
+        <name>IT_Pro_Member__c</name>
+        <picklistValues>
+            <masterLabel>Albert</masterLabel>
+            <translation><!-- Albert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antoney Selvaraj.R</masterLabel>
+            <translation><!-- Antoney Selvaraj.R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arun Sami</masterLabel>
+            <translation><!-- Arun Sami --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azhagarasan</masterLabel>
+            <translation><!-- Azhagarasan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bala Murugan</masterLabel>
+            <translation><!-- Bala Murugan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bramma Giri</masterLabel>
+            <translation><!-- Bramma Giri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chandra Sekar.S</masterLabel>
+            <translation><!-- Chandra Sekar.S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chenna Krishnan.C</masterLabel>
+            <translation><!-- Chenna Krishnan.C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deepa</masterLabel>
+            <translation><!-- Deepa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dilip S</masterLabel>
+            <translation><!-- Dilip S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dimalson</masterLabel>
+            <translation><!-- Dimalson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinesh Kumar</masterLabel>
+            <translation><!-- Dinesh Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominic Sylvester</masterLabel>
+            <translation><!-- Dominic Sylvester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G.Ashok</masterLabel>
+            <translation><!-- G.Ashok --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ganesan.M</masterLabel>
+            <translation><!-- Ganesan.M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glenny Joseph</masterLabel>
+            <translation><!-- Glenny Joseph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gopala Krishnan</masterLabel>
+            <translation><!-- Gopala Krishnan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gunasekar.T</masterLabel>
+            <translation><!-- Gunasekar.T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hari Prasath.T</masterLabel>
+            <translation><!-- Hari Prasath.T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ibrahim Badusha B</masterLabel>
+            <translation><!-- Ibrahim Badusha B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Irshad Ahmed</masterLabel>
+            <translation><!-- Irshad Ahmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jagatha</masterLabel>
+            <translation><!-- Jagatha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Paul</masterLabel>
+            <translation><!-- John Paul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joseph</masterLabel>
+            <translation><!-- Joseph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karpagam</masterLabel>
+            <translation><!-- Karpagam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karthick K</masterLabel>
+            <translation><!-- Karthick K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.Karthick</masterLabel>
+            <translation><!-- M.Karthick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maheshwaran</masterLabel>
+            <translation><!-- Maheshwaran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maheswaran</masterLabel>
+            <translation><!-- Maheswaran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manigandan.S</masterLabel>
+            <translation><!-- Manigandan.S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manikandan</masterLabel>
+            <translation><!-- Manikandan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mithun Mathew</masterLabel>
+            <translation><!-- Mithun Mathew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mohan Kumar</masterLabel>
+            <translation><!-- Mohan Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mohanraj M</masterLabel>
+            <translation><!-- Mohanraj M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muthu Kumar</masterLabel>
+            <translation><!-- Muthu Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other User</masterLabel>
+            <translation><!-- Other User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ponraj</masterLabel>
+            <translation><!-- Ponraj --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prabhakaran</masterLabel>
+            <translation><!-- Prabhakaran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prabhu S</masterLabel>
+            <translation><!-- Prabhu S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pradhap</masterLabel>
+            <translation><!-- Pradhap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priya</masterLabel>
+            <translation><!-- Priya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R.Sarath Kumar</masterLabel>
+            <translation><!-- R.Sarath Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raghul V R.</masterLabel>
+            <translation><!-- Raghul V R. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raja</masterLabel>
+            <translation><!-- Raja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajesh Anand</masterLabel>
+            <translation><!-- Rajesh Anand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajesh Kumar</masterLabel>
+            <translation><!-- Rajesh Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajkumar</masterLabel>
+            <translation><!-- Rajkumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ram Kumar</masterLabel>
+            <translation><!-- Ram Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ravi Shankar</masterLabel>
+            <translation><!-- Ravi Shankar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rusanthan</masterLabel>
+            <translation><!-- Rusanthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryan De Cruz</masterLabel>
+            <translation><!-- Ryan De Cruz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sambath Kumar</masterLabel>
+            <translation><!-- Sambath Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santosh Kumar</masterLabel>
+            <translation><!-- Santosh Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sateesh Kumar</masterLabel>
+            <translation><!-- Sateesh Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sathishkumar K</masterLabel>
+            <translation><!-- Sathishkumar K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sathya</masterLabel>
+            <translation><!-- Sathya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satish</masterLabel>
+            <translation><!-- Satish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savio</masterLabel>
+            <translation><!-- Savio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sebastian Jerome</masterLabel>
+            <translation><!-- Sebastian Jerome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selva Ganesh</masterLabel>
+            <translation><!-- Selva Ganesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senthil Raja</masterLabel>
+            <translation><!-- Senthil Raja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shankar</masterLabel>
+            <translation><!-- Shankar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sugantha Kumar</masterLabel>
+            <translation><!-- Sugantha Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sujith</masterLabel>
+            <translation><!-- Sujith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syed Suraj.N</masterLabel>
+            <translation><!-- Syed Suraj.N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thanasekar.R</masterLabel>
+            <translation><!-- Thanasekar.R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thangaraj</masterLabel>
+            <translation><!-- Thangaraj --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thyagu</masterLabel>
+            <translation><!-- Thyagu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vanmathi</masterLabel>
+            <translation><!-- Vanmathi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vidhya Lakshmi</masterLabel>
+            <translation><!-- Vidhya Lakshmi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vijayanandh</masterLabel>
+            <translation><!-- Vijayanandh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vishnu Prasanth.K</masterLabel>
+            <translation><!-- Vishnu Prasanth.K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vivek Anand</masterLabel>
+            <translation><!-- Vivek Anand --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager Approved Changes --></label>
+        <name>Manager_Approved_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Notes --></label>
+        <name>Marketing_Ops_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- List the numbers that you think should be blacklisted based upon your client&apos;s performance. --></help>
+        <label><!-- Numbers to be Blacklisted --></label>
+        <name>Numbers_to_be_blacklisted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Area Calls Are: --></label>
+        <name>Out_of_Area_Calls_Are__c</name>
+        <picklistValues>
+            <masterLabel>All different areas &amp; NOT for your service</masterLabel>
+            <translation><!-- All different areas &amp; NOT for your service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All different areas &amp; for your service</masterLabel>
+            <translation><!-- All different areas &amp; for your service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All the same area &amp; NOT for your service</masterLabel>
+            <translation><!-- All the same area &amp; NOT for your service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All the same area &amp; for your service</masterLabel>
+            <translation><!-- All the same area &amp; for your service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Out of Area Calls? --></label>
+        <name>Out_of_Area_Calls__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone Number Label --></label>
+        <name>Phone_Number_Label__c</name>
+        <picklistValues>
+            <masterLabel>City Search</masterLabel>
+            <translation><!-- City Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Mobile</masterLabel>
+            <translation><!-- Google Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingenio</masterLabel>
+            <translation><!-- Ingenio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jingle</masterLabel>
+            <translation><!-- Jingle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation><!-- Unpaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason 1 --></label>
+        <name>Reason_1__c</name>
+        <picklistValues>
+            <masterLabel>Multiple Lines Different Issue</masterLabel>
+            <translation><!-- Multiple Lines Different Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Lines Same Issue</masterLabel>
+            <translation><!-- Multiple Lines Same Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Caller On The Line</masterLabel>
+            <translation><!-- No Caller On The Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robo Calls</masterLabel>
+            <translation><!-- Robo Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsupported Service but Related to Segment</masterLabel>
+            <translation><!-- Unsupported Service but Related to Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number: Business Related to Segment</masterLabel>
+            <translation><!-- Wrong Number: Business Related to Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number: Business or Service Unrelated to Segment</masterLabel>
+            <translation><!-- Wrong Number: Business or Service Unrelated to Segment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason 2 --></label>
+        <name>Reason_2__c</name>
+        <picklistValues>
+            <masterLabel>Multiple Lines Different Issue</masterLabel>
+            <translation><!-- Multiple Lines Different Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Lines Same Issue</masterLabel>
+            <translation><!-- Multiple Lines Same Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Call On The Line</masterLabel>
+            <translation><!-- No Call On The Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robo Calls</masterLabel>
+            <translation><!-- Robo Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsupported Service but Related to Segment</masterLabel>
+            <translation><!-- Unsupported Service but Related to Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number: Business Related to Segment</masterLabel>
+            <translation><!-- Wrong Number: Business Related to Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number: Business or Service Unrelated to Segment</masterLabel>
+            <translation><!-- Wrong Number: Business or Service Unrelated to Segment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution Notes --></label>
+        <name>Resolution_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved By --></label>
+        <name>Resolved_By__c</name>
+        <relationshipLabel><!-- Call Quality Concerns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Second Call Concern --></label>
+        <name>Second_Call_Concern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solicitor Calls? --></label>
+        <name>Solicitor_Calls__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tracking # Name/Label --></label>
+        <name>Tracking_Name_Label__c</name>
+        <picklistValues>
+            <masterLabel>City Search</masterLabel>
+            <translation><!-- City Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Mobile</masterLabel>
+            <translation><!-- Google Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ingenio</masterLabel>
+            <translation><!-- Ingenio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jingle</masterLabel>
+            <translation><!-- Jingle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation><!-- Unpaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wrong Business? --></label>
+        <name>Wrong_Business__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wrong Service? --></label>
+        <name>Wrong_Service__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Call Quality Concern</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Quality Concerns</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only numbers should be entered into the Blacklist Number fields. Please edit accordingly. --></errorMessage>
+        <name>Blacklist_Number_Must_Be_Numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numbers should be entered into the Blacklist Number fields. Please edit accordingly. --></errorMessage>
+        <name>Blacklist_Number_Must_Be_only_11</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your manager must select &quot;Manager Approved Changes&quot; in order to escalate this request. --></errorMessage>
+        <name>Escalated_Priority_Needs_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter the notes field if you select &quot;multiple lines same issue&quot;, &quot;multiple lines different issue&quot;  or &quot;Other&quot;. --></errorMessage>
+        <name>Notes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter numbers to be blacklisted when there have been solicitor calls. --></errorMessage>
+        <name>Solicitor_Calls_Opens_Numbers_Blacklist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numbers should be entered into the Tracking Number fields. Please edit accordingly. --></errorMessage>
+        <name>Tracking_Number_Must_Be_Numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numbers should be entered into the Tracking Number fields. Please edit accordingly. --></errorMessage>
+        <name>Tracking_Number_Must_Be_only_11</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill in Callers are Often Calling For if you indicate that many of the calls for the same business. --></errorMessage>
+        <name>Wrong_ServiceWrong_Business_Must_Enter</name>
+    </validationRules>
+</CustomObjectTranslation>

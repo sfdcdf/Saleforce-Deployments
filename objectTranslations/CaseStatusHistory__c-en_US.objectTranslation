@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Case Status Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Elapsed Time (Hours) --></label>
+        <name>ElapsedTimeHours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elapsed Time (Mins) --></label>
+        <name>ElapsedTimeMins__c</name>
+    </fields>
+    <fields>
+        <label><!-- End DateTime --></label>
+        <name>EndDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Name --></label>
+        <name>OwnerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Profile --></label>
+        <name>OwnerProfile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Role --></label>
+        <name>OwnerRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start DateTime --></label>
+        <name>StartDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>isClosed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue --></label>
+        <name>isQueue__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Status History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Status History</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+The following information has been submitted and is being handled by the necessary teams. 
+
+Case Number: {!Case.CaseNumber}
+
+Client Id: {!Case.Client_ID__c}
+
+Business Name: {!Case.Business_Name__c}
+
+Sales Rep Name: {!Case.Developmental_Supervisor_del__c}
+
+Sales Manager Email: {!Case.Sales_Rep_E_mail_Address__c}
+
+Notes: {!Case.Description}
+---------------------------------------------------------------------------------------------------------
+
+Salesforce Case Link (only accessible with Salesforce Access): {!Case.Link}

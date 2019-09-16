@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action --></label>
+        <name>Action__c</name>
+        <picklistValues>
+            <masterLabel>Changed</masterLabel>
+            <translation><!-- Changed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Auto Evaluate Date Field --></label>
+        <name>Auto_Evaluate_Date_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Date Field --></label>
+        <name>Base_Date_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Criteria --></label>
+        <name>Custom_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Added to Base Date --></label>
+        <name>Days_Added_to_Base_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Trigger Old Value --></label>
+        <name>Field_Trigger_Old_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Trigger Value --></label>
+        <name>Field_Trigger_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Trigger --></label>
+        <name>Field_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template ID --></label>
+        <name>Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touchplan Section --></label>
+        <name>Touchplan_Section__c</name>
+        <relationshipLabel><!-- Touchplan Section Auto Evaluate Criterias --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>TP Section Auto Evaluate Criteria</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TP Section Auto Evaluate Criterias</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Touchplan Section Campaign Automations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign ID --></label>
+        <name>Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent --></label>
+        <name>Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specified Trigger Date --></label>
+        <name>Specified_Trigger_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specified Triggered Date TIme --></label>
+        <name>Specified_Triggered_Date_TIme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touchplan Section --></label>
+        <name>Touchplan_Section__c</name>
+        <relationshipLabel><!-- Touchplan Section Campaign Automations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trigger Automation Event --></label>
+        <name>Trigger_Automation_Event__c</name>
+        <picklistValues>
+            <masterLabel>On Case Complete</masterLabel>
+            <translation><!-- On Case Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Case Create</masterLabel>
+            <translation><!-- On Case Create --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Days Live: 40</masterLabel>
+            <translation><!-- On Days Live: 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Days Live: 70</masterLabel>
+            <translation><!-- On Days Live: 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled Call Reminder in Hours: 1</masterLabel>
+            <translation><!-- Scheduled Call Reminder in Hours: 1 --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Touchplan Section Campaign Automation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Touchplan Section Campaign Automations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

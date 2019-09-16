@@ -1,0 +1,2159 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Operations (Account Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Account you are requesting to update --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Operations (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Request Approved</masterLabel>
+            <translation><!-- Request Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Denied</masterLabel>
+            <translation><!-- Request Denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Are You a Manager? --></label>
+        <name>Are_you_a_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Manager</masterLabel>
+            <translation><!-- Non-Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bulk Change Type --></label>
+        <name>Bulk_Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>ASW Completion/Updates</masterLabel>
+            <translation><!-- ASW Completion/Updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Negatives</masterLabel>
+            <translation><!-- Add Negatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add/Remove Products</masterLabel>
+            <translation><!-- Add/Remove Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjust Margin</masterLabel>
+            <translation><!-- Adjust Margin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Date Move</masterLabel>
+            <translation><!-- Bill Date Move --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget/Fee Change</masterLabel>
+            <translation><!-- Budget/Fee Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk URL Update</masterLabel>
+            <translation><!-- Bulk URL Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Tracking Adjustments</masterLabel>
+            <translation><!-- Call Tracking Adjustments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enable/Disable Location Extensions</masterLabel>
+            <translation><!-- Enable/Disable Location Extensions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Location ID</masterLabel>
+            <translation><!-- External Location ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch Accounts</masterLabel>
+            <translation><!-- Launch Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-National</masterLabel>
+            <translation><!-- Non-National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding - Account Creation</masterLabel>
+            <translation><!-- Onboarding - Account Creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding - Complete (Creation, ASW, Domain)</masterLabel>
+            <translation><!-- Onboarding - Complete (Creation, ASW, Domain) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other/Multiple Changes</masterLabel>
+            <translation><!-- Other/Multiple Changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pausing Accounts/Metropages</masterLabel>
+            <translation><!-- Pausing Accounts/Metropages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Method Update</masterLabel>
+            <translation><!-- Payment Method Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund/Manual Bill</masterLabel>
+            <translation><!-- Refund/Manual Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Watch Setup</masterLabel>
+            <translation><!-- Review Watch Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Links</masterLabel>
+            <translation><!-- Site Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uses Paper Check to No</masterLabel>
+            <translation><!-- Uses Paper Check to No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Implementation Change</masterLabel>
+            <translation><!-- Website Implementation Change --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Days Open --></label>
+        <name>Business_Days_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Value --></label>
+        <name>Business_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- CS Approval Status --></label>
+        <name>CS_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Request Approved</masterLabel>
+            <translation><!-- Request Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Denied</masterLabel>
+            <translation><!-- Request Denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Operations Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Channel Lead can provide notes on why or why not this has been approved for Ops to work. --></help>
+        <label><!-- Channel Lead Notes Section --></label>
+        <name>Channel_Lead_Notes_Section__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Lead --></label>
+        <name>Channel_Lead__c</name>
+        <relationshipLabel><!-- Operations (Channel Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel Requested By --></label>
+        <name>Channel_Requested_By__c</name>
+        <picklistValues>
+            <masterLabel>Client Services</masterLabel>
+            <translation><!-- Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPT</masterLabel>
+            <translation><!-- OPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM Marketing Ops</masterLabel>
+            <translation><!-- SEM Marketing Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO Marketing Ops</masterLabel>
+            <translation><!-- SEO Marketing Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YBN Leadership</masterLabel>
+            <translation><!-- YBN Leadership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Classification --></label>
+        <name>Classification__c</name>
+        <picklistValues>
+            <masterLabel>Administrative</masterLabel>
+            <translation><!-- Administrative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Notes --></label>
+        <name>Close_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Extension Length --></label>
+        <name>Contract_Extension_Length__c</name>
+        <picklistValues>
+            <masterLabel>1 - No Extension</masterLabel>
+            <translation><!-- 1 - No Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6+</masterLabel>
+            <translation><!-- 6+ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Length --></label>
+        <name>Contract_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created by Manager --></label>
+        <name>Created_by_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created by Role --></label>
+        <name>Created_by_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credited Amount --></label>
+        <name>Credited_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Approved by Channel Lead --></label>
+        <name>Date_Approved_by_Channel_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Upsell Occurred --></label>
+        <name>Date_Upsell_Occurred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until SLA --></label>
+        <name>Days_Until_SLA2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Completion Date --></label>
+        <name>Desired_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did the Account Bill the Upsell Amount? --></label>
+        <name>Did_the_Account_Bill_the_Upsell_Amount__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Did the New Account Add Organic? --></label>
+        <name>Did_the_New_Account_Add_Organic__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Difficulty --></label>
+        <name>Difficulty__c</name>
+        <picklistValues>
+            <masterLabel>1-Easy</masterLabel>
+            <translation><!-- 1-Easy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-Fairly Easy</masterLabel>
+            <translation><!-- 2-Fairly Easy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-Average</masterLabel>
+            <translation><!-- 3-Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4-Complicated</masterLabel>
+            <translation><!-- 4-Complicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5-Difficult</masterLabel>
+            <translation><!-- 5-Difficult --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Downgrade Reason --></label>
+        <name>Downgrade_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Client wants to match website to old account</masterLabel>
+            <translation><!-- Client wants to match website to old account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing feature / Other</masterLabel>
+            <translation><!-- Missing feature / Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Due Date (1 Business Day Min) --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Minutes to Complete --></label>
+        <name>Estimated_Minutes_to_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include the estimated time required to complete the project here. Please specify whether it is days or hours. --></help>
+        <label><!-- Estimated Time Required to Complete --></label>
+        <name>Estimated_Time_Required_to_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exisiting Corporate Service Level --></label>
+        <name>Exisiting_Corporate_Service_Level__c</name>
+        <picklistValues>
+            <masterLabel>Proof of Value</masterLabel>
+            <translation><!-- Proof of Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level A</masterLabel>
+            <translation><!-- Service Level A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level B</masterLabel>
+            <translation><!-- Service Level B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level C</masterLabel>
+            <translation><!-- Service Level C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level D</masterLabel>
+            <translation><!-- Service Level D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level E</masterLabel>
+            <translation><!-- Service Level E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level F</masterLabel>
+            <translation><!-- Service Level F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing IL Service Level --></label>
+        <name>Existing_Service_Level__c</name>
+        <picklistValues>
+            <masterLabel>Proof of Value</masterLabel>
+            <translation><!-- Proof of Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level A</masterLabel>
+            <translation><!-- Service Level A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level B</masterLabel>
+            <translation><!-- Service Level B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level C</masterLabel>
+            <translation><!-- Service Level C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level D</masterLabel>
+            <translation><!-- Service Level D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level E</masterLabel>
+            <translation><!-- Service Level E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level F</masterLabel>
+            <translation><!-- Service Level F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected Completion Date --></label>
+        <name>Expected_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Franchise Affected --></label>
+        <name>Franchise_Affected__c</name>
+    </fields>
+    <fields>
+        <label><!-- If New Account, Original Client ID --></label>
+        <name>If_New_Account_Original_Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impact --></label>
+        <name>Impact__c</name>
+        <picklistValues>
+            <masterLabel>1-Very Low</masterLabel>
+            <translation><!-- 1-Very Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-Low</masterLabel>
+            <translation><!-- 2-Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-Average</masterLabel>
+            <translation><!-- 3-Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4-High</masterLabel>
+            <translation><!-- 4-High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5-Very High</masterLabel>
+            <translation><!-- 5-Very High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ineligibility Reason --></label>
+        <name>Ineligibility_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Accounts Didn't Bill</masterLabel>
+            <translation><!-- Accounts Didn&apos;t Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Didn't Go Live</masterLabel>
+            <translation><!-- Accounts Didn&apos;t Go Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Were Part of Initial Contract</masterLabel>
+            <translation><!-- Accounts Were Part of Initial Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Already listed on Report</masterLabel>
+            <translation><!-- Already listed on Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downsold within 90</masterLabel>
+            <translation><!-- Downsold within 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Referral</masterLabel>
+            <translation><!-- Marketing Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Product Deactivation</masterLabel>
+            <translation><!-- Other Product Deactivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable Billing</masterLabel>
+            <translation><!-- Variable Billing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instructions to Complete Project --></label>
+        <name>Instructions_to_Complete_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- JIRA Issue ID --></label>
+        <name>JIRA_Issue_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- JIRA URL --></label>
+        <name>JIRA_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Macro Used? --></label>
+        <name>Macro_Used__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager Approved Escalation --></label>
+        <name>Manager_Approved_Escalation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Left in Current Month --></label>
+        <name>Minutes_Left_in_Current_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Saved --></label>
+        <name>Minutes_Saved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Put in the total minutes it took to complete the task. Don’t worry about if this number is large or small – no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here. --></help>
+        <label><!-- Minutes to Complete Request --></label>
+        <name>Minutes_to_Complete_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need to Escalate --></label>
+        <name>Need_to_Escalate__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Budget --></label>
+        <name>New_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Report Request Priortiy --></label>
+        <name>New_Report_Request_Priortiy__c</name>
+        <picklistValues>
+            <masterLabel>Backlog</masterLabel>
+            <translation><!-- Backlog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blocker</masterLabel>
+            <translation><!-- Blocker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nice to Have</masterLabel>
+            <translation><!-- Nice to Have --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will Not Support</masterLabel>
+            <translation><!-- Will Not Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Next Bill Date --></label>
+        <name>Next_Bill_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only fill out this field if you have selection &apos;Team of the Month&apos; for &apos;Recognition Category&apos; --></help>
+        <label><!-- Nominated Team (if applicable) --></label>
+        <name>Nominated_Team_if_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nomination Details --></label>
+        <name>Nomination_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- For what month&apos;s award are you nominating this person or team? --></help>
+        <label><!-- Nomination Month --></label>
+        <name>Nomination_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Who are you nominating? --></help>
+        <label><!-- Nominee Name --></label>
+        <name>Nominee_Name__c</name>
+        <relationshipLabel><!-- Operations (Nominee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Nominee Office --></label>
+        <name>Nominee_Office__c</name>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scottsdale</masterLabel>
+            <translation><!-- Scottsdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sugar Hill</masterLabel>
+            <translation><!-- Sugar Hill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work at Home</masterLabel>
+            <translation><!-- Work at Home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nominee Role --></label>
+        <name>Nominee_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective/Impact of Project --></label>
+        <name>Objective_Impact_of_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office --></label>
+        <name>Office__c</name>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boston</masterLabel>
+            <translation><!-- Boston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scottsdale</masterLabel>
+            <translation><!-- Scottsdale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter $0 if it is a new account upsell or organic upsell. --></help>
+        <label><!-- Old Budget --></label>
+        <name>Old_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upsell Type --></label>
+        <name>One_time_Refill_or_Budget_Change__c</name>
+        <picklistValues>
+            <masterLabel>Budget Change</masterLabel>
+            <translation><!-- Budget Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Account</masterLabel>
+            <translation><!-- New Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-time Refill</masterLabel>
+            <translation><!-- One-time Refill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactivation</masterLabel>
+            <translation><!-- Reactivation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opened Date --></label>
+        <name>Opened_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Notes --></label>
+        <name>Operations_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Owner --></label>
+        <name>Operations_Owner__c</name>
+        <relationshipLabel><!-- Operations (Operations Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Operations Request Due Date --></label>
+        <name>Operations_Request_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Request? --></label>
+        <name>Operations_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Summary --></label>
+        <name>Operations_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organic Live Date --></label>
+        <name>Organic_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>Organization__c</name>
+        <picklistValues>
+            <masterLabel>CS Operations / Training</masterLabel>
+            <translation><!-- CS Operations / Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local / Lighthouse</masterLabel>
+            <translation><!-- Local / Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPT</masterLabel>
+            <translation><!-- OPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>1 - Critical</masterLabel>
+            <translation><!-- 1 - Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - High</masterLabel>
+            <translation><!-- 2 - High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Medium</masterLabel>
+            <translation><!-- 3 - Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Low</masterLabel>
+            <translation><!-- 4 - Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blocker</masterLabel>
+            <translation><!-- Blocker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed Account Director --></label>
+        <name>Proposed_Account_Director__c</name>
+        <relationshipLabel><!-- Operations (Proposed Account Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed Corporate Service Level --></label>
+        <name>Proposed_Corporate_Service_Level__c</name>
+        <picklistValues>
+            <masterLabel>Proof of Value</masterLabel>
+            <translation><!-- Proof of Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level A</masterLabel>
+            <translation><!-- Service Level A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level A+</masterLabel>
+            <translation><!-- Service Level A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level B</masterLabel>
+            <translation><!-- Service Level B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level C</masterLabel>
+            <translation><!-- Service Level C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level D</masterLabel>
+            <translation><!-- Service Level D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level E</masterLabel>
+            <translation><!-- Service Level E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level F</masterLabel>
+            <translation><!-- Service Level F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed Lead Consultant --></label>
+        <name>Proposed_Lead_Consultant__c</name>
+        <relationshipLabel><!-- Operations (Proposed Lead Consultant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed Sales Director --></label>
+        <name>Proposed_Sales_Director__c</name>
+        <relationshipLabel><!-- Operations (Proposed Sales Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What category are you nominating this individual for? --></help>
+        <label><!-- Recognition Category --></label>
+        <name>Recognition_Category__c</name>
+        <picklistValues>
+            <masterLabel>President's Club - Customers Rule</masterLabel>
+            <translation><!-- President&apos;s Club - Customers Rule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President's Club - Leadership</masterLabel>
+            <translation><!-- President&apos;s Club - Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superstar</masterLabel>
+            <translation><!-- Superstar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superstar Manager</masterLabel>
+            <translation><!-- Superstar Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team of the Month</masterLabel>
+            <translation><!-- Team of the Month --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>Relationship__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which report are you referencing in your request? --></help>
+        <label><!-- Which Report Are You Referencing? --></label>
+        <name>Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Change Detail --></label>
+        <name>Reporting_Change_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Billed says No, Account Did Bill</masterLabel>
+            <translation><!-- Billed says No, Account Did Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Extension Incorrect</masterLabel>
+            <translation><!-- Contract Extension Incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Approved By --></label>
+        <name>Request_Approved_By__c</name>
+        <picklistValues>
+            <masterLabel>Amy Kramer</masterLabel>
+            <translation><!-- Amy Kramer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ashley Warner</masterLabel>
+            <translation><!-- Ashley Warner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casey Griffith</masterLabel>
+            <translation><!-- Casey Griffith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casey McCurdy</masterLabel>
+            <translation><!-- Casey McCurdy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cassie Bradbury</masterLabel>
+            <translation><!-- Cassie Bradbury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cecily Bolton</masterLabel>
+            <translation><!-- Cecily Bolton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emily Liesch</masterLabel>
+            <translation><!-- Emily Liesch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erin Brockman</masterLabel>
+            <translation><!-- Erin Brockman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Normoyle</masterLabel>
+            <translation><!-- Jason Normoyle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenna Rozenblat</masterLabel>
+            <translation><!-- Jenna Rozenblat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jennifer Hecker</masterLabel>
+            <translation><!-- Jennifer Hecker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joshua Pyle</masterLabel>
+            <translation><!-- Joshua Pyle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kate Turk</masterLabel>
+            <translation><!-- Kate Turk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly Eisenmenger</masterLabel>
+            <translation><!-- Kelly Eisenmenger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Machado</masterLabel>
+            <translation><!-- Matthew Machado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mia Pagonas</masterLabel>
+            <translation><!-- Mia Pagonas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michele Brevig</masterLabel>
+            <translation><!-- Michele Brevig --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patricia Delk</masterLabel>
+            <translation><!-- Patricia Delk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peter Szalkowski</masterLabel>
+            <translation><!-- Peter Szalkowski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sara Davis</masterLabel>
+            <translation><!-- Sara Davis --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If you closed out the request and directed the individual elsewhere, select â€œGave Alternate Guidanceâ€�; if you were fixing an error, choose â€œFixing Errorâ€�; for all other requests, select â€œChange/Projectâ€�. --></help>
+        <label><!-- Request Category --></label>
+        <name>Request_Category__c</name>
+        <picklistValues>
+            <masterLabel>Change/Project</masterLabel>
+            <translation><!-- Change/Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixing Error</masterLabel>
+            <translation><!-- Fixing Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gave Alternate Guidance</masterLabel>
+            <translation><!-- Gave Alternate Guidance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Details --></label>
+        <name>Request_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Typ__c</name>
+        <picklistValues>
+            <masterLabel>Block Email/VM to Case Domain or Phone #</masterLabel>
+            <translation><!-- Block Email/VM to Case Domain or Phone # --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk Account Assignment/Creation/Update/Decommission</masterLabel>
+            <translation><!-- Bulk Account Assignment/Creation/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk Case Assignment/Upload/Update/Decommission</masterLabel>
+            <translation><!-- Bulk Case Assignment/Upload/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk Contact Creation/Update/Decommission</masterLabel>
+            <translation><!-- Bulk Contact Creation/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk Opportunity Assignment/Upload/Update/Decommission</masterLabel>
+            <translation><!-- Bulk Opportunity Assignment/Upload/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Service Report (outside of SF)</masterLabel>
+            <translation><!-- Client Service Report (outside of SF) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Notification Creation/Update</masterLabel>
+            <translation><!-- Email Notification Creation/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Template Creation/Update</masterLabel>
+            <translation><!-- Email Template Creation/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Account Assignment/Creation/Update/Decommission</masterLabel>
+            <translation><!-- Individual Account Assignment/Creation/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Case Assignment/Upload/Update/Decommission</masterLabel>
+            <translation><!-- Individual Case Assignment/Upload/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Contact Creation/Update/Decommission</masterLabel>
+            <translation><!-- Individual Contact Creation/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Opportunity Assignment/Upload/Update/Decommission</masterLabel>
+            <translation><!-- Individual Opportunity Assignment/Upload/Update/Decommission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LiveOps Issue</masterLabel>
+            <translation><!-- LiveOps Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New SF Process/Workflow</masterLabel>
+            <translation><!-- New SF Process/Workflow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revision to Existing SF Process/Workflow</masterLabel>
+            <translation><!-- Revision to Existing SF Process/Workflow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF Improvement Suggestion</masterLabel>
+            <translation><!-- SF Improvement Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF Training/Walkthrough</masterLabel>
+            <translation><!-- SF Training/Walkthrough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF User Commissioning/Decommissioning</masterLabel>
+            <translation><!-- SF User Commissioning/Decommissioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Report (outside of SF)</masterLabel>
+            <translation><!-- Sales Report (outside of SF) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Report and/or Dashboard Creation/Revision</masterLabel>
+            <translation><!-- Salesforce Report and/or Dashboard Creation/Revision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level Assignment - More than 10 locations</masterLabel>
+            <translation><!-- Service Level Assignment - More than 10 locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level Assignment - Under 10 locations</masterLabel>
+            <translation><!-- Service Level Assignment - Under 10 locations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Director Assignment/Update</masterLabel>
+            <translation><!-- Account Director Assignment/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add New Account</masterLabel>
+            <translation><!-- Add New Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add/Remove Agent to Recurring Report</masterLabel>
+            <translation><!-- Add/Remove Agent to Recurring Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add/Remove Individual</masterLabel>
+            <translation><!-- Add/Remove Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch Case Upload</masterLabel>
+            <translation><!-- Batch Case Upload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch Cases</masterLabel>
+            <translation><!-- Batch Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch Close Cases</masterLabel>
+            <translation><!-- Batch Close Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch Optimization Upload</masterLabel>
+            <translation><!-- Batch Optimization Upload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Block Email/VM to Case Domain or Phone #</masterLabel>
+            <translation><!-- Block Email/VM to Case Domain or Phone # --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS 2 Upsell - Add Features</masterLabel>
+            <translation><!-- CMS 2 Upsell - Add Features --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS 3.1 Update Request</masterLabel>
+            <translation><!-- CMS 3.1 Update Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Nomination</masterLabel>
+            <translation><!-- CS Nomination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS SOP Manual Update</masterLabel>
+            <translation><!-- CS SOP Manual Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Social Update Request</masterLabel>
+            <translation><!-- CS Social Update Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change</masterLabel>
+            <translation><!-- Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Agent Priority</masterLabel>
+            <translation><!-- Change Agent Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Role/Manager for User</masterLabel>
+            <translation><!-- Change Role/Manager for User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Routing</masterLabel>
+            <translation><!-- Change Routing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change to Existing Queue</masterLabel>
+            <translation><!-- Change to Existing Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change/Update User Permissions</masterLabel>
+            <translation><!-- Change/Update User Permissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Contact Preference Updates</masterLabel>
+            <translation><!-- Client Contact Preference Updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Opting Out</masterLabel>
+            <translation><!-- Client Opting Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Questions</masterLabel>
+            <translation><!-- Client Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Account Creation</masterLabel>
+            <translation><!-- Corporate Account Creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate acct - add/remove ILs</masterLabel>
+            <translation><!-- Corporate acct - add/remove ILs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create New Survey</masterLabel>
+            <translation><!-- Create New Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboards</masterLabel>
+            <translation><!-- Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deactivate SalesForce User</masterLabel>
+            <translation><!-- Deactivate SalesForce User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Dashboard</masterLabel>
+            <translation><!-- Edit Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Data on Recurring Report</masterLabel>
+            <translation><!-- Edit Data on Recurring Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Email Alerts</masterLabel>
+            <translation><!-- Edit Email Alerts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Field</masterLabel>
+            <translation><!-- Edit Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Report</masterLabel>
+            <translation><!-- Edit Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Survey Content</masterLabel>
+            <translation><!-- Edit Survey Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essentials Features Request</masterLabel>
+            <translation><!-- Essentials Features Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excel Help</masterLabel>
+            <translation><!-- Excel Help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature Deactivation Request</masterLabel>
+            <translation><!-- Feature Deactivation Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Report Question</masterLabel>
+            <translation><!-- General Report Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase Email Sending Limits</masterLabel>
+            <translation><!-- Increase Email Sending Limits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Location Service Level Update - For 1 Account or Subset of Accounts</masterLabel>
+            <translation><!-- Individual Location Service Level Update - For 1 Account or Subset of Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indiviudal Location Service Level Update - For All Accounts</masterLabel>
+            <translation><!-- Indiviudal Location Service Level Update - For All Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue</masterLabel>
+            <translation><!-- Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Consultant Assignment/Update</masterLabel>
+            <translation><!-- Lead Consultant Assignment/Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LiveOps Issue</masterLabel>
+            <translation><!-- LiveOps Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Account Reassignment</masterLabel>
+            <translation><!-- Mass Account Reassignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metropage Upload</masterLabel>
+            <translation><!-- Metropage Upload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc</masterLabel>
+            <translation><!-- Misc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-location owner updates</masterLabel>
+            <translation><!-- Multi-location owner updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Project Request</masterLabel>
+            <translation><!-- National Project Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Account Addition</masterLabel>
+            <translation><!-- New Account Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Dashboard</masterLabel>
+            <translation><!-- New Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Queue</masterLabel>
+            <translation><!-- New Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Queue Setup</masterLabel>
+            <translation><!-- New Queue Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Report</masterLabel>
+            <translation><!-- New Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Survey Question/s</masterLabel>
+            <translation><!-- New Survey Question/s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New User Setup</masterLabel>
+            <translation><!-- New User Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations Team Request</masterLabel>
+            <translation><!-- Operations Team Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Upsell (from SEM Only)</masterLabel>
+            <translation><!-- Organic Upsell (from SEM Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProSite Upsell</masterLabel>
+            <translation><!-- ProSite Upsell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queue</masterLabel>
+            <translation><!-- Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactivation Upsell</masterLabel>
+            <translation><!-- Reactivation Upsell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove Account</masterLabel>
+            <translation><!-- Remove Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove Features</masterLabel>
+            <translation><!-- Remove Features --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report Question/Investigation</masterLabel>
+            <translation><!-- Report Question/Investigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting Change</masterLabel>
+            <translation><!-- Reporting Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request New Account</masterLabel>
+            <translation><!-- Request New Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM Budget Increase</masterLabel>
+            <translation><!-- SEM Budget Increase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SalesForce Help</masterLabel>
+            <translation><!-- SalesForce Help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Change</masterLabel>
+            <translation><!-- Salesforce Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level Assignment for New Relationship</masterLabel>
+            <translation><!-- Service Level Assignment for New Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level Update/Assignment</masterLabel>
+            <translation><!-- Service Level Update/Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsored Upsell (from SEO Only)</masterLabel>
+            <translation><!-- Sponsored Upsell (from SEO Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Account Growth Addition</masterLabel>
+            <translation><!-- Strategic Account Growth Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Survey Issue/Question</masterLabel>
+            <translation><!-- Survey Issue/Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Contact</masterLabel>
+            <translation><!-- Update Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upsell Opportunities</masterLabel>
+            <translation><!-- Upsell Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Changes</masterLabel>
+            <translation><!-- User Changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Permission</masterLabel>
+            <translation><!-- User Permission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YO 2.0 Free Time Request</masterLabel>
+            <translation><!-- YO 2.0 Free Time Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Section That Needs To Be Updated --></label>
+        <name>Section_That_Needs_To_Be_Updated__c</name>
+        <picklistValues>
+            <masterLabel>Account Management</masterLabel>
+            <translation><!-- Account Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account On-boarding</masterLabel>
+            <translation><!-- Account On-boarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appendix</masterLabel>
+            <translation><!-- Appendix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Introduction</masterLabel>
+            <translation><!-- Introduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch Processes</masterLabel>
+            <translation><!-- Launch Processes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SellFire ID --></label>
+        <name>SellFire_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed IL Service Level --></label>
+        <name>Service_Level_Type__c</name>
+        <picklistValues>
+            <masterLabel>Proof of Value</masterLabel>
+            <translation><!-- Proof of Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level A</masterLabel>
+            <translation><!-- Service Level A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level B</masterLabel>
+            <translation><!-- Service Level B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level C</masterLabel>
+            <translation><!-- Service Level C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level D</masterLabel>
+            <translation><!-- Service Level D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level E</masterLabel>
+            <translation><!-- Service Level E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level F</masterLabel>
+            <translation><!-- Service Level F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sprint --></label>
+        <name>Sprint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting Internal Response</masterLabel>
+            <translation><!-- Awaiting Internal Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Added</masterLabel>
+            <translation><!-- Closed - Added --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed</masterLabel>
+            <translation><!-- Closed - Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed/Updates Made</masterLabel>
+            <translation><!-- Closed - Completed/Updates Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Could Not Complete</masterLabel>
+            <translation><!-- Closed - Could Not Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Declined by Channel Lead</masterLabel>
+            <translation><!-- Closed - Declined by Channel Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Approved</masterLabel>
+            <translation><!-- Closed - Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Eligible</masterLabel>
+            <translation><!-- Closed - Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Review for CS Ops Plan</masterLabel>
+            <translation><!-- Closed - Review for CS Ops Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: CMS 2.0 – Too Customized</masterLabel>
+            <translation><!-- Closed: CMS 2.0 – Too Customized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Downgraded</masterLabel>
+            <translation><!-- Closed: Downgraded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Segment Not Supported</masterLabel>
+            <translation><!-- Closed: Segment Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Upgraded</masterLabel>
+            <translation><!-- Closed: Upgraded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Project/Plan</masterLabel>
+            <translation><!-- Long Term Project/Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need More Information</masterLabel>
+            <translation><!-- Need More Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold - Per Requester</masterLabel>
+            <translation><!-- On Hold - Per Requester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Channel Lead</masterLabel>
+            <translation><!-- Pending Channel Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Estimate</masterLabel>
+            <translation><!-- Pending Estimate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending JIRA Ticket Resolution</masterLabel>
+            <translation><!-- Pending JIRA Ticket Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Ops Assignment</masterLabel>
+            <translation><!-- Pending Ops Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending approval from YBN Leadership</masterLabel>
+            <translation><!-- Pending approval from YBN Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project - In Progress</masterLabel>
+            <translation><!-- Project - In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project - Pending WBN Ops Assignment</masterLabel>
+            <translation><!-- Project - Pending WBN Ops Assignment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Strategic Accounts Team Member --></label>
+        <name>Strategic_Accounts_Team_Member__c</name>
+        <relationshipLabel><!-- Operations (Strategic Accounts Team Member) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub-Section --></label>
+        <name>Sub_Section__c</name>
+        <picklistValues>
+            <masterLabel>Account Assignment</masterLabel>
+            <translation><!-- Account Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Creation</masterLabel>
+            <translation><!-- Account Creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic HTML</masterLabel>
+            <translation><!-- Basic HTML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bibliography</masterLabel>
+            <translation><!-- Bibliography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget Changes</masterLabel>
+            <translation><!-- Budget Changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Management and Using the Desktop Agent</masterLabel>
+            <translation><!-- Call Management and Using the Desktop Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Initiated Cases</masterLabel>
+            <translation><!-- Client Initiated Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Service Roles &amp; Vendors</masterLabel>
+            <translation><!-- Client Service Roles &amp; Vendors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Survey Procedure</masterLabel>
+            <translation><!-- Client Survey Procedure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Combo Launch Process</masterLabel>
+            <translation><!-- Combo Launch Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Common Tools</masterLabel>
+            <translation><!-- Common Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Retention</masterLabel>
+            <translation><!-- Customer Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display Launch Process</masterLabel>
+            <translation><!-- Display Launch Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalations</masterLabel>
+            <translation><!-- Escalations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How Accounts Move from Sales to Client Services</masterLabel>
+            <translation><!-- How Accounts Move from Sales to Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetroPage Launch Process</masterLabel>
+            <translation><!-- MetroPage Launch Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Bulk Launch Process</masterLabel>
+            <translation><!-- National Bulk Launch Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Sub-Section Needed</masterLabel>
+            <translation><!-- New Sub-Section Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimizations</masterLabel>
+            <translation><!-- Optimizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packages</masterLabel>
+            <translation><!-- Packages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procedure by Package</masterLabel>
+            <translation><!-- Procedure by Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products</masterLabel>
+            <translation><!-- Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactive Communication</masterLabel>
+            <translation><!-- Reactive Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM Launch Process</masterLabel>
+            <translation><!-- SEM Launch Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO Launch Process</masterLabel>
+            <translation><!-- SEO Launch Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Process</masterLabel>
+            <translation><!-- Sales Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touch Plans</masterLabel>
+            <translation><!-- Touch Plans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website &amp; Account Teardown Process</masterLabel>
+            <translation><!-- Website &amp; Account Teardown Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Changes</masterLabel>
+            <translation><!-- Website Changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Dictionary of Common Terms &amp; Acronyms</masterLabel>
+            <translation><!-- Yodle Dictionary of Common Terms &amp; Acronyms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Live Bug Process</masterLabel>
+            <translation><!-- Yodle Live Bug Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted By --></label>
+        <name>Submitted_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include a one sentence summary of what was completed --></help>
+        <label><!-- Summary of Request --></label>
+        <name>Summary_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Minutes for Request --></label>
+        <name>Total_Minutes_for_Request__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include the total value of the new locations, including budgets, organic, display, etc. --></help>
+        <label><!-- Total Value of New Locations --></label>
+        <name>Total_Value_of_New_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # of New Locations --></label>
+        <name>Total_of_New_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Assignment Request</masterLabel>
+            <translation><!-- Account Assignment Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrative Items</masterLabel>
+            <translation><!-- Administrative Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch Uploads</masterLabel>
+            <translation><!-- Batch Uploads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS 2 Upgrade Test</masterLabel>
+            <translation><!-- CMS 2 Upgrade Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS 3.1 Update Request</masterLabel>
+            <translation><!-- CMS 3.1 Update Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS SOP Manual Update</masterLabel>
+            <translation><!-- CS SOP Manual Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clicktools</masterLabel>
+            <translation><!-- Clicktools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essentials Features Request</masterLabel>
+            <translation><!-- Essentials Features Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excel Reports</masterLabel>
+            <translation><!-- Excel Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influence - Lead Sourcing</masterLabel>
+            <translation><!-- Influence - Lead Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LiveOps</masterLabel>
+            <translation><!-- LiveOps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LiveOps Issue</masterLabel>
+            <translation><!-- LiveOps Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Project</masterLabel>
+            <translation><!-- National Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Report Request</masterLabel>
+            <translation><!-- New Report Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation Upsell Additions</masterLabel>
+            <translation><!-- Operation Upsell Additions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations Help Desk</masterLabel>
+            <translation><!-- Operations Help Desk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Request</masterLabel>
+            <translation><!-- Project Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SalesForce/Service Cloud Assistance</masterLabel>
+            <translation><!-- SalesForce/Service Cloud Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Data Modification</masterLabel>
+            <translation><!-- Salesforce Data Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Level Assignment</masterLabel>
+            <translation><!-- Service Level Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Account Growth</masterLabel>
+            <translation><!-- Strategic Account Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tableau</masterLabel>
+            <translation><!-- Tableau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly Reports Update</masterLabel>
+            <translation><!-- Weekly Reports Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YO 2.0 Free Time Request</masterLabel>
+            <translation><!-- YO 2.0 Free Time Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Live</masterLabel>
+            <translation><!-- Yodle Live --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upgrade/Downgrade Other Notes --></label>
+        <name>Upgrade_Downgrade_Other_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upgrade/Downgrade? --></label>
+        <name>Upgrade_Downgrade__c</name>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upgrade Reason --></label>
+        <name>Upgrade_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Client wants to match website to another account</masterLabel>
+            <translation><!-- Client wants to match website to another account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn't like current CMS 2.0 site</masterLabel>
+            <translation><!-- Doesn&apos;t like current CMS 2.0 site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn't like current CMS 3.0 site</masterLabel>
+            <translation><!-- Doesn&apos;t like current CMS 3.0 site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used as soft concession</masterLabel>
+            <translation><!-- Used as soft concession --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Amount --></label>
+        <name>Upsell_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upsell Billing Date --></label>
+        <name>Upsell_Billing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upsell Verified --></label>
+        <name>Upsell_Verified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What is outdated? --></label>
+        <name>What_is_outdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the new process? --></label>
+        <name>What_is_the_new_process__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Operations</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <description><!-- Use this record type for New User Setup, Changing Role/Manager for a User, Deactivating Users, User Permissions, and New Account Additions. --></description>
+        <label><!-- Administrative Items --></label>
+        <name>Administrative_Items</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type for Metropage Uploads, Batch Optimization Uploads, Batch Case Uploads, Mass Closing Cases and Mass Account Reassignment. --></description>
+        <label><!-- Batch Uploads --></label>
+        <name>Batch_Uploads</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CMS 3.1 Update Request --></label>
+        <name>CMS_3_1_Update_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this form to nominate fellow CS members to be recognized during CS Rallys --></description>
+        <label><!-- CS Nomination Form --></label>
+        <name>CS_Nomination_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type to submit changes that need to be made to the CS SOP Manual --></description>
+        <label><!-- CS SOP Manual Update --></label>
+        <name>CS_SOP_Manual_Update</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type for requests to enable Essentials features for CMS 3 clients with Organic --></description>
+        <label><!-- Essentials Features Request --></label>
+        <name>Essentials_Features_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type to submit a request for future account deactivation. --></description>
+        <label><!-- Future Deactivation Request --></label>
+        <name>Future_Deactivation_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- National Team ONLY - Use this record type for the National Project Request process. --></description>
+        <label><!-- National Project Request --></label>
+        <name>National_Project_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type for updates to Operation Upsell including New Account Additions; Organic, ProSite, Reactivation, and Sponsored Upsells; and SEM Budget Increases --></description>
+        <label><!-- Operation Upsell Additions --></label>
+        <name>Operation_Upsell_Additions</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type for general Excel or miscellaneous help from the CS Operations Team. --></description>
+        <label><!-- Operations Help Desk --></label>
+        <name>Operations_Help_Desk</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type to Add/Edit/Remove Fields, Email Alerts and Assignment Rules; New Reports/Dashboards; Edit Reports/Dashboards and New Queue Setup. --></description>
+        <label><!-- SalesForce Assistance --></label>
+        <name>SF_Process_Change_Reporting</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Strategic Account Team ONLY --></description>
+        <label><!-- Strategic Account Growth Addition --></label>
+        <name>Strategic_Account_Growth_Addition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Application Request/Changes --></label>
+        <name>Test_Operations_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Upsell Tracking --></label>
+        <name>Upsell_Tracking</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this for any questions or requests pertaining to reports sent by the CS Operations team --></description>
+        <label><!-- Weekly Reports Assistance --></label>
+        <name>Weekly_Reports_Assistance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WBN Operations Request --></label>
+        <name>YBN_Operations_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type if you have a YO2/OR3 client that is requesting to move to Free Time and you believe they are eligible to receive it. --></description>
+        <label><!-- Dedicated YO2/OR3 Free Time Request --></label>
+        <name>YO_2_0_Free_Time_Request</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot approve your own case.  Please have your manager approve this escalation. --></errorMessage>
+        <name>Cannot_Approve_Your_Own_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Request Type on an existing record. Please create a new record and re-submit. --></errorMessage>
+        <name>Cannot_Change_Request_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot move from a Closed Status to an Opened Status. In order to re-open a case, you must clone and re-submit. --></errorMessage>
+        <name>Cannot_Re_Open_Cases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the following fields when closing out a CS Ops request: Operations Owner, Request Category, Minutes to Complete Request and Summary of Request --></errorMessage>
+        <name>Fields_Required_Upon_Closing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Franchise Affected must be filled out when submitting a National Project Request --></errorMessage>
+        <name>Franchise_Affected_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The minimum &quot;Estimate Minutes to Complete&quot; and &quot;Minutes to Complete Request&quot; is 15. Please change to 15 and re-save. --></errorMessage>
+        <name>Minimum_Time_to_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please complete the close notes when moving to a closed status. --></errorMessage>
+        <name>Must_Complete_Close_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out an expected completion date --></errorMessage>
+        <name>Must_Fill_Out_Expected_Completion_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a request type that best reflects your request. --></errorMessage>
+        <name>Must_Select_Request_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When closing a National Project request, you must fill out the &quot;Macro Used?&quot; field. If a macro was used to complete the request, please select Yes. Otherwise, select No. --></errorMessage>
+        <name>National_Project_Macro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When using a macro to complete a National Project request, you must select the Bulk Change Type field and include the minutes saved by using the macro. If the appropriate change type is not present, please escalate to get it added. --></errorMessage>
+        <name>National_Project_Macro_Used</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only requests coming from the National Channel can use the National Project type. Please select another type that more accurately reflects your request. --></errorMessage>
+        <name>National_Project_Must_be_National_Channe</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the client id of the original account when submitting a new account addition. --></errorMessage>
+        <name>New_Account_Must_add_Old_Client_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill in the new report request priority when selecting a new report. --></errorMessage>
+        <name>New_Report_Request_Priority</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are nominating an individual, you must fill out the Nominee Name field --></errorMessage>
+        <name>Nominee_Name_must_be_filled_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are nominating a team for Team of the Month, you must fill out the Nominated Team field --></errorMessage>
+        <name>Team_name_must_be_filled_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must Fill Out Other Notes if &quot;Other&quot; is selection for Upgrade Reason or if &quot;Other / Missing Feature&quot; is selected for Downgrade Reason --></errorMessage>
+        <name>Upgrade_Downgrade_Other_Notes_filled_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;Account&quot; field must be filled out with the specific account you wish to update. --></errorMessage>
+        <name>YBN_Account_or_Service_Level_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;proposed IL service level&quot; and &quot;existing IL service level&quot; fields must be filled out --></errorMessage>
+        <name>YBN_IL_Service_Level_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;proposed corporate service level&quot; and &quot;proposed IL service level&quot; must be filled out --></errorMessage>
+        <name>YBN_Service_Level_Assignment_for_newacct</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;proposed corporate service level&quot; and &quot;existing corporate service level&quot; fields must be filled out --></errorMessage>
+        <name>YBN_Service_Level_Update</name>
+    </validationRules>
+</CustomObjectTranslation>

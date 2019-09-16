@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional Notes --></label>
+        <name>Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won? --></label>
+        <name>Closed_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reference Requested --></label>
+        <name>Date_Reference_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reference Used --></label>
+        <name>Date_Reference_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Name --></label>
+        <name>ProspectName3__c</name>
+        <relationshipLabel><!-- References --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prospect Name --></label>
+        <name>Prospect_Name2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested By --></label>
+        <name>Requested_By__c</name>
+        <relationshipLabel><!-- References --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>References</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>References</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

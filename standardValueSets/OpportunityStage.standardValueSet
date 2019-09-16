@@ -7,7 +7,7 @@
         <label>New Opportunity</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>5</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -16,17 +16,16 @@
         <label>Prospecting</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>5</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
         <fullName>Resting</fullName>
         <default>false</default>
-        <description>WBN Field for Opportunities without activity</description>
         <label>Resting</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>5</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -35,16 +34,7 @@
         <label>Client Discovery</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>15</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Demo/Value Prop</fullName>
-        <default>false</default>
-        <label>Demo/Value Prop</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -52,8 +42,17 @@
         <default>false</default>
         <label>Solution</label>
         <closed>false</closed>
-        <forecastCategory>BestCase</forecastCategory>
-        <probability>60</probability>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Demo Value Prop</fullName>
+        <default>false</default>
+        <label>Demo Value Prop</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -61,8 +60,8 @@
         <default>false</default>
         <label>Contract</label>
         <closed>false</closed>
-        <forecastCategory>Forecast</forecastCategory>
-        <probability>90</probability>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -71,7 +70,7 @@
         <label>M001 - Set Local Demo</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -80,7 +79,7 @@
         <label>M002 - Complete local demo (IL)</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -89,17 +88,16 @@
         <label>M003 - Contract (IL)</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>80</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
         <fullName>Adoption</fullName>
         <default>false</default>
-        <description>Used for Opportunities only related to Adoption</description>
         <label>Adoption</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>100</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -108,7 +106,7 @@
         <label>Qualify</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -117,7 +115,7 @@
         <label>Educate</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>20</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -126,7 +124,7 @@
         <label>Validate</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>80</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -135,7 +133,7 @@
         <label>Long Term Nurture</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>10</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -144,7 +142,7 @@
         <label>Demo - Hold</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>35</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -153,7 +151,7 @@
         <label>In Discussion</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -162,7 +160,7 @@
         <label>Demo</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>15</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -171,12 +169,13 @@
         <label>Negotiate</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>90</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
         <fullName>Closed Won</fullName>
         <default>false</default>
+        <description>Sold!</description>
         <label>Closed Won</label>
         <closed>true</closed>
         <forecastCategory>Closed</forecastCategory>
@@ -186,6 +185,7 @@
     <standardValue>
         <fullName>Closed Lost</fullName>
         <default>false</default>
+        <description>No sale.</description>
         <label>Closed Lost</label>
         <closed>true</closed>
         <forecastCategory>Omitted</forecastCategory>
@@ -198,17 +198,17 @@
         <label>TBD</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>10</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
         <fullName>Implementation</fullName>
         <default>false</default>
         <label>Implementation</label>
-        <closed>true</closed>
-        <forecastCategory>Closed</forecastCategory>
-        <probability>100</probability>
-        <won>true</won>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
     </standardValue>
     <standardValue>
         <fullName>Future Opportunity</fullName>
@@ -216,7 +216,7 @@
         <label>Future Opportunity</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>5</probability>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
@@ -225,7 +225,169 @@
         <label>Submit for Approval</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
-        <probability>100</probability>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Booked Appointment</fullName>
+        <default>false</default>
+        <label>Booked Appointment</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed/Won</fullName>
+        <default>false</default>
+        <label>Closed/Won</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Signed</fullName>
+        <default>false</default>
+        <label>Contract Signed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluation</fullName>
+        <default>false</default>
+        <label>Evaluation</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>In Discussions</fullName>
+        <default>false</default>
+        <label>In Discussions</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>M001 - Discovery call</fullName>
+        <default>false</default>
+        <label>M001 - Discovery call</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs Analysis Meeting Held</fullName>
+        <default>false</default>
+        <label>Needs Analysis Meeting Held</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs Analysis Meeting Set</fullName>
+        <default>false</default>
+        <label>Needs Analysis Meeting Set</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation/Solidify Partnership0</fullName>
+        <default>false</default>
+        <label>Negotiation/Solidify Partnership0</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Closed</fullName>
+        <default>false</default>
+        <label>Opportunity Closed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Sent</fullName>
+        <default>false</default>
+        <label>Proposal Sent</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal/Strategic Roll Out Plan</fullName>
+        <default>false</default>
+        <label>Proposal/Strategic Roll Out Plan</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Outlined</fullName>
+        <default>false</default>
+        <label>Solution Outlined</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Presented</fullName>
+        <default>false</default>
+        <label>Solution Presented</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Presented – Decision Maker</fullName>
+        <default>false</default>
+        <label>Solution Presented – Decision Maker</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Presented – Influencers</fullName>
+        <default>false</default>
+        <label>Solution Presented – Influencers</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Transaction</fullName>
+        <default>false</default>
+        <label>Transaction</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Verbal Commitment</fullName>
+        <default>false</default>
+        <label>Verbal Commitment</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
         <won>false</won>
     </standardValue>
 </StandardValueSet>

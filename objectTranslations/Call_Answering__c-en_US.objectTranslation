@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Call Answering --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Additional information about the business to help call answering representative handle caller&apos;s questions.  (Ex: &quot;We accept most insurance&quot;) --></help>
+        <label><!-- Additional Business Info --></label>
+        <name>Additional_Business_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirm the hours / days that the call answering should pickup. --></help>
+        <label><!-- After Hours Details --></label>
+        <name>After_Hours_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you do not want the client&apos;s business address available to callers, please skip. --></help>
+        <label><!-- Business Address --></label>
+        <name>Business_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are the days of the week the client&apos;s business are open (ex: Monday-Friday)?
+What are the business hours (ex: 9-5).  Note - All hours are Eastern Time. --></help>
+        <label><!-- Business Hours / Days Open --></label>
+        <name>Business_Hours_Days_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client&apos;s business name to be used for call answering --></help>
+        <label><!-- Business Name --></label>
+        <name>Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Answering Status --></label>
+        <name>Call_Answering_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Service</masterLabel>
+            <translation><!-- Cancel Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Requested</masterLabel>
+            <translation><!-- Change Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deactivated</masterLabel>
+            <translation><!-- Deactivated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Setup</masterLabel>
+            <translation><!-- New Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question/Issue</masterLabel>
+            <translation><!-- Question/Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup In Progress</masterLabel>
+            <translation><!-- Setup In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancel Complete Date --></label>
+        <name>Cancel_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Submit Date --></label>
+        <name>Cancel_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Call Answering --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Change Complete Date --></label>
+        <name>Change_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include the details of your change request here. --></help>
+        <label><!-- Change Request Details --></label>
+        <name>Change_Request_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Submit Date --></label>
+        <name>Change_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Cell Phone 2 For Text Message --></label>
+        <name>Client_Cell_Phone_2_For_Text_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Cell Phone 3 For Text Message --></label>
+        <name>Client_Cell_Phone_3_For_Text_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Email 2 For Email Message --></label>
+        <name>Client_Email_2_For_Email_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Email 3 For Email Message --></label>
+        <name>Client_Email_3_For_Email_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is email address would the client like notifications sent to? --></help>
+        <label><!-- Client Email For Email Message --></label>
+        <name>Client_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the phone number that is needed for the client to receive text messages of their calls. --></help>
+        <label><!-- Client Cell Phone For Text Message --></label>
+        <name>Client_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Type --></label>
+        <name>Client_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Script --></label>
+        <name>Closing_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Greeting --></label>
+        <name>Custom_Greeting_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Submitted --></label>
+        <name>Days_Since_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Close Question --></label>
+        <name>Days_to_Close_Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Complete Cancel --></label>
+        <name>Days_to_Complete_Cancel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Complete Change --></label>
+        <name>Days_to_Complete_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Setup (Business) --></label>
+        <name>Days_to_Setup_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available 24/7? --></label>
+        <name>Emergency_Hours__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What do you want the call answering representative&apos;s first response to be following the caller&apos;s response to the greeting? --></help>
+        <label><!-- First Response --></label>
+        <name>First_Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please list the Yodle tracking lines the client would like associated with the call answering service. --></help>
+        <label><!-- If specific lines, please list below: --></label>
+        <name>If_specific_lines_please_list_below__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info to Verify on the Call: --></label>
+        <name>Info_to_Verify_on_the_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Setup Complete --></label>
+        <name>Initial_Setup_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are are the primary services Yodle is advertising for this client? --></help>
+        <label><!-- List of Services --></label>
+        <name>List_of_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Names of Key Staff --></label>
+        <name>Names_of_Key_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phonetic Spelling of Company Name --></label>
+        <name>Phonetic_Spelling_of_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Complete Date --></label>
+        <name>Question_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is your question or issue? --></help>
+        <label><!-- Question/Issue --></label>
+        <name>Question_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Submit Date --></label>
+        <name>Question_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested By Email: --></label>
+        <name>Requested_By_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested By --></label>
+        <name>Requested_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Complete Date --></label>
+        <name>Setup_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Submit Date --></label>
+        <name>Setup_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Rings - Call is transferred to call answering after a certain number of rings
+Full Forward - Call is directly forwarded to call answering 
+After Hours - Call goes to call answering during specified time --></help>
+        <label><!-- Setup Type --></label>
+        <name>Setup_Type__c</name>
+        <picklistValues>
+            <masterLabel># of Rings</masterLabel>
+            <translation><!-- # of Rings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After Hours</masterLabel>
+            <translation><!-- After Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Forward</masterLabel>
+            <translation><!-- Full Forward --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What are the call tracking lines associated with the account in Yodle Live that you would like associated with the Call Answering service? --></help>
+        <label><!-- Yodle Call Tracking Numbers: --></label>
+        <name>Yodle_Call_Tracking_Numbers__c</name>
+        <picklistValues>
+            <masterLabel>All Yodle Tracking Lines</masterLabel>
+            <translation><!-- All Yodle Tracking Lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Lines Below</masterLabel>
+            <translation><!-- Specific Lines Below --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please note that if your voicemail picks up in the same amount of rings as you choose here than that might answer the call first --></help>
+        <label><!-- # of Rings Before Answer --></label>
+        <name>of_Rings_Before_Answer__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Call Answering</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Answering</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <label><!-- Call Answering --></label>
+        <name>Call_Answering</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please provide hours that the call answering service should be active. --></errorMessage>
+        <name>Call_Answering_After_Hours_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must change the Call Answering status if making changes to the existing setup. --></errorMessage>
+        <name>Call_Answering_Change_Requests</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Client phone number or email address needs to be filled out prior to submission so the client can receive the message for the call. --></errorMessage>
+        <name>Call_Answering_Client_Phone_or_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the Change Request Details section when requesting a change to the call answering setup. --></errorMessage>
+        <name>Change_Request_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Clients must have Yodle Ads or Yodle Max to be on Call Answering. Since this account does not have either, they cannot be offered our Call Answering product. --></errorMessage>
+        <name>Client_Must_Have_Sponsored</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you wish to have the call answering service deactivated, please select &quot;Cancel Service&quot; in the Call Answering Status field. --></errorMessage>
+        <name>Deactivated_status_option_for_admin_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose number of rings --></errorMessage>
+        <name>Number_of_rings_must_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numbers should be entered into the Client Cell Phone fields. Please edit accordingly. --></errorMessage>
+        <name>Phone_Number_Must_Be_Numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the Questions/Issues section when changing the call answering status to questions/issue. --></errorMessage>
+        <name>Question_Issue_Details</name>
+    </validationRules>
+</CustomObjectTranslation>

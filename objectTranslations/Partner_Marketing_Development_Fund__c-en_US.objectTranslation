@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Anything else we should know? --></label>
+        <name>Anything_else_we_should_know__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim Notes --></label>
+        <name>Claim_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claimed By --></label>
+        <name>Claimed_By__c</name>
+        <relationshipLabel><!-- Partner Marketing Development Funds (Claimed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date of Activity --></label>
+        <name>Date_of_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Cost of Activity --></label>
+        <name>Estimated_Cost_of_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain activity in detail --></label>
+        <name>Explain_activity_in_detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDF Date Submitted --></label>
+        <name>MDF_Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDF Status Date/Time Stamp --></label>
+        <name>MDF_Status_Date_Time_Stamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDF Status Notes --></label>
+        <name>MDF_Status_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDF Status --></label>
+        <name>MDF_Status__c</name>
+        <picklistValues>
+            <masterLabel>Claim Approved</masterLabel>
+            <translation><!-- Claim Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Denied</masterLabel>
+            <translation><!-- Claim Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Expired</masterLabel>
+            <translation><!-- Claim Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim In Review</masterLabel>
+            <translation><!-- Claim In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Needs More Information</masterLabel>
+            <translation><!-- Claim Needs More Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Submitted</masterLabel>
+            <translation><!-- Claim Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Approved</masterLabel>
+            <translation><!-- Request Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Denied</masterLabel>
+            <translation><!-- Request Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Expired</masterLabel>
+            <translation><!-- Request Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Activity --></label>
+        <name>Other_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+        <relationshipLabel><!-- Partner Marketing Development Funds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested By --></label>
+        <name>Requested_By__c</name>
+        <relationshipLabel><!-- Partner Marketing Development Funds (Requested By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Cost of Activity --></label>
+        <name>Total_Cost_of_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Activity --></label>
+        <name>Type_of_Activity__c</name>
+        <picklistValues>
+            <masterLabel>Advertising</masterLabel>
+            <translation><!-- Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Mail/Email</masterLabel>
+            <translation><!-- Direct Mail/Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events</masterLabel>
+            <translation><!-- Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Marketing</masterLabel>
+            <translation><!-- Online Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Items</masterLabel>
+            <translation><!-- Promotional Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Docs</masterLabel>
+            <translation><!-- Research Docs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships</masterLabel>
+            <translation><!-- Sponsorships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testimonial Videos</masterLabel>
+            <translation><!-- Testimonial Videos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White Papers</masterLabel>
+            <translation><!-- White Papers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What is the goal of the activity? --></label>
+        <name>What_is_the_goal_of_the_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- When will the activity happen --></label>
+        <name>When_will_the_activity_happen__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Marketing Development Fund</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Marketing Development Funds</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Other Activity field is required if Other is the selected Type of Activity value! --></errorMessage>
+        <name>Other_Activity_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -35,17 +35,86 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayouts>
-        <fullName>WBN_IL</fullName>
-        <fields>Subject</fields>
-        <fields>WhoId</fields>
-        <fields>WhatId</fields>
-        <fields>ActivityDate</fields>
-        <fields>Activity_Type__c</fields>
-        <fields>Milestone__c</fields>
-        <fields>Status__c</fields>
-        <label>WBN-IL</label>
-    </compactLayouts>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -78,11 +147,6 @@
     <fields>
         <fullName>IsVisibleInSelfService</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Phone</fullName>
@@ -124,11 +188,192 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <listViews>
+        <fullName>CompletedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_CompletedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>DelegatedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Delegated</filterScope>
+        <label>ENCODED:{!FilterNames.Task_DelegatedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OpenTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_OpenTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OverdueTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_OverdueTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>RecurringTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_RecurringTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.z_TodaysTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>UnscheduledTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_UnscheduledTasks}</label>
+    </listViews>
     <recordTypes>
         <fullName>Executive_Sponsor_Activity</fullName>
         <active>true</active>
@@ -15155,225 +15400,6 @@
             </values>
         </picklistValues>
     </recordTypes>
-    <validationRules>
-        <fullName>Activity_detail_for_prospecting_external</fullName>
-        <active>true</active>
-        <errorConditionFormula>And(
-ispickval(Activity_Type__c ,"External Customer Activity"),
-ispickval(Milestone__c ,""),
-ispickval( Status ,"Completed"),
-CONTAINS(RecordType.Name, "YBN"))</errorConditionFormula>
-        <errorMessage>Activity Detail Must Be Filled Out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Comments_Required</fullName>
-        <active>true</active>
-        <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
-(ISPICKVAL( Activity_Type__c, "Account Support" )), 
-(ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )), 
-(ISPICKVAL( Activity_Type__c, "Presale/Onboarding Work")))),
-isblank( Description ), 
-ISPICKVAL( Status, "Completed"))</errorConditionFormula>
-        <errorMessage>Comments are required</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Issue_Resolution_Detail_Required</fullName>
-        <active>true</active>
-        <errorConditionFormula>And( 
-ISPICKVAL( Milestone__c, "Issue Resolution" ), 
-ISPICKVAL(Status,"Completed"),  
-ISblank( Issue_Resolution_Detail__c ))</errorConditionFormula>
-        <errorDisplayField>Issue_Resolution_Detail__c</errorDisplayField>
-        <errorMessage>Issue Resolution Detail is Required when Activity Detail = Issue Resolution</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Issues_or_concerns_raised_required</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-(OR
-(ISPICKVAL( Activity_Type__c, "Service Level Touch Points" ),(ISPICKVAL( Activity_Type__c, "Account Support" )))),
-ISPICKVAL(Status,"Completed"),
-ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
-        <errorDisplayField>Issues_or_Concerns_Raised__c</errorDisplayField>
-        <errorMessage>This Field Must Be Filled Out for All Completed Tasks</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Issues_or_concerns_summary_required</fullName>
-        <active>true</active>
-        <errorConditionFormula>And( 
-(OR 
-(ISPICKVAL( Activity_Type__c, "Service Level Touch Points" ),(ISPICKVAL( Activity_Type__c, "Account Support" )))),
-ISPICKVAL(Status,"Completed"),
-ISPICKVAL( Issues_or_Concerns_Raised__c,"Yes" ),
-ISblank( Summary_of_Issues_or_Concerns__c ))</errorConditionFormula>
-        <errorDisplayField>Summary_of_Issues_or_Concerns__c</errorDisplayField>
-        <errorMessage>This Field Must Be Filled Out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Require_Initial_Touch_part_of_squeeze</fullName>
-        <active>true</active>
-        <errorConditionFormula>And( 
-ISPICKVAL( Milestone__c, "Introduction Call/CSC" ), 
-(Subject = "Introduction Call / CSC Squeeze"), 
-ISPICKVAL(Status,"Completed"),
-ISblank(Initial_Touch_Connected_w_target_and__c))</errorConditionFormula>
-        <errorMessage>Must fill out Initial Touch field</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_notes_must_be_filled_out</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-isblank( Summary_of_Discussion_Items__c ),
-isblank( Summary_of_Issues_Client_Concerns__c ),
-isblank( Action_Items__c ),
-isblank( Description ))</errorConditionFormula>
-        <errorMessage>Please include "call/meeting notes" or "email notes"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Ybn_related_to_field_must_be_filled_out</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-ispickval(Status ,"Completed"),
-isblank(WhatId ))</errorConditionFormula>
-        <errorMessage>"Related To" field must be filled out with the corporate account</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>activity_detail</fullName>
-        <active>true</active>
-        <errorConditionFormula>And(
-ispickval(   Status , "Completed"),
-ispickval(   Milestone__c ,""),
-And(
-Or(
-ispickval( Activity_Type__c ,"External Customer Activity"),
-ispickval( Activity_Type__c ,"Internal YBN Sales Activities"),
-ispickval( Activity_Type__c ,"Service Level Touch Points"),
-ispickval( Activity_Type__c ,"Account Support"),
-ispickval( Activity_Type__c ,"Presale/Onboarding Work"),
-ispickval( Activity_Type__c ,"Internal YBN Activities"))))</errorConditionFormula>
-        <errorMessage>"Activity Detail" field must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>proactive_or_reactive</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
- ispickval(Activity_Type__c ,"Client Services Activity"),
-ispickval( Status , "Completed"),
-ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
-        <errorMessage>"Proactive or Reactive" field must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>require_demod_products</fullName>
-        <active>true</active>
-        <errorConditionFormula>And( 
-INCLUDES(Initial_Touch_Connected_w_target_and__c, "Demo'd products - Sales" ), 
-ISblank(Demo_d_Products__c))</errorConditionFormula>
-        <errorMessage>Must fill out the Demo'd Products field</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>require_products_sold</fullName>
-        <active>true</active>
-        <errorConditionFormula>And( 
-INCLUDES(Initial_Touch_Connected_w_target_and__c, "Upsold additional products - Sales" ), 
-ISblank(Products_upsold__c))</errorConditionFormula>
-        <errorMessage>Must fill out Products Upsold field</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>ybn_Interaction_Type_blank</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
- ISPICKVAL( Interaction_Type__c ,""),
- ISPICKVAL(Status__c ,"Completed"),
-AND(
-Or(
- ISPICKVAL( Milestone__c ,"M001 – Discovery Call"),
- ISPICKVAL( Milestone__c ,"M003 - Demo/Value Presentation"),
- ISPICKVAL( Milestone__c ,"M006 - ROI info gathering"),
- ISPICKVAL( Milestone__c ,"M006 - Custom Implementation Investigation"),
- ISPICKVAL( Milestone__c ,"M008 - Solutions in Action Presentation"),
- ISPICKVAL( Milestone__c ,"M010 - Present Proposal &amp; SOW"))))</errorConditionFormula>
-        <errorMessage>"Interaction Type" Must be filled in.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>ybn_comments_field_mus_be_filled_out</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-isblank( Description ),
-ispickval( Status , "Completed"),
-And(
-or(
-ispickval( Milestone__c ,"Customer Email"),
-ispickval( Milestone__c ,"Internal Meeting"),
-ispickval( Milestone__c ,"Customer Meeting"), 
-ispickval( Milestone__c ,"Connected with Target"), 
-ispickval( Milestone__c ,"M000 - Conversation Initiation"),
-ispickval( Milestone__c ,"M001 – Discovery Call"),
-ispickval( Milestone__c ,"M002 – Internal Download Call"),
-ispickval( Milestone__c ,"M003 – Demo/Value Presentation"),
-ispickval( Milestone__c ,"M004 – Detailed Audit Discovery"),
-ispickval( Milestone__c ,"M005 – Audit Download"),
-ispickval( Milestone__c ,"M006 – ROI info gathering"),
-ispickval( Milestone__c ,"M006 – Custom Implementation Investigation"),
-ispickval( Milestone__c ,"Review Initial SOW with Customer"),
-ispickval( Milestone__c ,"M007 – Product Assessment &amp; Strategy"),
-ispickval( Milestone__c ,"M008 – Solutions in Action Presentation"),
-ispickval( Milestone__c ,"M008 – ROI Analysis Presentation"),
-ispickval( Milestone__c ,"M009 – Proposal Creation &amp; Update SOW"),
-ispickval( Milestone__c ,"M010 – Present Proposal &amp; SOW"),
-ispickval( Milestone__c ,"M011 - Moving to Close"),
-ispickval( Milestone__c ,"M012 – Proof of Value Agreement"),
-ispickval( Milestone__c ,"M013 – Contract Creation"),
-ispickval( Milestone__c ,"M014 – Deliver Contract to the Customer"),
-ispickval( Milestone__c ,"M101 – Create Detailed Project Plan"),
-ispickval( Milestone__c ,"M102 – Internal Stakeholder Kick Off"),
-ispickval( Milestone__c ,"M103 – Customer Kick Off"),
-ispickval( Milestone__c ,"M104- Design consultation"),
-ispickval( Milestone__c ,"M105 – Custom Template Creation"),
-ispickval( Milestone__c ,"M106 – Bulk Account Setup"),
-ispickval( Milestone__c ,"M107 – Website Setup"),
-ispickval( Milestone__c ,"M108 – Campaign Setup"),
-ispickval( Milestone__c ,"M109 – Custom Implementation"),
-ispickval( Milestone__c ,"M110 – Network Communication Portal &amp; BI Setup"),
-ispickval( Milestone__c ,"M111 – Launch"),
-ispickval( Milestone__c ,"M112 – Marketing Webinars"),
-ispickval( Milestone__c ,"LM1 - Sales &amp; AD Meeting"),
-ispickval( Milestone__c ,"LM2 - Sales Account Meeting"),
-ispickval( Milestone__c ,"LM3 - Roundtable/CS account meeting"),
-ispickval( Milestone__c ,"LM4 - Customer Status Call"),
-ispickval( Milestone__c ,"LM5 - Reporting Analysis"),
-ispickval( Milestone__c ,"LM6 - Internal Stakeholder Meeting"),
-ispickval( Milestone__c ,"LM7 - Performance Review"),
-ispickval( Milestone__c ,"LM8 - In Person Review Meeting"),
-ispickval( Milestone__c ,"M001 - Set local demo"),
-ispickval( Milestone__c ,"M002 - Local demo"),
-ispickval( Milestone__c ,"M003 - Contract"),
-ispickval( Milestone__c ,"M104 - Introduction call"),
-ispickval( Milestone__c ,"Introduction Call"),
-ispickval( Milestone__c ,"Month 1 Check In"),
-ispickval( Milestone__c ,"Monthly Touch Point"),
-ispickval( Milestone__c ,"Status Update"),
-ispickval( Milestone__c ,"Project"))))</errorConditionFormula>
-        <errorMessage>Comments field must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>ybn_project_details_required</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
- ispickval(Milestone__c ,"Project"),
-ispickval( Status ,"Completed"),
-ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
-        <errorMessage>"Project Details" field must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>ybn_time_to_complete_activities_filled_o</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )),
-(ISPICKVAL( Activity_Type__c, "Account Support" )),
-(ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )),
-(ISPICKVAL( Activity_Type__c, "Presale/Onboarding Work")))),ispickval( Status , "Completed"),
-isnull( Time_To_Complete_Activity_Minutes__c ))</errorConditionFormula>
-        <errorMessage>"Time to Complete Activity" field must be filled out</errorMessage>
-    </validationRules>
     <webLinks>
         <fullName>Log_Past_Activity</fullName>
         <availability>online</availability>

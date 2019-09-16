@@ -1,0 +1,15 @@
+The following account has a special promotion that is coming due:
+
+Account:  {!01I60000000EDIP.00N60000001miJF}
+Client ID: {!Account.Client_ID__c}
+IMS Rep: {!Account.IMS_Rep__c}
+Account Status: {!Account.Status__c}
+Sponsored Status: {!Account.Sub_Status__c}
+
+Link to Account - {!Account.Link}
+
+If the account is still LIVE, go to the promo (link below) and following the 'description' instructions.  
+
+Link:  {!01I60000000EDIP.Link}
+Promo:  {!01I60000000EDIP.00N60000001miJP}
+Action: {!01I60000000EDIP.00N60000001miJQ} then change the promo status to "promo applied"

@@ -2,6 +2,11 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Medium</fullName>
+        <default>true</default>
+        <label>Medium</label>
+    </standardValue>
+    <standardValue>
         <fullName>Blocker</fullName>
         <default>false</default>
         <label>Blocker</label>
@@ -18,7 +23,7 @@
     </standardValue>
     <standardValue>
         <fullName>Major</fullName>
-        <default>true</default>
+        <default>false</default>
         <label>Major</label>
     </standardValue>
     <standardValue>
@@ -175,6 +180,36 @@
         <fullName>T3 2016</fullName>
         <default>false</default>
         <label>T3 2016</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prioritized</fullName>
+        <default>false</default>
+        <label>Prioritized</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Released</fullName>
+        <default>false</default>
+        <label>Released</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Data</fullName>
+        <default>false</default>
+        <label>No Data</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEO Task</fullName>
+        <default>false</default>
+        <label>SEO Task</label>
+    </standardValue>
+    <standardValue>
+        <fullName>20 Day Touch</fullName>
+        <default>false</default>
+        <label>20 Day Touch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>T2</fullName>
+        <default>false</default>
+        <label>T2</label>
     </standardValue>
     <standardValue>
         <fullName>High</fullName>

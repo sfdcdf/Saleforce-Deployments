@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Executive Client Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Contact Name --></label>
+        <name>Client_Contact_Name__c</name>
+        <relationshipLabel><!-- Executive Client Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date of Conversation --></label>
+        <name>Date_of_Conversation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Willingness to Renew with YBN --></label>
+        <name>Willingness_to_Renew_with_YBN__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YBN Contact Name --></label>
+        <name>YBN_Contact_Name__c</name>
+        <relationshipLabel><!-- Executive Client Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- YBN Exceeding Client Expectations --></label>
+        <name>YBN_Exceeding_Client_Expectations__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YBN Exceeding ROI Expectations --></label>
+        <name>YBN_Exceeding_ROI_Expectations__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Executive Client Scorecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Executive Client Scorecards</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

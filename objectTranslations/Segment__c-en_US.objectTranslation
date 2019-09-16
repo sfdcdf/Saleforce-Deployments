@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Definition --></label>
+        <name>Definition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Local Status Change --></label>
+        <name>Last_Local_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last National Status Change --></label>
+        <name>Last_National_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Segment Color --></label>
+        <name>Local_Segment_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Segment Status --></label>
+        <name>Local_Segment_Status__c</name>
+        <picklistValues>
+            <masterLabel>GREEN</masterLabel>
+            <translation><!-- GREEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RED</masterLabel>
+            <translation><!-- RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YELLOW</masterLabel>
+            <translation><!-- YELLOW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- National Segment Color --></label>
+        <name>National_Segment_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Segment Status --></label>
+        <name>National_Segment_Status__c</name>
+        <picklistValues>
+            <masterLabel>GREEN</masterLabel>
+            <translation><!-- GREEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RED</masterLabel>
+            <translation><!-- RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YELLOW</masterLabel>
+            <translation><!-- YELLOW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential Yellow --></label>
+        <name>Potential_Yellow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Local Status --></label>
+        <name>Prior_Local_Status__c</name>
+        <picklistValues>
+            <masterLabel>GREEN</masterLabel>
+            <translation><!-- GREEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RED</masterLabel>
+            <translation><!-- RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YELLOW</masterLabel>
+            <translation><!-- YELLOW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prior National Status --></label>
+        <name>Prior_National_Status__c</name>
+        <picklistValues>
+            <masterLabel>GREEN</masterLabel>
+            <translation><!-- GREEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RED</masterLabel>
+            <translation><!-- RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YELLOW</masterLabel>
+            <translation><!-- YELLOW --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Segment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Segments</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

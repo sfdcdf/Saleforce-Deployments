@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>YBN Operations</name>
+    <queueMembers>
+        <users>
+            <user>sfdc@yodle.com.ib</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>CS_Operations__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -43,6 +43,106 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -53,7 +153,6 @@
         <relationshipName>Yodle_Path</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -63,7 +162,6 @@
         <externalId>false</externalId>
         <label>Activate automated emails</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -73,7 +171,6 @@
         <externalId>false</externalId>
         <label>Attempt 1 Posted to Case</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -83,7 +180,6 @@
         <externalId>false</externalId>
         <label>Attempt 2 Posted to Case</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -93,7 +189,6 @@
         <externalId>false</externalId>
         <label>Attempt 3 Posted to Case</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -109,7 +204,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Auto Close Date</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -119,7 +213,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Client Email</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -130,7 +223,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Client Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -141,7 +233,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Coaching Call Script</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -156,7 +247,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <relationshipName>Yodle_Path1</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -166,7 +256,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Coaching Close Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -176,7 +265,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Completed Date/Time</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -186,7 +274,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Completed Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -196,7 +283,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Create VIP customer list</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -206,7 +292,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Create an offer</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -216,7 +301,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Created</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -226,7 +310,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Import contacts</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -236,7 +319,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>In Progress Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -246,7 +328,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Log in</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -258,7 +339,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -269,7 +349,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Most Recent Task Date Time</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -280,7 +359,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <length>22</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -295,7 +373,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <relationshipName>Yodle_Path</relationshipName>
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -305,7 +382,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <label>Pass/Fail Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -315,7 +391,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Request 2 more reviews TP1</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -325,7 +400,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Request 2 more reviews TP2</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -335,7 +409,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Request 2 reviews TP1</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -345,7 +418,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Request 2 reviews coaching</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -355,7 +427,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Review emails feature</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -365,7 +436,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Review website</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -375,7 +445,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Schedule coaching call</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -384,8 +453,7 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Scheduled Coaching Call</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -394,8 +462,7 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Scheduled Setup Call Date</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -405,7 +472,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Select Services</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -415,7 +481,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Send or schedule an email TP1</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -425,7 +490,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Send or schedule an email TP2</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -435,7 +499,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Set emails usage goal</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -445,7 +508,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <externalId>false</externalId>
         <label>Set reviews usage goal</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -456,7 +518,6 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Setup Call Script</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -471,336 +532,15 @@ IF( NOT( ISBLANK(DATEVALUE(Touch_Plan_3_Scheduled_Date_Time__c))), DATEVALUE(Tou
         <relationshipName>Yodle_Path</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Survey_Sent__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Survey Sent?</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>TP1_Goal__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(AND (
-Account__r.Most_Recent_Login_Date__c  &lt;=  (TODAY()+7),
-Account__r.Engagement_Has_Completed_Bulk_Import__c = TRUE,
-Account__r.Engagement_Num_Automated_Email_Activated__c  &gt;= 1,
-Account__r.Engagement_Num_Review_Request_Last_7_Day__c &gt;= 4,
-Account__r.Engagement_Num_Emails_Sent__c &gt;= 1
-), "PASS", "FAIL")</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TP1 Goal</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>TP2_Goal__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(AND(
-Account__r.Most_Recent_Login_Date__c  &lt;= (TODAY()+7),
-Account__r.Engagement_Has_Completed_Bulk_Import__c = TRUE,
-Account__r.Engagement_Num_Automated_Email_Activated__c   &gt;= 1,
-Account__r.Engagement_Num_Review_Request_Last_7_Day__c &gt;= 2,
-Account__r.Engagement_Num_Emails_Sent__c &gt;= 1,
-Account__r.Engagement_Num_Offers__c &gt;= 1
-), "PASS", "FAIL")</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TP2 Goal</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>TP3_Goal__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(
-AND(
-
-Account__r.Most_Recent_Login_Date__c &lt;= (TODAY()+7), 
-Account__r.Engagement_Has_Completed_Bulk_Import__c = TRUE, 
-Account__r.Engagement_Num_Automated_Email_Activated__c &gt;= 1, 
-OR(
-Account__r.Engagement_Num_Emails_Sent__c &gt;= 2,
-DATEVALUE(Account__r.Engagement_Date_Last_Email_Sent__c )&lt;= (TODAY()+7)),
-Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TP3 Goal</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Total_Number_of_Attempts__c</fullName>
-        <externalId>false</externalId>
-        <label>Total Number of Attempts</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_1_Close_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Touch Plan 1 Close Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_1_Scheduled_Date_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Touch Plan 1 Scheduled Date/Time</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_1_Script__c</fullName>
-        <externalId>false</externalId>
-        <formula>'https://na26.salesforce.com/articles/Scripts/Yodle-Path-Touch-Point-1'</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Touch Plan 1 Script</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_1__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Touch Plan 1</label>
-        <referenceTo>Yodle_Path__c</referenceTo>
-        <relationshipLabel>Yodle Path (Touch Plan 1)</relationshipLabel>
-        <relationshipName>Yodle_Path2</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_2_Close_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Touch Plan 2 Close Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_2_Scheduled_Date_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Touch Plan 2 Scheduled Date/Time</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_2_Script__c</fullName>
-        <externalId>false</externalId>
-        <formula>'https://na26.salesforce.com/articles/Scripts/Yodle-Path-Touch-Point-2'</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Touch Plan 2 Script</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_2__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Touch Plan 2</label>
-        <referenceTo>Yodle_Path__c</referenceTo>
-        <relationshipLabel>Yodle Path (Touch Plan 2)</relationshipLabel>
-        <relationshipName>Yodle_Path3</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_3_Scheduled_Date_Time__c</fullName>
-        <externalId>false</externalId>
-        <label>Touch Plan 3 Scheduled Date/Time</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_3_Script__c</fullName>
-        <externalId>false</externalId>
-        <formula>'https://na26.salesforce.com/articles/Scripts/Yodle-Path-Touch-Point-3'</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Touch Plan 3 Script</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_3__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Touch Plan 3</label>
-        <referenceTo>Yodle_Path__c</referenceTo>
-        <relationshipLabel>Yodle Path (Touch Plan 3)</relationshipLabel>
-        <relationshipName>Yodle_Path4</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_In_Progress__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Touch Plan In Progress</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Touch_Plan_Pass_Fail__c</fullName>
-        <externalId>false</externalId>
-        <label>Touch Plan Pass/Fail</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>X1st_Attempt_By__c</fullName>
-        <externalId>false</externalId>
-        <label>1st Attempt By</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>X1st_Attempt_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>1st Attempt Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>X2nd_Attempt_By__c</fullName>
-        <externalId>false</externalId>
-        <label>2nd Attempt By</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>X2nd_Attempt_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>2nd Attempt Date</label>
-        <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>X3rd_Attempt_By__c</fullName>
-        <externalId>false</externalId>
-        <label>3rd Attempt By</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>X3rd_Attempt_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>3rd Attempt Date</label>
-        <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>X4_or_More_Attempts__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>4 or More Attempts</label>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Yodle_Path_Completed_by__c</fullName>
-        <externalId>false</externalId>
-        <label>Yodle Path Completed by</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -835,12 +575,244 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Survey_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Survey Sent?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TP1_Goal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND (
+Account__r.Most_Recent_Login_Date__c  &lt;=  (TODAY()+7),
+Account__r.Engagement_Has_Completed_Bulk_Import__c = TRUE,
+Account__r.Engagement_Num_Automated_Email_Activated__c  &gt;= 1,
+Account__r.Engagement_Num_Review_Request_Last_7_Day__c &gt;= 4,
+Account__r.Engagement_Num_Emails_Sent__c &gt;= 1
+), "PASS", "FAIL")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TP1 Goal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TP2_Goal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(
+Account__r.Most_Recent_Login_Date__c  &lt;= (TODAY()+7),
+Account__r.Engagement_Has_Completed_Bulk_Import__c = TRUE,
+Account__r.Engagement_Num_Automated_Email_Activated__c   &gt;= 1,
+Account__r.Engagement_Num_Review_Request_Last_7_Day__c &gt;= 2,
+Account__r.Engagement_Num_Emails_Sent__c &gt;= 1,
+Account__r.Engagement_Num_Offers__c &gt;= 1
+), "PASS", "FAIL")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TP2 Goal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TP3_Goal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+
+Account__r.Most_Recent_Login_Date__c &lt;= (TODAY()+7), 
+Account__r.Engagement_Has_Completed_Bulk_Import__c = TRUE, 
+Account__r.Engagement_Num_Automated_Email_Activated__c &gt;= 1, 
+OR(
+Account__r.Engagement_Num_Emails_Sent__c &gt;= 2,
+DATEVALUE(Account__r.Engagement_Date_Last_Email_Sent__c )&lt;= (TODAY()+7)),
+Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TP3 Goal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Number_of_Attempts__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number of Attempts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_1_Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Touch Plan 1 Close Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_1_Scheduled_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Touch Plan 1 Scheduled Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_1_Script__c</fullName>
+        <externalId>false</externalId>
+        <formula>'https://na26.salesforce.com/articles/Scripts/Yodle-Path-Touch-Point-1'</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Touch Plan 1 Script</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Touch Plan 1</label>
+        <referenceTo>Yodle_Path__c</referenceTo>
+        <relationshipLabel>Yodle Path (Touch Plan 1)</relationshipLabel>
+        <relationshipName>Yodle_Path2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_2_Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Touch Plan 2 Close Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_2_Scheduled_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Touch Plan 2 Scheduled Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_2_Script__c</fullName>
+        <externalId>false</externalId>
+        <formula>'https://na26.salesforce.com/articles/Scripts/Yodle-Path-Touch-Point-2'</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Touch Plan 2 Script</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Touch Plan 2</label>
+        <referenceTo>Yodle_Path__c</referenceTo>
+        <relationshipLabel>Yodle Path (Touch Plan 2)</relationshipLabel>
+        <relationshipName>Yodle_Path3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_3_Scheduled_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Touch Plan 3 Scheduled Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_3_Script__c</fullName>
+        <externalId>false</externalId>
+        <formula>'https://na26.salesforce.com/articles/Scripts/Yodle-Path-Touch-Point-3'</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Touch Plan 3 Script</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Touch Plan 3</label>
+        <referenceTo>Yodle_Path__c</referenceTo>
+        <relationshipLabel>Yodle Path (Touch Plan 3)</relationshipLabel>
+        <relationshipName>Yodle_Path4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_In_Progress__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Touch Plan In Progress</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Touch_Plan_Pass_Fail__c</fullName>
+        <externalId>false</externalId>
+        <label>Touch Plan Pass/Fail</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1st_Attempt_By__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Attempt By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1st_Attempt_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Attempt Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>X1st_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>1st Attempt Status</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -873,14 +845,33 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>X2nd_Attempt_By__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Attempt By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X2nd_Attempt_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Attempt Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>X2nd_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>2nd Attempt Status</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -913,14 +904,33 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>X3rd_Attempt_By__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Attempt By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X3rd_Attempt_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Attempt Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>X3rd_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>3rd Attempt Status</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -955,12 +965,20 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>X4_or_More_Attempts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>4 or More Attempts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>X4th_or_More_Attempt_Status__c</fullName>
         <externalId>false</externalId>
         <label>4th or More Attempt Status</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -994,16 +1012,27 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>true</allowInChatterGroups>
+    <fields>
+        <fullName>Yodle_Path_Completed_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Yodle Path Completed by</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
@@ -1011,16 +1040,11 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
     <nameField>
         <label>Yodle Path Name</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Yodle Path</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <recordTypes>

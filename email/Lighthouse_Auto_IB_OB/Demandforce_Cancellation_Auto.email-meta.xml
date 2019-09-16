@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Instructions on cancelling demandforce</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Gray_March_2016</letterhead>
+    <name>Demandforce Cancellation - Auto</name>
+    <style>freeForm</style>
+    <subject>Lighthouse Support - Instructions to Stop Demandforce - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

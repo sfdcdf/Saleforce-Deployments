@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select an Account for this Performance Analysis --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Performance Analyses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Unpaid Search Traffic Last 16Wks --></label>
+        <name>Average_Unpaid_Search_Traffic_Last_16Wks__c</name>
+    </fields>
+    <fields>
+        <help><!-- CPC Change Last Week vs 30 Day Avg ($) --></help>
+        <label><!-- zz_CPC Change vs Last 30 Day Avg --></label>
+        <name>CPC_Change_vs_Last_30_Day_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- CPC Change Last Week vs Previous Week ($) --></help>
+        <label><!-- zz_CPC Change vs Previous Week --></label>
+        <name>CPC_Change_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- CPC ($) Last 7 Days --></help>
+        <label><!-- zz_CPC Last 7 Days ($) --></label>
+        <name>CPC_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTR% Change Last Week vs 4 weeks Avg (%) --></help>
+        <label><!-- CTR% Change vs Last 4 weeks Avg --></label>
+        <name>CTR_Change_vs_Last_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTR% Change Last Week vs Previous Week (%) --></help>
+        <label><!-- CTR% Change vs Previous Week --></label>
+        <name>CTR_Change_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTR % Last 7 Days --></help>
+        <label><!-- CTR Last 7 Days (%) --></label>
+        <name>CTR_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- CV% Change Last Week vs 4 weeks Avg (%) --></help>
+        <label><!-- CV% Change vs Last 4 weeks Avg --></label>
+        <name>CV_Change_vs_Last_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- CV% Change Last Week vs Previous Week (%) --></help>
+        <label><!-- CV% Change vs Previous Week --></label>
+        <name>CV_Change_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- CVR % Last 7 Days --></help>
+        <label><!-- CV% Last 7 Days --></label>
+        <name>CV_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>Franchise</masterLabel>
+            <translation><!-- Franchise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBW</masterLabel>
+            <translation><!-- LBW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Stream</masterLabel>
+            <translation><!-- Lead Stream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation><!-- Max --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TorchX</masterLabel>
+            <translation><!-- TorchX --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- External Matching for Account ID and Yodle Live- LocationID --></help>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Corporate ID --></help>
+        <label><!-- Corp Acct ID in YL --></label>
+        <name>Corp_Acct_ID_in_YL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the Optimization was completed --></help>
+        <label><!-- Date Opt Completed --></label>
+        <name>Date_Opt_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Days Into Billing Period --></help>
+        <label><!-- Days Into Billing Period --></label>
+        <name>Days_Into_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Reviewed After Complete --></label>
+        <name>Days_Reviewed_After_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Days until Next Bill Date --></help>
+        <label><!-- Days until Next Bill Date --></label>
+        <name>Days_until_Next_Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta to PPL Goal (%) --></label>
+        <name>Delta_to_PPL_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added/Removed Context Card for Lead Ads? --></label>
+        <name>FB_Added_Removd_Context_Card_for_Lead_Ad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added/Removed Custom &amp;Lookalike Audience --></label>
+        <name>FB_Added_Removed_Custom_Lookalike_Audien__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added/Removed qualifying for Lead Ads? --></label>
+        <name>FB_Added_Removed_qualifying_for_Lead_Ads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added behavior/Interest Targeting --></label>
+        <name>FB_Added_behavior_Interest_Targeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustments Made for Ad Relevance --></label>
+        <name>FB_Adjustments_Made_for_Ad_Relevance__c</name>
+    </fields>
+    <fields>
+        <label><!-- FB Decreased Geo Targeting --></label>
+        <name>FB_Decreased_Geo_Targeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Ad Copy Typos --></label>
+        <name>FB_Fixed_Ad_Copy_Typos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Facebook Errors --></label>
+        <name>FB_Fixed_Facebook_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- FB Increased Geo Targeting --></label>
+        <name>FB_Increased_Geo_Targeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- FB Recommended Budget Changes --></label>
+        <name>FB_Recommended_Budget_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- FB Recommended Conversion Tactics --></label>
+        <name>FB_Recommended_Conversion_Tactics__c</name>
+    </fields>
+    <fields>
+        <help><!-- . --></help>
+        <label><!-- Refreshed Ad Copy --></label>
+        <name>FB_Refreshed_Ad_Copy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Removed Behavior / Interest Targeting --></label>
+        <name>FB_Removed_Behavior_Interest_Targeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responded to Negative Feedback on Ads --></label>
+        <name>FB_Responded_to_Negative_Feedback_on_Ads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Copy for Quality --></label>
+        <name>FB_Updated_Copy_for_Quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Images for Quality --></label>
+        <name>FB_Updated_Images_for_Quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Landing Pages --></label>
+        <name>FB_Updated_Landing_Pages__c</name>
+    </fields>
+    <fields>
+        <help><!-- Franchise Master Account ID (Yodle Live) --></help>
+        <label><!-- FMA ID --></label>
+        <name>FMA_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Last End Date --></label>
+        <name>Facebook_Last_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Last Start Date --></label>
+        <name>Facebook_Last_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Add Notes before Closing Facebook Optimizations --></help>
+        <label><!-- Facebook Optimization Notes --></label>
+        <name>Facebook_Optimization_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there was a False Positive Report - what caused this? --></help>
+        <label><!-- False Positive Notes --></label>
+        <name>False_Positive_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foundations Last End Date --></label>
+        <name>Foundations_Last_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foundations Last Start Date --></label>
+        <name>Foundations_Last_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Foundations Live Date --></help>
+        <label><!-- zz_Foundations Live Date --></label>
+        <name>Foundations_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rule: 80% of KWs are ranking on the first page for Google / GEO
+Fill Out Unpaid Section and Unpaid Notes --></help>
+        <label><!-- First Page Ranking Below Target --></label>
+        <name>HC_First_Page_Ranking_Below_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low Lead Range (Paid + Unpaid) --></label>
+        <name>HC_Low_Lead_Range_Paid_Unpaid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rule: PPL is above the expected goal.
+Expected Goal is Network Median PPL
+Fill Out Paid Section and Paid Notes --></help>
+        <label><!-- PPL Above Expected Goal --></label>
+        <name>HC_PPL_Above_Expected_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fill Out Paid Section and Paid Notes --></help>
+        <label><!-- Projected to Miss Lead Range Goal? --></label>
+        <name>HC_Projected_to_Miss_Lead_Range_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rule: At least 15 days have passed in the billing period AND the â€œspent projectionâ€� at the end of the billing period is lower than 70% of the budget.
+Please Fill out Paid Section and Paid Notes --></help>
+        <label><!-- Underspending --></label>
+        <name>HC_Underspending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rule: Unpaid Leads are down by 30% or more over the last 14 days
+Fill Out Unpaid Section and Unpaid Notes --></help>
+        <label><!-- Unpaid Lead Drop --></label>
+        <name>HC_Unpaid_Lead_Drop__c</name>
+    </fields>
+    <fields>
+        <help><!-- date and time this was initially closed --></help>
+        <label><!-- Initial Date Time Completed --></label>
+        <name>Initial_Date_Time_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a proactive analysis or reaction(Case) --></help>
+        <label><!-- Issue Type --></label>
+        <name>Issue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Proactive</masterLabel>
+            <translation><!-- Proactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reactive</masterLabel>
+            <translation><!-- Reactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Target Maximum --></label>
+        <name>LR_Lead_Target_Maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Target Minimum --></label>
+        <name>LR_Lead_Target_Minimum__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Leads (Paid + Unpaid) Delivered to Date During the Billing Period --></help>
+        <label><!-- # of Leads (P+UP) To Date/ Billing Prd --></label>
+        <name>LR_No_of_Leads_PUP_ToDate_Billing_Prd__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last Billing Date --></help>
+        <label><!-- Last Billing Date --></label>
+        <name>Last_Billing_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last Optimization Date from the report --></help>
+        <label><!-- Last Optimization Date --></label>
+        <name>Last_Optimization_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the Lead Range Goal for this billing period?. --></help>
+        <label><!-- zz_Lead Range Goal --></label>
+        <name>Lead_Range_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Location PPL Goal ($) --></help>
+        <label><!-- Location PPL Goal ($) --></label>
+        <name>Location_PPL_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Next Billing Date from the Import Report --></help>
+        <label><!-- Next Billing Date --></label>
+        <name>Next_Billing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Leads (Paid + Unpaid) Delivered to Date During the Billing Period --></help>
+        <label><!-- zz_Number of Leads Delivered to Date --></label>
+        <name>Number_of_Leads_Delivered_to_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who Completed this Optimization? --></help>
+        <label><!-- Opt Completed By --></label>
+        <name>Opt_Completed_By__c</name>
+        <relationshipLabel><!-- Performance Analyses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- PPC Budget --></help>
+        <label><!-- PPC Budget --></label>
+        <name>PPC_Budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPC ($) Spend Last 7 Days --></help>
+        <label><!-- PPC Spend Last 7 Days ($) --></label>
+        <name>PPC_Spend_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPC Spend Change Last Week vs 4 weeks Avg ($) --></help>
+        <label><!-- PPC Spend vs 4 weeks Avg --></label>
+        <name>PPC_Spend_vs_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPC Spend Change Last Week vs Previous Week ($) --></help>
+        <label><!-- PPC Spend vs Previous Week --></label>
+        <name>PPC_Spend_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPL change Last Week vs 4 weeks Avg ($) --></help>
+        <label><!-- PPL Change vs Last 4 weeks Avg --></label>
+        <name>PPL_Change_vs_Last_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPL Change Last Week vs Previous Week ($) --></help>
+        <label><!-- PPL Change vs Previous Week --></label>
+        <name>PPL_Change_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPL Difference Last 7 Days: Goal vs Actual ($) --></help>
+        <label><!-- zz_PPL Goal - PPL Last 7 Days --></label>
+        <name>PPL_Goal_PPL_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customers PPL Goal ($) Network Median PPL --></help>
+        <label><!-- PPL Goal --></label>
+        <name>PPL_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPL Last 4 weeks ($) --></help>
+        <label><!-- PPL Last 4 weeks --></label>
+        <name>PPL_Last_4_weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- PPL Last 7 Days ($) --></help>
+        <label><!-- PPL Last 7 Days --></label>
+        <name>PPL_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added Call only --></label>
+        <name>P_Added_Call_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added Keywords --></label>
+        <name>P_Added_Keywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added Negatives --></label>
+        <name>P_Added_Negatives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added Pending Keywords --></label>
+        <name>P_Added_Pending_Keywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added Service Category --></label>
+        <name>P_Added_Service_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjusted Site Link Extensions --></label>
+        <name>P_Adjusted_Site_Link_Extensions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjusted VPL Caps --></label>
+        <name>P_Adjusted_VPL_Caps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Algo: Added Negative Bid Multiplier --></label>
+        <name>P_Algo_Added_Negative_Bid_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Algo: Added Positive Bid Multiplier --></label>
+        <name>P_Algo_Added_Positive_Bid_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked Lead Quality --></label>
+        <name>P_Checked_Lead_Quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked for Adwords Disapprovals --></label>
+        <name>P_Checked_for_Adwords_Disapprovals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked for Limited Ad status in Adwords --></label>
+        <name>P_Checked_for_Limited_Ad_status_in_Adw__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked for Site Suspensions --></label>
+        <name>P_Checked_for_Site_Suspensions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleared Spend Blockers --></label>
+        <name>P_Cleared_Spend_Blockers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corrected Ad Copy Typos --></label>
+        <name>P_Corrected_Ad_Copy_Typos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decreased Geo Targeting --></label>
+        <name>P_Decreased_Geo_Targeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted Call Only --></label>
+        <name>P_Deleted_Call_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted/Paused Keywords --></label>
+        <name>P_Deleted_Paused_Keywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted/paused Service Category --></label>
+        <name>P_Deleted_paused_Service_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Call Tracking Issues --></label>
+        <name>P_Fixed_Call_Tracking_Issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implemented Business Hour Only Bidding --></label>
+        <name>P_Implemented_Business_Hour_Only_Bidding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implemented No Listing Left Behind --></label>
+        <name>P_Implemented_No_Listing_Left_Behind__c</name>
+    </fields>
+    <fields>
+        <label><!-- Increased Geo Targeting --></label>
+        <name>P_Increased_Geo_Targeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paused Provider Outlets --></label>
+        <name>P_Paused_Provider_Outlets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paused Spend Monitoring --></label>
+        <name>P_Paused_Spend_Monitoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Budget Changes --></label>
+        <name>P_Recommended_Budget_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Conversion Tactics --></label>
+        <name>P_Recommended_Conversion_Tactics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Removed Negatives --></label>
+        <name>P_Removed_Negatives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved KW Conflicts --></label>
+        <name>P_Resolved_KW_Conflicts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Bulk URL Manager --></label>
+        <name>P_Updated_Bulk_URL_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Geo Messaging --></label>
+        <name>P_Updated_Geo_Messaging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated/Refreshed Ad Copy --></label>
+        <name>P_Updated_Refreshed_Ad_Copy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Paid Leads Last 7 Days (#). --></help>
+        <label><!-- Paid Leads Last 7 Days --></label>
+        <name>Paid_Leads_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Paid Lead Count vs Previous 4 weeks Avg --></help>
+        <label><!-- Paid Leads vs Previous 4 weeks Avg --></label>
+        <name>Paid_Leads_vs_Previous_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Paid Leads Change Last Week vs Previous Week (#) --></help>
+        <label><!-- Paid Leads vs Previous Week --></label>
+        <name>Paid_Leads_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Add Notes before Closing Paid Optimizations --></help>
+        <label><!-- Paid Optimization Notes --></label>
+        <name>Paid_Optimization_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account --></label>
+        <name>Parent_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- % to Spend Goal --></help>
+        <label><!-- % to Spend Goal --></label>
+        <name>Perc_to_Spend_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay Per Click</masterLabel>
+            <translation><!-- Pay Per Click --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO</masterLabel>
+            <translation><!-- SEO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Projected Lead Total Within Billing Period --></help>
+        <label><!-- Projected Lead Total Within Bill Period --></label>
+        <name>Projected_Lead_Total_Within_Bill_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Projected # of Leads (Paid + Unpaid) To Be Delivered During the Billing Period --></help>
+        <label><!-- zz_Projected Lead Total --></label>
+        <name>Projected_Lead_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Spend for Billing Period --></label>
+        <name>Projected_Spend_for_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected % To Lead Range Goal --></label>
+        <name>Projected_To_Lead_Range_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Projected % From Lead Range Goal During The Billing Period --></help>
+        <label><!-- zz_Projected % To or From Lead Goal --></label>
+        <name>Projected_To_or_From_Lead_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Issue ID for record of Performance Analysis Report --></help>
+        <label><!-- Report Issue ID --></label>
+        <name>Report_Issue_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This ID is unique to the batch of performance issues imported --></help>
+        <label><!-- Report Version ID --></label>
+        <name>Report_Version_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviewed by CS Date --></label>
+        <name>Reviewed_by_CS_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviewed by CS --></label>
+        <name>Reviewed_by_CS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEM Last End Date --></label>
+        <name>SEM_Last_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEM Last Start Date --></label>
+        <name>SEM_Last_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- SEM Live Date --></help>
+        <label><!-- zz_SEM Live Date --></label>
+        <name>SEM_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEO Last End Date --></label>
+        <name>SEO_Last_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEO Last Start Date --></label>
+        <name>SEO_Last_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of KW Ranking on the first page for Google/GEO (#) --></help>
+        <label><!-- # of KWs Ranking on the 1st Page --></label>
+        <name>SU_No_of_KWs_Ranking_on_the_1st_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of KW we are Trying to Rank For (#) --></help>
+        <label><!-- # of KWs Trying to Rank For --></label>
+        <name>SU_No_of_KWs_Trying_to_Rank_For__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Keyword Last 7 Days vs Previous 7 Days --></help>
+        <label><!-- zz_# of KW Ranking on the first page --></label>
+        <name>SU_Noof_KW_Rnking_on_the_first_page_Chng__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of KWs Ranking on the 1st Page Change vs Last 4 weeks. --></help>
+        <label><!-- # of KW Rank 1st Page 4 weeks Change --></label>
+        <name>SU_Num_KW_Rank_1st_Page_4_weeks_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of KWs Ranking on the 1st Page Change Last 7 Days. --></help>
+        <label><!-- # of KW Rank 1st Page 7Day Change --></label>
+        <name>SU_Num_KW_Rank_1st_Page_7Day_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of KW Ranking on the first page for Google/GEO (#). --></help>
+        <label><!-- zz_# of KW Rank 1st Page GoogleGeo --></label>
+        <name>SU_Num_KW_Rank_1st_Page_GoogleGeo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Keyword Ranking For / Total Keyword Trying Rank For --></help>
+        <label><!-- % of Keywords We Are Ranking For --></label>
+        <name>SU_Perc_of_Keywords_We_Are_Ranking_For__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unpaid Leads Last 7 Days (#) --></help>
+        <label><!-- Unpaid Leads Last 7 Days --></label>
+        <name>SU_Unpaid_Leads_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unpaid Leads Change Last Week vs 4 weeks Avg (#) --></help>
+        <label><!-- Unpaid Leads vs Previous 4 weeks Avg --></label>
+        <name>SU_Unpaid_Leads_vs_Previous_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unpaid Leads Change Last Week vs Previous Week (#) --></help>
+        <label><!-- Unpaid Leads vs Previous Week --></label>
+        <name>SU_Unpaid_Leads_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Keyword Last 7 Days s Pervious 30 Day Avg --></help>
+        <label><!-- zz_# of KW Ranking on the first page --></label>
+        <name>SU_of_KW_Rnkng_on_the_first_page_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Mode --></label>
+        <name>Save_Mode__c</name>
+    </fields>
+    <fields>
+        <help><!-- What Segment are we in --></help>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spend During Billing Period --></label>
+        <name>Spend_During_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>False Positive - Work Not Completed</masterLabel>
+            <translation><!-- False Positive - Work Not Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Imported</masterLabel>
+            <translation><!-- Imported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relevant Issue &amp; Work Completed</masterLabel>
+            <translation><!-- Relevant Issue &amp; Work Completed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Time To Complete (Minutes) - required on close --></help>
+        <label><!-- Time To Complete (Minutes) --></label>
+        <name>Time_To_Complete_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Clicks During the Billing Period (#) --></help>
+        <label><!-- Total Clicks During the Billing Period --></label>
+        <name>Total_Clicks_During_the_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Clicks over the last 4 weeks (#) --></help>
+        <label><!-- Total Clicks Over the Last 4 weeks --></label>
+        <name>Total_Clicks_Over_the_Last_4_weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total spent During the Billing Period ($) --></help>
+        <label><!-- Total Spent During the Billing Period --></label>
+        <name>Total_Spent_During_the_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total # of Days in Billing Period --></help>
+        <label><!-- Total # of Days in Billing Period --></label>
+        <name>Total_of_Days_in_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added Schema Mark-Up --></label>
+        <name>UP_Added_Schema_Mark_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked Site Speed --></label>
+        <name>UP_Checked_Site_Speed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked for non 200 ok or non 301 codes --></label>
+        <name>UP_Checked_non_200_ok_or_non_301_codes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleaned Up Schema Mark-up --></label>
+        <name>UP_Cleaned_Up_Schema_Mark_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Custom Content Case --></label>
+        <name>UP_Created_Custom_Content_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Broken Links --></label>
+        <name>UP_Fixed_Broken_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performed Code Clean-up --></label>
+        <name>UP_Performed_Code_Clean_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published Site --></label>
+        <name>UP_Published_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Website Updates --></label>
+        <name>UP_Recommended_Website_Updates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved Crawl Errors --></label>
+        <name>UP_Resolved_Crawl_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved Sitemap Errors --></label>
+        <name>UP_Resolved_Sitemap_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted to G&amp;B Webmaster Tools --></label>
+        <name>UP_Submitted_to_G_B_Webmaster_Tools__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Bing Listing --></label>
+        <name>UP_Updated_Bing_Listing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Bing Webmaster Tools --></label>
+        <name>UP_Updated_Bing_Webmaster_Tools__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated GMB Listing --></label>
+        <name>UP_Updated_GMB_Listing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Google Search Console --></label>
+        <name>UP_Updated_Google_Search_Console__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated H Tags --></label>
+        <name>UP_Updated_H_Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Images (Title/Alt Tags) --></label>
+        <name>UP_Updated_Images_Title_Alt_Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Meta Data --></label>
+        <name>UP_Updated_Meta_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Unpaid Tracking # --></label>
+        <name>UP_Updated_Unpaid_Tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Yext --></label>
+        <name>UP_Updated_Yext__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor: Built Additional Citations --></label>
+        <name>UP_Vendor_Built_Additional_Citations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor: Built Backlinks --></label>
+        <name>UP_Vendor_Built_Backlinks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor: Cleaned Up Citations --></label>
+        <name>UP_Vendor_Cleaned_Up_Citations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor: Produced / Enhanced Content --></label>
+        <name>UP_Vendor_Produced_Enhanced_Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Reclaimed Backlinks --></label>
+        <name>UP_Vendor_Reclaimed_Backlinks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Add Notes before Closing Unpaid Optimizations --></help>
+        <label><!-- Unpaid Optimization Notes --></label>
+        <name>Unpaid_Optimization_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unpaid Search Traffic Drop (%) --></label>
+        <name>Unpaid_Search_Traffic_Drop_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unpaid Search Traffic Drop --></label>
+        <name>Unpaid_Search_Traffic_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unpaid Search Traffic Last 7 Days --></label>
+        <name>Unpaid_Search_Traffic_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Weekly Spend ($) Change vs Last 4 weeks Avg. ($) --></help>
+        <label><!-- Weekly Spend Change vs Last 4 weeks Avg --></label>
+        <name>Weekly_Spend_Change_vs_Last_4_weeks_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Weekly Spend ($) Change vs Previous Week ($) --></help>
+        <label><!-- Weekly Spend Change vs Previous Week --></label>
+        <name>Weekly_Spend_Change_vs_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Weekly Spend ($) Last 7 Days ($) --></help>
+        <label><!-- Weekly Spend Last 7 Days --></label>
+        <name>Weekly_Spend_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- isClosed --></label>
+        <name>isClosed__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Performance Analysis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Performance Analyses</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <description><!-- default record type for proactive analysis --></description>
+        <label><!-- Auto Performance Insights --></label>
+        <name>Auto_Performance_Insights</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please add Notes before Closing this Issue --></errorMessage>
+        <name>Close_Notes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This had a status of False Positive, False Positive Notes are required. --></errorMessage>
+        <name>False_Positive_Notes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all fields in the Paid Optimization Tactics and Paid Optimization Notes --></errorMessage>
+        <name>Paid_Optimization_Checks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not modify this record if it&apos;s already closed. Please contact @Salesforce Support in the Chatter Feed on this record if you closed by mistake or need assistance! --></errorMessage>
+        <name>Performance_No_Changes_after_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter in the Time to Complete in Minutes --></errorMessage>
+        <name>Time_to_Complete_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all fields in the Unpaid Optimization Tactics and Unpaid Optimization Notes --></errorMessage>
+        <name>Unpaid_Optimization_Checks</name>
+    </validationRules>
+</CustomObjectTranslation>

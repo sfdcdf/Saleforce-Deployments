@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Feedback (Account Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Account --></label>
+        <name>Client_Account__c</name>
+        <relationshipLabel><!-- Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+        <relationshipLabel><!-- Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Requested --></label>
+        <name>Contact_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledgeable --></label>
+        <name>Knowledgeable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Likelihood to Continue --></label>
+        <name>Likelihood_to_Continue__c</name>
+        <picklistValues>
+            <masterLabel>Somewhat Likely</masterLabel>
+            <translation><!-- Somewhat Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlikely</masterLabel>
+            <translation><!-- Unlikely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Likely</masterLabel>
+            <translation><!-- Very Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Unlikely</masterLabel>
+            <translation><!-- Very Unlikely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Leads --></label>
+        <name>Number_of_Leads__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Satisfaction --></label>
+        <name>Overall_Satisfaction2__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall Satisfaction --></label>
+        <name>Overall_Satisfaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality of Campaigns --></label>
+        <name>Quality_of_Campaigns2__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quality of IMS --></label>
+        <name>Quality_of_IMS__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quality of Leads --></label>
+        <name>Quality_of_Leads__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolved? --></label>
+        <name>Resolved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Speed &amp; Responsiveness --></label>
+        <name>Speed_Responsiveness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Name --></label>
+        <name>Survey_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey URL --></label>
+        <name>Survey_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time to Live --></label>
+        <name>Time_to_Live2__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Website Quality --></label>
+        <name>Website_Quality3__c</name>
+        <picklistValues>
+            <masterLabel>Delighted</masterLabel>
+            <translation><!-- Delighted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extremely Dissatisfied</masterLabel>
+            <translation><!-- Extremely Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle did not create my website</masterLabel>
+            <translation><!-- Yodle did not create my website --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Feedback</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Adoption Length (Mth) --></label>
+        <name>AdoptionLen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adoption % --></label>
+        <name>AdoptionPct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apex Update --></label>
+        <name>ApexUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Value --></label>
+        <name>MonthlyValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Network Adoption Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Enhanced SEO</masterLabel>
+            <translation><!-- Enhanced SEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook Setup</masterLabel>
+            <translation><!-- Facebook Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundations</masterLabel>
+            <translation><!-- Foundations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Setup</masterLabel>
+            <translation><!-- Location Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Management</masterLabel>
+            <translation><!-- Media Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Per Click (PPC)</masterLabel>
+            <translation><!-- Paid Per Click (PPC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reviews</masterLabel>
+            <translation><!-- Reviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Web</masterLabel>
+            <translation><!-- Yodle Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Qty / Loc --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Price --></label>
+        <name>SalesPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value --></label>
+        <name>TotalValue__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Network Adoption Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Network Adoption Products</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Must be greater than 0. --></errorMessage>
+        <name>AdoptionLen_Greater_Than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must be between 0 and 100. --></errorMessage>
+        <name>AdoptionPct_Between_0_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must be greater than 0. --></errorMessage>
+        <name>Quantity_Greater_Than_Zero</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Setup_Adoption_Products --></label>
+        <name>Setup_Adoption_Products</name>
+    </webLinks>
+</CustomObjectTranslation>

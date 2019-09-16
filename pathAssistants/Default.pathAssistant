@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Website</fieldNames>
+        <fieldNames>Industry</fieldNames>
+        <fieldNames>AnnualRevenue</fieldNames>
+        <fieldNames>NumberOfEmployees</fieldNames>
+        <info>&lt;strong&gt;Learn about and contact your new lead quickly.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Use Salesforce leads to separate prospects from the Salesforce contacts you’ve already sold to.&lt;br&gt;&lt;br&gt;Respond to your lead within five minutes to increase your chances of converting the lead record to an opportunity. 
+&lt;ul&gt;&lt;li&gt;Visit your lead’s website to learn about your lead’s business and industry.&lt;/li&gt;&lt;li&gt;Find your lead on social networks to determine how to best engage and connect.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;strong&gt;Congratulations! &lt;/strong&gt;Now it’s time to convert the lead record to an opportunity. Then, continue the qualification process with your new contact.</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

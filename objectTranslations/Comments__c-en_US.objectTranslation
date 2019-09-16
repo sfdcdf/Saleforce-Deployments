@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cancellation Form --></label>
+        <name>Cancellation_Form__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment --></label>
+        <name>Fulfillment__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Owner --></label>
+        <name>Parent_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performance Analysis --></label>
+        <name>Performance_Analysis__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quality Case --></label>
+        <name>Quality_Case__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- What type of Comment --></label>
+        <name>What_type_of_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Worksheet --></label>
+        <name>Worksheet__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Comment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Comments</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <label><!-- Comments --></label>
+        <name>Comments</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Back --></label>
+        <name>Back</name>
+    </webLinks>
+</CustomObjectTranslation>

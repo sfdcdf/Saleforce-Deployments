@@ -67,6 +67,169 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Name</fields>
@@ -75,6 +238,15 @@
         <fields>Email__c</fields>
         <fields>Client_Phone_Number__c</fields>
         <label>WBN-IL</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Phone</fields>
+        <fields>BillingAddress</fields>
+        <fields>Website</fields>
+        <fields>OwnerId</fields>
+        <label>Account Compact Layout</label>
     </compactLayouts>
     <fields>
         <fullName>AC_OCC_Created__c</fullName>
@@ -158,19 +330,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Account_Director__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <inlineHelpText>Please Update this Field in Yodle Live. User Roles: National Interactive Marketing Manager</inlineHelpText>
-        <label>Customer Success Director</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Accounts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Account_MPA__c</fullName>
@@ -320,17 +479,6 @@ PEV__c &lt;100000,"Tier 6","NA"))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>AdStation_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>AdStation Status</label>
-        <length>25</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Ad_Domain_URL__c</fullName>
@@ -624,23 +772,6 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>BillingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Billing_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Billing Date</label>
-        <precision>2</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Biz_Dev_Agreement_Special_Terms__c</fullName>
         <description>Used by Biz Dev to call out any special terms in a partner agreement</description>
         <externalId>false</externalId>
@@ -733,15 +864,6 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Budget_Change_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Budget Change Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Budget_Change_Reason__c</fullName>
         <externalId>false</externalId>
         <label>Budget Change Reason</label>
@@ -763,18 +885,6 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Budget__c</fullName>
-        <externalId>false</externalId>
-        <label>Budget</label>
-        <precision>10</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Bulk_Account_Proxy_IP_Used_Parent__c</fullName>
@@ -1179,26 +1289,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Closed_Won_Monthly_Spend__c</fullName>
-        <externalId>false</externalId>
-        <label>Closed Won Monthly Spend</label>
-        <summarizedField>Opportunity.Corporate_Recurring_Total__c</summarizedField>
-        <summaryFilterItems>
-            <field>Opportunity.StageName</field>
-            <operation>equals</operation>
-            <value>Closed Won</value>
-        </summaryFilterItems>
-        <summaryFilterItems>
-            <field>Opportunity.CreatedDate</field>
-            <operation>greaterOrEqual</operation>
-            <value>12/31/2015 11:00 PM</value>
-        </summaryFilterItems>
-        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <type>Summary</type>
-    </fields>
-    <fields>
         <fullName>Closing__c</fullName>
         <externalId>false</externalId>
         <label>Closing</label>
@@ -1302,28 +1392,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Contract_Length__c</fullName>
-        <externalId>false</externalId>
-        <label>Contract Length</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Contract_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Contract Status</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Contract_Value_Goal__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Annual goal for total contract value for all opportunities. Used as a measure in the aggregate relationship document for total forecasted opportunities value vs. contract value goal.</inlineHelpText>
@@ -1381,17 +1449,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Corporate_Credit__c</fullName>
-        <externalId>false</externalId>
-        <label>Corporate Credit</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Corporate_Monthly_Mgmt_Fees__c</fullName>
@@ -1456,18 +1513,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Credit_Percentage__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Promo Credits (10,15,20)</inlineHelpText>
-        <label>Credit Percentage</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Percent</type>
     </fields>
     <fields>
         <fullName>Currency_Code__c</fullName>
@@ -1663,16 +1708,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Data_Last_Verified__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>When was Universal Segment, National Company Type, Parent Ownership Structure, and Number of Locations last verified or confirmed?</inlineHelpText>
-        <label>Data Last Verified Date?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Date_Berry_Contract_Received__c</fullName>
@@ -2269,17 +2304,6 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Email__c</fullName>
-        <externalId>false</externalId>
-        <label>Email</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Email_for_Touchplan__c</fullName>
         <externalId>false</externalId>
         <label>Email for Touchplan</label>
@@ -2444,15 +2468,6 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Entered_Save_Mode__c</fullName>
-        <externalId>false</externalId>
-        <label>Entered Save Mode</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Entitlement__c</fullName>
@@ -2751,15 +2766,6 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Google_White_List__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Auto-Verified</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Grandchildren_Accounts_Live__c</fullName>
         <externalId>false</externalId>
         <label>Grandchildren Accounts Live</label>
@@ -2900,18 +2906,6 @@ Used by YBN.</description>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>IMS_Rep__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>IMS Rep</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Accounts3</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>IMS_Team__c</fullName>
@@ -3407,30 +3401,6 @@ Used by YBN.</description>
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Lead_Analyst__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Lead Analyst</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>AccountsSG51</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Lead_Consultant__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Lead Consultant</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>AccountsTSZ5</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Lead_Record_type_Conversion__c</fullName>
         <description>The Original Lead Recordtype for converted records, used to make sure this goes to the correct recordtype</description>
         <externalId>false</externalId>
@@ -3591,28 +3561,6 @@ IF (
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>LiveOps_SE_User_ID__c</fullName>
-        <externalId>false</externalId>
-        <formula>NCE__r.LiveOps_ID__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>LiveOps SE User ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>LiveOps_User_ID__c</fullName>
-        <externalId>false</externalId>
-        <formula>if (Temp_IMS_Rep__c != '', Temp_IMS_Rep__r.LiveOps_ID__c, IMS_Rep__r.LiveOps_ID__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>LiveOps User ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>LiveOps_VM_ID_Standard__c</fullName>
         <description>Grabbing LiveOps_VM_ID__c  from Master Account</description>
         <externalId>false</externalId>
@@ -3635,15 +3583,6 @@ IF (
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Live_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Live Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Live__c</fullName>
@@ -3921,17 +3860,6 @@ Live_Date__c+35+Month_1_Check_In_Date_Adjustment__c ,Null)</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Monthly_Budget__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Budget</label>
-        <precision>10</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Months_Live__c</fullName>
         <externalId>false</externalId>
         <formula>IF(DAY( Live_Date__c ) = 1, (((YEAR( today() ) - YEAR( Live_Date__c
@@ -4069,11 +3997,6 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-    </fields>
-    <fields>
         <fullName>National_Claimed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -4173,28 +4096,6 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Net_Invoiced_Revenue_Last_Month_Total__c</fullName>
-        <externalId>false</externalId>
-        <label>Net Invoiced Revenue-Last Month Total</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Net_Invoiced_Revenue_This_MTD__c</fullName>
-        <externalId>false</externalId>
-        <label>Net Invoiced Revenue-This MTD</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>New_Customers_Per_Month_Goal__c</fullName>
         <externalId>false</externalId>
         <label>New Customers Per Month Goal</label>
@@ -4214,15 +4115,6 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Next_Scheduled_Touchpoint__c</fullName>
-        <externalId>false</externalId>
-        <label>Next Scheduled Touchpoint</label>
-        <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>Next_TP_Needed_By_TEMP__c</fullName>
@@ -4518,24 +4410,6 @@ Null))))))</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Organic_Deactivation_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Organic Deactivation Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Organic_Live_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Organic Live Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Organic_Order_Date__c</fullName>
         <externalId>false</externalId>
         <label>Organic Order Date</label>
@@ -4543,18 +4417,6 @@ Null))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Organic_Recurring_Fees__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Shows the monthly fees for products such as YO and video</inlineHelpText>
-        <label>Organic Recurring Fee</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Organic_taxonomy_details__c</fullName>
@@ -4678,21 +4540,6 @@ Null))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>ParentId</fullName>
-        <lookupFilter>
-            <active>false</active>
-            <filterItems>
-                <field>$Source.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>YBN Master Account</value>
-            </filterItems>
-            <isOptional>true</isOptional>
-        </lookupFilter>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Hierarchy</type>
     </fields>
     <fields>
         <fullName>Parent_Account_Owner__c</fullName>
@@ -5365,15 +5212,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Reactivation_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Reactivation Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>Red_Ventures__c</fullName>
@@ -6444,16 +6282,6 @@ IMS_Rep__r.Id = "00532000005P6l3"), /*LeadStream Support*/
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Survey_Opt_Out__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <inlineHelpText>Check if client no longer wants to receive survey communication via Yodle.</inlineHelpText>
-        <label>Survey Opt Out</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Synopsis_of_Account_State__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>High level overview of current account state</inlineHelpText>
@@ -6777,15 +6605,6 @@ If(BillingState = "","NA","West")))))))))))))))))))))))))))))</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Touchplan_Created__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Touchplan Created</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Trade_Show_Promo__c</fullName>
         <defaultValue>false</defaultValue>
         <description>those that have the 'trade show promo' checked off receive a 10% credit towards their 1st month's budget</description>
@@ -7061,11 +6880,6 @@ Sales_Director__r.Id = $User.Id , 1 , 0)</formula>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Website</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-    </fields>
-    <fields>
         <fullName>Website_Additional_Fees__c</fullName>
         <externalId>false</externalId>
         <label>Website Additional Fees</label>
@@ -7222,29 +7036,6 @@ Live_Date__c+9+YBN_CSC_Date_Adjustment__c,Null)</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>YBN_Live_Ops_User_ID__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(
-    AND (
-        RecordType.DeveloperName = 'YBN_Corporate_Relationship',
-        NOT(ISBLANK( Lead_Consultant__c))
-       ) ,  Lead_Consultant__r.LiveOps_ID__c , 
-
-        IF(
-           AND(
-            RecordType.DeveloperName = 'Standard',
-            NOT(ISBLANK( IMS_Rep__c ))
-       ),      IMS_Rep__r.LiveOps_ID__c , ''
-   )
-)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>YBN Live Ops User ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>YBN_Relationship__c</fullName>
@@ -8048,16 +7839,6 @@ LiveOps_VM_ID_Standard__c,
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Account_Description__c</fullName>
-        <externalId>false</externalId>
-        <label>Account Description</label>
-        <length>1250</length>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Initial_Live_Date__c</fullName>
@@ -12821,18 +12602,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Marketo_ID__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
-        <label>Marketo ID</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
         <fullName>OutRank_Fees__c</fullName>
         <externalId>false</externalId>
         <label>OutRank Fees</label>
@@ -12842,15 +12611,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Sync_to_Marketo__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Sync to Marketo</label>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>ATV_Customer_Reference_Id__c</fullName>
@@ -12923,17 +12683,6 @@ or(
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Origin_ID__c</fullName>
-        <externalId>false</externalId>
-        <formula>CASESAFEID(Id)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Origin ID</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Migrate__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -12941,23 +12690,6 @@ or(
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Source_ID__c</fullName>
-        <externalId>false</externalId>
-        <label>Source ID</label>
-        <length>18</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>TORCHx_Client_Type__c</fullName>
@@ -12989,12 +12721,431 @@ or(
         </valueSet>
     </fields>
     <fields>
-        <fullName>AlternateSFId__c</fullName>
+        <fullName>Account_Description__c</fullName>
         <externalId>false</externalId>
-        <label>AlternateSFId</label>
-        <length>50</length>
+        <label>Account Description</label>
+        <length>1250</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Director__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Please Update this Field in Yodle Live. User Roles: National Interactive Marketing Manager</inlineHelpText>
+        <label>Customer Success Director</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AdStation_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>AdStation Status</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AlternateSFId__c</fullName>
+        <description>Unique identifier signifying the target instance created Id for the corresponding source record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique identifier signifying the target instance created Id for the corresponding source record</inlineHelpText>
+        <label>AlternateSFId</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Billing_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Date</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Budget_Change_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget Change Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_Monthly_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Closed Won Monthly Spend</label>
+        <summarizedField>Opportunity.Corporate_Recurring_Total__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>12/31/2015 9:00 PM</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Length__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Length</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Credit__c</fullName>
+        <externalId>false</externalId>
+        <label>Corporate Credit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Promo Credits (10,15,20)</inlineHelpText>
+        <label>Credit Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Data_Last_Verified__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>When was Universal Segment, National Company Type, Parent Ownership Structure, and Number of Locations last verified or confirmed?</inlineHelpText>
+        <label>Data Last Verified Date?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entered_Save_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Entered Save Mode</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Google_White_List__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Auto-Verified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IMS_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IMS Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Analyst__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Analyst</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AccountsSG51</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Consultant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Consultant</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AccountsTSZ5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LiveOps_SE_User_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>''</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LiveOps SE User ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LiveOps_User_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>''</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LiveOps User ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Live_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Live Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Marketo_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Marketo ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Monthly_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Net_Invoiced_Revenue_Last_Month_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Invoiced Revenue-Last Month Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_Invoiced_Revenue_This_MTD__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Invoiced Revenue-This MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Next_Scheduled_Touchpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Scheduled Touchpoint</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Organic_Deactivation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Organic Deactivation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Organic_Live_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Organic Live Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Organic_Recurring_Fees__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the monthly fees for products such as YO and video</inlineHelpText>
+        <label>Organic Recurring Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>$Source.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>YBN Master Account</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Reactivation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Reactivation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Source_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Source_ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Opt_Out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if client no longer wants to receive survey communication via Yodle.</inlineHelpText>
+        <label>Survey Opt Out</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sync_to_Marketo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync to Marketo</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Touchplan_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Touchplan Created</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>YBN_Live_Ops_User_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>''</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YBN_Live_Ops_User_ID</label>
+        <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -13003,7 +13154,7 @@ or(
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
@@ -13050,6 +13201,7 @@ or(
         <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MLP_Group_ID__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <listViews>
@@ -13126,32 +13278,6 @@ or(
         <label>All Biz Dev Records</label>
     </listViews>
     <listViews>
-        <fullName>BULK_GOOGLE_and_BULK_BING</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Bulk_Google_Account__c</columns>
-        <columns>Bulk_Google_AccountPL__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Bulk_Google_Account__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>BULK GOOGLE and BULK BING</label>
-        <sharedTo>
-            <group>YBN_Operations</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Brians_West_Prospects</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.SITE</columns>
@@ -13207,70 +13333,6 @@ or(
             <value>Customer</value>
         </filters>
         <label>CPP - All CPP Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Client_Side_Client_Update</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Client_Side_ClientPL__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Client_Side_ClientPL__c</field>
-            <operation>equals</operation>
-        </filters>
-        <label>Client Side Client Update</label>
-        <sharedTo>
-            <group>YBN_Operations</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Clockwork_Sponsored_OFF_OFF</fullName>
-        <booleanFilter>(1 OR 2 OR 3) AND 4 AND 5 AND 6</booleanFilter>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>one hour air</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>ben franklin</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>Mister Sparky</value>
-        </filters>
-        <filters>
-            <field>AdStation_Status__c</field>
-            <operation>equals</operation>
-            <value>OFF</value>
-        </filters>
-        <filters>
-            <field>Email__c</field>
-            <operation>notContain</operation>
-            <value>adfund</value>
-        </filters>
-        <filters>
-            <field>Client_First_Name__c</field>
-            <operation>notEqual</operation>
-            <value>ad</value>
-        </filters>
-        <label>Clockwork Sponsored OFF</label>
-        <sharedTo>
-            <group>SalesExec</group>
-            <role>YBN_SDR_IL</role>
-        </sharedTo>
     </listViews>
     <listViews>
         <fullName>JCI2</fullName>
@@ -13507,24 +13569,6 @@ or(
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Naturalawn</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>PARENT_NAME</field>
-            <operation>contains</operation>
-            <value>Naturalawn</value>
-        </filters>
-        <label>Naturalawn</label>
-        <sharedTo>
-            <group>SalesExec</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>New_This_Week</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
@@ -13570,25 +13614,6 @@ or(
             <value>National-Master Prospect</value>
         </filters>
         <label>New This Week2</label>
-    </listViews>
-    <listViews>
-        <fullName>Rogers_Unshared_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Rogers</value>
-        </filters>
-        <filters>
-            <field>CONNECTION_SENT.NAME</field>
-            <operation>equals</operation>
-        </filters>
-        <label>Rogers Unshared Accounts</label>
     </listViews>
     <listViews>
         <fullName>X11_50_location_NMPs</fullName>
@@ -13650,10 +13675,22 @@ or(
         <label>submit</label>
     </listViews>
     <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
         <fullName>Lighthouse_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>Product_Type__c</columns>
         <columns>Status__c</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Product_Type__c</field>
@@ -13663,172 +13700,56 @@ or(
         <label>Lighthouse Accounts</label>
     </listViews>
     <listViews>
-        <fullName>Subba_Recently_Created_Accounts</fullName>
+        <fullName>Lighthouse_PP_or_WS</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
         <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
-        <columns>Client_ID__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Cancellation_Status__c</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Client_Type__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Status__c</columns>
-        <columns>YO_Status__c</columns>
-        <columns>Client_E_mail__c</columns>
-        <columns>Contact_Name__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>ACCOUNT.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>LAST_N_DAYS:10</value>
+            <field>Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>PP</value>
         </filters>
-        <label>Subba Recently Created Accounts</label>
+        <filters>
+            <field>Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>WS</value>
+        </filters>
+        <label>Lighthouse PP or WS</label>
     </listViews>
     <listViews>
-        <fullName>Subba_WBN_TouchPoint_All_Accounts</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND ( 4 or 5)</booleanFilter>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Individual_Location_Service_Level__c</columns>
-        <columns>Last_Completed_YBN_TP__c</columns>
-        <columns>Next_TP_Trigger_Date__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Marketo_ID_For_Touchplan__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>Status__c</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
-        <columns>YBN_Relationship__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>Primary_Multi_Location_Owner_For_TP__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Next_TP_Trigger_Date__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <filters>
-            <field>Multi_Location_Owner_Primary_CID__c</field>
-            <operation>equals</operation>
-        </filters>
-        <filters>
-            <field>Primary_Multi_Location_Owner_For_TP__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>Subba WBN TouchPoint All Accounts</label>
+        <fullName>MyAccounts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
     </listViews>
     <listViews>
-        <fullName>Subba_WBN_TouchPoint_Triggered_Accounts</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND ( 5 or 6)</booleanFilter>
+        <fullName>PartnerAccount_Report_vs_Apex_Page</fullName>
         <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Individual_Location_Service_Level__c</columns>
-        <columns>Last_Completed_YBN_TP__c</columns>
-        <columns>Next_TP_Trigger_Date__c</columns>
-        <columns>Next_TP_Needed_By__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Marketo_ID_For_Touchplan__c</columns>
-        <columns>Status__c</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
-        <columns>YBN_Relationship__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>Primary_Multi_Location_Owner_For_TP__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Next_TP_Trigger_Date__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>YBN_Relationship__c</field>
-            <operation>equals</operation>
-            <value>Hand &amp; Stone - Master,Senior Helpers,Maaco</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <filters>
-            <field>Multi_Location_Owner_Primary_CID__c</field>
-            <operation>equals</operation>
-        </filters>
-        <filters>
-            <field>Primary_Multi_Location_Owner_For_TP__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>Subba WBN TouchPoint Triggered Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Subba_LightHouse_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Product_Type__c</columns>
         <columns>ACCOUNT.TYPE</columns>
-        <columns>Cancellation_Status__c</columns>
         <columns>Client_Type__c</columns>
-        <columns>Marketo_ID__c</columns>
         <columns>ACCOUNT.CREATED_DATE</columns>
         <columns>Status__c</columns>
-        <columns>YO_Status__c</columns>
         <columns>Product_Type_Transactional__c</columns>
         <columns>Sales_Rep_Name_YL__c</columns>
         <columns>Contact_Name__c</columns>
         <columns>Client_ID__c</columns>
+        <columns>IMS_Rep__c</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Channel_Development__c</columns>
+        <columns>Channel_Partner_Type__c</columns>
+        <columns>Children_Accounts_Live__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
+            <field>ACCOUNT.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>LIVE</value>
+            <value>Account.Partner_Master_Account</value>
         </filters>
-        <label>Subba LightHouse Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Mara_Lighthouse_Accounts_LH_Migration</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
-        <columns>Product_Type__c</columns>
-        <columns>Status__c</columns>
-        <columns>ACCOUNT.LAST_UPDATE</columns>
-        <columns>UPDATEDBY_USER.ALIAS</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse</value>
-        </filters>
-        <label>Mara Lighthouse Accounts - LH Migration</label>
-        <sharedTo>
-            <group>LH_Migration</group>
-        </sharedTo>
+        <label>Subba PartnerAccount Report vs Apex Page</label>
     </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
@@ -17189,7 +17110,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -17933,6 +17864,29 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
                 <fullName>Client Discovery</fullName>
@@ -18358,6 +18312,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21977,7 +22058,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -22766,6 +22857,29 @@ or(
             <values>
                 <fullName>Standard Process - Write %26 Immediately Add to Site</fullName>
                 <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -25360,6 +25474,17 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Does_Corporate_Allow_Open_Territories_to__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Franchise_Influencer__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -26802,7 +26927,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -27714,6 +27849,29 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
                 <fullName>Client Discovery</fullName>
@@ -27943,6 +28101,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -31586,7 +31871,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -32693,7 +32988,29 @@ or(
                 <default>true</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
@@ -33120,6 +33437,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -36744,7 +37188,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -37488,6 +37942,29 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
                 <fullName>Client Discovery</fullName>
@@ -37913,6 +38390,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -39386,6 +39990,28 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Bulk_Bing_AccountPL__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bulk_Google_AccountPL__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
             <values>
                 <fullName>NO</fullName>
@@ -39822,6 +40448,17 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Custom_Call_TrackingPL__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>DOES_CORPORATE_FUND_LOCAL_MARKETING__c</picklist>
             <values>
                 <fullName>NO</fullName>
@@ -39887,6 +40524,17 @@ or(
             </values>
             <values>
                 <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Does_Corporate_Allow_Open_Territories_to__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -41333,7 +41981,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -42037,6 +42695,29 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
                 <fullName>Client Discovery</fullName>
@@ -42446,6 +43127,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -44501,6 +45309,17 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Does_Corporate_Allow_Open_Territories_to__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Franchise_Influencer__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -45947,7 +46766,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -46862,7 +47691,29 @@ or(
                 <default>true</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
@@ -47093,6 +47944,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -49120,6 +50098,17 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Does_Corporate_Allow_Open_Territories_to__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Franchise_Influencer__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -50566,7 +51555,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -51370,6 +52369,29 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
                 <fullName>Client Discovery</fullName>
@@ -51603,6 +52625,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -53626,6 +54775,17 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Does_Corporate_Allow_Open_Territories_to__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Franchise_Influencer__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -55072,7 +56232,17 @@ or(
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -55808,6 +56978,29 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
                 <fullName>Client Discovery</fullName>
@@ -56033,6 +57226,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -56294,165 +57614,6 @@ or(
             </values>
         </picklistValues>
     </recordTypes>
-    <validationRules>
-        <fullName>Berry_Account_Quality</fullName>
-        <active>false</active>
-        <description>For all Berry accounts, you must fill out Berry Quality Status</description>
-        <errorConditionFormula>AND( ISPICKVAL(Channel_Development__c,"Berry Group"),
-NOT( ISPICKVAL(Berry_Quality_Status__c,"Account not sold to Product Performance Guidelines")),
-NOT(
-ISPICKVAL(Berry_Quality_Status__c,"BAM did not follow Product Performance Guidelines")),
-NOT(ISPICKVAL(Berry_Quality_Status__c,"Correct Sale")),
-NOT(ISPICKVAL(Berry_Quality_Status__c,"Post Launch BAM Issue")),
-NOT(ISPICKVAL(Berry_Quality_Status__c,"Post Launch Sales Expectation Issue")),
-ISBLANK( "Berry_Quality_Notes__c"))</errorConditionFormula>
-        <errorMessage>For all Berry accounts, you must fill out Berry Quality Status and Berry Quality Notes</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Berry_Master_Acct_to_Berry_Channel_types</fullName>
-        <active>false</active>
-        <description>for Berry Master Accounts listed on the Account, must choose Berry Group or Berry Extended Segments as the Channel Partner</description>
-        <errorConditionFormula>and(
-ParentId = "0016000000LNdfO",
-or(
-not (ispickval ( Channel_Development__c , "Berry Group")),
-not (ispickval (Channel_Development__c , "Berry Extended Segments"))))</errorConditionFormula>
-        <errorDisplayField>Channel_Development__c</errorDisplayField>
-        <errorMessage>For all Berry Accounts (Berry Master Account listed in the Parent Account field), you must choose either Berry Group or Berry Extended Segments as the Channel Partner.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CPP_Account_Billing_Address_Required</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
- RecordTypeId="01232000000JMzf",
-  ISPICKVAL(Parent_Opportunity__r.StageName ,"closed won"),
-OR(
-ISBLANK(BillingStreet),
-ISBLANK(BillingCity),
-ISBLANK(BillingState),
-ISBLANK(BillingPostalCode),
-ISBLANK(BillingCountry)
-))</errorConditionFormula>
-        <errorMessage>All Billing Address fields are required.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Date_Rogers_Payment_Received</fullName>
-        <active>false</active>
-        <description>If Rogers payment has been received, you must fill out the "Date Rogers Payment Received" field.</description>
-        <errorConditionFormula>AND( Rogers_Payment_Received__c = True,
-isblank( Date_Rogers_Payment_Received__c))</errorConditionFormula>
-        <errorMessage>If Rogers payment has been received, you must fill out the "Date Rogers Payment Received" field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>LBW_Next_Scheduled_Touchpoint</fullName>
-        <active>true</active>
-        <description>Next Scheduled Touchpoint must be greater than Days Since Live + 29 days</description>
-        <errorConditionFormula>DATEVALUE(Next_Scheduled_Touchpoint__c) &lt; (Live_Date__c + 29) &amp;&amp; OR(Product_Type_Transactional__c == 'Leads By Web', Product_Type_Transactional__c == 'Lead Stream ATV')</errorConditionFormula>
-        <errorDisplayField>Next_Scheduled_Touchpoint__c</errorDisplayField>
-        <errorMessage>Next Scheduled Touchpoint must be at least 30 days from Live Date!</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>National_SDR_Disposition</fullName>
-        <active>false</active>
-        <description>National SDR must set a disposition in order to save changes to an account.</description>
-        <errorConditionFormula>AND(
-ISPICKVAL( Disposition__c,""),
- $Profile.Name = "National Sales - SDR"
-)</errorConditionFormula>
-        <errorMessage>You must select a disposition for this company.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>PV_Account_needs_initiation_date</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- Preferred_Vendor__c =TRUE,
-  ISBLANK(PV_Initiation_Date__c )
-)</errorConditionFormula>
-        <errorMessage>Since this account is a PV, please input the PV initiation date</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Qualitative_Health_notes_required</fullName>
-        <active>false</active>
-        <description>if the qualitative health picklist value has changed - ensures that the notes have also changed</description>
-        <errorConditionFormula>AND(
-(ISCHANGED( Qualitative_Health__c )),
-NOT( ISCHANGED( Qualitative_Health_Notes__c ))
-)</errorConditionFormula>
-        <errorMessage>Please change the 'Qualitative Health Notes' to reflect your assessment of the qualitative health of the account</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>US_Zip_Code_is_5_digits</fullName>
-        <active>false</active>
-        <description>Validates that the account Billing Zip/Postal Code is in 99999 format if Billing State is in the US.</description>
-        <errorConditionFormula>AND(
-OR( BillingState = "AL", BillingState = "AK", BillingState = "AZ", BillingState = "AR", BillingState = "CA", BillingState = "CO", BillingState = "CT", BillingState = "DE", BillingState = "FL", BillingState = "GA", BillingState = "HI", BillingState = "ID", BillingState = "IL", BillingState = "IN", BillingState = "IA", BillingState = "KS", BillingState = "KY", BillingState = "LA", BillingState = "ME", BillingState = "MD", BillingState = "MA", BillingState = "MI", BillingState = "MN", BillingState = "MS", BillingState = "MO", BillingState = "MT", BillingState = "NE", BillingState = "NV", BillingState = "NH", BillingState = "NJ", BillingState = "NM", BillingState = "NY", BillingState = "NC", BillingState = "ND", BillingState = "OH", BillingState = "OK", BillingState = "OR", BillingState = "PA", BillingState = "RI", BillingState = "SC", BillingState = "SD", BillingState = "TN", BillingState = "TX", BillingState = "UT", BillingState = "VA", BillingState = "WA", BillingState = "WV", BillingState = "WI", BillingState = "WY"),
-NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
-)</errorConditionFormula>
-        <errorMessage>Billing Zip/Postal Code must be 5 digit format (Ex: 99999)</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>WBN_Permission_Change_Master_Service</fullName>
-        <active>true</active>
-        <description>Who can change Master</description>
-        <errorConditionFormula>AND 
-(
- RecordTypeId = '012600000009Yy6',
- ISCHANGED(Individual_Location_Service_Level__c),
- NOT($Permission.WBN_Master_Individ_Service_Level_Change)
- )</errorConditionFormula>
-        <errorMessage>You do not have permission to change the Individual Location Service Level on a Master Account.  Please discuss this change with your manager.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Hold_Status_Date_Required_Active</fullName>
-        <active>true</active>
-        <description>When the "Account Hold Status" is populated, the "Hold Status Date" field is required on certain values.</description>
-        <errorConditionFormula>AND(
-  ISPICKVAL(Client_Type__c, "YBN"),
-  ISCHANGED(Account_Hold_Status__c),
-  NOT(ISPICKVAL(Account_Hold_Status__c, "")),
-  NOT(ISPICKVAL(Account_Hold_Status__c, "Non-Compete")),
-  OR(
-    ISBLANK(Hold_Status_Date__c),
-    Hold_Status_Date__c &lt; TODAY()
-  )
-)</errorConditionFormula>
-        <errorDisplayField>Hold_Status_Date__c</errorDisplayField>
-        <errorMessage>Date needed based on the Account Hold Status field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Type_Detail_Required</fullName>
-        <active>true</active>
-        <description>If user selects "Do not Call" or "Bad Fit - YBN" in the "Type" field on a YBN account - must add detail as to why.</description>
-        <errorConditionFormula>AND(
-  RecordType.Name = "YBN Master Account",
-  OR(
-    ISPICKVAL(Type, "DO NOT CALL"),
-    ISPICKVAL(Type, "Bad Fit YBN")
-  ),
-  ISBLANK(Type_Detail__c),
-  $User.ProfileId != '00e60000000nQe9' /*System Administrator*/ 
-)</errorConditionFormula>
-        <errorDisplayField>Type_Detail__c</errorDisplayField>
-        <errorMessage>Please complete the Type Detail field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Restriction_to_edit_WBN_Jax_fields</fullName>
-        <active>true</active>
-        <description>Only specific users can edit these fields in Standard Accounts</description>
-        <errorConditionFormula>AND(  
- $Setup.Validation_Rule_Permissions__c.Perm_to_edit_WBN_Jax_fields__c  = false, 
-
-OR( 
-ISCHANGED( Status__c ), 
-ISCHANGED( Account_Director__c ), 
-ISCHANGED( IMS_Rep__c ),
-ISCHANGED( Live_Date__c ), 
-ISCHANGED( WBN_JAX_CUST_ID__c ),
-ISCHANGED( Monthly_Budget__c ) 
-)
-)</errorConditionFormula>
-        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date, Monthly Budget or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
-    </validationRules>
     <webLinks>
         <fullName>Account_Document</fullName>
         <availability>online</availability>
@@ -56471,25 +57632,6 @@ ISCHANGED( Monthly_Budget__c )
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://misc.ybnapis.com/sfacct/accdoc.php?location={!$Api.Partner_Server_URL_180}&amp;sessionId={!$Api.Session_ID}&amp;id={!Account.Id}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>AltavistaNews</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>true</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>true</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Altavista News</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>true</showsLocation>
-        <showsStatus>true</showsStatus>
-        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
     </webLinks>
     <webLinks>
         <fullName>Consolidated_Case_View</fullName>
@@ -56607,25 +57749,6 @@ window.open('/apex/IssueTracker?Client_ID__c={!Account.Client_ID__c}&amp;id={!Ac
 }</url>
     </webLinks>
     <webLinks>
-        <fullName>HooversProfile</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Hoovers Profile</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
-    </webLinks>
-    <webLinks>
         <fullName>Log_Activity_IL</fullName>
         <availability>online</availability>
         <displayType>button</displayType>
@@ -56691,78 +57814,6 @@ window.open('/apex/IssueTracker?Client_ID__c={!Account.Client_ID__c}&amp;id={!Ac
         <openType>replace</openType>
         <protected>false</protected>
         <url>/00T/e?what_id={!Account.Id}&amp;retURL={!Account.Id}&amp;RecordType=012600000009bj3&amp;tsk4={!TODAY()}&amp;tsk12=Completed&amp;ent=Task</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Loop__LOOP</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <height>800</height>
-        <linkType>url</linkType>
-        <masterLabel>Create PDF</masterLabel>
-        <openType>sidebar</openType>
-        <protected>false</protected>
-        <url>/apex/loop__loop?eid={!Account.Id}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Loop__LOOP_Merge</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <height>1000</height>
-        <linkType>url</linkType>
-        <masterLabel>Deprecated LM</masterLabel>
-        <openType>sidebar</openType>
-        <protected>false</protected>
-        <url>/apex/loop__loopmerge?eid={!Account.Id}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Loop__LOOPlus</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <height>1200</height>
-        <linkType>url</linkType>
-        <masterLabel>Generate Documents</masterLabel>
-        <openType>sidebar</openType>
-        <protected>false</protected>
-        <url>/apex/loop__looplus?eid={!Account.Id}&amp;sessionId={!$Api.Session_ID}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Loop__Mass_LOOP_Merge</fullName>
-        <availability>online</availability>
-        <displayType>massActionButton</displayType>
-        <linkType>javascript</linkType>
-        <masterLabel>Deprecated Mass LM</masterLabel>
-        <openType>onClickJavaScript</openType>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
-        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
-var ids = {!GETRECORDIDS($ObjectType.Account)};
-var url = "/apex/loop__loopmerge?retURL="+encodeURI(window.location.pathname+window.location.search);
-url += "&amp;recordIds="+ids.join(',');
-window.location.href = url;</url>
-    </webLinks>
-    <webLinks>
-        <fullName>Loop__Mass_LOOPlus</fullName>
-        <availability>online</availability>
-        <displayType>massActionButton</displayType>
-        <linkType>javascript</linkType>
-        <masterLabel>Generate Documents</masterLabel>
-        <openType>onClickJavaScript</openType>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
-        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
-var ids = {!GETRECORDIDS($ObjectType.Account)};
-if (!ids || ids.length &lt; 1)
-    alert('Please select at least one record.');
-else
-{
-    var url = "/apex/loop__masslooplus?retURL=" + encodeURI(window.location.pathname+window.location.search) + "&amp;contactfield=";
-    url += "&amp;recordIds="+ids.join(',');
-    url += "&amp;sessionId={!$Api.Session_ID}";
-    window.location.href = url;
-}</url>
     </webLinks>
     <webLinks>
         <fullName>Schedule_Activity_Corporate</fullName>
@@ -56894,47 +57945,6 @@ window.open('/apex/OnDemandSF2MarketoRecordSync?recordId={!Account.Id}&amp;objec
         <width>800</width>
     </webLinks>
     <webLinks>
-        <fullName>YahooMaps</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>true</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>true</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Yahoo Maps</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>true</showsLocation>
-        <showsStatus>true</showsStatus>
-        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>echosign_dev1__Send_to_EchoSign</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <height>600</height>
-        <linkType>url</linkType>
-        <masterLabel>Send for Signature</masterLabel>
-        <openType>sidebar</openType>
-        <protected>false</protected>
-        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Account.Id}</url>
-    </webLinks>
-    <webLinks>
-        <fullName>leadspace__LeadspaceFindNewProspectsAccount</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <linkType>javascript</linkType>
-        <masterLabel>Leadspace</masterLabel>
-        <openType>onClickJavaScript</openType>
-        <protected>false</protected>
-        <url>navigateToUrl("/apex/leadspace__LeadSpaceDossiers?companyName={!JSENCODE(Account.Name)}");</url>
-    </webLinks>
-    <webLinks>
         <fullName>tz__Local_Time_Act_Btn</fullName>
         <availability>online</availability>
         <description>Find Local Time is a button that can be placed in the Account Page Layout. Displays the local time for the current record. The Billing Country, Billing State, and Billing City fields need to be properly filled in order for this button to function properly. Else the value "Unknown" is shown.</description>
@@ -56991,5 +58001,214 @@ freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
 }
 
 calcTime(sOffset,freq,sEnd,"tz__local_time_act_btn");</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1200</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Account.Id}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LeadspaceFindNewProspectsAccount</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Leadspace</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>navigateToUrl("/apex/leadspace__LeadSpaceDossiers?companyName={!JSENCODE(Account.Name)}");</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Local_Time_Act_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Account Page Layout. Displays the local time for the current record. The Billing Country, Billing State, and Billing City fields need to be properly filled in order for this button to function properly. Else the value "Unknown" is shown.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT("/soap/ajax/34.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/34.0/apex.js")}
+{!REQUIRESCRIPT("https://success-software.biz/localtime/js/json3.min.js")}
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+tbutton=document.getElementsByName(sObject);
+
+if(sOffset == 'N/A') {
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value='Unknown';
+}
+}
+else {
+var args1={offset:sOffset};
+cttime=sforce.apex.execute("tz.LocalTime","getLocalTimeString",args1);
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=cttime +  " " + sEnd;
+}
+}
+
+self.status=tbutton[0].value;
+setTimeout('tbutton[0].click();',sFrequency);
+
+}
+onError=null;
+
+if(typeof sOffset=='undefined') {
+sOffset='N/A';
+sEnd='N/A';
+
+try {
+var args={objId:"{!JSENCODE(Account.Id)}"};
+var jsontext=sforce.apex.execute("tz.LocalTime","FindLocalTime",args);
+if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+var lt=JSON.parse(jsontext);
+sOffset=lt.offset;
+sEnd=lt.abbreviation;
+if("{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}" == "false") sEnd = ''; 
+}
+}
+catch(err) {alert(err);}
+}
+
+if(typeof freq=='undefined') {
+freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
+}
+
+calcTime(sOffset,freq,sEnd,"tz__local_time_act_btn");</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Account)};
+var url = "/apex/loop__loopmerge?retURL="+encodeURI(window.location.pathname+window.location.search);
+url += "&amp;recordIds="+ids.join(',');
+window.location.href = url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Account)};
+if (!ids || ids.length &lt; 1)
+    alert('Please select at least one record.');
+else
+{
+    var url = "/apex/loop__masslooplus?retURL=" + encodeURI(window.location.pathname+window.location.search) + "&amp;contactfield=";
+    url += "&amp;recordIds="+ids.join(',');
+    url += "&amp;sessionId={!$Api.Session_ID}";
+    window.location.href = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_to_EchoSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send for Signature</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account.BillingCountry}&amp;csz={!Account.BillingCity}+{!Account.BillingState}+{!Account.BillingPostalCode}+&amp;addr={!Account.BillingStreet}</url>
     </webLinks>
 </CustomObject>

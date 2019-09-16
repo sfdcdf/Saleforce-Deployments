@@ -47,18 +47,116 @@
         <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides>
-    <fields>
-        <fullName>Account_Name__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <description>What Account is this Campaign associated with?</description>
-        <externalId>false</externalId>
-        <label>Account Name</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Campaigns</relationshipLabel>
-        <relationshipName>Campaigns</relationshipName>
-        <required>false</required>
-        <type>Lookup</type>
-    </fields>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>ActualCost</fullName>
     </fields>
@@ -172,7 +270,11 @@
     <fields>
         <fullName>Type</fullName>
         <type>Picklist</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><searchLayouts>
+    </fields>
+  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
+  <enableHistory>false</enableHistory>
+  <searchLayouts>
         <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
         <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
@@ -186,63 +288,9 @@
         <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Read</sharingModel>
-    <listViews>
-        <fullName>AllActiveCampaigns</fullName>
-        <columns>CAMPAIGN.NAME</columns>
-        <columns>CAMPAIGN.START_DATE</columns>
-        <columns>CAMPAIGN.END_DATE</columns>
-        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
-        <columns>CAMPAIGN.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CAMPAIGN.CREATED_DATE</columns>
-        <columns>CAMPAIGN.NUM_LEADS</columns>
-        <columns>CAMPAIGN.NUM_CONTACTS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CAMPAIGN.ACTIVE</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>All Active Campaigns</label>
-        <sharedTo>
-            <role>CSOperations</role>
-            <role>Content</role>
-            <role>ExecutiveVP</role>
-            <role>GlobalPerformanceAnalyst</role>
-            <role>LocalCSM</role>
-            <role>LocalConsultant</role>
-            <role>NationalRM</role>
-            <role>Partner</role>
-            <role>PartnerConsultant</role>
-            <role>PartnerManager</role>
-            <role>ProductionManager</role>
-            <role>SEMMarketingOps</role>
-            <role>Sales</role>
-            <role>SalesNewYork3</role>
-            <role>ThirdPartyVendor</role>
-            <role>VPNationalAccountsSales</role>
-            <role>VPofOperations</role>
-            <role>WebDev</role>
-            <role>YBN_Consultant</role>
-            <role>YodleTeam</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>All_Campaigns</fullName>
-        <columns>CAMPAIGN.NAME</columns>
-        <columns>CAMPAIGN.START_DATE</columns>
-        <columns>CAMPAIGN.END_DATE</columns>
-        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
-        <columns>CAMPAIGN.STATUS</columns>
-        <columns>CAMPAIGN.BUDGETED_COST</columns>
-        <columns>CAMPAIGN.ACTUAL_COST</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Campaigns</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
+    </searchLayouts>
+  <sharingModel>Read</sharingModel>
+
     <listViews>
         <fullName>MyActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
@@ -259,26 +307,32 @@
         <label>My Active Campaigns</label>
     </listViews>
     <listViews>
-        <fullName>WBN_Campaigns</fullName>
+        <fullName>AllActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
         <columns>CAMPAIGN.START_DATE</columns>
         <columns>CAMPAIGN.END_DATE</columns>
         <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
         <columns>CAMPAIGN.STATUS</columns>
-        <columns>CAMPAIGN.BUDGETED_COST</columns>
-        <columns>CAMPAIGN.ACTUAL_COST</columns>
-        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
         <columns>CORE.USERS.LAST_NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>CAMPAIGN.NAME</field>
-            <operation>startsWith</operation>
-            <value>WBN,YBN</value>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
         </filters>
-        <label>WBN Campaigns</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
+        <label>All Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Org_Campaign_Hierarchy</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Org_Campaign_Hierarchy</label>
     </listViews>
     <recordTypes>
         <fullName>Dialing_Campaign_Record_Type</fullName>
@@ -518,6 +572,26 @@
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
         <width>500</width>
     </webLinks>
 </CustomObject>

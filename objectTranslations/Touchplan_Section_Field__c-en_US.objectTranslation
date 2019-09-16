@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Boolean Pass/Fail Criteria --></label>
+        <name>Boolean_Pass_Fail_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Boolean Value --></label>
+        <name>Boolean_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Pass/Fail Criteria --></label>
+        <name>Date_Time_Pass_Fail_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Value --></label>
+        <name>Date_Time_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluate --></label>
+        <name>Evaluate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Status --></label>
+        <name>Evaluation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed</masterLabel>
+            <translation><!-- Passed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Field Order --></label>
+        <name>Field_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Checklist --></label>
+        <name>In_Checklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Field Mapping --></label>
+        <name>Marketo_Field_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Pass/Fail Criteria --></label>
+        <name>Number_Pass_Fail_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Value --></label>
+        <name>Number_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pass/Fail Operator --></label>
+        <name>Pass_Fail_Operator__c</name>
+        <picklistValues>
+            <masterLabel>&lt;</masterLabel>
+            <translation><!-- &lt; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;=</masterLabel>
+            <translation><!-- &lt;= --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>=</masterLabel>
+            <translation><!-- = --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;</masterLabel>
+            <translation><!-- &gt; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;=</masterLabel>
+            <translation><!-- &gt;= --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contains</masterLabel>
+            <translation><!-- Contains --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Data Source --></label>
+        <name>Salesforce_Data_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- String Pass/Fail Criteria --></label>
+        <name>String_Pass_Fail_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- String Value --></label>
+        <name>String_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template ID --></label>
+        <name>Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touchplan Section --></label>
+        <name>Touchplan_Section__c</name>
+        <relationshipLabel><!-- Touchplan Section Fields --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Touchplan Section Field</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Touchplan Section Fields</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

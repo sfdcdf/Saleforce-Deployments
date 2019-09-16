@@ -1,5 +1,5 @@
 /**
- * An apex class that keeps updates of a portal user in sync with its corresponding contact.
+ * An apex class that updates portal user details.
    Guest users are never able to access this page.
  */
 public with sharing class MyProfilePageController {
@@ -31,15 +31,8 @@ public with sharing class MyProfilePageController {
     }
 
     public void save() {
-        if (user.contact != null) {
-            setContactFields(user.contact, user);
-        }
-
         try {
             update user;
-            if (user.contact != null) {
-                update user.contact;
-            }
             isEdit=false;
         } catch(DmlException e) {
             ApexPages.addMessages(e);
@@ -56,20 +49,5 @@ public with sharing class MyProfilePageController {
                 street, city, country, postalcode, state, localesidkey, mobilephone, extension, fax, contact.email
                 FROM User
                 WHERE id = :UserInfo.getUserId()];
-    }
-
-    public static void setContactFields(Contact c, User u) {
-        c.title = u.title;
-        c.firstname = u.firstname;
-        c.lastname = u.lastname;
-        c.email = u.email;
-        c.phone = u.phone;
-        c.mobilephone = u.mobilephone;
-        c.fax = u.fax;
-        c.mailingstreet = u.street;
-        c.mailingcity = u.city;
-        c.mailingstate = u.state;
-        c.mailingpostalcode = u.postalcode;
-        c.mailingcountry = u.country;
-    }
+    }    
 }
