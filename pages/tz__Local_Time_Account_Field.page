@@ -1,0 +1,5 @@
+<apex:page standardController="Account" showHeader="false" sidebar="false" docType="html-5.0">
+
+<c:Local_Time_Component SObj="{!Account}"/>
+
+</apex:page>

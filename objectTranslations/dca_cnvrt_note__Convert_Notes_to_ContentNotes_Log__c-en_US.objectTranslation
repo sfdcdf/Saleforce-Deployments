@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Detail --></label>
+        <name>dca_cnvrt_note__Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Batchable or Queueable Job ID when this error occurred. --></help>
+        <label><!-- Job ID --></label>
+        <name>dca_cnvrt_note__Job_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Time --></label>
+        <name>dca_cnvrt_note__Log_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the log message is about a specific conversion issue with a record then this is the Enhanced Note ID. --></help>
+        <label><!-- New Note ID --></label>
+        <name>dca_cnvrt_note__New_Note_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the log message is about a specific conversion issue with a record then this is the original Note ID. --></help>
+        <label><!-- Old Note ID --></label>
+        <name>dca_cnvrt_note__Old_Note_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the status of log message, whether a note was successfully converted or perhaps that it was skipped during conversion or that it failed conversion. --></help>
+        <label><!-- Status --></label>
+        <name>dca_cnvrt_note__Status__c</name>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skipped</masterLabel>
+            <translation><!-- Skipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>dca_cnvrt_note__Summary__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

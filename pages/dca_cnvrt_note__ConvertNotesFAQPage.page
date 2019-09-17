@@ -1,0 +1,66 @@
+<apex:page controller="dca_cnvrt_note.ConvertNotesRunOnceController" tabStyle="Convert_Notes_to_ContentNotes__tab">
+
+    <apex:slds />
+
+    <style>
+
+        .slds-scope .apexp .bPageBlock p {
+            margin-bottom: inherit; /* undo classic styling so slds is applied */
+        }
+
+        .slds-scope .section-title {
+            background-color: #d8edff;
+            border-radius: 5px;
+            padding: 0.4em;
+        }
+
+    </style>
+
+    <apex:form >
+
+        <div class="slds-scope">
+
+            <div class="slds-m-around_large">
+
+                <div class="slds-page-header slds-box">
+                    <nav role="navigation" aria-label="Breadcrumbs">
+                        <ol class="slds-breadcrumb slds-list_horizontal">
+                            <li class="slds-breadcrumb__item slds-text-title_caps"><a href="{!URLFOR($Page.ConvertNotesMenuPage)}">Main Menu</a></li>
+                            <li class="slds-breadcrumb__item slds-text-title_caps"><a href="{!URLFOR($Page.ConvertNotesFAQPage)}">Troubleshooting</a></li>
+                        </ol>
+                    </nav>
+                    <p class="slds-page-header__title">
+                        Convert Notes to Enhanced Notes
+                    </p>
+                </div>
+
+                <div class="slds-m-around_large"/>
+
+                <div class="slds-grid">
+                    <div class="slds-col">
+                        <h2 class="slds-text-heading_medium">Frequently Asked Questions</h2>
+                        <p>
+                            Please consult the FAQ on the <a href="https://github.com/DouglasCAyers/sfdc-convert-notes-to-chatter-notes/blob/master/README.md#faq">project home page</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slds-m-around_large"/>
+
+                <div class="slds-grid">
+                    <div class="slds-col">
+                        <h2 class="slds-text-heading_medium">Bug or Enhancement Request</h2>
+                        <p>
+                            If you encounter an issue not mentioned there or have an idea for a new feature or improvement,
+                            you can <a href="https://github.com/DouglasCAyers/sfdc-convert-notes-to-chatter-notes/issues">submit an issue</a> on the project's issue tracker.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </apex:form>
+
+</apex:page>

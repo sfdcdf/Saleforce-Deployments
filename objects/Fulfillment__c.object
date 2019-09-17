@@ -994,6 +994,15 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>Strategic_Project_Managers_Fulfillment</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Strategic Project Managers</label>
+        <queue>Strategic_Project_Managers</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <validationRules>
         <fullName>Account_and_Opp_Required</fullName>
         <active>true</active>

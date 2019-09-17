@@ -248,7 +248,6 @@
         <searchResultsAdditionalFields>CONTRACT.STATUSINDICATOR</searchResultsAdditionalFields>
     </searchLayouts>
   <sharingModel>Private</sharingModel>
-
     <listViews>
         <fullName>All_ServiceContracts</fullName>
         <columns>CONTRACT.NAME</columns>
@@ -258,5 +257,14 @@
         <columns>CONTRACT.STATUS</columns>
         <filterScope>Everything</filterScope>
         <label>All Service Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Support_ServiceContract</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Rogers Support</label>
+        <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
 </CustomObject>

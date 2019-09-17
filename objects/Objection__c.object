@@ -222,6 +222,24 @@
         <filterScope>Everything</filterScope>
         <label>Objection List</label>
     </listViews>
+    <listViews>
+        <fullName>LHMA_Post_Launch_Objection</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LHMA Post Launch</label>
+        <queue>LHMA_Post_Launch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Support_Objection</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Rogers Support</label>
+        <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>Objection</fullName>
         <active>true</active>

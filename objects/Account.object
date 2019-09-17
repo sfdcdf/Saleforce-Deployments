@@ -7495,19 +7495,6 @@ AND(ISPICKVAL( Individual_Location_Service_Level__c ,"Service Level C"),OR( Last
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>tz__LT_Info__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
-        <label>LT Info</label>
-        <length>300</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
         <fullName>tz__Local_Time_24_Short__c</fullName>
         <deprecated>false</deprecated>
         <description>Shows the current local time (without date) for the Account in 24-hr format.</description>
@@ -13146,6 +13133,33 @@ or(
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>YBN_Live_Ops_User_ID</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__LT_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
+        <label>LT Info</label>
+        <length>340</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_SFDC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce IANA timezone.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce IANA timezone.</inlineHelpText>
+        <label>Timezone SFDC</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>

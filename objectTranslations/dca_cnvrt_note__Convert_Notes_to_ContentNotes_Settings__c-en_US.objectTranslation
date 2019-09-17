@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Deprecated since version 1.3. Do not use. --></help>
+        <label><!-- Convert Private Notes? (deprecated) --></label>
+        <name>dca_cnvrt_note__Convert_Private_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables &apos;after insert&apos; trigger on Note that enqueues job to convert into ContentNotes in near real-time. This async conversion does not slow down save transaction, and if &apos;Delete Notes&apos; option is enabled then deletes in separate transaction too. --></help>
+        <label><!-- Convert in Near Real Time? --></label>
+        <name>dca_cnvrt_note__Convert_in_Near_Real_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked then conversion process will delete the original Note once successfully converted to ContentNote. You may want to delete them to save storage space in your org. --></help>
+        <label><!-- Delete Note Once Converted? --></label>
+        <name>dca_cnvrt_note__Delete_Note_Once_Converted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated since version 1.3. Do not use. --></help>
+        <label><!-- Share Private Notes? (deprecated) --></label>
+        <name>dca_cnvrt_note__Share_Private_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated since version 1.2. Do not use. --></help>
+        <label><!-- Share Type (deprecated) --></label>
+        <name>dca_cnvrt_note__Share_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated since version 1.2. Do not use. --></help>
+        <label><!-- Visibility (deprecated) --></label>
+        <name>dca_cnvrt_note__Visibility__c</name>
+    </fields>
+</CustomObjectTranslation>

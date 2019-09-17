@@ -160,7 +160,10 @@
     </fields>
     <fields>
         <fullName>StartingContext</fullName>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
+  <searchLayouts>
         <customTabListAdditionalFields>StartingContext</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
@@ -173,21 +176,14 @@
         <searchResultsAdditionalFields>StartingContext</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Private</sharingModel>
+    </searchLayouts>
+  <sharingModel>Private</sharingModel>
+
     <listViews>
         <fullName>Rogers_Support_Macro</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
         <queue>Rogers_Support</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Send_To_Rogers_Macro</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Send To Rogers</label>
-        <queue>Send_To_Rogers</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

@@ -6130,41 +6130,6 @@ Estimated_In__c &lt; 20001),
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
-        <fullName>All</fullName>
-        <columns>CREATEDBY_USER</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>UPDATEDBY_USER</columns>
-        <columns>LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
-    <listViews>
-        <fullName>Jenna_Initiation_Forms</fullName>
-        <columns>NAME</columns>
-        <columns>Account_Name__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>Number_of_Potential_Locations__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>National_Support_Request__c.New_Initiation_Form,National_Support_Request__c.Initiation_Form</value>
-        </filters>
-        <label>Jenna - Initiation Forms</label>
-    </listViews>
-    <listViews>
-        <fullName>My_Open_National_Suppoort_Requests</fullName>
-        <columns>NAME</columns>
-        <columns>RECORDTYPE</columns>
-        <columns>Account_Name__c</columns>
-        <columns>Status__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>LAST_UPDATE</columns>
-        <columns>OWNER.ALIAS</columns>
-        <filterScope>Mine</filterScope>
-        <label>My Open National Suppoort Requests</label>
-    </listViews>
-    <listViews>
         <fullName>Rogers_Support_National_Support_Request</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -6174,10 +6139,37 @@ Estimated_In__c &lt; 20001),
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Send_To_Rogers_National_Support_Request</fullName>
+        <fullName>AccountPerformanceQueue295311_National_Support_Request</fullName>
         <filterScope>Queue</filterScope>
-        <label>Send To Rogers</label>
-        <queue>Send_To_Rogers</queue>
+        <label>Account Performance Queue</label>
+        <queue>AccountPerformanceQueue295311</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Implementation_Specialist_Queue_National_Support_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>(DONOTUSE) YBN Int. Queue</label>
+        <queue>Implementation_Specialist_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>LHMA_Post_Launch_National_Support_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LHMA Post Launch</label>
+        <queue>LHMA_Post_Launch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NationalCharlotte_National_Support_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>National Performance Queue</label>
+        <queue>NationalCharlotte</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

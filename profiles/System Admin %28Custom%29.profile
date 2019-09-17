@@ -2,67 +2,7 @@
     <custom>true</custom>
     <userLicense>Salesforce</userLicense>
     <classAccesses>
-        <apexClass>CommunitiesSelfRegConfirmController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SiteRegisterControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ChangePasswordControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SiteRegisterController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SiteLoginController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>MyProfilePageControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>MyProfilePageController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ForgotPasswordControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CommunitiesLoginController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ForgotPasswordController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ChangePasswordController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CommunitiesLandingController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CommunitiesLandingControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CommunitiesSelfRegControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CommunitiesSelfRegController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CommunitiesSelfRegConfirmControllerTest</apexClass>
+        <apexClass>SiteLoginControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -70,65 +10,357 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SiteLoginControllerTest</apexClass>
+        <apexClass>CommunitiesSelfRegConfirmControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <pageAccesses>
-        <apexPage>ChangePassword</apexPage>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>SiteTemplate</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegControllerTest</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>CommunitiesLanding</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLandingControllerTest</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>StdExceptionTemplate</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLandingController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>CommunitiesLogin</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChangePasswordController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>CommunitiesTemplate</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegConfirmController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>Exception</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLoginController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>SiteRegisterConfirm</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ForgotPasswordControllerTest</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>CommunitiesSelfReg</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MyProfilePageController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>CommunitiesSelfRegConfirm</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MyProfilePageControllerTest</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>InMaintenance</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteLoginController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>SiteLogin</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteRegisterController</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>UnderConstruction</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChangePasswordControllerTest</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>Unauthorized</apexPage>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteRegisterControllerTest</apexClass>
         <enabled>true</enabled>
-    </pageAccesses>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ForgotPasswordController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesBatchable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeCustomSettingsController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesScheduleControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesScheduleController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesRunOnceControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesRunOnceController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsSettingsControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesInstallHandlerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesTestFactory</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesServiceTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesScheduleTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesQueueableTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesQueueable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesInstallHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesSchedulable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsScheduleControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeScheduler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__JWTTestClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsScheduleController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsRunOnceControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsRunOnceController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsInstallHandlerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsInstallHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesSettingsControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeUpdateRecordsCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesBatchable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesLogger</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>vs__VisualstrapTests</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>vs__Visualstrap</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeUtils</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsSettingsController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeTestSuite</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesOptions</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesLogger</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesQueueable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesSettingsController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesBatchableTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>relateiq__OrganizationInfo</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeBatchDML</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTime</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>relateiq__SalesforceIqPslCheckerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>relateiq__SalesforceIqPslChecker</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>relateiq__OrganizationInfoTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesTestFactory</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesOptions</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesServiceTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesScheduleTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesSchedulable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_note__ConvertNotesToContentNotesQueueableTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimePostInstall</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__JWT</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dca_cnvrt_file__ConvertAttachmentsToFilesBatchableTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__CalculateUTFOffset</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__fieldTripTabControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>tz__LocalTimeConfigCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__fieldTripTabController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__analyzeLaunchExtensionTests</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__analyzeLaunchExtension</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__analyzeCreateExtensionTests</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__analyzeCreateExtension</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__analyzeObject</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__AhaRestApi</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__dataQualityExtension</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__fieldTripStatusExtension</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__AhaOpportunityTriggerTestClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Field_Trip__dataQualityExtensionTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__AhaControllerTestClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__AhaController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ahaapp__AhaRestApiTestClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>BandwidthExceeded</apexPage>
         <enabled>true</enabled>
@@ -142,7 +374,7 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>ForgotPassword</apexPage>
+        <apexPage>MyProfilePage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -154,200 +386,859 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>MyProfilePage</apexPage>
+        <apexPage>Unauthorized</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>SiteRegister</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <applicationVisibilities>
-        <application>Lead_Generation</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    
-    
-    
-    
-    
-    <applicationVisibilities>
-        <application>Sales_Operations</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    
-    
-    
-    
-    
-    
-    
-    
-    <applicationVisibilities>
-        <application>Sales_Leadership</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
+    <pageAccesses>
+        <apexPage>ForgotPassword</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>UnderConstruction</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteRegisterConfirm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>InMaintenance</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesSelfRegConfirm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesSelfReg</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Exception</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesTemplate</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesLogin</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>StdExceptionTemplate</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesLanding</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteTemplate</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ChangePassword</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteLogin</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_file__ConvertAttachmentsSchedulePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Field_Trip__analyzeLaunch</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Field_Trip__analyzeCreate</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_file__ConvertAttachmentsMenuPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Field_Trip__fieldTripStatus</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ahaapp__AhaRedirector</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ahaapp__AhaCaseIdeas</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ahaapp__AhaOpportunityIdeas</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_file__ConvertAttachmentsFAQPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Opp_Field</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Field_Trip__fieldTripTab</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ahaapp__AhaAccountIdeas</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_file__ConvertAttachmentsRunOncePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_note__ConvertNotesRunOncePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Quote_Field</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_note__ConvertNotesMenuPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Field_Trip__dataQualityScore</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_note__ConvertNotesSchedulePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_note__ConvertNotesSettingsPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Custom_Settings</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__LocalTime_Update_Records</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Contact_Field</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Lead_Field</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_note__ConvertNotesFAQPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>dca_cnvrt_file__ConvertAttachmentsSettingsPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Account_Field</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>tz__Local_Time_Case_Field</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <applicationVisibilities>
         <application>Relationship_Management</application>
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Operations</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Lead_Generation</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Leadership</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    
+    
+    <applicationVisibilities>
+        <application>tz__Local_Time</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    <applicationVisibilities>
+        <application>dca_cnvrt_file__Convert_Attachments_to_Files</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    
+    <applicationVisibilities>
+        <application>tz__Local_Time_Lightning</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    
+    
+    <applicationVisibilities>
+        <application>ahaapp__AhaIntegration</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    
+    <applicationVisibilities>
+        <application>dca_cnvrt_file__Convert_Attachments_to_Files_Lightning</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    <applicationVisibilities>
+        <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Lightning</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
     
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.ShippingAddress</field>
+        <field>Opportunity.NextStep</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.AccountId</field>
+        <field>Asset.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.ActivationDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.ApprovalStatus</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.GrandTotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.Discount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.EndDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.CommentCount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.ReportsToId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Classification</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Following</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AttachmentType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Bio</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Followers</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.IsBlacklisted</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.IsFollowingUs</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Klout</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.MediaType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.NumberOfFriends</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.NumberOfTweets</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.ProfileType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.R6SourceId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.RealName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AttachmentUrl</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.ShippingHandling</field>
+        <field>Case.Subject</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contract.ActivatedDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.StartDate</field>
+        <field>Case.SuppliedCompany</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Total_Contract_Value__c</field>
+        <field>Case.SuppliedEmail</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ExpectedResponse</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Product2Id</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.IsCompetitorProduct</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.ContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.InstallDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Price</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.CampaignImageId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.PurchaseDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.IsEscalated</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ExpectedRevenue</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.SuppliedPhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.IsActive</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfContacts</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfConvertedLeads</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfLeads</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Priority</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Reason</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfResponses</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Quantity</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.ClosedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.ContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfOpportunities</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.SerialNumber</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.AmountAllOpportunities</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.OwnerExpirationNotice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.AssetId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Discount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.ListPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.MailingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Email</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Fax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.MobilePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.SpecialTerms</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfWonOpportunities</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.ShippingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Origin</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.ProductCode</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.ServiceDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.AmountWonOpportunities</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.SuppliedName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.ActivatedById</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.BudgetedCost</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.BillingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.CompanySignedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.CompanySignedId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.ContractTerm</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.CustomerSignedId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.CustomerSignedTitle</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.CustomerSignedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.CasesPerEntitlement</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.ServiceContractId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.RemainingCases</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.ContractLineItemId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.BusinessHoursId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.AssetId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.StatusIndicator</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Subtotal</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Title</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.IsAllDayEvent</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.TotalPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ActualCost</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AssetRelationship.RelationshipType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.SlaProcessId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.Location</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.WhatId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.WhoId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.IsPerIncident</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Website</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.TotalPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Address</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Email</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Industry</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.StatusIndicator</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.NumberOfEmployees</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Phone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Loss_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Amount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Budget_Confirmed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.CampaignId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Corporate_Recurring_Total__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.UsageEndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Discovery_Completed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.MobilePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.ProductCode</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.NumberSent</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.LeadSource</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.WhatId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -486,8 +1377,163 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Total_Contract_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>SocialPersona.TopicType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ShippingHandling</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ShippingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.LeadSource</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ActivationDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ApprovalStatus</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.BillingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.GrandTotal</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.Discount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.CommentCount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.ReportsToId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Classification</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.Following</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.AttachmentType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.Followers</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.IsBlacklisted</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.IsFollowingUs</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.Klout</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.MediaType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.NumberOfFriends</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.NumberOfTweets</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.ProfileType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.R6SourceId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.RealName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.AttachmentUrl</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.ActivatedDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -497,167 +1543,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>SocialPost.AnalyzerScore</field>
+        <field>SocialPersona.Bio</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>SocialPost.ThreadSize</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.TopicProfileName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.UniqueCommentors</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ViewCount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PersonaId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PostTags</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountContactRelation.Relationship_Strength__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Industry</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.AccountSource</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PostPriority</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.R6PostId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.R6TopicId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Recipient</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.EngagementLevel</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Jigsaw</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.NumberOfEmployees</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.ParentId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.R6SourceId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.ShippingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Phone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Website</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Type</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Source_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PostUrl</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SicDesc</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.StatusMessage</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.UserId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Status</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.SourceTags</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AssignedTo</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -727,12 +1618,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>SocialPost.Language</field>
+        <field>SocialPost.AssignedTo</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>SocialPost.LikesAndVotes</field>
+        <field>SocialPost.Language</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -748,11 +1639,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>SocialPost.OutboundSocialAccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Solution.IsPublished</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -792,7 +1678,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>SocialPost.SpamRating</field>
+        <field>SocialPost.AnalyzerScore</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -802,1513 +1688,647 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Task.WhatId</field>
+        <field>SocialPost.SpamRating</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.LeadSource</field>
+        <field>SocialPost.LikesAndVotes</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.NumberSent</field>
+        <field>SocialPost.SourceTags</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.ParentId</field>
+        <field>Solution.IsPublished</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.StartDate</field>
+        <field>SocialPersona.UserId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.Status</field>
+        <field>SocialPost.UniqueCommentors</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.Type</field>
+        <field>SocialPost.ViewCount</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.Quantity</field>
+        <field>SocialPost.Status</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.ClosedDate</field>
+        <editable>true</editable>
+        <field>SocialPost.TopicProfileName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.PersonaId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.PostTags</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.ContactId</field>
+        <field>AccountContactRelation.Relationship_Strength__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Description</field>
+        <field>Account.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfOpportunities</field>
+        <editable>true</editable>
+        <field>Account.BillingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AccountSource</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.PostPriority</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.SerialNumber</field>
+        <field>SocialPost.R6PostId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.AmountAllOpportunities</field>
+        <editable>true</editable>
+        <field>SocialPost.R6TopicId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.StockKeepingUnit</field>
+        <field>SocialPost.Recipient</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.StartDate</field>
+        <field>Account.Industry</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.AssetId</field>
+        <field>Account.Website</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.Description</field>
+        <field>Account.Source_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.Discount</field>
+        <field>SocialPost.EngagementLevel</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.EndDate</field>
+        <field>Account.Type</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.ListPrice</field>
+        <field>Account.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.MailingAddress</field>
+        <field>Account.SicDesc</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.AccountId</field>
+        <field>Account.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Email</field>
+        <field>SocialPost.PostUrl</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Fax</field>
+        <field>Account.ParentId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Jigsaw</field>
+        <field>Account.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.MobilePhone</field>
+        <field>Account.Jigsaw</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.SpecialTerms</field>
+        <field>SocialPost.StatusMessage</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.Status</field>
+        <field>SocialPost.R6SourceId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfWonOpportunities</field>
+        <editable>true</editable>
+        <field>Lead.tz__UTF_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.ShippingAddress</field>
+        <field>Task.tz__Timezone__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfResponses</field>
+        <editable>true</editable>
+        <field>ahaapp__AhaIdeaLink__c.ahaapp__Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Origin</field>
+        <field>Account.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Reason</field>
+        <field>Account.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.NextStep</field>
+        <field>ahaapp__AhaIdeaLink__c.ahaapp__Case__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.AccountId</field>
+        <field>Account.tz__Local_Time_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Subject</field>
+        <field>Account.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedCompany</field>
+        <editable>true</editable>
+        <field>Account.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedEmail</field>
+        <editable>true</editable>
+        <field>Account.tz__Timezone_IANA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.ExpectedResponse</field>
+        <field>Account.tz__Timezone__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.EndDate</field>
+        <field>Account.tz__UTF_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.Description</field>
+        <field>Opportunity.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.Product2Id</field>
+        <field>Contact.tz__Timezone_SFDC__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.IsCompetitorProduct</field>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.ContactId</field>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Total_Tally__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.Description</field>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Populated_On__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.InstallDate</field>
+        <field>Event.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Priority</field>
+        <field>Event.tz__Timezone__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.Price</field>
+        <field>Event.tz__UTC_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.CampaignImageId</field>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__Populated_On_Percent__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.PurchaseDate</field>
+        <field>Account.tz__Timezone_SFDC__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.ParentId</field>
+        <field>Task.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.AccountId</field>
+        <editable>true</editable>
+        <field>Account.tz__LT_Info__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.IsEscalated</field>
+        <editable>true</editable>
+        <field>ahaapp__AhaIdeaLink__c.ahaapp__LinkedBy__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.Status</field>
+        <field>ahaapp__AhaIdeaLink__c.ahaapp__Opportunity__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.ExpectedRevenue</field>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__New_File_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedPhone</field>
+        <editable>true</editable>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__Summary__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.IsActive</field>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfContacts</field>
+        <editable>true</editable>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__Old_Attachment_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfConvertedLeads</field>
+        <editable>true</editable>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__Detail__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfLeads</field>
+        <editable>true</editable>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__Log_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.OwnerExpirationNotice</field>
+        <field>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c.dca_cnvrt_file__Job_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.ProductCode</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__Job_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>AssetRelationship.RelationshipType</field>
+        <field>Task.tz__UTC_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.Type</field>
+        <field>ahaapp__AhaIdea__c.ahaapp__Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.Description</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__Old_Note_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.Location</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__Log_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.WhatId</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__New_Note_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.WhoId</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.IsPerIncident</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__Summary__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Website</field>
+        <field>tz__Local_Time_Error_Log__c.tz__Message__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.StartDate</field>
+        <field>tz__Local_Time_Error_Log__c.tz__Record_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>OpportunityLineItem.TotalPrice</field>
+        <editable>true</editable>
+        <field>tz__Local_Time_Error_Log__c.tz__Record__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Jigsaw</field>
+        <field>ahaapp__AhaIdea__c.ahaapp__ReferenceNum__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Address</field>
+        <field>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c.dca_cnvrt_note__Detail__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Email</field>
+        <field>Opportunity.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Industry</field>
+        <field>Case.tz__Local_Time_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.StatusIndicator</field>
+        <field>Opportunity.tz__Local_Time_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.LeadSource</field>
+        <field>Contact.tz__UTF_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.NumberOfEmployees</field>
+        <field>Case.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Phone</field>
+        <field>Case.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>OpportunityLineItem.ServiceDate</field>
+        <field>Case.tz__Timezone_Formula__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>OpportunityLineItem.Description</field>
+        <field>Case.tz__UTC_Offset_Formula__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Loss_Reason__c</field>
+        <field>ContentVersion.dca_cnvrt_file__Original_Record_Parent_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.AccountId</field>
+        <field>Contact.tz__Timezone__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Amount</field>
+        <field>Contact.tz__LT_Info__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Budget_Confirmed__c</field>
+        <field>Contact.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.CampaignId</field>
+        <field>ContentVersion.dca_cnvrt_file__Original_Record_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Corporate_Recurring_Total__c</field>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.UsageEndDate</field>
+        <field>Opportunity.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Discovery_Completed__c</field>
+        <field>Contact.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Description</field>
+        <field>ContentVersion.dca_cnvrt_note__Original_Record_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.MobilePhone</field>
+        <field>Case.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.Status</field>
+        <field>Lead.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>OpportunityLineItem.ProductCode</field>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.SlaProcessId</field>
+        <field>Lead.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.ActualCost</field>
+        <field>Lead.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.AmountWonOpportunities</field>
+        <editable>true</editable>
+        <field>Lead.tz__Local_Time_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedName</field>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Type</field>
+        <field>ContentVersion.dca_cnvrt_file__Original_Record_Owner_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contract.ActivatedById</field>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.BudgetedCost</field>
+        <field>ContentVersion.dca_cnvrt_note__Original_Record_Owner_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.BillingAddress</field>
+        <field>ContentVersion.dca_cnvrt_note__Original_Record_Parent_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CompanySignedDate</field>
+        <field>Lead.tz__Timezone__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CompanySignedId</field>
+        <field>Lead.tz__Timezone_SFDC__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.ContractTerm</field>
+        <field>Lead.tz__Timezone_IANA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CustomerSignedId</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Fields__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CustomerSignedTitle</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Last_Batch_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.Description</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Last_Analyzed__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CustomerSignedDate</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Health_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.CasesPerEntitlement</field>
+        <field>Contact.tz__Timezone_IANA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.ServiceContractId</field>
+        <field>Field_Trip__Field_Analytic_Config__c.Field_Trip__Field_Weight__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.RemainingCases</field>
+        <field>Lead.tz__LT_Info__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.EndDate</field>
+        <field>Field_Trip__Field_Analytic_Config__c.Field_Trip__Object_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.ContractLineItemId</field>
+        <field>Case.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contract.EndDate</field>
+        <editable>true</editable>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__isCustom__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.BusinessHoursId</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__isCustom__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.AssetId</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Tally__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.StartDate</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Filter__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.StatusIndicator</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Record_Types__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.Subtotal</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Object_Label__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Title</field>
+        <field>Field_Trip__Field_Analytic_Config__c.Field_Trip__Field_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.IsAllDayEvent</field>
+        <field>Field_Trip__Field_Analysis__c.Field_Trip__isRequired__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.TotalPrice</field>
+        <field>Field_Trip__Object_Analysis__c.Field_Trip__Records__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Channel_Partner</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.CPP_Initial_Transaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Business_Development</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section__c-Touchplan Section Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
-        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Pop_up_Ad__c-Partner Pop-up Ad Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MLS_Name__c-MLS Name Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-        <recordType>Marketo_Email_Campaign__c.Hourly_Template</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-National Support Request Layout</layout>
-        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ObjectHistory__c-Object History Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Initial_Transaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming_Test</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-National Support Request Layout</layout>
-        <recordType>National_Support_Request__c.New_Initiation_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.IT_Pro_QA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Google_Listing_Photo_Update</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Canda_Maps_Claiming</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Order-Order Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Individual_Location</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Objection__c-Objection Handling Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MLS__c-MLS Layout</layout>
-        <recordType>MLS__c.MLS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MLS__c-MLS Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Name__c-Partner Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Pop_up_Ad_User_Dismissed__c-Partner Pop-up Ad User Dismissed Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OrderItem-Order Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Renewal</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Macro-Macro Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-National Support Request Layout</layout>
-        <recordType>National_Support_Request__c.Initiation_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse PMS and SMS Guides Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Milestone__c-Milestone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Client_Community__kav-Lighthouse Client Community Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.WBN_Lead</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Quarterly_Managed_Account_Count__c-Partner Quarterly Managed Account Count Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.WBN_Corporate_Lead</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Objection_Handling__kav-Objection Handling Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-        <recordType>Marketo_Email_Campaign__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-        <recordType>Marketo_Email_Campaign__c.Template</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OPT_Process_Request__c-Production Request Layout</layout>
-        <recordType>OPT_Process_Request__c.Organic_Process_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OPT_Process_Request__c-Production Request Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Notification_Log__c-Notification Log Layout</layout>
-        <recordType>Notification_Log__c.WBN_Log</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Notification_Log__c-Notification Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Network_Optimization__c-Network Optimization Layout</layout>
-        <recordType>Network_Optimization__c.Performance_Analysis</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Asset-Asset Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Organic_Optimization_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OPT_Process_Request__c-Production Request Layout</layout>
-        <recordType>OPT_Process_Request__c.Production_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-National Support Request Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Lead_Merge__c-Marketo Lead Merge Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-National Support Request Layout</layout>
-        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Quarterly_Managed_Child_Account__c-Partner Quarterly Managed Child Account Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan__c-Touchplan Layout</layout>
-        <recordType>Touchplan__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_User_Quiz_Scores__c-Partner User Quiz Score Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkThanks-Thanks Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkBadge-Badge Received Layout 192</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserAppMenuItem-Application Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserAlt-User Profile Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>User-User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan__c-Touchplan Layout</layout>
-        <recordType>Touchplan__c.Template</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan__c-Touchplan Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-National Support Request Layout</layout>
-        <recordType>National_Support_Request__c.Transition_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>NetworkAdoptionProduct__c-Network Adoption Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
-        <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>NetworkAdoptionSnapshot__c-Network Adoption Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkAccess-Access Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>zzContract__c-Contract %28DEL%29 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Underperforming</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Touch_Plan_2</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Quality Case Layout</layout>
-        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>TP_Section_Auto_Evaluate_Criteria__c-TP Section Auto Evaluate Criteria Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Survey__c-45 Day Survey Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Solution-Solution Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Worksheets__c-Worksheets Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Worksheets__c-Worksheets Layout</layout>
-        <recordType>Worksheets__c.MLS_Worksheet</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Coaching_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.Sales</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Quality Case Layout</layout>
-        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Quality Case Layout</layout>
-        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SocialPersona-Social Persona Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Setup_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
-    </layoutAssignments>
     <layoutAssignments>
         <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_YBN</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProfileSkill-Skill Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Transition__c-Partner Transition Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
-        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Service_Audit__c-Service Audit Layout</layout>
-        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Quality Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Promotion__c-Promotion Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProfileSkillUser-Skill User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
-        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Product2-Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Process_Documentation__kav-Process Documentation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.President_s_Club</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PricebookEntry-Price Book Entry Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PostLaunchSurvey__c-PostLaunch Survey Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Population_Data__c-Population Data Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Performance_Snapshot__c-Performance Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Pricebook2-Price Book Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.Reactivation</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scorecard-Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.CPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Sales_Attachments__c-Sales Attachments Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-        <recordType>SMS_Tracking__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>References__c-References Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scripts__kav-Scripts Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>QuoteLineItem-Quote Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>QuickText-Quick Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Task Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Decision_Tree_Optimization</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Objection__c-Objection Handling Layout</layout>
-        <recordType>Objection__c.Objection</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Marketing_Development_Fund__c-Partner Marketing Development Fund Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Community_HTML__c-Partner Community HTML Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Case Layout</layout>
-        <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quote-Quote Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Segment_Intelligence__kav-Segment Intelligence Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Segment__c-Segment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Result_Detail__c-Call Result Detail Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Campaign_Automation__c-Touchplan Section Campaign Automation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Segment_Optimization_Case_Assignment__c-Segment Optimization Case Assignment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Quality_Concern__c-Call Quality Concern Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.Affiliate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Quality Case Layout</layout>
-        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Quality Case Layout</layout>
-        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Service_Audit__c-Service Audit Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceContract-Service Contract Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EmailMessage-Email Message Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Facebook_Post_For_You</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Campaign-Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Global-Global Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignMember-Campaign Member Page Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.LH_Product_Feedback</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.LH_Master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.LH_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
-        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Closing_Script_Auto_Launch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Charge_Failure</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignInfluenceModel-Campaign Influence Model Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Channel_Partner</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Call_Answering</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Budget_Change</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Blank_for_Email_Catch_All</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.FS_Product_Feedback</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
-        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
-        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.Rogers_National_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.MLS_Worksheet</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
-        <recordType>Best_Practice_Evaluation__c.National_Audit</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Attempts_Made__c-Attempt Made Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssetRelationship-Asset Relationship Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
-        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_Marketo_Activity__c-Account Marketo Activity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_MLS__c-Account MLS Layout</layout>
-        <recordType>Account_MLS__c.Account_MLS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_MLS__c-Account MLS Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
-        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.YBN_Corporate_Relationship</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.Standard</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Activity_Type__c-Activity Type Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.Multi_Location_Parent</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.Partner_Master_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.LH_Master_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.Affiliate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.Association</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AccountBrand-Account Brand Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
-        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
-        <recordType>Best_Practice_Evaluation__c.Website_Audit</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Answering__c-Call Answering Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
-        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
-        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
-        <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
@@ -2316,19 +2336,7 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.YO_2_0_Free_Time_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
+        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
@@ -2336,93 +2344,70 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
+        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.YO_2_0_Free_Time_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.Association</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Call_Answering__c-Call Answering Layout</layout>
-        <recordType>Call_Answering__c.Call_Answering</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
+        <recordType>Best_Practice_Evaluation__c.Website_Audit</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
+        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>AccountBrand-Account Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
+        <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-Account Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.O_Account_Update</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Essentials_Features_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.CS_SOP_Manual_Update</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.CMS_3_1_Update_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Batch_Uploads</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Administrative_Items</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CPP_Lead_Registration__c-Lead Registration Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
         <recordType>Case.Master</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>EntityFieldHistoryArchive__c-EntityFieldHistoryArchive Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.National_Project_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-Event Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Executive_Client_Scorecard__c-Executive Client Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FAQ__kav-FAQ Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Feedback__c-Feedback Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-        <recordType>Account.Business_Development</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Forecast_SnapShot__c-Forecast Snapshot Layout</layout>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.O_Account_Update</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Fulfillment__c-Fulfillment Layout</layout>
@@ -2431,245 +2416,286 @@
         <layout>Network_Optimization__c-Network Optimization Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Affiliate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Forecast_SnapShot__c-Forecast Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Business_Development</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Feedback__c-Feedback Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FAQ__kav-FAQ Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Executive_Client_Scorecard__c-Executive Client Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.National_Project_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CPP_Lead_Registration__c-Lead Registration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Administrative_Items</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Batch_Uploads</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.CMS_3_1_Update_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.CS_SOP_Manual_Update</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Essentials_Features_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EntityFieldHistoryArchive__c-EntityFieldHistoryArchive Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.LH_Master_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Blank_for_Email_Catch_All</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Multi_Location_Parent</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.FS_Product_Feedback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Budget_Change</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Call_Answering</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Channel_Partner</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignInfluenceModel-Campaign Influence Model Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Charge_Failure</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
+        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
+        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LBW_Content_Organic_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LH_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LH_Master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LH_Product_Feedback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Entitlement-Entitlement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
+        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Partner_Master_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
+        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Activity_Type__c-Activity Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Standard</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.YBN_Corporate_Relationship</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
+        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_MLS__c-Account MLS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_MLS__c-Account MLS Layout</layout>
+        <recordType>Account_MLS__c.Account_MLS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_Marketo_Activity__c-Account Marketo Activity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Rogers_National_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cancellation_Request__c-Cancellation Form Layout</layout>
+        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetRelationship-Asset Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Attempts_Made__c-Attempt Made Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Best Practice Evaluation Layout</layout>
+        <recordType>Best_Practice_Evaluation__c.National_Audit</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.MLS_Worksheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
         <recordType>Opportunity.Local</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>How_To__kav-How To Layout</layout>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Product_Ideas</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Integration__c-Integration Layout</layout>
         <recordType>Integration__c.Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Knowledge__kav-Knowledge Layout</layout>
+        <layout>Custom_Report_Hierarchy__c-Custom Report Hierarchy Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
+        <layout>Custom_Report_Hierarchy__c-Custom Report Hierarchy Layout</layout>
+        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.New_Client_Setup</recordType>
+        <layout>CaseInteraction-Case Feed Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
+        <layout>ContractLineItem__c-Contract Line Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Issue_Resolution_Lighthouse</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>GroupBeacon__c-GroupBeacon Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Integration__c-Integration Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EmailSubscription__c-Email Subscription Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Marketing_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
+        <layout>CaseMilestone-Case Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.YBN_Master_Case</recordType>
+        <recordType>Case.Renewals_and_Upsells</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.YBN_Inbound_Inquiry</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.YBN_Corporate_Interaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Individual-Individual Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.X45_Day_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.YBN_Issue_Resolution_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Idea-Idea Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DebugInfo__c-Debug Info Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FeedItem-Feed Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.YBN_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.YBN_Product_Ideas</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_WBN_Corporate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.XJen_Test_COBRA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Yodle_Gold_Service</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContractLineItem-Contract Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.XJenTest_No_Use</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Winback</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Yodle_Path_Experience</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Touch_Plan</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.TORCHx_Master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Survey_Send</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Service_Task_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.SEO_Tasks</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Product_Ideas</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Partner_Inbound_Inquiry</recordType>
+        <recordType>Case.TORCHx_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
@@ -2677,52 +2703,122 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
-        <recordType>Case.TORCHx_Product_Feedback</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseClose-Close Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Renewals_and_Upsells</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseMilestone-Case Milestone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContractLineItem__c-Contract Line Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseInteraction-Case Feed Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Custom_Report_Hierarchy__c-Custom Report Hierarchy Layout</layout>
-        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Custom_Report_Hierarchy__c-Custom Report Hierarchy Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
         <recordType>Case.Performance_Issue</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Partner_Inbound_Inquiry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.SEO_Tasks</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Service_Task_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Survey_Send</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.TORCHx_Master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Touch_Plan</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Yodle_Path_Experience</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Winback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.XJenTest_No_Use</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CorpSDR_Demo_Questionaire__c-CorpSDR Demo Questionaire Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.WBN_MSA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
         <recordType>Contract.WBN_Amendment</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Custom_Automation__c-Custom Automation Layout</layout>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Facebook_Post_For_You</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Comments__c-Comment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contest__c-Contest Layout</layout>
+        <recordType>Contest__c.Events</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contest__c-Contest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentVersion-Content Version</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseStatusHistory__c-Case Status History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+        <recordType>Contact.Partner_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.Service_Agreement</recordType>
+        <recordType>Contract.WBN_MSA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CollaborationGroup-Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Custom_Automation__c-Custom Automation Layout</layout>
+        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClientScorecard__c-Client Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contest__c-Contest Layout</layout>
+        <recordType>Contest__c.master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.Amendments</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
@@ -2730,59 +2826,911 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.Amendments</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ClientScorecard__c-Client Scorecard Layout</layout>
+        <recordType>Contract.Service_Agreement</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Custom_Automation__c-Custom Automation Layout</layout>
-        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Comments__c-Comment Layout</layout>
         <recordType>Comments__c.Comments</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CollaborationGroup-Group Layout</layout>
+        <layout>How_To__kav-How To Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContractLineItem-Contract Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.XJen_Test_COBRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.YBN_Inbound_Inquiry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.YBN_Master_Case</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Marketing_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.YBN_Corporate_Interaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration__c-Integration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GroupBeacon__c-GroupBeacon Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Issue_Resolution_Lighthouse</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.New_Client_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Knowledge__kav-Knowledge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailSubscription__c-Email Subscription Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Yodle_Gold_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_WBN_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.YBN_Product_Ideas</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.YBN_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Idea-Idea Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.YBN_Issue_Resolution_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.X45_Day_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DebugInfo__c-Debug Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Answering__c-Call Answering Layout</layout>
+        <recordType>Call_Answering__c.Call_Answering</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailMessage-Email Message Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OPT_Process_Request__c-Production Request Layout</layout>
+        <recordType>OPT_Process_Request__c.Production_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
-        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contact-Contact Layout</layout>
-        <recordType>Contact.Partner_Contact</recordType>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Organic_Optimization_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseStatusHistory__c-Case Status History Layout</layout>
+        <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContentVersion-Content Version</layout>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
+        <layout>Network_Optimization__c-Network Optimization Layout</layout>
+        <recordType>Network_Optimization__c.Performance_Analysis</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.Events</recordType>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Comments__c-Comment Layout</layout>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contact-Contact Layout</layout>
+        <layout>OPT_Process_Request__c-Production Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-National Support Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OPT_Process_Request__c-Production Request Layout</layout>
+        <recordType>OPT_Process_Request__c.Organic_Process_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+        <recordType>Marketo_Email_Campaign__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Objection_Handling__kav-Objection Handling Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.WBN_Corporate_Lead</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Quarterly_Managed_Account_Count__c-Partner Quarterly Managed Account Count Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.WBN_Lead</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Client_Community__kav-Lighthouse Client Community Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+        <recordType>Marketo_Email_Campaign__c.Template</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkAccess-Access Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>NetworkAdoptionSnapshot__c-Network Adoption Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>NetworkAdoptionProduct__c-Network Adoption Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-National Support Request Layout</layout>
+        <recordType>National_Support_Request__c.Transition_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan__c-Touchplan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan__c-Touchplan Layout</layout>
+        <recordType>Touchplan__c.Template</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAppMenuItem-Application Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_User_Quiz_Scores__c-Partner User Quiz Score Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan__c-Touchplan Layout</layout>
+        <recordType>Touchplan__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Quarterly_Managed_Child_Account__c-Partner Quarterly Managed Child Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-National Support Request Layout</layout>
+        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Lead_Merge__c-Marketo Lead Merge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadge-Badge Received Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Milestone__c-Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-National Support Request Layout</layout>
+        <recordType>National_Support_Request__c.Initiation_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-National Support Request Layout</layout>
+        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+        <recordType>Marketo_Email_Campaign__c.Hourly_Template</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MLS_Name__c-MLS Name Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Pop_up_Ad__c-Partner Pop-up Ad Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
+        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Business_Development</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.CPP_Initial_Transaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Channel_Partner</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section__c-Touchplan Section Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse PMS and SMS Guides Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ObjectHistory__c-Object History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming_Test</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Renewal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout</layout>
+        <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Pop_up_Ad_User_Dismissed__c-Partner Pop-up Ad User Dismissed Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Name__c-Partner Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MLS__c-MLS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MLS__c-MLS Layout</layout>
+        <recordType>MLS__c.MLS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Initial_Transaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Individual_Location</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Canda_Maps_Claiming</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Google_Listing_Photo_Update</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.IT_Pro_QA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-National Support Request Layout</layout>
+        <recordType>National_Support_Request__c.New_Initiation_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Objection__c-Objection Handling Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zzContract__c-Contract %28DEL%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Community_HTML__c-Partner Community HTML Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Marketing_Development_Fund__c-Partner Marketing Development Fund Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Objection__c-Objection Handling Layout</layout>
+        <recordType>Objection__c.Objection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Decision_Tree_Optimization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuickText-Quick Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuoteLineItem-Quote Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>References__c-References Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
+        <recordType>SMS_Tracking__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Sales_Attachments__c-Sales Attachments Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.CPP</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scripts__kav-Scripts Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Segment__c-Segment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceContract-Service Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Audit__c-Service Audit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Quality Case Layout</layout>
+        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Quality Case Layout</layout>
+        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.Affiliate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Quality_Concern__c-Call Quality Concern Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Segment_Intelligence__kav-Segment Intelligence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Segment_Optimization_Case_Assignment__c-Segment Optimization Case Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Campaign_Automation__c-Touchplan Section Campaign Automation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Result_Detail__c-Call Result Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SocialPersona-Social Persona Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Quality Case Layout</layout>
+        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Quality Case Layout</layout>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Call Grading Form 2%2E0 Layout</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Coaching_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Worksheets__c-Worksheets Layout</layout>
+        <recordType>Worksheets__c.MLS_Worksheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Worksheets__c-Worksheets Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Survey__c-45 Day Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TP_Section_Auto_Evaluate_Criteria__c-TP Section Auto Evaluate Criteria Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Quality Case Layout</layout>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Reactivation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Touch_Plan_2</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.Sales</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Setup_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_YBN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Snapshot__c-Performance Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Population_Data__c-Population Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PostLaunchSurvey__c-PostLaunch Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Price Book Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prize_Winner__c-Prize Winner Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prize_Winner__c-Prize Winner Layout</layout>
+        <recordType>Prize_Winner__c.master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Process_Documentation__kav-Process Documentation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prize_Winner__c-Prize Winner Layout</layout>
+        <recordType>Prize_Winner__c.President_s_Club</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillUser-Skill User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Promotion__c-Promotion Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkill-Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Case Layout</layout>
+        <recordType>Organic_Analysis__c.Underperforming</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Quality Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Audit__c-Service Audit Layout</layout>
+        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
+        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
+        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Transition__c-Partner Transition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c-dca_cnvrt_note__Convert Notes to Enhanced Notes Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_timezones__mdt-tz__Local Time Timezone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_timezone_names__mdt-tz__Local Time Timezone Names Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_state_codes__mdt-tz__Local Time State Codes Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_country_names__mdt-tz__Local Time Country Codes Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__Local_Time_Error_Log__c-tz__Local Time Error Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_area_codes__mdt-tz__Local Time Area Codes Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c-dca_cnvrt_file__Convert Attachments to Files Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ahaapp__AhaIdea__c-ahaapp__Aha%21 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ahaapp__AhaIdeaLink__c-ahaapp__Aha%21 Idea Link Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Object_Analysis__c-Field_Trip__Object Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Field_Analytic_Config__c-Field_Trip__Field Analytic Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Field_Analysis__c-Field_Trip__Field Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentAsset-Asset File Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -2790,7 +3738,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>QuickText</object>
+        <object>Opportunity</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2799,7 +3747,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Scheduled_Data_Pull_from_YL_to_SF__c</object>
+        <object>Campaign</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2808,7 +3756,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Sales_Attachments__c</object>
+        <object>Offering_to_Vertical_Map__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2817,7 +3765,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>SMS_Tracking__c</object>
+        <object>Objection_Handling__kav</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2826,7 +3774,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>SFDCToCTSAsynchRequest__c</object>
+        <object>OPT_Process_Request__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2835,7 +3783,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Promotion__c</object>
+        <object>NetworkAdoptionSnapshot__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2844,7 +3792,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Quote</object>
+        <object>ObjectHistory__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2853,7 +3801,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>ProfileSkillUser</object>
+        <object>NetworkAdoptionProduct__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2862,7 +3810,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>ProfileSkill</object>
+        <object>ChannelProgram</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2871,7 +3819,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Scorecard</object>
+        <object>Order</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2880,7 +3828,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Touchplan__c</object>
+        <object>FAQ__kav</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2889,7 +3837,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Product2</object>
+        <object>Feedback__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2898,7 +3846,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>References__c</object>
+        <object>Notification_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2907,7 +3855,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Cancellation_Request__c</object>
+        <object>Network_Optimization__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2916,7 +3864,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>zzContract__c</object>
+        <object>Asset</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2925,7 +3873,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Process_Documentation__kav</object>
+        <object>Call_Grading_Form_2_0__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2934,7 +3882,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Prize_Winner__c</object>
+        <object>Call_Grading_Forms__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2943,7 +3891,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Scripts__kav</object>
+        <object>Account</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2952,7 +3900,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Segment__c</object>
+        <object>Organic_Analysis__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2961,7 +3909,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Worksheets__c</object>
+        <object>Account_Marketo_Activity__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2970,7 +3918,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Yodle_Path__c</object>
+        <object>Account_Snapshot__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2979,7 +3927,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Pricebook2</object>
+        <object>Activity_Type__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2988,7 +3936,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>PostLaunchSurvey__c</object>
+        <object>Call_Quality_Concern__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -2997,7 +3945,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>ServiceContract</object>
+        <object>Attempts_Made__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3006,7 +3954,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Touchplan_Section__c</object>
+        <object>Best_Practice_Evaluation__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3015,7 +3963,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Segment_Intelligence__kav</object>
+        <object>CPP_Lead_Registration__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3024,7 +3972,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Quality_Case__c</object>
+        <object>CS_Operations__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3033,7 +3981,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Touchplan_Section_Campaign_Automation__c</object>
+        <object>Call_Result_Detail__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3042,7 +3990,349 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Case</object>
+        <object>CTS_Error_Log__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>AuthorizationForm</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>AuthorizationFormConsent</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Lighthouse_Client_Community__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Call_Answering__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Lighthouse_PMS_and_SMS_Guides__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>MLS_Name__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Marketo_Lead_Merge__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Marketo_Email_Campaign__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Marketo_Campaign__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>MLS__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Individual</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Knowledge__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Lighthouse_Worksheets__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Fulfillment__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Name__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Integration__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Performance_Snapshot__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>National_Support_Request__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Mgmt_Goal__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Macro</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Idea</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>GroupBeacon__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Pop_up_Ad_User_Dismissed__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Pop_up_Ad__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Quarterly_Managed_Account_Count__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Quarterly_Managed_Child_Account__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_User_Quiz_Scores__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>How_To__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Transition__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Milestone__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Milestone_Conversion__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Forecast_SnapShot__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Community_HTML__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Objection__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Google_Location_Group__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Partner_Marketing_Development_Fund__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Account_MLS__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3060,7 +4350,268 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Case</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Touchplan_Section_Campaign_Automation__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Quality_Case__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Segment_Intelligence__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Touchplan_Section__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ServiceContract</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>PostLaunchSurvey__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Pricebook2</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Yodle_Path__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Worksheets__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Segment__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Scripts__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Prize_Winner__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>ProfileSkillEndorsement</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Process_Documentation__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Cancellation_Request__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>References__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Product2</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Touchplan__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Scorecard</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ProfileSkill</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ProfileSkillUser</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Quote</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Promotion__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SFDCToCTSAsynchRequest__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>SMS_Tracking__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Sales_Attachments__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Scheduled_Data_Pull_from_YL_to_SF__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>QuickText</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>zzContract__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3078,7 +4629,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>CorpSDR_Demo_Questionaire__c</object>
+        <object>ContractLineItem</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3096,7 +4647,160 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Contract</object>
+        <object>CorpSDR_Demo_Questionaire__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Contest__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ChannelProgramLevel</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Customer_Surveys__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>DebugInfo__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ContractLineItem__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>DuplicateRecordSet</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>EntitlementContact</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>EntityFieldHistoryArchive__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Executive_Client_Scorecard__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>TP_Section_Auto_Evaluate_Criteria__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>CaseStatusHistory__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Custom_Report_Hierarchy__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>EmailSubscription__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Entitlement</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Custom_Automation__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Survey__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Solution</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3114,7 +4818,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Contact</object>
+        <object>Contract</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3150,7 +4854,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Performance_Analysis__c</object>
+        <object>Contact</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3204,6 +4908,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Performance_Analysis__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>StreamingChannel</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -3213,7 +4926,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Survey__c</object>
+        <object>Field_Trip__Object_Analysis__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3222,7 +4935,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Solution</object>
+        <object>Field_Trip__Field_Analysis__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3231,7 +4944,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Entitlement</object>
+        <object>ahaapp__AhaIdeaLink__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3240,7 +4953,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>EmailSubscription__c</object>
+        <object>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3249,7 +4962,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Custom_Report_Hierarchy__c</object>
+        <object>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3258,7 +4971,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>CaseStatusHistory__c</object>
+        <object>tz__Local_Time_Error_Log__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3267,7 +4980,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>TP_Section_Auto_Evaluate_Criteria__c</object>
+        <object>ahaapp__AhaIdea__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3276,702 +4989,694 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Executive_Client_Scorecard__c</object>
+        <object>Field_Trip__Field_Analytic_Config__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>EntityFieldHistoryArchive__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>EntitlementContact</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>DuplicateRecordSet</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>ContractLineItem__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>DebugInfo__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Customer_Surveys__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Custom_Automation__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>ChannelProgramLevel</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Contest__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Account_MLS__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>ContractLineItem</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Google_Location_Group__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Call_Answering__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>CTS_Error_Log__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>CS_Operations__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>CPP_Lead_Registration__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Best_Practice_Evaluation__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Attempts_Made__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Call_Quality_Concern__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Asset</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Activity_Type__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Account_Snapshot__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Account_Marketo_Activity__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Organic_Analysis__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Account</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Call_Grading_Forms__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Call_Grading_Form_2_0__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>AuthorizationForm</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Network_Optimization__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Order</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Opportunity</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Campaign</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Offering_to_Vertical_Map__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Objection_Handling__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>OPT_Process_Request__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Notification_Log__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>ObjectHistory__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>NetworkAdoptionSnapshot__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>NetworkAdoptionProduct__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>ChannelProgram</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Feedback__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>FAQ__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Call_Result_Detail__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>AuthorizationFormConsent</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>National_Support_Request__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Lighthouse_Client_Community__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Community_HTML__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Forecast_SnapShot__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Milestone_Conversion__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Milestone__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Transition__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>How_To__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_User_Quiz_Scores__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Quarterly_Managed_Child_Account__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Quarterly_Managed_Account_Count__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Pop_up_Ad__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Pop_up_Ad_User_Dismissed__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>GroupBeacon__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Idea</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Marketing_Development_Fund__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Macro</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Objection__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Mgmt_Goal__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Performance_Snapshot__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Integration__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Partner_Name__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Lead</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Fulfillment__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Lighthouse_Worksheets__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Knowledge__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Individual</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>MLS__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Marketo_Campaign__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Marketo_Email_Campaign__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Marketo_Lead_Merge__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>MLS_Name__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Lighthouse_PMS_and_SMS_Guides__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Budget_Change</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.LH_Master_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Business_Development</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Partner_Master_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Rogers_National_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Multi_Location_Parent</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Standard</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Batch_Uploads</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Affiliate</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.National_Project_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.SF_Process_Change_Reporting</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Best_Practice_Evaluation__c.National_Audit</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.WBN_Amendment</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Administrative_Items</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account_MLS__c.Account_MLS</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.YBN_Corporate_Relationship</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.Test_Operations_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Product_Ideas</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Yodle_Gold_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_Master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Blank_for_Email_Catch_All</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Channel_Partner</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Charge_Failure</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Decision_Tree_Optimization</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.FS_Product_Feedback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Performance_Issue</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Facebook_Post_For_You</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.O_Account_Update</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Partner_Inbound_Inquiry</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Answering__c.Call_Answering</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Product_Feedback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Outbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.New_Client_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LBW_Content_Organic_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Inbound_Inquiry</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contest__c.Events</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_Product_Feedback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Touch_Plan</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Winback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.XJenTest_No_Use</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.XJen_Test_COBRA</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Renewals_and_Upsells</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Master_Case</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Survey_Send</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Product_Ideas</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Comments__c.Comments</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contact.Partner_Contact</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contest__c.master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.Amendments</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.Biz_Dev_Agreement</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Corporate_Interaction</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Service_Task_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.SEO_Tasks</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Call_Answering</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Marketing_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.X45_Day_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Worksheets__c.MLS_Worksheet</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_WBN_Corporate</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_YBN</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.Service_Agreement</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
@@ -4029,12 +5734,12 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Marketo_Email_Campaign__c.Default</recordType>
+        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
+        <recordType>Marketo_Email_Campaign__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4079,7 +5784,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
+        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4094,147 +5799,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Contract.Service_Agreement</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_YBN</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Marketing_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.X45_Day_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Worksheets__c.MLS_Worksheet</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_WBN_Corporate</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4244,152 +5809,12 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>OPT_Process_Request__c.Production_Request</recordType>
+        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Prize_Winner__c.master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>SMS_Tracking__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>National_Support_Request__c.Transition_Form</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Touch_Plan_2</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Setup_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Coaching_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan__c.Template</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Underperforming</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Objection__c.Objection</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4514,559 +5939,294 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
+        <recordType>OPT_Process_Request__c.Production_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
+        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
+        <recordType>Objection__c.Objection</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
+        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
+        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
+        <recordType>Prize_Winner__c.master</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
+        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
+        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
+        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
+        <recordType>SMS_Tracking__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
+        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
+        <recordType>Touchplan__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
+        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
+        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
+        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
+        <recordType>National_Support_Request__c.Transition_Form</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
+        <recordType>Organic_Analysis__c.Underperforming</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
+        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
+        <recordType>Yodle_Path__c.Coaching_Call</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
+        <recordType>Yodle_Path__c.Setup_Call</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
+        <recordType>Touchplan__c.Template</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
+        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
+        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
+        <recordType>Yodle_Path__c.Touch_Plan_2</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
+        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.YBN_Corporate_Relationship</recordType>
+        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account_MLS__c.Account_MLS</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Multi_Location_Parent</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Rogers_National_Account</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Partner_Master_Account</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.LH_Master_Account</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Business_Development</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Standard</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Budget_Change</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Batch_Uploads</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.National_Project_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.SF_Process_Change_Reporting</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Affiliate</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.National_Audit</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contract.WBN_Amendment</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Administrative_Items</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CS_Operations__c.Test_Operations_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Product_Ideas</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Survey_Send</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.TORCHx_Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.TORCHx_Product_Feedback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Touch_Plan</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Winback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.XJenTest_No_Use</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.XJen_Test_COBRA</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Renewals_and_Upsells</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Master_Case</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Product_Ideas</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Yodle_Gold_Service</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Comments__c.Comments</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contact.Partner_Contact</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contest__c.master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contract.Amendments</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contract.Biz_Dev_Agreement</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Corporate_Interaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Service_Task_Setup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.SEO_Tasks</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contest__c.Events</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Inbound_Inquiry</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Blank_for_Email_Catch_All</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Call_Answering</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Channel_Partner</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Charge_Failure</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Decision_Tree_Optimization</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.FS_Product_Feedback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Performance_Issue</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Facebook_Post_For_You</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.O_Account_Update</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Partner_Inbound_Inquiry</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Answering__c.Call_Answering</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Product_Feedback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Outbound_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.New_Client_Setup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Call_Grading_Forms__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CorpSDR_Demo_Questionaire__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Call_Quality_Concern__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Google_Location_Group__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Custom_Report_Hierarchy__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Account_MLS__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Best_Practice_Evaluation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Attempts_Made__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Activity_Type__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CS_Operations__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Worksheets__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Customer_Surveys__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Cancellation_Request__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Segment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Service_Audit__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Call_Grading_Form_2_0__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>EntityFieldHistoryArchive__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Account_Marketo_Activity__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>National_Support_Request__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Network_Optimization__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Solution</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>OPT_Process_Request__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>EmailSubscription__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ObjectHistory__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Notification_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Offering_to_Vertical_Map__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Fulfillment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Organic_Analysis__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Lighthouse_Worksheets__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Call_Answering__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Objection__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Partner_Community_HTML__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Performance_Analysis__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Partner_Name__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CPP_Lead_Registration__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Touchplan__c</tab>
         <visibility>Hidden</visibility>
@@ -5089,10 +6249,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>SFDCToCTSAsynchRequest__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>MLS__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -5124,11 +6280,11 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-QuickText</tab>
-        <visibility>DefaultOn</visibility>
+        <tab>Marketo_Campaign__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-Dashboard</tab>
+        <tab>standard-QuickText</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -5146,10 +6302,6 @@
     <tabVisibilities>
         <tab>standard-Scorecard</tab>
         <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Performance_Analysis__c</tab>
-        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Pricebook2</tab>
@@ -5192,143 +6344,27 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Partner_Name__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Marketo_Campaign__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Partner_Community_HTML__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Solution</tab>
+        <tab>standard-Dashboard</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Worksheets__c</tab>
+        <tab>MLS__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>CS_Operations__c</tab>
-        <visibility>Hidden</visibility>
+        <tab>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Account_MLS__c</tab>
-        <visibility>Hidden</visibility>
+        <tab>Field_Trip__Object_Analysis__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Activity_Type__c</tab>
-        <visibility>Hidden</visibility>
+        <tab>tz__Local_Time_Error_Log__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Attempts_Made__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Best_Practice_Evaluation__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Cancellation_Request__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Call_Grading_Forms__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Google_Location_Group__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Call_Quality_Concern__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>CorpSDR_Demo_Questionaire__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Custom_Report_Hierarchy__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Customer_Surveys__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Segment__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>EmailSubscription__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Call_Grading_Form_2_0__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Call_Answering__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Lighthouse_Worksheets__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Organic_Analysis__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Fulfillment__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Offering_to_Vertical_Map__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Notification_Log__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Objection__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ObjectHistory__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>OPT_Process_Request__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Service_Audit__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Network_Optimization__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>National_Support_Request__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Account_Marketo_Activity__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>EntityFieldHistoryArchive__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>CPP_Lead_Registration__c</tab>
-        <visibility>Hidden</visibility>
+        <tab>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>dca_cnvrt_file__Convert_Private_Attachments__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Deprecated since version 1.3. Do not use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deprecated since version 1.3. Do not use.</inlineHelpText>
+        <label>Convert Private Attachments? (deprecated</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>dca_cnvrt_file__Convert_in_Near_Real_Time__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables 'after insert' trigger on Attachment that enqueues job to convert into Files in near real-time. This async conversion does not slow down save transaction, and if 'Delete Attachments' option is enabled then deletes in separate transaction too.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enables 'after insert' trigger on Attachment that enqueues job to convert into Files in near real-time. This async conversion does not slow down save transaction, and if 'Delete Attachments' option is enabled then deletes in separate transaction too.</inlineHelpText>
+        <label>Convert in Near Real Time?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>dca_cnvrt_file__Delete_Attachment_Once_Converted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When checked then conversion process will delete the original Attachment once successfully converted to File. You may want to delete them to save storage space in your org.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked then conversion process will delete the original Attachment once successfully converted to File. You may want to delete them to save storage space in your org.</inlineHelpText>
+        <label>Delete Attachment Once Converted?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>dca_cnvrt_file__Share_Private_Attachments__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Deprecated since version 1.3. Do not use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deprecated since version 1.3. Do not use.</inlineHelpText>
+        <label>Share Private Attachments? (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>dca_cnvrt_file__Share_Type__c</fullName>
+        <defaultValue>"V"</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Deprecated since version 1.2. Do not use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deprecated since version 1.2. Do not use.</inlineHelpText>
+        <label>Share Type (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>dca_cnvrt_file__Visibility__c</fullName>
+        <defaultValue>"InternalUsers"</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Deprecated since version 1.2. Do not use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deprecated since version 1.2. Do not use.</inlineHelpText>
+        <label>Visibility (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Controls when and how certain attachments are converted to files.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Convert Attachments to Files Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

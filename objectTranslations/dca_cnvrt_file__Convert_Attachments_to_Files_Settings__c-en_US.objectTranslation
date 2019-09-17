@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Deprecated since version 1.3. Do not use. --></help>
+        <label><!-- Convert Private Attachments? (deprecated --></label>
+        <name>dca_cnvrt_file__Convert_Private_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables &apos;after insert&apos; trigger on Attachment that enqueues job to convert into Files in near real-time. This async conversion does not slow down save transaction, and if &apos;Delete Attachments&apos; option is enabled then deletes in separate transaction too. --></help>
+        <label><!-- Convert in Near Real Time? --></label>
+        <name>dca_cnvrt_file__Convert_in_Near_Real_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked then conversion process will delete the original Attachment once successfully converted to File. You may want to delete them to save storage space in your org. --></help>
+        <label><!-- Delete Attachment Once Converted? --></label>
+        <name>dca_cnvrt_file__Delete_Attachment_Once_Converted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated since version 1.3. Do not use. --></help>
+        <label><!-- Share Private Attachments? (deprecated) --></label>
+        <name>dca_cnvrt_file__Share_Private_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated since version 1.2. Do not use. --></help>
+        <label><!-- Share Type (deprecated) --></label>
+        <name>dca_cnvrt_file__Share_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated since version 1.2. Do not use. --></help>
+        <label><!-- Visibility (deprecated) --></label>
+        <name>dca_cnvrt_file__Visibility__c</name>
+    </fields>
+</CustomObjectTranslation>

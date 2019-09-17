@@ -175,7 +175,10 @@
         <fullName>Channel</fullName>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
+  <searchLayouts>
         <customTabListAdditionalFields>Message</customTabListAdditionalFields>
         <customTabListAdditionalFields>Category</customTabListAdditionalFields>
         <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
@@ -188,19 +191,9 @@
         <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Read</sharingModel>
-    <listViews>
-        <fullName>All_Quick_Text</fullName>
-        <columns>Name</columns>
-        <columns>Message</columns>
-        <columns>Category</columns>
-        <columns>Channel</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Quick Text</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
+    </searchLayouts>
+  <sharingModel>Read</sharingModel>
+
     <listViews>
         <fullName>Rogers_Support_QuickText</fullName>
         <filterScope>Queue</filterScope>

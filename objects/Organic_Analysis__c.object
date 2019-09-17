@@ -13861,6 +13861,60 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>LHMA_Post_Launch_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LHMA Post Launch</label>
+        <queue>LHMA_Post_Launch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Support_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Rogers Support</label>
+        <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Textbroker_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Textbroker</label>
+        <queue>Textbroker</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>YBN_PES_Team_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>(DONOTUSE) YBN PES Team</label>
+        <queue>YBN_PES_Team</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>YBN_Production_Specialists_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>YBN Production Specialists</label>
+        <queue>YBN_Production_Specialists</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>YBN_SEO_Strategy_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>YBN SEO Strategy</label>
+        <queue>YBN_SEO_Strategy</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>Reactivation</fullName>
         <active>true</active>

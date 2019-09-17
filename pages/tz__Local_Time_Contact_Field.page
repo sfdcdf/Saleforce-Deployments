@@ -1,0 +1,5 @@
+<apex:page standardController="Contact" showHeader="false" sidebar="false" docType="html-5.0">
+
+<c:Local_Time_Component SObj="{!Contact}"/>
+
+</apex:page>

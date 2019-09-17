@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Detail --></label>
+        <name>dca_cnvrt_file__Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Batchable or Queueable Job ID when this error occurred. --></help>
+        <label><!-- Job ID --></label>
+        <name>dca_cnvrt_file__Job_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Time --></label>
+        <name>dca_cnvrt_file__Log_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the log message is about a specific conversion issue with a record then this is the new File ID. --></help>
+        <label><!-- New File ID --></label>
+        <name>dca_cnvrt_file__New_File_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the log message is about a specific conversion issue with a record then this is the original Attachment ID. --></help>
+        <label><!-- Old Attachment ID --></label>
+        <name>dca_cnvrt_file__Old_Attachment_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the status of log message, whether an attachment was successfully converted or perhaps that it was skipped during conversion or that it failed conversion. The API values match conversion result enum value in apex code. --></help>
+        <label><!-- Status --></label>
+        <name>dca_cnvrt_file__Status__c</name>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skipped</masterLabel>
+            <translation><!-- Skipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>dca_cnvrt_file__Summary__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

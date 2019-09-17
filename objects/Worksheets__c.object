@@ -438,6 +438,24 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>MLS_Queue_Worksheets</fullName>
+        <filterScope>Queue</filterScope>
+        <label>MLS Queue</label>
+        <queue>MLS_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TORCHx_Post_Launch_Queue_Worksheets</fullName>
+        <filterScope>Queue</filterScope>
+        <label>TORCHx Post Launch Queue</label>
+        <queue>TORCHx_Post_Launch_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>MLS_Worksheet</fullName>
         <active>true</active>

@@ -275,4 +275,13 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>Marketing_Emails_Account_Marketo_Activity</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Marketing Emails</label>
+        <queue>Marketing_Emails</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
 </CustomObject>

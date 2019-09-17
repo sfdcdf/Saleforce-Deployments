@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" showHeader="false" sidebar="false" docType="html-5.0">
+<apex:outputText value="{!Opportunity.Account}" rendered="false"/>
+
+<c:Local_Time_Component SObj="{!Opportunity}"/>
+
+</apex:page>

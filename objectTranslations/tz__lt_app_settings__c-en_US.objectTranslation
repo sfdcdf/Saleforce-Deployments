@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enable this option if you want to show time zone abbreviation next to the local time (PST, EST etc). --></help>
+        <label><!-- Time Zone Short Name --></label>
+        <name>tz__Abbreviation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated account fields (Country, State, City, Phone, PostalCode). --></help>
+        <label><!-- Account Fields --></label>
+        <name>tz__Account_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Filter --></label>
+        <name>tz__Account_Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated values for Account Trigger (Normal,Batch job,Scheduled job).
+Example: true,false,false --></help>
+        <label><!-- Account Triggers --></label>
+        <name>tz__Account_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated values for Activity Trigger (Normal,Batch job,Scheduled job).
+Example: true,false,false --></help>
+        <label><!-- Activity Triggers --></label>
+        <name>tz__Activity_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- Africa DST --></label>
+        <name>tz__Africa_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- Asia DST Start Batch --></label>
+        <name>tz__Asia_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- Asia DST --></label>
+        <name>tz__Asia_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records to be processed by a batch job. --></help>
+        <label><!-- Batch Size --></label>
+        <name>tz__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated values for Case Trigger (Normal,Batch job,Scheduled job).
+Example: true,false,false --></help>
+        <label><!-- Case Triggers --></label>
+        <name>tz__Case_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated contact fields (Country, State, City, Phone, PostalCode). --></help>
+        <label><!-- Contact Fields --></label>
+        <name>tz__Contact_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Filter --></label>
+        <name>tz__Contact_Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated values for Contact Trigger (Normal,Batch job,Scheduled job).
+Example: true,false,false --></help>
+        <label><!-- Contact Triggers --></label>
+        <name>tz__Contact_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- The App will utilize this country for all records where the country/phone information is missing. --></help>
+        <label><!-- Default Country --></label>
+        <name>tz__Default_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- The App will utilize this phone code for all phone numbers where the country phone code (+1, +44 etc..) is missing. --></help>
+        <label><!-- Default Country Phone Code --></label>
+        <name>tz__Default_Phone_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable the checkbox if you want the App to automatically update records when DST settings change for a region (Recommended).
+
+If disabled, you are responsible to manually update records whenever a region goes in/out of DST. --></help>
+        <label><!-- Enable DST Batch Updates --></label>
+        <name>tz__Enable_Batch_Updates__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- Europe DST Start Batch --></label>
+        <name>tz__Europe_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- Europe DST --></label>
+        <name>tz__Europe_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- This value indicates how frequently you want to update the time shown by the Local Time button.
+A lower value will update the time value more frequently but might consume more browser resources than a higher frequency value. --></help>
+        <label><!-- Frequency (Seconds) --></label>
+        <name>tz__Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time display format for the Local Time gadget, Find Local Time button, and Lightning Component. --></help>
+        <label><!-- Local Time Gadget Time Format --></label>
+        <name>tz__Gadget_Time_Format__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- Israel DST Start Batch --></label>
+        <name>tz__Israel_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- Israel DST --></label>
+        <name>tz__Israel_DST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Start Time --></label>
+        <name>tz__Job_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated lead fields (Country, State, City, Phone, PostalCode). --></help>
+        <label><!-- Lead Fields --></label>
+        <name>tz__Lead_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Filter --></label>
+        <name>tz__Lead_Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated values for Lead Trigger (Normal,Batch job,Scheduled job).
+Example: true,false,false --></help>
+        <label><!-- Lead Triggers --></label>
+        <name>tz__Lead_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records to be processed by the manual mass update batch job. --></help>
+        <label><!-- Manual Batch Size --></label>
+        <name>tz__Manual_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- NA DST Start Batch --></label>
+        <name>tz__NA_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- NA DST --></label>
+        <name>tz__NA_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- NZ DST Start Batch --></label>
+        <name>tz__NZ_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- NZ DST --></label>
+        <name>tz__NZ_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- Oceania DST Start Batch --></label>
+        <name>tz__Oceania_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- OCEANIA DST --></label>
+        <name>tz__Oceania_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated person account fields (Country, State, City, Phone). --></help>
+        <label><!-- Person Account Fields --></label>
+        <name>tz__Person_Account_Fields__c</name>
+    </fields>
+    <fields>
+        <help><!-- By default the App checks first the address fields and then the phone number to compute Local Time.
+
+Enable the checkbox to reverse this order. --></help>
+        <label><!-- Phone First? --></label>
+        <name>tz__Phone_First__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time. --></help>
+        <label><!-- SA DST Start Batch --></label>
+        <name>tz__SA_DST_Start_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn. --></help>
+        <label><!-- SA DST --></label>
+        <name>tz__SA_DST__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the Update DST Settings future method is running or not. --></help>
+        <label><!-- Update DST --></label>
+        <name>tz__Update_DST__c</name>
+    </fields>
+</CustomObjectTranslation>

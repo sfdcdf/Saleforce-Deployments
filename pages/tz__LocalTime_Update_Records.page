@@ -1,0 +1,88 @@
+<apex:page >
+<!--
+<apex:page controller="LocalTimeUpdateRecordsCtrl" standardStylesheets="true" showHeader="false" sidebar="false" tabStyle="Local_Time__tab">
+<apex:sectionHeader title="Local Time App" subtitle="Update Records"/>
+
+<script>
+function closeWindow() {
+    window.close();
+}
+</script>
+
+<style type="text/css">
+    table.tftable {
+        width:95%;
+        border-collapse: collapse;
+        border: none;
+        margin-left:1%;
+    }
+    table.tftable td {
+        padding: 5px 5px 5px 5px;
+        border-collapse: collapse;
+        border: none;
+    }
+</style>
+
+<apex:pageMessages />
+
+<apex:form rendered="{!NOT(bUpdate)}">
+    <apex:pageBlock id="pbQuery" mode="edit">
+        <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton action="{!updateRecords}" value="Update"/>
+            <apex:commandButton onclick="closeWindow();" value="Cancel"/>
+        </apex:pageBlockButtons>
+
+        <apex:pageBlockSection title="Information" columns="1">
+            <apex:outputText >
+            This tool allows you to update records of the selected standard object with missing timezone information.
+             Useful in updating old records or newly imported records.
+            </apex:outputText>
+        </apex:pageBlockSection>
+                    
+        <apex:pageBlockSection title="Step 1 - Select the object" columns="2">
+            <apex:outputLabel style="margin-left:5px;" value="Object "/>
+            <apex:selectList value="{!objSelected}" size="1">
+                <apex:selectOptions value="{!lstObjects}" />
+                <apex:actionSupport event="onchange" action="{!objectChanged}" reRender="pbQuery"/>
+            </apex:selectList>
+        </apex:pageBlockSection>
+
+        <apex:pageBlockSection title="Step 2 - Final SOQL Query. Modify the filter if needed to further restrict the number of records." columns="1">
+        </apex:pageBlockSection>
+        
+        <table class="tftable">           
+            <tr>
+                <td><apex:inputTextarea disabled="true" rows="1" cols="40" value="{!currentObj.sQuery}"/></td>
+                <td>WHERE</td>
+                <td><apex:inputTextarea rows="3" cols="40" value="{!currentObj.sFilter}"/></td>
+            </tr>
+            <tr>
+                <td colspan="3">NOTE: Use only Salesforce supported SOQL syntax to specify the filter conditions.</td>
+            </tr>
+        </table>
+
+        <apex:pageBlockSection title="Step 3 - Finish" columns="1">
+            <apex:outputText >
+                Click the <strong>Update</strong> button to start the batch update process.
+            </apex:outputText>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+
+<apex:form rendered="{!bUpdate}">
+    <apex:pageBlock mode="edit">
+        <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton onclick="closeWindow();" value="Close"/>
+        </apex:pageBlockButtons>
+    
+        <apex:pageBlockSection title="Success" columns="1" >
+            <apex:outputText >
+                A batch process is succesfully launched to update the records.
+                 You can monitor its progress from <strong>Administration Setup -> Monitoring -> Apex Jobs</strong>.
+            </apex:outputText>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+
+-->
+</apex:page>

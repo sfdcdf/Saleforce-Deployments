@@ -1,0 +1,23 @@
+<apex:page standardController="Account" extensions="ahaapp.AhaController" showHeader="false">
+  <h1>Logging in</h1>
+  
+  <script>  
+      Visualforce.remoting.Manager.invokeAction(
+          '{!$RemoteAction.AhaController.getPortalSettings}',
+          function (settings, event) {
+              var returnParams = location.search.match(/return_to=([^&]+)/);
+              var returnUrl = "";
+              
+              if (returnParams) {
+                  returnUrl = "&return_to=" + returnParams[1];
+              }
+          
+              window.location = settings.url + '/auth/jwt/callback?jwt=' +
+                  encodeURIComponent(settings.jwt) + 
+                  returnUrl;
+              return false;
+          }
+    );
+          
+  </script>
+</apex:page>

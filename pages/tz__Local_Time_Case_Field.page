@@ -1,0 +1,7 @@
+<apex:page standardController="Case" showHeader="false" sidebar="false" docType="html-5.0">
+<apex:outputText value="{!Case.Contact}" rendered="false"/>
+<apex:outputText value="{!Case.Account}" rendered="false"/>
+
+<c:Local_Time_Component SObj="{!Case}"/>
+
+</apex:page>

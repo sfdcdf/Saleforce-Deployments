@@ -11130,6 +11130,33 @@ false)</formula>
         </filters>
         <label>Subba - LH Cancellation Request</label>
     </listViews>
+    <listViews>
+        <fullName>LH_Auto_Support_Cancellation_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LH Auto Support</label>
+        <queue>LH_Auto_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Local_Pod_Queue_Cancellation_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Local Pod Queue</label>
+        <queue>Local_Pod_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Support_Cancellation_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Rogers Support</label>
+        <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>Cancellation_Request</fullName>
         <active>true</active>

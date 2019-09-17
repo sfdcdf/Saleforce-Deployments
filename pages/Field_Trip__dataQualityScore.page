@@ -1,0 +1,811 @@
+<apex:page standardController="Field_Trip__Object_Analysis__c" extensions="Field_Trip.dataQualityExtension" standardStylesheets="false" >
+
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/highcharts-more.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	</head>
+
+	<style>
+		.ringlead-color{
+			color: #ff4e00;
+		}
+		.title-label{
+			font-size: x-large;
+		}
+		.ringlead-button{
+			color: white !important;
+			background: #ff4e00;
+			font-size: 19px;
+            border-color: #ff4e00;
+            height: 45px;
+            width: 150px;
+            font-weight: normal;
+            border-radius: 10px;
+            cursor:pointer;
+		}
+		.ringlead-button:disabled{background: #ec611b;}
+		.ringlead-button-wb{
+            font-size: 19px;
+            color: #ff4e00;
+            background: none;
+            border-color: #ff4e00;
+            background-color: white;
+            height: 45px;
+            width: 150px;
+            border-radius: 10px;
+            font-weight: normal;
+            cursor:pointer;
+        }
+        .ringlead-button-wb:disabled{color: #802800;border-color: #802800;}
+        .close-button{
+        	font-size: 25px;
+        	color: #ff4e00;
+        	background: none;
+            border-color: #ff4e00;
+            background-color: white;
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            font-weight: normal;
+            cursor:pointer;
+        }
+		.button-link {
+			background-color: transparent;
+			background: none !important;
+			color: blue;
+    		border: none;
+    		cursor: pointer;
+		}
+		.button-link:hover {
+			color: blue;
+			text-decoration: underline;
+		}
+		.total-label{
+			font-size: x-large;
+		}
+		.chart-div{
+			box-shadow: 0px 0px 1px 1px #cacaca;
+			height: 330px;
+			border-radius: 5px;
+		}
+		.grey-div{
+			position: absolute;
+    		height: 100%;
+    		top: 0px;
+    		left: 15px;
+    		background-color: gray;
+    		opacity: 0.5;
+    		filter: alpha(opacity=50);
+    		opacity: 0.5;
+    		-moz-opacity: 0.50;
+    		width: calc(100% - 30px);
+		}
+		.new-field-trip-div{
+			position: absolute;
+    		top: calc(100%/2.3);
+    		width: calc(100% - 30px);
+		}
+		.detail-table-div{
+			height: 440px;
+    		overflow-y: auto;
+    		/*padding-right: 0px;
+    		padding-left: 0px;*/
+    		box-shadow: 0px 0px 2px 2px #cacaca;
+    		border-radius: 10px;
+		}
+		.customize-table-div{
+			height: 490px;
+    		overflow-y: auto;
+    		padding-right: 0px;
+    		padding-left: 0px;
+		}
+		.green-color{color: green;}
+		.red-color{color: red;}
+		.table-footer{
+			text-align: left;
+		}
+		.alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+        }
+        .alert.success {background-color: #4CAF50;}
+        .alert.info {background-color: #2196F3;}
+        .alert.warning {background-color: #ff9800;}
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .closebtn:hover {color: black;}
+		.table {
+		    table-layout: fixed;
+		    word-wrap: break-word;
+		    overflow: hidden;
+		}
+		.table thead th{
+			word-wrap: break-word;
+		    overflow: hidden;
+		    white-space: unset;
+		}
+		.table-title{
+		    font-size: large;
+		    text-align: left !important;
+		    padding: 5px;
+		    padding-top: 10px;
+		}
+		.table-col-1{text-align: left !important;}
+		.table-col-2{}
+		.table-col-3{color:#0c7cba;}
+		.table.no-border tr td, .table.no-border tr th {border-width: 0;}
+		.page-footer-label{
+			font-size: x-large;
+			margin-bottom: 0px;
+		}
+		.table-fixed{
+  			width: 100%;
+		  	tbody{overflow-y:auto;width: 100%;}
+		  	thead,tbody,tr,td,th{display:block;}
+		 	tbody{td{float:left;}}
+  			thead {tr{th{float:left;}}}
+		}
+		.nav-link{
+			font-size: 22px;
+			color: #000000 !important;
+		}
+		.nav-tabs .nav-link.active {
+			font-size: 22px;
+			color: #1324ef !important;
+			border-color: #ffffff #ffffff #ffffff;
+		    background-color: transparent !important; 
+		    border-bottom: 4px solid #1324ef;
+		}
+		.nav-tabs .nav-link:hover{border: none;}
+		.nav-tabs .nav-link.active:hover{
+			border: none;
+			border-bottom: 4px solid #1324ef;
+		}
+		::-webkit-scrollbar {width: 0.6rem;}
+		::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		    border-radius: 10px;
+		}
+		::-webkit-scrollbar-thumb {
+		  background-color: #90969b;
+		  border-radius: 10px;
+		}
+	</style>
+
+	<apex:outputPanel >
+		<apex:form >
+			<div class="container-fluid" id="customize-page" style="display: none;">
+				<div class="row">
+					<div class="col-12">
+						<div class="alert" id="errorMessageDiv" style="display: none;" onclick="AnalyticProcess.closeErrorMessageBanner()">  
+                        	<label id="errorLabel" style="margin-bottom:0px;"><strong>Error.</strong></label>
+                        	<span class="closebtn">&times;</span>
+                    	</div>
+					</div>
+				</div>
+
+				<div class="row text-center">
+					<div class="col-6">
+						<ul class="nav nav-tabs" id="tabs" role="tablist">
+						  	<li class="nav-item">
+						    	<a class="nav-link active" id="lead-tab" data-toggle="tab" href="#customize_div_lead" role="tab" aria-controls="lead" aria-selected="true">Lead</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="contact-tab" data-toggle="tab" href="#customize_div_contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="account-tab" data-toggle="tab" href="#customize_div_account" role="tab" aria-controls="account" aria-selected="false">Account</a>
+						  	</li>
+						</ul>
+					</div>
+					<div class="col-6 text-right">
+						<button type="button" class="ringlead-button-wb" id="addButton" value="addbutton">Add Row</button>
+						<button type="button" class="ringlead-button-wb" id="saveButton" value="savebutton">Save</button>
+						<button type="button" class="ringlead-button-wb" id="cusomizeBackButton" value="backbutton" >DASHBOARD</button>
+						<button type="button" class="ringlead-button-wb" id="helpButton2" value="Help" style="float: right; width: 50px; font-size: 30px;">?</button>
+					</div>
+				</div>
+
+				<div class="tab-content" id="myTabContent">
+				  	<div class="tab-pane fade show active" id="customize_div_lead" role="tabpanel" aria-labelledby="lead-tab">
+				  		<div class="row">
+					  		<div class="col-12 customize-table-div text-center">
+						  		<table class="table table-hover table-fixed" id="customize_table_lead">
+						  			<thead><tr class="border-top border-bottom"></tr></thead>
+									<tbody></tbody>
+									<tfoot><tr></tr></tfoot>
+						  		</table>
+					  		</div>
+				  		</div>
+				  	</div>
+				  	
+				  	<div class="tab-pane fade" id="customize_div_contact" role="tabpanel" aria-labelledby="contact-tab">
+				  		<div class="row">
+					  		<div class="col-12 customize-table-div text-center">
+						  		<table class="table table-hover table-fixed" id="customize_table_contact">
+						  			<thead><tr class="border-top border-bottom"></tr></thead>
+									<tbody></tbody>
+									<tfoot><tr></tr></tfoot>
+						  		</table>
+						  	</div>
+					  	</div>
+				  	</div>
+				  	
+				  	<div class="tab-pane fade" id="customize_div_account" role="tabpanel" aria-labelledby="account-tab"> 
+				  		<div class="row">
+					  		<div class="col-12 customize-table-div text-center">
+						  		<table class="table table-hover table-fixed" id="customize_table_account">
+						  			<thead><tr class="border-top border-bottom"></tr></thead>
+									<tbody></tbody>
+									<tfoot><tr></tr></tfoot>
+						  		</table>
+						  	</div>
+					  	</div>
+				  	</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="analytic-page">
+
+	  			<div class="row text-center">
+	  				<div class="col-12 ">
+	  					<label class="title-label">YOUR DATA QUALITY SCORE</label>
+	  					<button type="button" class="ringlead-button-wb" id="helpButton" value="Help" style="float: right; width: 50px !important; font-size: 30px;">?</button>
+	  					<button type="button" class="ringlead-button-wb" style="float: right;" id="viewDetailButton" value="viewDetail" >VIEW DETAILS</button>
+	  					<button type="button" class="ringlead-button-wb" style="float: right;" id="customizeButton" value="customize">CUSTOMIZE</button>						
+					</div>
+	  			</div>
+
+	  			<div class="row text-center" style="margin-top: 15px;">
+
+	  				<div class="col-4">
+	  					<div class="row">
+						    <div class="col-12">
+						    	<div id="chart_lead" class="chart-div" ></div>
+						    	<div id="chart_grey_lead" class="grey-div" style="display: none;"></div>
+						    	<div id="chart_create_ft_lead" class="new-field-trip-div" style="display: none;"><button class="ringlead-button-wb" style=" width: 175px;">Create FieldTrip</button></div>
+						    </div>
+						</div>
+						<div class="row">
+							<div class="col-12 text-left">
+								<label id="chart_infolabel_lead"></label>
+								<button id="reanalyze_lead" class="button-link" style="display: none;">REANALYZE</button>	
+							</div>
+						</div>
+	  				</div>
+
+	  				<div class="col-4">
+	  					<div class="row">
+						    <div class="col-12 ">
+						    	<div id="chart_contact" class="chart-div"></div>
+						    	<div id="chart_grey_contact" class="grey-div" style="display: none;"></div>
+						    	<div id="chart_create_ft_contact" class="new-field-trip-div" style="display: none;"><button class="ringlead-button-wb" style=" width: 175px;">Create FieldTrip</button></div>
+						    </div>
+						</div>
+						<div class="row">
+							<div class="col-12 text-left">
+								<label id="chart_infolabel_contact"></label>
+								<button id="reanalyze_contact" class="button-link" style="display: none">REANALYZE</button>
+							</div>
+						</div>
+	  				</div>
+
+	  				<div class="col-4">
+	  					<div class="row">
+						    <div class="col-12">
+						    	<div id="chart_account" class="chart-div" ></div>
+						    	<div id="chart_grey_account" class="grey-div" style="display: none;"></div>
+						    	<div id="chart_create_ft_account" class="new-field-trip-div" style="display: none;"><button class="ringlead-button-wb" style="width: 175px;">Create FieldTrip</button></div>
+						    </div>						    
+						</div>
+						<div class="row">
+							<div class="col-12 text-left">
+								<label id="chart_infolabel_account"></label>
+								<button id="reanalyze_account" class="button-link" style="display: none">REANALYZE</button>
+							</div>							
+						</div>
+	  				</div>
+	  			</div>
+
+	  			<div class="row text-center" style="padding-top: 7px;">
+	  				<div class="col-10 text-left">
+	  					<label class="page-footer-label"><span class="ringlead-color">IMPROVE YOUR OVERALL DATA QUALITY!</span><br/>
+	  					RingLead can Clean, Normalize and Enrich your Data.</label>
+					</div>
+					<div class="col-2 text-right">
+						<button type="button" class="ringlead-button-wb" id="contactButton" value="contactbutton" >ENRICH NOW</button>
+					</div>
+					<div class="col-12 text-left">
+	  					<p>
+	  						*Data score is based upon the last FieldTrip scan on Lead, Contact and Account object. REANALYZE the FieldTrip on Lead, Contact and Account object to update the current data score.
+	  					</p>
+	  				</div>
+	  			</div>
+	  		</div>
+
+	  		<div class="container-fluid" id="detail-page" style="display: none;">
+	  			<div class="row text-center">
+	  				<div class="col-12">
+	  					<label class="title-label">ESTIMATE OF RINGLEAD ENRICHMENT BY FIELDS</label>
+	  					<button type="button" class="ringlead-button-wb" id="helpButton1" value="Help" style="float: right; width: 50px !important; font-size: 30px;">?</button>
+	  					<button type="button" class="ringlead-button-wb" id="detailBackButton" value="backbutton" style="float: right;">DASHBOARD</button>
+	  					<button type="button" class="ringlead-button-wb" style="float: right;" id="detailCustomizeButton" value="customize">CUSTOMIZE</button>
+	  				</div>
+	  			</div>
+	  			<div class="row text-center" style="padding-top: 15px;">
+	  				<div class="col-4">
+	  					<div class="col-12 detail-table-div">
+	  						<label class="table-title ringlead-color">Lead Enrichment</label>
+		  					<table class="table table-striped no-border table-fixed" id="detail_table_lead">
+		  						<thead><tr class="border-top border-bottom"></tr></thead>
+								<tbody></tbody>
+		  					</table>
+	  					</div>
+	  				</div>
+	  				<div class="col-4">
+	  					<div class="col-12 detail-table-div">
+	  						<label class="table-title ringlead-color">Contact Enrichment</label>
+		  					<table class="table table-striped no-border table-fixed" id="detail_table_contact">
+		  						<thead><tr class="border-top border-bottom"></tr></thead>
+								<tbody></tbody>
+		  					</table>
+	  					</div>
+	  				</div>
+	  				<div class="col-4">
+	  					<div class="col-12 detail-table-div">
+	  						<label class="table-title ringlead-color">Account Enrichment</label>
+		  					<table class="table table-striped no-border table-fixed" id="detail_table_account">
+		  						<thead><tr class="border-top border-bottom"></tr></thead>
+								<tbody></tbody>
+		  					</table>
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="row text-center">
+	  				<div class="col-12 text-left">
+	  					<p>*Enrichment estimate depends on multiple factors of data. Contact us to find more about it. We can <b>VERIFY</b>, <b>UPDATE</b>, and <b>ENRICH</b> your data.</p>
+	  				</div>
+	  			</div>
+	  		</div>
+		</apex:form>
+  	</apex:outputPanel>
+
+  	<script> 
+
+    var AnalyticProcess = {
+    	selectedObj: 'lead',
+    	maxFieldAllowed: 20,
+    	currentRecordId: '',
+    	healthForObjects: ['lead','contact','account'],
+    	chartData: null,
+    	customizeData: null,
+    	idTemplate: {
+    		chartDiv: 'chart_',
+    		chartInfoLabel: 'chart_infolabel_',
+    		chartBackTable: 'chart_table_',
+    		customizeTabDiv: 'customize_div_',
+    		customizetable: 'customize_table_',
+    		objFieldSelect: 'fieldselect',
+    		objFiledVal: 'fieldval',
+    		detailtable: 'detail_table_',
+    		totalPercent: 'totalPercVal_',
+    		reanalyzeButton: 'reanalyze_',
+    		greyChart: 'chart_grey_',
+    		chartNewFTDiv: 'chart_create_ft_'
+    	},
+
+    	init: function(){    		
+    		AnalyticProcess.assignHandlers();
+    		Field_Trip.dataQualityExtension.getHealthScore(AnalyticProcess.healthForObjects,AnalyticProcess.getHealthScoreResHandler);
+    		AnalyticProcess.buildTableHeaders();
+    	},
+
+    	buildTableHeaders: function(){
+    		//customize table header set
+    		for(i=0;i<AnalyticProcess.healthForObjects.length;i++){
+    			var id = AnalyticProcess.idTemplate['customizetable'] + AnalyticProcess.healthForObjects[i];
+    			$('#'+id+' >thead tr').append('<th class="w-50">FIELD NAME</th>');
+    			$('#'+id+' >thead tr').append('<th class="w-25">FIELD WEIGHT</th>');
+    			$('#'+id+' >thead tr').append('<th class="w-25"></th>');
+
+    			// add footer
+    			$('#'+id+' >tfoot tr').append('<td></td>');
+    			$('#'+id+' >tfoot tr').append('<td><label id="totalPerLabel" class="total-label">Total: <span id="'+AnalyticProcess.idTemplate['totalPercent'] + AnalyticProcess.healthForObjects[i]+'" class="red-color">0</span></label></td>');
+    			$('#'+id+' >tfoot tr').append('<td></td>');
+    		}
+
+    		//detail table header set
+    		for(i=0;i<AnalyticProcess.healthForObjects.length;i++){
+    			var id = AnalyticProcess.idTemplate['detailtable'] + AnalyticProcess.healthForObjects[i];
+    			$('#'+id+' >thead tr').append('<th class="w-40 table-col-1">FIELD</th>');
+    			$('#'+id+' >thead tr').append('<th class="w-35 table-col-2">CURRENT</th>');
+    			$('#'+id+' >thead tr').append('<th class="w-25 table-col-3">AFTER</th>');
+    		}
+    	},
+
+    	loadChart: function(id,score,title){
+			Highcharts.chart(id, {
+			    chart: {
+			        type: 'gauge',
+			        height: 400
+			    },
+			    exporting: { enabled: false },
+			    title: {
+        			text: title,
+        			style: {
+        				fontSize:'30px',
+        			}
+    			},
+    			credits: {
+			        enabled: false
+			    },
+			    pane: {
+			        startAngle: -90,
+			        endAngle: 90,
+			        shape: 'arc',
+			        size: '100%',
+			        center: ['50%', '55%'],
+			        background: {
+			          backgroundColor: '#aaaaaa',
+			          innerRadius: '95%',
+			          outerRadius: '100%',
+			          shape: 'arc',
+			        }
+			    },
+			    yAxis: {
+			        min: 0,
+			        max: 100,
+			        tickLength: 40,
+			        tickInterval: 20,
+			        minorTickLength:20,
+			        minorTickInterval: 10,
+			        labels: {
+			        	distance: -50
+			        },
+			        plotBands: [{
+			            from: 0,
+			            to: 60,
+			            // color: '#ec611b',
+			            color: '#ff4e00',
+			            outerRadius: '100%',
+			            thickness: 40
+			        },
+			        {
+			            from: 60,
+			            to: 90,
+			            color: '#065d8e',
+			            outerRadius: '100%',
+			            thickness: 40
+			        },
+			        {
+			            from: 90,
+			            to: 100,
+			            color: '#e5e5e5',
+			            outerRadius: '100%',
+			            thickness: 40
+			        }]
+			    },
+			    series: [{
+			    	name: 'Data Score',
+			        data: [score],
+			        dataLabels: {
+	                    enabled: true,
+	                    yHigh: 20,
+	                    yLow: -20,
+	                    style: {
+	                        fontSize: '20px'
+	                    }
+	                }
+			    }]
+			});
+    	},
+
+    	// when customize called, this method creates rows and puts value. 
+    	addTableRows: function(id, datajson, objname,sffields){
+    		// console.log('addrow id: '+ id + ' data: '+datajson);
+    		var counter = 1;
+    		var selectid = AnalyticProcess.idTemplate['objFieldSelect'];
+    		var selvalid = AnalyticProcess.idTemplate['objFiledVal'];
+    		for(let obj in datajson){
+    			$('#'+id).append('<tr  id="trow'+objname+counter+'">'+ 
+	    			'<td> <select id="'+selectid+objname+counter+'" class="form-control" onchange="AnalyticProcess.totalPercValHandler(this)"></select></td>' + 
+	    			'<td><input class="form-control" type="number" min="0" max="100" id="'+selvalid+objname+counter+'" value="0" onchange="AnalyticProcess.totalPercValHandler(this)"/></td>'+
+	    			'<td><button type="button" class="close-button" id="deleteButton" value="deletebutton" onclick="AnalyticProcess.deleterowHandler(this)"><h2>&times;</h2></button></td>'+
+	    			'</tr>');
+    			
+    			// Add options
+    			objselect = $('#'+selectid+objname+counter);
+	    		for(j=0; j<sffields.length;j++ ){
+	    			var name = sffields[j];
+	    			objselect.append($("<option></option>").attr("value",name).text(name));
+	    		}
+
+	    		//Select the options
+	    		objselect.val(obj);
+	    		$("#"+selvalid+objname+counter).val(datajson[obj]);    			
+    			counter++;
+    		}
+    		AnalyticProcess.selectedObj = objname;
+    		AnalyticProcess.totalPercValHandler();
+    	},
+
+    	//Handlers
+    	addrowHandler: function(e){
+    		var objname = AnalyticProcess.selectedObj;
+    		var tablerows = $('#'+AnalyticProcess.idTemplate['customizetable']+objname+' > tbody > tr').length;
+    		var counter = tablerows+1;
+    		var selectid = AnalyticProcess.idTemplate['objFieldSelect'];
+    		var selvalid = AnalyticProcess.idTemplate['objFiledVal'];
+    		var id = AnalyticProcess.idTemplate['customizetable'] + objname;
+    		if (tablerows < AnalyticProcess.maxFieldAllowed){
+    			AnalyticProcess.rowCounter++; 
+    			$('#'+id).append('<tr  id="trow'+objname+counter+'">'+ 
+	    			'<td> <select  id="'+selectid+objname+counter+'" class="form-control " onchange="AnalyticProcess.totalPercValHandler(this)"></select></td>' + 
+	    			'<td><input class="form-control" type="number" min="0" max="100" id="'+selvalid+objname+counter+'" onchange="AnalyticProcess.totalPercValHandler(this)" value="0"/></td>'+
+	    			'<td><button type="button" class="close-button" id="deleteButton" value="deletebutton" onclick="AnalyticProcess.deleterowHandler(this)"><h2>&times;</h2></button></td>'+
+	    			'</tr>');
+    			
+    			// Add options
+    			objselect = $('#'+selectid+objname+counter);
+    			var sffields = AnalyticProcess.customizeData[objname]['salesforcefields'];
+	    		for(j=0; j<sffields.length;j++ ){
+	    			var name = sffields[j];
+	    			objselect.append($("<option></option>").attr("value",name).text(name));
+	    		}
+  				AnalyticProcess.totalPercValHandler();
+    		}
+    	},
+
+    	deleterowHandler: function(e){
+    		var tablerows = $('#'+AnalyticProcess.idTemplate['customizetable']+AnalyticProcess.selectedObj+' > tbody > tr').length;
+    		if(tablerows > 1){
+    			$(e.parentNode.parentNode).remove();
+        		AnalyticProcess.totalPercValHandler();
+    		}
+    	},
+
+    	totalPercValHandler: function(e){
+    		var enableSaveButton = true;
+    		for(i=0; i<AnalyticProcess.healthForObjects.length;i++){
+	    		var totalObjFieldPerc = 0;
+	    		var objname = AnalyticProcess.healthForObjects[i];
+	    		$('#'+AnalyticProcess.idTemplate['customizetable']+objname+' > tbody > tr').each(function (rowIndex, r) {
+			        $(this).find('td').each(function (colIndex, c) {
+			        	if(colIndex == 1){
+			            	// console.log('val is '+c.textContent);
+			            	// console.log('val is '+c.children[0].valueAsNumber);
+			            	totalObjFieldPerc += c.children[0].valueAsNumber;
+			        	}
+			        });
+			    });
+			    if(!Number.isInteger(totalObjFieldPerc)){
+			    	enableSaveButton = enableSaveButton && false;
+			    	$('#errorLabel').empty().append("Field Weight for each field should be a whole number.");
+			    	$('#errorMessageDiv').show();
+			    	setTimeout(AnalyticProcess.closeErrorMessageBanner, 3000);
+			    }
+	    		var totalLabelId = AnalyticProcess.idTemplate['totalPercent']+objname;
+	    		$('#'+totalLabelId).empty().append(totalObjFieldPerc);
+	    		if (totalObjFieldPerc != 100){
+	    			enableSaveButton = enableSaveButton && false;                
+	    			$('#'+totalLabelId).removeClass('red-color').removeClass('green-color').addClass('red-color');
+	    		}else{
+	    			enableSaveButton = enableSaveButton && true;
+	    			$('#'+totalLabelId).removeClass('red-color').removeClass('green-color').addClass('green-color');
+	    		}
+    		}
+    		if(enableSaveButton){
+    			$('#saveButton').prop('disabled',false);
+    		}else{
+    			$('#saveButton').prop('disabled',true);
+    		}
+    	},
+
+    	saveButtonHandler: function(e){
+    		var data = [];
+    		for(i=0; i<AnalyticProcess.healthForObjects.length;i++){
+    			var objname = AnalyticProcess.healthForObjects[i];
+    			var fieldData = {};
+    			var name = '';
+    			$('#'+AnalyticProcess.idTemplate['customizetable']+objname+' > tbody > tr').each(function (rowIndex, r) {
+			        $(this).find('td').each(function (colIndex, c) {
+			        	if(colIndex ==0){
+			        		// console.log('val is '+c.children[0].value);
+			        		name=c.children[0].value;
+			        	}
+			        	if(colIndex == 1){
+			            	// console.log('val is '+c.textContent);
+			            	// console.log('val is '+c.children[0].valueAsNumber);
+			            	if(name in fieldData){
+			            		fieldData[name] = (Number(fieldData[name]) + Number(c.children[0].value)).toString();
+			            	}else{
+			            		fieldData[name] = c.children[0].value;
+			            	}
+			        	}
+			        });
+		    	});
+		    	data.push(JSON.stringify(fieldData));
+    		}
+    		// console.log('obj '+ data);
+    		Field_Trip.dataQualityExtension.saveFieldData(data,AnalyticProcess.healthForObjects,AnalyticProcess.saveDataResHandler);
+    	},
+
+    	customizeButtonHandler: function(e){
+    		while(AnalyticProcess.rowCounter>0){AnalyticProcess.deleterowHandler();}
+    		$('#analytic-page').hide();
+    		$('#detail-page').hide();
+    		$('#customize-page').show();
+    		if(AnalyticProcess.customizeData == null){
+    			Field_Trip.dataQualityExtension.getData(AnalyticProcess.healthForObjects, AnalyticProcess.customizeResHandler);
+    		}
+    	},
+
+    	reanalyzeButtonHandler: function(e){
+    		var obj = e.target.id.split('_')[1];
+    		var id = AnalyticProcess.chartData[obj]['analyzeId'];
+    		// console.log('reanalyze clicked on '+obj+' id: '+id);
+    		var baselink = document.URL.substring(0,document.URL.lastIndexOf('/'));
+    		baselink = baselink.substring(0,baselink.lastIndexOf('/'));
+    		baselink = baselink + '/apex/analyzeLaunch?id=' + id;
+    		// console.log('URLis '+baselink);
+    		window.open(baselink,'_top');
+    	},
+
+    	viewDetailButtonHandler: function(e){
+    		$('#customize-page').hide();
+    		$('#analytic-page').hide();
+    		$('#detail-page').show();
+    	},
+
+    	backButtonHandler: function(e){
+    		$('#customize-page').hide();
+    		$('#detail-page').hide();
+    		$('#analytic-page').show();
+    	},
+
+    	contactButtonHandler: function(e){
+    		var baselink = 'https://www.ringlead.com/dataquality?';
+    		for(i=0;i<AnalyticProcess.healthForObjects.length;i++){
+    			var obj = AnalyticProcess.healthForObjects[i];
+    			baselink = baselink + obj + '=';
+    			baselink = baselink + AnalyticProcess.chartData[obj]['score'] + '&';
+    		}
+    		// baselink = baselink.substring(0, baselink.length - 1);
+    		baselink = baselink + 'firstname={!URLENCODE($User.FirstName)}&'+
+    			'lastname={!URLENCODE($User.LastName)}&'+
+    			'email={!URLENCODE($User.Email)}&'+
+    			'company={!URLENCODE($Organization.Name)}&'+
+    			'phone={!URLENCODE($User.phone)}&'+
+    			'product=Field+Trip';
+    		// window.open('https://www.ringlead.com/contact-us/','_blank');
+    		window.open(baselink,'_blank');
+    	},
+
+    	helpButtonHandler: function(e){
+    		var baselink = 'https://ringlead.atlassian.net/wiki/spaces/DUG/pages/532676611/RingLead+Field+Trip';
+    		window.open(baselink,'_blank');
+    	},
+
+    	createFTButtonHandler: function(e){
+    		var baselink = '/apex/analyzeCreate';
+    		window.open(baselink,'_blank');
+    	},
+
+    	// Response Handlers
+    	getHealthScoreResHandler: function(result,event){
+    		if(event.status){
+    			AnalyticProcess.chartData = JSON.parse(result.replace(/(&quot\;)/g,"\""));
+    			// console.log('getLastScore response was successfull.' + JSON.stringify(AnalyticProcess.chartData, null, 2));
+    			for(let obj in AnalyticProcess.chartData){
+	    			var id = AnalyticProcess.idTemplate['chartDiv'] + obj;
+	    			var score = AnalyticProcess.chartData[obj]['score'];
+	    			var title = obj.charAt(0).toUpperCase() + obj.slice(1);
+	    			var rscore = 0;
+	    			var len=0;
+
+	    			
+
+	    			// console.log('div id '+id+' score '+score+' title '+ title);
+	    			AnalyticProcess.loadChart(id,score,title);
+	    			if(score<=0){
+	    				$('#'+AnalyticProcess.idTemplate['chartInfoLabel']+obj).empty().append('Create and run the FieldTrip on '+title +' to get Data Score.');
+	    				$('#'+AnalyticProcess.idTemplate['greyChart']+obj).show();
+	    				$('#'+AnalyticProcess.idTemplate['chartNewFTDiv']+obj).show();
+	    				$('#'+id).css('opacity','0.6');
+	    			}else{
+	    				// Show last analyze date
+	    				$('#'+AnalyticProcess.idTemplate['chartInfoLabel']+obj).empty().append('Last Analyzed: '+AnalyticProcess.chartData[obj]['lastanalyzed'].substring(0, 20));
+
+	    				// show reanalyze button
+	    				$('#'+AnalyticProcess.idTemplate['reanalyzeButton']+obj).show();
+	    				$('#'+AnalyticProcess.idTemplate['reanalyzeButton']+obj).on('click',AnalyticProcess.reanalyzeButtonHandler);
+
+	    				//populate table
+	    				id = AnalyticProcess.idTemplate['detailtable'] + obj;
+	    				len = AnalyticProcess.chartData[obj]['fields'].length;
+	    				for(i=0; i<len;i++ ){
+	    					var f = AnalyticProcess.chartData[obj]['fields'][i];
+	    					rscore += f['ringlead'];
+	    					$('#'+id).append('<tr> <td class="table-col-1">'+f['name']+'</td><td class="table-col-2">'+f['current'] +'%</td><td class="table-col-3">'+f['ringlead'] +'%*</td></tr>');
+	    				}
+	    				$('#'+id).append('<tr class="border-top border-secondary"> <td class="table-col-1">Total Data Score</td><td class="table-col-2">'+score+'%</td><td class="table-col-3">'+Math.round(rscore/len)+'%*</td></tr>');
+	    			}
+	    		}
+    		}else{
+    			console.log('getLastScore response was unsucessfull.');
+
+    		}    		
+    	},
+
+    	saveDataResHandler: function(result,event){
+    		if(event.status){
+    			// console.log('save response was successfull.');
+    			window.location.reload(true);
+    		}else{
+    			console.log('save response was unsucessfull.');
+    		}
+    	},
+
+    	customizeResHandler: function(result,event){
+    		if(event.status){
+    			var jsonstring = result.replace(/(\\\&quot\;)|(\&quot\;)/g,"\"").replace(/(\"\{)/g,'{').replace(/(\}\")/g,'}').replace(/(\&#39;)/g,'\'');
+    			// console.log('response was successfull.'+jsonstring);
+    			var data = JSON.parse(jsonstring);
+    			AnalyticProcess.customizeData = data;
+    			for (var i = 0; i < AnalyticProcess.healthForObjects.length; i++) {
+    				// loop through object. Add row and options
+    				var obj = AnalyticProcess.healthForObjects[i]
+    				var id = AnalyticProcess.idTemplate['customizetable'] + obj;
+    				AnalyticProcess.addTableRows(id,data[obj]['data'],obj,data[obj]['salesforcefields']);
+    			}
+    			AnalyticProcess.selectedObj = 'lead';
+
+    		}else{
+    			console.log('testrest was unsucessfull.');
+    		}
+    	},
+
+        closeErrorMessageBanner: function(){
+            setTimeout(function(){ $("#errorMessageDiv").hide(); }, 600);
+        },
+
+    	tabChangeHandler: function(e){
+    		AnalyticProcess.selectedObj= $("ul#tabs a.active").attr('id').split('-')[0];
+    	},
+
+    	assignHandlers: function(){
+    		$('#customizeButton').on('click',AnalyticProcess.customizeButtonHandler);
+    		$('#detailCustomizeButton').on('click',AnalyticProcess.customizeButtonHandler);
+    		$('#addButton').on('click',AnalyticProcess.addrowHandler);
+    		$('#contactButton').on('click',AnalyticProcess.contactButtonHandler);
+    		$('#viewDetailButton').on('click',AnalyticProcess.viewDetailButtonHandler);
+    		$('#cusomizeBackButton').on('click',AnalyticProcess.backButtonHandler);
+    		$('#detailBackButton').on('click',AnalyticProcess.backButtonHandler);
+    		$('#saveButton').on('click',AnalyticProcess.saveButtonHandler);
+    		$('.nav-tabs a').on('shown.bs.tab',AnalyticProcess.tabChangeHandler);
+    		$('#helpButton').on('click',AnalyticProcess.helpButtonHandler);
+    		$('#helpButton1').on('click',AnalyticProcess.helpButtonHandler);
+    		$('#helpButton2').on('click',AnalyticProcess.helpButtonHandler);
+    		$('#chart_create_ft_lead').on('click',AnalyticProcess.createFTButtonHandler);
+    		$('#chart_create_ft_contact').on('click',AnalyticProcess.createFTButtonHandler);
+    		$('#chart_create_ft_account').on('click',AnalyticProcess.createFTButtonHandler);
+    	}
+    };
+    AnalyticProcess.init();
+  	</script>        
+</apex:page>

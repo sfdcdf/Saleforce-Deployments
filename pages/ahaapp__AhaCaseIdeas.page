@@ -1,0 +1,265 @@
+<apex:page standardController="Case" tabStyle="Case" extensions="ahaapp.AhaController" showHeader="false">
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"/>
+    <script>
+        jQuery.noConflict();
+    </script>
+    <style>
+        .aha-idea-list input.btn {
+            padding: 1px 2px;
+            opacity: 0;
+        }
+        .aha-idea-list tr:hover input.btn {
+            opacity: 1;
+        }
+        .aha-idea-list table, .aha-idea-list tbody {
+            display: block;
+        }
+        .aha-idea-list tbody {
+            height: 140px;
+            overflow: auto;
+        }
+        .aha-btn-container {
+            width: 100%;
+            vertical-spacing: 0;
+        }
+        .aha-btn-container input.btn {
+            padding: 2px 3px;
+        }
+        .aha-btn-container .aha-title {
+            vertical-align: middle;
+            width: 30%;
+            margin: 0;
+            font-size: 91%;
+        }
+        .aha-btn-container .aha-title h3 {
+            color: #000;
+            font-size: 1.3em;
+        }
+        .aha-btn-container .aha-buttons {
+            vertical-align: middle;
+            padding: 5px 12px;
+        }
+        .aha-btn-container .aha-help {
+            text-align: right;
+            padding-top: 1px;
+            padding-right: 5px;
+            padding-bottom: 1px;
+            padding-left: 1px;
+            vertical-align: middle;
+        }
+        .aha-btn-container .aha-help a {    
+            color: #015ba7;
+            text-decoration: none;
+            font-size: 11px;
+        }
+        .aha-btn-container .aha-help .linkSpan {
+            margin-right: 0.4em;
+        }
+        .aha-btn-container .aha-help .helpIcon {
+            background: transparent url(/img/alohaSkin/help_grey.png) no-repeat;
+        }
+        .actionColumn {
+            width: 60px;
+            min-width: 60px;
+        }
+        .ideaIdColumn {
+            width: 100px;
+            min-width: 100px;
+        }
+        .ideaNameColumn {
+            width: 100%;
+            min-width: 100%;
+        }
+        .ideaStatusColumn {
+            width: 150px;
+            min-width: 150px;
+        }
+        .ideaCreatedByColumn {
+            width: 150px;
+            min-width: 150px;
+        }
+    </style>
+
+    <table class="aha-btn-container">
+        <tr>
+            <td class="aha-title">
+                <h3>Linked Ideas</h3>
+            </td>
+            <td class="aha-buttons">
+                <input type="button" value="Request an idea" onClick="prepareIdeasForm();" class="btn" />   
+                <input type="button" value="Browse all ideas" onClick="showAllIdeas();" class="btn" />
+            </td>
+            <td class="aha-help">
+                <a href="http://support.aha.io/hc/en-us/articles/203837059" target="_blank">
+                    <span class="linkSpan">Aha! Help</span>
+                    <img src="/s.gif" alt="Products Help (New Window)" class="helpIcon" title="Aha! Help (New Window)" />
+               </a>
+            </td>
+        </tr>
+    </table> 
+
+    <apex:outputPanel styleClass="aha-idea-list bRelatedList" layout="block">
+        <apex:outputPanel styleClass="pbBody" layout="block">
+            <apex:dataTable value="{!Case.AhaIdeaLinks__r}" var="item" styleClass="list" headerClass="headerRow" rowClasses="dataRow">
+                <apex:column headerClass="actionColumn" styleClass="actionColumn">
+                    <apex:facet name="header">Actions</apex:facet>
+                    <apex:form >
+                        <apex:commandLink onClick="showIdea('{!item.ahaapp__AhaIdea__r.ahaapp__ReferenceNum__c}'); return false;" styleClass="actionLink" value="View" />&nbsp;|&nbsp;
+                        <apex:commandLink onClick="unlinkIdea('{!item.ahaapp__AhaIdea__r.ahaapp__ReferenceNum__c}'); return false;" styleClass="actionLink" value="Del" />
+                    </apex:form> 
+                </apex:column>
+
+                <apex:column headerClass="ideaIdColumn" styleClass="ideaIdColumn">
+                    <apex:facet name="header">Idea #</apex:facet>
+                    <apex:outputText value="{!item.AhaIdea__r.ahaapp__ReferenceNum__c}"/>
+                </apex:column>
+        
+                <apex:column headerClass="ideaNameColumn" styleClass="ideaNameColumn">
+                    <apex:facet name="header">Idea Name</apex:facet>
+                    <apex:outputLink value="#" onClick="showIdea('{!item.ahaapp__AhaIdea__r.ahaapp__ReferenceNum__c}'); return false;" target="_blank">{!item.ahaapp__AhaIdea__r.Name}</apex:outputLink>
+                </apex:column>
+                
+                <apex:column headerClass="ideaStatusColumn" styleClass="ideaStatusColumn">
+                    <apex:facet name="header">Status</apex:facet>
+                    <apex:outputText value="{!item.ahaapp__AhaIdea__r.ahaapp__Status__c}" />
+                </apex:column>
+                
+                <apex:column headerClass="ideaCreatedByColumn" styleClass="ideaCreatedByColumn">
+                    <apex:facet name="header">Linked By</apex:facet>
+                    <apex:outputLink value="/{!item.ahaapp__LinkedBy__c}" target="_top">{!item.LinkedBy__r.Name}</apex:outputLink>
+                </apex:column>
+    
+            </apex:dataTable> 
+        </apex:outputPanel>
+    </apex:outputPanel>
+
+    <script>
+        reloadPage = function() {
+            // We must reload the whole page, not just the iframe, to see the new records.
+            top.window.location.href = "/{!$Request.id}"
+        }
+    
+        unlinkIdea = function(referenceNum) {
+            // We need to open the window here to prevent popup blockers from suppressing it.
+            var ideasWindow = window.open('about:blank', '_blank');
+            
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.AhaController.getPortalSettings}',
+                function (settings, event) {
+                    var redirectData ={
+                        related_id: '{!Case.id}',
+                        related_type: 'Case'
+                    };
+                    var urlData = {
+                        jwt: settings.jwt,
+                        redirect_to: encodeURIComponent('/external/salesforce/endorsement/' + referenceNum + '/delete?' + jQuery.param(redirectData))
+                    };
+                    
+                    ideasWindow.location = settings.url + '/auth/jwt/callback?' + jQuery.param(urlData);
+                    // Detect when the window is closed.
+                    var pollTimer = setInterval(function() {
+                        var e, tokenUrl;
+                        if (ideasWindow == null) {
+                            clearInterval(pollTimer); 
+                            return;
+                        }
+                        if (ideasWindow.closed) {
+                            clearInterval(pollTimer);
+                            reloadPage()
+                            return;
+                        }
+                    }, 500);
+   
+                    return false;
+                }
+            );
+            return false;
+        }
+    
+        prepareIdeasForm = function() {
+            // We need to open the window here to prevent popup blockers from suppressing it.
+            var ideasWindow = window.open('about:blank', 'aha-ideas-window', 'width=940,height=650,titlebar=yes,location=yes,toolbar=yes,scrollbars=yes');
+
+            // Poll the timer here so we are in the same page context.
+            var pollTimer = setInterval(function() {
+                var e, tokenUrl;
+                if (ideasWindow == null) {
+                    clearInterval(pollTimer);
+                    return;
+                }
+                if (ideasWindow.closed) {
+                    console.log("Window closed");
+                    clearInterval(pollTimer);
+                    reloadPage()
+                    return;
+                }
+            }, 500);
+            
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.AhaController.getPortalSettings}',
+                function (result, event) {
+                    openIdeasForm(ideasWindow, result);
+                }
+            );
+            return false;
+        }
+        
+        openIdeasForm = function(ideasWindow, settings) {
+            var redirectData ={
+                user_id: '{!JSENCODE($User.Id)}',
+                account_name: '{!JSENCODE(Case.Account.name)}',
+                related_id: '{!Case.id}',
+                related_type: 'Case',
+                base_url: '{!SalesforceBaseUrl}'
+            };
+            var urlData = {
+                jwt: settings.jwt,
+                redirect_to: encodeURIComponent('/external/salesforce?' + jQuery.param(redirectData))
+            };
+            
+            ideasWindow.location = settings.url + '/auth/jwt/callback?' + jQuery.param(urlData);
+            
+            return false;
+        }
+     
+        showIdea = function(referenceNum) {
+            // We need to open the window here to prevent popup blockers from suppressing it.
+            var ideasWindow = window.open('about:blank', '_blank');
+        
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.AhaController.getPortalSettings}',
+                function (settings, event) {
+                    var urlData = {
+                        jwt: settings.jwt,
+                        redirect_to: encodeURIComponent('/ideas/' + referenceNum)
+                    };
+            
+                    ideasWindow.location = settings.url + '/auth/jwt/callback?' + jQuery.param(urlData);
+                    return false;
+                }
+            );
+            return false;
+        }
+       
+        showAllIdeas = function() {
+            // We need to open the window here to prevent popup blockers from suppressing it.
+            var ideasWindow = window.open('about:blank', '_blank');
+        
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.AhaController.getPortalSettings}',
+                function (settings, event) {
+                    var urlData = {
+                        jwt: settings.jwt,
+                        redirect_to: encodeURIComponent('/ideas')
+                    };
+            
+                    ideasWindow.location = settings.url + '/auth/jwt/callback?' + jQuery.param(urlData);
+                    return false;
+                }
+            );
+            return false;
+        }
+     
+    </script>
+
+</apex:page>

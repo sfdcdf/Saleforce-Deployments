@@ -4550,6 +4550,24 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>LHMA_Post_Launch_CS_Operations</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LHMA Post Launch</label>
+        <queue>LHMA_Post_Launch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Support_CS_Operations</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Rogers Support</label>
+        <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <recordTypes>
         <fullName>Administrative_Items</fullName>
         <active>true</active>
