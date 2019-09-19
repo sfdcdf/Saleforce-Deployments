@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>OFF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Secondary_Segments__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Dentist,Orthodontist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Lighthouse_Worksheets__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Backed Out Sale</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ANN: LH Backed Out and LIVE</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Lighthouse_Worksheets__r$CreatedDate</dateColumn>
+        <endDate>2018-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-04-18</startDate>
+    </timeFrameFilter>
+</Report>

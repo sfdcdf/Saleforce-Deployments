@@ -1070,10 +1070,6 @@
         <name>Bing_Project_Account__c</name>
     </fields>
     <fields>
-        <label><!-- Actions Taken – Bing Listing Notes --></label>
-        <name>Bing_Support_Notes__c</name>
-    </fields>
-    <fields>
         <label><!-- Bing White List Test --></label>
         <name>Bing_White_List__c</name>
     </fields>
@@ -2884,10 +2880,6 @@
         <name>Google_Security_Question__c</name>
     </fields>
     <fields>
-        <label><!-- Actions Taken - GMB Listing --></label>
-        <name>Google_Support_Notes__c</name>
-    </fields>
-    <fields>
         <label><!-- Google Support Resolved Issue --></label>
         <name>Google_Support_Resolved_Issue__c</name>
     </fields>
@@ -4405,19 +4397,6 @@
         <picklistValues>
             <masterLabel>No - Fix or Contact Maps Associate</masterLabel>
             <translation><!-- No - Fix or Contact Maps Associate --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- Use SeoMoz Open Site Explorer to compare competition ranking for terms against client’s domain. --></help>
-        <label><!-- Need More Links? --></label>
-        <name>Need_More_Links__c</name>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Yes</masterLabel>
@@ -6974,10 +6953,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Actions Taken - Yext/Citation Network --></label>
-        <name>Yext_Support_Notes__c</name>
-    </fields>
-    <fields>
         <label><!-- Yext Support Resolved Issue --></label>
         <name>Yext_Support_Resolved_Issue__c</name>
     </fields>
@@ -7034,6 +7009,35 @@
             <translation><!-- Yes --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- Actions Taken â€“ Bing Listing Notes --></label>
+        <name>Bing_Support_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actions Taken â€“ GMB Notes --></label>
+        <name>Google_Support_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use SeoMoz Open Site Explorer to compare competition ranking for terms against clientâ€™s domain. --></help>
+        <label><!-- Need More Links? --></label>
+        <name>Need_More_Links__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Actions Taken Yext/CitationNetwork Notes --></label>
+        <name>Yext_Support_Notes__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Organic Case</value>
@@ -7043,6 +7047,713 @@
         <value>Organic Cases</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Canada Maps Claiming</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Automated Email Schedule --></label>
+            <section>Automated Email Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Hotfrog.ca --></label>
+            <section>Hotfrog.ca</section>
+        </sections>
+        <sections>
+            <label><!-- IBegin.com --></label>
+            <section>IBegin.com</section>
+        </sections>
+        <sections>
+            <label><!-- Listing Build Information --></label>
+            <section>Listing Build Information</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+        <sections>
+            <label><!-- Ourbis.ca --></label>
+            <section>Ourbis.ca</section>
+        </sections>
+        <sections>
+            <label><!-- System Fields --></label>
+            <section>System Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Weblocal.ca --></label>
+            <section>Weblocal.ca</section>
+        </sections>
+        <sections>
+            <label><!-- Yellowpages.ca --></label>
+            <section>Yellowpages.ca</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Canada Maps Claiming IT Pro</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Hotfrog.ca --></label>
+            <section>Hotfrog.ca</section>
+        </sections>
+        <sections>
+            <label><!-- IBegin.com --></label>
+            <section>IBegin.com</section>
+        </sections>
+        <sections>
+            <label><!-- Listing Build Information --></label>
+            <section>Listing Build Information</section>
+        </sections>
+        <sections>
+            <label><!-- Ourbis.ca --></label>
+            <section>Ourbis.ca</section>
+        </sections>
+        <sections>
+            <label><!-- Weblocal.ca --></label>
+            <section>Weblocal.ca</section>
+        </sections>
+        <sections>
+            <label><!-- Yellowpages.ca --></label>
+            <section>Yellowpages.ca</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Deprecated MIC</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Google Listing Photo Update</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Photo Update --></label>
+            <section>Google Listing Photo Update</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Pro Maps Initial Claiming</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Automated Email Schedule --></label>
+            <section>Automated Email Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Citation Building (IYPs) - IT PRO --></label>
+            <section>Citation Building (IYPs) - IT PRO</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Support Claiming - Outbound Support --></label>
+            <section>Customer Support Claiming - Outbound Support</section>
+        </sections>
+        <sections>
+            <label><!-- GLocal Existing Listing Analysis - IT PRO / Outbound Support --></label>
+            <section>GLocal Existing Listing Analysis - IT PRO / Outbound Support</section>
+        </sections>
+        <sections>
+            <label><!-- Google &amp; Bing Optimization - IT PRO --></label>
+            <section>Google &amp; Bing Optimization - IT PRO</section>
+        </sections>
+        <sections>
+            <label><!-- Listing Build Information - IT PRO --></label>
+            <section>Listing Build Information - IT PRO</section>
+        </sections>
+        <sections>
+            <label><!-- MOps Listing Optimization - SDB Team --></label>
+            <section>MOps Listing Optimization - SDB Team</section>
+        </sections>
+        <sections>
+            <label><!-- Outrank 1.0 Only - SDB Team --></label>
+            <section>Outrank 1.0 Only - SDB Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT Pro QA</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bing --></label>
+            <section>Bing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Google --></label>
+            <section>Google</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maps Initial Claiming - Pin View</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maps Initial Claiming - Pin View - Restricted Edit</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maps Initial Claiming - YBN View</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Begin.com --></label>
+            <section>Begin.com</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Hotfrog.ca --></label>
+            <section>Hotfrog.ca</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+        <sections>
+            <label><!-- Ourbis.ca --></label>
+            <section>Ourbis.ca</section>
+        </sections>
+        <sections>
+            <label><!-- Weblocal.ca --></label>
+            <section>Weblocal.ca</section>
+        </sections>
+        <sections>
+            <label><!-- Yellowpages.ca --></label>
+            <section>Yellowpages.ca</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maps Initial Claiming CS View</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Automated Email Schedule --></label>
+            <section>Automated Email Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Listing Build Information --></label>
+            <section>Listing Build Information</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+        <sections>
+            <label><!-- System --></label>
+            <section>System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maps Initial Claiming IT Pro</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Listing Build Information --></label>
+            <section>Listing Build Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maps Initial Claiming Oct</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Automated Email Schedule --></label>
+            <section>Automated Email Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Bing Listing Data --></label>
+            <section>Bing Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMBL Listing Data --></label>
+            <section>GMBL Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Listing Data --></label>
+            <section>Google Listing Data</section>
+        </sections>
+        <sections>
+            <label><!-- Listing Build Information --></label>
+            <section>Listing Build Information</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Verification Team --></label>
+            <section>Maps Verification Team</section>
+        </sections>
+        <sections>
+            <label><!-- System --></label>
+            <section>System</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Circuit Breaker</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Actions Taken --></label>
+            <section>Actions Taken</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Indexing --></label>
+            <section>Indexing</section>
+        </sections>
+        <sections>
+            <label><!-- Maps Profile --></label>
+            <section>Maps Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Optimization Notes --></label>
+            <section>Optimization Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Data --></label>
+            <section>Performance Data</section>
+        </sections>
+        <sections>
+            <label><!-- Ranking --></label>
+            <section>Ranking</section>
+        </sections>
+        <sections>
+            <label><!-- SEO MOps Diasnosis --></label>
+            <section>SEO MOps Diasnosis</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Consultation</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Consultation Information --></label>
+            <section>Consultation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Optimization - SEO Mops</layout>
+        <sections>
+            <label><!-- Account Diagnosis --></label>
+            <section>Account Diagnosis</section>
+        </sections>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Actions Taken --></label>
+            <section>Actions Taken</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Existing Listing Information --></label>
+            <section>Existing Listing Information</section>
+        </sections>
+        <sections>
+            <label><!-- SEO MOps Diagnosis --></label>
+            <section>SEO MOps Diagnosis</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Yodle Live Information --></label>
+            <section>Yodle Live Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Optimization - YBN</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Actions Taken --></label>
+            <section>Actions Taken</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SEO MOps Diagnosis --></label>
+            <section>SEO MOps Diagnosis</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Yodle Live Information --></label>
+            <section>Yodle Live Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Optimization New (Feed)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Analyst Actions --></label>
+            <section>Analyst Actions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Issue --></label>
+            <section>Issue</section>
+        </sections>
+        <sections>
+            <label><!-- Root Cause --></label>
+            <section>Root Cause</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Underperforming</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Link Building --></label>
+            <section>Additional Link Building</section>
+        </sections>
+        <sections>
+            <label><!-- Codes --></label>
+            <section>Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Content --></label>
+            <section>Content</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Local Citation &amp; Maps Optimization --></label>
+            <section>Local Citation &amp; Maps Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Off Page Optimization --></label>
+            <section>Off Page Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- On Page Optimization --></label>
+            <section>On Page Optimization</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Data --></label>
+            <section>Performance Data</section>
+        </sections>
+        <sections>
+            <label><!-- Product Rules Met --></label>
+            <section>Product Rules Met</section>
+        </sections>
+        <sections>
+            <label><!-- Product Tracking --></label>
+            <section>Product Tracking</section>
+        </sections>
+        <sections>
+            <label><!-- Site Structure --></label>
+            <section>Site Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PIN Action Needed</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- PIN Action Taken --></label>
+            <section>PIN Action Taken</section>
+        </sections>
+        <sections>
+            <label><!-- PIN Issue --></label>
+            <section>PIN Issue</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reactivation</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>YO Initial Error Check</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Error Check --></label>
+            <section>Initial Error Check</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Canada Maps Claiming --></label>
         <name>Canda_Maps_Claiming</name>
@@ -7214,6 +7925,10 @@
     <validationRules>
         <errorMessage><!-- Must fill out Client Services Manager --></errorMessage>
         <name>YBN_Must_fill_out_client_svcs_mgr_to_es</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Organic Case needs to be associated to either a Master or LH Master case. Please either create the master and associate it to that case or update the case field. --></errorMessage>
+        <name>Master_Case_Required_to_Create_Organic_C</name>
     </validationRules>
     <webLinks>
         <label><!-- Update_Lead_in_Marketo_ADMIN_ONLY --></label>

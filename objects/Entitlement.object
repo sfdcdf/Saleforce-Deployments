@@ -192,43 +192,13 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Type__c</fullName>
-        <externalId>false</externalId>
-        <label>SLA Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>YBNStd</fullName>
-                    <default>false</default>
-                    <label>YBNStd</label>
-                </value>
-                <value>
-                    <fullName>YBNCus</fullName>
-                    <default>false</default>
-                    <label>YBNCus</label>
-                </value>
-                <value>
-                    <fullName>Local</fullName>
-                    <default>false</default>
-                    <label>Local</label>
-                </value>
-                <value>
-                    <fullName>Partner</fullName>
-                    <default>false</default>
-                    <label>Partner</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>AccountId</fullName>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
+  <searchLayouts>
         <customTabListAdditionalFields>ENTITLEMENT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ENTITLEMENT.STARTDATE</customTabListAdditionalFields>
@@ -253,7 +223,9 @@
         <searchResultsAdditionalFields>ENTITLEMENT.ENDDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ENTITLEMENT.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ControlledByParent</sharingModel>
+    </searchLayouts>
+  <sharingModel>ControlledByParent</sharingModel>
+
     <listViews>
         <fullName>All_Entitlements</fullName>
         <columns>ENTITLEMENT.NAME</columns>

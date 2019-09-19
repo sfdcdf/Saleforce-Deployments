@@ -15,6 +15,13 @@
                 <field>Product2Id</field>
             </layoutItems>
             <layoutItems>
+                <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ListPrice</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>UnitPrice</field>
             </layoutItems>
@@ -22,30 +29,53 @@
                 <behavior>Required</behavior>
                 <field>Quantity</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>ContractLength__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ProductDescriptionClient__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ProductNameClient__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ServiceDate</field>
+                <behavior>Readonly</behavior>
+                <field>ProductChargeType__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>ProductCode</field>
             </layoutItems>
             <layoutItems>
+                <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>ListPrice</field>
+                <field>Subtotal</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Discount</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>TotalPrice</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalProductValue__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
-        <detailHeading>false</detailHeading>
+        <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>System Information</label>
         <layoutColumns>
@@ -76,7 +106,7 @@
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>false</customLabel>
+        <customLabel>true</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Custom Links</label>
@@ -86,12 +116,17 @@
         <style>CustomLinks</style>
     </layoutSections>
     <multilineLayoutFields>Product2Id</multilineLayoutFields>
-    <multilineLayoutFields>Quantity</multilineLayoutFields>
     <multilineLayoutFields>UnitPrice</multilineLayoutFields>
-    <multilineLayoutFields>ServiceDate</multilineLayoutFields>
-    <multilineLayoutFields>Description</multilineLayoutFields>
+    <multilineLayoutFields>Quantity</multilineLayoutFields>
+    <multilineLayoutFields>ContractLength__c</multilineLayoutFields>
     <multilineLayoutFields>OpportunityId</multilineLayoutFields>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
+    <summaryLayout>
+        <masterLabel>00h600000012v7A</masterLabel>
+        <sizeX>4</sizeX>
+        <sizeY>0</sizeY>
+        <summaryLayoutStyle>Default</summaryLayoutStyle>
+    </summaryLayout>
 </Layout>

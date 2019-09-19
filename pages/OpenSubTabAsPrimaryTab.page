@@ -1,0 +1,42 @@
+<apex:page standardController="Account" showHeader="false" sidebar="false">
+	<apex:includeScript value="/support/console/37.0/integration.js"/>
+
+	<script>
+		setTimeout(
+			function(){
+				if (sforce.console.isInConsole()) {
+					var openSuccess = function openSuccess(result){ 
+						if(result.success == true) { 
+							setTabIcon(result); 
+						} 
+					} 
+
+					function setTabIcon(result){ 
+						// Force Salesforce to set their Standard Lead Icon hack 
+						sforce.console.setTabTitle(undefined, result.id); 
+					} 
+					
+					function openPrimaryTab(url, tabId){ 
+						sforce.console.openPrimaryTab(undefined, url, true); 
+					} 
+
+
+					function testGetFocusedSubtabId() { 
+						sforce.console.getFocusedSubtabId(showTabId); 
+					} 
+
+					var showTabId = function showTabId(result) { 
+						// Display the tab ID 
+						//alert ('Tab ID: ' + result.id); 
+						sforce.console.closeTab(result.id); 
+					}; 
+
+					openPrimaryTab('/'+'{!Account.Id}', '{!Account.Id}'); 
+					testGetFocusedSubtabId();
+				}else{
+					window.open('/{!Account.Id}', '_self');
+				}
+			}
+		, 500);
+	</script>
+</apex:page>

@@ -271,6 +271,18 @@
         <fullName>Type</fullName>
         <type>Picklist</type>
     </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>What Account is this Campaign associated with?</description>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
   <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
   <enableFeeds>false</enableFeeds>
   <enableHistory>false</enableHistory>
@@ -290,7 +302,6 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
   <sharingModel>Read</sharingModel>
-
     <listViews>
         <fullName>MyActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
@@ -333,6 +344,43 @@
         <columns>CAMPAIGN.END_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>Org_Campaign_Hierarchy</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Campaigns</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>WBN_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>startsWith</operation>
+            <value>WBN,YBN</value>
+        </filters>
+        <label>WBN Campaigns</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <recordTypes>
         <fullName>Dialing_Campaign_Record_Type</fullName>

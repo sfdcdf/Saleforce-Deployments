@@ -149,6 +149,7 @@
         <label>Additional MLS Name</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -160,6 +161,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -168,6 +170,7 @@
         <externalId>false</externalId>
         <label>Agent/Broker Initiates Process</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -182,6 +185,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -192,6 +196,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -203,6 +208,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -220,6 +226,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
 "Partially Known"))))</formula>
         <label>Agent Fees?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -230,6 +237,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>Authorized RETS Servers</label>
         <length>200</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -239,6 +247,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Brokers Only?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -267,6 +276,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Call to MLS Date</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -276,6 +286,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>Cannot Sync Reason</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -285,6 +296,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Cannot Sync</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -293,6 +305,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Compliance Review Required For Approval</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -305,6 +318,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Config Notes</label>
         <length>1250</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -314,6 +328,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Credential Type</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -344,6 +359,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Data Source</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -384,6 +400,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <inlineHelpText>Does MLS Allow Digital Signature?</inlineHelpText>
         <label>Digital Signature</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -392,6 +409,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Email</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -401,6 +419,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>FTP/ RETS</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -430,6 +449,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Form Needed?</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -438,6 +458,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Integrated in the Past?</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -447,6 +468,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>Integration</label>
         <length>25</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -456,6 +478,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Known</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -465,6 +488,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>MLS Application Link</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -475,6 +499,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>MLS Code</label>
         <length>25</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -487,6 +512,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -498,6 +524,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -509,6 +536,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -520,6 +548,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -529,6 +558,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Phone Number</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -537,6 +567,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Process / Notes</label>
         <length>750</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -547,6 +578,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>Prospects in Area Covered by MLS</label>
         <length>10</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -557,6 +589,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>RETS Login</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -567,6 +600,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>RETS Password</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -576,6 +610,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>RETS URL</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
@@ -585,6 +620,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>RETS User Agent Login</label>
         <length>200</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -595,6 +631,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>RETS User Agent Password</label>
         <length>200</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -605,6 +642,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>RETS User Agent</label>
         <length>200</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -615,6 +653,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>RETS Version</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -624,6 +663,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Requires Broker Approval?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -652,6 +692,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Sample Site(s)</label>
         <length>500</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -661,6 +702,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Sold Data Process</label>
         <length>32768</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -670,6 +712,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>Special Photo Type</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -678,6 +721,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <externalId>false</externalId>
         <label>State</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -691,6 +735,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>TORCHx Approved Vendor</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -710,6 +755,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         </summaryFilterItems>
         <summaryForeignKey>Account_MLS__c.MLS__c</summaryForeignKey>
         <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
     </fields>
@@ -720,6 +766,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>Total All Time Account MLS Connection</label>
         <summaryForeignKey>Account_MLS__c.MLS__c</summaryForeignKey>
         <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
     </fields>
@@ -729,6 +776,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <label>Turn Around Time</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -738,6 +786,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Undisclosed Agent/Broker Fees</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -748,6 +797,7 @@ AND(Agent_Broker_Annual_Fee__c  &gt;= 0, Agent_Broker_Monthly_Fee_from_IDX_Broke
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -764,6 +814,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
 "Partially Known")))</formula>
         <label>Vendor Fees?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -775,6 +826,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -785,6 +837,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -795,6 +848,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -805,6 +859,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
@@ -815,6 +870,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <label>Vendor</label>
         <length>25</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -824,6 +880,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <externalId>false</externalId>
         <label>Website Address</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
@@ -832,6 +889,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
         <externalId>false</externalId>
         <label>Website Considerations</label>
         <length>750</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -842,7 +900,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -852,9 +910,11 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
     <label>MLS</label>
     <nameField>
         <label>MLS Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>MLS</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

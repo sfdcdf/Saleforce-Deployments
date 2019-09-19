@@ -551,11 +551,6 @@
         <name>Minutes_Saved__c</name>
     </fields>
     <fields>
-        <help><!-- Put in the total minutes it took to complete the task. Don’t worry about if this number is large or small – no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here. --></help>
-        <label><!-- Minutes to Complete Request --></label>
-        <name>Minutes_to_Complete_Request__c</name>
-    </fields>
-    <fields>
         <label><!-- Need to Escalate --></label>
         <name>Need_to_Escalate__c</name>
     </fields>
@@ -1536,118 +1531,6 @@
         <name>Sprint__c</name>
     </fields>
     <fields>
-        <label><!-- Status --></label>
-        <name>Status__c</name>
-        <picklistValues>
-            <masterLabel>Awaiting Internal Response</masterLabel>
-            <translation><!-- Awaiting Internal Response --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Added</masterLabel>
-            <translation><!-- Closed - Added --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Completed</masterLabel>
-            <translation><!-- Closed - Completed --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Completed/Updates Made</masterLabel>
-            <translation><!-- Closed - Completed/Updates Made --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Could Not Complete</masterLabel>
-            <translation><!-- Closed - Could Not Complete --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Declined by Channel Lead</masterLabel>
-            <translation><!-- Closed - Declined by Channel Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Not Approved</masterLabel>
-            <translation><!-- Closed - Not Approved --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Not Eligible</masterLabel>
-            <translation><!-- Closed - Not Eligible --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed - Review for CS Ops Plan</masterLabel>
-            <translation><!-- Closed - Review for CS Ops Plan --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed: CMS 2.0 – Too Customized</masterLabel>
-            <translation><!-- Closed: CMS 2.0 – Too Customized --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed: Downgraded</masterLabel>
-            <translation><!-- Closed: Downgraded --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed: Segment Not Supported</masterLabel>
-            <translation><!-- Closed: Segment Not Supported --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed: Upgraded</masterLabel>
-            <translation><!-- Closed: Upgraded --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>In Progress</masterLabel>
-            <translation><!-- In Progress --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>In Review</masterLabel>
-            <translation><!-- In Review --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Long Term Project/Plan</masterLabel>
-            <translation><!-- Long Term Project/Plan --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Need More Information</masterLabel>
-            <translation><!-- Need More Information --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>New</masterLabel>
-            <translation><!-- New --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>On Hold</masterLabel>
-            <translation><!-- On Hold --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>On Hold - Per Requester</masterLabel>
-            <translation><!-- On Hold - Per Requester --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pending Channel Lead</masterLabel>
-            <translation><!-- Pending Channel Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pending Estimate</masterLabel>
-            <translation><!-- Pending Estimate --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pending JIRA Ticket Resolution</masterLabel>
-            <translation><!-- Pending JIRA Ticket Resolution --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pending Ops Assignment</masterLabel>
-            <translation><!-- Pending Ops Assignment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pending approval from YBN Leadership</masterLabel>
-            <translation><!-- Pending approval from YBN Leadership --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Project - In Progress</masterLabel>
-            <translation><!-- Project - In Progress --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Project - Pending WBN Ops Assignment</masterLabel>
-            <translation><!-- Project - Pending WBN Ops Assignment --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Strategic Accounts Team Member --></label>
         <name>Strategic_Accounts_Team_Member__c</name>
         <relationshipLabel><!-- Operations (Strategic Accounts Team Member) --></relationshipLabel>
@@ -1982,6 +1865,123 @@
         <label><!-- What is the new process? --></label>
         <name>What_is_the_new_process__c</name>
     </fields>
+    <fields>
+        <help><!-- Put in the total minutes it took to complete the task. Donâ€™t worry about if this number is large or small â€“ no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here. --></help>
+        <label><!-- Minutes to Complete Request --></label>
+        <name>Minutes_to_Complete_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting Internal Response</masterLabel>
+            <translation><!-- Awaiting Internal Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Added</masterLabel>
+            <translation><!-- Closed - Added --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed</masterLabel>
+            <translation><!-- Closed - Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed/Updates Made</masterLabel>
+            <translation><!-- Closed - Completed/Updates Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Could Not Complete</masterLabel>
+            <translation><!-- Closed - Could Not Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Declined by Channel Lead</masterLabel>
+            <translation><!-- Closed - Declined by Channel Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Approved</masterLabel>
+            <translation><!-- Closed - Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Eligible</masterLabel>
+            <translation><!-- Closed - Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Review for CS Ops Plan</masterLabel>
+            <translation><!-- Closed - Review for CS Ops Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: CMS 2.0 â€“ Too Customized</masterLabel>
+            <translation><!-- Closed: CMS 2.0 â€“ Too Customized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Downgraded</masterLabel>
+            <translation><!-- Closed: Downgraded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Segment Not Supported</masterLabel>
+            <translation><!-- Closed: Segment Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Upgraded</masterLabel>
+            <translation><!-- Closed: Upgraded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Project/Plan</masterLabel>
+            <translation><!-- Long Term Project/Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need More Information</masterLabel>
+            <translation><!-- Need More Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold - Per Requester</masterLabel>
+            <translation><!-- On Hold - Per Requester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Channel Lead</masterLabel>
+            <translation><!-- Pending Channel Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Estimate</masterLabel>
+            <translation><!-- Pending Estimate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending JIRA Ticket Resolution</masterLabel>
+            <translation><!-- Pending JIRA Ticket Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Ops Assignment</masterLabel>
+            <translation><!-- Pending Ops Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending approval from YBN Leadership</masterLabel>
+            <translation><!-- Pending approval from YBN Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project - In Progress</masterLabel>
+            <translation><!-- Project - In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project - Pending WBN Ops Assignment</masterLabel>
+            <translation><!-- Project - Pending WBN Ops Assignment --></translation>
+        </picklistValues>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Operations</value>
@@ -1991,6 +1991,412 @@
         <value>Operations</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Administrative Items (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Batch Uploads &amp; Changes (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail --></label>
+            <section>Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CMS 3.1 Update Request (feed)</layout>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CS Nomination Form (feed)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Nomimation Details --></label>
+            <section>Nomimation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Nominee Information --></label>
+            <section>Nominee Information</section>
+        </sections>
+        <sections>
+            <label><!-- Your Information --></label>
+            <section>Your Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CS SOP Manual Update (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail --></label>
+            <section>Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Update Details --></label>
+            <section>Update Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Essentials Features Request (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Future Deactivation Request (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>National Project Request</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail --></label>
+            <section>Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Project Request Details --></label>
+            <section>Project Request Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operation Upsell Addition (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operations Help Desk (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operations Request (feed)</layout>
+        <sections>
+            <label><!-- CS Operations to Fill Out - ONLY VISIBLE TO OPS --></label>
+            <section>CS Operations to Fill Out - ONLY VISIBLE TO OPS</section>
+        </sections>
+        <sections>
+            <label><!-- Closing Notes --></label>
+            <section>Closing Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details - AGENT TO FILL OUT --></label>
+            <section>Request Details - AGENT TO FILL OUT</section>
+        </sections>
+        <sections>
+            <label><!-- Request Summary/Details --></label>
+            <section>Request Summary/Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SF Process Change/Reporting (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Strategic Account Growth Addition (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Include IDs and Account Names of New Accounts In the Notes Box: --></label>
+            <section>Include IDs and Account Names of New Accounts In the Notes Box:</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Growth Information --></label>
+            <section>Relationship Growth Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Upsell Tracking (feed)</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Upsell Details --></label>
+            <section>Upsell Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WBN Ops Request</layout>
+        <sections>
+            <label><!-- Account Update Details --></label>
+            <section>Account Update Details</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Ops Details --></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Request Summary/Details --></label>
+            <section>Request Summary/Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Weekly Reports Assistance (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>YBN Ops Request</layout>
+        <sections>
+            <label><!-- Account Update Details --></label>
+            <section>Account Update Details</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Ops Details --></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>YO 2.0 Free Time Request (feed)</layout>
+        <sections>
+            <label><!-- CS Ops --></label>
+            <section>CS Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Close Notes --></label>
+            <section>Close Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update OPS --></label>
+        <name>Update_ops</name>
+    </quickActions>
     <recordTypes>
         <description><!-- Use this record type for New User Setup, Changing Role/Manager for a User, Deactivating Users, User Permissions, and New Account Additions. --></description>
         <label><!-- Administrative Items --></label>

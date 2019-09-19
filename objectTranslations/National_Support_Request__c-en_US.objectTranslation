@@ -223,18 +223,6 @@ Double check updates to SF --></help>
         <relationshipLabel><!-- National Support Requests (Client Partner) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Client Services Recommended Support --></label>
-        <name>Client_Services_recommended_support__c</name>
-        <picklistValues>
-            <masterLabel>corporate communication -standard proactive communication at the consultant level</masterLabel>
-            <translation><!-- corporate communication -standard proactive communication at the consultant level --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>corporate communication only – reactive local support</masterLabel>
-            <translation><!-- corporate communication only – reactive local support --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Client Side Organic Estimates --></label>
         <name>Client_Side_Organic_Estimates__c</name>
     </fields>
@@ -459,11 +447,6 @@ Lead Analyst --></help>
     <fields>
         <label><!-- Expected time of decision making --></label>
         <name>Expected_time_of_decision_making__c</name>
-    </fields>
-    <fields>
-        <help><!-- The Franchise or Business name that best describes this client. e.g. Two Men And A Truck or Bob&apos;s Taco Stand. --></help>
-        <label><!-- Franchise/Business Name --></label>
-        <name>Franchise_Business_Name__c</name>
     </fields>
     <fields>
         <label><!-- Franchise/Dealer URL --></label>
@@ -1268,11 +1251,6 @@ Strategic member should be present on at least first performance call. --></help
         <label><!-- Sales Person --></label>
         <name>Sales_Person__c</name>
         <relationshipLabel><!-- National Support Requests (Sales Person) --></relationshipLabel>
-    </fields>
-    <fields>
-        <help><!-- Only use this box if this client&apos;s business is seasonally based. --></help>
-        <label><!-- Seasonal --></label>
-        <name>Seasonal__c</name>
     </fields>
     <fields>
         <label><!-- Segment Color --></label>
@@ -2819,11 +2797,6 @@ Strategic member should be present on at least first performance call. --></help
         <name>Segment_Viability__c</name>
     </fields>
     <fields>
-        <help><!-- The segment that most closely matches what this clientâ&apos;s business offerings are related to. e.g. Medical Spa, General Contractor --></help>
-        <label><!-- Segment --></label>
-        <name>Segment__c</name>
-    </fields>
-    <fields>
         <help><!-- A complete list of all services the client wishes to advertise through Yodle. e.g. Window cleaning or body massages and a/c repair. --></help>
         <label><!-- Services to Advertise --></label>
         <name>Services_to_Advertise__c</name>
@@ -2898,34 +2871,6 @@ Strategic member should be present on at least first performance call. --></help
         <name>Specific_Services_to_highlight__c</name>
     </fields>
     <fields>
-        <label><!-- Sponsored Analysis - Current State --></label>
-        <name>Sponsored_Analysis_Current_State__c</name>
-        <picklistValues>
-            <masterLabel>currently running local sponsored – to corporate site</masterLabel>
-            <translation><!-- currently running local sponsored – to corporate site --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>currently running local sponsored – to local sites</masterLabel>
-            <translation><!-- currently running local sponsored – to local sites --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>currently running nationwide sponsored -to local sites</masterLabel>
-            <translation><!-- currently running nationwide sponsored -to local sites --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>currently running nationwide sponsored – to corporate site</masterLabel>
-            <translation><!-- currently running nationwide sponsored – to corporate site --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>mixed national and local campaigns</masterLabel>
-            <translation><!-- mixed national and local campaigns --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>not running sponsored</masterLabel>
-            <translation><!-- not running sponsored --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Sponsored Analysis Details --></label>
         <name>Sponsored_Analysis_Details__c</name>
     </fields>
@@ -2988,58 +2933,6 @@ Strategic member should be present on at least first performance call. --></help
         <picklistValues>
             <masterLabel>Strategic</masterLabel>
             <translation><!-- Strategic --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Status --></label>
-        <name>Status__c</name>
-        <picklistValues>
-            <masterLabel>Accepted</masterLabel>
-            <translation><!-- Accepted --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Closed</masterLabel>
-            <translation><!-- Closed --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>In Progress</masterLabel>
-            <translation><!-- In Progress --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>New</masterLabel>
-            <translation><!-- New --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Rejected</masterLabel>
-            <translation><!-- Rejected --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Sent Back to Strategic</masterLabel>
-            <translation><!-- Sent Back to Strategic --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stage 1 - Needs Assessment</masterLabel>
-            <translation><!-- Stage 1 - Needs Assessment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stage 2 – Mktg Analysis &amp; Demo</masterLabel>
-            <translation><!-- Stage 2 – Mktg Analysis &amp; Demo --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stage 3 – Proposal</masterLabel>
-            <translation><!-- Stage 3 – Proposal --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stage 4 – Implementation Plan</masterLabel>
-            <translation><!-- Stage 4 – Implementation Plan --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stage 5 – Contract</masterLabel>
-            <translation><!-- Stage 5 – Contract --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stage 5C - Closed Lost</masterLabel>
-            <translation><!-- Stage 5C - Closed Lost --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3328,35 +3221,6 @@ Strategic member should be present on at least first performance call. --></help
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- The current URL of this client&apos;s business. --></help>
-        <label><!-- Website URL --></label>
-        <name>Website_URL__c</name>
-    </fields>
-    <fields>
-        <label><!-- Website --></label>
-        <name>Website__c</name>
-        <picklistValues>
-            <masterLabel>Adversite + Metropages</masterLabel>
-            <translation><!-- Adversite + Metropages --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Adversite – individual locations only</masterLabel>
-            <translation><!-- Adversite – individual locations only --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>client side</masterLabel>
-            <translation><!-- client side --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>client side – sub domain/sub folder</masterLabel>
-            <translation><!-- client side – sub domain/sub folder --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>mirror</masterLabel>
-            <translation><!-- mirror --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Website (client side or template fee) --></label>
         <name>Website_client_side_or_template_fee__c</name>
     </fields>
@@ -3524,6 +3388,142 @@ Strategic member should be present on at least first performance call. --></help
         <label><!-- 30-60 Days --></label>
         <name>X30_60_Days__c</name>
     </fields>
+    <fields>
+        <label><!-- Client Services Recommended Support --></label>
+        <name>Client_Services_recommended_support__c</name>
+        <picklistValues>
+            <masterLabel>corporate communication -standard proactive communication at the consultant level</masterLabel>
+            <translation><!-- corporate communication -standard proactive communication at the consultant level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>corporate communication only â€“ reactive local support</masterLabel>
+            <translation><!-- corporate communication only â€“ reactive local support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Franchise or Business name that best describes this client. e.g. Two Men And A Truck or Bobâ€™s Taco Stand. --></help>
+        <label><!-- Franchise/Business Name --></label>
+        <name>Franchise_Business_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only use this box if this clientâ€™s business is seasonally based. --></help>
+        <label><!-- Seasonal --></label>
+        <name>Seasonal__c</name>
+    </fields>
+    <fields>
+        <help><!-- The segment that most closely matches what this clientâ€™s business offerings are related to. e.g. Medical Spa, General Contractor --></help>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsored Analysis - Current State --></label>
+        <name>Sponsored_Analysis_Current_State__c</name>
+        <picklistValues>
+            <masterLabel>currently running local sponsored â€“ to corporate site</masterLabel>
+            <translation><!-- currently running local sponsored â€“ to corporate site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>currently running local sponsored â€“ to local sites</masterLabel>
+            <translation><!-- currently running local sponsored â€“ to local sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>currently running nationwide sponsored -to local sites</masterLabel>
+            <translation><!-- currently running nationwide sponsored -to local sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>currently running nationwide sponsored â€“ to corporate site</masterLabel>
+            <translation><!-- currently running nationwide sponsored â€“ to corporate site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mixed national and local campaigns</masterLabel>
+            <translation><!-- mixed national and local campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not running sponsored</masterLabel>
+            <translation><!-- not running sponsored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent Back to Strategic</masterLabel>
+            <translation><!-- Sent Back to Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 1 - Needs Assessment</masterLabel>
+            <translation><!-- Stage 1 - Needs Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 2 â€“ Mktg Analysis &amp; Demo</masterLabel>
+            <translation><!-- Stage 2 â€“ Mktg Analysis &amp; Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 3 â€“ Proposal</masterLabel>
+            <translation><!-- Stage 3 â€“ Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 4 â€“ Implementation Plan</masterLabel>
+            <translation><!-- Stage 4 â€“ Implementation Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 5 â€“ Contract</masterLabel>
+            <translation><!-- Stage 5 â€“ Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 5C - Closed Lost</masterLabel>
+            <translation><!-- Stage 5C - Closed Lost --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The current URL of this clientâ€™s business. --></help>
+        <label><!-- Website URL --></label>
+        <name>Website_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+        <picklistValues>
+            <masterLabel>Adversite + Metropages</masterLabel>
+            <translation><!-- Adversite + Metropages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adversite â€“ individual locations only</masterLabel>
+            <translation><!-- Adversite â€“ individual locations only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>client side</masterLabel>
+            <translation><!-- client side --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>client side â€“ sub domain/sub folder</masterLabel>
+            <translation><!-- client side â€“ sub domain/sub folder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mirror</masterLabel>
+            <translation><!-- mirror --></translation>
+        </picklistValues>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>National Support Request</value>
@@ -3533,6 +3533,213 @@ Strategic member should be present on at least first performance call. --></help
         <value>National Support Requests</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Initiation Form</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Billing --></label>
+            <section>Billing</section>
+        </sections>
+        <sections>
+            <label><!-- Client Expectations --></label>
+            <section>Client Expectations</section>
+        </sections>
+        <sections>
+            <label><!-- Corporate Relationship --></label>
+            <section>Corporate Relationship</section>
+        </sections>
+        <sections>
+            <label><!-- Corporate Requested Touch Points for Manufacturers --></label>
+            <section>Corporate Requested Touch Points for Manufacturers</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Information --></label>
+            <section>Deal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Estimate the # of new locations that will be ready in the timelines below: --></label>
+            <section>Estimate the # of new locations that will be ready in the timelines below:</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Other --></label>
+            <section>Other</section>
+        </sections>
+        <sections>
+            <label><!-- Other 2 --></label>
+            <section>Other 2</section>
+        </sections>
+        <sections>
+            <label><!-- Technology Overview --></label>
+            <section>Technology Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Timeline --></label>
+            <section>Timeline</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Initiation Form</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 1-Needs Assessment (Completed by Sales) --></label>
+            <section>Stage 1-Needs Assessment (Completed by Sales)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 2-Marketing Analysis (Completed by Strategic) --></label>
+            <section>Stage 2-Marketing Analysis (Completed by Strategic)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 2-Ranking Scrape (Completed by Strategic &amp; Sales Data Ops) --></label>
+            <section>Stage 2-Ranking Scrape (Completed by Strategic &amp; Sales Data Ops)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 2-Recommended Strategy (Completed by Strategic) --></label>
+            <section>Stage 2-Recommended Strategy (Completed by Strategic)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 3-Estimates for Proposal (Completed by Strategic) --></label>
+            <section>Stage 3-Estimates for Proposal (Completed by Strategic)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 3-Proposal Approval --></label>
+            <section>Stage 3-Proposal Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 3-Proposal Creation (Completed by Sales) --></label>
+            <section>Stage 3-Proposal Creation (Completed by Sales)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 4-Margin Analysis (Tier 1 Only-Completed by Strategic) --></label>
+            <section>Stage 4-Margin Analysis (Tier 1 Only-Completed by Strategic)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 4-Staffing (Completed by Strategic) --></label>
+            <section>Stage 4-Staffing (Completed by Strategic)</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 4-Technical Implementation --></label>
+            <section>Stage 4-Technical Implementation</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 5-Contract Approval --></label>
+            <section>Stage 5-Contract Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 5-Contract Creation (Completed by Sales)-Please Update if Necessary --></label>
+            <section>Stage 5-Contract Creation (Completed by Sales)-Please Update if Necessary</section>
+        </sections>
+        <sections>
+            <label><!-- Stage 5-Launch Timeline (To be completed by Relationship Owner) --></label>
+            <section>Stage 5-Launch Timeline (To be completed by Relationship Owner)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pre-Sale Questions</layout>
+        <sections>
+            <label><!-- Business Information --></label>
+            <section>Business Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Analysis --></label>
+            <section>Marketing Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Requested Items --></label>
+            <section>Requested Items</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Proposal/Contract Review for Existing Clients</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Proposal/Contract Overview --></label>
+            <section>Proposal/Contract Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Required Changes --></label>
+            <section>Required Changes</section>
+        </sections>
+        <sections>
+            <label><!-- Review Committee Approval --></label>
+            <section>Review Committee Approval</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transition Form</layout>
+        <sections>
+            <label><!-- Billing --></label>
+            <section>Billing</section>
+        </sections>
+        <sections>
+            <label><!-- Campaign Details --></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Goals and Expectations --></label>
+            <section>Goals and Expectations</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Overview --></label>
+            <section>Relationship Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Transition Checklist --></label>
+            <section>Transition Checklist</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Tier 4 &amp; Bottoms Up Initiation Form --></label>
         <name>Initiation_Form</name>
@@ -3553,4 +3760,121 @@ Strategic member should be present on at least first performance call. --></help
         <label><!-- Transition Form --></label>
         <name>Transition_Form</name>
     </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Required in Stage 5 and Do they Use CRM is Yes --></errorMessage>
+        <name>Conf_Check_Box_CRM_Yes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the following fields when choosing Manufacturer  Relationship Type:
+   -Current Total Spend
+   -How will locations be solicited?
+   -15-30 Days
+   -30-60 Days
+   -Client Use CRM Currently? --></errorMessage>
+        <name>Initiation_Form_Manufacturer_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill out Total Number of Locations, Nat. Relat. Type, Specific Services to Highlight, Corporate Website Domain, Local Website Structure, Who Host Local Sites, Who maintains and updates sites, what online marketing efforts, Own Maps, and Prospect Defining --></errorMessage>
+        <name>Initiation_Form_Stage_2_Demo_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Stage 3 is selected, you must fill out fields in Stage 3 section. --></errorMessage>
+        <name>Initiation_Form_Stage_3_Prop_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting, &quot;Yes&quot; for &quot;Do they use a CRM&quot;, you must fill out this field. --></errorMessage>
+        <name>Initiation_Form_Stage_4_Impl_CRM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Stage 4 â€“ Implementation Plan is selected, you must fill out this field --></errorMessage>
+        <name>Initiation_Form_Stage_4_Impl_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This cannot be checked unless Keyword to Scrape and Ranking for All Locations is completed. If Subset of Locations is Selected, make sure to fill out Subset of Locations to Rank. --></errorMessage>
+        <name>Keyword_Scrape_Checkbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the following Marketing Analysis section when requesting a Marketing Analysis Document. --></errorMessage>
+        <name>Marketing_Analysis_Fields_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out Metropage recommendation if Status is 3A-Proposal Creation and Metropages required is yes. --></errorMessage>
+        <name>Metro_Page_and_x3A_Prop_Creation_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill in the Needs Assessment Date/Time when creating a new initiation form. --></errorMessage>
+        <name>Needs_Assessment_DateTime_Req_at_Stage_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When marking there are Out of the Box Requirements, you must describe the details. --></errorMessage>
+        <name>Proposal_Contract_Review_submit_outofbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 5A - Revised Contract Review --></errorMessage>
+        <name>Revised_Contract_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 2 - Demo --></errorMessage>
+        <name>Stage_2_Demo_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 2 - Demo --></errorMessage>
+        <name>Stage_2_Demo_Specific_Services</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 2 - Demo --></errorMessage>
+        <name>Stage_2_Demo_What_Online_Efforts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 2 - Demo --></errorMessage>
+        <name>Stage_2_Demo_Who_Hosts_and_Maintains</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_Average_Order_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_CRM_What_Kind</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_CV_Rate_from_lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_How_is_client_defining</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_What_Online_Efforts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_Who_Created_Maintained</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is required in Stage 3 - Proposal --></errorMessage>
+        <name>Stage_3_Prop_Est_Who_Would_Be_Providing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sub Status cannot be Submit Proposal for Review unless all Proposal Creation fields (Completed by Sales) are filled out properly --></errorMessage>
+        <name>Stage_3_Submit_Proposal_for_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Stage 3 - Revised Proposal Review is selected as a status, Summary of Revised Items must be filled out. --></errorMessage>
+        <name>Summary_of_Revised_ItemsStage_3Revised</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When moving to Technical Review, you must fill in the Technical Review - What is Needed? field. --></errorMessage>
+        <name>Technical_Review_Filled_out_When_Sub_Sta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Ranking for all Locations is Subset of Locations, please fill out this field. --></errorMessage>
+        <name>When_Ranking_for_all_locations_or_Subset</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If &quot;Stage 3A â€“ Proposal Creation&quot; is selected as the Status, please make sure to fill out: Budget Estimates, Client Services Recommended Support --></errorMessage>
+        <name>x3A_Proposal_Creation_Requirement</name>
+    </validationRules>
 </CustomObjectTranslation>

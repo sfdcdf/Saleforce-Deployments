@@ -152,6 +152,7 @@
         <relationshipLabel>Partner Quarterly Managed Child Accounts</relationshipLabel>
         <relationshipName>Partner_Quarterly_Managed_Child_Accounts</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -164,6 +165,7 @@
         <relationshipName>Partner_Quarterly_Managed_Child_Accounts</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
@@ -174,7 +176,7 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
@@ -185,6 +187,7 @@
     <nameField>
         <displayFormat>PQAMN-{0000000}</displayFormat>
         <label>Partner Quarterly Account Managed Number</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Partner Quarterly Managed Child Accounts</pluralLabel>

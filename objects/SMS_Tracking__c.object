@@ -153,6 +153,7 @@
         <relationshipLabel>SMS Trackings</relationshipLabel>
         <relationshipName>SMS_Trackings</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -167,6 +168,7 @@
         <relationshipLabel>SMS Trackings</relationshipLabel>
         <relationshipName>SMS_Trackings</relationshipName>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -177,6 +179,7 @@
         <label>Client First Name</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -188,6 +191,7 @@
         <label>Client Last Name</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -198,6 +202,7 @@
         <inlineHelpText>The phone number that was texted.</inlineHelpText>
         <label>Client Phone Number</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -208,6 +213,7 @@
         <inlineHelpText>The response from the client.</inlineHelpText>
         <label>Client Response</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -249,6 +255,7 @@
         <inlineHelpText>Intro message was/not sent.  The message informs the client about the standard rates may apply when receiving/sending a text.</inlineHelpText>
         <label>Intro Sent?</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -263,6 +270,7 @@
         <inlineHelpText>The phone number provide is not valid.</inlineHelpText>
         <label>Invalid Phone Number?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -280,6 +288,7 @@
         <relationshipLabel>SMS Trackings</relationshipLabel>
         <relationshipName>SMS_Trackings</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -290,6 +299,7 @@
         <label>Marketo Lead Id</label>
         <length>20</length>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -301,6 +311,7 @@
         <inlineHelpText>The date/time the client responded to the text.</inlineHelpText>
         <label>Response Date/Time</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -310,6 +321,7 @@
         <label>Twilio Id</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -321,7 +333,7 @@
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -332,10 +344,37 @@
     <nameField>
         <displayFormat>SMS-{00000}</displayFormat>
         <label>SMS Tracking Number</label>
+        <trackHistory>true</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>SMS Trackings</pluralLabel>
-    <searchLayouts />
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>Client_First_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Last_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Phone_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Response__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Case__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Client_First_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_Last_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_Response__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Case__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_First_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Last_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Response__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Case__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Case__c</searchFilterFields>
+        <searchResultsAdditionalFields>Case__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_First_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Last_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Phone_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_Response__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Twilio_Id__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>

@@ -85,6 +85,25 @@
         <value>SMS Trackings</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>SMS Tracking Layout</layout>
+        <sections>
+            <label><!-- Client Info --></label>
+            <section>Client Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Marketo --></label>
+            <section>Marketo</section>
+        </sections>
+        <sections>
+            <label><!-- SMS --></label>
+            <section>SMS</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <description><!-- Default record type --></description>
         <label><!-- Default --></label>

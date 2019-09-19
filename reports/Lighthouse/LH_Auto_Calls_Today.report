@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Activity$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>am,pm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CreatedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Assigned_To_Manager__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brittany Hickman</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LH Auto - Calls Today</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Activity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

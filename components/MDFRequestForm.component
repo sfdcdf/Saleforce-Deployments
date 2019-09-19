@@ -1,0 +1,41 @@
+<apex:component allowDML="true" controller="MDFRequestFormController" layout="block">
+	<apex:form >
+		<apex:pageBlock title="Marketing Development Request Form" mode="maindetail" id="pageBlockFormId">
+			<apex:actionFunction name="reRenderHack" action="{!refreshRerender}" reRender="pageBlockFormId" immediate="true"/>
+			<apex:pageMessages />
+
+			<apex:pageBlockButtons >
+				<apex:commandButton action="{!submitMDFRequestForm}" value="Submit Form" reRender="pageBlockFormId"/>
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection title="Please fill in all necessary information" collapsible="false" columns="1" >
+				<apex:outputField value="{!pmdf.OwnerId}" label="Account Manager"/>
+				<apex:outputField value="{!pmdf.Partner_Account__c}" label="Company Name"/>
+				<apex:outputField value="{!pmdf.Requested_By__c}"/>
+				<apex:inputField value="{!pmdf.Estimated_Cost_of_Activity__c}" required="true"/>
+			</apex:pageBlockSection>
+				
+			<apex:pageBlockSection columns="1" collapsible="false" id="infoPageBlockSectionId">
+				<apex:outputPanel />
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Type_of_Activity__c.label}" for="stage"/>
+					<apex:actionRegion >
+						<apex:inputField value="{!pmdf.Type_of_Activity__c}" required="true" id="stage">
+							<apex:actionSupport event="onchange" rerender="infoPageBlockSectionId"/>
+						</apex:inputField>
+					</apex:actionRegion>
+				</apex:pageBlockSectionItem>
+				<apex:inputField value="{!pmdf.Other_Activity__c}" rendered="{!pmdf.Type_of_Activity__c == 'Other'}" required="true"/>
+				<apex:outputPanel />
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection columns="1" collapsible="false">
+				<apex:inputField value="{!pmdf.When_will_the_activity_happen__c}" required="true"/>
+				<apex:inputField value="{!pmdf.What_is_the_goal_of_the_activity__c}" required="true" style="min-width: 500px;"/>
+
+				<apex:inputField value="{!pmdf.MDF_Date_Submitted__c}" required="true"/>
+				<apex:inputField value="{!pmdf.Explain_activity_in_detail__c}" required="true" style="min-width: 500px;"/>
+				<apex:inputField value="{!pmdf.Anything_else_we_should_know__c}" style="min-width: 500px;"/>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:component>

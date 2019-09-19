@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification for WBN Approval Process - Sales Ops-HTML Version</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>YBN</letterhead>
+    <name>WBN - NCS - Approval Notification - Sales Ops-HTML</name>
+    <style>freeForm</style>
+    <subject>Notification: WFE Never Launched - {!Opportunity.Account} - {!ApprovalRequest.Process_Step_Name}</subject>
+    <textOnly>One of the products on this opportunity did not launch. Please follow-up and determine if the Opportunity can be SAVED or if the Opportunity should be marked as Closed Lost.
+
+Account: {!Opportunity.Account}
+Client Name: {!Account.Contact_Name__c}
+Opportunity Name: {!Opportunity.Name}
+Amount: {!Opportunity.Amount}
+Close Date: {!Opportunity.CloseDate}
+Product Sold: {!Opportunity.Products__c}
+
+Lost Reason Detail: {!Opportunity.Lost_Reason_Detail__c}
+
+Approval Information
+Approval Status: {!Opportunity.Approval_Opp_List_Review_Status__c}
+Approval Notes: {!Opportunity.Approval_Notes__c}
+
+Current Step: {!ApprovalRequest.Process_Step_Name}
+Step Comments: {!ApprovalRequest.Comments}
+Approval Step Status: {!ApprovalRequest.Status}
+Approval Step Assignee: {!ApprovalRequest.Process_Assignee}
+Approval Step Approver: {!ApprovalRequest.Process_Approver}
+
+
+Notes:
+{!Opportunity.Approval_Notes__c}
+
+Link: {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,8 @@
+<apex:component controller="CPPAccountPickerComponentController">
+	<apex:form rendered="{!renderAcctPicker}">
+		<apex:actionFunction name="selectAcct" action="{!selectAcct}"/>
+		<apex:selectList value="{!selectedAcctId}" multiselect="false" size="1" onchange="selectAcct();">
+		 	<apex:selectOptions value="{!CPPAcctList}"/>
+		</apex:selectList>
+	</apex:form>
+</apex:component>

@@ -241,6 +241,29 @@
         <value>Partner Transition</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Partner Transition Layout</layout>
+        <sections>
+            <label><!-- Company Profile --></label>
+            <section>Company Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Info For PAM (Internal Use Only) --></label>
+            <section>Info For PAM (Internal Use Only)</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Onboarding --></label>
+            <section>Partner Onboarding</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; Marketing --></label>
+            <section>Sales &amp; Marketing</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- You specified Other in Marketing Commitments - Please share what the other is. --></errorMessage>
         <name>If_Other_Required</name>

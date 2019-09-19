@@ -144,15 +144,6 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>CampaignEconomics__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>e.g. If PPC Budget increase - what is the minimum monthly  budget to qualify (e.g. $1000/mo)  what is the % of budget  increase and for how long?</inlineHelpText>
-        <label>Campaign Economics</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Campaign_Outreach__c</fullName>
         <externalId>false</externalId>
         <label>Campaign Outreach</label>
@@ -283,15 +274,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>RevenueGoal__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Example: ROI for Promo $XX, XXX -  What do we expect the increase in monthly recurring revenue to be?)</inlineHelpText>
-        <label>Revenue Goal</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>StartDate__c</fullName>
         <externalId>false</externalId>
         <label>Start Date</label>
@@ -360,6 +342,24 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CampaignEconomics__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>e.g. If PPC Budget increase - what is the minimum monthlyÂ budget to qualify (e.g. $1000/mo)Â what is the % of budgetÂ increase and for how long?</inlineHelpText>
+        <label>Campaign Economics</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RevenueGoal__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Example: ROI for Promo $XX, XXX â€“Â What do we expect the increase in monthly recurring revenue to be?)</inlineHelpText>
+        <label>Revenue Goal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>

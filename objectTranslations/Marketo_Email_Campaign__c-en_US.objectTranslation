@@ -81,6 +81,27 @@
         <value>Marketo Email Campaigns</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Hourly Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketo Email Campaign Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Default --></label>
         <name>Default</name>

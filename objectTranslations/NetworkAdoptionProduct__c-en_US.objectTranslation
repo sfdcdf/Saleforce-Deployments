@@ -85,6 +85,13 @@
         <value>Network Adoption Products</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Network Adoption Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- Must be greater than 0. --></errorMessage>
         <name>AdoptionLen_Greater_Than_0</name>

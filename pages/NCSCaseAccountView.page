@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" standardController="Case">
+	<apex:pageBlock mode="maindetail">
+		<apex:pageBlockSection >
+			<apex:outputField value="{!Case.Account.LHFS_Self_Sign_Up__c}"/>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>

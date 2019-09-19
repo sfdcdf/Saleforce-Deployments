@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?><AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Basic Assignments</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Lighthouse_Field_Service</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>LHFS Android App,LHFS iOS App</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PostLaunchAssociateQueue275821</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Account Update</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Requested_Campaign_Updates__c</field>
+                <operation>excludes</operation>
+                <value>None</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Requested_Updates__c</field>
+                <operation>excludes</operation>
+                <value>Citation Network Escalation,None</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Client_Type__c</field>
+                <operation>notEqual</operation>
+                <value>National Account,National Master Account,OEM National,YBN</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Product_Type__c</field>
+                <operation>notContain</operation>
+                <value>Outrank 1.0</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Lighthouse_Field_Service</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Lighthouse Field Service</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Client Communication,Outbound Call,Sales Feedback</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LH_Auto_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Lighthouse Auto</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Client Communication,Outbound Call,Sales Feedback</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LH_Support_Austin</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Lighthouse Chiro,Lighthouse Dental</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Billing,Setup Call</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LH_Support_Austin</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Lighthouse Chiro,Lighthouse Dental</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Client Communication,Outbound Call,Sales Feedback</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LH_Support_Austin</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND 2 AND 3) OR (4 AND 5 AND 6 AND 7)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Lighthouse Auto,Lighthouse Chiro,Lighthouse Field Service</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Lighthouse Auto,Lighthouse Chiro,Lighthouse Field Service</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Billing,Outbound Call</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Help_Portal_Product_Type__c</field>
+                <operation>equals</operation>
+                <value>Local</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Client Communication,Outbound Call,Sales Feedback</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>Yodle Gold Service - Web Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Yodle_Gold_Service</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>YodleGoldService@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>notContain</operation>
+                <value>@salesforce.com,chatter.salesforce.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LH_Support_Austin</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>LHWB@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>support@lighthousepmg.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>contains</operation>
+                <value>Purchase Receipt,Action Needed</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>contains</operation>
+                <value>@yodle.com,@web.com,@lighthousepmg.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Email_Catch_All</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3) AND 4 AND 5) OR (6 AND 7 AND 8 AND 9 AND 10) OR 11</booleanFilter>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>contains</operation>
+                <value>@web.com,@yodle.com,@salesforce.com,@onesourcevhr.com,@webtime.com,@theoreminc.net,@00d600000006ycdeay.pnet,@chatter.salesforce.com,@aetnagetactive.com,@office.lhmailer.com,perkspot.com,adp.com,@register.com,@yodle.onmicrosoft.com,itproprojects@gmail.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>contains</operation>
+                <value>@registeredsite.com,@hipchat.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>CS@Outrank.com,customercare@yodle.com,fsproductfeedback@yodle.com,lhproductfeedback@yodle.com,productideas@yodle.com,YBNProductIdeas@yodle.com,TORCHxProductFeedback@yodle.com,support@torchx.com,LHWB@yodle.com,Platinum Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>LandstarSupport@web.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>contains</operation>
+                <value>@web.com,@yodle.com,@salesforce.com,@onesourcevhr.com,@webtime.com,@theoreminc.net,@00d600000006ycdeay.pnet,@chatter.salesforce.com,@aetnagetactive.com,@office.lhmailer.com,perkspot.com,adp.com,@register.com,@yodle.onmicrosoft.com,itproprojects@gmail.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>contains</operation>
+                <value>OR 3.0 GLocal &amp; BLocal,was unable to be billed,OR 3.0 - Organic Setup Search Influence Work Completed,Re:</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>customercare@yodle.com,LBWCustomerService@web.com,Rep Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>LandstarSupport@web.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>equals</operation>
+                <value>New Web To Case,Billing Error: Credit Card Declined,Client Spend Alert,Low Advertising Funds,Billing Error: Credit Card Declined</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>customercare@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>contains</operation>
+                <value>@yodle.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Master</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Local Pooled VM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>fsproductfeedback@yodle.com,lhproductfeedback@yodle.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Master</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Reason</field>
+                <operation>equals</operation>
+                <value>Client Escalation</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Client_Type__c</field>
+                <operation>notEqual</operation>
+                <value>National Account,National Master Account,OEM National,Partner,YBN</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

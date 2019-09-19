@@ -141,6 +141,21 @@
         <value>Service Audits</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Service Audit Layout</layout>
+        <sections>
+            <label><!-- Call Details --></label>
+            <section>Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- QA Details --></label>
+            <section>QA Details</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Inbound Call Audit --></label>
         <name>Inbound_Call_Audit</name>

@@ -153,6 +153,7 @@
         <relationshipName>Integrations</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
@@ -164,6 +165,7 @@
         <inlineHelpText>Is this integration Active?</inlineHelpText>
         <label>Active</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -189,6 +191,7 @@
         <inlineHelpText>Integration details</inlineHelpText>
         <label>Description</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -199,6 +202,7 @@
         <label>Other Type of Integration</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -209,6 +213,7 @@
         <externalId>false</externalId>
         <label>Type of Integration(s)</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -254,17 +259,17 @@
         </valueSet>
         <visibleLines>5</visibleLines>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
+    <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>3rd party integrations that could impact the client's current integration.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
@@ -272,11 +277,14 @@
     <nameField>
         <displayFormat>INT-{00000}</displayFormat>
         <label>Integration Name</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Integrations</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>

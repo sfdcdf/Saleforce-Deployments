@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Defines the interval/ delay for batch records to create CTS tickets --></help>
+        <label><!-- AsyncDelayInterval --></label>
+        <name>AsyncDelayInterval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to determine the number of records that should be retrieved overall for batch processing through the CTS Sync Service --></help>
+        <label><!-- Async Retrieval Size --></label>
+        <name>AsyncRetrievalSize__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to determine the batch size dynamically through the CTS Sync Service --></help>
+        <label><!-- Batch Size --></label>
+        <name>BatchSize__c</name>
+    </fields>
+    <fields>
+        <help><!-- UUID used to define the requesting CRM system when a ticket is created through the CTS ESB service --></help>
+        <label><!-- CTS CRM Id --></label>
+        <name>CTScrmId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default Contact Id (WhoId) used for rendering Email Template; Savepoint sp = Database.setSavepoint(); Messaging.sendEmail(new Messaging.SingleEmailMessage[] {mail}); Database.rollback(sp); --></help>
+        <label><!-- Default Contact Id --></label>
+        <name>DefaultContactId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description/ summary for the CTS Enterprise Service Bus (ESB) Endpoint URL record --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTS ESB API Access Key used for securing the endpoint for only valid requests --></help>
+        <label><!-- ESB API Access Key --></label>
+        <name>ESBapiAccessKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag/ indicator signifying if the integration record is active or not --></help>
+        <label><!-- Is Active --></label>
+        <name>IsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- The CTS Ticket creation API version (XML, JSON) --></help>
+        <label><!-- Requested Service --></label>
+        <name>RequestedService__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>CTS Integration Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CTS Integration Settings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

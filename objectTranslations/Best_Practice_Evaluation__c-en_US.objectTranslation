@@ -1419,19 +1419,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Do all listings comply with Yodle’s best practices? --></help>
-        <label><!-- Listings meet Yodle standards --></label>
-        <name>Listings_meet_Yodle_standards__c</name>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- MA Manager --></label>
         <name>MA_Manager__c</name>
         <relationshipLabel><!-- Best Practice Evaluations (MA Manager) --></relationshipLabel>
@@ -1471,15 +1458,6 @@
         <relationshipLabel><!-- Best Practice Evaluations (MPA Manager) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Not mentioned as an issue - 0%
-Several issues identified, but not tackled - 25% 
-Several issues identified, partially tackled/not tackled appropriately - 50%
-Several issues identified, most issues tackled - 75%
-All issues identified &amp; tackled - 100% --></help>
-        <label><!-- All Perf Issues Identified &amp; Tackled --></label>
-        <name>Main_Issue_OPT__c</name>
-    </fields>
-    <fields>
         <label><!-- Manager Notes --></label>
         <name>Manager_Notes__c</name>
     </fields>
@@ -1515,19 +1493,6 @@ All issues identified &amp; tackled - 100% --></help>
         <picklistValues>
             <masterLabel>Error Free</masterLabel>
             <translation><!-- Error Free --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- Do the Maps listings have Yodle’s mobile best practices implemented? --></help>
-        <label><!-- Mobile Business Targeting --></label>
-        <name>Mobile_Business_Targeting__c</name>
-        <picklistValues>
-            <masterLabel>Compliant</masterLabel>
-            <translation><!-- Compliant --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Non-Compliant</masterLabel>
-            <translation><!-- Non-Compliant --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2442,11 +2407,6 @@ All issues identified &amp; tackled - 100% --></help>
         <relationshipLabel><!-- Best Practice Evaluations (Yodle Relationship Manager) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Add the name of Yodle’s corporate contact here. --></help>
-        <label><!-- Yodle&apos;s Main Corporate Point Of Contact --></label>
-        <name>Yodle_corporate_contact__c</name>
-    </fields>
-    <fields>
         <help><!-- Describe the process by which accounts get changed, added or deleted. --></help>
         <label><!-- What is the Change Management Process? --></label>
         <name>change_management_process__c</name>
@@ -2522,6 +2482,46 @@ All issues identified &amp; tackled - 100% --></help>
         <label><!-- Performance reports being produced --></label>
         <name>performance_reports_are__c</name>
     </fields>
+    <fields>
+        <help><!-- Do all listings comply with Yodleâ€™s best practices? --></help>
+        <label><!-- Listings meet Yodle standards --></label>
+        <name>Listings_meet_Yodle_standards__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Not mentioned as an issue â€“ 0%
+Several issues identified, but not tackled â€“ 25% 
+Several issues identified, partially tackled/not tackled appropriately â€“ 50%
+Several issues identified, most issues tackled - 75%
+All issues identified &amp; tackled - 100% --></help>
+        <label><!-- All Perf Issues Identified &amp; Tackled --></label>
+        <name>Main_Issue_OPT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do the Maps listings have Yodleâ€™s mobile best practices implemented? --></help>
+        <label><!-- Mobile Business Targeting --></label>
+        <name>Mobile_Business_Targeting__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Compliant</masterLabel>
+            <translation><!-- Non-Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Add the name of Yodleâ€™s corporate contact here. --></help>
+        <label><!-- Yodle&apos;s Main Corporate Point Of Contact --></label>
+        <name>Yodle_corporate_contact__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Best Practice Evaluation</value>
@@ -2531,6 +2531,169 @@ All issues identified &amp; tackled - 100% --></help>
         <value>Best Practice Evaluations</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>National Audit</layout>
+        <sections>
+            <label><!-- Build Process --></label>
+            <section>Build Process</section>
+        </sections>
+        <sections>
+            <label><!-- Citation Fulfillment --></label>
+            <section>Citation Fulfillment</section>
+        </sections>
+        <sections>
+            <label><!-- Client Service Support --></label>
+            <section>Client Service Support</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Implementation --></label>
+            <section>Implementation</section>
+        </sections>
+        <sections>
+            <label><!-- Listing - Best Practices --></label>
+            <section>Listing - Best Practices</section>
+        </sections>
+        <sections>
+            <label><!-- Maintenance Information --></label>
+            <section>Maintenance Information</section>
+        </sections>
+        <sections>
+            <label><!-- National Account Relationship Audit Information --></label>
+            <section>National Account Relationship Audit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting --></label>
+            <section>Reporting</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Information --></label>
+            <section>Setup Information</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Website Fulfillment --></label>
+            <section>Website Fulfillment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Optimization Evaluation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Basic Info --></label>
+            <section>Evaluation Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Opt Evaluation Detail --></label>
+            <section>Opt Evaluation Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Opt Evaluation Notes --></label>
+            <section>Opt Evaluation Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QA Audit</layout>
+        <sections>
+            <label><!-- ASW --></label>
+            <section>ASW</section>
+        </sections>
+        <sections>
+            <label><!-- Account --></label>
+            <section>Account</section>
+        </sections>
+        <sections>
+            <label><!-- Ads --></label>
+            <section>Ads</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Basic Info --></label>
+            <section>Evaluation Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Geo Template --></label>
+            <section>Geo Template</section>
+        </sections>
+        <sections>
+            <label><!-- QA Notes --></label>
+            <section>QA Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Website Formatting --></label>
+            <section>Website Formatting</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Setup Evaluation</layout>
+        <sections>
+            <label><!-- ASW --></label>
+            <section>ASW</section>
+        </sections>
+        <sections>
+            <label><!-- Ads --></label>
+            <section>Ads</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Basic Info --></label>
+            <section>Evaluation Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Geo Template --></label>
+            <section>Geo Template</section>
+        </sections>
+        <sections>
+            <label><!-- Negatives --></label>
+            <section>Negatives</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Evaluation Notes --></label>
+            <section>Setup Evaluation Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Website/Landing Page --></label>
+            <section>Website/Landing Page</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Website Audit</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Audit --></label>
+            <section>Audit</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grade --></label>
+            <section>Grade</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- National Audit --></label>
         <name>National_Audit</name>

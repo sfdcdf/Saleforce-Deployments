@@ -1,0 +1,78 @@
+<apex:component allowDML="true" controller="MDFRequestHistoryController" layout="block">
+	<style>
+		.bPageBlock {
+			margin-bottom: 0px !important;
+		}
+	</style>
+	<apex:form >
+		<apex:pageBlock mode="maindetail" id="historyListBlockId">
+			<apex:actionPoller action="{!refreshData}" reRender="historyListBlockId" interval="600" status="refreshDataStatus"/>
+			<apex:actionFunction action="{!refreshData}" reRender="historyListBlockId" name="orderFunction" status="refreshDataStatus"/>
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Refresh List" action="{!refreshData}" reRender="historyListBlockId" status="refreshDataStatus"/>
+			</apex:pageBlockButtons>
+
+			<apex:pageBlockSection title="MDF Request History" columns="1" collapsible="false">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value=""/>
+					<apex:actionstatus id="refreshDataStatus" startText="updating..."/>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Order by"/>
+					<apex:selectList value="{!selectedOrderBy}" multiselect="false" size="1" onchange="orderFunction();">
+					 	<apex:selectOptions value="{!OrderByList}"/>
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+
+				<apex:pageBlockTable value="{!pmdfHistoryList}" var="pmdfStatus" rendered="{!pmdfHistoryList.size > 0}">
+					<apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Name.label}">
+						<apex:commandLink action="{!selectedPMDF}" value="{!pmdfStatus.Name}" reRender="selectedRecordPanelHistoryId">
+							<apex:param name="pmdfSelectedId" value="{!pmdfStatus.id}" />
+						</apex:commandLink>
+					</apex:column>
+					<apex:column value="{!pmdfStatus.MDF_Status__c}"/>
+					<apex:column value="{!pmdfStatus.Requested_By__c}"/>
+					<apex:column value="{!pmdfStatus.Estimated_Cost_of_Activity__c}"/>
+					<apex:column value="{!pmdfStatus.Total_Cost_of_Activity__c}"/>
+					<apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Type_of_Activity__c.label}">
+						<apex:outputField value="{!pmdfStatus.Type_of_Activity__c}" rendered="{!pmdfStatus.Type_of_Activity__c != 'Other'}"/>
+						<apex:outputField value="{!pmdfStatus.Other_Activity__c}" rendered="{!pmdfStatus.Type_of_Activity__c == 'Other'}"/>
+					</apex:column>
+					<apex:column value="{!pmdfStatus.What_is_the_goal_of_the_activity__c}"/>
+					<apex:column value="{!pmdfStatus.When_will_the_activity_happen__c}"/>
+					<apex:column value="{!pmdfStatus.MDF_Date_Submitted__c}"/>
+				</apex:pageBlockTable>
+
+				<apex:pageMessage summary="No historical data!" severity="info" strength="3" rendered="{!pmdfHistoryList.size == 0}"/>
+			</apex:pageBlockSection>
+
+			<hr/>
+			<hr/>
+		</apex:pageBlock>
+		<!--hr/>
+		<hr/-->
+	</apex:form>
+
+	<apex:form >
+		<apex:outputPanel id="selectedRecordPanelHistoryId">
+			<apex:outputPanel layout="block" rendered="{!pmdfSelected.Id != ''}">
+				<apex:commandLink action="{!selectedPMDF}" value="x" reRender="selectedRecordPanelHistoryId" style="float:right; margin-right: 25px; text-decoration: none; font-weight: bolder; border-style: dashed; color: #ff0000;">
+					<apex:param name="pmdfSelectedId" value="" />
+				</apex:commandLink>
+			</apex:outputPanel>
+			<apex:pageBlock mode="maindetail" rendered="{!pmdfSelected.Id != ''}" title="{!pmdfSelected.Name}">
+				<apex:outputPanel rendered="{!pmdfSelected.MDF_Status__c == 'Request Approved' || CONTAINS(pmdfSelected.MDF_Status__c, 'Claim')}" layout="block">
+					<apex:pageBlockSection title="Claim Form" columns="1" collapsible="false">
+						<apex:outputField value="{!pmdfSelected.Claimed_By__c}"/>
+						<apex:outputField value="{!pmdfSelected.Date_of_Activity__c}"/>
+						<apex:outputField value="{!pmdfSelected.Total_Cost_of_Activity__c}"/>
+						<apex:outputField value="{!pmdfSelected.Claim_Notes__c}" style="min-width: 500px;"/>
+					</apex:pageBlockSection>
+				</apex:outputPanel>
+				<apex:pageBlockSection title="Selected MDF" columns="1" collapsible="false">
+					<apex:detail subject="{!pmdfSelected.Id}" rerender="selectedRecordPanelHistoryId" title="false"/>
+				</apex:pageBlockSection>
+			</apex:pageBlock>
+		</apex:outputPanel>
+	</apex:form>
+</apex:component>

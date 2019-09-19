@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Lighthouse_Exit_Survey</fullName>
+        <description>Lighthouse Exit Survey</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Client_E_mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>accountservices@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Survey_Emails/Lighthouse_Exit_Survey</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Cancellation_Checkbox</fullName>
+        <field>Cancelled__c</field>
+        <literalValue>1</literalValue>
+        <name>Account - Cancelled to True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Hold_Status_Date</fullName>
+        <field>Hold_Status_Date__c</field>
+        <name>Clear Hold Status Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Commission_December_2011</fullName>
+        <field>NE_09_Commission_Month__c</field>
+        <formula>date(2011,12,01)</formula>
+        <name>Commission - December 2011</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Commission_November_2011</fullName>
+        <field>NE_09_Commission_Month__c</field>
+        <formula>date(2011,11,01)</formula>
+        <name>Commission - November 2011</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Consumable_Price_to_1_79</fullName>
+        <field>Consumable_Price__c</field>
+        <formula>1.79</formula>
+        <name>Consumable Price to $1.79</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Consumables_Price_to_199</fullName>
+        <field>Consumable_Price__c</field>
+        <formula>1.99</formula>
+        <name>Consumables Price to $1.99</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Consumables_Price_to_2_49</fullName>
+        <field>Consumable_Price__c</field>
+        <formula>2.49</formula>
+        <name>Consumables Price to $2.49</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Pitched_to_Today</fullName>
+        <field>Date_Pitched__c</field>
+        <formula>Today()</formula>
+        <name>Date Pitched to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LH_Exit_Survey_Sent</fullName>
+        <field>LH_Exit_Survey_Sent__c</field>
+        <literalValue>1</literalValue>
+        <name>LH Exit Survey Sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LH_Exit_Survey_Sent_Date</fullName>
+        <field>LH_Exit_Survey_Sent_Date__c</field>
+        <formula>today()</formula>
+        <name>LH Exit Survey Sent Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Marketo_Sync_Checkbox_Update_for_Marketo</fullName>
+        <field>Sync_to_Marketo__c</field>
+        <literalValue>1</literalValue>
+        <name>Sync to Marketo On Demand</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pitched_By_User_Fill_In</fullName>
+        <field>Pitched_By__c</field>
+        <formula>$User.FirstName &amp; " " &amp; $User.LastName</formula>
+        <name>Pitched By User Fill In</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Client_Email</fullName>
+        <field>Client_E_mail__c</field>
+        <formula>Email__c</formula>
+        <name>Populate Client Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Touchplan_Email_to_Populate</fullName>
+        <field>Email_for_Touchplan__c</field>
+        <formula>Email__c</formula>
+        <name>Account - Email for Touchplan to Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X180_day_live_rate</fullName>
+        <field>Live_on_180th_Day__c</field>
+        <literalValue>1</literalValue>
+        <name>Account - Live 180th Day to True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>berrycontractreceived</fullName>
+        <field>Date_Berry_Contract_Received__c</field>
+        <formula>IF(ISCHANGED( Berry_Contract_Received__c) ,NOW(),NULL)</formula>
+        <name>Account - Date Berry Contract Rec to Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>orderdatelivedate</fullName>
+        <description>when there is a live date, but no order date</description>
+        <field>Order_Date__c</field>
+        <formula>Live_Date__c</formula>
+        <name>Account - Order Date to Live Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>substatusstatus</fullName>
+        <field>Sub_Status__c</field>
+        <formula>CASE(Status__c , "LIVE", "Live", "OFF", "Off","")</formula>
+        <name>Account - Sub Status to Live/Off</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>typecustomer</fullName>
+        <field>Type</field>
+        <literalValue>Customer</literalValue>
+        <name>Account - Type to Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

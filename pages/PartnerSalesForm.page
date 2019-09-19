@@ -1,0 +1,5 @@
+<apex:page showHeader="true" sidebar="false" controller="PartnerSalesFormController">
+    <apex:iframe src="https://www.lh360.com/sales-submission/" scrolling="true" height="800px" rendered="{!showLighthouseForm}"/>
+
+    <apex:pageMessage summary="Please contact your Account Executive. You currently do not have access to this page!" severity="warning" strength="3" rendered="{!!showLighthouseForm}"/>
+</apex:page>

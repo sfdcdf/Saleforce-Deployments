@@ -152,6 +152,7 @@
         <relationshipLabel>Service Audits</relationshipLabel>
         <relationshipName>Service_Audits</relationshipName>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -162,6 +163,7 @@
         <label>Call Last Timestamp</label>
         <length>20</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -173,6 +175,7 @@
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Client ID</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -182,6 +185,7 @@
         <externalId>false</externalId>
         <label>Fix Needed?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -206,6 +210,7 @@
         <label>Issue Catagory Group</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -216,6 +221,7 @@
         <label>Issue Catagory</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -225,6 +231,7 @@
         <externalId>false</externalId>
         <label>Issue Resolved?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -256,6 +263,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Service_Audits1</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -267,6 +275,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Service_Audits</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -275,6 +284,7 @@
         <externalId>false</externalId>
         <label>Link to Call</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
@@ -286,6 +296,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Service_Audits2</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -294,6 +305,7 @@
         <externalId>false</externalId>
         <label>Results of QA</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -357,6 +369,7 @@
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -385,6 +398,7 @@
         <externalId>false</externalId>
         <label>Summary of Call</label>
         <length>50000</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
@@ -395,7 +409,7 @@
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
@@ -406,9 +420,11 @@
     <nameField>
         <displayFormat>SA-{0000}</displayFormat>
         <label>Service Audit Name</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Service Audits</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

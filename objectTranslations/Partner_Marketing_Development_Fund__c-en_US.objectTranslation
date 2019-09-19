@@ -163,6 +163,32 @@
         <value>Partner Marketing Development Funds</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Partner Marketing Development Fund Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MDF Claim Detail --></label>
+            <section>MDF Claim Detail</section>
+        </sections>
+        <sections>
+            <label><!-- MDF Status Information --></label>
+            <section>MDF Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Request View for Client</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MDF Status Information --></label>
+            <section>MDF Status Information</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- Other Activity field is required if Other is the selected Type of Activity value! --></errorMessage>
         <name>Other_Activity_Validation</name>

@@ -165,6 +165,17 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayouts>
+        <fullName>WBN_IL</fullName>
+        <fields>Subject</fields>
+        <fields>ActivityDateTime</fields>
+        <fields>WhoId</fields>
+        <fields>WhatId</fields>
+        <fields>Activity_Type__c</fields>
+        <fields>Milestone__c</fields>
+        <fields>Status__c</fields>
+        <label>WBN-IL</label>
+    </compactLayouts>
     <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -253,6 +264,7 @@
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <recordTypes>
@@ -9187,22 +9199,6 @@ ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
         <errorMessage>"Proactive or Reactive" field must be filled out</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>ybn_Interaction_Type_blank_event</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
- ISPICKVAL( Interaction_Type__c ,""),
- ISPICKVAL(Status__c ,"Completed"),
-AND(
-Or(
- ISPICKVAL( Milestone__c ,"M001 – Discovery Call"),
- ISPICKVAL( Milestone__c ,"M003 - Demo/Value Presentation"),
- ISPICKVAL( Milestone__c ,"M006 - ROI info gathering"),
- ISPICKVAL( Milestone__c ,"M006 - Custom Implementation Investigation"),
- ISPICKVAL( Milestone__c ,"M008 - Solutions in Action Presentation"),
- ISPICKVAL( Milestone__c ,"M010 - Present Proposal &amp; SOW"))))</errorConditionFormula>
-        <errorMessage>"Interaction Type" must be filled out.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>ybn_description_field_mus_be_filled_out</fullName>
         <active>true</active>
         <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
@@ -9221,5 +9217,21 @@ ISPICKVAL(  Status__c , "Completed"))</errorConditionFormula>
 ispickval( Status__c ,"Completed"),
 ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
         <errorMessage>"Project Details" field must be filled out</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ybn_Interaction_Type_blank_event</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+ ISPICKVAL( Interaction_Type__c ,""),
+ ISPICKVAL(Status__c ,"Completed"),
+AND(
+Or(
+ ISPICKVAL( Milestone__c ,"M001 â€“ Discovery Call"),
+ ISPICKVAL( Milestone__c ,"M003 - Demo/Value Presentation"),
+ ISPICKVAL( Milestone__c ,"M006 - ROI info gathering"),
+ ISPICKVAL( Milestone__c ,"M006 - Custom Implementation Investigation"),
+ ISPICKVAL( Milestone__c ,"M008 - Solutions in Action Presentation"),
+ ISPICKVAL( Milestone__c ,"M010 - Present Proposal &amp; SOW"))))</errorConditionFormula>
+        <errorMessage>"Interaction Type" must be filled out.</errorMessage>
     </validationRules>
 </CustomObject>

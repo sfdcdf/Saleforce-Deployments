@@ -1,0 +1,45 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Change Order
+<br>
+<br>Customer agrees to add the Yodle Ads Service to its Services as set forth below.
+<br>
+<br>Yodle Ads Service Recurring Monthly Advertising Budget.  Customer 
+agrees that its Monthly Advertising Budget for the Yodle Ads Service is 
+${!Case.Monthly_Advertising_Budget__c}, and Customer authorizes Yodle to
+ charge its credit card for the Monthly Advertising Budget effective 
+immediately and on a monthly recurring basis thereafter until the Yodle 
+Ads Service is canceled.
+<br>The portion of the Monthly Advertising Budget used for the Google 
+Network and the Yodle Network may vary from the amounts referenced here.
+ 
+<br>* Monthly Advertising Budget: ${!Case.Monthly_Advertising_Budget__c}
+<br>* Managed Google SEM Budget: ${!Case.Managed_Google_SEM_Budget__c}
+<br>* Yodle Network Budget: ${!Case.Yodle_Network_Budget__c}
+<br>
+<br>Yodle Ads Service Recurring Monthly Management Fee.   Customer 
+agrees to pay a Monthly Management Fee of $20 per month until the Yodle 
+Ads Service is cancelled.
+<br>
+<br>Yodle Ads Service Term.  The term of the Yodle Ads Service is one 
+(1) month and will automatically continue month to month thereafter (and
+ Customer will be billed the applicable monthly fees on a monthly 
+recurring basis), until the Yodle Ads Service is canceled.  Customer may
+ pause the Yodle Ads Service at any time and will continue to be billed 
+the Monthly Paid Media Management Fee for so long as the Yodle Ads 
+Service remains paused.  Customer may cancel the Yodle Ads Service at 
+any time, and (i) such cancellation will become effective at the end of 
+the current billing cycle and (ii) Customer will not be billed any 
+additional amounts for the Yodle Ads Service.  
+<br><br>Customer accepts this Change Order, which is subject to the <a href="http://live.yodle.com/dashboard/legal/msa/1/add/4828321532,4828321541,5392673725?h=45612c9f501630866fe8e59f7b505b596351d73ef8ce130224062a3daf806758">terms 
+and conditions</a>   , by replying to this email with the words "I Accept" 
+or similar language acknowledging assent.  This action creates an 
+electronic signature that has the same legal force and effect as a 
+handwritten signature on a written contract under any applicable law or 
+regulation, and is equally binding.  This Change Order becomes effective
+ on the date accepted by the Customer.
+<br>
+<br>Please contact your Yodle representative if you have any questions.<br><br>Account Name: {!Case.Account}<br>]]></td>
+</tr>
+</table>

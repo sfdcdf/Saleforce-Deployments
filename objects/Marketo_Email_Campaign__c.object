@@ -149,6 +149,7 @@
         <label>Account ID Field Name</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -162,6 +163,7 @@
         <relationshipLabel>Marketo Email Campaigns</relationshipLabel>
         <relationshipName>Marketo_Email_Campaigns</relationshipName>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -170,6 +172,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Active</label>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -182,6 +185,7 @@
         <relationshipLabel>Marketo Email Campaigns</relationshipLabel>
         <relationshipName>Marketo_Email_Campaigns</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -190,6 +194,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Create Case</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -198,6 +203,7 @@
         <externalId>false</externalId>
         <label>Criteria</label>
         <length>32768</length>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -208,6 +214,7 @@
         <label>Custom Automation API Reference</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -218,6 +225,7 @@
         <label>Date Field to Update on Request Sent</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -228,6 +236,7 @@
         <label>Hourly Reminder DateTime Field</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -240,6 +249,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -250,6 +260,7 @@
         <label>Marketo Campaign ID</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -263,6 +274,7 @@
         <relationshipLabel>Marketo Email Campaigns</relationshipLabel>
         <relationshipName>Marketo_Email_Campaigns</relationshipName>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -271,6 +283,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Marketo Request Sent</label>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -279,6 +292,7 @@
         <externalId>false</externalId>
         <label>New Record Default Values</label>
         <length>32768</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -288,6 +302,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Randomize</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -297,6 +312,7 @@
         <externalId>false</externalId>
         <inlineHelpText>*WARNING* - only use this if you want to use the Marketo ID for Touchplan instead of the Marketo ID as the Marketo Lead ID value. Currently only used for WBN Touchplans. If you aren't sure, talk to a developer!</inlineHelpText>
         <label>Use Marketo ID For Touchplan</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -307,6 +323,7 @@
         <precision>1</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -316,8 +333,9 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
@@ -327,9 +345,11 @@
     <label>Marketo Email Campaign</label>
     <nameField>
         <label>Marketo Email Campaign Name</label>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Marketo Email Campaigns</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
@@ -341,6 +361,154 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Marketo_Request_Sent__c</columns>
+        <columns>Marketo_Email_Campaign_Template__c</columns>
+        <columns>Marketo_Campaign_ID__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Google_Co_Management</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Marketo_Campaign_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>CoManage,GCoM</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template</value>
+        </filters>
+        <label>Google Co-Management</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Hourly_Templates</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Hourly_Template</value>
+        </filters>
+        <label>Hourly Templates</label>
+    </listViews>
+    <listViews>
+        <fullName>Lighthouse</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Lighthouse</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>LH</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template</value>
+        </filters>
+        <label>Lighthouse</label>
+    </listViews>
+    <listViews>
+        <fullName>Local</fullName>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Criteria__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Local</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Essentials</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template</value>
+        </filters>
+        <label>Local</label>
+    </listViews>
+    <listViews>
+        <fullName>TORCHx</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>TORCHx,TX</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template</value>
+        </filters>
+        <label>TORCHx</label>
+    </listViews>
+    <listViews>
+        <fullName>Template</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Criteria__c</columns>
+        <columns>Randomize__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Marketo_Campaign_ID__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template,Marketo_Email_Campaign__c.Hourly_Template</value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Template</label>
+    </listViews>
+    <listViews>
+        <fullName>WBN</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Date_Field_to_Update_on_Request_Sent__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>WBN,YBN</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Marketo_Email_Campaign__c.Template</value>
+        </filters>
+        <label>WBN</label>
     </listViews>
     <recordTypes>
         <fullName>Default</fullName>

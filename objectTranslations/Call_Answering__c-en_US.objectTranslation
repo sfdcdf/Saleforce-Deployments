@@ -287,7 +287,42 @@ After Hours - Call goes to call answering during specified time --></help>
         <plural>true</plural>
         <value>Call Answering</value>
     </caseValues>
-    <startsWith>Consonant</startsWith>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>Call Answering Layout</layout>
+        <sections>
+            <label><!-- Business Information --></label>
+            <section>Business Information</section>
+        </sections>
+        <sections>
+            <label><!-- Call Answering Script --></label>
+            <section>Call Answering Script</section>
+        </sections>
+        <sections>
+            <label><!-- Change Request Details --></label>
+            <section>Change Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Method for Client to Receive Messages (Need to Fill Out One) --></label>
+            <section>Method for Client to Receive Messages (Need to Fill Out One)</section>
+        </sections>
+        <sections>
+            <label><!-- Questions/Issues --></label>
+            <section>Questions/Issues</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- SLA --></label>
+            <section>SLA</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Call Answering --></label>
         <name>Call_Answering</name>

@@ -152,6 +152,7 @@
         <relationshipLabel>Call Answering</relationshipLabel>
         <relationshipName>Call_Answering</relationshipName>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -161,6 +162,7 @@
         <inlineHelpText>Additional information about the business to help call answering representative handle caller's questions.  (Ex: "We accept most insurance")</inlineHelpText>
         <label>Additional Business Info</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -171,6 +173,7 @@
         <label>After Hours Details</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -181,6 +184,7 @@
         <inlineHelpText>If you do not want the client's business address available to callers, please skip.</inlineHelpText>
         <label>Business Address</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -191,6 +195,7 @@
 What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inlineHelpText>
         <label>Business Hours / Days Open</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -201,6 +206,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <label>Business Name</label>
         <length>50</length>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -210,6 +216,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Call Answering Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -258,6 +265,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Cancel Complete Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -266,6 +274,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Cancel Submit Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -278,6 +287,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <relationshipLabel>Call Answering</relationshipLabel>
         <relationshipName>Call_Answering</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -286,6 +296,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Change Complete Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -295,6 +306,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <inlineHelpText>Include the details of your change request here.</inlineHelpText>
         <label>Change Request Details</label>
         <length>32000</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
@@ -304,6 +316,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Change Submit Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -312,6 +325,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Client Cell Phone 2 For Text Message</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -320,6 +334,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Client Cell Phone 3 For Text Message</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -328,6 +343,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Client Email 2 For Email Message</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -337,6 +353,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Client Email 3 For Email Message</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -347,6 +364,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <inlineHelpText>What is email address would the client like notifications sent to?</inlineHelpText>
         <label>Client Email For Email Message</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -357,6 +375,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <formula>Account__r.Client_ID__c</formula>
         <label>Client ID</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -367,6 +386,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <inlineHelpText>This is the phone number that is needed for the client to receive text messages of their calls.</inlineHelpText>
         <label>Client Cell Phone For Text Message</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -377,6 +397,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Client Type</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -386,6 +407,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Closing Script</label>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -394,6 +416,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <externalId>false</externalId>
         <label>Custom Greeting</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -405,6 +428,7 @@ What are the business hours (ex: 9-5).  Note - All hours are Eastern Time.</inli
         <precision>18</precision>
         <required>false</required>
         <scale>1</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -436,6 +460,7 @@ CASE( MOD( DateValue(Question_Complete_Date__c) - DateValue(Question_Submit_Date
         <precision>18</precision>
         <required>false</required>
         <scale>1</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -468,6 +493,7 @@ CASE( MOD( DateValue(Cancel_Complete_Date__c) - DateValue(Cancel_Submit_Date__c)
         <precision>18</precision>
         <required>false</required>
         <scale>1</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -500,6 +526,7 @@ CASE( MOD( DateValue(Change_Complete_Date__c) - DateValue(Change_Submit_Date__c)
         <precision>18</precision>
         <required>false</required>
         <scale>1</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -531,6 +558,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <precision>18</precision>
         <required>false</required>
         <scale>1</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -540,6 +568,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Available 24/7?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -564,6 +593,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <inlineHelpText>What do you want the call answering representative's first response to be following the caller's response to the greeting?</inlineHelpText>
         <label>First Response</label>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -573,6 +603,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <inlineHelpText>Please list the Yodle tracking lines the client would like associated with the call answering service.</inlineHelpText>
         <label>If specific lines, please list below:</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -581,6 +612,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Info to Verify on the Call:</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -589,6 +621,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Initial Setup Complete</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -598,6 +631,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <inlineHelpText>What are are the primary services Yodle is advertising for this client?</inlineHelpText>
         <label>List of Services</label>
         <length>800</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>6</visibleLines>
@@ -607,6 +641,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Names of Key Staff</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -616,6 +651,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <label>Phonetic Spelling of Company Name</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -625,6 +661,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Question Complete Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -634,6 +671,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <inlineHelpText>What is your question or issue?</inlineHelpText>
         <label>Question/Issue</label>
         <length>32000</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
@@ -643,6 +681,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Question Submit Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -652,6 +691,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Requested By Email:</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -662,6 +702,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <label>Requested By</label>
         <length>35</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -672,6 +713,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <formula>Account__r.Secondary_Segments__c</formula>
         <label>Segment</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -681,6 +723,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Setup Complete Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -689,6 +732,7 @@ CASE( MOD( DateValue(Setup_Complete_Date__c ) - DateValue(Setup_Submit_Date__c) 
         <externalId>false</externalId>
         <label>Setup Submit Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -700,6 +744,7 @@ Full Forward - Call is directly forwarded to call answering
 After Hours - Call goes to call answering during specified time</inlineHelpText>
         <label>Setup Type</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -729,6 +774,7 @@ After Hours - Call goes to call answering during specified time</inlineHelpText>
         <inlineHelpText>What are the call tracking lines associated with the account in Yodle Live that you would like associated with the Call Answering service?</inlineHelpText>
         <label>Yodle Call Tracking Numbers:</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -753,6 +799,7 @@ After Hours - Call goes to call answering during specified time</inlineHelpText>
         <inlineHelpText>Please note that if your voicemail picks up in the same amount of rings as you choose here than that might answer the call first</inlineHelpText>
         <label># of Rings Before Answer</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -804,8 +851,9 @@ After Hours - Call goes to call answering during specified time</inlineHelpText>
     <description>Call answering setup requests.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -816,11 +864,14 @@ After Hours - Call goes to call answering during specified time</inlineHelpText>
     <nameField>
         <displayFormat>CA-{0000}</displayFormat>
         <label>Call Answering Name</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Call Answering</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
     <listViews>
         <fullName>Active_Call_Answering</fullName>
@@ -928,6 +979,15 @@ After Hours - Call goes to call answering during specified time</inlineHelpText>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
         <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Call_Answering_Call_Answering</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Call Answering</label>
+        <queue>Call_Answering</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

@@ -1,0 +1,23 @@
+<apex:page showHeader="true" sidebar="true" standardController="CPP_Lead_Registration__c" extensions="CreateCPPLeadRegistrationController" title="Lead Registration Form">
+    <apex:form >
+        <apex:sectionHeader title="Lead Registration Form" subtitle="New Lead Registration"/>
+        <apex:pageBlock id="cppLeadRegistrationPageBlockId" mode="edit" title="Lead Registration">
+            <apex:pageMessages />
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!Save}" value="Save"/>
+                <apex:commandButton action="{!saveAndNew}" value="Save and New"/>
+                <apex:commandButton action="{!Cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Lead Registration Information" collapsible="false" columns="1">
+                <apex:inputField value="{!CPP_Lead_Registration__c.Submitted_By__c}"/>
+                <apex:outputField value="{!CPP_Lead_Registration__c.Partner_Account__c}"/>
+                <apex:outputField value="{!CPP_Lead_Registration__c.Date_Submitted__c}" />
+                <apex:inputField value="{!CPP_Lead_Registration__c.Name}" required="true"/>
+                <apex:inputField value="{!CPP_Lead_Registration__c.Lead_Phone_Number__c}" required="true"/>
+                <apex:inputField value="{!CPP_Lead_Registration__c.Expected_Close_Date__c}" required="true"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

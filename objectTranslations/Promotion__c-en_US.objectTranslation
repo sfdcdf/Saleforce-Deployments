@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <help><!-- e.g. If PPC Budget increase - what is the minimum monthly  budget to qualify (e.g. $1000/mo)  what is the % of budget  increase and for how long? --></help>
-        <label><!-- Campaign Economics --></label>
-        <name>CampaignEconomics__c</name>
-    </fields>
-    <fields>
         <label><!-- Campaign Outreach --></label>
         <name>Campaign_Outreach__c</name>
         <picklistValues>
@@ -73,11 +68,6 @@
         <name>PromotionName__c</name>
     </fields>
     <fields>
-        <help><!-- Example: ROI for Promo $XX, XXX -  What do we expect the increase in monthly recurring revenue to be?) --></help>
-        <label><!-- Revenue Goal --></label>
-        <name>RevenueGoal__c</name>
-    </fields>
-    <fields>
         <label><!-- Start Date --></label>
         <name>StartDate__c</name>
     </fields>
@@ -120,6 +110,16 @@
             <masterLabel>9 Month</masterLabel>
             <translation><!-- 9 Month --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- e.g. If PPC Budget increase - what is the minimum monthlyÂ budget to qualify (e.g. $1000/mo)Â what is the % of budgetÂ increase and for how long? --></help>
+        <label><!-- Campaign Economics --></label>
+        <name>CampaignEconomics__c</name>
+    </fields>
+    <fields>
+        <help><!-- Example: ROI for Promo $XX, XXX â€“Â What do we expect the increase in monthly recurring revenue to be?) --></help>
+        <label><!-- Revenue Goal --></label>
+        <name>RevenueGoal__c</name>
     </fields>
     <caseValues>
         <plural>false</plural>

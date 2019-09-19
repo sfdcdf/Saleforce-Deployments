@@ -186,19 +186,6 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Opportunity__c</fullName>
-        <externalId>false</externalId>
-        <label>Opportunity</label>
-        <referenceTo>Opportunity</referenceTo>
-        <relationshipLabel>Network Adoption Products</relationshipLabel>
-        <relationshipName>Network_Adoption_Products</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>Product__c</fullName>
         <externalId>false</externalId>
         <label>Product</label>
@@ -295,6 +282,19 @@
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Network Adoption Products</relationshipLabel>
+        <relationshipName>Network_Adoption_Products</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -303,7 +303,7 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>

@@ -462,6 +462,21 @@
         <value>Fulfillments</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Fulfillment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Header Info --></label>
+            <section>Header Info</section>
+        </sections>
+        <sections>
+            <label><!-- Phase Launch --></label>
+            <section>Phase Launch</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- Both an account and an opportunity is required. --></errorMessage>
         <name>Account_and_Opp_Required</name>

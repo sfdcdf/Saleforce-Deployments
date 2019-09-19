@@ -133,6 +133,25 @@
         <value>Lead Registration</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>CPP Lead Registration Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Registration Information --></label>
+            <section>Lead Registration Information</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- You can&apos;t change the submission date! --></errorMessage>
         <name>Date_Submitted_Validation</name>

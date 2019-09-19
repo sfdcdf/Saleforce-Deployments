@@ -119,6 +119,17 @@
         <fields>CREATEDBY_USER.NAME</fields>
         <relatedList>RelatedEntitlementContactList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.RECORDTYPE</fields>
+        <fields>Client_ID__c</fields>
+        <fields>Sales_Person__c</fields>
+        <fields>IMS_Rep__c</fields>
+        <fields>Status__c</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <relatedList>Account.Entitlement__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

@@ -1,0 +1,40 @@
+<apex:page standardController="Account" extensions="EngagementDataViewController" showHeader="false" sidebar="true">
+	<style>
+        .labelCol {
+			color: #54698d !important;
+    		font-weight: normal !important;
+        }
+    </style>
+
+    <apex:form id="pageBlockEngId">
+		<apex:pageBlock mode="maindetail">
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Update Engagement Data" action="{!updateEngagementData}" reRender="pageBlockEngId" status="updatingStatusId"/>
+			</apex:pageBlockButtons>
+			<apex:actionStatus startText="Updating......" id="updatingStatusId" startStyle="margin-left: 350px;"/>
+
+			<apex:pageBlockSection columns="1">
+				<apex:outputField value="{!acct.Engagement_Data_Last_Update__c}"/>
+			</apex:pageBlockSection>
+			<hr/>
+	        <apex:pageBlockSection >
+	        	<apex:outputField value="{!acct.Engagement_Has_Completed_Bulk_Import__c}"/>
+				<apex:outputField value="{!acct.Engagement_Has_Active_Offer__c}"/>
+
+				<apex:outputField value="{!acct.Engagement_Num_Contacts__c}"/>
+				<apex:outputField value="{!acct.Engagement_Date_Last_Offer_Created__c}"/>
+
+				<apex:outputField value="{!acct.Engagement_Date_Last_Email_Sent__c}"/>
+				<apex:outputField value="{!acct.Engagement_Num_Offers__c}"/>
+
+				<apex:outputField value="{!acct.Engagement_Num_Emails_Sent__c}"/>
+				<apex:outputField value="{!acct.Engagement_Date_Last_Review_Requested__c}"/>
+
+				<apex:outputField value="{!acct.Engagement_Num_Automated_Email_Activated__c}"/>
+				<apex:outputField value="{!acct.Engagement_Num_Review_Request_Last_7_Day__c}"/>
+
+				<apex:outputField value="{!acct.Engagement_Date_Last_Triggered_Email__c}"/>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,262 @@
+<apex:page controller="OppHLPanelController" action="{!onPageLoad}" showHeader="true" showChat="false" sidebar="false">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<apex:stylesheet value="{!URLFOR($Resource.SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+ <!-- REQUIRED SLDS WRAPPER -->
+  <div class="yodleweb">
+  
+
+<section class="slds-clearfix">
+  <div class="slds-float--left" style="width:25%; padding-right:20px;">
+    <p> <div class="slds-box slds-box--x-small slds-theme--inverse">
+  <p><apex:outputText ><div class="slds-text-heading--small">
+
+ <span style="font-weight:bold;">{!acctName}</span></div></apex:outputText></p>
+  <p><div class="slds-text-body--small"><apex:outputText >{!clientFullName}</apex:outputText></div></p>
+  <p><div class="slds-text-body--small"><apex:outputText > {!acctEmail} </apex:outputText></div></p>
+  <p><div class="slds-text-body--small"><apex:outputText > {!acctPhone} </apex:outputText></div></p>
+</div>
+
+
+
+<div class="slds-popover slds-popover--tooltip slds-nubbin--top-right slds-theme--default">
+  <div class="slds-popover__body"><div class="slds-text-body--small" style="color:#000000;">Clients Local Time: &nbsp; &nbsp; {!acctLocalTmShrt}</div></div>
+</div>  
+
+
+<div class="{!IF((acctStatus = 'OFF'), "slds-popover slds-popover--tooltip slds-nubbin--top-right slds-theme--error", "")}" role="tooltip">
+  <div class="{!IF((acctStatus = 'OFF'), "slds-popover__body", "")}">{!IF((acctStatus = 'OFF'), "Account is Off", "")}</div>
+</div>  
+
+
+
+</p>
+  </div>
+  
+ 
+   
+  
+  <div class="slds-float--left" style="width:20%; padding-right:10px;">
+    <p><div class="slds-text-body--small"><strong>Account Information</strong></div>
+        <table border="0" cellpadding="0" cellspacing="0">
+
+         
+
+        <tr><td><div class="slds-text-body--small">Account Manager:</div></td><td><div class="slds-text-body--small">{!acctManager}</div></td></tr>
+
+        <tr><td><div class="slds-text-body--small">Product Type:</div></td><td><div class="slds-text-body--small">{!acctProductType}</div></td></tr>     
+            <tr><td><div class="slds-text-body--small">
+             Next Bill Date: &nbsp; </div></td><td><div class="slds-text-body--small"><apex:outputText value="{0,date,MM/dd/yyyy}">
+                   <apex:param value="{!nextBillingDt}" />
+         </apex:outputText></div></td></tr>
+       
+        <tr><td><div class="slds-text-body--small">Client ID:</div></td><td><div class="slds-text-body--small">{!acctClientId}</div></td></tr>
+        <tr><td><div class="slds-text-body--small">Website:</div></td><td><div class="slds-text-body--small"><a href="http://{!acctWebSite}" target="_blank">{!acctWebSite}</a></div></td></tr> </table>      </p>
+  </div>
+  
+  
+  
+  
+  <div class="slds-float--left" style="width:10%; padding-right:10px;">
+    <p> <div class="slds-text-body--small"><strong>Client Information</strong></div>
+        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/dashboard/home?clientId={!acctClientId}" target="_blank">View Client Dashboard</a></div></apex:outputText>
+        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/clientconfig/home/clientsummary?clientId={!acctClientId}" target="_blank">View Client in Yodle Live</a><br/></div></apex:outputText>
+        
+        <apex:outputText rendered="{!hasWrenBilling}"><div class="slds-text-body--small"><a href="{!$Page.HermesAccountRedirect}?id={!accountId}" target="_blank">View Client in Hermes</a><br/><br/></div></apex:outputText>
+        <apex:outputText ><div class="slds-text-body--small"><strong>{!IF ((acctTestMgmt != ''),"Test Management","")}</strong></div></apex:outputText>
+        <apex:outputText ><div class="slds-text-body--small">{!acctTestMgmt}</div></apex:outputText></p>
+  </div>
+  
+  <div class="slds-float--left" style="width:20%; padding-right:10px;">
+    <p> <div class="slds-text-body--small"><strong>Miscellaneous Information</strong></div>
+    
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr><td><div class="slds-text-body--small">Location Service Level:</div></td><td><div class="slds-text-body--small">{!acctIndLocationSrvcLvl}</div></td></tr>
+            <tr><td><div class="slds-text-body--small">Multi-Location Owner for TP:</div></td>
+            <td><apex:image rendered="{!hasPrimaryMLOForTP = FALSE}" value="/img/checkbox_unchecked.gif" />
+                <apex:image rendered="{!hasPrimaryMLOForTP = TRUE}" value="/img/checkbox_checked.gif" /></td></tr>     
+            <tr><td><div class="slds-text-body--small">Multi-Location Owner CID: </div></td><td><div class="slds-text-body--small">{!primaryMLOId}</div></td></tr>  
+            <tr><td><div class="slds-text-body--small">Last Completed YBN TP:</div></td>
+            <td><apex:outputText value="{0,date,MM/dd/yyyy}">
+                   <apex:param value="{!lastComplWBNtpDt}" />
+         </apex:outputText></td></tr> 
+            <tr><td><div class="slds-text-body--small">Next TP Needed By:</div></td>
+                 <td><div class="slds-text-body--small"><apex:outputText value="{0,date,MM/dd/yyyy}">
+                     <apex:param value="{!nextNeededTPDt}" />
+                 </apex:outputText></div></td>
+                 </tr>
+              
+        </table>
+    
+    </p>
+ 
+  </div> 
+  
+  <div class="slds-float--left" style="width:25%">
+    <p><apex:image url="{!$Resource.CanadaFlag}" rendered="{!acctBillingCtry =='CA'}" style="margin-right:5px;"/>
+    
+    <apex:outputText ><span class="{!IF((franchiseInfluencer == 'Yes'),"lbwhighlight","")}">
+        {!IF((franchiseInfluencer != 'Yes'),"", "Franchise Influencer")}</span></apex:outputText> 
+      
+  
+         <div class="slds-text-body--small"><apex:outputText ><b>General Value Statement: </b><a href="/06932000002YRXlAAO" target="_blank">View File</a></apex:outputText><br/>
+         </div>
+
+                  
+        <div class="slds-text-body--small"><strong>Important Account Notes</strong>
+        <div class="helpOrb tooltip">
+            <span>
+               You can edit this field on the Account Level
+           </span>
+        </div>
+        </div>
+         <apex:outputText >
+        <div class="slds-text-longform"><div class="slds-text-body--small"><p><apex:outputText value="{!acctImportantNotes}"></apex:outputText>
+        
+        </p></div></div>
+        </apex:outputText>
+        
+       
+        </p>
+
+  </div>
+
+
+
+</section>
+
+   
+
+
+ </div> 
+
+<style type="text/css">
+body {
+  padding-top:5px;
+  background-color:#f4f6f9 !important;
+  background-color:$color-background;
+}
+
+.highlight {
+   color: red;
+}
+
+div.tooltip {
+    width: 15px;
+    float: right;
+    display:inline;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+div.tooltip span {
+    display: none;
+    font-weight:normal;
+    text-align:left;
+    padding: 3px 5px;
+    margin-left: 8px;
+    width: 220px;
+}
+
+div.tooltip:hover span {
+    display: inline;
+    position: absolute;
+    border: 1px solid #cccccc;
+    background: #FFC;
+    margin-left:-230px;
+    color: #000000;
+    z-index:10000;
+}
+
+.cpphighlight {
+    background-color:#f60000; 
+    padding:3px 5px; 
+    color:#fff;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:5px;
+    margin-right:5px;
+    display:inline-block;
+}
+
+.lhfsssuhighlight {
+    background-color:#00d7dd; 
+    padding:3px 5px; 
+    color:#fff;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:5px;
+    display:inline-block;
+}
+
+
+.lbwhighlight {
+//156cb6;
+    background-color:#1ea056; 
+    padding:3px 5px; 
+    color:#fff;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:5px;
+    display:inline-block;
+}
+         
+.offerhighlight {
+    background-color:#a1b64f;
+    padding-top:3px;
+    padding-bottom:3px;
+    color:white;
+    width:100%;
+    text-align:center;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:5px;
+    display:block;
+}
+
+.offerhighlight-text {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom:5px;
+    display:block;
+}
+       
+.clear {
+    clear:both;
+}
+
+.tooltipStatusListing{
+    display: inline;
+    position: relative;
+}
+
+.tooltipStatusListing:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    /*bottom: 26px;*/
+    color: #fff;
+    top: -10px;
+    content: attr(title);
+    /*left: 20%;*/
+    margin-left: 15px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 9998;
+    width: 250px;
+}
+
+/*.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 9999;
+}*/
+
+</style>  
+</html>
+</apex:page>

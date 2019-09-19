@@ -7656,35 +7656,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         </valueSet>
     </fields>
     <fields>
-        <fullName>webinar_email_subject__c</fullName>
-        <externalId>false</externalId>
-        <label>webinar email subject</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Phone not ringing enough? You’re invited.</fullName>
-                    <default>false</default>
-                    <label>Phone not ringing enough? You’re invited.</label>
-                </value>
-                <value>
-                    <fullName>How to succeed in the recession - You’re invited.</fullName>
-                    <default>false</default>
-                    <label>How to succeed in the recession - You’re invited.</label>
-                </value>
-                <value>
-                    <fullName>On 5/27, get your phone ringing again</fullName>
-                    <default>false</default>
-                    <label>On 5/27, get your phone ringing again</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>PartnerAccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -8970,15 +8941,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         </valueSet>
     </fields>
     <fields>
-        <fullName>Trade_Show__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Trade Show</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>tz__LT_Info__c</fullName>
         <deprecated>false</deprecated>
         <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
@@ -9005,6 +8967,44 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Trade_Show__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Trade Show</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>webinar_email_subject__c</fullName>
+        <externalId>false</externalId>
+        <label>webinar email subject</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Phone not ringing enough? Youâ€™re invited.</fullName>
+                    <default>false</default>
+                    <label>Phone not ringing enough? Youâ€™re invited.</label>
+                </value>
+                <value>
+                    <fullName>How to succeed in the recession - Youâ€™re invited.</fullName>
+                    <default>false</default>
+                    <label>How to succeed in the recession - Youâ€™re invited.</label>
+                </value>
+                <value>
+                    <fullName>On 5/27, get your phone ringing again</fullName>
+                    <default>false</default>
+                    <label>On 5/27, get your phone ringing again</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
@@ -9025,10 +9025,8 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <lookupPhoneDialogsAdditionalFields>Franchisee_3_Phone__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Toll_Free_Number__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.TITLE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.MOBILE_PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
@@ -9634,24 +9632,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>TodaysLeads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>Today's Leads</label>
-    </listViews>
-    <listViews>
         <fullName>YBN_Leads_Lead</fullName>
         <filterScope>Queue</filterScope>
         <label>YBN Leads</label>
@@ -9683,6 +9663,55 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <filterScope>Queue</filterScope>
         <label>SEO cases</label>
         <queue>SEOcases</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>DKI_Promo_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>DKI Promo</label>
+        <queue>DKI_Promo</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Partner</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Partner</label>
+        <queue>Partner</queue>
+        <sharedTo>
+            <role>ExecutiveVP</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TodaysLeads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>contains</operation>
+            <value>lawfirms</value>
+        </filters>
+        <label>TotalSearch</label>
+        <sharedTo>
+            <role>ExecutiveVP</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Zalberts_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Zalberts</label>
+        <queue>Zalberts</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -11494,29 +11523,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>National_Commission_Master__c</picklist>
             <values>
@@ -14227,15 +14234,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16047,29 +16046,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>National_Commission_Master__c</picklist>
             <values>
@@ -18780,15 +18757,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20604,29 +20573,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>National_Commission_Master__c</picklist>
             <values>
@@ -23337,15 +23284,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25150,29 +25089,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>National_Commission_Master__c</picklist>
             <values>
@@ -27883,15 +27800,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29832,29 +29741,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>National_Commission_Master__c</picklist>
             <values>
@@ -32569,15 +32456,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -34491,29 +34370,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>National_Commission_Master__c</picklist>
             <values>
@@ -37228,15 +37085,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -37289,13 +37138,13 @@ isblank(Annual_PEV__c),
     <validationRules>
         <fullName>referral_possible</fullName>
         <active>false</active>
-        <description>a partner ID cannot be added to a lead if the lead source does NOT contain either referral, referral – national accounts, and Trade Show 2009.</description>
+        <description>a partner ID cannot be added to a lead if the lead source does NOT contain either referral, referral â€“ national accounts, and Trade Show 2009.</description>
         <errorConditionFormula>AND(
  referral_possible__c =false, 
 (not(isnull( Partner_ID__c))
 )
 )</errorConditionFormula>
-        <errorMessage>a partner ID cannot be associated with a lead if the lead source does NOT contain either referral, referral – national accounts, or Trade Show.</errorMessage>
+        <errorMessage>a partner ID cannot be associated with a lead if the lead source does NOT contain either referral, referral â€“ national accounts, or Trade Show.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>BBB_Search</fullName>

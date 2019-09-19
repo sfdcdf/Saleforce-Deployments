@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Default Values --></label>
+        <name>Additional_Default_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional SOQL Criteria --></label>
+        <name>Additional_SOQL_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the values ex: &quot;Field_API_Name__c&quot;:&quot;Value&quot; and separate with a &apos;,&apos; --></help>
+        <label><!-- Default Values --></label>
+        <name>Default_Values__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value example API_Name_Of_Lookup_In_New_Record:API_Name_of_Parent_Id_In_SOQL__c and separated by &apos;,&apos; --></help>
+        <label><!-- Lookup Relationships --></label>
+        <name>Lookup_Relationships__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use caution when checking this check box! Talk to developer, if unsure if you should check this box or not. --></help>
+        <label><!-- Push New Record Data To Marketo --></label>
+        <name>Push_New_Record_Data_To_Marketo__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOQL --></label>
+        <name>SOQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supported Objects for Record Auto Create --></label>
+        <name>Supported_Objects_for_Record_Auto_Create__c</name>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Case</masterLabel>
+            <translation><!-- Organic Case --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Daily Scheduled Record Auto Create</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Daily Scheduled Record Auto Create</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Daily Scheduled Record Auto Create Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

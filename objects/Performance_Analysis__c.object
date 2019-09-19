@@ -155,6 +155,7 @@
         <relationshipName>Performance_Analyses</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -166,6 +167,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -179,6 +181,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -192,6 +195,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -205,6 +209,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -218,6 +223,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -231,6 +237,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -244,6 +251,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -257,6 +265,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -270,6 +279,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -283,6 +293,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -294,6 +305,7 @@
         <label>Channel</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -343,6 +355,7 @@
         <length>10</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -357,6 +370,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -369,6 +383,7 @@
         <label>Date Opt Completed</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -381,6 +396,7 @@
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -395,6 +411,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -412,6 +429,7 @@ Next_Billing_Date__c-Today()))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -424,6 +442,7 @@ Next_Billing_Date__c-Today()))</formula>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -434,6 +453,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Added/Removed Context Card for Lead Ads?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -447,6 +467,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Added/Removed Custom &amp;Lookalike Audience</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -460,6 +481,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Added/Removed qualifying for Lead Ads?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -473,6 +495,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Added behavior/Interest Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -486,6 +509,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Adjustments Made for Ad Relevance</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -499,6 +523,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>FB Decreased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -512,6 +537,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Fixed Ad Copy Typos</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -525,6 +551,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Fixed Facebook Errors</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -538,6 +565,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>FB Increased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -551,6 +579,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>FB Recommended Budget Changes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -564,6 +593,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>FB Recommended Conversion Tactics</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -579,6 +609,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Refreshed Ad Copy</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -592,6 +623,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Removed Behavior / Interest Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -605,6 +637,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Responded to Negative Feedback on Ads</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -618,6 +651,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Updated Copy for Quality</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -631,6 +665,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Updated Images for Quality</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -644,6 +679,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Updated Landing Pages</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -660,6 +696,7 @@ Next_Billing_Date__c-Today()))</formula>
         <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -670,6 +707,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Facebook Last End Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -679,6 +717,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Facebook Last Start Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -690,6 +729,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Facebook Optimization Notes</label>
         <length>1500</length>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -702,6 +742,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>False Positive Notes</label>
         <length>1000</length>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
@@ -712,6 +753,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Foundations Last End Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -721,6 +763,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>Foundations Last Start Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -732,6 +775,7 @@ Next_Billing_Date__c-Today()))</formula>
         <label>zz_Foundations Live Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -745,6 +789,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>First Page Ranking Below Target</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -760,6 +805,7 @@ Low Lead Range (Paid + Unpaid)</description>
         <label>Low Lead Range (Paid + Unpaid)</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -778,6 +824,7 @@ Fill Out Paid Section and Paid Notes</inlineHelpText>
         <label>PPL Above Expected Goal</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -794,6 +841,7 @@ Projected to Miss Lead Range Goal?</description>
         <label>Projected to Miss Lead Range Goal?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -810,6 +858,7 @@ Please Fill out Paid Section and Paid Notes</inlineHelpText>
         <label>Underspending</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -827,6 +876,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Unpaid Lead Drop</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -842,6 +892,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Initial Date Time Completed</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -853,6 +904,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Issue Type</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -880,6 +932,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -892,6 +945,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -905,6 +959,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -917,6 +972,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Last Billing Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -928,6 +984,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Last Optimization Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -940,6 +997,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -953,6 +1011,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -965,6 +1024,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Next Billing Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -975,6 +1035,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Notes</label>
         <length>1500</length>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
@@ -988,6 +1049,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1003,6 +1065,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <relationshipName>Performance_Analyses</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -1015,6 +1078,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1028,6 +1092,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1041,6 +1106,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1054,6 +1120,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1067,6 +1134,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1080,6 +1148,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1093,6 +1162,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1106,6 +1176,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1119,6 +1190,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1132,6 +1204,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1142,6 +1215,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Added Call only</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1155,6 +1229,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Added Keywords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1168,6 +1243,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Added Negatives</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1181,6 +1257,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Added Pending Keywords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1194,6 +1271,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Added Service Category</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1207,6 +1285,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Adjusted Site Link Extensions</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1220,6 +1299,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Adjusted VPL Caps</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1233,6 +1313,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Algo: Added Negative Bid Multiplier</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1246,6 +1327,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Algo: Added Positive Bid Multiplier</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1260,6 +1342,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Checked Lead Quality</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1273,6 +1356,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Checked for Adwords Disapprovals</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1286,6 +1370,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Checked for Limited Ad status in Adwords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1299,6 +1384,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Checked for Site Suspensions</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1312,6 +1398,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Cleared Spend Blockers</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1326,6 +1413,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Corrected Ad Copy Typos</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1340,6 +1428,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Decreased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1353,6 +1442,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Deleted Call Only</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1366,6 +1456,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Deleted/Paused Keywords</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1379,6 +1470,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Deleted/paused Service Category</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1392,6 +1484,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Fixed Call Tracking Issues</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1405,6 +1498,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Implemented Business Hour Only Bidding</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1418,6 +1512,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Implemented No Listing Left Behind</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1431,6 +1526,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Increased Geo Targeting</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1445,6 +1541,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Paused Provider Outlets</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1459,6 +1556,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Paused Spend Monitoring</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1472,6 +1570,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Recommended Budget Changes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1485,6 +1584,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Recommended Conversion Tactics</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1498,6 +1598,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Removed Negatives</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1512,6 +1613,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Resolved KW Conflicts</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1525,6 +1627,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Bulk URL Manager</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1538,6 +1641,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Geo Messaging</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1551,6 +1655,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated/Refreshed Ad Copy</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1567,6 +1672,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1580,6 +1686,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1593,6 +1700,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1605,6 +1713,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Paid Optimization Notes</label>
         <length>1500</length>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -1616,6 +1725,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Parent Account</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1629,6 +1739,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1639,6 +1750,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Product</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1672,6 +1784,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1685,6 +1798,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1697,6 +1811,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1709,6 +1824,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1722,6 +1838,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1735,6 +1852,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1748,6 +1866,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1759,6 +1878,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Reviewed by CS Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1769,6 +1889,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <externalId>false</externalId>
         <label>Reviewed by CS</label>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -1778,6 +1899,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>SEM Last End Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1787,6 +1909,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>SEM Last Start Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1798,6 +1921,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>zz_SEM Live Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1807,6 +1931,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>SEO Last End Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1816,6 +1941,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>SEO Last Start Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -1828,6 +1954,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1841,6 +1968,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1854,6 +1982,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1867,6 +1996,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1880,6 +2010,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1893,6 +2024,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1906,6 +2038,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1919,6 +2052,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1932,6 +2066,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1945,6 +2080,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1958,6 +2094,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1969,6 +2106,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1982,6 +2120,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>40</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1993,6 +2132,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2003,6 +2143,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2041,6 +2182,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -2054,6 +2196,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2067,6 +2210,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2080,6 +2224,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2093,6 +2238,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2103,6 +2249,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Added Schema Mark-Up</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2116,6 +2263,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Checked Site Speed</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2129,6 +2277,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Checked for non 200 ok or non 301 codes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2142,6 +2291,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Cleaned Up Schema Mark-up</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2156,6 +2306,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Created Custom Content Case</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2169,6 +2320,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Fixed Broken Links</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2183,6 +2335,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Performed Code Clean-up</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2196,6 +2349,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Published Site</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2209,6 +2363,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Recommended Website Updates</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2222,6 +2377,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Resolved Crawl Errors</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2235,6 +2391,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Resolved Sitemap Errors</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2248,6 +2405,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Submitted to G&amp;B Webmaster Tools</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2261,6 +2419,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Bing Listing</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2274,6 +2433,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Bing Webmaster Tools</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2287,6 +2447,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated GMB Listing</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2300,6 +2461,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Google Search Console</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2313,6 +2475,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated H Tags</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2326,6 +2489,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Images (Title/Alt Tags)</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2339,6 +2503,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Meta Data</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2352,6 +2517,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Unpaid Tracking #</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2365,6 +2531,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Updated Yext</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2378,6 +2545,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Vendor: Built Additional Citations</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2391,6 +2559,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Vendor: Built Backlinks</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2404,6 +2573,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Vendor: Cleaned Up Citations</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2417,6 +2587,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Vendor: Produced / Enhanced Content</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2430,6 +2601,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Vendor Reclaimed Backlinks</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2445,6 +2617,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <label>Unpaid Optimization Notes</label>
         <length>1500</length>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -2457,6 +2630,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2468,6 +2642,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2480,6 +2655,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2493,6 +2669,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2506,6 +2683,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2519,6 +2697,7 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2530,17 +2709,18 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <externalId>false</externalId>
         <label>isClosed</label>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
+    <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>This object is initially created to take input from a Performance Analysis engine to proactively optimize our customers' performance results</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -2552,11 +2732,20 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
         <displayFormat>PA-{000000}</displayFormat>
         <label>Performance Analysis Name</label>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Performance Analyses</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <searchLayouts />
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Issue_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
@@ -2700,6 +2889,15 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
     </listViews>
     <listViews>
         <fullName>AccountPerformanceQueue295311_Performance_Analysis</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>HC_Underspending__c</columns>
+        <columns>HC_PPL_Above_Expected_Goal__c</columns>
+        <columns>HC_First_Page_Ranking_Below_Target__c</columns>
+        <columns>HC_Unpaid_Lead_Drop__c</columns>
+        <columns>Next_Billing_Date__c</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Queue</filterScope>
         <label>Account Performance Queue</label>
         <queue>AccountPerformanceQueue295311</queue>
@@ -2709,6 +2907,16 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
     </listViews>
     <listViews>
         <fullName>NationalCharlotte_Performance_Analysis</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Status__c</columns>
+        <columns>HC_Underspending__c</columns>
+        <columns>HC_PPL_Above_Expected_Goal__c</columns>
+        <columns>HC_First_Page_Ranking_Below_Target__c</columns>
+        <columns>HC_Unpaid_Lead_Drop__c</columns>
+        <columns>Next_Billing_Date__c</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Queue</filterScope>
         <label>National Performance Queue</label>
         <queue>NationalCharlotte</queue>

@@ -101,10 +101,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -142,12 +138,19 @@
         <actionName>View</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>CreateCPPLeadRegistration</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
     </actionOverrides>
     <fields>
         <fullName>CP_Needs__c</fullName>
         <externalId>false</externalId>
         <label>CP Needs</label>
         <length>32768</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -160,6 +163,7 @@
         <referenceTo>Account</referenceTo>
         <relationshipName>CPP_Leads_Registration1</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -168,6 +172,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Claimed in GN?</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -177,6 +182,7 @@
         <label>Current PMS</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -186,6 +192,7 @@
         <externalId>false</externalId>
         <label>Date Demo Scheduled/Given</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -194,6 +201,7 @@
         <externalId>false</externalId>
         <label>Date Submitted</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -202,6 +210,7 @@
         <externalId>false</externalId>
         <label>Expected Close Date</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -211,6 +220,7 @@
         <formula>IF(NOT(ISBLANK( Gold_Nugget_Client_ID__c )), HYPERLINK('http://live.yodle.com/app/clientconfig/home/clientsummary?clientId='+ Gold_Nugget_Client_ID__c ,'View Client Record in Yodle Live', '_blank'), IF(NOT(ISBLANK( Gold_Nugget_Prospect_ID__c )), 'http://live.yodle.com/app/sales/prospects/prospect/view?prospectId=' + Gold_Nugget_Prospect_ID__c, ''))</formula>
         <label>GN Link</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -221,6 +231,7 @@
         <label>Gold Nugget Client ID</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -231,6 +242,7 @@
         <label>Gold Nugget Prospect ID</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -240,6 +252,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>In a Contract?</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -249,6 +262,7 @@
         <label>Lead Contact Name</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -258,6 +272,7 @@
         <externalId>false</externalId>
         <label>Lead Phone Number</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -266,6 +281,7 @@
         <externalId>false</externalId>
         <label>Lead Registration Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -301,6 +317,7 @@
         <inlineHelpText>You can't set the Opportunity Stage until this Lead has been approved!</inlineHelpText>
         <label>Opportunity Stage</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -342,6 +359,7 @@
         <referenceTo>Opportunity</referenceTo>
         <relationshipName>CPP_Leads_Registration</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -362,6 +380,7 @@
         <relationshipName>CPP_Leads_Registration</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>true</writeRequiresMasterRead>
@@ -372,6 +391,7 @@
         <label>Primary Concern</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -382,6 +402,7 @@
         <label>Split Rep</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -391,6 +412,7 @@
         <externalId>false</externalId>
         <label>Split with Sales Rep</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -419,6 +441,7 @@
         <relationshipLabel>Lead Registration</relationshipLabel>
         <relationshipName>Lead_Registration</relationshipName>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -428,7 +451,7 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -438,10 +461,13 @@
     <label>Lead Registration</label>
     <nameField>
         <label>Lead Company Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Lead Registration</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>Lead_Registration_Status__c</customTabListAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
     <listViews>

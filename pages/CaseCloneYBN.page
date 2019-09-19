@@ -1,0 +1,8 @@
+<apex:page standardController="Case" extensions="CaseVFController" action="{!cloneCase}">
+    <apex:pageMessages ></apex:pageMessages>
+    <apex:detail title="false" inlineEdit="true"/>
+    <apex:form >
+        <apex:inputhidden value="{!case.Apex_Case_Cloned__c}"/>
+        <apex:inputhidden value="{!case.Status}"/>
+    </apex:form>
+</apex:page>

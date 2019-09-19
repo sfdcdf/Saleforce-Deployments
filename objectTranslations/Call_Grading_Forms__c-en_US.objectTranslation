@@ -5846,6 +5846,14 @@ Hi __________, my name is _______, I am part of your Maps Optimization team at Y
             <translation><!-- Partially Covered --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- Live_Chat_Transcript --></label>
+        <name>Live_Chat_Transcript__c</name>
+    </fields>
+    <fields>
+        <label><!-- 20 Day Script Adherence Section% --></label>
+        <name>X20_Day_Script_Adherence_Section_Percent__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Call Grading Forms</value>
@@ -5855,6 +5863,865 @@ Hi __________, my name is _______, I am part of your Maps Optimization team at Y
         <value>Call Grading Forms</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>CSC</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CSC April 2015</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collections Call</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Email</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Quality --></label>
+            <section>Email Quality</section>
+        </sections>
+        <sections>
+            <label><!-- Follow Up Work (if necessary) --></label>
+            <section>Follow Up Work (if necessary)</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Procedure Quality --></label>
+            <section>Procedure Quality</section>
+        </sections>
+        <sections>
+            <label><!-- Total Grade --></label>
+            <section>Total Grade</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inbound</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse CSC</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse CSC + Essentials</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse CSC - Auto</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse CSC New Portal</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse CSC TEST</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse Inbound Call</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse Save Call</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local 20 Day</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local 40 Day</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local 70 Day</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local Inbound</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PIN Collection</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PIN Collection - Owner Verified</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner 20 Day</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner 40 Day</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner 70 Day</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner CSC + Engage Features</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner CSC Engage</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Inbound - Engage</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Save Call</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Setup Completion Call</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Save Path</layout>
+        <sections>
+            <label><!-- Call Flow Adherence --></label>
+            <section>Call Flow Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Setup Completion Call July 2014</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Soft Skills</layout>
+        <sections>
+            <label><!-- Conversational Ability --></label>
+            <section>Conversational Ability</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback --></label>
+            <section>Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tonality --></label>
+            <section>Tonality</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>YBN CSC</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Yodle Path Coaching Call</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Yodle Path Setup Call</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Yodle Path Touch Point</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grading Information --></label>
+            <section>Grading Information</section>
+        </sections>
+        <sections>
+            <label><!-- Objection Handling --></label>
+            <section>Objection Handling</section>
+        </sections>
+        <sections>
+            <label><!-- Qualitative Section --></label>
+            <section>Qualitative Section</section>
+        </sections>
+        <sections>
+            <label><!-- Script Adherence --></label>
+            <section>Script Adherence</section>
+        </sections>
+        <sections>
+            <label><!-- Total --></label>
+            <section>Total</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <description><!-- Grading form for Essentials Setup Completion Call --></description>
         <label><!-- Setup Completion Call --></label>
@@ -5864,6 +6731,157 @@ Hi __________, my name is _______, I am part of your Maps Optimization team at Y
         <description><!-- Grading form for CSC --></description>
         <label><!-- CSC --></label>
         <name>CSC_Call_Grading</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading Form Based On Collections Call Flow --></description>
+        <label><!-- Collections Call --></label>
+        <name>Collections_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for email --></description>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for inbound calls --></description>
+        <label><!-- Inbound Call --></label>
+        <name>Inbound_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Lighthouse Auto CSCs --></description>
+        <label><!-- Lighthouse CSC - Auto --></label>
+        <name>Lighthouse_CSC_Auto</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Lighthouse CSC with Essentials --></description>
+        <label><!-- Lighthouse CSC + Essentials --></label>
+        <name>Lighthouse_CSC_Essentials</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Lighthouse Inbound Call --></description>
+        <label><!-- Lighthouse Inbound Call --></label>
+        <name>Lighthouse_Inbound_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lighthouse Save Call --></label>
+        <name>Lighthouse_Save_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Lighthouse client setup call --></description>
+        <label><!-- Lighthouse CSC Call - Deprecated --></label>
+        <name>Lighthouse_Training_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Lighthouse CSC Script --></description>
+        <label><!-- Lighthouse CSC --></label>
+        <name>Lighthouse_Training_TEST</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading Form For Live Chat Transcripts --></description>
+        <label><!-- Live Chat --></label>
+        <name>Live_Chat</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Owner Verified Maps Verification Team --></description>
+        <label><!-- Maps - Owner Verified --></label>
+        <name>Maps_Owner_Verified</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for an outbound call that is not a touch point. --></description>
+        <label><!-- Outbound Call - Non Touch Point --></label>
+        <name>Outbound_Call_Non_Touch_Point</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Maps Verification Team --></description>
+        <label><!-- Maps - PIN Collection --></label>
+        <name>PIN_Collection</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner 20 Day Touch Plan --></description>
+        <label><!-- Partner 20 Day --></label>
+        <name>Partner_20_Day</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner 40 Day Touch Plan --></description>
+        <label><!-- Partner 40 Day --></label>
+        <name>Partner_40_Day</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner 70 Day Touch Plan --></description>
+        <label><!-- Partner 70 Day --></label>
+        <name>Partner_70_Day</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner CSC --></description>
+        <label><!-- Partner CSC --></label>
+        <name>Partner_CSC</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner CSC Engage product --></description>
+        <label><!-- Partner CSC Engage --></label>
+        <name>Partner_CSC_Engage</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner Inbound Call --></description>
+        <label><!-- Partner Inbound Call --></label>
+        <name>Partner_Inbound_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Partner Save Call --></description>
+        <label><!-- Partner Save Call --></label>
+        <name>Partner_Save_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner Setup Completion Call --></label>
+        <name>Partner_Setup_Completion_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for save calls --></description>
+        <label><!-- Save Call --></label>
+        <name>Save_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Form to evaluate soft skills from Soft Skills Training Series --></description>
+        <label><!-- Soft Skills Breakdown --></label>
+        <name>Soft_Skills_Breakdown</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Test --></label>
+        <name>Test</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- YBN CSC --></label>
+        <name>YBN_Call_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Yodle Path Coaching Calls --></description>
+        <label><!-- Yodle Path Coaching Call --></label>
+        <name>Yodle_Path_Coaching_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Yodle Path Setup Calls --></description>
+        <label><!-- Yodle Path Setup Call --></label>
+        <name>Yodle_Path_Setup_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for Yodle Path Touch Points --></description>
+        <label><!-- Yodle Path Touch Point --></label>
+        <name>Yodle_Path_Touch_Point</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for 20 day touch plan call --></description>
+        <label><!-- 20 Day --></label>
+        <name>x20_Day</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for 40 Day touch plan call --></description>
+        <label><!-- 40 Day --></label>
+        <name>x40_Day</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grading form for 70 Day Touch Plan --></description>
+        <label><!-- 70 Day --></label>
+        <name>x70_Day</name>
     </recordTypes>
     <validationRules>
         <errorMessage><!-- Please fill our Information in the Information Accuracy Notes section. If no issues with Information Accuracy, reevaluate Information Accuracy field. --></errorMessage>

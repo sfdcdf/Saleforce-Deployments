@@ -1,0 +1,235 @@
+<apex:page showHeader="true" sidebar="false" controller="IssueTrackerController" docType="html-5.0" title="Historical Issues">
+    <apex:outputPanel layout="none" rendered="{!issueList != null && issueList.size > 0}">
+        <vs:importvisualstrap theme="paper" />
+        <apex:stylesheet value="{!URLFOR($Resource.animate)}"/>
+
+        <vs:visualstrapblock >
+            <center><h3>{!acct.Name} - {!acct.Client_ID__c}</h3></center>
+            <br/>
+            <style>
+                @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+                .visualstrap blockquote{
+                    font-size: 100%;
+                }
+            </style>
+
+            <script>
+                var $j = jQuery.noConflict();
+
+                var displayInteraction = function(interactionId){
+                    var elem = document.getElementById(interactionId);
+                    console.log(elem.style.display);
+                    if(elem.style.display == 'none'){
+                        elem.style.display = 'table-row';
+                        console.log(elem.id);
+                        $j('.'+elem.id+'hackClass').css('display','block');
+                        $j(elem).removeClass('fadeOut'); //fadeOut hinge
+                        $j(elem).addClass('fadeIn'); //fadeIn slideInLeft
+                        
+                        $j(elem).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                            function(){
+                                elem.style.display = 'table-row';
+                            }
+                        );
+                    }else{
+                        $j(elem).removeClass('fadeIn');
+                        $j(elem).addClass('fadeOut');
+                        
+                        $j(elem).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                            function(){
+                                elem.style.display = 'none';
+                            }
+                        );
+                    }
+                };
+
+                var expandAll = function(){
+                    $j('.hackClass').css('display','block');
+                    $j('.interactionRowClass').css('display','table-row');
+                    $j('.interactionRowClass').removeClass('fadeOut'); //fadeOut
+                    $j('.interactionRowClass').addClass('fadeIn'); //fadeIn slideInLeft
+                    
+                    $j('.interactionRowClass').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                        function(){
+                            $j('.interactionRowClass').css('display','table-row');
+                        }
+                    );
+                    document.getElementById('expandAll').style.display = 'none';
+                    document.getElementById('collapseAll').style.display = 'block';
+                }
+
+                var collapseAll = function(){
+                    $j('.interactionRowClass').removeClass('fadeIn');
+                    $j('.interactionRowClass').addClass('fadeOut');
+                    
+                    $j('.interactionRowClass').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                        function(){
+                            $j('.interactionRowClass').css('display','none');
+                        }
+                    );
+                    document.getElementById('expandAll').style.display = 'block';
+                    document.getElementById('collapseAll').style.display = 'none';
+                }
+                
+                var openNotes = function(noteClass, openRowClass){
+                    $j('#'+openRowClass).css('display','table-row');
+                    $j('#'+openRowClass).removeClass('fadeOut'); //fadeOut
+                        $j('#'+openRowClass).addClass('fadeIn'); //fadeIn slideInLeft
+                        
+                        $j('#'+openRowClass).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                            function(){
+                                $j('#'+openRowClass).css('display','table-row');
+                            }
+                        );
+                    $j('.'+noteClass+'EmailClass').css('display','none');
+                    $j('.'+noteClass+'CallClass').css('display','none');
+                    $j('.'+noteClass+'NotesClass').css('display','block');
+                }
+                
+                var openCalls = function(noteClass, openRowClass){
+                    $j('#'+openRowClass).css('display','table-row');
+                    $j('#'+openRowClass).removeClass('fadeOut'); //fadeOut
+                        $j('#'+openRowClass).addClass('fadeIn'); //fadeIn slideInLeft
+                        
+                        $j('#'+openRowClass).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                            function(){
+                                $j('#'+openRowClass).css('display','table-row');
+                            }
+                        );
+                    $j('.'+noteClass+'NotesClass').css('display','none');
+                    $j('.'+noteClass+'EmailClass').css('display','none');
+                    $j('.'+noteClass+'CallClass').css('display','block');
+                }
+                
+                var openEmails = function(noteClass, openRowClass){
+                    $j('#'+openRowClass).css('display','table-row');
+                    $j('#'+openRowClass).removeClass('fadeOut'); //fadeOut
+                        $j('#'+openRowClass).addClass('fadeIn'); //fadeIn slideInLeft
+                        
+                        $j('#'+openRowClass).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                            function(){
+                                $j('#'+openRowClass).css('display','table-row');
+                            }
+                        );
+                    $j('.'+noteClass+'NotesClass').css('display','none');
+                    $j('.'+noteClass+'CallClass').css('display','none');
+                    $j('.'+noteClass+'EmailClass').css('display','block');
+                }
+            </script>
+
+            <!--vs:navbar type="fixed-top" inverse="true" brand="{!acct.Name} - {!acct.Client_ID__c}" homepagelink="/{!acct.Id}">
+            </vs:navbar-->
+
+            <div class="table-responsive" style="min-height: 500px;"> <!--  animated slideInUp rollIn zoomIn slideInUp -->
+
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th style="color: #FF4F4F; font-weight: bold;">
+                            <a href="javascript:void(0);" onclick="expandAll();" id="expandAll"><span class="glyphicon glyphicon-folder-close"/></a>
+                            <a href="javascript:void(0);" onclick="collapseAll();" id="collapseAll" style="display: none;"><span class="glyphicon glyphicon-folder-open"/></a>
+                        </th>
+                        <th style="color: #FF4F4F; font-weight: bold;"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"/></th>
+                        <th style="color: #72E8C6; font-weight: bold;"><span class="glyphicon glyphicon-phone" aria-hidden="true"/></th>
+                        <th style="color: #5C69FF; font-weight: bold;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"/></th>
+                        <th>Issue Created Timestamp</th>
+                        <th>Issue Id</th>
+                        <th>Issue Category Group</th>
+                        <th>Issue Category</th>
+                        <th>Issue Created By</th>
+                        <th>Issue Owner</th>
+                        <th>Issue State</th>
+                    </tr>
+                    <apex:repeat value="{!issueList}" var="issue">
+                        <tr >
+                            <td style="color: #FF4F4F; background-color: #f9f9f9; font-weight: bold;"></td>
+                            <td style="color: #FF4F4F; background-color: #f9f9f9; font-weight: bold;"><a href="javascript:void(0);" onclick="openNotes('{!issue.id}', '{!issue.id}RowId')">{!issue.notesCount}</a></td>
+                            <td style="color: #72E8C6; background-color: #f9f9f9; font-weight: bold;"><a href="javascript:void(0);" onclick="openCalls('{!issue.id}', '{!issue.id}RowId')">{!issue.callCount}</a></td>
+                            <td style="color: #5C69FF; background-color: #f9f9f9; font-weight: bold;"><a href="javascript:void(0);" onclick="openEmails('{!issue.id}', '{!issue.id}RowId')">{!issue.emailCount}</a></td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.createdDateTime.monthValue}/{!issue.createdDateTime.dayOfMonth}/{!issue.createdDateTime.year} {!issue.createdDateTime.hour}:{!issue.createdDateTime.minute}:{!issue.createdDateTime.second}</td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.id}</td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.categoryGroup}</td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.category}</td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.createdBy}</td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.ownedBy}</td>
+                            <td onclick="displayInteraction('{!issue.id}RowId');">{!issue.state}</td>
+                        </tr>
+
+                         <tr class="interactionRowClass animated fadeIn" id="{!issue.id}RowId" style="display: none;">
+                                <td colspan="11">
+                                    <apex:repeat value="{!issue.interactions}" var="interaction">
+                                        <apex:outputPanel rendered="{!interaction.notes != '' || interaction.calls != null || interaction.emails != null}" styleClass="{!IF(interaction.notes != '', issue.id+'NotesClass', '')} {!IF(interaction.calls != null, issue.id+'CallClass', '')} {!IF(interaction.emails != '', issue.id+'EmailClass', '')} {!issue.id}RowIdhackClass hackClass">
+                                            <div class="panel panel-primary" style="margin: 10px 50px;">
+                                                <div class="panel-heading"><b>{!interaction.interactionDatetime.monthValue}/{!interaction.interactionDatetime.dayOfMonth}/{!interaction.interactionDatetime.year} {!interaction.interactionDatetime.hour}:{!interaction.interactionDatetime.minute}:{!interaction.interactionDatetime.second} | {!interaction.type} | {!interaction.createdBy}</b></div>
+                                                <div class="panel-body">
+                                                    <apex:outputPanel rendered="{!interaction.notes != ''}">
+                                                        <blockquote style="border-left:5px solid #FF4F4F" class="{!issue.id}NotesClass {!issue.id}RowIdhackClass hackClass">
+                                                            <b>Interaction Notes:</b><br/>
+                                                            <apex:outputText value="{!interaction.notes}" style="white-space:pre-wrap;"/>
+                                                        </blockquote>
+                                                    </apex:outputPanel>
+
+                                                    <apex:outputPanel rendered="{!interaction.calls != null}">
+                                                        <apex:repeat value="{!interaction.calls}" var="call">
+                                                            <blockquote style="border-left:5px solid #72E8C6" class="{!issue.id}CallClass {!issue.id}RowIdhackClass hackClass">
+                                                                <b>Call Information:</b><br/>
+                                                                <apex:outputText value="Caller: {!call.callCreatedBy}"/><br/>
+                                                                <apex:outputText rendered="{!call.durationSeconds != ''}">
+                                                                    Call Timestamp: {!call.callDateTime.monthValue}/{!call.callDateTime.dayOfMonth}/{!call.callDateTime.year} {!call.callDateTime.hour}:{!call.callDateTime.minute}:{!call.callDateTime.second} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!call.durationSeconds != ''}">
+                                                                    Call Length in Seconds: {!call.durationSeconds} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!call.direction != ''}">
+                                                                    Call Direction: {!call.direction} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!call.recordingUrl != '' && call.recordingDurationSeconds != null}">
+                                                                    Call Recording URL: <a href="{!call.recordingUrl}" target="_blank">{!call.recordingDurationSeconds} seconds</a> <br/>
+                                                                </apex:outputText>
+                                                                <!--apex:outputText rendered="{!interaction.call_recording_url != ''}">
+                                                                    Call Recording Duration in Seconds: {!interaction.call_recording_duration_seconds}<br/>
+                                                                </apex:outputText-->
+                                                            </blockquote>
+                                                        </apex:repeat>
+                                                    </apex:outputPanel>
+
+                                                    <apex:outputPanel rendered="{!interaction.emails != null}">
+                                                        <apex:repeat value="{!interaction.emails}" var="email">
+                                                            <blockquote style="border-left:5px solid #5C69FF" class="{!issue.id}EmailClass {!issue.id}RowIdhackClass hackClass">
+                                                                <b>Email Information:</b><br/>
+                                                                <apex:outputText rendered="{!email.emailSentDatetime != ''}">
+                                                                    Email Timestamp: {!email.emailSentDatetime.monthValue}/{!email.emailSentDatetime.dayOfMonth}/{!email.emailSentDatetime.year} {!email.emailSentDatetime.hour}:{!email.emailSentDatetime.minute}:{!email.emailSentDatetime.second} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!email.toAddress != ''}">
+                                                                    Email To: {!email.toAddress} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!email.sentBy != ''}">
+                                                                    Email From: {!email.sentBy} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!email.direction != ''}">
+                                                                    Direction: {!email.direction} <br/>
+                                                                </apex:outputText>
+                                                                <apex:outputText rendered="{!email.subject != ''}">
+                                                                    Subject: {!email.subject} <br/>
+                                                                </apex:outputText>
+                                                                <hr style="margin: 5px 0;" />
+                                                                <a href="javascript:void(0);" onclick="document.getElementById('{!email.id}').style.display = 'block'; document.getElementById('{!email.id}Open').style.display = 'none'; document.getElementById('{!email.id}Close').style.display = 'block';" id="{!email.id}Open"><span class="glyphicon glyphicon-arrow-down" /></a>
+                                                                <a href="javascript:void(0);" style="display: none;" onclick="document.getElementById('{!email.id}').style.display = 'none'; document.getElementById('{!email.id}Close').style.display = 'none'; document.getElementById('{!email.id}Open').style.display = 'block';" id="{!email.id}Close"><span class="glyphicon glyphicon-arrow-up" /></a>
+                                                                <span id="{!email.id}" style="display: none;" class="animated slideInRight">
+                                                                    <apex:outputText value="{!email.body}" rendered="{!email.body != ''}" style="white-space:pre-wrap;"/>
+                                                                </span>
+                                                            </blockquote>
+                                                        </apex:repeat>
+                                                    </apex:outputPanel>
+                                                </div>
+                                            </div>
+                                        </apex:outputPanel>
+                                    </apex:repeat>
+                                </td>
+                            </tr>
+                    </apex:repeat>
+                </table>
+            </div>
+        </vs:visualstrapblock>    
+    </apex:outputPanel>
+    <apex:pageMessage rendered="{!issueList == null || issueList.size == 0}" summary="There are no historical issues found in Yodle Live for this Account!" severity="info" strength="3"/>
+</apex:page>

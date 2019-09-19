@@ -693,6 +693,21 @@
         <value>Call Quality Concerns</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Call Quality Concern Layout</layout>
+        <sections>
+            <label><!-- Call Quality Issues --></label>
+            <section>Call Quality Issues</section>
+        </sections>
+        <sections>
+            <label><!-- Call Quality Resolution --></label>
+            <section>Call Quality Resolution</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- Only numbers should be entered into the Blacklist Number fields. Please edit accordingly. --></errorMessage>
         <name>Blacklist_Number_Must_Be_Numbers</name>

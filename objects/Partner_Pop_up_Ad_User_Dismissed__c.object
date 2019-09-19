@@ -152,6 +152,7 @@
         <relationshipLabel>Partner Pop-up Ads User Dismissed</relationshipLabel>
         <relationshipName>Partner_Pop_up_Ads_User_Dismissed</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -163,6 +164,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Partner_Pop_up_Ads_User_Dismissed</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -172,7 +174,7 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
@@ -183,6 +185,7 @@
     <nameField>
         <displayFormat>Dismissal #-{0000000}</displayFormat>
         <label>Partner Pop-up Ad User Dismissed Number</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Partner Pop-up Ads User Dismissed</pluralLabel>

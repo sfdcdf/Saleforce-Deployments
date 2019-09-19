@@ -148,6 +148,7 @@
         <externalId>false</externalId>
         <label>Example</label>
         <length>32768</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -157,6 +158,7 @@
         <externalId>false</externalId>
         <label>Full Objection Description</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -166,6 +168,7 @@
         <label>Objection Category</label>
         <length>100</length>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -176,6 +179,7 @@
         <label>Objection Number</label>
         <length>30</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -186,8 +190,9 @@
     <description>List of common client objections and client service standard rebuttals.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
@@ -197,10 +202,31 @@
     <label>Objection Handling</label>
     <nameField>
         <label>Objection Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Objection Handling</pluralLabel>
-    <searchLayouts />
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>Full_Objection_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Objection_Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Objection_Number__c</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Objection_Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Full_Objection_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Example__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Objection_Number__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Objection_Number__c</lookupFilterFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Objection_Category__c</lookupFilterFields>
+        <lookupFilterFields>Full_Objection_Description__c</lookupFilterFields>
+        <searchFilterFields>Objection_Number__c</searchFilterFields>
+        <searchFilterFields>Full_Objection_Description__c</searchFilterFields>
+        <searchFilterFields>Objection_Category__c</searchFilterFields>
+        <searchResultsAdditionalFields>Full_Objection_Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Objection_Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Objection_Number__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>

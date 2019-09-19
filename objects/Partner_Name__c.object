@@ -149,6 +149,7 @@
         <label>Address 1</label>
         <length>150</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -159,6 +160,7 @@
         <label>Address 2</label>
         <length>150</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -169,6 +171,7 @@
         <label>City</label>
         <length>150</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -179,6 +182,7 @@
         <label>Company</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -189,6 +193,7 @@
         <formula>Designated_Sales_Rep__r.UserRole.Name</formula>
         <label>Designated Sales Rep Role</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -201,6 +206,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Partners</relationshipName>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -209,6 +215,7 @@
         <externalId>false</externalId>
         <label>Email</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -221,6 +228,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Partners1</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -229,6 +237,7 @@
         <externalId>false</externalId>
         <label>Mobile</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -237,6 +246,7 @@
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
         <label>New Partners after 8/14</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -246,6 +256,7 @@
         <label>Other Plan</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -256,6 +267,7 @@
         <label>Partner Full Name</label>
         <length>150</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -265,6 +277,7 @@
         <externalId>false</externalId>
         <label>Partner Plan</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -304,6 +317,7 @@
         <label>Payable to</label>
         <length>150</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -313,6 +327,7 @@
         <externalId>false</externalId>
         <label>Payment Method</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -336,6 +351,7 @@
         <externalId>false</externalId>
         <label>Phone</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -345,6 +361,7 @@
         <label>Sales Rep</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -355,6 +372,7 @@
         <externalId>false</externalId>
         <inlineHelpText>W9 email will be sent to partner when checked.</inlineHelpText>
         <label>Send W9</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -364,6 +382,7 @@
         <label>State</label>
         <length>2</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -373,6 +392,7 @@
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -407,6 +427,7 @@
         <label>Tax ID/SSN</label>
         <length>15</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -416,6 +437,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>W9 Received</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -424,6 +446,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Yodle Customer</label>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -433,6 +456,7 @@
         <label>Zip</label>
         <length>5</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -443,6 +467,7 @@
         <formula>Name</formula>
         <label>lead partner id</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -452,8 +477,9 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
@@ -464,10 +490,27 @@
     <nameField>
         <displayFormat>{0000}</displayFormat>
         <label>Partner  ID</label>
+        <trackHistory>true</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Partners</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>Partner_Full_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Company__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Partner_Full_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Partner_Full_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Mobile__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Partner_Full_Name__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>State__c</searchFilterFields>
+        <searchFilterFields>Phone__c</searchFilterFields>
+        <searchResultsAdditionalFields>Partner_Full_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>

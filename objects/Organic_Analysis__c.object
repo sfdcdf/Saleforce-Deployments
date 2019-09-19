@@ -329,45 +329,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Bing_Pin_Status__c</fullName>
-        <externalId>false</externalId>
-        <formula>if(
- not (ispickval ( Account_Name__r.YO_Status__c , "Live")),
-"Other",
-if(
-  Account_Name__r.Days_Since_Organic_Live_Date__c &lt;15,
-"Pin Needed",
-if(
-and(
- RecordTypeId = "012600000009Vh9",
- datevalue(CreatedDate) &lt; datevalue('2013-12-16')),
-"Other",
-if(
-and(
- RecordTypeId = "012600000009UWj",
- datevalue(CreatedDate) &lt;= datevalue('2012-11-25')),
-"Other",
-if(
-ispickval(  Bing_Listing_Created__c  , "Bing Rebuild Needed"),
-"In Rebuild",
-if(
-not(isnull( B_Pin_Receipt__c )),
-"Pin Collected",
-if(
-ispickval(  Bing_Listing_Status__c  , "In Verification"),
-"Pin Needed",
-if(
-ispickval( Bing_Listing_Status__c , "Client Refuses Claim"),
-"Client Refuses Claim",
-"Other"))))))))</formula>
-        <label>Bing Pin Status</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Bing_Pin__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Insert the Bing Pin here when you have received it.</inlineHelpText>
@@ -391,16 +352,6 @@ ispickval( Bing_Listing_Status__c , "Client Refuses Claim"),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Bing_Support_Notes__c</fullName>
-        <externalId>false</externalId>
-        <label>Actions Taken – Bing Listing Notes</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Bing_White_List__c</fullName>
@@ -3831,107 +3782,6 @@ AND(ISPICKVAL(GMBL_Listing_Status__c,"Owner Conflicts"),ISPICKVAL(GMBL_Owner_Con
             </valueSetDefinition>
         </valueSet>
         <visibleLines>6</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Actions_Taken_OnPage_Adversite__c</fullName>
-        <externalId>false</externalId>
-        <label>Actions Taken - OnPage/Adversite</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Added Content from Repository</fullName>
-                    <default>false</default>
-                    <label>Added Content from Repository</label>
-                </value>
-                <value>
-                    <fullName>Added Internal Links</fullName>
-                    <default>false</default>
-                    <label>Added Internal Links</label>
-                </value>
-                <value>
-                    <fullName>Added “No Follow” HTML code.</fullName>
-                    <default>false</default>
-                    <label>Added “No Follow” HTML code.</label>
-                </value>
-                <value>
-                    <fullName>Fixed Broken Links</fullName>
-                    <default>false</default>
-                    <label>Fixed Broken Links</label>
-                </value>
-                <value>
-                    <fullName>Improved Htags</fullName>
-                    <default>false</default>
-                    <label>Improved Htags</label>
-                </value>
-                <value>
-                    <fullName>Improved Meta Description</fullName>
-                    <default>false</default>
-                    <label>Improved Meta Description</label>
-                </value>
-                <value>
-                    <fullName>Improved Title Tags</fullName>
-                    <default>false</default>
-                    <label>Improved Title Tags</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Recommend About Us Page.</fullName>
-                    <default>false</default>
-                    <label>Recommend About Us Page.</label>
-                </value>
-                <value>
-                    <fullName>Recommend addt’l Service Pages.</fullName>
-                    <default>false</default>
-                    <label>Recommend addt’l Service Pages.</label>
-                </value>
-                <value>
-                    <fullName>Recommend Photos.</fullName>
-                    <default>false</default>
-                    <label>Recommend Photos.</label>
-                </value>
-                <value>
-                    <fullName>Recommend Promo/Offer.</fullName>
-                    <default>false</default>
-                    <label>Recommend Promo/Offer.</label>
-                </value>
-                <value>
-                    <fullName>Recommend Removing Service Pages.</fullName>
-                    <default>false</default>
-                    <label>Recommend Removing Service Pages.</label>
-                </value>
-                <value>
-                    <fullName>Submitted to G&amp;B Webmaster Tools</fullName>
-                    <default>false</default>
-                    <label>Submitted to G&amp;B Webmaster Tools</label>
-                </value>
-                <value>
-                    <fullName>Updated Htags.</fullName>
-                    <default>false</default>
-                    <label>Updated Htags.</label>
-                </value>
-                <value>
-                    <fullName>Updated Meta Description.</fullName>
-                    <default>false</default>
-                    <label>Updated Meta Description.</label>
-                </value>
-                <value>
-                    <fullName>Updated Title Tags.</fullName>
-                    <default>false</default>
-                    <label>Updated Title Tags.</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>7</visibleLines>
     </fields>
     <fields>
         <fullName>Actions_Taken_Yext_Citation_Network__c</fullName>
@@ -8349,32 +8199,6 @@ AND(ISPICKVAL(GMBL_Listing_Status__c,"Owner Conflicts"),ISPICKVAL(GMBL_Owner_Con
         </valueSet>
     </fields>
     <fields>
-        <fullName>Need_More_Links__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Use SeoMoz Open Site Explorer to compare competition ranking for terms against client’s domain.</inlineHelpText>
-        <label>Need More Links?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Next_Term_Ranking__c</fullName>
         <externalId>false</externalId>
         <label>Next Term Ranking?</label>
@@ -10516,41 +10340,6 @@ AND(ISPICKVAL(GMBL_Listing_Status__c,"Owner Conflicts"),ISPICKVAL(GMBL_Owner_Con
         <visibleLines>8</visibleLines>
     </fields>
     <fields>
-        <fullName>Teardown_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Teardown Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Immediate Teardown Request</fullName>
-                    <default>false</default>
-                    <label>Immediate Teardown Request</label>
-                </value>
-                <value>
-                    <fullName>Listing Cleaned Out</fullName>
-                    <default>false</default>
-                    <label>Listing Cleaned Out</label>
-                </value>
-                <value>
-                    <fullName>Listing Teardown Complete</fullName>
-                    <default>false</default>
-                    <label>Listing Teardown Complete</label>
-                </value>
-                <value>
-                    <fullName>Error Occurred – Cleanout Not Completed</fullName>
-                    <default>false</default>
-                    <label>Error Occurred – Cleanout Not Completed</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Title_Tags_Unique__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Optimize the title tags or send a case to production to fix</inlineHelpText>
@@ -11475,18 +11264,6 @@ AND(ISPICKVAL(GMBL_Listing_Status__c,"Owner Conflicts"),ISPICKVAL(GMBL_Owner_Con
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>CPP_Account__c</fullName>
-        <externalId>false</externalId>
-        <formula>Account_Name__r.CPP_Account__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>CPP Account?</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Claimed_Listing_new__c</fullName>
         <externalId>false</externalId>
         <label>Claimed Listing</label>
@@ -11846,17 +11623,6 @@ AND(ISPICKVAL(GMBL_Listing_Status__c,"Owner Conflicts"),ISPICKVAL(GMBL_Owner_Con
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Google_Support_Notes__c</fullName>
-        <externalId>false</externalId>
-        <label>Actions Taken - GMB Listing</label>
-        <length>15000</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>IT_Pro_Member__c</fullName>
@@ -13216,17 +12982,6 @@ ISPICKVAL( Submit_for_bookmarking__c,"Yes"),
         </valueSet>
     </fields>
     <fields>
-        <fullName>Sale_Date__c</fullName>
-        <externalId>false</externalId>
-        <formula>Account_Name__r.Order_Date__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Sale Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Setup_Date__c</fullName>
         <externalId>false</externalId>
         <label>Setup Date</label>
@@ -13433,9 +13188,263 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Actions_Taken_OnPage_Adversite__c</fullName>
+        <externalId>false</externalId>
+        <label>Actions Taken - OnPage/Adversite</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Added Content from Repository</fullName>
+                    <default>false</default>
+                    <label>Added Content from Repository</label>
+                </value>
+                <value>
+                    <fullName>Added Internal Links</fullName>
+                    <default>false</default>
+                    <label>Added Internal Links</label>
+                </value>
+                <value>
+                    <fullName>Added “No Follow” HTML code.</fullName>
+                    <default>false</default>
+                    <label>Added “No Follow” HTML code.</label>
+                </value>
+                <value>
+                    <fullName>Fixed Broken Links</fullName>
+                    <default>false</default>
+                    <label>Fixed Broken Links</label>
+                </value>
+                <value>
+                    <fullName>Improved Htags</fullName>
+                    <default>false</default>
+                    <label>Improved Htags</label>
+                </value>
+                <value>
+                    <fullName>Improved Meta Description</fullName>
+                    <default>false</default>
+                    <label>Improved Meta Description</label>
+                </value>
+                <value>
+                    <fullName>Improved Title Tags</fullName>
+                    <default>false</default>
+                    <label>Improved Title Tags</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Recommend About Us Page.</fullName>
+                    <default>false</default>
+                    <label>Recommend About Us Page.</label>
+                </value>
+                <value>
+                    <fullName>Recommend Photos.</fullName>
+                    <default>false</default>
+                    <label>Recommend Photos.</label>
+                </value>
+                <value>
+                    <fullName>Recommend Promo/Offer.</fullName>
+                    <default>false</default>
+                    <label>Recommend Promo/Offer.</label>
+                </value>
+                <value>
+                    <fullName>Recommend Removing Service Pages.</fullName>
+                    <default>false</default>
+                    <label>Recommend Removing Service Pages.</label>
+                </value>
+                <value>
+                    <fullName>Submitted to G&amp;B Webmaster Tools</fullName>
+                    <default>false</default>
+                    <label>Submitted to G&amp;B Webmaster Tools</label>
+                </value>
+                <value>
+                    <fullName>Updated Htags.</fullName>
+                    <default>false</default>
+                    <label>Updated Htags.</label>
+                </value>
+                <value>
+                    <fullName>Updated Meta Description.</fullName>
+                    <default>false</default>
+                    <label>Updated Meta Description.</label>
+                </value>
+                <value>
+                    <fullName>Updated Title Tags.</fullName>
+                    <default>false</default>
+                    <label>Updated Title Tags.</label>
+                </value>
+                <value>
+                    <fullName>Recommend addt’l Service Pages.</fullName>
+                    <default>false</default>
+                    <label>Recommend addt’l Service Pages.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bing_Pin_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(
+ not (ispickval ( Account_Name__r.YO_Status__c , "Live")),
+"Other",
+if(
+  Account_Name__r.Days_Since_Organic_Live_Date__c &lt;15,
+"Pin Needed",
+if(
+and(
+ RecordType.DeveloperName = 'Canda_Maps_Claiming',
+ datevalue(CreatedDate) &lt; datevalue('2013-12-16')),
+"Other",
+if(
+and(
+ RecordType.DeveloperName = 'Maps_Initial_Claiming',
+ datevalue(CreatedDate) &lt;= datevalue('2012-11-25')),
+"Other",
+if(
+ispickval(  Bing_Listing_Created__c  , "Bing Rebuild Needed"),
+"In Rebuild",
+if(
+not(isnull( B_Pin_Receipt__c )),
+"Pin Collected",
+if(
+ispickval(  Bing_Listing_Status__c  , "In Verification"),
+"Pin Needed",
+if(
+ispickval( Bing_Listing_Status__c , "Client Refuses Claim"),
+"Client Refuses Claim",
+"Other"))))))))</formula>
+        <label>Bing Pin Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bing_Support_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Actions Taken â€“ Bing Listing Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CPP_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.CPP_Account__c</formula>
+        <label>CPP Account?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.BillingCountry</formula>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Google_Support_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Actions Taken â€“ GMB Notes</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Need_More_Links__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Use SeoMoz Open Site Explorer to compare competition ranking for terms against clientâ€™s domain.</inlineHelpText>
+        <label>Need More Links?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sale_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Order_Date__c</formula>
+        <label>Sale Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Teardown_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Teardown Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Immediate Teardown Request</fullName>
+                    <default>false</default>
+                    <label>Immediate Teardown Request</label>
+                </value>
+                <value>
+                    <fullName>Listing Cleaned Out</fullName>
+                    <default>false</default>
+                    <label>Listing Cleaned Out</label>
+                </value>
+                <value>
+                    <fullName>Listing Teardown Complete</fullName>
+                    <default>false</default>
+                    <label>Listing Teardown Complete</label>
+                </value>
+                <value>
+                    <fullName>Error Occurred – Cleanout Not Completed</fullName>
+                    <default>false</default>
+                    <label>Error Occurred – Cleanout Not Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Yext_Support_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>Actions Taken - Yext/Citation Network</label>
+        <label>Actions Taken Yext/CitationNetwork Notes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -13448,6 +13457,7 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
     <description>Used to track our maps verification and pin collection</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
@@ -13467,7 +13477,39 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
     <pluralLabel>Organic Cases</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Attempts_to_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Attempts_to_Contact__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Attempts_to_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>Account_Name__c</searchFilterFields>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>Attempts_to_Contact__c</searchFilterFields>
+        <searchFilterFields>Client_Type__c</searchFilterFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Attempts_to_Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
@@ -13911,6 +13953,33 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <filterScope>Queue</filterScope>
         <label>YBN SEO Strategy</label>
         <queue>YBN_SEO_Strategy</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PinCollectionBackLog_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Pin Collection BackLog</label>
+        <queue>PinCollectionBackLog</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>WebDev_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Web Dev</label>
+        <queue>WebDev</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>YBN_SEO_Operations_Organic_Analysis</fullName>
+        <filterScope>Queue</filterScope>
+        <label>YBN SEO Operations</label>
+        <queue>YBN_SEO_Operations</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -64451,29 +64520,6 @@ ISPICKVAL(Audit_Pass__c , "")))</errorConditionFormula>
         <errorMessage>Please enter the case difficulty, case writing rating and audit pass before closing a case.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Client_Email_Address_must_be_filled_out</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-RecordType.Id = "012600000009WCb",
-  ISBLANK(Client_s_Email_Address__c),
-OR(
-  ISPICKVAL(Submission_Reason__c ,"Google Communications Manager Request"),
-ISPICKVAL(Submission_Reason__c ,"Google Co-Management Request"),
-ISPICKVAL(Submission_Reason__c ,"Google Co-Ownership Request"),
-ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorConditionFormula>
-        <errorDisplayField>Client_s_Email_Address__c</errorDisplayField>
-        <errorMessage>If you select submission reason "Google Communications Manager Request", "Google Co-Management Request", "Google Ownership Transfer Request" or "Google Co-Ownership Request", you must fill out the "Client's Email Address" field</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Client_Services_Manager_Field_Required</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND((RecordTypeId = '012600000009WCb'), 
-(Manager_Approved_Escalation__c = True), 
-(Client_Services_Manager__c = ''))</errorConditionFormula>
-        <errorDisplayField>Client_Services_Manager__c</errorDisplayField>
-        <errorMessage>This field cannot be blank when Manager Approved Escalation has been checked</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Escalate_Organic_Opts</fullName>
         <active>true</active>
         <errorConditionFormula>and(
@@ -64511,11 +64557,71 @@ ISBLANK( Created_Email_PW__c)
         <errorMessage>Must input IT Pro Members name, Proxy IP, Created Email UN, and Created email PW</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Organic_Analysis_Build_More_Links</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(
+ispickval( Competitive__c ,"Built More Links"),
+isnull ( Built_Links_Where__c ))</errorConditionFormula>
+        <errorDisplayField>Built_Links_Where__c</errorDisplayField>
+        <errorMessage>You must fill in where more links were built before saving the case.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Organic_Analysis_Citations_Notes</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(
+ispickval(Competitive_Analysis__c , "Built More Citations"),
+isnull(Built_Citations_Where__c ))</errorConditionFormula>
+        <errorDisplayField>Built_Citations_Where__c</errorDisplayField>
+        <errorMessage>You must fill in where more citations were built before saving the case.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Pin_Action_Owner_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ NOT(ISPICKVAL( Pin_Action_Taken__c ,"")),
+OR(
+ISPICKVAL( IT_Pro_Member__c ,"")),
+ISBLANK( PIN_Action_Owner__c ))</errorConditionFormula>
+        <errorDisplayField>PIN_Action_Owner__c</errorDisplayField>
+        <errorMessage>Must fill out Pin Action Owner or IT Pro Member if Pin Action Taken is filled out</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Must_fill_out_client_svcs_mgr_to_es</fullName>
+        <active>false</active>
+        <errorConditionFormula>and(Client_Type__c = "YBN", 
+Escalated__c = true,
+ISBLANK(Client_Services_Manager__c))</errorConditionFormula>
+        <errorMessage>Must fill out Client Services Manager</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Client_Email_Address_must_be_filled_out</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+RecordType.DeveloperName = "Organic_Optimization_Request",
+  ISBLANK(Client_s_Email_Address__c),
+OR(
+  ISPICKVAL(Submission_Reason__c ,"Google Communications Manager Request"),
+ISPICKVAL(Submission_Reason__c ,"Google Co-Management Request"),
+ISPICKVAL(Submission_Reason__c ,"Google Co-Ownership Request"),
+ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorConditionFormula>
+        <errorDisplayField>Client_s_Email_Address__c</errorDisplayField>
+        <errorMessage>If you select submission reason "Google Communications Manager Request", "Google Co-Management Request", "Google Ownership Transfer Request" or "Google Co-Ownership Request", you must fill out the "Client's Email Address" field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Client_Services_Manager_Field_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND((RecordType.DeveloperName = 'Organic_Optimization_Request'), 
+(Manager_Approved_Escalation__c = True), 
+(Client_Services_Manager__c = ''))</errorConditionFormula>
+        <errorDisplayField>Client_Services_Manager__c</errorDisplayField>
+        <errorMessage>This field cannot be blank when Manager Approved Escalation has been checked</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>MICC_Google_Whitelist_Restricted</fullName>
         <active>true</active>
-        <description>If “Bulk Google Account” in Account Information is Yes, then “Google Whitelist” in Google Listing Data cannot be selected.</description>
+        <description>If â€œBulk Google Accountâ€� in Account Information is Yes, then â€œGoogle Whitelistâ€� in Google Listing Data cannot be selected.</description>
         <errorConditionFormula>AND(
-  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
+  RecordType.DeveloperName= "Maps_Initial_Claiming",  /* Maps Initial Claiming */
   Google_White_List_Test__c = true,
   Bulk_Google_Account_2__c = "Yes"
 )</errorConditionFormula>
@@ -64527,7 +64633,7 @@ ISBLANK( Created_Email_PW__c)
         <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
-  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
+  RecordType.DeveloperName= "Maps_Initial_Claiming",  /* Maps Initial Claiming */
   DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
   OR(
     NOT(ISBLANK(Listing_1_URL_IT_Pro__c)),
@@ -64545,11 +64651,33 @@ ISBLANK( Created_Email_PW__c)
         <errorMessage>All Listing 1 Fields must be filled in.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>MICC_Listing_2_Required</fullName>
+        <active>true</active>
+        <description>All "Listing X" fields must be filled out if either one is already populated.</description>
+        <errorConditionFormula>AND(
+  RecordType.DeveloperName = "Maps_Initial_Claiming",  /* Maps Initial Claiming */
+  DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
+  OR(
+    NOT(ISBLANK(Listing_2_URL_IT_Pro__c)),
+    NOT(ISBLANK(Listing_2_Phone_Number__c)),  
+    NOT(ISBLANK(Listing_2_Business_Name_Address__c))
+  ),
+  OR(
+    TEXT(Listing_2_Action_Completed__c) = "None",
+    ISBLANK(TEXT(Listing_2_Action_Completed__c)),
+    ISBLANK(Listing_2_URL_IT_Pro__c),
+    ISBLANK(Listing_2_Phone_Number__c),  
+    ISBLANK(Listing_2_Business_Name_Address__c)
+  )
+)</errorConditionFormula>
+        <errorMessage>All Listing 2 Fields must be filled in.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>MICC_Listing_3_Required</fullName>
         <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
-  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
+  RecordType.DeveloperName = "Maps_Initial_Claiming",  /* Maps Initial Claiming */
   DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
   OR(
     NOT(ISBLANK(Listing_3_URL_IT_Pro__c)),
@@ -64571,7 +64699,7 @@ ISBLANK( Created_Email_PW__c)
         <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
-  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
+  RecordType.DeveloperName = "Maps_Initial_Claiming",  /* Maps Initial Claiming */
   DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
   OR(
     NOT(ISBLANK(Listing_4_URL_IT_Pro__c)),
@@ -64592,17 +64720,39 @@ ISBLANK( Created_Email_PW__c)
         <fullName>Maps_Initial_Claming_Setup_Date</fullName>
         <active>true</active>
         <description>You cannot change Setup Date once it has already been entered.</description>
-        <errorConditionFormula>AND( RecordTypeId ="012600000009UWj",
+        <errorConditionFormula>AND( RecordType.DeveloperName ="Maps_Initial_Claiming",
  ISCHANGED( Setup_Date__c ))</errorConditionFormula>
         <errorMessage>You cannot change Setup Date after it has been entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Master_Case_Required_to_Create_Organic_C</fullName>
+        <active>true</active>
+        <description>Require a Master Case for local team when creating an organic case</description>
+        <errorConditionFormula>And( ISBLANK( Case_URL__c ) || and( Case_URL__r.RecordType.DeveloperName &lt;&gt; 'Master', Case_URL__r.RecordType.DeveloperName &lt;&gt; 'LH_Master' ,Case_URL__r.RecordType.DeveloperName &lt;&gt; 'Charge_Failure'), 
+
+NOT($Permission.Unlock_Organic_Cases_Without_Master_Case),
+
+OR( 
+
+$User.Profile_Name__c  = 'Client Services Manager - Austin', 
+$User.Profile_Name__c  = 'Client Services Manager - Non Austin', 
+$User.Profile_Name__c  = 'Dedicated CS Support', 
+$User.Profile_Name__c  = 'Partner CS Manager', 
+$User.Profile_Name__c  = 'Pooled CS Support - Non Austin', 
+$User.Profile_Name__c  = 'Partner CS Team', 
+$User.Profile_Name__c  = 'Pooled CS Support - Austin Senior', 
+$User.Profile_Name__c  = 'Pooled CS Support - Austin' &amp;&amp; $User.Winback_Team__c &lt;&gt; True, 
+$User.Profile_Name__c = 'Pooled CS Support - Non Austin Senior'
+))</errorConditionFormula>
+        <errorMessage>This Organic Case needs to be associated to either a Master or LH Master case. Please either create the master and associate it to that case or update the case field.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Max_OV_Attempts_must_fill_out_comgmt_re</fullName>
         <active>true</active>
         <errorConditionFormula>and(
 or(
-  RecordTypeId  = "012600000009UWj",
-RecordTypeId = "012600000009Vh9"),
+  RecordType.DeveloperName  = "Maps_Initial_Claiming",
+RecordType.DeveloperName = "Canda_Maps_Claiming"),
  Google_Pin_Status__c = "Pending Co-Mgmt",
 ischanged ( OV_Max_Attempts__c ),
 OV_Max_Attempts__c = true,
@@ -64611,29 +64761,11 @@ OV_Max_Attempts__c = true,
         <errorMessage>You must fill out the Failed Co-Mgmt Reason Code when marking a Co-Managed account as OV Max Attempts.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Organic_Analysis_Build_More_Links</fullName>
-        <active>true</active>
-        <errorConditionFormula>and(
-ispickval( Competitive__c ,"Built More Links"),
-isnull ( Built_Links_Where__c ))</errorConditionFormula>
-        <errorDisplayField>Built_Links_Where__c</errorDisplayField>
-        <errorMessage>You must fill in where more links were built before saving the case.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Organic_Analysis_Citations_Notes</fullName>
-        <active>true</active>
-        <errorConditionFormula>and(
-ispickval(Competitive_Analysis__c , "Built More Citations"),
-isnull(Built_Citations_Where__c ))</errorConditionFormula>
-        <errorDisplayField>Built_Citations_Where__c</errorDisplayField>
-        <errorMessage>You must fill in where more citations were built before saving the case.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Organic_Opt_Client_Concerns_Other</fullName>
         <active>true</active>
         <description>If Other is chosen in the Client's Concerns picklist, Client Concerns Other field must be filled out</description>
         <errorConditionFormula>AND(
-RecordTypeId="01232000000M3cx",
+RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
 ISPICKVAL( Client_s_Concerns__c,"Other"),
 ISBLANK( Client_s_Concerns_Other__c))</errorConditionFormula>
         <errorDisplayField>Client_s_Concerns_Other__c</errorDisplayField>
@@ -64644,7 +64776,7 @@ ISBLANK( Client_s_Concerns_Other__c))</errorConditionFormula>
         <active>true</active>
         <description>If Other is chosen in the Client's Request Task picklist, Client Requested Other field must be filled out</description>
         <errorConditionFormula>AND(
-RecordTypeId="01232000000M3cx",
+RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
 ISPICKVAL( Client_Requested_Tasks__c ,"Other"),
 ISBLANK( Client_Requested_Other__c ))</errorConditionFormula>
         <errorDisplayField>Client_Requested_Other__c</errorDisplayField>
@@ -64655,7 +64787,7 @@ ISBLANK( Client_Requested_Other__c ))</errorConditionFormula>
         <active>true</active>
         <description>If Duplicate Listing Found is selected for Google My Business Listing field, the Duplicate Listing Found field must be filled out.</description>
         <errorConditionFormula>AND(
-RecordTypeId="01232000000M3cx",
+RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
 ISBLANK(Duplicate_Listing_Found__c),
 INCLUDES(Google_My_Business_Listing__c ,"Duplicate Listing Found"))</errorConditionFormula>
         <errorDisplayField>Duplicate_Listing_Found__c</errorDisplayField>
@@ -64666,7 +64798,7 @@ INCLUDES(Google_My_Business_Listing__c ,"Duplicate Listing Found"))</errorCondit
         <active>true</active>
         <description>If submission reasons are Performance - Ranking Issues, Citation Network Escalation, Client Requested Tasks or Other you must fill out the Leads from Organic, # of Keywords, Google Listing Status</description>
         <errorConditionFormula>AND(
-RecordTypeId="01232000000M3cx",
+RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
 OR(
 ISBLANK(Number_of_Leads_from_SEO__c),
 ISBLANK(Number_of_Keywords_Ranking_1st_Page__c ),
@@ -64691,15 +64823,14 @@ OR(
 INCLUDES(Reason_for_Submission__c, "Google Setup:Address Issue (IT Pro)"),
 INCLUDES(Reason_for_Submission__c, "Listing Keyword Update (SDB Only)")),
 
-NOT(OR($Profile.Id = "00e60000000nQe9",
-$Profile.Id = "00e60000000in5aAAA", 
-$Profile.Id = "00e60000000nQe9", 
-$Profile.Id = "00e60000000in1i", 
-$Profile.Id = "00e60000000in5a",
-$Profile.Id = "00e60000000iVze",
-$Profile.Id = "00e60000000iq6b",
-$Profile.Id = "00e60000000iqJf",
-$Profile.Id = "00e60000000ipQO"
+NOT(OR($Profile.Name  = "System Administrator",
+$Profile.Name  = "IT Pro", 
+$Profile.Name  = "System Administrator", 
+$Profile.Name  = "SEO Marketing Ops - Austin", 
+$Profile.Name  = "Third Party Vendor",
+$Profile.Name  = "SEM Ops - Austin",
+$Profile.Name = "Pooled CS Support - Austin Senior",
+$Profile.Name  = "Pooled CS Support - Non Austin"
 )))</errorConditionFormula>
         <errorMessage>The following Reasons For Submission are not available to your User Profile: "Google Setup: Address Issue (IT Pro)" and "Listing Keyword Update (SDB Only)". Please select a different Reason For Submission.</errorMessage>
     </validationRules>
@@ -64708,8 +64839,8 @@ $Profile.Id = "00e60000000ipQO"
         <active>true</active>
         <description>Analysts must fill out Recommendations/Talking Points Field</description>
         <errorConditionFormula>AND(
-RecordTypeId="01232000000M3cx",
-$UserRole.Id="00E60000000uzEY",
+RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
+$UserRole.Name ="SEO Marketing Ops",
 NOT(ISPICKVAL(Status__c,"New")),
 ISBLANK( Recommendations_Talking_Points__c ))</errorConditionFormula>
         <errorDisplayField>Recommendations_Talking_Points__c</errorDisplayField>
@@ -64720,7 +64851,7 @@ ISBLANK( Recommendations_Talking_Points__c ))</errorConditionFormula>
         <active>true</active>
         <description>If Other is chosen in the one of the Root Cause picklist fields, Root Cause Other field must be filled out</description>
         <errorConditionFormula>AND(
-RecordTypeId="01232000000M3cx",
+RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
 ISBLANK(Root_Cause_Other__c),
 OR(
 INCLUDES(Google_My_Business_Listing__c ,"Other"),
@@ -64735,7 +64866,7 @@ INCLUDES( OnPage_Adversite_Content__c ,"Other")))</errorConditionFormula>
         <active>true</active>
         <description>Must enter bpin # if marking case as google pin received.</description>
         <errorConditionFormula>and(
-  RecordType.Id  = "012600000009Wk1",
+  RecordType.DeveloperName  = "PIN_Action_Needed",
 or(
 ispickval ( Pin_Action_Reason_Details__c , "Bing Pin Received"),
 ispickval ( Pin_Action_Reason_Details__c , "Google &amp; Bing Pin Received")),
@@ -64748,7 +64879,7 @@ isblank ( BPin_Received__c ))</errorConditionFormula>
         <active>true</active>
         <description>Must enter gpin # if marking case as google pin received.</description>
         <errorConditionFormula>and(
-  RecordType.Id  = "012600000009Wk1",
+  RecordType.DeveloperName  = "PIN_Action_Needed",
 or(
 ispickval ( Pin_Action_Reason_Details__c , "Google Pin Received"),
 ispickval ( Pin_Action_Reason_Details__c , "Google &amp; Bing Pin Received")),
@@ -64757,21 +64888,10 @@ isblank ( GPin_Received__c ))</errorConditionFormula>
         <errorMessage>You must enter in the Google Pin if collecting the Google Pin.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Pin_Action_Owner_Required</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- NOT(ISPICKVAL( Pin_Action_Taken__c ,"")),
-OR(
-ISPICKVAL( IT_Pro_Member__c ,"")),
-ISBLANK( PIN_Action_Owner__c ))</errorConditionFormula>
-        <errorDisplayField>PIN_Action_Owner__c</errorDisplayField>
-        <errorMessage>Must fill out Pin Action Owner or IT Pro Member if Pin Action Taken is filled out</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Pin_Action_Taken_Field_Cannot_Be_Blank</fullName>
         <active>true</active>
         <description>Pin Action Taken Field Cannot Be Blank</description>
-        <errorConditionFormula>AND(RecordTypeId = '012600000009Wk1', 
+        <errorConditionFormula>AND(RecordType.DeveloperName = 'PIN_Action_Needed', 
 NOT (ISPICKVAL(Status__c, 'New')),
 NOT (ISPICKVAL(Status__c, 'In Progress')),
 (ISPICKVAL(Pin_Action_Taken__c, '')))</errorConditionFormula>
@@ -64783,54 +64903,23 @@ NOT (ISPICKVAL(Status__c, 'In Progress')),
         <active>true</active>
         <description>Only Production, IT Pro, YBN, and SEO MOps teams can select G&amp;B Login Issues as Reason for Submission</description>
         <errorConditionFormula>AND(
-$User.ProfileId&lt;&gt;"00e60000000in5a",
-$User.ProfileId&lt;&gt;"00e60000000iyWZ",
-$User.ProfileId&lt;&gt;"00e60000000im1w",
-$User.ProfileId&lt;&gt;"00e60000000irCD",
-$User.ProfileId&lt;&gt;"00e60000000in1i",
-$User.ProfileId&lt;&gt;"00e60000000ipRR",
-$User.ProfileId&lt;&gt;"00e60000000iq8m",
-$User.ProfileId&lt;&gt;"00e60000000iqO6",
-$User.ProfileId&lt;&gt;"00e60000000ixj8",
-$User.ProfileId&lt;&gt;"00e60000000nQe9",
-$User.ProfileId&lt;&gt;"00e60000000ioyE",
-$User.ProfileId&lt;&gt;"00e60000000ixbi",
+$User.Profile_Name__c&lt;&gt;"IT Pro",
+$User.Profile_Name__c&lt;&gt;"National Analyst",
+$User.Profile_Name__c&lt;&gt;"National IMS",
+$User.Profile_Name__c&lt;&gt;"OPT Manager",
+$User.Profile_Name__c&lt;&gt;"SEO Marketing Ops - Austin",
+$User.Profile_Name__c&lt;&gt;"SEO Marketing Ops - Non Austin",
+$User.Profile_Name__c&lt;&gt;"SEO Marketing Ops Manager",
+$User.Profile_Name__c&lt;&gt;"National IMS - Senior",
+$User.Profile_Name__c&lt;&gt;"National Marketing",
+$User.Profile_Name__c&lt;&gt;"System Administrator",
+$User.Profile_Name__c&lt;&gt;"Pin Collection",
+$User.Profile_Name__c&lt;&gt;"Pin Collection - Supervisor",
 OR(
 Includes(Reason_for_Submission__c ,"G&amp;B Login Issues"),
 ISPICKVAL( Submission_Reason__c ,"G&amp;B Login Issues")))</errorConditionFormula>
         <errorDisplayField>Reason_for_Submission__c</errorDisplayField>
         <errorMessage>Only Production, IT Pro, YBN, and SEO MOps teams can select "G&amp;B Login Issues" as Reason for Submission</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Must_fill_out_client_svcs_mgr_to_es</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(Client_Type__c = "YBN", 
-Escalated__c = true,
-ISBLANK(Client_Services_Manager__c))</errorConditionFormula>
-        <errorMessage>Must fill out Client Services Manager</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MICC_Listing_2_Required</fullName>
-        <active>true</active>
-        <description>All "Listing X" fields must be filled out if either one is already populated.</description>
-        <errorConditionFormula>AND(
-  RecordTypeId = "012600000009UWj",  /* Maps Initial Claiming */
-  DATEVALUE(CreatedDate) &gt; DATE(2016,09,01),
-  OR(
-    NOT(ISBLANK(Listing_2_URL_IT_Pro__c)),
-    NOT(ISBLANK(Listing_2_Phone_Number__c)),  
-    NOT(ISBLANK(Listing_2_Business_Name_Address__c))
-  ),
-  OR(
-    TEXT(Listing_2_Action_Completed__c) = "None",
-    ISBLANK(TEXT(Listing_2_Action_Completed__c)),
-    ISBLANK(Listing_2_URL_IT_Pro__c),
-    ISBLANK(Listing_2_Phone_Number__c),  
-    ISBLANK(Listing_2_Business_Name_Address__c)
-  )
-)</errorConditionFormula>
-        <errorDisplayField>Htaccess_File_Functioning__c</errorDisplayField>
-        <errorMessage>All Listing 2 Fields must be filled in.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Update_Lead_in_Marketo_ADMIN_ONLY</fullName>

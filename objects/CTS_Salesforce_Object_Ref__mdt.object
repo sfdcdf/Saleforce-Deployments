@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Summary/ description for the Salesforce object record</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Description</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Object_API_Name__c</fullName>
+        <description>Salesforce Object API Name</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Object API Name</inlineHelpText>
+        <label>Object API Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Label__c</fullName>
+        <description>Salesforce Object Label Name</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Salesforce Object Label Name</inlineHelpText>
+        <label>Object Label</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <description>Salesforce objects referenced and used within the CTS Integration</description>
+    <label>CTS Salesforce Object Ref</label>
+    <pluralLabel>CTS Salesforce Object Refs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

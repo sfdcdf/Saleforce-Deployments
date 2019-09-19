@@ -1280,7 +1280,7 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <label>Client ID</label>
         <length>100</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -1290,7 +1290,7 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <externalId>false</externalId>
         <label>Close Notes</label>
         <length>32768</length>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -1300,7 +1300,7 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1319,12 +1319,13 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
+    <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>To submit call quality concerns from clients to Marketing Ops team to review for potential paused distribution outlets.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
@@ -1341,7 +1342,12 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Call Quality Concerns</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
@@ -1367,6 +1373,15 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
         <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>WebDev_Call_Quality_Concern</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Web Dev</label>
+        <queue>WebDev</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

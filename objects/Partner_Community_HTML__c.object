@@ -148,6 +148,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Active</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -156,6 +157,7 @@
         <externalId>false</externalId>
         <label>Field Bindings</label>
         <length>32768</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -165,6 +167,7 @@
         <externalId>false</externalId>
         <label>HTML</label>
         <length>131000</length>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>10</visibleLines>
@@ -175,7 +178,7 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -185,6 +188,7 @@
     <label>Partner Community HTML</label>
     <nameField>
         <label>Partner Community HTML Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Partner Community HTML</pluralLabel>

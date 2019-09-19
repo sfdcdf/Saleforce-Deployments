@@ -845,10 +845,6 @@
         <name>Customer_Success_team_level_of_professio__c</name>
     </fields>
     <fields>
-        <label><!-- Customer Success team’s knowledge --></label>
-        <name>Customer_Success_team_s_knowledge__c</name>
-    </fields>
-    <fields>
         <label><!-- Customer Survey Name --></label>
         <name>Customer_Survey_Name__c</name>
     </fields>
@@ -3377,10 +3373,6 @@
         <name>If_Other_reason_of_judging_please_lis__c</name>
     </fields>
     <fields>
-        <label><!-- If “Other” reason to discontinue --></label>
-        <name>If_Other_reason_to_discontinue__c</name>
-    </fields>
-    <fields>
         <label><!-- Impact on the office efficiency --></label>
         <name>Impact_on_the_office_efficiency__c</name>
     </fields>
@@ -4480,10 +4472,6 @@
         <name>Sales_Rep_s_Professionalism__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Rep’s knowledge --></label>
-        <name>Sales_Rep_s_knowledge__c</name>
-    </fields>
-    <fields>
         <label><!-- Sales Satisfaction --></label>
         <name>Sales_Satisfaction__c</name>
         <picklistValues>
@@ -4502,14 +4490,6 @@
             <masterLabel>Satisfied</masterLabel>
             <translation><!-- Satisfied --></translation>
         </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Sales representative’s professionalism --></label>
-        <name>Sales_representative_professionalism__c</name>
-    </fields>
-    <fields>
-        <label><!-- Sales representative’s knowledge --></label>
-        <name>Sales_representative_s_knowledge__c</name>
     </fields>
     <fields>
         <label><!-- Sales to set the appropriate expectation --></label>
@@ -6895,6 +6875,26 @@
         <label><!-- what would you change about LH features --></label>
         <name>what_would_you_change_about_LH_features__c</name>
     </fields>
+    <fields>
+        <label><!-- Customer Success teamâ€™s knowledge --></label>
+        <name>Customer_Success_team_s_knowledge__c</name>
+    </fields>
+    <fields>
+        <label><!-- If â€œOtherâ€� reason to discontinue --></label>
+        <name>If_Other_reason_to_discontinue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Repâ€™s knowledge --></label>
+        <name>Sales_Rep_s_knowledge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales representativeâ€™s professionalism --></label>
+        <name>Sales_representative_professionalism__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales representativeâ€™s knowledge --></label>
+        <name>Sales_representative_s_knowledge__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Customer Survey</value>
@@ -6904,6 +6904,1106 @@
         <value>Customer Surveys</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>45 Day Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Notes --></label>
+            <section>Communication Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CSC Business Customization Form</layout>
+        <sections>
+            <label><!-- Business Information --></label>
+            <section>Business Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Segment Details (if applicable) --></label>
+            <section>Segment Details (if applicable)</section>
+        </sections>
+        <sections>
+            <label><!-- Yodle Survey Questions --></label>
+            <section>Yodle Survey Questions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CSC Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Essentials Features --></label>
+            <section>Essentials Features</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- Website Satisfaction --></label>
+            <section>Website Satisfaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Survey Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Response Details --></label>
+            <section>Response Details</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Exit Interview Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Notes --></label>
+            <section>Communication Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Issue Resolution</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details (updated version) --></label>
+            <section>Survey Details (updated version)</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details - 2016 Updates --></label>
+            <section>Survey Details - 2016 Updates</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse Customer Support Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details (updated version) --></label>
+            <section>Survey Details (updated version)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse Exit Interview Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Notes --></label>
+            <section>Communication Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse NPS Survey Auto</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Future Products &amp; Features --></label>
+            <section>Future Products &amp; Features</section>
+        </sections>
+        <sections>
+            <label><!-- Issues &amp; Response --></label>
+            <section>Issues &amp; Response</section>
+        </sections>
+        <sections>
+            <label><!-- Lighthouse Satisfaction --></label>
+            <section>Lighthouse Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse NPS Survey Dental/Chiro</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Future Products &amp; Features --></label>
+            <section>Future Products &amp; Features</section>
+        </sections>
+        <sections>
+            <label><!-- Issues &amp; Response --></label>
+            <section>Issues &amp; Response</section>
+        </sections>
+        <sections>
+            <label><!-- Lighthouse Satisfaction --></label>
+            <section>Lighthouse Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse NPS Survey Essentials/Max</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Future Products &amp; Features --></label>
+            <section>Future Products &amp; Features</section>
+        </sections>
+        <sections>
+            <label><!-- Issues &amp; Response --></label>
+            <section>Issues &amp; Response</section>
+        </sections>
+        <sections>
+            <label><!-- Lighthouse Satisfaction --></label>
+            <section>Lighthouse Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse Post-Install Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lighthouse Post-Setup Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketing Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Max Touch Plan Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey LBW</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Management --></label>
+            <section>Account Management</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Product Questions --></label>
+            <section>Product Questions</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales --></label>
+            <section>Sales</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey Lighthouse</layout>
+        <sections>
+            <label><!-- 2017 NPS Questions --></label>
+            <section>2017 NPS Questions</section>
+        </sections>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Future Products &amp; Features --></label>
+            <section>Future Products &amp; Features</section>
+        </sections>
+        <sections>
+            <label><!-- Issues &amp; Response --></label>
+            <section>Issues &amp; Response</section>
+        </sections>
+        <sections>
+            <label><!-- Lighthouse Satisfaction --></label>
+            <section>Lighthouse Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey TORCHx</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- TORCHx Products &amp; Features --></label>
+            <section>TORCHx Products &amp; Features</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey WBN Corporate</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- CS --></label>
+            <section>CS</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Product + Service Feedback --></label>
+            <section>Product + Service Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey YBN</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Product + Service Feedback --></label>
+            <section>Product + Service Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey Yodle</layout>
+        <sections>
+            <label><!-- 2017 NPS --></label>
+            <section>2017 NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Issues &amp; Response --></label>
+            <section>Issues &amp; Response</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Yodle Products &amp; Features --></label>
+            <section>Yodle Products &amp; Features</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NPS Survey Yodle Non-Essentials</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Issues &amp; Response --></label>
+            <section>Issues &amp; Response</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction &amp; NPS --></label>
+            <section>Overall Satisfaction &amp; NPS</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; CS --></label>
+            <section>Sales &amp; CS</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Yodle Products &amp; Features --></label>
+            <section>Yodle Products &amp; Features</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OutRank CSC Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Client Service Feedback --></label>
+            <section>Client Service Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Engage Features --></label>
+            <section>Engage Features</section>
+        </sections>
+        <sections>
+            <label><!-- Overall Satisfaction --></label>
+            <section>Overall Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Website Satisfaction --></label>
+            <section>Website Satisfaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>POD Resolution</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details (updated version) --></label>
+            <section>Survey Details (updated version)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Post Launch Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TEST CSC Survey NEW</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product --></label>
+            <section>Product</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales --></label>
+            <section>Sales</section>
+        </sections>
+        <sections>
+            <label><!-- Service --></label>
+            <section>Service</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TORCHx Post Call Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Day 40 Specific Questions --></label>
+            <section>Day 40 Specific Questions</section>
+        </sections>
+        <sections>
+            <label><!-- Day 7 Specific Questions --></label>
+            <section>Day 7 Specific Questions</section>
+        </sections>
+        <sections>
+            <label><!-- Monthly Review Specific Questions --></label>
+            <section>Monthly Review Specific Questions</section>
+        </sections>
+        <sections>
+            <label><!-- Questions on Multiple TORCHx Surveys --></label>
+            <section>Questions on Multiple TORCHx Surveys</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Touch Plan Survey</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transactional 25 Day Call</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transactional 55 Day Call</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transactional Conf Call</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transactional Issue Resolution</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Communication Details --></label>
+            <section>Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Section --></label>
+            <section>Response Section</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Details --></label>
+            <section>Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <description><!-- Used to collect business information from client prior to setup call --></description>
         <label><!-- CSC Business Customization Form --></label>

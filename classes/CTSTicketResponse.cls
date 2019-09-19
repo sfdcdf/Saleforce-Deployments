@@ -1,0 +1,84 @@
+/*
+//Reason : “BeaconHS1Migration” : Inactivated the completed class , as this is not needed for LH Product.
+//By : Mahesh Bogila , 7/3/2019
+/*
+
+/*public class CTSTicketResponse {
+
+    public class Response {
+        public String providerApplicationName {get; set;}
+        public String clientRequestId {get; set;}
+        public String status {get; set;}
+        public Object errors {get; set;}
+        public Data data {get; set;}
+        public String messageId {get; set;}
+    }
+
+    public class Errors {
+        public String source {get; set;}
+        public String statusCode {get; set;}
+        public String message {get; set;}
+        public String errorId {get; set;}
+    }
+
+    public class Data {
+        public String ticketNumber {get; set;}
+    }
+
+    public List<Response> response;
+
+    
+    public static CTSTicketResponse parse(String json) {
+        return (CTSTicketResponse) System.JSON.deserialize(json, CTSTicketResponse.class);
+    }
+}*/
+
+
+    public class CTSTicketResponse {
+        
+        Integer i1 = 1; 
+    Integer i2 = 1; 
+    Integer i3 = 1; 
+    Integer i4 = 1; 
+    Integer i5 = 1; 
+    Integer i6 = 1; 
+    Integer i7 = 1; 
+    Integer i8 = 1; 
+    Integer i9 = 1; 
+    Integer i10 = 1; 
+
+        
+        /*
+        public String providerApplicationName {get; set;}
+        public String clientRequestId {get; set;}
+        public String status {get; set;}
+        public List<Errors> errors {get; set;}
+        public Data data {get; set;}
+        public String messageId {get; set;}
+    
+
+    public class Errors {
+        public String source {get; set;}
+        public String statusCode {get; set;}
+        public String message {get; set;}
+        public String errorId {get; set;}
+    }
+    
+   
+    public class ResponseDetail {
+        public String ticketNumber {get; set;}
+    }
+    
+    
+
+    public class Data {
+        public String crmId {get; set;}
+        public List<ResponseDetail> details {get; set;}
+        
+    }
+              
+    public static CTSTicketResponse parse(String json) {
+        return (CTSTicketResponse) System.JSON.deserialize(json, CTSTicketResponse.class);
+    }
+*/
+}

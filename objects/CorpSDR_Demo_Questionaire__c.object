@@ -152,6 +152,7 @@
         <relationshipLabel>CorpSDR Demo Questionaires (Account Name)</relationshipLabel>
         <relationshipName>CorpSDR_Demo_Questionaires1</relationshipName>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -160,6 +161,7 @@
         <externalId>false</externalId>
         <label>Additional Notes</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -168,6 +170,7 @@
         <externalId>false</externalId>
         <label>Are you evaluating marketing vendors?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -193,6 +196,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
@@ -202,6 +206,7 @@
         <label>Contact Title</label>
         <length>26</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -215,6 +220,7 @@
         <relationshipLabel>CorpSDR Demo Questionaires</relationshipLabel>
         <relationshipName>CorpSDR_Demo_Questionaires</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -225,6 +231,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
@@ -233,6 +240,7 @@
         <externalId>false</externalId>
         <label>Demo Date/Time</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
@@ -241,6 +249,7 @@
         <externalId>false</externalId>
         <label>Direct Email</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -250,6 +259,7 @@
         <externalId>false</externalId>
         <label>Direct Phone Number</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -258,6 +268,7 @@
         <externalId>false</externalId>
         <label>Do you currently work with a vendor?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -268,6 +279,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
@@ -278,6 +290,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -288,6 +301,7 @@
         <label>Length of time in role</label>
         <length>26</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -297,6 +311,7 @@
         <externalId>false</externalId>
         <label>Marketing Funds</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -326,6 +341,7 @@
         <externalId>false</externalId>
         <label>Role Function</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -334,6 +350,7 @@
         <externalId>false</externalId>
         <label>What does the company do?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -343,6 +360,7 @@
         <label>What is the segment?</label>
         <length>26</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -352,6 +370,7 @@
         <externalId>false</externalId>
         <label>What is your current digital marketing?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -360,6 +379,7 @@
         <externalId>false</externalId>
         <label>What markets are most important?</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -369,6 +389,7 @@
         <label>Who is the meeting with?</label>
         <length>26</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -377,12 +398,13 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Used by the SDR to capture information about a prospect before the opportunity is created</description>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
@@ -390,6 +412,7 @@
     <label>CorpSDR Demo Questionaire</label>
     <nameField>
         <label>CorpSDR Demo Questionaire Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>CorpSDR Demo Questionaires</pluralLabel>

@@ -443,20 +443,6 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Minutes_to_Complete_Request__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Put in the total minutes it took to complete the task. Don’t worry about if this number is large or small – no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here.</inlineHelpText>
-        <label>Minutes to Complete Request</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>New_Budget__c</fullName>
         <externalId>false</externalId>
         <label>New Budget</label>
@@ -2198,156 +2184,6 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         </valueSet>
     </fields>
     <fields>
-        <fullName>Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>New</fullName>
-                    <default>true</default>
-                    <label>New</label>
-                </value>
-                <value>
-                    <fullName>Awaiting Internal Response</fullName>
-                    <default>false</default>
-                    <label>Awaiting Internal Response</label>
-                </value>
-                <value>
-                    <fullName>Long Term Project/Plan</fullName>
-                    <default>false</default>
-                    <label>Long Term Project/Plan</label>
-                </value>
-                <value>
-                    <fullName>Pending approval from YBN Leadership</fullName>
-                    <default>false</default>
-                    <label>Pending approval from YBN Leadership</label>
-                </value>
-                <value>
-                    <fullName>Pending Estimate</fullName>
-                    <default>false</default>
-                    <label>Pending Estimate</label>
-                </value>
-                <value>
-                    <fullName>Pending Channel Lead</fullName>
-                    <default>false</default>
-                    <label>Pending Channel Lead</label>
-                </value>
-                <value>
-                    <fullName>Pending JIRA Ticket Resolution</fullName>
-                    <default>false</default>
-                    <label>Pending JIRA Ticket Resolution</label>
-                </value>
-                <value>
-                    <fullName>Pending Ops Assignment</fullName>
-                    <default>false</default>
-                    <label>Pending Ops Assignment</label>
-                </value>
-                <value>
-                    <fullName>In Review</fullName>
-                    <default>false</default>
-                    <label>In Review</label>
-                </value>
-                <value>
-                    <fullName>In Progress</fullName>
-                    <default>false</default>
-                    <label>In Progress</label>
-                </value>
-                <value>
-                    <fullName>Need More Information</fullName>
-                    <default>false</default>
-                    <label>Need More Information</label>
-                </value>
-                <value>
-                    <fullName>On Hold</fullName>
-                    <default>false</default>
-                    <label>On Hold</label>
-                </value>
-                <value>
-                    <fullName>Closed - Added</fullName>
-                    <default>false</default>
-                    <label>Closed - Added</label>
-                </value>
-                <value>
-                    <fullName>Closed - Not Eligible</fullName>
-                    <default>false</default>
-                    <label>Closed - Not Eligible</label>
-                </value>
-                <value>
-                    <fullName>Closed - Completed/Updates Made</fullName>
-                    <default>false</default>
-                    <label>Closed - Completed/Updates Made</label>
-                </value>
-                <value>
-                    <fullName>Closed - Completed</fullName>
-                    <default>false</default>
-                    <label>Closed - Completed</label>
-                </value>
-                <value>
-                    <fullName>Closed - Could Not Complete</fullName>
-                    <default>false</default>
-                    <label>Closed - Could Not Complete</label>
-                </value>
-                <value>
-                    <fullName>Closed - Review for CS Ops Plan</fullName>
-                    <default>false</default>
-                    <label>Closed - Review for CS Ops Plan</label>
-                </value>
-                <value>
-                    <fullName>Closed - Declined by Channel Lead</fullName>
-                    <default>false</default>
-                    <label>Closed - Declined by Channel Lead</label>
-                </value>
-                <value>
-                    <fullName>Closed - Not Approved</fullName>
-                    <default>false</default>
-                    <label>Closed - Not Approved</label>
-                </value>
-                <value>
-                    <fullName>Closed: CMS 2.0 – Too Customized</fullName>
-                    <default>false</default>
-                    <label>Closed: CMS 2.0 – Too Customized</label>
-                </value>
-                <value>
-                    <fullName>Closed: Segment Not Supported</fullName>
-                    <default>false</default>
-                    <label>Closed: Segment Not Supported</label>
-                </value>
-                <value>
-                    <fullName>Closed: Upgraded</fullName>
-                    <default>false</default>
-                    <label>Closed: Upgraded</label>
-                </value>
-                <value>
-                    <fullName>Closed: Downgraded</fullName>
-                    <default>false</default>
-                    <label>Closed: Downgraded</label>
-                </value>
-                <value>
-                    <fullName>Project - In Progress</fullName>
-                    <default>false</default>
-                    <label>Project - In Progress</label>
-                </value>
-                <value>
-                    <fullName>Project - Pending WBN Ops Assignment</fullName>
-                    <default>false</default>
-                    <label>Project - Pending WBN Ops Assignment</label>
-                </value>
-                <value>
-                    <fullName>On Hold - Per Requester</fullName>
-                    <default>false</default>
-                    <label>On Hold - Per Requester</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Sub_Section__c</fullName>
         <externalId>false</externalId>
         <label>Sub-Section</label>
@@ -2768,12 +2604,342 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         </valueSet>
     </fields>
     <fields>
+        <fullName>Request_Category__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If you closed out the request and directed the individual elsewhere, select â€œGave Alternate Guidanceâ€�; if you were fixing an error, choose â€œFixing Errorâ€�; for all other requests, select â€œChange/Projectâ€�.</inlineHelpText>
+        <label>Request Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Change/Project</fullName>
+                    <default>false</default>
+                    <label>Change/Project</label>
+                </value>
+                <value>
+                    <fullName>Fixing Error</fullName>
+                    <default>false</default>
+                    <label>Fixing Error</label>
+                </value>
+                <value>
+                    <fullName>Gave Alternate Guidance</fullName>
+                    <default>false</default>
+                    <label>Gave Alternate Guidance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Channel_Requested_By__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Assignment Request</fullName>
+                    <default>false</default>
+                    <label>Account Assignment Request</label>
+                </value>
+                <value>
+                    <fullName>Administrative Items</fullName>
+                    <default>false</default>
+                    <label>Administrative Items</label>
+                </value>
+                <value>
+                    <fullName>Batch Uploads</fullName>
+                    <default>false</default>
+                    <label>Batch Uploads</label>
+                </value>
+                <value>
+                    <fullName>Clicktools</fullName>
+                    <default>false</default>
+                    <label>Clicktools</label>
+                </value>
+                <value>
+                    <fullName>CMS 2 Upgrade Test</fullName>
+                    <default>false</default>
+                    <label>CMS 2 Upgrade Test</label>
+                </value>
+                <value>
+                    <fullName>CMS 3.1 Update Request</fullName>
+                    <default>false</default>
+                    <label>CMS 3.1 Update Request</label>
+                </value>
+                <value>
+                    <fullName>CS SOP Manual Update</fullName>
+                    <default>false</default>
+                    <label>CS SOP Manual Update</label>
+                </value>
+                <value>
+                    <fullName>Essentials Features Request</fullName>
+                    <default>false</default>
+                    <label>Essentials Features Request</label>
+                </value>
+                <value>
+                    <fullName>Excel Reports</fullName>
+                    <default>false</default>
+                    <label>Excel Reports</label>
+                </value>
+                <value>
+                    <fullName>Influence - Lead Sourcing</fullName>
+                    <default>false</default>
+                    <label>Influence - Lead Sourcing</label>
+                </value>
+                <value>
+                    <fullName>LiveOps</fullName>
+                    <default>false</default>
+                    <label>LiveOps</label>
+                </value>
+                <value>
+                    <fullName>LiveOps Issue</fullName>
+                    <default>false</default>
+                    <label>LiveOps Issue</label>
+                </value>
+                <value>
+                    <fullName>National Project</fullName>
+                    <default>false</default>
+                    <label>National Project</label>
+                </value>
+                <value>
+                    <fullName>New Report Request</fullName>
+                    <default>false</default>
+                    <label>New Report Request</label>
+                </value>
+                <value>
+                    <fullName>Operations Help Desk</fullName>
+                    <default>false</default>
+                    <label>Operations Help Desk</label>
+                </value>
+                <value>
+                    <fullName>Operation Upsell Additions</fullName>
+                    <default>false</default>
+                    <label>Operation Upsell Additions</label>
+                </value>
+                <value>
+                    <fullName>Project Request</fullName>
+                    <default>false</default>
+                    <label>Project Request</label>
+                </value>
+                <value>
+                    <fullName>Salesforce</fullName>
+                    <default>false</default>
+                    <label>Salesforce</label>
+                </value>
+                <value>
+                    <fullName>SalesForce/Service Cloud Assistance</fullName>
+                    <default>false</default>
+                    <label>SalesForce/Service Cloud Assistance</label>
+                </value>
+                <value>
+                    <fullName>Service Level Assignment</fullName>
+                    <default>false</default>
+                    <label>Service Level Assignment</label>
+                </value>
+                <value>
+                    <fullName>Strategic Account Growth</fullName>
+                    <default>false</default>
+                    <label>Strategic Account Growth</label>
+                </value>
+                <value>
+                    <fullName>Tableau</fullName>
+                    <default>false</default>
+                    <label>Tableau</label>
+                </value>
+                <value>
+                    <fullName>Weekly Reports Update</fullName>
+                    <default>false</default>
+                    <label>Weekly Reports Update</label>
+                </value>
+                <value>
+                    <fullName>YO 2.0 Free Time Request</fullName>
+                    <default>false</default>
+                    <label>YO 2.0 Free Time Request</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Data Modification</fullName>
+                    <default>false</default>
+                    <label>Salesforce Data Modification</label>
+                </value>
+                <value>
+                    <fullName>Yodle Live</fullName>
+                    <default>false</default>
+                    <label>Yodle Live</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <controllingFieldValue>Client Services</controllingFieldValue>
+                <controllingFieldValue>Sales</controllingFieldValue>
+                <controllingFieldValue>YBN Leadership</controllingFieldValue>
+                <controllingFieldValue>Lighthouse</controllingFieldValue>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>Operations</controllingFieldValue>
+                <controllingFieldValue>OPT</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Clicktools</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <controllingFieldValue>Client Services</controllingFieldValue>
+                <controllingFieldValue>Sales</controllingFieldValue>
+                <controllingFieldValue>YBN Leadership</controllingFieldValue>
+                <controllingFieldValue>Lighthouse</controllingFieldValue>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>National</controllingFieldValue>
+                <controllingFieldValue>Operations</controllingFieldValue>
+                <controllingFieldValue>OPT</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>LiveOps</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <controllingFieldValue>Client Services</controllingFieldValue>
+                <controllingFieldValue>Sales</controllingFieldValue>
+                <controllingFieldValue>YBN Leadership</controllingFieldValue>
+                <controllingFieldValue>Lighthouse</controllingFieldValue>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>Operations</controllingFieldValue>
+                <controllingFieldValue>OPT</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Salesforce</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <controllingFieldValue>Client Services</controllingFieldValue>
+                <controllingFieldValue>Sales</controllingFieldValue>
+                <controllingFieldValue>YBN Leadership</controllingFieldValue>
+                <controllingFieldValue>Lighthouse</controllingFieldValue>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>Operations</controllingFieldValue>
+                <controllingFieldValue>OPT</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Tableau</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <controllingFieldValue>Client Services</controllingFieldValue>
+                <controllingFieldValue>Sales</controllingFieldValue>
+                <controllingFieldValue>YBN Leadership</controllingFieldValue>
+                <controllingFieldValue>OPT</controllingFieldValue>
+                <controllingFieldValue>Performance</controllingFieldValue>
+                <valueName>Yodle Live</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lighthouse</controllingFieldValue>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>National</controllingFieldValue>
+                <controllingFieldValue>Operations</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Essentials Features Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lighthouse</controllingFieldValue>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>Operations</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Excel Reports</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Local</controllingFieldValue>
+                <controllingFieldValue>National</controllingFieldValue>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Operation Upsell Additions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Account Assignment Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Administrative Items</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Batch Uploads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>CMS 2 Upgrade Test</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>CS SOP Manual Update</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Influence - Lead Sourcing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>National Project</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>New Report Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Operations Help Desk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Project Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>SalesForce/Service Cloud Assistance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Service Level Assignment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Strategic Account Growth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>Weekly Reports Update</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>YO 2.0 Free Time Request</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Bulk_Change_Type__c</fullName>
         <externalId>false</externalId>
         <label>Bulk Change Type</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2898,7 +3064,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Business Value</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
@@ -2909,7 +3075,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>CS Approval Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -2934,7 +3100,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Closed Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -2944,7 +3110,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Due Date (1 Business Day Min)</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -2956,7 +3122,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <length>25</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -2967,7 +3133,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Expected Completion Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -2977,7 +3143,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Instructions to Complete Project</label>
         <length>10000</length>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>10</visibleLines>
@@ -2988,7 +3154,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Macro Used?</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3013,9 +3179,23 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <externalId>false</externalId>
         <label>Manager Approved Escalation</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Minutes_to_Complete_Request__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Put in the total minutes it took to complete the task. Donâ€™t worry about if this number is large or small â€“ no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here.</inlineHelpText>
+        <label>Minutes to Complete Request</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Need_to_Escalate__c</fullName>
@@ -3023,7 +3203,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <externalId>false</externalId>
         <label>Need to Escalate</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -3033,7 +3213,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Notes</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -3047,7 +3227,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <relationshipName>CS_Operations</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -3057,7 +3237,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Operations Summary</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -3068,7 +3248,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Priority</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3113,43 +3293,12 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         </valueSet>
     </fields>
     <fields>
-        <fullName>Request_Category__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>If you closed out the request and directed the individual elsewhere, select â€œGave Alternate Guidanceâ€�; if you were fixing an error, choose â€œFixing Errorâ€�; for all other requests, select â€œChange/Projectâ€�.</inlineHelpText>
-        <label>Request Category</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Change/Project</fullName>
-                    <default>false</default>
-                    <label>Change/Project</label>
-                </value>
-                <value>
-                    <fullName>Fixing Error</fullName>
-                    <default>false</default>
-                    <label>Fixing Error</label>
-                </value>
-                <value>
-                    <fullName>Gave Alternate Guidance</fullName>
-                    <default>false</default>
-                    <label>Gave Alternate Guidance</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Request_Details__c</fullName>
         <externalId>false</externalId>
         <label>Request Details</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
@@ -3160,7 +3309,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <label>Request Type</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3876,302 +4025,153 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         </valueSet>
     </fields>
     <fields>
-        <fullName>Type__c</fullName>
+        <fullName>Status__c</fullName>
         <externalId>false</externalId>
-        <label>Type</label>
+        <label>Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <controllingField>Channel_Requested_By__c</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Account Assignment Request</fullName>
-                    <default>false</default>
-                    <label>Account Assignment Request</label>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
                 </value>
                 <value>
-                    <fullName>Administrative Items</fullName>
+                    <fullName>Awaiting Internal Response</fullName>
                     <default>false</default>
-                    <label>Administrative Items</label>
+                    <label>Awaiting Internal Response</label>
                 </value>
                 <value>
-                    <fullName>Batch Uploads</fullName>
+                    <fullName>Long Term Project/Plan</fullName>
                     <default>false</default>
-                    <label>Batch Uploads</label>
+                    <label>Long Term Project/Plan</label>
                 </value>
                 <value>
-                    <fullName>Clicktools</fullName>
+                    <fullName>Pending approval from YBN Leadership</fullName>
                     <default>false</default>
-                    <label>Clicktools</label>
+                    <label>Pending approval from YBN Leadership</label>
                 </value>
                 <value>
-                    <fullName>CMS 2 Upgrade Test</fullName>
+                    <fullName>Pending Estimate</fullName>
                     <default>false</default>
-                    <label>CMS 2 Upgrade Test</label>
+                    <label>Pending Estimate</label>
                 </value>
                 <value>
-                    <fullName>CMS 3.1 Update Request</fullName>
+                    <fullName>Pending Channel Lead</fullName>
                     <default>false</default>
-                    <label>CMS 3.1 Update Request</label>
+                    <label>Pending Channel Lead</label>
                 </value>
                 <value>
-                    <fullName>CS SOP Manual Update</fullName>
+                    <fullName>Pending JIRA Ticket Resolution</fullName>
                     <default>false</default>
-                    <label>CS SOP Manual Update</label>
+                    <label>Pending JIRA Ticket Resolution</label>
                 </value>
                 <value>
-                    <fullName>Essentials Features Request</fullName>
+                    <fullName>Pending Ops Assignment</fullName>
                     <default>false</default>
-                    <label>Essentials Features Request</label>
+                    <label>Pending Ops Assignment</label>
                 </value>
                 <value>
-                    <fullName>Excel Reports</fullName>
+                    <fullName>In Review</fullName>
                     <default>false</default>
-                    <label>Excel Reports</label>
+                    <label>In Review</label>
                 </value>
                 <value>
-                    <fullName>Influence - Lead Sourcing</fullName>
+                    <fullName>In Progress</fullName>
                     <default>false</default>
-                    <label>Influence - Lead Sourcing</label>
+                    <label>In Progress</label>
                 </value>
                 <value>
-                    <fullName>LiveOps</fullName>
+                    <fullName>Need More Information</fullName>
                     <default>false</default>
-                    <label>LiveOps</label>
+                    <label>Need More Information</label>
                 </value>
                 <value>
-                    <fullName>LiveOps Issue</fullName>
+                    <fullName>On Hold</fullName>
                     <default>false</default>
-                    <label>LiveOps Issue</label>
+                    <label>On Hold</label>
                 </value>
                 <value>
-                    <fullName>National Project</fullName>
+                    <fullName>Closed - Added</fullName>
                     <default>false</default>
-                    <label>National Project</label>
+                    <label>Closed - Added</label>
                 </value>
                 <value>
-                    <fullName>New Report Request</fullName>
+                    <fullName>Closed - Not Eligible</fullName>
                     <default>false</default>
-                    <label>New Report Request</label>
+                    <label>Closed - Not Eligible</label>
                 </value>
                 <value>
-                    <fullName>Operations Help Desk</fullName>
+                    <fullName>Closed - Completed/Updates Made</fullName>
                     <default>false</default>
-                    <label>Operations Help Desk</label>
+                    <label>Closed - Completed/Updates Made</label>
                 </value>
                 <value>
-                    <fullName>Operation Upsell Additions</fullName>
+                    <fullName>Closed - Completed</fullName>
                     <default>false</default>
-                    <label>Operation Upsell Additions</label>
+                    <label>Closed - Completed</label>
                 </value>
                 <value>
-                    <fullName>Project Request</fullName>
+                    <fullName>Closed - Could Not Complete</fullName>
                     <default>false</default>
-                    <label>Project Request</label>
+                    <label>Closed - Could Not Complete</label>
                 </value>
                 <value>
-                    <fullName>Salesforce</fullName>
+                    <fullName>Closed - Review for CS Ops Plan</fullName>
                     <default>false</default>
-                    <label>Salesforce</label>
+                    <label>Closed - Review for CS Ops Plan</label>
                 </value>
                 <value>
-                    <fullName>SalesForce/Service Cloud Assistance</fullName>
+                    <fullName>Closed - Declined by Channel Lead</fullName>
                     <default>false</default>
-                    <label>SalesForce/Service Cloud Assistance</label>
+                    <label>Closed - Declined by Channel Lead</label>
                 </value>
                 <value>
-                    <fullName>Service Level Assignment</fullName>
+                    <fullName>Closed - Not Approved</fullName>
                     <default>false</default>
-                    <label>Service Level Assignment</label>
+                    <label>Closed - Not Approved</label>
                 </value>
                 <value>
-                    <fullName>Strategic Account Growth</fullName>
+                    <fullName>Closed: CMS 2.0 â€“ Too Customized</fullName>
                     <default>false</default>
-                    <label>Strategic Account Growth</label>
+                    <label>Closed: CMS 2.0 â€“ Too Customized</label>
                 </value>
                 <value>
-                    <fullName>Tableau</fullName>
+                    <fullName>Closed: Segment Not Supported</fullName>
                     <default>false</default>
-                    <label>Tableau</label>
+                    <label>Closed: Segment Not Supported</label>
                 </value>
                 <value>
-                    <fullName>Weekly Reports Update</fullName>
+                    <fullName>Closed: Upgraded</fullName>
                     <default>false</default>
-                    <label>Weekly Reports Update</label>
+                    <label>Closed: Upgraded</label>
                 </value>
                 <value>
-                    <fullName>YO 2.0 Free Time Request</fullName>
+                    <fullName>Closed: Downgraded</fullName>
                     <default>false</default>
-                    <label>YO 2.0 Free Time Request</label>
+                    <label>Closed: Downgraded</label>
                 </value>
                 <value>
-                    <fullName>Salesforce Data Modification</fullName>
+                    <fullName>Project - In Progress</fullName>
                     <default>false</default>
-                    <label>Salesforce Data Modification</label>
+                    <label>Project - In Progress</label>
                 </value>
                 <value>
-                    <fullName>Yodle Live</fullName>
+                    <fullName>Project - Pending WBN Ops Assignment</fullName>
                     <default>false</default>
-                    <label>Yodle Live</label>
+                    <label>Project - Pending WBN Ops Assignment</label>
+                </value>
+                <value>
+                    <fullName>On Hold - Per Requester</fullName>
+                    <default>false</default>
+                    <label>On Hold - Per Requester</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>Marketing</controllingFieldValue>
-                <controllingFieldValue>Client Services</controllingFieldValue>
-                <controllingFieldValue>Sales</controllingFieldValue>
-                <controllingFieldValue>YBN Leadership</controllingFieldValue>
-                <controllingFieldValue>Lighthouse</controllingFieldValue>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>Operations</controllingFieldValue>
-                <controllingFieldValue>OPT</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>Clicktools</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>Marketing</controllingFieldValue>
-                <controllingFieldValue>Client Services</controllingFieldValue>
-                <controllingFieldValue>Sales</controllingFieldValue>
-                <controllingFieldValue>YBN Leadership</controllingFieldValue>
-                <controllingFieldValue>Lighthouse</controllingFieldValue>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>National</controllingFieldValue>
-                <controllingFieldValue>Operations</controllingFieldValue>
-                <controllingFieldValue>OPT</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>LiveOps</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>Marketing</controllingFieldValue>
-                <controllingFieldValue>Client Services</controllingFieldValue>
-                <controllingFieldValue>Sales</controllingFieldValue>
-                <controllingFieldValue>YBN Leadership</controllingFieldValue>
-                <controllingFieldValue>Lighthouse</controllingFieldValue>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>Operations</controllingFieldValue>
-                <controllingFieldValue>OPT</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>Salesforce</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>Marketing</controllingFieldValue>
-                <controllingFieldValue>Client Services</controllingFieldValue>
-                <controllingFieldValue>Sales</controllingFieldValue>
-                <controllingFieldValue>YBN Leadership</controllingFieldValue>
-                <controllingFieldValue>Lighthouse</controllingFieldValue>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>Operations</controllingFieldValue>
-                <controllingFieldValue>OPT</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>Tableau</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>SEM Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>SEO Marketing Ops</controllingFieldValue>
-                <controllingFieldValue>Marketing</controllingFieldValue>
-                <controllingFieldValue>Client Services</controllingFieldValue>
-                <controllingFieldValue>Sales</controllingFieldValue>
-                <controllingFieldValue>YBN Leadership</controllingFieldValue>
-                <controllingFieldValue>OPT</controllingFieldValue>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>Yodle Live</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Lighthouse</controllingFieldValue>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>National</controllingFieldValue>
-                <controllingFieldValue>Operations</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <valueName>Essentials Features Request</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Lighthouse</controllingFieldValue>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>Operations</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <valueName>Excel Reports</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Local</controllingFieldValue>
-                <controllingFieldValue>National</controllingFieldValue>
-                <controllingFieldValue>Partner</controllingFieldValue>
-                <valueName>Operation Upsell Additions</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Account Assignment Request</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Administrative Items</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Batch Uploads</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>CMS 2 Upgrade Test</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>CS SOP Manual Update</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Influence - Lead Sourcing</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>National Project</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>New Report Request</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Operations Help Desk</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Project Request</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>SalesForce/Service Cloud Assistance</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Service Level Assignment</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Strategic Account Growth</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>Weekly Reports Update</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National</controllingFieldValue>
-                <valueName>YO 2.0 Free Time Request</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -4180,6 +4180,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
     <description>Object used to make request to the CS &amp; YBN Operations teams</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
@@ -4198,8 +4199,12 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
     </nameField>
     <pluralLabel>Operations</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts />
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Opened_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Expected_Completion_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>JIRA_Issue_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
@@ -4564,6 +4569,58 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
         <queue>Rogers_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CSOperations275821_CS_Operations</fullName>
+        <filterScope>Queue</filterScope>
+        <label>CS Operations</label>
+        <queue>CSOperations275821</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Open_Operation_Upsell_Additions</fullName>
+        <columns>NAME</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Account_Name__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Created_by_Role__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Reporting_Change_Detail__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Date_Upsell_Occurred__c</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed - Added,Closed - Not Eligible</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CS_Operations__c.Operation_Upsell_Additions</value>
+        </filters>
+        <label>Open Operation Upsell Additions</label>
+        <queue>CSOperations275821</queue>
+    </listViews>
+    <listViews>
+        <fullName>Operations_Approavals_CS_Operations</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Operations Approavals</label>
+        <queue>Operations_Approavals</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>YBN_Leadership_CS_Operations</fullName>
+        <filterScope>Queue</filterScope>
+        <label>YBN Leadership</label>
+        <queue>YBN_Leadership</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>

@@ -1,0 +1,23 @@
+<apex:page standardController="Case" extensions="AccountFeesController">
+	<style>
+        .labelCol {
+			color: #54698d !important;
+    		font-weight: normal !important;
+        }
+    </style>
+
+	<apex:pageBlock mode="maindetail">
+        <apex:pageBlockSection columns="1" rendered="{!!Case.Account.wrenBilling__c}">
+        	<apex:pageMessages />
+			<apex:repeat value="{!feesMap}" var="fee">
+				<apex:outputText label="{!fee}" value="${0,number,###,###,##0.00} {!Case.Account.Currency_Code__c}">
+					<apex:param value="{!feesMap[fee]/100}" />
+				</apex:outputText>
+			</apex:repeat>
+			<apex:pageMessage rendered="{!showNoFeesMessage}" summary="{!$Label.ShowNoFeesMessage}" severity="info" strength="3"/>
+		</apex:pageBlockSection>
+		<apex:outputPanel rendered="{!Case.Account.wrenBilling__c}">
+			<a href="{!$Page.HermesAccountRedirect}?id={!Case.Account.Id}" target="_blank" style="padding-left: 150px;">{!$Label.BilledThroughHermes}</a>
+		</apex:outputPanel>
+	</apex:pageBlock>
+</apex:page>

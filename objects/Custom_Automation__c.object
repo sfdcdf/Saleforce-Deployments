@@ -319,7 +319,7 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
@@ -345,6 +345,20 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>CONNECTION_SENT.NAME</columns>
+        <columns>Automation_Status__c</columns>
+        <columns>Automation_Trigger_Date__c</columns>
+        <columns>Automation_Type__c</columns>
+        <columns>Automation_Type_API_Name_External_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <recordTypes>
         <fullName>Account_Automation_Save_Mode</fullName>
         <active>true</active>
@@ -361,7 +375,7 @@
             </values>
             <values>
                 <fullName>Evaluating</fullName>
-                <default>true</default>
+                <default>false</default>
             </values>
             <values>
                 <fullName>No Action Needed</fullName>
@@ -373,7 +387,7 @@
             </values>
             <values>
                 <fullName>Waiting on Outcome</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>

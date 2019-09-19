@@ -150,6 +150,7 @@
         <label>Location Group Name</label>
         <length>255</length>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -161,7 +162,7 @@
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
@@ -171,10 +172,13 @@
     <label>Google Location Group</label>
     <nameField>
         <label>Location Group Id</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Google Location Groups</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Location_Group_Name__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>

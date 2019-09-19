@@ -852,21 +852,29 @@
     </fields>
     <fields>
         <fullName>AlternateSFId__c</fullName>
-        <description>Unique identifier signifying the target instance created Id for the corresponding source record</description>
         <externalId>false</externalId>
-        <inlineHelpText>Unique identifier signifying the target instance created Id for the corresponding source record</inlineHelpText>
         <label>AlternateSFId</label>
-        <length>18</length>
+        <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-  <enableEnhancedLookup>true</enableEnhancedLookup>
-  <enableFeeds>true</enableFeeds>
-  <externalSharingModel>Private</externalSharingModel>
-  <searchLayouts>
+    <fields>
+        <fullName>CASESAFEID__c</fullName>
+        <externalId>false</externalId>
+        <formula>casesafeid(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CASESAFEID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
@@ -875,13 +883,11 @@
         <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ACTIVE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>MANAGER</searchResultsAdditionalFields>
     </searchLayouts>
-  <sharingModel>Read</sharingModel>
-
+    <sharingModel>Read</sharingModel>
     <listViews>
         <fullName>ActiveUsers1</fullName>
         <columns>FULL_NAME</columns>
@@ -1291,12 +1297,13 @@
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.EMAIL</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.PROFILE.NAME</columns>
-        <columns>CREATED_DATE</columns>
+        <columns>MANAGER</columns>
         <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
@@ -1311,19 +1318,25 @@
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CORE.USERS.USERNAME</columns>
         <columns>CORE.USERS.EMAIL</columns>
+        <columns>MANAGER</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
+        <columns>AlternateSFId__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All Users</label>
+        <sharedTo>
+            <role>ExecutiveVP</role>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>Beacon_LH_CS_Business_Users</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.EMAIL</columns>
         <columns>MANAGER</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
@@ -1335,6 +1348,7 @@
         <columns>UPDATEDBY_USER.NAME</columns>
         <columns>KNOWLEDGE_USER</columns>
         <columns>MARKETING_USER</columns>
+        <columns>SFCONTENT_USER</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
@@ -1347,6 +1361,22 @@
             <value>LH</value>
         </filters>
         <label>Beacon LH CS &amp; Business Users</label>
+    </listViews>
+    <listViews>
+        <fullName>InActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Inactive Users</label>
     </listViews>
     <webLinks>
         <fullName>Change_DS_Cred</fullName>

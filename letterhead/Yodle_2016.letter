@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
-    <available>true</available>
+    <available>false</available>
     <backgroundColor>#CCCCCC</backgroundColor>
     <bodyColor>#FFFFFF</bodyColor>
     <bottomLine>
-        <color>#AAAAFF</color>
-        <height>5</height>
+        <color>#FFFFFF</color>
+        <height>1</height>
     </bottomLine>
     <description>Yodle Web.com 2016 Footer</description>
     <footer>
         <backgroundColor>#FFFFFF</backgroundColor>
-        <height>100</height>
+        <height>1</height>
         <horizontalAlignment>Left</horizontalAlignment>
+        <logo>Images/Yodle_Footer_2018.png</logo>
         <verticalAlignment>Top</verticalAlignment>
     </footer>
     <header>
         <backgroundColor>#FFFFFF</backgroundColor>
-        <height>100</height>
+        <height>50</height>
         <horizontalAlignment>Left</horizontalAlignment>
+        <logo>Images/Yodle_Logo_2015.jpg</logo>
         <verticalAlignment>Top</verticalAlignment>
     </header>
     <middleLine>
-        <color>#AAAAFF</color>
-        <height>5</height>
+        <color>#CCCCCC</color>
+        <height>10</height>
     </middleLine>
     <name>Yodle 2016</name>
     <topLine>
-        <color>#AAAAFF</color>
-        <height>5</height>
+        <color>#FFFFFF</color>
+        <height>2</height>
     </topLine>
 </Letterhead>

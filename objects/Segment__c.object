@@ -344,7 +344,23 @@ IMAGE("servlet/servlet.FileDownload?file=015600000009Hmo","green")
         <type>Text</type>
     </nameField>
     <pluralLabel>Segments</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <customTabListAdditionalFields>Definition__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Local_Segment_Color__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>National_Segment_Color__c</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Definition__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Local_Segment_Color__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>National_Segment_Color__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Local_Segment_Color__c</searchFilterFields>
+        <searchFilterFields>National_Segment_Color__c</searchFilterFields>
+        <searchResultsAdditionalFields>Definition__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Local_Segment_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>National_Segment_Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>

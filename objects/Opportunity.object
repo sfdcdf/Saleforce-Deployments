@@ -8292,76 +8292,6 @@ Used by YBN.</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>DMS_on_Demo_Call__c</fullName>
-        <externalId>false</externalId>
-        <label>DMS on Demo Call</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Sole DM</fullName>
-                    <default>false</default>
-                    <label>Sole DM</label>
-                </value>
-                <value>
-                    <fullName>Multiple DMs – All On Call</fullName>
-                    <default>false</default>
-                    <label>Multiple DMs – All On Call</label>
-                </value>
-                <value>
-                    <fullName>Multiple DMs – Some On Call</fullName>
-                    <default>false</default>
-                    <label>Multiple DMs – Some On Call</label>
-                </value>
-                <value>
-                    <fullName>Non-DM</fullName>
-                    <default>false</default>
-                    <label>Non-DM</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>DMs_On_Call__c</fullName>
-        <externalId>false</externalId>
-        <label>DMs On Call</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Sole DM</fullName>
-                    <default>false</default>
-                    <label>Sole DM</label>
-                </value>
-                <value>
-                    <fullName>Multiple DMs – All On Call</fullName>
-                    <default>false</default>
-                    <label>Multiple DMs – All On Call</label>
-                </value>
-                <value>
-                    <fullName>Multiple DMs – Some On Call</fullName>
-                    <default>false</default>
-                    <label>Multiple DMs – Some On Call</label>
-                </value>
-                <value>
-                    <fullName>Non-DM</fullName>
-                    <default>false</default>
-                    <label>Non-DM</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>DOES_CORPORATE_FUND_LOCAL_MARKETING__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Is local marketing paid for by corporate or do individual locations pay for their own marketing?</inlineHelpText>
@@ -9742,82 +9672,6 @@ Used by YBN.</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Objections_Surfaced__c</fullName>
-        <externalId>false</externalId>
-        <label>Objections Surfaced</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Think About It</fullName>
-                    <default>false</default>
-                    <label>Think About It</label>
-                </value>
-                <value>
-                    <fullName>Not Sure If It’s Going To Work</fullName>
-                    <default>false</default>
-                    <label>Not Sure If It’s Going To Work</label>
-                </value>
-                <value>
-                    <fullName>Discount Rebuttal</fullName>
-                    <default>false</default>
-                    <label>Discount Rebuttal</label>
-                </value>
-                <value>
-                    <fullName>Call Range Rebuttal</fullName>
-                    <default>false</default>
-                    <label>Call Range Rebuttal</label>
-                </value>
-                <value>
-                    <fullName>Complaints</fullName>
-                    <default>false</default>
-                    <label>Complaints</label>
-                </value>
-                <value>
-                    <fullName>Exclusivity</fullName>
-                    <default>false</default>
-                    <label>Exclusivity</label>
-                </value>
-                <value>
-                    <fullName>References</fullName>
-                    <default>false</default>
-                    <label>References</label>
-                </value>
-                <value>
-                    <fullName>Partner</fullName>
-                    <default>false</default>
-                    <label>Partner</label>
-                </value>
-                <value>
-                    <fullName>IT</fullName>
-                    <default>false</default>
-                    <label>IT</label>
-                </value>
-                <value>
-                    <fullName>Last Resort</fullName>
-                    <default>false</default>
-                    <label>Last Resort</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>None</fullName>
-                    <default>false</default>
-                    <label>None</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>On_Hold_Status__c</fullName>
         <externalId>false</externalId>
         <label>On Hold Status</label>
@@ -10045,41 +9899,6 @@ Used by YBN.</description>
                     <fullName>No</fullName>
                     <default>false</default>
                     <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Outcome_of_Demo__c</fullName>
-        <externalId>false</externalId>
-        <label>Outcome of Demo</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Closed On The Spot</fullName>
-                    <default>false</default>
-                    <label>Closed On The Spot</label>
-                </value>
-                <value>
-                    <fullName>Ran Out of Time</fullName>
-                    <default>false</default>
-                    <label>Ran Out of Time</label>
-                </value>
-                <value>
-                    <fullName>No Sale – Will Follow Up</fullName>
-                    <default>false</default>
-                    <label>No Sale – Will Follow Up</label>
-                </value>
-                <value>
-                    <fullName>No Sale – Will Not Follow Up</fullName>
-                    <default>false</default>
-                    <label>No Sale – Will Not Follow Up</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -11069,82 +10888,6 @@ Used by YBN.</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Rebuttals_Used__c</fullName>
-        <externalId>false</externalId>
-        <label>Rebuttals Used</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Think About It</fullName>
-                    <default>false</default>
-                    <label>Think About It</label>
-                </value>
-                <value>
-                    <fullName>Not Sure If It’s Going To Work</fullName>
-                    <default>false</default>
-                    <label>Not Sure If It’s Going To Work</label>
-                </value>
-                <value>
-                    <fullName>Discount Rebuttal</fullName>
-                    <default>false</default>
-                    <label>Discount Rebuttal</label>
-                </value>
-                <value>
-                    <fullName>Call Range Rebuttal</fullName>
-                    <default>false</default>
-                    <label>Call Range Rebuttal</label>
-                </value>
-                <value>
-                    <fullName>Complaints</fullName>
-                    <default>false</default>
-                    <label>Complaints</label>
-                </value>
-                <value>
-                    <fullName>Exclusivity</fullName>
-                    <default>false</default>
-                    <label>Exclusivity</label>
-                </value>
-                <value>
-                    <fullName>References</fullName>
-                    <default>false</default>
-                    <label>References</label>
-                </value>
-                <value>
-                    <fullName>IT</fullName>
-                    <default>false</default>
-                    <label>IT</label>
-                </value>
-                <value>
-                    <fullName>Last Resort</fullName>
-                    <default>false</default>
-                    <label>Last Resort</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>None</fullName>
-                    <default>false</default>
-                    <label>None</label>
-                </value>
-                <value>
-                    <fullName>Partner</fullName>
-                    <default>false</default>
-                    <label>Partner</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>Rep_Lead_Rating__c</fullName>
         <externalId>false</externalId>
         <label>Rep Lead Rating</label>
@@ -11212,76 +10955,6 @@ Used by YBN.</description>
         <valueSet>
             <restricted>true</restricted>
             <valueSetName>Client_Disposition</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Sales_Promo__c</fullName>
-        <externalId>false</externalId>
-        <label>Sales Promo</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>n/a</fullName>
-                    <default>true</default>
-                    <label>n/a</label>
-                </value>
-                <value>
-                    <fullName>Competitor Steal</fullName>
-                    <default>false</default>
-                    <label>Competitor Steal</label>
-                </value>
-                <value>
-                    <fullName>GAP Promo - 12M - 12th Month PPC Free</fullName>
-                    <default>false</default>
-                    <label>GAP Promo - 12M - 13th Month PPC Free</label>
-                </value>
-                <value>
-                    <fullName>GAP Promo - 6M - 50% to 1st</fullName>
-                    <default>false</default>
-                    <label>GAP Promo - 6M - 50% to 1st</label>
-                </value>
-                <value>
-                    <fullName>Massage Heights - 12m / 13 WBN Pay</fullName>
-                    <default>false</default>
-                    <label>Massage Heights - 12m / 13 WBN Pay</label>
-                </value>
-                <value>
-                    <fullName>Massage Heights - 6m / 25% first month</fullName>
-                    <default>false</default>
-                    <label>Massage Heights - 6m / 25% first month</label>
-                </value>
-                <value>
-                    <fullName>Miracle Method Conf Promo</fullName>
-                    <default>false</default>
-                    <label>Miracle Method Conf Promo</label>
-                </value>
-                <value>
-                    <fullName>PostNet PPC Promo</fullName>
-                    <default>false</default>
-                    <label>PostNet PPC Promo</label>
-                </value>
-                <value>
-                    <fullName>SpeedPro Buy 6/Get 1 Buy 12/Get 2</fullName>
-                    <default>false</default>
-                    <label>SpeedPro Buy 6/Get 1 Buy 12/Get 2</label>
-                </value>
-                <value>
-                    <fullName>Stratus – 12M / 50% First Month</fullName>
-                    <default>false</default>
-                    <label>Stratus – 12M / 50% First Month</label>
-                </value>
-                <value>
-                    <fullName>Stratus – 6M / 25% First Month</fullName>
-                    <default>false</default>
-                    <label>Stratus – 6M / 25% First Month</label>
-                </value>
-            </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
@@ -15048,36 +14721,6 @@ Used by YBN.</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>webinar_email_subject__c</fullName>
-        <externalId>false</externalId>
-        <label>webinar email subject</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Phone not ringing enough? You’re invited.</fullName>
-                    <default>false</default>
-                    <label>Phone not ringing enough? You’re invited.</label>
-                </value>
-                <value>
-                    <fullName>How to succeed in the recession - You’re invited.</fullName>
-                    <default>false</default>
-                    <label>How to succeed in the recession - You’re invited.</label>
-                </value>
-                <value>
-                    <fullName>On 5/27, get your phone ringing again</fullName>
-                    <default>false</default>
-                    <label>On 5/27, get your phone ringing again</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>websites_for_local_offices__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do local offices/franchises have their own websites?</inlineHelpText>
@@ -15481,83 +15124,6 @@ Used by YBN.</description>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Annual_Contract_Value__c</fullName>
-        <externalId>false</externalId>
-        <formula>One_time_Fees__c
-+
-
-IF(PPC_Contract_Length__c &gt;= 12, (Corporate_Monthly_PPC_Budget__c + Monthly_Advertising_Charges__c) * 12, (Corporate_Monthly_PPC_Budget__c + Monthly_Advertising_Charges__c) * PPC_Contract_Length__c)
-+
-
-IF(Corporate_Site_Contract_Length__c &gt;= 12, Corporate_Site_Maintenance_Fee__c * 12,
-Corporate_Site_Maintenance_Fee__c * Corporate_Site_Contract_Length__c)
-+
-
-IF(Display_Contract_Length__c &gt;= 12, Corporate_Display_Fees__c * 12, Corporate_Display_Fees__c * Display_Contract_Length__c)
-+
-
-CASE( RecordType_Name__c,
-"YBN - Individual Location" /* Individual Location */,  
-
-IF(Yodle_Web_Contract_Length__c &gt;= 12, Corporate_Monthly_Mgmt_Fees__c * 12, Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Contract_Length__c)
-+  
-
-IF(Centermark_Contract_Length__c &gt;= 12, (Centermark_Fee__c + CM_Lite_Fee_Per_Location__c) * 12, (Centermark_Fee__c + CM_Lite_Fee_Per_Location__c ) * Centermark_Contract_Length__c)
-+
-
-IF(Location_Enhanced_SEO_Contract_Length__c &gt;= 12, Location_Enhanced_SEO_Fee_Per_Location__c * 12, Location_Enhanced_SEO_Fee_Per_Location__c *  Location_Enhanced_SEO_Contract_Length__c ) 
-+
-
-IF( Facebook_Contract_Length__c  &gt;= 12,  Facebook_Fee_Per_Location__c * 12,  Facebook_Fee_Per_Location__c *  Facebook_Contract_Length__c )
-+
-
-IF(Organic_Contract_Length__c &gt;= 12, Organic_fees__c * 12, Organic_fees__c * Organic_Contract_Length__c)
-+
-
-IF(PPC_Contract_Length__c &gt;= 12, corp_Media_Management_Fee__c * 12,
-PPC_Contract_Length__c * corp_Media_Management_Fee__c)
-
-
-, /* Final CASE parameter */
-
-IF(Yodle_Web_Contract_Length__c &gt;= 12, Corporate_Monthly_Mgmt_Fees__c * 12 * Yodle_Web_Setup_of_Locations__c, Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Setup_of_Locations__c * Yodle_Web_Contract_Length__c)
-+  
-
-IF(Centermark_Contract_Length__c &gt;= 12, ((Centermark_Fee__c * Centermark_of_Locations__c) + (CM_Lite_Fee_Per_Location__c * CM_Lite_of_Locations__c))*12, ((Centermark_Fee__c * Centermark_of_Locations__c) + (CM_Lite_Fee_Per_Location__c * CM_Lite_of_Locations__c))*Centermark_Contract_Length__c)
-+
-
-IF(Email_Contract_Length__c &gt;= 12, Email_Fee_Per_Location__c * 12 * Email_of_Locations__c,
-Email_Fee_Per_Location__c * Email_of_Locations__c * Email_Contract_Length__c)
-+
-
-IF(Review_Management_Contract_Length__c &gt;= 12, Review_Management_Fee_Per_Location__c * 12 * Review_Management_of_Locations__c, Review_Management_Fee_Per_Location__c * Review_Management_of_Locations__c
-* Review_Management_Contract_Length__c)
-+
-
-IF(Corporate_Enhanced_SEO_Contract_Length__c &gt;= 12, Corporate_Enhanced_SEO_Monthly_Fee__c * 12 * Corporate_Enhanced_SEO_of_Locations__c, Corporate_Enhanced_SEO_Contract_Length__c* Corporate_Enhanced_SEO_of_Locations__c * Corporate_Enhanced_SEO_Monthly_Fee__c)
-+
-
-IF(PPC_Contract_Length__c &gt;= 12, corp_Media_Management_Fee__c * 12 * Media_Management_Fee_of_Locations__c,
-PPC_Contract_Length__c * Media_Management_Fee_of_Locations__c * corp_Media_Management_Fee__c)
-)
-+
-
-IF( Location_Enhanced_SEO_Contract_Length__c &gt;=12,  Location_Enhanced_SEO_Fee_Per_Location__c * 12 * Location_Enhanced_SEO_of_Locations__c,
- Location_Enhanced_SEO_Contract_Length__c  *  Location_Enhanced_SEO_Fee_Per_Location__c *  Location_Enhanced_SEO_of_Locations__c)
-+
-
-IF(  Facebook_Contract_Length__c  &gt;=12,  Facebook_Fee_Per_Location__c * 12 *  Facebook_of_Locations__c,
- Facebook_Contract_Length__c *  Facebook_Fee_Per_Location__c *  Facebook_of_Locations__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Annual Contract Value</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Budget_Confirmed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -15566,58 +15132,6 @@ IF(  Facebook_Contract_Length__c  &gt;=12,  Facebook_Fee_Per_Location__c * 12 * 
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Corporate_Recurring_Total__c</fullName>
-        <externalId>false</externalId>
-        <formula>If( 
-RecordType_Name__c ='YBN - Individual Location',
-( Monthly_Management_Fees__c + Monthly_Advertising_Charges__c  +  corp_Media_Management_Fee__c +  Organic_fees__c +  Review_Management_Fee_Per_Location__c +  Monthly_Display_Fees__c +  Facebook_Fee_Per_Location__c +  Advanced_SEO_Setup_Fee_Per_Location__c +  Leads_by_Web_G1__c ),
-
-((Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Setup_of_Locations__c  )
-
-+(Corporate_Monthly_Organic_Fees__c * Organic__c )+ 
-
-(Centermark_Fee__c * Centermark_of_Locations__c)+ 
-
-Corporate_Monthly_PPC_Budget__c + (corp_Media_Management_Fee__c * Media_Management_Fee_of_Locations__c )+
-
-Corporate_Display_Fees__c + Corporate_Site_Maintenance_Fee__c + (Review_Management_Fee_Per_Location__c * Review_Management_of_Locations__c )+ 
-( Email_Fee_Per_Location__c *  Email_of_Locations__c )+
-
-( CM_Lite_Fee_Per_Location__c * CM_Lite_of_Locations__c )
-
-+ ( Advanced_SEO_Fee_Per_Location__c *  Advanced_SEO_of_Locations__c )
-
-+ ( Facebook_Fee_Per_Location__c *  Facebook_of_Locations__c )
-
-+ ( Monthly_Display_Fees__c *  Display_Setup_of_Locations__c )
-
-+ ( Corporate_Enhanced_SEO_Monthly_Fee__c * Corporate_Enhanced_SEO_of_Locations__c )
-
-+ ( Location_Enhanced_SEO_Fee_Per_Location__c * Location_Enhanced_SEO_of_Locations__c)
-))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Sum of all reoccurring products &amp; fees.</inlineHelpText>
-        <label>Contract Monthly Total Spend</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>DESCRIBE_HOW_COOP_PLAN_WORKS__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>% contribution, % of locations contributing, who decides how it's spent, what programs is it currently funding?</inlineHelpText>
-        <label>What is the Ad Fun &amp; How Does it Work</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>Discovery_Completed__c</fullName>
@@ -15668,32 +15182,6 @@ Corporate_Display_Fees__c + Corporate_Site_Maintenance_Fee__c + (Review_Manageme
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-    </fields>
-    <fields>
-        <fullName>One_time_Fees__c</fullName>
-        <externalId>false</externalId>
-        <formula>If( 
-RecordType_Name__c ='YBN - Individual Location', (Setup_Fees__c + Corporate_Website_Fees__c +  Facebook_Setup_Fee__c + Advanced_SEO_Setup_Fee_Per_Location__c +  Display_Setup_Fee_Per_Location__c ),
-
-((Corporate_Setup_Fees__c   *   Setup_of_Locations__c )+ ( Actual_Creative_Service_Fee__c )+ (  Actual_Integration_Service_Fee__c )+ ( Actual_Project_Mgmt_Fee__c  )+ ( Advanced_SEO_Fee_Per_Location__c  *  Advanced_SEO_Setup_of_Locations__c )+ ( Display_Setup_Fee_Per_Location__c  *  Display_Setup_of_Locations__c ) + ( Facebook_Setup_Fee__c * Facebook_Setup_of_Locations__c ) + 
-(Location_Enhanced_SEO_Setup_of_Loc_s__c * Location_Enhanced_SEO_Setup_Fee_Per_Loc__c) +
-(Corporate_Enhanced_SEO_Setup_of_Loc__c * 
-Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
-))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>One Time Fees</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>ROI_Analysis_Completed__c</fullName>
@@ -15931,18 +15419,493 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SyncedQuoteId</fullName>
+        <fullName>Annual_Contract_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>One_time_Fees__c
++
+
+IF(PPC_Contract_Length__c &gt;= 12, (Corporate_Monthly_PPC_Budget__c + Monthly_Advertising_Charges__c) * 12, (Corporate_Monthly_PPC_Budget__c + Monthly_Advertising_Charges__c) * PPC_Contract_Length__c)
++
+
+IF(Corporate_Site_Contract_Length__c &gt;= 12, Corporate_Site_Maintenance_Fee__c * 12,
+Corporate_Site_Maintenance_Fee__c * Corporate_Site_Contract_Length__c)
++
+
+IF(Display_Contract_Length__c &gt;= 12, Corporate_Display_Fees__c * 12, Corporate_Display_Fees__c * Display_Contract_Length__c)
++
+
+CASE(RecordTypeId,
+"012600000009YRT" /* Individual Location */, 
+
+IF(Yodle_Web_Contract_Length__c &gt;= 12, Corporate_Monthly_Mgmt_Fees__c * 12, Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Contract_Length__c)
++  
+
+IF(Centermark_Contract_Length__c &gt;= 12, (Centermark_Fee__c + CM_Lite_Fee_Per_Location__c) * 12, (Centermark_Fee__c + CM_Lite_Fee_Per_Location__c ) * Centermark_Contract_Length__c)
++
+
+IF(Location_Enhanced_SEO_Contract_Length__c &gt;= 12, Location_Enhanced_SEO_Fee_Per_Location__c * 12, Location_Enhanced_SEO_Fee_Per_Location__c *  Location_Enhanced_SEO_Contract_Length__c ) 
++
+
+IF( Facebook_Contract_Length__c  &gt;= 12,  Facebook_Fee_Per_Location__c * 12,  Facebook_Fee_Per_Location__c *  Facebook_Contract_Length__c )
++
+
+IF(Organic_Contract_Length__c &gt;= 12, Organic_fees__c * 12, Organic_fees__c * Organic_Contract_Length__c)
++
+
+IF(PPC_Contract_Length__c &gt;= 12, corp_Media_Management_Fee__c * 12,
+PPC_Contract_Length__c * corp_Media_Management_Fee__c)
+
+
+, /* Final CASE parameter */
+
+IF(Yodle_Web_Contract_Length__c &gt;= 12, Corporate_Monthly_Mgmt_Fees__c * 12 * Yodle_Web_Setup_of_Locations__c, Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Setup_of_Locations__c * Yodle_Web_Contract_Length__c)
++  
+
+IF(Centermark_Contract_Length__c &gt;= 12, ((Centermark_Fee__c * Centermark_of_Locations__c) + (CM_Lite_Fee_Per_Location__c * CM_Lite_of_Locations__c))*12, ((Centermark_Fee__c * Centermark_of_Locations__c) + (CM_Lite_Fee_Per_Location__c * CM_Lite_of_Locations__c))*Centermark_Contract_Length__c)
++
+
+IF(Email_Contract_Length__c &gt;= 12, Email_Fee_Per_Location__c * 12 * Email_of_Locations__c,
+Email_Fee_Per_Location__c * Email_of_Locations__c * Email_Contract_Length__c)
++
+
+IF(Review_Management_Contract_Length__c &gt;= 12, Review_Management_Fee_Per_Location__c * 12 * Review_Management_of_Locations__c, Review_Management_Fee_Per_Location__c * Review_Management_of_Locations__c
+* Review_Management_Contract_Length__c)
++
+
+IF(Corporate_Enhanced_SEO_Contract_Length__c &gt;= 12, Corporate_Enhanced_SEO_Monthly_Fee__c * 12 * Corporate_Enhanced_SEO_of_Locations__c, Corporate_Enhanced_SEO_Contract_Length__c* Corporate_Enhanced_SEO_of_Locations__c * Corporate_Enhanced_SEO_Monthly_Fee__c)
++
+
+IF(PPC_Contract_Length__c &gt;= 12, corp_Media_Management_Fee__c * 12 * Media_Management_Fee_of_Locations__c,
+PPC_Contract_Length__c * Media_Management_Fee_of_Locations__c * corp_Media_Management_Fee__c)
+)
++
+
+IF( Location_Enhanced_SEO_Contract_Length__c &gt;=12,  Location_Enhanced_SEO_Fee_Per_Location__c * 12 * Location_Enhanced_SEO_of_Locations__c,
+ Location_Enhanced_SEO_Contract_Length__c  *  Location_Enhanced_SEO_Fee_Per_Location__c *  Location_Enhanced_SEO_of_Locations__c)
++
+
+IF(  Facebook_Contract_Length__c  &gt;=12,  Facebook_Fee_Per_Location__c * 12 *  Facebook_of_Locations__c,
+ Facebook_Contract_Length__c *  Facebook_Fee_Per_Location__c *  Facebook_of_Locations__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Annual Contract Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Corporate_Recurring_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( 
+RecordTypeId ="012600000009YRT",
+( Monthly_Management_Fees__c + Monthly_Advertising_Charges__c  +  corp_Media_Management_Fee__c +  Organic_fees__c +  Review_Management_Fee_Per_Location__c +  Monthly_Display_Fees__c +  Facebook_Fee_Per_Location__c +  Advanced_SEO_Setup_Fee_Per_Location__c +  Leads_by_Web_G1__c ),
+
+((Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Setup_of_Locations__c  )
+
++(Corporate_Monthly_Organic_Fees__c * Organic__c )+ 
+
+(Centermark_Fee__c * Centermark_of_Locations__c)+ 
+
+Corporate_Monthly_PPC_Budget__c + (corp_Media_Management_Fee__c * Media_Management_Fee_of_Locations__c )+
+
+Corporate_Display_Fees__c + Corporate_Site_Maintenance_Fee__c + (Review_Management_Fee_Per_Location__c * Review_Management_of_Locations__c )+ 
+( Email_Fee_Per_Location__c *  Email_of_Locations__c )+
+
+( CM_Lite_Fee_Per_Location__c * CM_Lite_of_Locations__c )
+
++ ( Advanced_SEO_Fee_Per_Location__c *  Advanced_SEO_of_Locations__c )
+
++ ( Facebook_Fee_Per_Location__c *  Facebook_of_Locations__c )
+
++ ( Monthly_Display_Fees__c *  Display_Setup_of_Locations__c )
+
++ ( Corporate_Enhanced_SEO_Monthly_Fee__c * Corporate_Enhanced_SEO_of_Locations__c )
+
++ ( Location_Enhanced_SEO_Fee_Per_Location__c * Location_Enhanced_SEO_of_Locations__c)
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sum of all reoccurring products &amp; fees.</inlineHelpText>
+        <label>Contract Monthly Total Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DESCRIBE_HOW_COOP_PLAN_WORKS__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>% contribution, % of locations contributing, who decides how itâ€™s spent, what programs is it currently funding?</inlineHelpText>
+        <label>What is the Ad Fun &amp; How Does it Work</label>
+        <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DMS_on_Demo_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>DMS on Demo Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sole DM</fullName>
+                    <default>false</default>
+                    <label>Sole DM</label>
+                </value>
+                <value>
+                    <fullName>Multiple DMs â€“ All On Call</fullName>
+                    <default>false</default>
+                    <label>Multiple DMs â€“ All On Call</label>
+                </value>
+                <value>
+                    <fullName>Multiple DMs â€“ Some On Call</fullName>
+                    <default>false</default>
+                    <label>Multiple DMs â€“ Some On Call</label>
+                </value>
+                <value>
+                    <fullName>Non-DM</fullName>
+                    <default>false</default>
+                    <label>Non-DM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DMs_On_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>DMs On Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sole DM</fullName>
+                    <default>false</default>
+                    <label>Sole DM</label>
+                </value>
+                <value>
+                    <fullName>Multiple DMs â€“ All On Call</fullName>
+                    <default>false</default>
+                    <label>Multiple DMs â€“ All On Call</label>
+                </value>
+                <value>
+                    <fullName>Multiple DMs â€“ Some On Call</fullName>
+                    <default>false</default>
+                    <label>Multiple DMs â€“ Some On Call</label>
+                </value>
+                <value>
+                    <fullName>Non-DM</fullName>
+                    <default>false</default>
+                    <label>Non-DM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Objections_Surfaced__c</fullName>
+        <externalId>false</externalId>
+        <label>Objections Surfaced</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Think About It</fullName>
+                    <default>false</default>
+                    <label>Think About It</label>
+                </value>
+                <value>
+                    <fullName>Not Sure If Itâ€™s Going To Work</fullName>
+                    <default>false</default>
+                    <label>Not Sure If Itâ€™s Going To Work</label>
+                </value>
+                <value>
+                    <fullName>Discount Rebuttal</fullName>
+                    <default>false</default>
+                    <label>Discount Rebuttal</label>
+                </value>
+                <value>
+                    <fullName>Call Range Rebuttal</fullName>
+                    <default>false</default>
+                    <label>Call Range Rebuttal</label>
+                </value>
+                <value>
+                    <fullName>Complaints</fullName>
+                    <default>false</default>
+                    <label>Complaints</label>
+                </value>
+                <value>
+                    <fullName>Exclusivity</fullName>
+                    <default>false</default>
+                    <label>Exclusivity</label>
+                </value>
+                <value>
+                    <fullName>References</fullName>
+                    <default>false</default>
+                    <label>References</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Last Resort</fullName>
+                    <default>false</default>
+                    <label>Last Resort</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>One_time_Fees__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( 
+RecordTypeId ="012600000009YRT", (Setup_Fees__c + Corporate_Website_Fees__c +  Facebook_Setup_Fee__c + Advanced_SEO_Setup_Fee_Per_Location__c +  Display_Setup_Fee_Per_Location__c ),
+
+((Corporate_Setup_Fees__c   *   Setup_of_Locations__c )+ ( Actual_Creative_Service_Fee__c )+ (  Actual_Integration_Service_Fee__c )+ ( Actual_Project_Mgmt_Fee__c  )+ ( Advanced_SEO_Fee_Per_Location__c  *  Advanced_SEO_Setup_of_Locations__c )+ ( Display_Setup_Fee_Per_Location__c  *  Display_Setup_of_Locations__c ) + ( Facebook_Setup_Fee__c * Facebook_Setup_of_Locations__c ) + 
+(Location_Enhanced_SEO_Setup_of_Loc_s__c * Location_Enhanced_SEO_Setup_Fee_Per_Loc__c) +
+(Corporate_Enhanced_SEO_Setup_of_Loc__c * 
+Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>One Time Fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Outcome_of_Demo__c</fullName>
+        <externalId>false</externalId>
+        <label>Outcome of Demo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Closed On The Spot</fullName>
+                    <default>false</default>
+                    <label>Closed On The Spot</label>
+                </value>
+                <value>
+                    <fullName>Ran Out of Time</fullName>
+                    <default>false</default>
+                    <label>Ran Out of Time</label>
+                </value>
+                <value>
+                    <fullName>No Sale â€“ Will Follow Up</fullName>
+                    <default>false</default>
+                    <label>No Sale â€“ Will Follow Up</label>
+                </value>
+                <value>
+                    <fullName>No Sale â€“ Will Not Follow Up</fullName>
+                    <default>false</default>
+                    <label>No Sale â€“ Will Not Follow Up</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rebuttals_Used__c</fullName>
+        <externalId>false</externalId>
+        <label>Rebuttals Used</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Think About It</fullName>
+                    <default>false</default>
+                    <label>Think About It</label>
+                </value>
+                <value>
+                    <fullName>Not Sure If Itâ€™s Going To Work</fullName>
+                    <default>false</default>
+                    <label>Not Sure If Itâ€™s Going To Work</label>
+                </value>
+                <value>
+                    <fullName>Discount Rebuttal</fullName>
+                    <default>false</default>
+                    <label>Discount Rebuttal</label>
+                </value>
+                <value>
+                    <fullName>Call Range Rebuttal</fullName>
+                    <default>false</default>
+                    <label>Call Range Rebuttal</label>
+                </value>
+                <value>
+                    <fullName>Complaints</fullName>
+                    <default>false</default>
+                    <label>Complaints</label>
+                </value>
+                <value>
+                    <fullName>Exclusivity</fullName>
+                    <default>false</default>
+                    <label>Exclusivity</label>
+                </value>
+                <value>
+                    <fullName>References</fullName>
+                    <default>false</default>
+                    <label>References</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Last Resort</fullName>
+                    <default>false</default>
+                    <label>Last Resort</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Promo__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Promo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>n/a</fullName>
+                    <default>true</default>
+                    <label>n/a</label>
+                </value>
+                <value>
+                    <fullName>Competitor Steal</fullName>
+                    <default>false</default>
+                    <label>Competitor Steal</label>
+                </value>
+                <value>
+                    <fullName>GAP Promo - 12M - 12th Month PPC Free</fullName>
+                    <default>false</default>
+                    <label>GAP Promo - 12M - 13th Month PPC Free</label>
+                </value>
+                <value>
+                    <fullName>GAP Promo - 6M - 50% to 1st</fullName>
+                    <default>false</default>
+                    <label>GAP Promo - 6M - 50% to 1st</label>
+                </value>
+                <value>
+                    <fullName>Massage Heights - 12m / 13 WBN Pay</fullName>
+                    <default>false</default>
+                    <label>Massage Heights - 12m / 13 WBN Pay</label>
+                </value>
+                <value>
+                    <fullName>Massage Heights - 6m / 25% first month</fullName>
+                    <default>false</default>
+                    <label>Massage Heights - 6m / 25% first month</label>
+                </value>
+                <value>
+                    <fullName>Miracle Method Conf Promo</fullName>
+                    <default>false</default>
+                    <label>Miracle Method Conf Promo</label>
+                </value>
+                <value>
+                    <fullName>PostNet PPC Promo</fullName>
+                    <default>false</default>
+                    <label>PostNet PPC Promo</label>
+                </value>
+                <value>
+                    <fullName>SpeedPro Buy 6/Get 1 Buy 12/Get 2</fullName>
+                    <default>false</default>
+                    <label>SpeedPro Buy 6/Get 1 Buy 12/Get 2</label>
+                </value>
+                <value>
+                    <fullName>Stratus â€“ 12M / 50% First Month</fullName>
+                    <default>false</default>
+                    <label>Stratus â€“ 12M / 50% First Month</label>
+                </value>
+                <value>
+                    <fullName>Stratus â€“ 6M / 25% First Month</fullName>
+                    <default>false</default>
+                    <label>Stratus â€“ 6M / 25% First Month</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Total_Contract_Value__c</fullName>
         <description>Total Contracted Value - Does Not Include Network Adoption for Cop Opps</description>
         <externalId>false</externalId>
         <formula>If(
- RecordType_Name__c ='YBN - Individual Location',
+ RecordTypeId ="012600000009YRT",
 (Setup_Fees__c  +
 (Monthly_Management_Fees__c * Yodle_Web_Contract_Length__c ) +  ((Monthly_Advertising_Charges__c + corp_Media_Management_Fee__c)* PPC_Contract_Length__c) + 
 (Organic_fees__c *  Organic_Contract_Length__c ) +  (Review_Management_Fee_Per_Location__c *  Review_Management_Contract_Length__c ) +  (Monthly_Display_Fees__c *  Display_Contract_Length__c )+ ( Advanced_SEO_Contract_Length__c *  Advanced_SEO_Fee_Per_Location__c ) + ( Facebook_Contract_Length__c * Facebook_Fee_Per_Location__c) +  (Leads_by_Web_G1__c *  Leads_by_Web_G1_Contract_Length__c)),
@@ -15983,8 +15946,38 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
+    <fields>
+        <fullName>webinar_email_subject__c</fullName>
+        <externalId>false</externalId>
+        <label>webinar email subject</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Phone not ringing enough? Youâ€™re invited.</fullName>
+                    <default>false</default>
+                    <label>Phone not ringing enough? Youâ€™re invited.</label>
+                </value>
+                <value>
+                    <fullName>How to succeed in the recession - Youâ€™re invited.</fullName>
+                    <default>false</default>
+                    <label>How to succeed in the recession - Youâ€™re invited.</label>
+                </value>
+                <value>
+                    <fullName>On 5/27, get your phone ringing again</fullName>
+                    <default>false</default>
+                    <label>On 5/27, get your phone ringing again</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <externalSharingModel>Private</externalSharingModel>
@@ -15993,16 +15986,31 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
     <searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.RECORDTYPE</customTabListAdditionalFields>
         <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.STAGE_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Milestone__c</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.RECORDTYPE</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.STAGE_NAME</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.STAGE_NAME</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.CLOSE_DATE</searchFilterFields>
+        <searchFilterFields>CORE.USERS.ALIAS</searchFilterFields>
+        <searchFilterFields>Client_Phone__c</searchFilterFields>
         <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.RECORDTYPE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Milestone__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Amount__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
     <listViews>
@@ -16501,6 +16509,23 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
             <value>THIS_WEEK</value>
         </filters>
         <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunity_by_Business_Development</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Business_Development</value>
+        </filters>
+        <label>Opportunity by Business Development</label>
     </listViews>
     <recordTypes>
         <fullName>Affiliate_Initial_Transaction</fullName>
@@ -65250,14 +65275,6 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <picklistValues>
             <picklist>DMS_on_Demo_Call__c</picklist>
             <values>
-                <fullName>Multiple DMs %E2%80%93 All On Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple DMs %E2%80%93 Some On Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Non-DM</fullName>
                 <default>false</default>
             </values>
@@ -65268,14 +65285,6 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         </picklistValues>
         <picklistValues>
             <picklist>DMs_On_Call__c</picklist>
-            <values>
-                <fullName>Multiple DMs %E2%80%93 All On Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple DMs %E2%80%93 Some On Call</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Non-DM</fullName>
                 <default>false</default>
@@ -65966,10 +65975,6 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
                 <default>false</default>
             </values>
             <values>
-                <fullName>Not Sure If It%E2%80%99s Going To Work</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
@@ -66096,14 +66101,6 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
             <picklist>Outcome_of_Demo__c</picklist>
             <values>
                 <fullName>Closed On The Spot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Sale %E2%80%93 Will Follow Up</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No Sale %E2%80%93 Will Not Follow Up</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -66757,14 +66754,6 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
             </values>
             <values>
                 <fullName>SpeedPro Buy 6%2FGet 1 Buy 12%2FGet 2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stratus %E2%80%93 12M %2F 50%25 First Month</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stratus %E2%80%93 6M %2F 25%25 First Month</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -68627,15 +68616,7 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <picklistValues>
             <picklist>webinar_email_subject__c</picklist>
             <values>
-                <fullName>How to succeed in the recession - You%E2%80%99re invited%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>On 5%2F27%2C get your phone ringing again</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone not ringing enough%3F You%E2%80%99re invited%2E</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -80661,19 +80642,6 @@ NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M5 - Proposal"),ISPICKVAL(PRIORVALUE(St
         <errorMessage>Opportunity must be in stage M5 before proceeding to stage M6.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Must_Fill_Out_Initially_Pitched_By_Rep</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- RecordTypeId = "01232000000JOTR",
- ISBLANK( Initially_Pitched_By_Rep__c),
-OR(
- ISPICKVAL(Initially_Pitched_By__c, "Inbound Rep"),
- ISPICKVAL(Initially_Pitched_By__c, "Outbound Rep")
-))</errorConditionFormula>
-        <errorDisplayField>Initially_Pitched_By_Rep__c</errorDisplayField>
-        <errorMessage>Please Identify the Name of the Inbound or Outbound Rep that Pitched the Upsell</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>PPC_Adoption_Target_Date</fullName>
         <active>true</active>
         <errorConditionFormula>PPC_Adoption_Target_Date__c &lt; PPC_Adoption_Start_Date__c</errorConditionFormula>
@@ -80684,16 +80652,6 @@ OR(
         <active>true</active>
         <errorConditionFormula>Reviews_Adoption_Target_Date__c &lt; Reviews_Adoption_Start_Date__c</errorConditionFormula>
         <errorMessage>Reviews Adoption Target Date Cannot Be Before the Reviews Adoption Start Date</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Sales_Rep_Name_must_be_filled_out</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- Field_Sales_Initiated__c=TRUE,
- RecordTypeId="01232000000Q7sp",
- ISBLANK(Sales_Rep_Name__c))</errorConditionFormula>
-        <errorDisplayField>Sales_Rep_Name__c</errorDisplayField>
-        <errorMessage>When Field Sales Initiated is checked, you must fill out the Sales Rep Name field.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Sub_type_required_for_new_customer</fullName>
@@ -80720,19 +80678,6 @@ NOT(ISPICKVAL(Stage_Detail__c, "Draft"))
 )</errorConditionFormula>
         <errorDisplayField>Stage_Detail__c</errorDisplayField>
         <errorMessage>Contract stage must start with "Draft".</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>WBN_New_Oppty_Client_Discovery_Stage</fullName>
-        <active>true</active>
-        <description>New oppty must be saved in the Client Discovery stage.</description>
-        <errorConditionFormula>$Profile.Name &lt;&gt; 'System Administrator' &amp;&amp;
-(RecordType.Name = "YBN - Growth Opportunity" || 
-RecordType.Name = "YBN - Initial Transaction" ||
-RecordType.Name = "YBN - Renewal") &amp;&amp;
-ISNEW() &amp;&amp; 
-NOT(ISPICKVAL(StageName, "Client Discovery")) &amp;&amp;
-NOT(ISPICKVAL(StageName, "Prospecting"))</errorConditionFormula>
-        <errorMessage>New Opportunities must start in Prospecting or Client Discovery stage.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>WBN_Stage_Detail_Requirements</fullName>
@@ -81215,16 +81160,6 @@ isblank(  Local_Domain_Naming_Conventiondetails__c )))</errorConditionFormula>
         <errorMessage>The total amount for an opportunity MUST be greater than $57.  Please input all fees and budget information below.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>cpp_opp_payment_status_notes_required</fullName>
-        <active>true</active>
-        <errorConditionFormula>And(
- RecordTypeId="01232000000JMzk", 
-ISPICKVAL(Payment_Status__c , "Other"),
- ISBLANK( Payment_Notes__c ))</errorConditionFormula>
-        <errorDisplayField>Payment_Notes__c</errorDisplayField>
-        <errorMessage>If you select Payment Status Other you must fill in Payment Notes.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>require_estimated_launch_for_CM_product</fullName>
         <active>false</active>
         <description>if products sold contains centermark, require Centermark Estimated Launch Date</description>
@@ -81274,6 +81209,376 @@ NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery"))
         <errorMessage>Solution stage must start with "SA Client Discovery".</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Lead_Source_Detal_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>and (
+ (RecordTypeId = "012600000009YRT"),
+Or(
+ ISPICKVAL(  LeadSource  , "Inbound (Call / Email)"),
+ ISPICKVAL(  LeadSource  , "Outbound (Call / Email)")),
+And(
+ ISPICKVAL(  Lead_Source_Detail__c ,""),
+ ISPICKVAL(   StageName  ,"Opportunity Closed")))</errorConditionFormula>
+        <errorDisplayField>Lead_Source_Detail__c</errorDisplayField>
+        <errorMessage>"Lead Source Detail" is Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_Fill_Out_Initially_Pitched_By_Field</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  RecordType.DeveloperName = "Lighthouse_Upsell_Opportunity",
+ ISPICKVAL(Initially_Pitched_By__c,''))</errorConditionFormula>
+        <errorDisplayField>Initially_Pitched_By__c</errorDisplayField>
+        <errorMessage>Please choose how the client found out about the upsell opportunity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_Fill_Out_Initially_Pitched_By_Rep</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ RecordType.DeveloperName = "Lighthouse_Upsell_Opportunity",
+ ISBLANK( Initially_Pitched_By_Rep__c),
+OR(
+ ISPICKVAL(Initially_Pitched_By__c, "Inbound Rep"),
+ ISPICKVAL(Initially_Pitched_By__c, "Outbound Rep")
+))</errorConditionFormula>
+        <errorDisplayField>Initially_Pitched_By_Rep__c</errorDisplayField>
+        <errorMessage>Please Identify the Name of the Inbound or Outbound Rep that Pitched the Upsell</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Payment_Status_Required_when_ClosedWon</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ RecordType.DeveloperName="CPP_Initial_Transaction",
+ ISPICKVAL( StageName ,"Closed Won"),
+ ISBLANK(TEXT(Payment_Status__c)))</errorConditionFormula>
+        <errorDisplayField>Payment_Status__c</errorDisplayField>
+        <errorMessage>If Stage is "Closed/Won" you must fill out Payment Status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Probabilty_override_rule</fullName>
+        <active>true</active>
+        <description>Probability field can only be overridden for Corporate opportunities and by National RM profile users (custom settings used)</description>
+        <errorConditionFormula>AND(
+ $Setup.Validation_Rule_Permissions__c.Opportunity_Probability_Edit_Bypass__c = True,
+
+NOT(OR(
+RecordType.DeveloperName  = "YBN_Initial_Transaction",
+RecordType.DeveloperName  = "YBN_Growth_Opportunity",
+RecordType.DeveloperName = "YBN_Renewal")),
+
+ISCHANGED( Probability ) 
+
+)</errorConditionFormula>
+        <errorMessage>Probability can only be changed for Corporate Opportunities</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sales_Rep_Name_must_be_filled_out</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ Field_Sales_Initiated__c=TRUE,
+ RecordType.DeveloperName="Local_Upsell_Opportunity",
+ ISBLANK(Sales_Rep_Name__c))</errorConditionFormula>
+        <errorDisplayField>Sales_Rep_Name__c</errorDisplayField>
+        <errorMessage>When Field Sales Initiated is checked, you must fill out the Sales Rep Name field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_ClosedWon_Products_Required</fullName>
+        <active>true</active>
+        <description>This currently covers IL Record type and is not required for Corporate Paid On-boarding.  PES team (JCI) would like to also require products for contract renewals</description>
+        <errorConditionFormula>AND(
+$User.ProfileId&lt;&gt;"00e60000000nQe9" /*sys admin*/,
+NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */ ,
+
+RecordTypeId="012600000009YRT", /*YBN IL Opportunity*/
+Or(
+ISPICKVAL(StageName, "Closed Won"),
+ISPICKVAL(StageName, "M003 - Contract (IL)")
+),
+HasOpportunityLineItem=FALSE,
+
+OR(
+  NOT(ISPICKVAL(YBN_Sub_Type__c,"Corporate Paid Contract")),
+AND(
+  ISPICKVAL(YBN_Sub_Type__c,"Corporate Paid Contract"),
+ ISPICKVAL(LeadSource,"JCI Portal")
+ )
+)
+)</errorConditionFormula>
+        <errorMessage>Opportunity Products need to be added at this stage.
+Please go down the Products Related List and add Products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_IL_Contract_Renewal_Term</fullName>
+        <active>true</active>
+        <description>The Contract and Renewal fields must be completed prior to moving to the Contract stage for WBN IL.</description>
+        <errorConditionFormula>AND( 
+RecordTypeId ="012600000009YRT", /*YBN Individual Location*/ 
+$User.ProfileId &lt;&gt; "00e60000000nQe9", /*SysAdmin*/ 
+NOT($Permission.WBN_SalesOpsPermission), /* WBN Sales Ops */ 
+OR( 
+ISPICKVAL(StageName, "M003 - Contract (IL)"), 
+ISPICKVAL(StageName, "Closed Won") 
+),
+OR(ISBLANK(Contract_Term_in_months__c), 
+ISBLANK(Renewal_Term_in_months__c)) 
+)</errorConditionFormula>
+        <errorMessage>Please fill out the Contract Term (in months) &amp; Renewal Term (in months).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_IL_Oppty_Name_Less_Than_70</fullName>
+        <active>true</active>
+        <description>The oppty name must be less than 68 characters at Closed/Won so the contract can be created.  The contract name only holds 80 characters and the flow is appending the name with an space and the oppty close date (mm/dd/yyyy).</description>
+        <errorConditionFormula>AND(
+RecordTypeId = "012600000009YRT", /*YBN - Individual Location*/
+ISPICKVAL(StageName,"Closed Won"), 
+(LEN(Name) &gt; 68)
+)</errorConditionFormula>
+        <errorMessage>The Opportunity Name cannot be greater than 68 characters (includes spaces).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_IL_Prevents_Oppty_Stage_Backwards</fullName>
+        <active>true</active>
+        <description>WBN IL Sales prevents the oppty stage from going backwards.</description>
+        <errorConditionFormula>$User.ProfileId &lt;&gt; "00e60000000nQe9" &amp;&amp; /*SysAdmin*/
+NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */  &amp;&amp; 
+RecordTypeId = "012600000009YRT" &amp;&amp;
+NOT(ISPICKVAL(StageName,"Resting")) &amp;&amp;
+CASE(StageName,
+"M001 - Set Local Demo",1,
+"M002 - Complete local demo (IL)",2,
+"M003 - Contract (IL)",3,
+"Closed Won",4,
+"Closed Lost",4,0)
+&lt;
+CASE(PRIORVALUE(StageName),
+"M001 - Set Local Demo",1,
+"M002 - Complete local demo (IL)",2,
+"M003 - Contract (IL)",3,
+"Closed Won",4,
+"Closed Lost",4,0)</errorConditionFormula>
+        <errorMessage>Opportunity stage is not allowed to move backwards.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_New_Oppty_Client_Discovery_Stage</fullName>
+        <active>false</active>
+        <description>New oppty must be saved in the Client Discovery stage.</description>
+        <errorConditionFormula>$Profile.Name &lt;&gt; 'System Administrator' &amp;&amp;
+(RecordType.Name = "YBN - Growth Opportunity" || 
+RecordType.Name = "YBN - Initial Transaction" ||
+RecordType.Name = "YBN - Renewal") &amp;&amp;
+ISNEW() &amp;&amp; 
+NOT(ISPICKVAL(StageName, "Client Discovery")) &amp;&amp;
+NOT(ISPICKVAL(StageName, "Prospecting"))</errorConditionFormula>
+        <errorMessage>New Opportunities must start in Prospecting or Client Discovery stage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_Products_Sold_Closed_Won</fullName>
+        <active>true</active>
+        <description>Products sold must be selected when the oppty is Closed/Won.</description>
+        <errorConditionFormula>RecordType.Id ="012600000009YRT"&amp;&amp; /*YBN-Individual Location*/
+ispickval(StageName ,"Closed Won")&amp;&amp;
+isblank( Products__c)</errorConditionFormula>
+        <errorDisplayField>Products__c</errorDisplayField>
+        <errorMessage>"Products Sold" field must be filled out with all products reflected in the contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.Id = "012600000009YRT"
+ &amp;&amp; 
+NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
+        <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_CML_ContractLength_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if CM Lite Fee Per Location is population, contract length and number of locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
+  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") ,  
+  CM_Lite_Fee_Per_Location__c   &gt; 0 , 
+  OR (ISBLANK (  CM_Lite_of_Locations__c  ) , ISBLANK(  Centermark_Contract_Length__c  ))
+)</errorConditionFormula>
+        <errorDisplayField>CM_Lite_Fee_Per_Location__c</errorDisplayField>
+        <errorMessage>Enter a Centermark Contract Length and/or Centermark Lite # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_CM_ContractLength_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Centermark Fee Per Location is population, contract length and number of locations is required.</description>
+        <errorConditionFormula>AND(
+$User.Full_Name__c &lt;&gt; "Ron Gong",
+OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") ,  Centermark_Fee__c  &gt; 0 , OR (ISBLANK (  Centermark_of_Locations__c  ) , ISBLANK(  Centermark_Contract_Length__c  )))</errorConditionFormula>
+        <errorDisplayField>Centermark_Fee__c</errorDisplayField>
+        <errorMessage>Enter a Centermark Contract Length and/or Centermark # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_CorpFundedPPC_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Total Corp Funded Monthly PPC Budget is populated, number of locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; 'Ron Gong',
+  $User.Full_Name__c &lt;&gt; 'Ryan Volkel',  
+  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO"),
+  Corporate_Monthly_PPC_Budget__c  &gt; 0 , 
+  ISBLANK ( PPC_Contract_Length__c  )
+)</errorConditionFormula>
+        <errorDisplayField>Corporate_Monthly_PPC_Budget__c</errorDisplayField>
+        <errorMessage>Enter a PPC Contract Length</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_MMF_ContractLength_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Media Management Fee is populated, contract length and number of locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
+  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO"),
+  corp_Media_Management_Fee__c  &gt; 0 , 
+  OR (ISBLANK (  Media_Management_Fee_of_Locations__c  ) , ISBLANK(  PPC_Contract_Length__c  ))
+)</errorConditionFormula>
+        <errorDisplayField>corp_Media_Management_Fee__c</errorDisplayField>
+        <errorMessage>Enter a PPC Contract Length and/or Media Management Fee # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_Org_ContractLength_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Organic Fee Per Location is populated, contract length and number of locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
+  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") ,
+  Corporate_Monthly_Organic_Fees__c  &gt; 0 , 
+  OR (ISBLANK ( Organic__c ) , ISBLANK( Organic_Contract_Length__c  ))
+)</errorConditionFormula>
+        <errorDisplayField>Corporate_Monthly_Organic_Fees__c</errorDisplayField>
+        <errorMessage>Enter an Organic Contract Length and/or Organic # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_Organic_Contract_Length</fullName>
+        <active>false</active>
+        <description>If Organic fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
+        <errorConditionFormula>AND( 
+  $User.Full_Name__c &lt;&gt; "Ryan Volkel",
+  RecordTypeId = "012600000009YRT",  
+  Organic_fees__c  &gt; 0,  
+  ISBLANK( Organic_Contract_Length__c  ) 
+)</errorConditionFormula>
+        <errorDisplayField>Organic_Contract_Length__c</errorDisplayField>
+        <errorMessage>Enter an Organic Contract Length</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_RM_ContractLength_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Review Management Fee Per Location is populated, contract length and number of locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; "Ron Gong",
+  OR( 
+    RecordTypeId = "012600000009YRJ",
+    RecordTypeId = "012600000009YRE",
+    RecordTypeId = "012600000009YRO"
+  ),  
+  Review_Management_Fee_Per_Location__c  &gt; 0 , 
+  OR (
+    ISBLANK (  Review_Management_of_Locations__c  ) ,
+    ISBLANK(  Review_Management_Contract_Length__c  )
+  )
+)</errorConditionFormula>
+        <errorDisplayField>Review_Management_Fee_Per_Location__c</errorDisplayField>
+        <errorMessage>Enter a Review Management Contract Length and/or Review Management # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_Setup_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Setup Fee Per Locations is populated, Setup # of Locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
+  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") , 
+  Corporate_Setup_Fees__c  &gt; 0 , 
+  ISBLANK (  Setup_of_Locations__c  )
+)</errorConditionFormula>
+        <errorDisplayField>Corporate_Setup_Fees__c</errorDisplayField>
+        <errorMessage>Enter Setup # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Force_YW_ContractLength_Locations</fullName>
+        <active>true</active>
+        <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Yodle Web Fee Per Location is population, contract length and number of locations is required.</description>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
+  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO"),
+  Corporate_Monthly_Mgmt_Fees__c &gt; 0 , 
+  OR (ISBLANK ( Yodle_Web_Setup_of_Locations__c) , ISBLANK(  Yodle_Web_Contract_Length__c ))
+)</errorConditionFormula>
+        <errorDisplayField>Corporate_Monthly_Mgmt_Fees__c</errorDisplayField>
+        <errorMessage>Enter a Yodle Web Contract Length and/or Yodle Web # of Locations</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_IL_Close_Date_Not_Prior_to_Today</fullName>
+        <active>true</active>
+        <description>YBN Individual Opportunities cannot me moved to Closed Won with a close date prior to the current day.</description>
+        <errorConditionFormula>AND( 
+  RecordType.Id = "012600000009YRT", /* YBN - Individual Location */
+  $Profile.Id &lt;&gt; "00e60000000iy7K", /* Profile YBN System Administrator */
+  $Profile.Id &lt;&gt; "00e60000000nQe9", /*  System Administrators  */
+  $Profile.Id &lt;&gt; "00e60000000imvV", /* Training Executive */
+  NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */ , 
+  ispickval(StageName ,"Closed Won"),  
+  CloseDate &lt;  TODAY(),
+  NOT(ISCHANGED(Total_of_Activities__c)),
+  NOT(ISCHANGED(First_Activity_DateTime__c)),
+/* begin added for Approval Process*/
+AND(
+NOT(ISCHANGED(Approval_Opp_List_Review_Status__c)),
+NOT(Text(Approval_Opp_List_Review_Status__c)= "Submit")
+)
+/* end added for Approval Process*/
+)</errorConditionFormula>
+        <errorMessage>Close Date cannot be prior to today.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_Lock_Opp_Closed_Won_Stage</fullName>
+        <active>true</active>
+        <description>Lock the opportunity from being edited when the stage is set to Closed Won</description>
+        <errorConditionFormula>AND(
+  ISPICKVAL(PRIORVALUE(StageName), "Closed Won"),
+  OR(
+    RecordTypeId = "012600000009YRT",  /* YBN - Individual Location */
+    RecordTypeId = "012600000009YRJ",  /* YBN - Growth Opportunity */
+    RecordTypeId = "012600000009YRE",  /* YBN - Initial Transaction */
+    RecordTypeId = "012600000009YRT"  /* YBN - Renewal */
+  ),
+  $Profile.Id &lt;&gt; "00e60000000iy7K",  /* YBN System Administrator */
+  $Profile.Id &lt;&gt; "00e60000000nQe9",  /* System Administrators */
+  $Profile.Id &lt;&gt; "00e60000000imvV",  /* Training Executive */
+  NOT($Permission.WBN_SalesOpsPermission), /* WBN Ops Permission Set */ 
+  NOT(ISCHANGED(Total_of_Activities__c)), 
+  NOT(ISCHANGED(First_Activity_DateTime__c)),
+  NOT(ISCHANGED(Strategic_Project_Manager__c)),
+  NOT(ISCHANGED( Contract_Auto_Created__c )),
+  NOT(ISCHANGED(Lost_Reason__c)),
+  NOT(ISCHANGED(IMS_Email__c )),
+/* begin added for Approval Process*/
+AND(
+  NOT(ISCHANGED(Approval_Opp_List_Review_Status__c)),
+  NOT(Text(Approval_Opp_List_Review_Status__c)= "Submit")
+)
+/* end added for Approval Process*/
+)</errorConditionFormula>
+        <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>YBN_SE_Followup_Notes_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $User.Full_Name__c &lt;&gt; "Ron Gong",
+  $User.Full_Name__c &lt;&gt; "Ryan Volkel",
+  RecordTypeId = "012600000009YRT", /* YBN - Individual Location */
+  SE_Follow_Up_Needed__c = True,
+  ISBLANK(SE_Follow_Up_Notes__c)
+)</errorConditionFormula>
+        <errorDisplayField>SE_Follow_Up_Notes__c</errorDisplayField>
+        <errorMessage>SE Follow Up Notes must be filled out.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>YBN_StageChange_To_DemoValue</fullName>
         <active>true</active>
         <errorConditionFormula>AND( 
@@ -81282,12 +81587,12 @@ NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery"))
   NOT(
     OR(
       ISPICKVAL(PRIORVALUE(StageName), "Client Discovery"),
-      ISPICKVAL(PRIORVALUE(StageName), "Demo Value Prop"),
+      ISPICKVAL(PRIORVALUE(StageName), "Demo/Value Prop"),
       ISPICKVAL(PRIORVALUE(StageName), "Solution")
     )    
   )
 )</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage "Client Discovery" before proceeding to stage "Demo Value Prop".</errorMessage>
+        <errorMessage>Opportunity must be in stage "Client Discovery" before proceeding to stage "Demo/Value Prop".</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_StageChange_To_Solution</fullName>
@@ -81297,13 +81602,23 @@ NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery"))
   ISPICKVAL((StageName),"Solution"), 
   NOT( 
     OR( 
-      ISPICKVAL(PRIORVALUE(StageName), "Demo Value Prop"), 
+      ISPICKVAL(PRIORVALUE(StageName), "Demo/Value Prop"), 
       ISPICKVAL(PRIORVALUE(StageName), "Solution"),
       ISPICKVAL(PRIORVALUE(StageName), "Contract") 
     ) 
   ) 
 )</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage Demo Value Prop before proceeding to stage Solution.</errorMessage>
+        <errorMessage>Opportunity must be in stage Demo/Value Prop before proceeding to stage Solution.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>cpp_opp_payment_status_notes_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>And(
+ RecordType.DeveloperName ='CPP_Initial_Transaction', 
+ISPICKVAL(Payment_Status__c , "Other"),
+ ISBLANK( Payment_Notes__c ))</errorConditionFormula>
+        <errorDisplayField>Payment_Notes__c</errorDisplayField>
+        <errorMessage>If you select Payment Status Other you must fill in Payment Notes.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
@@ -81813,5 +82128,16 @@ else
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Log_Activity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Log Activity</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/00T/e?what_id={!Opportunity.Id}&amp;retURL={!Opportunity.Id}&amp;RecordType=012600000009dDx&amp;tsk4={!TODAY()}&amp;tsk12=Completed&amp;ent=Task</url>
     </webLinks>
 </CustomObject>

@@ -1,0 +1,98 @@
+<apex:page sidebar="false" showHeader="true"  docType="html-5.0" controller="MyAccountSummaryController" tabStyle="Account_Summary__tab">
+    <c:CPPAccountPickerComponent />
+
+    <apex:outputPanel layout="block" html-ng-app="demoApp" rendered="{!displayAccountSummary}">
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <title>Angular Demo</title>
+            <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/-->
+            <!--script src=""></script-->
+            <apex:includeScript value="{!$Resource.angularjs}"/>
+            <script>
+                // define the app
+                var demoApp = angular.module('demoApp', []);
+                    // add the controller
+                    demoApp.controller('DemoCtrl', function ($scope) {
+                    $scope.account = {!account}
+                    $scope.childAccounts = {!childAccounts}
+                });
+            </script>
+
+            <style>
+            table-bordered>tbody>tr>td, table-bordered>tbody>tr>th, table-bordered>tfoot>tr>td, table-bordered>tfoot>tr>th, table-bordered>thead>tr>td, table-bordered>thead>tr>th {
+                border: 1px solid #ddd;
+            }
+
+            .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+                padding: 8px;
+                line-height: 1.42857143;
+                vertical-align: top;
+                border-top: 1px solid #ddd;
+            }
+            </style>
+        </head>
+
+        <div class="container" ng-controller="DemoCtrl" style="margin: 10px 150px;">
+            <h1 style="color:#35a3c7; font-size: 30px; font-weight: normal;"><span ng-bind="account.Name"/></h1>
+            <p class="lead" style="color:Gray; font-size: 14px; font-weight: normal; line-height: 18px;">
+                Current Live Clients: <span ng-bind="account.Children_Accounts_Live__c"/><br/>
+                <span >
+                    <span ng-bind="account.BillingStreet"/><br/>
+                    <span class="ng-cloak">{{account.BillingCity}}, {{account.BillingState}}</span>
+                    <span ng-bind="account.BillingPostalCode"/><br/>
+                    <span ng-bind="account.Phone"/><br/>
+                </span>
+
+                <!--Client ID: <span ng-bind="account.Client_ID__c"/><br/>
+                Status: <span ng-bind="account.Partner_Status__c"/><br/>-->
+            </p>
+
+            <hr/>
+
+            <h2 style="color:#35a3c7; font-size: 20px; font-weight: normal;">Child Accounts</h2><span style="float:right;"><input ng-model="query" placeholder="Search..." style="width: 300px; height: 20px;" /></span>
+            <table class="table table-bordered" style="width: 100%; margin-top: 5px;">
+                <tr>
+                    <th>
+                        <a href="#" ng-click="sortType = 'clientId'; sortReverse = !sortReverse">Lighthouse Client Id</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse">Name</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse">Status</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'orderDate'; sortReverse = !sortReverse">Sold Date</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'liveDate'; sortReverse = !sortReverse">Go Live Date</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'installCompleted'; sortReverse = !sortReverse">Install Completed</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'cscCompleted'; sortReverse = !sortReverse">CSC Completed</a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'cscStatus'; sortReverse = !sortReverse">CSC Status</a>
+                    </th>
+                    <!--th>
+                        <a href="#" ng-click="sortType = 'Id'; sortReverse = !sortReverse">Record Id</a>
+                    </th-->
+                </tr>
+                <tr ng-repeat="childAccount in childAccounts | orderBy:sortType:sortReverse | filter:query">
+                    <td><span ng-bind="childAccount.clientId"/></td>      
+                    <td><span ng-bind="childAccount.name"/></td>
+                    <td><span ng-bind="childAccount.status"/></td>
+                    <td><span ng-bind="childAccount.orderDate"/></td>
+                    <td><span ng-bind="childAccount.liveDate"/></td>
+                    <td><span ng-bind="childAccount.installCompleted"/></td>
+                    <td><span ng-bind="childAccount.cscCompleted"/></td>
+                    <td><span ng-bind="childAccount.cscStatus"/></td>
+                    <!--td><span ng-bind="childAccount.Id"/></td-->
+                </tr>
+            </table>
+        </div>
+    </apex:outputPanel>
+</apex:page>
