@@ -82140,4 +82140,23 @@ else
         <protected>false</protected>
         <url>/00T/e?what_id={!Opportunity.Id}&amp;retURL={!Opportunity.Id}&amp;RecordType=012600000009dDx&amp;tsk4={!TODAY()}&amp;tsk12=Completed&amp;ent=Task</url>
     </webLinks>
+    <webLinks>
+        <fullName>Launch_Sales_Wizard</fullName>
+        <availability>online</availability>
+        <description>Button used to launch Sales Wizard and pass necessary data to URL</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Sales Wizard (BETA)</masterLabel>
+        <openType>newWindow</openType>
+        <page>LaunchSalesWizard</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
 </CustomObject>

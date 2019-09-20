@@ -6813,16 +6813,6 @@ INCLUDES( What_Treatment_Plans_were_Activated__c ,"Postcards"),"http://marketing
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>MA_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>MA Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>MA_Email_Sent__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -10834,16 +10824,6 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>QA_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>QA Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>QA_Feedback__c</fullName>
         <externalId>false</externalId>
         <label>QA Feedback</label>
@@ -10874,19 +10854,6 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>QA_Rep__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>QA Rep</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Lighthouse_Worksheets1</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>QAed_By_Name__c</fullName>
@@ -14609,6 +14576,39 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MA_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>QA Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QA_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>QA Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Lighthouse_Worksheets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
