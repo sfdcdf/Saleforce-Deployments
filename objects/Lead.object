@@ -9677,13 +9677,20 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>Zalberts_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Zalberts</label>
+        <queue>Zalberts</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>Partner</fullName>
         <filterScope>Queue</filterScope>
         <label>Partner</label>
         <queue>Partner</queue>
-        <sharedTo>
-            <role>ExecutiveVP</role>
-        </sharedTo>
+        <sharedTo />
     </listViews>
     <listViews>
         <fullName>TodaysLeads</fullName>
@@ -9703,18 +9710,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <value>lawfirms</value>
         </filters>
         <label>TotalSearch</label>
-        <sharedTo>
-            <role>ExecutiveVP</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Zalberts_Lead</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Zalberts</label>
-        <queue>Zalberts</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
+        <sharedTo />
     </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>

@@ -12466,26 +12466,6 @@ or(
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Closed_Won_Monthly_Spend__c</fullName>
-        <externalId>false</externalId>
-        <label>Closed Won Monthly Spend</label>
-        <summarizedField>Opportunity.Corporate_Recurring_Total__c</summarizedField>
-        <summaryFilterItems>
-            <field>Opportunity.StageName</field>
-            <operation>equals</operation>
-            <value>Closed Won</value>
-        </summaryFilterItems>
-        <summaryFilterItems>
-            <field>Opportunity.CreatedDate</field>
-            <operation>greaterOrEqual</operation>
-            <value>12/31/2015 9:00 PM</value>
-        </summaryFilterItems>
-        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <type>Summary</type>
-    </fields>
-    <fields>
         <fullName>Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>Contract Length</label>
@@ -13160,6 +13140,26 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_Monthly_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Closed Won Monthly Spend</label>
+        <summarizedField>Opportunity.Corporate_Recurring_Total__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>12/31/2015 11:00 PM</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>

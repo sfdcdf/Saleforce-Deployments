@@ -17,10 +17,10 @@
     <values>
         <field>Default_Values__c</field>
         <value xsi:type="xsd:string">Subject:14 Day Touch Plan, 
-RecordTypeId:012600000009cjs, 
+RecordTypeId:0122E000000lP1RQAU, 
 Reason:CS Touch Plan, 
 Channel_Type__c:Lighthouse, 
-Link_to_Script__c:na26.salesforce.com/articles/Scripts/Lighthouse-SEM-Upsell-Touch-Plan-Script/p</value>
+Link_to_Script__c:na91.salesforce.com/articles/Scripts/Lighthouse-SEM-Upsell-Touch-Plan-Script/p</value>
     </values>
     <values>
         <field>Lookup_Relationships__c</field>

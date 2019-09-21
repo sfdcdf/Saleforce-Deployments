@@ -1293,46 +1293,6 @@
         <label>WBN/ W4E Active Users</label>
     </listViews>
     <listViews>
-        <fullName>ActiveUsers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.PROFILE.NAME</columns>
-        <columns>MANAGER</columns>
-        <columns>LAST_UPDATE</columns>
-        <columns>UPDATEDBY_USER.NAME</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ACTIVE</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>Active Users</label>
-    </listViews>
-    <listViews>
-        <fullName>AllUsers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.EMAIL</columns>
-        <columns>MANAGER</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.USERS.ACTIVE</columns>
-        <columns>CORE.PROFILE.NAME</columns>
-        <columns>AlternateSFId__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Users</label>
-        <sharedTo>
-            <role>ExecutiveVP</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Beacon_LH_CS_Business_Users</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -1377,6 +1337,44 @@
             <value>0</value>
         </filters>
         <label>Inactive Users</label>
+    </listViews>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>AlternateSFId__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+        <sharedTo />
     </listViews>
     <webLinks>
         <fullName>Change_DS_Cred</fullName>

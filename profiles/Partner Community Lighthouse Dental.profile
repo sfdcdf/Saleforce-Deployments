@@ -2,52 +2,7 @@
     <custom>true</custom>
     <userLicense>Partner Community</userLicense>
     <applicationVisibilities>
-        <application>tz__Local_Time</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>tz__Local_Time_Lightning</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>dca_cnvrt_file__Convert_Attachments_to_Files</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>Lead_Generation</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Lightning</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>Sales_Leadership</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>dca_cnvrt_file__Convert_Attachments_to_Files_Lightning</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>ahaapp__AhaIntegration</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>Services</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>Sales_Operations</application>
+        <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -57,7 +12,52 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes</application>
+        <application>Sales_Operations</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Services</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>ahaapp__AhaIntegration</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>tz__Local_Time</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Leadership</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Lightning</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Lead_Generation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>dca_cnvrt_file__Convert_Attachments_to_Files</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>tz__Local_Time_Lightning</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>dca_cnvrt_file__Convert_Attachments_to_Files_Lightning</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -77,792 +77,192 @@
     
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.NextStep</field>
+        <field>Account.SicDesc</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.Family</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfConvertedLeads</field>
+        <field>Account.tz__LT_Info__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.ExternalDataSourceId</field>
+        <field>Contact.tz__LT_Info__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.ROI_Analysis_Completed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>OpportunityLineItem.TotalPrice</field>
+        <field>Account.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>SocialPost.CommentCount</field>
+        <field>Account.BillingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.tz__Local_Time__c</field>
+        <field>Account.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.ExternalId</field>
+        <field>Account.Industry</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.QuantityUnitOfMeasure</field>
+        <field>Campaign.Status</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.DisplayUrl</field>
+        <field>Account.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.tz__Local_Time_Short__c</field>
+        <field>Asset.Price</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>OpportunityLineItem.ServiceDate</field>
+        <field>Account.tz__Timezone_SFDC__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.tz__Local_Time_24_Short__c</field>
+        <field>Account.Type</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.ProductCode</field>
+        <field>Account.Website</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.Description</field>
+        <field>Asset.PurchaseDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.GrandTotal</field>
+        <field>Account.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.EndDate</field>
+        <field>Account.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>SocialPersona.IsBlacklisted</field>
+        <field>Account.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.ProductCode</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>OpportunityLineItem.ProductCode</field>
+        <field>Campaign.NumberOfWonOpportunities</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.Discount</field>
+        <field>Account.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.ApprovalStatus</field>
+        <field>Asset.Product2Id</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product2.StockKeepingUnit</field>
+        <field>Account.tz__Timezone_IANA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.ActivationDate</field>
+        <field>Account.tz__Timezone__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Type</field>
+        <field>Account.tz__UTF_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.Tax</field>
+        <field>Asset.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.StatusIndicator</field>
+        <field>Asset.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.Status</field>
+        <field>Asset.ContactId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.StartDate</field>
+        <field>Account.tz__Local_Time_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.ShippingHandling</field>
+        <field>Asset.IsCompetitorProduct</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ServiceContract.ShippingAddress</field>
+        <field>Campaign.NumberSent</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.InstallDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__Local_Time_24_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AccountSource</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ParentId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>OpportunityLineItem.ListPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.Subtotal</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>OpportunityLineItem.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Jigsaw</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Title</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Phone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.NumberOfEmployees</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.MobilePhone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.LeadSource</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Discovery_Completed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Email</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Address</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.LeadSource</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.CampaignId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Loss_Reason__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Industry</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.Term</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.SpecialTerms</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Bio</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Timezone_IANA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Budget_Confirmed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Amount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__UTF_Offset__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Timezone__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Timezone_SFDC__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Timezone_Full__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ServiceContract.TotalPrice</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Local_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Local_Time_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Local_Time_24__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__Local_Time_24_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Website</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.Probability</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.tz__Local_Time_24__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Following</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Followers</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>tz__Local_Time_Error_Log__c.tz__Record_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.R6TopicId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Shares</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.AreWeFollowing</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Sentiment</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ReviewedStatus</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ResponseContextExternalId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ReplyToId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.R6SourceId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>tz__Local_Time_Error_Log__c.tz__Record__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.R6PostId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PostUrl</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PostTags</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Status</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PersonaId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.StatusMessage</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.tz__UTC_Offset__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ViewCount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.tz__Timezone__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.tz__Local_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.WhoId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.ActivityDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.WhatId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.WhoId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.RecipientType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Solution.SolutionNote</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Solution.IsPublishedInPublicKb</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>tz__Local_Time_Error_Log__c.tz__Message__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.TopicType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.UniqueCommentors</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.TopicProfileName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Solution.IsPublished</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Recipient</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.KeywordGroupName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ThreadSize</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.NumberOfFriends</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.TopicType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.SourceApp</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.RealName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.R6SourceId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.ProfileType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.LikesAndVotes</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.NumberOfTweets</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.OutboundSocialAccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.MediaProvider</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.ListedCount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.Klout</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.IsFollowingUs</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.tz__LT_Info__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.MediaType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPersona.UserId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AnalyzerScore</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AssignedTo</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ParentId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.HarvestDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.MessageType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.MediaType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.MediaProvider</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Language</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.IsOutbound</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.InboundLinkCount</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.ExternalPostId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.EngagementLevel</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.DeletedById</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Content</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AttachmentUrl</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.SourceTags</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.AttachmentType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.SpamRating</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.Classification</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SocialPost.PostPriority</field>
+        <field>Case.ClosedDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Campaign.NumberOfContacts</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.AmountWonOpportunities</field>
+        <field>Campaign.AmountAllOpportunities</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.ExpectedRevenue</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.ExpectedResponse</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.EndDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.CampaignImageId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedPhone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.BudgetedCost</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.SerialNumber</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.ActualCost</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AssetRelationship.RelationshipType</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.UsageEndDate</field>
+        <field>Asset.Status</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -872,17 +272,62 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Asset.Status</field>
+        <field>Asset.UsageEndDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.AmountAllOpportunities</field>
+        <editable>true</editable>
+        <field>AssetRelationship.RelationshipType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ActualCost</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Campaign.NumberOfOpportunities</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.SerialNumber</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.SuppliedPhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.CampaignImageId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ExpectedResponse</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ExpectedRevenue</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.BudgetedCost</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -901,68 +346,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedCompany</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Subject</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Reason</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Priority</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.ParentId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SuppliedName</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Origin</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountContactRelation.Relationship_Strength__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.Type</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Type</field>
+        <field>Entitlement.RemainingCases</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -972,12 +357,67 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.ParentId</field>
+        <field>Case.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Type</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Case.ClosedDate</field>
+        <field>Case.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AccountContactRelation.Relationship_Strength__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.ContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Origin</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.SuppliedName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Priority</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Reason</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Subject</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.SuppliedCompany</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -987,187 +427,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.AccountSource</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Local_Time_24_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.PurchaseDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Website</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Type</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Timezone_SFDC__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.Status</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.ShippingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.NumberOfEmployees</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Industry</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.BillingAddress</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Phone</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.tz__LT_Info__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__LT_Info__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SicDesc</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.Price</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Local_Time_24__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.ProductCode</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.ParentId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.InstallDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.NumberSent</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.IsCompetitorProduct</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Local_Time_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Jigsaw</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.AccountId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__UTF_Offset__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Timezone__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Timezone_IANA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Asset.Product2Id</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.tz__Timezone_Full__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.NumberOfWonOpportunities</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Entitlement.RemainingCases</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Account.tz__Local_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.EndDate</field>
+        <field>Entitlement.ContractLineItemId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1177,67 +442,182 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.ContractLineItemId</field>
+        <field>Contact.Phone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__Local_Time_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Title</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.OwnerExpirationNotice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__Timezone_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__UTC_Offset_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Fax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time_24__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.MobilePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__Local_Time_24__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__Timezone_Full__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Timezone_SFDC__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.CompanySignedDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Timezone_IANA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__UTF_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Campaign.NumberOfLeads</field>
+        <field>Contract.ActivatedById</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.ActivatedDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.BusinessHoursId</field>
+        <field>Contract.BillingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.IsActive</field>
+        <field>Contract.CustomerSignedTitle</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.TotalPrice</field>
+        <field>Contract.ContractTerm</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.StartDate</field>
+        <field>Contact.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.Subtotal</field>
+        <field>Contract.CompanySignedId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.IsAllDayEvent</field>
+        <field>Contract.CustomerSignedId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.EndDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.StartDate</field>
+        <field>Contract.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.ListPrice</field>
+        <field>Contract.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.EndDate</field>
+        <field>Contract.CustomerSignedDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>ContractLineItem.Discount</field>
+        <field>Contact.ReportsToId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.ServiceContractId</field>
+        <field>Entitlement.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1247,7 +627,72 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Entitlement.ServiceContractId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Discount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.ListPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Entitlement.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.IsAllDayEvent</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.TotalPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.IsActive</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.BusinessHoursId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfLeads</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.AmountWonOpportunities</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Subtotal</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1267,67 +712,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__Local_Time_24_Short__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Entitlement.AssetId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContractLineItem.AssetId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContractLineItem.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.tz__Timezone__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.tz__Local_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.WhoId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.WhatId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.Location</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Entitlement.StatusIndicator</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.tz__UTC_Offset__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contract.SpecialTerms</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.Description</field>
+        <field>Entitlement.SlaProcessId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1337,32 +722,77 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.SlaProcessId</field>
+        <field>Event.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Local_Time_24_Short__c</field>
+        <field>Contract.SpecialTerms</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Entitlement.Type</field>
+        <field>Event.tz__UTC_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.ReportsToId</field>
+        <field>Entitlement.StatusIndicator</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__Timezone_Full__c</field>
+        <field>Event.Location</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.MobilePhone</field>
+        <field>Event.WhatId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.WhoId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ContractLineItem.AssetId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.AssetId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.tz__Local_Time_24_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Entitlement.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.NumberOfContacts</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1372,1275 +802,745 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Local_Time_24__c</field>
+        <field>SocialPost.Classification</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Fax</field>
+        <field>Lead.Industry</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.AccountId</field>
+        <field>Opportunity.Loss_Reason__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__UTC_Offset_Formula__c</field>
+        <field>Opportunity.CampaignId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.StartDate</field>
+        <field>Opportunity.LeadSource</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__Local_Time_24__c</field>
+        <field>Lead.Address</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__Timezone_Formula__c</field>
+        <field>Lead.Email</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__Local_Time__c</field>
+        <field>Opportunity.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Local_Time_Short__c</field>
+        <field>Opportunity.Discovery_Completed__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Title</field>
+        <field>ServiceContract.Description</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Local_Time__c</field>
+        <field>Lead.MobilePhone</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.tz__Local_Time_Short__c</field>
+        <field>Lead.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Phone</field>
+        <field>Lead.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.OwnerExpirationNotice</field>
+        <field>Lead.Title</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Timezone_SFDC__c</field>
+        <field>ServiceContract.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CustomerSignedTitle</field>
+        <field>Lead.LeadSource</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CompanySignedDate</field>
+        <field>Lead.Jigsaw</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.Description</field>
+        <field>ServiceContract.Term</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.ShippingAddress</field>
+        <field>SocialPersona.Bio</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Website</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Local_Time_24_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Local_Time_24__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Local_Time_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.TotalPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.SpecialTerms</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_Full__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__UTF_Offset__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Amount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Budget_Confirmed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_IANA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_SFDC__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ContactId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.BillingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OpportunityLineItem.ServiceDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.tz__Local_Time_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.DisplayUrl</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.QuantityUnitOfMeasure</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.ExternalId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.tz__Local_Time_24_Short__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.CommentCount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.ROI_Analysis_Completed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.ExternalDataSourceId</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contract.EndDate</field>
+        <field>Campaign.NumberOfConvertedLeads</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CustomerSignedId</field>
+        <field>Product2.Family</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contract.CompanySignedId</field>
+        <field>Opportunity.NextStep</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Timezone_Full__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contract.CustomerSignedDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contract.ContractTerm</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contract.BillingAddress</field>
+        <field>SocialPost.PostPriority</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contract.ActivatedDate</field>
+        <field>OpportunityLineItem.TotalPrice</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.ProductCode</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.GrandTotal</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.Subtotal</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contract.ActivatedById</field>
+        <field>OpportunityLineItem.ListPrice</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__UTF_Offset__c</field>
+        <field>ServiceContract.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Timezone__c</field>
+        <field>ServiceContract.ShippingHandling</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.tz__Timezone_IANA__c</field>
+        <field>ServiceContract.StartDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.StatusIndicator</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.Tax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ActivationDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.ApprovalStatus</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceContract.Discount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.ProductCode</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.IsBlacklisted</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Probability</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.tz__Local_Time_24__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.Followers</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.MediaType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__LT_Info__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.IsFollowingUs</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.Klout</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.ListedCount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.MediaProvider</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.UserId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.OutboundSocialAccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.LikesAndVotes</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.ProfileType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.R6SourceId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.RealName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.SourceApp</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.TopicType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.NumberOfTweets</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.AnalyzerScore</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.AssignedTo</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.SpamRating</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.AttachmentType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.Following</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.SourceTags</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.AttachmentUrl</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Content</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.DeletedById</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.EngagementLevel</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ExternalPostId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.InboundLinkCount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Language</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.MediaProvider</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.MediaType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.MessageType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.HarvestDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.NumberOfFriends</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ThreadSize</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.IsOutbound</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Recipient</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.PersonaId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.PostTags</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.PostUrl</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.R6PostId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>tz__Local_Time_Error_Log__c.tz__Record__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.R6SourceId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ReplyToId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ReviewedStatus</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Sentiment</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPersona.AreWeFollowing</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>tz__Local_Time_Error_Log__c.tz__Record_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.KeywordGroupName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.R6TopicId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.Shares</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.StatusMessage</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.tz__UTC_Offset__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ResponseContextExternalId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>tz__Local_Time_Error_Log__c.tz__Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Solution.IsPublished</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.UniqueCommentors</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.TopicType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.TopicProfileName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Solution.IsPublishedInPublicKb</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Solution.SolutionNote</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.WhoId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.RecipientType</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.WhatId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.ActivityDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.WhoId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.tz__Local_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SocialPost.ViewCount</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>Integration__c-Integration Layout</layout>
-        <recordType>Integration__c.Default</recordType>
+        <layout>Best_Practice_Evaluation__c-QA Audit</layout>
+        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>OPT_Process_Request__c-Production Request Layout</layout>
-        <recordType>OPT_Process_Request__c.Organic_Process_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Objection_Handling__kav-Objection Handling Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-Proposal%2FContract Review for Existing Clients</layout>
-        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-        <recordType>Marketo_Email_Campaign__c.Template</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>NetworkAdoptionProduct__c-Network Adoption Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Network_Optimization__c-Network Optimization Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Transactional 25 Day Call</layout>
-        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Notification_Log__c-Notification Log Layout</layout>
-        <recordType>Notification_Log__c.WBN_Log</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Renewal</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Notification_Log__c-Notification Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Network_Optimization__c-Network Optimization Layout</layout>
-        <recordType>Network_Optimization__c.Performance_Analysis</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OPT_Process_Request__c-Production Request Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>NetworkAdoptionSnapshot__c-Network Adoption Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-Pre-Sale Questions</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-Transition Form</layout>
-        <recordType>National_Support_Request__c.Transition_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-Pre-Sale Questions</layout>
-        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-New Initiation Form</layout>
-        <recordType>National_Support_Request__c.New_Initiation_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>National_Support_Request__c-Initiation Form</layout>
-        <recordType>National_Support_Request__c.Initiation_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Milestone__c-Milestone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Lead_Merge__c-Marketo Lead Merge Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OPT_Process_Request__c-Production Request Layout</layout>
-        <recordType>OPT_Process_Request__c.Production_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
-        <recordType>Touchplan_Section_Field__c.Date_Time</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Objection__c-Objection Handling Layout</layout>
-        <recordType>Objection__c.Objection</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Maps Initial Claiming - Pin View</layout>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming_Test</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Objection__c-Objection Handling Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-        <recordType>Marketo_Email_Campaign__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Circuit Breaker</layout>
-        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Macro-Macro Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Maps Initial Claiming Oct</layout>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-IT Pro QA</layout>
-        <recordType>Organic_Analysis__c.IT_Pro_QA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Google Listing Photo Update</layout>
-        <recordType>Organic_Analysis__c.Google_Listing_Photo_Update</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Canada Maps Claiming</layout>
-        <recordType>Organic_Analysis__c.Canda_Maps_Claiming</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
-        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Underperforming</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Initial_Transaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MLS__c-MLS Layout</layout>
-        <recordType>MLS__c.MLS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Local</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Channel_Partner</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.CPP_Initial_Transaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Partner - Initial Trasaction %28feed%29</layout>
-        <recordType>Opportunity.Business_Development</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Affiliate - Initial Transation %28feed%29</layout>
-        <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OpportunityTeamMember-Opportunity Team Member Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
-        <recordType>Marketo_Email_Campaign__c.Hourly_Template</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Field_Trip__Object_Analysis__c-Field_Trip__Object Analysis Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Individual_Location</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MLS__c-MLS Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Field_Trip__Field_Analytic_Config__c-Field_Trip__Field Analytic Config Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Field_Trip__Field_Analysis__c-Field_Trip__Field Analysis Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Feedback__c-Feedback Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FeedItem-Feed Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FAQ__kav-FAQ Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Executive_Client_Scorecard__c-Executive Client Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-YBN - Corporate Prospecting</layout>
-        <recordType>Event.YBN_Prospecting</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-YBN - Event %28Individual Location%29 - Sales</layout>
-        <recordType>Event.YBN_Individual_Location_Event</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-YBN - Event</layout>
-        <recordType>Event.YBN_Corporate_Location_Event</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-YBN Client Services Event</layout>
-        <recordType>Event.YBN_Client_Services_Event</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-Event Layout</layout>
-        <recordType>Event.WBN_Calendar_Blocker</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-Event Layout</layout>
-        <recordType>Event.Retention_Events</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-Calendar Blocker</layout>
-        <recordType>Event.Calendar_Blocker</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-Event Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EntityFieldHistoryArchive__c-EntityFieldHistoryArchive Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EntitlementSetting__mdt-Entitlement Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Entitlement-Entitlement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EmailSubscription__c-Email Subscription Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EmailMessage-Email Message Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DebugInfo__c-Debug Info Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.x40_Day</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Daily_Scheduled_Record_Auto_Create__mdt-Daily Scheduled Record Auto Create Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Forecast_SnapShot__c-Forecast Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ObjectHistory__c-Object History Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Fulfillment__c-Fulfillment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>How_To__kav-How To Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-YBN - Event %28Individual Location%29 - Sales</layout>
-        <recordType>Event.YBN_Sales_Event_IL</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.x70_Day</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Client_Community__kav-Lighthouse Client Community Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Optimization New %28Feed%29</layout>
-        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.WBN_Corporate_Lead</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-LH OOS %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Installation Worksheet %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Medical %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Dental %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Auto %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Auto Support Ticket %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-AR Request Form %28feed%29</layout>
-        <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse PMS and SMS Guides Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.WBN_Lead</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-YBN - Event</layout>
-        <recordType>Event.YBN_Sales_Event_Corporate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MLS_Name__c-MLS Name Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Partner %28feed%29</layout>
-        <recordType>Lead.CPP</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Partner %28feed%29</layout>
-        <recordType>Lead.Affiliate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Knowledge__kav-Knowledge Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Integration__c-Integration Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Individual-Individual Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Idea-Idea Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Global-Global Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserAppMenuItem-Application Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Client Services</layout>
-        <recordType>Task.YBN_Client_Services</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Promotion__c-Promotion Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan__c-Touchplan Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkAccess-Access Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Touch_Plan_2</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-PIN Action Needed NEW</layout>
-        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
-        <recordType>Touchplan_Section_Field__c.String</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
-        <recordType>Touchplan_Section_Field__c.Boolean</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Campaign_Automation__c-Touchplan Section Campaign Automation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Sales - Corporate</layout>
-        <recordType>Task.YBN_Sales_IL</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Sales - Corporate</layout>
-        <recordType>Task.YBN_Sales_Corporate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN%3AProspecting</layout>
-        <recordType>Task.YBN_Prospecting_Task</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Client Services</layout>
-        <recordType>Task.YBN_Professional_Services</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Client Services</layout>
-        <recordType>Task.YBN_Interaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Individual Location - Sales</layout>
-        <recordType>Task.YBN_Individual_Location</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Corporate Relationship</layout>
-        <recordType>Task.YBN_Corporate_Relationship</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Task Layout</layout>
-        <recordType>Task.Standard</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section__c-Touchplan Section Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Support_Setting__mdt-Support Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Services</layout>
-        <recordType>Task.Services</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-YBN Sales - Corporate</layout>
-        <recordType>Task.Sales_Manager_Cadence</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Network Communications Portal Notification</layout>
-        <recordType>Task.Network_Communications_Portal</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Interaction</layout>
-        <recordType>Task.Interaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Executive Sponsor Activity</layout>
-        <recordType>Task.Executive_Sponsor_Activity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Task Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>TP_Section_Auto_Evaluate_Criteria__c-TP Section Auto Evaluate Criteria Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserAlt-User Profile Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Survey__c-45 Day Survey Layout</layout>
-        <recordType>Survey__c.Issue_Resolution</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Survey__c-45 Day Survey Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
-        <recordType>Touchplan_Section_Field__c.Number</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>tz__lt_country_names__mdt-tz__Local Time Country Codes Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ahaapp__AhaIdea__c-ahaapp__Aha%21 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c-dca_cnvrt_file__Convert Attachments to Files Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c-dca_cnvrt_note__Convert Notes to Enhanced Notes Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>tz__Local_Time_Error_Log__c-tz__Local Time Error Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>tz__lt_area_codes__mdt-tz__Local Time Area Codes Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>tz__lt_state_codes__mdt-tz__Local Time State Codes Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>tz__lt_timezone_names__mdt-tz__Local Time Timezone Names Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ahaapp__AhaIdeaLink__c-ahaapp__Aha%21 Idea Link Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>tz__lt_timezones__mdt-tz__Local Time Timezone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>zzContract__c-Contract %28DEL%29 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>User-User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Setup_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Issue Resolution</layout>
-        <recordType>Customer_Surveys__c.YBN_Issue_Resolution_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-45 Day Survey</layout>
-        <recordType>Customer_Surveys__c.X45_Day_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-        <recordType>Yodle_Path__c.Coaching_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Yodle_Path__c-Yodle Path Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Worksheets__c-Worksheets Layout</layout>
-        <recordType>Worksheets__c.MLS_Worksheet</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Worksheets__c-Worksheets Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkThanks-Thanks Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkBadge-Badge Received Layout 192</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan__c-Touchplan Layout</layout>
-        <recordType>Touchplan__c.Template</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Touchplan__c-Touchplan Layout</layout>
-        <recordType>Touchplan__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SocialPersona-Social Persona Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Process_Documentation__kav-Process Documentation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.President_s_Club</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PricebookEntry-Price Book Entry Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Pricebook2-Price Book Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PostLaunchSurvey__c-PostLaunch Survey Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Population_Data__c-Population Size Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Performance_Snapshot__c-Performance Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
-        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_User_Quiz_Scores__c-Partner User Quiz Score Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Transition__c-Partner Transition Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Quarterly_Managed_Child_Account__c-Partner Quarterly Managed Child Account Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Quarterly_Managed_Account_Count__c-Partner Quarterly Managed Account Count Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Pop_up_Ad__c-Partner Pop-up Ad Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Pop_up_Ad_User_Dismissed__c-Partner Pop-up Ad User Dismissed Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Name__c-Partner Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Marketing_Development_Fund__c-Partner Marketing Development Fund Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_MDF_Quarterly_Budget_Setting__mdt-Partner MDF Quarterly Budget Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Partner_Community_HTML__c-Partner Community HTML Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-YO Initial Error Check</layout>
-        <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Underperforming</layout>
-        <recordType>Organic_Analysis__c.Underperforming</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
-        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Transactional Issue Resolution</layout>
-        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProfileSkillUser-Skill User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-        <recordType>SMS_Tracking__c.Default</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Service_Audit__c-Service Audit Layout</layout>
-        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Service_Audit__c-Service Audit Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceContract-Service Contract Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Segment__c-Segment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Segment_Optimization_Case_Assignment__c-Segment Optimization Case Assignment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Segment_Intelligence__kav-Segment Intelligence Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scripts__kav-Scripts Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Solution-Solution Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scorecard-Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Product2-Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>References__c-References Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>QuickText-Quick Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
-        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
-        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Local Master Quality</layout>
-        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
-        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Quality_Case__c-Acquisio Master Quality</layout>
-        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Reactivation</layout>
-        <recordType>Organic_Analysis__c.Reactivation</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Sales_Attachments__c-Sales Attachments Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProfileSkill-Skill Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Organic_Analysis__c-Organic Optimization New %28Feed%29</layout>
-        <recordType>Organic_Analysis__c.Organic_Optimization_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.Sales</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>GroupBeacon__c-GroupBeacon Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx Save Call</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx Inbound Call</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Managing Relationships</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Building Awareness and Driving Leads</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Advanced Features</layout>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Save Call Monitoring Forms %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Maps - Quality Assurance Form</layout>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
-        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Maps - Owner Verified</layout>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Local - Max CSC Grading Form</layout>
-        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Local - Live Chat Monitoring Form %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Local - Email Monitoring Form %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse Save Call</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC %2B Essentials %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-LBW Performance Call Quality Process</layout>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-LBW Onboarding Quality Process</layout>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Inbound Monitoring Forms %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Essentials Setup Completion Call Form %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-CSC Monitoring Form %28feed%29</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Essentials</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Attempts_Made__c-Attempt Made Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Quality_Concern__c-Call Quality Concern Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.x20_Day</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Yodle_Path_Touch_Point</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Yodle_Path_Setup_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Yodle_Path_Coaching_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.YBN_Call_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Soft_Skills_Breakdown</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_Setup_Completion_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Collections Call %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-CSC Monitoring Form %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_CSC_Engage</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_70_Day</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Test_Operations_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_40_Day</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.PIN_Collection</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Maps_Owner_Verified</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Live_Chat</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Training_TEST</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Result_Detail__c-Call Result Detail Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_CSC</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse Inbound Call %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Partner_20_Day</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.MLS_Worksheet</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Inbound_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.SF_Process_Change_Reporting</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Setup Evaluation</layout>
-        <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Asset-Asset Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Website Audit</layout>
-        <recordType>Best_Practice_Evaluation__c.Website_Audit</recordType>
+        <layout>Account-Account Management %28Feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Activity_Type__c-Activity Type Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_MLS__c-Account MLS Layout</layout>
-        <recordType>Account_MLS__c.Account_MLS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_MLS__c-Account MLS Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AccountBrand-Account Brand Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-YBN Strategic Partner Account %28feed%29</layout>
-        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account_Marketo_Activity__c-Account Marketo Activity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Test</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Lighthouse CS %28feed%29</layout>
-        <recordType>Account.LH_Master_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Rogers National Account %28feed%29</layout>
-        <recordType>Account.Rogers_National_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Partner %28CPP%29 %28feed%29</layout>
-        <recordType>Account.Affiliate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Business Development</layout>
-        <recordType>Account.Business_Development</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Customer_Surveys__c-CSC Survey</layout>
         <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-QA Audit</layout>
-        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Multi Location Parent %28feed%29</layout>
-        <recordType>Account.Multi_Location_Parent</recordType>
+        <layout>Activity_Type__c-Activity Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Partner %28CPP%29 %28feed%29</layout>
@@ -2662,90 +1562,93 @@
         <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Multi Location Parent %28feed%29</layout>
+        <recordType>Account.Multi_Location_Parent</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Business Development</layout>
+        <recordType>Account.Business_Development</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_Marketo_Activity__c-Account Marketo Activity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Rogers National Account %28feed%29</layout>
+        <recordType>Account.Rogers_National_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Lighthouse CS %28feed%29</layout>
+        <recordType>Account.LH_Master_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Test</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-YBN Strategic Partner Account %28feed%29</layout>
+        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountBrand-Account Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_MLS__c-Account MLS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account_MLS__c-Account MLS Layout</layout>
+        <recordType>Account_MLS__c.Account_MLS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
         <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Partner %28CPP%29 %28feed%29</layout>
+        <recordType>Account.Affiliate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Call_Answering__c-Call Answering Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Integration_Setting__mdt-CTS Integration Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
-        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
-        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CTSObjectTriggerMap__mdt-CTSObjectTriggerMap Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.YO_2_0_Free_Time_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Adoption Call %28feed%29</layout>
-        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Best_Practice_Evaluation__c-Optimization Evaluation</layout>
-        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssetRelationship-Asset Relationship Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.National_Project_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
         <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Essentials_Features_Request</recordType>
+        <layout>CTS_Integration_Setting__mdt-CTS Integration Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Cancellation Request %28feed%29</layout>
+        <recordType>Case.Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Answering__c-Call Answering Layout</layout>
+        <recordType>Call_Answering__c.Call_Answering</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Website Audit</layout>
+        <recordType>Best_Practice_Evaluation__c.Website_Audit</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CPP_Lead_Registration__c-Lead Registration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Optimization Evaluation</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.CS_SOP_Manual_Update</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.CMS_3_1_Update_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Batch_Uploads</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Administrative_Items</recordType>
+        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Best_Practice_Evaluation__c-National Audit</layout>
@@ -2753,84 +1656,574 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
-        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
+        <recordType>CS_Operations__c.Administrative_Items</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Batch_Uploads</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.CMS_3_1_Update_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.CS_SOP_Manual_Update</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.National_Project_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetRelationship-Asset Relationship Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Best_Practice_Evaluation__c-Optimization Evaluation</layout>
+        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CPP_Lead_Registration__c-Lead Registration Layout</layout>
+        <layout>Call_Grading_Form_2_0__c-Adoption Call %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Answering__c-Call Answering Layout</layout>
-        <recordType>Call_Answering__c.Call_Answering</recordType>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Cancellation Request %28feed%29</layout>
-        <recordType>Case.Cancellation_Request</recordType>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.YO_2_0_Free_Time_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTSObjectTriggerMap__mdt-CTSObjectTriggerMap Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CTS_Error_Log__c-CTS Error Log Layout</layout>
+        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Essentials_Features_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-CSC Monitoring Form %28feed%29</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.SF_Process_Change_Reporting</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Attempts_Made__c-Attempt Made Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Essentials</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Essentials Setup Completion Call Form %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Inbound Monitoring Forms %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-LBW Onboarding Quality Process</layout>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-LBW Performance Call Quality Process</layout>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC %2B Essentials %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Lighthouse Save Call</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Local - Email Monitoring Form %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Local - Live Chat Monitoring Form %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Local - Max CSC Grading Form</layout>
+        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Maps - Owner Verified</layout>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
+        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Maps - Quality Assurance Form</layout>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Save Call Monitoring Forms %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Advanced Features</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Building Awareness and Driving Leads</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Managing Relationships</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-TORCHx Inbound Call</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-TORCHx Save Call</layout>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Partner %28feed%29</layout>
         <recordType>Lead.Association</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Quality_Concern__c-Call Quality Concern Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Best_Practice_Evaluation__c-Setup Evaluation</layout>
+        <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.x20_Day</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Yodle_Path_Touch_Point</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.MLS_Worksheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_20_Day</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Lighthouse Inbound Call %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Google_Location_Group__c-Google Location Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_CSC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Result_Detail__c-Call Result Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Training_TEST</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Live_Chat</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Maps_Owner_Verified</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.PIN_Collection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_40_Day</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CS_Operations__c-Operations Layout</layout>
+        <recordType>CS_Operations__c.Test_Operations_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_CSC_Engage</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-CSC Monitoring Form %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Form_2_0__c-Collections Call %28feed%29</layout>
+        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_Setup_Completion_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Soft_Skills_Breakdown</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.YBN_Call_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Yodle_Path_Coaching_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Yodle_Path_Setup_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Case-LH Master %28feed%29</layout>
         <recordType>Case.LH_Master</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey LBW</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
+        <layout>Case-Call Answering %28feed%29</layout>
+        <recordType>Case.Call_Answering</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Customer_Surveys__c-Max Touch Plan Survey</layout>
         <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.WBN_MSA</recordType>
+        <layout>Case-LH Closing Script - Auto Launch %28feed%29</layout>
+        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.WBN_Amendment</recordType>
+        <layout>Case-YBN Outbound Touch Point %28feed%29</layout>
+        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.Service_Agreement</recordType>
+        <layout>Case-TORCHx Master %28feed%29</layout>
+        <recordType>Case.TORCHx_Master</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.Biz_Dev_Agreement</recordType>
+        <layout>Customer_Surveys__c-Lighthouse Post-Install Survey</layout>
+        <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-        <recordType>Contract.Amendments</recordType>
+        <layout>Case-Yodle Path Experience %28feed%29</layout>
+        <recordType>Case.Yodle_Path_Experience</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.master</recordType>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.Events</recordType>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
+        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
+        <layout>Cancellation_Request__c-LH Cancellation Request</layout>
+        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContentVersion-Content Version</layout>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
+        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContentAsset-Asset File Layout</layout>
+        <layout>Cancellation_Request__c-TORCHx Cancellation Request %28feed%29</layout>
+        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cancellation_Request__c-WBN Cancellation Request %28feed%29</layout>
+        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-LH Master %28feed%29</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Email Catch All %28feed%29</layout>
+        <recordType>Case.Blank_for_Email_Catch_All</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Budget_Change</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Channel Partner %28feed%29</layout>
+        <recordType>Case.Channel_Partner</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignInfluenceModel-Campaign Influence Model Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Yodle Gold Service %28feed%29</layout>
+        <recordType>Case.Yodle_Gold_Service</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Charge Failure %28feed%29</layout>
+        <recordType>Case.Charge_Failure</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Closing Script - Auto Launch %28feed%29</layout>
+        <recordType>Case.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-CS Touch Plan %28feed%29</layout>
+        <recordType>Case.Decision_Tree_Optimization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-LH Product Feedback %28feed%29</layout>
+        <recordType>Case.FS_Product_Feedback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Facebook Post-For-You %28feed%29</layout>
+        <recordType>Case.Facebook_Post_For_You</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
+        <recordType>Case.LBW_Content_Organic_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-National - New Client Setup %28feed%29</layout>
+        <recordType>Case.New_Client_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-LH Cancel Request %28feed%29</layout>
+        <recordType>Case.LH_Cancellation_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+        <recordType>Campaign.Standard_Campaign_Record_Type</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-YBN Master Case %28feed%29</layout>
+        <recordType>Case.YBN_Master_Case</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GroupBeacon__c-GroupBeacon Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Optimization 2016 %28Feed%29</layout>
+        <recordType>Case.Performance_Issue</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Organic Setup %28feed%29</layout>
+        <recordType>Case.SEO_Tasks</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Rogers In Contract Cancelation %28feed%29</layout>
+        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Renewals and Upsells %28feed%29</layout>
+        <recordType>Case.Renewals_and_Upsells</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Product Ideas %28feed%29</layout>
+        <recordType>Case.Product_Ideas</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
+        <recordType>Case.YBN_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-TORCHx NCS - AutoLaunch %28feed%29</layout>
+        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-YBN Inbound Inquiry %28feed%29</layout>
+        <recordType>Case.Partner_Inbound_Inquiry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Services Outbound Call %28feed%29</layout>
+        <recordType>Case.Outbound_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-LH Product Feedback %28feed%29</layout>
+        <recordType>Case.LH_Product_Feedback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Send Survey %28feed%29</layout>
+        <recordType>Case.Survey_Send</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Account Update %28feed%29</layout>
+        <recordType>Case.O_Account_Update</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Service Task Setup %28feed%29</layout>
+        <recordType>Case.Service_Task_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-TORCHx Product Feedback %28feed%29</layout>
+        <recordType>Case.TORCHx_Product_Feedback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Touch Plan %28feed%29</layout>
+        <recordType>Case.Touch_Plan</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Winback %28feed%29</layout>
+        <recordType>Case.Winback</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Email</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Master %28feed%29</layout>
+        <recordType>Case.Master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Partner - Master %28feed%29</layout>
+        <recordType>Case.XJenTest_No_Use</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-NCS - AutoLaunch %28feed%29</layout>
+        <recordType>Case.XJen_Test_COBRA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Partner - New Client Setup %28feed%29</layout>
+        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-YBN Corporate Interaction New</layout>
+        <recordType>Case.YBN_Corporate_Interaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-YBN Inbound Inquiry %28feed%29</layout>
+        <recordType>Case.YBN_Inbound_Inquiry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-YBN Product Ideas %28feed%29</layout>
+        <recordType>Case.YBN_Product_Ideas</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
+        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+        <recordType>Campaign.Marketing_Campaign_Record_Type</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Custom_Automation__c-Custom Automation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContractLineItem__c-Contract Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-NPS Survey Lighthouse</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseMilestoneSync__c-Case Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseStatusHistory__c-Case Status History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseThreadOrigin__mdt-Case Thread Origin Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseThreadSettings__mdt-Case Thread Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case_Master_Record_Type__mdt-Case Master Record Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClientScorecard__c-Client Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CollaborationGroup-Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Comments__c-Comments Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Comments__c-Comments Layout</layout>
+        <recordType>Comments__c.Comments</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Contact Layout %28feed%29</layout>
-        <recordType>Contact.YBN_IL_Contact_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Contact Layout %28feed%29</layout>
@@ -2838,41 +2231,47 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Contact Layout %28feed%29</layout>
+        <recordType>Contact.YBN_IL_Contact_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Comments__c-Comments Layout</layout>
-        <recordType>Comments__c.Comments</recordType>
+        <layout>ContentAsset-Asset File Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Comments__c-Comments Layout</layout>
+        <layout>ContentVersion-Content Version</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CollaborationGroup-Group Layout</layout>
+        <layout>Contest__c-Contest Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ClientScorecard__c-Client Scorecard Layout</layout>
+        <layout>Contest__c-Contest Layout</layout>
+        <recordType>Contest__c.Events</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case_Master_Record_Type__mdt-Case Master Record Type Layout</layout>
+        <layout>Contest__c-Contest Layout</layout>
+        <recordType>Contest__c.master</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseThreadSettings__mdt-Case Thread Setting Layout</layout>
+        <layout>Contract-Contract Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseThreadOrigin__mdt-Case Thread Origin Layout</layout>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.Amendments</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseStatusHistory__c-Case Status History Layout</layout>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.Biz_Dev_Agreement</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseMilestoneSync__c-Case Milestone Layout</layout>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.Service_Agreement</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey Lighthouse</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.WBN_Amendment</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContractLineItem__c-Contract Line Layout</layout>
+        <layout>Contract-Contract Layout</layout>
+        <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseInteraction-Case Feed Layout</layout>
@@ -2888,421 +2287,932 @@
         <layout>ContractLineItem-Contract Line Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Marketing Survey</layout>
-        <recordType>Customer_Surveys__c.Marketing_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Campaign-Campaign Layout</layout>
-        <recordType>Campaign.Dialing_Campaign_Record_Type</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-TORCHx Post Call Survey</layout>
-        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-CSC Survey</layout>
-        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Post Launch Survey</layout>
-        <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-POD Resolution</layout>
-        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-OutRank CSC Survey</layout>
-        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey Yodle Non-Essentials</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey Yodle</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey YBN</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_YBN</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Custom_Automation__c-Custom Automation Layout</layout>
-        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey WBN Corporate</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_WBN_Corporate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey TORCHx</layout>
-        <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Post-Setup Survey</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Essentials%2FMax</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Dental%2FChiro</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Auto</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Exit Interview Survey</layout>
-        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Customer Support Survey</layout>
-        <recordType>Customer_Surveys__c.Issue_Resolution_Lighthouse</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Issue Resolution</layout>
-        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Exit Interview Survey</layout>
-        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-CSC Business Customization Form</layout>
-        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Custom_Report_Hierarchy__c-Custom Report Hierarchy Layout</layout>
-        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CorpSDR_Demo_Questionaire__c-CorpSDR Demo Questionaire Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Custom_Report_Hierarchy__c-Custom Report Hierarchy Layout</layout>
+        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Customer Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-CSC Business Customization Form</layout>
+        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Exit Interview Survey</layout>
+        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Issue Resolution</layout>
+        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Lighthouse Customer Support Survey</layout>
+        <recordType>Customer_Surveys__c.Issue_Resolution_Lighthouse</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Lighthouse Exit Interview Survey</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Lighthouse NPS Survey Auto</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Lighthouse NPS Survey Dental%2FChiro</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Lighthouse NPS Survey Essentials%2FMax</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-NPS Survey LBW</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Lighthouse Post-Setup Survey</layout>
+        <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-NPS Survey WBN Corporate</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_WBN_Corporate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Custom_Automation__c-Custom Automation Layout</layout>
+        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-NPS Survey YBN</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_YBN</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-NPS Survey Yodle</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-NPS Survey Yodle Non-Essentials</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-OutRank CSC Survey</layout>
+        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-POD Resolution</layout>
+        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Post Launch Survey</layout>
+        <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-CSC Survey</layout>
+        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-TORCHx Post Call Survey</layout>
+        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Campaign-Campaign Layout</layout>
-        <recordType>Campaign.Marketing_Campaign_Record_Type</recordType>
+        <recordType>Campaign.Dialing_Campaign_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+        <layout>Customer_Surveys__c-Marketing Survey</layout>
+        <recordType>Customer_Surveys__c.Marketing_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Cancel Request %28feed%29</layout>
-        <recordType>Case.LH_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Lead Stream ALL Organic Setup %28feed%29</layout>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Facebook Post-For-You %28feed%29</layout>
-        <recordType>Case.Facebook_Post_For_You</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-LH Product Feedback %28feed%29</layout>
-        <recordType>Case.FS_Product_Feedback</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-CS Touch Plan %28feed%29</layout>
-        <recordType>Case.Decision_Tree_Optimization</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Closing Script - Auto Launch %28feed%29</layout>
-        <recordType>Case.Closing_Script_Auto_Launch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Charge Failure %28feed%29</layout>
-        <recordType>Case.Charge_Failure</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseClose-Close Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Yodle Gold Service %28feed%29</layout>
-        <recordType>Case.Yodle_Gold_Service</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignInfluenceModel-Campaign Influence Model Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Channel Partner %28feed%29</layout>
-        <recordType>Case.Channel_Partner</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Call Answering %28feed%29</layout>
-        <recordType>Case.Call_Answering</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-        <recordType>Case.Budget_Change</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Email Catch All %28feed%29</layout>
-        <recordType>Case.Blank_for_Email_Catch_All</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-WBN Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-TORCHx Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-LH Cancellation Request</layout>
-        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
-        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignMember-Campaign Member Page Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Yodle Path Experience %28feed%29</layout>
-        <recordType>Case.Yodle_Path_Experience</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Post-Install Survey</layout>
-        <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-TORCHx Master %28feed%29</layout>
-        <recordType>Case.TORCHx_Master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-YBN Outbound Touch Point %28feed%29</layout>
-        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-LH Closing Script - Auto Launch %28feed%29</layout>
-        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-National - New Client Setup %28feed%29</layout>
-        <recordType>Case.New_Client_Setup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Campaign-Campaign Layout</layout>
-        <recordType>Campaign.Standard_Campaign_Record_Type</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-YBN Product Ideas %28feed%29</layout>
-        <recordType>Case.YBN_Product_Ideas</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-YBN Master Case %28feed%29</layout>
-        <recordType>Case.YBN_Master_Case</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-YBN Inbound Inquiry %28feed%29</layout>
-        <recordType>Case.YBN_Inbound_Inquiry</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-YBN Corporate Interaction New</layout>
-        <recordType>Case.YBN_Corporate_Interaction</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Partner - New Client Setup %28feed%29</layout>
-        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-NCS - AutoLaunch %28feed%29</layout>
-        <recordType>Case.XJen_Test_COBRA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Partner - Master %28feed%29</layout>
-        <recordType>Case.XJenTest_No_Use</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Master %28feed%29</layout>
-        <recordType>Case.Master</recordType>
+        <layout>Customer_Surveys__c-NPS Survey TORCHx</layout>
+        <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
-        <recordType>Call_Grading_Forms__c.Email</recordType>
+        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Campaign-Campaign Layout</layout>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_70_Day</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Winback %28feed%29</layout>
-        <recordType>Case.Winback</recordType>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Touch Plan %28feed%29</layout>
-        <recordType>Case.Touch_Plan</recordType>
+        <layout>Daily_Scheduled_Record_Auto_Create__mdt-Daily Scheduled Record Auto Create Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-TORCHx Product Feedback %28feed%29</layout>
-        <recordType>Case.TORCHx_Product_Feedback</recordType>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.x40_Day</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Service Task Setup %28feed%29</layout>
-        <recordType>Case.Service_Task_Setup</recordType>
+        <layout>DebugInfo__c-Debug Info Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Account Update %28feed%29</layout>
-        <recordType>Case.O_Account_Update</recordType>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Send Survey %28feed%29</layout>
-        <recordType>Case.Survey_Send</recordType>
+        <layout>EmailMessage-Email Message Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Product Feedback %28feed%29</layout>
-        <recordType>Case.LH_Product_Feedback</recordType>
+        <layout>EmailSubscription__c-Email Subscription Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Services Outbound Call %28feed%29</layout>
-        <recordType>Case.Outbound_Call</recordType>
+        <layout>Entitlement-Entitlement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-YBN Inbound Inquiry %28feed%29</layout>
-        <recordType>Case.Partner_Inbound_Inquiry</recordType>
+        <layout>EntitlementSetting__mdt-Entitlement Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-TORCHx NCS - AutoLaunch %28feed%29</layout>
-        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
+        <layout>EntityFieldHistoryArchive__c-EntityFieldHistoryArchive Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-2016 - YBN Request %28feed%29</layout>
-        <recordType>Case.YBN_Request</recordType>
+        <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Product Ideas %28feed%29</layout>
-        <recordType>Case.Product_Ideas</recordType>
+        <layout>Event-Calendar Blocker</layout>
+        <recordType>Event.Calendar_Blocker</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Renewals and Upsells %28feed%29</layout>
-        <recordType>Case.Renewals_and_Upsells</recordType>
+        <layout>Event-Event Layout</layout>
+        <recordType>Event.Retention_Events</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Rogers In Contract Cancelation %28feed%29</layout>
-        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
+        <layout>Event-Event Layout</layout>
+        <recordType>Event.WBN_Calendar_Blocker</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Organic Setup %28feed%29</layout>
-        <recordType>Case.SEO_Tasks</recordType>
+        <layout>Event-YBN Client Services Event</layout>
+        <recordType>Event.YBN_Client_Services_Event</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Optimization 2016 %28Feed%29</layout>
-        <recordType>Case.Performance_Issue</recordType>
+        <layout>Event-YBN - Event</layout>
+        <recordType>Event.YBN_Corporate_Location_Event</recordType>
     </layoutAssignments>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Product2</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Lead</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Solution</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Idea</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Pricebook2</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Individual</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Opportunity</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>ServiceContract</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Contact</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Campaign</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <layoutAssignments>
+        <layout>Event-YBN - Event %28Individual Location%29 - Sales</layout>
+        <recordType>Event.YBN_Individual_Location_Event</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-YBN - Corporate Prospecting</layout>
+        <recordType>Event.YBN_Prospecting</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Executive_Client_Scorecard__c-Executive Client Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FAQ__kav-FAQ Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Feedback__c-Feedback Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Field_Analysis__c-Field_Trip__Field Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Field_Analytic_Config__c-Field_Trip__Field Analytic Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MLS__c-MLS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Forecast_SnapShot__c-Forecast Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ObjectHistory__c-Object History Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fulfillment__c-Fulfillment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>How_To__kav-How To Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Idea-Idea Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration__c-Integration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Knowledge__kav-Knowledge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Partner %28feed%29</layout>
+        <recordType>Lead.Affiliate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Partner %28feed%29</layout>
+        <recordType>Lead.CPP</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MLS_Name__c-MLS Name Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-YBN - Event</layout>
+        <recordType>Event.YBN_Sales_Event_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.WBN_Lead</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse PMS and SMS Guides Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Individual_Location</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Auto Support Ticket %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Auto %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Dental %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Medical %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-Installation Worksheet %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-LH OOS %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.WBN_Corporate_Lead</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Optimization New %28Feed%29</layout>
+        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Client_Community__kav-Lighthouse Client Community Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.x70_Day</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-YBN - Event %28Individual Location%29 - Sales</layout>
+        <recordType>Event.YBN_Sales_Event_IL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lighthouse_Worksheets__c-AR Request Form %28feed%29</layout>
+        <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAppMenuItem-Application Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Field_Trip__Object_Analysis__c-Field_Trip__Object Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityTeamMember-Opportunity Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Lead_Merge__c-Marketo Lead Merge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Milestone__c-Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-Initiation Form</layout>
+        <recordType>National_Support_Request__c.Initiation_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-New Initiation Form</layout>
+        <recordType>National_Support_Request__c.New_Initiation_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-Pre-Sale Questions</layout>
+        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-Transition Form</layout>
+        <recordType>National_Support_Request__c.Transition_Form</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-Pre-Sale Questions</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>NetworkAdoptionSnapshot__c-Network Adoption Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OPT_Process_Request__c-Production Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Network_Optimization__c-Network Optimization Layout</layout>
+        <recordType>Network_Optimization__c.Performance_Analysis</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Renewal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Notification_Log__c-Notification Log Layout</layout>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Transactional 25 Day Call</layout>
+        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Network_Optimization__c-Network Optimization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>NetworkAdoptionProduct__c-Network Adoption Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+        <recordType>Marketo_Email_Campaign__c.Template</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>National_Support_Request__c-Proposal%2FContract Review for Existing Clients</layout>
+        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Objection_Handling__kav-Objection Handling Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OPT_Process_Request__c-Production Request Layout</layout>
+        <recordType>OPT_Process_Request__c.Organic_Process_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Integration__c-Integration Layout</layout>
+        <recordType>Integration__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OPT_Process_Request__c-Production Request Layout</layout>
+        <recordType>OPT_Process_Request__c.Production_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Affiliate - Initial Transation %28feed%29</layout>
+        <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Partner - Initial Trasaction %28feed%29</layout>
+        <recordType>Opportunity.Business_Development</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.CPP_Initial_Transaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Channel_Partner</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Local</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MLS__c-MLS Layout</layout>
+        <recordType>MLS__c.MLS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.YBN_Initial_Transaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+        <recordType>Marketo_Email_Campaign__c.Hourly_Template</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Underperforming</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Canada Maps Claiming</layout>
+        <recordType>Organic_Analysis__c.Canda_Maps_Claiming</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Google Listing Photo Update</layout>
+        <recordType>Organic_Analysis__c.Google_Listing_Photo_Update</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-IT Pro QA</layout>
+        <recordType>Organic_Analysis__c.IT_Pro_QA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Maps Initial Claiming Oct</layout>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Circuit Breaker</layout>
+        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Email_Campaign__c-Marketo Email Campaign Layout</layout>
+        <recordType>Marketo_Email_Campaign__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Objection__c-Objection Handling Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Maps Initial Claiming - Pin View</layout>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming_Test</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Objection__c-Objection Handling Layout</layout>
+        <recordType>Objection__c.Objection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
+        <recordType>Touchplan_Section_Field__c.Date_Time</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Offering_to_Vertical_Map__c-Offering to Vertical Map Layout</layout>
+        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Client Services</layout>
+        <recordType>Task.YBN_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Call_Grading_Forms__c-Call Grading Forms Layout</layout>
+        <recordType>Call_Grading_Forms__c.Partner_Save_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan__c-Touchplan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
+        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Underperforming</layout>
+        <recordType>Organic_Analysis__c.Underperforming</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-YO Initial Error Check</layout>
+        <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Community_HTML__c-Partner Community HTML Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_MDF_Quarterly_Budget_Setting__mdt-Partner MDF Quarterly Budget Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Marketing_Development_Fund__c-Partner Marketing Development Fund Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Name__c-Partner Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Pop_up_Ad_User_Dismissed__c-Partner Pop-up Ad User Dismissed Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Pop_up_Ad__c-Partner Pop-up Ad Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Quarterly_Managed_Account_Count__c-Partner Quarterly Managed Account Count Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Quarterly_Managed_Child_Account__c-Partner Quarterly Managed Child Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_Transition__c-Partner Transition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Partner_User_Quiz_Scores__c-Partner User Quiz Score Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Analysis__c-Performance Analysis Layout</layout>
+        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Snapshot__c-Performance Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Population_Data__c-Population Size Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PostLaunchSurvey__c-PostLaunch Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Price Book Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prize_Winner__c-Prize Winner Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prize_Winner__c-Prize Winner Layout</layout>
+        <recordType>Prize_Winner__c.President_s_Club</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prize_Winner__c-Prize Winner Layout</layout>
+        <recordType>Prize_Winner__c.master</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Process_Documentation__kav-Process Documentation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Transactional Issue Resolution</layout>
+        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillUser-Skill User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
+        <recordType>SMS_Tracking__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Organic Optimization New %28Feed%29</layout>
+        <recordType>Organic_Analysis__c.Organic_Optimization_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Promotion__c-Promotion Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkill-Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Sales_Attachments__c-Sales Attachments Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-Reactivation</layout>
+        <recordType>Organic_Analysis__c.Reactivation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Acquisio Master Quality</layout>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-Local Master Quality</layout>
+        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuickText-Quick Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>References__c-References Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SocialPersona-Social Persona Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scripts__kav-Scripts Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Segment_Intelligence__kav-Segment Intelligence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Segment_Optimization_Case_Assignment__c-Segment Optimization Case Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Segment__c-Segment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceContract-Service Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Audit__c-Service Audit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Audit__c-Service Audit Layout</layout>
+        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Services_Offered_Vertical__c-Services Offered Vertical Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan__c-Touchplan Layout</layout>
+        <recordType>Touchplan__c.Default</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TP_Section_Auto_Evaluate_Criteria__c-TP Section Auto Evaluate Criteria Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Executive Sponsor Activity</layout>
+        <recordType>Task.Executive_Sponsor_Activity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Interaction</layout>
+        <recordType>Task.Interaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Network Communications Portal Notification</layout>
+        <recordType>Task.Network_Communications_Portal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Sales - Corporate</layout>
+        <recordType>Task.Sales_Manager_Cadence</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Services</layout>
+        <recordType>Task.Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Support_Setting__mdt-Support Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Touch_Plan_2</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section__c-Touchplan Section Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+        <recordType>Task.Standard</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Corporate Relationship</layout>
+        <recordType>Task.YBN_Corporate_Relationship</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Individual Location - Sales</layout>
+        <recordType>Task.YBN_Individual_Location</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Client Services</layout>
+        <recordType>Task.YBN_Interaction</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Client Services</layout>
+        <recordType>Task.YBN_Professional_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN%3AProspecting</layout>
+        <recordType>Task.YBN_Prospecting_Task</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Sales - Corporate</layout>
+        <recordType>Task.YBN_Sales_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-YBN Sales - Corporate</layout>
+        <recordType>Task.YBN_Sales_IL</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Campaign_Automation__c-Touchplan Section Campaign Automation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
+        <recordType>Touchplan_Section_Field__c.Boolean</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
+        <recordType>Touchplan_Section_Field__c.String</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Organic_Analysis__c-PIN Action Needed NEW</layout>
+        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Survey__c-45 Day Survey Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Survey__c-45 Day Survey Layout</layout>
+        <recordType>Survey__c.Issue_Resolution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_country_names__mdt-tz__Local Time Country Codes Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan__c-Touchplan Layout</layout>
+        <recordType>Touchplan__c.Template</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadge-Badge Received Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Worksheets__c-Worksheets Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Worksheets__c-Worksheets Layout</layout>
+        <recordType>Worksheets__c.MLS_Worksheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Coaching_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
+        <recordType>Customer_Surveys__c.X45_Day_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer_Surveys__c-Issue Resolution</layout>
+        <recordType>Customer_Surveys__c.YBN_Issue_Resolution_Survey</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Touchplan_Section_Field__c-Touchplan Section Field Layout</layout>
+        <recordType>Touchplan_Section_Field__c.Number</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Setup_Call</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>zzContract__c-Contract %28DEL%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ahaapp__AhaIdea__c-ahaapp__Aha%21 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c-dca_cnvrt_file__Convert Attachments to Files Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__Local_Time_Error_Log__c-tz__Local Time Error Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_area_codes__mdt-tz__Local Time Area Codes Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c-dca_cnvrt_note__Convert Notes to Enhanced Notes Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkAccess-Access Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_state_codes__mdt-tz__Local Time State Codes Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_timezone_names__mdt-tz__Local Time Timezone Names Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ahaapp__AhaIdeaLink__c-ahaapp__Aha%21 Idea Link Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tz__lt_timezones__mdt-tz__Local Time Timezone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yodle_Path__c-Yodle Path Layout</layout>
+        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -3314,38 +3224,11 @@
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>ContractLineItem</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Case</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>Contract</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Asset</object>
+        <object>EntitlementContact</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -3363,187 +3246,834 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>EntitlementContact</object>
+        <object>Contract</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Case</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ContractLineItem</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Campaign</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Asset</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ServiceContract</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Opportunity</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Individual</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Pricebook2</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Idea</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Solution</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Product2</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Contact</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
+        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.YBN_Sales_Event_IL</recordType>
+        <recordType>Contract.Amendments</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Notification_Log__c.WBN_Log</recordType>
+        <recordType>Account.YBN_Corporate_Relationship</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.YBN_Prospecting</recordType>
+        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lead.WBN_Lead</recordType>
+        <recordType>Call_Grading_Forms__c.Partner_20_Day</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lead.WBN_Corporate_Lead</recordType>
+        <recordType>Account.Standard</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Contest__c.master</recordType>
+        <recordType>Case.Yodle_Path_Experience</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lead.CPP</recordType>
+        <recordType>Account.Business_Development</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lead.Affiliate</recordType>
+        <recordType>Account.Multi_Location_Parent</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>National_Support_Request__c.Transition_Form</recordType>
+        <recordType>CS_Operations__c.Test_Operations_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
+        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
+        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lead.Sales</recordType>
+        <recordType>Account.Affiliate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Marketo_Email_Campaign__c.Template</recordType>
+        <recordType>CS_Operations__c.SF_Process_Change_Reporting</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming_Test</recordType>
+        <recordType>Contact.Partner_Contact</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Contract.WBN_Amendment</recordType>
+        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
+        <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
+        <recordType>CS_Operations__c.National_Project_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>National_Support_Request__c.New_Initiation_Form</recordType>
+        <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>National_Support_Request__c.Initiation_Form</recordType>
+        <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
+        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Marketo_Email_Campaign__c.Hourly_Template</recordType>
+        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
+        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
+        <recordType>CS_Operations__c.Batch_Uploads</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>MLS__c.MLS</recordType>
+        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
+        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.YBN_Sales_Event_Corporate</recordType>
+        <recordType>Best_Practice_Evaluation__c.Website_Audit</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.YBN_Individual_Location_Event</recordType>
+        <recordType>Account_MLS__c.Account_MLS</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Marketo_Email_Campaign__c.Default</recordType>
+        <recordType>Call_Answering__c.Call_Answering</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
+        <recordType>CS_Operations__c.Administrative_Items</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.WBN_Calendar_Blocker</recordType>
+        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.YBN_Corporate_Location_Event</recordType>
+        <recordType>Best_Practice_Evaluation__c.National_Audit</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
+        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.PIN_Collection</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Maps_Owner_Verified</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Live_Chat</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Rogers_National_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Collections_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Email</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.LH_Master_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Soft_Skills_Breakdown</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Blank_for_Email_Catch_All</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Partner_Master_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_70_Day</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Test</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Performance_Issue</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_Save_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_Setup_Completion_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_CSC_Engage</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.x20_Day</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.x40_Day</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.x70_Day</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Yodle_Path_Coaching_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Yodle_Path_Setup_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Save_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Campaign.Dialing_Campaign_Record_Type</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Yodle_Path_Touch_Point</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_CSC</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Charge_Failure</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Budget_Change</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Partner_40_Day</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Channel_Partner</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Call_Answering</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Closing_Script_Auto_Launch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Decision_Tree_Optimization</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Facebook_Post_For_You</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LBW_Content_Organic_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.YBN_Call_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.FS_Product_Feedback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Cancellation_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_Product_Feedback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.New_Client_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.O_Account_Update</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Outbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_Product_Feedback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Touch_Plan</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Service_Task_Setup</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Survey_Send</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Product_Ideas</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Renewals_and_Upsells</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Campaign.Standard_Campaign_Record_Type</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.SEO_Tasks</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Winback</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Campaign.Marketing_Campaign_Record_Type</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Comments__c.Comments</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Inbound_Inquiry</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Master_Case</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.XJenTest_No_Use</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.XJen_Test_COBRA</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Corporate_Interaction</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Product_Ideas</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contest__c.Events</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.YBN_Request</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Yodle_Gold_Service</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contact.YBN_IL_Contact_Type</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Partner_Inbound_Inquiry</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -3633,67 +4163,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Lead.Association</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contract.WBN_MSA</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
+        <recordType>Event.YBN_Client_Services_Event</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -3703,7 +4173,157 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Event.YBN_Client_Services_Event</recordType>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.CSC_Business_Customization_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contract.WBN_MSA</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lead.Association</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Touch_Plan_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.YBN_Corporate_Location_Event</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.WBN_Calendar_Blocker</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lead.Sales</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>National_Support_Request__c.Transition_Form</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lead.Affiliate</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Marketo_Email_Campaign__c.Template</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lead.CPP</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lead.WBN_Corporate_Lead</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Lead.WBN_Lead</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.YBN_Prospecting</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Notification_Log__c.WBN_Log</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Event.YBN_Sales_Event_IL</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Yodle_Path__c.Coaching_Call_4th_Attempt</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contest__c.master</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -3713,362 +4333,17 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Organic_Analysis__c.Google_Listing_Photo_Update</recordType>
+        <recordType>Customer_Surveys__c.Issue_Resolution</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Task.Sales_Manager_Cadence</recordType>
+        <recordType>Contract.WBN_Amendment</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Opportunity.YBN_Initial_Transaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Corporate_Relationship</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Client_Services</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.Standard</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Individual_Location</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Sales_IL</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.Services</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>SMS_Tracking__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.Network_Communications_Portal</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.Executive_Sponsor_Activity</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Prospecting_Task</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Survey__c.Issue_Resolution</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>OPT_Process_Request__c.Organic_Process_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contract.Service_Agreement</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Network_Optimization__c.Performance_Analysis</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Sales_Corporate</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Setup_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan__c.Template</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Coaching_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan_Section_Field__c.String</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan_Section_Field__c.Number</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan_Section_Field__c.Boolean</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Worksheets__c.MLS_Worksheet</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Interaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Touchplan_Section_Field__c.Date_Time</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Channel_Partner</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Business_Development</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.YBN_Renewal</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.YBN_Individual_Location</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>OPT_Process_Request__c.Production_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Objection__c.Objection</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.CPP_Initial_Transaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.YBN_Professional_Services</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Task.Interaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Underperforming</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Canda_Maps_Claiming</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Prize_Winner__c.master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Reactivation</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Prize_Winner__c.President_s_Club</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.IT_Pro_QA</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contract.Biz_Dev_Agreement</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Organic_Optimization_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Partner_Inbound_Inquiry</recordType>
+        <recordType>Marketo_Email_Campaign__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -4078,902 +4353,431 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form</recordType>
+        <recordType>Event.YBN_Sales_Event_Corporate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
+        <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Owner_Verified</recordType>
+        <recordType>MLS__c.MLS</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Maps_PIN_Collection</recordType>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</recordType>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming_Test</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
+        <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
+        <recordType>Custom_Report_Hierarchy__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
+        <recordType>National_Support_Request__c.Initiation_Form</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
+        <recordType>National_Support_Request__c.New_Initiation_Form</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.PIN_Collection</recordType>
+        <recordType>National_Support_Request__c.Pre_Sale_Questions</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
+        <recordType>National_Support_Request__c.Proposal_Contract_Review_for_Existing</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
+        <recordType>Marketo_Email_Campaign__c.Hourly_Template</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Inbound_Call</recordType>
+        <recordType>Organic_Analysis__c.Google_Listing_Photo_Update</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Maps_Owner_Verified</recordType>
+        <recordType>Event.YBN_Individual_Location_Event</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Live_Chat</recordType>
+        <recordType>Opportunity.YBN_Initial_Transaction</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
+        <recordType>Organic_Analysis__c.Organic_Optimization_SEO_Ops</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Rogers_National_Account</recordType>
+        <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Collections_Call</recordType>
+        <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
+        <recordType>Task.YBN_Professional_Services</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
+        <recordType>Opportunity.CPP_Initial_Transaction</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms</recordType>
+        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
+        <recordType>Task.Interaction</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</recordType>
+        <recordType>Objection__c.Objection</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
+        <recordType>OPT_Process_Request__c.Production_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Blank_for_Email_Catch_All</recordType>
+        <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Partner_Master_Account</recordType>
+        <recordType>Opportunity.YBN_Individual_Location</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.CSC_Call_Grading</recordType>
+        <recordType>Opportunity.YBN_Renewal</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
+        <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
+        <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Email</recordType>
+        <recordType>Offering_to_Vertical_Map__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
+        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.QA_Audit</recordType>
+        <recordType>Organic_Analysis__c.Organic_Optimization</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
+        <recordType>Organic_Analysis__c.Underperforming</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.National_Audit</recordType>
+        <recordType>Task.Sales_Manager_Cadence</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.LH_Master_Account</recordType>
+        <recordType>Customer_Surveys__c.Exit_Survey</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Administrative_Items</recordType>
+        <recordType>Organic_Analysis__c.Maps_Initial_Claiming</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.Website_Audit</recordType>
+        <recordType>Custom_Automation__c.Account_Automation_Save_Mode</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CTS_Error_Log__c.POST_CTS_Request_Log</recordType>
+        <recordType>Organic_Analysis__c.Organic_Optimization_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.CS_Nomination_Form</recordType>
+        <recordType>Contract.Biz_Dev_Agreement</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Yodle_Path_Experience</recordType>
+        <recordType>Organic_Analysis__c.YO_Initial_Error_Check</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Test_Operations_Request</recordType>
+        <recordType>Organic_Analysis__c.PIN_Action_Needed</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Multi_Location_Parent</recordType>
+        <recordType>Prize_Winner__c.President_s_Club</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Business_Development</recordType>
+        <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Affiliate</recordType>
+        <recordType>Performance_Analysis__c.Auto_Performance_Insights</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Standard</recordType>
+        <recordType>Organic_Analysis__c.Reactivation</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_20_Day</recordType>
+        <recordType>Prize_Winner__c.master</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.YBN_Strategic_Partner_Account</recordType>
+        <recordType>Organic_Analysis__c.Canda_Maps_Claiming</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.YBN_Corporate_Relationship</recordType>
+        <recordType>Organic_Analysis__c.IT_Pro_QA</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Contract.Amendments</recordType>
+        <recordType>Opportunity.Business_Development</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
+        <recordType>Customer_Surveys__c.TEST_Pooled_CSC</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
+        <recordType>Quality_Case__c.Local_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.SF_Process_Change_Reporting</recordType>
+        <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Upsell_Tracking</recordType>
+        <recordType>Task.YBN_Prospecting_Task</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Contact.Partner_Contact</recordType>
+        <recordType>Task.Executive_Sponsor_Activity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account_MLS__c.Account_MLS</recordType>
+        <recordType>Task.Network_Communications_Portal</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
+        <recordType>SMS_Tracking__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Weekly_Reports_Assistance</recordType>
+        <recordType>Service_Audit__c.Inbound_Call_Audit</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Batch_Uploads</recordType>
+        <recordType>Survey__c.Issue_Resolution</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
+        <recordType>Task.Services</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Answering__c.Call_Answering</recordType>
+        <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Strategic_Account_Growth_Addition</recordType>
+        <recordType>Task.YBN_Individual_Location</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
+        <recordType>Task.Standard</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
+        <recordType>Task.YBN_Client_Services</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Operation_Upsell_Additions</recordType>
+        <recordType>Task.YBN_Corporate_Relationship</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.National_Project_Request</recordType>
+        <recordType>Opportunity.Channel_Partner</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>CS_Operations__c.Future_Deactivation_Request</recordType>
+        <recordType>Task.YBN_Sales_IL</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
+        <recordType>OPT_Process_Request__c.Organic_Process_Request</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Soft_Skills_Breakdown</recordType>
+        <recordType>Services_Offered_Vertical__c.Services_Vertical_Master</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Best_Practice_Evaluation__c.Optimization_Review</recordType>
+        <recordType>Yodle_Path__c.Setup_Call_4th_Attempt</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.LH_Master</recordType>
+        <recordType>Touchplan_Section_Field__c.Date_Time</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_70_Day</recordType>
+        <recordType>Touchplan__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Campaign.Standard_Campaign_Record_Type</recordType>
+        <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Renewals_and_Upsells</recordType>
+        <recordType>Yodle_Path__c.Touch_Plan_1</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Product_Ideas</recordType>
+        <recordType>Task.YBN_Interaction</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Survey_Send</recordType>
+        <recordType>Touchplan_Section_Field__c.Boolean</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Service_Task_Setup</recordType>
+        <recordType>Touchplan_Section_Field__c.Number</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
+        <recordType>Worksheets__c.MLS_Worksheet</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.SEO_Tasks</recordType>
+        <recordType>Yodle_Path__c.Coaching_Call</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Touch_Plan</recordType>
+        <recordType>Touchplan__c.Template</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.LS_ATV_Organic_Setup</recordType>
+        <recordType>Yodle_Path__c.Setup_Call</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.LH_Product_Feedback</recordType>
+        <recordType>Task.YBN_Sales_Corporate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.Outbound_Call</recordType>
+        <recordType>Network_Optimization__c.Performance_Analysis</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.O_Account_Update</recordType>
+        <recordType>Contract.Service_Agreement</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Case.New_Client_Setup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Master</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Winback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Corporate_Interaction</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Campaign.Marketing_Campaign_Record_Type</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Yodle_Gold_Service</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contest__c.Events</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.XJen_Test_NCS_No_Use</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Contact.YBN_IL_Contact_Type</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Product_Ideas</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Outbound_Touch_Point</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.XJen_Test_COBRA</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.XJenTest_No_Use</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Master_Case</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.YBN_Inbound_Inquiry</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Comments__c.Comments</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.TORCHx_Product_Feedback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Campaign.Dialing_Campaign_Record_Type</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Yodle_Path_Setup_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Yodle_Path_Coaching_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.x70_Day</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.x40_Day</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.x20_Day</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_CSC_Engage</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Save_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_Setup_Completion_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_Save_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_Inbound_Call</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Performance_Issue</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Test</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Yodle_Path_Touch_Point</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Channel_Partner</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_CSC</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.YBN_Call_Form</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.LBW_Content_Organic_Setup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Facebook_Post_For_You</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Decision_Tree_Optimization</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.FS_Product_Feedback</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Call_Answering</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Forms__c.Partner_40_Day</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Budget_Change</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Charge_Failure</recordType>
+        <recordType>Touchplan_Section_Field__c.String</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>standard-Contact</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Worksheets__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>MLS__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Account</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-CollaborationGroup</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Asset</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Campaign</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Segment_Optimization_Case_Assignment__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Partner_Name__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-ServiceContract</tab>
-        <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Service_Audit__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Segment__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Scheduled_Data_Pull_from_YL_to_SF__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>SMS_Tracking__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>CS_Operations__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Scorecard</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Touchplan__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Partner_Pop_up_Ad__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Macro</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Solution</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>tz__Local_Time_Error_Log__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>SFDCToCTSAsynchRequest__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Contract</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Product2</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Pricebook2</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-StreamingChannel</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Opportunity</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>zzContract__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Entitlement</tab>
-        <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-DuplicateRecordSet</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Dashboard</tab>
-        <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-QuickText</tab>
-        <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Document</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Quality_Case__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Lead</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Custom_Automation__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-UserProfile</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>CTS_Error_Log__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>OPT_Process_Request__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>CorpSDR_Demo_Questionaire__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Cancellation_Request__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>EmailSubscription__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>EntityFieldHistoryArchive__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Call_Answering__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Promotion__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>CPP_Lead_Registration__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Account_MLS__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Account_Marketo_Activity__c</tab>
+        <tab>Call_Grading_Forms__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -4981,11 +4785,7 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Attempts_Made__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Best_Practice_Evaluation__c</tab>
+        <tab>standard-Case</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -4993,11 +4793,43 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-Case</tab>
+        <tab>Best_Practice_Evaluation__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Call_Grading_Forms__c</tab>
+        <tab>Attempts_Made__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Account_Marketo_Activity__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>EmailSubscription__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CPP_Lead_Registration__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Promotion__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Call_Answering__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>EntityFieldHistoryArchive__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Cancellation_Request__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CorpSDR_Demo_Questionaire__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -5005,63 +4837,11 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Account_MLS__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>MLS_Name__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Customer_Surveys__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Custom_Report_Hierarchy__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>National_Support_Request__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Organic_Analysis__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Offering_to_Vertical_Map__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Objection__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ObjectHistory__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Performance_Analysis__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Partner_Community_HTML__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Call_Quality_Concern__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Marketo_Email_Campaign__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Field_Trip__Object_Analysis__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Marketo_Campaign__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Fulfillment__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -5069,11 +4849,7 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Lighthouse_Worksheets__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Google_Location_Group__c</tab>
+        <tab>Custom_Report_Hierarchy__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -5081,7 +4857,231 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Google_Location_Group__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Lighthouse_Worksheets__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>OPT_Process_Request__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Fulfillment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Marketo_Campaign__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Field_Trip__Object_Analysis__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Customer_Surveys__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Marketo_Email_Campaign__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Partner_Community_HTML__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Performance_Analysis__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ObjectHistory__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Objection__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Offering_to_Vertical_Map__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Organic_Analysis__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>National_Support_Request__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Call_Quality_Concern__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CTS_Error_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SFDCToCTSAsynchRequest__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Custom_Automation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CS_Operations__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SMS_Tracking__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Scheduled_Data_Pull_from_YL_to_SF__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Segment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Service_Audit__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ServiceContract</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Scorecard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Partner_Name__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Campaign</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Asset</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Account</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MLS__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Worksheets__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Contact</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Activity_Type__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Segment_Optimization_Case_Assignment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-UserProfile</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Touchplan__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Macro</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Lead</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Quality_Case__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Document</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-QuickText</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Dashboard</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DuplicateRecordSet</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Partner_Pop_up_Ad__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Entitlement</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Opportunity</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-StreamingChannel</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Pricebook2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Product2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Contract</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>tz__Local_Time_Error_Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Solution</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>zzContract__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CollaborationGroup</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>
