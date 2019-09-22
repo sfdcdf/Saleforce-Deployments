@@ -112,5 +112,15 @@
         <label><!-- Required --></label>
         <name>Field_Trip__isRequired__c</name>
     </fields>
-    
+    <layouts>
+        <layout>Field Analysis Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Population Density --></label>
+            <section>Population Density</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>
