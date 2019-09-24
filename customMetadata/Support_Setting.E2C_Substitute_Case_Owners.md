@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">It defines a set of Email address and referenced by Apex Class EmailToCaseManager. If an EmailMessage&apos;s toAddress falls into the group of emails, Apex code will use this toAddress to find the most relevant Contact Id for Case</value>
     </values>
     <values>
         <field>ValueNum__c</field>
@@ -20,6 +20,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">dwyerbrandsupport@yodle.com,miracle-earsupport@yodle.com,twomensupport@yodle.com,ybnpremiumplussupport@yodle.com,ybnpremiumsupport@yodle.com,nationalclientsupport@yodle.com,jciwebsites@yodle.com,facebookadssupport@yodle.com</value>
+        <value xsi:type="xsd:string">facebookadssupport@yodle.com</value>
     </values>
 </CustomMetadata>

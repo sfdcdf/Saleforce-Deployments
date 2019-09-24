@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">It defines a set of domain names and referenced by Apex Class YodleUtilities. If any emails sent from the pre-defined domains, Email-To-Case shouldn&apos;t be created</value>
     </values>
     <values>
         <field>ValueNum__c</field>
