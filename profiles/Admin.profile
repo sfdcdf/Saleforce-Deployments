@@ -41411,7 +41411,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.YBN_Client_Services</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -41920,6 +41920,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Task.Interaction</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -42001,12 +42002,12 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.YBN_Professional_Services</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.YBN_Interaction</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
@@ -42116,7 +42117,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.Sales_Manager_Cadence</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Google_Location_Group__c</tab>
