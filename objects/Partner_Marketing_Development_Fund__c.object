@@ -481,7 +481,7 @@
     </listViews>
     <validationRules>
         <fullName>Other_Activity_Validation</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>ISPICKVAL( Type_of_Activity__c , "Other") &amp;&amp; ISBLANK( Other_Activity__c )</errorConditionFormula>
         <errorDisplayField>Other_Activity__c</errorDisplayField>
         <errorMessage>Other Activity field is required if Other is the selected Type of Activity value!</errorMessage>

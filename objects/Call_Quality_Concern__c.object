@@ -1388,7 +1388,7 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
     </listViews>
     <validationRules>
         <fullName>Blacklist_Number_Must_Be_Numbers</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 NOT (ISBLANK( Numbers_to_be_blacklisted__c )),
 NOT(ISNUMBER( Numbers_to_be_blacklisted__c )))</errorConditionFormula>
@@ -1397,14 +1397,14 @@ NOT(ISNUMBER( Numbers_to_be_blacklisted__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Blacklist_Number_Must_Be_only_11</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>IF( LEN( Numbers_to_be_blacklisted__c ) &gt;11, true, false)</errorConditionFormula>
         <errorDisplayField>Numbers_to_be_blacklisted__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Blacklist Number fields. Please edit accordingly.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Escalated_Priority_Needs_Approval</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 OR(
 Escalated__c=False,
@@ -1414,7 +1414,7 @@ ISPICKVAL( Priority__c,"Escalated"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Notes_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must enter the notes field if you select "multiple lines same issue", "multiple lines different issue"  or "Other".</description>
         <errorConditionFormula>and(
 ISBLANK( Notes__c),
@@ -1437,21 +1437,21 @@ isblank(Numbers_to_be_blacklisted__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Tracking_Number_Must_Be_Numbers</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>NOT(ISNUMBER( Tracking_Number__c ))</errorConditionFormula>
         <errorDisplayField>Tracking_Number__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Tracking Number fields. Please edit accordingly.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Tracking_Number_Must_Be_only_11</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>IF( LEN( Tracking_Number__c ) &gt;11, true, false)</errorConditionFormula>
         <errorDisplayField>Tracking_Number__c</errorDisplayField>
         <errorMessage>Only numbers should be entered into the Tracking Number fields. Please edit accordingly.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Wrong_ServiceWrong_Business_Must_Enter</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you indicate that the clients are calling for one business, you must enter what business the callers are actually calling for.</description>
         <errorConditionFormula>and(
  ispickval (Calls_for_Wrong_Business__c , "Are Many of the Calls for the Same Business"),

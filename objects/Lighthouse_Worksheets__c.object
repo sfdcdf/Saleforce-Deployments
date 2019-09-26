@@ -55394,7 +55394,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
     </recordTypes>
     <validationRules>
         <fullName>Account_Settings_must_fill_out_Test_Appt</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
 ISBLANK(Test_Appointments_Scheduled_1_mo_out__c),
 OR(
@@ -55412,7 +55412,7 @@ NOT(ISPICKVAL(Spanish_Alert_Field__c ,""))
     </validationRules>
     <validationRules>
         <fullName>Activate_Messages_on_Specific_Date</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you select that the customer would like to activate messages on a specific date, you need to enter the requested message activation date</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Go_Live__c , "On a specific date"),
@@ -55421,7 +55421,7 @@ ISBLANK( Go_Live_Date__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Admin_Portal_Verifications_MA</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to Messages Activated, you must complete the required tasks in the Admin Portal Verifications section</description>
         <errorConditionFormula>AND( 
 ISPICKVAL (Status__c , "Messages Activated"),
@@ -55446,7 +55446,7 @@ NOT(INCLUDES( Admin_Portal_Verifications__c , "Verify Survey MGR Settings")))))<
     </validationRules>
     <validationRules>
         <fullName>CSC_Recap_Email_Needed_Items</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Very Important section and message/consumable preferences prior to moving the CW into MA-1 Ready, MA-2 Pending Review or MA-4 Pending Input</description>
         <errorConditionFormula>AND(
 
@@ -55499,7 +55499,7 @@ ISBLANK( Portal_Username__c ))
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Birthday_Messages</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Birthday Messages section in order to move the CW into MA-1 Ready, MA-2 Pending Review or MA-4 Pending Input</description>
         <errorConditionFormula>AND(
 
@@ -55526,7 +55526,7 @@ ISPICKVAL(Activate_Birthday_Msgs__c , ""))
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_MA_Very_Important</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Message Activation and Very Important sections in order to move the CW into MA-1 Ready or MA-2 Pending Review</description>
         <errorConditionFormula>AND(
 
@@ -55543,7 +55543,7 @@ ISPICKVAL( Go_Live__c  ,"")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Newsletters_Feedback</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Newsletters and Feedback sections in order to move the CW into MA-1 Ready, MA-2 Pending Review or MA-4 Pending Input</description>
         <errorConditionFormula>AND(
 
@@ -55563,7 +55563,7 @@ ISPICKVAL(  Feedback_Settings__c  ,"")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Office_Info</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Office Information section in order to move the CW into MA-1 Ready or MA-2 Pending Review</description>
         <errorConditionFormula>AND(
 
@@ -55585,7 +55585,7 @@ ISPICKVAL(PMS__c,""))
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_PMS_Specifics</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the coordinating PMS fields in order to move the CW into MA-1 Ready or MA-2 Pending Review</description>
         <errorConditionFormula>AND(
 
@@ -55614,7 +55614,7 @@ ISBLANK(  Easy_Dental_Details__c  ))
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_PMS_Specifics_XLDent</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the coordinating PMS fields in order to move the CW into Messages Activated</description>
         <errorConditionFormula>AND(
 
@@ -55627,7 +55627,7 @@ ISBLANK(  XL_Dent_Details__c  )
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Reactivation_Letters</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Reactivation Letters section in order to move the CW into MA-1 Ready, MA-2 Pending Review or MA-4 Pending Input</description>
         <errorConditionFormula>AND(
 
@@ -55645,7 +55645,7 @@ ISPICKVAL(  Activate_Reactivation_Letters__c  ,""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Recall_Follow_Up_Details</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Recall/Follow Up Details section in order to move the CW into MA-1 Ready or MA-2 Pending Review</description>
         <errorConditionFormula>AND(
 
@@ -55674,7 +55674,7 @@ ISPICKVAL(Change_Coming_Due_Weeks_Text__c,""))))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Recall_Issue</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Recall Issue Identification section in order to move the CW into MA-1 Ready or MA-2 Pending Review</description>
         <errorConditionFormula>AND(
 
@@ -55689,7 +55689,7 @@ ISPICKVAL( Check_for_Recall_Issues__c ,""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Treatment_Plans</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Treatment Plans section in order to move the CW into MA-1 Ready or MA-2 Pending Review</description>
         <errorConditionFormula>AND(
 RecordType.Name = "CSC Worksheet - Dental", 
@@ -55709,7 +55709,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,""))
     </validationRules>
     <validationRules>
         <fullName>CS_to_Check_QA_Notes_Review_before_Confg</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to ready for config (MA-1 Ready, MA-2 Pending Review), CS needs to check the QA Notes Reviewed by CS checkbox</description>
         <errorConditionFormula>AND(
 OR(
@@ -55721,7 +55721,7 @@ OR(
     </validationRules>
     <validationRules>
         <fullName>Cancellation_Verbiage_field_must_be_fill</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
 ISBLANK( Cancellation_Verbiage_Include_EM_and_SS__c),
  Appt_Cancellation_Note_on_Emails__c  = TRUE
@@ -55731,7 +55731,7 @@ ISBLANK( Cancellation_Verbiage_Include_EM_and_SS__c),
     </validationRules>
     <validationRules>
         <fullName>Cannot_Put_in_MA_Date_if_MA_Didnt_Happen</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You cannot put in an MA Date if the Messages are not yet activated</description>
         <errorConditionFormula>AND(
 NOT(ISPICKVAL( Status__c ,"Messages Activated")),
@@ -55740,7 +55740,7 @@ NOT(ISBLANK( MA_Date__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Dentrix_Account_Number_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 RecordType.Name ="Installation Worksheet",
 ISPICKVAL( PMS__c , "Dentrix"),
@@ -55756,7 +55756,7 @@ ISPICKVAL( Status__c , "Complete")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Either_Basic_or_Customizations</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>When selecting items for Config Difficulty, it can either be Basic OR have the other elements - you cannot select Basic and other options</description>
         <errorConditionFormula>AND(
 INCLUDES( Config_Difficulty__c ,"Basic"),
@@ -55770,7 +55770,7 @@ INCLUDES( Config_Difficulty__c ,"Multi-location Split")))</errorConditionFormula
     </validationRules>
     <validationRules>
         <fullName>Escalated_to_Bolt_On_IW</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>For Bolt On installations, you must note whether or not you escalated to Bolt On for assistance</description>
         <errorConditionFormula>AND(
 CONTAINS(  LH_Package__c  , "Pro Pack"),
@@ -55780,7 +55780,7 @@ ISPICKVAL ( Status__c ,"Post Install Ready"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Existing_IDs_of_Multiple_Offices</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If a customer has multiple locations, please add the Yodle ID(s) of any current customers to the "Yodle IDs of Existing Locations" field. If they do not have any additional locations currently on board with us, please put None.</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Multiple_Offices__c,"Yes"),
@@ -55798,7 +55798,7 @@ ISBLANK( Yodle_IDs_of_Existing_Locations__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Fill_out_Install_Completed_Date</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must fill out the Install Completed Date in order to move the IW into Post Install Ready or Complete</description>
         <errorConditionFormula>AND(
  RecordType.Name = "Installation Worksheet",
@@ -55810,7 +55810,7 @@ ISPICKVAL( Status__c ,"Complete")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Final_Message_Activation_QA</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to Messages Activated, you must complete the required tasks in the Final Message Activation QA section</description>
         <errorConditionFormula>AND( 
 ISPICKVAL (Status__c , "Messages Activated"), 
@@ -55853,7 +55853,7 @@ NOT(INCLUDES( Final_Transports__c , "PC Smart Health")))))</errorConditionFormul
     </validationRules>
     <validationRules>
         <fullName>IW_Cannot_be_Stalled_Completed</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You cannot move an Install to Stalled if the Install Completed Date is filled out. Please remove this data and update to Stalled, or move to the proper status.</description>
         <errorConditionFormula>AND(
   RecordType.Name ="Installation Worksheet",
@@ -55863,7 +55863,7 @@ NOT(ISBLANK( Install_Date__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Install_Rep_Cannot_Schedule_Same_Day_CSC</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Same day CSCs are not permitted. Please select a date in the future.</description>
         <errorConditionFormula>AND( 
 OR(
@@ -55876,7 +55876,7 @@ CSC_Date__c = TODAY())</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Message_Activation_Email_Needed_Items</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must complete the Message Activation Email section prior to moving the CW into Messages Activated</description>
         <errorConditionFormula>AND( 
 
@@ -55947,7 +55947,7 @@ NOT(INCLUDES( What_Birthday_Greetings_were_Activated__c ,"None")))))))</errorCon
     </validationRules>
     <validationRules>
         <fullName>Must_Fill_Out_QA_Rep_QA_Date</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to Messages Activated, you need to fill out the QA Rep and QA Date</description>
         <errorConditionFormula>AND(
  ISPICKVAL (Status__c , "Messages Activated"),
@@ -55959,7 +55959,7 @@ ISBLANK(  QA_Date__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Must_Fill_out_Additional_Time_for_Auto</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Whenever completing an Auto Install, you must complete the Additional Time field, even if its 0</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c ,"Post Install Ready"),
@@ -55969,7 +55969,7 @@ ISBLANK( Additional_Time__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Must_Include_Reason_for_Pending_Input</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>When moving a CW into MA-4 Pending Input, you must include notes in the Pending Input Status Reason field</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c ,"MA-4 Pending Input"),
@@ -55978,7 +55978,7 @@ ISBLANK( Pending_Input_Status_Reason__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Must_Select_Hardware_For_Auto</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Whenever completing an Auto Install, you must select their Hardware needs</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c ,"Post Install Ready"),
@@ -56001,7 +56001,7 @@ ISPICKVAL(  Hardware_Needed_from_Bolt_On__c,""  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Name_Announcement_Required_for_AutoCalls</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you select that the customer would like OBC, you need to fill out Name Announcement</description>
         <errorConditionFormula>AND(
 CONTAINS( RecordType.Name , "CSC Worksheet"), 
@@ -56011,7 +56011,7 @@ ISBLANK(  Name_Announcement__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Need_to_fill_out_Config_Difficulty_MA</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You need to fill out the Config Difficulty field under Final Message Activation QA when moving to Messages Activated</description>
         <errorConditionFormula>AND(
 ISNULL( Config_Difficulty__c ),
@@ -56020,7 +56020,7 @@ ISNULL( Config_Difficulty__c ),
     </validationRules>
     <validationRules>
         <fullName>Notes_Needed_Message_Activation_Unsure</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you select that the customer is not sure when they would like to activate messages, you need to enter details in the Message Activation Notes field.</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Go_Live__c , "Not Sure (see notes)"),
@@ -56029,7 +56029,7 @@ ISBLANK(  Go_Live_Notes__c  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Notes_Needed_for_Issues_Pending_Resoluti</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You need to include Recall Issue Notes when the Recall Issue is Pending Resolution by the Config Team</description>
         <errorConditionFormula>AND(
 ISPICKVAL(  Addressed_Issues__c ,"Issue Pending Resolution - Config Team"),
@@ -56039,7 +56039,7 @@ ISBLANK( Recall_Issue_Notes__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>OOS_Investigate_Details_Must_be_filled</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 RecordTypeId = "012600000009cWo",
  Investigate__c =TRUE,
@@ -56049,7 +56049,7 @@ RecordTypeId = "012600000009cWo",
     </validationRules>
     <validationRules>
         <fullName>Portal_Verifications_Messages_Activated</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to Messages Activated, you must complete the required tasks in the Portal Verifications section</description>
         <errorConditionFormula>OR(
 
@@ -56105,7 +56105,7 @@ NOT(INCLUDES( Portal_Verifications__c , "Verify Message Schedule"))))
     </validationRules>
     <validationRules>
         <fullName>Pre_CSC_QA_Check</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
  $Profile.Name &lt;&gt; "Production",
 OR(
@@ -56121,7 +56121,7 @@ AND( INCLUDES( Pre_CSC_QA_Checklist__c, "Other Issues"), ISBLANK(  Pre_CSC_QA_Ot
     </validationRules>
     <validationRules>
         <fullName>Remote_GUI_Items_for_Message_Activation</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to Messages Activated, you must complete the required tasks in the Remote GUI Items to Check section</description>
         <errorConditionFormula>OR(
 
@@ -56180,7 +56180,7 @@ NOT(INCLUDES( Remote_GUI_Items_to_Check__c , "Verify Sync Hours"         ))))
     </validationRules>
     <validationRules>
         <fullName>Stall_Reason_Required_if_Status_is_Stall</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must select a Stall Reason if the status is Stalled or Backed Out Sale</description>
         <errorConditionFormula>AND(
 
@@ -56194,7 +56194,7 @@ ISPICKVAL( Stall_Reason__c ,""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Start_Date_Required_for_Postcards</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you select that the customer would like postcards, you need to select a start date</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Postcards__c , "Yes"),
@@ -56203,7 +56203,7 @@ ISBLANK(  Start_for_Appts_On__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Turn_On_Later_Date</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you are turning on Postcards, Recall and/or OBC at a later date, you must create a SF Case for Delayed Consumables Turn On</description>
         <errorConditionFormula>AND(
 Created_SF_Case_for_Delayed_Turn_On__c = FALSE,
@@ -56216,7 +56216,7 @@ NOT(ISBLANK(  Date_to_Turn_On_OBC__c ))))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>WebUI_Verifications_Messages_Activated</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Before changing the status to Messages Activated, you must complete the required tasks in the WebUI Verifications section</description>
         <errorConditionFormula>OR(
 
@@ -56251,7 +56251,7 @@ NOT(INCLUDES(  Config_Prep__c  , "Verify STC Days"))))
     </validationRules>
     <validationRules>
         <fullName>Acct_Segment_Must_Match_CW_Segment</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must select the proper CW type for the Account Segment - please change to the proper segment</description>
         <errorConditionFormula>OR(
 
@@ -56274,7 +56274,7 @@ AND(
     </validationRules>
     <validationRules>
         <fullName>CSC_Worksheet_Multi_Location_Restriction</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
  NOT($Permission.CSC_Worksheet_Multi_location_restriction_bypass),
  RecordType.DeveloperName = "CSC_Worksheet_Dental",
@@ -56293,7 +56293,7 @@ OR(
     </validationRules>
     <validationRules>
         <fullName>Cannot_Use_An_Install_Date_in_the_Past</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>When filling out the install completed date, you must use today's date</description>
         <errorConditionFormula>AND(
  RecordType.Name = "Installation Worksheet",
@@ -56304,7 +56304,7 @@ ISCHANGED( Install_Date__c ),
     </validationRules>
     <validationRules>
         <fullName>Cant_complete_IW_unless_specified_user</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>SOX Compliance requirement</description>
         <errorConditionFormula>AND( 
 RecordType.DeveloperName ="Installation_Worksheet",
@@ -56318,7 +56318,7 @@ ISPICKVAL( Status__c ,"Delete Case")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>IW_Cannot_Be_ReOpened_After_Complete</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Prohibits the IW from being re-opened after it's been Completed.</description>
         <errorConditionFormula>AND( 
 $User.Profile_Name__c &lt;&gt; "System Administrator", 
@@ -56329,7 +56329,7 @@ ISCHANGED(Status__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Lock_Install_Meeting_Notes_upon_Close</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>SOX Requirement</description>
         <errorConditionFormula>AND(
  $User.Profile_Name__c  &lt;&gt; "System Administrator",
@@ -56343,7 +56343,7 @@ ISCHANGED( Install_Meeting_Notes__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Must_Include_New_360_ID_Once_Complete</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must include the new 360 ID when completing a PMS Swap</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName = "PMS_Swap_Form",
@@ -56353,7 +56353,7 @@ ISBLANK( New_360_ID__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>OBC_329_Package</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Customers that are on per call pricing need to have their OBC Price set accordingly to $0.29/call.</description>
         <errorConditionFormula>AND (
 CONTAINS(Install_Meeting_Notes__c, "Per Call"),
@@ -56364,7 +56364,7 @@ RecordType.DeveloperName ="CSC_Worksheet_Dental")</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>OOS_Category_cant_be_blank_when_complete</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND( 
 RecordType.DeveloperName ="LH_OOS",
  ISPICKVAL(OOS_Category__c,""),
@@ -56374,7 +56374,7 @@ RecordType.DeveloperName ="LH_OOS",
     </validationRules>
     <validationRules>
         <fullName>PreCSC_QA_Check_blank_to_send_to_config</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 not(ISBLANK( Pre_CSC_QA_Checklist__c )),
 ($UserRole.DeveloperName ="Lighthouse_CSC_Rep"),
@@ -56386,7 +56386,7 @@ ISPICKVAL (Status__c , "MA-2 Pending Review")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>QA_Feedback_must_be_filled_out</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 RecordType.DeveloperName ="Installation_Worksheet",
 Quality_Issues_Found__c=TRUE,

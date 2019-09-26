@@ -425,10 +425,9 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
     </fields>
   <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
   <enableFeeds>false</enableFeeds>
-
     <validationRules>
         <fullName>YBN_Contract_Length_Must_Be_Greater_0</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 Opportunity.RecordTypeId &lt;&gt; "012600000009YRT",
 OR( 

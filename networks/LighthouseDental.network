@@ -25,6 +25,22 @@
     <enableUpDownVote>false</enableUpDownVote>
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <navigationLinkSet>
+        <navigationMenuItem>
+            <label>Topic</label>
+            <position>1</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <target>ShowMoreTopics</target>
+            <type>NavigationalTopic</type>
+        </navigationMenuItem>
+        <navigationMenuItem>
+            <label>Message</label>
+            <position>2</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <target>/</target>
+            <type>InternalLink</type>
+        </navigationMenuItem>
+    </navigationLinkSet>
     <networkMemberGroups>
         <profile>system admin (custom)</profile>
         <profile>admin</profile>
