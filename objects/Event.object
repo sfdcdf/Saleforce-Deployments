@@ -9122,7 +9122,7 @@
     </recordTypes>
     <validationRules>
         <fullName>Activity_detail_must_be_filled_out</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And(
 ISPICKVAL(Milestone__c ,""),
 $User.Profile_Name__c &lt;&gt; "Local/Partner Performance", 
@@ -9138,7 +9138,7 @@ ispickval( Activity_Type__c ,"Internal YBN Activities"))))</errorConditionFormul
     </validationRules>
     <validationRules>
         <fullName>Issue_Resolution_Detail_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 ISPICKVAL( Milestone__c, "Issue Resolution" ), 
 ISPICKVAL(Status__c,"Completed"),  
@@ -9148,7 +9148,7 @@ ISblank( Issue_Resolution_Detail__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Issues_or_Concerns_Summary_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 (OR 
 (ISPICKVAL( Activity_Type__c, "Service Level Touch Points" ),(ISPICKVAL( Activity_Type__c, "Account Support" )))), 
@@ -9160,7 +9160,7 @@ ISblank( Summary_of_Issues_or_Concerns__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Issues_or_concerns_raised_required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 (OR 
 (ISPICKVAL( Activity_Type__c, "Service Level Touch Points" ),(ISPICKVAL( Activity_Type__c, "Account Support" )))), 
@@ -9171,7 +9171,7 @@ ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Time_To_Complete_Activity_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
 (ISPICKVAL( Activity_Type__c, "Account Support" )), 
 (ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )), 
@@ -9181,7 +9181,7 @@ isnull( Time_To_Complete_Activity_Minutes__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>activity_detail</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And(
 $User.Profile_Name__c &lt;&gt; "Local/Partner Performance",
 ispickval( Status__c , "Completed"),
@@ -9200,7 +9200,7 @@ ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>ybn_description_field_mus_be_filled_out</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
 (ISPICKVAL( Activity_Type__c, "Account Support" )), 
 (ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )), 

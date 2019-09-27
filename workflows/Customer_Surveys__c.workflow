@@ -112,7 +112,7 @@
             <name>BCF_Status</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -127,7 +127,7 @@
             <name>Case_Created_By</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
             <operation>contains</operation>
@@ -142,7 +142,7 @@
             <name>Customer_Survey_Account_Product_Type</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Account_Product_Type__c</field>
             <operation>equals</operation>
@@ -156,7 +156,7 @@
             <name>Days_Since_Live_at_Creation_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.RecordTypeId</field>
             <operation>notEqual</operation>
@@ -170,7 +170,7 @@
             <name>Fill_Out_Email_from_Account</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -193,7 +193,7 @@
             <name>Update_Owner_to_LHSuppport_Austin</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11</booleanFilter>
         <criteriaItems>
             <field>Customer_Surveys__c.Issue_Survey_Wait_time_for_resolution__c</field>
@@ -261,7 +261,7 @@
             <name>Update_Owner_to_LHSuppport_Austin</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Issue_Survey_Wait_time_for_resolution__c</field>
             <operation>notEqual</operation>
@@ -324,7 +324,7 @@
             <name>LH_NPS_Survey_Product_Feedback</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <field>Customer_Surveys__c.RecordTypeId</field>
@@ -350,7 +350,7 @@
             <name>Lighthouse_Exit_Survey_Poor_Customer_Service</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
             <operation>contains</operation>
@@ -370,7 +370,7 @@
             <name>Transactional_25_55_Day_Call</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
             <operation>notEqual</operation>

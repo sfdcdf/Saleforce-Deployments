@@ -1628,7 +1628,7 @@ null)</formula>
     </recordTypes>
     <validationRules>
         <fullName>Require_Goal_Details_if_Select_Other</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Requires Goal Details to be filled out if Goal Of Process Change in Approval Section is Other</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Goal__c ,"Other"),
@@ -1639,7 +1639,7 @@ ISBLANK( Goal_Details__c )
     </validationRules>
     <validationRules>
         <fullName>Require_Goal_and_Meeting_Date</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Must fill out Approval Details - Goal of Process Change before moving to 'Channel Lead Approved - Pending OPT/MOPS Discussion'</description>
         <errorConditionFormula>AND(ISPICKVAL (Status__c ,"Channel Lead Approved - Pending OPT/MOPS Discussion"), 
 ISPICKVAL(  Goal__c  ,"")
@@ -1649,7 +1649,7 @@ ISPICKVAL(  Goal__c  ,"")
     </validationRules>
     <validationRules>
         <fullName>Require_Implementation_Details</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Must fill out Implementation Details before moving to "Completed"</description>
         <errorConditionFormula>AND(ISPICKVAL (Status__c ,"Completed"), 
 OR( 
@@ -1665,7 +1665,7 @@ ISNULL(  Implementation_Summary__c ))
     </validationRules>
     <validationRules>
         <fullName>Require_Roll_Out_Date_Goal</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(ISPICKVAL (Status__c ,"In Progress"),
 OR(
 ISNULL(  Agreed_Deadline_Date__c ),

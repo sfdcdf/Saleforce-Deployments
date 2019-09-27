@@ -18609,7 +18609,7 @@ ISPICKVAL( Do_they_use_CRM__c , "Yes"),
     </validationRules>
     <validationRules>
         <fullName>Initiation_Form_Manufacturer_Fields</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>and(
  Id = "012600000009U6q",
 ispickval ( National_Relationship_Type__c , "Manufacturer"),
@@ -18664,7 +18664,7 @@ ispickval(  Franchisee_Territories__c , "")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Initiation_Form_Stage_4_Impl_CRM</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Required fields when Status: Stage 4 - Implementation Plan is selected, do they use a CRM is yes</description>
         <errorConditionFormula>AND(
 RecordTypeId = "012600000009WvT",
@@ -18675,7 +18675,7 @@ ISBLANK( If_they_use_CRM_what_kind_and_how__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Initiation_Form_Stage_4_Impl_Requirement</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Required fields when Status: Stage 4 - Implementation Plan</description>
         <errorConditionFormula>AND(
 RecordTypeId = "012600000009WvT",
@@ -18686,7 +18686,7 @@ ISPICKVAL( Do_they_use_CRM__c , ""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Keyword_Scrape_Checkbox</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>this should not be able to be checked unless keyword to scrape &amp; rankings for all locations or subset are completed. If Subset of Locations is selected, you must fill out it's required fields as well.</description>
         <errorConditionFormula>AND(
  RecordTypeId = "012600000009WvT",
@@ -18699,7 +18699,7 @@ ISPICKVAL (  Rankings_for_all_locations_or_subset__c , "" )))</errorConditionFor
     </validationRules>
     <validationRules>
         <fullName>Marketing_Analysis_Fields_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>You must fill out the following Marketing Analysis section when requesting a Marketing Analysis Document.</description>
         <errorConditionFormula>and( 
 Id = "012600000009U6v",  
@@ -18712,7 +18712,7 @@ isblank (Market_1__c)))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Metro_Page_and_x3A_Prop_Creation_Status</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When MetroPage picklist is yes and Status is 3A - proposal creation, metropage recommendation is required</description>
         <errorConditionFormula>AND(
  RecordTypeId = "012600000009WvT",
@@ -18724,7 +18724,7 @@ ISBLANK( Metropage_Recommendation__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Needs_Assessment_DateTime_Req_at_Stage_1</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Needs assessment date/time is required at stage 1.</description>
         <errorConditionFormula>and(
 isnull( Needs_Assessment_Date_Time__c ),
@@ -18736,7 +18736,7 @@ not( ispickval( Status__c , "Stage 3 â€“ Proposal")),
     </validationRules>
     <validationRules>
         <fullName>Proposal_Contract_Review_submit_outofbox</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>On the Proposal or contract review of existing relationships, when marking yes for are there out of box requirements, you must fill in the describe out of box requirements text box.</description>
         <errorConditionFormula>and(
 ispickval( Are_there_out_of_box_requirements__c , "Yes"),
@@ -18747,7 +18747,7 @@ isblank ( Describe_out_of_box_requirements__c ),
     </validationRules>
     <validationRules>
         <fullName>Revised_Contract_Details</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Revised Contract Details is required when Stage 5A - Revised Contract Review is selected</description>
         <errorConditionFormula>AND(
 ISPICKVAL(  Sub_Status__c, "Revised Contract Review"),
@@ -18757,7 +18757,7 @@ ISBLANK( Revised_Contract_Details__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_2_Demo_Date</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 2 - Demo is selected, Demo Date must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18768,7 +18768,7 @@ ISNULL( Demo_Date__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_2_Demo_Specific_Services</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 2 - Demo is selected, specific services to highlight must be selected</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18779,7 +18779,7 @@ ISBLANK ( Specific_Services_to_highlight__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_2_Demo_What_Online_Efforts</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 2 - Demo is selected, What Online Efforts must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18790,7 +18790,7 @@ ISBLANK( What_online_marketing_efforts_are_in_use__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_2_Demo_Who_Hosts_and_Maintains</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 2 - Demo is selected, Who Hosts and Maintains must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18801,7 +18801,7 @@ ISPICKVAL(  Who_Hosts_Local_Sites__c, ""  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_Average_Order_Value</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, Average Orde Value must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18812,7 +18812,7 @@ ISBLANK( Average_Order_Value__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_CRM_What_Kind</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, If they use CRM, what kind and how must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18823,7 +18823,7 @@ ISBLANK(    If_they_use_CRM_what_kind_and_how__c  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_CV_Rate_from_lead</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, CV Rate from Lead to Sale must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18834,7 +18834,7 @@ ISBLANK(  Conversion_rate_from_lead_to_sale__c   ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_How_is_client_defining</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, How is Client Defining Success must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18845,7 +18845,7 @@ ISBLANK(  Prospect_defining_success__c  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_What_Online_Efforts</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, Do they use CRM if so what kind must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18856,7 +18856,7 @@ ISPICKVAL(  Do_they_use_CRM__c, ""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_Who_Created_Maintained</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, Who Created Maintained &amp; Owns Listings must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18867,7 +18867,7 @@ ISBLANK(   Who_created_maintained_owns_maps__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Prop_Est_Who_Would_Be_Providing</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Proposal Estimates is selected, Who Would be Providing Information for Each Location must be filled out</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT", 
@@ -18878,7 +18878,7 @@ ISPICKVAL(  Who_would_be_providing_information__c, ""  ))</errorConditionFormula
     </validationRules>
     <validationRules>
         <fullName>Stage_3_Submit_Proposal_for_Review</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Sub Status cannot be moved to Submit Proposal for Review unless fields are filled out.</description>
         <errorConditionFormula>AND( 
   RecordTypeId = "012600000009WvT", 
@@ -18892,7 +18892,7 @@ ISPICKVAL(  Who_would_be_providing_information__c, ""  ))</errorConditionFormula
     </validationRules>
     <validationRules>
         <fullName>Summary_of_Revised_ItemsStage_3Revised</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Stage 3 - Revised Proposal Review is selected as a status, Summary of Revised Items must be filled out.</description>
         <errorConditionFormula>AND( 
 RecordTypeId = "012600000009WvT",
@@ -18903,7 +18903,7 @@ ISBLANK( Summary_of_Revised_Items__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Technical_Review_Filled_out_When_Sub_Sta</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When sub status is moved to Technical Details, Technical Details - what is needed must be filled out.</description>
         <errorConditionFormula>and(
 ispickval( Sub_Status__c , "Technical Review"),
@@ -18913,7 +18913,7 @@ isblank( Technical_Review__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>When_Ranking_for_all_locations_or_Subset</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When Rankings for all locations or subset picklist is "subset", "subset of locations to rank" for is required</description>
         <errorConditionFormula>AND(
 RecordTypeId = "012600000009WvT",
@@ -18924,7 +18924,7 @@ ISBLANK( Subset_of_locations_to_rank_for__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>x3A_Proposal_Creation_Requirement</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If Status is 3A Proposal Creation, these fields are required.</description>
         <errorConditionFormula>AND(
  RecordTypeId = "012600000009WvT",

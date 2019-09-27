@@ -340,7 +340,7 @@
     </recordTypes>
     <validationRules>
         <fullName>Integration_Type_Other</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Other is selected as Type of Integration, complete the Other Type of Integration</description>
         <errorConditionFormula>INCLUDES(Type_of_Integration_s__c, "Other") &amp;&amp;
 ISBLANK(Other_Type_of_Integration__c)</errorConditionFormula>

@@ -15,7 +15,7 @@
             <name>Call_Quality_Concerns</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Call_Quality_Concern__c.Status__c</field>
             <operation>equals</operation>

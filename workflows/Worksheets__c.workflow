@@ -32,7 +32,7 @@
             <name>MLS_Worksheet_Subject</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -51,7 +51,7 @@
             <name>Populate_Client_s_Phone_Number</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Worksheets__c.Client_Phone_Number__c</field>
             <operation>equals</operation>
@@ -65,7 +65,7 @@
             <name>Update_Client_ID_Field</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Worksheets__c.Client_ID__c</field>
             <operation>equals</operation>

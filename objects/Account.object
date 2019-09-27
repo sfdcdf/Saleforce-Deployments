@@ -13692,6 +13692,7 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.FIRST_NAME</columns>
         <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>IMS_Rep__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
     </listViews>
@@ -57872,7 +57873,7 @@ not (ispickval (Channel_Development__c , "Berry Extended Segments"))))</errorCon
     </validationRules>
     <validationRules>
         <fullName>CPP_Account_Billing_Address_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(
  RecordType.DeveloperName='Partner_Master_Account',
   ISPICKVAL(Parent_Opportunity__r.StageName ,"closed won"),
@@ -57895,7 +57896,7 @@ isblank( Date_Rogers_Payment_Received__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>LBW_Next_Scheduled_Touchpoint</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Next Scheduled Touchpoint must be greater than Days Since Live + 29 days</description>
         <errorConditionFormula>DATEVALUE(Next_Scheduled_Touchpoint__c) &lt; (Live_Date__c + 29) &amp;&amp; OR(Product_Type_Transactional__c == 'Leads By Web', Product_Type_Transactional__c == 'Lead Stream ATV')</errorConditionFormula>
         <errorDisplayField>Next_Scheduled_Touchpoint__c</errorDisplayField>
@@ -57913,7 +57914,7 @@ ISPICKVAL( Disposition__c,""),
     </validationRules>
     <validationRules>
         <fullName>PV_Account_needs_initiation_date</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(
  Preferred_Vendor__c =TRUE,
   ISBLANK(PV_Initiation_Date__c )
@@ -57932,7 +57933,7 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
     </validationRules>
     <validationRules>
         <fullName>WBN_Permission_Change_Master_Service</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Who can change Master</description>
         <errorConditionFormula>AND 
 (
@@ -57944,7 +57945,7 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
     </validationRules>
     <validationRules>
         <fullName>YBN_Hold_Status_Date_Required_Active</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When the "Account Hold Status" is populated, the "Hold Status Date" field is required on certain values.</description>
         <errorConditionFormula>AND(
   ISPICKVAL(Client_Type__c, "YBN"),
@@ -57961,7 +57962,7 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
     </validationRules>
     <validationRules>
         <fullName>YBN_Type_Detail_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If user selects "Do not Call" or "Bad Fit - YBN" in the "Type" field on a YBN account - must add detail as to why.</description>
         <errorConditionFormula>AND(
   RecordType.Name = "YBN Master Account",
