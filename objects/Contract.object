@@ -3389,7 +3389,7 @@
     </recordTypes>
     <validationRules>
         <fullName>Required_fields_for_Activating_Contract</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Cannot activate contract/amendment unless all defined fields are filled in</description>
         <errorConditionFormula>AND(
 OR( RecordType.Name = "WBN MSA",

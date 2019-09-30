@@ -37088,7 +37088,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
     </recordTypes>
     <validationRules>
         <fullName>CPP_Lead_Source_Trade_Show_Name</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
  ISBLANK(Trade_Show_Name__c),
   ISPICKVAL(LeadSource ,"Tradeshow"))</errorConditionFormula>
@@ -37097,13 +37097,13 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
     </validationRules>
     <validationRules>
         <fullName>Cannot_Convert_Do_Not_Call_Leads</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND (IsConverted,(DoNotCall = True))</errorConditionFormula>
         <errorMessage>You cannot convert a lead that is marked as Do Not Call</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Warm_Transfer_reason_needed</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Makes sure the rep types in a reason why they are transferring the lead to the Austin team</description>
         <errorConditionFormula>AND(
  PF_Warm_Transfer__c =true,
@@ -37123,7 +37123,7 @@ isblank(Annual_PEV__c),
     </validationRules>
     <validationRules>
         <fullName>partner_info</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND (LEN( partner_web_form__c ) &gt; 0,  
  NOT(ISPICKVAL( Status, "record")),
  Partner_ID__r.lead_partner_id__c = "" 

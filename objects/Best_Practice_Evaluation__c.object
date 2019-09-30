@@ -14157,7 +14157,7 @@ ispickval( Photo_Gallery__c, "" )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Implementation_Data_Sync</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If data sync with ASW equals sync mismatches, must list issues</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14168,7 +14168,7 @@ isblank(   If_sync_issues_found_please_list__c  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Implementation_Segment</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you correct segment implementation field is no, must list current and ideal segment.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14179,7 +14179,7 @@ isblank(  If_no_state_current_and_ideal_segment__c  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Implementation_Taxonomy</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If taxonomy gaps exist is yes, must list missing service</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14190,7 +14190,7 @@ isblank(  If_no_describe_the_cur__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_Listing_Google</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you pick "No" for Listings Meet Google Guidelines, list guidelines violated and % of non-compliant locations.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14205,7 +14205,7 @@ isblank( of_non_compliant_locations_google__c )
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_MIC_Category_Acc</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If MIC Category selection equals Category Selection Inaccurate, fill out % of inaccurate locations</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14216,7 +14216,7 @@ isblank(   of_locations_with_inaccurate_selection__c  ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_MIC_Category_Inc</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If MIC Category selection equals Category Selection Incomplete, fill out % of incomplete locations</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14227,7 +14227,7 @@ isblank(  of_locations_with_incomplete_selection__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_Mobile_Business</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you pick "Non-Compliant" for Mobile Business Targeting, list out global issues and include % locations.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14242,7 +14242,7 @@ isblank(  of_non_compliant_locations_listings__c )
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_NAP</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you pick a NAP standards matches ASW equals false, must fill out inconsistency and % locations.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14257,7 +14257,7 @@ isblank(of_non_compliant_locations_NAP__c)
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_Vendor_Issue</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you pick "Yes" for Listings Vendor Issues, list issues.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14269,7 +14269,7 @@ isblank(  If_vendor_issues_please_list__c )
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Listings_Yodle_Standards</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you pick "No" for meets Yodle standards, list out  and include % locations.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14284,7 +14284,7 @@ isblank( If_no_list_Yodle_best_practices_not_met__c )
     </validationRules>
     <validationRules>
         <fullName>National_Audit_OPO_Standards</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If OPO Standards Followed is non-compliant, list issues.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",
@@ -14298,7 +14298,7 @@ isblank(  of_non_compliant_locations_opo__c )
     </validationRules>
     <validationRules>
         <fullName>National_Audit_Vendor</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If client work has previous or existing vendor, list the vendor field needs to be filled out.</description>
         <errorConditionFormula>AND(
 RecordType.Id = "012600000009Xp0",

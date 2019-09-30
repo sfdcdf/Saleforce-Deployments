@@ -614,13 +614,13 @@
     <visibility>Public</visibility>
     <validationRules>
         <fullName>If_Other_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND( INCLUDES(  Marketing_commitments_in_1st_month__c  , "Other"),  ISBLANK(  If_Other__c  ))</errorConditionFormula>
         <errorMessage>You specified Other in Marketing Commitments - Please share what the other is.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Must_have_all_details_to_complete</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c , "Complete"),
 OR(
@@ -645,19 +645,19 @@ ISBLANK( Personality_traits_Notes__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Partner_Programs</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(ISPICKVAL(  Been_part_of_reseller_program_before__c  , "YES"),  ISBLANK(  IF_YES_which_one__c  ))</errorConditionFormula>
         <errorMessage>Please answer which programs they have participated in.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Require_Products</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(ISPICKVAL( Bundling_integrating_w_other_products__c , "YES"),  ISBLANK( IF_YES_what_products__c ))</errorConditionFormula>
         <errorMessage>Please fill in what Products they will be bundling with.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Specific_Clients</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(ISPICKVAL(  Do_you_have_specific_prospects_in_mind__c  , "YES"),  ISBLANK(  If_yes_who__c  ))</errorConditionFormula>
         <errorMessage>Please specify who the specific clients are.</errorMessage>
     </validationRules>

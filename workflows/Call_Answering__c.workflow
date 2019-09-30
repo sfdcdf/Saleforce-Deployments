@@ -139,7 +139,7 @@
             <name>Assign_to_Call_Answering_Queue</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Business_Name__c</field>
             <operation>notEqual</operation>
@@ -153,7 +153,7 @@
             <name>CA_Cancel_Complete_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -168,7 +168,7 @@
             <name>CA_Cancel_Submit_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -183,7 +183,7 @@
             <name>CA_Change_Complete_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>General</description>
         <formula>and( ischanged (Call_Answering_Status__c), ispickval( Call_Answering_Status__c , "Active"),  ispickval(PRIORVALUE (Call_Answering_Status__c) , "Change Requested"))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -194,7 +194,7 @@
             <name>CA_Change_Submit_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -209,7 +209,7 @@
             <name>CA_Question_Complete_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>General</description>
         <formula>and( ischanged (Call_Answering_Status__c), ispickval( Call_Answering_Status__c , "Active"),  ispickval(PRIORVALUE (Call_Answering_Status__c) , "Question/Issue"))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -220,7 +220,7 @@
             <name>CA_Question_Submit_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -235,7 +235,7 @@
             <name>CA_Setup_Complete_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>General</description>
         <formula>and( ischanged (Call_Answering_Status__c), ispickval( Call_Answering_Status__c , "Active"),  ispickval(PRIORVALUE (Call_Answering_Status__c) , "Setup In Progress"))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -246,7 +246,7 @@
             <name>CA_Setup_Submit_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -265,7 +265,7 @@
             <name>Update_requested_by_email</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -280,7 +280,7 @@
             <name>Initial_Setup_Complete</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>
@@ -299,7 +299,7 @@
             <name>Questions_Issues_to_Blank</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Answering__c.Call_Answering_Status__c</field>
             <operation>equals</operation>

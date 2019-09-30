@@ -33,7 +33,7 @@
             <name>Owner_to_Quality_Team</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>RecordType.DeveloperName = "Lighthouse_Master_Quality"</formula>
         <triggerType>onCreateOnly</triggerType>
@@ -48,7 +48,7 @@
             <name>Quality_Case_Closed_by_First_Last_Name</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Quality_Case__c.IsClosed__c</field>
             <operation>equals</operation>

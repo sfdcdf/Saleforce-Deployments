@@ -24056,7 +24056,7 @@
     </recordTypes>
     <validationRules>
         <fullName>Activity_detail_for_prospecting_external</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
 ispickval(Activity_Type__c ,"External Customer Activity"),
 ispickval(Milestone__c ,""),
@@ -24066,7 +24066,7 @@ CONTAINS(RecordType.Name, "YBN"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Comments_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
 (ISPICKVAL( Activity_Type__c, "Account Support" )), 
 (ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )), 
@@ -24077,7 +24077,7 @@ ISPICKVAL( Status, "Completed"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Issue_Resolution_Detail_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And( 
 ISPICKVAL( Milestone__c, "Issue Resolution" ), 
 ISPICKVAL(Status,"Completed"),  
@@ -24098,7 +24098,7 @@ ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Issues_or_concerns_summary_required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And( 
 (OR 
 (ISPICKVAL( Activity_Type__c, "Service Level Touch Points" ),(ISPICKVAL( Activity_Type__c, "Account Support" )))),
@@ -24110,7 +24110,7 @@ ISblank( Summary_of_Issues_or_Concerns__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Require_Initial_Touch_part_of_squeeze</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And( 
 ISPICKVAL( Milestone__c, "Introduction Call/CSC" ), 
 (Subject = "Introduction Call / CSC Squeeze"), 
@@ -24138,7 +24138,7 @@ isblank(WhatId ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>activity_detail</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
 ispickval(   Status , "Completed"),
 ispickval(   Milestone__c ,""),
@@ -24163,7 +24163,7 @@ ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>require_demod_products</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And( 
 INCLUDES(Initial_Touch_Connected_w_target_and__c, "Demo'd products - Sales" ), 
 ISblank(Demo_d_Products__c))</errorConditionFormula>
@@ -24171,7 +24171,7 @@ ISblank(Demo_d_Products__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>require_products_sold</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And( 
 INCLUDES(Initial_Touch_Connected_w_target_and__c, "Upsold additional products - Sales" ), 
 ISblank(Products_upsold__c))</errorConditionFormula>
@@ -24265,7 +24265,7 @@ ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>ybn_time_to_complete_activities_filled_o</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )),
 (ISPICKVAL( Activity_Type__c, "Account Support" )),
 (ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )),

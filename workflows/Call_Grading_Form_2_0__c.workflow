@@ -1816,7 +1816,7 @@ CASE(Call_control__c,
             <name>Calc_Qualititive_Grade_CSC_Monitoring</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>True  &amp;&amp;  RecordType.Name = 'CSC Monitoring Forms'</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1835,7 +1835,7 @@ CASE(Call_control__c,
             <name>Calc_Qualitative_LH_CSC_Essentials</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Form_2_0__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1858,7 +1858,7 @@ CASE(Call_control__c,
             <name>Calc_Qualitative_Grade_Lighthouse_CSC</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Form_2_0__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1881,7 +1881,7 @@ CASE(Call_control__c,
             <name>Calc_Qualitative_LH_Inbound_Call</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Form_2_0__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1904,7 +1904,7 @@ CASE(Call_control__c,
             <name>Calc_Qual_Grade_Lighthouse_Save_Call</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Form_2_0__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1927,7 +1927,7 @@ CASE(Call_control__c,
             <name>Calculate_Qualitative_Grade_Local_MAX</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Form_2_0__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1950,7 +1950,7 @@ CASE(Call_control__c,
             <name>Calculate_Qualitative_Grade_Save_Call</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Form_2_0__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1973,7 +1973,7 @@ CASE(Call_control__c,
             <name>Calc_Qual_Grade_Essentials_Setup_Call</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>it's a general workflow</description>
         <formula>True  &amp;&amp;  RecordType.Name = 'Essentials Setup Completion Call'</formula>
         <triggerType>onAllChanges</triggerType>

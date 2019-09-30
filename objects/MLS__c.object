@@ -1238,7 +1238,7 @@ AND(Vendor_Annual_Fee__c &gt;= 0, Vendor_Monthly_Fee__c &gt;= 0, Vendor_Quarterl
     </recordTypes>
     <validationRules>
         <fullName>Cannot_Sync_Reason</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>Cannot_Sync__c = TRUE &amp;&amp; ISBLANK(Cannot_Sync_Reason__c)</errorConditionFormula>
         <errorDisplayField>Cannot_Sync_Reason__c</errorDisplayField>
         <errorMessage>Please put a Cannot Sync Reason</errorMessage>

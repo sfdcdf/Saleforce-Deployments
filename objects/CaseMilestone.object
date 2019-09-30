@@ -172,7 +172,7 @@
   <enableFeeds>false</enableFeeds>
     <validationRules>
         <fullName>YBN_Dates_Cannot_Be_Changed</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Profile.Id &lt;&gt; "00e60000000iy7K",  /* YBN System Administrator" */
   $Profile.Id &lt;&gt; "00e60000000nQe9",  /* System Administrator */
@@ -195,7 +195,7 @@
     </validationRules>
     <validationRules>
         <fullName>YBN_Values_Needed_To_Complete_MS</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Profile.Name &lt;&gt; "YBN System Administrator",
   OR(
