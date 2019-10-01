@@ -14,7 +14,7 @@
             <name>Local_Status_Change</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>General</description>
         <formula>ISCHANGED( Local_Segment_Status__c )</formula>
         <triggerType>onAllChanges</triggerType>

@@ -505,21 +505,21 @@
     </listViews>
     <validationRules>
         <fullName>Date_Submitted_Validation</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>ISCHANGED( Date_Submitted__c ) &amp;&amp; NOT(ISNEW())</errorConditionFormula>
         <errorDisplayField>Date_Submitted__c</errorDisplayField>
         <errorMessage>You can't change the submission date!</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Expected_Close_Date_Required_to_Approve</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>ISPICKVAL( Lead_Registration_Status__c ,'Approved') &amp;&amp;  ISNULL( Expected_Close_Date__c )</errorConditionFormula>
         <errorDisplayField>Expected_Close_Date__c</errorDisplayField>
         <errorMessage>Please enter an Expected Close Date to Approve this Lead!</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Split_with_Sales_Rep</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>ISPICKVAL( Split_with_Sales_Rep__c ,'Yes') &amp;&amp; ISBLANK( Split_Rep__c )</errorConditionFormula>
         <errorDisplayField>Split_with_Sales_Rep__c</errorDisplayField>
         <errorMessage>Please enter the Sales Rep's name</errorMessage>

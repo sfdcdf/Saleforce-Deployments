@@ -1870,21 +1870,21 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
     </recordTypes>
     <validationRules>
         <fullName>Attempt_1_Status_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Require Attempt 1 Status</description>
         <errorConditionFormula>NOT( ISBLANK(X1st_Attempt_Date__c) ) &amp;&amp;  ISPICKVAL( X1st_Attempt_Status__c, '')</errorConditionFormula>
         <errorMessage>Attempt 1 Status cannot be blank if you have made the attempt date.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Attempt_2_Status_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Require Attempt 1 Status</description>
         <errorConditionFormula>NOT( ISBLANK(X2nd_Attempt_Date__c) ) &amp;&amp;  ISPICKVAL( X2nd_Attempt_Status__c, '')</errorConditionFormula>
         <errorMessage>Attempt 2 Status cannot be blank if you have made the attempt date.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Attempt_3_Status_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Require Attempt 3 Status</description>
         <errorConditionFormula>NOT( ISBLANK(X3rd_Attempt_Date__c) ) &amp;&amp;  ISPICKVAL( X3rd_Attempt_Status__c, '')</errorConditionFormula>
         <errorMessage>Attempt 3 Status cannot be blank if you have made the attempt date.</errorMessage>
@@ -1897,7 +1897,7 @@ Account__r.Engagement_Num_Offers__c  &gt;= 1), "PASS", "FAIL")</formula>
     </validationRules>
     <validationRules>
         <fullName>Require_If_Full_Script_Coaching_Date</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>RecordType.DeveloperName = 'Setup_Call' &amp;&amp; (( 
 ISPICKVAL( X1st_Attempt_Status__c, 'Complete - Full Script') || 
 ISPICKVAL( X2nd_Attempt_Status__c, 'Complete - Full Script') || 

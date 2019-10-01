@@ -117,7 +117,7 @@
             <name>Office_Phone_FillIn</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Client_s_Phone__c</field>
             <operation>equals</operation>
@@ -131,7 +131,7 @@
             <name>CF_Days_Live_at_Created_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Cancellation_Request__c.RecordTypeId</field>
             <operation>notEqual</operation>
@@ -145,7 +145,7 @@
             <name>CR_Client_ID_to_Account_Client_ID</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Client_ID__c</field>
             <operation>equals</operation>
@@ -159,7 +159,7 @@
             <name>CR_Next_Bill_Date_to_Account_Bill_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Next_Bill_Date__c</field>
             <operation>equals</operation>
@@ -185,7 +185,7 @@
             <name>LH_Cancellation_Fill_in_Date_of_Cancel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Outcome__c</field>
             <operation>equals</operation>
@@ -205,7 +205,7 @@
             <name>LH_Cancel_Ownership_Change_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>LH Specific</description>
         <formula>AND(RecordType.Name = "LH Cancellation Request", ISCHANGED( OwnerId ), LEFT(PRIORVALUE(OwnerId),3) = '00G', LEFT(OwnerId,3) = '005' )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -216,7 +216,7 @@
             <name>LH_Cancellation_Fill_in_Date_of_Cancel</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Cancellation_Request__c.RecordTypeId</field>
             <operation>equals</operation>

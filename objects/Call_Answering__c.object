@@ -1086,7 +1086,7 @@ After Hours - Call goes to call answering during specified time</inlineHelpText>
     </recordTypes>
     <validationRules>
         <fullName>Call_Answering_After_Hours_Details</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If Setup Type is equal to After Hours then we must fill out After Hours Details text field.</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Setup_Type__c, "After Hours"),
@@ -1097,7 +1097,7 @@ ISBLANK( After_Hours_Details__c)
     </validationRules>
     <validationRules>
         <fullName>Call_Answering_Change_Requests</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Must change the status if changing any of the call answering fields</description>
         <errorConditionFormula>and(
 not(ischanged( Call_Answering_Status__c )),
@@ -1120,7 +1120,7 @@ ischanged(   Question_Issue__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Call_Answering_Client_Phone_or_Email</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Client phone number or email address needs to be filled out prior to submission so the client can receive the message for the call.</description>
         <errorConditionFormula>AND(
  ISBLANK(Client_Email__c),
@@ -1130,7 +1130,7 @@ ischanged(   Question_Issue__c )))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Change_Request_Details</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>You must fill out the Change Request Details section when requesting a change to the call answering setup.</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Call_Answering_Status__c ,"Change Requested"),
@@ -1139,7 +1139,7 @@ ISBLANK( Change_Request_Details__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Client_Must_Have_Sponsored</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Clients must have Yodle Ads or Yodle Max to be on Call Answering. Since this account does not have either, they cannot be offered our Call Answering product.</description>
         <errorConditionFormula>AND(
 NOT(CONTAINS( Account__r.Product_Type__c ,"SEM")),
@@ -1149,7 +1149,7 @@ not($UserRole.Name = "CS Operations"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Deactivated_status_option_for_admin_only</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Only system admins have the ability to select "Deactivated" status for call answering status.</description>
         <errorConditionFormula>AND( 
  ISPICKVAL( Call_Answering_Status__c,"Deactivated"),
@@ -1162,7 +1162,7 @@ $User.UserRoleId &lt;&gt;"00E60000000sSEH"
     </validationRules>
     <validationRules>
         <fullName>Number_of_rings_must_be_selected</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If # of rings is selected as option from Setup Type need to denote how many rings from # of rings before answer field.</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Setup_Type__c, "# of Rings"),
@@ -1173,14 +1173,14 @@ ISPICKVAL(of_Rings_Before_Answer__c,"")
     </validationRules>
     <validationRules>
         <fullName>Phone_Number_Must_Be_Numbers</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Only phone numbers should be entered into the Client Cell Phone fields. Please edit accordingly.</description>
         <errorConditionFormula>IF( LEN(  Client_Phone_Number__c ) &gt;14, true, false)</errorConditionFormula>
         <errorMessage>Only numbers should be entered into the Client Cell Phone fields. Please edit accordingly.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Question_Issue_Details</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>You must fill out the Questions/Issues section when changing the call answering status to questions/issue.</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Call_Answering_Status__c ,"Question/Issue"),

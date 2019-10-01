@@ -30,7 +30,7 @@
             <name>Last_Attempt_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>General workflow , Updates the Last Attempt Date Date/Time field, not the formula field.  This is updating based on the Attempts Made Object</description>
         <formula>OR(IF(Attempt_Date__c &gt; DATETIMEVALUE(Case__r.Last_Attempt_Date__c), TRUE , FALSE), ISBLANK(DATETIMEVALUE(Case__r.Last_Attempt_Date__c)))</formula>
         <triggerType>onCreateOnly</triggerType>
