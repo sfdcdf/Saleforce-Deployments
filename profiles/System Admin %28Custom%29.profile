@@ -2662,7 +2662,7 @@
         <recordType>Best_Practice_Evaluation__c.Setup_Evaluation</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
+        <layout>Account-SysAdmin %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Multi Location Parent %28feed%29</layout>
@@ -2673,7 +2673,7 @@
         <recordType>Case.FS_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>

@@ -31930,7 +31930,7 @@
         <recordType>Account.Multi_Location_Parent</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Best_Practice_Evaluation__c-Optimization Evaluation</layout>
@@ -31940,7 +31940,7 @@
         <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Custom_Automation__c-Custom Automation Layout</layout>

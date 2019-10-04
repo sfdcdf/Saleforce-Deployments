@@ -31706,7 +31706,7 @@
         <recordType>Case.Yodle_Path_Experience</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-TORCHx Product Feedback %28feed%29</layout>

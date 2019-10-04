@@ -2691,7 +2691,7 @@
         <recordType>Customer_Surveys__c.Transactional_Conf_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Partner %28CPP%29 %28feed%29</layout>
@@ -3104,7 +3104,7 @@
         <recordType>Case.Blank_for_Email_Catch_All</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Cancellation_Request__c-WBN Cancellation Request %28feed%29</layout>

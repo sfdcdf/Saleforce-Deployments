@@ -31843,7 +31843,7 @@
         <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-LH Master %28feed%29</layout>

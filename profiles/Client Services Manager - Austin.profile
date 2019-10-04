@@ -31973,7 +31973,7 @@
         <recordType>CS_Operations__c.Operations_Help_Desk</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account_MLS__c-Account MLS Layout</layout>

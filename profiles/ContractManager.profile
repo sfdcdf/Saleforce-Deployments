@@ -31930,7 +31930,7 @@
         <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Custom_Automation__c-Custom Automation Layout</layout>
@@ -32235,7 +32235,7 @@
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CPP_Lead_Registration__c-Lead Registration Layout</layout>

@@ -32387,7 +32387,7 @@
         <recordType>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Call_Grading_Form_2_0__c-Lighthouse Save Call</layout>
@@ -32568,7 +32568,7 @@
         <recordType>Case.LH_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Customer_Surveys__c-45 Day Survey</layout>

@@ -32328,7 +32328,7 @@
         <recordType>Case.Channel_Partner</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-YBN Outbound Touch Point %28feed%29</layout>

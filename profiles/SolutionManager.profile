@@ -32010,7 +32010,7 @@
         <recordType>Call_Grading_Forms__c.Adoption_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Custom_Automation__c-Custom Automation Layout</layout>

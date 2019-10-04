@@ -28172,7 +28172,7 @@
         <layout>CaseMilestone-Case Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-Master %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
@@ -28373,7 +28373,7 @@
         <recordType>Case.Budget_Change</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Management %28Feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Best_Practice_Evaluation__c-Website Audit</layout>
