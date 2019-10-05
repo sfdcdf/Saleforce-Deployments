@@ -24,7 +24,7 @@
     <applicationVisibilities>
         <application>Services</application>
         <default>false</default>
-        <visible>false</visible>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>ahaapp__AhaIntegration</application>
@@ -3270,68 +3270,68 @@
         <recordType>Case.YBN_Outbound_Touch_Point</recordType>
     </layoutAssignments>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Pricebook2</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Pricebook2</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Asset</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Asset</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Individual</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Individual</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Product2</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Product2</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Solution</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Solution</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Idea</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Idea</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Opportunity</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Opportunity</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -3342,86 +3342,86 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>EntitlementContact</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>EntitlementContact</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
+    <objectPermissions>
+    <object>Campaign</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
+    <objectPermissions>
+    <object>Case</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
+    <objectPermissions>
+    <object>Contract</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
+    <objectPermissions>
+    <object>Entitlement</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>Campaign</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Case</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Contract</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Entitlement</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
         <object>Account</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>ServiceContract</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>ServiceContract</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>ContractLineItem</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>ContractLineItem</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Lead</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    <object>Lead</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Touchplan__c.Template</recordType>
@@ -4954,7 +4954,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-QuickText</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Document</tab>

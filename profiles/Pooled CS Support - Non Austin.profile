@@ -176,17 +176,17 @@
     <applicationVisibilities>
         <application>standard__Marketing</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Sales_Leadership</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Sales_Operations</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>dca_cnvrt_file__Convert_Attachments_to_Files_Lightning</application>
@@ -206,7 +206,7 @@
     <applicationVisibilities>
         <application>Relationship_Management</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>dca_cnvrt_file__Convert_Attachments_to_Files</application>
@@ -216,7 +216,7 @@
     <applicationVisibilities>
         <application>tz__Local_Time_Lightning</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>ahaapp__AhaIntegration</application>
@@ -226,37 +226,37 @@
     <applicationVisibilities>
         <application>Lead_Generation</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>tz__Local_Time</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Services</application>
-        <default>false</default>
-        <visible>false</visible>
+        <default>true</default>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningBolt</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Community</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningInstrumentation</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningSales</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningService</application>
@@ -281,11 +281,11 @@
     <applicationVisibilities>
         <application>standard__Content</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Sales</application>
-        <default>true</default>
+        <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
@@ -296,7 +296,7 @@
     <applicationVisibilities>
         <application>standard__ServiceConsole</application>
         <default>false</default>
-        <visible>false</visible>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__SalesforceCMS</application>

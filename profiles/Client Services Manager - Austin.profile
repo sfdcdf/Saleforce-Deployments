@@ -177,12 +177,12 @@
     <applicationVisibilities>
         <application>Relationship_Management</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Sales_Operations</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>dca_cnvrt_note__Convert_Notes_to_ContentNotes</application>
@@ -192,12 +192,12 @@
     <applicationVisibilities>
         <application>tz__Local_Time_Lightning</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Services</application>
-        <default>false</default>
-        <visible>false</visible>
+        <default>true</default>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>dca_cnvrt_file__Convert_Attachments_to_Files_Lightning</application>
@@ -212,12 +212,12 @@
     <applicationVisibilities>
         <application>tz__Local_Time</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Lead_Generation</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>dca_cnvrt_file__Convert_Attachments_to_Files</application>
@@ -232,27 +232,27 @@
     <applicationVisibilities>
         <application>Sales_Leadership</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Community</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Chatter</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Content</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningInstrumentation</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningSales</application>
@@ -262,21 +262,21 @@
     <applicationVisibilities>
         <application>standard__ServiceConsole</application>
         <default>false</default>
-        <visible>false</visible>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningBolt</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Marketing</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Sales</application>
-        <default>true</default>
+        <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
@@ -36017,7 +36017,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Entitlement</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Segment_Optimization_Case_Assignment__c</tab>
@@ -36137,7 +36137,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-StreamingChannel</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Field_Trip__Object_Analysis__c</tab>
