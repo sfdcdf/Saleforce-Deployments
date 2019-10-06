@@ -196,9 +196,10 @@
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
     </fields>
-  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-  <enableFeeds>false</enableFeeds>
-  <searchLayouts>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>ENTITLEMENT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ENTITLEMENT.STARTDATE</customTabListAdditionalFields>
@@ -224,8 +225,7 @@
         <searchResultsAdditionalFields>ENTITLEMENT.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</searchResultsAdditionalFields>
     </searchLayouts>
-  <sharingModel>ControlledByParent</sharingModel>
-
+    <sharingModel>ControlledByParent</sharingModel>
     <listViews>
         <fullName>All_Entitlements</fullName>
         <columns>ENTITLEMENT.NAME</columns>

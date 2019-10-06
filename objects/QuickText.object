@@ -176,9 +176,10 @@
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
-  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-  <enableFeeds>false</enableFeeds>
-  <searchLayouts>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Read</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>Message</customTabListAdditionalFields>
         <customTabListAdditionalFields>Category</customTabListAdditionalFields>
         <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
@@ -192,8 +193,7 @@
         <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
     </searchLayouts>
-  <sharingModel>Read</sharingModel>
-
+    <sharingModel>Read</sharingModel>
     <listViews>
         <fullName>Rogers_Support_QuickText</fullName>
         <filterScope>Queue</filterScope>

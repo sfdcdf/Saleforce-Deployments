@@ -178,10 +178,16 @@
     <fields>
         <fullName>ParentId</fullName>
         <type>MasterDetail</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>Provider</customTabListAdditionalFields>
         <searchResultsAdditionalFields>Provider</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ControlledByParent</sharingModel>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
     <listViews>
         <fullName>AllSocialPersonas</fullName>
         <columns>Name</columns>

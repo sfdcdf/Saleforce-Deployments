@@ -231,9 +231,15 @@
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
-  <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-  <enableFeeds>false</enableFeeds>
-  <searchLayouts>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.STARTDATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.ENDDATE</customTabListAdditionalFields>
@@ -247,7 +253,7 @@
         <searchResultsAdditionalFields>CONTRACT.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.STATUSINDICATOR</searchResultsAdditionalFields>
     </searchLayouts>
-  <sharingModel>Private</sharingModel>
+    <sharingModel>Private</sharingModel>
     <listViews>
         <fullName>All_ServiceContracts</fullName>
         <columns>CONTRACT.NAME</columns>

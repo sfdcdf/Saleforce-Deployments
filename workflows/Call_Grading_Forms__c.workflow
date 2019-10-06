@@ -189,7 +189,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>X40_Day_Percentage</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.X40_Day_Script_Adherence_Section__c</field>
             <operation>notEqual</operation>
@@ -208,7 +208,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>CSC_Grade_June_2015</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -231,7 +231,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>LH_Save_Call_Total_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -254,7 +254,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Lighthouse_Auto_CSC_Total_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -277,7 +277,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Lighthouse_CSC_New_Portal_Total_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -304,7 +304,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Lighthouse_Essentials_CSC_Total_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -327,7 +327,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>LH_Inbound_Call_Total_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -350,7 +350,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Local_20_Day_Touch_Plan_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.X20_Day_Essentials_Percent__c</field>
             <operation>notEqual</operation>
@@ -373,7 +373,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Local_Inbound_Call_Total_Grade_NEW</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.Inbound_Script_Adherence_Percent_NEW__c</field>
             <operation>notEqual</operation>
@@ -396,7 +396,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Partner_CSC_Engage_Call_Grade</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -423,7 +423,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Partner_CSC_with_Engage_Features_Total_G</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -450,7 +450,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
             <name>Testing_Qualitative_July_2015</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Call_Grading_Forms__c.RecordTypeId</field>
             <operation>notEqual</operation>

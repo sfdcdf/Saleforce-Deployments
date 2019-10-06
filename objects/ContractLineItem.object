@@ -150,12 +150,22 @@
         <fullName>ServiceContractId</fullName>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>PricebookEntryId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <searchLayouts>
         <searchResultsAdditionalFields>LINEITEM.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LINEITEM.STARTDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LINEITEM.ENDDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LINEITEM.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ASSET.NAME</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ControlledByParent</sharingModel>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
