@@ -29,6 +29,7 @@
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-ContentNote</tabs>
     <tabs>standard-Task</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Relationship_Management_UtilityBar</utilityBar>
 </CustomApplication>

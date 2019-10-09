@@ -3269,6 +3269,9 @@
         <layout>Case-YBN Outbound Touch Point %28feed%29</layout>
         <recordType>Case.YBN_Outbound_Touch_Point</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
     <object>Pricebook2</object>
     <allowCreate>false</allowCreate>
@@ -5139,5 +5142,9 @@
     <tabVisibilities>
         <tab>Apex_Debug_Log__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

@@ -33691,6 +33691,9 @@
         <layout>Yodle_Path__c-Touch Plan 3 %28feed%29</layout>
         <recordType>Yodle_Path__c.Touch_Plan_3</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -36145,6 +36148,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Dashboard</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

@@ -33175,6 +33175,9 @@
         <layout>Lighthouse_Worksheets__c-Auto Support Ticket %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35584,6 +35587,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Case</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

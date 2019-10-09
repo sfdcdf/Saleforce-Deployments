@@ -32670,6 +32670,9 @@
         <layout>Case-CS Touch Plan %28feed%29</layout>
         <recordType>Case.Decision_Tree_Optimization</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
@@ -34416,5 +34419,9 @@
     <tabVisibilities>
         <tab>standard-LiveAgentSession</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

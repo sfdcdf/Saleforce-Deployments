@@ -33275,6 +33275,9 @@
         <layout>Prize_Winner__c-Prize Winner Layout</layout>
         <recordType>Prize_Winner__c.master</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35648,6 +35651,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-CollaborationGroup</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

@@ -1611,6 +1611,10 @@
         <apexClass>YLSyncClientEngagementDataHelperTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>MarketoLeadUpdateBatch</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>ConsolidatedCaseView</apexPage>
         <enabled>true</enabled>
@@ -38798,6 +38802,21 @@
         <field>CaseMilestoneSync__c.ElapsedTimeInMins__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MarketoLeadSFAccountMapping__c.ErrorMessage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MarketoLeadSFAccountMapping__c.OldSFAccountId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MarketoLeadSFAccountMapping__c.SFAccountId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Partner_Name__c-Partner Layout</layout>
     </layoutAssignments>
@@ -40702,6 +40721,9 @@
     <layoutAssignments>
         <layout>AccountContactRole-Account Contact Role Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>CS_Operations__c.YBN_Operations_Request</recordType>
@@ -42450,5 +42472,9 @@
     <tabVisibilities>
         <tab>standard-LiveAgentSession</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

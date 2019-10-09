@@ -7,4 +7,5 @@
     <tabs>standard-File</tabs>
     <tabs>dca_cnvrt_note__Convert_Notes_to_ContentNotes</tabs>
     <tabs>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
 </CustomApplication>

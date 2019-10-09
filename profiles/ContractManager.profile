@@ -32734,6 +32734,9 @@
         <layout>Customer_Surveys__c-Transactional Issue Resolution</layout>
         <recordType>Customer_Surveys__c.Transactional_Issue_Resolution</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
@@ -34480,5 +34483,9 @@
     <tabVisibilities>
         <tab>standard-LiveAgentSession</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

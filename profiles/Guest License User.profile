@@ -4829,6 +4829,9 @@
         <layout>Customer_Surveys__c-Customer Survey Layout</layout>
         <recordType>Customer_Surveys__c.Post_Launch_Survey</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call</recordType>
@@ -6574,6 +6577,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-LiveAgentSession</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>

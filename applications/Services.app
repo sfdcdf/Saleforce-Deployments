@@ -231,6 +231,7 @@
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Google_Location_Group__c</tabs>
     <tabs>Notification_Log__c</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Attempts_Made__c</tab>
@@ -255,6 +256,9 @@
         <mappings>
             <fieldName>Practice_Name__c</fieldName>
             <tab>Lighthouse_Worksheets__c</tab>
+        </mappings>
+        <mappings>
+            <tab>MarketoLeadSFAccountMapping__c</tab>
         </mappings>
         <mappings>
             <tab>Notification_Log__c</tab>

@@ -10,4 +10,5 @@
     <tabs>standard-File</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
 </CustomApplication>

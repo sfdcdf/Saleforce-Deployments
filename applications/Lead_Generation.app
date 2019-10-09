@@ -27,6 +27,7 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Campaign</tabs>
     <tabs>standard-CollaborationGroup</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Lead_Generation_UtilityBar</utilityBar>
 </CustomApplication>

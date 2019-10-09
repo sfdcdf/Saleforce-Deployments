@@ -3084,6 +3084,9 @@
         <layout>Case-Case Layout</layout>
         <recordType>Case.Decision_Tree_Optimization</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
@@ -4800,6 +4803,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Scheduled_Data_Pull_from_YL_to_SF__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
 </Profile>

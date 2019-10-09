@@ -15,4 +15,5 @@ Enables a Salesforce user to easily find the local time on a record by using the
     <tabs>standard-Case</tabs>
     <tabs>tz__Local_Time</tabs>
     <tabs>tz__Local_Time_Error_Log__c</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
 </CustomApplication>

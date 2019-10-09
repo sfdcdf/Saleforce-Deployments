@@ -27,6 +27,7 @@
     <tabs>standard-Pricebook2</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>standard-CollaborationGroup</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Sales_Operations_UtilityBar</utilityBar>
 </CustomApplication>

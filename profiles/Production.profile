@@ -33079,6 +33079,9 @@
     <layoutAssignments>
         <layout>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c-dca_cnvrt_note__Convert Notes to Enhanced Notes Log Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -35993,5 +35996,9 @@
     <tabVisibilities>
         <tab>Segment_Optimization_Case_Assignment__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MarketoLeadSFAccountMapping__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
 </Profile>

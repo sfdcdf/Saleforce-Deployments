@@ -7,4 +7,5 @@
     <tabs>standard-File</tabs>
     <tabs>dca_cnvrt_file__Convert_Attachments_to_Files</tabs>
     <tabs>dca_cnvrt_file__Convert_Attachments_to_Files_Log__c</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
 </CustomApplication>

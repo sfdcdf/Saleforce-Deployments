@@ -28,6 +28,7 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-CollaborationGroup</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Sales_Leadership_UtilityBar</utilityBar>
 </CustomApplication>
