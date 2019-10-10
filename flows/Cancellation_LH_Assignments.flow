@@ -221,7 +221,7 @@
         </rules>
     </decisions>
     <description>Updates which queues LH Cancels are assigned to</description>
-    <interviewLabel>Cancellation_LH_Assignments-3_InterviewLabel</interviewLabel>
+    <interviewLabel>Cancellation_LH_Assignments-2_InterviewLabel</interviewLabel>
     <label>Cancellation - LH Assignments</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -424,7 +424,7 @@
         <object>Cancellation_Request__c</object>
     </recordUpdates>
     <startElementReference>myDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

@@ -11,7 +11,7 @@ public class MarketoLeadUpdateBatch implements Database.Batchable<sObject>, Data
     String query;
     
     public MarketoLeadUpdateBatch() {
-        query = 'SELECT Id, MarketoLeadId__c, SFAccountId__c, Status__c, ErrorMessage__c FROM MarketoLeadSFAccountMapping__c';
+        query = 'SELECT Id, MarketoLeadId__c, SFAccountId__c, Status__c, ErrorMessage__c FROM MarketoLeadSFAccountMapping__c WHERE Status__c = \'New\'';
     }
     
     public Database.QueryLocator start(Database.BatchableContext BC) {    
