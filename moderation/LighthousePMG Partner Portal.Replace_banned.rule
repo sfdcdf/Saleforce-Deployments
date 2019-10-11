@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModerationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <action>Replace</action>
     <active>false</active>
@@ -6,29 +6,29 @@
     <entitiesAndFields>
         <entityName>FeedComment</entityName>
         <fieldName>RawCommentBody</fieldName>
-        <keywordList>LighthousePMG Partner Portal.Banned</keywordList>
+        <keywordList>Lighthousepmg Partner Portal.Banned</keywordList>
     </entitiesAndFields>
     <entitiesAndFields>
         <entityName>FeedItem</entityName>
         <fieldName>LinkUrl</fieldName>
-        <keywordList>LighthousePMG Partner Portal.Banned</keywordList>
+        <keywordList>Lighthousepmg Partner Portal.Banned</keywordList>
     </entitiesAndFields>
     <entitiesAndFields>
         <entityName>FeedItem</entityName>
         <fieldName>RawBody</fieldName>
-        <keywordList>LighthousePMG Partner Portal.Banned</keywordList>
+        <keywordList>Lighthousepmg Partner Portal.Banned</keywordList>
     </entitiesAndFields>
     <entitiesAndFields>
         <entityName>FeedItem</entityName>
         <fieldName>Title</fieldName>
-        <keywordList>LighthousePMG Partner Portal.Banned</keywordList>
+        <keywordList>Lighthousepmg Partner Portal.Banned</keywordList>
     </entitiesAndFields>
     <entitiesAndFields>
         <entityName>FeedPollChoice</entityName>
         <fieldName>ChoiceBody</fieldName>
-        <keywordList>LighthousePMG Partner Portal.Banned</keywordList>
+        <keywordList>Lighthousepmg Partner Portal.Banned</keywordList>
     </entitiesAndFields>
     <masterLabel>Replace banned keywords with asterisks</masterLabel>
     <type>Content</type>
-    <userMessage>You can&apos;t use %BLOCKED_KEYWORD% or other inappropriate words in this community. Review your content and try again.</userMessage>
+    <userMessage>You can't use %BLOCKED_KEYWORD% or other inappropriate words in this community. Review your content and try again.</userMessage>
 </ModerationRule>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModerationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <action>Review</action>
     <active>false</active>
@@ -14,6 +14,6 @@
     </entitiesAndFields>
     <masterLabel>Review the first post or comment made by a new member</masterLabel>
     <type>Content</type>
-    <userCriteria>LighthousePMG Partner Portal.Members_without_contribution</userCriteria>
-    <userMessage>You can&apos;t use %BLOCKED_KEYWORD% or other inappropriate words in this community. Review your content and try again.</userMessage>
+    <userCriteria>Lighthousepmg Partner Portal.Members_without_contribution</userCriteria>
+    <userMessage>You can't use %BLOCKED_KEYWORD% or other inappropriate words in this community. Review your content and try again.</userMessage>
 </ModerationRule>

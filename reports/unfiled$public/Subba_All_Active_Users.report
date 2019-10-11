@@ -4,6 +4,9 @@
         <field>User$Name</field>
     </columns>
     <columns>
+        <field>User*User$Ability_to_Complete_Install_Wrkst__c</field>
+    </columns>
+    <columns>
         <field>User$IsActive</field>
     </columns>
     <columns>
@@ -65,6 +68,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>User*User$Ability_to_Complete_Install_Wrkst__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>User$LastLoginDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

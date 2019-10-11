@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModerationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <action>FreezeAndNotify</action>
     <actionLimit>10</actionLimit>
@@ -16,5 +16,5 @@
     <masterLabel>Freeze members whose posts or comments exceed the allowed rate</masterLabel>
     <timePeriod>Short</timePeriod>
     <type>Rate</type>
-    <userCriteria>LighthousePMG Partner Portal.Partner_and_Customer_members</userCriteria>
+    <userCriteria>Lighthousepmg Partner Portal.Partner_and_Customer_members</userCriteria>
 </ModerationRule>
