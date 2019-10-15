@@ -194,6 +194,7 @@
             <objectName>Organic_Analysis__c</objectName>
         </pushNotifications>
         <whitelistedDomains>yodle.com</whitelistedDomains>
+        <whitelistedDomains>lighthousepmg.com</whitelistedDomains>
     </consoleConfig>
     <defaultLandingTab>standard-home</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
