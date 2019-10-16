@@ -887,4 +887,50 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <rules>
+        <fullName>LH - Assign to LH Support Sugar Hill</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
+        </criteriaItems>
+        <description>LH Specific . Updated with https://jira.yodle.com/browse/YO-60625</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH - Assign to Sugar Hill Support</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 or 2) and 3</booleanFilter>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>,Customization,Consumables Adjustments,Investigate,Pre-MA Changes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

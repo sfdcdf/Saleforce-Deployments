@@ -4,4 +4,17 @@ Via Media team as they are still responsible for creating accounts after the sal
     <hasActivationRequired>false</hasActivationRequired>
     <label>Create Accounts</label>
     <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Account.Multi_Location_Parent</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 </PermissionSet>
