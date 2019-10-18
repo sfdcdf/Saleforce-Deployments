@@ -13,6 +13,11 @@
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
     <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
+    <customWebAddresses>
+        <certificate>partnerportal_lighthousepmg_com</certificate>
+        <domainName>partnerportal.lighthousepmg.com</domainName>
+        <primary>false</primary>
+    </customWebAddresses>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
