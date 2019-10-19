@@ -117,7 +117,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>mstaffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -932,5 +932,85 @@
         </criteriaItems>
         <description>LH Specific</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Bounce List</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Clear Bounce List</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Change to LH Future Request</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Future_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>LH Specific . Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one. Using Case to compare if values not in the list</description>
+        <formula>AND( RecordTypeId = "0122E000000lP1K", /* LH Master RT */ OR(      ISPICKVAL(Reason, "Custom Message Migration"),     ISPICKVAL(Reason, "Delayed Consumables"),     ISPICKVAL(Reason, "Remove Newsletter Special Pricing"),     ISPICKVAL(Reason, "Site/Listings Teardown"),     ISPICKVAL(Reason, "Transports On/Off") ),  OR(     ISNEW() ,   /*check if the reason changed to something outside this list */   AND(             NOT(ISNEW()), 	   Case( 		 TEXT(Reason), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	   &lt;&gt; 	   Case( 		 TEXT(PRIORVALUE(Reason)), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH OBC Recording</fullName>
+        <actions>
+            <name>Assign_to_OBC_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Subject_for_OBC_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>OBC Recording</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lighthouse Logos Email2Case</fullName>
+        <actions>
+            <name>Case_Owner_to_Lighthouse_Logos</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Reason_to_Lighthouse_Logo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>logo@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Lighthouse Logo</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

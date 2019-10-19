@@ -81,7 +81,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>mstaffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -101,7 +101,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>mstaffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -120,7 +120,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>mstaffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>
