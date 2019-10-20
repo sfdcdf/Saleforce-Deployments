@@ -19,7 +19,7 @@
             <hr/>
 
             <apex:pageblockSection title="{!pqmacLastQuarter.Child_Accounts_End_of_Quarter_Count__c} Managed Accounts Last Quarter" columns="1" collapsible="true" rendered="{!pqmacLastQuarter.Id != ''}">
-                <apex:pageBlockTable value="{!pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r}" var="pqmac" rendered="{!pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r.size > 0}">
+                <apex:pageBlockTable value="{!pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r}" var="pqmac" rendered="{!AND(pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r!=null,pqmacLastQuarter.Partner_Quarterly_Managed_Child_Accounts__r.size > 0)}">
                     <apex:column value="{!pqmac.Child_Account__r.Name}"/>
                     <apex:column value="{!pqmac.Child_Account__r.Phone}"/>
                     <apex:column value="{!pqmac.Child_Account__r.Order_Date__c}"/>
@@ -40,7 +40,7 @@
             <hr/>
 
             <apex:pageBlockSection title="Current Quarter MDF Request Status" columns="1" collapsible="false">
-                <apex:pageBlockTable value="{!pmdfStatusList}" var="pmdfStatus" rendered="{!pmdfStatusList.size > 0}">
+               <apex:pageBlockTable value="{!pmdfStatusList}" var="pmdfStatus" rendered="{!AND(pmdfStatusList != null , pmdfStatusList.size > 0)}">
                     <apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Name.label}">
                         <apex:commandLink action="{!selectedPMDF}" value="{!pmdfStatus.Name}" reRender="selectedRecordPanelId">
                             <apex:param name="pmdfSelectedId" value="{!pmdfStatus.id}" />
@@ -59,14 +59,14 @@
                     <apex:column value="{!pmdfStatus.MDF_Date_Submitted__c}"/>
                 </apex:pageBlockTable>
 
-                <apex:pageMessage summary="No Marketing Development Funds requested within the past 60 days! Please go to the MDF Request History tab for older requests!" severity="info" strength="3" rendered="{!pmdfStatusList.size == 0}"/>
+                <apex:pageMessage summary="No Marketing Development Funds requested within the past 60 days! Please go to the MDF Request History tab for older requests!" severity="info" strength="3" rendered="{!AND(pmdfStatusList != null ,pmdfStatusList.size == 0)}"/>
             </apex:pageBlockSection>
 
             <hr/>
             <hr/>
 
             <apex:pageBlockSection title="Claimable MDF" columns="1" collapsible="false">
-                <apex:pageBlockTable value="{!pmdfClaimList}" var="pmdfClaim" rendered="{!pmdfClaimList.size > 0}">
+               <apex:pageBlockTable value="{!pmdfClaimList}" var="pmdfClaim" rendered="{!AND(pmdfClaimList != null ,pmdfClaimList.size > 0)}">
                     <apex:column headerValue="{!$ObjectType.Partner_Marketing_Development_Fund__c.fields.Name.label}">
                         <apex:commandLink action="{!selectedPMDF}" value="{!pmdfClaim.Name}" reRender="selectedRecordPanelId">
                             <apex:param name="pmdfSelectedId" value="{!pmdfClaim.id}" />
