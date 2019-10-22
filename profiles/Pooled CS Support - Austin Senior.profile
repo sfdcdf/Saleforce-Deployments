@@ -89,6 +89,10 @@
         <apexClass>TLS_WarningMessageControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>PerfectCall_Dialer</apexPage>
         <enabled>true</enabled>

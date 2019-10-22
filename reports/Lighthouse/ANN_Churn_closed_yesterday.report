@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Cancellation_Request__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Cancellation_Request__c$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cancellation_Request__c.LH_Cancellation_Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c$Segment__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>dentist,orthodontist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c$Requesting_to_Cancel__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lighthouse Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c$Pre_Launch_Cancel__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>ANN: Churn closed yesterday</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>cancellation_request_Custom_types__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Cancellation_Request__c$Closed_Date__c</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

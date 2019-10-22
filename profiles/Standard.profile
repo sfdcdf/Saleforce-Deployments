@@ -43,6 +43,10 @@
         <apexClass>tz__LocalTimeUtils</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>tz__Local_Time_Contact_Field</apexPage>
         <enabled>true</enabled>

@@ -57,6 +57,10 @@
         <apexClass>MDFRequestStatusAndClaimFormController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
 <apexPage>TopPanelYBNOpportunity_Standard</apexPage>
 <enabled>false</enabled>
@@ -1723,6 +1727,21 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contract.BillingAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Partner_Community_HTML__c.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Partner_Community_HTML__c.Field_Bindings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Partner_Community_HTML__c.HTML__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>

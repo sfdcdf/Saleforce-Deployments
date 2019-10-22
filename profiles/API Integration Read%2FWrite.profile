@@ -549,6 +549,10 @@
         <apexClass>ybnUtilsEvents</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>

@@ -65,6 +65,10 @@
         <apexPage>PartnerCommunityWelcome</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>PartnerTraining</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <applicationVisibilities>
         <application>Lead_Generation</application>
         <default>false</default>

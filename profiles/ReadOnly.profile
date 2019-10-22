@@ -43,6 +43,10 @@
         <apexClass>tz__LocalTimeUtils</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>tz__LocalTime_Update_Records</apexPage>
         <enabled>true</enabled>

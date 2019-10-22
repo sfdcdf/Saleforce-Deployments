@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Partner Community</userLicense>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses xmlns="http://soap.sforce.com/2006/04/metadata">
 <apexPage>Aha_Feedback</apexPage>
 <enabled>false</enabled>
@@ -24997,20 +25001,20 @@
     <field>Partner_Name__c.Mobile__c</field>
 </fieldPermissions>
     <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Partner_Community_HTML__c.Active__c</field>
-</fieldPermissions>
+        <editable>true</editable>
+        <field>Partner_Community_HTML__c.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>ServiceContract.Status</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Partner_Community_HTML__c.HTML__c</field>
-</fieldPermissions>
+        <editable>true</editable>
+        <field>Partner_Community_HTML__c.HTML__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -25042,10 +25046,10 @@
     <field>Partner_Name__c.IMS_Name__c</field>
 </fieldPermissions>
     <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Partner_Community_HTML__c.Field_Bindings__c</field>
-</fieldPermissions>
+        <editable>true</editable>
+        <field>Partner_Community_HTML__c.Field_Bindings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

@@ -1013,4 +1013,40 @@
         <description>LH Specific</description>
         <triggerType>onCreateOnly</triggerType>
     </rules>
+    <rules>
+        <fullName>LH Master - Disable Newsletter Promo Created</fullName>
+        <actions>
+            <name>Account_Email_Populate_to_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Origin_to_Internal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Description_for_Disable_Newsletter_Promo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Due_Date_to_1_Year_from_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Subject_for_Disable_Newsletter_Promo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Remove Newsletter Special Pricing</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

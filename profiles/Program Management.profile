@@ -85,6 +85,10 @@
         <apexClass>tz__LocalTimeScheduler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>BillingInformationVFPage</apexPage>
         <enabled>true</enabled>

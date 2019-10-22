@@ -361,6 +361,10 @@
         <apexClass>ahaapp__AhaController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>LocalHLPanelController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>Exception</apexPage>
         <enabled>true</enabled>
