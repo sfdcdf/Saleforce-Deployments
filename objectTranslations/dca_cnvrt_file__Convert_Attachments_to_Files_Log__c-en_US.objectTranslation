@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <label><!-- Detail --></label>
         <name>dca_cnvrt_file__Detail__c</name>
@@ -43,15 +43,5 @@
         <label><!-- Summary --></label>
         <name>dca_cnvrt_file__Summary__c</name>
     </fields>
-    <layouts>
-        <layout>Convert Attachments to Files Log Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Detail Information --></label>
-            <section>Detail Information</section>
-        </sections>
-    </layouts>
+    
 </CustomObjectTranslation>

@@ -20,4 +20,38 @@
         <protected>false</protected>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
+    <rules>
+        <fullName>Email to Case - Lighthouse Threaded Email Moves</fullName>
+        <actions>
+            <name>Move_Case_Email_to_LH_Email_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EmailMessage.CreatedById</field>
+            <operation>equals</operation>
+            <value>Jennifer Flanagan,Salesforce Automation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Client_Type__c</field>
+            <operation>equals</operation>
+            <value>Lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email,Phone,Chat,Web,Self</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <description>LH SPecific , This moves replied emails that didn't thread into the correct queue</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
 </Workflow>

@@ -183,4 +183,34 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <rules>
+        <fullName>LH Upsell Result Detail</fullName>
+        <actions>
+            <name>Date_Pitched_to_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pitched_By_User_Fill_In</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>General</description>
+        <formula>ISCHANGED ( Upsell_Result__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LHFS SSU Email - Marketo</fullName>
+        <actions>
+            <name>Marketo_Sync_Checkbox_Update_for_Marketo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.LHFS_Self_Sign_Up__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

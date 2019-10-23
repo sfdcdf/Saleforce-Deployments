@@ -4,7 +4,7 @@
         <description>LH Opportunity Stage changed to Demo</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@lighthousepmg.com.ib</recipient>
+            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -90,7 +90,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
     <fieldUpdates>
         <fullName>Owner_to_Beau</fullName>
         <field>OwnerId</field>
-        <lookupValue>bosteros@lighthousepmg.com.ib</lookupValue>
+        <lookupValue>beau.osteros@lighthousepmg.com.ib</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner to Beau</name>
         <notifyAssignee>true</notifyAssignee>
@@ -214,4 +214,104 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <rules>
+        <fullName>Assign LH Opportunity Upon Creation Demo Status</fullName>
+        <actions>
+            <name>Owner_to_Beau</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Lighthouse - Upsell Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Demo</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Upsell Probability %25 update Stage - Demo</fullName>
+        <actions>
+            <name>LH_Opportunity_Stage_changed_to_Demo</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Probibility_to_15</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>LH Specific</description>
+        <formula>AND(    RecordType.Name = "Lighthouse - Upsell Opportunity", ISCHANGED(StageName), ISPICKVAL(StageName,"Demo")   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Upsell Probability %25 update Stage - In Discussion</fullName>
+        <actions>
+            <name>CPP_Update_Probability_to_5</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>TORCHx - Cross-Sell Opporunity,Lighthouse - Upsell Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>In Discussion</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Upsell Probability %25 update Stage - Negotiate</fullName>
+        <actions>
+            <name>Update_Probibility_to_25</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>,Lighthouse - Upsell Opportunity,TORCHx - Cross-Sell Opporunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Negotiate</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Owner to Beau when LH Opp is Demo</fullName>
+        <actions>
+            <name>Owner_to_Beau</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>LH Specific</description>
+        <formula>AND( RecordType.DeveloperName = "Lighthouse_Upsell_Opportunity", ISPICKVAL(StageName,"Demo"),  ISPICKVAL(PRIORVALUE(StageName), "In Discussion")  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>opp owner</fullName>
+        <actions>
+            <name>oppownerchange</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.OwnerId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
 </Workflow>

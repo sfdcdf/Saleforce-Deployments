@@ -113,7 +113,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>dcambouris@lighthousepmg.com.ib</recipient>
+            <recipient>david.cambouris@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -125,7 +125,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>treece@lighthousepmg.com.ib</recipient>
+            <recipient>thomas.reece@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -1048,5 +1048,752 @@
         </criteriaItems>
         <description>LH Specific</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH - Close out Upsell Emails</fullName>
+        <actions>
+            <name>Status_to_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>contains</operation>
+            <value>Lighthouse 360: Setup Call Recap,Your Lighthouse Messages are now active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>support@lighthousepmg.com,medicalsupport@lighthousepmg.com,autosupport@lighthousepmg.com</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH - Lighthouse Gold Service for Field Service</fullName>
+        <actions>
+            <name>Send_Email_to_LHFS_Reps_for_Yodle_Gold</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>LHGS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Closed,Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Help_Portal_Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Lighthouse Field Service</value>
+        </criteriaItems>
+        <description>LH Specific . Sends an email to LHGS Field Service Reps</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH - Lighthouse Gold Service for Medical</fullName>
+        <actions>
+            <name>Send_Email_to_LHFS_Reps_for_Yodle_Gold_Medical</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>LHGS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Closed,Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Help_Portal_Product_Type__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse Dental,Lighthouse Chiro</value>
+        </criteriaItems>
+        <description>LH Specific . Sends an email to LHGS Medical</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH DF Review Migration To SH Support</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>DF Review Migration</value>
+        </criteriaItems>
+        <description>LH Specific . DF Review Migration Case Reason will assign to SH Support</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Inbound Support Email to Crystal</fullName>
+        <actions>
+            <name>LH_New_Training_Email_from_Support</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>support@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>LH Training</value>
+        </criteriaItems>
+        <description>LH Specific.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Logo Work Complete</fullName>
+        <actions>
+            <name>LH_Logo_Work_Complete</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Lighthouse Logo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Config Detail - Marks as Escalated</fullName>
+        <actions>
+            <name>Mark_Escalated_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>LH Specific</description>
+        <formula>AND(RecordType.DeveloperName = "LH_Master", /*LH Master */  OR(  INCLUDES(Config_Detail__c, "New Template Update - Feedback Only"),  INCLUDES(Config_Detail__c, "New Template Update - All Campaigns")))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Escalated</fullName>
+        <actions>
+            <name>Escalated_Priority</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Awaiting Customer Response,Escalated (Dev),Escalated (Internal),Awaiting Internal Response,Bug Reported</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <description>LH Specific . Need to indicate escalated for LH Master cases when in status Awaiting Customer Response, Awaiting Internal Response, Escalated (Internal), Bug Reported and Escalated (Dev)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master - Production Team Mistake</fullName>
+        <actions>
+            <name>Mark_Escalated_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>ProductionTeam Mistake</value>
+        </criteriaItems>
+        <description>LH Specific . Mark Escalated? when production team mistake is selected</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Master Case Escalation</fullName>
+        <actions>
+            <name>LH_Master_Escalation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Manager_Approved_Changes__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH New PPP CSC</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>PPP CSC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NCS - AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Postcard Email2Case</fullName>
+        <actions>
+            <name>Case_Reason_to_LH_Postcard</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>LH_Postcard_Assign_to_LH_Postcard</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Lh-postcards@lighthousepmg.com</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Quality</fullName>
+        <actions>
+            <name>Manager_Approved_Quality</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Reason_Detail_to_QA_Request_Lighthouse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>SEM_Ops_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Quality Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Support Email2Case Delete Emails</fullName>
+        <actions>
+            <name>Status_to_Delete_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 4 or 5 or (3 and 6) or 7)</booleanFilter>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>contains</operation>
+            <value>support@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>equals</operation>
+            <value>Your scheduled payment has been declined,Client Spend Alert</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>contains</operation>
+            <value>Thank You for Your Order</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>startsWith</operation>
+            <value>[JIRA]</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>startsWith</operation>
+            <value>Lighthouse 360: Please contact patient</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>contains</operation>
+            <value>lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>equals</operation>
+            <value>The TIME on your Server is incorrect,The TIME ZONE on your Server is incorrect</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Support Email2Case to Austin</fullName>
+        <actions>
+            <name>LH_Assign_to_LH_Support_Austin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Reason_Detail_to_Lighthouse_Support</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 and 2 and 3 and 4 and 5 and 6 and 7 and 9 and 10) or 8</booleanFilter>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>contains</operation>
+            <value>support@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notEqual</operation>
+            <value>The TIME on your Server is incorrect,The TIME ZONE on your Server is incorrect,Your scheduled payment has been declined</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notContain</operation>
+            <value>Failed Task Lists,Failed transferring batch resource</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>notEqual</operation>
+            <value>root@app03.localdomain,root@lh-betaapp3.lhprod.yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notContain</operation>
+            <value>failure notice,SendGrid - Statistics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>notEqual</operation>
+            <value>MAILER-DAEMON@mailer.lpmg360.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>LH Medical VM,LH Auto VM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Salesforce Automation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Blank for Email Catch All</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Support Email2Case to Sugar Hill</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Reason_Detail_to_Lighthouse_Support</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND ((2 AND 3) OR 4) and 5</booleanFilter>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>contains</operation>
+            <value>support@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>startsWith</operation>
+            <value>Failed Task Lists,Failed transferring batch resource:</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>equals</operation>
+            <value>root@lh-betaapp3.lhprod.yodle.com,root@app03.localdomain</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>startsWith</operation>
+            <value>Failed transferring batch resource,[BULK]  Failed transferring batch resource</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Blank for Email Catch All</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Support Email2Case to Tricia</fullName>
+        <actions>
+            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Reason_Detail_to_Lighthouse_Support</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>contains</operation>
+            <value>support@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>startsWith</operation>
+            <value>SendGrid - Statistics -</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LHMA Post Launch</fullName>
+        <actions>
+            <name>LHMA_Post_Launch</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Requested_Updates__c</field>
+            <operation>equals</operation>
+            <value>Domain Swap,Metro Move</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse,LH</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lighthouse Follow Up Needed</fullName>
+        <actions>
+            <name>Lighthouse_Follow_Up_Needed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Lighthouse Follow-Up Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Owner %3D LH Auto Support</fullName>
+        <actions>
+            <name>Case_Assigned_to_LH_Auto_Support_send_email</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>LH Auto Support</value>
+        </criteriaItems>
+        <description>LH Specific.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Client ID to Case</fullName>
+        <actions>
+            <name>Account_Client_ID_to_Case_Client_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Client_ID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pre-MA Case Assigned to SH Support</fullName>
+        <actions>
+            <name>Pre_MA_Case_Assigned_to_Sugar_Hill_Support</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Pre-MA Changes</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Surveys - LH Issue Resolution SC%2FLO</fullName>
+        <actions>
+            <name>LH_Surveys_Issue_Res</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13 AND 14</booleanFilter>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Client_Type__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Charge_Failure_Status__c</field>
+            <operation>notContain</operation>
+            <value>billing decline</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Yodle Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Survey_Opt_Out__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>notEqual</operation>
+            <value>OFF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Suppress_Exit_Email__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sent_LH_Issue_Resolution_Survey__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>notContain</operation>
+            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collectionn,Downsell,Invoice,Proactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>notContain</operation>
+            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collection,Downsell,Invoice,Proactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Secondary_Segments__c</field>
+            <operation>notContain</operation>
+            <value>Auto</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Surveys - LH Issue Resolution SC%2FLO AUTO</fullName>
+        <actions>
+            <name>LH_Surveys_Issue_Res_AUTO</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13 AND 14</booleanFilter>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Client_Type__c</field>
+            <operation>contains</operation>
+            <value>Lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Charge_Failure_Status__c</field>
+            <operation>notContain</operation>
+            <value>billing decline</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Product_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Yodle Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Survey_Opt_Out__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>notEqual</operation>
+            <value>OFF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Suppress_Exit_Email__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Sent_LH_Issue_Resolution_Survey__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>notContain</operation>
+            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collectionn,Downsell,Invoice,Proactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>notContain</operation>
+            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collection,Downsell,Invoice,Proactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Secondary_Segments__c</field>
+            <operation>contains</operation>
+            <value>Auto</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Time Entered In Progess</fullName>
+        <actions>
+            <name>Time_Entered_In_Progess</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Time in Ownership Update</fullName>
+        <actions>
+            <name>Update_Time_Owner_Changed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>LH Specific</description>
+        <formula>ischanged( OwnerId )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

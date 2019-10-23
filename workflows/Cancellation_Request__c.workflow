@@ -4,7 +4,7 @@
         <description>Canceled Lighthouse Auto Account - Alert to BoltOn</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@lighthousepmg.com.ib</recipient>
+            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -29,7 +29,7 @@
         <description>New LH Auto Cancel Request has been created</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@lighthousepmg.com.ib</recipient>
+            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>

@@ -6,7 +6,7 @@
         <description>Bolt On Backed Out Sale - Cancel All</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@lighthousepmg.com.ib</recipient>
+            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>
@@ -85,7 +85,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sjohnson@lighthousepmg.com.ib</recipient>
+            <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>support@lighthousepmg.com</senderAddress>
@@ -105,7 +105,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sjohnson@lighthousepmg.com.ib</recipient>
+            <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -124,7 +124,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sjohnson@lighthousepmg.com.ib</recipient>
+            <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <recipients>

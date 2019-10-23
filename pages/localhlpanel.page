@@ -1,3 +1,5 @@
+<!-- Modified by Mahesh Bogila to remove Hardcoding of record type id at lines 168, 170 , 406 and 408-->
+
 <apex:page standardController="Account" extensions="LocalHLPanelController" showHeader="true" showChat="false" sidebar="false">
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <apex:stylesheet value="{!URLFOR($Resource.SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
@@ -163,9 +165,9 @@ Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div><
 ((Account.Parent.RecordType.Name == "Multi Location Parent"),"LOCAL MULTI","")}</span></apex:outputText>
   
 
-     <apex:outputText ><span class="{!IF((Account.Parent.RecordTypeId == '01232000000JMzfAAG'),"cpphighlight","")}">{!IF
+     <apex:outputText ><span class="{!IF((Account.Parent.RecordType.DeveloperName  == 'Partner_Master_Account'),"cpphighlight","")}">{!IF
 
-((Account.Parent.RecordTypeId == '01232000000JMzfAAG'),"CPP Account","")}</span></apex:outputText>
+((Account.Parent.RecordType.DeveloperName  == 'Partner_Master_Account'),"CPP Account","")}</span></apex:outputText>
 
  <apex:outputText ><span class="{!IF((Account.Product_Type_Transactional__c == 'Leads By Web'),"lbwhighlight","")}">{!IF
 
@@ -401,9 +403,9 @@ Live</a><br/></div></apex:outputText>
 
 
 
-     <apex:outputText ><span class="{!IF((Account.Parent.RecordTypeId == '01232000000JMzfAAG'),"cpphighlight","")}">{!IF
+     <apex:outputText ><span class="{!IF((Account.Parent.RecordType.DeveloperName  == 'Partner_Master_Account'),"cpphighlight","")}">{!IF
 
-((Account.Parent.RecordTypeId == '01232000000JMzfAAG'),"CPP Account","")}</span></apex:outputText>
+((Account.Parent.RecordType.DeveloperName == 'Partner_Master_Account'),"CPP Account","")}</span></apex:outputText>
 
      <apex:outputText ><span class="{!IF((Account.LHFS_Self_Sign_Up__c == TRUE),"lhfsssuhighlight","")}">{!IF
 
