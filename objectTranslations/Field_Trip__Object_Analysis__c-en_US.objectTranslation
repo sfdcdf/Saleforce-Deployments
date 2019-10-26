@@ -43,7 +43,29 @@
         <label><!-- Custom --></label>
         <name>Field_Trip__isCustom__c</name>
     </fields>
-    
+    <layouts>
+        <layout>Object Analysis Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Field Trip Information --></label>
+            <section>Field Trip Information</section>
+        </sections>
+        <sections>
+            <label><!-- Object Information --></label>
+            <section>Object Information</section>
+        </sections>
+        <sections>
+            <label><!-- RingLead Data Quality Score --></label>
+            <section>RingLead Data Quality Score</section>
+        </sections>
+        <sections>
+            <label><!-- Scope of Analysis --></label>
+            <section>Scope of Analysis</section>
+        </sections>
+    </layouts>
     <webLinks>
         <label><!-- Analyze --></label>
         <name>Field_Trip__Analyze</name>

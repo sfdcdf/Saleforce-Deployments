@@ -43,5 +43,15 @@
         <label><!-- Summary --></label>
         <name>dca_cnvrt_file__Summary__c</name>
     </fields>
-    
+    <layouts>
+        <layout>Convert Attachments to Files Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Information --></label>
+            <section>Detail Information</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>
