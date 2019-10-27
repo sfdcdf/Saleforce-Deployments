@@ -19466,7 +19466,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>EmailMessage.DoNotReopen__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -19716,7 +19716,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>EmailMessage.NewEmailId__c</field>
         <readable>true</readable>
     </fieldPermissions>

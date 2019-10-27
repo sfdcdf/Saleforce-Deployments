@@ -22,6 +22,10 @@
                 <behavior>Edit</behavior>
                 <field>NewEmailId__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ClonedEmail__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -37,7 +41,7 @@
                 <field>LastModifiedDate</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>DoNotReopen__c</field>
             </layoutItems>
             <layoutItems>
