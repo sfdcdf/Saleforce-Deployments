@@ -12184,7 +12184,7 @@ or(
         <externalId>false</externalId>
         <label>Account Description</label>
         <length>1250</length>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>4</visibleLines>
@@ -12351,7 +12351,7 @@ or(
         <externalId>false</externalId>
         <label>Next Scheduled Touchpoint</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
@@ -12782,19 +12782,19 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <label>Marketo ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>true</unique>
     </fields>
     <fields>
         <fullName>Name</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -12857,7 +12857,7 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Sync to Marketo</label>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Checkbox</type>
     </fields>
