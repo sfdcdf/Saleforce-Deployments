@@ -24331,7 +24331,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
     </recordTypes>
     <validationRules>
         <fullName>Cannot_Approve_Your_Own_Case</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 (Manager_Approved_Escalation__c = TRUE), 
 AND(
@@ -24343,7 +24343,7 @@ CreatedBy.Id = NULL
     </validationRules>
     <validationRules>
         <fullName>Cannot_Change_Request_Type</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>and(
 ischanged( Request_Type__c ),
 not(isnull (priorvalue ( Request_Type__c ))),
@@ -24353,7 +24353,7 @@ not(OR($Profile.Name = "System Administrator",$Profile.Name = "YBN System Admini
     </validationRules>
     <validationRules>
         <fullName>Cannot_Re_Open_Cases</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You cannot move from a Closed Status to an Opened Status.</description>
         <errorConditionFormula>AND(
   $Profile.Name &lt;&gt; "YBN System Administrator", 
@@ -24411,7 +24411,7 @@ ispickval(Channel_Requested_By__c, "National")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Must_Complete_Close_Notes</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>and (
 OR (
 ispickval (Status__c, "Closed - Completed"),
@@ -24447,7 +24447,7 @@ ISPICKVAL( Status__c,"Closed: Downgraded")
     </validationRules>
     <validationRules>
         <fullName>Must_Select_Request_Type</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>record type is not CS Nomination, Essentials feature request and future deactivation request</description>
         <errorConditionFormula>and (
 Operations_Request__c = FALSE,
@@ -24501,7 +24501,7 @@ ISPICKVAL(Type__c, "National Project"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>New_Account_Must_add_Old_Client_ID</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>and ( 
 ispickval (Request_Type__c , "New Account Addition"),
 isblank ( If_New_Account_Original_Client_ID__c ))</errorConditionFormula>
@@ -24538,7 +24538,7 @@ ISBLANK( Nominated_Team_if_applicable__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Upgrade_Downgrade_Other_Notes_filled_out</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 ISBLANK( Upgrade_Downgrade_Other_Notes__c),
 OR(

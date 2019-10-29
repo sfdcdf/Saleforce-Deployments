@@ -14,7 +14,7 @@
             <name>Date_Sent_to_Queue</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Best_Practice_Evaluation__c.OwnerId</field>
             <operation>contains</operation>

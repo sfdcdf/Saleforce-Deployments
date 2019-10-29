@@ -29,6 +29,9 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <field>Lighthouse_Worksheets__c.X360_ID2__c</field>
+    </columns>
+    <columns>
         <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
     </columns>
     <columns>
@@ -88,7 +91,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Lighthouse_Worksheets__c.OOS_Details__c</sortColumn>
+    <sortColumn>Lighthouse_Worksheets__c.Investigate_Details__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.Date_Time_Opened__c</dateColumn>

@@ -503,7 +503,7 @@
     </recordTypes>
     <validationRules>
         <fullName>Status_Complete_without_AcctMLS_Checkbox</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>The Status Cannot be marked Complete without the All Account MLS' Have Been Activated checkbox checked.</description>
         <errorConditionFormula>All_Account_MLS_Have_Been_Activated__c &lt;&gt; TRUE &amp;&amp;
 ISPICKVAL(Status__c, "Complete")</errorConditionFormula>

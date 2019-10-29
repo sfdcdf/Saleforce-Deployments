@@ -104,22 +104,6 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -137,7 +121,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
-            <conditionLogic>(1 OR 6 OR 7 OR 8) AND 2 AND 3 AND 4 AND 5 AND 9 AND (10 OR 11 OR 12) AND 13</conditionLogic>
+            <conditionLogic>(1 OR 6 OR 7 OR 8) AND 2 AND 3 AND 4 AND 5 AND 9 AND (10 OR 11) AND 12</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -483,37 +467,6 @@
                 <processMetadataValues>
                     <name>inputDataType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>leftHandSideType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>operatorDataType</name>
-                    <value>
-                        <stringValue>String</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>rightHandSideType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <leftValueReference>myVariable_current.PMS__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>PlanetDDS</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <processMetadataValues>
-                    <name>inputDataType</name>
-                    <value>
                         <stringValue>Boolean</stringValue>
                     </value>
                 </processMetadataValues>
@@ -561,7 +514,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_3</name>
-            <conditionLogic>(1 or 6 or 7) AND 2 AND 3 AND 4 AND 5 AND 8 AND 9 AND 10 AND 11 AND 12</conditionLogic>
+            <conditionLogic>(1 or 6 or 7) AND 2 AND 3 AND 4 AND 5 AND 8 AND 9 AND 10 AND 11</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -869,37 +822,6 @@
                 <leftValueReference>myVariable_current.PMS__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>PlanetDDS</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <processMetadataValues>
-                    <name>inputDataType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>leftHandSideType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>operatorDataType</name>
-                    <value>
-                        <stringValue>String</stringValue>
-                    </value>
-                </processMetadataValues>
-                <processMetadataValues>
-                    <name>rightHandSideType</name>
-                    <value>
-                        <stringValue>Picklist</stringValue>
-                    </value>
-                </processMetadataValues>
-                <leftValueReference>myVariable_current.PMS__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
                     <stringValue>Curve</stringValue>
                 </rightValue>
             </conditions>
@@ -941,7 +863,7 @@
         </rules>
     </decisions>
     <description>Sends the Emails when OOS is Resolved</description>
-    <interviewLabel>LH_Process_Created_or_Edited_Changes-3_Lighthouse_Worksheets__c</interviewLabel>
+    <interviewLabel>LH_Process_Created_or_Edited_Changes-3_InterviewLabel</interviewLabel>
     <label>LH OOS Resolved Email</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -968,7 +890,7 @@
         </value>
     </processMetadataValues>
     <processType>Workflow</processType>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <startElementReference>myDecision</startElementReference>
     <status>Active</status>
     <variables>
         <name>myVariable_current</name>
@@ -985,15 +907,5 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Lighthouse_Worksheets__c</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>

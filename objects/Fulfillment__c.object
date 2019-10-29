@@ -1058,7 +1058,7 @@
     </listViews>
     <validationRules>
         <fullName>Account_and_Opp_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>An account and an opportunity is required for each fulfillment record</description>
         <errorConditionFormula>OR(
   ISBLANK(Account__c),
@@ -1068,7 +1068,7 @@
     </validationRules>
     <validationRules>
         <fullName>Act_Launch_Dates_Required_For_Products</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Launch dates must be filled out for the Products populated in the products sold field</description>
         <errorConditionFormula>AND(
   ISPICKVAL(Status__c, "Project Complete"),
@@ -1108,7 +1108,7 @@
     </validationRules>
     <validationRules>
         <fullName>Est_Launch_Dates_Required_For_Products</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Launch dates must be filled out for the Products populated in the products sold field</description>
         <errorConditionFormula>AND(
   NOT(ISNEW()),
@@ -1151,7 +1151,7 @@
     </validationRules>
     <validationRules>
         <fullName>Phase1_Est_Launchdate_Changed_Reason</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   ISCHANGED(Phase_1_Estimated_Launch_Date__c),
   NOT(ISNULL(PRIORVALUE(Phase_1_Estimated_Launch_Date__c))),
@@ -1164,7 +1164,7 @@
     </validationRules>
     <validationRules>
         <fullName>Phase2_Est_Launchdate_Changed_Reason</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   ISCHANGED(Phase_2_Estimated_Launch_Date__c),
   NOT(ISNULL(PRIORVALUE(Phase_2_Estimated_Launch_Date__c))),
@@ -1177,7 +1177,7 @@
     </validationRules>
     <validationRules>
         <fullName>Phase3_Est_Launchdate_Changed_Reason</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   ISCHANGED(Phase_3_Estimated_Launch_Date__c),
   NOT(ISNULL(PRIORVALUE(Phase_3_Estimated_Launch_Date__c))),
@@ -1190,7 +1190,7 @@
     </validationRules>
     <validationRules>
         <fullName>Require_Date_Change_Reason_and_Detail</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   OR(
     AND(

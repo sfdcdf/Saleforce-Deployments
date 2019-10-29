@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -31,6 +15,43 @@
         <rules>
             <name>myRule_1</name>
             <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideReferenceTo</name>
+                    <value>
+                        <stringValue>RecordType</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.RecordTypeId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -76,11 +97,11 @@
                 <stringValue>[Cancellation_Request__c].Account_Name__c.Phone </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_0827695646</name>
+        <name>formula_2_myRule_1_A1_4097565517</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.Account_Name__r.Phone}</expression>
     </formulas>
-    <interviewLabel>Cancellation_Update_LH_Fields-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Cancellation_Update_LH_Fields-2_InterviewLabel</interviewLabel>
     <label>Cancellation - Update LH Fields</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -115,6 +136,9 @@
             </value>
         </processMetadataValues>
         <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
             <name>isChildRelationship</name>
             <value>
                 <booleanValue>false</booleanValue>
@@ -125,6 +149,9 @@
             <value>
                 <stringValue>[Cancellation_Request__c]</stringValue>
             </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
         </processMetadataValues>
         <name>myRule_1_A1</name>
         <label>Update Phone and Email</label>
@@ -200,12 +227,12 @@
             </processMetadataValues>
             <field>Client_s_Phone__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_0827695646</elementReference>
+                <elementReference>formula_2_myRule_1_A1_4097565517</elementReference>
             </value>
         </inputAssignments>
         <object>Cancellation_Request__c</object>
     </recordUpdates>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <startElementReference>myDecision</startElementReference>
     <status>Active</status>
     <variables>
         <name>myVariable_current</name>
@@ -222,15 +249,5 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Cancellation_Request__c</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>

@@ -1153,13 +1153,23 @@
         <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Owner_to_LH_Config_Queue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>LH_Config_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner to LH Config Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <rules>
         <fullName>AR Request Form Created</fullName>
         <actions>
             <name>AR_Request_Form_Subject_Default</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1174,7 +1184,7 @@
             <name>Assign_to_LH_CSC_queue</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <field>User.UserRoleId</field>
@@ -1205,7 +1215,7 @@
             <name>Owner_to_LH_Install</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1230,7 +1240,7 @@
             <name>Owner_to_LH_Install</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1245,7 +1255,7 @@
             <name>Auto_Support_Ticket_Subject_Default</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1260,7 +1270,7 @@
             <name>Bolt_On_Backed_Out_Sale_Cancel_All</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1285,7 +1295,7 @@
             <name>CSC_Completed_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>AND(  OR( ISPICKVAL( Status__c ,"MA-1 Ready"), ISPICKVAL( Status__c ,"MA-2 Pending Review")),  ISBLANK( CSC_Completed_Date__c ),  CONTAINS( RecordType.Name ,"CSC Worksheet"))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1296,7 +1306,7 @@
             <name>CSC_Worksheet_Subject_Default</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>contains</operation>
@@ -1323,9 +1333,9 @@
             <name>Sub_Status_to_RFC</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH workflow.</description>
-        <formula>AND( PRIORVALUE (RecordTypeId) = "012S0000000dr7u", CONTAINS( RecordType.Name ,"CSC Worksheet"), ISBLANK( CSC_Date__c ))</formula>
+        <formula>AND( PRIORVALUE (RecordTypeId) = "0122E000000lPRl", CONTAINS( RecordType.Name ,"CSC Worksheet"), ISBLANK( CSC_Date__c ))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -1342,7 +1352,7 @@
             <name>Status_to_New</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Workflow</description>
         <formula>AND( PRIORVALUE (RecordTypeId) = "012S0000000dr7u", CONTAINS( RecordType.Name ,"CSC Worksheet"), NOT(ISBLANK( CSC_Date__c )))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1353,7 +1363,7 @@
             <name>Copy_General_Email_to_Appt_Email</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.General_email__c</field>
             <operation>notEqual</operation>
@@ -1375,7 +1385,7 @@
             <name>Date_Time_Closed_System_to_NOW</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
             <operation>equals</operation>
@@ -1390,7 +1400,7 @@
             <name>Date_Time_Logo_Complete</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1410,7 +1420,7 @@
             <name>Date_Time_Logo_Ready</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1430,7 +1440,7 @@
             <name>Date_Time_Post_Install_In_Progress</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1450,7 +1460,7 @@
             <name>Owner_to_LH_Install</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>AND(  AND( ISCHANGED(  Defer_Until__c  ), NOT(ISBLANK(Defer_Until__c))),    RecordType.DeveloperName  = "LH_OOS")</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1485,7 +1495,7 @@
             <name>Email_Schedule_Default_Wednesday</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Email_Schedule__c</field>
             <operation>equals</operation>
@@ -1529,7 +1539,7 @@
             <name>Email_Schedule_Default_CHIRO_Wednesday</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Email_Schedule__c</field>
             <operation>equals</operation>
@@ -1549,7 +1559,7 @@
             <name>IW_Complete_Date_Time_LH_IW</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.IW_Complete_Date_Time__c</field>
             <operation>equals</operation>
@@ -1568,7 +1578,7 @@
             <name>Initial_Backed_Out_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
             <operation>equals</operation>
@@ -1587,7 +1597,7 @@
             <name>Initial_CSC_AR_Date_time_stamp</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Initial_CSC_AR_Date__c</field>
             <operation>equals</operation>
@@ -1606,7 +1616,7 @@
             <name>Initial_Scheduled_Install_Date_Fill_In</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Initial_Scheduled_Install_Date__c</field>
             <operation>equals</operation>
@@ -1624,7 +1634,7 @@
             <name>Initial_Stall_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
             <operation>equals</operation>
@@ -1643,7 +1653,7 @@
             <name>Install_Completed_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH specific</description>
         <formula>AND( ISPICKVAL( Status__c ,"Post Install Ready"), ISBLANK(  Install_Date__c  ), RecordType.DeveloperName = "Installation_Worksheet")</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1654,7 +1664,7 @@
             <name>Install_Difficulty_to_Basic</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -1685,7 +1695,7 @@
             <name>Install_Difficulty_to_Complex</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -1716,7 +1726,7 @@
             <name>Install_Difficulty_to_Extensive</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -1747,7 +1757,7 @@
             <name>Install_Difficulty_to_Routine</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -1778,7 +1788,7 @@
             <name>Install_Difficulty_to_Variable</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -1819,7 +1829,7 @@
             <name>Installation_Worksheet_Subject_Default</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1838,7 +1848,7 @@
             <name>Curve_Install_Email_Sent_TRUE</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.PMS__c</field>
             <operation>equals</operation>
@@ -1863,7 +1873,7 @@
             <name>LH_New_CS_Assigned</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific .</description>
         <formula>AND(  OR( CONTAINS( RecordType.Name ,"CSC Worksheet"), RecordType.Name = "AR Request Form"),  OR( ISPICKVAL( Status__c ,"New"), ISPICKVAL(Status__c,"RFC")),   NOT( Owner:Queue.DeveloperName  = "LH_Training"),  ISCHANGED(OwnerId) )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1874,7 +1884,7 @@
             <name>LH_New_IW_Assigned</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH specific</description>
         <formula>AND(  RecordType.DeveloperName = "CSC_Worksheet_Dental",  NOT( Owner:Queue.DeveloperName  = "LH_Training"),  ISCHANGED(OwnerId),$UserRole.DeveloperName &lt;&gt; "SEM_Ops" )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1885,7 +1895,7 @@
             <name>LH_Auto_Nov_Sales_Lab_Sale</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Segment__c</field>
             <operation>contains</operation>
@@ -1909,7 +1919,7 @@
             <name>Owner_to_LH_CSC</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1939,7 +1949,7 @@
             <name>LH_CSC_Rescheduled</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>AND( (OwnerId &lt;&gt;  $User.Id ), OR( ISCHANGED( CSC_Date__c ), ISCHANGED( CSC_Time__c )))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1954,7 +1964,7 @@
             <name>LH_IW_QAed_Date_Stamp</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -1974,7 +1984,7 @@
             <name>LH_Install_Rescheduled</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific.</description>
         <formula>AND( OwnerId &lt;&gt;  $User.Id , ISCHANGED( Date_Time_Install_Scheduled__c ))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1985,7 +1995,7 @@
             <name>LH_Install_Moved_to_Stalled</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2005,7 +2015,7 @@
             <name>Client_Email_from_Acct</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2020,7 +2030,7 @@
             <name>LH_Install_Backed_Out</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2049,7 +2059,7 @@
             <name>Subject_to_LH_Out_of_Sync</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2072,7 +2082,7 @@
             <name>Private_Portal_to_Account_Private_Portal</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2096,7 +2106,7 @@
             <name>LH_OOS_Updated_Email_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2116,7 +2126,7 @@
             <name>Client_Email_from_Acct</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2136,7 +2146,7 @@
             <name>LH_Pre_CSC_Email_Auto</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2159,7 +2169,7 @@
             <name>LH_Pre_CSC_Email_Auto_w_ProPack</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2182,7 +2192,7 @@
             <name>LH_Pre_CSC_Email_Chiro</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2201,7 +2211,7 @@
             <name>LH_Pre_CSC_Email_Dental</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2220,7 +2230,7 @@
             <name>Status_to_New</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>AND(  ISBLANK(PRIORVALUE ( CSC_Date__c )),  NOT(ISBLANK(CSC_Date__c)), ISPICKVAL( Status__c ,"RFC"))</formula>
         <triggerType>onAllChanges</triggerType>
@@ -2235,7 +2245,7 @@
             <name>LH_Priority_to_1_Attempt</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2262,7 +2272,7 @@
             <name>LH_Priority_to_2_Attempts</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2289,7 +2299,7 @@
             <name>LH_Priority_to_3_Attempts</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2316,7 +2326,7 @@
             <name>LH_Priority_to_4_Attempts</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2339,7 +2349,7 @@
             <name>Lighthouse_Business_Customization_Form_Auto_New</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2364,7 +2374,7 @@
             <name>MA_Ready</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
             <operation>equals</operation>
@@ -2388,7 +2398,7 @@
             <name>Most_Recent_Communication_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>LH Specific</description>
         <formula>ISCHANGED( Communication_Notes__c )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -2423,7 +2433,7 @@
             <name>OBC_Schedule_Default_Wednesday</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.OBC_Schedule__c</field>
             <operation>equals</operation>
@@ -2467,7 +2477,7 @@
             <name>OBC_Scheduled_Default_CHIRO_Wednesday</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.OBC_Schedule__c</field>
             <operation>equals</operation>
@@ -2487,7 +2497,7 @@
             <name>Owner_to_LH_Install</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.OOS_Category__c</field>
             <operation>equals</operation>
@@ -2507,7 +2517,7 @@
             <name>Worksheet_Assigned_to_LH_Auto_Support_send_email</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.OwnerId</field>
             <operation>equals</operation>
@@ -2522,7 +2532,7 @@
             <name>Subject_for_PMS_Swap_Form</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2537,7 +2547,7 @@
             <name>Post_Install_Ready_LH_IW</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Post_Install_Ready__c</field>
             <operation>equals</operation>
@@ -2560,7 +2570,7 @@
             <name>Post_CSC_Survey_Checkbox</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2589,7 +2599,7 @@
             <name>Post_CSC_Survey_Checkbox</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
             <operation>equals</operation>
@@ -2614,7 +2624,7 @@
             <name>MA_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
             <operation>equals</operation>
@@ -2637,7 +2647,7 @@
             <name>Sub_Status_to_RFC</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2691,7 +2701,7 @@
             <name>Text_Schedule_Default_Wednesday</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Text_Schedule__c</field>
             <operation>equals</operation>
@@ -2735,7 +2745,7 @@
             <name>Text_Schedule_Default_CHIRO_Wednesday</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Text_Schedule__c</field>
             <operation>equals</operation>
@@ -2755,7 +2765,7 @@
             <name>Time_MA_Entered_In_Progress</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>
             <operation>equals</operation>
@@ -2779,7 +2789,7 @@
             <name>Update_Initial_Scheduled_Date</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Initial_Scheduled_CSC_Date__c</field>
             <operation>equals</operation>
@@ -2789,6 +2799,21 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Updates when Status %3D MA-1 or MA-2</fullName>
+        <actions>
+            <name>Update_Owner_to_LH_Config_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lighthouse_Worksheets__c.Status__c</field>
+            <operation>equals</operation>
+            <value>MA-1 Ready,MA-2 Pending Review,MA-8 Multi Location Split</value>
+        </criteriaItems>
+        <description>Updates when status MA-1,MA-2, or MA-8</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>

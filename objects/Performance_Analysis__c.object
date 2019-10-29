@@ -4191,7 +4191,7 @@ LEN(Notes__c)&lt;10)</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>False_Positive_Notes_Required</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If there is a False Positive Status than False Positive Notes are required.</description>
         <errorConditionFormula>And(
 RecordType.DeveloperName="Auto_Performance_Insights", 
@@ -4203,7 +4203,7 @@ LEN(False_Positive_Notes__c)&lt;10)</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Paid_Optimization_Checks</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>All Paid Optimization must be filled in.</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Status__c, "Relevant Issue &amp; Work Completed"),
@@ -4270,7 +4270,7 @@ ISPICKVAL(PRIORVALUE(Status__c), "False Positive - Work Not Completed")
     </validationRules>
     <validationRules>
         <fullName>Time_to_Complete_required</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Time to complete is required on Closed and Relevant opportunities for Oracle</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Status__c, "Relevant Issue &amp; Work Completed"),
