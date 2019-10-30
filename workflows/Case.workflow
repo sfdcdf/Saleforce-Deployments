@@ -1258,7 +1258,7 @@
     </rules>
     <rules>
         <fullName>LH New PPP CSC</fullName>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
             <operation>equals</operation>

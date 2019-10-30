@@ -1,4 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -77,118 +189,6 @@
         <trackFeedHistory>true</trackFeedHistory>
         <type>Lookup</type>
     </fields>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Close</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Close</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Close</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>DeleteSeries</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>DeleteSeries</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>DeleteSeries</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>NewTask</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>NewTask</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>NewTask</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
@@ -24052,7 +24052,7 @@
     </recordTypes>
     <validationRules>
         <fullName>Activity_detail_for_prospecting_external</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And(
 ispickval(Activity_Type__c ,"External Customer Activity"),
 ispickval(Milestone__c ,""),
@@ -24062,7 +24062,7 @@ CONTAINS(RecordType.Name, "YBN"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Comments_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )), 
 (ISPICKVAL( Activity_Type__c, "Account Support" )), 
 (ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )), 
@@ -24073,7 +24073,7 @@ ISPICKVAL( Status, "Completed"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Issue_Resolution_Detail_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 ISPICKVAL( Milestone__c, "Issue Resolution" ), 
 ISPICKVAL(Status,"Completed"),  
@@ -24094,7 +24094,7 @@ ISPICKVAL( Issues_or_Concerns_Raised__c,"" ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Issues_or_concerns_summary_required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 (OR 
 (ISPICKVAL( Activity_Type__c, "Service Level Touch Points" ),(ISPICKVAL( Activity_Type__c, "Account Support" )))),
@@ -24106,7 +24106,7 @@ ISblank( Summary_of_Issues_or_Concerns__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Require_Initial_Touch_part_of_squeeze</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 ISPICKVAL( Milestone__c, "Introduction Call/CSC" ), 
 (Subject = "Introduction Call / CSC Squeeze"), 
@@ -24134,7 +24134,7 @@ isblank(WhatId ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>activity_detail</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And(
 ispickval(   Status , "Completed"),
 ispickval(   Milestone__c ,""),
@@ -24159,7 +24159,7 @@ ispickval( Proactive_vs_Reactive__c,""))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>require_demod_products</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 INCLUDES(Initial_Touch_Connected_w_target_and__c, "Demo'd products - Sales" ), 
 ISblank(Demo_d_Products__c))</errorConditionFormula>
@@ -24167,7 +24167,7 @@ ISblank(Demo_d_Products__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>require_products_sold</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>And( 
 INCLUDES(Initial_Touch_Connected_w_target_and__c, "Upsold additional products - Sales" ), 
 ISblank(Products_upsold__c))</errorConditionFormula>
@@ -24261,7 +24261,7 @@ ispickval( Client_Project_Details__c,"" ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>ybn_time_to_complete_activities_filled_o</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND((OR ((ISPICKVAL( Activity_Type__c, "Service Level Touch Points" )),
 (ISPICKVAL( Activity_Type__c, "Account Support" )),
 (ISPICKVAL( Activity_Type__c, "Internal YBN Activities" )),

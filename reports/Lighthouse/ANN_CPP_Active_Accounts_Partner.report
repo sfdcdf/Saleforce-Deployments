@@ -10,9 +10,6 @@
         <field>TYPE</field>
     </columns>
     <columns>
-        <field>RATING</field>
-    </columns>
-    <columns>
         <field>DUE_DATE</field>
     </columns>
     <columns>
@@ -22,6 +19,7 @@
         <field>ADDRESS1_STATE</field>
     </columns>
     <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6) OR 7</booleanFilter>
         <criteriaItems>
             <column>Account.Status__c</column>
             <isUnlocked>true</isUnlocked>
@@ -55,8 +53,14 @@
         <criteriaItems>
             <column>PARENT.NAME</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
+            <operator>notEqual</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>372621</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

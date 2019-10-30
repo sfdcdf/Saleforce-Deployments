@@ -1,4 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Account_Acceptance_Exception__c</fullName>
         <externalId>false</externalId>
@@ -13307,146 +13447,6 @@ ispickval( Bing_Listing_Status__c , "Client Refuses Claim"),
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -64470,7 +64470,7 @@ ispickval( Bing_Listing_Status__c , "Client Refuses Claim"),
     </recordTypes>
     <validationRules>
         <fullName>Attempts_to_Contact</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c ,"Pending Reattempt"),
 OR( ISPICKVAL( Attempts_to_Contact__c ,"0"),
@@ -64480,7 +64480,7 @@ ISPICKVAL( Attempts_to_Contact__c ,"")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Attempts_to_Contact_2</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(
 ISPICKVAL( Status__c ,"Completed"),
 OR( ISPICKVAL( Attempts_to_Contact__c ,"0"),
@@ -64517,7 +64517,7 @@ ISPICKVAL(Audit_Pass__c , "")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Escalate_Organic_Opts</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>and(
  ISPICKVAL( Priority__c , "escalated"),
 Manager_Approved_Escalation__c = false)</errorConditionFormula>
@@ -64554,7 +64554,7 @@ ISBLANK( Created_Email_PW__c)
     </validationRules>
     <validationRules>
         <fullName>Organic_Analysis_Build_More_Links</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>and(
 ispickval( Competitive__c ,"Built More Links"),
 isnull ( Built_Links_Where__c ))</errorConditionFormula>
@@ -64563,7 +64563,7 @@ isnull ( Built_Links_Where__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Organic_Analysis_Citations_Notes</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>and(
 ispickval(Competitive_Analysis__c , "Built More Citations"),
 isnull(Built_Citations_Where__c ))</errorConditionFormula>
@@ -64572,7 +64572,7 @@ isnull(Built_Citations_Where__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Pin_Action_Owner_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(
  NOT(ISPICKVAL( Pin_Action_Taken__c ,"")),
 OR(
@@ -64591,7 +64591,7 @@ ISBLANK(Client_Services_Manager__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Client_Email_Address_must_be_filled_out</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND(
 RecordType.DeveloperName = "Organic_Optimization_Request",
   ISBLANK(Client_s_Email_Address__c),
@@ -64605,7 +64605,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>Client_Services_Manager_Field_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>AND((RecordType.DeveloperName = 'Organic_Optimization_Request'), 
 (Manager_Approved_Escalation__c = True), 
 (Client_Services_Manager__c = ''))</errorConditionFormula>
@@ -64614,7 +64614,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>MICC_Google_Whitelist_Restricted</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If â€œBulk Google Accountâ€� in Account Information is Yes, then â€œGoogle Whitelistâ€� in Google Listing Data cannot be selected.</description>
         <errorConditionFormula>AND(
   RecordType.DeveloperName= "Maps_Initial_Claiming",  /* Maps Initial Claiming */
@@ -64626,7 +64626,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>MICC_Listing_1_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
   RecordType.DeveloperName= "Maps_Initial_Claiming",  /* Maps Initial Claiming */
@@ -64648,7 +64648,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>MICC_Listing_2_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
   RecordType.DeveloperName = "Maps_Initial_Claiming",  /* Maps Initial Claiming */
@@ -64670,7 +64670,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>MICC_Listing_3_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
   RecordType.DeveloperName = "Maps_Initial_Claiming",  /* Maps Initial Claiming */
@@ -64692,7 +64692,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>MICC_Listing_4_Required</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>All "Listing X" fields must be filled out if either one is already populated.</description>
         <errorConditionFormula>AND(
   RecordType.DeveloperName = "Maps_Initial_Claiming",  /* Maps Initial Claiming */
@@ -64714,7 +64714,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>Maps_Initial_Claming_Setup_Date</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>You cannot change Setup Date once it has already been entered.</description>
         <errorConditionFormula>AND( RecordType.DeveloperName ="Maps_Initial_Claiming",
  ISCHANGED( Setup_Date__c ))</errorConditionFormula>
@@ -64722,7 +64722,7 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
     </validationRules>
     <validationRules>
         <fullName>Master_Case_Required_to_Create_Organic_C</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Require a Master Case for local team when creating an organic case</description>
         <errorConditionFormula>And( ISBLANK( Case_URL__c ) || and( Case_URL__r.RecordType.DeveloperName &lt;&gt; 'Master', Case_URL__r.RecordType.DeveloperName &lt;&gt; 'LH_Master' ,Case_URL__r.RecordType.DeveloperName &lt;&gt; 'Charge_Failure'), 
 
@@ -64744,7 +64744,7 @@ $User.Profile_Name__c = 'Pooled CS Support - Non Austin Senior'
     </validationRules>
     <validationRules>
         <fullName>Max_OV_Attempts_must_fill_out_comgmt_re</fullName>
-        <active>false</active>
+        <active>true</active>
         <errorConditionFormula>and(
 or(
   RecordType.DeveloperName  = "Maps_Initial_Claiming",
@@ -64758,7 +64758,7 @@ OV_Max_Attempts__c = true,
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Client_Concerns_Other</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If Other is chosen in the Client's Concerns picklist, Client Concerns Other field must be filled out</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
@@ -64769,7 +64769,7 @@ ISBLANK( Client_s_Concerns_Other__c))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Client_Requested_Other</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If Other is chosen in the Client's Request Task picklist, Client Requested Other field must be filled out</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
@@ -64780,7 +64780,7 @@ ISBLANK( Client_Requested_Other__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Duplicate_Listing_Found</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If Duplicate Listing Found is selected for Google My Business Listing field, the Duplicate Listing Found field must be filled out.</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
@@ -64791,7 +64791,7 @@ INCLUDES(Google_My_Business_Listing__c ,"Duplicate Listing Found"))</errorCondit
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Error_Message</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If submission reasons are Performance - Ranking Issues, Citation Network Escalation, Client Requested Tasks or Other you must fill out the Leads from Organic, # of Keywords, Google Listing Status</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
@@ -64809,7 +64809,7 @@ ISPICKVAL(Submission_Reason__c,"Other")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Reason_SDB_IT_Pro</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>The following Organic Optimization Reasons For Submission should not be used by CS:
 - Google Setup:Address Issue (IT Pro)
 - Listing Keyword Update (SDB Only)</description>
@@ -64832,7 +64832,7 @@ $Profile.Name  = "Pooled CS Support - Non Austin"
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Rec_Talking_Points</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Analysts must fill out Recommendations/Talking Points Field</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
@@ -64844,7 +64844,7 @@ ISBLANK( Recommendations_Talking_Points__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Organic_Opt_Root_Cause_Other</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>If Other is chosen in the one of the Root Cause picklist fields, Root Cause Other field must be filled out</description>
         <errorConditionFormula>AND(
 RecordType.DeveloperName="Organic_Optimization_SEO_Ops",
@@ -64859,7 +64859,7 @@ INCLUDES( OnPage_Adversite_Content__c ,"Other")))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>PAN_Enter_B_Pin_if_Collected</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Must enter bpin # if marking case as google pin received.</description>
         <errorConditionFormula>and(
   RecordType.DeveloperName  = "PIN_Action_Needed",
@@ -64872,7 +64872,7 @@ isblank ( BPin_Received__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>PAN_Enter_G_Pin_if_Collected</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Must enter gpin # if marking case as google pin received.</description>
         <errorConditionFormula>and(
   RecordType.DeveloperName  = "PIN_Action_Needed",
@@ -64885,7 +64885,7 @@ isblank ( GPin_Received__c ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Pin_Action_Taken_Field_Cannot_Be_Blank</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Pin Action Taken Field Cannot Be Blank</description>
         <errorConditionFormula>AND(RecordType.DeveloperName = 'PIN_Action_Needed', 
 NOT (ISPICKVAL(Status__c, 'New')),
@@ -64896,7 +64896,7 @@ NOT (ISPICKVAL(Status__c, 'In Progress')),
     </validationRules>
     <validationRules>
         <fullName>Reason_for_Submission_GB_Login_Issues</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Only Production, IT Pro, YBN, and SEO MOps teams can select G&amp;B Login Issues as Reason for Submission</description>
         <errorConditionFormula>AND(
 $User.Profile_Name__c&lt;&gt;"IT Pro",

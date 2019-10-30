@@ -22,24 +22,12 @@
         <field>Lighthouse_Worksheets__c.Go_Live_Date__c</field>
     </columns>
     <filter>
-        <booleanFilter>(((1 AND (2 OR 3)) AND 4) AND 5) AND 6</booleanFilter>
+        <booleanFilter>(1 AND 2 AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Messages Activated,New,Backed Out Sale,Complete</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CUST_OWNER_ROLE</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Lighthouse Config Rep</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CUST_OWNER_NAME</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>LH Config Queue,Ann Lewis,Reid Brown,Vicki LaFond</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
@@ -57,7 +45,7 @@
             <column>Lighthouse_Worksheets__c.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Delete Case</value>
+            <value>Delete Case,Backfill</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
