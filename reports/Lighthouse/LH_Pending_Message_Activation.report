@@ -22,7 +22,6 @@
         <field>Lighthouse_Worksheets__c.Go_Live_Date__c</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
             <isUnlocked>false</isUnlocked>
@@ -30,14 +29,26 @@
             <value>Messages Activated,New,Backed Out Sale,Complete</value>
         </criteriaItems>
         <criteriaItems>
+            <column>CUST_OWNER_ROLE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lighthouse Config Rep</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LH Config Queue,Ann Lewis,Reid Brown,Vicki LaFond</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>CUST_RECORDTYPE</column>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical,Lighthouse_Worksheets__c.CSC_Worksheet_Auto</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Practice_Name__c</column>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Greenberg Dental -</value>
         </criteriaItems>
@@ -45,7 +56,7 @@
             <column>Lighthouse_Worksheets__c.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Delete Case,Backfill</value>
+            <value>Delete Case</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

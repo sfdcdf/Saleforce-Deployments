@@ -3620,11 +3620,6 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
                     <label>Recently Past Due</label>
                 </value>
                 <value>
-                    <fullName>6 WK</fullName>
-                    <default>false</default>
-                    <label>6 WK</label>
-                </value>
-                <value>
                     <fullName>3 MO</fullName>
                     <default>false</default>
                     <label>3 MO</label>
@@ -3638,21 +3633,6 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
                     <fullName>1 YR</fullName>
                     <default>false</default>
                     <label>1 YR</label>
-                </value>
-                <value>
-                    <fullName>1 MO (Mileage Based)</fullName>
-                    <default>false</default>
-                    <label>1 MO (Mileage Based)</label>
-                </value>
-                <value>
-                    <fullName>3 MO (Time Based)</fullName>
-                    <default>false</default>
-                    <label>3 MO (Time Based)</label>
-                </value>
-                <value>
-                    <fullName>6 MO (Time Based)</fullName>
-                    <default>false</default>
-                    <label>6 MO (Time Based)</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -10855,9 +10835,9 @@ ispickval( Activated_Reactivation_Letters__c , "Yes"),
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Donâ€™t Have Authorization</fullName>
+                    <fullName>Doesn't Have Authorization</fullName>
                     <default>false</default>
-                    <label>Donâ€™t Have Authorization</label>
+                    <label>Doesn't Have Authorization</label>
                 </value>
                 <value>
                     <fullName>Too Expensive</fullName>
@@ -10865,9 +10845,9 @@ ispickval( Activated_Reactivation_Letters__c , "Yes"),
                     <label>Too Expensive</label>
                 </value>
                 <value>
-                    <fullName>Donâ€™t See Value</fullName>
+                    <fullName>Doesn't See Value</fullName>
                     <default>false</default>
-                    <label>Donâ€™t See Value</label>
+                    <label>Doesn't See Value</label>
                 </value>
                 <value>
                     <fullName>Office Handles In-house</fullName>
@@ -10882,7 +10862,7 @@ ispickval( Activated_Reactivation_Letters__c , "Yes"),
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
-                <valueName>Donâ€™t Have Authorization</valueName>
+                <valueName>Doesn't Have Authorization</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
@@ -10890,7 +10870,7 @@ ispickval( Activated_Reactivation_Letters__c , "Yes"),
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
-                <valueName>Donâ€™t See Value</valueName>
+                <valueName>Doesn't See Value</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
@@ -15902,10 +15882,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -15914,19 +15890,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18594,11 +18558,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20751,10 +20715,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -20763,19 +20723,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -23443,11 +23391,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25695,10 +25643,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -25707,19 +25651,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28379,11 +28311,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30583,10 +30515,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -30595,19 +30523,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -33267,11 +33183,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35471,10 +35387,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -35483,19 +35395,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -38155,11 +38055,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -40359,10 +40259,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -40371,19 +40267,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -43051,11 +42935,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -45239,10 +45123,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -45251,19 +45131,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -47931,11 +47799,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -50183,10 +50051,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Disable_these_PC_s_if_applicable__c</picklist>
             <values>
-                <fullName>1 MO %28Mileage Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>1 YR</fullName>
                 <default>false</default>
             </values>
@@ -50195,19 +50059,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>6 MO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 MO %28Time Based%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6 WK</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -52875,11 +52727,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Recall_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Doesn%27t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Doesn%27t See Value</fullName>
                 <default>false</default>
             </values>
             <values>

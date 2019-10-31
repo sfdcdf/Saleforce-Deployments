@@ -7,7 +7,13 @@
         <field>Lighthouse_Worksheets__c.X360_ID__c</field>
     </columns>
     <columns>
+        <field>Lighthouse_Worksheets__c.MA_Date__c</field>
+    </columns>
+    <columns>
         <field>Lighthouse_Worksheets__c.Practice_Name__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -40,9 +46,9 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Lighthouse_Worksheets__c.Go_Live_Date__c</dateColumn>
-        <endDate>2019-10-29</endDate>
+        <dateColumn>Lighthouse_Worksheets__c.MA_Date__c</dateColumn>
+        <endDate>2019-10-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-10-27</startDate>
+        <startDate>2019-10-25</startDate>
     </timeFrameFilter>
 </Report>

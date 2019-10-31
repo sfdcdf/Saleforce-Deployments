@@ -19,6 +19,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4)</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
             <isUnlocked>true</isUnlocked>

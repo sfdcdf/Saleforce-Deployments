@@ -1629,10 +1629,6 @@ if exist then re-assign to new 360 acct --></help>
         <label><!-- Disable these PC&apos;s (if applicable) --></label>
         <name>Disable_these_PC_s_if_applicable__c</name>
         <picklistValues>
-            <masterLabel>1 MO (Mileage Based)</masterLabel>
-            <translation><!-- 1 MO (Mileage Based) --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>1 YR</masterLabel>
             <translation><!-- 1 YR --></translation>
         </picklistValues>
@@ -1641,20 +1637,8 @@ if exist then re-assign to new 360 acct --></help>
             <translation><!-- 3 MO --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>3 MO (Time Based)</masterLabel>
-            <translation><!-- 3 MO (Time Based) --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>6 MO</masterLabel>
             <translation><!-- 6 MO --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>6 MO (Time Based)</masterLabel>
-            <translation><!-- 6 MO (Time Based) --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>6 WK</masterLabel>
-            <translation><!-- 6 WK --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Coming Due</masterLabel>
@@ -6415,12 +6399,12 @@ if exist then re-assign to new 360 acct --></help>
         <label><!-- Recall PC Decline Reason --></label>
         <name>Recall_PC_Decline_Reason__c</name>
         <picklistValues>
-            <masterLabel>Donâ€™t Have Authorization</masterLabel>
-            <translation><!-- Donâ€™t Have Authorization --></translation>
+            <masterLabel>Doesn't Have Authorization</masterLabel>
+            <translation><!-- Doesn&apos;t Have Authorization --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Donâ€™t See Value</masterLabel>
-            <translation><!-- Donâ€™t See Value --></translation>
+            <masterLabel>Doesn't See Value</masterLabel>
+            <translation><!-- Doesn&apos;t See Value --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Office Handles In-house</masterLabel>

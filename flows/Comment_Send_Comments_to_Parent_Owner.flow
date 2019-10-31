@@ -66,6 +66,7 @@
         </rules>
     </decisions>
     <decisions>
+        <description>Migration Note: Updated Record Type Id reference for Lighthouse - Upsell Opportunity from new Salesforce org (hard-coded only option in Flows)</description>
         <name>LH_Upsell_1</name>
         <label>LH Upsell?</label>
         <locationX>477</locationX>
@@ -78,7 +79,7 @@
                 <leftValueReference>sobjOpportunity.RecordTypeId</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>01232000000JOTRAA4</stringValue>
+                    <stringValue>0122E000000lPXHQA2</stringValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -95,6 +96,7 @@
         </rules>
     </decisions>
     <decisions>
+        <description>Migration Note: Removed TORCHx Record Type Id criteria reference; Updated Record Type Id reference for LH Cancellation Request from new Salesforce org (hard-coded only option in Flows)</description>
         <name>TORCHx_or_LH</name>
         <label>TORCHx or LH?</label>
         <locationX>263</locationX>
@@ -102,19 +104,12 @@
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
             <name>Send_Email</name>
-            <conditionLogic>(1 OR 2) AND 3 AND 4</conditionLogic>
+            <conditionLogic>1 AND 2 AND 3</conditionLogic>
             <conditions>
                 <leftValueReference>sobjCancellation.RecordTypeId</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>01232000000JOPjAAO</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>sobjCancellation.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>012320000005P4XAAU</stringValue>
+                    <stringValue>0122E000000lPQyQAM</stringValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -140,6 +135,12 @@
     <description>prod id&apos;s and not owner</description>
     <interviewLabel>Comment - Send Comments to Parent Owner {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Comment - Send Comments to Parent Owner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
         <name>Cancellation_Lookup</name>
@@ -301,7 +302,7 @@
         <object>Comments__c</object>
     </recordUpdates>
     <startElementReference>Comment_Lookup</startElementReference>
-    <status>Obsolete</status>
+    <status>Active</status>
     <textTemplates>
         <name>CancellationEmail</name>
         <text>The following comment has been added to Cancellation Request: {!sobjComment.Cancellation_Form__c}
