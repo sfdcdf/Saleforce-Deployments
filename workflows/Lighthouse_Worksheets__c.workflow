@@ -1875,7 +1875,18 @@
         </actions>
         <active>true</active>
         <description>LH Specific .</description>
-        <formula>AND(  OR( CONTAINS( RecordType.Name ,"CSC Worksheet"), RecordType.Name = "AR Request Form"),  OR( ISPICKVAL( Status__c ,"New"), ISPICKVAL(Status__c,"RFC")),   NOT( Owner:Queue.DeveloperName  = "LH_Training"),  ISCHANGED(OwnerId) )</formula>
+        <formula>AND(
+
+OR(
+CONTAINS( RecordType.Name ,"CSC Worksheet"),
+RecordType.Name = "AR Request Form"),
+
+OR(
+ISPICKVAL( Status__c ,"New"),
+ISPICKVAL(Status__c,"RFC")),
+
+NOT(OwnerId = "00G2E000005AVrd"),
+ISCHANGED(OwnerId) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -1886,7 +1897,10 @@
         </actions>
         <active>true</active>
         <description>LH specific</description>
-        <formula>AND(  RecordType.DeveloperName = "CSC_Worksheet_Dental",  NOT( Owner:Queue.DeveloperName  = "LH_Training"),  ISCHANGED(OwnerId),$UserRole.DeveloperName &lt;&gt; "SEM_Ops" )</formula>
+        <formula>AND(
+RecordTypeId = "0122E000000lPRl",
+NOT(OwnerId = "00G2E000005AVrd"),
+ISCHANGED(OwnerId))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

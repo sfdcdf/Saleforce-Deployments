@@ -38769,6 +38769,16 @@
         <field>MarketoLeadSFAccountMapping__c.SFAccountId__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Cancellation_Request__c.CancellationId18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CaseId18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Partner_Name__c-Partner Layout</layout>
     </layoutAssignments>

@@ -23,12 +23,6 @@
             <value>Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Secondary_Segments__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Dentist,Chiropractor,Auto</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Account.LH_360_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>

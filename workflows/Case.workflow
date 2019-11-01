@@ -1796,4 +1796,19 @@
         <formula>ischanged( OwnerId )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
+    <rules>
+        <fullName>Cases Closed By Populate</fullName>
+        <actions>
+            <name>Case_Closed_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

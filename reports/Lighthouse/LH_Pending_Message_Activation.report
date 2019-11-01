@@ -29,18 +29,6 @@
             <value>Messages Activated,New,Backed Out Sale,Complete</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CUST_OWNER_ROLE</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Lighthouse Config Rep</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CUST_OWNER_NAME</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>LH Config Queue,Ann Lewis,Reid Brown,Vicki LaFond</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
@@ -57,6 +45,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LH Config Queue,Ann Lewis,Wendy Lincoln,Laura Ruer,Sandra Staffieri,TA Stanton</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

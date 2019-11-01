@@ -213,4 +213,18 @@
         <description>LH Specific</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
+    <rules>
+        <fullName>Populate Client Email</fullName>
+        <actions>
+            <name>Populate_Client_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Client_E_mail__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

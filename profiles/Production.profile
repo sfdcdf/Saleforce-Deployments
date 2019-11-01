@@ -165,6 +165,10 @@
         <apexPage>TopPanelYBNOpportunity_Standard</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>ahaapp__AhaAccountIdeas</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <applicationVisibilities>
         <application>Services</application>
         <default>true</default>
