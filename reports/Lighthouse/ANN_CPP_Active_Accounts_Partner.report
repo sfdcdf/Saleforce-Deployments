@@ -19,7 +19,7 @@
         <field>ADDRESS1_STATE</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6) OR 7</booleanFilter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4 AND 5 AND 6) OR 7 OR 8)</booleanFilter>
         <criteriaItems>
             <column>Account.Status__c</column>
             <isUnlocked>true</isUnlocked>
@@ -62,16 +62,17 @@
             <operator>equals</operator>
             <value>372621</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>PARENT.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NYU Dental School Parent</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>PARENT.NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Account.Secondary_Segments__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>ANN: CPP Active Accounts Partner</name>

@@ -54,4 +54,39 @@
         <description>LH SPecific , This moves replied emails that didn't thread into the correct queue</description>
         <triggerType>onCreateOnly</triggerType>
     </rules>
+    <rules>
+        <fullName>Emails - Reopen Case if New Email Comes In</fullName>
+        <actions>
+            <name>Emails_Reopen_Case_if_New_Email_Comes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EmailMessage.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.Subject</field>
+            <operation>notEqual</operation>
+            <value>Change Order</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.FromAddress</field>
+            <operation>notContain</operation>
+            <value>@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.DoNotReopen__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>It's a general workflow</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

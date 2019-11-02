@@ -227,4 +227,207 @@
         <description>LH Specific</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
+    <rules>
+        <fullName>180-day live rate</fullName>
+        <actions>
+            <name>X180_day_live_rate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Days_Since_Live__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>180</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Acct - Hold Status Cleared</fullName>
+        <actions>
+            <name>Clear_Hold_Status_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Account_Hold_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Account_Hold_Status__c</field>
+            <operation>equals</operation>
+            <value>Non-Compete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Hold_Status_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cancellation Checkbox</fullName>
+        <actions>
+            <name>Cancellation_Checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>OFF</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Letters Price for Non-US</fullName>
+        <actions>
+            <name>Consumables_Price_to_2_49</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.BillingCountry</field>
+            <operation>notEqual</operation>
+            <value>US,USA,United States</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Upsell_Candidate__c</field>
+            <operation>equals</operation>
+            <value>Letters</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Letters Price for US</fullName>
+        <actions>
+            <name>Consumables_Price_to_199</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.BillingCountry</field>
+            <operation>equals</operation>
+            <value>US,USA,United States</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Upsell_Candidate__c</field>
+            <operation>equals</operation>
+            <value>Letters</value>
+        </criteriaItems>
+        <description>general</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lighthouse Exit Survey</fullName>
+        <actions>
+            <name>Lighthouse_Exit_Survey</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>LH_Exit_Survey_Sent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>LH_Exit_Survey_Sent_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>LH Specific . sent to lighthouse dental/chiro clients when account moves to "off" status</description>
+        <formula>AND(   ISPICKVAL(Status__c, "OFF"),  CONTAINS (IMS_Rep__c, "Lighthouse"),  OR( CONTAINS(Secondary_Segments__c , "Dentist"), CONTAINS(Secondary_Segments__c , "Chiro"), CONTAINS(Secondary_Segments__c , "Orthodontist")),    CPP_Account__c = "No",   CONTAINS (Product_Type_Transactional__c, "Lighthouse"),  Days_Live__c &gt; 60  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Postcard Price for Non-US</fullName>
+        <actions>
+            <name>Consumable_Price_to_1_79</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.BillingCountry</field>
+            <operation>notEqual</operation>
+            <value>US,USA,United States</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Upsell_Candidate__c</field>
+            <operation>equals</operation>
+            <value>Postcards</value>
+        </criteriaItems>
+        <description>LH Specific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Touchplan Email to Populate</fullName>
+        <actions>
+            <name>Touchplan_Email_to_Populate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Client_Type__c</field>
+            <operation>notContain</operation>
+            <value>National,YBN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>YL customer</fullName>
+        <actions>
+            <name>typecustomer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Client_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>live date without order date</fullName>
+        <actions>
+            <name>orderdatelivedate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Live_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Order_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>General , for when accounts have a live date, but no order date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>remove %27sales%27 substatus</fullName>
+        <actions>
+            <name>substatusstatus</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE,OFF</value>
+        </criteriaItems>
+        <description>General , when accounts move to Live or off, make the sub status the same as the status</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>

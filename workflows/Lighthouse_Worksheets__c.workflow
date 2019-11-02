@@ -1354,7 +1354,7 @@
         </actions>
         <active>true</active>
         <description>LH Workflow</description>
-        <formula>AND( PRIORVALUE (RecordTypeId) = "012S0000000dr7u", CONTAINS( RecordType.Name ,"CSC Worksheet"), NOT(ISBLANK( CSC_Date__c )))</formula>
+        <formula>AND( PRIORVALUE (RecordTypeId) = "0122E000000lPRl", CONTAINS( RecordType.Name ,"CSC Worksheet"), NOT(ISBLANK( CSC_Date__c )))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

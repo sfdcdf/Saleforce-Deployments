@@ -7,9 +7,6 @@
         <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
     </columns>
     <columns>
-        <field>Lighthouse_Worksheets__c.Status__c</field>
-    </columns>
-    <columns>
         <field>Lighthouse_Worksheets__c.Practice_Name__c</field>
     </columns>
     <columns>
@@ -23,6 +20,12 @@
     </columns>
     <columns>
         <field>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.CSC_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Status__c</field>
     </columns>
     <columns>
         <field>Lighthouse_Worksheets__c.PMS__c</field>
@@ -54,6 +57,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.Date_Time_Closed__c</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <endDate>2019-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-10-28</startDate>
     </timeFrameFilter>
 </Report>

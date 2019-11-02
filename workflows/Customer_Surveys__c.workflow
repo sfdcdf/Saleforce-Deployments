@@ -7,7 +7,7 @@
             <field>Client_Email_from_Account__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>customercare@lighthousepmg.com</senderAddress>
+        <senderAddress>support@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Medical_IB_OB/Survey_Response_All_5</template>
     </alerts>
@@ -16,8 +16,7 @@
         <ccEmails>lhproductfeedback@yodle.com</ccEmails>
         <description>LH NPS Survey - Product Feedback</description>
         <protected>false</protected>
-        <senderAddress>support@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
+        <senderType>DefaultWorkflowUser</senderType>
         <template>Support/LH_Survey_Product_Feedback</template>
     </alerts>
     <alerts>
@@ -28,8 +27,18 @@
             <recipient>crystal.bellew@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>support@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>Survey_Emails/Lighthouse_Poor_Customer_Service_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Local_NPS_Survey_Product_Feedback</fullName>
+        <ccEmails>productideas@yodle.com</ccEmails>
+        <description>Local NPS Survey Product Feedback</description>
+        <protected>false</protected>
+        <senderAddress>support@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Support/Local_NPS_Survey_Product_Feedback</template>
     </alerts>
     <fieldUpdates>
         <fullName>BCF_Status</fullName>
@@ -373,6 +382,41 @@
         <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Local Survey Product Feedback</fullName>
+        <actions>
+            <name>Local_NPS_Survey_Product_Feedback</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>((1 AND (2 OR 3)) OR (4 AND 5 AND (2 OR 3)))</booleanFilter>
+        <criteriaItems>
+            <field>Customer_Surveys__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPS Survey Yodle,CSC Survey,Survey Pooled CSC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Surveys__c.Survey_Code__c</field>
+            <operation>includes</operation>
+            <value>Product - Contact Manager,Product - Dashboard Login Issues,Product - Dashboard Technical Issues,Product - Email Marketing,Product - Follow Up/Feature Coming Soon,Product - Leads,Product - Lists,Product - Offers,Product - Other,Product - Photos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Surveys__c.Survey_Code__c</field>
+            <operation>includes</operation>
+            <value>Product - Positive Feedback,Product - Reviews,Product - Segment Specific Concerns,Product - Social</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Surveys__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Issue Resolution</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Customer_Surveys__c.Communication_Notes__c</field>
             <operation>notEqual</operation>
         </criteriaItems>
         <description>General</description>

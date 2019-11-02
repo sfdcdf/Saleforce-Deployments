@@ -4023,7 +4023,7 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
                 </value>
                 <value>
                     <fullName>6</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>6</label>
                 </value>
                 <value>
@@ -6162,19 +6162,9 @@ IF(Office_Location__c = "United States",2.00,
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Donâ€™t Have Authorization</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t Have Authorization</label>
-                </value>
-                <value>
                     <fullName>Too Expensive</fullName>
                     <default>false</default>
                     <label>Too Expensive</label>
-                </value>
-                <value>
-                    <fullName>Donâ€™t See Value</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t See Value</label>
                 </value>
                 <value>
                     <fullName>Office Handles In-house</fullName>
@@ -6186,18 +6176,20 @@ IF(Office_Location__c = "United States",2.00,
                     <default>false</default>
                     <label>Other</label>
                 </value>
+                <value>
+                    <fullName>Don’t See Value</fullName>
+                    <default>false</default>
+                    <label>Don’t See Value</label>
+                </value>
+                <value>
+                    <fullName>Don’t Have Authorization</fullName>
+                    <default>false</default>
+                    <label>Don’t Have Authorization</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Donâ€™t Have Authorization</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
                 <valueName>Too Expensive</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Donâ€™t See Value</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>No</controllingFieldValue>
@@ -7638,19 +7630,9 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Donâ€™t Have Authorization</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t Have Authorization</label>
-                </value>
-                <value>
                     <fullName>Too Expensive</fullName>
                     <default>false</default>
                     <label>Too Expensive</label>
-                </value>
-                <value>
-                    <fullName>Donâ€™t See Value</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t See Value</label>
                 </value>
                 <value>
                     <fullName>Office Handles In-house</fullName>
@@ -7662,18 +7644,20 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
                     <default>false</default>
                     <label>Other</label>
                 </value>
+                <value>
+                    <fullName>Don’t See Value</fullName>
+                    <default>false</default>
+                    <label>Don’t See Value</label>
+                </value>
+                <value>
+                    <fullName>Don’t Have Authorization</fullName>
+                    <default>false</default>
+                    <label>Don’t Have Authorization</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Donâ€™t Have Authorization</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
                 <valueName>Too Expensive</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Donâ€™t See Value</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>No</controllingFieldValue>
@@ -7821,7 +7805,7 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
                 </value>
                 <value>
                     <fullName>4</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>4</label>
                 </value>
                 <value>
@@ -12230,7 +12214,7 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                 </value>
                 <value>
                     <fullName>5</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>5</label>
                 </value>
                 <value>
@@ -16721,14 +16705,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -17170,14 +17146,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -21554,14 +21522,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -22003,14 +21963,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -26482,14 +26434,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -26931,14 +26875,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -31354,14 +31290,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -31803,14 +31731,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -36226,14 +36146,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -36675,14 +36587,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -41098,14 +41002,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -41547,14 +41443,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -45962,14 +45850,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -46411,14 +46291,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -50890,14 +50762,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -51339,14 +51203,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>

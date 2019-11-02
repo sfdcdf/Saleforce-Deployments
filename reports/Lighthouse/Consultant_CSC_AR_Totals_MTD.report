@@ -4,6 +4,9 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <field>Lighthouse_Worksheets__c.Type_Of_Office__c</field>
+    </columns>
+    <columns>
         <field>Lighthouse_Worksheets__c.CSC_Completed_Date__c</field>
     </columns>
     <filter>
@@ -37,11 +40,11 @@
     </params>
     <reportType>CustomEntity$Lighthouse_Worksheets__c</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.CSC_Completed_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

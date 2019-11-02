@@ -229,6 +229,19 @@
         <senderType>CurrentUser</senderType>
         <template>Support/Target_Service_Area_Added</template>
     </alerts>
+    <alerts>
+        <fullName>SEM_Upsell_Email_to_Client</fullName>
+        <ccEmails>customercare@yodle.com</ccEmails>
+        <description>SEM Upsell Email to Client</description>
+        <protected>false</protected>
+        <recipients>
+            <field>client_email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>customercare@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Support/SEM_Upsell</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
@@ -1809,6 +1822,815 @@
             <value>True</value>
         </criteriaItems>
         <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Product Update to Product Type at Open Date</fullName>
+        <actions>
+            <name>Account_Product_Type_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Account_Segment_to_Case_Segment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Add Client Phone Number to Case</fullName>
+        <actions>
+            <name>Update_Client_Phone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Client_Phone_Number__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assign Platinum Support to IMS Rep on Outbound Cases</fullName>
+        <actions>
+            <name>Update_IMS_Rep_to_Platinum_Support</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.IMS_Rep__c</field>
+            <operation>equals</operation>
+            <value>Platinum Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IMS_Rep__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assign Tax%2E Case Owner to Marketing Ops</fullName>
+        <actions>
+            <name>Assign_Tax_Case_Owner_to_Karly_Sanchez</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Taxonomy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>Global Content Review,Global Image Review</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPP - Setup Complete</fullName>
+        <actions>
+            <name>CPP_Setup_Complete</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>3-CSC AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Channel_Development__c</field>
+            <operation>notContain</operation>
+            <value>Rogers,Berry,ViaMedia</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CSC Date in the Past</fullName>
+        <actions>
+            <name>CSC_Date_in_the_Past</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>General , Temporary solution when the 'Finalize Sale' is completed in YL after the CSC date.</description>
+        <formula>GCC1_Date_Time__c &lt; CreatedDate</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - IMS Rep blank on outbound reattempt</fullName>
+        <actions>
+            <name>IMS_Rep_to_Blank</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>General</description>
+        <formula>and(  RecordTypeId = "012600000009cjs", ischanged( Scheduled_Call__c ), ispickval( Status ,"New"))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Initial Date%2FTime Closed</fullName>
+        <actions>
+            <name>Initial_DateTime_Closed_Now</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Initial_DateTime_Closed__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>General , Captures the initial close date of a case.  Date does not change when a case is reopened.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Notification to Creator upon close or awaiting internal response</fullName>
+        <actions>
+            <name>Case_Notification_to_case_creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 or 2) and 3 And 5 and 4 and 6</booleanFilter>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Awaiting Internal Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.CreatedById</field>
+            <operation>notContain</operation>
+            <value>Tolman,Jayaraj,Connector,Laughlin,Flanagan,Lavin,Gelardi,Mettille,Mcmillian,Mcintyre,Fincke,Banker,Woodul,Salesforce,Sync,Amp,Ross,Starett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.User_Created_By__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Created_by_Role__c</field>
+            <operation>notContain</operation>
+            <value>YBN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>FS Product Feedback,LH Product Feedback</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Unscheduled Reattempt 4%2B</fullName>
+        <actions>
+            <name>Case_Postpone_by_3_Days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Scheduled_Call_to_blank</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Adoption Call,CSC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Unscheduled - 4+ Attempts</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case - Unscheduled Reattempt 4%2B and IMS Removed</fullName>
+        <actions>
+            <name>Case_Postpone_by_3_Days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>General</description>
+        <formula>and(  RecordType.DeveloperName = "Outbound_Call",  ischanged(IMS_Rep__c), ISBLANK(IMS_Rep__c),  ispickval(Status ,"Unscheduled - 4+ Attempts"))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Assignment Billing Notifications</fullName>
+        <actions>
+            <name>Shift_to_Billing_Notifications_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>equals</operation>
+            <value>noreply@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>contains</operation>
+            <value>Billing succeeded for client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Assignment Internal Emails to Email Catch All</fullName>
+        <actions>
+            <name>Case_Assignment_Internal_Emails_to_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>((1 AND (2 OR 7) AND 3) OR (1 AND 2 AND 5 AND 6) OR 4 OR (8 AND 9)) AND 10</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>contains</operation>
+            <value>@web.com,@yodle.com,@salesforce.com,@onesourcevhr.com,@webtime.com,@theoreminc.net,@00d600000006ycdeay.pnet,barracudanetworks.com,@chatter.salesforce.com,@jobvite.com,myworkday.com,aetnagetactive.com,@office.lhmailer.com,perkspot.com,adp.com,@register.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>notEqual</operation>
+            <value>CS@Outrank.com,customercare@yodle.com,fsproductfeedback@yodle.com,lhproductfeedback@yodle.com,productideas@yodle.com,YBNProductIdeas@yodle.com,Platinum Support,TORCHxProductFeedback@yodle.com,support@torchx.com,LHWB@yodle.com,LBWCustomerService@web.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>equals</operation>
+            <value>New Web To Case,Billing Error: Credit Card Declined,Client Spend Alert,Low Advertising Funds,Billing Error: Credit Card Declined</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>contains</operation>
+            <value>OR 3.0 GLocal &amp; BLocal,was unable to be billed,OR 3.0 - Organic Setup Search Influence Work Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>customercare@yodle.com,LBWCustomerService@web.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>contains</operation>
+            <value>@registeredsite.com,@lighthousepmg.com,@hipchat.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Rep Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>contains</operation>
+            <value>@lighthousepmg.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notContain</operation>
+            <value>Action Needed</value>
+        </criteriaItems>
+        <description>LH SPecific, General</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Owner - Ann Lewis</fullName>
+        <actions>
+            <name>Case_Assigned_to_You_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Ann Lewis</value>
+        </criteriaItems>
+        <description>LH SPecific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Owner to Quality Team</fullName>
+        <actions>
+            <name>Manager_Approved_Quality</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 and 2 and 3 and 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>,QA Request Lighthouse,QA Request Account Acceptance,QA Request Trifecta,QA Request Austin/St. Lucia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Created_by_Role__c</field>
+            <operation>contains</operation>
+            <value>Retention</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Manager_Approved_Changes__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Web Dev Specific Info</fullName>
+        <actions>
+            <name>Date_of_Web_Dev_QA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Total_Time_Round_2_Changes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_Completed_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_Completed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_Member</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_Member_Round_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_QA_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_Round_2_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Web_Dev_Total_Minutes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Web_Dev_Score_for_IMS__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case%3A Email Auto Reply Auto Close</fullName>
+        <actions>
+            <name>Close_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>contains</operation>
+            <value>[Auto-Reply]</value>
+        </criteriaItems>
+        <description>General , Autocloses auto reply email cases</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Check Production Team Mistake</fullName>
+        <actions>
+            <name>Check_Production_Team_Mistake</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>ProductionTeam Mistake</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>City and State Case Record</fullName>
+        <actions>
+            <name>City_and_State_Added</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.City_and_State__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Client Email from Account</fullName>
+        <actions>
+            <name>Account_Email_Populate_to_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Client_Email_from_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.client_email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Account Update,YBN Master</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Date Time in Progress</fullName>
+        <actions>
+            <name>Date_Time_in_Progress</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <description>General workflow</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Date%2FTime Status Changed</fullName>
+        <actions>
+            <name>Actual_Resolution_Date_now</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>updates actual resolution time, It's a general workflow</description>
+        <formula>ischanged( Status )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Days Live on QA Case</fullName>
+        <actions>
+            <name>Days_Live_on_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Days_Live__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <description>It's a general workflow</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email2Case - Lighthouse Field Service</fullName>
+        <actions>
+            <name>Case_Owner_to_Lighthouse_Field_Service</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>customercare@lighthousepmg.com,LH Field Services VM,LHFS Service Task VM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Jennifer Flanagan,Salesforce Automation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <description>LH SPecific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email2Case - Notify Owner Of New Case</fullName>
+        <actions>
+            <name>Notification_New_Case_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Centermark BI</value>
+        </criteriaItems>
+        <description>It's a general workflow</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Escalated Email Response New</fullName>
+        <actions>
+            <name>Case_Owner_to_Sophie_Lavin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Reason_to_Escalated_Email_Response</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Escalated Email Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>It's a general workflow</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Escalated Priority</fullName>
+        <actions>
+            <name>Escalated_Priority</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Fill in Date Work Completed</fullName>
+        <actions>
+            <name>Fill_in_Date_Work_Completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>contains</operation>
+            <value>Work Completed</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Manager Approved to Austin CS Ops</fullName>
+        <actions>
+            <name>Austin_CS_Ops_Retention_FT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Free Time Guarantee Request,Free Time Performance Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Manager_Approved_Changes__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>QA Request Consultative</fullName>
+        <actions>
+            <name>Manager_Approved_Quality</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason_Detail__c</field>
+            <operation>equals</operation>
+            <value>QA Request Account Acceptance,QA Request Trifecta,QA Request Austin/St. Lucia,Closing Script QA</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SEM Upsell Email to Client</fullName>
+        <actions>
+            <name>SEM_Upsell_Email_to_Client</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>SEM Upsell Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed - Upsell Accepted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Target Service Area Added</fullName>
+        <actions>
+            <name>Target_Service_Area_Added</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Target Service Area Addition</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>General , When a Target Service Area request case is closed, an email is sent to the record creator.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update 3 CSC Date Field When Status Change</fullName>
+        <actions>
+            <name>Update_3_CSC_Date_Field_When_Status_Chan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NCS - AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Client_Experience_Key__c</field>
+            <operation>contains</operation>
+            <value>lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Upsell__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>3-CSC AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Date_Moved_to_3CSC_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>LH SPecific</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Case for Email Catch All Queue</fullName>
+        <actions>
+            <name>Record_Type_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Desccription</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Subject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Email Catch All</value>
+        </criteriaItems>
+        <description>General</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Priority When Account Update Case Closed</fullName>
+        <actions>
+            <name>priort_critical</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Update</value>
+        </criteriaItems>
+        <description>General , Update "Escalated" Priority to "Critical" when case is closed to prevent re-opened cases from triggering 'escalation' emails</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>
