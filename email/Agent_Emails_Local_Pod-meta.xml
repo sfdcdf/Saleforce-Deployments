@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Agent Emails - Local Pod</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Email_template_Access</group>
+        <group>Local_Pod_Flex</group>
+        <role>InboundSpecialist294541</role>
+        <role>LocalCSM</role>
+        <role>LocalConsultant</role>
+        <role>OutboundSpecialist294541</role>
+        <role>Program_Management</role>
+        <role>RetentionConsultant294541</role>
+        <role>Services_Collections</role>
+        <role>Services_Inbound</role>
+        <role>Services_Outbound</role>
+        <role>TrainingExecutive</role>
+    </sharedTo>
+</EmailFolder>

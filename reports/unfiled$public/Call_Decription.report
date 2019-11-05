@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>DESCRIPTION</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>manual confirmation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jasmin Butcher,James Thomas,Terrance Jackson,Shannon Saunders,Gina Murphy,Annie Benedict,Laura Osegueda,Joshua Lowrey,Krystal Janisch,Matthew Scott,Sonny Pera,Steven Russell,Priyanka Rao,Amanda McKeever,Bea Peikert,Courtney Christian,Chelsey Willey,Jacqueline Leona,Julia Correa,Kati Yee,Koula Barsakis,Kristan Davis,Luis Espinosa,Lynn Tobias,Madeline Klaman,Matt Kerlin,Meagan Holdiman,Peyden Edwards,Lauren Fischer,Tricia Valadez,Mark Champ,Joe Janisch,Rory Diller,Seata Moji</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Call Description</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2017-12-21</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-12-01</startDate>
+    </timeFrameFilter>
+</Report>

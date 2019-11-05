@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Rogers 70 Day</name>
+    <style>none</style>
+    <subject>Rogers Account Updates</subject>
+    <textOnly>Rogers Account Updates
+
+Dear {!Account.Client_First_Name__c},
+
+Thank you for entrusting your online marketing to OutRank by Rogers. Over the past two months our team of analysts has been working behind the scenes to improve the performance of your account and drive value to your business. We have done several reviews of your campaigns and made updates to drive relevant traffic to your Adversite.  We would love your feedback on the calls and emails you have received so far; this will help us determine additional improvements we can make to your account.
+
+Please give us a call directly if you would like to review your account or discuss performance in more detail.
+
+Outrank Customer Support
+Phone: 866-269-1710
+
+
+Clicks Are Great. Calls Are Better.
+Rogers Communications Inc. 350 Bloor Street East, Toronto, ON  M4W 1G9, Canada</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

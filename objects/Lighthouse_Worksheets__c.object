@@ -14505,6 +14505,18 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>Sales_Rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Rep</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -52622,11 +52634,12 @@ NOT(ISPICKVAL(Spanish_Alert_Field__c ,""))
     </validationRules>
     <validationRules>
         <fullName>Activate_Messages_on_Specific_Date</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If you select that the customer would like to activate messages on a specific date, you need to enter the requested message activation date</description>
         <errorConditionFormula>AND(
 ISPICKVAL(Go_Live__c , "On a specific date"),
 ISBLANK( Go_Live_Date__c ))</errorConditionFormula>
+        <errorDisplayField>Contacts_Since_Last_Sync__c</errorDisplayField>
         <errorMessage>If you select that the customer would like to activate messages on a specific date, you need to enter the requested message activation date</errorMessage>
     </validationRules>
     <validationRules>
@@ -52756,7 +52769,7 @@ ISPICKVAL( Go_Live__c  ,"")))</errorConditionFormula>
         <active>true</active>
         <errorConditionFormula>AND(
  NOT($Permission.CSC_Worksheet_Multi_location_restriction_bypass),
- RecordType.Id = "012600000009Zma",
+ RecordType.DeveloperName  = 'CSC_Worksheet_Dental',
  Multi_Location_Account__c = true,
 OR(
 
@@ -52964,7 +52977,8 @@ ISBLANK( Cancellation_Verbiage_Include_EM_and_SS__c),
         <description>You cannot put in an MA Date if the Messages are not yet activated</description>
         <errorConditionFormula>AND(
 NOT(ISPICKVAL( Status__c ,"Messages Activated")),
-NOT(ISBLANK( MA_Date__c )))</errorConditionFormula>
+NOT(ISBLANK( MA_Date__c ))
+)</errorConditionFormula>
         <errorMessage>You cannot put in an MA Date if the Messages are not yet activated</errorMessage>
     </validationRules>
     <validationRules>
@@ -52973,7 +52987,7 @@ NOT(ISBLANK( MA_Date__c )))</errorConditionFormula>
         <description>When filling out the install completed date, you must use today's date</description>
         <errorConditionFormula>AND(
  RecordType.Name = "Installation Worksheet",
- $UserRole.Id &lt;&gt; "00E60000001HvPG",
+ $UserRole.Name  &lt;&gt; 'Lighthouse_CS',
 ISCHANGED( Install_Date__c ),
  Install_Date__c &lt;&gt; TODAY())</errorConditionFormula>
         <errorMessage>When filling out the install completed date, you must use today's date</errorMessage>
@@ -52983,7 +52997,7 @@ ISCHANGED( Install_Date__c ),
         <active>true</active>
         <description>SOX Compliance requirement</description>
         <errorConditionFormula>AND( 
- RecordTypeId="012600000009a0h",
+ RecordType.DeveloperName ='Installation_Worksheet',
 $User.Ability_to_Complete_Install_Wrkst__c = FALSE,
  Quality_Issues_Found__c = FALSE,
 OR(
@@ -53034,7 +53048,7 @@ ISPICKVAL ( Status__c ,"Post Install Ready"))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>Existing_IDs_of_Multiple_Offices</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>If a customer has multiple locations, please add the Yodle ID(s) of any current customers to the "Yodle IDs of Existing Locations" field. If they do not have any additional locations currently on board with us, please put None.</description>
         <errorConditionFormula>AND(
 ISPICKVAL( Multiple_Offices__c,"Yes"),
@@ -53067,7 +53081,7 @@ ISPICKVAL( Status__c ,"Complete")))</errorConditionFormula>
         <active>true</active>
         <description>Before changing the status to Messages Activated, you must complete the required tasks in the Final Message Activation QA section</description>
         <errorConditionFormula>AND( 
-ISPICKVAL (Status__c , "Messages Activated"), 
+ISPICKVAL (Status__c , "Messages Activated"),
 
 OR(
 
@@ -53111,7 +53125,7 @@ NOT(INCLUDES( Final_Transports__c , "PC Smart Health")))))</errorConditionFormul
         <description>Prohibits the IW from being re-opened after it's been Completed.</description>
         <errorConditionFormula>AND( 
 $User.Profile_Name__c &lt;&gt; "System Administrator", 
-RecordTypeId="012600000009a0h", 
+RecordType.DeveloperName ='Installation_Worksheet', 
 TEXT(PRIORVALUE(Status__c)) = "Complete",
 ISCHANGED(Status__c))</errorConditionFormula>
         <errorMessage>You cannot reopen an Installation Worksheet once it has been marked as Complete.</errorMessage>
@@ -53145,7 +53159,7 @@ CSC_Date__c = TODAY())</errorConditionFormula>
         <description>SOX Requirement</description>
         <errorConditionFormula>AND(
  $User.Profile_Name__c  &lt;&gt; "System Administrator",
-RecordTypeId="012600000009a0h",
+RecordType.DeveloperName ='Installation_Worksheet',
 OR(
 ISPICKVAL( Status__c ,"Complete"),
 ISPICKVAL( Status__c ,"Backed out Sale"),
@@ -53251,7 +53265,7 @@ ISBLANK( Additional_Time__c ))</errorConditionFormula>
         <active>true</active>
         <description>You must include the new 360 ID when completing a PMS Swap</description>
         <errorConditionFormula>AND(
- RecordTypeId = "012600000009bRn",
+ RecordType.DeveloperName = 'PMS_Swap_Form',
 ISPICKVAL( Status__c ,"Complete"),
 ISBLANK( New_360_ID__c ))</errorConditionFormula>
         <errorMessage>You must include the new 360 ID when completing a PMS Swap</errorMessage>
@@ -53333,7 +53347,7 @@ ISBLANK( Recall_Issue_Notes__c ))</errorConditionFormula>
         <errorConditionFormula>AND (
 CONTAINS(Install_Meeting_Notes__c, "Per Call"),
 NOT(ISPICKVAL( OBC_Price__c ,"$0.29/call")),
-RecordTypeId="012600000009Zma")</errorConditionFormula>
+RecordType.DeveloperName ='CSC_Worksheet_Dental')</errorConditionFormula>
         <errorDisplayField>OBC_Price__c</errorDisplayField>
         <errorMessage>Customers that are on per call pricing need to have their OBC Price set accordingly to $0.29/call.</errorMessage>
     </validationRules>
@@ -53341,7 +53355,7 @@ RecordTypeId="012600000009Zma")</errorConditionFormula>
         <fullName>OOS_Category_cant_be_blank_when_complete</fullName>
         <active>true</active>
         <errorConditionFormula>AND( 
-RecordTypeId="012600000009cWo",
+RecordType.DeveloperName ='LH_OOS',
  ISPICKVAL(OOS_Category__c,""),
  ISPICKVAL(Status__c,"Complete"))</errorConditionFormula>
         <errorDisplayField>OOS_Category__c</errorDisplayField>
@@ -53418,7 +53432,7 @@ NOT(INCLUDES( Portal_Verifications__c , "Verify Message Schedule"))))
         <active>true</active>
         <errorConditionFormula>AND(
 not(ISBLANK( Pre_CSC_QA_Checklist__c )),
-($UserRole.Id="00E60000001IYhW"),
+($UserRole.Name ='Lighthouse_CSC_Rep'),
 OR(
 ISPICKVAL (Status__c , "MA-1 Ready"),
 ISPICKVAL (Status__c , "MA-2 Pending Review")))</errorConditionFormula>
@@ -53445,7 +53459,7 @@ AND( INCLUDES( Pre_CSC_QA_Checklist__c, "Other Issues"), ISBLANK(  Pre_CSC_QA_Ot
         <fullName>QA_Feedback_must_be_filled_out</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-RecordType.Id="012600000009a0h",
+RecordType.DeveloperName ='Installation_Worksheet',
 Quality_Issues_Found__c=TRUE,
 ISBLANK(QA_Feedback__c))</errorConditionFormula>
         <errorDisplayField>QA_Feedback__c</errorDisplayField>
@@ -53583,7 +53597,7 @@ NOT(INCLUDES(  Config_Prep__c  , "Verify STC Days"))))
     </validationRules>
     <validationRules>
         <fullName>Acct_Segment_Must_Match_CW_Segment</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>You must select the proper CW type for the Account Segment - please change to the proper segment</description>
         <errorConditionFormula>OR(
 

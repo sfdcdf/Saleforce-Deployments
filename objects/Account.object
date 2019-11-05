@@ -5932,7 +5932,7 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
     <fields>
         <fullName>Multi_Location_Account__c</fullName>
         <externalId>false</externalId>
-        <formula>RecordTypeId = '01232000000Q7tO' || Parent.RecordTypeId = '01232000000Q7tO' ||  Parent.Parent.RecordTypeId = '01232000000Q7tO'</formula>
+        <formula>RecordType.DeveloperName = 'Multi_Location_Parent' || Parent.RecordType.DeveloperName = 'Multi_Location_Parent' ||  Parent.Parent.RecordType.DeveloperName = 'Multi_Location_Parent'</formula>
         <label>Multi Location Account</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -9356,7 +9356,7 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         <fullName>Service_Model_Local__c</fullName>
         <externalId>false</externalId>
         <formula>if( 
-IMS_Rep__r.Id = "00560000001HpEm", /* Customer Care */
+IMS_Rep__r.Alias= 'ccare', /* Customer Care */
 "Pooled", 
 if( 
 or( 
@@ -9364,8 +9364,7 @@ contains( IMS_Rep_Role__c , "Local Consultant"),
  AND(
 contains( IMS_Rep_Role__c , "Local CSM"),
 contains( IMS_Rep__r.Department, "LeadStream")), 
-IMS_Rep__r.Id = "005600000017MCh", /* JEnnifer Flanagan */
-IMS_Rep__r.Id = "00532000005P6l3"), /*LeadStream Support*/
+IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
 "Dedicated", ""))</formula>
         <label>Service Model</label>
         <required>false</required>
@@ -12580,16 +12579,6 @@ CASE(
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Live_Date_Constant__c</fullName>
-        <description>Live Date that never gets reset if a client gets reactivated</description>
-        <externalId>false</externalId>
-        <label>Live Date Constant</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Initial_Live_Date__c</fullName>
         <description>Live Date that never gets reset if an Account goes from OFF to LIVE</description>
         <externalId>false</externalId>
@@ -12793,20 +12782,220 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
     </fields>
     <fields>
         <fullName>AlternateSFId__c</fullName>
+        <description>Unique identifier signifying the target instance created Id for the corresponding source record</description>
         <externalId>false</externalId>
+        <inlineHelpText>Unique identifier signifying the target instance created Id for the corresponding source record</inlineHelpText>
         <label>AlternateSFId</label>
-        <length>50</length>
+        <length>18</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>tz__LT_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
+        <label>LT Info</label>
+        <length>340</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Account in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Account in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Account in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; "/" &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; "/" &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; " " &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+)</formula>
+        <inlineHelpText>Shows the local time for the Account in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Account.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;" "&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+"AM",
+"PM"
+)
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, 	tz__Timezone__c,"")
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Account.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Account.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; "/" &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; "/" &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; " " &amp;
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;" "&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+"AM",
+"PM"
+)
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"") 
+)</formula>
+        <inlineHelpText>Shows the local time for the Account.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Full__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full timezone name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full timezone name.</inlineHelpText>
+        <label>Timezone (Full)</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_IANA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone as defined by Internet Assigned Numbers Authority (IANA).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone as defined by Internet Assigned Numbers Authority (IANA).</inlineHelpText>
+        <label>Timezone (IANA)</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_SFDC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce IANA timezone.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce IANA timezone.</inlineHelpText>
+        <label>Timezone SFDC</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTF_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current UTC timezone offset of the Account. Uses the Billing address, and in its absence the Phone number field in the calculation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Account.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
@@ -13341,12 +13530,12 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
         <filters>
             <field>ACCOUNT.CREATED_DATE</field>
             <operation>equals</operation>
-            <value>THIS_WEEK</value>
+            <value>THIS_YEAR</value>
         </filters>
         <filters>
             <field>Product_Type__c</field>
-            <operation>equals</operation>
-            <value>organic</value>
+            <operation>contains</operation>
+            <value>Light</value>
         </filters>
         <label>New This Week</label>
     </listViews>
@@ -13469,6 +13658,27 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             <value>Account.Standard</value>
         </filters>
         <label>Standard accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Lead_Stream_Accounts_ER</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type_Transactional__c</field>
+            <operation>contains</operation>
+            <value>Lead</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <label>Lead Stream Accounts ER</label>
     </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>
@@ -49977,7 +50187,17 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -54619,7 +54839,17 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>Integration__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>JCI_Dealer_Type__c</picklist>
             <values>
@@ -55534,7 +55764,29 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
                 <default>true</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Status__c</picklist>
             <values>
@@ -56168,23 +56420,6 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
         <errorMessage>Please complete the Type Detail field.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBN_Restriction_to_edit_Jax_fields</fullName>
-        <active>true</active>
-        <description>Only specific users can edit these fields in Standard Accounts</description>
-        <errorConditionFormula>AND(  
- $Setup.Validation_Rule_Permissions__c.Perm_to_edit_WBN_Jax_fields__c  = false, 
-
-OR( 
-ISCHANGED( Status__c ), 
-ISCHANGED( Account_Director__c ), 
-ISCHANGED( IMS_Rep__c ),
-ISCHANGED( Live_Date__c ), 
-ISCHANGED( WBN_JAX_CUST_ID__c )
-)
-)</errorConditionFormula>
-        <errorMessage>You do not have the permission to edit Account Status, CSD, IMS Rep, Live Date or WBN JAX Account ID. Please contact a CSC Manager.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Restriction_to_edit_WBN_Jax_fields</fullName>
         <active>true</active>
         <description>Only specific users can edit these fields in Standard Accounts</description>
@@ -56406,7 +56641,7 @@ window.open('/apex/IssueTracker?Client_ID__c={!Account.Client_ID__c}&amp;id={!Ac
         <masterLabel>Log Exec Sponsor Activity</masterLabel>
         <openType>replace</openType>
         <protected>false</protected>
-        <url>/00T/e?what_id={!Account.Id}&amp;retURL={!Account.Id}&amp;RecordType=012600000009cGq&amp;tsk4={!TODAY()}&amp;tsk12=Completed&amp;ent=Task</url>
+        <url>/00T/e?what_id={!Account.Id}&amp;retURL={!Account.Id}&amp;RecordType.DeveloperName='Executive_Sponsor_Activity'&amp;tsk4={!TODAY()}&amp;tsk12=Completed&amp;ent=Task</url>
     </webLinks>
     <webLinks>
         <fullName>Log_Future</fullName>
@@ -56588,5 +56823,157 @@ window.open('/apex/OnDemandSF2MarketoRecordSync?recordId={!Account.Id}&amp;objec
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1200</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Account.Id}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Account)};
+var url = "/apex/loop__loopmerge?retURL="+encodeURI(window.location.pathname+window.location.search);
+url += "&amp;recordIds="+ids.join(',');
+window.location.href = url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Account)};
+if (!ids || ids.length &lt; 1)
+    alert('Please select at least one record.');
+else
+{
+    var url = "/apex/loop__masslooplus?retURL=" + encodeURI(window.location.pathname+window.location.search) + "&amp;contactfield=";
+    url += "&amp;recordIds="+ids.join(',');
+    url += "&amp;sessionId={!$Api.Session_ID}";
+    window.location.href = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>echosign_dev1__Send_to_EchoSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send for Signature</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>leadspace__LeadspaceFindNewProspectsAccount</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Leadspace</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>navigateToUrl("/apex/leadspace__LeadSpaceDossiers?companyName={!JSENCODE(Account.Name)}");</url>
+    </webLinks>
+    <webLinks>
+        <fullName>tz__Local_Time_Act_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Account Page Layout. Displays the local time for the current record. The Billing Country, Billing State, and Billing City fields need to be properly filled in order for this button to function properly. Else the value "Unknown" is shown.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT("/soap/ajax/34.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/34.0/apex.js")}
+{!REQUIRESCRIPT("https://success-software.biz/localtime/js/json3.min.js")}
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+tbutton=document.getElementsByName(sObject);
+
+if(sOffset == 'N/A') {
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value='Unknown';
+}
+}
+else {
+var args1={offset:sOffset};
+cttime=sforce.apex.execute("tz.LocalTime","getLocalTimeString",args1);
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=cttime +  " " + sEnd;
+}
+}
+
+self.status=tbutton[0].value;
+setTimeout('tbutton[0].click();',sFrequency);
+
+}
+onError=null;
+
+if(typeof sOffset=='undefined') {
+sOffset='N/A';
+sEnd='N/A';
+
+try {
+var args={objId:"{!JSENCODE(Account.Id)}"};
+var jsontext=sforce.apex.execute("tz.LocalTime","FindLocalTime",args);
+if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+var lt=JSON.parse(jsontext);
+sOffset=lt.offset;
+sEnd=lt.abbreviation;
+if("{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}" == "false") sEnd = ''; 
+}
+}
+catch(err) {alert(err);}
+}
+
+if(typeof freq=='undefined') {
+freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
+}
+
+calcTime(sOffset,freq,sEnd,"tz__local_time_act_btn");</url>
     </webLinks>
 </CustomObject>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Agent Emails - Local Pooled</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Email_template_Access</group>
+        <group>Local_Email_Queue_Access</group>
+        <role>CollectionsConsultant294541</role>
+        <role>InboundSpecialist294541</role>
+        <role>Inbound_Email_Associate</role>
+        <role>Lighthouse_CS</role>
+        <role>Lighthouse_CSC_Rep</role>
+        <role>Lighthouse_Config_Rep</role>
+        <role>Lighthouse_Inbound</role>
+        <role>Lighthouse_Install_Rep</role>
+        <role>Lighthouse_Marketing_Associate</role>
+        <role>LocalCSM</role>
+        <role>LocalConsultant</role>
+        <role>OutboundAssociate294541</role>
+        <role>OutboundSpecialist294541</role>
+        <role>PartnerAssociate</role>
+        <role>PartnerConsultant</role>
+        <role>PartnerFlex</role>
+        <role>PartnerManager</role>
+        <role>Program_Management</role>
+        <role>RetentionConsultant294541</role>
+        <role>Services_Collections</role>
+        <role>Services_Inbound</role>
+        <role>Services_Outbound</role>
+        <role>TrainingExecutive</role>
+    </sharedTo>
+</EmailFolder>

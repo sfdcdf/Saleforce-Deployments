@@ -1,0 +1,23 @@
+.THIS {
+}
+
+div.THIS {
+	margin: 30px;
+	padding: 20px;
+	background-color: rgba(78,197,219,1);
+}
+
+.THIS .toggle, .THIS.toggle {
+    display: none !important;
+}
+
+.THIS span.dismissText {
+	float:right; 
+	margin-right: 25px; 
+	text-decoration: none; 
+	font-weight: bolder; 
+	border-style: dashed; 
+	color: #ff0000;
+	display: block;
+	cursor: pointer;
+}

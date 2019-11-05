@@ -15,4 +15,5 @@
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <tabs>SFDCToCTSAsynchRequest__c</tabs>
     <tabs>CTS_Error_Log__c</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
 </CustomApplication>

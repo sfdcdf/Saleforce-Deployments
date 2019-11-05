@@ -1,0 +1,9 @@
+{!Cancellation_Request__c.Account_Name__c} contacted our team on {!Cancellation_Request__c.CreatedDate} to discontinue their Lead Stream service.  Below is the information regarding the cancellation and the outcome of the call.
+
+***This is an FYI only.  Please DO NOT contact the client or the client services team.  An account manager will contact you directly if they need assistance or have questions.***
+
+Cancellation Reason:  {!Cancellation_Request__c.Cancel_Code__c}, {!Cancellation_Request__c.First_Cancel_Code_Details__c}
+Notes:  {!Cancellation_Request__c.First_Cancel_Code_Notes__c}
+Outcome:  {!Cancellation_Request__c.Outcome__c}
+
+If you would like additional information, you can open the case here: {!Case.Link}

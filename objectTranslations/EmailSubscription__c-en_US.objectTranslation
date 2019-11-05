@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Email Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created DateTime --></label>
+        <name>CreatedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified DateTime --></label>
+        <name>LastModifiedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Date - Issue Resolution Survey --></label>
+        <name>Sent_Date_Issue_Resolution_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsubscribe --></label>
+        <name>Unsubscribe__c</name>
+        <picklistValues>
+            <masterLabel>Issue Resolution Survey</masterLabel>
+            <translation><!-- Issue Resolution Survey --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Email Subscription</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Email Subscriptions</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>Email Subscription Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

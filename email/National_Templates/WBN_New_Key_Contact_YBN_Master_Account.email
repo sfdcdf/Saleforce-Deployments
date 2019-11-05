@@ -1,0 +1,66 @@
+<messaging:emailTemplate subject="New WBN Key Decision Maker Contact" recipientType="User" relatedToType="Contact">
+
+<messaging:htmlEmailBody >
+
+<html>
+    <body>
+    <STYLE type="text/css">
+        TH {font-size: 11px; font-face: arial;background: #CCCCCC; border-width: 1;  text-align: center } 
+        TD  {font-size: 11px; font-face: verdana } 
+        TABLE {border: solid #CCCCCC; border-width: 1}
+        TR {border: solid #CCCCCC; border-width: 1}
+     </STYLE>
+     <font face="arial" size="2">
+
+<h3>A Key Decision Maker Contact has been added to WBN Master Account {!relatedTo.Account.Name} </h3>
+
+<b>Account Name:</b>  {!relatedTo.Account.Name} <br/>
+<b>Name:</b> {!relatedTo.FirstName}  {!relatedTo.LastName} <br/>
+<b>Title:</b> {!relatedTo.Title} <br/>
+<b>Role:</b> {!relatedTo.Role__c} <br/>
+<b>Reports To:</b> {!relatedTo.Reportsto.Name}   <br/>
+<b>Gender:</b> {!relatedTo.Gender__c} <br/>
+<b>Lead Source:</b> {!relatedTo.LeadSource} <br/>
+<b>Phone:</b> {!relatedTo.Phone} <br/>
+<b>Mobile:</b> {!relatedTo.MobilePhone} <br/>
+<b>Email:</b> {!relatedTo.Email} <br/>
+<b>Linkedin Profile:</b> <a href="{!relatedTo.LinkedIn_Profile__c} ">{!relatedTo.LinkedIn_Profile__c}</a> <br/>
+
+<p>
+<b>Contact Link:</b> &nbsp; 
+
+<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Name}</apex:outputlink>
+
+</p>
+</font>
+
+</body>
+</html>
+</messaging:htmlEmailBody>
+
+
+
+<messaging:plainTextEmailBody >
+A Key Decision Maker Contact has been added to WBN Master Account {!relatedTo.Account.Name}
+
+Account Name:  {!relatedTo.Account.Name} 
+Name: {!relatedTo.FirstName}  {!relatedTo.LastName} 
+Title: {!relatedTo.Title} 
+Role: {!relatedTo.Role__c} 
+Reports To: {!relatedTo.Reportsto.Name}   
+Gender: {!relatedTo.Gender__c} 
+Lead Source: {!relatedTo.LeadSource} 
+Phone: {!relatedTo.Phone} 
+Mobile: {!relatedTo.MobilePhone} 
+Email: {!relatedTo.Email} 
+Linkedin Profile: {!relatedTo.LinkedIn_Profile__c}
+
+Contact Link:
+{!LEFT($Api.Partner_Server_URL_280, FIND(".com/",$Api.Partner_Server_URL_280)+3)}/{!relatedTo.Id}
+
+
+
+
+</messaging:plainTextEmailBody>    
+
+</messaging:emailTemplate>

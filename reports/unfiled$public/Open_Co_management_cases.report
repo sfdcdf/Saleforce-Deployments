@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Google_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Google_Account_Status__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Owner_Verified_Status__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Account_Product_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.YO_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Off</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Google_Listing_Created__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Existing Listings Found</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Google_Listing_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Owner-Verified/Pending Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Owner_Verified_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Owner-Verified/Pending Management</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Open Co-management cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Organic_Analysis__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Organic_Analysis__c.Setup_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

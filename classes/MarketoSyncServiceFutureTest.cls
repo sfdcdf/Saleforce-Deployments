@@ -243,8 +243,6 @@ private class MarketoSyncServiceFutureTest {
 	@isTest static void test_getDeletedLeads() {
 		new TestCustomSettingInitializer();
 
-		String responseExample = '{ "success": true }';
-		Test.setMock(HttpCalloutMock.class, new YodleLiveIntegrationCalloutMock(200, 'OK', responseExample, new Map<String, String>{'Content-Type' => 'application/json'}));
 
 		MarketoSyncServiceFuture.getDeletedLeads(DateTime.now());
 	}

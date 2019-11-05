@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To send to client when case is closed, now under Cust Surveys Updated  May 2016</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Issue Resolution Email Template May 2016</name>
+    <style>none</style>
+    <subject>Tell Us What You Think In 2 Minutes</subject>
+    <textOnly>At Yodle, we are passionate about your success and are committed to continually improving the service we provide you.
+
+If you have a moment, we’d be grateful if you could answer a few questions about your experience with our Customer Success Team, so that we can continue to improve the Yodle experience for you and all of the businesses we support.
+
+Please respond as soon as possible – it should only take a couple of minutes, and the survey link will expire in one week. 
+
+Click the link below to take a survey about your recent request. 
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=384s303ospr8d&amp;q1={!Account.Id}&amp;q2={!Case.Id}&amp;q3={!Case.OwnerFirstName}
+
+
+Sincerely,
+
+Kent Warren
+Vice President, Client Services
+
+
+©{!User.Today_s_Year__c} by Yodle Web.com, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

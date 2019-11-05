@@ -10850,6 +10850,21 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
+    <fields>
+        <fullName>Clients_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.BillingStreet  &amp; ", "
+&amp;  Account_Name__r.BillingCity  &amp; ", "
+&amp;  Account_Name__r.BillingState  &amp; ", "
+&amp;  Account_Name__r.BillingPostalCode  &amp; ", "
+&amp;  Account_Name__r.BillingCountry</formula>
+        <label>Client's Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -22315,11 +22330,11 @@ false)</formula>
         <active>true</active>
         <errorConditionFormula>AND(
 RecordType.Name = "Cancellation Request",
-Account_IMS__c= "00532000005P6l3",
+Account_Name__r.IMS_Rep__c= 'Lead Stream Support',
  ISCHANGED( OwnerId ),
 OR(
- $User.ProfileId = "00e60000000ipQO",
- $User.ProfileId = "00e60000000im1S"))</errorConditionFormula>
+$User.Profile_Name__c= 'Pooled CS Support - Non Austin',
+ $User.Profile_Name__c  = 'Pooled CS Support - Austin'))</errorConditionFormula>
         <errorMessage>This is a LBW Account, and should only be worked and edited by the LBW Customer Service team.</errorMessage>
     </validationRules>
     <validationRules>
@@ -22361,7 +22376,7 @@ ispickval( Account_in_Save_Mode__c  ,"")))</errorConditionFormula>
         <fullName>Closing_must_fill_out_Additional_Notes</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
+$Profile.Name &lt;&gt; 'System Administrator', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"),
 NOT($User.Email = "sfdc@yodle.com"), 
@@ -22806,7 +22821,7 @@ $User.Email &lt;&gt; "sfdc@yodle.com"</errorConditionFormula>
         <fullName>Require_Refund_on_Close</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
+  $Profile.Name &lt;&gt; 'System Administrator', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"), 
 NOT(RecordType.Name = "WBN Cancellation Request"), 
 NOT(RecordType.Name = "LH Cancellation Request"), 

@@ -3516,13 +3516,186 @@ LEFT( WhatId ,3)= '001' /* Account */
     </fields>
     <fields>
         <fullName>AlternateSFId__c</fullName>
+        <description>Unique identifier signifying the target instance created Id for the corresponding source record</description>
         <externalId>false</externalId>
+        <inlineHelpText>Unique identifier signifying the target instance created Id for the corresponding source record</inlineHelpText>
         <label>AlternateSFId</label>
-        <length>50</length>
+        <length>18</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__Call_Recording__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( LOCC_App__LO_CC_base_URL__c  &amp; "/html/play.cgi?session_id=" &amp; CallObject, "Play Recording")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Call Recording</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__LO_CC_base_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>LO CC base URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__calllength__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__callscore__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__campaignid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__campaignname__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__dnis__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DNIS</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__interactionid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Interaction ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__phonenumbercountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Phone Number Country</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOCC_App__wrapuplength__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Wrap Up Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the local time for the related Lead or Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTC_Offset__c), 
+"Unknown", 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 6, 2 ) &amp; "/" &amp; 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 9, 2 ) &amp; "/" &amp; 
+LEFT( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 4 ) &amp; " " &amp; 
+TEXT( 
+IF( 
+OR( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) = 0, 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) = 12 
+), 
+12, 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) 
+- 
+IF( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) &lt; 12, 
+0, 
+12 
+) 
+) 
+) 
+&amp;":"&amp; 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 15, 2 ) 
+&amp;" "&amp; 
+IF( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) &lt; 12, 
+"AM", 
+"PM" 
+) 
+&amp; " " &amp; 
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"") 
+)</formula>
+        <inlineHelpText>Shows the local time for the related Lead or Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTC_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the UTC timezone offset of the Lead / Contact associated with the task.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Lead / Contact associated with the task.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <enableFeeds>false</enableFeeds><searchLayouts>
         <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>

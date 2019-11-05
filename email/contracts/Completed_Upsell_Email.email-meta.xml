@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Automatically sent out to client once upsell case is closed.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Completed Upsell Email</name>
+    <style>none</style>
+    <subject>Yodle - Your Upsell is Complete!</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c},
+
+I&apos;m excited that you&apos;ve decided to increase your AdStation budget for {!Case.Business_Name__c} so you can generate even more results with Yodle! I want to inform you that the process is complete and we will begin spending with your new budget of {!Case.Budget__c}.
+
+Did you know you can make even more money by signing up for Yodle&apos;s referral program? Share your success with others and for every referral you send that signs up with Yodle, you&apos;ll receive $200! Find out more about Yodle&apos;s referral program by going to http://www.yodle.com/partners. Sign up and begin referring today!
+
+Sincerely,
+
+Yodle Contracts Team
+contracts@yodle.com
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+New Contract Length (months):{!Case.Term_months__c}
+New Budget: {!Case.Budget__c}
+Old Budget: {!Case.Old_Budget__c}
+Billing Parameters: {!Case.Charge_Date__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+{!Case.CaseNumber}
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

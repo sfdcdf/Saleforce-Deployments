@@ -1,0 +1,18 @@
+Hello, 
+
+This NCS Case {!Case.CaseNumber} needs review. All stakeholders should be pulled in to help tackle ASAP. Please add any pertinent notes as comments within the case for stakeholders to reference. 
+
+Account: {!Account.Client_ID__c} - {!Account.Name} 
+Subject: {!Case.Subject} 
+Product: {!Case.SEO_Product__c} 
+
+
+Status: {!Case.Status} 
+Lost Reason: {!Case.Lost_Reason__c} 
+Status Notes: {!Case.Status_Notes__c} 
+
+Case Owner: {!Case.OwnerFullName} 
+IMS Rep: {!Account.IMS_Rep__c} 
+Sales Person: {!Case.Sales_Person__c}
+
+Link to Case: {!Case.Link}

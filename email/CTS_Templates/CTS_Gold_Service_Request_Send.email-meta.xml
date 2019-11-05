@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SF to CTS Gold Service Request content email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CTS-Gold Service Request-Send</name>
+    <style>none</style>
+    <subject>Gold Service Request:{!Case.CaseNumber}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

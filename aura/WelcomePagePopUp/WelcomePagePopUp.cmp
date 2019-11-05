@@ -1,0 +1,16 @@
+<aura:component controller="WelcomePagePopUpController">
+	<aura:attribute name="popUpAd" type="Partner_Pop_up_Ad__c"/>
+	<aura:attribute name="popUpId" type="String" />
+	<aura:handler name="init" value="{!this}" action="{!c.getPopUp}"/>
+
+	<!--aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+	<aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/-->
+
+	<div aura:id="popUpDivId" >
+		<!--ui:outputText value="x" click="{!c.dismissAd}" class="dismissText" /-->
+		<span class="dismissText" onclick="{!c.dismissAd}" aura:id="dismissTextId">x</span>
+		<aura:unescapedHtml value="{!v.popUpAd.Pop_up_Content__c}"/>
+		<!--ui:button label="DISMISS" press="{!c.dismissAd}"/-->
+		<!--center><ui:spinner aura:id="spinner"/></center-->
+	</div>
+</aura:component>

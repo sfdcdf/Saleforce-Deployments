@@ -917,7 +917,7 @@
     <fields>
         <fullName>CCall_Flow_Adherence1__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3bu', 
+        <formula>IF( RecordType.DeveloperName= 'CSC_Monitoring_Forms', 
 IF(ISPICKVAL( Introduction__c ,"1"),50,0)+ 
 IF(ISPICKVAL( Introduction__c ,"2"),100,0)+ 
 
@@ -1010,7 +1010,7 @@ IF(ISPICKVAL( Proper_Closing_Transfer__c ,"2"),100,0),0)</formula>
     <fields>
         <fullName>CSC_Monitoring_Forms_Formula_1__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3bu', 
+        <formula>IF( RecordType.DeveloperName = 'CSC_Monitoring_Forms', 
 IF(ISPICKVAL(  Introduction__c  ,"1"),50,0)+ 
 IF(ISPICKVAL( Introduction__c ,"2"),100,0)+ 
 
@@ -1199,7 +1199,7 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
     <fields>
         <fullName>CSC_Monitoring_Forms_Formula_2__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3bu', CSC_Monitoring_Forms_Text_Formula_2_1__c +  CSC_Monitoring_Forms_Text_Formula_2_2__c, 0)</formula>
+        <formula>IF( RecordType.DeveloperName = 'CSC_Monitoring_Forms', CSC_Monitoring_Forms_Text_Formula_2_1__c +  CSC_Monitoring_Forms_Text_Formula_2_2__c, 0)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>CSC Monitoring Forms Formula 2</label>
         <precision>18</precision>
@@ -1329,7 +1329,7 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
     <fields>
         <fullName>Call_Flow_Adherence_Formula_1__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3bz',
+        <formula>IF( RecordType.DeveloperName = 'Save_Call_Monitoring_Forms',
 IF(ISPICKVAL( Opening__c ,"1"),50,0)+ 
 IF(ISPICKVAL( Opening__c ,"2"),100,0)+ 
 IF(ISPICKVAL( Uncover_the_Issue__c ,"1"),50,0)+ 
@@ -1380,7 +1380,7 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
     <fields>
         <fullName>Call_Flow_Adherence_Formula_2__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3bz', 
+        <formula>IF( RecordType.DeveloperName = 'Save_Call_Monitoring_Forms', 
 IF(ISPICKVAL( Opening__c ,"0"),100,0)+ 
 IF(ISPICKVAL( Opening__c ,"1"),100,0)+ 
 IF(ISPICKVAL( Opening__c ,"2"),100,0)+ 
@@ -1429,9 +1429,9 @@ IF(ISPICKVAL( Attempt_Log_in__c ,"2"),100,0),0)</formula>
     <fields>
         <fullName>Call_Grade__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(RecordTypeId = '01232000000M3bu',  CCall_Flow_Adherence_Qualitative_Formula__c, 
- IF(RecordTypeId = '01232000000M3c4',  ICall_Flow_Adherence_Qualitative_Formula__c, 
- IF(RecordTypeId = '01232000000M3bz',  SCall_Flow_Adherence_Qualitative_Formula__c, 0) ) )</formula>
+        <formula>IF(RecordType.DeveloperName = 'CSC_Monitoring_Forms', CCall_Flow_Adherence_Qualitative_Formula__c, 
+IF(RecordType.DeveloperName = 'Inbound_Monitoring_Forms', ICall_Flow_Adherence_Qualitative_Formula__c, 
+IF(RecordTypeId = '01232000000M3bz', SCall_Flow_Adherence_Qualitative_Formula__c, 0) ) )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Call Grade</label>
         <precision>18</precision>
@@ -3529,7 +3529,7 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0)</formula>
     <fields>
         <fullName>ICall_Flow_Adherence_Formula1__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3c4',
+        <formula>IF( RecordType.DeveloperName = 'Inbound_Monitoring_Forms',
 IF(ISPICKVAL( Opening__c ,"1"),50,0)+ 
 IF(ISPICKVAL( Opening__c ,"2"),100,0)+ 
 IF(ISPICKVAL( Acknowledge_Reason_for_Call__c ,"1"),50,0)+ 
@@ -3561,7 +3561,7 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
     <fields>
         <fullName>ICall_Flow_Adherence_Formula_2__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3c4', 
+        <formula>IF( RecordType.DeveloperName = 'Inbound_Monitoring_Forms', 
 IF(ISPICKVAL( Opening__c ,"0"),100,0)+ 
 IF(ISPICKVAL( Opening__c ,"1"),100,0)+ 
 IF(ISPICKVAL( Opening__c ,"2"),100,0)+ 
@@ -3676,7 +3676,7 @@ IF(ISPICKVAL( Upsell_Pitch__c ,"2"),100,0),0)</formula>
     <fields>
         <fullName>Inbound_Monitoring_Formula_2__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3c4', 
+        <formula>IF( RecordType.DeveloperName = 'Inbound_Monitoring_Forms', 
 IF(ISPICKVAL( Opening__c ,"0"),100,0)+ 
 IF(ISPICKVAL( Opening__c ,"1"),100,0)+ 
 IF(ISPICKVAL( Opening__c ,"2"),100,0)+ 
@@ -3735,7 +3735,7 @@ IF(ISPICKVAL( Call_control__c,"4"),100,0),0)</formula>
     <fields>
         <fullName>Inbound_Monitoring_Formula__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( RecordTypeId = '01232000000M3c4', 
+        <formula>IF( RecordType.DeveloperName = 'Inbound_Monitoring_Forms', 
 IF(ISPICKVAL( Opening__c ,"1"),50,0)+ 
 IF(ISPICKVAL( Opening__c ,"2"),100,0)+ 
 IF(ISPICKVAL(  Acknowledge_Reason_for_Call__c  ,"1"),50,0)+ 

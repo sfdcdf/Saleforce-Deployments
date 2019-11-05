@@ -10,28 +10,6 @@
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>ESBAPIEndPoint__c</fullName>
-        <description>CTS Enterprise Service Bus (ESB) Endpoint URL</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>CTS Enterprise Service Bus (ESB) Endpoint URL</inlineHelpText>
-        <label>ESB API End Point</label>
-        <required>true</required>
-        <type>Url</type>
-    </fields>
-    <fields>
-        <fullName>ESBEndpointName__c</fullName>
-        <description>Name identifier for the Enterprise Service Bus (ESB) Endpoint</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Name identifier for the Enterprise Service Bus (ESB) Endpoint</inlineHelpText>
-        <label>ESB Endpoint Name</label>
-        <length>255</length>
-        <required>true</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>IsActive__c</fullName>
         <defaultValue>true</defaultValue>
         <description>Flag/ indicator signifying if the integration record is active or not</description>
@@ -40,18 +18,6 @@
         <inlineHelpText>Flag/ indicator signifying if the integration record is active or not</inlineHelpText>
         <label>Is Active</label>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>LoginId__c</fullName>
-        <description>Login identity associated to the ESB Endpoint for authentication/ handshake to the service bus</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Login identity associated to the ESB Endpoint for authentication/ handshake to the service bus</inlineHelpText>
-        <label>Login Id</label>
-        <length>100</length>
-        <required>true</required>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>AsyncDelayInterval__c</fullName>

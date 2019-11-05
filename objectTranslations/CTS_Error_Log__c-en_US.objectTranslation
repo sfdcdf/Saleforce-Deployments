@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Lookup relationship to the SFDCToCTSAsynchRequest object Id --></help>
+        <label><!-- Asynch Request --></label>
+        <name>Asynch_Request_Id__c</name>
+        <relationshipLabel><!-- CTS Error Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Error Message associated to the log record --></help>
+        <label><!-- Log Message --></label>
+        <name>Log_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the CTS Method executing when the error occurred --></help>
+        <label><!-- Method Name --></label>
+        <name>Method_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- SFDC Object unique record Id --></help>
+        <label><!-- Object Id --></label>
+        <name>Object_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the Salesforce record associated to the Error Log --></help>
+        <label><!-- Object Record Link --></label>
+        <name>Object_Record_Link__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>CTS Error Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CTS Error Logs</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <recordTypes>
+        <description><!-- Logs recorded in the process of sending the request to CTS for ticket creation --></description>
+        <label><!-- POST CTS Request Log --></label>
+        <name>POST_CTS_Request_Log</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Logs recorded prior to sending the CTS Request for ticket creation --></description>
+        <label><!-- PRE CTS Request Log --></label>
+        <name>PRE_CTS_Request_Log</name>
+    </recordTypes>
+</CustomObjectTranslation>

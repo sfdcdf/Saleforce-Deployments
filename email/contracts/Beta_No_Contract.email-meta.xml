@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Beta Test - Account setup without a contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Beta - No Contract</name>
+    <style>none</style>
+    <subject>Yodle - Review the terms of our working relationship</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c}, 
+
+	
+Welcome to Yodle! By now you should have received several emails from us, and this last one provides you with a description of what it means to do business with Yodle. By clicking on this link: terms-and-conditions you can review the ins and outs of our working relationship, which take effect as soon as you log into your personal reporting dashboard, Yodle Live. Our user-friendly interface gives you complete visibility into your reach across the Web and makes it easy to understand the results from your online marketing. Plus, all of the data is available to you in real-time, 24/7 
+
+
+We will send you your login information shortly, when your account is launched, and your Marketing Consultant will be more than happy to walk you through the dashboard. 
+
+
+We’re excited to have you onboard, and please don’t hesitate to reach out if you have any questions. 
+
+
+Sincerely, 
+
+
+The Yodle Team
+clientsupport@yodle.com
+	
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+
+
+
+
+
+{!Case.CaseNumber}
+ Privacy Policy 
+
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

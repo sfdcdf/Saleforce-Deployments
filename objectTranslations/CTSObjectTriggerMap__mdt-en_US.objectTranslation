@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Additional Filter placeholder --></help>
+        <label><!-- Additional Filter --></label>
+        <name>Additional_Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTS API Identifier referenced for CTS Ticket creation (if API Integration Type) --></help>
+        <label><!-- CTS API Identifier --></label>
+        <name>CTSAPIIdentifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Login Name used to reference a CTS User --></help>
+        <label><!-- CTS Assigned To Login Name --></label>
+        <name>CTSAssignedToLoginName__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTS Email Address referenced for CTS Ticket creation (if Email Integration Type) --></help>
+        <label><!-- CTS Email Address --></label>
+        <name>CTSEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- CTS Note Type referenced for CTS Ticket creation (if API Integration Type) --></help>
+        <label><!-- CTS Note Type --></label>
+        <name>CTSNoteType__c</name>
+        <picklistValues>
+            <masterLabel>Internal Note</masterLabel>
+            <translation><!-- Internal Note --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Case Origin referenced for CTS Ticket creation (if applicable) --></help>
+        <label><!-- Case Origin --></label>
+        <name>CaseOrigin__c</name>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circuit Breaker</masterLabel>
+            <translation><!-- Circuit Breaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Client</masterLabel>
+            <translation><!-- New Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self</masterLabel>
+            <translation><!-- Self --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touch Plan 1</masterLabel>
+            <translation><!-- Touch Plan 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touch Plan 2</masterLabel>
+            <translation><!-- Touch Plan 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touch Plan 3</masterLabel>
+            <translation><!-- Touch Plan 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YodleGoldService@yodle.com</masterLabel>
+            <translation><!-- YodleGoldService@yodle.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>customercare@yodle.com</masterLabel>
+            <translation><!-- customercare@yodle.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Case Reason referenced for CTS Ticket creation (if applicable) --></help>
+        <label><!-- Case Reason --></label>
+        <name>CaseReason__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adoption Call</masterLabel>
+            <translation><!-- Adoption Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Touch Plan</masterLabel>
+            <translation><!-- CS Touch Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC</masterLabel>
+            <translation><!-- CSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Request</masterLabel>
+            <translation><!-- Cancel Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge Failure</masterLabel>
+            <translation><!-- Charge Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Communication</masterLabel>
+            <translation><!-- Client Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Escalation</masterLabel>
+            <translation><!-- Client Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLS</masterLabel>
+            <translation><!-- MLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maps Verification</masterLabel>
+            <translation><!-- Maps Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Client Setup</masterLabel>
+            <translation><!-- New Client Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proactive Touch</masterLabel>
+            <translation><!-- Proactive Touch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issues</masterLabel>
+            <translation><!-- Technical Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Any description, comments or notes about the mapping record --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Email Template Name corresponding to the Details Template Id --></help>
+        <label><!-- Details Template Name --></label>
+        <name>DetailsTemplateName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Integration Type referenced for what process is used to create the CTS Ticket (Email or API) --></help>
+        <label><!-- Integration Type --></label>
+        <name>IntegrationType__c</name>
+        <picklistValues>
+            <masterLabel>API</masterLabel>
+            <translation><!-- API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Flag/ indicator signifying if the mapping record is Active --></help>
+        <label><!-- Is Active --></label>
+        <name>IsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag/ Indicator signifying if the Salesforce record should be auto-closed --></help>
+        <label><!-- Is Auto Close --></label>
+        <name>IsAutoClose__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag/ Indicator signifying if an associated CTS Ticket Note should be created when creating the CTS Ticket (API Integration Type only) --></help>
+        <label><!-- Is Create CTS Note --></label>
+        <name>IsCreateCTSNote__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag/ indicator signifying that WBN records will be excluded from the specified mapping record processing --></help>
+        <label><!-- Is Exclude WBN --></label>
+        <name>IsExcludeWBN__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Email Template Name corresponding to the Note Details Template Id --></help>
+        <label><!-- Note Details Template Name --></label>
+        <name>NoteDetailsTemplateName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Object Reference Metadata Type Lookup Relationship --></help>
+        <label><!-- Object Reference --></label>
+        <name>Object__c</name>
+        <relationshipLabel><!-- CTSObjectTriggerMaps --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Product Type referenced for CTS Ticket creation --></help>
+        <label><!-- Product Type --></label>
+        <name>ProductType__c</name>
+        <picklistValues>
+            <masterLabel>Essentials</masterLabel>
+            <translation><!-- Essentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Stream ATV</masterLabel>
+            <translation><!-- Lead Stream ATV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads By Web</masterLabel>
+            <translation><!-- Leads By Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx</masterLabel>
+            <translation><!-- TORCHx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx Ads</masterLabel>
+            <translation><!-- TORCHx Ads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Ads</masterLabel>
+            <translation><!-- Yodle Ads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Max</masterLabel>
+            <translation><!-- Yodle Max --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Organic</masterLabel>
+            <translation><!-- Yodle Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Web</masterLabel>
+            <translation><!-- Yodle Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name of the Salesforce Object Record Type referenced for CTS Ticket creation --></help>
+        <label><!-- Record Type Name --></label>
+        <name>RecordTypeName__c</name>
+        <picklistValues>
+            <masterLabel>Account Update</masterLabel>
+            <translation><!-- Account Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATCHALL</masterLabel>
+            <translation><!-- CATCHALL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge Failure</masterLabel>
+            <translation><!-- Charge Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing Script - Auto Launch</masterLabel>
+            <translation><!-- Closing Script - Auto Launch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Worksheet</masterLabel>
+            <translation><!-- Installation Worksheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBW Content Organic Setup</masterLabel>
+            <translation><!-- LBW Content Organic Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH Closing Script – Auto Launch</masterLabel>
+            <translation><!-- LH Closing Script – Auto Launch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH Master</masterLabel>
+            <translation><!-- LH Master --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH OOS</masterLabel>
+            <translation><!-- LH OOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maps Initial Claiming</masterLabel>
+            <translation><!-- Maps Initial Claiming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master</masterLabel>
+            <translation><!-- Master --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS - AutoLaunch</masterLabel>
+            <translation><!-- NCS - AutoLaunch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPS Survey LBW</masterLabel>
+            <translation><!-- NPS Survey LBW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPS Survey Lighthouse</masterLabel>
+            <translation><!-- NPS Survey Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimization</masterLabel>
+            <translation><!-- Optimization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Setup</masterLabel>
+            <translation><!-- Organic Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Call</masterLabel>
+            <translation><!-- Outbound Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIN Action Needed</masterLabel>
+            <translation><!-- PIN Action Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA Audit</masterLabel>
+            <translation><!-- QA Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx Master</masterLabel>
+            <translation><!-- TORCHx Master --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHx NCS - AutoLaunch</masterLabel>
+            <translation><!-- TORCHx NCS - AutoLaunch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Gold Service</masterLabel>
+            <translation><!-- Yodle Gold Service --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>CTSObjectTriggerMap</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CTSObjectTriggerMaps</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>CTSObjectTriggerMap Layout</layout>
+        <sections>
+            <label><!-- API Integration Details --></label>
+            <section>API Integration Details</section>
+        </sections>
+        <sections>
+            <label><!-- Case Specific Details --></label>
+            <section>Case Specific Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Integration Details --></label>
+            <section>Email Integration Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

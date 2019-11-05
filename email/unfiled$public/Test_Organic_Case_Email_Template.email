@@ -1,0 +1,5 @@
+This is a test for Organic Case email template 
+Organic Case Id: {!Organic_Analysis__c.Id} 
+Account Name: {!Organic_Analysis__c.Account_Name__c} 
+First Name: {!Account.Client_First_Name__c}
+Organic Case Name: {!Organic_Analysis__c.Name}

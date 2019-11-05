@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>for combo accounts - allows the customer to get out of the agreement after 90 days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Combo-90-Day agreement for SEO</name>
+    <style>none</style>
+    <subject>Your Yodle Organic Contract Addendum - please &quot;accept&quot;</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c}, 
+
+	This email confirms that Yodle is extending the guarantee set forth below to Customer in connection with Customer’s purchase of the Yodle Organic Service, as set forth herein. As noted below, to accept the terms and conditions of this Change Order, please reply to this e-mail with &quot;Accept&quot; in the body.
+
+This Change Order changes the Agreement in effect between Yodle and Customer. 
+
+Customer Satisfaction Guarantee. If Customer is dissatisfied with the Yodle Organic Service for any reason, it may terminate the Yodle Organic Service by e-mail to Customer’s Interactive Marketing Specialist at any time on or after the last day of the third month of the Yodle Organic Service Commitment Period. 
+
+Except as modified by this Change Order, all of the terms and provisions of the Agreement remain in full force and effect. 
+
+This Change Order becomes effective on the date accepted by Customer. Customer accepts this Change Order by replying to this e-mail with “Accept”. This action creates an electronic signature that has the same legal force and effect as a handwritten signature on a written contract under any applicable law or regulation, and is equally binding.
+
+Please contact your Yodle sales representative if you have any questions. 
+
+Sincerely, 
+
+Yodle Contracts Team
+contracts@yodle.com
+	
+
+
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+
+
+
+{!Case.CaseNumber}
+ Privacy Policy | Terms of Use
+
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

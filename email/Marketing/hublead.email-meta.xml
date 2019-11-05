@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Hub Lead</name>
+    <style>none</style>
+    <subject>You have received a Hub Lead!</subject>
+    <textOnly>You received a Hub Lead!
+
+Lead Source: {!Lead.LeadSource}
+Lead Source Detail: {!Lead.Lead_Source_Detail__c}
+Lead Source Detail2: {!Lead.Lead_Source_Detail_2__c}
+First Name: {!Lead.FirstName}
+Industry: {!Lead.Industry}
+Phone: {!Lead.Phone}
+State: {!Lead.State}
+Offer: {!Lead.Description}
+If YodleLocalListings Lead, Type: {!Lead.Yodle_Submit_Type__c}
+Lead Owner: {!Lead.OwnerFullName}
+
+
+Click here to find the lead in salesforce.com:
+{!Lead.Link}
+
+
+Stacie
+
+Yodle. Get Found.
+stacie@yodle.com
+www.yodle.com
+
+
+This email is confidential to Yodle Inc.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

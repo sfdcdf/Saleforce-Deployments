@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to IMS when a 12-monht upsell is closed - so can add the promo to the account</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>12 month upsell-closed case instructions</name>
+    <style>none</style>
+    <subject>Future Promo needed! - Client id {!Case.Client_ID__c}</subject>
+    <textOnly>A case has been closed for a 12-month upsell/renewal. This account is entitled for the 13th month free. Please go to the above account in salesforce.com, and add in a &apos;promo&apos; . 
+
+Effective Date: {!Case.ClosedDate}
+Type: 13th month free
+Status: LIVE
+Account: https://na4.salesforce.com/{!Case.AccountId}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+A case has been closed for a 12-month upsell/renewal.  This account is entitled for the 13th month free.  Please go to the above account in salesforce.com, and add in a 'promo' . <br/><br/>
+
+Effective Date: {!Case.ClosedDate}<br/>
+Type: 13th month free<br/>
+Status: LIVE<br/>
+Account: https://na4.salesforce.com/{!Case.AccountId}

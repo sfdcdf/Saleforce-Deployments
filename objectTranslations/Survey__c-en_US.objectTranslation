@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>45 Day Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>45 Day Surveys</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>45 Day Customer Survey</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Survey --></label>
+            <section>Survey</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Survey Layout</layout>
+        <sections>
+            <label><!-- Business Operations --></label>
+            <section>Business Operations</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Economy --></label>
+            <section>Economy</section>
+        </sections>
+        <sections>
+            <label><!-- Politics and the Economy --></label>
+            <section>Politics and the Economy</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Issue Resolution --></label>
+        <name>Issue_Resolution</name>
+    </recordTypes>
+</CustomObjectTranslation>

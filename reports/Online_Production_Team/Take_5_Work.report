@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.Web_Dev_Total_Minutes_for_Changes__c:SUM + Case.Web_Dev_Total_Minutes_Round_2_Changes__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Time</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.YBNRequestReason__c</field>
+    </columns>
+    <columns>
+        <field>Case.YBNRequestDetail__c</field>
+    </columns>
+    <columns>
+        <field>Case.Date_Sent_to_Production__c</field>
+    </columns>
+    <columns>
+        <field>Case.Date_Left_Production__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.SEO_Tasks,Case.YBN_Inbound_Inquiry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>take 5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.YBNRequestReason__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Production Specialists,Web Dev,Creative</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Take 5 Web Dev Work (Temp)</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Date_Left_Production__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case.Date_Left_Production__c</dateColumn>
+        <endDate>2017-03-18</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2010-01-01</startDate>
+    </timeFrameFilter>
+</Report>

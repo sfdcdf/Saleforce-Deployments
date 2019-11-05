@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://localhost:44317/</canvasUrl>
+        <locations>Visualforce</locations>
+        <locations>Aura</locations>
+        <locations>PageLayout</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>sfdc@yodle.com</contactEmail>
+    <description>Used for Salesforce internal canvas applications for Quality Team</description>
+    <label>Quality Team</label>
+    <mobileStartUrl>https://localhost:44317/</mobileStartUrl>
+    <oauthConfig>
+        <callbackUrl>https://localhost:44317/api/callback/</callbackUrl>
+        
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <startUrl>https://localhost:44317/</startUrl>
+</ConnectedApp>

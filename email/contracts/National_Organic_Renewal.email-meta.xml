@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SEO renewal agreement - 6 or 12 month</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>National Organic Renewal</name>
+    <style>none</style>
+    <subject>Your Yodle Contract Renewal - please &quot;accept&quot;</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c},
+
+This email confirms that Customer is extending the Yodle Organic Service Commitment Period by an additional {!Case.Term_months__c} months, as set forth herein.  As noted below, to accept the terms and conditions of this Change Order, please reply to this e-mail with &quot;Accept&quot; in the body.
+
+This Change Order changes the Agreement in effect between Yodle and Customer.
+
+The Yodle Organic Service Commitment Period is extended by an additional  {!Case.Term_months__c} months and will continue month to month thereafter until the Agreement is terminated or Customer cancels the Yodle Organic Service. Customer may not cancel the Yodle Organic Service during the Yodle Organic Service Commitment Period.
+
+The monthly fee for the Yodle Organic Service, as amended by this Change Order, will be {!Case.Budget__c} per month, effective as of the first day of Customer’s next billing period.
+
+For quality assurance, Yodle records and/or monitors calls between Customer and Yodle agents, employees and/or its affiliates regarding the Services (the “Service Calls”).  If the Services include call recording or monitoring, Yodle will record and/or monitor incoming calls and e-mails between Customer, or Customer’s agents, employees, and/or its affiliates and people who contact Customer through the tracking telephone numbers or contact forms Yodle provides (the “Inbound Calls” and, collectively with Service Calls, “Call Recording and Monitoring”).  By this Agreement, Customer consents to any and all Call Recording and Monitoring performed by Yodle or its agents, employees and/or its affiliates.  Customer acknowledges that it is responsible for notifying and obtaining consent to Call Recording and Monitoring from all of its agents (including employees and independent contractors) who may be recorded or monitored in a Service Call or Inbound Call (the “Recorded Persons”).  It is Customer’s sole responsibility to provide and/or obtain, and Customer covenants that it will provide and/or obtain, all notices, consents, and permissions relating to Recorded Persons as may be required by applicable laws and regulations.
+
+Except as modified by this Change Order, all of the terms and provisions of the Agreement remain in full force and effect.
+
+This Change Order becomes effective on the date accepted by Customer. Customer accepts this Change Order by replying to this e-mail with “Accept”. This action creates an electronic signature that has the same legal force and effect as a handwritten signature on a written contract under any applicable law or regulation, and is equally binding.
+
+Please contact your Yodle sales representative if you have any questions.
+
+
+Sincerely,
+
+
+Yodle Contracts Team
+contracts@yodle.com
+
+
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+New Contract Length (months):{!Case.Term_months__c}
+Monthly Organic Fees: {!Case.Budget__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+
+
+
+
+{!Case.CaseNumber}
+Privacy Policy  | Terms of Use
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

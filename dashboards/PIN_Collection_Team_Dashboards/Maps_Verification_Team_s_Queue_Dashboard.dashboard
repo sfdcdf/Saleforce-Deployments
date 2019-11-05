@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts Under 30 Days from Setup, which need Google Pin</footer>
+            <header>Priority Under 30 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>PIN_Collection_Team/Priority_Under_30_Queue2</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts which Google Pin was ent 10 days ago.</footer>
+            <header>Rogers 1st Touch-point Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>Reports_To_Be_Deleted/Rogers_1st_Touch_point_Queue</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Lighthouse PPP Accounts which need Google Pin</footer>
+            <header>Lighthouse PPP Maps Claiming Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>Reports_To_Be_Deleted/Lighthouse_PPP_Maps_Claiming_Queue3</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Provides an estimated forecast for accounts which are new that would be in tomorrow&apos;s Under 30 Queue</footer>
+            <header>Forecast of New Accounts Under 30 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Forecasted Accounts</metricLabel>
+            <report>PIN_Collection_Team/Forecast_of_New_Accounts_Under_30_Queue4</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Provides an estimated forecast for accounts which would rollover in tomorrow&apos;s Under 30Queue</footer>
+            <header>Rollover Forecast for Under 30 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Rollover Accounts</metricLabel>
+            <report>PIN_Collection_Team/Rollover_Forecast_for_Under_30_Queue2</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts which need to be contacted to attempt Google Management Process</footer>
+            <header>Google Management - Needs Process</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Needs Process Follow up</metricLabel>
+            <report>Reports_To_Be_Deleted/Google_Management_Needs_Process</report>
+            <showRange>false</showRange>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts 31-110 Days from Setup, which need Google Pin</footer>
+            <header>Priority 31-110 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>PIN_Collection_Team/Priority_31_110_Queue3</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts which Google Pin was sent 20 days ago.</footer>
+            <header>Rogers 2nd Touch-point Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>Reports_To_Be_Deleted/Rogers_2nd_Touch_point_Queue</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Canadian YBN Accounts which need Google Pin</footer>
+            <header>Canadian Maps Claiming Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>PIN_Collection_Team/Canadian_Maps_Claiming_Queue3</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Provides an estimated forecast for accounts which would appear in tomorrow&apos;s 31-110 Queue</footer>
+            <header>Forecast of Accounts in 31-110 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Forecasted Accounts</metricLabel>
+            <report>PIN_Collection_Team/Forecast_of_Accounts_in_31_110_Queue</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Provides an estimated forecast for accounts which would rollover in tomorrow&apos;s 31-110 Queue</footer>
+            <header>Rollover Forecast for 31-110 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Rollover Accounts</metricLabel>
+            <report>PIN_Collection_Team/Rollover_Forecast_for_31_110_Queue1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts which need to be contacted forverification, since Google Management Process could not be used</footer>
+            <header>Google Management - Needs Verification</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Needs Verification Follow up</metricLabel>
+            <report>Reports_To_Be_Deleted/Google_Management_Needs_Verification1</report>
+            <showRange>false</showRange>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts Greater than 110 Days from Setup, which need Google Pin</footer>
+            <header>Priority Greater Than 110 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>PIN_Collection_Team/Priority_Greater_Than_110_Queue1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts which Google Pin was sent 30 days ago.</footer>
+            <header>Rogers 3rd Touch-point Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Need Contact</metricLabel>
+            <report>Reports_To_Be_Deleted/Rogers_3rd_Touch_point_Queue</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Accounts which Bing Listing is ready for Phone Claiming</footer>
+            <header>Bing Phone Claim Ready</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Accounts Ready to Claim</metricLabel>
+            <report>Reports_To_Be_Deleted/Bing_Phone_Claim_Ready1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Provides an estimated forecast for accounts which would appear in tomorrow&apos;s Over 110 Queue</footer>
+            <header>Forecast of Accounts in Greater Than 110 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Forecasted Accounts</metricLabel>
+            <report>PIN_Collection_Team/Forecast_of_Accounts_in_Greater_Than_110</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Provides an estimated forecast for accounts which would rollover in tomorrow&apos;s Greater than 110 Queue</footer>
+            <header>Rollover Forecast for Over 110 Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Rollover Accounts</metricLabel>
+            <report>PIN_Collection_Team/Rollover_Forecast_for_Over_110_Queue1</report>
+            <showRange>false</showRange>
+        </components>
+    </rightSection>
+    <runningUser>bhawkins@yodle.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Maps Verification Team&apos;s Queue Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

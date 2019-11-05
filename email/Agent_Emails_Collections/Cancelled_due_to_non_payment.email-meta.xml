@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Cancelled due to non-payment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Cancelled due to non-payment</name>
+    <style>freeForm</style>
+    <subject>Yodle Account Status - {!Account.Client_ID__c}</subject>
+    <textOnly>Hi {!Account.Client_First_Name__c},
+
+I tried giving you a call today to discuss your Yodle account but I wasn&apos;t able to reach you.  I need to speak with you as soon as possible.
+
+You currently have an outstanding balance of (unpaid balance), which is 30+ days past due.  Your account has been cancelled due to non-payment. The outstanding balance from the (insert invoice date) invoice is the final payment needed to close the account in good standing.
+
+Please call me at (877) 334-4321 so we can take care of your past due balance to prevent any further collection activity on your account. We look forward to hearing from you soon.
+
+
+{!User.FirstName} {!User.Last_Initial__c}
+Billing Consultant
+(877) 334-4321
+customercare@yodle.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

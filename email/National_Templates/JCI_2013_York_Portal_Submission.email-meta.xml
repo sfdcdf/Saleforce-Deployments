@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used for 2013 JCI Dealer Program - Sent when a York customer submits info via the portal</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>JCI 2013 York Portal Submission</name>
+    <style>none</style>
+    <subject>Yodle Website Creation Confirmation</subject>
+    <textOnly>York | Yodle
+
+Hello {!Account.00N60000002KwJ5} -
+
+Welcome to the 2013 YORK Liberties Website Program! Below you will find highlights of the program. A 2013 Liberties website welcome kit providing more program information is also attached and can be downloaded at www.upgnet.com &gt; Marketing Center &gt; Dealer Website Program.
+
+Website Improvements
+
+Over the upcoming weeks we will be making the following improvements to your 2012 dealer site. During this time your site will remain live on the web.
+
+Easy-to-use tools that allow you to add local promotions
+A mobile-friendly version of your site to leverage the growing shift to mobile devices
+Additional customization options
+Yodle&apos;s Outrank Program included at no additional cost
+
+Outrank
+
+Now that Outrank is included in the Liberties Website Program, you will no longer be billed for this service by Yodle. Yodle will continue to optimize and maintain your site, but no further charges will be incurred by you.
+
+These updates will be completed in approximately 2-3 weeks.  In the meantime, please visit your dealer website and confirm your business information. If you need to make changes, please email us at jciwebsites@yodle.com.
+
+We look forward to a successful year!
+
+Sincerely,
+JCI Website Support
+jciwebsites@yodle.com
+866-607-4050
+
+© 2005-2013 Yodle, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

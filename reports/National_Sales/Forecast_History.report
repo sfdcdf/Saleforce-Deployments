@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Forecast_SnapShot__c.Corporate_Monthly_Total_Spend__c:SUM+Forecast_SnapShot__c.Total_Network_Adoption_Value__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Forecast_SnapShot__c$CreatedDate</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Opportunity Value</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Forecast_SnapShot__c$Stage__c</field>
+    </columns>
+    <columns>
+        <field>Forecast_SnapShot__c$Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Forecast_SnapShot__c$Close_Date__c</field>
+    </columns>
+    <columns>
+        <field>Forecast_SnapShot__c$Percent_to_Close__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Forecast_SnapShot__c$Total_Weighted_Forecast_Monthly_Spend__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Forecast_SnapShot__c$Total_Opportunity_Value__c</field>
+    </columns>
+    <columns>
+        <field>Forecast_SnapShot__c$Corporate_Monthly_Total_Spend__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Forecast_SnapShot__c$Total_Contract_Value_Corporate_Spend__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Forecast_SnapShot__c$Total_Network_Adoption_Value__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Forecast_SnapShot__c$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Adam Rubin,David Kasdan,John Picciuto,Kalani Thomas,Mike Sherry,Therese O&apos;Brian,Jamie Singer,Jonathan Pomroy,Michael Ryan,Lara Richardson,Ellie McIntyre,Tricia Gahagan,Therse O&apos;BrianCory Morrison,Emily Currin,Amy Kramer,Chris Cormier,Greg George,Ian Burris,Debra Lozano,Russell Tvedt,John Benjamin,Adam Kazansky,Seth Kriegel,Sandra Martinez,Carinne Richdale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Forecast_SnapShot__c$Stage__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Forecast_SnapShot__c$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>5/19/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Forecast_SnapShot__c$Opportunity_Owner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ari Katz,Brian Heppner,Carl Pflanz,Daniel Boyce,Danielle Krieg,James Gardner,Jeremy Friedlander,Jennifer Torres,Kevin Noonan,Mark Armstrong,Minde Fawcett,Nick Dispenza,Peter Szalkowski,Riley Hughes,Derek Rosenzweig,Andrew Little,Greg Boyle</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Forecast_SnapShot__c$Opportunity_Owner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Forecast_SnapShot__c$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Forecast History</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Forecast_History__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Forecast_SnapShot__c$Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

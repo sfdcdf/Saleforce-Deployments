@@ -1056,7 +1056,220 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>ControlledByParent</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>tz__LT_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
+        <label>LT Info</label>
+        <length>340</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Contact in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Contact in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Contact in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; "/" &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; "/" &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; " " &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+)</formula>
+        <inlineHelpText>Shows the local time for the Contact in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;" "&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+"AM",
+"PM"
+)
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+"Unknown",
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; "/" &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; "/" &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; " " &amp;
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;":"&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;" "&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+"AM",
+"PM"
+)
+&amp; " " &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"") 
+)</formula>
+        <inlineHelpText>Shows the local time for the Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Full__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full timezone name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full timezone name.</inlineHelpText>
+        <label>Timezone (Full)</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_IANA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone as defined by Internet Assigned Numbers Authority (IANA).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone as defined by Internet Assigned Numbers Authority (IANA).</inlineHelpText>
+        <label>Timezone (IANA)</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_SFDC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce IANA timezone.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce IANA timezone.</inlineHelpText>
+        <label>Timezone SFDC</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTF_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current UTC timezone offset of the Contact. Uses the mailing address, and in its absence the Phone number field in the calculation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Contact.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>ControlledByParent</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
@@ -3498,5 +3711,157 @@
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Contact.Id}&amp;accountId={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1200</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Contact.Id}&amp;accountId={!Account.Id}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Contact)};
+var url = "/apex/loop__loopmerge?retURL="+encodeURI(window.location.pathname+window.location.search);
+url += "&amp;recordIds="+ids.join(',');
+window.location.href = url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Contact)};
+if (!ids || ids.length &lt; 1)
+    alert('Please select at least one record.');
+else
+{
+    var url = "/apex/loop__masslooplus?retURL=" + encodeURI(window.location.pathname+window.location.search);
+    url += "&amp;recordIds="+ids.join(',');
+    url += "&amp;sessionId={!$Api.Session_ID}";
+    window.location.href = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>echosign_dev1__Send_to_EchoSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send for Signature</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>leadspace__LeadspaceFindNewProspectsContact</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Leadspace</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>navigateToUrl("/apex/leadspace__LeadSpaceDossiers?companyName={!JSENCODE(Account.Name)}");</url>
+    </webLinks>
+    <webLinks>
+        <fullName>tz__Local_Time_Contact_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Contacts Page Layout. Displays the local time for the current record. The Mailing Country, Mailing State, and Mailing City fields need to be properly filled in order for this button to function properly. Else the value "Unknown" is shown.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/30.0/apex.js")}
+{!REQUIRESCRIPT("https://success-software.biz/localtime/js/json3.min.js")} 
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+tbutton=document.getElementsByName(sObject);
+
+if(sOffset == 'N/A') {
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value='Unknown';
+}
+}
+else {
+var args1={offset:sOffset};
+cttime=sforce.apex.execute("tz.LocalTime","getLocalTimeString",args1);
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=cttime +  " " + sEnd;
+}
+}
+
+self.status=tbutton[0].value;
+setTimeout('tbutton[0].click();',sFrequency);
+
+}
+onError=null;
+
+if(typeof sOffset=='undefined') {
+sOffset='N/A';
+sEnd='N/A';
+
+try { 
+var args={objId:"{!JSENCODE(Contact.Id)}"};
+var jsontext=sforce.apex.execute("tz.LocalTime","FindLocalTime",args);
+if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+var lt=JSON.parse(jsontext);
+sOffset=lt.offset;
+sEnd=lt.abbreviation;
+if("{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}" == "false") sEnd = ''; 
+}
+}
+catch(err) {alert(err);}
+}
+
+if(typeof freq=='undefined') {
+freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
+}
+
+calcTime(sOffset,freq,sEnd,"tz__local_time_contact_btn");</url>
     </webLinks>
 </CustomObject>

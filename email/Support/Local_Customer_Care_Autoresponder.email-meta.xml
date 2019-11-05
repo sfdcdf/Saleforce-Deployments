@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>autoresponder being sent to local clients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Local Customer Care Autoresponder</name>
+    <style>freeForm</style>
+    <subject>We&apos;ll Be in Touch Soon</subject>
+    <textOnly>Hi,
+
+Thanks for contacting Yodle Customer Care!  We look forward to assisting you as quickly as possible. If you need immediate support you can always call us at (877) 334-4321 with your reference number, {!Case.CaseNumber}.  We’re here Monday through Friday, from 9am to 8pm EST. We look forward to assisting you.
+
+
+Yodle Customer Care
+(877) 334-4321
+customercare@yodle.com
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

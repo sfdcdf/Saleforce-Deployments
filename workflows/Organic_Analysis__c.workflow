@@ -33,18 +33,6 @@
         <template>Pin_Collection_Templates/Lighthouse_Received_All_Pins</template>
     </alerts>
     <alerts>
-        <fullName>Maps_Initial_Claiming_Pin_Added</fullName>
-        <ccEmails>pinsupport@yodle.com</ccEmails>
-        <description>Maps Initial Claiming Pin Added</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>sschoppert@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Initial_Maps_Pin_Added</template>
-    </alerts>
-    <alerts>
         <fullName>National_Canada_Day_1_Pin</fullName>
         <description>National - Canada Day 1 Pin</description>
         <protected>false</protected>
@@ -2529,7 +2517,7 @@ NOW () + 1
         <criteriaItems>
             <field>Organic_Analysis__c.Reason_for_Submission__c</field>
             <operation>notEqual</operation>
-            <value>Custom Domain Request,Google Setup:Address Issue (IT Pro),Listing Keyword Update (SDB Only)</value>
+            <value>Custom Domain Request,Listing Keyword Update (SDB Only)</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

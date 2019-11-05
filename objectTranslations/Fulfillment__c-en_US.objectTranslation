@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Fulfillments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Centermark Estimated Launch Date --></label>
+        <name>Centermark_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Centermark Original Est Launch Date --></label>
+        <name>Centermark_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Monthly Spend --></label>
+        <name>Contract_Monthly_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Imp Original Est Launch Date --></label>
+        <name>Custom_Imp_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Implementation Estimated Launch --></label>
+        <name>Custom_Implementation_Estimated_Launch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Implementation Launch Date --></label>
+        <name>Custom_Implementation_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Estimated Launch Date --></label>
+        <name>Display_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Launch Date --></label>
+        <name>Display_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Original Est Launch Date --></label>
+        <name>Display_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Estimated Launch Date --></label>
+        <name>Facebook_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Launch Date --></label>
+        <name>Facebook_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Original Est Launch Date --></label>
+        <name>Facebook_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Launch Date Change Reason Detail --></label>
+        <name>Launch_Date_Change_Reason_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Launch Date Change Reason --></label>
+        <name>Launch_Date_Change_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Client Caused</masterLabel>
+            <translation><!-- Client Caused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Caused</masterLabel>
+            <translation><!-- Yodle Caused --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- One-Time Fees --></label>
+        <name>One_Time_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Closed Date --></label>
+        <name>Opp_Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Fulfillments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Centermark Launch Date --></label>
+        <name>Organic_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPC Estimated Launch Date --></label>
+        <name>PPC_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPC Original Est Launch Date --></label>
+        <name>PPC_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participating # of Locations - Corp Paid --></label>
+        <name>Participating_of_Locations_Corp_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Estimated Launch Date --></label>
+        <name>Phase_1_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Launch Date Change Reason Detail --></label>
+        <name>Phase_1_Launch_Date_Change_Reason_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Launch Date Change Reason --></label>
+        <name>Phase_1_Launch_Date_Change_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Client Caused</masterLabel>
+            <translation><!-- Client Caused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Caused</masterLabel>
+            <translation><!-- Yodle Caused --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Launch Date --></label>
+        <name>Phase_1_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Original Est Launch Date --></label>
+        <name>Phase_1_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Product Launch Details --></label>
+        <name>Phase_1_Product_Launch_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 1 Products --></label>
+        <name>Phase_1_Products__c</name>
+        <picklistValues>
+            <masterLabel>Call Miner</masterLabel>
+            <translation><!-- Call Miner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centermark</masterLabel>
+            <translation><!-- Centermark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centermark Lite</masterLabel>
+            <translation><!-- Centermark Lite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Side Organic</masterLabel>
+            <translation><!-- Client Side Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corp Paid Reviews</masterLabel>
+            <translation><!-- Corp Paid Reviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded Display</masterLabel>
+            <translation><!-- Corporate Funded Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded Organic</masterLabel>
+            <translation><!-- Corporate Funded Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded PPC</masterLabel>
+            <translation><!-- Corporate Funded PPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Website</masterLabel>
+            <translation><!-- Corporate Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Implementation</masterLabel>
+            <translation><!-- Custom Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Template</masterLabel>
+            <translation><!-- Website Template --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Estimated Launch Date --></label>
+        <name>Phase_2_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Launch Date Change Reason Detail --></label>
+        <name>Phase_2_Launch_Date_Change_Reason_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Launch Date Change Reason --></label>
+        <name>Phase_2_Launch_Date_Change_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Client Caused</masterLabel>
+            <translation><!-- Client Caused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Caused</masterLabel>
+            <translation><!-- Yodle Caused --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Launch Date --></label>
+        <name>Phase_2_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Original Est Launch Date --></label>
+        <name>Phase_2_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Product Launch Details --></label>
+        <name>Phase_2_Product_Launch_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Products --></label>
+        <name>Phase_2_Products__c</name>
+        <picklistValues>
+            <masterLabel>Call Miner</masterLabel>
+            <translation><!-- Call Miner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centermark</masterLabel>
+            <translation><!-- Centermark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centermark Lite</masterLabel>
+            <translation><!-- Centermark Lite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Side Organic</masterLabel>
+            <translation><!-- Client Side Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corp Paid Reviews</masterLabel>
+            <translation><!-- Corp Paid Reviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded Display</masterLabel>
+            <translation><!-- Corporate Funded Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded Organic</masterLabel>
+            <translation><!-- Corporate Funded Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded PPC</masterLabel>
+            <translation><!-- Corporate Funded PPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Website</masterLabel>
+            <translation><!-- Corporate Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Implementation</masterLabel>
+            <translation><!-- Custom Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Template</masterLabel>
+            <translation><!-- Website Template --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Estimated Launch Date --></label>
+        <name>Phase_3_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Launch Date Change Reason Detail --></label>
+        <name>Phase_3_Launch_Date_Change_Reason_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Launch Date Change Reason --></label>
+        <name>Phase_3_Launch_Date_Change_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Client Caused</masterLabel>
+            <translation><!-- Client Caused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Caused</masterLabel>
+            <translation><!-- Yodle Caused --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Launch Date --></label>
+        <name>Phase_3_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Original Est Launch Date --></label>
+        <name>Phase_3_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Product Launch Details --></label>
+        <name>Phase_3_Product_Launch_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 3 Products --></label>
+        <name>Phase_3_Products__c</name>
+        <picklistValues>
+            <masterLabel>Call Miner</masterLabel>
+            <translation><!-- Call Miner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centermark</masterLabel>
+            <translation><!-- Centermark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centermark Lite</masterLabel>
+            <translation><!-- Centermark Lite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Side Organic</masterLabel>
+            <translation><!-- Client Side Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corp Paid Reviews</masterLabel>
+            <translation><!-- Corp Paid Reviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded Display</masterLabel>
+            <translation><!-- Corporate Funded Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded Organic</masterLabel>
+            <translation><!-- Corporate Funded Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Funded PPC</masterLabel>
+            <translation><!-- Corporate Funded PPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Website</masterLabel>
+            <translation><!-- Corporate Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Implementation</masterLabel>
+            <translation><!-- Custom Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Template</masterLabel>
+            <translation><!-- Website Template --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phased Launch? --></label>
+        <name>Phased_Launch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products Sold --></label>
+        <name>Products_Sold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Plan Link --></label>
+        <name>Project_Plan_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviews Estimated Launch Date --></label>
+        <name>Reviews_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviews Launch Date --></label>
+        <name>Reviews_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviews Original Est Launch Date --></label>
+        <name>Reviews_Original_Est_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPC Launch Date --></label>
+        <name>Sponsored_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development &amp; Production</masterLabel>
+            <translation><!-- Development &amp; Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launched</masterLabel>
+            <translation><!-- Launched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Kick Off</masterLabel>
+            <translation><!-- Project Kick Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Acceptance Testing</masterLabel>
+            <translation><!-- User Acceptance Testing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Strategic Project Manager --></label>
+        <name>Strategic_Project_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Template Launch Date --></label>
+        <name>Website_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Template Estimated Launch Date --></label>
+        <name>Website_Template_Estimated_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Template Original Est Launch --></label>
+        <name>Website_Template_Original_Est_Launch__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Fulfillment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fulfillments</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Fulfillment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Header Info --></label>
+            <section>Header Info</section>
+        </sections>
+        <sections>
+            <label><!-- Phase Launch --></label>
+            <section>Phase Launch</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Both an account and an opportunity is required. --></errorMessage>
+        <name>Account_and_Opp_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Actual launch dates must be filled out for the products that have been sold. --></errorMessage>
+        <name>Act_Launch_Dates_Required_For_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated launch dates must be filled out for the products that have been sold. --></errorMessage>
+        <name>Est_Launch_Dates_Required_For_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out Phase 1 Launch Date Change Reason &amp; Phase 1 Launch Date Change Reason Detail when updating launch dates. --></errorMessage>
+        <name>Phase1_Est_Launchdate_Changed_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out Phase 2 Launch Date Change Reason &amp; Phase 2 Launch Date Change Reason Detail when updating launch dates. --></errorMessage>
+        <name>Phase2_Est_Launchdate_Changed_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out Phase 3 Launch Date Change Reason &amp; Phase 3 Launch Date Change Reason Detail when updating launch dates. --></errorMessage>
+        <name>Phase3_Est_Launchdate_Changed_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out Launch Date Change Reason &amp; Launch Date Change Reason Detail when updating launch dates. --></errorMessage>
+        <name>Require_Date_Change_Reason_and_Detail</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Fulfillment --></label>
+        <name>New_Fulfillment</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -43,10 +43,6 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <actionOverrides>
-        <actionName>DeleteFromThisEventOnwards</actionName>
-        <type>Default</type>
-    </actionOverrides>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Subject</fields>
@@ -140,12 +136,10 @@
     </fields>
     <fields>
         <fullName>WhatId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>WhoId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -153,7 +147,11 @@
     </fields>
     <fields>
         <fullName>Attendees</fullName>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><sharingModel>ControlledByParent</sharingModel>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <sharingModel>ControlledByParent</sharingModel>
     <recordTypes>
         <fullName>Calendar_Blocker</fullName>
         <active>true</active>

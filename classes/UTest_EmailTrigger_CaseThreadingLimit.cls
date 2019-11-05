@@ -16,6 +16,12 @@ private class UTest_EmailTrigger_CaseThreadingLimit {
         c.Spoke_To__c = 'UnitTest Person';
         c.Time_To_Complete_Task_Minutes__c = 10;
         c.Account_Updates_Changes__c = 'Covered - Client Initiated';
+        c.Subject='Test Class';
+        c.Description='Test Desc';
+        c.Time_To_Complete_After_Call_work__c=12;
+        c.Time_To_Complete_Pre_call_prep_work__c=11;
+        c.Time_To_Complete_Real_time_Call_work__c=10;
+        c.Time_To_Complete_Task_Minutes__c=9;
         insert c;
          
         System.debug('Test caseStatus1:' + c.ClosedDate); 

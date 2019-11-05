@@ -1,0 +1,8 @@
+*** CASE SLA ALERT ***  
+
+The following case has missed its SLA deadline:  
+Company:  {!Account.Name} 
+Case:  {!Case.CaseNumber}:  {!Case.Subject} 
+Owner:  {!CaseOwner.FullName}  
+
+Click on the link to access the case:  {!Case.Link}

@@ -1723,12 +1723,12 @@ if(
 "Pin Needed",
 if(
 and(
- RecordTypeId = "012600000009Vh9",
+ RecordType.DeveloperName = 'Canda_Maps_Claiming',
  datevalue(CreatedDate) &lt; datevalue('2013-12-16')),
 "Other",
 if(
 and(
- RecordTypeId = "012600000009UWj",
+ RecordType.DeveloperName = 'Maps_Initial_Claiming',
  datevalue(CreatedDate) &lt;= datevalue('2012-11-25')),
 "Other",
 if(
@@ -12587,7 +12587,7 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
     <fields>
         <fullName>Yext_Support_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>Actions Taken–Yext/CitationNetwork Notes</label>
+        <label>Actions TakenYext/CitationNetwork Notes</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -13332,6 +13332,20 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AlternateSFId__c</fullName>
+        <description>Unique identifier signifying the target instance created Id for the corresponding source record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique identifier signifying the target instance created Id for the corresponding source record</inlineHelpText>
+        <label>AlternateSFId</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>

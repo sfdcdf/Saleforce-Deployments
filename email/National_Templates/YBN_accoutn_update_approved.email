@@ -1,0 +1,9 @@
+The following account update request has been approved by YBN Leadership. Please make the required SalesForce updates & Yodle Live (when needed)
+
+Submitted By: {!CS_Operations__c.CreatedBy}
+Account Name: {!CS_Operations__c.Account__c}
+Details: {!CS_Operations__c.Request_Details__c}
+Existing Service Level: {!CS_Operations__c.Existing_Service_Level__c}
+New Service Level: {!CS_Operations__c.Service_Level_Type__c}
+
+{!CS_Operations__c.Link}

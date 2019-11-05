@@ -1,0 +1,41 @@
+<messaging:emailTemplate subject="Your Gold Service Request has been closed - Client Id: {!relatedTo.Client_ID__c}" recipientType="User" relatedToType="Case">
+ <messaging:htmlEmailBody >
+    <html>
+      <body>
+        <STYLE type="text/css">
+          TH {font-size: 11px; font-face: arial;background: #b5e6ff;
+               border-width: 1;  text-align: Left } 
+          TD  {font-size: 11px; font-face: verdana } 
+          TABLE {border: solid #CCCCCC; border-width: 1}
+          TR {border: solid #CCCCCC; border-width: 1}
+        </STYLE>
+        <font face="arial" size="2">
+          <p>The following case has been closed. <br /><br />
+
+Case Number: {!relatedTo.CaseNumber} <br />
+
+Client Id: {!relatedTo.Client_ID__c} <br />
+
+Business Name: {!relatedTo.Business_Name__c} <br /> 
+
+Sales Rep Name: {!relatedTo.Developmental_Supervisor_del__c} <br />
+
+Sales Manager Email: {!relatedTo.Sales_Rep_E_mail_Address__c} <br />
+
+Status: {!relatedTo.Status} <br />
+
+Notes: {!relatedTo.Description} <br />
+</p>
+          <table border="0" >
+           <p><b><u>Case Comments</u></b>
+            <br />
+            <c:SortedCaseCommentsController caseId="{!relatedTo.Id}" />
+        </p>       
+          </table>
+          <p />
+        </font>
+      </body>
+    </html>
+  </messaging:htmlEmailBody> 
+
+</messaging:emailTemplate>

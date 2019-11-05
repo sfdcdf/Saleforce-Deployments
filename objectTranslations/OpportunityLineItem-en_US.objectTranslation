@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <fields>
+        <label><!-- Annual Product Value --></label>
+        <name>AnnualProductValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commissionable Revenue Value for One Time products --></help>
+        <label><!-- CRV One Time --></label>
+        <name>CRV_One_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commissionable Revenue Value Multiplier --></help>
+        <label><!-- CRV Recurring Multiplier --></label>
+        <name>CRV_Recurring_Multiplier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commissionable Revenue Value for Recurring products --></help>
+        <label><!-- CRV Recurring --></label>
+        <name>CRV_Recurring__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this for WBN Corporate Opportunities --></help>
+        <label><!-- Contract Length (Mth) --></label>
+        <name>ContractLength__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted to Asset? --></label>
+        <name>Converted_to_Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment --></label>
+        <name>Fulfillment__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include Products Sold --></label>
+        <name>IncludeProductsSold__c</name>
+    </fields>
+    <fields>
+        <help><!-- For WBN IL Oppty - Check this box is this is an initial charge or is the first billable month of a PPC Schedule --></help>
+        <label><!-- Initial Charge --></label>
+        <name>Initial_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Charge Type --></label>
+        <name>ProductChargeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Cost --></label>
+        <name>ProductCost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client Facing Product Description --></help>
+        <label><!-- Product Description (Client) --></label>
+        <name>ProductDescriptionClient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name (Client) --></label>
+        <name>ProductNameClient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adoption End Date --></label>
+        <name>ProjectedAdoptionEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Adoption Length (Mth) --></label>
+        <name>ProjectedAdoptionLengthMth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Adoption Monthly Value --></label>
+        <name>ProjectedAdoptionMonthlyValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Adoption % --></label>
+        <name>ProjectedAdoptionPct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adoption Start Date --></label>
+        <name>ProjectedAdoptionStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Adoption Total Value --></label>
+        <name>Projected_Adoption_Total_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <name>Promotion__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Product Cost --></label>
+        <name>TotalProductCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Product Value --></label>
+        <name>TotalProductValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Close date is after 4/1 - check box and use 2018 commission --></help>
+        <label><!-- WBN 2018 Commission --></label>
+        <name>WBN_2018_Commission__c</name>
+    </fields>
+    <layouts>
+        <layout>Local Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WBN - LEX IL Sales</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WBN Corp/Individual Opportunities</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Must be greater than zero. Place a value of one for &quot;Setup&quot; products. --></errorMessage>
+        <name>YBN_Contract_Length_Must_Be_Greater_0</name>
+    </validationRules>
+</CustomObjectTranslation>

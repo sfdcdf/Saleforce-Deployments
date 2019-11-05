@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Client Contact --></label>
+        <name>Client_Contact__c</name>
+        <relationshipLabel><!-- Client Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Concerns / Risks --></label>
+        <name>Concerns_Risks__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Account Updates --></label>
+        <name>General_Account_Updates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goals For The Week --></label>
+        <name>Goals_For_The_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is your YBN team exceeding your expectations with regard to service and industry excellence? --></help>
+        <label><!-- YBN team exceeding expectations --></label>
+        <name>Is_your_YBN_team_exceeding_your_expectat__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Performance Updates --></label>
+        <name>Performance_Updates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>Relationship__c</name>
+        <relationshipLabel><!-- Client Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is there any reason you would not support a continued relationship with YBN? --></help>
+        <label><!-- Willingness to Retain YBN Relationship --></label>
+        <name>Willingness_to_Retain_YBN_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YBN Contact --></label>
+        <name>YBN_Contact__c</name>
+        <relationshipLabel><!-- Client Scorecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is YBN exceeding your expectations regarding ROI? --></help>
+        <label><!-- YBN exceeding ROI Expectations --></label>
+        <name>s_YBN_exceeding_your_expectations_regard__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Scorecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Scorecards</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Client Scorecard Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

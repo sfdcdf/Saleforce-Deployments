@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up to clients letting them know their messages are activated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Message Activation - Dental - Canada</name>
+    <style>none</style>
+    <subject>Your Lighthouse Messages are now active - {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <textOnly>Hello {!Lighthouse_Worksheets__c.Practice_Name__c},
+
+Congratulations, your messages are now active with Lighthouse! We will begin sending your Save the Date Reminders and Last Minute Reminders, if enabled, today.
+
+The following features are available to you to communicate with your patients. Attached you can find more detail on the benefits of these messages. We have noted what has been activated for your account. You can turn on the inactive features at any time, just give us a call. Prices referenced below may be subject to change upon advanced notice to you.
+
+
+Emails (Included) - {!Lighthouse_Worksheets__c.Emails__c}
+Email appointment reminders and recall notices.
+
+Texts (Included) - {!Lighthouse_Worksheets__c.Texts__c}
+Text message appointment reminders and recall notices.
+
+Newsletters ($29/month after 3-month free trial) - {!Lighthouse_Worksheets__c.Activate_Newsletters__c}
+Custom newsletter containing three dental related articles that you can send to your patients.
+
+Automated Phone Calls ({!Lighthouse_Worksheets__c.OBC_Price__c}) - {!Lighthouse_Worksheets__c.AutoCalls__c}  
+Automated calls that go out to patients before their appointment who have yet to confirm.
+
+Postcards ({!Lighthouse_Worksheets__c.PC_Price__c}/postcard) - {!Lighthouse_Worksheets__c.Sign_Up_Postcards__c}  
+Postcards that can be sent for long term reminders, recall messages, or birthday greetings.
+
+Reactivation Letters ({!Lighthouse_Worksheets__c.Letter_Price__c}/letter) - {!Lighthouse_Worksheets__c.Activate_Reactivation_Letters__c}  
+Letters sent to patients who have not been in the office in 2 years. You have the ability to cancel these on a per-patient basis via the reactivation email sent to you two weeks prior.
+
+Treatment Plan Emails (Included)
+Postcards ({!Lighthouse_Worksheets__c.PC_Price__c}/postcard)
+Letters ({!Lighthouse_Worksheets__c.Letter_Price__c}/letter)   {!Lighthouse_Worksheets__c.Treatment_Plans__c}
+Messages sent to patients reminding them to schedule their treatment appointment. You have the ability to turn on or off a patient&apos;s treatment plan at any time via the patient record within the portal.
+
+
+It will take a few days for any emails and text messages to queue up. While we are in the process of ramping up these messages and confirmations, please continue to confirm appointments as you normally have. Your task list in your portal will be a valuable tool for you to assist you in confirming your appointments. If you have another reminder service, now is the time to request they discontinue notifying your patients.
+
+If you have any questions, please contact our Support Team at support@lighthousepmg.com or call (888) 427-5454.
+
+Thank you for choosing Lighthouse. We appreciate your business!
+
+Lighthouse Support
+(888) 427-5454
+support@lighthousepmg.com
+
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

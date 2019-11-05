@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Bolt On Cancellation - Welcome Station</name>
+    <style>none</style>
+    <subject>Cancellation Request for {!Case.Account} - {!Case.00N60000002LpMW}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

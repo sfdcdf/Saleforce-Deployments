@@ -5,6 +5,7 @@
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <description>(Lightning Experience) Lets sales reps work with multiple records on one screen</description>
+    <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
@@ -29,6 +30,7 @@
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <tabs>SFDCToCTSAsynchRequest__c</tabs>
     <tabs>CTS_Error_Log__c</tabs>
+    <tabs>MarketoLeadSFAccountMapping__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -40,6 +42,9 @@
         </mappings>
         <mappings>
             <tab>Google_Location_Group__c</tab>
+        </mappings>
+        <mappings>
+            <tab>MarketoLeadSFAccountMapping__c</tab>
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_88623382</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CREATED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Jennifer Degreef</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Nagy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Yeckley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelby Cowman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keegan Sandman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyler Wood</sourceValue>
+            </sourceValues>
+            <value>AM Blue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alvin Jobe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alyson MacDonald</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barb Jenkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gwen Doyle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Slaunwhite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rondell Humphreys</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Collens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tameka Davidson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Cosh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Blake MacPhee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathy Caldwell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathleen Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Bray</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathryn Leadbeater</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nina Avery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Angela Snow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>April Law</sourceValue>
+            </sourceValues>
+            <value>NG Pod</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Starett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Garner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <value>AM Red</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Hoddinott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karen Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberley Boutilier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Gerrior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Rundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kayla Muir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leonard Edwards</sourceValue>
+            </sourceValues>
+            <value>AMP Inbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Tamayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Brady</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Mascitti</sourceValue>
+            </sourceValues>
+            <value>AM Jax</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGroupedLine</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>RECORDTYPE</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Cases Opened This Month</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <filter>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Erika Persil,Jennifer Degreef,Keegan Sandman,Mark Nagy,Reagan Neely,Shelby Cowman,Kyler Wood,Jordan Sanchez,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Alvin Jobe,Alyson MacDonald,Angela Hoddinott,Blake MacPhee,Gwen Doyle,Karen Park,Kayla Muir,Kimberley Boutilier,Marilyn Slaunwhite,Mark Cosh,Robert Jones,Rondell Humphreys,Stephen Gerrior,Walter Rundle,April Law,Aaron Wilson,Erik Vicars,Shelia Kelly,Barb Jenkins,Leonard Edwards,Adam Kovacs,Amber Tamayo,James Brady,Paul Mascitti,Andrew Smith,Kathy Caldwell,Angela Snow,Kathryn Leadbeater,Marilyn Bray,Nina Avery,Kathleen Wilson,makenzie cunningham</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.XJen_Test_COBRA</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_88623382</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>POD- Monthly Opened Cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

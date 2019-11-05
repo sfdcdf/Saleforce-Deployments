@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Asking client for feedback on experience</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Yodle Reviews- Survey Request</name>
+    <style>freeForm</style>
+    <subject>Yodle | Your Feedback Is Important To Us!</subject>
+    <textOnly>Hi,
+
+Thank you for speaking with the Platinum Support team regarding your Yodle account. We are committed to providing the highest quality service to all of our clients, which is why we’d like to hear from you regarding your experience. Please let us know how we are doing by completing the below customer service surveys. Your feedback will be used to evaluate and improve our service in the future. We look forward to your response.
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=3syxnll3mombz&amp;q2={!Case.Id}&amp;q1={!Account.Id}
+
+
+Thank you in advance for your feedback!
+
+
+___
+
+
+Platinum Support Team
+T/F: 512-872-7337
+platinumsupport@yodle.com
+
+
+www.yodle.com
+
+12234 N I H 35
+Bldg B Suite 100
+Austin, TX 78753</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Rogers Escalated Pooled Survey</name>
+    <style>none</style>
+    <subject>Alert: Escalated Rogers Survey</subject>
+    <textOnly>Hello,  We received an escalated survey for: {!Account.Name}. Please call the account within the next 48 hours to discuss their concerns.  Thank you!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

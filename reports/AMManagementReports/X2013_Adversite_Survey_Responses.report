@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Client_ID_2__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Sales_Expectations_Website__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_Design_Quality__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_Content__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_OverallSatisfaction__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Comments__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CSC Dedicated,CSC Pooled,Post Launch Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Adversite Survey Responses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CUST_CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2013-08-02</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-06-15</startDate>
+    </timeFrameFilter>
+</Report>

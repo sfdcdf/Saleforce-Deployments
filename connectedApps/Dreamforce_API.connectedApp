@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfdc@yodle.com</contactEmail>
+    <description>Connected app for integrating other technologies in SFDC platform</description>
+    <label>Dreamforce API</label>
+    <oauthConfig>
+        <callbackUrl>https://notreal.com/api/callback</callbackUrl>
+        
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

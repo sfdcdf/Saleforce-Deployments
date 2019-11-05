@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Customer_Surveys__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_Surveys__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_Surveys__r$Customer_Survey_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_Surveys__r$Overall_Satisfaction__c</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_Surveys__r$Comments__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>45,issue resolution survey,post,Transactional</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Jeremy&apos;s Powerhouse,Lauri,Jen&apos;s Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Customer_Surveys__r$Comments__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Survey Comments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>accounts_and_surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Customer_Surveys__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREVCURY</interval>
+    </timeFrameFilter>
+</Report>

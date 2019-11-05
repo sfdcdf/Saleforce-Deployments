@@ -3548,16 +3548,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Assign_to_AutoTP_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>YBN_AutoTP_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Assign to AutoTP Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Assign_to_Bryan_Heckler</fullName>
         <description>H2 Escalation cases should assign to Bryan Heckler</description>
         <field>OwnerId</field>
@@ -5942,6 +5932,35 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <includeSessionId>true</includeSessionId>
         <integrationUser>salesforcealerts@yodle.com</integrationUser>
         <name>TestBaseOutbound</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>AcutitySchedulingWebhook</fullName>
+        <apiVersion>47.0</apiVersion>
+        <description>AcutitySchedulingWebhook Event Handler
+https://promote-account-dev-gw.acquisio.com/services/api/webhooks/incoming/sfsoap/dreamforce
+https://acqui0188.ngrok.io/services/api/webhooks/incoming/sfsoap/dreamforce</description>
+        <endpointUrl>https://promote-account-dev-gw.acquisio.com/services/api/webhooks/incoming/sfsoap/dreamforce</endpointUrl>
+        <fields>AccountId</fields>
+        <fields>Account_Status__c</fields>
+        <fields>Attempt_1_Method__c</fields>
+        <fields>Client_Type__c</fields>
+        <fields>Description</fields>
+        <fields>IMS_Rep__c</fields>
+        <fields>Id</fields>
+        <fields>Reason</fields>
+        <fields>RecordTypeId</fields>
+        <fields>Schedule_Call_Time__c</fields>
+        <fields>Scheduled_Call__c</fields>
+        <fields>StartDate__c</fields>
+        <fields>State__c</fields>
+        <fields>Status</fields>
+        <fields>Subject</fields>
+        <fields>Sync_to_Marketo__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>khill@web.com</integrationUser>
+        <name>AcutitySchedulingWebhook</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
@@ -9907,11 +9926,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <operation>equals</operation>
             <value>True</value>
         </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notEqual</operation>
-            <value>QA Request Consultative</value>
-        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -12796,10 +12810,6 @@ OwnerId = "00G60000001CJm2"))</formula>
     <rules>
         <fullName>YBN - AutoTP case</fullName>
         <actions>
-            <name>Assign_to_AutoTP_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>YBN_Auto_TP_Date</name>
             <type>FieldUpdate</type>
         </actions>
@@ -13824,21 +13834,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <field>Case.Reason</field>
             <operation>notEqual</operation>
             <value>Adoption Call</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Custom Message Migration</fullName>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Custom Message Migration</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -15579,6 +15574,21 @@ ISCHANGED(Estimated_Completion_Date__c)
             <value>HomeTeamSupport@web.com</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AcutitySchedulingWebhookTrigger</fullName>
+        <actions>
+            <name>AcutitySchedulingWebhook</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>The case trigger for events that should be sent to the AcuitySchedulingWebhook Handler</description>
+        <formula>NOT(ISBLANK(IMS_Rep__r.Acuity_Id__c)) &amp;&amp; 
+RecordType.Name = 'YBN Outbound Touch Point' &amp;&amp;
+ISPICKVAL(Account.Client_Type__c, 'YBN') &amp;&amp;
+ISPICKVAL(Reason, 'Proactive Touch') &amp;&amp;
+ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <tasks>
         <fullName>Mary_Case_Task</fullName>

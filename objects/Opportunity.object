@@ -235,7 +235,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Demo%2FValue Prop</fullName>
+            <fullName>Demo Value Prop</fullName>
             <default>false</default>
         </values>
         <values>
@@ -729,8 +729,8 @@ Corporate_Site_Maintenance_Fee__c * Corporate_Site_Contract_Length__c)
 IF(Display_Contract_Length__c &gt;= 12, Corporate_Display_Fees__c * 12, Corporate_Display_Fees__c * Display_Contract_Length__c)
 +
 
-CASE(RecordTypeId,
-"012600000009YRT" /* Individual Location */, 
+CASE( RecordType_Name__c,
+"YBN - Individual Location" /* Individual Location */, 
 
 IF(Yodle_Web_Contract_Length__c &gt;= 12, Corporate_Monthly_Mgmt_Fees__c * 12, Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Contract_Length__c)
 +  
@@ -2358,7 +2358,7 @@ ISPICKVAL( StageName ,"Closed Lost")),
         <fullName>Corporate_Recurring_Total__c</fullName>
         <externalId>false</externalId>
         <formula>If( 
-RecordTypeId ="012600000009YRT",
+  RecordType_Name__c ='YBN - Individual Location',
 ( Monthly_Management_Fees__c + Monthly_Advertising_Charges__c  +  corp_Media_Management_Fee__c +  Organic_fees__c +  Review_Management_Fee_Per_Location__c +  Monthly_Display_Fees__c +  Facebook_Fee_Per_Location__c +  Advanced_SEO_Setup_Fee_Per_Location__c +  Leads_by_Web_G1__c ),
 
 ((Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Setup_of_Locations__c  )
@@ -6931,7 +6931,7 @@ ISPICKVAL(StageName,"Implementation")),
         <fullName>One_time_Fees__c</fullName>
         <externalId>false</externalId>
         <formula>If( 
-RecordTypeId ="012600000009YRT", (Setup_Fees__c + Corporate_Website_Fees__c +  Facebook_Setup_Fee__c + Advanced_SEO_Setup_Fee_Per_Location__c +  Display_Setup_Fee_Per_Location__c ),
+RecordType_Name__c ='YBN - Individual Location', (Setup_Fees__c + Corporate_Website_Fees__c +  Facebook_Setup_Fee__c + Advanced_SEO_Setup_Fee_Per_Location__c +  Display_Setup_Fee_Per_Location__c ),
 
 ((Corporate_Setup_Fees__c   *   Setup_of_Locations__c )+ ( Actual_Creative_Service_Fee__c )+ (  Actual_Integration_Service_Fee__c )+ ( Actual_Project_Mgmt_Fee__c  )+ ( Advanced_SEO_Fee_Per_Location__c  *  Advanced_SEO_Setup_of_Locations__c )+ ( Display_Setup_Fee_Per_Location__c  *  Display_Setup_of_Locations__c ) + ( Facebook_Setup_Fee__c * Facebook_Setup_of_Locations__c ) + 
 (Location_Enhanced_SEO_Setup_of_Loc_s__c * Location_Enhanced_SEO_Setup_Fee_Per_Loc__c) +
@@ -11268,7 +11268,7 @@ If(Owner.UserRoleId ="00E60000001J40U","Brian Heppner","")))</formula>
         <description>Total Contracted Value - Does Not Include Network Adoption for Cop Opps</description>
         <externalId>false</externalId>
         <formula>If(
- RecordTypeId ="012600000009YRT",
+  RecordType_Name__c ='YBN - Individual Location',
 (Setup_Fees__c  +
 (Monthly_Management_Fees__c * Yodle_Web_Contract_Length__c ) +  ((Monthly_Advertising_Charges__c + corp_Media_Management_Fee__c)* PPC_Contract_Length__c) + 
 (Organic_fees__c *  Organic_Contract_Length__c ) +  (Review_Management_Fee_Per_Location__c *  Review_Management_Contract_Length__c ) +  (Monthly_Display_Fees__c *  Display_Contract_Length__c )+ ( Advanced_SEO_Contract_Length__c *  Advanced_SEO_Fee_Per_Location__c ) + ( Facebook_Contract_Length__c * Facebook_Fee_Per_Location__c) +  (Leads_by_Web_G1__c *  Leads_by_Web_G1_Contract_Length__c)),
@@ -15755,7 +15755,76 @@ Used by YBN.</description>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>RecordType_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>RecordType Name</label>
+        <length>110</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) of the Account associated with the Opportunity in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>Account.tz__Local_Time_24_Short__c</formula>
+        <inlineHelpText>Shows the local time (without date) of the Account associated with the Opportunity in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time of the Account associated with the Opportunity in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>Account.tz__Local_Time_24__c</formula>
+        <inlineHelpText>Shows the local time of the Account associated with the Opportunity in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) of the Account associated with the Opportunity.</description>
+        <externalId>false</externalId>
+        <formula>Account.tz__Local_Time_Short__c</formula>
+        <inlineHelpText>Shows the local time (without date) of the Account associated with the Opportunity.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time of the Account associated with the Opportunity.</description>
+        <externalId>false</externalId>
+        <formula>Account.tz__Local_Time__c</formula>
+        <inlineHelpText>Shows the local time of the Account associated with the Opportunity.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>OPPORTUNITY.RECORDTYPE</customTabListAdditionalFields>
@@ -37623,7 +37692,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -46950,7 +47041,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -56960,7 +57073,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -64673,7 +64808,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -78897,12 +79054,12 @@ ISNULL( Products__c )
   NOT(
     OR(
       ISPICKVAL(PRIORVALUE(StageName), "Client Discovery"),
-      ISPICKVAL(PRIORVALUE(StageName), "Demo/Value Prop"),
+      ISPICKVAL(PRIORVALUE(StageName), "Demo Value Prop"),
       ISPICKVAL(PRIORVALUE(StageName), "Solution")
     )    
   )
 )</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage "Client Discovery" before proceeding to stage "Demo/Value Prop".</errorMessage>
+        <errorMessage>Opportunity must be in stage "Client Discovery" before proceeding to stage "Demo Value Prop".</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_StageChange_To_Solution</fullName>
@@ -78912,13 +79069,13 @@ ISNULL( Products__c )
   ISPICKVAL((StageName),"Solution"), 
   NOT( 
     OR( 
-      ISPICKVAL(PRIORVALUE(StageName), "Demo/Value Prop"), 
+      ISPICKVAL(PRIORVALUE(StageName), "Demo Value Prop"), 
       ISPICKVAL(PRIORVALUE(StageName), "Solution"),
       ISPICKVAL(PRIORVALUE(StageName), "Contract") 
     ) 
   ) 
 )</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage Demo/Value Prop before proceeding to stage Solution.</errorMessage>
+        <errorMessage>Opportunity must be in stage Demo Value Prop before proceeding to stage Solution.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_Territory_restrictions</fullName>
@@ -79592,5 +79749,197 @@ NOT(ISPICKVAL(PRIORVALUE(Stage_Detail__c),"SA Client Discovery")),NOT(ISNEW()), 
         <protected>false</protected>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Opportunity.Id}&amp;accountId={!Opportunity.AccountId}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>500</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Opportunity.Id}&amp;accountId={!Opportunity.AccountId}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Opportunity)};
+if (!ids || ids.length &lt; 1)
+    alert('Please select at least one record.');
+else
+{
+    var url = "/apex/loop__loopmerge?retURL="+encodeURI(window.location.pathname+window.location.search);
+    url += "&amp;recordIds="+ids.join(',');
+    window.location.href = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+var ids = {!GETRECORDIDS($ObjectType.Opportunity)};
+if (!ids || ids.length &lt; 1)
+    alert('Please select at least one record.');
+else
+{
+    var url = "/apex/loop__masslooplus?retURL=" + encodeURI(window.location.pathname+window.location.search);
+    url += "&amp;recordIds="+ids.join(',');
+    url += "&amp;sessionId={!$Api.Session_ID}";
+    window.location.href = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>echosign_dev1__Conga_Send_to_EchoSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send for Signature - Conga</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://www.appextremes.com/apps/Conga/PointMerge.aspx
+?SessionId={!API.Session_ID}
+&amp;ServerUrl={!API.Partner_Server_URL_80}
+&amp;Id={!Opportunity.Id}
+&amp;ESOpportunityid={!Opportunity.Id}
+&amp;ESVisible=1
+&amp;ESSignatureType=2
+&amp;ESAgreementName=Agreement+for+{!Opportunity.Name}+-+{!Today}
+&amp;ESCustomField=echosign_dev1__Recipient_User__c
+&amp;ESCustomFieldValue={!Opportunity.OwnerId}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>echosign_dev1__Send_to_EchoSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send for Signature</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>leadspace__LeadspaceFindNewProspectsOpportunity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Leadspace</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>navigateToUrl("/apex/leadspace__LeadSpaceDossiers?companyName={!JSENCODE(Account.Name)}");</url>
+    </webLinks>
+    <webLinks>
+        <fullName>tz__Local_Time_Opp_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Opportunity Page Layout. Displays the local time for the current record. The Billing Country, Billing State, and Billing City fields of the Account need to be properly filled in order for this button to function properly. Else the value "Unknown" is shown.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/30.0/apex.js")}
+{!REQUIRESCRIPT("https://success-software.biz/localtime/js/json3.min.js")} 
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+tbutton=document.getElementsByName(sObject);
+
+if(sOffset == 'N/A') {
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value='Unknown';
+}
+}
+else {
+var args1={offset:sOffset};
+cttime=sforce.apex.execute("tz.LocalTime","getLocalTimeString",args1);
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=cttime +  " " + sEnd;
+}
+}
+
+self.status=tbutton[0].value;
+setTimeout('tbutton[0].click();',sFrequency);
+
+}
+onError=null;
+
+if(typeof sOffset=='undefined') {
+sOffset='N/A';
+sEnd='N/A';
+
+try { 
+var args={objId:"{!JSENCODE(Account.Id)}"};
+var jsontext=sforce.apex.execute("tz.LocalTime","FindLocalTime",args);
+if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+var lt=JSON.parse(jsontext);
+sOffset=lt.offset;
+sEnd=lt.abbreviation;
+if("{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}" == "false") sEnd = ''; 
+}
+}
+catch(err) {alert(err);}
+}
+
+if(typeof freq=='undefined') {
+freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
+}
+
+calcTime(sOffset,freq,sEnd,"tz__local_time_opp_btn");</url>
     </webLinks>
 </CustomObject>

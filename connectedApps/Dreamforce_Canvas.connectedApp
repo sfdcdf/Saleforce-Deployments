@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://atxapp.registeredsite.com/fsCustRpts/</canvasUrl>
+        <locations>Visualforce</locations>
+        <locations>Aura</locations>
+        <locations>PageLayout</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>sfdc@yodle.com</contactEmail>
+    <description>Used for Salesforce internal canvas applications</description>
+    <label>Dreamforce Canvas</label>
+    <mobileStartUrl>https://atxapp.registeredsite.com/fsCustRpts/</mobileStartUrl>
+    <oauthConfig>
+        <callbackUrl>https://atxapp.registeredsite.com/fsCustRpts/api/callback</callbackUrl>
+        
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <startUrl>https://atxapp.registeredsite.com/fsCustRpts/</startUrl>
+</ConnectedApp>

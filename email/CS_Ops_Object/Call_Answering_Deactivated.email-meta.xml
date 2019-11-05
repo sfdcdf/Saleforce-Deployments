@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CS Ops - Call Answering Deactivated</name>
+    <style>none</style>
+    <subject>Call Answering for {!Call_Answering__c.Business_Name__c} is deactivated</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+Hello -
+
+The following existing customer is interested in GreenSky. Please reach out to them within 24 hours to discuss further.
+
+First & Last Name:
+Phone: 
+Email:
+Website:
+Annual Sales Revenue:
+Additional Notes:
+
+Client ID: {!Case.Client_ID__c}
+Account Name: {!Case.Account}
+Product: {!Case.Product_Type__c} {!Case.SEO_Product__c}
+Segment: {!Case.Segment__c}
+Resulted From: {!Case.Reason}
+
+
+Thank you!

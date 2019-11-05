@@ -35,10 +35,6 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <actionOverrides>
-        <actionName>Share</actionName>
-        <type>Default</type>
-    </actionOverrides>
     <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
@@ -60,7 +56,11 @@
     </fields>
     <fields>
         <fullName>StartingContext</fullName>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>StartingContext</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
@@ -73,7 +73,8 @@
         <searchResultsAdditionalFields>StartingContext</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Private</sharingModel>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
     <listViews>
         <fullName>Rogers_Support_Macro</fullName>
         <filterScope>Queue</filterScope>

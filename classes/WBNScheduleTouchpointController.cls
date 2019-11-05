@@ -1,3 +1,14 @@
+/*******************************************************************************************
+ * Modification Log:
+ * 
+ * Developer Name: Mahesh Bogila
+ * Date : 6/13/2019
+ * Jira :https://jira.registeredsite.com/browse/TEAM-32955
+ * OLd Query at line:88
+ *select Id, Name, IMS_Rep__c from Account where Client_Type__c in ('YBN', 'National Account', 'National Master Account') and Marketo_ID__c != '' and Status__c = 'LIVE' order by Name
+ * ****************************************************************************************/
+
+
 public without sharing class WBNScheduleTouchpointController {
 
     private static BusinessHours ybnBusinessHours = [select Id, IsActive, Name, IsDefault, FridayEndTime, FridayStartTime, MondayEndTime, MondayStartTime, SaturdayEndTime, SaturdayStartTime, SundayEndTime, SundayStartTime, ThursdayEndTime, ThursdayStartTime, TimeZoneSidKey, TuesdayEndTime, TuesdayStartTime, WednesdayEndTime, WednesdayStartTime from BusinessHours where Name = 'WBN AutoTP Hours'];
@@ -73,7 +84,7 @@ public without sharing class WBNScheduleTouchpointController {
         List<SelectOption> options = new List<SelectOption>();
         options.add(new SelectOption('', 'Select an Account'));
         if(UserInfo.getUserType() != 'Guest' && String.isBlank(ApexPages.currentPage().getParameters().get('salesforceAccountId'))){
-            for(Account record : [select Id, Name, IMS_Rep__c from Account where Client_Type__c in ('YBN', 'National Account', 'National Master Account') and Marketo_ID__c != '' and Status__c = 'LIVE' order by Name]){
+            for(Account record : [select Id, Name, IMS_Rep__c from Account where Client_Type__c ='YBN' and Marketo_ID__c != '' and Status__c = 'LIVE' order by Name]){
                 options.add(new SelectOption(record.Id, record.Name));
             }
         }

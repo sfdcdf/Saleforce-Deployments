@@ -49,7 +49,6 @@
     <excludeButtons>DataDotComAccountInsights</excludeButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
-    <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -119,6 +118,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Marketo_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Multi_Location_Account__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

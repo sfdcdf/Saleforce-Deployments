@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send email notification to the Sales Rep when an outbound CSC case is completed for an account of a field sales agent.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LSFS Onboarding Callst Notification</name>
+    <style>none</style>
+    <subject>{!Account.Name} has completed their onboarding call!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

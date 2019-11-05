@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NCS Inital Req Fulfilled to IMS</name>
+    <style>none</style>
+    <subject>New {!Case.00N60000002Iwam}}: {!Case.Client_ID__c} - Initial Req. Fulfilled</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Cancel Request Received - Payment Due</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Web_com</letterhead>
+    <name>Lead Stream - Cancel Request Received - Payment Due</name>
+    <style>freeForm</style>
+    <subject>Cancel Request Received - Payment Due - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

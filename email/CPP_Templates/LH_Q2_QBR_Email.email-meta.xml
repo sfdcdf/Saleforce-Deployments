@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_2015_Blue</letterhead>
+    <name>LH Q2 QBR Email</name>
+    <style>freeForm</style>
+    <subject>{!Account.Name} and Lighthouse Touch Base</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+How are you?  Hope you had a great week and have some fun plans for the weekend!
+
+I’m hoping you and I can set aside some time to chat in the next week or two. I’d love to discuss the following:
+
+Lighthouse + {!Account.Name} partnership so far
+Accomplishments
+What went well?
+What could we have done better to support you?
+
+Game plan for next few months
+What are your major initiatives for April &amp; 2nd quarter?
+How can we support {!Account.Name}?
+Marketing
+Sales rep incentives
+Sales goals for Q2
+
+New Lighthouse team member
+I’d also like to introduce you to another team member we have now at Lighthouse, Artie! He will be a great additional resource for you.
+
+Please let me know what your calendar is like next week.  To see my calendar and just schedule something directly just go here: https://calendly.com/kshianna/connect Looking forward to it!
+
+Thanks {!Contact.FirstName}!
+
+Kiley</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

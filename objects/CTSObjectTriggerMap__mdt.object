@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <fullName>AutoClose__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Flag/ Indicator signifying if the Salesforce record should be auto-closed</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Flag/ Indicator signifying if the Salesforce record should be auto-closed</inlineHelpText>
-        <label>Auto Close</label>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>CTSAssignedToLoginName__c</fullName>
         <description>Login Name used to reference a CTS User</description>
         <externalId>false</externalId>
@@ -54,36 +44,12 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>CaseSubject__c</fullName>
-        <description>Salesforce Object Subject Line referenced for CTS Ticket creation (if applicable)</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Object Subject Line referenced for CTS Ticket creation (if applicable)</inlineHelpText>
-        <label>Case Subject</label>
-        <length>255</length>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Description__c</fullName>
         <description>Any description, comments or notes about the mapping record</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
         <inlineHelpText>Any description, comments or notes about the mapping record</inlineHelpText>
         <label>Description</label>
-        <length>255</length>
-        <required>true</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>DetailsTemplateId__c</fullName>
-        <description>Salesforce Email Template Id reference that includes all the data elements and values for CTS Ticket creation; used for both API and Email Integration types</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Email Template Id reference that includes all the data elements and values for CTS Ticket creation; used for both API and Email Integration types</inlineHelpText>
-        <label>Details Template Id</label>
         <length>255</length>
         <required>true</required>
         <type>Text</type>
@@ -148,44 +114,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>ManagementType__c</fullName>
-        <description>Salesforce/ CTS Business Unit responsible for management of Mapping record referenced for CTS Ticket creation</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce/ CTS Business Unit responsible for management of Mapping record referenced for CTS Ticket creation</inlineHelpText>
-        <label>Management Type</label>
-        <required>true</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Account Management</fullName>
-                    <default>true</default>
-                    <label>Account Management</label>
-                </value>
-                <value>
-                    <fullName>Fulfillment</fullName>
-                    <default>false</default>
-                    <label>Fulfillment</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>NoteDetailsTemplateId__c</fullName>
-        <description>Salesforce Email Template Id reference that includes all the data elements and values for CTS Note creation; used for API Integration type only</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Email Template Id reference that includes all the data elements and values for CTS Note creation</inlineHelpText>
-        <label>Note Details Template Id</label>
-        <length>255</length>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>NoteDetailsTemplateName__c</fullName>
         <description>Salesforce Email Template Name corresponding to the Note Details Template Id</description>
         <externalId>false</externalId>
@@ -198,42 +126,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>ObjectName__c</fullName>
-        <description>Name of the Salesforce object to be referenced for source ticket creation data</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Name of the Salesforce object to be referenced for source ticket creation data</inlineHelpText>
-        <label>Object Name</label>
-        <required>true</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Best Practice Evaluation</fullName>
-                    <default>true</default>
-                    <label>Best Practice Evaluation</label>
-                </value>
-                <value>
-                    <fullName>Case</fullName>
-                    <default>false</default>
-                    <label>Case</label>
-                </value>
-                <value>
-                    <fullName>Customer Surveys</fullName>
-                    <default>false</default>
-                    <label>Customer Surveys</label>
-                </value>
-                <value>
-                    <fullName>Lighthouse Worksheet</fullName>
-                    <default>false</default>
-                    <label>Lighthouse Worksheet</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Additional_Filter__c</fullName>
         <description>Additional Filter placeholder</description>
         <externalId>false</externalId>
@@ -244,37 +136,6 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>ClientType__c</fullName>
-        <description>Salesforce Client Type referenced for CTS Ticket creation</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Salesforce Client Type referenced for CTS Ticket creation</inlineHelpText>
-        <label>Client Type</label>
-        <required>true</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Lighthouse</fullName>
-                    <default>true</default>
-                    <label>Lighthouse</label>
-                </value>
-                <value>
-                    <fullName>Local</fullName>
-                    <default>false</default>
-                    <label>Local</label>
-                </value>
-                <value>
-                    <fullName>WBN</fullName>
-                    <default>false</default>
-                    <label>WBN</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>IsAutoClose__c</fullName>
@@ -720,28 +581,4 @@
         <filterScope>Everything</filterScope>
         <label>All Triggers</label>
     </listViews>
-    <validationRules>
-        <fullName>CTS_API_Identifier_Required</fullName>
-        <active>true</active>
-        <description>Ensures that the CTS API Identifier field is required if the Integration Type is API</description>
-        <errorConditionFormula>AND
-(
-    TEXT(IntegrationType__c) = "API",
-    ISBLANK(CTSAPIIdentifier__c)
-)</errorConditionFormula>
-        <errorDisplayField>CTSAPIIdentifier__c</errorDisplayField>
-        <errorMessage>CTS API Identifier is required when the Integration Type selected is API</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CTS_Email_Address_Required</fullName>
-        <active>true</active>
-        <description>Ensures that the CTS Email Address field is required if the Integration Type is EMAIL</description>
-        <errorConditionFormula>AND
-(
-     TEXT(IntegrationType__c) = "Email",
-     ISBLANK(CTSEmailAddress__c)
-)</errorConditionFormula>
-        <errorDisplayField>CTSEmailAddress__c</errorDisplayField>
-        <errorMessage>CTS Email Address is required when the Integration Type selected is EMAIL.</errorMessage>
-    </validationRules>
 </CustomObject>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LastActivityDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Description</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 4) AND 3 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$Account</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Merry Maids</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Upsell Pilot 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Activities$Description</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>a,e,i,o,u,y</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Account</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>NOVUS</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MM &amp; Novus 2016 Activities /Comments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitieswithActivities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.Activities$Account</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

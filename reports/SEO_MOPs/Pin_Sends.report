@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_55773998</developerName>
+        <masterLabel>SLA Compliance</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account$Days_Since_Live__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>12</to>
+            </sourceValues>
+            <value>SLA Compliant</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>12</from>
+            </sourceValues>
+            <value>SLA Non-Compliant</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_68589851</developerName>
+        <masterLabel>SLA Compliance 2</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Organic_Analyses__r$Days_Live_on_SEO__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>12</to>
+            </sourceValues>
+            <value>SLA Compliant</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>12</from>
+            </sourceValues>
+            <value>SLA Non-Compliant</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$YO_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Client_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Segment__c</field>
+    </columns>
+    <columns>
+        <field>Account$Days_Since_Live__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Days_Since_Google_Pin_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$G_Postcard_Request__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Email__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>75401,81155,94744,105285,124994,156530,156738,171660,175251,177187,195305,206321,210376,250819,263262,271103,272084,284813,288342,294515,299568,311168,315400,317588,318309,321601,326551,339150,339176,351124,351350,351770,352509,353468,353519,354507,354937,355511,355563,355873,68536,70022,71393,84035,88657,92873,136267,171503,176865,186899,192305,207574,209028,211586,230865,245257,275371,280338,292240,299789,300240,302966,316299,343747,342875,344087,346036,348834,349320,351147,351248,352149,353829,354034,354075,354208,354819,355775,355848,355922,342092,345733,347088,347114,348725,349316,349385,349596,349995,351030,351739,352444,352642,352692,352914,352925,353115,353143,353183,353208,353289,353329,353383,353567,353654,353663,353882,353892,354146,354155,354255,354284,354303,354326,354346,354359,354394,354421</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>354590,354604,354806,354835,354861,354871,354919,354950,355137,355142,355155,355164,355199,355214,355219,355402,355423,355441,355482,355506,355550,355557,355560,355590,355601,355613,355628,355660,355702,355708,355727,355797,355816,355824,355837,355846,355859,355881,355890,355893,355895,355916,356052,356064,356125,356163,356169,356203,356216,356224,356225,356236,356288,87139,255486,303406,318725,326915,341973,343920,345977,345983,345992,346897,346920,347849,350038,350057,350060,351014,351018,353853,353949,354737,354758,354759,354764,354767,354774,354777,354783,354793,354796,354801,355523,355526,355681,355691,355955,355964,355967,355981,202875,214797,315977</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Pin Sends</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Account_Churn_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

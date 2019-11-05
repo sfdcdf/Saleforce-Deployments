@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated CSC Survey Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CSC - Survey</name>
+    <style>none</style>
+    <subject>Yodle Customer Survey</subject>
+    <textOnly>We are very excited to have you as a client and value your feedback. We&apos;re committed to continually improving the quality of the services and products we provide to you.
+
+In that spirit, we would appreciate your feedback on Yodle by responding to a brief survey about your experience. This survey should take less than five minutes to complete and will help us reach our goal of making your program a success.
+
+Click the link below to access the survey:
+http://survey.clicktools.com/app/survey/go.jsp?iv=to267lm00v9i&amp;q1={!Case.Id}&amp;q2={!Account.Id}&amp;q14={!Case.Issue_Resolved_By__c}&amp;q3={!Case.IMS_Rep_First_Name__c}
+
+Kent Warren
+Vice President, Client Services
+	
+
+©{!User.Today_s_Year__c} by Yodle Web.com, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

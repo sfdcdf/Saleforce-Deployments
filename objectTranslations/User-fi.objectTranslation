@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Ability to Complete Install Wrkst --></label>
+        <name>Ability_to_Complete_Install_Wrkst__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acuity Id --></label>
+        <name>Acuity_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier signifying the target instance created Id for the corresponding source record --></help>
+        <label><!-- AlternateSFId --></label>
+        <name>AlternateSFId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Quota --></label>
+        <name>Annual_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections --></label>
+        <name>Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Report Executive View --></label>
+        <name>Custom_Report_Executive_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMS ID --></label>
+        <name>EMS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Initial --></label>
+        <name>Last_Initial__c</name>
+    </fields>
+    <fields>
+        <label><!-- LiveOps ID --></label>
+        <name>LiveOps_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will allow this user to run Document Packages on the Drawloop next-release environment when it is available for testing. --></help>
+        <label><!-- Drawloop Next Release Test User --></label>
+        <name>Loop__LOOPlus_Tester__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Password --></label>
+        <name>Loop__dsPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign API UserName --></label>
+        <name>Loop__dsToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Official Hire Date --></label>
+        <name>Official_Hire_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Type --></label>
+        <name>Plan_Type__c</name>
+        <picklistValues>
+            <masterLabel>Mgr</masterLabel>
+            <translation><!-- Mgr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAE</masterLabel>
+            <translation><!-- NAE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAM</masterLabel>
+            <translation><!-- NAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDR</masterLabel>
+            <translation><!-- SDR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE-BOB</masterLabel>
+            <translation><!-- SE-BOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE-NB</masterLabel>
+            <translation><!-- SE-NB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SR-BoB</masterLabel>
+            <translation><!-- SR-BoB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SR-NB</masterLabel>
+            <translation><!-- SR-NB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>non-sales</masterLabel>
+            <translation><!-- non-sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Employer --></label>
+        <name>Previous_Employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Name --></label>
+        <name>Profile_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recruiter --></label>
+        <name>Recruiter__c</name>
+        <picklistValues>
+            <masterLabel>Aaron Cain</masterLabel>
+            <translation><!-- Aaron Cain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evan Anger</masterLabel>
+            <translation><!-- Evan Anger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heather Sorrels</masterLabel>
+            <translation><!-- Heather Sorrels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kristin Abraham</masterLabel>
+            <translation><!-- Kristin Abraham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicole Comas</masterLabel>
+            <translation><!-- Nicole Comas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pam Russo</masterLabel>
+            <translation><!-- Pam Russo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Retention Associate --></label>
+        <name>Retention_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Name --></label>
+        <name>Role_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator/ flag signifying that any any CTS integration object will execute the CTS Sync Service to create a CTS Ticket if the related record is created by this user. --></help>
+        <label><!-- SFDC to CTS Sync Enabled --></label>
+        <name>SFDC_to_CTS_Sync_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- School --></label>
+        <name>School__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Detail --></label>
+        <name>Source_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CareerBuilder Applicant</masterLabel>
+            <translation><!-- CareerBuilder Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CareerBuilder Sourced</masterLabel>
+            <translation><!-- CareerBuilder Sourced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Craigslist</masterLabel>
+            <translation><!-- Craigslist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HotJobs Sourced</masterLabel>
+            <translation><!-- HotJobs Sourced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotjobs Applicant</masterLabel>
+            <translation><!-- Hotjobs Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ladders</masterLabel>
+            <translation><!-- Ladders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linked In</masterLabel>
+            <translation><!-- Linked In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster Applicant</masterLabel>
+            <translation><!-- Monster Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster Sourced</masterLabel>
+            <translation><!-- Monster Sourced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outside Referral</masterLabel>
+            <translation><!-- Outside Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of Mouth</masterLabel>
+            <translation><!-- Word of Mouth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Careers</masterLabel>
+            <translation><!-- Yodle Careers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Team Assignments for LiveOps routing and reporting in Salesforce --></help>
+        <label><!-- Team Assignment --></label>
+        <name>Team_Assignment__c</name>
+        <picklistValues>
+            <masterLabel>AM No Beard</masterLabel>
+            <translation><!-- AM No Beard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM Red Beard</masterLabel>
+            <translation><!-- AM Red Beard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMJax (AMP)</masterLabel>
+            <translation><!-- AMJax (AMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue Team (AMP)</masterLabel>
+            <translation><!-- Blue Team (AMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound (AMP)</masterLabel>
+            <translation><!-- Inbound (AMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Glasgow (AMP)</masterLabel>
+            <translation><!-- New Glasgow (AMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red Team (AMP)</masterLabel>
+            <translation><!-- Red Team (AMP) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Term Date --></label>
+        <name>Term_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term Reason --></label>
+        <name>Term_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Today&apos;s Year --></label>
+        <name>Today_s_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Class --></label>
+        <name>Training_Class__c</name>
+        <picklistValues>
+            <masterLabel>Apr-09</masterLabel>
+            <translation><!-- Apr-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aug-08</masterLabel>
+            <translation><!-- Aug-08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aug-09</masterLabel>
+            <translation><!-- Aug-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August 2012</masterLabel>
+            <translation><!-- August 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dec-08</masterLabel>
+            <translation><!-- Dec-08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dec-09</masterLabel>
+            <translation><!-- Dec-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December 2012</masterLabel>
+            <translation><!-- December 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feb-09</masterLabel>
+            <translation><!-- Feb-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jan-09</masterLabel>
+            <translation><!-- Jan-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jul-08</masterLabel>
+            <translation><!-- Jul-08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jul-09</masterLabel>
+            <translation><!-- Jul-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July 2012</masterLabel>
+            <translation><!-- July 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jun-09</masterLabel>
+            <translation><!-- Jun-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mar-09</masterLabel>
+            <translation><!-- Mar-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May-09</masterLabel>
+            <translation><!-- May-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nov-08</masterLabel>
+            <translation><!-- Nov-08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nov-09</masterLabel>
+            <translation><!-- Nov-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November 2012</masterLabel>
+            <translation><!-- November 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oct-08</masterLabel>
+            <translation><!-- Oct-08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oct-09</masterLabel>
+            <translation><!-- Oct-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October 2012</masterLabel>
+            <translation><!-- October 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sep-08</masterLabel>
+            <translation><!-- Sep-08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sep-09</masterLabel>
+            <translation><!-- Sep-09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September 2012</masterLabel>
+            <translation><!-- September 2012 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Winback Team --></label>
+        <name>Winback_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- YBN Consultant Team --></label>
+        <name>YBN_Consultant_Team__c</name>
+        <picklistValues>
+            <masterLabel>Dwyer</masterLabel>
+            <translation><!-- Dwyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miracle-Ear</masterLabel>
+            <translation><!-- Miracle-Ear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2 - Team A</masterLabel>
+            <translation><!-- Tier 2 - Team A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2 - Team B</masterLabel>
+            <translation><!-- Tier 2 - Team B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3 - IB Only</masterLabel>
+            <translation><!-- Tier 3 - IB Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3 - IB/OB</masterLabel>
+            <translation><!-- Tier 3 - IB/OB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Years of Experience --></label>
+        <name>Years_of_Experience__c</name>
+        <picklistValues>
+            <masterLabel>0-2</masterLabel>
+            <translation><!-- 0-2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-5</masterLabel>
+            <translation><!-- 3-5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5+</masterLabel>
+            <translation><!-- 5+ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box so that others in this Salesforce organization can send Document Cloud agreements on behalf of this user. --></help>
+        <label><!-- Adobe Sign Allow Sending As Other Users --></label>
+        <name>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox indicates that the user&apos;s email address has been validated in Document Cloud API. --></help>
+        <label><!-- Adobe Sign Email Verified --></label>
+        <name>echosign_dev1__EchoSign_Email_Verified__c</name>
+    </fields>
+    
+    <layouts>
+        <layout>Sys Admin</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Custom User Fields --></label>
+            <section>Custom User Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Custom User Fields --></label>
+            <section>Custom User Fields</section>
+        </sections>
+    </layouts>
+    
+    <webLinks>
+        <label><!-- Change_DS_Cred --></label>
+        <name>Loop__Change_DS_Cred</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>ctu__Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync_EchoSign_User --></label>
+        <name>echosign_dev1__Sync_EchoSign_User</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,52 @@
+Case Number: {!Case.CaseNumber} 
+
+CID: {!Account.Client_ID__c} 
+
+Product Type: {!Account.Product_Type_Transactional__c}
+
+---------------------------------------------------------------- 
+
+Instructions: {!Case.Description} 
+
+Name of Business: {!Case.Name_of_Business_for_Name_Campaign__c} 
+
+Domain Name to be used for YO: {!Case.Domain_Name_to_be_used_for_YO__c}
+
+Short Description of the Business: 
+{!Case.Description_of_the_Business__c} 
+
+Segment/Industry:  {!Case.Segment__c} 
+
+Homepage/Vertical: {!Case.Homepage__c} 
+
+Offered/Offering: 
+{!Case.Services_Offered__c}
+
+Geographic Areas To Service: {!Case.Geographic_Areas_To_Service__c}
+
+USPs (If Available): 
+{!Case.Unique_Selling_Points__c} 
+
+Special Recognitions/Degrees/Certs: 
+{!Case.Speical_Recognitions_Degrees_Certs__c}
+
+Point of View: {!Case.Business_Size__c} 
+
+Location Type: {!Case.Location_Type__c} 
+
+----------------------------------------------------------------
+
+Max/Essentials Only
+
+Homepage: {!Case.KeyWord_3_Service_Name__c} 
+{!Case.KeyWord_3_Unique_Proposition__c} 
+
+Page 2: {!Case.KeyWord_1_Service_Name__c} 
+{!Case.KeyWord_1_Unique_Proposition__c} 
+
+Page 3: {!Case.KeyWord_2_Service_Name__c} 
+{!Case.KeyWord_2_Unique_Proposition__c}
+
+----------------------------------------------------------------
+
+Case Link:  {!Case.Link}

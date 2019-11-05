@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Detail Link --></label>
+        <name>Account_Detail_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Worksheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- All Account MLS&apos; Have Been Activated --></label>
+        <name>All_Account_MLS_Have_Been_Activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Phone Number --></label>
+        <name>Client_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filters --></label>
+        <name>Filters__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLS --></label>
+        <name>MLS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manual Bind --></label>
+        <name>Manual_Bind__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Case --></label>
+        <name>Parent_Case__c</name>
+        <relationshipLabel><!-- Worksheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre Setup Completed --></label>
+        <name>Pre_Setup_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Setup Rep --></label>
+        <name>Pre_Setup_Rep__c</name>
+        <relationshipLabel><!-- Worksheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting Internal Response</masterLabel>
+            <translation><!-- Awaiting Internal Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backed Out</masterLabel>
+            <translation><!-- Backed Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Setup Completed</masterLabel>
+            <translation><!-- Pre Setup Completed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Areas --></label>
+        <name>Target_Areas__c</name>
+    </fields>
+    <fields>
+        <label><!-- What Classes? --></label>
+        <name>What_Classes__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Classes --></label>
+        <name>of_Classes__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of MLS --></label>
+        <name>of_MLS__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Worksheets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Worksheets</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>MLS Worksheet</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MLS Setup Information --></label>
+            <section>MLS Setup Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Worksheet Information --></label>
+            <section>Worksheet Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MLS Worksheet (feed)</layout>
+        <sections>
+            <label><!-- Config Setup --></label>
+            <section>Config Setup</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MLS Setup Information --></label>
+            <section>MLS Setup Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Worksheet Information --></label>
+            <section>Worksheet Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- MLS Worksheet --></label>
+        <name>MLS_Worksheet</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please make sure to activate all of the Account MLS&apos; needed and then check the &quot;All Account MLS&apos; Have Been Activated&quot;. --></errorMessage>
+        <name>Status_Complete_without_AcctMLS_Checkbox</name>
+    </validationRules>
+</CustomObjectTranslation>

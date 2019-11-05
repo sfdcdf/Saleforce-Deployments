@@ -87,6 +87,10 @@
                 <field>Reason_Detail__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Owner_Alert__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>LH_Feature_Addition__c</field>
             </layoutItems>

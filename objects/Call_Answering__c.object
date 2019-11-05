@@ -1131,10 +1131,10 @@ not($UserRole.Name = "CS Operations"))</errorConditionFormula>
         <description>Only system admins have the ability to select "Deactivated" status for call answering status.</description>
         <errorConditionFormula>AND( 
  ISPICKVAL( Call_Answering_Status__c,"Deactivated"),
- $User.UserRoleId&lt;&gt;"00E60000001J9zD",
-$User.UserRoleId &lt;&gt;"00E60000000rjxk",
-$User.UserRoleId &lt;&gt;"00E60000001Gham",
-$User.UserRoleId &lt;&gt;"00E60000000sSEH"
+ $User.UserRoleId&lt;&gt;'YBN_Process_Efficiency_Specialist',
+$User.UserRoleId &lt;&gt;'CSOperations',
+$User.UserRoleId &lt;&gt;'SEM_Ops',
+ $UserRole.Name &lt;&gt;'ProductionManager'
 )</errorConditionFormula>
         <errorMessage>If you wish to have the call answering service deactivated, please select "Cancel Service" in the Call Answering Status field.</errorMessage>
     </validationRules>

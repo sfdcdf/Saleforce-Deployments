@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>John Benjamin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Johnson Controls - Unitary Products Group,ABCO Refrigeration Supply Co,McNamara Heating and AC Inc,ACU,Aircon Engineering,Inc.,American Air Distributing Inc,Business Name,Johnstone Supply (Tigard),Keller Supply Company,Le Groupe Master (York),M &amp; A SUPPLY COMPANY,INC (Southeast),M &amp; A Supply Company,Inc. (Central),Inc. (South),Inc. (West),Mid City Supply Company Inc,Norman S. Wright Company,North Florida HVAC Supply,Pipeline Supply,Plumbers Supply,Solar Supply (H.Q.),Thos Somerville Co HQ,Upstate Systems,Virginia Air Distributors (Richmond),Virginia Air Distributors of Carolina (Charlotte),Virginia Air Tri State (Brecksville),W. L. Engler,Winstel Controls Inc,Johnstone Supply (Fresno),Johnstone Supply (Paducah),Yeomans Distributing Company,York - Chicago Branch,York - Michigan Branch,York - Minnesota Branch,York - New Jersey Branch,York - New York Branch,York - Northwest Branch,York - Oklahoma Branch,York - Philadelphia Branch,Johnson Controls - Liberties Dealers,Johnson Controls - Cor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.YBN_Individual_Location</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Won</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>John - JCI Opp report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

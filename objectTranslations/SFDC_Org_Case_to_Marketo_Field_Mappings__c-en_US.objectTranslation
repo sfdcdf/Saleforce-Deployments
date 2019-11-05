@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SFDC Field API Name --></label>
+        <name>SFDC_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- When a value is changed from a value to blank, update the Marketo field value to null. --></help>
+        <label><!-- Sync Blank Values --></label>
+        <name>Sync_Blank_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Field --></label>
+        <name>Sync_Field__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC Org Case to Marketo Field Mappings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SFDC Org Case to Marketo Field Mappings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

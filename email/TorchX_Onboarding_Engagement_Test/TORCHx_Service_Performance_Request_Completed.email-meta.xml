@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to send once Optimization cases for service performance have been closed. There is another Email template similar to this but that includes the list of changes made to the ad campaigns.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TORCHx</letterhead>
+    <name>TORCHx Service Performance Request Completed</name>
+    <style>freeForm</style>
+    <subject>Your Account Optimization Request is Completed</subject>
+    <textOnly>Hi {!Account.Client_First_Name__c},
+Our marketing team has completed a review of your account and have made changes to the ad campaigns that we feel will benefit the account’s performance.
+
+If you have any questions, please don&apos;t hesitate to give us a call.
+
+Thank you for choosing TORCHx. We appreciate your business!
+
+
+{!User.FirstName}
+
+TORCHx Support
+
+(888) 428-9659</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

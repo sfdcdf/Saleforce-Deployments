@@ -131,7 +131,67 @@
         <label>Perm. to edit WBN Jax fields</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields><customSettingsType>Hierarchy</customSettingsType><description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description><enableFeeds>false</enableFeeds><label>Validation Rule Permissions</label><visibility>Public</visibility>
+    </fields>
+    <fields>
+        <fullName>Account_Update_and__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Account_Update_and</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closing_must_fill_out_Additional_Notes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Closing_must_fill_out_Additional_Notes</description>
+        <externalId>false</externalId>
+        <label>Closing_must_fill_out_Additional_Notes</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Delete_Case_for_LH_Master__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Profile/ User will bypass the Validation Rule Delete_Case_for_LH_Master</description>
+        <externalId>false</externalId>
+        <label>Delete Case for LH Master</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lock_LH_Master_Case_when_Closed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This to bypass the validation rule Lock_LH_Master_Case_when_Closed</description>
+        <externalId>false</externalId>
+        <label>Lock LH Master Case when Closed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Closed_Won_Edit_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypasses the validation rule which disables the ability to edit a Closed Won Opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bypasses the validation rule which disables the ability to edit a Closed Won Opportunity</inlineHelpText>
+        <label>Opportunity Closed Won Edit Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Prior_Date_Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypasses validation rule that does not allow an Opportunity to be edited that has Closed Date prior to the current date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bypasses validation rule that does not allow an Opportunity to be edited that has Closed Date prior to the current date</inlineHelpText>
+        <label>Opportunity Prior Date Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+  <customSettingsType>Hierarchy</customSettingsType>
+  <description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description>
+  <enableFeeds>false</enableFeeds>
+  <label>Validation Rule Permissions</label>
+  <visibility>Public</visibility>
     <listViews>
         <fullName>Detailed_All</fullName>
         <columns>SETUP_OWNER_NAME</columns>

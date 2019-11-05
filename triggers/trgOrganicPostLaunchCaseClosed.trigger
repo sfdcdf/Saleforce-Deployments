@@ -3,7 +3,7 @@ trigger trgOrganicPostLaunchCaseClosed on Case (after insert, after update) {
     private static String organicSetup = '012600000009OBoAAM';
     Set<Id> accountIds = new Set<Id>();
     User u = [SELECT Id, Name FROM User WHERE Name = 'DB Amp' LIMIT 1];
-    
+
     // only execute if user is not DB Amp User
     if(UserInfo.getUserId() != u.Id){
     
@@ -18,8 +18,10 @@ trigger trgOrganicPostLaunchCaseClosed on Case (after insert, after update) {
         // abrosius@soliantconsulting.com 2013Jul17: added ability to shut off this section of the trigger with a custom setting called Textbroker_Trigger_Switch__c
         if(trigger.isAfter && trigger.isUpdate && TextbrokerHelper.enforceTextbrokerTriggerAfter && TextbrokerHelper.getTriggerSwitchValue('Trigger Switch')) {
             //We have to set it before we call the methods that do the actual work to avoid infinite loops
-            TextbrokerHelper.enforceTextbrokerTriggerAfter = false;
-            TextbrokerDispatcher.processTextbrokerTrigger(trigger.new, trigger.old, trigger.newMap, trigger.oldMap);
+
+            //as per Eugene Ross email on september 25th 2019, commenting this section about textbroker since it will be deprecated and is causing issue with case cancelation by non authenticated users
+            //TextbrokerHelper.enforceTextbrokerTriggerAfter = false;
+            //TextbrokerDispatcher.processTextbrokerTrigger(trigger.new, trigger.old, trigger.newMap, trigger.oldMap);
             //TextbrokerHelper.enforceTextbrokerTriggerAfter = true;
         }
     

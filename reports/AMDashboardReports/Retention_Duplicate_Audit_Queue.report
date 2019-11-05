@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$Outcome__c</field>
+    </columns>
+    <description>Weekly Duplicate RETX Cases</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cancellation_Requests__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Retention Duplicate Audit Queue</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Retention Duplicate Audit Queue</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cancellation_Requests_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Cancellation_Requests__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Subject</field>
+    </columns>
+    <filter>
+        <booleanFilter>(((((1 OR 2) AND 3) AND 4) AND 5)) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Case.Activities$Subject</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Email:</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$CallType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Origin</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>autosupport@lighthousepmg.com,customercare@lighthousepmg.com,customercare@yodle.com,Email,LBW VM,LBWCustomerService@web.com,LH Auto VM,LH Field Services VM,LH Medical VM,LH Upsell,Local Pooled VM,mlsc@torchx.com,New Client,outranksupport@service.rogersoutrank.com,Platinum Support,Rep Email,support@lighthousepmg.com,support@torchx.com,TORCHx VM,Voicemail,Web,YodleGoldService@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$CreatedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Learn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Case_Owner_Manager__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Crystal Bellew,Stephanie Verdusco</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Activities$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Activities$CallType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OB Emails Completed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

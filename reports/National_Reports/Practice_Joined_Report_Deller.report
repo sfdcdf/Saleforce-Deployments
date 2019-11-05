@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>a</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Case.IMS_Completing_Opt2__c</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT.NAME</field>
+        </columns>
+        <columns>
+            <field>RECORDTYPE</field>
+        </columns>
+        <columns>
+            <field>SUBJECT</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Case.IMS_Completing_Opt2__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>contains</operator>
+                <value>Matt Austin</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Cases block 1</name>
+        <params>
+            <name>units</name>
+            <value>h</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CaseList</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Case.Date_Opt_Completed__c</dateColumn>
+            <interval>INTERVAL_LAST30</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Account</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Account$Name</field>
+        </columns>
+        <columns>
+            <field>Account.Organic_Analyses__r$RecordType</field>
+        </columns>
+        <columns>
+            <field>Account.Organic_Analyses__r$Subject__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Account.Organic_Analyses__r$IMS_Completing_Opt__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>contains</operator>
+                <value>Matt Austin</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Organic Cases block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Organic_Cases__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Account.Organic_Analyses__r$Date_Opt_Completed__c</dateColumn>
+            <interval>INTERVAL_LAST30</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>a</joinTable>
+    </blockInfo>
+    <description>I used Matt Austin as my IMS Rep example.</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PARENT_ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Practice Joined Report - Deller</name>
+    <reportType>CaseList</reportType>
+    <showDetails>true</showDetails>
+</Report>

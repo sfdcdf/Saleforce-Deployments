@@ -1,0 +1,37 @@
+Sales Ops
+The request to Close/Update this Opportunity has been approved.
+You have some Tasks to complete based on the comments.
+
+Partial Save:
+ * Remove Products which did not launch from Opportunity
+ * Update Contract Line Items
+
+Total Loss:
+ * Change Opportunity to Closed Lost
+
+
+Account: {!Opportunity.Account}
+Client Name:  {!Account.Contact_Name__c}
+Opportunity Name:  {!Opportunity.Name}
+Stage: {!Opportunity.StageName}
+Amount: {!Opportunity.Amount}
+Close Date: {!Opportunity.CloseDate}
+Product Sold: {!Opportunity.Products__c}
+
+Lost Reason Detail: {!Opportunity.Lost_Reason_Detail__c}
+
+Approval Information
+Approval Status:  {!Opportunity.Approval_Opp_List_Review_Status__c}  
+Approval Notes: {!Opportunity.Approval_Notes__c}   
+
+Current Step: {!ApprovalRequest.Process_Step_Name}  
+Step Comments: {!ApprovalRequest.Comments}  
+Approval Step Status: {!ApprovalRequest.Status}  
+Approval Step Assignee: {!ApprovalRequest.Process_Assignee}  
+Approval Step Approver: {!ApprovalRequest.Process_Approver}  
+
+
+Notes:
+{!Opportunity.Approval_Notes__c} 
+
+Link:  {!Opportunity.Link}

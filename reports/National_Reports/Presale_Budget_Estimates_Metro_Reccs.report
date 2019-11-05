@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Segment_Support_Request__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Specific_Services_to_highlight__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>National_Support_Request__c.Sub_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Budget &amp; Metropage Recommendations,Performance Estimates,Proposal Review,Technical Review,Proposal Creation,Submit Proposal for Review,Proposal Approved,Revised Proposal Submitted,Revised Proposal Review,Proposal Estimates,Pending Needs Assessment,Contract Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>National_Support_Request__c.Account_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test,Jeremy&apos;s Powerhouse Gym</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>mike delaura,dustin o&apos;leary,brittany hunter,joshua golden,sarah mcmillian,jordan herin,national performance queue,account performance queue</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Presale Budget Estimates &amp; Metro Reccs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$National_Support_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>National_Support_Request__c.Account_Transition_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -119,6 +119,18 @@
         <senderType>CurrentUser</senderType>
         <template>Admin_Email_Templates/TORCHx_Cancellation_Email</template>
     </alerts>
+    <alerts>
+        <fullName>LH_Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</fullName>
+        <ccEmails>elysa.rambaud@in-cloud.ca</ccEmails>
+        <description>LH - Canceled Lighthouse Auto Account - Alert to BoltOn</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>stephen.gardella@yodle.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Lighthouse_Auto_IB_OB/Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Approval_By_Manager</fullName>
         <field>Approval_By__c</field>
@@ -1127,6 +1139,35 @@ Original Leadstream Auto Close First Cancel Code</description>
         <active>true</active>
         <description>New Cancel Codes Sends email to Customer when Cancellation Closed do to no response.</description>
         <formula>AND(   Account_Name__r.Product_Type_Transactional__c = "TORCHx",   ISPICKVAL( Outcome__c , "Cancelled"),    OR(   AND(/*old codes*/     ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),       Includes(Cancellation_Code_Details__c, "Never Went Live")      ),   AND( /*new codes*/     ISPICKVAL( Cancel_Code_1__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_1_Details__c  , "Unresponsive to Fulfillment")     ),   AND(    ISPICKVAL( Cancel_Code_2__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_2_Details__c  , "Unresponsive to Fulfillment")     )   ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Canceled Lighthouse Auto Account - Alert to BoltOn</fullName>
+        <actions>
+            <name>LH_Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Cancellation_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Cancellation Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Auto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Account_Product_Type__c</field>
+            <operation>contains</operation>
+            <value>PP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Cancellation_Request__c.Outcome__c</field>
+            <operation>equals</operation>
+            <value>Churned,Downsold to LH Only</value>
+        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>

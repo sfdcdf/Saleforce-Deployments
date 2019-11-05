@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_93982125</developerName>
+        <masterLabel>Activ Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Activity.Milestone__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>M003 - Demo/Value Presentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M001 - Set local demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M002 - Local demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scheduled Discovery Call and/or Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scheduled Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demo &amp; Value Presentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IL Demo Scheduled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ran IL Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M2: Client Facing Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M2: Demo &amp; Dry Run w/ YBN Exec</sourceValue>
+            </sourceValues>
+            <value>Demo</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>PARENT_ACCOUNT_NAME</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>DUE_TIME</field>
+    </columns>
+    <columns>
+        <field>CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Activity.Status__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>TASK</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Task.YBN_Individual_Location,Task.YBN_Sales_IL,Event.YBN_Sales_Event_IL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Milestone__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IL Demo Scheduled,Ran IL Demo,Demo &amp; Value Presentation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARENT_ACCOUNT_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Allegra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_93982125</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Demo</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PARENT_ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Allegra Demos</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>Operations</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2018-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-11-06</startDate>
+    </timeFrameFilter>
+</Report>

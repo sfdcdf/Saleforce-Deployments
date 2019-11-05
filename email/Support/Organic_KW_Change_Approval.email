@@ -1,0 +1,31 @@
+Hi,
+
+The following Organic KW Change Case has been submitted. Please click  {!ApprovalRequest.Internal_URL} to approve or reject this request. This case is locked from being edited until approved or rejected. Original case - {!Case.Link}
+
+Submitted by: {!Case.CreatedBy}
+
+Client ID: {!Case.Client_ID__c}
+
+Account Name: {!Case.Account}
+
+Created Date: {!Case.CreatedDate}
+
+IMS Rep: {!Case.IMS_Rep__c}
+
+Is Client Being Charged? ($140)  {!Case.00N60000002IsSY}
+
+Content Need to be Re-Written? {!Case.00N60000002IsST}
+
+Old Keyword 1: {!Case.KeyWord_1__c}
+
+Old Keyword 2: {!Case.KeyWord_2__c}
+
+Old Keyword 3: {!Case.KeyWord_3__c}
+
+Desired Keyword 1: {!Case.00N60000002IsRp}
+
+Desired Keyword 2: {!Case.00N60000002IsS4}
+
+Desired Keyword 3: {!Case.00N60000002IsSE}
+
+Description: {!Case.Description}
