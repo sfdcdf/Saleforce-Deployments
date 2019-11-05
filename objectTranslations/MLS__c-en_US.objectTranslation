@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional MLS Name --></label>
+        <name>Additional_MLS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent/Broker Annual Fee --></label>
+        <name>Agent_Broker_Annual_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent/Broker Initiates Process --></label>
+        <name>Agent_Broker_Initiates_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent/Broker Monthly Fee from IDX Broker --></label>
+        <name>Agent_Broker_Monthly_Fee_from_IDX_Broker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent/Broker Monthly Fee from MLS --></label>
+        <name>Agent_Broker_Monthly_Fee_from_MLS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Billed by MLS to client direct --></help>
+        <label><!-- Agent/Broker Setup Fee --></label>
+        <name>Agent_Broker_Setup_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Fees? --></label>
+        <name>Agent_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorized RETS Servers --></label>
+        <name>Authorized_RETS_Servers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brokers Only? --></label>
+        <name>Brokers_Only__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call to MLS Date --></label>
+        <name>Call_to_MLS_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cannot Sync Reason --></label>
+        <name>Cannot_Sync_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cannot Sync --></label>
+        <name>Cannot_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Review Required For Approval --></label>
+        <name>Compliance_Review_Required_For_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Config Notes --></label>
+        <name>Config_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credential Type --></label>
+        <name>Credential_Type__c</name>
+        <picklistValues>
+            <masterLabel>Broker Credentials</masterLabel>
+            <translation><!-- Broker Credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual/Agent Credentials</masterLabel>
+            <translation><!-- Individual/Agent Credentials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Credentials</masterLabel>
+            <translation><!-- Vendor Credentials --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Data Source --></label>
+        <name>DataSource__c</name>
+        <picklistValues>
+            <masterLabel>MLS 1.0</masterLabel>
+            <translation><!-- MLS 1.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLS DC</masterLabel>
+            <translation><!-- MLS DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLS FS</masterLabel>
+            <translation><!-- MLS FS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration in Progress</masterLabel>
+            <translation><!-- Migration in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does MLS Allow Digital Signature? --></help>
+        <label><!-- Digital Signature --></label>
+        <name>Digital_Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTP/ RETS --></label>
+        <name>FTP_RETS__c</name>
+        <picklistValues>
+            <masterLabel>FTP</masterLabel>
+            <translation><!-- FTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FTP &amp; RETS</masterLabel>
+            <translation><!-- FTP &amp; RETS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETS</masterLabel>
+            <translation><!-- RETS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Form Needed? --></label>
+        <name>Form_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integrated in the Past? --></label>
+        <name>Integrated_in_the_Past__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration --></label>
+        <name>Integration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Known --></label>
+        <name>Known__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLS Application Link --></label>
+        <name>MLS_Application_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLS Code --></label>
+        <name>MLS_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the minimum number of brokers or agents we need to be eligible to sync with this MLS? --></help>
+        <label><!-- Minimum Clients Required to Sync --></label>
+        <name>Minimum_Clients_Required_to_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Clients ALL TIME per MLS --></label>
+        <name>Number_of_Clients_ALL_TIME_per_MLS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of LIVE Clients --></label>
+        <name>Number_of_LIVE_Clients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Members --></label>
+        <name>Number_of_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process / Notes --></label>
+        <name>Process_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospects in Area Covered by MLS --></label>
+        <name>Prospects_in_Area_Covered_by_MLS__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS Login --></label>
+        <name>RETS_Login__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS Password --></label>
+        <name>RETS_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS URL --></label>
+        <name>RETS_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS User Agent Login --></label>
+        <name>RETS_User_Agent_Login__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS User Agent Password --></label>
+        <name>RETS_User_Agent_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS User Agent --></label>
+        <name>RETS_User_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- RETS Version --></label>
+        <name>RETS_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Broker Approval? --></label>
+        <name>Requires_Broker_Approval__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sample Site(s) --></label>
+        <name>Sample_Site_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold Data Process --></label>
+        <name>Sold_Data_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Photo Type --></label>
+        <name>Special_Photo_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- TORCHx Approved Vendor --></label>
+        <name>TORCHx_Approved_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Active Account MLS Connection --></label>
+        <name>Total_Active_Account_MLS_Connection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total of all Account MLS connection (active or inactive). --></help>
+        <label><!-- Total All Time Account MLS Connection --></label>
+        <name>Total_All_Time_Account_MLS_Connection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turn Around Time --></label>
+        <name>Turn_Around_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Undisclosed Agent/Broker Fees --></label>
+        <name>Undisclosed_Agent_Broker_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Annual Fee --></label>
+        <name>Vendor_Annual_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Fees? --></label>
+        <name>Vendor_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Monthly Fee --></label>
+        <name>Vendor_Monthly_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Quarterly Fee --></label>
+        <name>Vendor_Quarterly_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Setup Fee (Per Client) --></label>
+        <name>Vendor_Setup_Fee_Per_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Setup Fee (one time) --></label>
+        <name>Vendor_Setup_Fee_one_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- examples: Flexmls, Rapattoni, Paragon --></help>
+        <label><!-- Vendor --></label>
+        <name>Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Address --></label>
+        <name>Website_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Considerations --></label>
+        <name>Website_Considerations__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>MLS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MLS</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>MLS Layout</layout>
+        <sections>
+            <label><!-- Agent/Broker Fees --></label>
+            <section>Agent/Broker Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Client Tiers --></label>
+            <section>Client Tiers</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MLS Details --></label>
+            <section>MLS Details</section>
+        </sections>
+        <sections>
+            <label><!-- RETS --></label>
+            <section>RETS</section>
+        </sections>
+        <sections>
+            <label><!-- Stipulations --></label>
+            <section>Stipulations</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
+        </sections>
+        <sections>
+            <label><!-- Vendor Fees --></label>
+            <section>Vendor Fees</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- MLS --></label>
+        <name>MLS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please put a Cannot Sync Reason --></errorMessage>
+        <name>Cannot_Sync_Reason</name>
+    </validationRules>
+</CustomObjectTranslation>

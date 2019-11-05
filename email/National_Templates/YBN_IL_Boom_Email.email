@@ -1,0 +1,29 @@
+Account Name: {!Opportunity.Account}
+
+Parent Account: {!Opportunity.Parent_Account__c}
+
+Sales Exec: {!Opportunity.OwnerFullName}
+
+Sales Director: {!Opportunity.Sales_DIrector__c}
+
+Client ID: {!Opportunity.Client_ID__c}
+
+PPC Budget: {!Opportunity.Monthly_Advertising_Charges__c}
+Media Management Fee: {!Opportunity.corp_Media_Management_Fee__c}
+PPC Contract Length: {!Opportunity.PPC_Contract_Length__c}
+
+Foundations/Organic Fee: {!Opportunity.Organic_fees__c}
+Foundations/Organic Contract Length: {!Opportunity.Organic_Contract_Length__c}
+
+Reviews Fee: {!Opportunity.Review_Management_Fee_Per_Location__c}
+Reviews Contract Length: {!Opportunity.Review_Management_Contract_Length__c}
+
+Yodle Web Fee: {!Opportunity.Yodle_Web_Fee__c}
+Yodle Web Contract Length: {!Opportunity.Yodle_Web_Contract_Length__c}
+
+Setup Fee: {!Opportunity.Setup_Fees__c}
+
+LRR: {!Opportunity.Corporate_Recurring_Total__c}
+RV: {!Opportunity.Commissionable_Revenue__c}
+
+{!Opportunity.Opportunity_Link__c}

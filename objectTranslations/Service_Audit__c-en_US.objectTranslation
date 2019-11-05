@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Service Audits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- ex: 6/5/2015 11:18:00 --></help>
+        <label><!-- Call Last Timestamp --></label>
+        <name>Call_Last_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fix Needed? --></label>
+        <name>Fix_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue Catagory Group --></label>
+        <name>Issue_Catagory_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Catagory --></label>
+        <name>Issue_Catagory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Resolved? --></label>
+        <name>Issue_Resolved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Client</masterLabel>
+            <translation><!-- Pending Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Change Manager --></label>
+        <name>Last_Change_Manager__c</name>
+        <relationshipLabel><!-- Service Audits (Last Change Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Change Name --></label>
+        <name>Last_Change_Name__c</name>
+        <relationshipLabel><!-- Service Audits (Last Change Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Link to Call --></label>
+        <name>Link_to_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- QA&apos;d By --></label>
+        <name>QA_d_By__c</name>
+        <relationshipLabel><!-- Service Audits (QA&apos;d By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Results of QA --></label>
+        <name>Results_of_QA__c</name>
+        <picklistValues>
+            <masterLabel>Call Quality Concern</masterLabel>
+            <translation><!-- Call Quality Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - Call Not Recorded</masterLabel>
+            <translation><!-- NA - Call Not Recorded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - Poor Audio Quality</masterLabel>
+            <translation><!-- NA - Poor Audio Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Errors</masterLabel>
+            <translation><!-- No Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Denied - Knowledge Limitation</masterLabel>
+            <translation><!-- Request Denied - Knowledge Limitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Denied - Product Limitation</masterLabel>
+            <translation><!-- Request Denied - Product Limitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Completed Incorrectly (CS)</masterLabel>
+            <translation><!-- Work Completed Incorrectly (CS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Completed Incorrectly (OPT)</masterLabel>
+            <translation><!-- Work Completed Incorrectly (OPT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Not Completed (CS)</masterLabel>
+            <translation><!-- Work Not Completed (CS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Not Completed (OPT)</masterLabel>
+            <translation><!-- Work Not Completed (OPT) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary of Call --></label>
+        <name>Summary_of_Call__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Audit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Audits</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Service Audit Layout</layout>
+        <sections>
+            <label><!-- Call Details --></label>
+            <section>Call Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- QA Details --></label>
+            <section>QA Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Inbound Call Audit --></label>
+        <name>Inbound_Call_Audit</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to Managers when one of their agents&apos; upsell additions gets rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Alert for Upsell Addition Rejected</name>
+    <style>none</style>
+    <subject>Upsell Addition Approved - {!Opportunity.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

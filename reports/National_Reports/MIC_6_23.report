@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Id</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Previously_Claimed_Disabled__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>YO-8796,YO-8833,YO-8678,YO-7122,YO-7147,YO-6871,YO-6914,YO-75603,YO-6972,YO-7699,YO-8971,YO-36324,YO-4373,YO-5648,YO-32339,YO-14830,YO-37817,YO-36477,YO-6019,YO-4901,YO-13766,YO-79729,YO-12246,YO-36356,YO-4529,YO-54727,YO-4392,YO-7581,YO-2837,YO-8645,YO-63103,YO-0262,YO-38022,YO-4486,YO-36279,YO-13776,YO-1592,YO-3817,YO-32719,YO-12110,YO-33780,YO-33792,YO-33782,YO-6888,YO-61923,YO-6879,YO-11089,YO-4670,YO-9044,YO-37734,YO-34951,YO-34574,YO-5688,YO-5687,YO-1545,YO-8621,YO-4587,YO-4600,YO-41456,YO-0647,YO-33400,YO-66098,YO-8860,YO-4599,YO-5454</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MIC 6.23</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

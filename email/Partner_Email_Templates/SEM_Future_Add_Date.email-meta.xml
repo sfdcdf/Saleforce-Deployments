@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SEM Future Add Date</name>
+    <style>none</style>
+    <subject>{!Account.Name} [{!Account.Client_ID__c}] needs SEM Added Today!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

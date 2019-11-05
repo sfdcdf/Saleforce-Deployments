@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Step by step instructions for client to create an offer</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Essential Features- How to Create an Offer</name>
+    <style>freeForm</style>
+    <subject>Yodle - How to Create an Offer - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

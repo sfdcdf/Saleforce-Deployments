@@ -1,4 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
         <fullName>Role</fullName>
         <type>Picklist</type>
-    </fields><enableFeeds>false</enableFeeds><sharingModel>ControlledByParent</sharingModel></CustomObject>
+    </fields>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AUTOMATED DO NOT USE</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Automated - Rogers Bing Not Google</name>
+    <style>none</style>
+    <subject>Bing Pin Received!</subject>
+    <textOnly>Hi,
+
+Your team at Rogers has received your Bing PIN code.  Thank you very much for sending it to us!  This code allowed us to successfully claim and verify your Bing Business profile, but we still need your Google PIN number in order to complete the setup of your Google Places profile page.
+
+
+We requested Google send the card on {!Organic_Analysis__c.G_Postcard_Request__c}, the address below:
+
+{!Organic_Analysis__c.G_Address_for_Postcard__c}
+
+If you are unable to receive mail at this address please let us know immediately so we can correct your information within this search engine. Don’t worry if you have not received the postcard yet. They usually arrive within 7-10 days, but can take as long as three weeks.   Please be on the lookout for it and contact us when it arrives.
+
+Once you receive the postcard, please reply to this email with the PIN number or call  us at 1-888-450-5716.  If replying by email, please include your business name and account number {!Organic_Analysis__c.Client_ID__c}.
+
+Google will only send this information to you as the business owner and we need it to finish things up on our end, so please keep a close eye out for it. They look a lot like junk mail! For your convenience we have included a sample image of the postcard below.
+
+
+Thanks,
+Rogers Maps Optimization Team
+1-888-450-5716
+
+
+Clicks Are Great. Calls Are Better.
+Rogers Communications Inc. 350 Bloor Street East, Toronto, ON  M4W 1G9, Canada</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

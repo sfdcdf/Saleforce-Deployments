@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Case_Reason_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Reason Criteria</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Field_API_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SFDC Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sync_Blank_Values__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync Blank Values</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sync_Field__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sync Field</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>Only for YBN Outbound touchpoint record type cases</description>
+    <enableFeeds>false</enableFeeds>
+    <label>SFDC Case To Marketo Field Mappings YBN</label>
+    <visibility>Public</visibility>
+</CustomObject>

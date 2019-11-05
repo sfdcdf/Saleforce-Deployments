@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServicesFunction xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apexClass xsi:nil="true"/>
+    <attachmentOption>All</attachmentOption>
+    <authenticationFailureAction>Bounce</authenticationFailureAction>
+    <authorizationFailureAction>Bounce</authorizationFailureAction>
+    <emailServicesAddresses>
+        <developerName>metrackingnumbers</developerName>
+        <isActive>true</isActive>
+        <localPart>metrackingnumbers</localPart>
+        <runAsUser>sfdc@yodle.com.full</runAsUser>
+    </emailServicesAddresses>
+    <emailServicesAddresses>
+        <developerName>wolfnet</developerName>
+        <isActive>true</isActive>
+        <localPart>wolfnet</localPart>
+        <runAsUser>sfdc@yodle.com.full</runAsUser>
+    </emailServicesAddresses>
+    <emailServicesAddresses>
+        <developerName>sstarett</developerName>
+        <isActive>true</isActive>
+        <localPart>sstarett</localPart>
+        <runAsUser>sfdc@yodle.com.full</runAsUser>
+    </emailServicesAddresses>
+    <emailServicesAddresses>
+        <developerName>handandstonesupport</developerName>
+        <isActive>true</isActive>
+        <localPart>handandstonesupport</localPart>
+        <runAsUser>sfdc@yodle.com.full</runAsUser>
+    </emailServicesAddresses>
+    <emailServicesAddresses>
+        <developerName>hometeamsupport</developerName>
+        <isActive>true</isActive>
+        <localPart>hometeamsupport</localPart>
+        <runAsUser>sfdc@yodle.com.full</runAsUser>
+    </emailServicesAddresses>
+    <functionInactiveAction>Bounce</functionInactiveAction>
+    <functionName>EmailToCase</functionName>
+    <isActive>true</isActive>
+    <isAuthenticationRequired>false</isAuthenticationRequired>
+    <isErrorRoutingEnabled>false</isErrorRoutingEnabled>
+    <isTextAttachmentsAsBinary>false</isTextAttachmentsAsBinary>
+    <isTlsRequired>false</isTlsRequired>
+    <overLimitAction>Bounce</overLimitAction>
+</EmailServicesFunction>

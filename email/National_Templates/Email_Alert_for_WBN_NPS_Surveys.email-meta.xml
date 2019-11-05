@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notice to YBN Consultant or YBN CSD on survey completion, based on score.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email Alert for WBN NPS Survey</name>
+    <style>none</style>
+    <subject>New Survey Completed by Account {!Customer_Surveys__c.Account__c} - Please review</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

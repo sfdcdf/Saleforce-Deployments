@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>sfdc1@yodle.com</email>
+    <name>Local Email Queue</name>
+    <queueMembers>
+        <roles>
+            <role>InboundSpecialist294541</role>
+            <role>OutboundAssociate294541</role>
+            <role>OutboundSpecialist294541</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

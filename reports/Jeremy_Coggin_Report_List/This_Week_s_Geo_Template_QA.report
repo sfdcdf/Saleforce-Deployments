@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Best_Practice_Evaluation__c$Name</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Website_Built_By__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Geo_Terms_Compliant__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Geo_terms_consistent_w_landing_page__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Dangerous_Duplicates2__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Batch_Added_Terms2__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Geo_Radius_20_miles__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$One_Geo_Template2__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$User__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ana Canuto,Megan Martin</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Best_Practice_Evaluation__c$Account_Setup_For__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>This Week&apos;s Geo Template QA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Best_Practice_Evaluations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Best_Practice_Evaluation__c$Date_Evaluation_QA_Completed__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

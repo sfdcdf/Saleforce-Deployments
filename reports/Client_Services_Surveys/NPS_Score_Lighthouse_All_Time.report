@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.NPS_Score_Count__c:SUM/parentgroupval(RowCount,GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Customer_Surveys__c.NPS_Score__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>NPS Score Overall</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Client_ID_2__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Segment__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NPS Survey Lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Customer_Surveys__c.NPS_Score__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NPS Score - Lighthouse All Time</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

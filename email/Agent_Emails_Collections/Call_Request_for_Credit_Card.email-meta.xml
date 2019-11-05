@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Call Request for Credit Card</name>
+    <style>freeForm</style>
+    <subject>Yodle Call Request: Payment Info</subject>
+    <textOnly>Hi,
+
+You may have attempted to send us updated payment information and received a message failure response. This is the result of the payment information contained within your original email.
+
+For security purposes, we are unable to accept credit card numbers sent via email. Any attempt to send a message containing this sensitive information will be blocked by our email servers. We do this to ensure your personal information remains protected.
+
+Please let me know the best number to reach you on and I’ll give you a call to collect this information and enter it securely into our system. I apologize for any inconvenience and look forward to speaking with you. Thank you!
+
+Thank you,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

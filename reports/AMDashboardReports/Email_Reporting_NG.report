@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$CallType</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$CreatedDate</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Case.Activities$Subject</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Email:</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$CallType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Origin</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>CS Upsell,Web,@lighthousepmg.com,LH Medical VM,LH Auto VM,LH Field Services VM,Platinum Support,Local Pooled VM,CS@Outrank.com,customercare@yodle.com,Rogers Dedicated VM,Rogers Pooled VM,outranksupport@service.rogersoutrank.com,rogerssupport@service.rogersoutrank.com,LBWCustomerService@web.com,LBW VM,YodleGoldService@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$Assigned_To_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Local Consultant,Lighthouse inbound,Outbound Specialist,Inbound Email Associate,Inbound Specialist,Services Inbound,Outbound Associate</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Email Reporting NG</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

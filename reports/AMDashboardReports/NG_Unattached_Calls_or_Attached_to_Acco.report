@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_55127037</developerName>
+        <masterLabel>Assigned To</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Activity$Assigned_To_Role__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Retention Consultant</sourceValue>
+            </sourceValues>
+            <value>Retention</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$LOCC_App__interactionid__c</field>
+    </columns>
+    <columns>
+        <field>Activity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Activity$CallType</field>
+    </columns>
+    <columns>
+        <field>Activity$Related_to_Object__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 AND 2) OR (3 AND 4)) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Activity$What</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CallDurationInSeconds</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Related_to_Object__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CallDurationInSeconds</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>180</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Stephanie Acorn,Cameron Angela,Lynn Arsenault,Tommy Arsenault,Kelly Ashton,Paula Balesdent,Caitlin Boutilier,Kimberly Boutilier,Amanda Brown,Rachel Canning,Marjorie Clarke,Kaitlyn Crosby,Jennifer Daley,Justine Dudka,Leonard Edwards,Jarett Geddes,Marjorie Goodyear,Joshua Grant,Graham Hines,Robert Jones,Dawn Jordan,Jenni Kennedy,Katharine Langille,Kathryn Leadbeater,Christine LeBlanc,David MacDonald,Jessica Macdonald,Patricia MacDonald,Brittany MacKeil,Meaghan MacKinnon,Donna MacLellan,Janine Martin,Alvah Mayo,Kendel McArdle,Kayla McLaren,Kayla Muir,James Pyche,Dawn Rodgers,Walter Rundle,Joseph StJohn,Peter Walsh,Carol White,Carolanne White,Josh Grant,Angela Cameron,Caitlin Boutiler,Kimberley Boutilier</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NG Unattached Calls or Attached to Acco</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities__c</reportType>
+    <roleHierarchyFilter>LocalCSM</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Activity$CreatedDate</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

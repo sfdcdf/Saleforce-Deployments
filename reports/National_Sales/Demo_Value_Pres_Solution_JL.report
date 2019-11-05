@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>Activity.Milestone__c</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <filter>
+        <booleanFilter>((((1 OR 3) AND 2)) AND 4)</booleanFilter>
+        <criteriaItems>
+            <column>Activity.Milestone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>M003 - Demo/Value Presentation,M008 - Solutions in Action Presentation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Interaction_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Follow Up,Prep</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Milestone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Demo &amp; Value Presentation,Solution Review Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN: Sales/Account Director D</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Demo &amp; Value Pres - Solution - JL</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>YBN_SVP_GM</roleHierarchyFilter>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

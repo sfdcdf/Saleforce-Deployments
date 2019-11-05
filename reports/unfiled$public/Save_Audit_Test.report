@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cancellation_Requests__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$Outcome__c</field>
+    </columns>
+    <columns>
+        <field>Account$Cancellation_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r.Quality_Case__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$Future_Monthly_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$CreatedDate</field>
+    </columns>
+    <description>Reporting built to support the Save Mode Audit for AMP</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$IMS_Rep_Role__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Local Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Cancellation_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending Cancellation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In Progress</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$IMS_Rep_Full_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Save Audit Test</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Quality_Cases_Accounts_Cancel__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Cancellation_Requests__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TORCHx</letterhead>
+    <name>TORCHx Auto Responder</name>
+    <style>freeForm</style>
+    <subject>We&apos;ll Be In Touch Soon</subject>
+    <textOnly>Hello,
+
+Thank you for contacting TorchX Support! We received your message and look forward to assisting you as soon as possible.
+
+If you need immediate assistance, you are welcome to call us at (888) 428-9659 with your reference number: {!Case.CaseNumber}. We’re here Monday through Friday, from 8am to 6pm CST.
+
+Thank you for choosing TorchX, we appreciate your business!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

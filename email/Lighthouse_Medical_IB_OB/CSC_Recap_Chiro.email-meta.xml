@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up email after the CSC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Recap- CSC- Chiro</name>
+    <style>none</style>
+    <subject>Lighthouse 360: Setup Call Recap {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <textOnly>Hello {!Lighthouse_Worksheets__c.Practice_Name__c},
+
+Thank you for taking the time to speak with me to review your account and help you get started. I wanted to recap the highlights of our call and ensure you have all necessary information regarding the setup of your account.
+
+
+Lighthouse 360 Portal
+
+To log in to your portal just go to home.lh360.com. Your username is {!Lighthouse_Worksheets__c.Portal_Username__c}. To recover your password click here. Be sure to bookmark this information for future reference.
+
+
+Messages
+
+As discussed, the following features are available to you to communicate with your patients. We have noted what is currently active in your account. You can turn on the inactive features at any time, so feel free to reach out to us if you change your mind and we can easily get them set up for you. Prices referenced below may be subject to change upon advanced notice to you.
+
+Emails (Included) - {!Lighthouse_Worksheets__c.Activated_Emails__c} 
+Email appointment reminders and follow up notices. 
+
+Texts (Included) - {!Lighthouse_Worksheets__c.Activated_Text__c} 
+Text message appointment reminders and follow up notices. 
+
+Automated Phone Calls ($0.29/call) - {!Lighthouse_Worksheets__c.Activated_OBC__c} 
+Automated calls that go out to patients before their appointment who have yet to confirm. 
+
+Postcards ($1.00/postcard) - {!Lighthouse_Worksheets__c.Activated_Postcards__c} 
+Postcards that can be sent for long term reminders, follow up notices, or birthday greetings. 
+
+Reactivation Letters ($2.00/letter) - {!Lighthouse_Worksheets__c.Activated_Reactivation_Letters__c} 
+Letters sent to patients who have not been in the office in 18 months. You have the ability to cancel these on a per-patient basis via the reactivation email sent to you two weeks prior. 
+
+
+
+Website &amp; Marketing Features
+
+As part of your Lighthouse package, we have built an advertising website for your office.  This is a separate website that will be used to get your practice found in more places across the web.  To view your website, you can log in to your portal and click on the link that says &quot;View Your Website&quot; under the Web Presence tab.
+
+Remember that we’ve also included a number of marketing features for you to take advantage of.  We encourage you to log in and upload photos, monitor patient feedback, create offers, and manage your social presence.
+
+
+Contacting Us
+
+If at any point you have questions about your account, don&apos;t hesitate to give us a call at (888) 427-5454. We have team members available to help assist you Monday - Friday from 8am to 7pm EST.
+
+Thank you for choosing Lighthouse. We appreciate your business!
+
+
+{!User.FirstName}
+Lighthouse Support
+(888) 427-5454
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

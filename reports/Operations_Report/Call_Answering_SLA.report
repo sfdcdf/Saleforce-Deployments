@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_39654431</developerName>
+        <masterLabel>SLA</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Call_Answering__c.Days_Since_Open__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>2.99</to>
+            </sourceValues>
+            <value>In SLA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2.99</from>
+            </sourceValues>
+            <value>Past SLA</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call_Answering__c.Client_Type__c</field>
+    </columns>
+    <columns>
+        <field>Call_Answering__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Call_Answering__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Call_Answering__c.Days_Since_Open__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 and 2) or (2 and 3 and 4)</booleanFilter>
+        <criteriaItems>
+            <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New Setup,Cancel Service,Setup In Progress</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Answering__c.Change_Request_Details__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Bulk ME Audit and Edits</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Answering__c.Client_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>ybn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Change Requested,Question/Issue</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_39654431</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Call_Answering__c.Call_Answering_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Call Answering SLA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call_Answering__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Call_Answering__c.Days_Since_Open__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

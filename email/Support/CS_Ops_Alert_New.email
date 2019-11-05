@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Operations Request</title>
+		<style type="text/css">
+body { margin:0px; padding:0px; width:100%; }		</style>
+	</head>
+	<body>
+		<!--Start Table -->
+		<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF; padding:0px; margin:0px;" width="100%">
+			<!-- #717171 -->
+			<tbody>
+				<tr>
+					<td>
+						<!--Start Main Table -->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+                  <td style="height:30px; color:#fff; background-color:#005a8c; width:100%; padding:10px;"><span style="color:#ffffff; font-family:'Arial'; font-weight:bold;">Operations Request - {!CS_Operations__c.Name}</span></td>
+                </tr>
+								<tr>
+									<td>
+										<table style="padding:10px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr><td colspan="2"><span style="font-family:Arial; font-size:14px; line-height:25px;">The following request has been submitted<br><br></span></td></tr>
+											<tr><td align="right" valign="top" width="125" style="min-width:125px;"><span style="font-family:Arial; font-size:14px; font-weight:bold;line-height:25px; padding-right:5px;">Submitted By:</span></td><td><span style="font-family:Arial; font-size:14px;line-height:20px;">{!CS_Operations__c.CreatedBy} </span></td></tr>
+											<tr><td align="right" valign="top"><span style="font-family:Arial; font-size:14px; font-weight:bold;line-height:25px; padding-right:5px;">Type:</span></td><td><span style="font-family:Arial; font-size:14px;line-height:20px;">{!CS_Operations__c.Type__c}</span></td></tr>
+											<tr><td align="right" valign="top"><span style="font-family:Arial; font-size:14px; font-weight:bold;line-height:25px; padding-right:5px;">Request Type:</span></td><td><span style="font-family:Arial; font-size:14px;line-height:20px;"> {!CS_Operations__c.Request_Type__c} </span></td></tr>
+											<tr><td align="right" valign="top"><span style="font-family:Arial; font-size:14px; font-weight:bold;line-height:25px; padding-right:5px;">Request Details:</span></td><td valign="top"><span style="font-family:Arial; font-size:14px;line-height:20px;">{!CS_Operations__c.Request_Details__c}<br><br> </span></td></tr>
+											<tr><td align="right" valign="top"><span style="font-family:Arial; font-size:14px; font-weight:bold;line-height:25px; padding-right:5px;">Link to Ticket:</span></td><td><span style="font-family:Arial; font-size:14px;line-height:20px;">{!CS_Operations__c.Link} </span></td></tr>
+
+										</table>
+									</td>
+								</tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </html>

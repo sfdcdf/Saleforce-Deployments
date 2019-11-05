@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Age__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.Date_Opt_Completed__c</field>
+    </columns>
+    <columns>
+        <field>CASE_ID</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Case.IMS_Completing_Opt2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>skowronski,Kaylissa Spurlock,Kimberly Wildes,Michael Jaffe,April Atwood</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.IMS_Completing_Opt2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Rustin Fincke,Tiffany Gonzalez,Tyler Kapper,Michael Walker,Jennifer Barnes,Alicia McKnight,Amanda O&apos;Sullivan,Paul Zwicker,Amy Webster,Melissa Lidey,Melissa Cornine,Brock Williams,Alexis Varela,Lauren Aldana,Audsely Dunavant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.QA_Partner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>skowronski,pollard,spurlock,wildes,barreda,torrey scott,natalie barreda,Britt Copeland,Andre Cabrales,Rustin Fincke,Tiffany Gonzalez,Tyler Kapper,Michael Walker,Jennifer Barnes,Alicia McKnight,Amanda O&apos;Sullivan,Paul Zwicker,Amy Webster,Melissa Lidey,Melissa Cornine,Michael Jaffe,Brock Williams,Alexis Valera,Lauren Aldana,Audsley Dunavant,April Atwood</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.IMS_Completing_Opt2__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SEM Ops Team Post Launch Changes</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Case_Age__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case.Date_Opt_Completed__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

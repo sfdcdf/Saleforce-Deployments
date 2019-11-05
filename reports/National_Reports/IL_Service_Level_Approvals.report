@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CS_Operations__c.Request_Type__c</field>
+    </columns>
+    <columns>
+        <field>CS_Operations__c.Request_Details__c</field>
+    </columns>
+    <columns>
+        <field>CS_Operations__c.Existing_Service_Level__c</field>
+    </columns>
+    <columns>
+        <field>CS_Operations__c.Service_Level_Type__c</field>
+    </columns>
+    <columns>
+        <field>CS_Operations__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>CS_Operations__c.Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CS_Operations__c.YBN_Operations_Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CS_Operations__c.Request_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Indiviudal Location Service Level Update - For All Accounts,Individual Location Service Level Update - For 1 Account or Subset of Accounts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CS_Operations__c.CS_Approval_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Request Approved,Request Denied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CS_Operations__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Added,Closed - Not Eligible,Closed - Completed/Updates Made,Closed - Completed,Closed - Could Not Complete,Closed - Review for CS Ops Plan,Closed - Declined by Channel Lead,Closed - Not Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CS_Operations__c.Request_Details__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>test</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>IL Service Levels Approval Needed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$CS_Operations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CS_Operations__c.Opened_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

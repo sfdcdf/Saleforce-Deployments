@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>BucketField_5894018</acrossGroupingContext>
+        <calculatedFormula>RowCount/IF(ISBLANK(PREVGROUPVAL(RowCount, BucketField_5894018)), RowCount, PREVGROUPVAL(RowCount, BucketField_5894018))</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ObjectHistory__c.RecordType__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Conversion</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>BucketField_5894018</acrossGroupingContext>
+        <calculatedFormula>PARENTGROUPVAL(FK_Opportunity.OpportunityCounter__c:SUM, ObjectHistory__c.RecordType__c, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>ObjectHistory__c.RecordType__c</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Created</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_5894018</developerName>
+        <masterLabel>Stages</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>ObjectHistory__c.FieldValue__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M1 - Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M001 - Set Local Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New Opportunity</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Resting</sourceValue>
+            </sourceValues>
+            <value>1 - Client Discovery</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Demo/Value Prop</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M2 - Demo &amp; Value Presentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M002 - Complete local demo (IL)</sourceValue>
+            </sourceValues>
+            <value>2 - Demo / Value Prop</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>M3 - Executive Review Call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M4 - Solutions Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution</sourceValue>
+            </sourceValues>
+            <value>3 - Solution</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M5 - Proposal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M003 - Contract (IL)</sourceValue>
+            </sourceValues>
+            <value>4 - Contract</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <value>5 - Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>6 - Closed Lost</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Funnel</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_5894018</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ObjectHistory__c.ElapsedDays__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ObjectHistory__c.FieldValue__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_ID</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_OPP_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.YBN_Individual_Location</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_5894018</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ObjectHistory__c.RecordType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opportunity Stage Conversion (IL)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ObjectHistory__c@ObjectHistory__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ObjectHistory__c.RecordCreatedDate__c</dateColumn>
+        <interval>INTERVAL_CURPREV1</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Case.LiveChatTranscripts$Name</field>
+    </columns>
+    <columns>
+        <field>Case.LiveChatTranscripts$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Owner</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Live Agent Transcripts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_Live_Agent_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$X3_Day_Review_End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

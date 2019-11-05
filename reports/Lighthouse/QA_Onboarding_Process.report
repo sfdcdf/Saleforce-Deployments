@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lighthouse_Worksheets__c.X360_ID__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Practice_Name__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Opened_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New,MA-1 Ready,MA-2 Pending Review,MA-3 Pending Config,MA-4 Pending Input,MA-5 Config Done Pending Approval,MA-6 Ready/Config Complete,MA-7 Suspended for Fix,In Progress,Post Install Ready,Post Install In Progress,Logo Ready,Logo Complete,S. Consultant Assistance Needed,Stalled,Escalated (Internal),Escalated (Dev),Escalated (Bolt On)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lighthouse_Worksheets__c.Auto_Support_Ticket,Lighthouse_Worksheets__c.AR_Request_Form,Lighthouse_Worksheets__c.LH_OOS</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>QA - Onboarding Process</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Lighthouse_Worksheets__c.Practice_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2018-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-02-01</startDate>
+    </timeFrameFilter>
+</Report>

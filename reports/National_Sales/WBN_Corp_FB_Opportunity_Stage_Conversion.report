@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>BucketField_5894018</acrossGroupingContext>
+        <calculatedFormula>RowCount/IF(ISBLANK(PREVGROUPVAL(RowCount, BucketField_5894018)), RowCount, PREVGROUPVAL(RowCount, BucketField_5894018))</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ObjectHistory__c.RecordType__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Conversion</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>BucketField_5894018</acrossGroupingContext>
+        <calculatedFormula>PARENTGROUPVAL(FK_Opportunity.OpportunityCounter__c:SUM, ObjectHistory__c.RecordType__c, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>ObjectHistory__c.RecordType__c</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Created</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_5894018</developerName>
+        <masterLabel>Stages</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ObjectHistory__c.FieldValue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M1 - Discovery</sourceValue>
+            </sourceValues>
+            <value>1 - Client Discovery</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Demo/Value Prop</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M2 - Demo &amp; Value Presentation</sourceValue>
+            </sourceValues>
+            <value>2 - Demo / Value Prop</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>M3 - Executive Review Call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M4 - Solutions Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution</sourceValue>
+            </sourceValues>
+            <value>3 - Solution</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M5 - Proposal</sourceValue>
+            </sourceValues>
+            <value>4 - Contract</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <value>5 - Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>6 - Closed Lost</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ObjectHistory__c.ElapsedDays__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ObjectHistory__c.FieldValue__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Opportunity.OpportunityId18__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <column>FK_OPP_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ObjectHistory__c.FieldValue__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New Opportunity,Adoption,Future Opportunity,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_OPP_TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Legacy Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_OPP_STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Client Discovery,Demo/Value Prop,Solution,Contract</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Opportunity.Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>includes</operator>
+            <value>Facebook,Facebook - Setup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Opportunity.Network_Adoption_Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Facebook</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_5894018</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ObjectHistory__c.RecordType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Opportunity.Network_Adoption_Products__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>WBN Corp FB Opportunity Stage Conversion</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ObjectHistory__c@ObjectHistory__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ObjectHistory__c.RecordCreatedDate__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

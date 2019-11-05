@@ -1,0 +1,28 @@
+<font face="arial" size=2>
+<br>
+<font face="arial" size=3><b><span style="color:blue;">You received a NEW LEAD in your territory!<br></span></b></font face="arial" size=3>
+Please follow up within <b><u>2 business hours.</b></u><BR>
+<BR>
+<b><font face="arial" size=2><b><span style="color:red;">NOTE: Change ownership to yourself in SF.com.<br />NOTE: Click "Find Duplicates" in SF.com to make sure they are not working with us already.</b></span></b></font face="arial" size=2><BR><BR>
+<b>Lead Source:</b> {!Lead.LeadSource}<BR>
+<b>Lead Source Detail:</b> {!Lead.Lead_Source_Detail__c}<BR>
+<b>First Name:</b> {!Lead.FirstName}<BR>
+<b>Last Name:</b> {!Lead.LastName}<BR>
+<b>Company:</b> {!Lead.Company}<BR>
+<b>Phone: </b> {!Lead.Phone}<BR>
+<b>State: </b>{!Lead.State}<BR>
+<b>Form Type:</b> {!Lead.Description}<BR>
+<b>If YodleLocalListings Lead, Type:</b> {!Lead.Yodle_Submit_Type__c}<BR>
+<b>Lead Owner:</b> {!Lead.OwnerFullName}<BR>
+<BR>
+<b>Click here to find the lead in salesforce.com:</b><BR>
+{!Lead.Link}<BR>
+<BR><BR>
+<b>Cam Lay<BR>
+<BR>
+Yodle. Get Found.<BR>
+<a href="mailto:clay@yodle.com">clay@yodle.com</a href><BR>
+<a href="www.yodle.com">www.yodle.com</a><BR></b>
+<BR>
+<BR><BR><BR><BR>
+This email is confidential to Yodle Inc.

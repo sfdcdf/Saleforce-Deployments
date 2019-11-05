@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>BucketField_87686125</acrossGroupingContext>
+        <calculatedFormula>IF(RowCount=0,0,Account.Closed_Won_Monthly_Spend__c:SUM/RowCount)</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Account$Parent</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>$ Amt Per Activity</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>BucketField_87686125</acrossGroupingContext>
+        <calculatedFormula>IF(ISBLANK(RowCount),0,RowCount)/IF(PREVGROUPVAL(RowCount, BucketField_87686125)=0,1, PREVGROUPVAL(RowCount, BucketField_87686125))</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>Account$Parent</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Conversion Rate</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_87686125</developerName>
+        <masterLabel>Activity Classification</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Activities$Milestone__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Connected with Gatekeeper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Connected with Target</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Follow Up</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Left Voicemail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting: Connected with Target</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting: Connected with Gatekeeper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Follow Up Email (After Phone Contact Made)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discovery Call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scheduled Discovery Call</sourceValue>
+            </sourceValues>
+            <value>1. Qualifying Activities</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>IL Demo Scheduled</sourceValue>
+            </sourceValues>
+            <value>2. IL Demo Scheduled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ran IL Demo</sourceValue>
+            </sourceValues>
+            <value>3. Ran IL Demo</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Won Opportunity</sourceValue>
+            </sourceValues>
+            <value>4. Closed Won</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND (3 OR 4) AND 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Account.Activities$Assigned_To_Role__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>YBN: Sales Executive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Parent</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Milestone__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Internal Planning &amp; Prep,Other - Customer Activity,Attempted Customer Contact,Contract Review,User Sign Up,Demo &amp; Value Presentation,ROI Calculator Data,No Voicemail Message / Email Reach Out / Contact Made,Email Reach Out Only (No Phone Contact Made),M000 - Conversation Initiation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$ActivityDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>12/31/2015 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_87686125</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Parent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IL Corp Conversion Rt with Amts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Do Not Call Status Bypass --></label>
+        <name>Do_Not_Call_Status_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP 1 Owner Update Bypass --></label>
+        <name>Lead_Stream_TP_1_Owner_Update_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP 1 Scheduled Call Bypass --></label>
+        <name>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP 2 Scheduled Call Bypass --></label>
+        <name>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP 3 Scheduled Call Bypass --></label>
+        <name>Lead_Stream_TP_3_Scheduled_Call_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP Churned Bypass --></label>
+        <name>Lead_Stream_TP_Churn_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP Did Not Complete Bypass --></label>
+        <name>Lead_Stream_TP_Did_Not_Complete_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Stream TP From DNC Bypass --></label>
+        <name>Lead_Stream_TP_From_DNC_Bypass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used only by API Read Write Integration and System Administrator Profiles to ensure no errors occurring during automation processes. Leverage this field when writing User/ Profile based Validation Rules on the Opportunity object --></help>
+        <label><!-- Opportunity Bypass All --></label>
+        <name>Opportunity_Bypass_All__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bypasses the validation rule which disables the ability to edit a Closed Won Opportunity --></help>
+        <label><!-- Opportunity Closed Won Edit Bypass --></label>
+        <name>Opportunity_Closed_Won_Edit_Bypass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bypasses validation rule that does not allow an Opportunity to be edited that has Closed Date prior to the current date --></help>
+        <label><!-- Opportunity Prior Date Bypass --></label>
+        <name>Opportunity_Prior_Date_Bypass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to allow users/ profiles the ability to edit the Probability field on the Opportunity --></help>
+        <label><!-- Opportunity Probability Edit Bypass --></label>
+        <name>Opportunity_Probability_Edit_Bypass__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assigned users/profiles can bypass validation rule and create Maps PIN and Comanage cases --></help>
+        <label><!-- Perm. to bypass PAN Case Creation Limit --></label>
+        <name>Perm_to_bypass_PAN_Case_Creation_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users who can bypass val rules on required fields and proceed to close case. --></help>
+        <label><!-- Perm. to close Inbound Inquiry cases --></label>
+        <name>Perm_to_close_Inbound_Inquiry_cases__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assigned Users can bypass val rule restricting edit permission --></help>
+        <label><!-- Perm. to edit WBN Jax fields --></label>
+        <name>Perm_to_edit_WBN_Jax_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Permission Summary --></label>
+        <name>Permission_Summary__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Validation Rule Permissions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Validation Rule Permissions</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <mappings>
+        <sourceField>Activity.Time_To_Complete_Activity_Minutes__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Performance_Snapshot__c.Time_To_Complete__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ASSIGNED</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Performance_Snapshot__c.IMS_Completing_Rep__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>DUE_DATE</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Performance_Snapshot__c.Date_Opt_Completed__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>SUBJECT</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Performance_Snapshot__c.ActivitySubject__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ACTIVITY_ID</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Performance_Snapshot__c.ActivityId__c</targetField>
+    </mappings>
+    <name>Performance Snapshot (Activity)</name>
+    <runningUser>ron.gong@yodle.com</runningUser>
+    <sourceReport>Analytic_Snapshots/Performance_Snapshot_Activity</sourceReport>
+    <targetObject>Performance_Snapshot__c</targetObject>
+</AnalyticSnapshot>

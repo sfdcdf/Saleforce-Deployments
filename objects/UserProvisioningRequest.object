@@ -1,32 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
         <fullName>AppName</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ApprovalStatus</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ConnectedAppId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ManagerId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Operation</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ParentId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>RetryCount</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SalesforceUserId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>State</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>UserProvAccountId</fullName>
         <type>Lookup</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>ConnectedApp</customTabListAdditionalFields>
         <customTabListAdditionalFields>Operation</customTabListAdditionalFields>
         <customTabListAdditionalFields>State</customTabListAdditionalFields>
@@ -41,4 +56,6 @@
         <searchResultsAdditionalFields>SalesforceUser</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>UserProvAccount</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Private</sharingModel></CustomObject>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

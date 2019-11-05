@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Berry 72 Hour Emails</name>
+    <style>none</style>
+    <subject>{!Account.Name}, {!Account.Client_ID__c} - 72 Hour Email</subject>
+    <textOnly>Hello,
+
+We have just completed the setup for {!Account.Name}. Please login to your Berry dashboard to review the website and search campaigns. We have included the tracking lines below. Please test these to ensure they are routing to the client.
+
+Client&apos;s Username
+
+
+Screenshot of the tracking lines
+We are targeting a X mile radius around Zip Code, including City, State.
+
+We will hold this account for 72 hours pending your input. If we don’t hear from you within 72 hours, we will launch the website and campaigns.  Once the account is live you will still have 7 days post launch to make any changes.
+
+Thank you,
+Berry Support</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

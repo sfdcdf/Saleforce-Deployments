@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Case Record Type(s) --></label>
+        <name>CaseRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Hours --></label>
+        <name>ClosedHours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disables all threading on a particular case record type; Closed or Open cases. --></help>
+        <label><!-- Disable Threading --></label>
+        <name>DisableThreading__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Thread Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Thread Settings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

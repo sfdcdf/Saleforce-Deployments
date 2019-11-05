@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Market_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Manager --></label>
+        <lookupFilter>
+            <errorMessage><!-- The user must be an Active Salesforce licensed User --></errorMessage>
+        </lookupFilter>
+        <name>User_Mkt_Mgr__c</name>
+        <relationshipLabel><!-- Custom Report Hierarchies (Branch Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region Manager --></label>
+        <lookupFilter>
+            <errorMessage><!-- The user must be an Active Salesforce licensed User --></errorMessage>
+        </lookupFilter>
+        <name>User_Reg_Mgr__c</name>
+        <relationshipLabel><!-- Custom Report Hierarchies (Region Manager) --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Report Hierarchy</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Report Hierarchies</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Custom Report Hierarchy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Default Record Type for Custom Report Config --></description>
+        <label><!-- Default --></label>
+        <name>Default</name>
+    </recordTypes>
+</CustomObjectTranslation>

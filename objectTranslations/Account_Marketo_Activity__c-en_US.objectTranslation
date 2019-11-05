@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account&apos;s Marketo Activity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activity Attribute --></label>
+        <name>Activity_Attribute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Id --></label>
+        <name>Activity_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type ID --></label>
+        <name>Activity_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+        <relationshipLabel><!-- Account&apos;s Marketo Activity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign ID --></label>
+        <name>Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Activity Timestamp --></label>
+        <name>Marketo_Activity_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Campaign --></label>
+        <name>Marketo_Campaign__c</name>
+        <relationshipLabel><!-- Account&apos;s Marketo Activity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketo Lead ID --></label>
+        <name>Marketo_Lead_ID__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Marketo Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account's Marketo Activity</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Account Marketo Activity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

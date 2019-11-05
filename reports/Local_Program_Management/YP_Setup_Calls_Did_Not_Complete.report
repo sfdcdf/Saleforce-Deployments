@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>FK_CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>FK_CUSTENT_ID</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Yodle_Path__c.X1st_Attempt_Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Yodle_Path__c.X2nd_Attempt_Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Yodle_Path__c.X3rd_Attempt_Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Yodle_Path__c.X4th_or_More_Attempt_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Yodle_Path__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Did Not Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Yodle_Path__c.Account__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Rusty&apos;s Cleaning Service</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Yodle_Path__c.Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YP: Setup Calls - Did Not Complete</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Yodle_Path__c@Yodle_Path__c.Setup_Call__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

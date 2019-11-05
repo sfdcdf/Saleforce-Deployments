@@ -1,0 +1,11 @@
+Account name: {!Account.Name}
+
+Sales Director: {!Account.Sales_Person__c}
+
+Segment: {!Account.Segment_YL__c}
+
+PEV: {!Account.PEV__c}
+
+Status: {!Account.National_Account_Status__c} 
+
+{!Account.Link}

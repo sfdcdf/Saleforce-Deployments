@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Best_Practice_Evaluation__c$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Name</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Website_Built_By__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Date_Errors_Corrected__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Errors_Corrected_By__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Evaluation_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Closed,Complete- Review and Changes Needed,Complete- Review Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$Account_Setup_For__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Dana Parker</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$Date_Errors_Corrected__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$Errors_Corrected_By__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$CreatedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/19/2018 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$User__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Matt Austin</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Best_Practice_Evaluation__c$Account_Setup_For__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BPE - Open by agent</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Best_Practice_Evaluations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Best_Practice_Evaluation__c$Evaluation_Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Best_Practice_Evaluation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- e.g. If PPC Budget increase - what is the minimum monthly budget to qualify (e.g. $1000/mo) what is the % of budget increase and for how long? --></help>
+        <label><!-- Campaign Economics --></label>
+        <name>CampaignEconomics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Outreach --></label>
+        <name>Campaign_Outreach__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Status --></label>
+        <name>ClientStatus__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Clients</masterLabel>
+            <translation><!-- Existing Clients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Clients</masterLabel>
+            <translation><!-- New Clients --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>DiscountPercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products / Services --></label>
+        <name>Products_Services__c</name>
+        <picklistValues>
+            <masterLabel>Centermark</masterLabel>
+            <translation><!-- Centermark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundations</masterLabel>
+            <translation><!-- Foundations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPC</masterLabel>
+            <translation><!-- PPC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promotion Messaging --></label>
+        <name>PromotionMessaging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Name --></label>
+        <name>PromotionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Example: ROI for Promo $XX, XXX – What do we expect the increase in monthly recurring revenue to be?) --></help>
+        <label><!-- Revenue Goal --></label>
+        <name>RevenueGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Date --></label>
+        <name>SubmissionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>Term__c</name>
+        <picklistValues>
+            <masterLabel>1 Month</masterLabel>
+            <translation><!-- 1 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Month</masterLabel>
+            <translation><!-- 12 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Month</masterLabel>
+            <translation><!-- 2 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Month</masterLabel>
+            <translation><!-- 3 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Month</masterLabel>
+            <translation><!-- 4 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Month</masterLabel>
+            <translation><!-- 5 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Month</masterLabel>
+            <translation><!-- 6 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 Month</masterLabel>
+            <translation><!-- 9 Month --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Promotion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promotions</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

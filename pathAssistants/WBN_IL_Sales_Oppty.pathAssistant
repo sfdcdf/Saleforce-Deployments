@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>WBN IL Sales Oppty</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>Products_Discussed__c</fieldNames>
+        <fieldNames>Products__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>SDR__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;Did you attach the executed contract to the opportunity?&lt;/li&gt;&lt;li&gt;Did you remember to create an NCS case for each Product sold and assign to CS?&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>SDR__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;Prepare your Online Presence Assessment &amp;amp; Needs Analysis.&lt;/li&gt;&lt;li&gt;Prepare additional research items (i.e. competitors, search volume, successful examples, budget recs, etc.).&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>M001 - Set Local Demo</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>SDR__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;Ensure the client understands the implications of their current online presence.&lt;/li&gt;&lt;li&gt;Convey our competitive advantages through our solutions.&lt;/li&gt;&lt;li&gt;Deliver the &amp;quot;why&amp;quot; behind how a budget is set for PPC or Facebook if relevant.&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>M002 - Complete local demo (IL)</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>Products__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>SDR__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;Have you explained next steps to the client? (i.e. how to review/sign via email, launch expectation timelines, CS outreach timelines)&lt;/li&gt;&lt;li&gt;Is your Products Sold field correct?&lt;/li&gt;&lt;li&gt;Have you entered the Opportunity Value fields and added the Products the client is purchasing?&lt;/li&gt;&lt;li&gt;Have you checked or created the Contact you&amp;#39;ll be emailing the Contract to?&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>M003 - Contract (IL)</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>StageName</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>SDR__c</fieldNames>
+        <picklistValueName>Resting</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>YBN_Individual_Location</recordTypeName>
+</PathAssistant>

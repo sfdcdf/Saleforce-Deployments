@@ -1,0 +1,27 @@
+Hello {!Case.IMS_Rep__c}, 
+
+The following Account, {!Account.Name}, has been escalated due to a Berry Post-Setup Issue. Please note that we cannot move forward with the account until the following issue is corrected: {!Case.Reason_Detail__c}. 
+
+Client ID: {!Contact.Client_ID__c}
+
+OEM Customer Identifier: {!Account.OEM_Customer_Identifier__c}
+
+Berry Sales Rep: {!Account.00N60000001mFt2}
+
+Website Implementation Type: {!Account.Website_Type__c}
+
+Ad Domain URL: {!Account.Ad_Domain_URL__c}
+
+Case Reason: {!Case.Reason}
+
+Reason Detail: {!Case.Reason_Detail__c}
+
+Escalation Notes: {!Case.Escalation_Notes__c}
+
+Additional Escalation Notes: {!Case.00N60000001n9qQ}
+
+Case Number: {!Case.CaseNumber}
+
+Issue: {!Case.Issue2__c}
+
+Thank you!

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Client_ID__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Setups Last Week - FMA for Call Tracking</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$Setup_Date__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>LH Config Queue</name>
+    <queueMembers>
+        <users>
+            <user>dcambouris@yodle.com</user>
+            <user>laura.vitro@yodle.com</user>
+            <user>rgordon@yodle.com</user>
+            <user>rebrown@yodle.com</user>
+            <user>ta.stanton@yodle.com</user>
+            <user>treece@yodle.com</user>
+            <user>wendy.lincoln@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lighthouse_Worksheets__c</sobjectType>
+    </queueSobject>
+</Queue>

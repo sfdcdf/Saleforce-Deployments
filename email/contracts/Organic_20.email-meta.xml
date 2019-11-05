@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>goes out to Yodle Organic 2.0 accounts</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Yodle Organic 2.0</name>
+    <style>none</style>
+    <subject>Your Yodle Page 1 Guarantee Contract Addendum - please &quot;accept&quot;</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c}, 
+ 
+ 
+This email confirms that Yodle is extending the guarantee set forth below to Customer in connection with Customer’s purchase of Yodle Organic &amp; Yodle Sponsored Service, as set forth herein.
+
+If, for a key-phrase comprised of a geography and service relevant to your business, both (1) an Organic Page One Position and (2) a Paid Search Page One Position have not been attained within 90 days of the date you have completed all of the enrollment conditions, simply call us and you will receive a $449 credit for each subsequent month that you continue your combined Yodle Organic &amp; Yodle Sponsored Service until you have attained an Organic Page One Position and a Paid Search Page One Position. “Organic Page One Position” means a link to your business has appeared on the front page in at least one of the following: Google organic, Google local, Yahoo organic, Yahoo local, Bing organic or Bing local. “Paid Search Page One Position&quot; means one of your advertisements has appeared on the front page in at least one of the following: Google search, Yahoo search or Bing search. The enrollment conditions are (i) completing a customer service call with your Marketing Consultant and (ii) accepting Yodle’s terms and conditions upon your first login to Yodle Live. Additional enrollment conditions apply, as follows: (A) if you have requested for us to redirect your existing domain to your new Adversite, you must provide the credentials necessary to complete the redirect or (B) if you have requested that we perform the organic service on your existing website, you must provide the credentials necessary for Yodle to access your website to perform the optimization work. 
+
+ Welcome to Yodle. 
+ 
+Sincerely, 
+ 
+The Yodle Contracts Team
+contracts@yodle.com
+ 
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+
+
+
+{!Case.CaseNumber}
+ Privacy Policy 
+
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

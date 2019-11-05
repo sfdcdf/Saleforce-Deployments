@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Partner_Transition__c.Number_of_employees__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Transition__c.Do_you_have_a_sales_team__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Transition__c.Projected_of_your_clients_to_buy_lh_yo__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Transition__c.Sales_strategy_for_introducing_lh_yo__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Partner Transition Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Partner_Transition__c@Partner_Transition__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Partner_Transition__c.Training_call_scheduled_on__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

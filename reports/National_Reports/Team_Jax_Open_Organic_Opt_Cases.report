@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Notes__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Closed_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$IMS_Rep__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lawrence Liles,Ben Frank,Don Keeton,LeRonnie Reed,Sean Balaban,Shelton Walker,Tommie Hayes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Organic_Optimization_Request,Organic_Analysis__c.PIN_Action_Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed,Closed - Errors Found,Closed - False Trigger,Closed - No Errors Found,Closed - Sent to SDB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Close_Case_Reviewed_by_CS__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SFDC Sync</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Organic_Analyses__r$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Team Jax: Open Organic Opt Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Organic_cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Organic_Analyses__r$CreatedBy</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$Closed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-12-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up to clients who were upsold but miss their call to confirm services</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OutRank_by_Rogers_Logo_2014</letterhead>
+    <name>Missed Call- Confirm Services (Upsold Clients)</name>
+    <style>freeForm</style>
+    <subject>OutRank - Whoops, we missed you - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

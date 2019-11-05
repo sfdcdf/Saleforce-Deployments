@@ -1,0 +1,28 @@
+<font face="arial" size=2>
+<br>
+<font face="arial" size=3><b><span style="color:blue;">You received a Hub Lead!<br></span></b></font face="arial" size=3>
+</b></u>
+
+<b><font face="arial" size=2><b><span style="color:red;"></b></span></b></font face="arial" size=2><BR><BR>
+<b>Lead Source:</b> {!Lead.LeadSource}<BR>
+<b>Lead Source Detail:</b> {!Lead.Lead_Source_Detail__c}<BR>
+<b>Lead Source Detail2:</b> {!Lead.Lead_Source_Detail_2__c}<BR>
+<b>First Name:</b> {!Lead.FirstName}<BR>
+<b>Industry:</b> {!Lead.Industry}<BR>
+<b>Phone: </b> {!Lead.Phone}<BR>
+<b>State: </b>{!Lead.State}<BR>
+<b>Offer:</b> {!Lead.Description}<BR>
+<b>If YodleLocalListings Lead, Type:</b> {!Lead.Yodle_Submit_Type__c}<BR>
+<b>Lead Owner:</b> {!Lead.OwnerFullName}<BR>
+<BR>
+<b>Click here to find the lead in salesforce.com:</b><BR>
+{!Lead.Link}<BR>
+<BR><BR>
+<b>Stacie<BR>
+<BR>
+Yodle. Get Found.<BR>
+<a href="mailto:stacie@yodle.com">stacie@yodle.com</a href><BR>
+<a href="www.yodle.com">www.yodle.com</a><BR></b>
+<BR>
+<BR><BR><BR><BR>
+This email is confidential to Yodle Inc.

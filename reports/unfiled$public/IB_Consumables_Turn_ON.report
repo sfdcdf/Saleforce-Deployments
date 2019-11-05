@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>Case.Config_Detail__c</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>Case.IMS_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Detail__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <description>LH Master, Turn on, IMS rep = IB name</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Turn Feature On</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.LH_Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.IMS_Rep__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Annie Benedict,Laura Osegueda,Lauren Fischer,Tricia Valadez,Mark Champ,Joe Janisch,Joshua Lowrey,Krystal Janisch,Matthew Scott,Sonny Perea,Steven Russell,Priyanka Rao,Amanda McKeever,Bea Peikert,Courtney Christian,Chelsey Willey,Jacqueline Leona,Julia Correa,Kati Yee,Koula Barsakis,Kristan Lemmons,Luis Espinosa,Lynn Tobias,Matt Kerlin,Peyden Edwards,Seata Moji</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>IB Consumables Turn ON</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

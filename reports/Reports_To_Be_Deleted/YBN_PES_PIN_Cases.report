@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Subject__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Pin_Action_Details__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Pin_Action_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Business_Days_Open__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>ybn pes</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>YBN PES PIN Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Organic_Analysis__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Organic_Analysis__c.B_Postcard_Request__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

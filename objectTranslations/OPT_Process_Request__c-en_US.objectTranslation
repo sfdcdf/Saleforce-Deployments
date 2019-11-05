@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Approved Completion Date --></label>
+        <name>Agreed_Deadline_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>Approved_By__c</name>
+        <relationshipLabel><!-- Production Requests (Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production Manager Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beta Training &amp; QA Complete --></label>
+        <name>Beta_Training_QA_Completed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Channel Lead Approval Date --></label>
+        <name>Channel_Lead_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Channel Lead --></label>
+        <name>Channel_Lead__c</name>
+        <relationshipLabel><!-- Production Requests (Approved Channel Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel Requested By --></label>
+        <name>Channel_Requested_By__c</name>
+        <picklistValues>
+            <masterLabel>Lighthouse</masterLabel>
+            <translation><!-- Lighthouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/Dev</masterLabel>
+            <translation><!-- Product/Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM Mops</masterLabel>
+            <translation><!-- SEM Mops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO Mops</masterLabel>
+            <translation><!-- SEO Mops --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communicated to Stakeholders --></label>
+        <name>Communicated_to_Stakeholders__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Completion Date --></label>
+        <name>Desired_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Documentation Updated --></label>
+        <name>Documentation_Updated__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Escalated? --></label>
+        <name>Escalated__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Training &amp; QA Complete --></label>
+        <name>GA_Training_QA_Complete__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected Impact --></label>
+        <name>Goal_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal of Process Change --></label>
+        <name>Goal__c</name>
+        <picklistValues>
+            <masterLabel>Account Performance</masterLabel>
+            <translation><!-- Account Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Efficiency</masterLabel>
+            <translation><!-- Internal Efficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unify Process</masterLabel>
+            <translation><!-- Unify Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Objective --></label>
+        <name>Goal_of_Process_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial IT Pro Rollout &amp; QA Complete --></label>
+        <name>IT_Pro_Communication_Complete__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Implementation Summary --></label>
+        <name>Implementation_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stakeholder Review Meeting Date --></label>
+        <name>MOPS_OPT_Review_Meeting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Notes --></label>
+        <name>Meeting_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SEO Prod - Process Audited &amp; Learned --></label>
+        <name>Process_Calendar_Updated__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Production Manager --></label>
+        <name>Production_Manager__c</name>
+        <relationshipLabel><!-- Production Requests (Production Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Full IT Pro Rollout &amp; QA Completed --></label>
+        <name>QA_Process_Updated__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Details --></label>
+        <name>Request_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Process Failing</masterLabel>
+            <translation><!-- Current Process Failing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Task Process Change</masterLabel>
+            <translation><!-- Existing Task Process Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Task Process Change</masterLabel>
+            <translation><!-- New Task Process Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Task Request</masterLabel>
+            <translation><!-- New Task Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Failing Escalation</masterLabel>
+            <translation><!-- Process Failing Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queue Logic Review</masterLabel>
+            <translation><!-- Queue Logic Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary Task Request</masterLabel>
+            <translation><!-- Temporary Task Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Roll Out --></label>
+        <name>Requested_Roll_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reviewed &amp; Tested By Production --></label>
+        <name>Reviewed_Tested_By_Production__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Roll Out Date --></label>
+        <name>Roll_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF/Report Updates Complete --></label>
+        <name>SF_Report_Updates_Complete__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staffing/Cost Evaluation Completed --></label>
+        <name>Staffing_Cost_Evaluation_Completed__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Channel Lead Approved - Pending OPT/MOPS Discussion</masterLabel>
+            <translation><!-- Channel Lead Approved - Pending OPT/MOPS Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed</masterLabel>
+            <translation><!-- Closed - Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Denied</masterLabel>
+            <translation><!-- Closed - Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Review for OPT Plan</masterLabel>
+            <translation><!-- Closed - Review for OPT Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Approval Denied</masterLabel>
+            <translation><!-- Completed - Approval Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Channel Lead Approval</masterLabel>
+            <translation><!-- Pending Channel Lead Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Completion</masterLabel>
+            <translation><!-- Pending Completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Prioritization</masterLabel>
+            <translation><!-- Pending Prioritization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Production Manager</masterLabel>
+            <translation><!-- Pending Production Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Stakeholder Sign Off</masterLabel>
+            <translation><!-- Pending Stakeholder Sign Off --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Teams Impacted --></label>
+        <name>Teams_Impacted__c</name>
+        <picklistValues>
+            <masterLabel>CS Client Facing</masterLabel>
+            <translation><!-- CS Client Facing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Ops</masterLabel>
+            <translation><!-- CS Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Pro</masterLabel>
+            <translation><!-- IT Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse Config</masterLabel>
+            <translation><!-- Lighthouse Config --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse Install</masterLabel>
+            <translation><!-- Lighthouse Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse MA</masterLabel>
+            <translation><!-- Lighthouse MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Associates</masterLabel>
+            <translation><!-- Marketing Associates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pin Collection</masterLabel>
+            <translation><!-- Pin Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality Team</masterLabel>
+            <translation><!-- Quality Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rogers MOPs</masterLabel>
+            <translation><!-- Rogers MOPs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO Mops</masterLabel>
+            <translation><!-- SEO Mops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO Production</masterLabel>
+            <translation><!-- SEO Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Dev</masterLabel>
+            <translation><!-- Web Dev --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Production Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Production Requests</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>Organic Process Request Layout</layout>
+        <sections>
+            <label><!-- Approval Details for Channel Leads --></label>
+            <section>Approval Details for Channel Leads</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Implementation Details --></label>
+            <section>Implementation Details</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Production Request</layout>
+        <sections>
+            <label><!-- Approved Details for Production --></label>
+            <section>Approved Details for Production</section>
+        </sections>
+        <sections>
+            <label><!-- Case Details --></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Implementation Details --></label>
+            <section>Implementation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Request Details --></label>
+            <section>Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Organic Process Request --></label>
+        <name>Organic_Process_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Production Request --></label>
+        <name>Production_Request</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If Goal of Process Change is &quot;Other&quot;, you must complete the Goal Details section. --></errorMessage>
+        <name>Require_Goal_Details_if_Select_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must fill out Goal of Process change when moving status to &quot;Channel Lead Approved - Pending OPT/MOPS Discussion&quot; --></errorMessage>
+        <name>Require_Goal_and_Meeting_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must fill out all Implementation Details before moving to Completed --></errorMessage>
+        <name>Require_Implementation_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must fill out Agreed Deadline Date &amp; Goal of Process Change when moving Status to In Progress. --></errorMessage>
+        <name>Require_Roll_Out_Date_Goal</name>
+    </validationRules>
+</CustomObjectTranslation>

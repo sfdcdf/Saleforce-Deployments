@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>step by step instructions for client to connect to Facebook</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Web_com</letterhead>
+    <name>Marketing Features - How to Connect to Facebook</name>
+    <style>freeForm</style>
+    <subject>Connect Your Lead Stream Account to Facebook! - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

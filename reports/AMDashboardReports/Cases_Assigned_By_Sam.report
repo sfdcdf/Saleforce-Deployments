@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <description>AMP Team Cases Assigned Each Day</description>
+    <filter>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>makenzie cunningham,sara davis,walter rundle,alvin jobe,erik vicars,shelia kelly,barb jenkins,leonard edwards</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>field_key</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>case owner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>OLDVAL</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>NEWVAL</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Assigned By Queue Controller</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

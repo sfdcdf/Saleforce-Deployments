@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.IMS_Rep__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Detail__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Owner_Manager__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 OR 2) and 3 and 4 and 5 and 6 AND 9 AND 10 AND 12 AND 7 and 8 and 11 AND 13 AND 14 AND 15)</booleanFilter>
+        <criteriaItems>
+            <column>Case.Created_by_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Inbound Specialist,Inbound Follow Up Specialist,IMA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Web,Account Services,CS@Outrank.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>upsell,5 in 60,4 in 60,1 in 30,berry wso,partner qa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>web dev,bugs,escalation,Organic Pin Collected,Taxonomy,quality team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master,Case.XJenTest_No_Use</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>sales,manager,executive,national accounts,channel,product,operations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Response_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>call answering</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Attempt_Date_1__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WEBEMAIL</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>noreply@yodle.com,no-reply@yodle.com,algorithm@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>7/16/2014 6:00 PM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Owner_Manager__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Pagonas,Stewart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Rogers Sales Quality Issue</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Daily Web to Cases Need Response</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

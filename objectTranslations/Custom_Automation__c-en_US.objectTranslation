@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Custom Automations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Automation Status --></label>
+        <name>Automation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluating</masterLabel>
+            <translation><!-- Evaluating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Action Needed</masterLabel>
+            <translation><!-- No Action Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Outcome</masterLabel>
+            <translation><!-- Waiting on Outcome --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automation Trigger Date --></label>
+        <name>Automation_Trigger_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the Touchplan API Name for Custom Metadata Types or the assigned External ID for Marketo Email Campaign --></help>
+        <label><!-- Automation Type API Name/External ID --></label>
+        <name>Automation_Type_API_Name_External_ID__c</name>
+        <picklistValues>
+            <masterLabel>Create_Day_40_LBW_Account_Performance</masterLabel>
+            <translation><!-- Create_Day_40_LBW_Account_Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create_Monthly_LBW_Account_Performance</masterLabel>
+            <translation><!-- Create_Monthly_LBW_Account_Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHX_MONTHLY_REVIEW_DAY_40</masterLabel>
+            <translation><!-- TORCHX_MONTHLY_REVIEW_DAY_40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHX_MONTHLY_REVIEW_EVERY_30</masterLabel>
+            <translation><!-- TORCHX_MONTHLY_REVIEW_EVERY_30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHX_TRAINING_DAY_27</masterLabel>
+            <translation><!-- TORCHX_TRAINING_DAY_27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TORCHX_TRAINING_DAY_7</masterLabel>
+            <translation><!-- TORCHX_TRAINING_DAY_7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automation Type --></label>
+        <name>Automation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Daily_Scheduled_Record_Auto_Create__mdt</masterLabel>
+            <translation><!-- Daily_Scheduled_Record_Auto_Create__mdt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketo_Email_Campaign__c</masterLabel>
+            <translation><!-- Marketo_Email_Campaign__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Request --></label>
+        <name>Cancellation_Request__c</name>
+        <relationshipLabel><!-- Custom Automations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Days Since Live when a Cancellation Request was created for LBW and the number of days since the CSC was created and the Cancellation Request was created for TORCHx. --></help>
+        <label><!-- Days Since Live Equivalent on Request --></label>
+        <name>Days_Since_Live_Equivalent_on_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Cancellation --></label>
+        <name>Days_in_Cancellation__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Automation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Automations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Account Custom Automation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Save Mode Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account Automation Save Mode --></label>
+        <name>Account_Automation_Save_Mode</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>LiveAgentSession.TimeInAwayStatus:SUM / 3600</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Time Spent in Away</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>LiveAgentSession$CreatedDate</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time in Away (hrs)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>LiveAgentSession.TimeInOnlineStatus:SUM / 3600</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>LiveAgentSession$CreatedDate</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Online (hrs)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>LiveAgentSession.TimeInChats:SUM / 3600</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>LiveAgentSession$CreatedDate</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time in Chats (hrs)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>LiveAgentSession$Name</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$LoginTime</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$LogoutTime</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$TimeInAwayStatus</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$TimeInChats</field>
+    </columns>
+    <description>Agent session reporting</description>
+    <filter>
+        <criteriaItems>
+            <column>LiveAgentSession$Agent</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Brooke Grossman,Christopher Baker,Krystal Bell,Laura Vitro,Linzi Plummer,Mark Champ,Rolando Gonzalez,Trish Wightman,Julia Correa,Matthew Kerlin,Travis Dube</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveAgentSession$Agent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveAgentSession$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>LH-Live Agent Session Reporting</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Agent_Session_Reporting__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LiveAgentSession$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Secondary_Segments__c</field>
+    </columns>
+    <columns>
+        <field>Account$Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>Account$Deactivation_Reason_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account$Paused_Reason_Code__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Secondary_Segments__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Real Estate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OFF</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RE Essentials - Churned Customers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cancellation_Requests_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$X120_Day__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

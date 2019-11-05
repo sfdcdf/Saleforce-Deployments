@@ -1,0 +1,28 @@
+One or more phased launch dates have changed for {!Account.Name}. 
+
+Phase 1 Launch Details:
+Original Estimated Launch Date - {!Opportunity.Phase_1_Original_Est_Launch_Date__c}
+Current Estimated Launch Date - {!Opportunity.Phase_1_Estimated_Launch_Date__c}
+Launch Date Change Reason - {!Opportunity.Phase_1_Launch_Date_Change_Reason__c}
+Launch Date Change Reason Detail - {!Opportunity.Phase_1_Launch_Date_Change_Reason_Detail__c}
+Products - {!Opportunity.Phase_1_Products__c}
+Product Details - {!Opportunity.Phase_1_Product_Launch_Details__c}
+
+Phase 2 Launch Details:
+Original Estimated Launch Date - {!Opportunity.Phase_2_Original_Est_Launch_Date__c}
+Current Estimated Launch Date - {!Opportunity.Phase_2_Estimated_Launch_Date__c}
+Launch Date Change Reason - {!Opportunity.Phase_2_Launch_Date_Change_Reason__c}
+Launch Date Change Reason Detail - {!Opportunity.Phase_2_Launch_Date_Change_Reason_Detail__c}
+Products - {!Opportunity.Phase_2_Products__c}
+Product Details - {!Opportunity.Phase_2_Product_Launch_Details__c}
+
+Phase 3 Launch Details:
+Original Estimated Launch Date - {!Opportunity.Phase_3_Original_Est_Launch_Date__c}
+Current Estimated Launch Date - {!Opportunity.Phase_3_Estimated_Launch_Date__c}
+Launch Date Change Reason - {!Opportunity.Phase_3_Launch_Date_Change_Reason__c}
+Launch Date Change Reason Detail - {!Opportunity.Phase_3_Launch_Date_Change_Reason_Detail__c}
+Products - {!Opportunity.Phase_3_Products__c}
+Product Details - {!Opportunity.Phase_3_Product_Launch_Details__c}
+
+Products sold as part of this opportunity: 
+{!Opportunity.Products__c}

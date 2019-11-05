@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account ID Field Name --></label>
+        <name>Account_ID_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Marketo Email Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Marketo Email Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Case --></label>
+        <name>Create_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria --></label>
+        <name>Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Automation API Reference --></label>
+        <name>Custom_Automation_API_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Field to Update on Request Sent --></label>
+        <name>Date_Field_to_Update_on_Request_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Reminder DateTime Field --></label>
+        <name>Hourly_Reminder_DateTime_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many random records to return --></help>
+        <label><!-- How Many Random Records --></label>
+        <name>How_Many_Random_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Campaign ID --></label>
+        <name>Marketo_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Email Campaign Template --></label>
+        <name>Marketo_Email_Campaign_Template__c</name>
+        <relationshipLabel><!-- Marketo Email Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketo Request Sent --></label>
+        <name>Marketo_Request_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Record Default Values --></label>
+        <name>New_Record_Default_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Randomize --></label>
+        <name>Randomize__c</name>
+    </fields>
+    <fields>
+        <help><!-- *WARNING* - only use this if you want to use the Marketo ID for Touchplan instead of the Marketo ID as the Marketo Lead ID value. Currently only used for WBN Touchplans. If you aren&apos;t sure, talk to a developer! --></help>
+        <label><!-- Use Marketo ID For Touchplan --></label>
+        <name>Use_Marketo_ID_For_Touchplan__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Hours For Reminder --></label>
+        <name>of_Hours_For_Reminder__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketo Email Campaign</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketo Email Campaigns</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Hourly Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketo Email Campaign Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Default --></label>
+        <name>Default</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Hourly Marketo Campaigns --></description>
+        <label><!-- Hourly Template --></label>
+        <name>Hourly_Template</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Template --></label>
+        <name>Template</name>
+    </recordTypes>
+</CustomObjectTranslation>

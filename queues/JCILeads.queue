@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>jcileads@yodle.com</email>
+    <name>JCI Leads</name>
+    <queueMembers>
+        <users>
+            <user>akazansky@yodle.com</user>
+            <user>akramer@yodle.com</user>
+            <user>kclark@yodle.com</user>
+            <user>skriegel@yodle.com</user>
+            <user>salesforcealerts@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

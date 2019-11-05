@@ -1,0 +1,33 @@
+{!Lead.CreatedDate}
+
+{!Lead.FirstName},
+
+Thank you for agreeing to the terms of the Yodle Referral Program.
+
+The final step in the process is to confirm your receipt of this email and to confirm your contact information below:
+
+Your Contact Details:
+First Name: {!Lead.FirstName}
+Last Name: {!Lead.LastName}
+Company: {!Lead.Company}
+Phone: {!Contact.Phone}
+Email: {!Lead.Email}
+Make Check Payable to: {!Lead.Vertical__c}
+Street: {!Lead.Street}
+City: {!Lead.City}
+State: {!Lead.State}
+Zip: {!Lead.PostalCode}
+Yodle Representative: {!Lead.Industry}
+
+If all information is correct and you want to proceed with becoming a Referral Partner, reply to this email with "CONFIRM" in the subject line.  Yodle will then supply you with your unique Referral Partner ID within 48 hours via email.
+
+If any information above is incorrect, or if you do not want to proceed with becoming a Referral Partner, please reply to this email with “CORRECTION” in the subject line.
+
+If Yodle receives no reply to this email within fifteen days of the date in the header above, your application will expire and you must re-apply to participate in our program.
+
+Thank you again for your interest in the Yodle Referral Program. 
+
+Best,
+
+Yodle
+partner@yodle.com

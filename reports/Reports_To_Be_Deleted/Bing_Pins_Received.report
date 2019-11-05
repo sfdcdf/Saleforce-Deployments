@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Setup_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Status__c</field>
+    </columns>
+    <description>Bing Pins Received This Week</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Maps Customer Support</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Organic_Analyses__r$B_Pin_Receipt__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bing Pins Received</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$B_Pin_Receipt__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

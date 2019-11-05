@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The Final Rejection (OPP SAVED) of the WBN Move to Close Lost - Never Launched Approval Process-HTML</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>YBN</letterhead>
+    <name>WBN - NCS - Lost Approval - Final Rejection-HTML</name>
+    <style>freeForm</style>
+    <subject>Opportunity SAVED: WFE Never Launched Approval - {!Opportunity.Account}</subject>
+    <textOnly>One of the products on this opportunity was previously marked as did not launch.
+
+The Approval Process has been Rejected, which means that the Opportunity is SAVED! The Opportunity will remain as Closed Won.
+
+CSC Rep: The NCS Case should be reopened and Completed as needed.
+
+Account: {!Opportunity.Account}
+Client Name: {!Account.Contact_Name__c}
+Opportunity Name: {!Opportunity.Name}
+Amount: {!Opportunity.Amount}
+Close Date: {!Opportunity.CloseDate}
+
+Lost Reason Detail: {!Opportunity.Lost_Reason_Detail__c}
+
+Approval Information -
+Approval Status : {!Opportunity.Approval_Opp_List_Review_Status__c}
+Current Step: {!ApprovalRequest.Process_Step_Name}
+Step Comments: {!ApprovalRequest.Comments}
+Approval Step Status: {!ApprovalRequest.Status}
+Approval Step Assignee: {!ApprovalRequest.Process_Assignee}
+Approval Step Approver: {!ApprovalRequest.Process_Approver}
+
+Notes:
+{!Opportunity.Approval_Notes__c}
+
+Link: {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

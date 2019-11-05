@@ -1,0 +1,10 @@
+Hello,
+ 
+The following client, {!Customer_Surveys__c.Account__c}, has just completed a NPS survey and either the Account Director (CSD) or the IMS Rep fields of the related Account are blank or have an inactive user.
+
+Please review the survey {!Customer_Surveys__c.Link} and follow up with the client using the necessary actions. 
+
+Client ID: {!Customer_Surveys__c.Client_ID__c}
+Survey Name: {!Customer_Surveys__c.Customer_Survey_Name__c}.
+
+Thank you.

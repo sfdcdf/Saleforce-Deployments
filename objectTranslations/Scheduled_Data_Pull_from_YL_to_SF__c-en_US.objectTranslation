@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Supported classes to be invoked --></help>
+        <label><!-- Class to Invoke --></label>
+        <name>Class_to_Invoke__c</name>
+        <picklistValues>
+            <masterLabel>YodleLiveSyncClientEngagementDataHelper</masterLabel>
+            <translation><!-- YodleLiveSyncClientEngagementDataHelper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- SOQL to be used to determine which Salesforce records to update. --></help>
+        <label><!-- SOQL Criteria --></label>
+        <name>SOQL_Criteria__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Scheduled Data Pull from YL to SF</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scheduled Data Pulls from YL to SF</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

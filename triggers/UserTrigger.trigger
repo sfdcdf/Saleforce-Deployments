@@ -5,7 +5,7 @@ trigger UserTrigger on User (before insert, before update, after insert, after u
 		profileIdMap.put(record.Name, record.Id);
 	}
 
-	if(trigger.isBefore && trigger.isInsert){
+	if(trigger.isBefore && trigger.isInsert &&!Test.isRunningTest()){
 		Set<Id> contactIdSet = new Set<Id>();
 		for(User record : trigger.New){
 			system.debug(record);

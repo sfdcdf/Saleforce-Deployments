@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Case.PES_Campaigns_Completed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.PES_Completing_Campaigns__c</field>
+    </columns>
+    <columns>
+        <field>Case.PES_Time_To_Complete_Campaigns_Task__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>PARENT_ACCOUNT_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.PES_Completing_Campaigns__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Brian Pekarek,Andrea Wilson,Andrea Murray,Stephanie Cinque,Ashleigh Ratkovich,Jared Pfaff,Kavar McDaniel,Tiffany Cleveland</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PS Team KPI - NCS Campaign Setup</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.PES_Campaigns_Completed_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case.PES_Campaigns_Completed_Date__c</dateColumn>
+        <interval>INTERVAL_LAST60</interval>
+    </timeFrameFilter>
+</Report>

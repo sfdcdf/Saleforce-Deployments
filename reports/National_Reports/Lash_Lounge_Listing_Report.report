@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Organic_Analysis__c.Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Google_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Account_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Organic_Analysis__c.YO_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Live</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Bulk_Google_Account_2__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Google_Listing_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Awaiting PIN,Active Listing,Client Refuses Claim</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Parent_Account_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>lash lounge</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Account_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>lash lounge</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Lash Lounge Listing Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Organic_Analysis__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

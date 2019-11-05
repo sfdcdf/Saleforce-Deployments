@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up email after the CSC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Recap- CSC</name>
+    <style>none</style>
+    <subject>Lighthouse Training Call Recap {!Case.Client_ID__c}</subject>
+    <textOnly>Hi {!Case.Account},
+
+I’m glad I got the opportunity to speak with you earlier and walk you through the Lighthouse system. In the email below, I’ve recapped the most crucial items we reviewed today.
+
+
+Your Lighthouse Dashboard:
+
+You can access your Lighthouse dashboard at: https://home.lh360.com. From the dashboard you can:
+
+*Manage schedules for {!Case.FS_Solo_vs_Team__c}
+*Keep track of your contacts, including notes and job history
+*Add or edit your jobs and estimates
+*Create and send invoices
+*Setup online payments for your account
+*Customize your website
+
+
+Mobile Office App:
+
+Lighthouse also provides {!Case.FS_Solo_vs_Team__c} with a mobile app that allows you to take advantage of the power of Lighthouse. Using the app lets you manage your business and even collect payments on the go. You can download the app from the iTunes or Google Play store.
+
+We also put together a training guide (available for iOS or Android) to help show {!Case.FS_Solo_vs_Team__c} how to use the app. If you need it, it’s also available in your dashboard. Feel free to save this guide and use it to train any new team members as they come on board.
+
+
+What&apos;s Next:
+
+We&apos;ll be giving you a call in a few days to check on progress and provide any additional training you need. So be sure to start scheduling jobs, creating invoices and using the marketing tools as soon as you can. This way we can answer your questions and make sure the call is as helpful as possible.
+
+
+Contacting Lighthouse:
+
+Our support team is here for you.  We are available Monday - Friday from 8am to 7pm EST but you can email us anytime.  You can also send us a note directly from your dashboard.
+
+Thanks so much for your time.  We’re excited to work with you and to help you build and manage your business!
+
+
+{!User.Full_Name__c}
+Lighthouse Customer Care
+(855) 888-9829
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

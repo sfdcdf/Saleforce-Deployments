@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sales program - guarantees a specific number of inquiries over 12 months</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Guaranteed Inquiry program</name>
+    <style>none</style>
+    <subject>Yodle - Guaranteed Inquiry Program</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c},
+
+These additional terms and conditions (the “Additional Terms”) are in addition to and part of the Order Form and Customer Terms and Conditions between Yodle and Customer dated as of the date Customer accepts these Additional Terms (collectively, the  &quot;Agreement&quot;).  As noted below, to accept this Change Order, please reply to this e-mail with &quot;Accept&quot; in the body.
+
+1.	If Yodle fails to provide at least {!Case.00N60000002KHq2} Inquiries (defined in Section 2) during the Commitment Period (the “Guaranteed Inquiries”), then Yodle will refund to Customer all monthly recurring fees paid by Customer to Yodle for the Services within thirty (30) days after Yodle has validated Customer’s refund request (the “Guarantee”).
+
+2.	An “Inquiry” means:  (a) any filled out email form generated from the Yodle adverSite or Mirror Site that includes at least an email address or telephone number and (b) any phone call generated from a call tracking phone number provisioned by Yodle that lasts at least 90 seconds or is unanswered.
+
+3.	The Guarantee shall automatically terminate if Customer (a) cancels the Services (in whole or in part), (b) reduces its monthly advertising budget, (c) requests that Yodle turn off call recording, (d) fails to pay any amounts due under the Agreement or otherwise breaches the Agreement or (e) does not act in good faith to enable Yodle to provide the Guaranteed Inquiries.
+
+4.	Except as modified by these Additional Terms, all of the terms and provisions of the Agreement remain in full force and effect.
+
+Customer accepts this Change Order by replying to this e-mail with &quot;Accept&quot;. This action creates an electronic signature that has the same legal force and effect as a handwritten signature on a written contract under any applicable law or regulation, and is equally binding.
+
+Please contact your Yodle sales representative if you have any questions.
+
+
+Sincerely,
+
+
+The Yodle Contracts Team
+contracts@yodle.com
+
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+Guaranteed Inquiries: {!Case.00N60000002KHq2}
+Yodle Representative: {!Case.Submitted_By__c}
+
+
+
+{!Case.CaseNumber}
+Privacy Policy
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

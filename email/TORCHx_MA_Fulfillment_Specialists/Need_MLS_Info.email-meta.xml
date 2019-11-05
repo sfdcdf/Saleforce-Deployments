@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send to clients who didn&apos;t provide MLS at point of sale</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TORCHx</letterhead>
+    <name>Need MLS Info</name>
+    <style>freeForm</style>
+    <subject>TORCHx MLS Info - Please Reply</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

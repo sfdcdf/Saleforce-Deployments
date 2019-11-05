@@ -1,78 +1,183 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>AgentId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ChatReqAssigned</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ChatReqDeclined</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ChatReqEngaged</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ChatReqTimedOut</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LoginTime</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LogoutTime</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumFlagLoweredAgent</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumFlagLoweredSupervisor</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumFlagRaised</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeAtCapacity</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeIdle</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeInAwayStatus</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeInChats</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TimeInOnlineStatus</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Time_Spent_Available__c</fullName>
         <externalId>false</externalId>
         <formula>TimeInOnlineStatus -    TimeInChats</formula>
@@ -83,7 +188,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Time_Spent_Logged_In_Min__c</fullName>
         <externalId>false</externalId>
         <formula>TimeInOnlineStatus / 60</formula>
@@ -94,7 +200,8 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Time_Spent_Logged_In__c</fullName>
         <externalId>false</externalId>
         <formula>TimeInOnlineStatus  +  TimeInAwayStatus</formula>
@@ -106,7 +213,11 @@
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
         <customTabListAdditionalFields>Agent</customTabListAdditionalFields>
         <customTabListAdditionalFields>LoginTime</customTabListAdditionalFields>
         <customTabListAdditionalFields>LogoutTime</customTabListAdditionalFields>
@@ -119,7 +230,9 @@
         <searchResultsAdditionalFields>Agent</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LoginTime</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LogoutTime</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Private</sharingModel><listViews>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <listViews>
         <fullName>Rogers_Support_LiveAgentSession</fullName>
         <filterScope>Queue</filterScope>
         <label>Rogers Support</label>
@@ -127,4 +240,5 @@
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>

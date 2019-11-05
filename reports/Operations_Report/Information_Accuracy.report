@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Call_Grading_Forms__c.Information_Accuracy__c</field>
+    </columns>
+    <columns>
+        <field>Call_Grading_Forms__c.Qualitative_Adherence__c</field>
+    </columns>
+    <columns>
+        <field>Call_Grading_Forms__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Call_Grading_Forms__c.Next_Steps__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Call_Grading_Forms__c.Information_Accuracy__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Great,Very Good,N/A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Grading_Forms__c.Qualitative_Adherence__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Information Accuracy</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call_Grading_Forms__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Call_Grading_Forms__c.Information_Accuracy__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Call_Grading_Forms__c.Call_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

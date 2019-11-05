@@ -1,0 +1,18 @@
+Account Name: {!Opportunity.Account}
+Parent Account: {!Opportunity.Parent_Account__c}
+
+Sales Exec: {!Opportunity.OwnerFullName}
+Client ID: {!Opportunity.Client_ID__c}
+
+Amount: {!Opportunity.Amount}
+One-Time/Setup Fees: {!Opportunity.Total_One_Time_Fees_Sum__c}
+Total Monthly Charges: {!Opportunity.Total_Monthly_Charges__c}
+Total PPC Monthly Charges: {!Opportunity.Total_PPC_Seasonal_Charge__c}
+Contract Terms (months): {!Opportunity.Contract_Term_in_months__c}
+
+Commissionable Revenue
+One Time Charges Amount: {!Opportunity.CRV_One_Time_Sum__c}
+Recurring Amount: {!Opportunity.CRV_Recurring_Sum__c}
+Season PPC Amount: {!Opportunity.CRV_PPC_Seasonal_Average__c}
+
+{!Opportunity.Link}

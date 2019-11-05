@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Organic_Analysis__c.Business_Days_Open__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Age</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Account.Organic_Analyses__r$Date_Opt_Completed__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Business_Days_Open__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Owner</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Organic_Optimization_Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$IMS_Completing_Opt__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>fortunatus,wesley adams,anderson allen,toothman,gibbs,dembitzer,gustavo santa ana,josh kunis,matt austin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Owner.UserRole</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>fortunatus,wesley adams,anderson allen,toothman,gibbs,dembitzer,gustavo santa ana,josh kunis,matt austin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed,Closed - Errors Found,Closed - False Trigger,Closed - No Errors Found,Closed - Sent to SDB,Opt Not Completed - Invalid Case,Completed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Organic_Analyses__r$IMS_Completing_Opt__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YBN - Org Opts Still Open</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$Date_Opt_Completed__c</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

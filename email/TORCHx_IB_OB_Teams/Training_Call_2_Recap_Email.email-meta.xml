@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sent after successful training call 2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TORCHx</letterhead>
+    <name>Training Call 2 Recap Email</name>
+    <style>freeForm</style>
+    <subject>Training Call Recap and Feedback - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

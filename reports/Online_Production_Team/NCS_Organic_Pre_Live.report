@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Age__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Web_Dev_QA_Status__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.Days_in_Cur__c</field>
+    </columns>
+    <columns>
+        <field>Case.Time_In_Production_Days__c</field>
+    </columns>
+    <description>Pre Live Report</description>
+    <filter>
+        <booleanFilter>((1 AND 2 AND (3 OR 4)) OR ((1 AND (3 OR 4) AND 5)) OR (1 AND 6 AND 7))</booleanFilter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Closed,1-MA Setup AutoLaunch,2-QA AutoLaunch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.SEO_Product__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Organic,Combo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Web Dev</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Web Dev,Theorem</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Redirect Domain (YO Post-Launch)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.SEO_Tasks,012600000009Oz6,012600000009Oym,012600000009PEG</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Web Dev,Theorem,Sean Cornwall,Ben Rollier,Jenn Wilder,Jeff Ruoss,Ernest Cook,Quinn Campbell,Mike Lawson,Yvonne Tse,Steve Jones,La Mar Holmes,Jennifer Foley,Lauren Griffith</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SUBJECT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NCS Organic - Pre Live</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Days_in_Cur__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

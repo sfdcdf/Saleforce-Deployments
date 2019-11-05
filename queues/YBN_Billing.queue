@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>ybnbilling@yodle.com</email>
+    <name>YBN Billing</name>
+    <queueMembers>
+        <users>
+            <user>alisha.balkarran@yodle.com</user>
+            <user>cathy.kolcun@solidcactus.com</user>
+            <user>dshapiro@yodle.com</user>
+            <user>ejoseph@web.com.yodle</user>
+            <user>marthur@web.com</user>
+            <user>mark.fucaloro@yodle.com</user>
+            <user>nluong@web.com</user>
+            <user>reid.beck@yodle.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

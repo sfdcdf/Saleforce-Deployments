@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Day_Of_Next_SLA_Touch__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Within_SLA__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Next_Scheduled_Contact_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Outcome__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In Progress</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Owner_Role__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Retention</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cancel Cases Needing Call Today - Agent</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Cancellation_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Cancellation_Request__c.Next_Scheduled_Contact_Date__c</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

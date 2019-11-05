@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.X1st_Attempt_Date__c</field>
+    </columns>
+    <columns>
+        <field>Activity.X1st_Attempt_Result__c</field>
+    </columns>
+    <columns>
+        <field>Activity.X2nd_Attempt_Date__c</field>
+    </columns>
+    <columns>
+        <field>Activity.X2nd_Attempt_Result__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>WHAT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Merry Maids</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN: Consultant,YBN: Senior Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Milestone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Month 1 Check In,Monthly Touch Point,Introduction Call/CSC</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>YBN Proactive Touch Point Template</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Activity.Close_Date__c</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

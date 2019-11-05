@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send this out after receiving an RSVP</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_2015_Blue</letterhead>
+    <name>Reply to RSVP</name>
+    <style>freeForm</style>
+    <subject>See you on Feb 25th!</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+
+Thank you for reserving your seat to the Lighthouse360 networking event on November 18th.
+
+
+The event starts at 7pm at The Flatiron Room.  The Flatiron Room is located at 37 West 26th St. between 6th Ave. and Broadway in the Flatiron District.
+
+
+We’ll have an open bar and appetizers for you from 7pm - 8:30pm.  Come network with your peers and also learn about Lighthouse 360’s Certified Partner Program.
+
+
+Here is the agenda:
+
+
+7pm - 8pm: Networking. Open Bar.  Appetizers.
+
+8pm - 8:30pm: Short presentation on Lighthouse 360 Certified Partner Program
+
+
+The Flatiron Room is known for it’s rare whiskey collection.  We have enabled you to participate in a whiskey tasting from 8:30 - 9pm if you are interested.
+
+
+8:30 - 9pm: Optional Whiskey Tasting
+
+
+If you’re interested in attending the Whiskey tasting, please reply and let us know.
+
+
+We’re looking forward to seeing you at the Flatiron Room on Nov. 18th at 7pm.
+
+
+{!Account.OwnerFirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

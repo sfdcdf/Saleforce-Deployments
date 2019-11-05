@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Sales_Person__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Strategic_Owner__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Total_Number_of_Locations__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Estimated_Number_locations__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Proposed_Pricing_Setup_Fee_per_Location__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Proposed_Pricing_MMF_per_Location__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Proposed_Pricing_Organic_fee_location__c</field>
+    </columns>
+    <columns>
+        <field>National_Support_Request__c.Describe_out_of_box_requirements__c</field>
+    </columns>
+    <description>proposal/contract review for new relationships</description>
+    <filter>
+        <criteriaItems>
+            <column>National_Support_Request__c.Account_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>National_Support_Request__c.Account_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jeremy&apos;s Powerhouse Gym</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>National_Support_Request__c.New_Initiation_Form</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>National_Support_Request__c.Sub_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Submit Proposal for Review,Proposal Review,Submit Contract for Review,Contract Review,Sent Back to Sales,Revised Proposal Review,Revised Contract Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>National_Support_Request__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Stage 3 – Proposal,Stage 5 – Contract</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>National_Support_Request__c.Sub_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Review for New Relationships</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$National_Support_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>National_Support_Request__c.Account_Transition_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Client_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Password__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Client Refuses Claim,Owner-Verified/Pending Management,Owner-Verified/Managed,Migrated To Bulk Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Live</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Listing Resides in Bulk Account,Pending Google Whitelist,Google Whitelist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Awaiting Verification,Active Listing,Pending,Rejected Unknown,Rejected - PO Box Used,Client Refuses Claim,Restarted,Owner-Verified/Pending Management,Owner-Verified/Managed,Un-Claimable,Migrated To Bulk Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Non Compliant Client,Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Owner_Verified_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Owner-Verified/Pending Management,Owner-Verified/Managed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Clients to WL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Yodle Path --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activate automated emails --></label>
+        <name>Activate_automated_emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attempt 1 Posted to Case --></label>
+        <name>Attempt_1_Posted_to_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attempt 2 Posted to Case --></label>
+        <name>Attempt_2_Posted_to_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attempt 3 Posted to Case --></label>
+        <name>Attempt_3_Posted_to_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Close Date --></label>
+        <name>Auto_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Email --></label>
+        <name>Client_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Phone Number --></label>
+        <name>Client_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Call Script --></label>
+        <name>Coaching_Call_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Call --></label>
+        <name>Coaching_Call__c</name>
+        <relationshipLabel><!-- Yodle Path (Coaching Call) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Coaching Close Date --></label>
+        <name>Coaching_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date/Time --></label>
+        <name>Completed_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create VIP customer list --></label>
+        <name>Create_VIP_customer_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create an offer --></label>
+        <name>Create_an_offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created --></label>
+        <name>Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Import contacts --></label>
+        <name>Import_contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Progress Date --></label>
+        <name>In_Progress_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log in --></label>
+        <name>Log_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Task Call Duration --></label>
+        <name>Most_Recent_Task_Call_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Task Date Time --></label>
+        <name>Most_Recent_Task_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Task ID --></label>
+        <name>Most_Recent_Task_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Case --></label>
+        <name>Parent_Case__c</name>
+        <relationshipLabel><!-- Yodle Path --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pass/Fail Date --></label>
+        <name>Pass_Fail_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request 2 more reviews TP1 --></label>
+        <name>Request_2_more_reviews_TP1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request 2 more reviews TP2 --></label>
+        <name>Request_2_more_reviews_TP2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request 2 reviews TP1 --></label>
+        <name>Request_2_reviews_TP1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request 2 reviews coaching --></label>
+        <name>Request_2_reviews_coaching__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review emails feature --></label>
+        <name>Review_emails_feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review website --></label>
+        <name>Review_website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule coaching call --></label>
+        <name>Schedule_coaching_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Coaching Call --></label>
+        <name>Scheduled_Coaching_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Setup Call Date --></label>
+        <name>Scheduled_Setup_Call_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Services --></label>
+        <name>Select_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send or schedule an email TP1 --></label>
+        <name>Send_or_schedule_an_email_TP1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send or schedule an email TP2 --></label>
+        <name>Send_or_schedule_an_email_TP2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set emails usage goal --></label>
+        <name>Set_emails_usage_goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set reviews usage goal --></label>
+        <name>Set_reviews_usage_goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Call Script --></label>
+        <name>Setup_Call_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Call --></label>
+        <name>Setup_Call__c</name>
+        <relationshipLabel><!-- Yodle Path --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Churned</masterLabel>
+            <translation><!-- Churned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete</masterLabel>
+            <translation><!-- Did Not Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Sent? --></label>
+        <name>Survey_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- TP1 Goal --></label>
+        <name>TP1_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- TP2 Goal --></label>
+        <name>TP2_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- TP3 Goal --></label>
+        <name>TP3_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Attempts --></label>
+        <name>Total_Number_of_Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 1 Close Date --></label>
+        <name>Touch_Plan_1_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 1 Scheduled Date/Time --></label>
+        <name>Touch_Plan_1_Scheduled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 1 Script --></label>
+        <name>Touch_Plan_1_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 1 --></label>
+        <name>Touch_Plan_1__c</name>
+        <relationshipLabel><!-- Yodle Path (Touch Plan 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 2 Close Date --></label>
+        <name>Touch_Plan_2_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 2 Scheduled Date/Time --></label>
+        <name>Touch_Plan_2_Scheduled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 2 Script --></label>
+        <name>Touch_Plan_2_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 2 --></label>
+        <name>Touch_Plan_2__c</name>
+        <relationshipLabel><!-- Yodle Path (Touch Plan 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 3 Scheduled Date/Time --></label>
+        <name>Touch_Plan_3_Scheduled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 3 Script --></label>
+        <name>Touch_Plan_3_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan 3 --></label>
+        <name>Touch_Plan_3__c</name>
+        <relationshipLabel><!-- Yodle Path (Touch Plan 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan In Progress --></label>
+        <name>Touch_Plan_In_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Plan Pass/Fail --></label>
+        <name>Touch_Plan_Pass_Fail__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Attempt By --></label>
+        <name>X1st_Attempt_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Attempt Date --></label>
+        <name>X1st_Attempt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Attempt Status --></label>
+        <name>X1st_Attempt_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete - Full Script</masterLabel>
+            <translation><!-- Complete - Full Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Short Script</masterLabel>
+            <translation><!-- Complete - Short Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Could Not Reach</masterLabel>
+            <translation><!-- Did Not Complete - Could Not Reach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - LVM</masterLabel>
+            <translation><!-- Did Not Complete - LVM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Reschedule</masterLabel>
+            <translation><!-- Did Not Complete - Reschedule --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 2nd Attempt By --></label>
+        <name>X2nd_Attempt_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Attempt Date --></label>
+        <name>X2nd_Attempt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Attempt Status --></label>
+        <name>X2nd_Attempt_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete - Full Script</masterLabel>
+            <translation><!-- Complete - Full Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Short Script</masterLabel>
+            <translation><!-- Complete - Short Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Could Not Reach</masterLabel>
+            <translation><!-- Did Not Complete - Could Not Reach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - LVM</masterLabel>
+            <translation><!-- Did Not Complete - LVM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Reschedule</masterLabel>
+            <translation><!-- Did Not Complete - Reschedule --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 3rd Attempt By --></label>
+        <name>X3rd_Attempt_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Attempt Date --></label>
+        <name>X3rd_Attempt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Attempt Status --></label>
+        <name>X3rd_Attempt_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete - Full Script</masterLabel>
+            <translation><!-- Complete - Full Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Short Script</masterLabel>
+            <translation><!-- Complete - Short Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Could Not Reach</masterLabel>
+            <translation><!-- Did Not Complete - Could Not Reach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - LVM</masterLabel>
+            <translation><!-- Did Not Complete - LVM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Reschedule</masterLabel>
+            <translation><!-- Did Not Complete - Reschedule --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 4 or More Attempts --></label>
+        <name>X4_or_More_Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4th or More Attempt Status --></label>
+        <name>X4th_or_More_Attempt_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete - Full Script</masterLabel>
+            <translation><!-- Complete - Full Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Short Script</masterLabel>
+            <translation><!-- Complete - Short Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Could Not Reach</masterLabel>
+            <translation><!-- Did Not Complete - Could Not Reach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - LVM</masterLabel>
+            <translation><!-- Did Not Complete - LVM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Complete - Reschedule</masterLabel>
+            <translation><!-- Did Not Complete - Reschedule --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Yodle Path Completed by --></label>
+        <name>Yodle_Path_Completed_by__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Yodle Path</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Yodle Path</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Coaching Call (Feed)</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Coaching Call --></label>
+            <section>Coaching Call</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Coaching Call (Feed) 4+ Attempts</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Coaching Call --></label>
+            <section>Coaching Call</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Setup Call (Feed) 4+ Attempts</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Setup Call (feed)</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Touch Plan 1 (feed)</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Coaching Call --></label>
+            <section>Coaching Call</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+        <sections>
+            <label><!-- Touch Plan 1 --></label>
+            <section>Touch Plan 1</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Touch Plan 2 (feed)</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Coaching Call --></label>
+            <section>Coaching Call</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+        <sections>
+            <label><!-- Touch Plan 1 --></label>
+            <section>Touch Plan 1</section>
+        </sections>
+        <sections>
+            <label><!-- Touch Plan 2 --></label>
+            <section>Touch Plan 2</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Touch Plan 3 (feed)</layout>
+        <sections>
+            <label><!-- Attempt to Contact --></label>
+            <section>Attempt to Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Coaching Call --></label>
+            <section>Coaching Call</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Call --></label>
+            <section>Setup Call</section>
+        </sections>
+        <sections>
+            <label><!-- Touch Plan 1 --></label>
+            <section>Touch Plan 1</section>
+        </sections>
+        <sections>
+            <label><!-- Touch Plan 2 --></label>
+            <section>Touch Plan 2</section>
+        </sections>
+        <sections>
+            <label><!-- Touch Plan 3 --></label>
+            <section>Touch Plan 3</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used to test the Yodle Path Experience process - Coaching Call --></description>
+        <label><!-- Coaching Call --></label>
+        <name>Coaching_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Coaching Call 4th Attempt --></label>
+        <name>Coaching_Call_4th_Attempt</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to test the Yodle Path Experience process - Setup Call --></description>
+        <label><!-- Setup Call --></label>
+        <name>Setup_Call</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Setup Call 4th Attempt --></label>
+        <name>Setup_Call_4th_Attempt</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to test the Yodle Path Experience process - Touch Plan 1 --></description>
+        <label><!-- Touch Plan 1 --></label>
+        <name>Touch_Plan_1</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to test the Yodle Path Experience process - Touch Plan 2 --></description>
+        <label><!-- Touch Plan 2 --></label>
+        <name>Touch_Plan_2</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to test the Yodle Path Experience process - Touch Plan 3 --></description>
+        <label><!-- Touch Plan 3 --></label>
+        <name>Touch_Plan_3</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Attempt 1 Status cannot be blank if you have made the attempt date. --></errorMessage>
+        <name>Attempt_1_Status_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attempt 2 Status cannot be blank if you have made the attempt date. --></errorMessage>
+        <name>Attempt_2_Status_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attempt 3 Status cannot be blank if you have made the attempt date. --></errorMessage>
+        <name>Attempt_3_Status_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the scheduled coaching call date because you were able to cover the complete - full script of this call. --></errorMessage>
+        <name>Require_If_Full_Script_Coaching_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Make sure to fill in the Scheduled Date/Time of the Coaching Call. --></errorMessage>
+        <name>Require_Schedule_Coaching_Call</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+Digital Product Specialist: {!Account.IMS_Rep__c}
+
+Account Name: {!Case.Account}
+
+Client ID: {!Case.Client_ID__c}
+
+OEM Customer Identifier: {!Account.OEM_Customer_Identifier__c}
+
+Contact Name: {!Case.Partner_Contact_Name__c}
+
+Client Phone Number: {!Case.Partner_Client_Phone__c}
+
+Berry Sales Rep: {!Case.Partner_Sales_Rep__c}
+
+Website Implementation Type: {!Case.00N60000002IwcN}
+
+Berry Website Type: {!Case.00N60000002Iwab}
+
+Berry Product Type: {!Case.00N60000002Iwam}
+
+Ad Domain URL: {!Account.Desired_URL__c}
+
+Case Reason: {!Case.Reason}
+
+Initiated By: {!Case.Origin}
+
+Account Days Live: {!Account.Days_Live__c}
+
+Initial Contract Length: {!Account.Contract_Length__c}
+
+Status: {!Case.Status}
+
+Sub Status: {!Case.Sub_Status__c}
+
+Escalation Sub Status: {!Case.Reason_Detail__c}
+
+Subject: {!Case.Subject}
+
+Escalation Notes: {!Case.Escalation_Notes__c} 
+
+Response Date: {!Case.Response_Date__c}  
+
+Case Number: {!Case.CaseNumber}
+
+Resolution: {!Case.Close_Notes__c}

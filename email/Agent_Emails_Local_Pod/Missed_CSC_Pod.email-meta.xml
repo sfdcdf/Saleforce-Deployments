@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up to client missed CSC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Missed Call- CSC</name>
+    <style>freeForm</style>
+    <subject>Missed Yodle Setup Call - {!Account.Client_ID__c}</subject>
+    <textOnly>Hi,
+
+We were unable to reach you today for your Yodle setup call.  Please contact us at your earliest convenience so we can review your account details or reschedule.
+
+Your account is already live but it’s important that we complete this call as soon as possible.   We’d like to confirm your business information and show you how you can use the Yodle dashboard to help in your success.  The call usually takes about 45 minutes and is most effective if you have access to a computer.
+
+We are available Monday through Friday, 9am to 8pm EST.  If you are unable to call, you can also respond to this email with the best time for us to reach you.  We look forward to hearing from you soon.
+
+Thank you!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

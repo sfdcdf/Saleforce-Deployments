@@ -1,0 +1,8 @@
+This case has been escalated.
+
+Status: {!Case.Status}
+Sub-Status: {!Case.Sub_Status__c}
+Case Owner: {!Case.OwnerFullName}
+
+
+Click here for the case link - {!Case.Link}

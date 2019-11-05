@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Customer_Surveys__c.Client_ID_2__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Quality_of_IMS__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Speed_Responsiveness__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_Content__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_Design_Quality__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_Level_of_Involvement__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Website_Quality__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Post CSC Survey - Website &amp; Response</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

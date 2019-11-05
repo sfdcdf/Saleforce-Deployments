@@ -1,0 +1,19 @@
+Account Name: {!Opportunity.Account}
+
+Sales Director: {!Opportunity.OwnerFullName}
+
+Account Director: {!Opportunity.Account_Director__c}
+
+One Time Fees: {!Opportunity.Total_One_Time_Fees_Sum__c}
+
+Monthly Reoccurring Fees: {!Opportunity.Total_Monthly_Spend_Sum__c}
+
+Total Contract Value: {!Opportunity.Total_Contract_Value_Sum__c}
+
+Products: {!Opportunity.Products__c}
+
+Participating Number of Locations: {!Opportunity.Participating_Number_of_Locations__c}
+
+Estimated Launch Date; {!Opportunity.Estimated_Launch_Date__c}
+
+{!Opportunity.Link}

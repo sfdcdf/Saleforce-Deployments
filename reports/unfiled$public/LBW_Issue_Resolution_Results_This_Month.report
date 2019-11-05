@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.CSC_CS_Helpfulness__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Helpfulness Average</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Issue_Survey_Wait_time_for_resolution__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Wait Time Average</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Satisfaction_with_how_we_handle_problems__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Satisfaction with Resolution Average</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_51110717</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Cases$Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Mark Cosh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alvin Jobe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alyson MacDonald</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gwen Doyle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kayla Muir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberley Boutilier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Slaunwhite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rondell Humphreys</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Gerrior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Collens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tameka Davidson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Rundle</sourceValue>
+            </sourceValues>
+            <value>NG Pod</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Starett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Garner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <value>AM Red</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mark Nagy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Degreef</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelby Cowman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keegan Sandman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Tamayo</sourceValue>
+            </sourceValues>
+            <value>AM Blue</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Customer_Survey_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Satisfaction_with_how_we_handle_problems__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Issue_Survey_What_can_we_do_to_improve__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$CSC_CS_Helpfulness__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Issue_Survey_Wait_time_for_resolution__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Anything_to_share_about_your_experience__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Customer_Surveys__r$Requested_Contact__c</field>
+    </columns>
+    <description>WSR Weekly Status Report</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Product_Type_Transactional__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>leads by web</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_51110717</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>LBW Issue Resolution Results This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Cases_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Cases.Customer_Surveys__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

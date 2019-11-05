@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LH FS - Upgrade to QuickBooks Online</name>
+    <style>none</style>
+    <subject>How to Upgrade to QuickBooks Online</subject>
+    <textOnly>Hello,
+
+Thanks for taking a few minutes to speak with me today.  As I mentioned, we’ll want to get your QuickBooks version switched over to QuickBooks Online before we finish your account setup.  The online version allows you to sync all your information with the Lighthouse dashboard in just a few minutes and will save you a lot of time getting everything in there.  There are also a number of other differences in the online version that QuickBooks highlights like free phone support and automatic data back-up. So it looks like it could potentially be even more comprehensive than what you have now.
+
+Here’s the link where you can learn more and take care of the switch: Move to QuickBooks Online. And if you’d prefer to talk to somebody at QuickBooks instead you can try their support line, 800-488-7330.
+
+Try to complete this as soon as you can.  We’ll be giving you a call back on {!Case.Next_Scheduled_CSC2__c} to complete the rest of your account setup.  If you have any questions at all in the meantime, please let us know.  Thanks!
+
+Sincerely,
+
+Lighthouse Customer Care
+855-888-9829
+customercare@lighthousepmg.com
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

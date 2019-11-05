@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>false</active>
+    <businessHours>Business 9-5 EST</businessHours>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Initial_DateTime_Closed__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.WorkItemSLA__c</field>
+            <operation>equals</operation>
+            <value>2.0</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>965</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND(
+  IsClosed = False,
+  ISBLANK(Initial_DateTime_Closed__c),
+  Escalated__c = False,
+  WorkItemSLA__c = 3
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>1445</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND(
+  IsClosed = False,
+  ISBLANK(Initial_DateTime_Closed__c),
+  Escalated__c = False,
+  WorkItemSLA__c = 4
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>1925</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND( 
+  IsClosed = False, 
+  ISBLANK(Initial_DateTime_Closed__c), 
+  Escalated__c = False, 
+  WorkItemSLA__c = 5 
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>2405</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND(
+  IsClosed = False,
+  ISBLANK(Initial_DateTime_Closed__c),
+  Escalated__c = False,
+  WorkItemSLA__c = 7
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>3365</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND(
+  IsClosed = False,
+  ISBLANK(Initial_DateTime_Closed__c),
+  Escalated__c = False,
+  WorkItemSLA__c = 10
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>4805</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFormula>AND(
+  IsClosed = False,
+  ISBLANK(Initial_DateTime_Closed__c),
+  Escalated__c = False,
+  WorkItemSLA__c = 15
+)</milestoneCriteriaFormula>
+        <milestoneName>Resolution Time</milestoneName>
+        <minutesToComplete>7205</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Initial_DateTime_Closed__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>true</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Escalated Resolution Time</milestoneName>
+        <minutesToComplete>245</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Initial_DateTime_Closed__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.WorkItemSLA__c</field>
+            <operation>equals</operation>
+            <value>0.0</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Reopen Resolution</milestoneName>
+        <minutesToComplete>485</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Initial_DateTime_Closed__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Escalated__c</field>
+            <operation>equals</operation>
+            <value>true</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Escalated Reopen Resolution</milestoneName>
+        <minutesToComplete>245</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Violation</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Populate_Owner_Manager_Email</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <name>YBN Custom SLA</name>
+    <versionMaster>552m00000004Ch5</versionMaster>
+    <versionNotes>Extended SLA times by 5 minutes to allow cases to carry over to the next day.  This allows offshore teams to stay within SLAs.</versionNotes>
+    <versionNumber>5</versionNumber>
+</EntitlementProcess>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Rogers Exit Email</name>
+    <style>none</style>
+    <subject>Rogers Account Deactivation - {!Account.Name}</subject>
+    <textOnly>Rogers Account Deactivation
+
+Hi {!Contact.FirstName},
+
+Your account is scheduled for no further billing and will soon be deactivated.
+
+We are sorry to lose you as a client. Maintaining an internet presence is critical for your business. Everyone here at Rogers looks forward to the opportunity to work with you again in the future. If this is an error and you would like to avoid the cancellation, please contact me directly.
+
+What this cancellation means for you:
+
+Your Rogers advertising domain and website will be taken down. Your advertising site will no longer be visible when someone types in its domain name.
+You no longer have the ability to log into your Rogers account. You will not be able to access any of the data that was accessible in your Rogers dashboard.
+If you used our Ads product, all Rogers-written advertisements will no longer be showing in the sponsored links of the search engines.
+If you used our Organic product, your Rogers tracking phone number and adversite domain will be removed from online citations and listings. Rogers will no longer be accessing or managing these listings.
+Your tracking numbers will be removed from your account. These numbers are owned by a third party supplier, and we will return these numbers back to our supplier.
+
+
+Rogers has additional services we offer to help ensure you keep an active Internet presence. If you do not want to stop advertising, we can discuss additional services we offer at a smaller scale. These services include lowering your monthly advertising investment and using Rogers to continue hosting your website. For more information about these services, contact Client Services directly so we can determine what will be the best fit for the needs of your business.
+
+Regards and Thanks,
+{!Account.IMS_Rep__c}
+
+
+Clicks Are Great. Calls Are Better.
+Rogers Communications Inc. 350 Bloor Street East, Toronto, ON  M4W 1G9, Canada</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

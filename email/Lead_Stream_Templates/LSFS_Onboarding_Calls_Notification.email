@@ -1,0 +1,8 @@
+Your account, {!Account.Name} completed their onboarding call on
+{!Case.CreatedDate}.  We have included any relevant notes from the call below.
+
+***This is an FYI only.  Please DO NOT contact the client or the client services team.  An account manager will contact you directly if they need assistance or have questions.***
+
+Call Notes: {!Case.Case_Comments__c}
+
+If you would like additional information, you can open the case here:  {!Case.Link}

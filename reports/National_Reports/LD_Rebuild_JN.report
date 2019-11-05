@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Listing_1_Action_Completed__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Bing_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Bing_Listing_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Account_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Lawn Doctor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>None,Un-Claimable Listing,Listing Resides in Bulk Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Group #969</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LD Rebuild JN</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$Open_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

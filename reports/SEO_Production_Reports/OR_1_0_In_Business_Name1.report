@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Business_Name_Inputted_into_GLocal__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$New_Google_Dashboard__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Business_Name_Inputted_into_GLocal__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>OR 1,OR 1.0,Rogers -,OR1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Organic_Analyses__r$Open_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OR 1.0 In Business Name</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$Open_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

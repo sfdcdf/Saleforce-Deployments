@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Id</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Owner_Verified_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <description>Storm Guard Listing Status Report</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Parent</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Storm Guard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$YO_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Live</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Storm Guard Listing Status Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

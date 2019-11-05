@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_97570370</developerName>
+        <masterLabel>Case Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SUBJECT</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New Client Setup Case</sourceValue>
+            </sourceValues>
+            <value>CSC</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_9294890</developerName>
+        <masterLabel>Survey Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>REASON</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CS Touch Plan</sourceValue>
+            </sourceValues>
+            <value>25/55 Day Touch</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Inbound Inquiry</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_60812285</developerName>
+        <masterLabel>Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.Reason_Detail__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Conf Call</sourceValue>
+            </sourceValues>
+            <value>CSC</value>
+        </values>
+        <values>
+            <value>25 Day</value>
+        </values>
+        <values>
+            <value>55 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed Site Change</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dashboard Issue/Concern</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dispute Charge</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Forgotten Outrank</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Google Places</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Google Review Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Low Leads</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other Account Concerns</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rankings</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Return call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Saved by Inbound</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Billing Question</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lack of Follow Up</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>CASE_ID</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.Reason_Detail__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <filter>
+        <booleanFilter>3 and 7 and ((1 and 2) or (4 and 5 and 6))</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.XJen_Test_COBRA,012600000009V7V</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Completed_Call_By__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.client_email__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Inbound Inquiry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Website Change/Update,30 Day Cancel,Cancel Request,BPF Entry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Closed_Month__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_60812285</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Transactional Surveys Sent</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
