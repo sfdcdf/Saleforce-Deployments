@@ -4,7 +4,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -12,7 +32,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -20,7 +60,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -28,7 +88,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -36,11 +116,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <businessProcesses>
@@ -239,7 +335,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Demo%2FValue Prop</fullName>
+            <fullName>Demo Value Prop</fullName>
             <default>false</default>
         </values>
         <values>
@@ -672,8 +768,8 @@ Corporate_Site_Maintenance_Fee__c * Corporate_Site_Contract_Length__c)
 IF(Display_Contract_Length__c &gt;= 12, Corporate_Display_Fees__c * 12, Corporate_Display_Fees__c * Display_Contract_Length__c)
 +
 
-CASE(RecordTypeId,
-"012600000009YRT" /* Individual Location */, 
+CASE( RecordType_Name__c,
+"YBN - Individual Location" /* Individual Location */,  
 
 IF(Yodle_Web_Contract_Length__c &gt;= 12, Corporate_Monthly_Mgmt_Fees__c * 12, Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Contract_Length__c)
 +  
@@ -1755,7 +1851,7 @@ ISPICKVAL( StageName ,"Closed Lost")),
         <fullName>Corporate_Recurring_Total__c</fullName>
         <externalId>false</externalId>
         <formula>If( 
-RecordTypeId ="012600000009YRT",
+RecordType_Name__c ='YBN - Individual Location',
 ( Monthly_Management_Fees__c + Monthly_Advertising_Charges__c  +  corp_Media_Management_Fee__c +  Organic_fees__c +  Review_Management_Fee_Per_Location__c +  Monthly_Display_Fees__c +  Facebook_Fee_Per_Location__c +  Advanced_SEO_Setup_Fee_Per_Location__c +  Leads_by_Web_G1__c ),
 
 ((Corporate_Monthly_Mgmt_Fees__c * Yodle_Web_Setup_of_Locations__c  )
@@ -2061,7 +2157,7 @@ Corporate_Display_Fees__c + Corporate_Site_Maintenance_Fee__c + (Review_Manageme
     <fields>
         <fullName>DESCRIBE_HOW_COOP_PLAN_WORKS__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>% contribution, % of locations contributing, who decides how it’s spent, what programs is it currently funding?</inlineHelpText>
+        <inlineHelpText>% contribution, % of locations contributing, who decides how it's spent, what programs is it currently funding?</inlineHelpText>
         <label>What is the Ad Fun &amp; How Does it Work</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4284,7 +4380,7 @@ ISPICKVAL(StageName,"Implementation")),
     <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
@@ -4477,7 +4573,7 @@ ISPICKVAL(StageName,"Implementation")),
         <fullName>One_time_Fees__c</fullName>
         <externalId>false</externalId>
         <formula>If( 
-RecordTypeId ="012600000009YRT", (Setup_Fees__c + Corporate_Website_Fees__c +  Facebook_Setup_Fee__c + Advanced_SEO_Setup_Fee_Per_Location__c +  Display_Setup_Fee_Per_Location__c ),
+RecordType_Name__c ='YBN - Individual Location', (Setup_Fees__c + Corporate_Website_Fees__c +  Facebook_Setup_Fee__c + Advanced_SEO_Setup_Fee_Per_Location__c +  Display_Setup_Fee_Per_Location__c ),
 
 ((Corporate_Setup_Fees__c   *   Setup_of_Locations__c )+ ( Actual_Creative_Service_Fee__c )+ (  Actual_Integration_Service_Fee__c )+ ( Actual_Project_Mgmt_Fee__c  )+ ( Advanced_SEO_Fee_Per_Location__c  *  Advanced_SEO_Setup_of_Locations__c )+ ( Display_Setup_Fee_Per_Location__c  *  Display_Setup_of_Locations__c ) + ( Facebook_Setup_Fee__c * Facebook_Setup_of_Locations__c ) + 
 (Location_Enhanced_SEO_Setup_of_Loc_s__c * Location_Enhanced_SEO_Setup_Fee_Per_Loc__c) +
@@ -6399,7 +6495,7 @@ If(Owner.UserRoleId ="00E60000001J40U","Brian Heppner","")))</formula>
         <description>Total Contracted Value - Does Not Include Network Adoption for Cop Opps</description>
         <externalId>false</externalId>
         <formula>If(
- RecordTypeId ="012600000009YRT",
+ RecordType_Name__c ='YBN - Individual Location',
 (Setup_Fees__c  +
 (Monthly_Management_Fees__c * Yodle_Web_Contract_Length__c ) +  ((Monthly_Advertising_Charges__c + corp_Media_Management_Fee__c)* PPC_Contract_Length__c) + 
 (Organic_fees__c *  Organic_Contract_Length__c ) +  (Review_Management_Fee_Per_Location__c *  Review_Management_Contract_Length__c ) +  (Monthly_Display_Fees__c *  Display_Contract_Length__c )+ ( Advanced_SEO_Contract_Length__c *  Advanced_SEO_Fee_Per_Location__c ) + ( Facebook_Contract_Length__c * Facebook_Fee_Per_Location__c) +  (Leads_by_Web_G1__c *  Leads_by_Web_G1_Contract_Length__c)),
@@ -15780,7 +15876,28 @@ Used by YBN.</description>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><externalSharingModel>Private</externalSharingModel><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><recordTypeTrackHistory>false</recordTypeTrackHistory><searchLayouts>
+    </fields>
+    <fields>
+        <fullName>RecordType_Name__c</fullName>
+        <description>Used to store the Record Type Name which is leveraged by a formula field used for Roll-up; dynamically poulated by Opportunity Trigger</description>
+        <externalId>false</externalId>
+        <label>RecordType Name</label>
+        <length>110</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>OPPORTUNITY.RECORDTYPE</customTabListAdditionalFields>
@@ -15808,7 +15925,8 @@ Used by YBN.</description>
         <searchResultsAdditionalFields>Milestone__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Total_Amount__c</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Read</sharingModel>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
     <fieldSets>
         <fullName>Commission_Information</fullName>
         <description>Opportunity</description>
@@ -16311,13 +16429,13 @@ Used by YBN.</description>
     </listViews>
     <listViews>
         <fullName>X90_Day_Pipeline</fullName>
-        <booleanFilter>1</booleanFilter>
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>OPPORTUNITY.AMOUNT</columns>
         <columns>Total_Monthly_Spend_Sum__c</columns>
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
         <columns>Strategic_Project_Manager__c</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
@@ -16326,7 +16444,12 @@ Used by YBN.</description>
             <operation>equals</operation>
             <value>NEXT_90_DAYS</value>
         </filters>
-        <label>90 Day Pipeline</label>
+        <filters>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <operation>greaterThan</operation>
+            <value>60</value>
+        </filters>
+        <label>90 Day Pipeline (Prob +60%)</label>
         <sharedTo>
             <group>YBN_Strategic_Project_Managers</group>
         </sharedTo>
@@ -37670,7 +37793,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -46997,7 +47142,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -57007,7 +57174,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -64712,7 +64901,29 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
         </picklistValues>
-        
+        <picklistValues>
+            <picklist>SE_Location_Disposition__c</picklist>
+            <values>
+                <fullName>A - Highly Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D - Undetermined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F - Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Sales_Promo__c</picklist>
             <values>
@@ -78206,7 +78417,8 @@ ISPICKVAL( Demo_Status__c ,"Scheduled"),
         <fullName>Lead_Source_Detal_Required</fullName>
         <active>true</active>
         <errorConditionFormula>and (
- (RecordTypeId = "012600000009YRT"),
+ $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False, 
+ (RecordType.Name = "YBN - Individual Location"),
 Or(
  ISPICKVAL(  LeadSource  , "Inbound (Call / Email)"),
  ISPICKVAL(  LeadSource  , "Outbound (Call / Email)")),
@@ -78311,8 +78523,9 @@ NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M5 - Proposal"),ISPICKVAL(PRIORVALUE(St
         <fullName>Must_Fill_Out_Initially_Pitched_By_Field</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-  RecordTypeId = "01232000000JOTR",
- ISPICKVAL(Initially_Pitched_By__c,''))</errorConditionFormula>
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+  RecordType.Name = "Lighthouse - Upsell Opportunity",
+  ISPICKVAL(Initially_Pitched_By__c,''))</errorConditionFormula>
         <errorDisplayField>Initially_Pitched_By__c</errorDisplayField>
         <errorMessage>Please choose how the client found out about the upsell opportunity.</errorMessage>
     </validationRules>
@@ -78339,7 +78552,8 @@ OR(
         <fullName>Payment_Status_Required_when_ClosedWon</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
- RecordTypeId="01232000000JMzk",
+ $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+ RecordType.Name = "CPP - Initial Transaction",
  ISPICKVAL( StageName ,"Closed Won"),
  ISBLANK(TEXT(Payment_Status__c)))</errorConditionFormula>
         <errorDisplayField>Payment_Status__c</errorDisplayField>
@@ -78380,11 +78594,11 @@ or(
         <active>true</active>
         <description>This currently covers IL Record type and is not required for Corporate Paid On-boarding.  PES team (JCI) would like to also require products for contract renewals</description>
         <errorConditionFormula>AND(
-$User.ProfileId&lt;&gt;"00e60000000nQe9" /*sys admin*/,
+$Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
 NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */ ,
+RecordType.Name = "YBN IL Opportunity",
 
-RecordTypeId="012600000009YRT", /*YBN IL Opportunity*/
-Or(
+OR(
 ISPICKVAL(StageName, "Closed Won"),
 ISPICKVAL(StageName, "M003 - Contract (IL)")
 ),
@@ -78418,8 +78632,8 @@ NOT(ISPICKVAL(Stage_Detail__c, "Draft"))
         <active>true</active>
         <description>The Contract and Renewal fields must be completed prior to moving to the Contract stage for WBN IL.</description>
         <errorConditionFormula>AND( 
-RecordTypeId ="012600000009YRT", /*YBN Individual Location*/ 
-$User.ProfileId &lt;&gt; "00e60000000nQe9", /*SysAdmin*/ 
+RecordType.Name = "YBN Individual Location", 
+$Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False, 
 NOT($Permission.WBN_SalesOpsPermission), /* WBN Sales Ops */ 
 OR( 
 ISPICKVAL(StageName, "M003 - Contract (IL)"), 
@@ -78435,7 +78649,8 @@ ISBLANK(Renewal_Term_in_months__c))
         <active>true</active>
         <description>The oppty name must be less than 68 characters at Closed/Won so the contract can be created.  The contract name only holds 80 characters and the flow is appending the name with an space and the oppty close date (mm/dd/yyyy).</description>
         <errorConditionFormula>AND(
-RecordTypeId = "012600000009YRT", /*YBN - Individual Location*/
+$Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+RecordType.Name = "YBN - Individual Location",
 ISPICKVAL(StageName,"Closed Won"), 
 (LEN(Name) &gt; 68)
 )</errorConditionFormula>
@@ -78481,9 +78696,13 @@ NOT(ISPICKVAL(StageName, "Prospecting"))</errorConditionFormula>
         <fullName>WBN_Products_Sold_Closed_Won</fullName>
         <active>true</active>
         <description>Products sold must be selected when the oppty is Closed/Won.</description>
-        <errorConditionFormula>RecordType.Id ="012600000009YRT"&amp;&amp; /*YBN-Individual Location*/
-ispickval(StageName ,"Closed Won")&amp;&amp;
-isblank( Products__c)</errorConditionFormula>
+        <errorConditionFormula>AND
+(
+    RecordType.Name = 'YBN-Individual Location',
+    ISPICKVAL(StageName , "Closed Won"),
+    ISBLANK(Products__c),
+    $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False
+)</errorConditionFormula>
         <errorDisplayField>Products__c</errorDisplayField>
         <errorMessage>"Products Sold" field must be filled out with all products reflected in the contract</errorMessage>
     </validationRules>
@@ -78642,8 +78861,8 @@ ISPICKVAL(   YBN_Sub_Type__c   ,"Preferred Partner Agreement"))))</errorConditio
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if CM Lite Fee Per Location is population, contract length and number of locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
-  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") ,  
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False, 
+  OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initial Transaction",RecordType.Name = "YBN - Renewal") ,  
   CM_Lite_Fee_Per_Location__c   &gt; 0 , 
   OR (ISBLANK (  CM_Lite_of_Locations__c  ) , ISBLANK(  Centermark_Contract_Length__c  ))
 )</errorConditionFormula>
@@ -78655,8 +78874,8 @@ ISPICKVAL(   YBN_Sub_Type__c   ,"Preferred Partner Agreement"))))</errorConditio
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Centermark Fee Per Location is population, contract length and number of locations is required.</description>
         <errorConditionFormula>AND(
-$User.Full_Name__c &lt;&gt; "Ron Gong",
-OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") ,  Centermark_Fee__c  &gt; 0 , OR (ISBLANK (  Centermark_of_Locations__c  ) , ISBLANK(  Centermark_Contract_Length__c  )))</errorConditionFormula>
+$Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initial Transaction",RecordType.Name = "YBN - Renewal") ,  Centermark_Fee__c  &gt; 0 , OR (ISBLANK (  Centermark_of_Locations__c  ) , ISBLANK(  Centermark_Contract_Length__c  )))</errorConditionFormula>
         <errorDisplayField>Centermark_Fee__c</errorDisplayField>
         <errorMessage>Enter a Centermark Contract Length and/or Centermark # of Locations</errorMessage>
     </validationRules>
@@ -78665,9 +78884,8 @@ OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordType
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Total Corp Funded Monthly PPC Budget is populated, number of locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; 'Ron Gong',
-  $User.Full_Name__c &lt;&gt; 'Ryan Volkel',  
-  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO"),
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,  
+  OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initial Transaction",RecordType.Name = "YBN - Renewal"),
   Corporate_Monthly_PPC_Budget__c  &gt; 0 , 
   ISBLANK ( PPC_Contract_Length__c  )
 )</errorConditionFormula>
@@ -78715,8 +78933,8 @@ Monthly_Display_Fees__c    &gt; 0,
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Media Management Fee is populated, contract length and number of locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
-  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO"),
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,  
+  OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initial Transaction",RecordType.Name = "YBN - Renewal"),
   corp_Media_Management_Fee__c  &gt; 0 , 
   OR (ISBLANK (  Media_Management_Fee_of_Locations__c  ) , ISBLANK(  PPC_Contract_Length__c  ))
 )</errorConditionFormula>
@@ -78728,10 +78946,16 @@ Monthly_Display_Fees__c    &gt; 0,
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Organic Fee Per Location is populated, contract length and number of locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
-  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") ,
-  Corporate_Monthly_Organic_Fees__c  &gt; 0 , 
-  OR (ISBLANK ( Organic__c ) , ISBLANK( Organic_Contract_Length__c  ))
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+  OR( 
+       RecordType.Name = "YBN - Growth Opportunity",
+       RecordType.Name = "YBN - Initial Transaction",
+       RecordType.Name = "YBN - Renewal"),
+       Corporate_Monthly_Organic_Fees__c  &gt; 0, 
+  OR (
+       ISBLANK ( Organic__c ), 
+       ISBLANK( Organic_Contract_Length__c  )
+     )
 )</errorConditionFormula>
         <errorDisplayField>Corporate_Monthly_Organic_Fees__c</errorDisplayField>
         <errorMessage>Enter an Organic Contract Length and/or Organic # of Locations</errorMessage>
@@ -78741,8 +78965,8 @@ Monthly_Display_Fees__c    &gt; 0,
         <active>false</active>
         <description>If Organic fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
         <errorConditionFormula>AND( 
-  $User.Full_Name__c &lt;&gt; "Ryan Volkel",
-  RecordTypeId = "012600000009YRT",  
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False, 
+  RecordType.Name = "YBN - Individual Location",  
   Organic_fees__c  &gt; 0,  
   ISBLANK( Organic_Contract_Length__c  ) 
 )</errorConditionFormula>
@@ -78764,11 +78988,11 @@ RecordTypeId = "012600000009YRT",  OR( Monthly_Advertising_Charges__c &gt; 0, co
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Review Management Fee Per Location is populated, contract length and number of locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; "Ron Gong",
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
   OR( 
-    RecordTypeId = "012600000009YRJ",
-    RecordTypeId = "012600000009YRE",
-    RecordTypeId = "012600000009YRO"
+    RecordType.Name = "YBN - Growth Opportunity",
+    RecordType.Name = "YBN - Initial Transaction",
+    RecordType.Name = "YBN - Renewal"
   ),  
   Review_Management_Fee_Per_Location__c  &gt; 0 , 
   OR (
@@ -78792,8 +79016,8 @@ RecordTypeId = "012600000009YRT",  OR( Monthly_Advertising_Charges__c &gt; 0, co
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Setup Fee Per Locations is populated, Setup # of Locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
-  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO") , 
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False, 
+  OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initial Transaction",RecordType.Name = "YBN - Renewal") , 
   Corporate_Setup_Fees__c  &gt; 0 , 
   ISBLANK (  Setup_of_Locations__c  )
 )</errorConditionFormula>
@@ -78805,8 +79029,8 @@ RecordTypeId = "012600000009YRT",  OR( Monthly_Advertising_Charges__c &gt; 0, co
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Yodle Web Fee Per Location is population, contract length and number of locations is required.</description>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; 'Ron Gong', 
-  OR( RecordTypeId = "012600000009YRJ",RecordTypeId = "012600000009YRE",RecordTypeId = "012600000009YRO"),
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+  OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initial Transaction",RecordType.Name = "YBN - Renewal"),
   Corporate_Monthly_Mgmt_Fees__c &gt; 0 , 
   OR (ISBLANK ( Yodle_Web_Setup_of_Locations__c) , ISBLANK(  Yodle_Web_Contract_Length__c ))
 )</errorConditionFormula>
@@ -78891,9 +79115,8 @@ ISNULL( Products__c )
         <fullName>YBN_SE_Followup_Notes_Required</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-  $User.Full_Name__c &lt;&gt; "Ron Gong",
-  $User.Full_Name__c &lt;&gt; "Ryan Volkel",
-  RecordTypeId = "012600000009YRT", /* YBN - Individual Location */
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False,
+  RecordType.Name = "YBN - Individual Location",
   SE_Follow_Up_Needed__c = True,
   ISBLANK(SE_Follow_Up_Notes__c)
 )</errorConditionFormula>
@@ -78936,12 +79159,12 @@ ISNULL( Products__c )
   NOT(
     OR(
       ISPICKVAL(PRIORVALUE(StageName), "Client Discovery"),
-      ISPICKVAL(PRIORVALUE(StageName), "Demo/Value Prop"),
+      ISPICKVAL(PRIORVALUE(StageName), "Demo Value Prop"),
       ISPICKVAL(PRIORVALUE(StageName), "Solution")
     )    
   )
 )</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage "Client Discovery" before proceeding to stage "Demo/Value Prop".</errorMessage>
+        <errorMessage>Opportunity must be in stage "Client Discovery" before proceeding to stage "Demo Value Prop".</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_StageChange_To_Solution</fullName>
@@ -78951,13 +79174,13 @@ ISNULL( Products__c )
   ISPICKVAL((StageName),"Solution"), 
   NOT( 
     OR( 
-      ISPICKVAL(PRIORVALUE(StageName), "Demo/Value Prop"), 
+      ISPICKVAL(PRIORVALUE(StageName), "Demo Value Prop"), 
       ISPICKVAL(PRIORVALUE(StageName), "Solution"),
       ISPICKVAL(PRIORVALUE(StageName), "Contract") 
     ) 
   ) 
 )</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage Demo/Value Prop before proceeding to stage Solution.</errorMessage>
+        <errorMessage>Opportunity must be in stage Demo Value Prop before proceeding to stage Solution.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_Territory_restrictions</fullName>
@@ -79198,9 +79421,12 @@ ISPICKVAL(StageName,"Closed Won"),
     <validationRules>
         <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
         <active>true</active>
-        <errorConditionFormula>RecordType.Id = "012600000009YRT"
- &amp;&amp; 
-NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
+        <errorConditionFormula>AND
+(
+    RecordType.Name = 'YBN - Individual Location',
+    NOT( Account.RecordType.Name = 'Standard'),
+    $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False
+)</errorConditionFormula>
         <errorMessage>You can only attach Individual Location Opportunities to Standard Accounts</errorMessage>
     </validationRules>
     <validationRules>
@@ -79210,14 +79436,12 @@ NOT(Account.RecordType.Id ="012600000009Yy5")</errorConditionFormula>
         <errorConditionFormula>AND(
   ISPICKVAL(PRIORVALUE(StageName), "Closed Won"),
   OR(
-    RecordTypeId = "012600000009YRT",  /* YBN - Individual Location */
-    RecordTypeId = "012600000009YRJ",  /* YBN - Growth Opportunity */
-    RecordTypeId = "012600000009YRE",  /* YBN - Initial Transaction */
-    RecordTypeId = "012600000009YRT"  /* YBN - Renewal */
+    RecordType.Name = "YBN - Individual Location",
+    RecordType.Name = "YBN - Growth Opportunity",
+    RecordType.Name = "YBN - Initial Transaction",
+    RecordType.Name = "YBN - Renewal"
   ),
-  $Profile.Id &lt;&gt; "00e60000000iy7K",  /* YBN System Administrator */
-  $Profile.Id &lt;&gt; "00e60000000nQe9",  /* System Administrators */
-  $Profile.Id &lt;&gt; "00e60000000imvV",  /* Training Executive */
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Closed_Won_Edit_Bypass__c = False,
   NOT($Permission.WBN_SalesOpsPermission), /* WBN Ops Permission Set */ 
   NOT(ISCHANGED(Total_of_Activities__c)), 
   NOT(ISCHANGED(First_Activity_DateTime__c)),
@@ -79239,10 +79463,8 @@ AND(
         <active>true</active>
         <description>YBN Individual Opportunities cannot me moved to Closed Won with a close date prior to the current day.</description>
         <errorConditionFormula>AND( 
-  RecordType.Id = "012600000009YRT", /* YBN - Individual Location */
-  $Profile.Id &lt;&gt; "00e60000000iy7K", /* Profile YBN System Administrator */
-  $Profile.Id &lt;&gt; "00e60000000nQe9", /*  System Administrators  */
-  $Profile.Id &lt;&gt; "00e60000000imvV", /* Training Executive */
+  RecordType.Name = "YBN - Individual Location",
+  $Setup.Validation_Rule_Permissions__c.Opportunity_Prior_Date_Bypass__c = False,
   NOT($Permission.WBN_SalesOpsPermission) /* WBN Sales Ops */ , 
   ispickval(StageName ,"Closed Won"),  
   CloseDate &lt;  TODAY(),

@@ -1,4 +1,4 @@
-<apex:page standardController="Account" extensions="LocalHLPanelController" showHeader="true" showChat="false" sidebar="false">
+<apex:page standardController="Account" extensions="LocalHLPanelController" showHeader="true" showChat="false" sidebar="false" cache="false">
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <apex:stylesheet value="{!URLFOR($Resource.SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
 
@@ -138,9 +138,16 @@ Account.Product_Type_Transactional__c}</div></td></tr>
   
   <div class="slds-float--left" style="width:15%; padding-right:10px;">
     <p> <div class="slds-text-body--small"><strong>Client Information</strong></div>
-        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/dashboard/home?clientId={!Account.Client_ID__c}" 
-
-target="_blank">View Client Dashboard</a></div></apex:outputText>
+        <apex:outputText rendered="{!Account.Client_Type__c == 'YBN'}">
+          <div class="slds-text-body--small">
+            <a href="https://dashboard.web.com/dashboard/leadstream?clientId={!Account.Client_ID__c}" target="_blank">View Client Dashboard</a>
+          </div>
+        </apex:outputText>
+        <apex:outputText rendered="{!Account.Client_Type__c != 'YBN'}">
+          <div class="slds-text-body--small">
+            <a href="http://live.yodle.com/app/dashboard/home?clientId={!Account.Client_ID__c}" target="_blank">View Client Dashboard</a>
+          </div>
+        </apex:outputText>
         <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/clientconfig/home/clientsummary?clientId={!
 
 Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div></apex:outputText>

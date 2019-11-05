@@ -1,3 +1,10 @@
+/*********************************************************************************
+Modification 9.24.2019 ERoss: 
+
+Commented out code line: Set<String> ybnTouchplanClientGroup = new Set<String>{'Hand & Stone - Master', 'Senior Helpers', 'Maaco'}; 
+Removed all references to that Set<String> list which limited to Accounts in the list for WBN Touch Plans
+***********************************************************************************/
+
 trigger AccountTrigger on Account (before insert, after insert, before update, after update, after delete) {
     if(Test.isRunningTest()){
         TestCustomSettingInitializer testInit = new TestCustomSettingInitializer();
@@ -5,7 +12,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
 
     Set<String> syncToMarketoSponsoredStatusSet = new Set<String>{'LIVE', 'PROVISIONING'};
     Set<String> syncToMarketoClientTypeSet = new Set<String>{'Local', 'Lighthouse'};
-    Set<String> ybnTouchplanClientGroup = new Set<String>{'Hand & Stone - Master', 'Senior Helpers', 'Maaco'};
+    // Set<String> ybnTouchplanClientGroup = new Set<String>{'Hand & Stone - Master', 'Senior Helpers', 'Maaco'};
     Set<String> ybnTouchplanSupportedServiceLevels = new Set<String>{'Service Level A', 'Service Level A+', 'Service Level B', 'Service Level C'};
 
     List<Account> syncToMarketoWithId = new List<Account>();
@@ -147,7 +154,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
                 accountIdForChangedNextTPDateSet.add(record.Id);
             }
 
-            if(record.Sync_to_Marketo__c && String.isNotBlank(record.Email_for_Touchplan__c) && String.isNotBlank(record.Marketo_ID__c) && String.isNotBlank(record.YBN_Relationship__c) && ybnTouchplanClientGroup.contains(record.YBN_Relationship__c) && String.isNotBlank(record.Client_Type__c) && wbnClientTypeSet.contains(record.Client_Type__c) && wbnRecordTypeIdSet.contains(record.RecordTypeId) && (String.isBlank(record.Multi_Location_Owner_Primary_CID__c) || record.Primary_Multi_Location_Owner_For_TP__c) && ybnTouchplanSupportedServiceLevels.contains(record.Individual_Location_Service_Level__c)){
+            if(record.Sync_to_Marketo__c && String.isNotBlank(record.Email_for_Touchplan__c) && String.isNotBlank(record.Marketo_ID__c) && String.isNotBlank(record.YBN_Relationship__c) && /* ybnTouchplanClientGroup.contains(record.YBN_Relationship__c) &&*/ String.isNotBlank(record.Client_Type__c) && wbnClientTypeSet.contains(record.Client_Type__c) && wbnRecordTypeIdSet.contains(record.RecordTypeId) && (String.isBlank(record.Multi_Location_Owner_Primary_CID__c) || record.Primary_Multi_Location_Owner_For_TP__c) && ybnTouchplanSupportedServiceLevels.contains(record.Individual_Location_Service_Level__c)){
                 if(record.Email_for_Touchplan__c != oldRecord.Email_for_Touchplan__c && (String.isBlank(record.Status__c) || !record.Status__c.equalsIgnoreCase('OFF'))){ // Only will do the validate on Email for Touchplan change because that can't be changed by the sync. It has to be done by a person. Other criteria can be changed by sync and we don't want to error out on syncs.
                     emailForTouchplanAccountIdMap.put(record.Email_for_Touchplan__c, record.Id);
                 }
@@ -176,7 +183,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
         }
 
         if(!emailForTouchplanAccountIdMap.isEmpty()){
-            for(Account record : [select Id, Email_for_Touchplan__c from Account where Id not in :emailForTouchplanAccountIdMap.values() and Email_for_Touchplan__c in: emailForTouchplanAccountIdMap.keySet() and Status__c != 'OFF' and Sync_to_Marketo__c = true and YBN_Relationship__c in: ybnTouchplanClientGroup and Client_Type__c in :wbnClientTypeSet and RecordTypeId in :wbnRecordTypeIdSet and Individual_Location_Service_Level__c in :ybnTouchplanSupportedServiceLevels and (Multi_Location_Owner_Primary_CID__c = '' or Primary_Multi_Location_Owner_For_TP__c = true)]){
+            for(Account record : [select Id, Email_for_Touchplan__c from Account where Id not in :emailForTouchplanAccountIdMap.values() and Email_for_Touchplan__c in: emailForTouchplanAccountIdMap.keySet() and Status__c != 'OFF' and Sync_to_Marketo__c = true /*and YBN_Relationship__c in: ybnTouchplanClientGroup*/ and Client_Type__c in :wbnClientTypeSet and RecordTypeId in :wbnRecordTypeIdSet and Individual_Location_Service_Level__c in :ybnTouchplanSupportedServiceLevels and (Multi_Location_Owner_Primary_CID__c = '' or Primary_Multi_Location_Owner_For_TP__c = true)]){
                 trigger.newMap.get(emailForTouchplanAccountIdMap.get(record.Email_for_Touchplan__c)).Email_for_Touchplan__c.addError(Label.EmailForTouchplanDuplicateError);
             }
         }
@@ -269,7 +276,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
                             if(record.get(sfdcAccountMarketoFieldMap) != oldRecord.get(sfdcAccountMarketoFieldMap)){
                                 syncToMarketoWithId.add(record);
 
-                                if(String.isNotBlank(record.Marketo_ID_For_Touchplan__c) && !record.Marketo_ID__c.equalsIgnoreCase(record.Marketo_ID_For_Touchplan__c) && String.isNotBlank(record.YBN_Relationship__c) && ybnTouchplanClientGroup.contains(record.YBN_Relationship__c)){
+                                if(String.isNotBlank(record.Marketo_ID_For_Touchplan__c) && !record.Marketo_ID__c.equalsIgnoreCase(record.Marketo_ID_For_Touchplan__c) && String.isNotBlank(record.YBN_Relationship__c) /*&& ybnTouchplanClientGroup.contains(record.YBN_Relationship__c)*/){
                                     syncToMarketoWithIdForTouchplan.add(record);
                                 }
 
@@ -303,7 +310,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
 
 
                 // FOR WBN EMAIL FOR TOUCHPLAN
-                if(record.Sync_to_Marketo__c && String.isNotBlank(record.Status__c) && !record.Status__c.equalsIgnoreCase('OFF') && String.isNotBlank(record.Marketo_ID__c) && String.isNotBlank(record.YBN_Relationship__c) && ybnTouchplanClientGroup.contains(record.YBN_Relationship__c) && wbnClientTypeSet.contains(record.Client_Type__c) && wbnRecordTypeIdSet.contains(record.RecordTypeId) && (String.isBlank(record.Multi_Location_Owner_Primary_CID__c) || record.Primary_Multi_Location_Owner_For_TP__c) && ybnTouchplanSupportedServiceLevels.contains(record.Individual_Location_Service_Level__c)){
+                if(record.Sync_to_Marketo__c && String.isNotBlank(record.Status__c) && !record.Status__c.equalsIgnoreCase('OFF') && String.isNotBlank(record.Marketo_ID__c) && String.isNotBlank(record.YBN_Relationship__c) /*&& ybnTouchplanClientGroup.contains(record.YBN_Relationship__c)*/ && wbnClientTypeSet.contains(record.Client_Type__c) && wbnRecordTypeIdSet.contains(record.RecordTypeId) && (String.isBlank(record.Multi_Location_Owner_Primary_CID__c) || record.Primary_Multi_Location_Owner_For_TP__c) && ybnTouchplanSupportedServiceLevels.contains(record.Individual_Location_Service_Level__c)){
                     if(String.isBlank(record.Marketo_ID_for_Touchplan__c) && !record.Email__c.equalsIgnoreCase(record.Email_for_Touchplan__c) && String.isNotBlank(record.Email_for_Touchplan__c)){
                         syncToMarketoWithEmailForTouchplan.add(record);
                     }

@@ -1,39 +1,73 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
         <fullName>ContentSize</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FileExtension</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>FileType</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsAssetEnabled</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Language</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SharingOption</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SharingPrivacy</fullName>
         <trackHistory>true</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TagCsv</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Title</fullName>
         <trackHistory>false</trackHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>dca_cnvrt_file__Original_Record_ID__c</fullName>
         <deprecated>false</deprecated>
         <description>The original Note or Attachment ID this ContentVersion was converted from. For history tracking purpose and used in conversion process to know the parent record to link the new content version to.</description>
@@ -45,7 +79,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>dca_cnvrt_file__Original_Record_Owner_ID__c</fullName>
         <deprecated>false</deprecated>
         <description>The owner ID of the original Note or Attachment that was converted.</description>
@@ -57,7 +92,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>dca_cnvrt_file__Original_Record_Parent_ID__c</fullName>
         <deprecated>false</deprecated>
         <description>The original Note or Attachment parent ID this ContentVersion was converted from. For history tracking purpose and used in conversion process to know the parent record to link the new content version to.</description>
@@ -69,7 +105,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>dca_cnvrt_note__Original_Record_ID__c</fullName>
         <deprecated>false</deprecated>
         <description>The original Note or Attachment ID this ContentVersion was converted from. For history tracking purpose and used in conversion process to know the parent record to link the new content version to.</description>
@@ -81,7 +118,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>dca_cnvrt_note__Original_Record_Owner_ID__c</fullName>
         <deprecated>false</deprecated>
         <description>The owner ID of the original Note or Attachment that was converted.</description>
@@ -93,7 +131,8 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>dca_cnvrt_note__Original_Record_Parent_ID__c</fullName>
         <deprecated>false</deprecated>
         <description>The original Note or Attachment parent ID this ContentVersion was converted from. For history tracking purpose and used in conversion process to know the parent record to link the new content version to.</description>
@@ -105,10 +144,14 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <searchLayouts>
         <searchResultsAdditionalFields>VERSION.TITLE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>VERSION.CONTENT_SIZE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>VERSION.FILE_EXTENSION</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>VERSION.LAST_UPDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>VERSION.OWNER</searchResultsAdditionalFields>
-    </searchLayouts></CustomObject>
+    </searchLayouts>
+</CustomObject>

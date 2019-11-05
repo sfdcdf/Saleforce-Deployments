@@ -1,5 +1,29 @@
-trigger OpportunityTrigger on Opportunity (after update) {
-	if(trigger.isAfter && trigger.isUpdate){
+/*******************************************************************************************
+ * Modification Log:
+ * 
+ * Developer Name: Mahesh Bogila
+ * Date : 5/29/2019
+ * Jira :https://jira.registeredsite.com/browse/TEAM-36749
+
+ * ****************************************************************************************/
+
+
+trigger OpportunityTrigger on Opportunity (before Insert, Before Update, after update) {
+    if(trigger.isBefore) // Modification Of Mahesh start here for https://jira.registeredsite.com/browse/TEAM-36749
+    {
+        Map<ID, Schema.RecordTypeInfo> rtMap = Schema.SObjectType.Opportunity.getRecordTypeInfosById();
+        for(Opportunity TempOppty: Trigger.new)
+        {
+        if(TempOppty.RecordTypeId!= null)
+        {
+            TempOppty.RecordType_Name__c = rtMap.get(TempOppty.RecordTypeId).getName();
+            System.debug('++++++Record type' +TempOppty.RecordType_Name__c);
+        }
+          
+        }
+    } // Modification of Mahesh Ended here for https://jira.registeredsite.com/browse/TEAM-36749
+    
+    if(trigger.isAfter && trigger.isUpdate){
 		Id partnerCppChildAcctRecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Partner - CPP Child Account').getRecordTypeId();
 		Set<Id> verifyCertificationAcctIdSet = new Set<Id>();
 		Set<Id> opportunityIdRecentlyClosedSet = new Set<Id>();

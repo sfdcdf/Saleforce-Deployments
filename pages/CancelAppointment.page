@@ -1,0 +1,32 @@
+<apex:page controller="icCancelAppointmentController" showHeader="false" sideBar="false">
+    <style type="text/css">
+        h1 {font-family: "Open Sans"; font-size: xx-large; text-align: center; color: rgb(0,61,165)}
+        .regularText {font-family: "Open Sans"; font-size: medium; text-align: center; margin-left:auto; margin-right:auto; display:block;}
+
+        .data2Col.first>img{
+            /*position:relative;*/
+            /*left: calc( 50% - 460px);*/
+            margin-left:auto; margin-right:auto; display:block;
+        }
+        .data2Col.last>input{
+            margin-left:auto; margin-right:auto; display:block;
+        }
+
+    </style>
+    <div style="text-align: center; width: 100%">
+            <h1>Appointment cancellation</h1>
+
+        <apex:form id="form1" style="width:100%; text-align:center;">
+
+            <apex:pageMessages />
+            <apex:pageBlock >
+                <apex:pageBlockSection columns="1">
+                    <apex:image id="webdotcomforenterpriselogo" value="{!$Resource.WebDotComForEnterpriseLogoPng}"/>
+                    <apex:outputLabel value="{!$Label.Cancel_Appointment_Page_Text}" styleClass="regularText"/>
+                    <apex:commandButton action="{!cancelCaseById}" value="{!$Label.Cancel_Appointment_Button_Label}" styleClass="regularText"/>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+
+        </apex:form>
+    </div>
+</apex:page>
