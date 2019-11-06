@@ -19,7 +19,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND 4)</booleanFilter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4)) AND 5</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
             <isUnlocked>true</isUnlocked>
@@ -33,16 +33,22 @@
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER_ROLE</column>
+            <column>ORIGIN</column>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Lighthouse Inbound,Lighthouse CSC</value>
+            <operator>notContain</operator>
+            <value>@lighthousepmg.com,web,YodleGoldService@yodle.com,chat</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>IBC</value>
+            <operator>notContain</operator>
+            <value>OBC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

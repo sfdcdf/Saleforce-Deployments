@@ -25,19 +25,22 @@
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Donut</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Open in LH Support Queue</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/LH_Open_Cases_ALL</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
+            <legendPosition>Bottom</legendPosition>
+            <report>Lighthouse/SHANNON_Inbound_Daily_Call_Drivers</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>false</showTotal>
+            <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Open in LH Support Queue</title>
+            <title>Daily Call Drivers</title>
+            <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -49,9 +52,10 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Lighthouse/Case_Submission_Feedback_MTD</report>
+            <report>Lighthouse/SHANNON_Inbound_Daily_Call_Drivers</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Daily Call Drivers</title>
         </components>
     </leftSection>
     <middleSection>
@@ -79,46 +83,14 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Emails Completed Today</header>
+            <header>IBC - Completed MTD</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Lighthouse/LH_Completed_Emails_by_rep</report>
+            <report>Lighthouse/SHANNON_LH_IB_Support_Completed_MTD</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Emails Completed Today</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Donut</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
-            <legendPosition>Bottom</legendPosition>
-            <report>Operations_Report/LH_Inbound_Drivers</report>
-            <showPercentage>false</showPercentage>
-            <showTotal>false</showTotal>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Operations_Report/LH_Inbound_Drivers</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
+            <title>IBC - Completed MTD</title>
         </components>
     </middleSection>
     <rightSection>
@@ -130,14 +102,14 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>IBC - Completed MTD</header>
+            <header>Emails Completed Today</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Lighthouse/SHANNON_LH_IB_Support_Completed_MTD</report>
+            <report>Lighthouse/LH_Completed_Emails_by_rep</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>IBC - Completed MTD</title>
+            <title>Emails Completed Today</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -154,6 +126,34 @@
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>Email - Completed MTD</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties/>
+            <header>Case Submission Feedback</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Lighthouse/Case_Submission_Feedback_MTD</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties/>
+            <header>NPS Surveys</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Lighthouse NPS Surveys</metricLabel>
+            <report>unfiled$public/NPS_Surveys3</report>
+            <showRange>false</showRange>
         </components>
     </rightSection>
     <runningUser>shannon.lang@lighthousepmg.com.ib</runningUser>

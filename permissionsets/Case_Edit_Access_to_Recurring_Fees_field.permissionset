@@ -2,4 +2,9 @@
     <description>Gives Edit access to 'Recurring Fees' field in Charge failure cases</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Case - Edit Access to Recurring Fees field</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Recurring_Fees__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
 </PermissionSet>

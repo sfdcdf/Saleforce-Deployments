@@ -22,8 +22,8 @@
         <criteriaItems>
             <column>ORIGIN</column>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>,support@lighthousepmg.com,customercare@lighthousepmg.com</value>
+            <operator>notContain</operator>
+            <value>@lighthousepmg.com,web,YodleGoldService@yodle.com,chat</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
@@ -38,28 +38,16 @@
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER</column>
+            <column>RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Gina Murphy,Shannon Saunders,Mark Champ,Peyden Edwards,Lynn Tobias,Seata Moji,Holly Macki,Terrance Jackson,Nikenya Micou,Prisma Hernandez,Alisha Herzberg,Annie Benedict,Joseph Janisch,rebekah osteros,jamie wood,douglas smith,David Meldrum,mary tillery,Shannon lang</value>
+            <operator>equals</operator>
+            <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Lighthouse Inbound</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>RECORDTYPE</column>
-            <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Case.O_Account_Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>SUBJECT</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>IBC</value>
+            <value>Salesforce Automation,SFDC Sync</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

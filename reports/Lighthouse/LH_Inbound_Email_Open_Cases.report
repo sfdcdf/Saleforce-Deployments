@@ -18,6 +18,9 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
@@ -38,12 +41,6 @@
             <value>New Inbound Email,In Progress,New,Re-Opened,Client Problem,Escalated,Awaiting Customer Response,Awaiting Case Work Completion,Internal Review,In Progress - No Attempts,In Progress - 1 Attempt,In Progress - 2 Attempts,In Progress - 3 Attempts,In Progress - 3+ Attempts,Work Completed,Bug Reported,All Work Completed – Contact Client,Awaiting Internal Response</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Gina Murphy,Shannon Saunders,Mark Champ,Peyden Edwards,Lynn Tobias,Seata Moji,Holly Macki,Terrance Jackson,Nikenya Micou,Prisma Hernandez,Alisha Herzberg,Annie Benedict,Joseph Janisch,rebekah osteros,jamie wood,douglas smith,David Meldrum,mary tillery,Shannon lang</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
@@ -60,6 +57,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>TORCHx</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ann Schwertz,Mary Tillery,Kurt Buehler,Christopher Lahay,Chris Lahay,Steve Johnson,Adam Chandler,Michael Travieso,Mark Champ,Shannon Saunders,Gina Murphy,Rebekah Osteros,Joe Janisch,Joseph Janisch,Alisha Herzberg,Peyden Edwards,Lynn Tobias,Annie Benedict,Shannon Lang</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

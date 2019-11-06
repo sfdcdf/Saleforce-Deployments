@@ -20,6 +20,16 @@
         <protected>false</protected>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>New_Inbound_Email</fullName>
+        <field>Status</field>
+        <literalValue>New Inbound Email</literalValue>
+        <name>New Inbound Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
     <rules>
         <fullName>Email to Case - Lighthouse Threaded Email Moves</fullName>
         <actions>
@@ -88,5 +98,17 @@
         </criteriaItems>
         <description>It's a general workflow</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Emails - New Inbound Email if Awaiting Response</fullName>
+        <actions>
+            <name>New_Inbound_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>6/15/16 - Included additional criteria for YBN case types.
+7/6 added in Bug Reported</description>
+        <formula>AND(   ISPICKVAL(Status, "New"),    OR(     AND(       Subject &lt;&gt; "Change Order",       OR( ISPICKVAL(Parent.Status, "Bug Reported"),         ISPICKVAL(Parent.Status, "Awaiting Internal Response"),         ISPICKVAL(Parent.Status, "Awaiting Customer Response")       )     ),     AND(       OR(         Parent.RecordType.Name = "YBN Outbound Touch Point",         Parent.RecordType.Name = "YBN Inbound Inquiry"       ),       NOT(ISPICKVAL(Parent.Status, "New")),       Parent.IsClosed = False     )   ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

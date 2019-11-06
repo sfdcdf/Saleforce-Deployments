@@ -4971,15 +4971,15 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
         <externalId>false</externalId>
         <formula>IF(
  ISPICKVAL(Package_Addition__c , "Pro Pack"),
-"Pro Pack consists of Lube Sticker Pro, Message Manager and Report Pro.  Lube Sticker Pro schedules clientsâ€™ appointments in advance.  Message Manager sends appointment reminders.  Report Pro is used to create customized invoices and reports.",
+"Pro Pack consists of Lube Sticker Pro, Message Manager and Report Pro.  Lube Sticker Pro schedules client's appointments in advance.  Message Manager sends appointment reminders.  Report Pro is used to create customized invoices and reports.",
 
 IF(
  ISPICKVAL(Package_Addition__c , "Welcome Station"),
-"Welcome Station Kiosk is a check-in kiosk that allows a client to check in and input and review certain information about the client, the clientâ€™s vehicle and various available services.",
+"Welcome Station Kiosk is a check-in kiosk that allows a client to check in and input and review certain information about the client, the client's vehicle and various available services.",
 
 IF(
  ISPICKVAL(Package_Addition__c , "Pro Pack + Welcome Station"),
-"Pro Pack consists of Lube Sticker Pro, Message Manager and Report Pro.  Lube Sticker Pro schedules clientsâ€™ appointments in advance.  Message Manager sends appointment reminders.  Report Pro is used to create customized invoices and reports.  The Welcome Station Kiosk is a check-in kiosk that allows a client to check in and input and review certain information about the client, the clientâ€™s vehicle and various available services.",
+"Pro Pack consists of Lube Sticker Pro, Message Manager and Report Pro.  Lube Sticker Pro schedules client's appointments in advance.  Message Manager sends appointment reminders.  Report Pro is used to create customized invoices and reports.  The Welcome Station Kiosk is a check-in kiosk that allows a client to check in and input and review certain information about the client, the client's vehicle and various available services.",
 
 IF(
  ISPICKVAL(Package_Addition__c , "Mobile Manager"),
@@ -5083,19 +5083,9 @@ IF(
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Donâ€™t Have Authorization</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t Have Authorization</label>
-                </value>
-                <value>
                     <fullName>Too Expensive</fullName>
                     <default>false</default>
                     <label>Too Expensive</label>
-                </value>
-                <value>
-                    <fullName>Donâ€™t See Value</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t See Value</label>
                 </value>
                 <value>
                     <fullName>Office Handles In-house</fullName>
@@ -5107,18 +5097,20 @@ IF(
                     <default>false</default>
                     <label>Other</label>
                 </value>
+                <value>
+                    <fullName>Don’t Have Authorization</fullName>
+                    <default>false</default>
+                    <label>Don’t Have Authorization</label>
+                </value>
+                <value>
+                    <fullName>Don’t See Value</fullName>
+                    <default>false</default>
+                    <label>Don’t See Value</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
-                <valueName>Donâ€™t Have Authorization</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
                 <valueName>Too Expensive</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
-                <valueName>Donâ€™t See Value</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>No Coming Due Postcards</controllingFieldValue>
@@ -6199,6 +6191,14 @@ IF(Office_Location__c = "United States",2.00,
                 <controllingFieldValue>No</controllingFieldValue>
                 <valueName>Other</valueName>
             </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No</controllingFieldValue>
+                <valueName>Don’t See Value</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No</controllingFieldValue>
+                <valueName>Don’t Have Authorization</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -6660,19 +6660,9 @@ INCLUDES( What_Treatment_Plans_were_Activated__c ,"Postcards"),"http://marketing
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Donâ€™t Have Authorization</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t Have Authorization</label>
-                </value>
-                <value>
                     <fullName>Too Expensive</fullName>
                     <default>false</default>
                     <label>Too Expensive</label>
-                </value>
-                <value>
-                    <fullName>Donâ€™t See Value</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t See Value</label>
                 </value>
                 <value>
                     <fullName>Office Handles In-house</fullName>
@@ -6684,18 +6674,20 @@ INCLUDES( What_Treatment_Plans_were_Activated__c ,"Postcards"),"http://marketing
                     <default>false</default>
                     <label>Other</label>
                 </value>
+                <value>
+                    <fullName>Don’t Have Authorization</fullName>
+                    <default>false</default>
+                    <label>Don’t Have Authorization</label>
+                </value>
+                <value>
+                    <fullName>Don’t See Value</fullName>
+                    <default>false</default>
+                    <label>Don’t See Value</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Disable ALL</controllingFieldValue>
-                <valueName>Donâ€™t Have Authorization</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Disable ALL</controllingFieldValue>
                 <valueName>Too Expensive</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Disable ALL</controllingFieldValue>
-                <valueName>Donâ€™t See Value</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Disable ALL</controllingFieldValue>
@@ -6719,7 +6711,7 @@ INCLUDES(Disable_these_PC_s_if_applicable__c,"6 MO (Time Based)")),
 
 IF(
 ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Default Setup (Disable for Customers with email)"),
-"Set to send to vehicle owners without an email on file that did not schedule their vehicleâ€™s next maintenance appointment",
+"Set to send to vehicle owners without an email on file that did not schedule their vehicle's next maintenance appointment",
 
 IF(
 ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
@@ -7666,6 +7658,14 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
             <valueSettings>
                 <controllingFieldValue>No</controllingFieldValue>
                 <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No</controllingFieldValue>
+                <valueName>Don’t See Value</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No</controllingFieldValue>
+                <valueName>Don’t Have Authorization</valueName>
             </valueSettings>
         </valueSet>
     </fields>
@@ -10727,19 +10727,9 @@ ispickval( Activated_Reactivation_Letters__c , "Yes"),
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Donâ€™t Have Authorization</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t Have Authorization</label>
-                </value>
-                <value>
                     <fullName>Too Expensive</fullName>
                     <default>false</default>
                     <label>Too Expensive</label>
-                </value>
-                <value>
-                    <fullName>Donâ€™t See Value</fullName>
-                    <default>false</default>
-                    <label>Donâ€™t See Value</label>
                 </value>
                 <value>
                     <fullName>Office Handles In-house</fullName>
@@ -10751,18 +10741,20 @@ ispickval( Activated_Reactivation_Letters__c , "Yes"),
                     <default>false</default>
                     <label>Other</label>
                 </value>
+                <value>
+                    <fullName>Don’t Have Authorization</fullName>
+                    <default>false</default>
+                    <label>Don’t Have Authorization</label>
+                </value>
+                <value>
+                    <fullName>Don’t See Value</fullName>
+                    <default>false</default>
+                    <label>Don’t See Value</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Disable ALL</controllingFieldValue>
-                <valueName>Donâ€™t Have Authorization</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Disable ALL</controllingFieldValue>
                 <valueName>Too Expensive</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Disable ALL</controllingFieldValue>
-                <valueName>Donâ€™t See Value</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Disable ALL</controllingFieldValue>
@@ -16401,11 +16393,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16705,6 +16697,14 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Don%E2%80%99t See Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -16757,11 +16757,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17146,6 +17146,14 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
+            <values>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Don%E2%80%99t See Value</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -18503,11 +18511,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21218,11 +21226,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21574,11 +21582,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -23320,11 +23328,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26130,11 +26138,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26486,11 +26494,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28224,11 +28232,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30986,11 +30994,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31290,6 +31298,14 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Letters_Decline_Reason__c</picklist>
             <values>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Don%E2%80%99t See Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
             </values>
@@ -31342,11 +31358,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31731,6 +31747,14 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         </picklistValues>
         <picklistValues>
             <picklist>OBC_Decline_Reason__c</picklist>
+            <values>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Don%E2%80%99t See Value</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Office Handles In-house</fullName>
                 <default>false</default>
@@ -33080,11 +33104,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35842,11 +35866,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -36198,11 +36222,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -37936,11 +37960,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -40698,11 +40722,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -41054,11 +41078,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -42800,11 +42824,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -45546,11 +45570,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -45902,11 +45926,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -47648,11 +47672,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -50458,11 +50482,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Follow_Up_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -50814,11 +50838,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Maintenance_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -52560,11 +52584,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Rec_Svc_PC_Decline_Reason__c</picklist>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t Have Authorization</fullName>
+                <fullName>Don%E2%80%99t Have Authorization</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Donâ%E2%82%AC%E2%84%A2t See Value</fullName>
+                <fullName>Don%E2%80%99t See Value</fullName>
                 <default>false</default>
             </values>
             <values>
