@@ -944,7 +944,11 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-    
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -35820,9 +35824,6 @@
         <field>Quality_Case__c.Segment__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>
@@ -36023,7 +36024,6 @@
         <field>Account.WBN_PPC_Restricted_Relationship__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Initial_Live_Date__c</field>
@@ -39506,7 +39506,6 @@
         <object>zzContract__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -39561,7 +39560,6 @@
         <object>SFDCToCTSAsynchRequest__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

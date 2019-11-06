@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    
     <fields>
         <label><!-- Annual Product Value --></label>
         <name>AnnualProductValue__c</name>
@@ -108,6 +107,14 @@
         <help><!-- If Close date is after 4/1 - check box and use 2018 commission --></help>
         <label><!-- WBN 2018 Commission --></label>
         <name>WBN_2018_Commission__c</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Quantity/Locations/Terms</value>
+        </caseValues>
+        <name>quantity_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
     </fields>
     <layouts>
         <layout>Local Opportunity Product Layout</layout>

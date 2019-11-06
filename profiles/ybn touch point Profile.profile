@@ -148,7 +148,6 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    
     <applicationVisibilities>
         <application>standard__Service</application>
         <default>false</default>
@@ -156,6 +155,11 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>

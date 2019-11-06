@@ -944,7 +944,11 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-    
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -33770,9 +33774,6 @@
         <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>
@@ -33968,7 +33969,6 @@
         <field>Account.WBN_PPC_Restricted_Relationship__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Initial_Live_Date__c</field>
@@ -34054,7 +34054,6 @@
         <field>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.WBN_Last_Opp_Sold_By__c</field>
@@ -37411,7 +37410,6 @@
         <object>Validation_Rule_Permissions__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -37449,14 +37447,14 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>API_Integration_Setting__mdt</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+    <object>API_Integration_Setting__mdt</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -37503,14 +37501,14 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>CTSObjecFieldsTriggerMap__mdt</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+    <object>CTSObjecFieldsTriggerMap__mdt</object>
+    <allowCreate>false</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>false</allowEdit>
+    <allowRead>false</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <viewAllRecords>false</viewAllRecords>
+</objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -37529,7 +37527,6 @@
         <object>SFDCToCTSAsynchRequest__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

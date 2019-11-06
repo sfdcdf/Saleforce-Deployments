@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>CPQ Integration User</userLicense>
-    <classAccesses>
+    <classAccesses xmlns="http://soap.sforce.com/2006/04/metadata">
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <applicationVisibilities xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
         <application>Clicktools</application>
         <default>false</default>
         <visible>false</visible>
@@ -108,7 +108,11 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-    
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
@@ -30644,9 +30648,6 @@
         <field>Quality_Case__c.Segment__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>

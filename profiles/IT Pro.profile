@@ -208,7 +208,11 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
@@ -29939,9 +29943,6 @@
         <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>
@@ -30082,7 +30083,6 @@
         <field>Account.Current_Monthly_Revenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Initial_Live_Date__c</field>
@@ -30148,7 +30148,6 @@
         <field>Best_Practice_Evaluation__c.Performance_Analysis_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Cancellation_Request__c.Approved__c</field>

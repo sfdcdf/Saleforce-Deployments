@@ -1372,12 +1372,10 @@
         <apexClass>CTSSyncService</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
     <classAccesses>
         <apexClass>CTSSyncServicePartial</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
     <classAccesses>
         <apexClass>CTSSyncServiceTest</apexClass>
         <enabled>true</enabled>
@@ -1406,16 +1404,6 @@
         <apexClass>CTSAsyncRequestCreate</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <classAccesses>
         <apexClass>CTSSyncServiceTestPartial</apexClass>
         <enabled>true</enabled>
@@ -1905,7 +1893,11 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-    
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -37571,9 +37563,6 @@
         <field>Quality_Case__c.Segment__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Notification_Log__c.Notification_Sent_Date__c</field>
@@ -37784,7 +37773,6 @@
         <field>Account.WBN_PPC_Restricted_Relationship__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Initial_Live_Date__c</field>
