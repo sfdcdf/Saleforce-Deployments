@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c:SUM / Customer_Surveys__c.Issue_Survey_CS_Satisfaction_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IRS AVG: Overall CS Satisfaction</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Issue_Survey__c:SUM / Customer_Surveys__c.CS_understood_your_issue_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IRS Avg: CS Understood Issue</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Issue_Survey_ability_to_understand_CS__c:SUM / Customer_Surveys__c.Issue_Ability_to_understand_CS_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IRS Avg: Ability To Understand CS</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Issue_Survey_Wait_time_for_resolution__c:SUM / Customer_Surveys__c.Issue_Wait_time_for_resolution_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IRS AVG: Wait Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Customer_Surveys__c.Issue_Survey_how_courteous_CS_rep_was__c:SUM / Customer_Surveys__c.Issue_Survey_How_courteous_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IRS AVG: CS Courteous</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_ability_to_understand_CS__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_knowledge_of_CS_rep__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_how_courteous_CS_rep_was__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_Wait_time_for_resolution__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_Was_your_issue_resolved__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_What_can_we_do_to_improve__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Issue_Survey_Details_on_issue__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Anything_to_share_about_your_experience__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Issue Resolution Survey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Account_Product_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Leads</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Issue Resolution Survey - LBW</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

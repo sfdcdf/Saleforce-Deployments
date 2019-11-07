@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Interaction_Owner__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Segment__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Dentist</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Customer Survey - LH</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Customer_Surveys__c.Response_Date__c</dateColumn>
+        <endDate>2017-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-09-01</startDate>
+    </timeFrameFilter>
+</Report>

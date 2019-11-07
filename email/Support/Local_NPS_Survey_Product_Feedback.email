@@ -1,0 +1,26 @@
+This customer provided comments in their Local Survey Response that included product feedback. The survey code and ALL comments from their response are included below depending on the Survey submitted. If certain comments are blank below, it is due to the customer leaving those fields blank. 
+
+
+Survey: {!Customer_Surveys__c.RecordType}
+Survey Code: {!Customer_Surveys__c.Survey_Code__c}
+
+We would greatly appreciate more detail on your likelihood to recommend Yodle:
+{!Customer_Surveys__c.Detail_on_your_likelihood_to_recomm__c}
+
+Please briefly describe the problem you encountered:
+{!Customer_Surveys__c.Describe_the_problem_you_encountered__c}
+
+Is there anything else you would like to share about your experience with Yodle?:
+{!Customer_Surveys__c.Anything_to_share_about_your_experience__c}
+
+We are looking for feedback on website design. What would make your overall satisfaction a 10?
+{!Customer_Surveys__c.Make_overall_website_sat_10__c}
+
+CS notes based on follow up communication with client:
+{!Customer_Surveys__c.Communication_Notes__c}
+
+Client Feedback about Contacts feature from CSC Survey:
+ {!Customer_Surveys__c.CSC_Contacts__c}
+
+Client Feedback about their Experience from CSC Survey:
+{!Customer_Surveys__c.CSC_Experience_Feedback__c}

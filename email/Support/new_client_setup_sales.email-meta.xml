@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NCS Case Escalation Notification to Owner</name>
+    <style>none</style>
+    <subject>NCS - Client ID {!Account.Client_ID__c} - is escalated as {!Case.Sub_Status__c}!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

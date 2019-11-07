@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Inbound Sales</profile>
+            <profile>Product</profile>
+        </profiles>
+    </assignments>
+    <autoGreeting>Hi, thanks for contacting Yodle. My name is {!User_FirstName}. How can I help you today?</autoGreeting>
+    <capacity>3</capacity>
+    <criticalWaitTime>30</criticalWaitTime>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>false</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>true</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>false</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>false</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>inside_sales_chat_config</label>
+    <supervisorSkills>
+        <skill>inside_sales_test</skill>
+    </supervisorSkills>
+    <transferableSkills>
+        <skill>Chat_Skills</skill>
+        <skill>inside_sales_test</skill>
+    </transferableSkills>
+</LiveChatAgentConfig>

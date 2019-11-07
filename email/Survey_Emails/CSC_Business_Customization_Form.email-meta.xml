@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CSC Business Customization Form</name>
+    <style>none</style>
+    <subject>Customize Your Yodle Marketing</subject>
+    <textOnly>Hi {!Account.Client_First_Name__c},
+
+We’ve already started collecting information about your business but want to learn more.
+
+Please click the link below to provide us with some basic information prior to your scheduled setup call.  Answering these questions will allow us to further customize your account and ensure our program is off to a great start.
+http://www.clicktools.com/survey?iv=1g2vhhhoeq8bc&amp;q1={!Account.Id}&amp;q2={!Case.Id}
+
+
+Thank you,
+Yodle Customer Care
+
+
+©{!User.Today_s_Year__c} by Yodle Web.com, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

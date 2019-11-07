@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>Account$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account$Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$Closed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Requests__r$CreatedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Product_Type_Transactional__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>lighthouse field service</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LHFS Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cancellation_Requests_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$CreatedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

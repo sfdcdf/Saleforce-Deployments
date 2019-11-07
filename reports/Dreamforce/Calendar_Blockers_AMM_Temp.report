@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$ActivityTimeOnly</field>
+    </columns>
+    <columns>
+        <field>Activity$DurationInMinutes</field>
+    </columns>
+    <columns>
+        <field>Activity$ShowAs</field>
+    </columns>
+    <columns>
+        <field>Activity$What</field>
+    </columns>
+    <columns>
+        <field>Activity$RecordType</field>
+    </columns>
+    <description>amm temp - delete after TEAM-10449</description>
+    <filter>
+        <criteriaItems>
+            <column>Activity$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>reagan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$ShowAs</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>2</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity$ActivityDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Calendar Blockers - AMM Temp</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Activity$ActivityTimeOnly</dateColumn>
+        <interval>INTERVAL_NEXT60</interval>
+    </timeFrameFilter>
+</Report>

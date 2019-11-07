@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Created__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Owned_Co_Managed__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Bing_Listing_Created__c</field>
+    </columns>
+    <description>Pulls all MICs for Dimensional Dental and provided Google and Bing Listing statuses</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Parent</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Dimensional Dental</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Eastern Dental</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Dimensional Dental Listing Status Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$Open_Date__c</dateColumn>
+        <endDate>2017-04-06</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-03-01</startDate>
+    </timeFrameFilter>
+</Report>

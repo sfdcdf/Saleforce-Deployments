@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Berry Red Segment Email</name>
+    <style>none</style>
+    <subject>{!Account.Name}, 18-Day Extended Segment</subject>
+    <textOnly>Hello,
+
+Thank you for your recent submission for {!Account.Name}.
+
+This account requires custom content and campaign creation, so it is categorized as a red segment.  It will be ready to launch within 18 business days and you will receive the 72 hour preview email when the content is available for review.
+
+Thank you,
+
+Berry Support</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

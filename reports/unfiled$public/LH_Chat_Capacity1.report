@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LiveAgentSession$Name</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$TimeAtCapacity</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$CreatedBy</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>LiveAgentSession$TimeAtCapacity</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveAgentSession$Agent</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bea Peikert,Brooke Grossman,Christopher Baker,Joe Janisch,Jordan Sanchez,Julia Correa,Laura Vitro,Lauren Fischer,Lynn Tobias,Mark Champ,Rolando Gonzalez,Rustin Fincke,Travis Dube,Tricia Valadez,Trish Wightman</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveAgentSession$Agent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>LH Chat Capacity</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Agent_Session_Reporting__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LiveAgentSession$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

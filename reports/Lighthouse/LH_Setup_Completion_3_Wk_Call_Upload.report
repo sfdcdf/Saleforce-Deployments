@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Practice_Name__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Segment__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.CSC_Completed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.MA_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.CSC_Rep__c</field>
+    </columns>
+    <description>DO NOT EDIT - CS Ops Only</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical,Lighthouse_Worksheets__c.CSC_Worksheet_Auto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.CSC_Rep__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.CSC_Completed_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>8/1/2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.MA_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>7/1/2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LH Setup Completion &amp; 3 Wk Call Upload</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

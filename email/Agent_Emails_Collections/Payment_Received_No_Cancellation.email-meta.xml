@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>client wants email confirmation for processing payment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Payment Received - No Cancellation</name>
+    <style>freeForm</style>
+    <subject>Yodle Payment Method Updated - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

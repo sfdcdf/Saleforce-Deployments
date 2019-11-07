@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Beta Recruitment</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Beta_Recruitment</publicGroup>
+        </publicGroups>
+        <roles>
+            <role>LocalCSM</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

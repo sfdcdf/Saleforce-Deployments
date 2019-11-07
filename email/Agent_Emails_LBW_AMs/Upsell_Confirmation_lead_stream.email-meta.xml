@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>confirms upsell billing details with the client</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Web_com</letterhead>
+    <name>Upsell - Confirmation</name>
+    <style>freeForm</style>
+    <subject>Your Lead Stream Account Change - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

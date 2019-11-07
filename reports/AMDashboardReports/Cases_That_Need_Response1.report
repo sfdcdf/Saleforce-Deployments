@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_57617598</developerName>
+        <masterLabel>Queue</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Local Email Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email Call Back Queue</sourceValue>
+            </sourceValues>
+            <value>Email Queue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mary Jane Fillmore</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Presley Hecimovich</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dawn Jordan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alvah Mayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jo-Ann McKenzie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Linda Keating</sourceValue>
+            </sourceValues>
+            <value>Individual</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Response_Time__c</field>
+    </columns>
+    <columns>
+        <field>Case.Response_Time_Hours__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>WEBEMAIL</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND (4 or (5 AND 6)) AND 7 AND 8 AND 9)</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Local Email Queue,email call back queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Response_Time__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Non-Actionable Email,Spam</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED_DATEONLY</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TODAY,YESTERDAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Chat,Phone</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Circuit Breaker</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_57617598</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases That Need Response</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

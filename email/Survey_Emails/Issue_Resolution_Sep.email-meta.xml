@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To send to client when case is closed, now under Cust Surveys</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Issue Resolution Email Template</name>
+    <style>none</style>
+    <subject>Thank You For Contacting Yodle</subject>
+    <textOnly>At Yodle, we are passionate about your success and are committed to continually improving the quality of the services and products we provide to you. We would appreciate your feedback on our performance by answering a few questions regarding your recent request. 
+
+Please click the link below to take a brief survey about your recent issue. 
+
+http://survey.clicktools.com/go?iv=15n6jqrnlylls&amp;q2={!Account.Id}&amp;q1={!Case.Id}
+
+
+Sincerely,
+
+Paul Bascobert
+President, Client Services
+
+
+©{!User.Today_s_Year__c} by Yodle Web.com, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

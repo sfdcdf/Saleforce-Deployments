@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides permissions for a specified user to be able to edit/ update the Initial Live Date field on the Account object</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account Initial Live Date Edit</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Initial_Live_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Account.Standard</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

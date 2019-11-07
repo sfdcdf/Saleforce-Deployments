@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Lighthouse_Worksheets__c.Postcards_Check_NEW__c:SUM  / RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA15</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Postcard Per CSC</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.CSC_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.CSC_Completed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Postcards__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Treatment_Plans__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Activated_OBC__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Activate_Reactivation_Letters__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.New_Homeowner_Postcard_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Post CSC consumables</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Lighthouse_Worksheets__c.CSC_Rep__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lighthouse_Worksheets__c.CSC_Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

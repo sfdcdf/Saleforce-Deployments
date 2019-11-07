@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <description>lighthouse and torchx inbound agents in austin - month to date calls.</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Activities$CallType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>karen dameron,laura osegueda,julia correa,joseph janisch,joe janisch,peyden edwards,saige hilton,chelsey willey,luis espinosa,terrance jackson,gina murphy,kati yee,seata moji,lynn tobias,jasmin butcher,kristan lemmons,anne benedict,annie benedict,shannon saunders,mark champ,tricia valadez</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Activities$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>inbound mtd calls</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Activities$Subject</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case.Activities$CreatedDate</dateColumn>
+        <endDate>2018-02-20</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-02-20</startDate>
+    </timeFrameFilter>
+</Report>

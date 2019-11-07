@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for approval process on Cancellation Requests</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>YBN</letterhead>
+    <name>WBN - Cancellation  Approval Process HTML</name>
+    <style>freeForm</style>
+    <subject>APPROVAL REQUIRED - Cancellation for Account: {!Cancellation_Request__c.Account_Name__c} / Client ID: {!Cancellation_Request__c.Client_ID__c}</subject>
+    <textOnly>{!Cancellation_Request__c.LastModifiedBy} has submitted a cancellation form for approval!
+
+Account Name: {!Cancellation_Request__c.Account_Name__c}
+Client ID: {!Cancellation_Request__c.Client_ID__c}
+Sales Rep: {!Cancellation_Request__c.Sales_Rep__c}
+Cancel Code 1: {!Cancellation_Request__c.Cancel_Code_1__c}
+Cancel Code 1 Details: {!Cancellation_Request__c.Cancel_Code_1_Details__c}
+Revenue Lost/Month: {!Cancellation_Request__c.Revenue_Lost_Month__c}
+Contract Expiration Date: {!Cancellation_Request__c.Contract_Expiration_Date__c}
+Cancellation Owner: {!Cancellation_Request__c.OwnerFullName}
+
+Current Step: {!ApprovalRequest.Process_Step_Name}
+Step Comments: {!ApprovalRequest.Comments}
+
+
+Please find the approval process at the bottom of the cancellation form..
+
+Cancellation Form Link: {!Cancellation_Request__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

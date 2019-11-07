@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>true</active>
+    <businessHours>Local Business</businessHours>
+    <description>Used by the local business to define SLA and Response Metrics</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <businessHours>Local Business</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.First_Response_Date_Time__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Origin</field>
+            <operation>notEqual</operation>
+            <value>Phone, Chat, Self</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Yodle Gold Service, Master, Optimization, Partner - Master, Partner - New Client Setup, NCS - AutoLaunch, Account Update, LH Master</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Response</milestoneName>
+        <minutesToComplete>540</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Local Business</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Yodle Gold Service, Master, Optimization, Partner - Master, Partner - New Client Setup, NCS - AutoLaunch, Account Update, LH Master</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.First_Response_Date_Time__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>First Resolution</milestoneName>
+        <minutesToComplete>540</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Local Business</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Yodle Gold Service, Master, Optimization, Partner - Master, Partner - New Client Setup, NCS - AutoLaunch, Account Update, LH Master</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Create_2nd_Response_Milestone__c</field>
+            <operation>equals</operation>
+            <value>true</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Additional Resolution</milestoneName>
+        <minutesToComplete>540</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Local Business</businessHours>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Create_2nd_Response_Milestone__c</field>
+            <operation>equals</operation>
+            <value>true</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.Origin</field>
+            <operation>notEqual</operation>
+            <value>Phone, Chat, Self</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneCriteriaFilterItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Yodle Gold Service, Master, Optimization, Partner - Master, Partner - New Client Setup, NCS - AutoLaunch, Account Update, LH Master</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Additional Responses</milestoneName>
+        <minutesToComplete>540</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <name>Local Entitlement Process</name>
+    <versionMaster>5523200000001eA</versionMaster>
+    <versionNumber>3</versionNumber>
+</EntitlementProcess>

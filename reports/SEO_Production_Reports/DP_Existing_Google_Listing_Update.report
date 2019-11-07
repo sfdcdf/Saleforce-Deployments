@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_99159500</developerName>
+        <masterLabel>SLA Compliance</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Organic_Analyses__r$Days_Since_Google_Pin_Received__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>4</to>
+            </sourceValues>
+            <value>SLA Compliant</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>4</from>
+            </sourceValues>
+            <value>SLA Non-Compliant</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Days_Live__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Password__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$G_Pin_Receipt__c</field>
+    </columns>
+    <columns>
+        <field>Account$Product_Type_Transactional__c</field>
+    </columns>
+    <description>Queue for IT Pro - existing listings that have been claimed and need updating</description>
+    <filter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND (9 OR 10 OR 11 OR 12)) AND 13) AND 14</booleanFilter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Bulk_Google_AccountPL__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>IT Pro,SEO Marketing Ops</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$YO_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Off</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$AdStation_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>OFF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Non Compliant Client,Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Account_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Suspended,Disabled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Client Refuses Claim,Owner-Verified/Pending Management,Error Message</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Listing_1_Action_Completed__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Listing Claimed Needs Updating</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Listing_2_Action_Completed__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Listing Claimed Needs Updating</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Listing_3_Action_Completed__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Listing Claimed Needs Updating</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Listing_4_Action_Completed__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Listing Claimed Needs Updating</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Owner_Verified_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Owner Verified/Managed - Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Active Listing - Read Only</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_99159500</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Organic_Analyses__r$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Organic_Analyses__r$IT_Pro_Escalation__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>IT Pro-Listing Claimed &amp; Needs Updating</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Organic_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$Product_Type_Transactional__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Account_Churn_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

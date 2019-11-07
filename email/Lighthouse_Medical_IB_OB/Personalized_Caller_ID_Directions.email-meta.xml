@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Personalized Caller ID</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Medical_March_2016</letterhead>
+    <name>Personalized Caller ID Directions</name>
+    <style>freeForm</style>
+    <subject>Lighthouse {!Account.Client_ID__c}</subject>
+    <textOnly>Hi {!Case.Account},
+
+We look forward to setting up your personalized caller ID, so that the calls and texts generated from our system will show your office phone number.
+
+This process will require a few steps to complete:
+
+1. We will need to call you to do the verification of your number. If you would like a specific date and time, please reply back to this email.
+2. Once we have verified your number, you will receive an email to authentication we have permission to finish set up.
+
+Subject: Hosted SMS Letter of Authentication (LOA) Signature Required
+
+Sender: Hello Sign (below is an example of what the email will look like)
+
+Note: Please provide the electronic signature as soon as possible. This email agreement expires in seven days. Without the signature, we are unable to complete set up.
+
+1. Once we have received your e- signature, it can take up to two days to finish set up.
+2. You will will receive an email communication from us when your number has been successfully completed.
+
+Thank you for choosing Lighthouse. We appreciate your business!
+
+{!User.FirstName}
+Lighthouse Support
+(888) 427-5454</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

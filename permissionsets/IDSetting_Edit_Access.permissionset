@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows the user to edit the IDSetting field on the Account level for TorchX accounts.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>IDSetting Edit Access</label>
+    <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.IDSetting__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

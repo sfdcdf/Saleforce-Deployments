@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>first lead free emailcontract terms</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>first lead free</name>
+    <style>none</style>
+    <subject>Yodle First Lead Free Program - Please &quot;Accept&quot;</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c}, 
+	
+Thank you for your interest in Yodle.
+
+As noted in Section 4 below, to accept the terms and conditions below of the Yodle Guarantee Program, please reply to this e-mail with &quot;Accept&quot; in the body. 
+
+Additional Terms and Conditions
+These additional terms and conditions (the “Additional Terms”) are in addition to and part of the Order Form and Customer Terms and Conditions between Yodle and Customer dated as of the date Customer accepts these Additional Terms (collectively, the &quot;Agreement&quot;).
+
+1.	A “Lead” is: (a) any filled out email form generated from the Yodle adverSite or Dynamic Mirror or (b) any phone call generated from the Yodle adverSite or Dynamic Mirror call tracking phone number that results in a caller inquiry about Customer’s services. The determination as to whether a Lead has been provided is in Yodle’s reasonable discretion, and Customer must elect to have call recording activated at all times until the first Lead is provided. 
+
+2.	Yodle will credit back to Customer the portion of its Monthly Ad Budget used through the date that Customer receives the first Lead. If Customer does not receive a Lead within the first month after the Go-Live Date, then Yodle will refund the entire Monthly Ad Budget for that month (the monthly management fee and any set-up fees are not refundable), and the Agreement will automatically terminate.
+
+3.	Except as modified by these Additional Terms, all of the terms and provisions of the Agreement remain in full force and effect.
+
+4. Customer accepts these Additional Terms by replying to this e-mail with &quot;Accept&quot;. This action creates an electronic signature that has the same legal force and effect as a handwritten signature on a written contract under any applicable law or regulation, and is equally binding. 
+
+Please contact your Yodle sales representative if you have any questions. 
+
+Sincerely, 
+
+Yodle Contracts Team
+contracts@yodle.com
+	
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+
+
+{!Case.CaseNumber}
+Privacy Policy | Terms of Use
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

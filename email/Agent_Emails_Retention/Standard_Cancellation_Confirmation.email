@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" size="2">Hi {!Account.Client_First_Name__c},<br><br>Thank you for taking the time to speak with us today. We are sorry that we were not able to come to a solution that would allow you to continue your Yodle account. This email confirms your&nbsp;{!Account.Name}&nbsp;account has been cancelled and you <span style="background-color: rgb(255, 255, 102);">will not be billed moving forward / will not be billed after your agreement ends on (CONTRACT END DATE).<br><br>OR<br><br>Your final bill will be on _____ for {!Cancellation_Request__c.Future_Monthly_Revenue__c}.<br></span><br>If you have additional questions about your account or want to restart your advertising, please don’t hesitate to contact our team at (877) 334-4321.<br><br>Thanks again for your business and have a great day!<br><br><br><b style="background-color: rgb(255, 255, 255);">{!User.FirstName} {!User.Last_Initial__c}</b><br>Loyalty Manager<br>(888) 973-9939<br>{!User.Email} </font><br>]]></td>
+</tr>
+</table>

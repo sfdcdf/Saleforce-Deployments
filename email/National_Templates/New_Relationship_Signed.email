@@ -1,0 +1,13 @@
+An initial transaction for new YBN relationship has been signed, please staff consultants to the account.
+
+Account Name: {!Opportunity.Account}
+Total number of participating locations: {!Opportunity.Participating_Number_of_Locations__c}
+Purchased products: {!Opportunity.Products__c}
+IL Service Level: {!Account.Individual_Location_Service_Level__c}
+Corporate Service Level: {!Account.Relationship_Service_Level_C__c}
+
+Estimated Launch Dates
+Centermark/organic: {!Opportunity.Centermark_Estimated_Launch_Date__c}
+Display:{!Opportunity.Display_Estimated_Launch_Date__c}
+PPC:{!Opportunity.PPC_Estimated_Launch_Date__c}
+Portal: {!Opportunity.Portal_Estimated_Launch_Date__c}

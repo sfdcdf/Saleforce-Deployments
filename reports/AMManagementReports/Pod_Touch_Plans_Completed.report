@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_51044512</developerName>
+        <masterLabel>Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Case_Owner_Manager__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nathaniel Nipper</sourceValue>
+            </sourceValues>
+            <value>Account Managers</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Barb Jenkins</sourceValue>
+            </sourceValues>
+            <value>NG Pod</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Makenzie Cunningham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Randy Dewey</sourceValue>
+            </sourceValues>
+            <value>Supervisors</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Leonard Edwards</sourceValue>
+            </sourceValues>
+            <value>AMP Inbound</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>OWNER</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>BucketField_51044512</field>
+    </columns>
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.Client_Satisfaction__c</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <description>LBW TPs completed this month- used for quality monitoring</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 4 AND 5 AND (6 or 3)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Outbound_Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CS Touch Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>lbw customer service,local pod queue,platinum support,adam kovacs,amber tamayo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Churned,Did Not Complete,Did Not Complete - Sent Recap Email,Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Owner_Manager__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>makenzie cunningham,erik vicars,barb jenkins,shelia kelly,adam kovacs,randy dewey,leonard edwards,Nathaniel Nipper</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Pod- Touch Plans Completed</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

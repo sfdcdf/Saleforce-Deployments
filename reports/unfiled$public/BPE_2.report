@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c.Date_Evaluation_QA_Completed__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c.Account_Channel_Type__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c.Account_Setup_For__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Best_Practice_Evaluation__c.QA_Audit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c.User__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jacki Breen,Tyler Gerrior,Phillip Harpell,Sarah Taft,Kelsey MacLennan,Connor Terris,Shannon York,Kayla McLaren,Angus MacNeil,Bradley Ferguson,Kelly Dobson</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Best_Practice_Evaluation__c.User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BPE 2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Best_Practice_Evaluation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

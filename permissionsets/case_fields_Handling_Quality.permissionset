@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>case fields Handling Quality</label>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Case_Handling_Feedback__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Case_Handling_Quality__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

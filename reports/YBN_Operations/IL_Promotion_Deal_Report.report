@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Sales_Person__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 or 3)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.New_Client_Setup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Sales_Notes__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>promo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Close_Notes__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>promo</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>IL Promotion Deal Report</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2015-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-04-23</startDate>
+    </timeFrameFilter>
+</Report>

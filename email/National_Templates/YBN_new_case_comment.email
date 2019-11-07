@@ -1,0 +1,15 @@
+New Case Comment Has Been Added to The Case {!Case.Subject}  by {!Case.LastModifiedBy}
+
+Case Comment Detail: 
+Case Comments:{!Case.Last_Case_Comment}
+Case Comment Submitted By: {!Case.LastModifiedBy}
+
+Case Overview: 
+Account: {!Case.Account}
+Case Subject: {!Case.Subject}
+Case Reason: {!Case.Reason}
+Reason Detail: {!Case.Reason_Detail__c}
+Case Created By: {!Case.CreatedBy}
+Case Owner: {!Case.OwnerFullName}
+
+{!Case.Link}

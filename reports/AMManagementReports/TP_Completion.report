@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_26125588</developerName>
+        <masterLabel>TP Age</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SUBJECT</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 28 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 22 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 27 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 34 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 35 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 36 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 39 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 40 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead Stream TP 1</sourceValue>
+            </sourceValues>
+            <value>1st TP</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 44 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 46 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 52 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 57 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 58 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 59 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 65 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 66 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 67 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 69 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 76 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead Stream TP 2</sourceValue>
+            </sourceValues>
+            <value>2nd TP</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 82 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 83 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 86 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 87 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 89 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 90 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 91 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 92 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 93 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 94 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 95 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 96 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 97 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 98 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Monthly Touchplan - 99 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead Stream TP 3</sourceValue>
+            </sourceValues>
+            <value>3rd TP</value>
+        </values>
+    </buckets>
+    <description>Completion % for TPs based on Which TP and Days Live</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Outbound_Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CS Touch Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Product_Type_Transactional__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>leads by web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Days_Since_Live__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>35</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>LBW Monthly Touchplan,tp 1,tp 2,tp 3</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_26125588</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SUBJECT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TP Completion</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

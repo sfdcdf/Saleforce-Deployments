@@ -1,0 +1,33 @@
+Dear {!Lead.FirstName},
+
+Thank you for your interest in Yodle.
+
+As noted in Section 6 below, to accept the terms and conditions below of the Yodle Guarantee Program, please reply to this e-mail with "Accept" in the body. 
+
+Additional Terms and Conditions for the Guaranteed Inquiry Program
+These additional terms and conditions (the “Additional Terms”) are in addition to and part of the Order Form and Customer Terms and Conditions between Yodle and Customer dated as of the date Customer accepts these Additional Terms (collectively, the  "Agreement").
+
+1.	An “Inquiry” is:  (a) any filled out email form generated from the Yodle adverSite or Dynamic Mirror or (b) any phone call generated from the Yodle adverSite or Dynamic Mirror call tracking phone number that is unanswered by Customer or results in a caller inquiry about Customer’s services.
+
+2.	Customer agrees to invest the Monthly Ad Budget set forth on the Order Form for each month of the minimum contract length (the “Initial Term”).
+
+3.	If Yodle fails to provide at least {!Lead.Description} Inquiries during the Initial Term (the “Guaranteed Inquiries”), Yodle will continue to advertise on behalf of Customer until the first to occur of (a) 30 days after the end of the Initial Term (the “Cure Period”) or (b) the Guaranteed Inquiries are provided.  If Yodle has not provided the Guaranteed Inquiries by the end of the Cure Period, Yodle may terminate the Agreement and Yodle will refund to Customer an amount that is calculated as the product of (x) the aggregate Ad Budget spent during the Initial Term and (y) the quotient obtained by dividing (i) the amount by which the Guaranteed Inquiries exceeds the number of Inquiries provided during the Initial Term and the Cure Period by (ii) the Guaranteed Inquiries.  The following is an example of a Customer with a $1000 monthly budget, and Guarantee of ten inquiries during an Initial Term of three months.  If the Customer only receives five inquiries during the Initial Term, and one additional during the Cure Period (for a total of six inquiries), they will receive a refund from Yodle of $1200 (40% of their $3000. monthly budget). 
+
+4.	Notwithstanding Paragraph 3, Yodle may cease providing Inquiries without refund if Customer ceases to conduct business during the Initial Term.
+
+5.	Except as modified by these Additional Terms, all of the terms and provisions of the Agreement remain in full force and effect.
+
+6.	Customer accepts these Additional Terms by replying to this e-mail with "Accept".  This action creates an electronic signature that has the same legal force and effect as a handwritten signature on a written contract under any applicable law or regulation, and is equally binding.
+
+Please contact your Yodle sales representative if you have any questions. 
+
+Sincerely,
+
+Yodle
+
+Date: {!Lead.CreatedDate}
+Company: {!Lead.Company}
+Email: {!Lead.Email}
+Client ID: {!Lead.Business_Description__c}
+No. of Guaranteed Inquiries: {!Lead.Description}
+Yodle Representative: {!Lead.County__c}

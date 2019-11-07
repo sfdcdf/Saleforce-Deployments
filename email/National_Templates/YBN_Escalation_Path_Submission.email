@@ -1,0 +1,23 @@
+Hello, 
+
+The following issue has been created. {!Case.OwnerFullName} will be owning and resolving the issue.  If they cannot resolve it, they will escalate to the next level in the escalation path.
+
+Please add any pertinent notes as comments within the case for reference. 
+
+Link to Case: {!Case.Link}
+
+Account: {!Account.Name} 
+
+Case Reason: {!Case.Reason} 
+Reason Detail: {!Case.Reason_Detail__c} 
+
+Subject: {!Case.Subject} 
+
+Description: {!Case.Description} 
+
+Case Owner: {!Case.OwnerFullName} 
+
+IMS Rep: {!Account.IMS_Rep__c} 
+
+Account Director: {!Account.Account_Director__c} 
+Force Field Sales Director: {!Account.Force_Field_Sales_Director__c}

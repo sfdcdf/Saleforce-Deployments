@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TEAM-36711LH Issue Resolution - sent for completed interaction master cases for Auto clients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lighthouse Issue Resolution  Survey - LH Auto</name>
+    <style>none</style>
+    <subject>Tell Us What You Think In 2 Minutes</subject>
+    <textOnly>Hello,
+
+At Lighthouse, we are passionate about your success and are committed to continually improving the service we provide you.
+
+If you have a moment, we’d be grateful if you could answer a few questions about your experience with our Lighthouse Support Team, so that we can continue to improve the Lighthouse 360 experience for you and all of the businesses we support.
+
+Click the link below to take the survey about your recent request. It should only take a couple minutes and the link will expire in one week.
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=780cm61w3oiy&amp;q1={!Account.Id}&amp;q2={!Case.Id}&amp;q3={!Case.OwnerFirstName}
+
+Thank you,
+Lighthouse Support
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.
+12808 Gran Bay Parkway, West | Jacksonville, FL 32258
+Lighthouse is a Web.com Group, Inc. brand.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

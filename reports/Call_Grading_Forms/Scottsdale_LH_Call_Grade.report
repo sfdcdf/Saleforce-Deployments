@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Call_Grading_Forms__c.Call_Grade__c:AVG</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Grade</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call_Grading_Forms__c.Caller__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Call_Grading_Forms__c.Call_Grade__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 or (2 and 3))) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Call_Grading_Forms__c.Lighthouse_Inbound_Call,Call_Grading_Forms__c.Lighthouse_Training_TEST,Call_Grading_Forms__c.Lighthouse_CSC_Essentials,Call_Grading_Forms__c.Lighthouse_Save_Call,Call_Grading_Forms__c.Lighthouse_CSC_Auto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Call_Grading_Forms__c.Inbound_Call,Call_Grading_Forms__c.Email,Call_Grading_Forms__c.Live_Chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Grading_Forms__c.Product_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lighthouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Grading_Forms__c.Caller__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Amanda Arkell,Kami Banner,Marc Foley,Janet DeYoung,Elizabeth Saltzman,Jamie Boldt,Gretchen Grant,Alison Sexton,Kayla Westfall</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Scottsdale LH Call Grade</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call_Grading_Forms__c@Call_Grading_Forms__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

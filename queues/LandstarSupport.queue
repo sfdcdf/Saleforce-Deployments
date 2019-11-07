@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>landstarsupport@web.com</email>
+    <name>LandstarSupport</name>
+    <queueMembers>
+        <users>
+            <user>austin.webb@web.com</user>
+            <user>dfinney@web.com</user>
+            <user>dkeeton@web.com</user>
+            <user>lmayo@web.com</user>
+            <user>lreed@web.com</user>
+            <user>skennedy@web.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

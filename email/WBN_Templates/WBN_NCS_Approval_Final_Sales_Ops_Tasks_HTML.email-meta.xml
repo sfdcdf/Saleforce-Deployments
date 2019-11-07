@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Final Steps for WBN Approval Process - Close Lost - Sales Ops-HTML</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>YBN</letterhead>
+    <name>WBN - NCS - Approval -Final Sales Ops Tasks-HTML</name>
+    <style>freeForm</style>
+    <subject>SALES OPS TASKS: WFE Never Launched - {!Opportunity.Account}</subject>
+    <textOnly>Sales Ops
+The request to Close/Update this Opportunity has been approved.
+You have some Tasks to complete based on the comments.
+
+Partial Save:
+
+Remove Products which did not launch from Opportunity
+Update Contract Line Items
+
+
+Total Loss:
+
+Change Opportunity to Closed Lost
+
+
+Account: {!Opportunity.Account}
+Client Name: {!Account.Contact_Name__c}
+Opportunity Name: {!Opportunity.Name}
+Amount: {!Opportunity.Amount}
+Close Date: {!Opportunity.CloseDate}
+
+Lost Reason Detail: {!Opportunity.Lost_Reason_Detail__c}
+
+Approval Information -
+Approval Status : {!Opportunity.Approval_Opp_List_Review_Status__c}
+Current Step: {!ApprovalRequest.Process_Step_Name}
+Step Comments: {!ApprovalRequest.Comments}
+Approval Step Status: {!ApprovalRequest.Status}
+Approval Step Assignee: {!ApprovalRequest.Process_Assignee}
+Approval Step Approver: {!ApprovalRequest.Process_Approver}
+
+Notes:
+{!Opportunity.Approval_Notes__c}
+
+Link: {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

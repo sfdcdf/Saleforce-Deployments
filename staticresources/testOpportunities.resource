@@ -1,0 +1,1 @@
+AccountId,Name,Opportunity_Detail__c,CloseDate,LeadSource,StageName001600000184q3AAAQ,Test Opp,New Customer,2017-04-04T12:00:00.000Z,Bulk Upload,New Opportunity

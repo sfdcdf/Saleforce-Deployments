@@ -1,0 +1,9 @@
+*** CASE SLA ALERT ***  please forward to the person that submitted the upsell/renewal for the account. *****
+
+The following case has missed the 14 day SLA and needs to be closed out. If you would like to continue with the Upsell/Contract Renewal, please fill out the Upsell/Renewal form and start again.
+
+Company:  {!Account.Name} 
+Case:  {!Case.CaseNumber}:  {!Case.Subject} 
+Owner:  {!CaseOwner.FullName}  
+
+Click on the link to access the case:  {!Case.Link}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New Lead Notification - Field</name>
+    <style>none</style>
+    <subject>You have received a new lead! - Check for Dupes!</subject>
+    <textOnly>You received a NEW LEAD in your territory!
+
+Please follow up within 2 business hours.
+
+NOTE: Change ownership to yourself in SF.com.NOTE: Click &quot;Find Duplicates&quot; in SF.com to make sure they are not working with us already.
+
+Lead Source: {!Lead.LeadSource}
+Lead Source Detail: {!Lead.Lead_Source_Detail__c}
+First Name: {!Lead.FirstName}
+Last Name: {!Lead.LastName}
+Company: {!Lead.Company}
+Phone: {!Lead.Phone}
+State: {!Lead.State}
+Form Type: {!Lead.Description}
+If YodleLocalListings Lead, Type: {!Lead.Yodle_Submit_Type__c}
+Lead Owner: {!Lead.OwnerFullName}
+
+Click here to find the lead in salesforce.com:
+
+{!Lead.Link}
+
+
+Cam Lay
+
+Yodle. Get Found.
+clay@yodle.com
+www.yodle.com
+
+
+
+
+
+This email is confidential to Yodle Inc.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

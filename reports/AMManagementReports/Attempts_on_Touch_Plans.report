@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$CallType</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Phone_Number__c</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Description</field>
+    </columns>
+    <description>Lead Stream Call Attempts on Touch Plans</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$Product_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>leads by web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Reason</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CS Touch Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Unscheduled - Reattempt,Unscheduled - 4+ Attempts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>CS Touch Plan,email</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$CaseNumber</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Attempts on Touch Plans</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_and_without_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Activities$Subject</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,10 @@
+The following refund or credit has been denied.
+
+Account Name: {!Case.Account}
+Case Reason: {!Case.Reason}
+Refund or Credit Amount: {!Case.Refund_Amount__c}
+
+{!Case.CS_Approved__c}
+{!Case.Finance_Approved__c}
+
+{!Case.Link}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cases$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Activities$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Activities$Subject</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>may upsell contest</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Activities$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>email,proactive touch</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cases$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cases$CaseNumber</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>May Upsell Contest | Attemps/Case</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_With_Cases_With_or_Without_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

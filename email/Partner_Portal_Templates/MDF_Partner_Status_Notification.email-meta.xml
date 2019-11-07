@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>MDF Partner Status Notification</name>
+    <style>formalLetter</style>
+    <subject>MDF Request {!Partner_Marketing_Development_Fund__c.Name}&apos;s status has been updated to {!Partner_Marketing_Development_Fund__c.MDF_Status__c}!</subject>
+    <textOnly>MDF #: {!Partner_Marketing_Development_Fund__c.Name}
+MDF Status: {!Partner_Marketing_Development_Fund__c.MDF_Status__c}
+MDF Status Date/Time Stamp: {!Partner_Marketing_Development_Fund__c.MDF_Status_Date_Time_Stamp__c}
+MDF Status Notes: {!Partner_Marketing_Development_Fund__c.MDF_Status_Notes__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

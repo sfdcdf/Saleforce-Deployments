@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Days_Live__c</field>
+    </columns>
+    <columns>
+        <field>Case.Budget__c</field>
+    </columns>
+    <columns>
+        <field>Case.general_notes__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.general_notes__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>upsell,increase budget</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Channel_Development__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Berry Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Sponsored_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>live</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Berry Upsell In Notes</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SUBJECT</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2012-07-02</startDate>
+    </timeFrameFilter>
+</Report>

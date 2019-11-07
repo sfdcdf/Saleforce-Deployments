@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SEO Standalone contract for new clients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Organic Plus Standalone</name>
+    <style>none</style>
+    <subject>Yodle Organic PLUS Services - Please &quot;Accept&quot;</subject>
+    <textOnly>Dear {!Case.Client_First_Name__c}, 
+
+This email confirms that you are accepting the terms of Yodle&apos;s SEO Services. As noted below in section 4, to accept the terms and conditions of Yodle&apos;s SEO Services, please reply to this e-mail with &quot;Accept&quot; in the body. 
+
+Yodle Organic Services Order Form 
+
+This Yodle Organic Services Order Form (the &quot;Order Form&quot;), together with the Terms and Conditions located as of the Effective Date at http://www.yodle.com/terms/organic (the &quot;Terms&quot;), which are incorporated herein by this reference (collectively, the “Agreement”) is made and entered into as of the date you reply to this e-mail with &quot;Accept&quot; (the &quot;Effective Date&quot;), by and between Yodle, Inc. (&quot;Yodle&quot;), and {!Case.Business_Name__c} (&quot;Company&quot;). 
+
+1.	The Service. The Yodle Organic Service includes the optimization of three (3) keywords (the “Keywords”) and the application of “on page” and “off page” search engine optimization tactics to Customer’s website, with the goal of obtaining improved ranking in organic search engine results for the Keywords. To the extent its website is not hosted on Yodle’s servers, Customer will provide access to its website to enable Yodle to perform the Yodle Organic Service. The “Publication Date” is the date that Customer’s website, as modified by the “on page” search engine optimization tactics, is either (i) published by Yodle or (ii) to the extent not hosted on Yodle’s servers, made available for publication. Yodle determines the Publication Date of the Yodle Organic Service. The Yodle Organic Service also includes the Maps Optimization feature, which is designed to help Customer’s business listing appear in what is known as of the Effective Date as the “Google 7-pack results” in response to searches for the Keywords. Customer acknowledges that search results and search engine rankings are influenced by several factors, and Yodle does not guarantee any placement in the “Google 7-pack results” or a particular position or rank for Customer’s website or business listing in any search results. 
+
+2.	Fees. The monthly fee for the Yodle Organic Service is {!Case.Budget__c}. The one-time fees include an adversite fee of {!Case.Design_Fee__c} and an account setup fee of {!Case.Old_Budget__c}. 
+
+3.	Terms. The Commitment Period for the Yodle Organic Service is {!Case.Term_months__c} months, commencing on the Publication Date (the “SEO Commitment Period”), and will continue month to month thereafter until the Yodle Organic Service is cancelled. Customer may not cancel the Yodle Organic Service during the SEO Commitment Period. 
+
+Customer accepts this Agreement by replying to this e-mail with “Accept” or similar language confirming acceptance. This action creates an electronic signature that has the same legal force and effect as a handwritten signature on a written contract under any applicable law or regulation, and is equally binding.
+ 
+Please contact your Yodle sales representative if you have any questions. 
+
+Sincerely, 
+
+Yodle Contracts Team
+contracts@yodle.com
+
+
+Date: {!Case.CreatedDate}
+Email: {!Case.SuppliedEmail}
+Client ID: {!Case.Client_ID__c}
+Yodle Representative: {!Case.Submitted_By__c}
+
+{!Case.CaseNumber}
+
+Privacy Policy | Terms of Use
+
+Yodle Inc. Headquarters 50 West 23rd Street, 4th Floor, NY, NY 10010</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

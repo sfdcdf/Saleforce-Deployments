@@ -1,0 +1,23 @@
+Hello {!Case.Partner_Sales_Rep__c},
+
+The following Account, {!Account.Name}, has been escalated due to a Sales Wizard Issue. Please note that we cannot move forward with the account until the following issue is corrected:   {!Case.Reason_Detail__c}.
+
+IMS Rep: {!Case.IMS_Rep__c} 
+
+Rogers Sales Rep: {!Case.Partner_Sales_Rep__c}
+
+Account Name: {!Case.Account} 
+
+Client ID: {!Case.Client_ID__c} 
+
+Status: {!Case.Status}
+
+Escalation Notes: {!Case.Escalation_Notes__c}
+
+Case Number: {!Case.CaseNumber}
+
+Issue: {!Case.Issue2__c}
+
+Additional Notes: {!Case.00N60000001n9qQ}
+
+Thank you!

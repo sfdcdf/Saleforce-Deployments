@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Individual_Location_Service_Level__c</field>
+    </columns>
+    <columns>
+        <field>Account.Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.IMS_Rep__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>PARENT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Miracle-Ear</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Individual_Location_Service_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Service Level D,Service Level E,Service Level F</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Miracle-Ear Live Locations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

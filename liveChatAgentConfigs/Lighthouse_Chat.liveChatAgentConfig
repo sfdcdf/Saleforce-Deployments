@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>alewis@yodle.com</user>
+            <user>ben.block@yodle.com</user>
+            <user>dcambouris@yodle.com</user>
+            <user>doreen.towhey@yodle.com</user>
+            <user>georgiann.ray@web.com</user>
+            <user>joe.janisch@yodle.com</user>
+            <user>julia.correa@yodle.com</user>
+            <user>karole.waters@yodle.com</user>
+            <user>lruer@yodle.com</user>
+            <user>laura.vitro@yodle.com</user>
+            <user>lynn.tobias@yodle.com</user>
+            <user>mchamp@yodle.com</user>
+            <user>megan.lewis@web.com</user>
+            <user>sstaffieri@yodle.com</user>
+            <user>sarah.vickers@lighthousepmg.com</user>
+            <user>shannon.saunders@web.com</user>
+            <user>ta.stanton@yodle.com</user>
+            <user>treece@yodle.com</user>
+            <user>mwightman@yodle.com</user>
+            <user>wendy.lincoln@yodle.com</user>
+        </users>
+    </assignments>
+    <autoGreeting>Thanks for contacting Lighthouse. My name is {!User_FirstName}. For account security, may I please have your first and last name?</autoGreeting>
+    <capacity>3</capacity>
+    <criticalWaitTime>20</criticalWaitTime>
+    <customAgentName>Lighthouse Support</customAgentName>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>false</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>true</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>true</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>false</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>false</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Lighthouse Chat</label>
+    <supervisorSkills>
+        <skill>Lighthouse_Field_Service</skill>
+        <skill>Lighthouse_Medical</skill>
+    </supervisorSkills>
+    <transferableSkills>
+        <skill>Lighthouse_Field_Service</skill>
+        <skill>Lighthouse_Medical</skill>
+    </transferableSkills>
+</LiveChatAgentConfig>

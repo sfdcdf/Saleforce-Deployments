@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Lets client know we need to speak with them before completing changes</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OutRank_by_Rogers_Logo_2014</letterhead>
+    <name>Website- Account Changes NOT Complete - Need Call Back</name>
+    <style>freeForm</style>
+    <subject>Your Recent OutRank Request - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

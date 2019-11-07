@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>client requested to reschedule their onboarding call by phone</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Web_com</letterhead>
+    <name>Rescheduled Call - Onboarding - Requested by Phone</name>
+    <style>freeForm</style>
+    <subject>New Time for Lead Stream Call - {!Account.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

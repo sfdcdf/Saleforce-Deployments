@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sent back to sales rep when gold service request is complete</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Web_com</letterhead>
+    <name>General - Gold Service - Reply to Sales Rep</name>
+    <style>freeForm</style>
+    <subject>Gold Service Request Follow Up - Client ID: {!Case.Client_ID__c}   Case #: {!Case.CaseNumber}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

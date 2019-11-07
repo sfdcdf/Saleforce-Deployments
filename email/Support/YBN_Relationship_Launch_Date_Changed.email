@@ -1,0 +1,31 @@
+One or more launch dates have changed for {!Account.Name}.
+
+Launch Date Change Reason: {!Opportunity.Launch_Date_Change_Reason__c}
+
+Launch Date Change Reason Detail: {!Opportunity.Launch_Date_Change_Reason_Detail__c}
+
+Current estimated launch dates are as follows:
+
+Centermark Estimated Launch Date: {!Opportunity.Centermark_Estimated_Launch_Date__c}
+Centermark Original Estimated Launch Date: {!Opportunity.Centermark_Original_Est_Launch_Date__c}
+
+Website Template Estimated Launch Date: {!Opportunity.Website_Template_Estimated_Launch_date__c}
+Website Template Original Estimated Launch Date: {!Opportunity.Website_Template_Original_Est_Launch__c}
+
+Custom Implementation Estimated Launch: {!Opportunity.Custom_Implementation_Estimated_Launch__c}
+Custom Implementation Original Estimated Launch Date: {!Opportunity.Custom_Imp_Original_Est_Launch_Date__c}
+
+Portal Estimated Launch Date: {!Opportunity.Portal_Estimated_Launch_Date__c}
+Portal Original Estimated Launch Date: {!Opportunity.Portal_Original_Est_Launch_Date__c}
+
+PPC Estimated Launch Date: {!Opportunity.PPC_Estimated_Launch_Date__c}
+PPC Original Estimated Launch Date: {!Opportunity.PPC_Original_Est_Launch_Date__c}
+
+Reviews Estimated Launch Date: {!Opportunity.Reviews_Estimated_Launch_Date__c}
+Reviews Original Estimated Launch Date: {!Opportunity.Reviews_Original_Est_Launch_Date__c}
+
+Display Estimated Launch Date: {!Opportunity.Display_Estimated_Launch_Date__c}
+Display Original Estimated Launch Date: {!Opportunity.Display_Original_Est_Launch_Date__c}
+
+Products sold as part of this opportunity:
+{!Opportunity.Products__c}

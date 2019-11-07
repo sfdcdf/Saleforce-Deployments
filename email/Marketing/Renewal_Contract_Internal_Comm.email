@@ -1,0 +1,8 @@
+Date: {!Lead.CreatedDate}
+Customer: {!Lead.Company}
+Email: {!Lead.Email}
+Client ID: {!Lead.Business_Description__c}
+Extended Term: {!Lead.Secondary_Segments__c}
+Budget: ${!Lead.Vertical__c}
+Discount Amount: {!Lead.Description}
+Yodle Representative: {!Lead.County__c}

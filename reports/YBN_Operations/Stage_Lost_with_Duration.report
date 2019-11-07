@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>BucketField_51711374</acrossGroupingContext>
+        <calculatedFormula>PARENTGROUPVAL(FK_Opportunity.isLost__c:SUM, BucketField_5894018, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>BucketField_5894018</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Lost Count</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_51711374</developerName>
+        <masterLabel>Opp Stages</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ObjectHistory__c.FieldValue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>M001 - Set Local Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M1 - Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Discovery</sourceValue>
+            </sourceValues>
+            <value>1 - Client Discovery</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Demo/Value Prop</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M002 - Complete local demo (IL)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M2 - Demo &amp; Value Presentation</sourceValue>
+            </sourceValues>
+            <value>2 - Demo/Value Prop</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>M3 - Executive Review Call</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M4 - Solutions Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>M5 - Proposal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution</sourceValue>
+            </sourceValues>
+            <value>3 - Solution</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>M003 - Contract (IL)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <value>4 - Contract</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_5894018</developerName>
+        <masterLabel>Stage Lost</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_$Opportunity.Stage_Lost__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Discovery</sourceValue>
+            </sourceValues>
+            <value>1 - Client Discovery</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Demo/Value Prop</sourceValue>
+            </sourceValues>
+            <value>2 - Demo / Value Prop</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Solution</sourceValue>
+            </sourceValues>
+            <value>3 - Solution</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <value>4 - Contract</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ObjectHistory__c.ElapsedDays__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Opportunity.OpportunityId18__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_OPP_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ObjectHistory__c.FieldValue__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New Opportunity,Adoption,Future Opportunity,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_OPP_TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Legacy Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_OPP_STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Opportunity.Stage_Lost__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Future Opportunity</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_51711374</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ObjectHistory__c.RecordType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_5894018</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Stage Lost with Duration</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntity$ObjectHistory__c@ObjectHistory__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ObjectHistory__c.RecordCreatedDate__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

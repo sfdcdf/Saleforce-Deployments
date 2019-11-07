@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Those who can change the MLS Data Source</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>MLS - Edit Data Source</label>
+    <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MLS__c.DataSource__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

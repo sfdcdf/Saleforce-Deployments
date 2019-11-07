@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TEAM-36711</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CPP - Setup Complete</name>
+    <style>none</style>
+    <subject>{!Account.Name} is live!</subject>
+    <textOnly>Hello,  The {!Account.Name}, is now live. Please reach out to our CPP to have them review the site.  CPP Partner: {!Account.Channel_Development__c} Account Name: {!Account.Name} Client ID: {!Account.Client_ID__c}  Thank you.  Partner CS Operations</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

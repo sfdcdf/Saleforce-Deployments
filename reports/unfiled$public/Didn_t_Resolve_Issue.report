@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Client_ID_2__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Communication_Notes__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Issue_Resolved__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Issue_Survey_Was_your_issue_resolved__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>No</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Survey Report Didn&apos;t Resolve Issue</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Surveys__c@Customer_Surveys__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

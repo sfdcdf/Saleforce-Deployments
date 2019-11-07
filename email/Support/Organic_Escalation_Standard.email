@@ -1,0 +1,19 @@
+Hello,
+
+The following case has been escalated:
+
+Account: {!Account.Client_ID__c} - {!Account.Name}
+
+Case Owner: {!Organic_Analysis__c.OwnerFullName}
+
+IMS Rep: {!Account.IMS_Rep__c}
+
+Case Age: {!Organic_Analysis__c.Days_Open__c}
+
+Case Record Type: {!Organic_Analysis__c.RecordType}
+
+Subject: {!Organic_Analysis__c.Subject__c}
+
+Link to Case: {!Organic_Analysis__c.Link}
+
+Products: {!Account.Product_Type__c}

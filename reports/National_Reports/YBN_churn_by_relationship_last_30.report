@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Director__c</field>
+    </columns>
+    <columns>
+        <field>Account.IMS_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Account.Sales_Person__c</field>
+    </columns>
+    <columns>
+        <field>Account.Deactivation_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.IMS_Rep_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PARENT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YBN churn by relationship last 30</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Deactivation_Date__c</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

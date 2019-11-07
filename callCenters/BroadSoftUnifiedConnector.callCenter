@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <displayName>BroadSoft Unified Connector</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>BroadSoft Unified Connector</value>
+        </items>
+        <items>
+            <label>CTI Connector ProgId</label>
+            <name>reqProgId</name>
+            <value>BroadSoftUC.CTIBase.1</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value>1</value>
+        </items>
+        <items>
+            <label>International Prefix</label>
+            <name>reqInternationalPrefix</name>
+            <value>011</value>
+        </items>
+        <items>
+            <label>Phone System Server Address</label>
+            <name>reqOCSAddress</name>
+            <value>portal.stage2.net</value>
+        </items>
+        <items>
+            <label>Phone System Server Port</label>
+            <name>reqOCSPort</name>
+            <value>2208</value>
+        </items>
+        <label>Dialing Options</label>
+        <name>reqDialingOptions</name>
+    </sections>
+</CallCenter>

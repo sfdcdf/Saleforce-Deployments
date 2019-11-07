@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send to clients that we can&apos;t reach when calling for auto support ticket</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Gray_March_2016</letterhead>
+    <name>Auto Support Ticket - Unable to Reach</name>
+    <style>freeForm</style>
+    <subject>Your Recent Lighthouse Request - {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

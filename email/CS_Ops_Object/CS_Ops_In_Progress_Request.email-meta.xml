@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CS Ops - In Progress Request</name>
+    <style>none</style>
+    <subject>Ops Request for {!CS_Operations__c.Request_Type__c} Is Now In Progress!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

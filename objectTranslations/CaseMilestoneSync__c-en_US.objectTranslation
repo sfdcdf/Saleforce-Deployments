@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Hours --></label>
+        <name>BusinessHours__c</name>
+        <relationshipLabel><!-- Case Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Case Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>CompletionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elapsed Time (Days) --></label>
+        <name>ElapsedTimeInDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elapsed Time (Hrs) --></label>
+        <name>ElapsedTimeInHrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elapsed Time (Mins) --></label>
+        <name>ElapsedTimeInMins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>IsCompleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>IsResolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>IsResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Violation --></label>
+        <name>IsViolated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Type Id --></label>
+        <name>MilestoneTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Under 1 Day --></label>
+        <name>ResolutionUnderDay_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Under 1 Hour --></label>
+        <name>ResponseUnderHour_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>TargetDate__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Milestone</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Milestones</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

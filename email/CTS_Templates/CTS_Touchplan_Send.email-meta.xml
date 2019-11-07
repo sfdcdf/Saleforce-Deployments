@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SF to CTS Touchplans content email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CTS-Touchplan-Send</name>
+    <style>none</style>
+    <subject>{!Case.Subject}: {!Case.CaseNumber}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

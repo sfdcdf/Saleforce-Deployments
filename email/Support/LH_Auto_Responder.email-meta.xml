@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TEAM-36711Auto Responder Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LH Auto Responder</name>
+    <style>none</style>
+    <subject>We&apos;ll Be in Touch Soon</subject>
+    <textOnly>Lighthouse
+
+For Support, Call 855-888-6474
+
+Hello,
+
+Thank you for contacting Lighthouse Support! We received your message and look forward to assisting you as soon as possible.
+
+If you need more immediate assistance, you are welcome to call us at (855) 888-6474 with your reference number: {!Case.CaseNumber}. We’re here Monday through Friday, from 8am to 7pm EST.
+
+Thank you for choosing Lighthouse, we appreciate your business!
+
+©{!User.Today_s_Year__c} Henry Schein One. All Rights Reserved.[1220 South 630 East Suite 100 | American Fork, Utah 84003|webextlink://1220 South 630 East Suite 100 | American Fork, Utah 84003] . Lighthouse 360 is a Henry Schein One brand.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Segment__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Days_Live_at__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Outcome__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.First_Cancel_Code_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Date_of_Cancellation_Request__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Initial_Product__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>leads by web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Outcome__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>saved with hard concessions,saved with no concessions,saved with soft concessions,duplicate retention case</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Segment Churn</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Cancellation_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Cancellation_Request__c.Date_of_Cancellation_Request__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

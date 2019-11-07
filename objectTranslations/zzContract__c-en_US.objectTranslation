@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please fill in a YBN Master Account --></errorMessage>
+        </lookupFilter>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- zzContracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What Opportunity is this Contract associated with? --></help>
+        <label><!-- Opportunity Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please fill out the Opportunity Name field. --></errorMessage>
+        </lookupFilter>
+        <name>Opportunity_Name__c</name>
+        <relationshipLabel><!-- zzContracts --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract (DEL)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>zzContracts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

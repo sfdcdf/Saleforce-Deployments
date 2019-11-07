@@ -1,0 +1,7 @@
+<aura:component controller="ElectricWelcomeController">
+	<aura:attribute name="welcomePageHtml" type="Partner_Community_HTML__c"/>
+	<aura:handler name="init" value="{!this}" action="{!c.getwelcomePageHtml}"/>
+
+	<aura:unescapedHtml value="{!v.welcomePageHtml.HTML__c}"/>
+
+</aura:component>

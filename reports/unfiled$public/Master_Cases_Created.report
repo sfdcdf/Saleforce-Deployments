@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jasmin Butcher,Annie Benedict,Gina Murphy,Laura Osegueda,Luis Espinosa,Lynn Tobias,Seata Moji,Shannon Saunders,Terrance Jackson,Kati Yee,Brooke Grossman,Shelley Mercanti,Lincoln Knowles,Sarah Knowles,Stephnaie Hemminds,Susan Burton,Grace Hicks,Mark Champ,Tricia Valadez,Peyden Edwards,Julia Correa,Jessica Crim</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Master Cases Created</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>OWNER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2018-04-12</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-04-12</startDate>
+    </timeFrameFilter>
+</Report>

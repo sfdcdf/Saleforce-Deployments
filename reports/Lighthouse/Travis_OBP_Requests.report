@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Lighthouse_Worksheets__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Travis Dube</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Lighthouse_Worksheets__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,BOT Feature Request,In Progress,S. Consultant Assistance Needed,Updated,Stalled,Pending Retention,RFC</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Travis OBP Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Lighthouse_Worksheets__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

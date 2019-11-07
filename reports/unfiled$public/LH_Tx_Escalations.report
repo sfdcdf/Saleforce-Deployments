@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Client Escalation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Susan Burton,Grace Hicks,Jessica Crim,Lincoln Knowles,Sarah Knowles,Shelley Mercanti,Tameka Davidson,Scott Meyers-Pillon,Adrienne Glenn,Karen MacNeil,Doug Smith,Corey Wire,James Carr,Beverly Simmons,Catrina Daniels,Laura Osegueda,Terrance Jackson,Jasmin Butcher,Shannon Saunders,Gina Murphy,David Meldrum,Annie Benedict,Chelsey Willey,Luis Espinosa,Seata Moji,Joe Janisch,Peyden Edwards,Beau Osteros,Travis Dube,Kati Yee,Christopher Baker,Brooke Grossman,Lynn Tobias,Tricia Valadez,Mark Champ,Julia Correa</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LH/ Tx Escalations</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Age_Business_Days__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YodleGoldService@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>LH Support - Austin,TORCHX Retention,TORCHx Inbound Queue,LH Retention,LHGS,TORCHx Outbound,Adrienne Glenn,Tricia Valadez,Tameka Davidson,Laura Osegueda,Mark Champ,Kati Yee,Jasmin Butcher,Karen Dameron,Linda Keating,Scott Meyers-Pillon,Grace Hicks,Sales Lab Closing Scripts,LH Auto Support,LH Medical Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Developmental_Supervisor_del__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Chris Harris</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Chris Harris GSR&apos;s</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>STATUS</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2018-04-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-04-01</startDate>
+    </timeFrameFilter>
+</Report>

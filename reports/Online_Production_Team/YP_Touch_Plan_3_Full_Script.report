@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r.Activities$CallDurationInSeconds</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r$X1st_Attempt_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r$X2nd_Attempt_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r$X3rd_Attempt_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Yodle_Path__r$X4th_or_More_Attempt_Status__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7 OR 8))</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r.Activities$CallDurationInSeconds</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>500</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Not Started,In Progress,Did Not Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$Touch_Plan_Pass_Fail__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Pass</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Touch Plan 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$X1st_Attempt_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Complete - Full Script</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$X2nd_Attempt_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Complete - Full Script</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$X3rd_Attempt_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Complete - Full Script</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.Yodle_Path__r$X4th_or_More_Attempt_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Complete - Full Script</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cases.Yodle_Path__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YP - Touch Plan 3 Full Script</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Cases_and_Yodle_Path__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Engagement_Date_Last_Email_Sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

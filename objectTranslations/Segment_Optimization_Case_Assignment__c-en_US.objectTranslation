@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Segment Optimization Case Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Segment Optimization Case Assignments</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Segment Optimization Case Assignment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t change a Segment name. Create a new record. --></errorMessage>
+        <name>Segment_Name_Change_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

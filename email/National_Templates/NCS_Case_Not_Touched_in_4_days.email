@@ -1,0 +1,9 @@
+This New Client Setup case has not been touched in at least four days.
+
+Account Name: {!Case.Account}
+Case Owner: {!Case.OwnerFullName}
+Last Modified Date: {!Case.LastModifiedDate}
+Date/Time Last Owner Changed: {!Case.Date_Time_Last_Owner_Changed__c}
+Date of Last Case Status Change: {!Case.Actual_Resolution_Date__c}
+Current Status: {!Case.Status}
+Case Number: {!Case.CaseNumber}

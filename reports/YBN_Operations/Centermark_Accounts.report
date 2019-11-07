@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Director__c</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship_Service_Level_C__c</field>
+    </columns>
+    <columns>
+        <field>Account.Number_of_Locations_Specific__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Centermark__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Centermark Lite,Centermark,Mix of Centermark &amp; Centermark Lite</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Centermark__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Centermark Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Teardown - Rogers</name>
+    <style>none</style>
+    <subject>Online Listing Credentials</subject>
+    <textOnly>Online Listing Credentials
+
+
+Rogers Needs Your Google Pin Number
+
+
+Hi,
+
+We would like to sincerely thank you for previously participating in our advertising program. Today we completed resetting online listings to include only your business name, address, and personal phone number. This is important to prevent profiles online from containing an inaccurate phone number and website.
+
+For next steps you may use the login information below to update Google Places with additional details about your business.
+
+Username: {!Organic_Analysis__c.Created_Email_UN__c}
+Password: {!Organic_Analysis__c.Created_Email_PW__c}
+
+We wish you and your business nothing but the best!
+
+Thanks,
+
+Rogers Client Services Team
+rogersupport@service.rogersoutrank.com
+
+
+
+Clicks Are Great. Calls Are Better.
+Rogers Communications Inc. 350 Bloor Street East, Toronto, ON  M4W 1G9, Canada</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

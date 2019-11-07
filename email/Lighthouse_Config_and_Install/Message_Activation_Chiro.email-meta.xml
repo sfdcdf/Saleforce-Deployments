@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up to clients letting them know their messages are activated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Message Activation - Chiro</name>
+    <style>none</style>
+    <subject>Your Lighthouse Messages are now active - {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <textOnly>Hello {!Lighthouse_Worksheets__c.Practice_Name__c},
+
+Congratulations, your messages are now active with Lighthouse! We will begin sending your Save the Date Reminders and Last Minute Reminders, if enabled, today.
+
+The following features are available to you to communicate with your patients. We have noted what has been activated for your account. You can turn on the inactive features at any time, just give us a call. Prices referenced below may be subject to change upon advanced notice to you.
+
+
+Emails (Included) - {!Lighthouse_Worksheets__c.Activated_Emails__c}
+Email appointment reminders and follow up notices.
+
+Texts (Included) - {!Lighthouse_Worksheets__c.Activated_Text__c}
+Text message appointment reminders and follow up notices.
+
+Automated Phone Calls ($0.29/call) - {!Lighthouse_Worksheets__c.Activated_OBC__c}
+Automated calls that go out to patients before their appointment who have yet to confirm.
+
+Postcards ($1.00/postcard) - {!Lighthouse_Worksheets__c.Activated_Postcards__c}
+Postcards that can be sent for long term reminders, follow up notices, or birthday greetings.
+
+Reactivation Letters ($2.00/letter) - {!Lighthouse_Worksheets__c.Activated_Reactivation_Letters__c}
+Letters sent to patients who have not been in the office in 2 years. You have the ability to cancel these on a per-patient basis via the reactivation email sent to you two weeks prior.
+
+
+It will take a few days for any emails and text messages to queue up. While we are in the process of ramping up these messages and confirmations, please continue to confirm appointments as you normally have. Your task list in your portal will be a valuable tool for you to assist you in confirming your appointments. If you have another reminder service, now is the time to request they discontinue notifying your patients.
+
+If you have any questions, please contact our Support Team at medicalsupport@lighthousepmg.com or call (888) 427-5454.
+
+Thank you for choosing Lighthouse. We appreciate your business!
+
+Lighthouse Support
+(888) 427-5454
+medicalsupport@lighthousepmg.com
+
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

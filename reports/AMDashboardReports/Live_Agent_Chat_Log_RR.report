@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(LiveChatTranscript.ChatDuration:AVG)/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Chat Duration</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Status</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Abandoned</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$RequestTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$IpAddress</field>
+    </columns>
+    <description>Live Agent Chat Log - Chat Dash</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveChatTranscript$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Live Agent Chat Log - Chat Dash</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Agent_Transcript_Reporting__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

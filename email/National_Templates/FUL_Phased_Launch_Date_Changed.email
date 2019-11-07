@@ -1,0 +1,28 @@
+One or more phased launch dates have changed for {!Fulfillment__c.Account__r.Name}. 
+
+Phase 1 Launch Details:
+Original Estimated Launch Date - {!Fulfillment__c.Phase_1_Original_Est_Launch_Date__c}
+Current Estimated Launch Date - {!Fulfillment__c.Phase_1_Estimated_Launch_Date__c}
+Launch Date Change Reason - {!Fulfillment__c.Phase_1_Launch_Date_Change_Reason__c}
+Launch Date Change Reason Detail - {!Fulfillment__c.Phase_1_Launch_Date_Change_Reason_Detail__c}
+Products - {!Fulfillment__c.Phase_1_Products__c}
+Product Details - {!Fulfillment__c.Phase_1_Product_Launch_Details__c}
+
+Phase 2 Launch Details:
+Original Estimated Launch Date - {!Fulfillment__c.Phase_2_Original_Est_Launch_Date__c}
+Current Estimated Launch Date - {!Fulfillment__c.Phase_2_Estimated_Launch_Date__c}
+Launch Date Change Reason - {!Fulfillment__c.Phase_2_Launch_Date_Change_Reason__c}
+Launch Date Change Reason Detail - {!Fulfillment__c.Phase_2_Launch_Date_Change_Reason_Detail__c}
+Products - {!Fulfillment__c.Phase_2_Products__c}
+Product Details - {!Fulfillment__c.Phase_2_Product_Launch_Details__c}
+
+Phase 3 Launch Details:
+Original Estimated Launch Date - {!Fulfillment__c.Phase_3_Original_Est_Launch_Date__c}
+Current Estimated Launch Date - {!Fulfillment__c.Phase_3_Estimated_Launch_Date__c}
+Launch Date Change Reason - {!Fulfillment__c.Phase_3_Launch_Date_Change_Reason__c}
+Launch Date Change Reason Detail - {!Fulfillment__c.Phase_3_Launch_Date_Change_Reason_Detail__c}
+Products - {!Fulfillment__c.Phase_3_Products__c}
+Product Details - {!Fulfillment__c.Phase_3_Product_Launch_Details__c}
+
+Products sold as part of this opportunity: 
+{!Fulfillment__c.Opportunity__r.Products__c}

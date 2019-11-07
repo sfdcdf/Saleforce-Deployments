@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template for MDF Submission</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MDF Submission Template</name>
+    <style>none</style>
+    <subject>{!Partner_Marketing_Development_Fund__c.Partner_Account__c} submitted a new MDF!</subject>
+    <textOnly>Click to view the newly submitted {!Partner_Marketing_Development_Fund__c.Name}!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

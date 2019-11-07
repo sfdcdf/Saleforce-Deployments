@@ -1,0 +1,20 @@
+Hello, 
+
+This NCS Case {!Case.CaseNumber} needs review. The case is On Hold or has Client Problems and the Next Action Date has past. Please add any pertinent notes as comments within the case for stakeholders to reference. 
+
+Account: {!Account.Client_ID__c} - {!Account.Name} 
+Subject: {!Case.Subject} 
+Product: {!Case.SEO_Product__c} 
+
+
+Status: {!Case.Status} 
+Sub Status: {!Case.Sub_Status__c} 
+
+Next Action Date: {!Case.Next_Action_Date__c} 
+Status Notes: {!Case.Status_Notes__c} 
+
+Case Owner: {!Case.OwnerFullName} 
+IMS Rep: {!Account.IMS_Rep__c} 
+Sales Person: {!Case.Sales_Person__c} 
+
+Link to Case: {!Case.Link}

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Account.invoiced_this_MTD__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Invoiced This Month</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.invoiced_last_mtd__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Invoice Last MTD</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Monthly_Budget__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Budget</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Days_Since_Live__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Days Live</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93774009</developerName>
+        <masterLabel>Segment Grouping</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.IMS_Rep__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ryan Crary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suzanne Oyenarte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Tamayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelby Cowman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Woodhams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Graham McGee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Batcher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cassandra Stowers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Valentine</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinsley Hill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ashley Black</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Henry Haigler III</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jamie Russell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kiaira Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jake Overman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hank Haigler</sourceValue>
+            </sourceValues>
+            <value>White Collar</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Keegan Sandman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyler Wood</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Garner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Brady</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Mascitti</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Degreef</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittany Fountain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demetria Atkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joshua Alvarez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Drew Cooper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zachery Shubow</sourceValue>
+            </sourceValues>
+            <value>Blue Collar</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <value>Platinum</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.IMS_Rep__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.tz__Timezone_Full__c</field>
+    </columns>
+    <columns>
+        <field>Account.Sales_Channel_YL__c</field>
+    </columns>
+    <columns>
+        <field>Account.Secondary_Segments__c</field>
+    </columns>
+    <columns>
+        <field>Account.Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Monthly_Budget__c</field>
+    </columns>
+    <columns>
+        <field>Account.invoiced_last_mtd__c</field>
+    </columns>
+    <columns>
+        <field>Account.invoiced_this_MTD__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cancellation_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Charge_Failure_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Days_Live__c</field>
+    </columns>
+    <columns>
+        <field>Account.Next_Billing_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Most_Recent_Login_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.ROI_Details__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_E_mail__c</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Description__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Rep__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Demetria Atkins,Jennifer Batcher,Drew Cooper,Hank Haigler,Shelia Kelly,Reagan Neely,Zack Shubow,zachery shubow,Biff Spradley,Ashley Black,James Brady,Kinsley Hill,Adam Kovacs,Jake Overman,Andrew Smith,Amber Woodhams,Sherri Aguinaga,Ron Brown,Thad Dameris,Sara Davis,Graham McGee,Erika Persil,Valerie Smith,Cassandra Stowers,Erik Vicars,Joshua Alvarez,Ryan Crary,Brittany Fountain,Nathaniel Nipper,Suzanne Oyenarte,Jamie Russell,Jordan Valentine,drew cooper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Test_Account__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93774009</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.IMS_Rep__c</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>AMP - BoB (Live Only)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.invoiced_this_MTD__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

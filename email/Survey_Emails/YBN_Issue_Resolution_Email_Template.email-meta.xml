@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To send to client when case is closed, now under Cust Surveys</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>YBN - Issue Resolution Email Template</name>
+    <style>none</style>
+    <subject>Thank You For Contacting Yodle</subject>
+    <textOnly>At Yodle, we want to make sure every service experience you have with us is a great one. Looks like we recently spent some time with you. We&apos;d love your feedback to make sure we handled everything you needed.
+
+If you could please take a moment to fill out the below survey.  Your feedback is key to our continued success!
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=nn9jxrk20mc9&amp;q2={!Case.Id}&amp;q3={!Case.AccountId}
+
+Thank you,
+
+Brandon Ramos
+Senior Vice President, Client Services 
+
+
+©{!User.Today_s_Year__c} by Yodle Web.com, Inc. All Rights Reserved.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_7193112</developerName>
+        <masterLabel>Complete or Not?</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Cases$Status</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Complete</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Opt Complete</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Opt Not Necessary</sourceValue>
+            </sourceValues>
+            <value>Complete</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Did Not Complete</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Did Not Complete - Sent Recap Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Churned</sourceValue>
+            </sourceValues>
+            <value>Not Completed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Unscheduled - Reattempt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Unscheduled - 4+ Attempts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scheduled - Reattempt</sourceValue>
+            </sourceValues>
+            <value>In Progress</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Status</field>
+    </columns>
+    <description>Complete or Not Complete</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Product_Type_Transactional__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>leads by web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Reason</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CS Touch Plan,CS Touch Plan - Dedicated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Case</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_7193112</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Client_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>LBW TP Statuses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_w_or_w_o_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Cancel_Code__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.First_Cancel_Code_Details__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.First_Cancel_Code_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Additional_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Account_Product_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>leads by web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Additional_Notes__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>4th,automatically,auto,renew,fourth</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Cancel_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sales Expectations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.First_Cancel_Code_Details__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contract Length Discrepancy,Post Contract Monthly Fee</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Auto-Renew Cancellations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Cancellation_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

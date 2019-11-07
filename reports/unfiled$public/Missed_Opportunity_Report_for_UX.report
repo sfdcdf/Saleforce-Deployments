@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Phone_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Email__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Account.Days_Since_Live__c</field>
+    </columns>
+    <description>Scott using report to call clients for interviews on MO feature</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>335116,331859,335903,338398,337931,335168,330414,335454,333788,333783,335133,331585,339015,335489,339106,126679,337090,338147,335581,335447,338260,336304,337915,339212,338984,334876,339069,332431,338130,281698,333165,336428,338457,335597,333782,333309,338388,338065,336779,327013,331399,338565,338060,329617,333665,334569,338851,334192,335424,335369,337142,338727,337175,339018,335857,334953,339195,332884,337933,336040,328237,330234,331891,338131,335394,338307,339000,334744,333703,338552,338646,338519,338898,335701,335987,335747,337969,330317,328620,331494,335524,337923,127561,338924,339036,337037,329714,336112,334360,335584,335005,331446,338546,337935,334017,333553,338607,335422,338273,335380,335703,334376,335093,336230,329078,336937,335879,336105,339224,338547,333128,338801,339434,335342,333950,331998,338654,338656,335742,329428,336999,331208,335629,330935,329627</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Client_Satisfaction__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Green</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Client_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Missed Opportunity Report for UX</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Cancellation_Request__c.Future_Monthly_Revenue__c:SUM/Cancellation_Request__c.Current_Monthly_Revenue__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>% Rev Saved</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Rev Saved</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Cancellation_Request__c.Current_Monthly_Revenue__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Opportunity</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_98153371</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_OWNER_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keegan Sandman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Degreef</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Nagy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelby Cowman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyler Wood</sourceValue>
+            </sourceValues>
+            <value>AM Blue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Garner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Starett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Smith</sourceValue>
+            </sourceValues>
+            <value>AM Red</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alvin Jobe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gwen Doyle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Slaunwhite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alyson MacDonald</sourceValue>
+            </sourceValues>
+            <value>NG Pod</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Tamayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Brady</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Mascitti</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Woodhams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittany Fountain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suzanne Oyenarte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Crary</sourceValue>
+            </sourceValues>
+            <value>AM Jax</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Hoddinott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karen Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Rundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberley Boutilier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kayla Muir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Gerrior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nina Avery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Blake MacPhee</sourceValue>
+            </sourceValues>
+            <value>AMP Inbound</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_OWNER_NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Cancellation_Request__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Cancel_Code__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Other_Cancel_Code__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Outcome__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Initial_Product__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Future_Product__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Current_Monthly_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Future_Monthly_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Refund_Detail__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Adstation_Credit_Detail__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Closed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Date_of_Cancellation_Request__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>lead stream support,lbw customer service,Local Pod Queue,erik vicars,makenzie cunningham,barb jenkins,shelia kelly,adam kovacs,randy dewey,nathaniel nipper,leonard edwards</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Owner_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>local consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.No_Save_Mode__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>POD- Monthly Cancellation Metrics</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Cancellation_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Cancellation_Request__c.Outcome__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

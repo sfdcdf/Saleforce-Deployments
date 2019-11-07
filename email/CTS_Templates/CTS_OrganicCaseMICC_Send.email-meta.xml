@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SF to CTS General MIC Case send for CTS Migration</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CTS-OrganicCaseMICC-Send</name>
+    <style>none</style>
+    <subject>Maps Initial Claiming: {!Organic_Analysis__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

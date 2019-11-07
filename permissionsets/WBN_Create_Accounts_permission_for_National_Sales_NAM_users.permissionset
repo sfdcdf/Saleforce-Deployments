@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users can create Standard and YBN Master accounts.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>WBN Create Accounts permission for National Sales NAM users</label>
+    <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Account.Standard</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Account.YBN_Corporate_Relationship</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.LH_360_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Client_ID__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>170754,191568,191573,228199,231526,234925,236076,244867,250271,251521,253298,254946,256175,259243,259349,263131,264364,265013,267256,267568,268030,268031,268032,268125,268171,269948,270861,271337,272109,272199,272646,272742,274245,274307,274329,274961,275046,275111,275112,276031,276614,276980,277180,277814,279017,279509,279560,280186,280734,280797,280958,281287,281700,282575,283086,283156,284002,284049,284052,284467,284485,284533,284647,284678,284981,285094,285095,285125,285127,285171,285229,285886,286214,286403,286421</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LH ID Upload - Blank SFID</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Best_Practice_Evaluation__c$Name</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Overall_Setup_Grade__c</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Best_Practice_Evaluation__c$Overall_Opt_Score__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Best_Practice_Evaluation__c$Evaluation_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>adams,almus,kaloala,linville,gulukyan,carr,kelsie mettille,gelardi,helfrey,jennifer carpenter,joseph belk,enrique ramirez,barreda</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Best_Practice_Evaluation__c$Evaluation_for__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Best_Practice_Evaluation__c$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JD - Opt Audits</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Best_Practice_Evaluations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Best_Practice_Evaluation__c$CreatedDate</dateColumn>
+        <endDate>2013-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-09-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Id</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Pin_Action_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Attempts_to_Contact__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(((1 AND 2) AND 3) AND 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.PIN_Action_Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>357819,357852,357939,358007,358141,358130,358132,358086,358094,358159,358274,358264,358257,358319,358345,358355,358310,358368,358503,358446,358448,358582,358536,358593,358511,358608,358615,358665,358266,358702,358747,358765,358414,358771,358814,358822,358791,358841,358864,358892,359082,359071,359199,359221,359238,359236,359215,359247,359209,358600,359334,359294,357952,359306,359361,359301,359418,359466,359449,359453,359505,359520,359542,359610,359591,359560,359645,359672,359691,359770,359714,359692,359654,359676,359753,359792,359936,359914,359829,359870,359890,359926,359988,359994,360044,359941,360003,358322,359945,359895,360071,360114,360140,360139,360126,360094,360148,360164,360212,360220,360187</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cannot Complete,All Tasks Completed,In Progress,Scheduled Call,Awaiting Internal Response,Pending Reattempt,Closed,Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Pin_Action_Reason__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Maps Contact - Comanage</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Attempts_to_Contact__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0,1,2,3,4,5,6,7,8+</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MVTMake List MAX</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Organic_cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$Client_ID__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Organic_Analyses__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-04-01</startDate>
+    </timeFrameFilter>
+</Report>

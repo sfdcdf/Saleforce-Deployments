@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Close the loop on canceled reactivation letters for specific patients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Medical_March_2016</letterhead>
+    <name>Features- Reactivation Letter Deactivation</name>
+    <style>freeForm</style>
+    <subject>Lighthouse Reactivation Letter Deactivation - {!Case.Client_ID__c}</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

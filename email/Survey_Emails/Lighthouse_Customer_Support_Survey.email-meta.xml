@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>For LH Customer Survey</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Gray_March_2016</letterhead>
+    <name>Lighthouse Customer Support Survey</name>
+    <style>freeForm</style>
+    <subject>Thank You For Contacting Lighthouse</subject>
+    <textOnly>Hello,
+
+
+At Lighthouse 360, we are passionate about your success and are committed to continually improving the quality of the services and product we provide to you.
+
+
+We would appreciate your feedback on our performance by answering a few questions regarding your recent request. This survey should take only a few minutes to complete and will help us ensure your success with our services and products.
+
+Please click the link below to access the survey.
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=d8svsyjbmvz2q2={!Account.Id}&amp;q1={!Case.Id}
+
+
+Thank you,
+
+Lighthouse Support</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

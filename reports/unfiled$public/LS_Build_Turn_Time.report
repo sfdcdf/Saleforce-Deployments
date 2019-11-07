@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.Website_Setup_Completed_By__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.Time_Entered_In_Progress__c</field>
+    </columns>
+    <columns>
+        <field>Case.Website_Setup_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.Date_of_Web_Dev_QA__c</field>
+    </columns>
+    <columns>
+        <field>Case.QA_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.MA_Corrected_QA_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.GCC_Completed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.GCC1_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Account.CSC_Date_Time__c</field>
+    </columns>
+    <description>Report By Chris &amp; Janine For Derek</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.XJen_Test_COBRA,Case.XJen_Test_NCS_No_Use,Case.New_Client_Setup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Product_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lighthouse,Lighthouse + PP,Lighthouse Ads,Other,TORCHx,TORCHx Ads,YBN,Lighthouse Field Service</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Product_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Leads By Web,Lead Stream,Lead Stream ATV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Churned,Delete Case</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>LS Build Turn Time</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.Website_Setup_Date__c</dateColumn>
+        <endDate>2018-09-05</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-09-05</startDate>
+    </timeFrameFilter>
+</Report>

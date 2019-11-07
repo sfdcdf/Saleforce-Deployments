@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>TEAM-36711Follow up email after the CSC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Recap – CSC – Vision</name>
+    <style>none</style>
+    <subject>Lighthouse 360: Setup Call Recap {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <textOnly>Lighthouse
+
+For Support, Call  (888) 427–5454
+
+Hello {!Lighthouse_Worksheets__c.Practice_Name__c},
+
+Thank you for taking the time to speak with me to review your account and help you get started. I wanted to recap the highlights of our call and ensure you have all necessary information regarding the setup of your account.
+
+Lighthouse 360 Portal
+
+To log in to your portal just go to home.lh360.com. Your username is {!Lighthouse_Worksheets__c.Portal_Username__c}. To recover your password click here. Be sure to bookmark this information for future reference.
+
+Messages
+
+As discussed, the following features are available to you to communicate with your patients. We have noted what is currently active in your account. You can turn on the inactive features at any time, so feel free to reach out to us if you change your mind and we can easily get them set up for you. Prices referenced below may be subject to change upon advanced notice to you.
+
+Activated      Not Activated
+
+Appointment Reminders
+
+Automated emails, texts, calls, and postcards sent for appointment reminders.
+
+Type  Cost
+
+Emails  Included
+
+Texts  Included
+
+Calls  {!Lighthouse_Worksheets__c.OBC_Price__c}
+
+Patient Recall
+
+Automated emails, texts, and postcards sent for follow up notices.
+
+Type  Cost
+
+Emails  Included
+
+Texts  Included
+
+Postcards  {!Lighthouse_Worksheets__c.PC_Price__c}/postcard
+
+Eyewear Pickup
+
+Automated emails and texts sent when eyewear is ready pickup.
+
+Type  Cost
+
+Emails  Included
+
+Texts  Included
+
+Messages
+
+Email templates to be sent for upcoming specials, holiday greetings.
+
+Type  Cost
+
+Emails Templates  Included
+
+Monitor Your Google Reviews
+
+The Feedback campaign helps you gather more patient reviews on Google. If you’d like to monitor those reviews from the portal, we’ll need help accessing the office’s Google My Business page. If you’d like to take advantage of this feature and haven’t spoken to our team yet, click here.
+
+Contacting Us
+
+If at any point you have questions about your account, don&apos;t hesitate to give us a call at (888) 427-5454. We have team members available to help assist you Monday - Friday from 8am to 7pm EST.
+
+Thank you for choosing Lighthouse. We appreciate your business!
+
+
+{!User.FirstName}
+
+Lighthouse Support
+(888) 427-5454
+
+
+©{!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved. 12808 Gran Bay Parkway, West | Jacksonville, FL 32258
+Lighthouse is a Web.com Group, Inc. brand.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

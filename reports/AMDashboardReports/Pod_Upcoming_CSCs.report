@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_30288239</developerName>
+        <masterLabel>Needs to be assigned?</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Cases$IMS_Rep__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Nick Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Grau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lyndsay Spa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emily Kareiva</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyle Zaffin</sourceValue>
+            </sourceValues>
+            <value>Already Assigned</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Secondary_Segments__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Subject</field>
+    </columns>
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Status</field>
+    </columns>
+    <columns>
+        <field>Account$Days_Since_Live__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Next_Scheduled_CSC2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Scheduled_Call__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Budget__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Total_Acct_Revenue__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(((((1 and 3 and 4) or (6 and 8)) and (2 or 5 or 7 or 11) and 9) AND 10)) AND 12</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cases$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.XJen_Test_COBRA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$IMS_Rep__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>LBWCustomerService@web.com,lbw support,local pod queue,platinum support,Christopher grau,lyndsay spa,emily kareiva,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Next_Scheduled_CSC2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>YESTERDAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Created in YL Tracker</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Budget__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1420</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Outbound_Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$IMS_Rep__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LBWCustomerService@web.com,lbw support,local pod queue,platinum support,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson,Christopher grau,lyndsay spa,emily kareiva</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Reason</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CSC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Completed,Churned,Delete Case,Did Not Complete,Complete,Closed - Upsell Accepted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SFDC Sync</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LBW Support,lbw customer service,local pod queue,platinum support,Christopher grau,lyndsay spa,emily kareiva,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Product_Type_Transactional__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>torchx</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_30288239</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cases$IMS_Rep__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cases$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pod- Upcoming CSCs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

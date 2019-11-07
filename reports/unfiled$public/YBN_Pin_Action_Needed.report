@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Client_Type__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Account_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Organic_Analysis__c.PIN_Action_Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Client_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.YO_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Off</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending Reattempt</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>YBN Pin Action Needed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Organic_Analysis__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Organic_Analysis__c.Contact_Date__c</dateColumn>
+        <endDate>2017-03-23</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-03-23</startDate>
+    </timeFrameFilter>
+</Report>

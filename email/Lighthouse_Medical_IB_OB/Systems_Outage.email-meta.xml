@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is for the systems outage, happening November 2017</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Systems Outage</name>
+    <style>none</style>
+    <subject>Important Information About Your Lighthouse 360 Service</subject>
+    <textOnly>Lighthouse 360
+
+Hello –
+
+Apologies for interrupting your day, but we wanted to let you know about an issue that may or may not be affecting your Lighthouse 360 service. Out of an abundance of caution, we wanted to notify all of our customers so you can continue to communicate effectively with your patients.
+
+Some customers are experiencing:
+
+Delayed or inability to access your portal
+Patient communications are being sent out but may be delayed up to 8 hours
+Issues with appointment confirmations appearing in your Practice Management System
+
+We are truly sorry if any of these issues are affecting your account. We know communications with your patients is critical to your practice. At this moment, we do not know when service will be fully restored, but this is our top priority and we will email you as we learn more. We will also be posting updates in your portal and on our website as they are available.
+
+Thank you for your patience and understanding,
+Your Lighthouse 360 Product and Customer Service Teams
+
+© {!User.Today_s_Year__c} Web.com Group, Inc. All Rights Reserved.
+12808 Gran Bay Parkway, West | Jacksonville, FL 32258
+Lighthouse is a Web.com Group, Inc. brand.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

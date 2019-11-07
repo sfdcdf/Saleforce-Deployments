@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_70843242</developerName>
+        <masterLabel>Profile Buckets</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>User.Profile_Name__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>National Analyst</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Analyst - Senior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National CS Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National IMS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Marketing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National PES</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National PImS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National RM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner CS Manager</sourceValue>
+            </sourceValues>
+            <value>WBN CS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>NCSE - SDR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Exec Sponsor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Sales - NAM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Sales Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Sales Manager- President</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nationally Certified Sales Executive</sourceValue>
+            </sourceValues>
+            <value>WBN Sales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Services Manager - Austin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Services Manager - Non Austin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Services Manager - Non Austin (No SSO)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dedicated CS Support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Local/Partner Performance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Local/Partner Performance (non SSO)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Local/Partner Performance - Senior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooled CS Support - Austin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooled CS Support - Austin Senior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooled CS Support - Non Austin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooled CS Support - Non Austin (Non SSO)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooled CS Support - Non Austin Senior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooled CS Support - TORCHx</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Training Executive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Production</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>OPT Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pin Collection</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pin Collection - Supervisor</sourceValue>
+            </sourceValues>
+            <value>Premium CS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Company Communities User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Company Community - Field Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Field Sales Portal Profile</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Field Sales Portal2 Profile</sourceValue>
+            </sourceValues>
+            <value>Premium Sales</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <columns>
+        <field>User.Profile_Name__c</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ACTIVE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Profile_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>communit,field sales</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_70843242</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>User Profile Buckets</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>PROFILE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

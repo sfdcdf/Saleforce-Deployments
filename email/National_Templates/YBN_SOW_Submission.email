@@ -1,0 +1,9 @@
+A new SOW has been submitted for review. Please review for approval and update the SalesForce case accordingly. 
+
+Account name: {!Case.Account}
+
+Submitted by: {!Case.CreatedBy}
+
+Details: {!Case.Description}
+
+{!Case.Link}

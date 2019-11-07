@@ -1,0 +1,17 @@
+The submitted SOW for Account name: {!Case.Account} has been rejected and requires additional updates before it can be presented.  
+
+Account Name: {!Case.Account}
+
+Submitted By: {!Case.CreatedBy}
+
+Details: {!Case.Description}
+
+CS Approval Status: {!Case.CS_Approved__c} 
+
+Performance Approval Status: {!Case.Performance_Approved__c}
+
+Web Dev Approval Status: {!Case.Web_Dev_Approved__c}
+
+Integration Team Approval Status:{!Case.Integration_Team_Approved__c}
+
+{!Case.Link}

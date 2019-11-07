@@ -1,0 +1,2775 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ACL Guidelines Followed --></label>
+        <name>ACL_Guidelines_Followed2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- all ads are created using ACL, and all ad copy template values are filled out --></help>
+        <label><!-- ACL Guidelines Followed (%) --></label>
+        <name>ACL_Guidelines_Followed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Able to Get Lead&apos;s Contact Information? --></label>
+        <name>Able_to_Get_Lead_s_Contact_Information__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Acceptance Exception --></label>
+        <name>Account_Acceptance_Exception__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Acceptance Issues --></label>
+        <name>Account_Acceptance_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Channel Type --></label>
+        <name>Account_Channel_Type__c</name>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Issue --></label>
+        <name>Account_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Quality</masterLabel>
+            <translation><!-- Lead Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overspend</masterLabel>
+            <translation><!-- Overspend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underspend</masterLabel>
+            <translation><!-- Underspend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Originally Set Up By --></label>
+        <name>Account_Originally_Set_Up_By__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Account Originally Set Up By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Build Evaluation For --></label>
+        <name>Account_Setup_For__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Account Build Evaluation For) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ad Copy Formatting --></label>
+        <name>Ad_Copy_Formatting__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ad Extensions --></label>
+        <name>Ad_Extensions__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address Consistency --></label>
+        <name>Address_Consistency__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ads Overall Grade (%) --></label>
+        <name>Ads_Overall_Grade2__c</name>
+    </fields>
+    <fields>
+        <help><!-- all provider errors are fixed --></help>
+        <label><!-- All Errors Fixed (%) --></label>
+        <name>All_Errors_Fixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analyst Notes --></label>
+        <name>Analyst_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appropriate Banner Images --></label>
+        <name>Appropriate_Banner_Images__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Appropriate Campaign Selection --></label>
+        <name>Appropriate_Campaign_Selection__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Appropriate/Error Free Business Descript --></label>
+        <name>Appropriate_Error_Free_Business_Descript__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Appropriate Name Campaign --></label>
+        <name>Appropriate_Name_Campaign__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Area Served Description Single City --></label>
+        <name>Area_Served_Description_Single_City__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned User Roles --></label>
+        <name>Assigned_User_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Audit Fix Notes --></label>
+        <name>Audit_Fix_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- If similar client IDs were noted on questionnaire, site layout, colors, and content do not overlap. --></help>
+        <label><!-- Avoided Site/Content Overlap --></label>
+        <name>Avoided_Site_Content_Overlap__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BPM Overall Grade (%) --></label>
+        <name>BPM_Overall_Grade2__c</name>
+    </fields>
+    <fields>
+        <help><!-- To track Website Tier Compliance - LOCAL accounts only --></help>
+        <label><!-- Banner Customization --></label>
+        <name>Banner_Customization__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Batch Added Terms --></label>
+        <name>Batch_Added_Terms2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- no geo terms were batch added (exceptions apply to cities and abbreviations not present in our system). --></help>
+        <label><!-- Batch Added Terms (%) --></label>
+        <name>Batch_Added_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the BEST source for newly updated account Information? --></help>
+        <label><!-- Source for list of live SEO accounts: --></label>
+        <name>Best_source_for_List_of_Live_SEO_accou__c</name>
+        <picklistValues>
+            <masterLabel>Excel Spreadsheet</masterLabel>
+            <translation><!-- Excel Spreadsheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMA</masterLabel>
+            <translation><!-- FMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Doc</masterLabel>
+            <translation><!-- Google Doc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broken Links --></label>
+        <name>Broken_Links2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broken Links --></label>
+        <name>Broken_Links__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe any situation where the build process was customized or otherwise deviated from build processes for Local. --></help>
+        <label><!-- Build Process Differences --></label>
+        <name>Build_Process_Differences__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add any relevant notes here. --></help>
+        <label><!-- Build Process Notes --></label>
+        <name>Build_Process_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which build process was implemented for this relationship? --></help>
+        <label><!-- Build Process Used --></label>
+        <name>Build_Process_Used__c</name>
+        <picklistValues>
+            <masterLabel>IT Pro</masterLabel>
+            <translation><!-- IT Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manually Built</masterLabel>
+            <translation><!-- Manually Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Built</masterLabel>
+            <translation><!-- Never Built --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When were the most listings built for this relationship? --></help>
+        <label><!-- Built Process Timeframe --></label>
+        <name>Built_Process_Timeframe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk Campaign Tool --></label>
+        <name>Bulk_Campaign_Tool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk URL --></label>
+        <name>Bulk_URL__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Were the franchisees Google Local accounts build under a master login or individual logins? --></help>
+        <label><!-- Bulk vs. Individual Google Accounts: --></label>
+        <name>Bulk_vs_Individual_Google_Accounts__c</name>
+        <picklistValues>
+            <masterLabel>Bulk Upload</masterLabel>
+            <translation><!-- Bulk Upload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Accounts</masterLabel>
+            <translation><!-- Individual Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed</masterLabel>
+            <translation><!-- Mixed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Description --></label>
+        <name>Business_Description__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CS Manager --></label>
+        <name>CS_Manager__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (CS Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Tracking - local numbers configured --></label>
+        <name>Call_Tracking_all_numbers_configured__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- website conversion best practices are followed --></help>
+        <label><!-- Calls to Action (%) --></label>
+        <name>Calls_to_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capitalization Issues --></label>
+        <name>Capitalization_Issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Flow Followed --></label>
+        <name>Case_Flow_Followed__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case in Review --></label>
+        <name>Case_in_Review__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Categories --></label>
+        <name>Categories__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Around what date were the most listings built for this relationship? --></help>
+        <label><!-- Citations Build Time Period (approx) --></label>
+        <name>Citations_Build_Time_Period_approx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim Status --></label>
+        <name>Claim_Status__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>Client_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the client have a previous or existing vendor for SEO? --></help>
+        <label><!-- Client has existing or previous vendor --></label>
+        <name>Client_works_with_existing_or_prev__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Clients metrics for SEO reporting: --></label>
+        <name>Clients_metrics_for_SEO_reporting__c</name>
+        <picklistValues>
+            <masterLabel>Emails</masterLabel>
+            <translation><!-- Emails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keyword Ranking</masterLabel>
+            <translation><!-- Keyword Ranking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPL</masterLabel>
+            <translation><!-- PPL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid Calls</masterLabel>
+            <translation><!-- Unpaid Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Visits</masterLabel>
+            <translation><!-- Website Visits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- To track Website Tier Compliance - LOCAL accounts only --></help>
+        <label><!-- Color Customization --></label>
+        <name>Color_Customization__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colors for Scoring --></label>
+        <name>Colors_for_Scoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name in Video --></label>
+        <name>Company_Name_in_Video__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Name on YouTube --></label>
+        <name>Company_Name_on_YouTube__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- a. ads speak specifically to every SC
+            b. serving area/location used within the ad is the same as on the landing page
+            c. all USPs/promotions used within the ad are present and visible on the landing  
+                pages --></help>
+        <label><!-- Consistency (%) --></label>
+        <name>Consistency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consistent Geo Messaging --></label>
+        <name>Consistent_Geo_Messaging__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Form (%) --></label>
+        <name>Contact_Form__c</name>
+    </fields>
+    <fields>
+        <help><!-- contact form present on website --></help>
+        <label><!-- Contact Form Present (if applicable) (%) --></label>
+        <name>Contact_Forms_Present_if_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact form tested? --></label>
+        <name>Contact_form_tested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Content Contains Keywords --></label>
+        <name>Content_Contains_Keyword__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Content Contains Keywords OLD --></label>
+        <name>Content_Contains_Keywords__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describe any corporate or branding standards required by the client --></help>
+        <label><!-- Corporate / Branding Standards --></label>
+        <name>Corporate_Branding_Standards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate FMA ID --></label>
+        <name>Corporate_FMA_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate Relationship Agreement Type --></label>
+        <name>Corporate_Relationship_Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bottom Up (3)</masterLabel>
+            <translation><!-- Bottom Up (3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed (2)</masterLabel>
+            <translation><!-- Mixed (2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent Pays (1)</masterLabel>
+            <translation><!-- Parent Pays (1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Vendor (0)</masterLabel>
+            <translation><!-- Preferred Vendor (0) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Corporate Type --></label>
+        <name>Corporate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Franchisor (1)</masterLabel>
+            <translation><!-- Franchisor (1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturer (0)</masterLabel>
+            <translation><!-- Manufacturer (0) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi Location (2)</masterLabel>
+            <translation><!-- Multi Location (2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (3)</masterLabel>
+            <translation><!-- Other (3) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Correct Company Name --></label>
+        <name>Correct_Comp__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Name Correct --></label>
+        <name>Correct_Company_Name__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Correct Domain --></label>
+        <name>Correct_Domain__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- account has optimal amount of SGs without causing overspend/underspend --></help>
+        <label><!-- Correct # of Service Groups (%) --></label>
+        <name>Correct_Number_of_Service_Groups__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this client setup under a logical segment? --></help>
+        <label><!-- Correct Segment Implementation? --></label>
+        <name>Correct_Segment_Implementation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Correct phone number in header? --></label>
+        <name>Correct_phone_number_in_header__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Citation Build Process Used --></label>
+        <name>Current_Citation_Build_Process_Used__c</name>
+        <picklistValues>
+            <masterLabel>Manually Built</masterLabel>
+            <translation><!-- Manually Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Built</masterLabel>
+            <translation><!-- Never Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YCN Activated</masterLabel>
+            <translation><!-- YCN Activated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Are custom YO templates used? --></help>
+        <label><!-- Custom Template Used --></label>
+        <name>Custom_Template_Used__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dangerous Terms --></label>
+        <name>Dangerous_Duplicates2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- no dangerous duplicates are present within the geo template --></help>
+        <label><!-- Dangerous Duplicates (%) --></label>
+        <name>Dangerous_Duplicates__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is all data found in ASW the same as on-page or do differences exist? --></help>
+        <label><!-- Data Sync with ASW --></label>
+        <name>Data_Sync_with_ASW__c</name>
+        <picklistValues>
+            <masterLabel>Sync Mismatches</masterLabel>
+            <translation><!-- Sync Mismatches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synced Correctly</masterLabel>
+            <translation><!-- Synced Correctly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the date the errors were corrected on --></help>
+        <label><!-- Date Errors Corrected --></label>
+        <name>Date_Errors_Corrected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Evaluation QA Completed --></label>
+        <name>Date_Evaluation_QA_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Queue --></label>
+        <name>Date_Sent_to_Queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date YCN Activated --></label>
+        <name>Date_YCN_Activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Open --></label>
+        <name>Days_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description contains Name/Domain on Yout --></label>
+        <name>Description_contains_Name_Domain_on_Yout__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- MPA provided enough information, suggestions, and reasoning regarding the optimization --></help>
+        <label><!-- Thorough Optimization Notes --></label>
+        <name>Detailed_OPT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did our client get lead&apos;s contact info? --></label>
+        <name>Did_our_client_get_lead_s_contact_info__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Did they follow a specific script? --></label>
+        <name>Did_they_follow_a_specific_script__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- display URL within the ASW is accurate --></help>
+        <label><!-- Display URL (%) --></label>
+        <name>Display_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are client-generated store IDs used as unique identifiers for location names in Yodle Live, in any listings, or custom reports? --></help>
+        <label><!-- Platform contains proprietary store IDs? --></label>
+        <name>Does_client_have_proprietary_store_IDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Correct in Video --></label>
+        <name>Domain_Correct_in_Video__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domain Correct on YouTube --></label>
+        <name>Domain_Correct_on_YouTube__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enhance Build --></label>
+        <name>Enhance_Build__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enhanced Build/Not Enhanced --></label>
+        <name>Enhanced_Build_Not_Enhanced__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Errors Corrected By --></label>
+        <name>Errors_Corrected_By__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Errors Corrected By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Status --></label>
+        <name>Evaluation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete- Review Only</masterLabel>
+            <translation><!-- Complete- Review Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete- Review and Changes Needed</masterLabel>
+            <translation><!-- Complete- Review and Changes Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Evaluation for: --></label>
+        <name>Evaluation_for__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Evaluation for:) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Ticket ID for this case in an External Ticketing System --></help>
+        <label><!-- External Ticket ID --></label>
+        <name>External_Ticket_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relationship was created between Salesforce and this external ticketing system --></help>
+        <label><!-- External Ticket System --></label>
+        <name>External_Ticket_System__c</name>
+        <picklistValues>
+            <masterLabel>CTS</masterLabel>
+            <translation><!-- CTS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Filled Out &amp; Published --></label>
+        <name>Filled_Out_Published__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Followed Sales Notes --></label>
+        <name>Followed_Sales_Notes__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Friendly, Helpful and Professional? --></label>
+        <name>Friendly_Helpful_and_Professional__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Geo Radius Miles Appropriate --></label>
+        <name>Geo_Radius_20_miles__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- IP targeting radius is set according to the 20 mile best practice, and 10 miles for NYC, SF, and Chicago --></help>
+        <label><!-- Geo Radius (%) --></label>
+        <name>Geo_Radius__c</name>
+    </fields>
+    <fields>
+        <help><!-- overall geo template section grade --></help>
+        <label><!-- Geo Template Grade (%) --></label>
+        <name>Geo_Template_Grade2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geo Terms Compliant --></label>
+        <name>Geo_Terms_Compliant__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Consistency between geo terms and landing page. --></help>
+        <label><!-- Geo Terms Consistent w/Landing Pg --></label>
+        <name>Geo_Terms_Consistency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Goe terms are selected appropriately based on the stationary or mobile business type. --></help>
+        <label><!-- Geo Terms (%) --></label>
+        <name>Geo_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geo message clear and consistent --></label>
+        <name>Geo_message_clear_and_consistent__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Geo terms consistent w/ landing page --></label>
+        <name>Geo_terms_consistent_w_landing_page__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Grammar Error(s) --></label>
+        <name>Grammar_Error_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe any contractual or verbal guarantees given to the client. --></help>
+        <label><!-- Guarantees --></label>
+        <name>Guarantees__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe the way custom reports are generated --></help>
+        <label><!-- How are custom reports generated --></label>
+        <name>How_are_custom_reports_generated__c</name>
+    </fields>
+    <fields>
+        <help><!-- What does CS use to publish websites for this relationship? --></help>
+        <label><!-- How does CS publish websites? --></label>
+        <name>How_does_CS_publish_websites__c</name>
+        <picklistValues>
+            <masterLabel>ASW</masterLabel>
+            <translation><!-- ASW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Page Designer</masterLabel>
+            <translation><!-- Page Designer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What does webdev use to publish websites for this relationship? --></help>
+        <label><!-- How does Web Dev publish websites? --></label>
+        <name>How_does_Web_Dev_publish_websites__c</name>
+        <picklistValues>
+            <masterLabel>ASW</masterLabel>
+            <translation><!-- ASW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Page Designer</masterLabel>
+            <translation><!-- Page Designer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How many rings did they answer in? --></label>
+        <name>How_many_rings_did_they_answer_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMS on Account --></label>
+        <name>IMS_on_Account__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (IMS on Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- If NAP doesn&apos;t match, list inconsistency --></label>
+        <name>If_NAP_doesn_t_match_list_inconsistency__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, list the missing service(s) --></label>
+        <name>If_no_describe_the_cur__c</name>
+    </fields>
+    <fields>
+        <label><!-- If no, list Yodle standards not met --></label>
+        <name>If_no_list_Yodle_best_practices_not_met__c</name>
+    </fields>
+    <fields>
+        <label><!-- If no, list global issues seen --></label>
+        <name>If_no_list_global_issues_seen__c</name>
+    </fields>
+    <fields>
+        <label><!-- If no, state current and ideal segment --></label>
+        <name>If_no_state_current_and_ideal_segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- If non-compliant, what are the issues? --></label>
+        <name>If_non_compliant_what_are_the_issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- If sync issues found, please list --></label>
+        <name>If_sync_issues_found_please_list__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Yes, please describe the areas where other vendors may be affecting our SEO performance. --></help>
+        <label><!-- If vendor issues, please list --></label>
+        <name>If_vendor_issues_please_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Not Reflective of Service --></label>
+        <name>Image_Not_Reflective_of_Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- Images are reflective of service and are clear and not pixelated. --></help>
+        <label><!-- Quality Images --></label>
+        <name>Images_Reflective_of_Service__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Images --></label>
+        <name>Images__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Add any relevant implementation notes here. --></help>
+        <label><!-- Implementation Notes --></label>
+        <name>Implementation_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- More than 1 font type in 1 text widget --></help>
+        <label><!-- Inconsistent Fonts --></label>
+        <name>Inconsistent_Fonts2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inconsistent Fonts --></label>
+        <name>Inconsistent_Fonts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incorrect Tracking Number Displayed --></label>
+        <name>Incorrect_Tracking_Number_Displayed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which built process was implemented for this relationship? --></help>
+        <label><!-- Initial Citation Build Process Used --></label>
+        <name>Initial_Citation_Build_Process_Used__c</name>
+        <picklistValues>
+            <masterLabel>Manually Built</masterLabel>
+            <translation><!-- Manually Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Built</masterLabel>
+            <translation><!-- Never Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YCN Activated</masterLabel>
+            <translation><!-- YCN Activated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- a. ads speak specifically to every SC
+            b. serving area/location used within the ad is the same as on the landing page
+            c. all USPs/promotions used within the ad are present and visible on the landing  
+                pages --></help>
+        <label><!-- Consistency with KWs, Ads &amp; Landing Page --></label>
+        <name>KW_Ad_Landing_Page_Relevancy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appropriate Domain --></label>
+        <name>Keyword_Rich_Domain_Used__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- landing pages are appropriate and relevant to SCs --></help>
+        <label><!-- Landing Pgs Match (%) --></label>
+        <name>Landing_Pages_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landing Pgs Match --></label>
+        <name>Landing_Pgs_Match__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Launched Correctly --></label>
+        <name>Launched_Correctly__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead CS Team Member 1 --></label>
+        <name>Lead_CS_Team_Member_1__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Lead CS Team Member 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead CS Team Member 2 --></label>
+        <name>Lead_CS_Team_Member_2__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Lead CS Team Member 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead CS Team Member 3 --></label>
+        <name>Lead_CS_Team_Member_3__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Lead CS Team Member 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Legal disclaimer for lawyers --></label>
+        <name>Legal_disclaimer_for_lawyers__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- List Google guidelines violated --></label>
+        <name>List_Google_guidelines_violated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Listing Best Practice Notes --></label>
+        <name>Listing_Best_Practices_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do all listings comply with all published Google Quality Guidelines? --></help>
+        <label><!-- Listings meet Google Guidelines --></label>
+        <name>Listings_meet_Google_Quality_Guidelines__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do all listings comply with Yodle’s best practices? --></help>
+        <label><!-- Listings meet Yodle standards --></label>
+        <name>Listings_meet_Yodle_standards__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MA Manager --></label>
+        <name>MA_Manager__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (MA Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MIC Category Selection --></label>
+        <name>MIC_Category_Selection__c</name>
+        <picklistValues>
+            <masterLabel>Category Selection Complete</masterLabel>
+            <translation><!-- Category Selection Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Category Selection Inaccurate</masterLabel>
+            <translation><!-- Category Selection Inaccurate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Category Selection Incomplete</masterLabel>
+            <translation><!-- Category Selection Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do data inaccuracies exist between the MIC case and actual listing status? --></help>
+        <label><!-- MIC Listing Status Accuracy --></label>
+        <name>MIC_Listing_Status_Accuracy__c</name>
+        <picklistValues>
+            <masterLabel>Accurate</masterLabel>
+            <translation><!-- Accurate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Accurate</masterLabel>
+            <translation><!-- Not Accurate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MPA Manager --></label>
+        <name>MPA_Manager__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (MPA Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Not mentioned as an issue - 0%
+Several issues identified, but not tackled - 25% 
+Several issues identified, partially tackled/not tackled appropriately - 50%
+Several issues identified, most issues tackled - 75%
+All issues identified &amp; tackled - 100% --></help>
+        <label><!-- All Perf Issues Identified &amp; Tackled --></label>
+        <name>Main_Issue_OPT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Notes --></label>
+        <name>Manager_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Evaluation For --></label>
+        <name>Maps_Evaluation_For__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Maps Evaluation For) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Meta Descriptions --></label>
+        <name>Meta_Descriptions__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Missing/Addl Character(Apostrophe,Comma) --></label>
+        <name>Missing_Characters_Apostrophe_Comma__c</name>
+    </fields>
+    <fields>
+        <help><!-- Blank pages, content that is cut off --></help>
+        <label><!-- Missing Content --></label>
+        <name>Missing_Content__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do the Maps listings have Yodle’s mobile best practices implemented? --></help>
+        <label><!-- Mobile Business Targeting --></label>
+        <name>Mobile_Business_Targeting__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Compliant</masterLabel>
+            <translation><!-- Non-Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Must have a name campaign --></label>
+        <name>Must_have_a_name_campaign__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Complaint</masterLabel>
+            <translation><!-- Non-Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Must have a principal service group --></label>
+        <name>Must_have_a_principal_service_group__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Complaint</masterLabel>
+            <translation><!-- Non-Complaint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do the Name, Address, Phone and business descriptions for each listing match what is in the ASW? --></help>
+        <label><!-- NAP Standardization Matches ASW --></label>
+        <name>NAP_Standardization__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation><!-- False --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation><!-- True --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NCS Sent to Correct Queue --></label>
+        <name>NCS_Sent_to_Correct_Queue__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name, Address &amp; Phone in Footer --></label>
+        <name>Name_Address_Phone_in_Footer__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Natpal Tracking Code Present --></label>
+        <name>Natpal_Tracking_Code_Present__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Negatives Overall Grade (%) --></label>
+        <name>Negatives_Overall_Grade2__c</name>
+    </fields>
+    <fields>
+        <help><!-- no global negatives added during setup (except geo term negatives) --></help>
+        <label><!-- No Global Negs Added (%) --></label>
+        <name>No_Global_Negatives_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Global Negs Added --></label>
+        <name>No_Global_Negs_Added__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Campaigns Relevant to Budget --></label>
+        <name>Number_of_Campaigns_Relevant_to_Budget__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Strikes --></label>
+        <name>Number_of_Strikes__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do all on-page optimizations follow Yodle best practices? --></help>
+        <label><!-- OPO Standards Followed? --></label>
+        <name>OPO_Standards_Followed__c</name>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Compliant</masterLabel>
+            <translation><!-- Non-Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Compliant</masterLabel>
+            <translation><!-- Partially Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- One Geo Template --></label>
+        <name>One_Geo_Template2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- one geo template is used, unless 2 locations with over 30 miles distance are present --></help>
+        <label><!-- One Geo Template (%) --></label>
+        <name>One_Geo_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimization Protocols Followed --></label>
+        <name>Opt_Protocols__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Page Evaluation For --></label>
+        <name>Organic_Evaluation_For__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (On Page Evaluation For) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Opt Score (%) --></label>
+        <name>Overall_Opt_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Setup Grade (%) --></label>
+        <name>Overall_Setup_Grade__c</name>
+    </fields>
+    <fields>
+        <help><!-- To track Website Tier Compliance - LOCAL accounts only --></help>
+        <label><!-- Page Count --></label>
+        <name>Page_Count__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Performance Analysis Name --></label>
+        <name>Performance_Analysis_Name__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Phone Correct in Video --></label>
+        <name>Phone_Correct_in_Video__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone Correct on YouTube --></label>
+        <name>Phone_Correct_on_YouTube__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone Number Not Displayed in Header --></label>
+        <name>Phone_Number_Not_Displayed_in_Header__c</name>
+    </fields>
+    <fields>
+        <help><!-- phone numbers are tagged correctly and display properly on website --></help>
+        <label><!-- Phone Numbers (%) --></label>
+        <name>Phone_Numbers__c</name>
+    </fields>
+    <fields>
+        <help><!-- To track Website Tier Compliance - LOCAL accounts only --></help>
+        <label><!-- Photo Gallery --></label>
+        <name>Photo_Gallery__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Anything that disrupts the flow of the page (excessive spacing, poor image alignment, etc.) --></help>
+        <label><!-- Poor Page Formatting --></label>
+        <name>Poor_Page_Formatting__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Poor Pg Formatting --></label>
+        <name>Poor_Pg_Formatting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Call Answering</masterLabel>
+            <translation><!-- Call Answering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local SEM</masterLabel>
+            <translation><!-- Local SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National SEM</masterLabel>
+            <translation><!-- National SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outrank</masterLabel>
+            <translation><!-- Outrank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outrank +</masterLabel>
+            <translation><!-- Outrank + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner SEM</masterLabel>
+            <translation><!-- Partner SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YO 2.0</masterLabel>
+            <translation><!-- YO 2.0 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which product set is the client set up on? --></help>
+        <label><!-- Products Selected for Relationship: --></label>
+        <name>Products_Selected_for_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Mix</masterLabel>
+            <translation><!-- Mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR3</masterLabel>
+            <translation><!-- OR3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YO2</masterLabel>
+            <translation><!-- YO2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pronounce Company Name Correctly? --></label>
+        <name>Pronounce_Company_Name_Correctly__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proper HTML --></label>
+        <name>Proper_HTML__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- all necessary steps to clean up traffic were taken (match types, negatives, etc) --></help>
+        <label><!-- Traffic Optimized (%) --></label>
+        <name>Proper_SC_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes Camelcasing Ads. --></help>
+        <label><!-- Read Correctly - No Typos/Grammar Errors --></label>
+        <name>Read_Correctly_No_Typos_Grammar_Errors__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- good character limit utilization across all ads, no typos present --></help>
+        <label><!-- Read Correctly (%) --></label>
+        <name>Read_Correctly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relevant Images (%) --></label>
+        <name>Relevant_Images__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Notes --></label>
+        <name>Reporting_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Robots.txt &amp; No Index --></label>
+        <name>Robots_txt_No_Index__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment/Locale Specific Changes --></label>
+        <name>Segment_Specific_Changes__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found / Fixed</masterLabel>
+            <translation><!-- Error Found / Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Group Grade (%) --></label>
+        <name>Service_Group_Grade__c</name>
+    </fields>
+    <fields>
+        <help><!-- all advertised services exist on the website (except dynamic mirrors) --></help>
+        <label><!-- Svs Requested on Site (%) --></label>
+        <name>Services_Requested_on_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serving Area Displayed in Header --></label>
+        <name>Serving_Area_Displayed_in_Header__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Serving Area Not Displayed in Header --></label>
+        <name>Serving_Area_Not_Displayed_in_Header__c</name>
+    </fields>
+    <fields>
+        <help><!-- serving area is present and accurately depicts mobile vs. stationary --></help>
+        <label><!-- Serving Area (%) --></label>
+        <name>Serving_Area__c</name>
+    </fields>
+    <fields>
+        <help><!-- serving area within the ASW is accurate --></help>
+        <label><!-- Serving Area ASW (%) --></label>
+        <name>Serving_Area_bpm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add any relevant account setup notes here. --></help>
+        <label><!-- Setup Notes --></label>
+        <name>Setup_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sitelinks Up to Date --></label>
+        <name>Sitelinks_Up_to_Date__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source for up-to-date location NAP data? --></label>
+        <name>Source_for_up_to_date_location_NAP_data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spell Check --></label>
+        <name>Spell_Check__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Spelling Error(s) --></label>
+        <name>Spelling_Error_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- Typos, incorrect punctuation, etc. --></help>
+        <label><!-- Spelling &amp; Grammar Errors --></label>
+        <name>Spelling_Grammar_Errors__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Audit &amp; Update Tasks Completed</masterLabel>
+            <translation><!-- Audit &amp; Update Tasks Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audit Complete - In Review</masterLabel>
+            <translation><!-- Audit Complete - In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Review Only</masterLabel>
+            <translation><!-- Complete - Review Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Review and Changes Needed</masterLabel>
+            <translation><!-- Complete - Review and Changes Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress - Auditing</masterLabel>
+            <translation><!-- In Progress - Auditing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress - Tasking</masterLabel>
+            <translation><!-- In Progress - Tasking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tasking Complete - In Review</masterLabel>
+            <translation><!-- Tasking Complete - In Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Strange Characters --></label>
+        <name>Strange_Characters2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Strange Characters --></label>
+        <name>Strange_Characters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Improvement for IMS --></label>
+        <name>Suggested_Improvement_for_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Steps to Correct Issue --></label>
+        <name>Suggested_Steps_to_Correct_Issue__c</name>
+    </fields>
+    <fields>
+        <help><!-- If yes, summarize the scope of the vendors work --></help>
+        <label><!-- Summarize scope of vendor&apos;s work --></label>
+        <name>Summarize_scope_of_vendor_s_work__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe special taxonomy requirements for the relationship if any. --></help>
+        <label><!-- Taxonomies --></label>
+        <name>Taxonomies__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do gaps exist between the expected taxonomy and the actual taxonomy used? --></help>
+        <label><!-- Taxonomy gaps exist? --></label>
+        <name>Taxonomy_gaps_exist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- To track Website Tier Compliance - LOCAL accounts only --></help>
+        <label><!-- Template Out of Segment --></label>
+        <name>Template_Out_of_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Text right up against edge of image or widget column --></help>
+        <label><!-- Text Too Close to Image --></label>
+        <name>Text_Too_Close_to_Image2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text Too Close to Image --></label>
+        <name>Text_Too_Close_to_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Three Ads - DKI Ad Copies for Mobile --></label>
+        <name>Three_Ads_DKI_Ad_Copies_for_Mobile__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 3 ads are present in every SC --></help>
+        <label><!-- Three Ads (%) --></label>
+        <name>Three_Ads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title Tags --></label>
+        <name>Title_Tags__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 70% of the body content section of a page is white --></help>
+        <label><!-- Too Much White Space --></label>
+        <name>Too_Much_White_Space2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Found/Fixed</masterLabel>
+            <translation><!-- Error Found/Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Too Much White Space --></label>
+        <name>Too_Much_White_Space__c</name>
+    </fields>
+    <fields>
+        <help><!-- correct tracking code is present on every page --></help>
+        <label><!-- Tracking Code Present (%) --></label>
+        <name>Tracking_Code_Present__c</name>
+    </fields>
+    <fields>
+        <help><!-- no typos are present on the website --></help>
+        <label><!-- Typos (%) --></label>
+        <name>Typos__c</name>
+    </fields>
+    <fields>
+        <help><!-- all USPs are present within the ASW --></help>
+        <label><!-- USPs Added (%) --></label>
+        <name>USPs_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appropriate USPs --></label>
+        <name>USPs_added2__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unpaid Number --></label>
+        <name>Unpaid_Number__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Evaluated By --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Evaluated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Valid Address --></label>
+        <name>Valid_address_no_PO_Boxes_for_SEO_Combo__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Are there observable vendor issue within this relationship? Are third parties interfering with the overall SEO performance? --></help>
+        <label><!-- Vendor / Partner Issues --></label>
+        <name>Vendor_Partner_Issues__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the client has a previous or existing vendor please list. --></help>
+        <label><!-- List the Vendor --></label>
+        <name>Vendor__c</name>
+    </fields>
+    <fields>
+        <help><!-- To track Website Tier Compliance - LOCAL accounts only --></help>
+        <label><!-- Web-to-Email Form Customization --></label>
+        <name>Web_to_Email_Form_Customization__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Compliant</masterLabel>
+            <translation><!-- Non Compliant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Website Evaluation For --></label>
+        <name>Website_Built_By__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Website Evaluation For) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Website Fufillment Notes --></label>
+        <name>Website_Fufillment_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- What type of website setup was implemented? --></help>
+        <label><!-- Website Implementation Type --></label>
+        <name>Website_Implementation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client Owned Domains w/ Adversite</masterLabel>
+            <translation><!-- Client Owned Domains w/ Adversite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client-Side</masterLabel>
+            <translation><!-- Client-Side --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mix</masterLabel>
+            <translation><!-- Mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YO Domains w/ Adversite</masterLabel>
+            <translation><!-- YO Domains w/ Adversite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Website Overall Grade (%) --></label>
+        <name>Website_Overall_Grade3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website indexed on Google --></label>
+        <name>Website_indexed_on_Google__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which CMS is used to publish the websites? --></help>
+        <label><!-- Which CMS is used? --></label>
+        <name>Which_CMS_Used__c</name>
+        <picklistValues>
+            <masterLabel>CMS 1</masterLabel>
+            <translation><!-- CMS 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS 2</masterLabel>
+            <translation><!-- CMS 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client-Side</masterLabel>
+            <translation><!-- Client-Side --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Who creates the raw data file used in custom reporting? --></help>
+        <label><!-- Who generates the raw report --></label>
+        <name>Who_generates_the_raw_report__c</name>
+        <picklistValues>
+            <masterLabel>CS</masterLabel>
+            <translation><!-- CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FP&amp;A</masterLabel>
+            <translation><!-- FP&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEO Mops</masterLabel>
+            <translation><!-- SEO Mops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yodle Live Dashboard</masterLabel>
+            <translation><!-- Yodle Live Dashboard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Who is directly responsible for any SEO performance reporting shared with client? --></help>
+        <label><!-- Who produces the report --></label>
+        <name>Who_produces_the_report__c</name>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Analyst</masterLabel>
+            <translation><!-- Lead Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Consultant</masterLabel>
+            <translation><!-- Lead Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Reporter Assigned</masterLabel>
+            <translation><!-- No Reporter Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM</masterLabel>
+            <translation><!-- RM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Consultant</masterLabel>
+            <translation><!-- Senior Consultant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Word(s) Missing/Unnecessary Word,Space --></label>
+        <name>Word_s_Missing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yellowbot Enabled --></label>
+        <name>Yellowbot_Enabled__c</name>
+        <picklistValues>
+            <masterLabel>Error Found</masterLabel>
+            <translation><!-- Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Free</masterLabel>
+            <translation><!-- Error Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Yodle Relationship Manager --></label>
+        <name>Yodle_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Best Practice Evaluations (Yodle Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Add the name of Yodle&apos;s corporate contact here. --></help>
+        <label><!-- Yodle&apos;s Main Corporate Point Of Contact --></label>
+        <name>Yodle_corporate_contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe the process by which accounts get changed, added or deleted. --></help>
+        <label><!-- What is the Change Management Process? --></label>
+        <name>change_management_process__c</name>
+    </fields>
+    <fields>
+        <help><!-- List any relevant MIC issue notes here. --></help>
+        <label><!-- Citation Fulfillment Notes --></label>
+        <name>citation_fulfillment_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- .htaccess file functioning --></label>
+        <name>htaccess_file_functioning__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does Maps Initial Claim case match ASW for all clients? --></help>
+        <label><!-- MIC Synced With ASW? --></label>
+        <name>https_na4_salesforce_com_p_setup_field__c</name>
+        <picklistValues>
+            <masterLabel>Not Synced</masterLabel>
+            <translation><!-- Not Synced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synced Correctly</masterLabel>
+            <translation><!-- Synced Correctly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synced with Errors</masterLabel>
+            <translation><!-- Synced with Errors --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- % and # of inaccurate locations --></label>
+        <name>of_locations_with_inaccurate_selection__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of incomplete locations --></label>
+        <name>of_locations_with_incomplete_selection__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of non-compliant locations - NAP --></label>
+        <name>of_non_compliant_locations_NAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of non-compliant locals - google --></label>
+        <name>of_non_compliant_locations_google__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of non-compliant locals-listings --></label>
+        <name>of_non_compliant_locations_listings__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of non-compliant locations - mic --></label>
+        <name>of_non_compliant_locations_mic__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of non-compliant locations --></label>
+        <name>of_non_compliant_locations_opo__c</name>
+    </fields>
+    <fields>
+        <label><!-- % and # of non-compliant locations-yodle --></label>
+        <name>of_non_compliant_locations_yodle__c</name>
+    </fields>
+    <fields>
+        <help><!-- What (if any) custom SEO performance reporting is being producing today for the client? Attach sample reports to this case. --></help>
+        <label><!-- Performance reports being produced --></label>
+        <name>performance_reports_are__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Best Practice Evaluation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Best Practice Evaluations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>National Audit</layout>
+        <sections>
+            <label><!-- Build Process --></label>
+            <section>Build Process</section>
+        </sections>
+        <sections>
+            <label><!-- Citation Fulfillment --></label>
+            <section>Citation Fulfillment</section>
+        </sections>
+        <sections>
+            <label><!-- Client Service Support --></label>
+            <section>Client Service Support</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Implementation --></label>
+            <section>Implementation</section>
+        </sections>
+        <sections>
+            <label><!-- Listing - Best Practices --></label>
+            <section>Listing - Best Practices</section>
+        </sections>
+        <sections>
+            <label><!-- Maintenance Information --></label>
+            <section>Maintenance Information</section>
+        </sections>
+        <sections>
+            <label><!-- National Account Relationship Audit Information --></label>
+            <section>National Account Relationship Audit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting --></label>
+            <section>Reporting</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Information --></label>
+            <section>Setup Information</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Website Fulfillment --></label>
+            <section>Website Fulfillment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Optimization Evaluation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Basic Info --></label>
+            <section>Evaluation Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Opt Evaluation Detail --></label>
+            <section>Opt Evaluation Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Opt Evaluation Notes --></label>
+            <section>Opt Evaluation Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QA Audit</layout>
+        <sections>
+            <label><!-- ASW --></label>
+            <section>ASW</section>
+        </sections>
+        <sections>
+            <label><!-- Account --></label>
+            <section>Account</section>
+        </sections>
+        <sections>
+            <label><!-- Ads --></label>
+            <section>Ads</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Basic Info --></label>
+            <section>Evaluation Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Geo Template --></label>
+            <section>Geo Template</section>
+        </sections>
+        <sections>
+            <label><!-- QA Notes --></label>
+            <section>QA Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Website Formatting --></label>
+            <section>Website Formatting</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Setup Evaluation</layout>
+        <sections>
+            <label><!-- ASW --></label>
+            <section>ASW</section>
+        </sections>
+        <sections>
+            <label><!-- Ads --></label>
+            <section>Ads</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Basic Info --></label>
+            <section>Evaluation Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Geo Template --></label>
+            <section>Geo Template</section>
+        </sections>
+        <sections>
+            <label><!-- Negatives --></label>
+            <section>Negatives</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Evaluation Notes --></label>
+            <section>Setup Evaluation Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Website/Landing Page --></label>
+            <section>Website/Landing Page</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Website Audit</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Audit --></label>
+            <section>Audit</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Grade --></label>
+            <section>Grade</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- National Audit --></label>
+        <name>National_Audit</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Evaluation of a completed optimization --></description>
+        <label><!-- Opt Evaluation --></label>
+        <name>Optimization_Review</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QA Audit --></label>
+        <name>QA_Audit</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For evaluation of a completed new client setup --></description>
+        <label><!-- Setup Evaluation --></label>
+        <name>Setup_Evaluation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Website Audit --></label>
+        <name>Website_Audit</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- For Local Accounts, you must fill in the 6 Website Tier fields for Compliance. --></errorMessage>
+        <name>Local_Auditors_to_fill_in_Website_Tiers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please list ASW sync issues --></errorMessage>
+        <name>National_Audit_Implementation_Data_Sync</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out current and ideal segment below. --></errorMessage>
+        <name>National_Audit_Implementation_Segment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please list missing services --></errorMessage>
+        <name>National_Audit_Implementation_Taxonomy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all Google listing info below --></errorMessage>
+        <name>National_Audit_Listings_Listing_Google</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out estimated % of inaccurate locations --></errorMessage>
+        <name>National_Audit_Listings_MIC_Category_Acc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out estimated % of incomplete locations --></errorMessage>
+        <name>National_Audit_Listings_MIC_Category_Inc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all Mobile Business Targeting info below --></errorMessage>
+        <name>National_Audit_Listings_Mobile_Business</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all NAP information. --></errorMessage>
+        <name>National_Audit_Listings_NAP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out Vendor info below --></errorMessage>
+        <name>National_Audit_Listings_Vendor_Issue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all Yodle Standards information below --></errorMessage>
+        <name>National_Audit_Listings_Yodle_Standards</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please list OPO issues below --></errorMessage>
+        <name>National_Audit_OPO_Standards</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please list the vendor --></errorMessage>
+        <name>National_Audit_Vendor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Local and Partner accounts, all fields must be filled in with a value. --></errorMessage>
+        <name>Setup_Eval_Channel_Fields</name>
+    </validationRules>
+</CustomObjectTranslation>

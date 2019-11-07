@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_33103075</developerName>
+        <masterLabel>Consult Case SLA</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Organic_Analysis__c.Days_Open__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>7</to>
+            </sourceValues>
+            <value>SLA Compliant</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>SLA Non- Compliant</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_37337335</developerName>
+        <masterLabel>SLA Compliant</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Organic_Analysis__c.Days_Open__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>7</to>
+            </sourceValues>
+            <value>SLA Compliant</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>SLA Non-Compliant</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Organic_Analysis__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Days_Open__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Organic_Analysis__c.Days_Live_on_SEO__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_37337335</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>012600000009V0o</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Organic_Analysis__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed,All Tasks Completed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Consultative SEO Queue - Closed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Organic_Analysis__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Organic_Analysis__c.Account_Name__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Organic_Analysis__c.B_Pin_Receipt__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

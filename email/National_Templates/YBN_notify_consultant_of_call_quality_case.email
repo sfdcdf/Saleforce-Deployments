@@ -1,0 +1,8 @@
+The following call quality case was completed for your account. Please QA the case and make any additional account or website updates as needed.
+
+Account:{!Account.Name}
+Client ID: {!Account.Client_ID__c}
+Resolution notes: {!Call_Quality_Concern__c.Resolution_Notes__c}
+Action taken: {!Call_Quality_Concern__c.Action_T__c}
+
+{!Call_Quality_Concern__c.Link}

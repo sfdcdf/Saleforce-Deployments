@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.Date_Opt_Completed__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Time_To_Complete_Task_Minutes__c</field>
+    </columns>
+    <description>Production Specialists Weekly Completes</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.YBNRequestReason__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Production Specialists</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.YBNRequestDetail__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Project,YL Acct Creation &lt; 50 Accounts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Escalated,In Progress,Awaiting Case Work Completion,On Hold,Re-Opened,Closed,Closed - Opt Not Necessary,Completed,Delete Case,New Inbound Email</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>PS Project Completes</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.Date_Opt_Completed__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

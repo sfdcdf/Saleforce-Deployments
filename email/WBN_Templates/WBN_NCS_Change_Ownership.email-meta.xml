@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>WBN - SOP - SE has not changed owner</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>WBN - NCS - Change Ownership</name>
+    <style>none</style>
+    <subject>NCS - Ownership Change Needed:   #{!Case.CaseNumber}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

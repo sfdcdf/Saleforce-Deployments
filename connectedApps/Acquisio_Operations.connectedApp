@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>operations@acquisio.com</contactEmail>
+    <label>Acquisio Operations</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback
+https://www.getpostman.com/oauth2/callback</callbackUrl>
+        
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

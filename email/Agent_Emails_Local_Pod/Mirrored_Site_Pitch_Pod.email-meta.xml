@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Recommendation that a client switch to a mirrored website</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Yodle_2016</letterhead>
+    <name>Website- Mirrored Site Pitch</name>
+    <style>freeForm</style>
+    <subject>Yodle Account Recommendation - {!Account.Client_ID__c}</subject>
+    <textOnly>Hi {!Account.Client_First_Name__c},
+
+I wanted to follow up on the recent conversation we had about your account. I understand that your current site is important to you so I wanted to offer a solution that would allow you to keep your website branding consistent, and still benefit from Yodle’s advertising.
+
+The way we would do that is by creating a “mirrored site” where we take an exact copy of your existing website and place it on your Yodle web address.  The mirrored site would not be indexed by the search engines, so it won’t impact your current site’s organic progress.  And since we can direct your paid ad visitors to this “mirror”, you would get the benefit of a unified brand online and can still use Yodle’s technology to grow your business.
+
+I really think this is the best approach for you based on our conversation and would love to get this set up for you.  Give me a call when you have time so we can discuss further.
+
+
+Thanks,
+
+{!User.Full_Name__c}
+Yodle Platinum Support
+(855) 888-7545
+platinumsupport@yodle.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

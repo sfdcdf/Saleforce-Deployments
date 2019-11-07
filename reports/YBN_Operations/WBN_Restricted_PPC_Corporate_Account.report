@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Account.WBN_PPC_Restricted_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.WBN_PPC_Restricted_Relationship__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Absolute Storage,Maaco,Cordell and Cordell,InterDent Pro Oil Change,Econo Lube N&apos; Tune &amp; Brakes,Dimensional Dental Management,Miracle-Ear,Hand and Stone Spa,Forefront Dermatology,Sunstate Equipment,West Coast Dental,Benevis,Hansons,Deca Dental Group,Re-Bath LLC,Speedy Glass,Heartland Dental Care,Affordable Dentures</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.YBN_Corporate_Relationship</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>WBN Restricted PPC Corporate Account</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

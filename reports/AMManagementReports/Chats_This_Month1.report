@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(LiveChatTranscript.ChatDuration:AVG)/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Chat Duration</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_66037480</developerName>
+        <masterLabel>Channel</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>LiveChatTranscript$Owner</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrew Salazar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittanie Walker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carly Cade</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chad Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cynthia Mota</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dayna Horton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Felicia Morales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gary Poole</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katie Tillman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michele Burch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Sweet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sharica Thomas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thomas Standing</sourceValue>
+            </sourceValues>
+            <value>Local</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brooke Grossman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julia Correa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Faust</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Vitro</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Champ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rolando Gonzalez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trish Wightman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Krystal Bell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Travis Dube</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Kerlin</sourceValue>
+            </sourceValues>
+            <value>Lighthouse</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>LineGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>LiveChatTranscript$CreatedDate</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_66037480</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>LiveChatTranscript$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>automated process,William Alexander,Kevin Faust</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveChatTranscript$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>3/6/2016 12:00 AM,3/5/2016 12:00 AM,2/27/2016 12:00 AM,2/28/2016 12:00 AM,2/13/2016 12:00 AM,12/6/2015 12:00 AM,12/5/2015 12:00 AM,12/12/2015 12:00 AM,12/13/2015 12:00 AM,12/19/2015 12:00 AM,12/20/2015 12:00 AM,12/24/2015 12:00 AM,12/25/2015 12:00 AM,12/26/2015 12:00 AM,12/27/2015 12:00 AM,1/1/2016 12:00 AM,1/2/2016 12:00 AM,1/3/2016 12:00 AM,1/4/2016 12:00 AM,1/9/2016 12:00 AM,1/10/2016 12:00 AM,1/16/2016 12:00 AM,1/17/2016 12:00 AM,1/18/2016 12:00 AM,1/23/2016 12:00 AM,1/24/2016 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_66037480</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveChatTranscript$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveChatTranscript$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Chats This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Agent_Transcript_Reporting__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$CreatedDate</dateColumn>
+        <endDate>2016-03-21</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-12-01</startDate>
+    </timeFrameFilter>
+</Report>

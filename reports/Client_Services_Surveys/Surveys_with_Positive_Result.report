@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$IMS_Rep__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>lauri&apos;s,Jeremy&apos;s Powerhouse,Jen&apos;s Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$IMS_Rep__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Brian Thomason,Corey Levine,Dustin Robinson,Hillary Scott,Jonathan Slomka,Kerry Satchell,Kyle Zaffin,Scott Rappaport,Sean Surdovel,Taylor Wolfe</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Surveys with Positive Result</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Survey__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$X120_Day__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
