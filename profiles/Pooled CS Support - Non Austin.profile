@@ -6636,7 +6636,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.LH_360_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -31433,6 +31433,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Yodle_Path__c.Coaching_Call_Script__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Case_Submission_Feedback__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Case_Submission_Quality__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>

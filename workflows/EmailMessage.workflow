@@ -89,7 +89,7 @@
         <criteriaItems>
             <field>EmailMessage.FromAddress</field>
             <operation>notContain</operation>
-            <value>@yodle.com</value>
+            <value>@yodle.com,@lighthousepmg.com</value>
         </criteriaItems>
         <criteriaItems>
             <field>EmailMessage.DoNotReopen__c</field>

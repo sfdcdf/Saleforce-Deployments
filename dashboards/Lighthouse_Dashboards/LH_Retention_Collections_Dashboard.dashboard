@@ -48,7 +48,7 @@
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>AMDashboardReports/Lighthouse_Open_CRs</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
+            <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>Open LH Cancel Requests/Escalations</title>
         </components>
@@ -64,7 +64,7 @@
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>AMDashboardReports/Open_LH_Cancellation_Request_Free_Time</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
+            <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>Lighthouse Open Dollar Sync</title>
         </components>
@@ -129,7 +129,7 @@
             <groupingSortProperties/>
             <header>Completed LH MTD</header>
             <legendPosition>Bottom</legendPosition>
-            <report>AMDashboardReports/Completed_LH_Cancellation_Requests_MTD</report>
+            <report>Lighthouse/Custom_Report</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>false</showValues>
