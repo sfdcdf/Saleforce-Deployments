@@ -34744,6 +34744,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -35165,7 +35166,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
