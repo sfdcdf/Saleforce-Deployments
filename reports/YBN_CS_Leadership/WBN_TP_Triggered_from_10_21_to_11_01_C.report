@@ -50,7 +50,7 @@
     </columns>
     <description>WBN TP Triggered from 10/21 to 11/01 C level</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7) AND 8</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
@@ -93,12 +93,6 @@
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Account.Client_ID__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <name>WBN TP Triggered from 10/21 to 11/01 C</name>
@@ -115,8 +109,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Next_TP_Trigger_Date__c</dateColumn>
-        <endDate>2019-11-01</endDate>
+        <endDate>2019-11-07</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-10-21</startDate>
+        <startDate>2019-11-07</startDate>
     </timeFrameFilter>
 </Report>

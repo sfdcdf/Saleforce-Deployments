@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Guest User License</userLicense>
-    <applicationVisibilities>
+    <applicationVisibilities xmlns="http://soap.sforce.com/2006/04/metadata">
         <application>Clicktools</application>
         <default>false</default>
         <visible>false</visible>
@@ -109,7 +109,7 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    <fieldPermissions xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountSource</field>
         <readable>true</readable>

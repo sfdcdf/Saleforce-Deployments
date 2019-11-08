@@ -2747,7 +2747,7 @@ if(
         <externalId>false</externalId>
         <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
         <label>LT Info</label>
-        <length>300</length>
+        <length>340</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
@@ -8973,6 +8973,20 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_SFDC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce IANA timezone.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce IANA timezone.</inlineHelpText>
+        <label>Timezone SFDC</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>

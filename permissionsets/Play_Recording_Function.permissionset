@@ -3,4 +3,14 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Play Recording Function</label>
     <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.LOCC_App__Call_Recording__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.LOCC_App__Call_Recording__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
 </PermissionSet>
