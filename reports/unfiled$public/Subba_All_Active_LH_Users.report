@@ -10,6 +10,12 @@
         <field>User$Division</field>
     </columns>
     <columns>
+        <field>User$LastPasswordChangeDate</field>
+    </columns>
+    <columns>
+        <field>User$LastLoginDate</field>
+    </columns>
+    <columns>
         <field>User$Email</field>
     </columns>
     <columns>
@@ -31,16 +37,10 @@
         <field>User$UserRole</field>
     </columns>
     <columns>
-        <field>User$LastLoginDate</field>
-    </columns>
-    <columns>
         <field>User$Profile.UserLicense.Name</field>
     </columns>
     <columns>
         <field>User$Profile.UserLicense.TotalLicenses</field>
-    </columns>
-    <columns>
-        <field>User*User$LiveOps_ID__c</field>
     </columns>
     <columns>
         <field>User$FirstName</field>
