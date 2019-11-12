@@ -7,10 +7,11 @@ global class ScheduleChildAccLiveController implements Schedulable
 {
  
     global void execute(SchedulableContext sc) 
-    {
+    {/*
 
         ChildAccLiveController b1 = new ChildAccLiveController();
-        ID batchprocessid = Database.executeBatch(b1,200);           
+        ID batchprocessid = Database.executeBatch(b1,200);  
+        */         
     }
 
 

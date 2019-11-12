@@ -3017,7 +3017,7 @@
         <description>YBN Relationship Budget Estimates Completed</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ryan.ciampi@yodle.com</recipient>
+            <recipient>emily.garza@web.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -14296,10 +14296,6 @@ ISCHANGED(Estimated_Completion_Date__c)
     </rules>
     <rules>
         <fullName>YBN Relationship Budget Estimates Completed</fullName>
-        <actions>
-            <name>YBN_Relationship_Budget_Estimates_Completed</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Reason_Detail__c</field>

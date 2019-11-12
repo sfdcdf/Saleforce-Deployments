@@ -1,11 +1,24 @@
 trigger CaseTrigger on Case (before insert, before update, after insert, after update) {
+     
+System.debug('In Case Trigger');
+    System.debug('Before ===> ' + Trigger.isBefore);
+    System.debug('After ===> ' + Trigger.isAfter);
+    System.debug('Insert ===> ' + Trigger.isInsert);
+    System.debug('Update ===> ' + Trigger.isUpdate);
+    System.debug('Integration_Settings__c.getInstance().Sync_Case_Data_With_Marketo__c ===> ' + Integration_Settings__c.getInstance().Sync_Case_Data_With_Marketo__c);
+    System.debug('CaseObjectHelper.alreadyFiredCaseObjectHelper ===> ' + CaseObjectHelper.alreadyFiredCaseObjectHelper);
+    System.debug('System.isFuture() ===> ' + System.isFuture());
+
+
+
     if(trigger.isBefore && Integration_Settings__c.getInstance().Sync_Case_Data_With_Marketo__c && !CaseObjectHelper.alreadyFiredCaseObjectHelper && !System.isFuture()){
         if(trigger.isInsert){
             CaseObjectHelper.syncCaseRecordLogic(trigger.New, new Map<Id, Case>());
         }else if(trigger.isUpdate){
             CaseObjectHelper.syncCaseRecordLogic(trigger.New, trigger.oldMap);
         }
-    }else if(trigger.isAfter && Integration_Settings__c.getInstance().Sync_Case_Data_With_Marketo__c && !CaseObjectHelper.alreadyFiredCaseObjectHelper && !System.isFuture() && !System.isBatch()){
+    }else if(trigger.isAfter && Integration_Settings__c.getInstance().Sync_Case_Data_With_Marketo__c && !CaseObjectHelper.alreadyFiredCaseObjectHelper && !System.isFuture()){ // && !System.isBatch()){
+        System.debug('We are right before caseMaketoSyncHelper ****');
         if(trigger.isInsert){
             CaseObjectHelper.caseMarketoSyncHelper(trigger.newMap, new Map<Id, Case>());
         }else if(trigger.isUpdate){

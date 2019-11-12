@@ -13597,6 +13597,11 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <columns>Status__c</columns>
         <columns>Attempts_to_Contact__c</columns>
         <filterScope>Queue</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
         <label>Maps Customer Support</label>
         <queue>MapsCustomerSupport</queue>
     </listViews>

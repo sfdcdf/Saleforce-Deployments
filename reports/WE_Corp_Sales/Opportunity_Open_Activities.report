@@ -4,6 +4,9 @@
         <field>ASSIGNED</field>
     </columns>
     <columns>
+        <field>ACCOWNER</field>
+    </columns>
+    <columns>
         <field>ACCOUNT</field>
     </columns>
     <columns>
@@ -27,12 +30,6 @@
     <columns>
         <field>TASK</field>
     </columns>
-    <columns>
-        <field>CONTACT</field>
-    </columns>
-    <columns>
-        <field>LEAD</field>
-    </columns>
     <description>Open SA Activities</description>
     <filter>
         <criteriaItems>
@@ -46,7 +43,7 @@
     <name>SA: Opportunity Open Activities</name>
     <params>
         <name>closed</name>
-        <value>all</value>
+        <value>open</value>
     </params>
     <params>
         <name>type</name>
@@ -61,8 +58,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>OPPORTUNITY</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>DESCRIPTION</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
         <interval>INTERVAL_CURY</interval>
