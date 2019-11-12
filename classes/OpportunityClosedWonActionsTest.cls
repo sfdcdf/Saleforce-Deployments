@@ -30,7 +30,7 @@ private class OpportunityClosedWonActionsTest
         opp.OwnerId = oppOwner;
         opp.AccountId = acctId;
         opp.StageName = 'New Opportunity';
-        opp.CloseDate = todayDt.addDays(-3);
+        opp.CloseDate = todayDt;
         dmlOpps.add(opp);
         update dmlOpps;
         
