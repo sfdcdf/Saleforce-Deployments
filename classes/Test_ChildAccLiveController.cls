@@ -7,7 +7,7 @@
 public class Test_ChildAccLiveController 
 {
     
-
+/*
 
     static testMethod void testMethod1() 
     {
@@ -42,5 +42,5 @@ public class Test_ChildAccLiveController
         Test.stopTest();
     }
 
-
+*/
 }

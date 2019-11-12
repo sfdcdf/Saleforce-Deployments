@@ -6,14 +6,14 @@
 global class ChildAccLiveController implements Database.Batchable<SObject>{
     
     //Set for Account Id to be Update
-    public set<Id> masterAccId = new set<Id>();
+    //public set<Id> masterAccId = new set<Id>();
     
     //String to hold Query
     Public String query;
     
        
     global Database.querylocator start(Database.BatchableContext bc)
-    { 
+    { /*
       //Set for Contact Id
       set<id> conId = new set<id>();
       
@@ -26,7 +26,7 @@ global class ChildAccLiveController implements Database.Batchable<SObject>{
       //Loop to get contact Id Which is linked to User
       If(UserList.size()!=0)
       {
-      	for(user tempUsr:userList)
+        for(user tempUsr:userList)
           {
             conId.Add(tempUsr.ContactId);
           } 
@@ -58,12 +58,13 @@ global class ChildAccLiveController implements Database.Batchable<SObject>{
        //To hold Master account Id along with necessary feilds.
        
        query =  'Select Id,ParentId, Children_Accounts_Live__c  from Account where id IN: MasterAccId';
-       // system.debug('****Query****'+query);
+       // system.debug('****Query****'+query);*/
        return Database.getQueryLocator(query);
+       
     }
 
     global void execute(Database.BatchableContext bc,List<Account> FinAcc)
-    {
+    {/*
         //Map to get Query of Result Map
         Map<Account,Integer> countResultMap = new Map<Account,Integer>();
         
@@ -99,7 +100,7 @@ global class ChildAccLiveController implements Database.Batchable<SObject>{
          }    
            
         
-       
+       */
     }
 
     global void finish(Database.BatchableContext bc)
