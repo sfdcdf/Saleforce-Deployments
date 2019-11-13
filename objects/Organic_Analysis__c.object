@@ -13602,6 +13602,11 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             <operation>equals</operation>
             <value>New</value>
         </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>equals</operation>
+            <value>YBN</value>
+        </filters>
         <label>Maps Customer Support</label>
         <queue>MapsCustomerSupport</queue>
     </listViews>
