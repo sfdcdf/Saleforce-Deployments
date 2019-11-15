@@ -33,6 +33,9 @@
     <columns>
         <field>Lighthouse_Worksheets__c.Segment__c</field>
     </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Time_Zone__c</field>
+    </columns>
     <filter>
         <booleanFilter>((1 AND 3 AND (2 or 4 or 5)))</booleanFilter>
         <criteriaItems>

@@ -1623,6 +1623,22 @@
         <apexClass>lhDeleteBatchFailureCasesScheduleTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>ChildAccLiveController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ScheduleChildAccLiveController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Test_ChildAccLiveController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Test_SheduleChildAccLiveCont</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>ConsolidatedCaseView</apexPage>
         <enabled>true</enabled>
