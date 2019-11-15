@@ -66,6 +66,7 @@
     <columns>
         <field>User$LastModifiedDate</field>
     </columns>
+    <description>SFDC Active Users Last logged in last 30 days</description>
     <filter>
         <criteriaItems>
             <column>User$IsActive</column>
@@ -76,12 +77,18 @@
         <criteriaItems>
             <column>User$Division</column>
             <isUnlocked>true</isUnlocked>
-            <operator>startsWith</operator>
+            <operator>notContain</operator>
             <value>LH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$LastLoginDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>10/14/2019 12:00 AM</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Subba All LH Active Users</name>
+    <name>Subba All Non LH Active Users</name>
     <params>
         <name>co</name>
         <value>1</value>

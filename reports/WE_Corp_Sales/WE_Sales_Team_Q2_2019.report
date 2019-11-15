@@ -49,6 +49,7 @@
         <field>Opportunity.Total_Forecasted_Adoption_Value_Sum__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.Annual_Contract_Value_Sum__c</field>
     </columns>
     <columns>
@@ -64,6 +65,20 @@
         <field>Account.NAICS__c</field>
     </columns>
     <description>High Probability Opps</description>
+    <filter>
+        <criteriaItems>
+            <column>User.Role_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>YBN: Sales/Account Director,YBN: Sales Director Manager,Solutions Architect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
+        </criteriaItems>
+    </filter>
     <format>Tabular</format>
     <name>WE Sales Team Q2 2019</name>
     <params>
@@ -79,8 +94,8 @@
         <value>1</value>
     </params>
     <reportType>Opportunity</reportType>
-    <roleHierarchyFilter>YBN_Sales_Director_Manager_East_Coast_C</roleHierarchyFilter>
-    <scope>team</scope>
+    <roleHierarchyFilter>YBN_SVP_GM</roleHierarchyFilter>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
@@ -88,6 +103,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURNEXTY</interval>
     </timeFrameFilter>
 </Report>
