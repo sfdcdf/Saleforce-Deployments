@@ -65,7 +65,7 @@
         <description>New LH Auto Cancel Request has been created</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>csops@yodle.com</senderAddress>

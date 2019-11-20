@@ -18,7 +18,7 @@
         <description>LH Opportunity Stage changed to Demo</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -766,7 +766,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
     <fieldUpdates>
         <fullName>Owner_to_Beau</fullName>
         <field>OwnerId</field>
-        <lookupValue>bosteros@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner to Beau</name>
         <notifyAssignee>true</notifyAssignee>

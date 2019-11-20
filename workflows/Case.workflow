@@ -127,7 +127,7 @@
         <description>Bolt On Cancellation - Cancel All</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>support@lighthousepmg.com</senderAddress>
@@ -663,7 +663,7 @@
         <description>LH New Training Email from Support</description>
         <protected>false</protected>
         <recipients>
-            <recipient>crystal.bellew@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -767,7 +767,7 @@
         <description>LH Master Needs Your Attention to Adam Stanton</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ta.stanton@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -4665,7 +4665,7 @@
     <fieldUpdates>
         <fullName>Owner_Updates_To_Beau_Osteros</fullName>
         <field>OwnerId</field>
-        <lookupValue>bosteros@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Beau Osteros</name>
         <notifyAssignee>true</notifyAssignee>
@@ -4676,7 +4676,7 @@
         <fullName>Owner_Updates_To_Lynn_Tobias</fullName>
         <description>Case Owner field updates to Lynn Tobias</description>
         <field>OwnerId</field>
-        <lookupValue>lynn.tobias@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Lynn Tobias</name>
         <notifyAssignee>false</notifyAssignee>

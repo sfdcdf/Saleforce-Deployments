@@ -6,7 +6,7 @@
         <description>Bolt On Backed Out Sale - Cancel All</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bosteros@yodle.com</recipient>
+            <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>
