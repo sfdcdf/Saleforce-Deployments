@@ -250,7 +250,7 @@ public without sharing class CaseObjectHelper {
     public static String ybnOutboundCaseUpdateMarketoScheduleCallout(String action,  String lookupField, String sObjectListJSON, Boolean asyncProcessing, String partitionName){
         List<SObject> sObjectList = (List<SObject>)JSON.deserialize(sObjectListJSON, List<SObject>.class);
 
-        Map<Id, Account> accountMap = new Map<Id, Account>([select Id, Marketo_ID__c, tz__Timezone_IANA__c from Account where Id in (select AccountId from Case where Id in : sObjectList) and Marketo_ID__c != '' and Sync_to_Marketo__c = true]);
+        Map<Id, Account> accountMap = new Map<Id, Account>([select Id, Marketo_ID__c, Marketo_ID_For_Touchplan__c, tz__Timezone_IANA__c from Account where Id in (select AccountId from Case where Id in : sObjectList) and Marketo_ID__c != '' and Sync_to_Marketo__c = true]);
         Map<Id, Case> caseMap = new Map<Id, Case>([SELECT Id, IMS_Rep_Acuity_Id__c FROM Case WHERE Id in : sObjectList]);
 
 
@@ -282,7 +282,17 @@ public without sharing class CaseObjectHelper {
         bodyJSON.writeStartArray();
         for(SObject inputValue : sObjectList){
             bodyJSON.writeStartObject();
-            bodyJSON.writeObjectField('id', accountMap.get((id)inputValue.get('AccountId')).Marketo_ID__c);
+            
+            /* If the SF Account has Marketo_ID_For_Touchplan__c, use this Id instead of Marketo_ID__C to sync with Marketo */
+            if (accountMap.get((id)inputValue.get('AccountId')).Marketo_ID_For_Touchplan__c != null)
+            {
+                bodyJSON.writeObjectField('id', accountMap.get((id)inputValue.get('AccountId')).Marketo_ID_For_Touchplan__c);
+            }
+            else
+            {
+                bodyJSON.writeObjectField('id', accountMap.get((id)inputValue.get('AccountId')).Marketo_ID__c);
+            }
+                                                
             for(SFDC_Case_To_Marketo_Field_Mappings_YBN__c sfdcCaseMarketoFieldMap : sfdcAPINameSFDCMarketoFieldMappingList){
                 system.debug(sfdcCaseMarketoFieldMap);
                 if(inputValue.get(sfdcCaseMarketoFieldMap.SFDC_Field_API_Name__c) != null && !caseDateTimeFieldSet.contains(sfdcCaseMarketoFieldMap.SFDC_Field_API_Name__c) && (String.isBlank(sfdcCaseMarketoFieldMap.Case_Reason_Criteria__c) || sfdcCaseMarketoFieldMap.Case_Reason_Criteria__c.containsIgnoreCase((String)inputValue.get('Reason')))){
