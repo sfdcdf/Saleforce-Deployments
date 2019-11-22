@@ -7,6 +7,18 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marketo_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Email_for_Touchplan__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marketo_ID_For_Touchplan__c</field>
+    </columns>
+    <columns>
         <field>Account.AccountId18__c</field>
     </columns>
     <columns>
@@ -48,7 +60,7 @@
     <columns>
         <field>Account.Next_TP_Needed_By__c</field>
     </columns>
-    <description>WBN TP Triggered from 11/18 to 11/30 C level</description>
+    <description>WBN TP Triggered from 11/18 to 12/8/2019 C level</description>
     <filter>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
         <criteriaItems>
@@ -95,7 +107,7 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <name>WBN TP Triggered from 11/18 to 11/30 C</name>
+    <name>WBN TP Triggered from 11/18 to 12/8 C</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -109,8 +121,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Next_TP_Trigger_Date__c</dateColumn>
-        <endDate>2019-11-30</endDate>
+        <endDate>2019-12-08</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-11-18</startDate>
+        <startDate>2019-11-21</startDate>
     </timeFrameFilter>
 </Report>
