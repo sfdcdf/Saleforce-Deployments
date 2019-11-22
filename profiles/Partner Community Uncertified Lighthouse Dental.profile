@@ -27116,8 +27116,18 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Lead.JCI_Primary_Brand_Color__c</field>
+</fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.JCI_Primary_Brand_Color__c</field>
+        <field>Account.JCI_Primary_Brand_Color__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.JCI_Secondary_Brand_Color__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
