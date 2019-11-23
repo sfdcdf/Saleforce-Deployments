@@ -3,6 +3,7 @@
     <customButtons>Log_Activity</customButtons>
     <customButtons>Schedule_Activity</customButtons>
     <customButtons>Log_Prospecting_Activity</customButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -239,6 +240,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Promotion_Strategy__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>JCI_Primary_Brand_Color__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>JCI_Secondary_Brand_Color__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
