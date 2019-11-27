@@ -16792,7 +16792,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>FAQ__kav.Response__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17572,7 +17572,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>How_To__kav.Response__c</field>
         <readable>true</readable>
     </fieldPermissions>
