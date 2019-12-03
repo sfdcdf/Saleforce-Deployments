@@ -277,4 +277,13 @@
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
+    <listViews>
+        <fullName>Performance_NCS_QA_Performance_Snapshot</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Performance NCS QA</label>
+        <queue>Performance_NCS_QA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
 </CustomObject>
