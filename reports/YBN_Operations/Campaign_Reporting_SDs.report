@@ -53,12 +53,7 @@
     </columns>
     <description>All SD opportunities tied to a 2019 Event</description>
     <filter>
-        <criteriaItems>
-            <column>OWNER_PROFILE</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>National Sales</value>
-        </criteriaItems>
+        <booleanFilter>1 AND 3 AND (2 OR (4 AND 5))</booleanFilter>
         <criteriaItems>
             <column>ACCOUNT_RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
@@ -70,6 +65,24 @@
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>2019</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Role_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>YBN: Sales/Account Director,YBN: Sales Director Manager,Solutions Architect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_SOURCE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IFA Annual Convention (International Franchise Association),Tradeshow</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2019 12:00 AM</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -103,6 +116,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

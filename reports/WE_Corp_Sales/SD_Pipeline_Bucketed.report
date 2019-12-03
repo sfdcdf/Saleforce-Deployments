@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Total_Forecasted_Adoption_Value_Sum__c:SUM + Opportunity.Total_One_Time_Fees_Sum__c:SUM +  ( Opportunity.Total_Monthly_Spend_Sum__c:SUM * 12)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total ACV</masterLabel>
+        <scale>2</scale>
+    </aggregates>
     <buckets>
         <bucketType>picklist</bucketType>
         <developerName>BucketField_20139526</developerName>
