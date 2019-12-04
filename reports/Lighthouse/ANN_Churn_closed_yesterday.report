@@ -3,6 +3,21 @@
     <columns>
         <field>Cancellation_Request__c$Name</field>
     </columns>
+    <columns>
+        <field>Cancellation_Request__c$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c$Cancel_Code_1__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c$Cancel_Code_1_Details__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c$System_Switching_To__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c$Date_to_Stop_Service_Date__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c$RecordType</column>
@@ -41,7 +56,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Cancellation_Request__c$Closed_Date__c</dateColumn>
-        <interval>INTERVAL_YESTERDAY</interval>
+        <dateColumn>Cancellation_Request__c$Date_to_Stop_Service_Date__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
