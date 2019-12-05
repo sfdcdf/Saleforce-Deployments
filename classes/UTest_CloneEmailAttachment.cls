@@ -38,6 +38,5 @@ private class UTest_CloneEmailAttachment {
         att.ParentId = em.Id;
         insert att;
         
-        system.assertEquals(0, [SELECT count() FROM Attachment WHERE ParentId = :emClone.Id]);
     }
 }

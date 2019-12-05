@@ -1,25 +1,10 @@
-/*
-//Reason : “BeaconHS1Migration” : Inactivated the completed class , as this is not needed for LH Product.
-//By : Mahesh Bogila , 7/3/2019
 /**  
 * \arg ClassName        : SL_EmailMessageTriggerHandler
 * \arg CreatededBy      : Ron Gong, 06/29/2016
 * \arg Description      : Handler class for EmailMessage object.
 */
-global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase 
-{ 
-    
-     Integer i1 = 1; 
-    Integer i2 = 1; 
-    Integer i3 = 1; 
-    Integer i4 = 1; 
-    Integer i5 = 1; 
-    Integer i6 = 1; 
-    Integer i7 = 1; 
-    Integer i8 = 1; 
-    Integer i9 = 1; 
-    Integer i10 = 1; 
-   /* public static Boolean runBeforeInsert = true;
+global class SL_EmailMessageTriggerHandler extends SL_TriggerHandlerBase {        
+    public static Boolean runBeforeInsert = true;
     public static Boolean runBeforeUpdate = true;
     public static Boolean runAfterInsert = true;
     public static Boolean runAfterUpdate = true;
@@ -30,11 +15,11 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
         system.debug('$$$ Enter SL_EmailMessageTriggerHandler beforeInsert');
         List<EmailMessage> newList = (List<EmailMessage>) newListGeneric;
         
-        /*BEFORE INSERT METHODS START*/              
-       // CaseThreadingLimit(newList);
-       // CombineEmailToCase(newList);
+        /*BEFORE INSERT METHODS START*/               
+        CaseThreadingLimit(newList);
+        CombineEmailToCase(newList);
         /*BEFORE INSERT METHODS END*/
- /*   }
+    }
     
     public override void beforeUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> newMapGeneric){
         if(!runBeforeUpdate)  return;
@@ -46,14 +31,14 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
         /*BEFORE UPDATE METHODS START*/
                
         /*BEFORE UPDATE METHODS END*/
-  //  }
+    }
     
-  /*  public override void beforeDelete(Map<Id, SObject> oldMapGeneric){
+    public override void beforeDelete(Map<Id, SObject> oldMapGeneric){
         Map<Id, EmailMessage> oldMap = (Map<Id, EmailMessage>) oldMapGeneric;
         /*BEFORE DELETE METHODS START*/
         
         /*BEFORE DELETE METHODS END*/
-  /*  }
+    }
     
     public override void afterInsert(Map<Id, SObject> newMapGeneric){
         if(!runAfterInsert)  return;
@@ -62,13 +47,13 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
         Map<Id, EmailMessage> newMap = (Map<Id, EmailMessage>) newMapGeneric;
         
         /*AFTER INSERT METHODS START*/
-    /*    system.debug('$$$ emailmessage trigger after insert');
-        CompleteResponseMS(newMap);
+        system.debug('$$$ emailmessage trigger after insert');
+       // CompleteResponseMS(newMap);
         CaseThreadingLimit(newMap.values());
         /*AFTER INSERT METHODS END*/
-  //  }
+    }
     
- /*   public override void afterUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> newMapGeneric){
+    public override void afterUpdate(Map<Id, SObject> oldMapGeneric, Map<Id, SObject> newMapGeneric){
         if(!runAfterUpdate)  return;
         runAfterUpdate = false;
         
@@ -78,21 +63,21 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
         /*AFTER UPDATE METHODS START*/
 
         /*AFTER UPDATE METHODS END*/
- //   }
+    }
     
- /*  public override void afterDelete(Map<Id, SObject> oldMapGeneric){
+    public override void afterDelete(Map<Id, SObject> oldMapGeneric){
         Map<Id, EmailMessage> oldMap = (Map<Id, EmailMessage>) oldMapGeneric;
         /*AFTER DELETE METHODS START*/
         
         /*AFTER DELETE METHODS END*/
-  //  }
+    }
     
-   /* public override void afterUndelete(Map<Id, SObject> newMapGeneric){
+    public override void afterUndelete(Map<Id, SObject> newMapGeneric){
         Map<Id, EmailMessage> newMap = (Map<Id, EmailMessage>) newMapGeneric;
         /*AFTER UNDELETE METHODS START*/
         
         /*AFTER UNDELETE METHODS END*/
-  //  }
+    }
  
 /***** START HANDLER METHODS *****/ 
     
@@ -101,7 +86,7 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
     Created: Ron Gong, 6/29/2016
     Description: Complete related CaseMilestones
     ***/ 
-  /*  public static Map<String, Case> mapStr_NewCases = new Map<String, Case>();
+    public static Map<String, Case> mapStr_NewCases = new Map<String, Case>();
     
     private void CaseThreadingLimit(List<EmailMessage> lstNewEmails){         
         Map<Id, EmailMessage> mapCase_EMs = new Map<Id, EmailMessage>();   
@@ -233,8 +218,8 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
     Created: Ron Gong, 6/29/2016
     Description: Complete related CaseMilestones
     ***/
-   /* private void CompleteResponseMS(Map<Id, EmailMessage> mapNewEmails){
-        String strResponse = CaseMilestoneUtils.strResponse;    
+  /*  private void CompleteResponseMS(Map<Id, EmailMessage> mapNewEmails){
+        //String strResponse = CaseMilestoneUtils.strResponse;    
         Set<Id> setCaseIds = new Set<Id>();
         
         for (EmailMessage em : mapNewEmails.values()){
@@ -262,10 +247,10 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
                    
                 if(mapCase_Miles.size()>0){
                     CaseMilestoneUtils.CompleteMilestones(mapCase_Miles, completionDate); 
-                }      
+                }    
             }
         }
-    }
+    }*/
     
     /***
     Name: CombineEmailToCase
@@ -273,7 +258,7 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
     Description: Combines incoming emails with existing case.
     Description: Currently used for Web Legacy and their SharePoint system. (1/31/2017)
     ***/
-  /*  private void CombineEmailToCase(List<EmailMessage> lstNewEmails){
+    private void CombineEmailToCase(List<EmailMessage> lstNewEmails){
         Set<String> setCaseNums = new Set<String>();
     
         for(EmailMessage em: lstNewEmails){
@@ -287,7 +272,7 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
             List<Case> lstCases = [SELECT Id, CaseNumber, First_Response_Date_Time__c FROM Case WHERE CaseNumber IN :setCaseNums];
         
             if(lstCases.size()>0){
-                String strResponse = CaseMilestoneUtils.strResponse;    
+                //String strResponse = CaseMilestoneUtils.strResponse;    
                 Set<Id> setCasesToDel = new Set<Id>();
                 Map<String, Case> mapNumId = new Map<String, Case>();
                 Map<Id, Set<String>> mapCase_Miles = new Map<Id, Set<String>>();
@@ -314,7 +299,7 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
                                 
                                 if(!strLastMod.contains(strRequest)){
                                     if(strStatus.endsWith('Edited') || strNotes.endsWith('Edited')){
-                                        mapCase_Miles.put(em.ParentId, new Set<String>{strResponse});
+                                       // mapCase_Miles.put(em.ParentId, new Set<String>{strResponse});
                                     }
                                 }       
                             }
@@ -322,7 +307,7 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
                     }
                 }
                 
-                if(mapCase_Miles.size()>0)  CaseMilestoneUtils.CompleteMilestones(mapCase_Miles, system.now()); 
+               // if(mapCase_Miles.size()>0)  CaseMilestoneUtils.CompleteMilestones(mapCase_Miles, system.now()); 
                 if(setCasesToDel.size()>0)  DeleteCases(setCasesToDel);
             }
         }
@@ -340,5 +325,5 @@ global class SL_EmailMessageTriggerHandler //extends SL_TriggerHandlerBase
             
             if(lstCasesToDel.size()>0)  delete lstCasesToDel;
         }
-    }*/
+    }
 }

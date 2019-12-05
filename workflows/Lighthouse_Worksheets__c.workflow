@@ -108,6 +108,10 @@
             <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
+        <recipients>
+            <recipient>vicki.lafond@lighthousepmg.com.ib</recipient>
+            <type>user</type>
+        </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Lighthouse_Install_Backed_Out</template>
     </alerts>

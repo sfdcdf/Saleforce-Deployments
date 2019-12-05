@@ -916,9 +916,9 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-    <enabled>false</enabled>
-    <apexClass>UTest_CloneEmailAttachment</apexClass>
-</classAccesses>
+        <apexClass>UTest_CloneEmailAttachment</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <classAccesses>
     <enabled>false</enabled>
     <apexClass>UTest_ClonePrimaryMLO</apexClass>
@@ -1504,9 +1504,9 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-    <enabled>false</enabled>
-    <apexClass>SL_EmailMessageTriggerHandler</apexClass>
-</classAccesses>
+        <apexClass>SL_EmailMessageTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <classAccesses>
         <apexClass>Test_icSerWBNOptCasesAut</apexClass>
         <enabled>true</enabled>
