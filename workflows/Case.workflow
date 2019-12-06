@@ -242,6 +242,18 @@
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/SEM_Upsell</template>
     </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Yodle_Gold_Email_Manager</fullName>
+        <description>Send Email to Yodle Gold Email Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sales_Rep_E_mail_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>support@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Support/Yodle_Gold_Service_Manager_Email</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Account_Client_ID_to_Case_Client_ID</fullName>
         <field>Client_ID__c</field>
@@ -2632,5 +2644,25 @@
         </criteriaItems>
         <description>General , Update "Escalated" Priority to "Critical" when case is closed to prevent re-opened cases from triggering 'escalation' emails</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Yodle Gold Service - Manager Email</fullName>
+        <actions>
+            <name>Send_Email_to_Yodle_Gold_Email_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>YodleGoldService@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <description>Send an email to manager of the case submitter</description>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

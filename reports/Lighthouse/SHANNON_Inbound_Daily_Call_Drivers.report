@@ -69,7 +69,7 @@
             <column>RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
-            <value>Case.LH_Cancellation_Request</value>
+            <value>Case.LH_Cancellation_Request,Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
@@ -114,6 +114,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <endDate>2019-12-05</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-11-01</startDate>
     </timeFrameFilter>
 </Report>
