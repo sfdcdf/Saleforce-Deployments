@@ -49,6 +49,9 @@
         <field>Account.Live_Date__c</field>
     </columns>
     <columns>
+        <field>Account.Month_1_Check_In_Trigger_Date__c</field>
+    </columns>
+    <columns>
         <field>Account.Month_1_Check_In_Completed_Date__c</field>
     </columns>
     <columns>
@@ -123,6 +126,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Next_TP_Trigger_Date__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <endDate>2019-12-13</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-12-01</startDate>
     </timeFrameFilter>
 </Report>
