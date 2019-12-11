@@ -34919,6 +34919,11 @@
         <field>Yodle_Path__c.Request_2_reviews_coaching__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Vendor_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Call_Grading_Form_2_0__c-CSC Monitoring Form %28feed%29</layout>
         <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>

@@ -9,13 +9,13 @@
             <column>RowCount</column>
         </chartSummaries>
         <chartType>Pie</chartType>
-        <enableHoverLabels>false</enableHoverLabels>
+        <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
         <groupingColumn>Case.Reason_Detail__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
-        <showPercentage>false</showPercentage>
+        <showPercentage>true</showPercentage>
         <showTotal>false</showTotal>
         <showValues>false</showValues>
         <size>Medium</size>
@@ -114,8 +114,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2019-12-05</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-11-01</startDate>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>
