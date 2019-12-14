@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Instructions for logging into Bomgar</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Medical_March_2016</letterhead>
+    <name>Bomgar Instructions - PMS Swap</name>
+    <style>freeForm</style>
+    <subject>Updating Lighthouse for your new system- {!Case.Client_ID__c}</subject>
+    <textOnly>Thank you for your email!  We would like to expedite getting you back up and running with Lighthouse, so please follow the below instructions.
+
+Log on to your server computer and click the link below to start a remote session for our technical support team to investigate the reason your office is out of sync with Lighthouse.
+This should download a file onto your computer. Open that file and click “Run”. If you have trouble locating the file go to the downloads section of your browser.  With most browsers, you can find downloads by pressing ctrl+J.
+Start your Session by navigating to http://remote.lh360.com.
+For your issue please select &quot;Other&quot;
+Under Describe Your Issue, please enter &quot;New Server&quot; if you have updated your hardware OR enter details about the software changes that have been made (such as if you have changed to a new practice management system, or updated your existing one).
+Please make sure to include a good phone number in Describe Your Issue as well so that we can reach you if needed.
+
+
+If you have any questions please contact us. Thank you for choosing Lighthouse. We appreciate your business!
+
+{!User.FirstName}
+
+Lighthouse Support
+(888) 427-5454</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
