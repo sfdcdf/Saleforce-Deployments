@@ -81,13 +81,7 @@
             <column>Activity$Assigned_To_Role__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>SDR,sales executive,Sales Manager</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Activity$LOCC_App__campaignname__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>inbound holding</value>
+            <value>Consultant</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -101,7 +95,7 @@
         <field>Activity$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SE Call Data</name>
+    <name>CS Call Data</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -114,6 +108,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Activity$CreatedDate</dateColumn>
-        <interval>INTERVAL_PREVCUR2Y</interval>
+        <endDate>2019-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-09-01</startDate>
     </timeFrameFilter>
 </Report>

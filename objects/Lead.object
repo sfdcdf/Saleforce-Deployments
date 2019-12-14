@@ -8988,6 +8988,30 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>JCI_Primary_Brand_Color__c</fullName>
+        <description>As part of lead conversion, JCI System will be sending the color selection over as a Hexidecimal value.</description>
+        <externalId>false</externalId>
+        <label>JCI Primary Brand Color</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JCI_Secondary_Brand_Color__c</fullName>
+        <description>As part of lead conversion, JCI System will be sending the color selection over as a Hexidecimal value.</description>
+        <externalId>false</externalId>
+        <label>JCI Secondary Brand Color</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
