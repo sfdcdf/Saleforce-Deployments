@@ -13904,6 +13904,11 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.YBN_Corporate_Relationship</value>
+        </filters>
         <label>My Accounts</label>
         <sharedTo>
             <roleAndSubordinates>Operations</roleAndSubordinates>
