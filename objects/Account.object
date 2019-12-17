@@ -13728,11 +13728,6 @@ or(
             <operation>equals</operation>
             <value>live</value>
         </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>arenn</value>
-        </filters>
         <label>JCI</label>
     </listViews>
     <listViews>
@@ -14315,6 +14310,25 @@ or(
             <value>dental</value>
         </filters>
         <label>Subba PartnerAccount Report vs Apex Page</label>
+    </listViews>
+    <listViews>
+        <fullName>SD_My_Corporate_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>National_Account_Status__c</columns>
+        <columns>National_Company_Type__c</columns>
+        <columns>NAICS__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Number_of_Locations__c</columns>
+        <columns>Number_of_Locations_Specific__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.YBN_Corporate_Relationship</value>
+        </filters>
+        <label>SDs -  My Corporate Accounts</label>
     </listViews>
     <recordTypes>
         <fullName>Affiliate</fullName>

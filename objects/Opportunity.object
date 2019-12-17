@@ -16454,6 +16454,31 @@ Used by YBN.</description>
             <group>YBN_Strategic_Project_Managers</group>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>SDs_My_Open_Opps</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Stage_Detail__c</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>Annual_Contract_Value_Sum__c</columns>
+        <columns>Weighted_Pipeline_Value__c</columns>
+        <columns>Total_Forecasted_Adoption_Value_Sum__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>SDs - My Open Opps</label>
+    </listViews>
     <recordTypes>
         <fullName>Affiliate_Initial_Transaction</fullName>
         <active>true</active>
