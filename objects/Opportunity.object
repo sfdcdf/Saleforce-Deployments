@@ -16462,10 +16462,14 @@ Used by YBN.</description>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
         <columns>Stage_Detail__c</columns>
         <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Products__c</columns>
+        <columns>Network_Adoption_Products__c</columns>
         <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>Mutually_Agreed_Upon_Next_Steps__c</columns>
         <columns>Annual_Contract_Value_Sum__c</columns>
         <columns>Weighted_Pipeline_Value__c</columns>
         <columns>Total_Forecasted_Adoption_Value_Sum__c</columns>
+        <columns>Last_Stage_Change_Date__c</columns>
         <filterScope>Mine</filterScope>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
@@ -16477,7 +16481,65 @@ Used by YBN.</description>
             <operation>equals</operation>
             <value>0</value>
         </filters>
-        <label>SDs - My Open Opps</label>
+        <label>SDs - All My Open Opps</label>
+    </listViews>
+    <listViews>
+        <fullName>SDs_My_Open_Opps_Growth_Opps</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Stage_Detail__c</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Products__c</columns>
+        <columns>Network_Adoption_Products__c</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>Mutually_Agreed_Upon_Next_Steps__c</columns>
+        <columns>Annual_Contract_Value_Sum__c</columns>
+        <columns>Weighted_Pipeline_Value__c</columns>
+        <columns>Total_Forecasted_Adoption_Value_Sum__c</columns>
+        <columns>Last_Stage_Change_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.YBN_Growth_Opportunity</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>SDs - My Open Opps - Growth Opps</label>
+    </listViews>
+    <listViews>
+        <fullName>SDs_My_Open_Opps_Initial_Transaction</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Stage_Detail__c</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Products__c</columns>
+        <columns>Network_Adoption_Products__c</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>Mutually_Agreed_Upon_Next_Steps__c</columns>
+        <columns>Annual_Contract_Value_Sum__c</columns>
+        <columns>Weighted_Pipeline_Value__c</columns>
+        <columns>Total_Forecasted_Adoption_Value_Sum__c</columns>
+        <columns>Last_Stage_Change_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.YBN_Initial_Transaction</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>SDs - My Open Opps - Initial Transaction</label>
     </listViews>
     <recordTypes>
         <fullName>Affiliate_Initial_Transaction</fullName>
