@@ -7,7 +7,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.AdStation_Status__c</field>
+        <field>Account.Status__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -35,7 +35,7 @@
         <field>PARENT.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>James: Parent Account Not Blank</name>
+    <name>ANN: Parent Account Listing (DSO)</name>
     <params>
         <name>co</name>
         <value>1</value>
