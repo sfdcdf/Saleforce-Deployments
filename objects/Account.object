@@ -6530,25 +6530,7 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
     <fields>
         <fullName>Next_TP_Needed_By__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(AND(ISPICKVAL(Individual_Location_Service_Level__c,"Service Level A"),
-NOT(ISBLANK(Last_Completed_YBN_TP__c))), 
-Last_Completed_YBN_TP__c + 31,
-
-IF(AND(ISPICKVAL(Individual_Location_Service_Level__c,"Service Level B"),
-NOT(ISBLANK(Last_Completed_YBN_TP__c))), 
-Last_Completed_YBN_TP__c + 62,
-
-IF(AND(ISPICKVAL(Individual_Location_Service_Level__c,"Service Level C"),
-NOT(ISBLANK(Last_Completed_YBN_TP__c))), 
-Last_Completed_YBN_TP__c + 93,
-
-IF(AND(ISPICKVAL(Individual_Location_Service_Level__c,"Service Level A"),ISBLANK(Last_Completed_YBN_TP__c)), Live_Date__c + 62 + Month_1_Check_In_Date_Adjustment__c,
-
-IF(AND(ISPICKVAL(Individual_Location_Service_Level__c,"Service Level B"),ISBLANK(Last_Completed_YBN_TP__c)), Live_Date__c + 93 + Month_1_Check_In_Date_Adjustment__c,
-
-IF(AND(ISPICKVAL(Individual_Location_Service_Level__c,"Service Level C"),ISBLANK(Last_Completed_YBN_TP__c)), Live_Date__c + 124 + Month_1_Check_In_Date_Adjustment__c,
-
-Null))))))</formula>
+        <formula>X120_Day__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Next TP Needed By</label>
         <required>false</required>
@@ -6558,9 +6540,7 @@ Null))))))</formula>
     <fields>
         <fullName>Next_TP_Trigger_Date__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(Parent.Name = "Maaco" &amp;&amp; Next_TP_Needed_By__c &gt;= DATE(2017, 1, 1) &amp;&amp; Next_TP_Needed_By__c &lt;= DATE(2017, 1, 15)
-
-, DATE(2017, 1, 1), Next_TP_Needed_By__c - 14)</formula>
+        <formula>DATE(Year(Next_TP_Needed_By__c), Month(Next_TP_Needed_By__c),1)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Next TP Trigger Date</label>
         <required>false</required>
