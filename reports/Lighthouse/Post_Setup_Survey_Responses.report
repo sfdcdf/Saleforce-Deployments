@@ -37,6 +37,12 @@
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_WEEK</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -55,7 +61,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Customer_Surveys__c.Response_Date__c</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>
