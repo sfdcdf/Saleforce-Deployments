@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>ACCOUNT_ID</field>
+        <field>Account.AccountId18__c</field>
+    </columns>
+    <columns>
+        <field>CASE_ID</field>
     </columns>
     <columns>
         <field>Case.Client_ID__c</field>
     </columns>
     <columns>
+        <field>Account.WBN_JAX_CUST_ID__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
     </columns>
     <columns>
         <field>Account.Live_Date__c</field>
@@ -20,6 +29,9 @@
     </columns>
     <columns>
         <field>Account.Next_TP_Needed_By__c</field>
+    </columns>
+    <columns>
+        <field>Case.Scheduled_Call__c</field>
     </columns>
     <columns>
         <field>Case.IMS_Rep__c</field>
@@ -71,12 +83,6 @@
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CLOSED</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CREATED_ALIAS</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
@@ -99,12 +105,6 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Next_TP_Trigger_Date__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>lessOrEqual</operator>
-            <value>TODAY</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -130,7 +130,9 @@
     <sortColumn>ACCOUNT.NAME</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Account.Next_TP_Trigger_Date__c</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2019-12-17</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-12-09</startDate>
     </timeFrameFilter>
 </Report>
