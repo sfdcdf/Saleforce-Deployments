@@ -47,7 +47,7 @@
             <column>Quality_Case__c.Case_Closed_By__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,kimberly davis,crystal perez,charles thomas,patrick trinidad,meredith henry,elizabeth koepke,jessica martin</value>
+            <value>kimberly davis,julia correa,michael erwin</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -68,6 +68,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Quality_Case__c.Case_Closed_Date_Time__c</dateColumn>
-        <interval>INTERVAL_AGO2Y</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

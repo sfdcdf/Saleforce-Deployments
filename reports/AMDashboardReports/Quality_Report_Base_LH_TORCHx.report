@@ -38,7 +38,7 @@
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Quality_Case__c.TORCHx_Master_Quality,Quality_Case__c.Lighthouse_Master_Quality</value>
+            <value>Quality_Case__c.Lighthouse_Master_Quality</value>
         </criteriaItems>
         <criteriaItems>
             <column>Quality_Case__c.IsClosed__c</column>
@@ -71,6 +71,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Quality_Case__c.Case_Closed_Date_Time__c</dateColumn>
-        <interval>INTERVAL_AGO2Y</interval>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
     </timeFrameFilter>
 </Report>

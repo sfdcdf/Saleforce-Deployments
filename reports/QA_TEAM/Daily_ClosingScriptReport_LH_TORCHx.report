@@ -44,7 +44,7 @@
             <column>Quality_Case__c.Product_Type__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>Lighthouse,TORCHx</value>
+            <value>Lighthouse</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -70,6 +70,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Quality_Case__c.Sales_Date__c</dateColumn>
-        <interval>INTERVAL_PREV2Y</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>
