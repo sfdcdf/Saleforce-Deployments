@@ -204,4 +204,11 @@
         <searchResultsAdditionalFields>Subject</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>MessageDate</searchResultsAdditionalFields>
     </searchLayouts>
+    <validationRules>
+        <fullName>Webcom_Domain_Filter</fullName>
+        <active>false</active>
+        <description>PLEASE DON'T ACTIVE THIS IN PRODUCTION</description>
+        <errorConditionFormula>Incoming = False &amp;&amp; !CONTAINS(ToAddress ,'@web.com')</errorConditionFormula>
+        <errorMessage>You can send Email to Web.com Contacts only</errorMessage>
+    </validationRules>
 </CustomObject>

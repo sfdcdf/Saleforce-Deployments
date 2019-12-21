@@ -4,6 +4,9 @@
         <field>Account.Organic_Analyses__r$Name</field>
     </columns>
     <columns>
+        <field>Account.Organic_Analyses__r$Case_URL__c</field>
+    </columns>
+    <columns>
         <field>Account$Client_ID__c</field>
     </columns>
     <columns>
@@ -11,6 +14,9 @@
     </columns>
     <columns>
         <field>Account.Organic_Analyses__r$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$CreatedDate</field>
     </columns>
     <columns>
         <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
@@ -32,10 +38,22 @@
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
+            <column>Account.Organic_Analyses__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>SEO Marketing Ops</value>
+            <value>seo marketing ops</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$IMS_Rep__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>customer care,tracey peel</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -50,7 +68,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Account$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURPREVQ</interval>
+        <dateColumn>Account.Organic_Analyses__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENTQ</interval>
     </timeFrameFilter>
 </Report>
