@@ -42,6 +42,9 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Client_Type__c</field>
+    </columns>
+    <columns>
         <field>PARENT.NAME</field>
     </columns>
     <columns>
@@ -54,8 +57,8 @@
         <criteriaItems>
             <column>RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Account.YBN_Corporate_Relationship</value>
+            <operator>equals</operator>
+            <value>Account.Standard</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Individual_Location_Service_Level__c</column>
@@ -75,6 +78,12 @@
             <operator>contains</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Client_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -89,7 +98,7 @@
     </params>
     <reportType>AccountList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

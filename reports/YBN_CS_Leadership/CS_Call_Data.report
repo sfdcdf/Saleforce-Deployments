@@ -103,13 +103,11 @@
     <reportType>Activities__c</reportType>
     <roleHierarchyFilter>YBN_SVP_GM</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Activity$CreatedDate</dateColumn>
-        <endDate>2019-11-30</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-09-01</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>
