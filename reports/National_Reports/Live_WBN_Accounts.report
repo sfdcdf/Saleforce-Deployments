@@ -12,6 +12,21 @@
     <columns>
         <field>Account.IMS_Rep__c</field>
     </columns>
+    <columns>
+        <field>Account.Individual_Location_Service_Level__c</field>
+    </columns>
+    <columns>
+        <field>Account.Next_TP_Needed_By_Place_Holder__c</field>
+    </columns>
+    <columns>
+        <field>Account.Next_TP_Needed_By__c</field>
+    </columns>
+    <columns>
+        <field>Account.Next_TP_Trigger_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Last_Completed_YBN_TP__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
@@ -37,8 +52,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.IMS_Rep__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>Account.Next_TP_Needed_By_Place_Holder__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
