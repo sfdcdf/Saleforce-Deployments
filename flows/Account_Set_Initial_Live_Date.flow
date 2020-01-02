@@ -182,14 +182,14 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>ISNEW() || ISCHANGED([Account].Individual_Location_Service_Level__c ) </stringValue>
+                <stringValue> ISNEW() || ISCHANGED([Account].Individual_Location_Service_Level__c ) || ISCHANGED([Account].Last_Completed_YBN_TP__c )</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_4</name>
         <dataType>Boolean</dataType>
-        <expression>ISNEW() || ISCHANGED({!myVariable_current.Individual_Location_Service_Level__c} )</expression>
+        <expression> ISNEW() || ISCHANGED({!myVariable_current.Individual_Location_Service_Level__c} ) || ISCHANGED({!myVariable_current.Last_Completed_YBN_TP__c} )</expression>
     </formulas>
-    <interviewLabel>Account_Set_Initial_Live_Date-2_InterviewLabel</interviewLabel>
+    <interviewLabel>Account_Set_Initial_Live_Date-3_InterviewLabel</interviewLabel>
     <label>Account - Set Initial Live Date</label>
     <processMetadataValues>
         <name>ObjectType</name>
