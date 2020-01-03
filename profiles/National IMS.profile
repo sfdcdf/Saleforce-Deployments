@@ -35974,10 +35974,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.YBN_Corporate_Interaction</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Case.YBN_Inbound_Inquiry</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

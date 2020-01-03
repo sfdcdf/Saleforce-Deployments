@@ -35984,7 +35984,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.YBN_Corporate_Interaction</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -36008,6 +36008,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Case.YBN_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
