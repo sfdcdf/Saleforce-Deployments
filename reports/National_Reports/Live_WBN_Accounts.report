@@ -13,9 +13,6 @@
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
-        <field>Account.Individual_Location_Service_Level__c</field>
-    </columns>
-    <columns>
         <field>Account.Next_TP_Needed_By_Place_Holder__c</field>
     </columns>
     <columns>
@@ -41,7 +38,12 @@
             <value>YBN</value>
         </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Individual_Location_Service_Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>Live WBN Accounts</name>
     <params>
         <name>co</name>
