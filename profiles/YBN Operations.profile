@@ -637,11 +637,7 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AD_Mentor__c</field>
