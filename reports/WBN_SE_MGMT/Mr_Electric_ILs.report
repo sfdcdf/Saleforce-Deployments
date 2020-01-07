@@ -7,7 +7,7 @@
         <field>Account.Client_ID__c</field>
     </columns>
     <columns>
-        <field>USERS.NAME</field>
+        <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
@@ -19,6 +19,9 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
     <columns>
@@ -28,16 +31,25 @@
         <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
     </columns>
     <columns>
-        <field>Account.Contact_Name__c</field>
+        <field>Account.Client_First_Name__c</field>
     </columns>
     <columns>
-        <field>Account.Email_for_Touchplan__c</field>
+        <field>Account.Client_Last_Name__c</field>
     </columns>
     <columns>
         <field>PHONE1</field>
     </columns>
     <columns>
+        <field>Account.Email__c</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
         <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Account.AccountId18__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -52,16 +64,22 @@
             <operator>equals</operator>
             <value>399</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Client_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Status__c</field>
+        <field>USERS.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.IMS_Rep__c</field>
+        <field>Account.Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Mr. Electric ILs</name>
@@ -71,7 +89,7 @@
     </params>
     <reportType>AccountList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>Account.Multi_Location_Owner_Primary_CID__c</sortColumn>
