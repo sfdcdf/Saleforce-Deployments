@@ -6,7 +6,7 @@
     <letterhead>Lighthouse_Medical_March_2016</letterhead>
     <name>1- Cancel Request Template</name>
     <style>freeForm</style>
-    <subject>Lighthouse Cancel Request Form - {!Account.Id}</subject>
+    <subject>Lighthouse Cancel Request Form - {!Account.Client_ID__c}</subject>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

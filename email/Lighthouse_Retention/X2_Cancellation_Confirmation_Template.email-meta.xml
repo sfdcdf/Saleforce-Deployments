@@ -6,7 +6,7 @@
     <letterhead>Lighthouse_Medical_March_2016</letterhead>
     <name>2 - Cancellation Confirmation Template</name>
     <style>freeForm</style>
-    <subject>Lighthouse Cancellation Confirmation - {!Account.Id}</subject>
+    <subject>Lighthouse Cancellation Confirmation - {!Account.Client_ID__c}</subject>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

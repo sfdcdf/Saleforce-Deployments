@@ -6,7 +6,7 @@
     <letterhead>Lighthouse_Medical_March_2016</letterhead>
     <name>5- Collection Email 2nd Attempt</name>
     <style>freeForm</style>
-    <subject>ATTENTION! Your Lighthouse Account - {!Account.Id} needs updating to avoid service interruption</subject>
+    <subject>ATTENTION! Your Lighthouse Account - {!Account.Client_ID__c} needs updating to avoid service interruption</subject>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>
