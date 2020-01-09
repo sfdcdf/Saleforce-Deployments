@@ -4421,9 +4421,7 @@ Null))))))</formula>
     <fields>
         <fullName>Next_TP_Trigger_Date__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(Parent.Name = "Maaco" &amp;&amp; Next_TP_Needed_By__c &gt;= DATE(2017, 1, 1) &amp;&amp; Next_TP_Needed_By__c &lt;= DATE(2017, 1, 15)
-
-, DATE(2017, 1, 1), Next_TP_Needed_By__c - 14)</formula>
+        <formula>DATE(Year(Next_TP_Needed_By_Place_Holder__c), Month(Next_TP_Needed_By_Place_Holder__c),1)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Next TP Trigger Date</label>
         <required>false</required>
@@ -13431,6 +13429,16 @@ or(
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Next_TP_Needed_By_Place_Holder__c</fullName>
+        <description>TO hold the Next TP Needed By Value to refer in the Another formula</description>
+        <externalId>false</externalId>
+        <label>Next TP Needed By Place Holder</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
