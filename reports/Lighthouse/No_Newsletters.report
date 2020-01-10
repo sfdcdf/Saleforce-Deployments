@@ -47,8 +47,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.MA_Date__c</dateColumn>
-        <endDate>2019-10-30</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-10-25</startDate>
+        <interval>INTERVAL_YESTERDAY</interval>
     </timeFrameFilter>
 </Report>

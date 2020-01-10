@@ -301,7 +301,13 @@
         </inputAssignments>
         <object>Comments__c</object>
     </recordUpdates>
-    <startElementReference>Comment_Lookup</startElementReference>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Comment_Lookup</targetReference>
+        </connector>
+    </start>
     <status>Active</status>
     <textTemplates>
         <name>CancellationEmail</name>
