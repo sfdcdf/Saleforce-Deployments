@@ -11,6 +11,7 @@
     <enableDirectMessages>true</enableDirectMessages>
     <enableGuestChatter>false</enableGuestChatter>
     <enableGuestFileAccess>false</enableGuestFileAccess>
+    <enableGuestMemberVisibility>true</enableGuestMemberVisibility>
     <enableInvitation>false</enableInvitation>
     <enableKnowledgeable>false</enableKnowledgeable>
     <enableMemberVisibility>true</enableMemberVisibility>
@@ -25,22 +26,6 @@
     <enableUpDownVote>false</enableUpDownVote>
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
-    <navigationLinkSet>
-        <navigationMenuItem>
-            <label>Topics</label>
-            <position>1</position>
-            <publiclyAvailable>true</publiclyAvailable>
-            <target>ShowMoreTopics</target>
-            <type>NavigationalTopic</type>
-        </navigationMenuItem>
-        <navigationMenuItem>
-            <label>Messages</label>
-            <position>2</position>
-            <publiclyAvailable>false</publiclyAvailable>
-            <target>/messages</target>
-            <type>InternalLink</type>
-        </navigationMenuItem>
-    </navigationLinkSet>
     <networkMemberGroups>
         <permissionSet>Test_Permission_Set_For_Community_Testing</permissionSet>
         <profile>Admin</profile>
