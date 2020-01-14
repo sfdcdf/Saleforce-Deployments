@@ -96,6 +96,9 @@
         <field>Cancellation_Request__c.Segment__c</field>
     </columns>
     <columns>
+        <field>Cancellation_Request__c.Competitor_Name__c</field>
+    </columns>
+    <columns>
         <field>Cancellation_Request__c.Cancel_Code_1__c</field>
     </columns>
     <columns>
@@ -168,6 +171,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
