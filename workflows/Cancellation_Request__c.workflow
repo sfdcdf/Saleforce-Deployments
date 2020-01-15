@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</fullName>
+        <ccEmails>billing@boltontechnology.com</ccEmails>
         <description>Canceled Lighthouse Auto Account - Alert to BoltOn</description>
         <protected>false</protected>
         <recipients>
-            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
+            <recipient>kevin.lewis@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>james.carr@lighthousepmg.com.ib</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>autosupport@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Auto_IB_OB/Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</template>
     </alerts>
     <alerts>
@@ -29,7 +27,7 @@
         <description>New LH Auto Cancel Request has been created</description>
         <protected>false</protected>
         <recipients>
-            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
+            <recipient>kevin.lewis@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>

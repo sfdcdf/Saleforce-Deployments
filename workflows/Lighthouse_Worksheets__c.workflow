@@ -6,7 +6,7 @@
         <description>Bolt On Backed Out Sale - Cancel All</description>
         <protected>false</protected>
         <recipients>
-            <recipient>beau.osteros@lighthousepmg.com.ib</recipient>
+            <recipient>kevin.lewis@lighthousepmg.com.ib</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>
