@@ -79,7 +79,7 @@
             <column>OWNER</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Laura Vitro,Alisha Herzberg</value>
+            <value>Laura Vitro,Alisha Herzberg,Megan Lewis,Sarah Vickers</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -106,6 +106,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

@@ -149,6 +149,15 @@
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>Cancellation_Request__c$System_Switching_To__c</column>
+                <sortBy>RowLabelAscending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -158,7 +167,6 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>Lighthouse/ANN_Churn_by_system_Monthly</report>
             <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
             <title>This Month:</title>
         </components>
     </middleSection>
