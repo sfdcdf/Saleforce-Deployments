@@ -16,7 +16,7 @@
         <field>Lighthouse_Worksheets__c.Status__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2</booleanFilter>
+        <booleanFilter>(1 AND 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
@@ -29,6 +29,12 @@
             <operator>equals</operator>
             <value>Backed Out Sale</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.Install_Meeting_Notes__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>marciano,hannah,whitney,ashley</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -36,7 +42,7 @@
         <field>Lighthouse_Worksheets__c.Segment__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>ANN: Backed out sales</name>
+    <name>ANN: Tradeshow Backed out 2020</name>
     <params>
         <name>co</name>
         <value>1</value>

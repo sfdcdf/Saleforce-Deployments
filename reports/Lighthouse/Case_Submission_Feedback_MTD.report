@@ -12,6 +12,9 @@
     <columns>
         <field>Case.Case_Submission_Feedback__c</field>
     </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>

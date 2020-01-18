@@ -31,7 +31,7 @@
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
+            <operator>notEqual</operator>
             <value>Delete Case,New,In Progress</value>
         </criteriaItems>
         <criteriaItems>
@@ -64,6 +64,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

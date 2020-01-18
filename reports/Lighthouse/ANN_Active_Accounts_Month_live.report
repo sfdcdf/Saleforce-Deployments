@@ -4,9 +4,6 @@
         <field>USERS.NAME</field>
     </columns>
     <columns>
-        <field>Account.Client_ID__c</field>
-    </columns>
-    <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
@@ -24,43 +21,39 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <columns>
-        <field>Account.LH_360_ID__c</field>
-    </columns>
     <filter>
-        <criteriaItems>
-            <column>Account.IMS_Rep__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Lighthouse Support</value>
-        </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>OFF</value>
+            <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Email__c</column>
+            <column>Account.Client_Type__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>evan.pollock@yodle.com,megan.scully@yodle.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Product_Type_Transactional__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
+            <operator>equals</operator>
             <value>Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>dentist,ortho</value>
+            <operator>equals</operator>
+            <value>dentist,orthodontist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1234566,284600,264043,247729,280282,285655,292062,292271,292512,294693,298123,310642</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <name>ANN: LH Dental - CHURN</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Secondary_Segments__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ANN: Active Accounts - Month live</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -71,7 +64,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Account.Deactivation_Date__c</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

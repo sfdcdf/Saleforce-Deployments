@@ -7,10 +7,10 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>TYPE</field>
+        <field>Account.Months_Live__c</field>
     </columns>
     <columns>
-        <field>RATING</field>
+        <field>TYPE</field>
     </columns>
     <columns>
         <field>DUE_DATE</field>
@@ -44,7 +44,7 @@
             <column>Account.Client_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>284600,264043,247729,280282,285655,292062,292271,292512,294693,298123,310642</value>
+            <value>1234566,284600,264043,247729,280282,285655,292062,292271,292512,294693,298123,310642</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

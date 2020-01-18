@@ -96,6 +96,15 @@
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>Cancellation_Request__c$Account_Name__c.PMS__c</column>
+                <sortBy>RowLabelAscending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -106,8 +115,7 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>Lighthouse/ANN_HS1_churn_by_PMS</report>
             <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>LH Retention by PMS</title>
+            <title>Cancels by PMS closed today</title>
         </components>
     </leftSection>
     <middleSection>
