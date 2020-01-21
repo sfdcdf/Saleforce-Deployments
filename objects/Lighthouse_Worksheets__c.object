@@ -2473,7 +2473,7 @@ if exist then re-assign to new 360 acct</inlineHelpText>
     <fields>
         <fullName>Close_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>Close Notes</label>
+        <label>Action Taken</label>
         <length>32000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5188,7 +5188,7 @@ IF(
     <fields>
         <fullName>General_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>General Notes</label>
+        <label>Inbound Notes</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9882,6 +9882,11 @@ IF(
                     <label>OrthoTrac</label>
                 </value>
                 <value>
+                    <fullName>OrthoTrac Cloud</fullName>
+                    <default>false</default>
+                    <label>OrthoTrac Cloud</label>
+                </value>
+                <value>
                     <fullName>Other (list in notes)</fullName>
                     <default>false</default>
                     <label>Other (list in notes)</label>
@@ -9910,6 +9915,11 @@ IF(
                     <fullName>PracticeWorks</fullName>
                     <default>false</default>
                     <label>PracticeWorks</label>
+                </value>
+                <value>
+                    <fullName>Practice Works Cloud</fullName>
+                    <default>false</default>
+                    <label>Practice Works Cloud</label>
                 </value>
                 <value>
                     <fullName>Primadent</fullName>
@@ -9942,6 +9952,11 @@ IF(
                     <label>Softdent</label>
                 </value>
                 <value>
+                    <fullName>SoftDent Cloud</fullName>
+                    <default>false</default>
+                    <label>SoftDent Cloud</label>
+                </value>
+                <value>
                     <fullName>Suzy Dental</fullName>
                     <default>false</default>
                     <label>Suzy Dental</label>
@@ -9967,9 +9982,19 @@ IF(
                     <label>Windent</label>
                 </value>
                 <value>
+                    <fullName>WinDent Cloud</fullName>
+                    <default>false</default>
+                    <label>WinDent Cloud</label>
+                </value>
+                <value>
                     <fullName>WinOMS</fullName>
                     <default>false</default>
                     <label>WinOMS</label>
+                </value>
+                <value>
+                    <fullName>WinOMS Cloud</fullName>
+                    <default>false</default>
+                    <label>WinOMS Cloud</label>
                 </value>
                 <value>
                     <fullName>XLDent</fullName>
@@ -11590,39 +11615,14 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>New</fullName>
-                    <default>true</default>
-                    <label>New</label>
+                    <fullName>Backed Out Sale</fullName>
+                    <default>false</default>
+                    <label>Backed Out Sale</label>
                 </value>
                 <value>
-                    <fullName>In Progress</fullName>
+                    <fullName>BOT Feature Request</fullName>
                     <default>false</default>
-                    <label>In Progress</label>
-                </value>
-                <value>
-                    <fullName>Stalled</fullName>
-                    <default>false</default>
-                    <label>Stalled</label>
-                </value>
-                <value>
-                    <fullName>Post Install Ready</fullName>
-                    <default>false</default>
-                    <label>Post Install Ready</label>
-                </value>
-                <value>
-                    <fullName>Post Install In Progress</fullName>
-                    <default>false</default>
-                    <label>Post Install In Progress</label>
-                </value>
-                <value>
-                    <fullName>Logo Complete</fullName>
-                    <default>false</default>
-                    <label>Logo Complete</label>
-                </value>
-                <value>
-                    <fullName>Logo Ready</fullName>
-                    <default>false</default>
-                    <label>Logo Ready</label>
+                    <label>BOT Feature Request</label>
                 </value>
                 <value>
                     <fullName>Complete</fullName>
@@ -11630,24 +11630,14 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <label>Complete</label>
                 </value>
                 <value>
-                    <fullName>Escalated (Bolt On)</fullName>
-                    <default>false</default>
-                    <label>Escalated (Bolt On)</label>
-                </value>
-                <value>
-                    <fullName>Backed Out Sale</fullName>
-                    <default>false</default>
-                    <label>Backed Out Sale</label>
-                </value>
-                <value>
                     <fullName>Delete Case</fullName>
                     <default>false</default>
                     <label>Delete Case</label>
                 </value>
                 <value>
-                    <fullName>BOT Feature Request</fullName>
+                    <fullName>Escalated (Bolt On)</fullName>
                     <default>false</default>
-                    <label>BOT Feature Request</label>
+                    <label>Escalated (Bolt On)</label>
                 </value>
                 <value>
                     <fullName>Escalated (Dev)</fullName>
@@ -11658,6 +11648,26 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <fullName>Escalated (Internal)</fullName>
                     <default>false</default>
                     <label>Escalated (Internal)</label>
+                </value>
+                <value>
+                    <fullName>False Positive</fullName>
+                    <default>false</default>
+                    <label>False Positive</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Logo Complete</fullName>
+                    <default>false</default>
+                    <label>Logo Complete</label>
+                </value>
+                <value>
+                    <fullName>Logo Ready</fullName>
+                    <default>false</default>
+                    <label>Logo Ready</label>
                 </value>
                 <value>
                     <fullName>MA-1 Ready</fullName>
@@ -11705,6 +11715,11 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <label>Messages Activated</label>
                 </value>
                 <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
                     <fullName>Not Completed</fullName>
                     <default>false</default>
                     <label>Not Completed</label>
@@ -11715,6 +11730,16 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <label>Pending Retention</label>
                 </value>
                 <value>
+                    <fullName>Post Install In Progress</fullName>
+                    <default>false</default>
+                    <label>Post Install In Progress</label>
+                </value>
+                <value>
+                    <fullName>Post Install Ready</fullName>
+                    <default>false</default>
+                    <label>Post Install Ready</label>
+                </value>
+                <value>
                     <fullName>RFC</fullName>
                     <default>false</default>
                     <label>RFC</label>
@@ -11723,6 +11748,11 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <fullName>S. Consultant Assistance Needed</fullName>
                     <default>false</default>
                     <label>S. Consultant Assistance Needed</label>
+                </value>
+                <value>
+                    <fullName>Stalled</fullName>
+                    <default>false</default>
+                    <label>Stalled</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -11932,12 +11962,12 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
         <fullName>Sync_Properties_from_OLD_360ID__c</fullName>
         <externalId>false</externalId>
         <label>Sync Properties from OLD 360ID</label>
-        <length>32768</length>
+        <length>131000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Sync_Set_to_1hr_before_1hr_after__c</fullName>
@@ -42596,6 +42626,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
+                <fullName>OrthoTrac Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other %28list in notes%29</fullName>
                 <default>false</default>
             </values>
@@ -42613,6 +42647,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Practice Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Practice Works Cloud</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -42640,6 +42678,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
+                <fullName>SoftDent Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Softdent</fullName>
                 <default>false</default>
             </values>
@@ -42660,7 +42702,15 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
+                <fullName>WinDent Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>WinOMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinOMS Cloud</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -47444,6 +47494,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
+                <fullName>OrthoTrac Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other %28list in notes%29</fullName>
                 <default>false</default>
             </values>
@@ -47461,6 +47515,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Practice Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Practice Works Cloud</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -47488,6 +47546,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
+                <fullName>SoftDent Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Softdent</fullName>
                 <default>false</default>
             </values>
@@ -47508,7 +47570,15 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
+                <fullName>WinDent Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>WinOMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinOMS Cloud</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -47932,6 +48002,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Escalated %28Internal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>False Positive</fullName>
                 <default>false</default>
             </values>
             <values>

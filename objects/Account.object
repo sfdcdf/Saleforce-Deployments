@@ -2957,10 +2957,11 @@ Used by YBN.</description>
         <fullName>Important_National_Notes__c</fullName>
         <externalId>false</externalId>
         <label>Important Account Notes</label>
-        <required>false</required>
+        <length>131000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Inbound__c</fullName>
@@ -10389,6 +10390,11 @@ Inactive = Not actively in a partnership</inlineHelpText>
                     <label>OrthoTrac</label>
                 </value>
                 <value>
+                    <fullName>OrthoTrac Cloud</fullName>
+                    <default>false</default>
+                    <label>OrthoTrac Cloud</label>
+                </value>
+                <value>
                     <fullName>Other (list in notes)</fullName>
                     <default>false</default>
                     <label>Other (list in notes)</label>
@@ -10417,6 +10423,11 @@ Inactive = Not actively in a partnership</inlineHelpText>
                     <fullName>PracticeWorks</fullName>
                     <default>false</default>
                     <label>PracticeWorks</label>
+                </value>
+                <value>
+                    <fullName>Practice Works Cloud</fullName>
+                    <default>false</default>
+                    <label>Practice Works Cloud</label>
                 </value>
                 <value>
                     <fullName>Primadent</fullName>
@@ -10449,6 +10460,11 @@ Inactive = Not actively in a partnership</inlineHelpText>
                     <label>Softdent</label>
                 </value>
                 <value>
+                    <fullName>SoftDent Cloud</fullName>
+                    <default>false</default>
+                    <label>SoftDent Cloud</label>
+                </value>
+                <value>
                     <fullName>Suzy Dental</fullName>
                     <default>false</default>
                     <label>Suzy Dental</label>
@@ -10474,9 +10490,19 @@ Inactive = Not actively in a partnership</inlineHelpText>
                     <label>Windent</label>
                 </value>
                 <value>
+                    <fullName>WinDent Cloud</fullName>
+                    <default>false</default>
+                    <label>WinDent Cloud</label>
+                </value>
+                <value>
                     <fullName>WinOMS</fullName>
                     <default>false</default>
                     <label>WinOMS</label>
+                </value>
+                <value>
+                    <fullName>WinOMS Cloud</fullName>
+                    <default>false</default>
+                    <label>WinOMS Cloud</label>
                 </value>
                 <value>
                     <fullName>XLDent</fullName>
@@ -27665,6 +27691,10 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
                 <default>false</default>
             </values>
             <values>
+                <fullName>OrthoTrac Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other %28list in notes%29</fullName>
                 <default>false</default>
             </values>
@@ -27682,6 +27712,10 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Practice Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Practice Works Cloud</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -27709,6 +27743,10 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
                 <default>false</default>
             </values>
             <values>
+                <fullName>SoftDent Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Softdent</fullName>
                 <default>false</default>
             </values>
@@ -27729,7 +27767,15 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
                 <default>false</default>
             </values>
             <values>
+                <fullName>WinDent Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>WinOMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinOMS Cloud</fullName>
                 <default>false</default>
             </values>
             <values>

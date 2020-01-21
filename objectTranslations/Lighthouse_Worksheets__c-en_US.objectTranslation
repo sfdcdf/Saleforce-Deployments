@@ -1129,7 +1129,7 @@ if exist then re-assign to new 360 acct --></help>
         <name>Client_Phone_Number__c</name>
     </fields>
     <fields>
-        <label><!-- Close Notes --></label>
+        <label><!-- Action Taken --></label>
         <name>Close_Notes__c</name>
     </fields>
     <fields>
@@ -2275,7 +2275,7 @@ if exist then re-assign to new 360 acct --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- General Notes --></label>
+        <label><!-- Inbound Notes --></label>
         <name>General_Notes__c</name>
     </fields>
     <fields>
@@ -4516,6 +4516,10 @@ if exist then re-assign to new 360 acct --></help>
             <translation><!-- OrthoTrac --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>OrthoTrac Cloud</masterLabel>
+            <translation><!-- OrthoTrac Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Other (list in notes)</masterLabel>
             <translation><!-- Other (list in notes) --></translation>
         </picklistValues>
@@ -4534,6 +4538,10 @@ if exist then re-assign to new 360 acct --></help>
         <picklistValues>
             <masterLabel>Practice Web</masterLabel>
             <translation><!-- Practice Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice Works Cloud</masterLabel>
+            <translation><!-- Practice Works Cloud --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>PracticeWorks</masterLabel>
@@ -4560,6 +4568,10 @@ if exist then re-assign to new 360 acct --></help>
             <translation><!-- ScanDent --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>SoftDent Cloud</masterLabel>
+            <translation><!-- SoftDent Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Softdent</masterLabel>
             <translation><!-- Softdent --></translation>
         </picklistValues>
@@ -4580,8 +4592,16 @@ if exist then re-assign to new 360 acct --></help>
             <translation><!-- Vitalogics --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>WinDent Cloud</masterLabel>
+            <translation><!-- WinDent Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>WinOMS</masterLabel>
             <translation><!-- WinOMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinOMS Cloud</masterLabel>
+            <translation><!-- WinOMS Cloud --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Windent</masterLabel>
@@ -6451,6 +6471,10 @@ if exist then re-assign to new 360 acct --></help>
             <translation><!-- Escalated (Internal) --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>False Positive</masterLabel>
+            <translation><!-- False Positive --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>In Progress</masterLabel>
             <translation><!-- In Progress --></translation>
         </picklistValues>
@@ -7173,16 +7197,16 @@ if exist then re-assign to new 360 acct --></help>
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label><!-- Deferral Notes --></label>
-            <section>Deferral Notes</section>
-        </sections>
-        <sections>
             <label><!-- OOS Data --></label>
             <section>OOS Data</section>
         </sections>
         <sections>
-            <label><!-- OOS Resolution Details --></label>
-            <section>OOS Resolution Details</section>
+            <label><!-- OOS Ticket Action --></label>
+            <section>OOS Ticket Action</section>
+        </sections>
+        <sections>
+            <label><!-- OOS Ticket Request --></label>
+            <section>OOS Ticket Request</section>
         </sections>
         <sections>
             <label><!-- System Information --></label>
