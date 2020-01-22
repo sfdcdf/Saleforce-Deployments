@@ -14412,6 +14412,42 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>IT_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Practice_Name__r.IT_Contact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Practice_Name__r.IT_Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IT_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Practice_Name__r.IT_Phone__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IT Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -47977,23 +48013,11 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Status__c</picklist>
             <values>
-                <fullName>BOT Feature Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Backed Out Sale</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Complete</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Delete Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Escalated %28Bolt On%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -48013,80 +48037,8 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Logo Complete</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logo Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-1 Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-2 Pending Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-3 Pending Config</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-4 Pending Input</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-5 Config Done Pending Approval</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-6 Ready%2FConfig Complete</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-7 Suspended for Fix</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MA-8 Multi Location Split</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Messages Activated</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>New</fullName>
                 <default>true</default>
-            </values>
-            <values>
-                <fullName>Not Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pending Retention</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Post Install In Progress</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Post Install Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>RFC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>S%2E Consultant Assistance Needed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stalled</fullName>
-                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>

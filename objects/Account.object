@@ -13183,6 +13183,33 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <trackHistory>false</trackHistory>
         <type>Summary</type>
     </fields>
+    <fields>
+        <fullName>IT_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>IT Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>IT Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>IT_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>IT Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
