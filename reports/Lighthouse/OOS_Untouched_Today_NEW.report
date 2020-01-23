@@ -45,7 +45,7 @@
             <column>Lighthouse_Worksheets__c$Status__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
-            <value>Complete,Delete Case</value>
+            <value>Complete,Delete Case,False Positive</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c$Defer_Until__c</column>
@@ -100,6 +100,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Lighthouse_Worksheets__c$Date_Time_Opened__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c$Attempt_Date_1__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
