@@ -10,6 +10,18 @@
         <scale>1</scale>
     </aggregates>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.PES_Time_To_Complete_Campaigns_Task__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.PES_Time_To_Complete_Task__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Web_Dev_Total_Minutes_for_Changes__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
@@ -32,6 +44,15 @@
     </columns>
     <columns>
         <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.PES_Completing_Campaigns__c</field>
+    </columns>
+    <columns>
+        <field>Case.QA_Completed_By__c</field>
+    </columns>
+    <columns>
+        <field>Case.Web_Dev_User__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
