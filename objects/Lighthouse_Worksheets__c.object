@@ -7618,7 +7618,6 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <controllingField>AutoCalls__c</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -7647,26 +7646,6 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
                     <label>Don’t Have Authorization</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Too Expensive</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Office Handles In-house</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Other</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Don’t See Value</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>No</controllingFieldValue>
-                <valueName>Don’t Have Authorization</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -14496,6 +14475,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <columns>Status__c</columns>
         <columns>NAME</columns>
         <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
