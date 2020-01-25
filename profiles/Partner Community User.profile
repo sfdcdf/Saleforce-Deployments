@@ -27532,6 +27532,11 @@
         <field>Contact.tz__Local_Time_24__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Care_Credit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
     </layoutAssignments>

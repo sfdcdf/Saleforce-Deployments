@@ -2216,6 +2216,10 @@ if exist then re-assign to new 360 acct --></help>
             <masterLabel>No Feedback Now</masterLabel>
             <translation><!-- No Feedback Now --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>RAB Only</masterLabel>
+            <translation><!-- RAB Only --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Final Transports --></label>
@@ -2310,16 +2314,8 @@ if exist then re-assign to new 360 acct --></help>
         <label><!-- Goal of AR --></label>
         <name>Goal_of_AR__c</name>
         <picklistValues>
-            <masterLabel>Adversite Review</masterLabel>
-            <translation><!-- Adversite Review --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>CSC Light</masterLabel>
-            <translation><!-- CSC Light --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
+            <masterLabel>New Employee</masterLabel>
+            <translation><!-- New Employee --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Q&amp;A</masterLabel>
@@ -2330,8 +2326,8 @@ if exist then re-assign to new 360 acct --></help>
             <translation><!-- Re-CSC --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Recall fix</masterLabel>
-            <translation><!-- Recall fix --></translation>
+            <masterLabel>Recall Issues</masterLabel>
+            <translation><!-- Recall Issues --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -6614,6 +6610,10 @@ if exist then re-assign to new 360 acct --></help>
     <fields>
         <label><!-- IT Phone --></label>
         <name>IT_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Care Credit --></label>
+        <name>Care_Credit__c</name>
     </fields>
     <caseValues>
         <plural>false</plural>

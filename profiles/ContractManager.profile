@@ -31414,6 +31414,11 @@
         <field>Lighthouse_Worksheets__c.IT_Phone__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Care_Credit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Partner_Quarterly_Managed_Child_Account__c-Partner Quarterly Managed Child Account Layout</layout>
     </layoutAssignments>

@@ -2084,6 +2084,11 @@
         <field>Partner_Community_HTML__c.HTML__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Care_Credit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Customer_Surveys__c-Transactional 25 Day Call</layout>
         <recordType>Customer_Surveys__c.Transactional_25_Day_Call</recordType>

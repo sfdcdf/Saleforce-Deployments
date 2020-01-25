@@ -31350,6 +31350,11 @@
         <field>Lighthouse_Worksheets__c.IT_Phone__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Care_Credit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Yodle_Path__c-Yodle Path Layout</layout>
         <recordType>Yodle_Path__c.Coaching_Call</recordType>

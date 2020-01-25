@@ -32114,6 +32114,11 @@
         <field>Lighthouse_Worksheets__c.IT_Phone__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Care_Credit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Call_Grading_Form_2_0__c-LBW Onboarding Quality Process</layout>
         <recordType>Call_Grading_Form_2_0__c.LBW_Onboarding_Quality_Process</recordType>

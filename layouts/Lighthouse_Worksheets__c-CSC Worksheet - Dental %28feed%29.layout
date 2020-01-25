@@ -573,10 +573,6 @@
                 <field>Email_to_Office__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>OBC_Decline_Reason__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OBC_Voice_Task__c</field>
             </layoutItems>
@@ -866,6 +862,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Pause_Treatment_Plan_Campaign__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Care_Credit__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -1438,7 +1438,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h3200000PMlJ7</masterLabel>
+        <masterLabel>00h2E00000cmevV</masterLabel>
         <sizeX>3</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

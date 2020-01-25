@@ -31519,6 +31519,11 @@
         <field>Lighthouse_Worksheets__c.IT_Phone__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Care_Credit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Quote-Quote Layout</layout>
     </layoutAssignments>

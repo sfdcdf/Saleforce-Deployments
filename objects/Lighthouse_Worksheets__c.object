@@ -2453,11 +2453,12 @@ if exist then re-assign to new 360 acct</inlineHelpText>
         <fullName>Client_Information_Updates__c</fullName>
         <externalId>false</externalId>
         <label>Client Information Updates</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Client_Phone_Number__c</fullName>
@@ -4830,31 +4831,34 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
         <fullName>Fake_Appointments__c</fullName>
         <externalId>false</externalId>
         <label>Fake Appointments</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Fake_Columns__c</fullName>
         <externalId>false</externalId>
         <label>Fake Columns</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Fake_Provider_IDs__c</fullName>
         <externalId>false</externalId>
         <label>Fake Provider IDs</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Fast_Track_Picklist__c</fullName>
@@ -5019,6 +5023,11 @@ IF(
                     <fullName>*Other (see notes)</fullName>
                     <default>false</default>
                     <label>*Other (see notes)</label>
+                </value>
+                <value>
+                    <fullName>RAB Only</fullName>
+                    <default>false</default>
+                    <label>RAB Only</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -5276,29 +5285,19 @@ IF(
                     <label>Re-CSC</label>
                 </value>
                 <value>
-                    <fullName>CSC Light</fullName>
-                    <default>false</default>
-                    <label>CSC Light</label>
-                </value>
-                <value>
-                    <fullName>Adversite Review</fullName>
-                    <default>false</default>
-                    <label>Adversite Review</label>
-                </value>
-                <value>
                     <fullName>Q&amp;A</fullName>
                     <default>false</default>
                     <label>Q&amp;A</label>
                 </value>
                 <value>
-                    <fullName>Recall fix</fullName>
+                    <fullName>Recall Issues</fullName>
                     <default>false</default>
-                    <label>Recall fix</label>
+                    <label>Recall Issues</label>
                 </value>
                 <value>
-                    <fullName>Other</fullName>
+                    <fullName>New Employee</fullName>
                     <default>false</default>
-                    <label>Other</label>
+                    <label>New Employee</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -6835,11 +6834,12 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
         <fullName>Message_Trigger__c</fullName>
         <externalId>false</externalId>
         <label>Message Trigger</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Mileage_Milestones__c</fullName>
@@ -10450,21 +10450,23 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
         <fullName>Pre_CSC_QA_Completed_Appointments__c</fullName>
         <externalId>false</externalId>
         <label>Pre CSC QA - Completed Appointments</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Pre_CSC_QA_Fake_Appointments__c</fullName>
         <externalId>false</externalId>
         <label>Pre CSC QA - Fake Appointments</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Pre_CSC_QA_Fake_Patients__c</fullName>
@@ -12046,11 +12048,12 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
         <fullName>Test_Appointments_Scheduled_1_mo_out__c</fullName>
         <externalId>false</externalId>
         <label>Test Appointments (Scheduled 1 mo. out)</label>
-        <required>false</required>
+        <length>40000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Test_Management__c</fullName>
@@ -14427,6 +14430,17 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Care_Credit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>New field was created as per JIRA BOSS-26180.</description>
+        <externalId>false</externalId>
+        <label>Care Credit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -16408,6 +16422,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -16492,15 +16510,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16512,7 +16522,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21241,6 +21251,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -21325,15 +21339,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21345,7 +21351,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -26153,6 +26159,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -26237,15 +26247,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26257,7 +26259,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -31009,6 +31011,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -31093,15 +31099,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31113,7 +31111,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -35881,6 +35879,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -35965,15 +35967,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35985,7 +35979,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40737,6 +40731,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -40821,15 +40819,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -40841,7 +40831,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -45605,6 +45595,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -45689,15 +45683,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -45709,7 +45695,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -50457,6 +50443,10 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <fullName>No Feedback Now</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>RAB Only</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Final_Transports__c</picklist>
@@ -50541,15 +50531,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <picklistValues>
             <picklist>Goal_of_AR__c</picklist>
             <values>
-                <fullName>Adversite Review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CSC Light</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
+                <fullName>New Employee</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -50561,7 +50543,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recall fix</fullName>
+                <fullName>Recall Issues</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
