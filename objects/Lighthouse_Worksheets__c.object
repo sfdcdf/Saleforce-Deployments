@@ -54774,6 +54774,23 @@ ISBLANK(QA_Feedback__c))</errorConditionFormula>
         <errorDisplayField>QA_Feedback__c</errorDisplayField>
         <errorMessage>Must Fill Out QA Feedback if Quality Issues Found is checked</errorMessage>
     </validationRules>
+    <validationRules>
+        <fullName>CSC_AR_Time_Date_are_Required</fullName>
+        <active>false</active>
+        <description>This validation rule is added as per request BOSS-26181.</description>
+        <errorConditionFormula>AND( 
+ISBLANK(CSC_Date__c),
+ISPICKVAL(CSC_Time__c,' ') ,
+ISPICKVAL(Status__c , 'New'),
+OR(
+RecordType.DeveloperName='CSC Worksheet - Auto',
+RecordType.DeveloperName='CSC Worksheet - Dental',
+RecordType.DeveloperName='CSC Worksheet - Medical'   
+)
+)</errorConditionFormula>
+        <errorDisplayField>CSC_Date__c</errorDisplayField>
+        <errorMessage>Please enter CSC/AR Time and CSC/AR Date before saving the record.</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>OBC_Swap</fullName>
         <availability>online</availability>

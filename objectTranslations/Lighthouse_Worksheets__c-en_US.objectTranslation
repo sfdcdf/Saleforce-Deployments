@@ -7547,6 +7547,10 @@ if exist then re-assign to new 360 acct --></help>
         <errorMessage><!-- When Multi-Location is selected then Split By, Split Details, Location Information, Test Patients/Appointments, Other Information, and Message Activation cannot be blank.  Message Activation cannot be &quot;ASAP&quot; or &quot;On a Specific Date.&quot; --></errorMessage>
         <name>CSC_Worksheet_Multi_Location_Restriction</name>
     </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter CSC/AR Time and CSC/AR Date before saving the record. --></errorMessage>
+        <name>CSC_AR_Time_Date_are_Required</name>
+    </validationRules>
     <webLinks>
         <label><!-- OBC_Swap --></label>
         <name>OBC_Swap</name>
