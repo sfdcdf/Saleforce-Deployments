@@ -40,6 +40,12 @@
         <field>PHONE1</field>
     </columns>
     <columns>
+        <field>Account.Email__c</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
         <field>DUE_DATE</field>
     </columns>
     <filter>
@@ -56,16 +62,10 @@
             <value>293</value>
         </criteriaItems>
         <criteriaItems>
-            <column>User.Profile_Name__c</column>
+            <column>Account.Client_Type__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Nationally Certified Sales Executive</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Status__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>LIVE</value>
+            <value>YBN</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
