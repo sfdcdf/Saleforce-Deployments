@@ -1378,8 +1378,8 @@
         <fields>Opened_Date__c</fields>
         <fields>Closed_Date__c</fields>
         <relatedList>Lighthouse_Worksheets__c.Practice_Name__c</relatedList>
-        <sortField>Status__c</sortField>
-        <sortOrder>Asc</sortOrder>
+        <sortField>Opened_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
