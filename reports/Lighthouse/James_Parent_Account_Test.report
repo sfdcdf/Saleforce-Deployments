@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
         <field>Account$Name</field>
     </columns>
     <columns>
-        <field>Account$AdStation_Status__c</field>
-    </columns>
-    <columns>
         <field>Account$Number_of_Locations_Specific__c</field>
-    </columns>
-    <columns>
-        <field>Account.Opportunities$Name</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -25,9 +22,20 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LIVE</value>
+        </criteriaItems>
     </filter>
-    <format>Tabular</format>
-    <name>James: Parent Account Test</name>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Parent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ANN: Parent Account list</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -39,8 +47,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
-        <endDate>2017-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-01-01</startDate>
     </timeFrameFilter>
 </Report>
