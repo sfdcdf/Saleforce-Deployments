@@ -58,49 +58,19 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.tz__Timezone_Full__c</field>
+        <field>Account.Individual_Location_Service_Level__c</field>
     </columns>
     <columns>
-        <field>Account.Sales_Channel_YL__c</field>
+        <field>Account.Multi_Location_Owner_Primary_CID__c</field>
     </columns>
     <columns>
         <field>Account.Secondary_Segments__c</field>
     </columns>
     <columns>
+        <field>Account.Last_Completed_YBN_TP__c</field>
+    </columns>
+    <columns>
         <field>Account.Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.Monthly_Budget__c</field>
-    </columns>
-    <columns>
-        <field>Account.invoiced_last_mtd__c</field>
-    </columns>
-    <columns>
-        <field>Account.invoiced_this_MTD__c</field>
-    </columns>
-    <columns>
-        <field>Account.Cancellation_Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.Charge_Failure_Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.Days_Live__c</field>
-    </columns>
-    <columns>
-        <field>Account.Next_Billing_Date__c</field>
-    </columns>
-    <columns>
-        <field>Account.Most_Recent_Login_Date__c</field>
-    </columns>
-    <columns>
-        <field>Account.ROI_Details__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_E_mail__c</field>
-    </columns>
-    <columns>
-        <field>Account.Account_Description__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -132,8 +102,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.invoiced_this_MTD__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
