@@ -13,6 +13,9 @@
         <field>Account.Months_Live__c</field>
     </columns>
     <columns>
+        <field>Account.PMS__c</field>
+    </columns>
+    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -70,6 +73,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Months_Live__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Deactivation_Date__c</dateColumn>
         <interval>INTERVAL_LASTMONTH</interval>
