@@ -27,6 +27,20 @@
     <columns>
         <field>CUST_NAME</field>
     </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.MA_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.Practice_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>NYU</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
@@ -55,6 +69,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.CSC_Completed_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

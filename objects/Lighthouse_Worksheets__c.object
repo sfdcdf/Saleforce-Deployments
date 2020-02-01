@@ -11596,6 +11596,11 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
                     <fullName>Backed Out Sale</fullName>
                     <default>false</default>
                     <label>Backed Out Sale</label>
@@ -11694,11 +11699,6 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <fullName>Messages Activated</fullName>
                     <default>false</default>
                     <label>Messages Activated</label>
-                </value>
-                <value>
-                    <fullName>New</fullName>
-                    <default>true</default>
-                    <label>New</label>
                 </value>
                 <value>
                     <fullName>Not Completed</fullName>

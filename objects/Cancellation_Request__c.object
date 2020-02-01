@@ -1499,7 +1499,7 @@ false)</formula>
                 <value>
                     <fullName>Better CRM</fullName>
                     <default>false</default>
-                    <label>Better CRM</label>
+                    <label>Better COMM System</label>
                 </value>
                 <value>
                     <fullName>Better Customer Service</fullName>
@@ -1650,6 +1650,11 @@ false)</formula>
                     <fullName>Drip Campaigns</fullName>
                     <default>false</default>
                     <label>Drip Campaigns</label>
+                </value>
+                <value>
+                    <fullName>DSO/Group Decision</fullName>
+                    <default>false</default>
+                    <label>DSO/Group Decision</label>
                 </value>
                 <value>
                     <fullName>Ease of Use / User Friendly</fullName>
@@ -2119,16 +2124,16 @@ false)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lost to Competitor</controllingFieldValue>
-                <valueName>Better ROI</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Lost to Competitor</controllingFieldValue>
                 <valueName>Better Website</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lost to Competitor</controllingFieldValue>
                 <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
                 <valueName>Client Did Not Disclose</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost to Competitor</controllingFieldValue>
+                <valueName>DSO/Group Decision</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lost to Competitor</controllingFieldValue>
@@ -2197,10 +2202,6 @@ false)</formula>
             <valueSettings>
                 <controllingFieldValue>Performance</controllingFieldValue>
                 <valueName>Poor Ranking</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>Poor ROI</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Sales Expectations</controllingFieldValue>
@@ -2581,10 +2582,6 @@ false)</formula>
             <valueSettings>
                 <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
                 <valueName>Negative Reviews</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
-                <valueName>Previous Yodle Client w/ Bad Experience</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
@@ -2826,7 +2823,7 @@ false)</formula>
                 <value>
                     <fullName>Better CRM</fullName>
                     <default>false</default>
-                    <label>Better CRM</label>
+                    <label>Better COMM System</label>
                 </value>
                 <value>
                     <fullName>Better Customer Service</fullName>
@@ -2977,6 +2974,11 @@ false)</formula>
                     <fullName>Drip Campaigns</fullName>
                     <default>false</default>
                     <label>Drip Campaigns</label>
+                </value>
+                <value>
+                    <fullName>DSO/Group Decision</fullName>
+                    <default>false</default>
+                    <label>DSO/Group Decision</label>
                 </value>
                 <value>
                     <fullName>Ease of Use / User Friendly</fullName>
@@ -3446,16 +3448,16 @@ false)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lost to Competitor</controllingFieldValue>
-                <valueName>Better ROI</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Lost to Competitor</controllingFieldValue>
                 <valueName>Better Website</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lost to Competitor</controllingFieldValue>
                 <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
                 <valueName>Client Did Not Disclose</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lost to Competitor</controllingFieldValue>
+                <valueName>DSO/Group Decision</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lost to Competitor</controllingFieldValue>
@@ -3524,10 +3526,6 @@ false)</formula>
             <valueSettings>
                 <controllingFieldValue>Performance</controllingFieldValue>
                 <valueName>Poor Ranking</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Performance</controllingFieldValue>
-                <valueName>Poor ROI</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Sales Expectations</controllingFieldValue>
@@ -3908,10 +3906,6 @@ false)</formula>
             <valueSettings>
                 <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
                 <valueName>Negative Reviews</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
-                <valueName>Previous Yodle Client w/ Bad Experience</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Buyer's Remorse</controllingFieldValue>
@@ -5135,6 +5129,11 @@ false)</formula>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>Adit</fullName>
+                    <default>false</default>
+                    <label>Adit</label>
+                </value>
+                <value>
                     <fullName>All Data Mobile</fullName>
                     <default>false</default>
                     <label>All Data Mobile</label>
@@ -5163,6 +5162,11 @@ false)</formula>
                     <fullName>Benco</fullName>
                     <default>false</default>
                     <label>Benco</label>
+                </value>
+                <value>
+                    <fullName>Birdeye</fullName>
+                    <default>false</default>
+                    <label>Birdeye</label>
                 </value>
                 <value>
                     <fullName>BoltOn</fullName>
@@ -5210,9 +5214,24 @@ false)</formula>
                     <label>Demandforce</label>
                 </value>
                 <value>
+                    <fullName>Dentech Windows</fullName>
+                    <default>false</default>
+                    <label>Dentech Windows</label>
+                </value>
+                <value>
+                    <fullName>Dentrix Ascend</fullName>
+                    <default>false</default>
+                    <label>Dentrix Ascend</label>
+                </value>
+                <value>
                     <fullName>Dentrix eCentral / eServices</fullName>
                     <default>false</default>
                     <label>Dentrix eCentral / eServices</label>
+                </value>
+                <value>
+                    <fullName>Doctible</fullName>
+                    <default>false</default>
+                    <label>Doctible</label>
                 </value>
                 <value>
                     <fullName>DoctorBase</fullName>
@@ -5255,9 +5274,19 @@ false)</formula>
                     <label>First Pacific Pro</label>
                 </value>
                 <value>
+                    <fullName>Flex</fullName>
+                    <default>false</default>
+                    <label>Flex</label>
+                </value>
+                <value>
                     <fullName>Futuredontics (Patient Activator/1800Dentist)</fullName>
                     <default>false</default>
                     <label>Futuredontics (Patient Activator/1800Dentist)</label>
+                </value>
+                <value>
+                    <fullName>iDental Soft</fullName>
+                    <default>false</default>
+                    <label>iDental Soft</label>
                 </value>
                 <value>
                     <fullName>Jobber</fullName>
@@ -5315,9 +5344,24 @@ false)</formula>
                     <label>Ortho2</label>
                 </value>
                 <value>
+                    <fullName>Oryx</fullName>
+                    <default>false</default>
+                    <label>Oryx</label>
+                </value>
+                <value>
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Patient Pop</fullName>
+                    <default>false</default>
+                    <label>Patient Pop</label>
+                </value>
+                <value>
+                    <fullName>Podium</fullName>
+                    <default>false</default>
+                    <label>Podium</label>
                 </value>
                 <value>
                     <fullName>Practice Mojo</fullName>
@@ -5338,6 +5382,11 @@ false)</formula>
                     <fullName>RazorSync</fullName>
                     <default>false</default>
                     <label>RazorSync</label>
+                </value>
+                <value>
+                    <fullName>RecallMax</fullName>
+                    <default>false</default>
+                    <label>RecallMax</label>
                 </value>
                 <value>
                     <fullName>Refuse to Disclose</fullName>
@@ -5422,6 +5471,10 @@ false)</formula>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Adit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
                 <valueName>All Data Mobile</valueName>
             </valueSettings>
             <valueSettings>
@@ -5443,6 +5496,10 @@ false)</formula>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
                 <valueName>Benco</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Birdeye</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
@@ -5474,7 +5531,19 @@ false)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Dentech Windows</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Dentrix Ascend</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
                 <valueName>Dentrix eCentral / eServices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Doctible</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
@@ -5506,7 +5575,15 @@ false)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Flex</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
                 <valueName>Futuredontics (Patient Activator/1800Dentist)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>iDental Soft</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
@@ -5538,7 +5615,19 @@ false)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Oryx</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
                 <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Patient Pop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Podium</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
@@ -5551,6 +5640,10 @@ false)</formula>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
                 <valueName>PracticeWorks eServices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>RecallMax</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Yes</controllingFieldValue>
@@ -14543,6 +14636,10 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>DSO%2FGroup Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Don%27t Have Funds</fullName>
                 <default>false</default>
             </values>
@@ -14834,6 +14931,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Cutting Advertising Budget</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DSO%2FGroup Decision</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17606,6 +17707,10 @@ false)</formula>
         <picklistValues>
             <picklist>System_Switching_To__c</picklist>
             <values>
+                <fullName>Adit</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>All Data Mobile</fullName>
                 <default>false</default>
             </values>
@@ -17627,6 +17732,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Benco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Birdeye</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17666,7 +17775,19 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Dentech Windows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dentrix Ascend</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Dentrix eCentral %2F eServices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doctible</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17699,6 +17820,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>First Pacific Pro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flex</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17746,7 +17871,19 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Oryx</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Pop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Podium</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17767,6 +17904,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>RazorSync</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RecallMax</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17827,6 +17968,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>ZocDoc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iDental Soft</fullName>
                 <default>false</default>
             </values>
             <values>
