@@ -4738,7 +4738,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Test_Management__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -34213,7 +34213,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Quality_Case__c.Cancellation_Parent__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -34228,12 +34228,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Quality_Case__c.Case_Closed_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Quality_Case__c.Case_Closed_Date_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -34258,12 +34258,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Quality_Case__c.Original_Case_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Quality_Case__c.Original_Case_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -36543,7 +36543,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Case.CSC_Rep__c</field>
         <readable>true</readable>
     </fieldPermissions>

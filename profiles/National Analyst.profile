@@ -32720,7 +32720,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Best_Practice_Evaluation__c.Case_in_Review__c</field>
         <readable>true</readable>
     </fieldPermissions>

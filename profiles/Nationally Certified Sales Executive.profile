@@ -12528,7 +12528,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Case.Manager_Approved_Changes__c</field>
         <readable>true</readable>
     </fieldPermissions>
