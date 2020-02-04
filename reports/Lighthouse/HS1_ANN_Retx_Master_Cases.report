@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
-    </columns>
-    <columns>
-        <field>CLOSED_DATEONLY</field>
-    </columns>
-    <columns>
-        <field>Case.Case_Submission_Quality__c</field>
-    </columns>
-    <columns>
-        <field>Case.Case_Submission_Feedback__c</field>
-    </columns>
-    <columns>
-        <field>OWNER</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>RECORDTYPE</column>
-            <isUnlocked>false</isUnlocked>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Case.LH_Master</value>
+            <value>Mary Tillery,Doreen Towhey,Ann Schwertz,Kevin Lewis</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Case_Submission_Quality__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Exceptional,Review Requested,Duplicate Request/Already in Place,Issue with Patient/Appointment Provided</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CREATED</column>
-            <isUnlocked>false</isUnlocked>
+            <column>SUBJECT</column>
+            <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>SFDC Sync</value>
+            <value>Charge Failure</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Case_Submission_Feedback__c</column>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
-            <value>*DONE*</value>
+            <value>sugar hill smiles,dummy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Billing</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>CREATED</field>
+        <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SHANNON: Submission Feedback by Role</name>
+    <name>HS1-ANN: Retx Master Cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -62,7 +65,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
