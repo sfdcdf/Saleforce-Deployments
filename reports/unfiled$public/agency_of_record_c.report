@@ -10,6 +10,12 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship_ID__c</field>
+    </columns>
+    <columns>
         <field>Account.Agency_of_Record__c</field>
     </columns>
     <columns>
@@ -46,8 +52,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>DUE_DATE</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
