@@ -12858,10 +12858,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Check_for_Spend_Blockers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Check_for_Spend_Blockers__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Checked_Bulk_URL_Manager__c</field>
@@ -13053,10 +13053,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Compliance_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Compliance_Details__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Concerned_Details__c</field>
@@ -13233,10 +13233,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Date_Pre_CSC_Cancel_Rogers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Date_Pre_CSC_Cancel_Rogers__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Date_Processed_QA__c</field>
@@ -14108,10 +14108,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Last_Major_Action__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Last_Major_Action__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Lead_Audit__c</field>
@@ -15438,10 +15438,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Setup_Wizard_Complete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Setup_Wizard_Complete__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Site_Serving_Area_Correct__c</field>
@@ -15983,10 +15983,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.What_is_your_company_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.What_is_your_company_URL__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Will_we_be_taking_over_this_URL__c</field>

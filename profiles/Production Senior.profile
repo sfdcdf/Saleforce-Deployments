@@ -864,10 +864,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.AD_Mentor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.AD_Mentor__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountId18__c</field>
@@ -959,10 +959,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Agency_of_Record__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Agency_of_Record__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Algo_Change_Detail__c</field>
@@ -1059,10 +1059,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.BCF_Collection_Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.BCF_Collection_Status__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Berry_Account_Manager_Email__c</field>
@@ -1074,15 +1074,15 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Berry_Contract_Received__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Berry_Contract_Received__c</field>
+</fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Berry_Market__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Berry_Market__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Berry_Product_Type__c</field>
@@ -1364,10 +1364,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Content_Ready__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Content_Ready__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Contract_Length__c</field>
@@ -1479,10 +1479,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Date_Berry_Contract_Received__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Date_Berry_Contract_Received__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Date_CVR_OPT_Exhausted_del__c</field>
@@ -1784,10 +1784,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Engine_Ready__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Engine_Ready__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Entered_Save_Mode__c</field>
@@ -2109,10 +2109,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.LH_Exit_Survey_Sent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.LH_Exit_Survey_Sent__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Last_Activity_User__c</field>
@@ -2289,10 +2289,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Monthly_Billing_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Monthly_Billing_Date__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Months_Live__c</field>
@@ -2469,10 +2469,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Oem_Corporate_Account__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Oem_Corporate_Account__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Offer_to_Client_Expiration__c</field>
@@ -2719,10 +2719,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Potential_Month_Ave_Location__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Potential_Month_Ave_Location__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Preferred_Vendor__c</field>
@@ -2919,30 +2919,30 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Reseller_Close_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Reseller_Close_Date__c</field>
+</fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Reseller_Est_Revenue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Reseller_Est_Revenue__c</field>
+</fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Reseller_Market__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Reseller_Market__c</field>
+</fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Reseller_Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Reseller_Status__c</field>
+</fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Reseller_of_Accts__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Reseller_of_Accts__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Returning_Customers__c</field>
@@ -2989,10 +2989,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SDR_Set_M1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.SDR_Set_M1__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.SD_Notes__c</field>
@@ -3259,10 +3259,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Synopsis_of_Account_State__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Account.Synopsis_of_Account_State__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.System_Information_Used_Today__c</field>
@@ -10204,10 +10204,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Access_Jobs_Customers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Access_Jobs_Customers__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.AccountId</field>
@@ -10574,10 +10574,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Business_Street_Address__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Business_Street_Address__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CMS_2_0__c</field>
@@ -10604,10 +10604,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.CS_Agent_Responsible__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.CS_Agent_Responsible__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.CS_Approved__c</field>
@@ -10959,10 +10959,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Compliance_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Compliance_Details__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Concerned_Details__c</field>
@@ -11119,10 +11119,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Date_Pre_CSC_Cancel_Rogers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Date_Pre_CSC_Cancel_Rogers__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Date_Processed_QA__c</field>
@@ -11239,10 +11239,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Days_in_SLA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Days_in_SLA__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Days_without_Credentials__c</field>
@@ -11319,10 +11319,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Ease_of_Download__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Ease_of_Download__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Email_Marketing__c</field>
@@ -11424,10 +11424,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Finance_Approved__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Finance_Approved__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Fine_Amount__c</field>
@@ -11474,15 +11474,15 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Franchisee_Escalation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Franchisee_Escalation__c</field>
+</fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Free_Time_Period__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Free_Time_Period__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Free_Time__c</field>
@@ -11509,10 +11509,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.GCC2_Date_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.GCC2_Date_Time__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.GCC_1_Status__c</field>
@@ -11914,10 +11914,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Last_Major_Action__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Last_Major_Action__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Lead_Analyst__c</field>
@@ -12044,10 +12044,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Max_Upsell_Demo__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Max_Upsell_Demo__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.MilestoneStatus</field>
@@ -12109,10 +12109,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.National_Multiplier__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.National_Multiplier__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.National_Video_Approved__c</field>
@@ -12314,10 +12314,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Optimization_Difficulty__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Optimization_Difficulty__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Optimization_Status__c</field>
@@ -12449,10 +12449,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.PS_Change_Order__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.PS_Change_Order__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.PaidBy__c</field>
@@ -12819,10 +12819,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Regular_Use_Of_App__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Regular_Use_Of_App__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Relationship_Specific_Updates__c</field>
@@ -12834,10 +12834,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Removed_Cancellation_Dates__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Removed_Cancellation_Dates__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Rep_Emailed_QA__c</field>
@@ -13009,10 +13009,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.SEO_MOPs_Completed_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.SEO_MOPs_Completed_Date__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.SEO_Optimization_Detail__c</field>
@@ -13164,10 +13164,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Setup_Wizard_Complete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Setup_Wizard_Complete__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Site_Serving_Area_Correct__c</field>
@@ -13479,10 +13479,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Updated_Ad_Copies__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Updated_Ad_Copies__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Updated_Geo_Targeting__c</field>
@@ -13509,10 +13509,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Use_of_App__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.Use_of_App__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Used_Current_bill_as_Cancellation_Fee__c</field>
@@ -13684,10 +13684,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.What_is_your_company_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    <editable>false</editable>
+    <readable>false</readable>
+    <field>Case.What_is_your_company_URL__c</field>
+</fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Will_we_be_taking_over_this_URL__c</field>
