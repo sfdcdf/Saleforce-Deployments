@@ -246,7 +246,7 @@
         <fullName>AD_Mentor__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>AD Mentor</label>
+        <label>zzzAD Mentor</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts7</relationshipName>
         <required>false</required>
@@ -257,7 +257,7 @@
     <fields>
         <fullName>AVERAGE_CUSTOMER_LENGTH__c</fullName>
         <externalId>false</externalId>
-        <label>Average Customer Length</label>
+        <label>zzzAverage Customer Length</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -510,7 +510,7 @@ PEV__c &lt;100000,"Tier 6","NA"))))))</formula>
     <fields>
         <fullName>Agency_of_Record__c</fullName>
         <externalId>false</externalId>
-        <label>Agency of Record</label>
+        <label>zzzAgency of Record</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -774,7 +774,7 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
         <fullName>Berry_Contract_Received__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Berry Contract Received</label>
+        <label>zzzBerry Contract Received</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -1017,7 +1017,7 @@ ISPICKVAL(Channel_Development__c, "")),
         <fullName>CRM_System_Name__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Name of the CRM system customer is using</inlineHelpText>
-        <label>CRM System Name</label>
+        <label>zzzCRM System Name</label>
         <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1039,7 +1039,7 @@ ISPICKVAL(Channel_Development__c, "")),
     <fields>
         <fullName>CROSS_SELL_RATES_OF_PRODUCTS__c</fullName>
         <externalId>false</externalId>
-        <label>Cross Sell Rates of Products</label>
+        <label>zzzCross Sell Rates of Products</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -1449,7 +1449,7 @@ ISPICKVAL(Channel_Development__c, "")),
     <fields>
         <fullName>Content_Ready__c</fullName>
         <externalId>false</externalId>
-        <label>Content Ready</label>
+        <label>zzzContent Ready</label>
         <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1833,7 +1833,7 @@ ISPICKVAL(Channel_Development__c, "")),
     <fields>
         <fullName>Date_Berry_Contract_Received__c</fullName>
         <externalId>false</externalId>
-        <label>Date Berry Contract Received</label>
+        <label>zzzDate Berry Contract Received</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2593,7 +2593,7 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
     <fields>
         <fullName>Engine_Ready__c</fullName>
         <externalId>false</externalId>
-        <label>Engine Ready</label>
+        <label>zzzEngine Ready</label>
         <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3397,7 +3397,7 @@ Used by YBN.</description>
         <fullName>LH_Exit_Survey_Sent__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>LH_Exit Survey Sent</label>
+        <label>zzzLH_Exit Survey Sent</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -4067,7 +4067,7 @@ Live_Date__c+35+Month_1_Check_In_Date_Adjustment__c ,Null)</formula>
     <fields>
         <fullName>Monthly_Billing_Date__c</fullName>
         <externalId>false</externalId>
-        <label>Monthly Billing Date</label>
+        <label>zzzMonthly Billing Date</label>
         <precision>2</precision>
         <required>false</required>
         <scale>0</scale>
@@ -4498,7 +4498,7 @@ Null))))))</formula>
     <fields>
         <fullName>Number_of_SMB_Customers__c</fullName>
         <externalId>false</externalId>
-        <label>Number of SMB Customers</label>
+        <label>zzzNumber of SMB Customers</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -4521,7 +4521,7 @@ Null))))))</formula>
     <fields>
         <fullName>Oem_Corporate_Account__c</fullName>
         <externalId>false</externalId>
-        <label>OEM Corporate Account</label>
+        <label>zzzOEM Corporate Account</label>
         <length>250</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4722,7 +4722,7 @@ Null))))))</formula>
     <fields>
         <fullName>Other_Channel_Model__c</fullName>
         <externalId>false</externalId>
-        <label>Other Channel Model</label>
+        <label>zzzOther Channel Model</label>
         <length>250</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5164,7 +5164,7 @@ Null))))))</formula>
     <fields>
         <fullName>Potential_Month_Ave_Location__c</fullName>
         <externalId>false</externalId>
-        <label>Potential Month Ave $/Location</label>
+        <label>zzzPotential Month Ave $/Location</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -5752,7 +5752,7 @@ contains( Product_Type__c , "YODLE_WEB")),
     <fields>
         <fullName>Reseller_Close_Date__c</fullName>
         <externalId>false</externalId>
-        <label>Reseller Close Date</label>
+        <label>zzzReseller Close Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5761,7 +5761,7 @@ contains( Product_Type__c , "YODLE_WEB")),
     <fields>
         <fullName>Reseller_Est_Revenue__c</fullName>
         <externalId>false</externalId>
-        <label>Reseller Est. Revenue</label>
+        <label>zzzReseller Est. Revenue</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -5772,7 +5772,7 @@ contains( Product_Type__c , "YODLE_WEB")),
     <fields>
         <fullName>Reseller_Launch_Date__c</fullName>
         <externalId>false</externalId>
-        <label>Reseller Launch Date</label>
+        <label>zzzReseller Launch Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5781,7 +5781,7 @@ contains( Product_Type__c , "YODLE_WEB")),
     <fields>
         <fullName>Reseller_Market__c</fullName>
         <externalId>false</externalId>
-        <label>Reseller Market</label>
+        <label>zzzReseller Market</label>
         <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5792,7 +5792,7 @@ contains( Product_Type__c , "YODLE_WEB")),
     <fields>
         <fullName>Reseller_of_Accts__c</fullName>
         <externalId>false</externalId>
-        <label>Reseller # of Accts</label>
+        <label>zzzReseller # of Accts</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -5914,7 +5914,7 @@ contains( Product_Type__c , "YODLE_WEB")),
         <fullName>SDR_Set_M1__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>SDR Set M1</label>
+        <label>zzzSDR Set M1</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -6611,7 +6611,7 @@ IMS_Rep__r.Id = "00532000005P6l3"), /*LeadStream Support*/
         <fullName>Synopsis_of_Account_State__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>High level overview of current account state</inlineHelpText>
-        <label>Synopsis of Account State</label>
+        <label>zzzSynopsis of Account State</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -8414,7 +8414,7 @@ Used by YBN.</description>
         <fullName>BCF_Collection_Status__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Select the appropriate status for the BCF after a completed CSC.  Check here prior to any adoption call to see if client committed to filling out on their own and no BCF record is present.</inlineHelpText>
-        <label>BCF Completion Status</label>
+        <label>zzzBCF Completion Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -8593,7 +8593,7 @@ Used by YBN.</description>
     <fields>
         <fullName>Berry_Market__c</fullName>
         <externalId>false</externalId>
-        <label>Berry Market</label>
+        <label>zzzBerry Market</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -8867,7 +8867,7 @@ Inactive = Not actively in a partnership</inlineHelpText>
         <fullName>CRM_FOR_INDIVIDUAL_LOCATIONS__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Do the individual locations use a CRM system?</inlineHelpText>
-        <label>CRM for Individual Locations</label>
+        <label>zzzCRM for Individual Locations</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9044,7 +9044,7 @@ Inactive = Not actively in a partnership</inlineHelpText>
     <fields>
         <fullName>Channel_Partner_Sub_Type__c</fullName>
         <externalId>false</externalId>
-        <label>Channel Partner Sub-Type</label>
+        <label>zzzChannel Partner Sub-Type</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -11591,7 +11591,7 @@ Inactive = Not actively in a partnership</inlineHelpText>
     <fields>
         <fullName>Reseller_Status__c</fullName>
         <externalId>false</externalId>
-        <label>Reseller Status</label>
+        <label>zzzReseller Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
