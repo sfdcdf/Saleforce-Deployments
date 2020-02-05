@@ -11636,11 +11636,6 @@ NOT(ispickval( Disable_Recall_Postcards_for_Patients__c,"")))
                     <label>Escalated (Internal)</label>
                 </value>
                 <value>
-                    <fullName>False Positive</fullName>
-                    <default>false</default>
-                    <label>False Positive</label>
-                </value>
-                <value>
                     <fullName>In Progress</fullName>
                     <default>false</default>
                     <label>In Progress</label>
@@ -47992,10 +47987,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Escalated %28Internal%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>False Positive</fullName>
                 <default>false</default>
             </values>
             <values>
