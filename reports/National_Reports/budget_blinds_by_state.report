@@ -4,51 +4,48 @@
         <field>PARENT.NAME</field>
     </columns>
     <columns>
-        <field>ACCOUNT.NAME</field>
-    </columns>
-    <columns>
         <field>Account.Client_ID__c</field>
     </columns>
     <columns>
-        <field>Account.Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.AdStation_Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.Monthly_Budget__c</field>
-    </columns>
-    <columns>
-        <field>Account.Product_Type__c</field>
-    </columns>
-    <columns>
-        <field>Account.IMS_Rep__c</field>
+        <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
     </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>Account.Monthly_Budget__c</field>
+    </columns>
     <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Account.YBN_Corporate_Relationship</value>
+        </criteriaItems>
         <criteriaItems>
             <column>PARENT.NAME</column>
             <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>SEVA</value>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
-            <isUnlocked>true</isUnlocked>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Client_Type__c</column>
-            <isUnlocked>true</isUnlocked>
+            <column>PARENT.NAME</column>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>YBN</value>
+            <value>budget blinds - master,budget blinds canada</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
-    <name>Seva Account List</name>
+    <format>Tabular</format>
+    <name>budget blinds by state</name>
     <params>
         <name>co</name>
         <value>1</value>
