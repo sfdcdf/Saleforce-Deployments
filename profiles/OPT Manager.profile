@@ -35272,7 +35272,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -35471,6 +35471,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -35502,7 +35503,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
