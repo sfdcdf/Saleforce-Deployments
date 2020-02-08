@@ -7524,6 +7524,10 @@ if exist then re-assign to new 360 acct --></help>
         <name>Remote_GUI_Items_for_Message_Activation</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Please enter values for Action Taken, Error From Log File, OOS Category, and OOS Detail before saving as Complete --></errorMessage>
+        <name>Required_Fields_before_Completing_OOS</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- You must select a Stall Reason if the status is Stalled or Backed Out Sale --></errorMessage>
         <name>Stall_Reason_Required_if_Status_is_Stall</name>
     </validationRules>

@@ -54550,6 +54550,22 @@ NOT(INCLUDES( Remote_GUI_Items_to_Check__c , "Verify Sync Hours"         ))))
         <errorMessage>Before changing the status to Messages Activated, you must complete the required tasks in the Remote GUI Items to Check section</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Required_Fields_before_Completing_OOS</fullName>
+        <active>true</active>
+        <description>This validation is to require certain fields have a value before the worksheet is marked as 'Completed'</description>
+        <errorConditionFormula>AND(
+				OR(
+	    ISBLANK(Close_Notes__c),
+	    ISBLANK(Error_From_Log_File__c),
+	    ISBLANK(TEXT(OOS_Category__c)),
+	    ISBLANK(TEXT(OOS_Details__c))
+								), 
+ RecordType.DeveloperName = "LH_OOS",
+	ISPICKVAL(Status__c, "Complete")
+)</errorConditionFormula>
+        <errorMessage>Please enter values for Action Taken, Error From Log File, OOS Category, and OOS Detail before saving as Complete</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>Stall_Reason_Required_if_Status_is_Stall</fullName>
         <active>true</active>
         <description>You must select a Stall Reason if the status is Stalled or Backed Out Sale</description>
