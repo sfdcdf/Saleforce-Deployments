@@ -7,6 +7,9 @@
         <field>Account$Client_ID__c</field>
     </columns>
     <columns>
+        <field>Account.Organic_Analyses__r$Owner</field>
+    </columns>
+    <columns>
         <field>Account$Parent</field>
     </columns>
     <columns>
@@ -49,8 +52,12 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$Parent</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <endDate>2020-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-08-01</startDate>
     </timeFrameFilter>
 </Report>
