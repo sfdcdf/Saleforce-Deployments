@@ -33851,6 +33851,9 @@
         <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>tz__lt_country_names__mdt-tz__Local Time Country Codes Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

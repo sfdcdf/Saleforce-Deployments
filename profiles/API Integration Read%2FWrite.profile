@@ -38821,6 +38821,9 @@
         <layout>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c-dca_cnvrt_note__Convert Notes to Enhanced Notes Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>tz__Local_Time_Error_Log__c-tz__Local Time Error Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -40081,6 +40084,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>dca_cnvrt_note__Convert_Notes_to_ContentNotes_Log__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>tz__DST_Setting__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

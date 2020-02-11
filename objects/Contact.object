@@ -1083,17 +1083,33 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>tz__DST_Setting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is a hidden field and should not be added to the page layouts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a hidden field and should not be added to the page layouts.</inlineHelpText>
+        <label>DST Setting</label>
+        <referenceTo>tz__DST_Setting__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>tz__Local_Time_24_Short__c</fullName>
         <deprecated>false</deprecated>
         <description>Shows the current local time (without date) for the Contact in 24-hr format.</description>
         <externalId>false</externalId>
-        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+        <formula>IF(ISBLANK(tz__UTC_Offset_F__c),
 "Unknown",
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 )
 &amp;":"&amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 15, 2 )
 &amp; " " &amp;
-IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
 )</formula>
         <inlineHelpText>Shows the local time (without date) for the Contact in 24-hr format.</inlineHelpText>
         <label>Local Time</label>
@@ -1107,16 +1123,16 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <deprecated>false</deprecated>
         <description>Shows the current local time for the Contact in 24-hr format.</description>
         <externalId>false</externalId>
-        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+        <formula>IF(ISBLANK(tz__UTC_Offset_F__c),
 "Unknown",
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; "/" &amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; "/" &amp;
-LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; " " &amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 6, 2 ) &amp; "/" &amp;
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 9, 2 ) &amp; "/" &amp;
+LEFT( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 4 ) &amp; " " &amp;
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 )
 &amp;":"&amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 15, 2 )
 &amp; " " &amp;
-IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
 )</formula>
         <inlineHelpText>Shows the local time for the Contact in 24-hr format.</inlineHelpText>
         <label>Local Time</label>
@@ -1130,34 +1146,34 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <deprecated>false</deprecated>
         <description>Shows the current local time (without date) for the Contact.</description>
         <externalId>false</externalId>
-        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+        <formula>IF(ISBLANK(tz__UTC_Offset_F__c),
 "Unknown",
 TEXT(
 IF(
 OR(
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) = 12
 ),
 12,
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) )
 -
 IF(
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) &lt; 12,
 0,
 12
 )
 )
 )
 &amp;":"&amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 15, 2 )
 &amp;" "&amp;
 IF(
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) &lt; 12,
 "AM",
 "PM"
 )
 &amp; " " &amp;
-IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
 )</formula>
         <inlineHelpText>Shows the local time (without date) for the Contact.</inlineHelpText>
         <label>Local Time</label>
@@ -1171,37 +1187,37 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <deprecated>false</deprecated>
         <description>Shows the current local time for the Contact.</description>
         <externalId>false</externalId>
-        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+        <formula>IF(ISBLANK(tz__UTC_Offset_F__c),
 "Unknown",
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; "/" &amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; "/" &amp;
-LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; " " &amp;
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 6, 2 ) &amp; "/" &amp;
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 9, 2 ) &amp; "/" &amp;
+LEFT( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 4 ) &amp; " " &amp;
 TEXT(
 IF(
 OR(
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) = 12
 ),
 12,
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) )
 -
 IF(
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) &lt; 12,
 0,
 12
 )
 )
 )
 &amp;":"&amp;
-MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 15, 2 )
 &amp;" "&amp;
 IF(
-VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset_F__c /24 ), 12, 2 ) ) &lt; 12,
 "AM",
 "PM"
 )
 &amp; " " &amp;
-IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"") 
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
 )</formula>
         <inlineHelpText>Shows the local time for the Contact.</inlineHelpText>
         <label>Local Time</label>
@@ -1211,12 +1227,66 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>tz__Timezone_DST_Full__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full timezone name when the DST is on. This is a hidden field and should not be added to the page layouts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full timezone name when the DST is on. This is a hidden field and should not be added to the page layouts.</inlineHelpText>
+        <label>Timezone DST (Full)</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_DST__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone abbreviation when DST is on (PDT, EDT, etc.). This is a hidden field and should not be added to the page layouts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation when DST is on (PDT, EDT, etc.). This is a hidden field and should not be added to the page layouts.</inlineHelpText>
+        <label>Timezone DST</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_F__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <formula>IF( tz__DST_Setting__r.tz__DST__c , tz__Timezone_DST__c, tz__Timezone__c )</formula>
+        <inlineHelpText>Current timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Full_F__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone full name.</description>
+        <externalId>false</externalId>
+        <formula>IF( tz__DST_Setting__r.tz__DST__c , tz__Timezone_DST_Full__c, tz__Timezone_Full__c )</formula>
+        <inlineHelpText>Current timezone full name.</inlineHelpText>
+        <label>Timezone (Full)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>tz__Timezone_Full__c</fullName>
         <deprecated>false</deprecated>
-        <description>Full timezone name.</description>
+        <description>Full timezone name when the DST is off. This is a hidden field and should not be added to the page layouts.</description>
         <externalId>false</externalId>
         <inlineHelpText>Full timezone name.</inlineHelpText>
-        <label>Timezone (Full)</label>
+        <label>Timezone Standard (Full)</label>
         <length>40</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1241,10 +1311,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
     <fields>
         <fullName>tz__Timezone__c</fullName>
         <deprecated>false</deprecated>
-        <description>Current timezone abbreviation (PST, EST,etc..)</description>
+        <description>Timezone abbreviation when DST is off (PST, EST, etc.). This is a hidden field and should not be added to the page layouts.</description>
         <externalId>false</externalId>
         <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
-        <label>Timezone</label>
+        <label>Timezone Standard</label>
         <length>10</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1253,12 +1323,42 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>tz__UTC_Offset_DST__c</fullName>
+        <deprecated>false</deprecated>
+        <description>UTC Offset when the DST is on. This is a hidden field and should not be added to the page layouts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>UTC Offset when the DST is on. This is a hidden field and should not be added to the page layouts.</inlineHelpText>
+        <label>UTC Offset DST</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTC_Offset_F__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current UTC timezone offset.</description>
+        <externalId>false</externalId>
+        <formula>IF( tz__DST_Setting__r.tz__DST__c , tz__UTC_Offset_DST__c , tz__UTF_Offset__c )</formula>
+        <inlineHelpText>Current UTC timezone offset.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>tz__UTF_Offset__c</fullName>
         <deprecated>false</deprecated>
-        <description>Shows the current UTC timezone offset of the Contact. Uses the mailing address, and in its absence the Phone number field in the calculation.</description>
+        <description>UTC Offset when the DST is off. This is a hidden field and should not be added to the page layouts.</description>
         <externalId>false</externalId>
         <inlineHelpText>Shows the UTC timezone offset of the Contact.</inlineHelpText>
-        <label>UTC Offset</label>
+        <label>UTC Offset Standard</label>
         <precision>5</precision>
         <required>false</required>
         <scale>2</scale>
@@ -1462,7 +1562,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
         <externalId>false</externalId>
         <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
-        <label>LT Info</label>
+        <label>LT Info (To be Deprecated)</label>
         <length>340</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

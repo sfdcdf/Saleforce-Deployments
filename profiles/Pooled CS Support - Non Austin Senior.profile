@@ -32808,6 +32808,9 @@
         <layout>VoiceCall-Voice Call Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>tz__lt_area_codes__mdt-tz__Local Time Area Codes Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

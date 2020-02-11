@@ -16,7 +16,7 @@
         <description>Comma separated account fields (Country, State, City, Phone, PostalCode).</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated account fields (Country, State, City, Phone, PostalCode).</inlineHelpText>
-        <label>Account Fields</label>
+        <label>Account Fields (Deprecated)</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -27,21 +27,20 @@
         <fullName>tz__Account_Filter__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Account Filter</label>
+        <label>Account Filter (Deprecated)</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
     <fields>
         <fullName>tz__Account_Triggers__c</fullName>
-        <defaultValue>"true,false,false"</defaultValue>
         <deprecated>false</deprecated>
         <description>Comma separated values for Account Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated values for Account Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</inlineHelpText>
-        <label>Account Triggers</label>
+        <label>Account Triggers (Deprecated)</label>
         <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -50,14 +49,13 @@ Example: true,false,false</inlineHelpText>
     </fields>
     <fields>
         <fullName>tz__Activity_Triggers__c</fullName>
-        <defaultValue>"true,false,false"</defaultValue>
         <deprecated>false</deprecated>
         <description>Comma separated values for Activity Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated values for Activity Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</inlineHelpText>
-        <label>Activity Triggers</label>
+        <label>Activity Triggers (Deprecated)</label>
         <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -71,7 +69,7 @@ Example: true,false,false</inlineHelpText>
         <description>Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>Africa DST</label>
+        <label>Africa DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -82,7 +80,7 @@ Example: true,false,false</inlineHelpText>
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>Asia DST Start Batch</label>
+        <label>Asia DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -93,15 +91,15 @@ Example: true,false,false</inlineHelpText>
         <description>Asia - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>Asia DST</label>
+        <label>Asia DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>tz__Batch_Size__c</fullName>
-        <defaultValue>30</defaultValue>
+        <defaultValue>5</defaultValue>
         <deprecated>false</deprecated>
-        <description>Number of records to be processed by a batch job.</description>
+        <description>Trigger record size limit. If the number of records in the trigger exceed this limit in a given transaction, the App will process all these records asynchronously. Else these records will be processed synchronously.</description>
         <externalId>false</externalId>
         <inlineHelpText>Number of records to be processed by a batch job.</inlineHelpText>
         <label>Batch Size</label>
@@ -114,14 +112,13 @@ Example: true,false,false</inlineHelpText>
     </fields>
     <fields>
         <fullName>tz__Case_Triggers__c</fullName>
-        <defaultValue>"true,false,false"</defaultValue>
         <deprecated>false</deprecated>
         <description>Comma separated values for Case Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated values for Case Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</inlineHelpText>
-        <label>Case Triggers</label>
+        <label>Case Triggers (Deprecated)</label>
         <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -134,7 +131,7 @@ Example: true,false,false</inlineHelpText>
         <description>Comma separated contact fields (Country, State, City, Phone, PostalCode).</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated contact fields (Country, State, City, Phone, PostalCode).</inlineHelpText>
-        <label>Contact Fields</label>
+        <label>Contact Fields (Deprecated)</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -145,21 +142,20 @@ Example: true,false,false</inlineHelpText>
         <fullName>tz__Contact_Filter__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Contact Filter</label>
+        <label>Contact Filter (Deprecated)</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
     <fields>
         <fullName>tz__Contact_Triggers__c</fullName>
-        <defaultValue>"true,false,false"</defaultValue>
         <deprecated>false</deprecated>
         <description>Comma separated values for Contact Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated values for Contact Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</inlineHelpText>
-        <label>Contact Triggers</label>
+        <label>Contact Triggers (Deprecated)</label>
         <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -203,7 +199,7 @@ If disabled, you are responsible to manually update records whenever a region go
         <inlineHelpText>Enable the checkbox if you want the App to automatically update records when DST settings change for a region (Recommended).
 
 If disabled, you are responsible to manually update records whenever a region goes in/out of DST.</inlineHelpText>
-        <label>Enable DST Batch Updates</label>
+        <label>Enable DST Batch Updates (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -214,7 +210,7 @@ If disabled, you are responsible to manually update records whenever a region go
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>Europe DST Start Batch</label>
+        <label>Europe DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -225,7 +221,7 @@ If disabled, you are responsible to manually update records whenever a region go
         <description>Europe - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>Europe DST</label>
+        <label>Europe DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -269,7 +265,7 @@ A lower value will update the time value more frequently but might consume more 
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>Israel DST Start Batch</label>
+        <label>Israel DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -280,7 +276,7 @@ A lower value will update the time value more frequently but might consume more 
         <description>Israel - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>Israel DST</label>
+        <label>Israel DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -302,7 +298,7 @@ A lower value will update the time value more frequently but might consume more 
         <description>Comma separated lead fields (Country, State, City, Phone, PostalCode).</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated lead fields (Country, State, City, Phone, PostalCode).</inlineHelpText>
-        <label>Lead Fields</label>
+        <label>Lead Fields (Deprecated)</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -313,21 +309,20 @@ A lower value will update the time value more frequently but might consume more 
         <fullName>tz__Lead_Filter__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Lead Filter</label>
+        <label>Lead Filter (Deprecated)</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
     <fields>
         <fullName>tz__Lead_Triggers__c</fullName>
-        <defaultValue>"true,false,false"</defaultValue>
         <deprecated>false</deprecated>
         <description>Comma separated values for Lead Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated values for Lead Trigger (Normal,Batch job,Scheduled job).
 Example: true,false,false</inlineHelpText>
-        <label>Lead Triggers</label>
+        <label>Lead Triggers (Deprecated)</label>
         <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -356,7 +351,7 @@ Example: true,false,false</inlineHelpText>
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>NA DST Start Batch</label>
+        <label>NA DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -367,7 +362,7 @@ Example: true,false,false</inlineHelpText>
         <description>North America - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>NA DST</label>
+        <label>NA DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -378,7 +373,7 @@ Example: true,false,false</inlineHelpText>
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>NZ DST Start Batch</label>
+        <label>NZ DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -389,7 +384,7 @@ Example: true,false,false</inlineHelpText>
         <description>New Zealand - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>NZ DST</label>
+        <label>NZ DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -400,7 +395,7 @@ Example: true,false,false</inlineHelpText>
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>Oceania DST Start Batch</label>
+        <label>Oceania DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -411,7 +406,7 @@ Example: true,false,false</inlineHelpText>
         <description>Oceania - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>OCEANIA DST</label>
+        <label>OCEANIA DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -421,7 +416,7 @@ Example: true,false,false</inlineHelpText>
         <description>Comma separated person account fields (Country, State, City, Phone).</description>
         <externalId>false</externalId>
         <inlineHelpText>Comma separated person account fields (Country, State, City, Phone).</inlineHelpText>
-        <label>Person Account Fields</label>
+        <label>Person Account Fields (Deprecated)</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -439,7 +434,7 @@ Enable the checkbox to reverse this order.</description>
         <inlineHelpText>By default the App checks first the address fields and then the phone number to compute Local Time.
 
 Enable the checkbox to reverse this order.</inlineHelpText>
-        <label>Phone First?</label>
+        <label>Phone First? (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -450,7 +445,7 @@ Enable the checkbox to reverse this order.</inlineHelpText>
         <description>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</description>
         <externalId>false</externalId>
         <inlineHelpText>System field - Set to true when DST is started. Set to false when DST is stopped. Batch job runs when it is set to true the first time.</inlineHelpText>
-        <label>SA DST Start Batch</label>
+        <label>SA DST Start Batch (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -461,7 +456,7 @@ Enable the checkbox to reverse this order.</inlineHelpText>
         <description>South America - Enable this option if you want to start using daylight saving time. Normally this value is set twice an year.</description>
         <externalId>false</externalId>
         <inlineHelpText>DST is the practice of temporarily advancing clocks during the summer time so that afternoons have more daylight and mornings have less. Typically clocks are adjusted forward one hour near the start of spring and are adjusted backward in autumn.</inlineHelpText>
-        <label>SA DST</label>
+        <label>SA DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -472,7 +467,7 @@ Enable the checkbox to reverse this order.</inlineHelpText>
         <description>Indicates if the Update DST Settings future method is running or not.</description>
         <externalId>false</externalId>
         <inlineHelpText>Indicates if the Update DST Settings future method is running or not.</inlineHelpText>
-        <label>Update DST</label>
+        <label>Update DST (Deprecated)</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>

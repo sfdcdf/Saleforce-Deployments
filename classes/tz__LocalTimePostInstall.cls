@@ -15,4 +15,7 @@ global class LocalTimePostInstall implements System.InstallHandler {
     global static void setupLocalTime() {
 
     }
+    global static void upgradeLocalTime() {
+
+    }
 }

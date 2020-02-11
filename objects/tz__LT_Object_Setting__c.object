@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>tz__API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the object.</inlineHelpText>
+        <label>API Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__City__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the city field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the city field.</inlineHelpText>
+        <label>City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the country field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the country field.</inlineHelpText>
+        <label>Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__IANA_Override__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Option to override the default lookup based on address/phone fields. When you input a valid IANA Timezone in the selected field (Example: America/New_York), the App fetches the timezone information based on this value and ignores address/phone fields. Useful for United States Armed Forces.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option to override the lookup based on address/phone fields. When you input a valid IANA Timezone in the selected field (Example: America/New_York), the App fetches the timezone information based on this value. Useful for United States Armed Forces.</inlineHelpText>
+        <label>IANA Override</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Lookup_Order__c</fullName>
+        <defaultValue>"Address"</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select the lookup order to identify the timezone. Default is Address fields. The App will first attempt to identify the timezone based on address fields, and if it does not succeed, it will use the Phone field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the lookup order to identify the timezone. Default is Address fields. The App will first attempt to identify the timezone based on address fields, and if it does not succeed, it will use the Phone field.</inlineHelpText>
+        <label>Lookup Order</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the phone field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the phone field.</inlineHelpText>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>tz__Postal_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the postal code field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the postal code field.</inlineHelpText>
+        <label>Postal Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__State__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the state field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the state field.</inlineHelpText>
+        <label>State</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable or disable trigger. If the trigger is disabled, the App will not be able to update the local time custom fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable or disable trigger. If the trigger is disabled, the App will not be able to update the local time custom fields.</inlineHelpText>
+        <label>Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>Settings for the Local Time App. It is recommended to change these settings from the Local Time Config tab instead of directly manipulating them here.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Local Time Object Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

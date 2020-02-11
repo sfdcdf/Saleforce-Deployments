@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Local Time is an action that can be placed in the Opportunity Page Layout. Displays the local time for the current record. The Billing Country, Billing State, and Billing City fields of the Account need to be properly filled in order for this button t</description>
-    <height>60</height>
+    <height>200</height>
     <icon>tz__localtime_logo</icon>
     <label>Local Time</label>
     <lightningComponent>tz__LocalTimeAction</lightningComponent>

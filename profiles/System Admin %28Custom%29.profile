@@ -4024,6 +4024,9 @@
         <layout>Objection__c-Objection Handling Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>zzContract__c-Contract %28DEL%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5116,6 +5119,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Segment_Intelligence__kav</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>tz__DST_Setting__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

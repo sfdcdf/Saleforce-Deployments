@@ -33605,6 +33605,9 @@
         <layout>Integration_Configuration__mdt-Integration Configuration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>tz__lt_state_codes__mdt-tz__Local Time State Codes Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

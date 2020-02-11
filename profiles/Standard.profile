@@ -31936,6 +31936,9 @@
         <layout>User-User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>zzContract__c-Contract %28DEL%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

@@ -33009,6 +33009,9 @@
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>tz__lt_timezone_names__mdt-tz__Local Time Timezone Names Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

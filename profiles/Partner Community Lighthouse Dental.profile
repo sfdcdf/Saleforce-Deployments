@@ -2627,6 +2627,9 @@
         <layout>User-User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>tz__DST_Setting__c-tz__DST Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>tz__Local_Time_Error_Log__c-tz__Local Time Error Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
