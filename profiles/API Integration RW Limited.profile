@@ -2340,6 +2340,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Exclude_from_AutoTP_Process__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Facebook_Ads_Live_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>

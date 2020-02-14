@@ -46,6 +46,9 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -101,6 +104,10 @@
         <editHeading>true</editHeading>
         <label>Account Information</label>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
@@ -231,11 +238,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>IMS_Rep_Prior_to_CTS__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>igration_Cohort__c</field>
+                <field>Exclude_from_AutoTP_Process__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -278,6 +281,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Days_Since_Live__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Days_Since_Initial_Live__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -366,6 +373,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Account_Acceptance_Exception__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Migration_Cohort__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -1043,8 +1054,12 @@
                 <field>Weekly_TouchPlan_Next_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>WBN_PPC_Restricted_Relationship__c</field>
+                <behavior>Edit</behavior>
+                <field>JCI_Primary_Brand_Color__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>JCI_Secondary_Brand_Color__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -1283,6 +1298,7 @@
         <fields>Active_Connection__c</fields>
         <fields>NAME</fields>
         <fields>MLS_Datasource__c</fields>
+        <fields>MLS__c.DataSource__c</fields>
         <relatedList>Account_MLS__c.Account__c</relatedList>
         <sortField>Active_Connection__c</sortField>
         <sortOrder>Desc</sortOrder>
@@ -1303,6 +1319,10 @@
         <fields>ENTITLEMENT.ENDDATE</fields>
         <fields>ENTITLEMENT.STATUS</fields>
         <relatedList>RelatedEntitlementList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>EmailSubscription__c.Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

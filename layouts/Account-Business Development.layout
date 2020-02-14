@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>Historical_Client_Issues</customButtons>
     <customButtons>Update_Lead_in_Marketo_ADMIN_ONLY</customButtons>
@@ -40,9 +40,9 @@
         <detailHeading>true</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns />
-        <layoutColumns />
-        <layoutColumns />
+        <layoutColumns/>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
     <layoutSections>
@@ -73,7 +73,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>IMS_Rep_Prior_to_CTS__c</field>
+                <field>Exclude_from_AutoTP_Process__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -200,6 +200,26 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>CallHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>18</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EmailHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>19</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>WebsiteHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>20</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>XClean</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>17</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
@@ -284,26 +304,6 @@
             <actionType>StandardButton</actionType>
             <sortOrder>16</sortOrder>
         </platformActionListItems>
-        <platformActionListItems>
-            <actionName>XClean</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>17</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>CallHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
-            <sortOrder>18</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>EmailHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
-            <sortOrder>19</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>WebsiteHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
-            <sortOrder>20</sortOrder>
-        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
@@ -331,7 +331,6 @@
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
-        
         <fields>ACTIVITY.TASK</fields>
         <fields>TASK.DUE_DATE</fields>
         <fields>TASK.STATUS</fields>
@@ -344,7 +343,6 @@
         <excludeButtons>RequestUpdate</excludeButtons>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
-        
         <fields>ACTIVITY.TASK</fields>
         <fields>TASK.DUE_DATE</fields>
         <fields>CORE.USERS.FULL_NAME</fields>
@@ -402,6 +400,10 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedContentNoteList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>EmailSubscription__c.Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

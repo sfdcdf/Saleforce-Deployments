@@ -3665,6 +3665,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Exclude_from_AutoTP_Process__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Existing_Sales__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -20471,6 +20476,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Entitlement.SlaProcessId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Entitlement.SlaProcesscustom__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

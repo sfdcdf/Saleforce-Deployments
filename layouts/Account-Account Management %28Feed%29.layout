@@ -53,7 +53,8 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
@@ -208,7 +209,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>IMS_Rep_Prior_to_CTS__c</field>
+                <field>Exclude_from_AutoTP_Process__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -1268,6 +1269,7 @@
         <fields>Active_Connection__c</fields>
         <fields>NAME</fields>
         <fields>MLS_Datasource__c</fields>
+        <fields>MLS__c.DataSource__c</fields>
         <relatedList>Account_MLS__c.Account__c</relatedList>
         <sortField>Active_Connection__c</sortField>
         <sortOrder>Desc</sortOrder>
@@ -1303,6 +1305,10 @@
         <relatedList>Account_Marketo_Activity__c.Account__c</relatedList>
         <sortField>Marketo_Activity_Timestamp__c</sortField>
         <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>EmailSubscription__c.Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

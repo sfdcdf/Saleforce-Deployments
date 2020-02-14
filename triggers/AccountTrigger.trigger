@@ -34,7 +34,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
 
     Integer maxMlpId = 0;
 
-    for(Account a : [SELECT Id, Multiple_Location_Parent_ID__c FROM Account WHERE RecordTypeId =: multiLocationParentRecordTypeID]){
+    for(Account a : [SELECT Id, Multiple_Location_Parent_ID__c FROM Account WHERE RecordTypeId =: multiLocationParentRecordTypeID and Exclude_from_AutoTP_Process__c!=True]){
         if(String.isNotBlank(a.Multiple_Location_Parent_ID__c)) {
             mapAccountIdMlpId.put(a.Id, a.Multiple_Location_Parent_ID__c);
             Integer currentMlpId = Integer.valueOf(a.Multiple_Location_Parent_ID__c.right(a.Multiple_Location_Parent_ID__c.length() - 4));
@@ -183,13 +183,13 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
         }
 
         if(!emailForTouchplanAccountIdMap.isEmpty()){
-            for(Account record : [select Id, Email_for_Touchplan__c from Account where Id not in :emailForTouchplanAccountIdMap.values() and Email_for_Touchplan__c in: emailForTouchplanAccountIdMap.keySet() and Status__c != 'OFF' and Sync_to_Marketo__c = true /*and YBN_Relationship__c in: ybnTouchplanClientGroup*/ and Client_Type__c in :wbnClientTypeSet and RecordTypeId in :wbnRecordTypeIdSet and Individual_Location_Service_Level__c in :ybnTouchplanSupportedServiceLevels and (Multi_Location_Owner_Primary_CID__c = '' or Primary_Multi_Location_Owner_For_TP__c = true)]){
+            for(Account record : [select Id, Email_for_Touchplan__c from Account where Id not in :emailForTouchplanAccountIdMap.values() and Exclude_from_AutoTP_Process__c!=True and Email_for_Touchplan__c in: emailForTouchplanAccountIdMap.keySet() and Status__c != 'OFF' and Sync_to_Marketo__c = true /*and YBN_Relationship__c in: ybnTouchplanClientGroup*/ and Client_Type__c in :wbnClientTypeSet and RecordTypeId in :wbnRecordTypeIdSet and Individual_Location_Service_Level__c in :ybnTouchplanSupportedServiceLevels and (Multi_Location_Owner_Primary_CID__c = '' or Primary_Multi_Location_Owner_For_TP__c = true)]){
                 trigger.newMap.get(emailForTouchplanAccountIdMap.get(record.Email_for_Touchplan__c)).Email_for_Touchplan__c.addError(Label.EmailForTouchplanDuplicateError);
             }
         }
 
         if(!accountIdForChangedNextTPDateSet.isEmpty()){
-            for(Account acct : [select Id, (select Id, CaseNumber, Scheduled_Call__c, CreatedDate, IsClosed from Cases where Reason = 'CS Touch Plan' and RecordType.Name = 'Outbound Call' order by CreatedDate DESC limit 1) from Account where Id in : accountIdForChangedNextTPDateSet]){
+            for(Account acct : [select Id, (select Id, CaseNumber, Scheduled_Call__c, CreatedDate, IsClosed from Cases where Reason = 'CS Touch Plan' and RecordType.Name = 'Outbound Call' order by CreatedDate DESC limit 1) from Account where Exclude_from_AutoTP_Process__c!=True and Id in : accountIdForChangedNextTPDateSet]){
                 if(!acct.Cases.isEmpty()){
                     Account beforeUpdateValue = trigger.newMap.get(acct.Id);
                     Case caseRecord = acct.Cases[0];
@@ -449,7 +449,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
     }
 
     if(!partnerParentAccountId.isEmpty()){
-        CPPAccountHelper.currentQuarterChildAccountTrueUp([select Id, (select Id from ChildAccounts where Status__c = 'LIVE' and (NOT Name like '%TEST')) from Account where RecordType.Name = 'Partner Master Account' and Partner_Status__c = 'Customer' and Id in :partnerParentAccountId]);
+        CPPAccountHelper.currentQuarterChildAccountTrueUp([select Id, (select Id from ChildAccounts where Status__c = 'LIVE' and (NOT Name like '%TEST')) from Account where Exclude_from_AutoTP_Process__c!=True and RecordType.Name = 'Partner Master Account' and Partner_Status__c = 'Customer' and Id in :partnerParentAccountId]);
     }
 
     if(!syncToMarketoWithId.isEmpty() && syncWithMarketo && !system.isFuture() && !system.isBatch()){
