@@ -33,13 +33,21 @@
     <columns>
         <field>CUST_RECORDTYPE</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Complete</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Lighthouse_Worksheets__c.Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Sean Bucket</name>
+    <name>Sean: My Bucket</name>
     <params>
         <name>co</name>
         <value>1</value>

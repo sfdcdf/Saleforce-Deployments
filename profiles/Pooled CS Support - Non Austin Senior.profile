@@ -34951,6 +34951,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

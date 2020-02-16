@@ -27,6 +27,7 @@
     <columns>
         <field>Lighthouse_Worksheets__c.Defer_Until__c</field>
     </columns>
+    <description>Dentrix Escalated Issues</description>
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
@@ -53,7 +54,7 @@
         <field>Lighthouse_Worksheets__c.Date_Time_Opened__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Sean DDP Report</name>
+    <name>Sean: Install DDP Report</name>
     <params>
         <name>co</name>
         <value>1</value>
