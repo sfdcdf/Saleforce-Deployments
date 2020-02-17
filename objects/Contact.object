@@ -4682,51 +4682,53 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
         <masterLabel>Find Local Time</masterLabel>
         <openType>onClickJavaScript</openType>
         <protected>false</protected>
-        <url>{!REQUIRESCRIPT("/soap/ajax/30.0/connection.js")}
-{!REQUIRESCRIPT("/soap/ajax/30.0/apex.js")}
+        <url>{!REQUIRESCRIPT("/soap/ajax/40.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/40.0/apex.js")}
 {!REQUIRESCRIPT("https://success-software.biz/localtime/js/json3.min.js")} 
 
 function calcTime(sOffset,sFrequency,sEnd,sObject) {
-tbutton=document.getElementsByName(sObject);
+    tbutton=document.getElementsByName(sObject);
 
-if(sOffset == 'N/A') {
-for(i=0;i&lt;tbutton.length;i++) {
-tbutton[i].value='Unknown';
-}
-}
-else {
-var args1={offset:sOffset};
-cttime=sforce.apex.execute("tz.LocalTime","getLocalTimeString",args1);
-for(i=0;i&lt;tbutton.length;i++) {
-tbutton[i].value=cttime +  " " + sEnd;
-}
+    if(sOffset == 'N/A') {
+        for(i=0;i&lt;tbutton.length;i++) {
+            tbutton[i].value='Unknown';
+        }
+    }
+    else {
+        var args1={offset:sOffset};
+        cttime=sforce.apex.execute("tz.LocalTime","getLocalTimeString",args1);
+        for(i=0;i&lt;tbutton.length;i++) {
+            tbutton[i].value=cttime +  " " + sEnd;
+        }
+    }
+
+    self.status=tbutton[0].value;
+    setTimeout('tbutton[0].click();',sFrequency);
+
 }
 
-self.status=tbutton[0].value;
-setTimeout('tbutton[0].click();',sFrequency);
-
-}
 onError=null;
 
 if(typeof sOffset=='undefined') {
-sOffset='N/A';
-sEnd='N/A';
+    sOffset='N/A';
+    sEnd='N/A';
 
-try { 
-var args={objId:"{!JSENCODE(Contact.Id)}"};
-var jsontext=sforce.apex.execute("tz.LocalTime","FindLocalTime",args);
-if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
-var lt=JSON.parse(jsontext);
-sOffset=lt.offset;
-sEnd=lt.abbreviation;
-if("{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}" == "false") sEnd = ''; 
-}
-}
-catch(err) {alert(err);}
+    try { 
+        var args={objId:"{!JSENCODE(Contact.Id)}"};
+        var jsontext=sforce.apex.execute("tz.LocalTime","FindLocalTime",args);
+
+        if(jsontext != null &amp;&amp; jsontext != '' &amp;&amp; jsontext.length &gt; 0) {
+            var lt=JSON.parse(jsontext);
+            sOffset=lt.offset;
+            sEnd=lt.abbreviation;
+            if("{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}" == "false") sEnd = ''; 
+        }
+    }
+    catch(err) {alert(err);}
 }
 
 if(typeof freq=='undefined') {
-freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
+    freq=sforce.apex.execute("tz.LocalTime","getFrequency",{});
 }
 
 calcTime(sOffset,freq,sEnd,"tz__local_time_contact_btn");</url>

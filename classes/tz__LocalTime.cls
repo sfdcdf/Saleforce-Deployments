@@ -51,6 +51,9 @@ global class LocalTime {
     webService static String getOffsetByAreaCodeFull(String phone) {
         return null;
     }
+    global static String getOffsetByDatetime(String country, String state, String city, String postalcode, Datetime dt) {
+        return null;
+    }
     webService static String getOffsetFull(String country, String state, String city) {
         return null;
     }

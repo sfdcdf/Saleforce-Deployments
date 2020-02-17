@@ -13,6 +13,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>tz__After_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable or disable after insert / update trigger.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable or disable after insert / update trigger.</inlineHelpText>
+        <label>After Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>tz__City__c</fullName>
         <deprecated>false</deprecated>
         <description>API name of the city field.</description>
@@ -104,17 +115,17 @@
     </fields>
     <fields>
         <fullName>tz__Trigger__c</fullName>
-        <defaultValue>false</defaultValue>
+        <defaultValue>true</defaultValue>
         <deprecated>false</deprecated>
-        <description>Enable or disable trigger. If the trigger is disabled, the App will not be able to update the local time custom fields.</description>
+        <description>Enable or disable before insert / update trigger. If the trigger is disabled, the App will not be able to update the local time custom fields.</description>
         <externalId>false</externalId>
         <inlineHelpText>Enable or disable trigger. If the trigger is disabled, the App will not be able to update the local time custom fields.</inlineHelpText>
-        <label>Trigger</label>
+        <label>Before Trigger</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <customSettingsType>List</customSettingsType>
-    <description>Settings for the Local Time App. It is recommended to change these settings from the Local Time Config tab instead of directly manipulating them here.</description>
+    <description>Settings for the Local Time App. Please update these settings from the Local Time Config tab instead of directly manipulating them here.</description>
     <enableFeeds>false</enableFeeds>
     <label>Local Time Object Setting</label>
     <visibility>Public</visibility>

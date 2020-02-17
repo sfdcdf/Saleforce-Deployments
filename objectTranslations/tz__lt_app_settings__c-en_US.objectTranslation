@@ -191,6 +191,11 @@ Enable the checkbox to reverse this order. --></help>
         <name>tz__SA_DST__c</name>
     </fields>
     <fields>
+        <help><!-- Enable this option if you want to show country flag in the Local Time lightning component. --></help>
+        <label><!-- Show Flag --></label>
+        <name>tz__Show_Flag__c</name>
+    </fields>
+    <fields>
         <help><!-- Indicates if the Update DST Settings future method is running or not. --></help>
         <label><!-- Update DST (Deprecated) --></label>
         <name>tz__Update_DST__c</name>

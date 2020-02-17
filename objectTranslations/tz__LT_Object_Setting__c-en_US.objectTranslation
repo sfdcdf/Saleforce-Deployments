@@ -5,6 +5,11 @@
         <name>tz__API_Name__c</name>
     </fields>
     <fields>
+        <help><!-- Enable or disable after insert / update trigger. --></help>
+        <label><!-- After Trigger --></label>
+        <name>tz__After_Trigger__c</name>
+    </fields>
+    <fields>
         <help><!-- API name of the city field. --></help>
         <label><!-- City --></label>
         <name>tz__City__c</name>
@@ -41,7 +46,7 @@
     </fields>
     <fields>
         <help><!-- Enable or disable trigger. If the trigger is disabled, the App will not be able to update the local time custom fields. --></help>
-        <label><!-- Trigger --></label>
+        <label><!-- Before Trigger --></label>
         <name>tz__Trigger__c</name>
     </fields>
 </CustomObjectTranslation>

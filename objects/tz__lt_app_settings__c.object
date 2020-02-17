@@ -97,7 +97,7 @@ Example: true,false,false</inlineHelpText>
     </fields>
     <fields>
         <fullName>tz__Batch_Size__c</fullName>
-        <defaultValue>5</defaultValue>
+        <defaultValue>10</defaultValue>
         <deprecated>false</deprecated>
         <description>Trigger record size limit. If the number of records in the trigger exceed this limit in a given transaction, the App will process all these records asynchronously. Else these records will be processed synchronously.</description>
         <externalId>false</externalId>
@@ -461,6 +461,17 @@ Enable the checkbox to reverse this order.</inlineHelpText>
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>tz__Show_Flag__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable this option if you want to show country flag in the Local Time lightning component.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable this option if you want to show country flag in the Local Time lightning component.</inlineHelpText>
+        <label>Show Flag</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>tz__Update_DST__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
@@ -472,7 +483,7 @@ Enable the checkbox to reverse this order.</inlineHelpText>
         <type>Checkbox</type>
     </fields>
     <customSettingsType>Hierarchy</customSettingsType>
-    <description>Settings for the Local Time App. It is recommended to change these settings from the Local Time Config tab instead of directly manipulating them here.</description>
+    <description>Settings for the Local Time App. Please update these settings from the Local Time Config tab instead of directly manipulating them here.</description>
     <enableFeeds>false</enableFeeds>
     <label>Local Time App Settings</label>
     <visibility>Public</visibility>
