@@ -34561,6 +34561,9 @@
         <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>OpportunityContactRole-Opportunity Contact Role Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>OpportunityLineItem-WBN - LEX IL Sales</layout>
     </layoutAssignments>
     <layoutAssignments>

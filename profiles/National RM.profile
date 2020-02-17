@@ -34576,6 +34576,9 @@
         <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>OpportunityContactRole-Opportunity Contact Role Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>OpportunityLineItem-WBN Corp%2FIndividual Opportunities</layout>
     </layoutAssignments>
     <layoutAssignments>
