@@ -7,6 +7,12 @@
         <field>Account$Name</field>
     </columns>
     <columns>
+        <field>Account$Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$WBN_JAX_CUST_ID__c</field>
+    </columns>
+    <columns>
         <field>Account$Individual_Location_Service_Level__c</field>
     </columns>
     <columns>
@@ -27,6 +33,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Standard</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
