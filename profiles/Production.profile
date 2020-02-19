@@ -3043,6 +3043,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Cancellation_Request__c.TS_Backed_Out_Sale__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cancellation_Request__c.TS_Rep__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Web_Dev_Completed_Date_Round_2_Changes__c</field>
         <readable>true</readable>
     </fieldPermissions>

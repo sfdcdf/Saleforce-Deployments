@@ -3991,6 +3991,14 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- TS Backed Out Sale --></label>
+        <name>TS_Backed_Out_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- TS Rep --></label>
+        <name>TS_Rep__c</name>
+    </fields>
+    <fields>
         <label><!-- Teardown Date --></label>
         <name>Teardown_Date__c</name>
     </fields>
@@ -5540,6 +5548,10 @@
     <validationRules>
         <errorMessage><!-- You must fill out First Cancel Code Notes field if you select a Cancel Code --></errorMessage>
         <name>TORCHx_Must_fill_out_Cancel_Code_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide a value for the TS Rep field --></errorMessage>
+        <name>TS_Rep_required_if_TS_Backed_out_is_True</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You must enter a Teardown Date that is in the FUTURE when changing the Outcome to Cancelled. --></errorMessage>

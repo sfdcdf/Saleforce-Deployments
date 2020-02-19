@@ -1150,6 +1150,28 @@ false)</formula>
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>TS_Backed_Out_Sale__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>TS Backed Out Sale</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TS_Rep__c</fullName>
+        <externalId>false</externalId>
+        <label>TS Rep</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Upsell_Details__c</fullName>
         <externalId>false</externalId>
         <label>Upsell Details</label>
@@ -26878,6 +26900,17 @@ isblank( Upsell_Details__c ))</errorConditionFormula>
 RecordType.Name &lt;&gt; 'LH Cancellation Request' &amp;&amp;
 $User.Email &lt;&gt; "sfdc@yodle.com"</errorConditionFormula>
         <errorMessage>Requires Director Approval to close this cancel form.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TS_Rep_required_if_TS_Backed_out_is_True</fullName>
+        <active>true</active>
+        <description>If the TS Backed Out Sale checkbox is checked, TS Rep field is required</description>
+        <errorConditionFormula>AND(
+$RecordType.Name = "LH_Cancellation_Request",
+TS_Backed_Out_Sale__c = TRUE,
+				ISBLANK( TS_Rep__c)
+)</errorConditionFormula>
+        <errorMessage>Please provide a value for the TS Rep field</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>WBN_must_fill_out_revenue_lost</fullName>
