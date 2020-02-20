@@ -2636,6 +2636,18 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Exclude_from_AutoTP_Process__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>As  CSC Rep or CS Manager (Salesforce profiles National IMS, National CS Manager)
+I want ..a new Salesforce Account checkbox field call Exclude from AutoTP Process
+So that ...accounts can be excluded from auto TP process</description>
+        <externalId>false</externalId>
+        <label>Exclude from AutoTP Process</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Existing_Sales__c</fullName>
         <externalId>false</externalId>
         <label>Existing Sales</label>
@@ -58538,7 +58550,7 @@ NOT(REGEX( BillingPostalCode, "[0-9]{5}"))
     </validationRules>
     <validationRules>
         <fullName>Restriction_to_edit_WBN_Jax_fields</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Only specific users can edit these fields in Standard Accounts</description>
         <errorConditionFormula>AND(  
  $Setup.Validation_Rule_Permissions__c.Perm_to_edit_WBN_Jax_fields__c  = false, 

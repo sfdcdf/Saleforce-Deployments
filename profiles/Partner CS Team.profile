@@ -1781,6 +1781,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Exclude_from_AutoTP_Process__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Existing_Sales__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -32895,6 +32900,12 @@
     <layoutAssignments>
         <layout>Contact-Contact Layout %28feed%29</layout>
         <recordType>Contact.YBN_IL_Contact_Type</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContentVersion-General</layout>
