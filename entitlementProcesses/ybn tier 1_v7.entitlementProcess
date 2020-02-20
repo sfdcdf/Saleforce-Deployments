@@ -280,14 +280,6 @@
         <minutesToComplete>245</minutesToComplete>
         <timeTriggers>
             <actions>
-                <name>Case_Milestone_SLA_Warning</name>
-                <type>Alert</type>
-            </actions>
-            <timeLength>-60</timeLength>
-            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
-        </timeTriggers>
-        <timeTriggers>
-            <actions>
                 <name>Case_Milestone_SLA_Violation</name>
                 <type>Alert</type>
             </actions>
@@ -298,10 +290,18 @@
             <timeLength>-15</timeLength>
             <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
         </timeTriggers>
+        <timeTriggers>
+            <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
         <useCriteriaStartTime>true</useCriteriaStartTime>
     </milestones>
     <name>YBN Tier 1</name>
     <versionMaster>552m00000004CfY</versionMaster>
     <versionNotes>Remove &quot;First Resonse&quot; date criteria and added Partner Inbound Inquiry.</versionNotes>
-    <versionNumber>6</versionNumber>
+    <versionNumber>7</versionNumber>
 </EntitlementProcess>
