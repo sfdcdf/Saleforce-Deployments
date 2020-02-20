@@ -1650,7 +1650,7 @@ if exist then re-assign to new 360 acct --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Doctor/Business Owner Present --></label>
+        <label><!-- Office Manager Name --></label>
         <name>Doctor_Present__c</name>
         <picklistValues>
             <masterLabel>In and Out</masterLabel>
@@ -4025,12 +4025,16 @@ if exist then re-assign to new 360 acct --></help>
     </fields>
     <fields>
         <help><!-- Note the staff member that approved the office information is correct on the email messages --></help>
-        <label><!-- Business Info Verified By --></label>
+        <label><!-- Authorized Users --></label>
         <name>Office_Info_Verified_By__c</name>
     </fields>
     <fields>
         <label><!-- Country --></label>
         <name>Office_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Manager Email --></label>
+        <name>Office_Manager_Email__c</name>
     </fields>
     <fields>
         <label><!-- Office Name --></label>

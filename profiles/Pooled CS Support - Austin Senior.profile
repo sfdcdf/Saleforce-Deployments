@@ -18090,6 +18090,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Office_Manager_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>National_Support_Request__c.Estimated_Number_locations__c</field>
         <readable>true</readable>
     </fieldPermissions>

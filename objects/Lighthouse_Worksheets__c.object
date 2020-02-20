@@ -3642,7 +3642,7 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
     <fields>
         <fullName>Doctor_Present__c</fullName>
         <externalId>false</externalId>
-        <label>Doctor/Business Owner Present</label>
+        <label>Office Manager Name</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9169,8 +9169,8 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
         <fullName>Office_Info_Verified_By__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Note the staff member that approved the office information is correct on the email messages</inlineHelpText>
-        <label>Business Info Verified By</label>
-        <length>250</length>
+        <label>Authorized Users</label>
+        <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9187,6 +9187,17 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Manager Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
         <unique>false</unique>
     </fields>
     <fields>

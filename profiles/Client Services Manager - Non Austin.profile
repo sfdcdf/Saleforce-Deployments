@@ -18631,6 +18631,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.Office_Manager_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Partner_Name__c.IMS_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -35595,9 +35600,9 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -35765,7 +35770,8 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -35782,7 +35788,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -35792,7 +35798,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
