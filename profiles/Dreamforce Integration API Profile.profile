@@ -4920,6 +4920,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Plan_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Plan_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
         <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -6441,6 +6449,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Corporate</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Network</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

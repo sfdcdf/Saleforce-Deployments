@@ -529,6 +529,11 @@
             <operation>notContain</operation>
             <value>Email,TEST</value>
         </filters>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
         <label>WBN TP Templates</label>
     </listViews>
     <recordTypes>

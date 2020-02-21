@@ -32058,6 +32058,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.Corresponding_Yodle_Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Product2.Create_NCS_Case__c</field>
         <readable>true</readable>
@@ -37318,6 +37323,14 @@
         <recordType>Opportunity.CPP_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-YBN - Improved Layout</layout>
+        <recordType>Opportunity.Plan_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-YBN - Improved Layout</layout>
+        <recordType>Opportunity.Plan_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-TORCHx - Cross-Sell Opportunity</layout>
         <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
     </layoutAssignments>
@@ -40000,6 +40013,16 @@
         <default>false</default>
         <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Corporate</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Network</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
