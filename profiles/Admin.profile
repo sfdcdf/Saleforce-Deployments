@@ -35610,6 +35610,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Product2.Corresponding_Yodle_Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Product2.Create_NCS_Case__c</field>
         <readable>true</readable>
     </fieldPermissions>

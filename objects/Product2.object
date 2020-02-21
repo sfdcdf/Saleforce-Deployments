@@ -143,6 +143,17 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Corresponding_Yodle_Product__c</fullName>
+        <description>Product name in YodleLive system</description>
+        <externalId>false</externalId>
+        <label>Corresponding Yodle Product</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Create_NCS_Case__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Decides wether an NCS Case should be created based on the Product</description>
