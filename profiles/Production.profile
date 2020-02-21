@@ -31622,6 +31622,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Customer_Surveys__c-NPS Survey LBW</layout>
         <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
     </layoutAssignments>

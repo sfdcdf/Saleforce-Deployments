@@ -35311,6 +35311,12 @@
         <recordType>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-TORCHx - Cross-Sell Opportunity</layout>
         <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
     </layoutAssignments>

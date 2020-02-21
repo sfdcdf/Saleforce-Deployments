@@ -3643,31 +3643,13 @@ ISBLANK(  DT_Opened_OB__c  ), CreatedDate ,DT_Opened_OB__c)</formula>
         <fullName>Doctor_Present__c</fullName>
         <externalId>false</externalId>
         <label>Office Manager Name</label>
+        <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-                <value>
-                    <fullName>In and Out</fullName>
-                    <default>false</default>
-                    <label>In and Out</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Dr_Owner_Task_List__c</fullName>
@@ -15945,21 +15927,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Eaglesoft_Sync_set_to_15m_b4_1hr_after__c</picklist>
             <values>
                 <fullName>Complete</fullName>
@@ -19683,7 +19650,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
     </recordTypes>
     <recordTypes>
         <fullName>Auto_Support_Ticket</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Used for LH Auto ONLY</description>
         <label>Auto Support Ticket</label>
         <picklistValues>
@@ -20770,21 +20737,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Recently Past Due</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24592,7 +24544,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
     </recordTypes>
     <recordTypes>
         <fullName>CSC_Worksheet_Auto</fullName>
-        <active>true</active>
+        <active>false</active>
         <label>CSC Worksheet - Auto</label>
         <picklistValues>
             <picklist>Account_Pinned_in_Bomgar2__c</picklist>
@@ -25678,21 +25630,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Recently Past Due</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30534,21 +30471,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Eaglesoft_Sync_set_to_15m_b4_1hr_after__c</picklist>
             <values>
                 <fullName>Complete</fullName>
@@ -34312,7 +34234,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
     </recordTypes>
     <recordTypes>
         <fullName>CSC_Worksheet_Medical</fullName>
-        <active>true</active>
+        <active>false</active>
         <label>CSC Worksheet - Medical</label>
         <picklistValues>
             <picklist>Account_Pinned_in_Bomgar2__c</picklist>
@@ -35398,21 +35320,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Recently Past Due</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40250,21 +40157,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
             <values>
                 <fullName>Recently Past Due</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -45118,21 +45010,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Eaglesoft_Sync_set_to_15m_b4_1hr_after__c</picklist>
             <values>
                 <fullName>Complete</fullName>
@@ -49962,21 +49839,6 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Doctor_Present__c</picklist>
-            <values>
-                <fullName>In and Out</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Eaglesoft_Sync_set_to_15m_b4_1hr_after__c</picklist>
             <values>
                 <fullName>Complete</fullName>
@@ -53959,8 +53821,8 @@ OR(
 ISBLANK(CSC_Date__c),
 ISBLANK(CSC_Rep__c),
 ISBLANK(Attendees__c),
+ISBLANK(Doctor_Present__c),
 ISBLANK(Office_Info_Verified_By__c),
-ISPICKVAL(Doctor_Present__c,""),
 ISPICKVAL(PMS__c,""))
 )</errorConditionFormula>
         <errorMessage>You must complete the Office Information section in order to move the CW into MA-1 Ready or MA-2 Pending Review</errorMessage>

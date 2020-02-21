@@ -31761,6 +31761,12 @@
         <recordType>Call_Grading_Form_2_0__c.Collections_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse Documentation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
