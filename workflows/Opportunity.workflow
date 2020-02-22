@@ -3318,7 +3318,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>Populate_Sales_Director_Email</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Opportunity.Strategic_Project_Manager__c</field>
             <operation>notEqual</operation>
