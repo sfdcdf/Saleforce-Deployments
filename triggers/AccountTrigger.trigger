@@ -437,6 +437,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
                             ParentId
                     FROM    Account
                     WHERE   MLP_Group_ID__c IN :mlpIds
+                    AND Id!=Null
             ];
 
             for(Account a : childrenToUpdate){
@@ -449,7 +450,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
     }
 
     if(!partnerParentAccountId.isEmpty()){
-        CPPAccountHelper.currentQuarterChildAccountTrueUp([select Id, (select Id from ChildAccounts where Status__c = 'LIVE' and (NOT Name like '%TEST')) from Account where Exclude_from_AutoTP_Process__c!=True and RecordType.Name = 'Partner Master Account' and Partner_Status__c = 'Customer' and Id in :partnerParentAccountId]);
+        CPPAccountHelper.currentQuarterChildAccountTrueUp([select Id, (select Id from ChildAccounts where Status__c = 'LIVE' and (NOT Name like '%TEST') and Id!=null) from Account where Id!=null and Exclude_from_AutoTP_Process__c!=True and RecordType.Name = 'Partner Master Account' and Partner_Status__c = 'Customer' and Id in :partnerParentAccountId]);
     }
 
     if(!syncToMarketoWithId.isEmpty() && syncWithMarketo && !system.isFuture() && !system.isBatch()){
