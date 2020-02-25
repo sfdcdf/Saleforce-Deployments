@@ -34080,6 +34080,14 @@
         <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-2016 - WBN Corp Layout</layout>
+        <recordType>Opportunity.Forecast_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-2016 - WBN Corp Layout</layout>
+        <recordType>Opportunity.Forecast_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-LH - Upsell Opportunity</layout>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
     </layoutAssignments>
@@ -36772,6 +36780,16 @@
         <default>false</default>
         <recordType>Opportunity.Channel_Partner</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Corporate</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Network</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

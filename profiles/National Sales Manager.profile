@@ -34639,6 +34639,14 @@
         <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-2016 - WBN Corp Layout</layout>
+        <recordType>Opportunity.Forecast_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-2016 - WBN Corp Layout</layout>
+        <recordType>Opportunity.Forecast_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-LH - Upsell Opportunity</layout>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
     </layoutAssignments>
@@ -37283,6 +37291,16 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.Forecast_Corporate</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Network</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -37323,6 +37341,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Opportunity.YBN_Individual_Location</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

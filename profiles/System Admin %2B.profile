@@ -35488,6 +35488,14 @@
         <layout>Opportunity-Admin Only</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-2016 - WBN Corp Layout</layout>
+        <recordType>Opportunity.Forecast_Corporate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-2016 - WBN Corp Layout</layout>
+        <recordType>Opportunity.Forecast_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-Admin Only</layout>
         <recordType>Opportunity.Local</recordType>
     </layoutAssignments>
@@ -38324,6 +38332,16 @@
         <default>false</default>
         <recordType>Opportunity.Channel_Partner</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Corporate</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Network</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
