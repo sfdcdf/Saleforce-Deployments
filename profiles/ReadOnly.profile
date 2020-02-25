@@ -447,76 +447,20 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Community</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Content</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningBolt</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningInstrumentation</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningService</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Platform</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>true</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ServiceConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <applicationVisibilities>
         <application>tz__Local_Time_Lightning</application>
         <default>false</default>
@@ -1347,11 +1291,7 @@
     <readable>false</readable>
     <field>Account.Division_Owner__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Corp_approval_on_organic_content_needed__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1522,11 +1462,7 @@
     <readable>false</readable>
     <field>Account.CRM_Login_Credentials__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Facebook_Link__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1602,11 +1538,7 @@
     <readable>false</readable>
     <field>Account.If_program_in_past_website__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.ICU_Account__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1632,11 +1564,7 @@
     <readable>false</readable>
     <field>Account.Infusion_Used__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Custom_Logo__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1647,26 +1575,14 @@
     <readable>false</readable>
     <field>Account.Partner_Rep_Phone__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Liberties_ID__c</field>
-</fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Angies_List_Link__c</field>
-</fieldPermissions>
+    
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.National_RM__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Dealer_Type__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1677,26 +1593,14 @@
     <readable>false</readable>
     <field>Account.Integration__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Payment_Method__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.Google_AdWords_ID__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_YouTube_Link__c</field>
-</fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Twitter_Link__c</field>
-</fieldPermissions>
+    
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1722,31 +1626,15 @@
     <readable>false</readable>
     <field>Account.LHFS_Self_Sign_Up__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Google_Link__c</field>
-</fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Template_ID__c</field>
-</fieldPermissions>
+    
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.National_Rating__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_Upsold_to_PPC__c</field>
-</fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.JCI_About_Us_Content__c</field>
-</fieldPermissions>
+    
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1847,11 +1735,7 @@
     <readable>false</readable>
     <field>Account.Launchpad_Monthly_Fees__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Legacy_TORCHx_Client__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1997,11 +1881,7 @@
     <readable>false</readable>
     <field>Account.Partner_Key_Competitors__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Previous_organic_provider__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2022,11 +1902,7 @@
     <readable>false</readable>
     <field>Account.Number_of_Locations__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Net_Invoiced_Revenue_Last_MTD__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2082,11 +1958,7 @@
     <readable>false</readable>
     <field>Account.Number_of_Locations_Specific__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Net_Invoiced_Revenue_This_MTD__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2142,11 +2014,7 @@
     <readable>false</readable>
     <field>Account.Reseller_Close_Date__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Organic_Build_Process_Details__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2157,11 +2025,7 @@
     <readable>false</readable>
     <field>Account.Issue_Survey_Sent__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Organic_Order_Date__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2207,11 +2071,7 @@
     <readable>false</readable>
     <field>Account.Organic_Deactivation_Date__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Organic_taxonomy_details__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2222,11 +2082,7 @@
     <readable>false</readable>
     <field>Account.OutRank_Fees__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Ops_Organic_Only_Test__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Phone</field>
@@ -2307,11 +2163,7 @@
     <readable>false</readable>
     <field>Account.Reactivation_Date__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Net_Invoiced_Revenue_Last_Month_Total__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2537,11 +2389,7 @@
     <readable>false</readable>
     <field>Account.Referrer__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Webinar_Scheduled_Date__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2707,11 +2555,7 @@
     <readable>false</readable>
     <field>Account.SE_Location_Disposition_Notes__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.X2013_JCI_Email_Sent__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2832,11 +2676,7 @@
     <readable>false</readable>
     <field>Account.Relationship_Runbook_Link__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.TORCHx_Client_Type__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2852,11 +2692,7 @@
     <readable>false</readable>
     <field>Account.Spend_Last_MTD_South__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.TORCHx_Account_Notes__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2992,11 +2828,7 @@
     <readable>false</readable>
     <field>Account.Yodle_Local_URL__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Use_Existing_JCI_Dealer_Domain__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -3052,11 +2884,7 @@
     <readable>false</readable>
     <field>Account.Vertical__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Webinar_Completed__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -3187,16 +3015,8 @@
     <readable>false</readable>
     <field>Account.YBN_TP_Needed_Test__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.YO_Status_Override__c</field>
-</fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.X2013_JCI_Dealer_Email__c</field>
-</fieldPermissions>
+    
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Timezone__c</field>
@@ -6457,11 +6277,7 @@
     <readable>false</readable>
     <field>Call_Grading_Form_2_0__c.Verify_Address_Sent__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Maps_Claiming_and_Organic_History__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

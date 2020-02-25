@@ -2828,15 +2828,6 @@ Used by YBN.</description>
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>ICU_Account__c</fullName>
-        <externalId>false</externalId>
-        <label>ICU Account</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>ILs_Live__c</fullName>
         <externalId>false</externalId>
         <formula>Children_Accounts_Live__c  +  Grandchildren_Accounts_Live__c +   Great_Grandchildren_Accounts_Live__c</formula>
@@ -3034,125 +3025,6 @@ Used by YBN.</description>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>JCI_About_Us_Content__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI About Us Content</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>JCI_Angies_List_Link__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Angies List Link</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Custom_Logo__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Custom Logo</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Facebook_Link__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Facebook Link</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Google_Link__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Google+ Link</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Liberties_ID__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Liberties ID</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Payment_Method__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Payment Method</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>JCI_Template_ID__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Template ID</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Twitter_Link__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Twitter Link</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>JCI_Upsold_to_PPC__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Used to flag accounts that were upsold to PPC prior to coming into the portal</description>
-        <externalId>false</externalId>
-        <label>JCI Upsold to PPC</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>JCI_YouTube_Link__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI YouTube Link</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Jigsaw</fullName>
@@ -3433,16 +3305,6 @@ Used by YBN.</description>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Legacy_TORCHx_Client__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>This checkbox is to denote the TORCHx Accounts that were clients before Yodle acquired them.</description>
-        <externalId>false</externalId>
-        <label>Legacy TORCHx Client</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Length_of_Sales_Cycle__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>How many days is the company's sales cycle. Example - 120 days</inlineHelpText>
@@ -3680,16 +3542,6 @@ IF (
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Maps_Claiming_and_Organic_History__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Details on any organic optimization completed in the past and whether or not listings were claimed</inlineHelpText>
-        <label>Maps Claiming and Organic History</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Marketing_Challenge__c</fullName>
@@ -4074,17 +3926,6 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Net_Invoiced_Revenue_Last_MTD__c</fullName>
-        <externalId>false</externalId>
-        <label>Net Invoiced Revenue-Last MTD</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>New_Customers_Per_Month_Goal__c</fullName>
         <externalId>false</externalId>
         <label>New Customers Per Month Goal</label>
@@ -4349,15 +4190,6 @@ Null))))))</formula>
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Ops_Organic_Only_Test__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Ops Organic Only Test</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Optimus_Listing_ID__c</fullName>
         <externalId>false</externalId>
         <label>Optimus Listing ID</label>
@@ -4378,16 +4210,6 @@ Null))))))</formula>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Organic_Build_Process_Details__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Details on organic strategy when build process is "custom"</inlineHelpText>
-        <label>Organic Build Process Details</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Organic_Cancel_Status__c</fullName>
         <externalId>false</externalId>
         <label>Organic Cancel Status</label>
@@ -4397,24 +4219,6 @@ Null))))))</formula>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Organic_Order_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Organic Order Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Organic_taxonomy_details__c</fullName>
-        <externalId>false</externalId>
-        <label>Organic taxonomy details</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Other_Channel_Model__c</fullName>
@@ -6273,50 +6077,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>TORCHx_Account_Notes__c</fullName>
-        <description>This is to be used only by TORCHx as a temporary placeholder of Legacy Client Information.</description>
-        <externalId>false</externalId>
-        <label>TORCHx Account Notes</label>
-        <length>1000</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>2</visibleLines>
-    </fields>
-    <fields>
-        <fullName>TORCHx_Advanced_Features_Training_Call__c</fullName>
-        <externalId>false</externalId>
-        <formula>HYPERLINK("/500/e?retURL=%2F"+Id+"&amp;def_account_id="+Id+" &amp;RecordType=012600000009cjs&amp;ent=Case&amp;cas6=CS%20Touch%20Plan&amp;cas8=Major&amp;cas14=Schedule%20your%20next%20call:%20Call%20Two", "Schedule Call Link")</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TORCHx Call 2</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>TORCHx_Managing_Relationship_Training__c</fullName>
-        <externalId>false</externalId>
-        <formula>HYPERLINK("/500/e?retURL=%2F"+ Id +"&amp;def_account_id="+ Id +"&amp;RecordType=012600000009cjs&amp;ent=Case&amp;cas6=CS%20Touch%20Plan&amp;cas8=Major&amp;cas14=Schedule%20your%20next%20call:%20Call%20Three", "Schedule Call Link")</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TORCHx Call 3</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>TORCHx_Monthly_Review__c</fullName>
-        <externalId>false</externalId>
-        <formula>HYPERLINK("/500/e?retURL=%2F"+ Id +"&amp;def_account_id="+ Id +"&amp;RecordType=012600000009cjs&amp;ent=Case&amp;cas6=CS%20Touch%20Plan&amp;cas8=Major&amp;cas14=Schedule%20your%20next%20call:%20Monthly%20Review", "Schedule Call Link")</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TORCHx Monthly Review</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Team_Last_Month_Total_Spend__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -6829,25 +6589,6 @@ Sales_Director__r.Id = $User.Id , 1 , 0)</formula>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Webinar_Completed__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Webinar Completed?</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Webinar_Scheduled_Date__c</fullName>
-        <description>CS will fill out to notate the scheduled date for the client's webinar.</description>
-        <externalId>false</externalId>
-        <label>Webinar Scheduled Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Website_Additional_Fees__c</fullName>
         <externalId>false</externalId>
         <label>Website Additional Fees</label>
@@ -6925,28 +6666,6 @@ Formula could not be added into the Next TP Needed By field do to compile size p
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>120 Day</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>X2013_JCI_Dealer_Email__c</fullName>
-        <description>Used for 2013 Liberties Program JCI Dealers ONLY</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Used for 2013 Liberties Program JCI Dealers ONLY</inlineHelpText>
-        <label>2013 JCI Dealer Email</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>X2013_JCI_Email_Sent__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Used for 2013 Liberties Program JCI Dealers ONLY</inlineHelpText>
-        <label>2013 JCI Email Sent</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -9189,31 +8908,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
         <visibleLines>7</visibleLines>
     </fields>
     <fields>
-        <fullName>Corp_approval_on_organic_content_needed__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Does corporate need to approve custom content before it is added to the website</inlineHelpText>
-        <label>Corp approval on organic content needed</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Corporate_Demo_Set__c</fullName>
         <externalId>false</externalId>
         <label>Corporate Demo Set</label>
@@ -9574,30 +9268,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
         <valueSet>
             <restricted>true</restricted>
             <valueSetName>Yes_No</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>JCI_Dealer_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>JCI Dealer Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Liberties Plus</fullName>
-                    <default>false</default>
-                    <label>Liberties Plus</label>
-                </value>
-                <value>
-                    <fullName>CCE</fullName>
-                    <default>false</default>
-                    <label>CCE</label>
-                </value>
-            </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
@@ -10229,30 +9899,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Organic_Strategy_Build_Process__c</fullName>
-        <externalId>false</externalId>
-        <label>Organic Strategy/Build Process</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Standard Build Process</fullName>
-                    <default>false</default>
-                    <label>Standard Build Process</label>
-                </value>
-                <value>
-                    <fullName>Custom Strategy</fullName>
-                    <default>false</default>
-                    <label>Custom Strategy</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Ownership</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -10710,31 +10356,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
                     <fullName>Inactive</fullName>
                     <default>false</default>
                     <label>Inactive</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Previous_organic_provider__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Has the customer worked with another provider for organic optimization n the past?</inlineHelpText>
-        <label>Previous organic provider?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -11756,30 +11377,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Use_Existing_JCI_Dealer_Domain__c</fullName>
-        <externalId>false</externalId>
-        <label>Use Existing JCI Dealer Domain?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Vendor_Type__c</fullName>
         <externalId>false</externalId>
         <label>Vendor Type</label>
@@ -12112,30 +11709,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>YO_Status_Override__c</fullName>
-        <externalId>false</externalId>
-        <label>YO Status Override</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -12504,35 +12077,6 @@ or(
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>TORCHx_Client_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>TORCHx Client Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Agent</fullName>
-                    <default>false</default>
-                    <label>Agent</label>
-                </value>
-                <value>
-                    <fullName>Broker</fullName>
-                    <default>false</default>
-                    <label>Broker</label>
-                </value>
-                <value>
-                    <fullName>Team</fullName>
-                    <default>false</default>
-                    <label>Team</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Account_Description__c</fullName>
         <externalId>false</externalId>
         <label>Account Description</label>
@@ -12678,28 +12222,6 @@ or(
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Net_Invoiced_Revenue_Last_Month_Total__c</fullName>
-        <externalId>false</externalId>
-        <label>Net Invoiced Revenue-Last Month Total</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Net_Invoiced_Revenue_This_MTD__c</fullName>
-        <externalId>false</externalId>
-        <label>Net Invoiced Revenue-This MTD</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Next_Scheduled_Touchpoint__c</fullName>
         <externalId>false</externalId>
         <label>Next Scheduled Touchpoint</label>
@@ -12725,18 +12247,6 @@ or(
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Organic_Recurring_Fees__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Shows the monthly fees for products such as YO and video</inlineHelpText>
-        <label>Organic Recurring Fee</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Source_ID__c</fullName>
@@ -15933,17 +15443,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -17551,17 +17050,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -17845,17 +17333,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -17931,17 +17408,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18392,21 +17858,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT%2B00%3A00%29 Greenwich Mean Time %28Europe%2FDublin%29</fullName>
@@ -18734,17 +18185,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Vendor_Type__c</picklist>
             <values>
                 <fullName>Ads%2FSEM</fullName>
@@ -18959,17 +18399,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20881,17 +20310,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -22499,17 +21917,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -22793,17 +22200,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -22879,17 +22275,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -23388,21 +22773,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT%2B00%3A00%29 Greenwich Mean Time %28Europe%2FDublin%29</fullName>
@@ -23730,17 +23100,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Vendor_Type__c</picklist>
             <values>
                 <fullName>Ads%2FSEM</fullName>
@@ -23955,17 +23314,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25758,17 +25106,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -27368,17 +26705,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -27610,17 +26936,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>51-100 %28Medium%29</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -27952,17 +27267,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28397,21 +27701,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT-05%3A00%29 Eastern Standard Time %28America%2FNew_York%29</fullName>
@@ -28539,17 +27828,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Pitched - Upsold Customer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28768,17 +28046,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30710,17 +29977,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -32332,17 +31588,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -32694,17 +31939,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -33028,17 +32262,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospective</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33537,21 +32760,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT%2B00%3A00%29 Greenwich Mean Time %28Europe%2FDublin%29</fullName>
@@ -33879,17 +33087,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Vendor_Type__c</picklist>
             <values>
                 <fullName>Ads%2FSEM</fullName>
@@ -34104,17 +33301,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -36031,17 +35217,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -37649,17 +36824,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -37943,17 +37107,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -38029,17 +37182,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -38490,21 +37632,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT%2B00%3A00%29 Greenwich Mean Time %28Europe%2FDublin%29</fullName>
@@ -38832,17 +37959,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Vendor_Type__c</picklist>
             <values>
                 <fullName>Ads%2FSEM</fullName>
@@ -39057,17 +38173,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40832,17 +39937,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -42442,17 +41536,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -42704,17 +41787,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -42786,17 +41858,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -43243,21 +42304,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT%2B00%3A00%29 Greenwich Mean Time %28Europe%2FDublin%29</fullName>
@@ -43569,17 +42615,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Vendor_Type__c</picklist>
             <values>
                 <fullName>Ads%2FSEM</fullName>
@@ -43794,17 +42829,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -45613,17 +44637,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -47227,17 +46240,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -47469,17 +46471,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>51-100 %28Medium%29</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -47795,17 +46786,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -48240,21 +47220,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT-05%3A00%29 Eastern Standard Time %28America%2FNew_York%29</fullName>
@@ -48382,17 +47347,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Pitched - Upsold Customer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -48611,17 +47565,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -50394,17 +49337,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -52016,17 +50948,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -52374,17 +51295,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -52456,17 +51366,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -52917,21 +51816,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT-05%3A00%29 Eastern Standard Time %28America%2FIndiana%2FIndianapolis%29</fullName>
@@ -53063,17 +51947,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Pitched - Upsold Customer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -53292,17 +52165,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -55071,17 +53933,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Corp_approval_on_organic_content_needed__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Corporate_Demo_Set__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -56693,17 +55544,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>JCI_Dealer_Type__c</picklist>
-            <values>
-                <fullName>CCE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Liberties Plus</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Low_Balance__c</picklist>
             <values>
                 <fullName>FALSE</fullName>
@@ -56971,17 +55811,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Organic_Strategy_Build_Process__c</picklist>
-            <values>
-                <fullName>Custom Strategy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Standard Build Process</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -57065,17 +55894,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Prospective</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Previous_organic_provider__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -57526,21 +56344,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>TORCHx_Client_Type__c</picklist>
-            <values>
-                <fullName>Agent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Broker</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Team</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Time_Zone__c</picklist>
             <values>
                 <fullName>%28GMT-05%3A00%29 Eastern Standard Time %28America%2FIndiana%2FIndianapolis%29</fullName>
@@ -57664,17 +56467,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Pitched - Upsold Customer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Use_Existing_JCI_Dealer_Domain__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -57893,17 +56685,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>YO_Status_Override__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

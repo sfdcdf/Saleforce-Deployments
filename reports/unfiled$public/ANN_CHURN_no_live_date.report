@@ -88,12 +88,6 @@
             <value>Case.TORCHx_NCS_AutoLaunch,Case.XJen_Test_COBRA</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Legacy_TORCHx_Client__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Account.Test_Management__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
