@@ -271,6 +271,28 @@
         <fullName>StockKeepingUnit</fullName>
         <trackHistory>false</trackHistory>
     </fields>
+    <fields>
+        <fullName>Yodle_Product_Family__c</fullName>
+        <description>Product Family in YodleLive system</description>
+        <externalId>false</externalId>
+        <label>Yodle Product Family</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Yodle_Product_Line__c</fullName>
+        <description>Product Line in YodleLive system</description>
+        <externalId>false</externalId>
+        <label>Yodle Product Line</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <searchLayouts>
