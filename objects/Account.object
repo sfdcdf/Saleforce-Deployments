@@ -318,16 +318,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Account_Churn_Date__c</fullName>
-        <description>Using to indicate that Exit Email should be sent.</description>
-        <externalId>false</externalId>
-        <label>Account Churn Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Account_MPA__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -4519,6 +4509,18 @@ Null))))))</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Pendo_ID__c</fullName>
+        <description>This is used for the Pendo integration to link the Account Object to Pendo</description>
+        <externalId>true</externalId>
+        <label>Visitor ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Performance_Implementation_Strategist__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -5748,16 +5750,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <trackHistory>false</trackHistory>
         <type>Email</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Service_Model_Change__c</fullName>
-        <description>Box will check if the prior value of the service model is changed</description>
-        <externalId>false</externalId>
-        <label>Service Model Change?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>Service_Task_Tenant_ID__c</fullName>
@@ -11678,40 +11670,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Who_is_the_Portal_Submitted_By__c</fullName>
-        <externalId>false</externalId>
-        <label>Who is the Portal Submitted By?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Dealer</fullName>
-                    <default>false</default>
-                    <label>Dealer</label>
-                </value>
-                <value>
-                    <fullName>Distributor TM</fullName>
-                    <default>false</default>
-                    <label>Distributor TM</label>
-                </value>
-                <value>
-                    <fullName>JCI Branch</fullName>
-                    <default>false</default>
-                    <label>JCI Branch</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>YO_Status__c</fullName>
@@ -18384,25 +18342,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>YO_Status__c</picklist>
             <values>
                 <fullName>Live</fullName>
@@ -23299,25 +23238,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>YO_Status__c</picklist>
             <values>
                 <fullName>Live</fullName>
@@ -28027,25 +27947,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Website Images</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33286,25 +33187,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>YO_Status__c</picklist>
             <values>
                 <fullName>Live</fullName>
@@ -38158,25 +38040,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>YO_Status__c</picklist>
             <values>
                 <fullName>Live</fullName>
@@ -42810,25 +42673,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Website Images</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -47550,25 +47394,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>YO_Status__c</picklist>
             <values>
                 <fullName>Live</fullName>
@@ -52150,25 +51975,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>YO_Status__c</picklist>
             <values>
                 <fullName>Live</fullName>
@@ -56666,25 +56472,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Website Images</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Who_is_the_Portal_Submitted_By__c</picklist>
-            <values>
-                <fullName>Dealer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Distributor TM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Branch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

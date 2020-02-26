@@ -973,6 +973,11 @@
     </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Pendo_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Campaign.CampaignImageId</field>
         <readable>true</readable>
     </fieldPermissions>

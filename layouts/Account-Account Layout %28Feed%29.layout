@@ -362,10 +362,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Account_Churn_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Send_Exit_Email_To__c</field>
             </layoutItems>
             <layoutItems>
@@ -704,6 +700,10 @@
                 <behavior>Edit</behavior>
                 <field>Sales_Rep_Email__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Pendo_ID__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -938,10 +938,6 @@
         <editHeading>true</editHeading>
         <label>JCI Liberties Dealers</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Who_is_the_Portal_Submitted_By__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>If_Other_what_is_your_title__c</field>

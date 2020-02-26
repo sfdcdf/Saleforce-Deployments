@@ -16214,10 +16214,7 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <columns>Quality_of_Partner__c</columns>
         <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>Partner_Products_Available_To_Sell__c</columns>
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -16230,17 +16227,6 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
             <operation>notEqual</operation>
-            <value>Closed Won,Closed Lost</value>
-        </filters>
-        <filters>
-            <field>Partner_Products_Available_To_Sell__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <filters>
-            <field>Partner_Program__c</field>
-            <operation>equals</operation>
-            <value>CPP</value>
         </filters>
         <label>CPP - All My Working Opportunities</label>
     </listViews>

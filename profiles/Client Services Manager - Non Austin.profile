@@ -754,6 +754,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Pendo_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account_MLS__c.Account_Status__c</field>
         <readable>true</readable>
@@ -1008,11 +1013,7 @@
         <field>Account.Account_Acceptance_Exception__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Account_Churn_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Description__c</field>
@@ -1503,7 +1504,6 @@
         <field>Account.Corp_SDR_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Corporate_Billing_Date__c</field>
@@ -1664,7 +1664,6 @@
         <field>Account.First_rep_role__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.GMBL_Login_Password_Parent__c</field>
@@ -1695,14 +1694,11 @@
         <field>Account.Geographical_Areas_to_Service__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.New_Customers_Per_Month_Goal__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account_MLS__c.Active_Connection__c</field>
@@ -1863,7 +1859,6 @@
         <field>Account.Launch_Revenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Jigsaw</field>
@@ -1884,8 +1879,6 @@
         <field>Account.Lead_Consultant__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Opp_Delta_Annual__c</field>
@@ -1921,7 +1914,6 @@
         <field>Account.Engagement_Has_Completed_Bulk_Import__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.LH_360_ID__c</field>
@@ -2217,7 +2209,6 @@
         <field>Account.Bulk_Bing_AccountPL__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Most_Recent_Contact__c</field>
@@ -2288,13 +2279,11 @@
         <field>Account.Oem_Corporate_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Open_as_Primary_Tab__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Optimus_Listing_ID__c</field>
@@ -2305,7 +2294,6 @@
         <field>Account.Order_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Organic_Cancel_Status__c</field>
@@ -2321,7 +2309,6 @@
         <field>Account.Manufacturer_Brand__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Main_Revenue_Service_Offered__c</field>
@@ -2362,7 +2349,6 @@
         <field>Account.Overview_on_Main_Point_of_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.BillingAddress</field>
@@ -2408,7 +2394,6 @@
         <field>Account.Opp_Delta_MTD__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Low_Balance_Reason_Code__c</field>
@@ -2459,7 +2444,6 @@
         <field>Account.Organic_Deactivation_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Marketing_Challenge__c</field>
@@ -2495,7 +2479,6 @@
         <field>Account.What_info_can_locations_customize__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Prospect_Type__c</field>
@@ -3046,11 +3029,7 @@
         <field>Account.Scheduled_Cold_Call_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Service_Model_Change__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Send_Exit_Email_To__c</field>
@@ -3266,7 +3245,6 @@
         <field>Account.Upsell_Result__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.User_Account_Director__c</field>
@@ -3322,14 +3300,11 @@
         <field>Account.Trade_Show_Promo__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Touchplan_Created__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Local_Time__c</field>
@@ -3430,8 +3405,6 @@
         <field>Account.System_Information_Used_Today__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Trade_Show__c</field>
@@ -3847,17 +3820,12 @@
         <field>Account_Marketo_Activity__c.Marketo_Lead_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account_Snapshot__c.Contract_Value_Goal__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Who_is_the_Portal_Submitted_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Win_Loss_Analysis_Date__c</field>
@@ -3868,8 +3836,6 @@
         <field>Account.X120_Day__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.leadspace_CompanySizeRange__c</field>
@@ -3900,7 +3866,6 @@
         <field>Account.YBN_TP_Needed_Test__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.YO_Status__c</field>
@@ -4156,8 +4121,6 @@
         <field>Account.WPP_Completion_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Best_Practice_Evaluation__c.All_Errors_Fixed__c</field>
@@ -6978,7 +6941,6 @@
         <field>Account.Include_Pacing__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Call_Grading_Form_2_0__c.closing__c</field>
@@ -7094,12 +7056,6 @@
         <field>Case.Webinar_Scheduled_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Best_Practice_Evaluation__c.Did_they_follow_a_specific_script__c</field>

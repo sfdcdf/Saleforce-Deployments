@@ -705,8 +705,6 @@
     <readable>false</readable>
     <field>Account.Organic_Live_Date__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ParentId</field>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$X360_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$LH_360_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$Yodle_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Lighthouse_Worksheets__r$Install_Meeting_Notes__c</field>
+    </columns>
+    <description>LH QA Tuesday Setup Fee Check</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Lighthouse_Worksheets__r$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>QA - Setup Fee</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Lighthouse_Worksheets__r$Install_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

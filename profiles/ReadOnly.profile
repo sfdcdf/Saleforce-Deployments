@@ -526,11 +526,7 @@
     <readable>false</readable>
     <field>Account.Competitor__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Account_Churn_Date__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1032,6 +1028,11 @@
     <field>Account.Contract_Length__c</field>
 </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Pendo_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Call_Grading_Forms__c.Services_Offered__c</field>
@@ -1291,7 +1292,6 @@
     <readable>false</readable>
     <field>Account.Division_Owner__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1462,7 +1462,6 @@
     <readable>false</readable>
     <field>Account.CRM_Login_Credentials__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1538,7 +1537,6 @@
     <readable>false</readable>
     <field>Account.If_program_in_past_website__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1564,7 +1562,6 @@
     <readable>false</readable>
     <field>Account.Infusion_Used__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1575,14 +1572,11 @@
     <readable>false</readable>
     <field>Account.Partner_Rep_Phone__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.National_RM__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1593,14 +1587,11 @@
     <readable>false</readable>
     <field>Account.Integration__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.Google_AdWords_ID__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1626,15 +1617,11 @@
     <readable>false</readable>
     <field>Account.LHFS_Self_Sign_Up__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.National_Rating__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1735,7 +1722,6 @@
     <readable>false</readable>
     <field>Account.Launchpad_Monthly_Fees__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1881,7 +1867,6 @@
     <readable>false</readable>
     <field>Account.Partner_Key_Competitors__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1902,7 +1887,6 @@
     <readable>false</readable>
     <field>Account.Number_of_Locations__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1958,7 +1942,6 @@
     <readable>false</readable>
     <field>Account.Number_of_Locations_Specific__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2014,7 +1997,6 @@
     <readable>false</readable>
     <field>Account.Reseller_Close_Date__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2025,7 +2007,6 @@
     <readable>false</readable>
     <field>Account.Issue_Survey_Sent__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2071,7 +2052,6 @@
     <readable>false</readable>
     <field>Account.Organic_Deactivation_Date__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2082,7 +2062,6 @@
     <readable>false</readable>
     <field>Account.OutRank_Fees__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Phone</field>
@@ -2163,7 +2142,6 @@
     <readable>false</readable>
     <field>Account.Reactivation_Date__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2389,7 +2367,6 @@
     <readable>false</readable>
     <field>Account.Referrer__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2555,7 +2532,6 @@
     <readable>false</readable>
     <field>Account.SE_Location_Disposition_Notes__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2601,11 +2577,7 @@
     <readable>false</readable>
     <field>Account.Site_Type__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Service_Model_Change__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2676,7 +2648,6 @@
     <readable>false</readable>
     <field>Account.Relationship_Runbook_Link__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2692,7 +2663,6 @@
     <readable>false</readable>
     <field>Account.Spend_Last_MTD_South__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2828,7 +2798,6 @@
     <readable>false</readable>
     <field>Account.Yodle_Local_URL__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2884,7 +2853,6 @@
     <readable>false</readable>
     <field>Account.Vertical__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2960,11 +2928,7 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Who_is_the_Portal_Submitted_By__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Local_Time_24__c</field>
@@ -3015,8 +2979,6 @@
     <readable>false</readable>
     <field>Account.YBN_TP_Needed_Test__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Timezone__c</field>
@@ -6277,7 +6239,6 @@
     <readable>false</readable>
     <field>Call_Grading_Form_2_0__c.Verify_Address_Sent__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

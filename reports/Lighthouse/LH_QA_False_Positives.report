@@ -18,13 +18,14 @@
     <columns>
         <field>DESCRIPTION</field>
     </columns>
+    <description>LH QA False Positives for LH Production Report</description>
     <filter>
         <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
         <criteriaItems>
-            <column>OWNER</column>
+            <column>REASON</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>LH QA</value>
+            <value>Lighthouse QA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Quality__c</column>
@@ -33,13 +34,13 @@
             <value>QA - False Positive</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Case_Handling_Feedback__c</column>
+            <column>Case.Case_Submission_Feedback__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>false positive</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Case_Handling_Feedback__c</column>
+            <column>Case.Case_Submission_Feedback__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>fp</value>
@@ -56,7 +57,7 @@
         <field>SUBJECT</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>LH QA False Positives</name>
+    <name>QA - False Positives</name>
     <params>
         <name>units</name>
         <value>h</value>

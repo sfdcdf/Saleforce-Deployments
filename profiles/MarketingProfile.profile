@@ -525,11 +525,7 @@
     <readable>false</readable>
     <field>Account.Contact_Frequency__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Account_Churn_Date__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -991,6 +987,11 @@
     <field>Account.Desired_URL2__c</field>
 </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Pendo_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Best_Practice_Evaluation__c.Bulk_Campaign_Tool__c</field>
@@ -1010,7 +1011,6 @@
     <readable>false</readable>
     <field>Account.Date_CVR_OPT_Exhausted_del__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1456,7 +1456,6 @@
     <readable>false</readable>
     <field>Account.CPP_Account__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1572,16 +1571,11 @@
     <readable>false</readable>
     <field>Account.Hold_Status_Date__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.How_is_success_being_measured__c</field>
 </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1592,9 +1586,6 @@
     <readable>false</readable>
     <field>Account.Issue_Survey_Sent__c</field>
 </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1625,9 +1616,6 @@
     <readable>false</readable>
     <field>Account.Infusion_Used__c</field>
 </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Jigsaw</field>
@@ -1638,8 +1626,6 @@
     <readable>false</readable>
     <field>Account.Key_Account__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1665,7 +1651,6 @@
     <readable>false</readable>
     <field>Account.Legacy_Branding__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1821,7 +1806,6 @@
     <readable>false</readable>
     <field>Account.Prospect_Score__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1887,7 +1871,6 @@
     <readable>false</readable>
     <field>Account.OutRank_Fees__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1903,7 +1886,6 @@
     <readable>false</readable>
     <field>Account.Number_of_Potential_Targets__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1949,7 +1931,6 @@
     <readable>false</readable>
     <field>Account.Organic_Cancel_Status__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1990,7 +1971,6 @@
     <readable>false</readable>
     <field>Account.Other_Performance_Goal__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2041,7 +2021,6 @@
     <readable>false</readable>
     <field>Account.Opp_Delta_MTD__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2067,8 +2046,6 @@
     <readable>false</readable>
     <field>Best_Practice_Evaluation__c.Natpal_Tracking_Code_Present__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2619,11 +2596,7 @@
     <readable>false</readable>
     <field>Account.Send_Exit_Email_To__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Service_Model_Change__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2699,7 +2672,6 @@
     <readable>false</readable>
     <field>Account.Spend_This_MTD_South_Rep__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2760,7 +2732,6 @@
     <readable>false</readable>
     <field>Account.Time_Zone__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2876,7 +2847,6 @@
     <readable>false</readable>
     <field>Account.Upsell_Result__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2947,8 +2917,6 @@
     <readable>false</readable>
     <field>Account.WPP_Completion_Date__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Website</field>
@@ -2984,11 +2952,7 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Account.Who_is_the_Portal_Submitted_By__c</field>
-</fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2999,8 +2963,6 @@
     <readable>false</readable>
     <field>Account.X120_Day__c</field>
 </fieldPermissions>
-    
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -3206,7 +3168,6 @@
     <readable>false</readable>
     <field>Account.leadspace_CompanyWebsite__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -4222,7 +4183,6 @@
     <readable>false</readable>
     <field>Call_Grading_Forms__c.Channel__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

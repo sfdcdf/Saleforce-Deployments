@@ -9267,11 +9267,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
             <field>LEAD.LEAD_SOURCE</field>
             <operation>notEqual</operation>
         </filters>
-        <filters>
-            <field>LEAD.LAST_ACTIVITY</field>
-            <operation>lessThan</operation>
-            <value>8/1/2016</value>
-        </filters>
         <label>CPP -Self Sourced</label>
     </listViews>
     <listViews>

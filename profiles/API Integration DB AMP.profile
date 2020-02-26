@@ -1220,11 +1220,7 @@
         <field>Account.Account_Acceptance_Exception__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Account_Churn_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Description__c</field>
@@ -1825,7 +1821,6 @@
         <field>Account.Corp_SDR_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Corporate_Billing_Date__c</field>
@@ -2511,7 +2506,6 @@
         <field>Account.How_is_success_being_measured__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.IDSetting__c</field>
@@ -2637,18 +2631,6 @@
         <field>Account.Issue_Survey_Sent__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Jigsaw</field>
@@ -2784,7 +2766,6 @@
         <field>Account.Legacy_Branding__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Length_of_Sales_Cycle__c</field>
@@ -2885,7 +2866,6 @@
         <field>Account.Manufacturer_Brand__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Marketing_Challenge__c</field>
@@ -3116,9 +3096,6 @@
         <field>Account.Neither_Email_Cell__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.New_Customers_Per_Month_Goal__c</field>
@@ -3234,7 +3211,6 @@
         <field>Account.Opp_Delta_MTD__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Optimus_Listing_ID__c</field>
@@ -3245,7 +3221,6 @@
         <field>Account.Order_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Organic_Cancel_Status__c</field>
@@ -3261,10 +3236,6 @@
         <field>Account.Organic_Live_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Other_Channel_Model__c</field>
@@ -3447,6 +3418,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Pendo_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3500,7 +3476,6 @@
         <field>Account.Preferred_Vendor__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
@@ -4041,11 +4016,7 @@
         <field>Account.Send_Exit_Email_To__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Service_Model_Change__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Service_Model_Local__c</field>
@@ -4231,8 +4202,6 @@
         <field>Account.System_Information_Used_Today__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Team_Last_Month_Total_Spend__c</field>
@@ -4408,7 +4377,6 @@
         <field>Account.Upsell_Result__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.User_Account_Director__c</field>
@@ -4489,8 +4457,6 @@
         <field>Account.Webinar_Attendance_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Website</field>
@@ -4536,11 +4502,7 @@
         <field>Account.What_info_can_locations_customize__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Who_is_the_Portal_Submitted_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Win_Loss_Analysis_Date__c</field>
@@ -4556,8 +4518,6 @@
         <field>Account.X120_Day__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.YBN_CSC_Completed_Date__c</field>
@@ -4593,7 +4553,6 @@
         <field>Account.YBN_TP_Needed_Test__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.YO_Status__c</field>

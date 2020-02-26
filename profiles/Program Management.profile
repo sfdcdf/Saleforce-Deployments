@@ -739,6 +739,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Pendo_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Best_Practice_Evaluation__c.Analyst_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -812,11 +817,7 @@
         <field>Account.AccountSource</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Account_Churn_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Client_Experience_Key__c</field>
@@ -1182,7 +1183,6 @@
         <field>Account.Date_of_Last_Internal_Sales_Meeting__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Local_Time_24__c</field>
@@ -1643,11 +1643,6 @@
         <field>Account.Overview_on_Main_Point_of_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
-    
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.IMS_Rep__c</field>
@@ -1663,13 +1658,11 @@
         <field>Account.If_other_system_please_specify__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Initial_Live_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Budget_Change_Date__c</field>
@@ -1680,7 +1673,6 @@
         <field>Account.Include_Pacing__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Other_Performance_Goal__c</field>
@@ -1781,13 +1773,11 @@
         <field>Account.Inbound__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Important_Account_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.LiveOps_Call_Routing__c</field>
@@ -1798,7 +1788,6 @@
         <field>Account.Main_Revenue_Service_Offered__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Local_Website_Presence__c</field>
@@ -1909,7 +1898,6 @@
         <field>Account.Free_Trial__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.LiveOps_Pool__c</field>
@@ -1985,7 +1973,6 @@
         <field>Account.How_is_success_being_measured__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.IDSetting__c</field>
@@ -2001,13 +1988,11 @@
         <field>Account.IMS_Rep_Email__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Client_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Parent_Name__c</field>
@@ -2098,7 +2083,6 @@
         <field>Account.Open_as_Primary_Tab__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.National_Type__c</field>
@@ -2169,7 +2153,6 @@
         <field>Account.CPP_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.CRM_System__c</field>
@@ -2220,8 +2203,6 @@
         <field>Best_Practice_Evaluation__c.Account_Setup_For__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.National_Segment_Color__c</field>
@@ -2322,7 +2303,6 @@
         <field>Account.Preferred_Vendor__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
@@ -2358,7 +2338,6 @@
         <field>Account.Partner_Key_Competitors__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Most_Recent_Contact__c</field>
@@ -2424,7 +2403,6 @@
         <field>Account.Pitch_Script__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.National_Account_Status__c</field>
@@ -2610,7 +2588,6 @@
         <field>Account.VIP_Start_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.days_live_when_changed__c</field>
@@ -2741,11 +2718,7 @@
         <field>Account.Significant_Happenings__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Service_Model_Change__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Service_Model_Local__c</field>
@@ -2911,7 +2884,6 @@
         <field>Account.ShippingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Prospect_Type__c</field>
@@ -3032,7 +3004,6 @@
         <field>Account.Team_Last_Month_Total_Spend__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Source_Segments__c</field>
@@ -3238,8 +3209,6 @@
         <field>Account.SIC_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.invoiced_last_mtd__c</field>
@@ -3255,7 +3224,6 @@
         <field>Account.invoiced_this_MTD__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Win_Loss_Analysis_Date__c</field>
@@ -3266,11 +3234,7 @@
         <field>Account.Uploaded_Photos_Lifetime__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Who_is_the_Portal_Submitted_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Upsell_Candidate__c</field>
@@ -3281,7 +3245,6 @@
         <field>Account.Upsell_Result__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.User_Account_Director__c</field>
@@ -3297,7 +3260,6 @@
         <field>Account.User_IMS_Rep__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.VIP_Client__c</field>
@@ -3358,8 +3320,6 @@
         <field>Account.Type</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Unique_Selling_Points__c</field>
@@ -3380,7 +3340,6 @@
         <field>Account.X120_Day__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.YBN_CSC_Completed_Date__c</field>
@@ -3891,7 +3850,6 @@
         <field>Best_Practice_Evaluation__c.Account_Originally_Set_Up_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Best_Practice_Evaluation__c.Ad_Copy_Formatting__c</field>
@@ -7037,7 +6995,6 @@
         <field>Account.LH_Exit_Survey_Sent_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.PEV__c</field>
