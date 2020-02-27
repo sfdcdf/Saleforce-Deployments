@@ -424,8 +424,10 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
         for(Account a : Trigger.old){
 
             //if(a.RecordTypeId == multiLocationParentRecordTypeID){
-                mlpIds.add(a.Multiple_Location_Parent_ID__c);
-            //}
+           if(a.Multiple_Location_Parent_ID__c!=null)  
+            {	
+                 mlpIds.add(a.Multiple_Location_Parent_ID__c);
+            }
         }
 
 
