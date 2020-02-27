@@ -1013,7 +1013,6 @@
         <field>Account.Account_Acceptance_Exception__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Description__c</field>
@@ -3029,7 +3028,6 @@
         <field>Account.Scheduled_Cold_Call_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Send_Exit_Email_To__c</field>
@@ -3825,7 +3823,6 @@
         <field>Account_Snapshot__c.Contract_Value_Goal__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Win_Loss_Analysis_Date__c</field>

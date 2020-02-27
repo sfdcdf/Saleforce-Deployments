@@ -842,7 +842,6 @@
         <field>Account.Competitor__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Billing_Date__c</field>
@@ -2718,7 +2717,6 @@
         <field>Account.Sales_Activities_YTD__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Solicited_Reviews_Last_30__c</field>
@@ -3194,7 +3192,6 @@
         <field>Account.leadspace_CompanySizeRange__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Yodle_Segment__c</field>

@@ -501,7 +501,6 @@
     <readable>false</readable>
     <field>Account.Account_Owner_Last_Modified_Date__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2687,7 +2686,6 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2723,7 +2721,6 @@
     <readable>false</readable>
     <field>Account.Vertical__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

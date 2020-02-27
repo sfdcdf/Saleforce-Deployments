@@ -993,7 +993,6 @@
         <field>Account.Account_Acceptance_Exception__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Description__c</field>
@@ -2574,7 +2573,6 @@
         <field>Account.Weekly_TouchPlan__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.X120_Day__c</field>
@@ -2725,7 +2723,6 @@
         <field>Account.Prospect_National_Commission_Master__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Segment_Population__c</field>

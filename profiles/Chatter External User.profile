@@ -600,7 +600,6 @@
         <field>Account.AccountSource</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1851,7 +1850,6 @@
     <readable>false</readable>
     <field>Account.Website_Type__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -1932,7 +1930,6 @@
     <readable>false</readable>
     <field>Account.Service_Task_Tenant_ID__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

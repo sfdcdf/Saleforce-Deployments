@@ -976,7 +976,6 @@
         <field>Account.Actual_ROI__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Description__c</field>
@@ -2882,7 +2881,6 @@
         <field>Account.Uploaded_Photos_Last_30__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Universal_Promotions__c</field>
@@ -4023,7 +4021,6 @@
         <field>Account.Send_Exit_Email_To__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Local_Time_24_Short__c</field>

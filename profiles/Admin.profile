@@ -2739,7 +2739,6 @@
         <field>Account.Current_Annual_Marketing_Spend__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Call_Grading_Forms__c.Proper_Email_Opening__c</field>
@@ -5510,7 +5509,6 @@
         <field>Account.SMS_Opt_Out__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Sales_Channel_YL__c</field>
@@ -6136,7 +6134,6 @@
         <field>Account.QuickBooks_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Win_Loss_Analysis_Date__c</field>

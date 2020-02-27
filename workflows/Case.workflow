@@ -321,6 +321,17 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Assign_to_LH_App_Support_Queue</fullName>
+        <description>Assigning a case to LH APp Support queue if the case reason is App Support or Twilio Masking</description>
+        <field>OwnerId</field>
+        <lookupValue>LH_App_Support</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Assign to LH App Support Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Assign_to_OBC_Queue</fullName>
         <field>OwnerId</field>
         <lookupValue>OBC_Queue</lookupValue>
@@ -913,6 +924,26 @@
         <protected>false</protected>
     </fieldUpdates>
     <rules>
+        <fullName>LH - Assign to LH App Support</fullName>
+        <actions>
+            <name>Assign_to_LH_App_Support_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>LH Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>App Support,Twilio Masking</value>
+        </criteriaItems>
+        <description>https://jira.internetbrands.com/browse/BOSS-26812. Assigning this to LH App Support queues if the case reason is App Support/Twilio Masking.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
         <fullName>LH - Assign to LH Support Sugar Hill</fullName>
         <actions>
             <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
@@ -927,7 +958,7 @@
         <criteriaItems>
             <field>Case.Reason</field>
             <operation>equals</operation>
-            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
+            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group,Lighthouse Logo</value>
         </criteriaItems>
         <description>LH Specific . Updated with https://jira.yodle.com/browse/YO-60625</description>
         <triggerType>onCreateOnly</triggerType>

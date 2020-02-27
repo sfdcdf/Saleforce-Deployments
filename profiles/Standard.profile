@@ -570,7 +570,6 @@
     <readable>false</readable>
     <field>Account.Alternate_Email__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.BillingAddress</field>
@@ -2966,7 +2965,6 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -3227,7 +3225,6 @@
     <readable>false</readable>
     <field>Account.Service_Model_Local__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

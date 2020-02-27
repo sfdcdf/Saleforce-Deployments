@@ -655,7 +655,6 @@
         <field>Account.Average_Sale_Price__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Analysis_Needed__c</field>
@@ -2696,13 +2695,11 @@
         <field>Account.Service_Model_Local__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.SicDesc</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Send_Exit_Email_To__c</field>

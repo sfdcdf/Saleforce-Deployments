@@ -26,7 +26,7 @@
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
-            <value>Lighthouse_Worksheets__c.Auto_Support_Ticket,Lighthouse_Worksheets__c.AR_Request_Form,Lighthouse_Worksheets__c.LH_OOS</value>
+            <value>Lighthouse_Worksheets__c.AR_Request_Form,Lighthouse_Worksheets__c.LH_OOS</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -49,7 +49,7 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <endDate>2019-05-31</endDate>
+        <endDate>2020-05-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2017-02-01</startDate>
     </timeFrameFilter>

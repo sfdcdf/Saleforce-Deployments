@@ -817,7 +817,6 @@
         <field>Account.AccountSource</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Client_Experience_Key__c</field>
@@ -2718,7 +2717,6 @@
         <field>Account.Significant_Happenings__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Service_Model_Local__c</field>
@@ -3234,7 +3232,6 @@
         <field>Account.Uploaded_Photos_Lifetime__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Upsell_Candidate__c</field>

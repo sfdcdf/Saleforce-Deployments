@@ -1885,7 +1885,6 @@
         <field>Account.X120_Day__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Weekly_TouchPlan__c</field>
@@ -2796,7 +2795,6 @@
         <field>Account.Rogers_IMS_Rep_Text__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Status__c</field>
@@ -34897,7 +34895,6 @@
         <field>Yodle_Path__c.Touch_Plan_Pass_Fail__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Account_Acceptance_Exception__c</field>

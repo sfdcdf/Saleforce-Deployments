@@ -600,7 +600,6 @@
     <readable>false</readable>
     <field>Account.Authorized_to_provide_GE_financing__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2556,7 +2555,6 @@
     <readable>false</readable>
     <field>Account.Secondary_Segments__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2967,7 +2965,6 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

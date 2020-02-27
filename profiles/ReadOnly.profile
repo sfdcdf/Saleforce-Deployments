@@ -526,7 +526,6 @@
     <readable>false</readable>
     <field>Account.Competitor__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2577,7 +2576,6 @@
     <readable>false</readable>
     <field>Account.Site_Type__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2928,7 +2926,6 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Local_Time_24__c</field>

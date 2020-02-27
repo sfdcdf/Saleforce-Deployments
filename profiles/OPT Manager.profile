@@ -975,7 +975,6 @@
         <field>Account.Cancellation_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Account_Description__c</field>
@@ -3351,7 +3350,6 @@
         <field>Account.Sponsored_Targeting__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.VIP_Start_Date__c</field>
@@ -3657,7 +3655,6 @@
         <field>Account.leadspace_CompanyCountry__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.What_info_can_locations_customize__c</field>

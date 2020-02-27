@@ -525,7 +525,6 @@
     <readable>false</readable>
     <field>Account.Contact_Frequency__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2596,7 +2595,6 @@
     <readable>false</readable>
     <field>Account.Send_Exit_Email_To__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
@@ -2952,7 +2950,6 @@
     <readable>false</readable>
     <field>Account.What_info_can_locations_customize__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
