@@ -1111,11 +1111,7 @@
         <field>Account.Date_CVR_OPT_Exhausted_del__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Pendo_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Call_Grading_Forms__c.CSC_Essentials_Script_Number__c</field>

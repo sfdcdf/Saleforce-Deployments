@@ -2514,11 +2514,7 @@
         <field>Account.Email_for_converting__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Pendo_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.senior_helper_biz_consultant__c</field>

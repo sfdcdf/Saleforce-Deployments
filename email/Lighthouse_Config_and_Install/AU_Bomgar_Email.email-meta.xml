@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <available>true</available>
-    <description>Email to AU clients to get Bomgar PIN</description>
+    <description>Email to clients to get Bomgar PIN</description>
     <encodingKey>ISO-8859-1</encodingKey>
     <letterhead>Lighthouse_Medical_March_2016</letterhead>
     <name>Bomgar PIN Request</name>
     <style>freeForm</style>
     <subject>Your Lighthouse Account - {!Lighthouse_Worksheets__c.Yodle_ID__c}</subject>
+    <textOnly>Dear {!Lighthouse_Worksheets__c.Practice_Name__c},
+
+This email is being sent to you as a request to create a Bomgar PIN to your server. We may have had one in the past so we were able to proactively monitor the sync health and fix any issues.
+
+Due to the time difference between us and your Dentistry this would be beneficial for us to have to reduce any incoming issues.
+
+To create a session for us please perform the following steps:
+
+Log on to your server computer and click the link below to start a remote session for our technical support team to investigate the reason your office is out of sync with Lighthouse.
+
+This should download a file onto your computer. Open that file and click “Run”. If you have trouble locating the file go to the downloads section of your browser.  With most browsers, you can find downloads by pressing ctrl+J.
+
+Start your Session by clicking on this link:
+{!Lighthouse_Worksheets__c.Bomgar_Shortcut__c}
+
+If you have any questions please contact us. Thank you for choosing Lighthouse. We appreciate your business!
+
+{!User.FirstName}
+
+Lighthouse Support
+(888) 427-5454</textOnly>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

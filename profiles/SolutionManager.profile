@@ -730,11 +730,7 @@
     <readable>false</readable>
     <field>Account.Berry_Account_Manager__c</field>
 </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Pendo_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>

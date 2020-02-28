@@ -753,11 +753,7 @@
         <field>Account.Days_Account_Owned_by_Rep__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Pendo_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account_MLS__c.Account_Status__c</field>

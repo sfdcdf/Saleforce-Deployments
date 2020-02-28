@@ -563,11 +563,7 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Pendo_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Lighthouse_Worksheets__c.Office_Manager_Email__c</field>

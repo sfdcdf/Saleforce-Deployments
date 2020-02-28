@@ -1073,11 +1073,7 @@
         <field>Account.Next_Scheduled_Touchpoint__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Pendo_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Best_Practice_Evaluation__c.BPM_Overall_Grade2__c</field>
