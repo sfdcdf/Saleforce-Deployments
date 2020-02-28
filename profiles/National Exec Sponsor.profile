@@ -1907,7 +1907,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Exclude_from_AutoTP_Process__c</field>
         <readable>true</readable>
     </fieldPermissions>
