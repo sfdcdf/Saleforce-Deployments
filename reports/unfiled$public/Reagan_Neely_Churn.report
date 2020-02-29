@@ -98,7 +98,7 @@
         <field>Account.invoiced_last_mtd__c</field>
     </columns>
     <filter>
-        <booleanFilter>((1 AND 2 AND 3) AND 4) AND 5</booleanFilter>
+        <booleanFilter>(((1 AND 2 AND 3) AND 4) AND 5)</booleanFilter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
             <isUnlocked>false</isUnlocked>
