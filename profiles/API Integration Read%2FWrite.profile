@@ -38510,11 +38510,11 @@
         <recordType>Contract.Service_Agreement</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
+        <layout>Contract-WBN Amendment</layout>
         <recordType>Contract.WBN_Amendment</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
+        <layout>Contract-WBN MSA</layout>
         <recordType>Contract.WBN_MSA</recordType>
     </layoutAssignments>
     <layoutAssignments>
