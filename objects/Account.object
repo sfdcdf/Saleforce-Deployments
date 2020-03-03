@@ -3795,6 +3795,40 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>NPS_Survey_Date__c</fullName>
+        <description>This field is used to capture the NPS Survey date from Pendo</description>
+        <externalId>false</externalId>
+        <label>NPS Survey Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NPS_Survey_Rating__c</fullName>
+        <description>This field is used to capture the rating a client gives for an NPS Survey</description>
+        <externalId>false</externalId>
+        <label>NPS Survey Rating</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NPS_Survey_Response__c</fullName>
+        <description>This field is used to capture the client response to the NPS Survey from Pendo</description>
+        <externalId>false</externalId>
+        <label>NPS Survey Response</label>
+        <length>100000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
         <fullName>NPS_Survey_Send__c</fullName>
         <externalId>false</externalId>
         <label>NPS Survey Send</label>

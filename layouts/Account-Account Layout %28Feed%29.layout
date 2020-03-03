@@ -700,6 +700,14 @@
                 <behavior>Edit</behavior>
                 <field>Sales_Rep_Email__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NPS_Survey_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NPS_Survey_Rating__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -1058,6 +1066,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Total_Acct_Revenue__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NPS_Survey_Response__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
