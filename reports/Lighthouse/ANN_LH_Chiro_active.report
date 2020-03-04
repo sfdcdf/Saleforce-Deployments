@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.LH_360_ID__c</field>
+    </columns>
+    <columns>
         <field>USERS.NAME</field>
     </columns>
     <columns>
@@ -8,9 +14,6 @@
     </columns>
     <columns>
         <field>TYPE</field>
-    </columns>
-    <columns>
-        <field>RATING</field>
     </columns>
     <columns>
         <field>DUE_DATE</field>
@@ -52,7 +55,7 @@
         <criteriaItems>
             <column>Account.Client_ID__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
+            <operator>notEqual</operator>
             <value>284600,264043,247729,280282,285655,292062,292271,292512,294693,298123,310642</value>
         </criteriaItems>
     </filter>
