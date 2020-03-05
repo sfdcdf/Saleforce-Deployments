@@ -728,6 +728,40 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>NPS_Survey_Date__c</fullName>
+        <description>to capture the date of an NPS survey</description>
+        <externalId>false</externalId>
+        <label>NPS Survey Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NPS_Survey_Rating__c</fullName>
+        <description>to capture the NPS rating from a survey</description>
+        <externalId>false</externalId>
+        <label>NPS Survey Rating</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NPS_Survey_Response__c</fullName>
+        <description>to capture the comments in an NPS survey response</description>
+        <externalId>false</externalId>
+        <label>NPS Survey Response</label>
+        <length>100000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>NPS_Survey_Sent__c</fullName>
         <externalId>false</externalId>
         <label>NPS Survey Sent</label>
