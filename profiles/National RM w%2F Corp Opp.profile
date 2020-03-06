@@ -34493,12 +34493,20 @@
         <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Forecast_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-2016 - WBN Corp Layout</layout>
         <recordType>Opportunity.Forecast_Corporate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-2016 - WBN Corp Layout</layout>
         <recordType>Opportunity.Forecast_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Forecast_Network_Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-LH - Upsell Opportunity</layout>
@@ -34532,12 +34540,20 @@
         <recordType>Opportunity.CPP_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Plan_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-YBN - Improved Layout</layout>
         <recordType>Opportunity.Plan_Corporate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-YBN - Improved Layout</layout>
         <recordType>Opportunity.Plan_Network</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Plan_Network_Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-TORCHx - Cross-Sell Opportunity</layout>
@@ -37229,12 +37245,22 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.Forecast_Client_Services</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.Forecast_Corporate</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Forecast_Network</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Network_Sales</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -37259,12 +37285,22 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.Plan_Client_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.Plan_Corporate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Plan_Network</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Network_Sales</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
