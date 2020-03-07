@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>true</custom><userLicense>Guest User License</userLicense>
-    <classAccesses xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
         <apexClass>LHFS_CustomRestAPI</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -7,6 +7,7 @@
         <apexClass>PartnerCommunityScore_RESTAPI</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>BandwidthExceeded</apexPage>
         <enabled>true</enabled>
@@ -6876,4 +6877,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Guest User License</userLicense>
 </Profile>

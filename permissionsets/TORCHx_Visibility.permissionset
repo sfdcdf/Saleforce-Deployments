@@ -1,4 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Access to TORCHx Account fields and TORCHx scheduling tool.</description><hasActivationRequired>false</hasActivationRequired><label>TORCHx Visibility/Accessibility</label>
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access to TORCHx Account fields and TORCHx scheduling tool.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>TORCHx Visibility/Accessibility</label>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>

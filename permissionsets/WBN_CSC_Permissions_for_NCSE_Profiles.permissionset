@@ -1,4 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Allow for additional WBN CSC Permissions to certain Sales Executives</description><hasActivationRequired>false</hasActivationRequired><label>WBN - CSC Permissions for NCSE Profiles</label><license>Salesforce</license>
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow for additional WBN CSC Permissions to certain Sales Executives</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>WBN - CSC Permissions for NCSE Profiles</label>
+    <license>Salesforce</license>
     <pageAccesses>
         <apexPage>Blank_VF_Page</apexPage>
         <enabled>true</enabled>

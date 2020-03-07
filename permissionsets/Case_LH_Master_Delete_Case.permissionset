@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>To be used with validation rule Delete_Case_for_LH_Master</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>Case - LH Master - Delete Case</label>
-    <license>Salesforce</license>
     <customPermissions>
         <enabled>true</enabled>
         <name>Case_LH_Master_Delete_Case</name>
     </customPermissions>
+    <description>To be used with validation rule Delete_Case_for_LH_Master</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -37432,4 +37429,7 @@
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Case - LH Master - Delete Case</label>
+    <license>Salesforce</license>
 </PermissionSet>

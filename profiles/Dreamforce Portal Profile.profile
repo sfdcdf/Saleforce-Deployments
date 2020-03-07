@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-    <custom>true</custom>
-    <userLicense>Guest User License</userLicense>
     <classAccesses>
         <apexClass>AccountFeesController</apexClass>
         <enabled>false</enabled>
@@ -1409,6 +1407,7 @@
         <apexClass>ybnUtilsEvents</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>false</enabled>
@@ -42761,4 +42760,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Guest User License</userLicense>
 </Profile>

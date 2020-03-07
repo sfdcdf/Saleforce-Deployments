@@ -1,4 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><description>Additional Permissions for WBN Sales Managers who oversee Opportunities</description><hasActivationRequired>false</hasActivationRequired><label>WBN Sales Manager Permission</label><license>Salesforce</license>
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Additional Permissions for WBN Sales Managers who oversee Opportunities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>WBN Sales Manager Permission</label>
+    <license>Salesforce</license>
     <pageAccesses>
         <apexPage>TopPanelYBNConsole_Master</apexPage>
         <enabled>true</enabled>
