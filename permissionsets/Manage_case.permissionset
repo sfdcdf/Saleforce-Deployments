@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Customer can manage all the case activities</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>Manage case</label>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -37392,6 +37390,8 @@
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage case</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

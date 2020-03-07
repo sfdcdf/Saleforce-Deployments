@@ -620,7 +620,6 @@
         <enabled>false</enabled>
         <flow>Yodle_Path_Reschedule</flow>
     </flowAccesses>
-    <userLicense>Guest User License</userLicense>
     <pageAccesses>
         <apexPage>BandwidthExceeded</apexPage>
         <enabled>true</enabled>
@@ -7250,4 +7249,5 @@
         <tab>Welcome_Page</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Guest User License</userLicense>
 </Profile>
