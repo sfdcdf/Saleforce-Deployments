@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Additional Performance analysis Permissions for CS managers and teams</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>Performance_Analysis_CSTeams</label>
-    <license>Salesforce</license>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -37453,6 +37450,9 @@
         <field>Yodle_Path__c.Yodle_Path_Completed_by__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Performance_Analysis_CSTeams</label>
+    <license>Salesforce</license>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

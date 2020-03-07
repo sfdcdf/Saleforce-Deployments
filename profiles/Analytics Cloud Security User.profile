@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>TLS_WarningMessageController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TLS_WarningMessageControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>testCreateAssetonClosedWon</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>icCancelAppointmentController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <flowAccesses>
         <enabled>false</enabled>
@@ -636,23 +652,6 @@
         <enabled>false</enabled>
         <flow>test_on_custom_object</flow>
     </flowAccesses>
-    <userLicense>Analytics Cloud Integration User</userLicense>
-    <classAccesses>
-        <apexClass>TLS_WarningMessageController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TLS_WarningMessageControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>testCreateAssetonClosedWon</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>icCancelAppointmentController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -35377,4 +35376,5 @@
         <tab>Welcome_Page</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Analytics Cloud Integration User</userLicense>
 </Profile>
