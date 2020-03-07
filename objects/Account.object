@@ -226,6 +226,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Name</fields>
@@ -244,6 +245,10 @@
         <fields>OwnerId</fields>
         <label>Account Compact Layout</label>
     </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>AC_OCC_Created__c</fullName>
         <defaultValue>false</defaultValue>
@@ -265,18 +270,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>AVERAGE_CUSTOMER_LENGTH__c</fullName>
-        <externalId>false</externalId>
-        <label>Average Customer Length</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>AVERAGE_SUCCESS_RATE_OF_A_FRANCHISE__c</fullName>
@@ -484,15 +477,6 @@ PEV__c &lt;100000,"Tier 6","NA"))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Agency_of_Record__c</fullName>
-        <externalId>false</externalId>
-        <label>Agency of Record</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Agreement_Effective_Date__c</fullName>
@@ -954,18 +938,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CRM_System_Name__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Name of the CRM system customer is using</inlineHelpText>
-        <label>CRM System Name</label>
-        <length>50</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CRM_System__c</fullName>
         <externalId>false</externalId>
         <label>CRM System</label>
@@ -974,18 +946,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CROSS_SELL_RATES_OF_PRODUCTS__c</fullName>
-        <externalId>false</externalId>
-        <label>Cross Sell Rates of Products</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -1367,17 +1327,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <type>Phone</type>
     </fields>
     <fields>
-        <fullName>Content_Ready__c</fullName>
-        <externalId>false</externalId>
-        <label>Content Ready</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Contract_Value_Goal__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Annual goal for total contract value for all opportunities. Used as a measure in the aggregate relationship document for total forecasted opportunities value vs. contract value goal.</inlineHelpText>
@@ -1422,6 +1371,17 @@ ISPICKVAL(Channel_Development__c, "")),
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corp_approval_on_organic_content_needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Corp approval on organic content needed</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -2445,17 +2405,6 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Engine_Ready__c</fullName>
-        <externalId>false</externalId>
-        <label>Engine Ready</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Entitlement__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>This is used for the process builder and flows to run the LH, Local and Partner Entitlement/Milestone project.</description>
@@ -2818,6 +2767,15 @@ Used by YBN.</description>
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>ICU_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ICU Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>ILs_Live__c</fullName>
         <externalId>false</externalId>
         <formula>Children_Accounts_Live__c  +  Grandchildren_Accounts_Live__c +   Great_Grandchildren_Accounts_Live__c</formula>
@@ -3015,6 +2973,120 @@ Used by YBN.</description>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>JCI_About_Us_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI About Us Content</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Angies_List_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Angies List Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Custom_Logo__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Custom Logo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Dealer_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Dealer Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Facebook_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Facebook Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Google_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Google+ Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Liberties_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Liberties ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JCI_Payment_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Payment Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Template_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Template ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JCI_Twitter_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI Twitter Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JCI_Upsold_to_PPC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>JCI Upsold to PPC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>JCI_YouTube_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>JCI YouTube Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Jigsaw</fullName>
@@ -3295,6 +3367,15 @@ Used by YBN.</description>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Legacy_TORCHx_Client__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Legacy TORCHx Client</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Length_of_Sales_Cycle__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>How many days is the company's sales cycle. Example - 120 days</inlineHelpText>
@@ -3534,6 +3615,15 @@ IF (
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Maps_Claiming_and_Organic_History__c</fullName>
+        <externalId>false</externalId>
+        <label>Maps Claiming and Organic History</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Marketing_Challenge__c</fullName>
         <description>Used by YBN marketing.</description>
         <externalId>false</externalId>
@@ -3685,18 +3775,6 @@ Live_Date__c+35+Month_1_Check_In_Date_Adjustment__c ,Null)</formula>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Monthly_Billing_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Billing Date</label>
-        <precision>2</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Months_Live__c</fullName>
@@ -3950,6 +4028,39 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Net_Invoiced_Revenue_Last_MTD__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Invoiced Revenue Last MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_Invoiced_Revenue_Last_Month_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Invoiced Revenue Last Month Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_Invoiced_Revenue_This_MTD__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Invoiced Revenue This MTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>New_Customers_Per_Month_Goal__c</fullName>
         <externalId>false</externalId>
         <label>New Customers Per Month Goal</label>
@@ -4088,33 +4199,10 @@ Null))))))</formula>
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Number_of_SMB_Customers__c</fullName>
-        <externalId>false</externalId>
-        <label>Number of SMB Customers</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>OEM_Customer_Identifier__c</fullName>
         <externalId>false</externalId>
         <label>OEM Customer Identifier</label>
         <length>25</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Oem_Corporate_Account__c</fullName>
-        <externalId>false</externalId>
-        <label>OEM Corporate Account</label>
-        <length>250</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4214,6 +4302,15 @@ Null))))))</formula>
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Ops_Organic_Only_Test__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ops Organic Only Test</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Optimus_Listing_ID__c</fullName>
         <externalId>false</externalId>
         <label>Optimus Listing ID</label>
@@ -4234,6 +4331,15 @@ Null))))))</formula>
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Organic_Build_Process_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Organic Build Process Details</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Organic_Cancel_Status__c</fullName>
         <externalId>false</externalId>
         <label>Organic Cancel Status</label>
@@ -4245,15 +4351,45 @@ Null))))))</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Other_Channel_Model__c</fullName>
+        <fullName>Organic_Order_Date__c</fullName>
         <externalId>false</externalId>
-        <label>Other Channel Model</label>
-        <length>250</length>
+        <label>Organic Order Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Organic_Recurring_Fees__c</fullName>
+        <externalId>false</externalId>
+        <label>Organic Recurring Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Organic_Strategy_Build_Process__c</fullName>
+        <externalId>false</externalId>
+        <label>Organic Strategy/Build Process</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organic_taxonomy_details__c</fullName>
+        <externalId>false</externalId>
+        <label>Organic taxonomy details</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Other_Performance_Goal__c</fullName>
@@ -4672,17 +4808,6 @@ Null))))))</formula>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Potential_Month_Ave_Location__c</fullName>
-        <externalId>false</externalId>
-        <label>Potential Month Ave $/Location</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Preferred_Vendor__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -4690,6 +4815,15 @@ Null))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Previous_organic_provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous organic provider</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Primary_Multi_Location_Owner_For_TP__c</fullName>
@@ -5251,58 +5385,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Reseller_Close_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Reseller Close Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Reseller_Est_Revenue__c</fullName>
-        <externalId>false</externalId>
-        <label>Reseller Est. Revenue</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Reseller_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Reseller Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Reseller_Market__c</fullName>
-        <externalId>false</externalId>
-        <label>Reseller Market</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Reseller_of_Accts__c</fullName>
-        <externalId>false</externalId>
-        <label>Reseller # of Accts</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Returning_Customers__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Used to calculate lifetime value for our client's customers and support future account optimization</inlineHelpText>
@@ -5410,15 +5492,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>SDR_Set_M1__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>SDR Set M1</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>SD_Notes__c</fullName>
@@ -6068,17 +6141,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Synopsis_of_Account_State__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>High level overview of current account state</inlineHelpText>
-        <label>Synopsis of Account State</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>TEMP_WBN_CSD__c</fullName>
         <description>This is a temporary field for Sarah McTate for reporting until the YBN Master Account Child Trigger gets fixed</description>
         <externalId>false</externalId>
@@ -6089,6 +6151,25 @@ contains( Product_Type__c , "YODLE_WEB")),
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TORCHx_Client_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>TORCHx Client Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TORCHx_Monthly_Review__c</fullName>
+        <externalId>false</externalId>
+        <label>TORCHx Monthly Review</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>Team_Last_Month_Total_Spend__c</fullName>
@@ -6451,6 +6532,15 @@ If(BillingState = "","NA","West")))))))))))))))))))))))))))))</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Use_Existing_JCI_Dealer_Domain__c</fullName>
+        <externalId>false</externalId>
+        <label>Use Existing JCI Dealer Domain</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>User_Account_Director__c</fullName>
         <externalId>false</externalId>
         <formula>if(
@@ -6603,6 +6693,24 @@ Sales_Director__r.Id = $User.Id , 1 , 0)</formula>
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Webinar_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Webinar Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Webinar_Scheduled_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Webinar Scheduled Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Website_Additional_Fees__c</fullName>
         <externalId>false</externalId>
         <label>Website Additional Fees</label>
@@ -6680,6 +6788,24 @@ Formula could not be added into the Next TP Needed By field do to compile size p
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>120 Day</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2013_JCI_Dealer_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>2013 JCI Dealer Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>X2013_JCI_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>2013 JCI Email Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -6781,6 +6907,15 @@ AND(ISPICKVAL( Individual_Location_Service_Level__c ,"Service Level C"),OR( Last
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YO_Status_Override__c</fullName>
+        <externalId>false</externalId>
+        <label>YO Status Override</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Yahoo_Local_URL__c</fullName>
@@ -7826,36 +7961,6 @@ Used by YBN.</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>BCF_Collection_Status__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Select the appropriate status for the BCF after a completed CSC.  Check here prior to any adoption call to see if client committed to filling out on their own and no BCF record is present.</inlineHelpText>
-        <label>BCF Completion Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>BCF Submitted before CSC</fullName>
-                    <default>false</default>
-                    <label>BCF Submitted before CSC</label>
-                </value>
-                <value>
-                    <fullName>Business Info covered during CSC</fullName>
-                    <default>false</default>
-                    <label>Business Info covered during CSC</label>
-                </value>
-                <value>
-                    <fullName>Client to fill out on their own</fullName>
-                    <default>false</default>
-                    <label>Client to fill out on their own</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Berry_Account_Manager__c</fullName>
         <description>Only to be used for Berry Account Managers.</description>
         <externalId>false</externalId>
@@ -8001,35 +8106,6 @@ Used by YBN.</description>
                     <fullName>Steve Jecker</fullName>
                     <default>false</default>
                     <label>Steve Jecker</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Berry_Market__c</fullName>
-        <externalId>false</externalId>
-        <label>Berry Market</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Ashland, KY</fullName>
-                    <default>false</default>
-                    <label>Ashland, KY</label>
-                </value>
-                <value>
-                    <fullName>Cincinnati, OH</fullName>
-                    <default>false</default>
-                    <label>Cincinnati, OH</label>
-                </value>
-                <value>
-                    <fullName>Lorain, OH</fullName>
-                    <default>false</default>
-                    <label>Lorain, OH</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -8255,31 +8331,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
         </valueSet>
     </fields>
     <fields>
-        <fullName>CRM_FOR_INDIVIDUAL_LOCATIONS__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Do the individual locations use a CRM system?</inlineHelpText>
-        <label>CRM for Individual Locations</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>YES</fullName>
-                    <default>false</default>
-                    <label>YES</label>
-                </value>
-                <value>
-                    <fullName>NO</fullName>
-                    <default>false</default>
-                    <label>NO</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Centermark__c</fullName>
         <externalId>false</externalId>
         <label>Centermark?</label>
@@ -8430,149 +8481,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
                     <label>DSG</label>
                 </value>
             </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Channel_Partner_Sub_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Channel Partner Sub-Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Channel_Partner_Type__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>CMRs for YP publishers</fullName>
-                    <default>false</default>
-                    <label>CMRs for YP publishers</label>
-                </value>
-                <value>
-                    <fullName>CRM</fullName>
-                    <default>false</default>
-                    <label>CRM</label>
-                </value>
-                <value>
-                    <fullName>Dental</fullName>
-                    <default>false</default>
-                    <label>Dental</label>
-                </value>
-                <value>
-                    <fullName>Internet</fullName>
-                    <default>false</default>
-                    <label>Internet</label>
-                </value>
-                <value>
-                    <fullName>Legal</fullName>
-                    <default>false</default>
-                    <label>Legal</label>
-                </value>
-                <value>
-                    <fullName>Newspaper</fullName>
-                    <default>false</default>
-                    <label>Newspaper</label>
-                </value>
-                <value>
-                    <fullName>Outdoor</fullName>
-                    <default>false</default>
-                    <label>Outdoor</label>
-                </value>
-                <value>
-                    <fullName>Publishers</fullName>
-                    <default>false</default>
-                    <label>Publishers</label>
-                </value>
-                <value>
-                    <fullName>Radio</fullName>
-                    <default>false</default>
-                    <label>Radio</label>
-                </value>
-                <value>
-                    <fullName>SEM</fullName>
-                    <default>false</default>
-                    <label>SEM</label>
-                </value>
-                <value>
-                    <fullName>SEO</fullName>
-                    <default>false</default>
-                    <label>SEO</label>
-                </value>
-                <value>
-                    <fullName>TV</fullName>
-                    <default>false</default>
-                    <label>TV</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Magazine</fullName>
-                    <default>false</default>
-                    <label>Magazine</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <valueName>CRM</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <valueName>SEM</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <valueName>SEO</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <controllingFieldValue>Industry-specific aggregators</controllingFieldValue>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Other</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Industry-specific aggregators</controllingFieldValue>
-                <valueName>Dental</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Industry-specific aggregators</controllingFieldValue>
-                <valueName>Legal</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Internet</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Newspaper</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Outdoor</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Radio</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>TV</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Magazine</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Yellow Page</controllingFieldValue>
-                <valueName>CMRs for YP publishers</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Yellow Page</controllingFieldValue>
-                <valueName>Publishers</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -10707,45 +10615,6 @@ Inactive = Not actively in a partnership</inlineHelpText>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Reseller_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Reseller Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Commit</fullName>
-                    <default>false</default>
-                    <label>Commit</label>
-                </value>
-                <value>
-                    <fullName>Forecast</fullName>
-                    <default>false</default>
-                    <label>Forecast</label>
-                </value>
-                <value>
-                    <fullName>Pipeline</fullName>
-                    <default>false</default>
-                    <label>Pipeline</label>
-                </value>
-                <value>
-                    <fullName>Closed</fullName>
-                    <default>false</default>
-                    <label>Closed</label>
-                </value>
-                <value>
-                    <fullName>Dead</fullName>
-                    <default>false</default>
-                    <label>Dead</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Retention_Test_to_Local_Outcome__c</fullName>
         <externalId>false</externalId>
         <label>Retention Test to Local Outcome</label>
@@ -12800,59 +12669,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <trackHistory>false</trackHistory>
         <type>TextArea</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Sales_Person__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>IMS_Rep__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
-        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
-        <lookupFilterFields>Client_ID__c</lookupFilterFields>
-        <lookupFilterFields>Status__c</lookupFilterFields>
-        <lookupFilterFields>SellFire__c</lookupFilterFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Contact_Cell__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Contact_Phone_Number_Berry__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Client_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
-        <searchFilterFields>Client_ID__c</searchFilterFields>
-        <searchFilterFields>ACCOUNT.RECORDTYPE</searchFilterFields>
-        <searchFilterFields>SellFire__c</searchFilterFields>
-        <searchFilterFields>LH_360_ID__c</searchFilterFields>
-        <searchFilterFields>IMS_Rep__c</searchFilterFields>
-        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>IMS_Rep__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>A_Plus_Transmissions</fullName>
         <columns>ACCOUNT.NAME</columns>
@@ -13538,7 +13354,7 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         <filters>
             <field>ACCOUNT.CREATED_DATE</field>
             <operation>equals</operation>
-            <value>LAST_N_DAYS:10</value>
+            <value>LAST_N_DAYS:1</value>
         </filters>
         <label>Subba Recently Created Accounts</label>
     </listViews>
@@ -13670,6 +13486,8 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
         </filters>
         <label>Subba LightHouse Test Accounts</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
@@ -14762,21 +14580,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -14884,21 +14687,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15032,17 +14820,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -15141,65 +14918,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17648,29 +17366,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -19610,21 +19305,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -19732,21 +19412,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -19880,17 +19545,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -19989,65 +19643,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -22544,29 +22139,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -24435,21 +24007,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -24505,21 +24062,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24653,17 +24195,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -24762,65 +24293,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -27453,29 +26925,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -29219,21 +28668,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -29341,21 +28775,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29489,17 +28908,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -29602,65 +29010,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -32493,29 +31842,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -34456,21 +33782,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -34578,21 +33889,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -34726,17 +34022,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -34839,65 +34124,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -37346,29 +36572,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -39233,21 +38436,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -39303,21 +38491,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -39451,17 +38624,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -39548,65 +38710,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -41999,29 +41102,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -43874,21 +42954,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -43944,21 +43009,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -44092,17 +43142,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -44205,65 +43244,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -46896,29 +45876,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -48591,21 +47548,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -48661,21 +47603,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -48809,17 +47736,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -48906,65 +47822,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -51473,29 +50330,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -53168,21 +52002,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -53238,21 +52057,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -53386,17 +52190,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -53483,65 +52276,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -55982,29 +54716,6 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -56653,6 +55364,52 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Person__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IMS_Rep__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
+        <lookupFilterFields>Client_ID__c</lookupFilterFields>
+        <lookupFilterFields>Status__c</lookupFilterFields>
+        <lookupFilterFields>SellFire__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Cell__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Phone_Number_Berry__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.RECORDTYPE</searchFilterFields>
+        <searchFilterFields>SellFire__c</searchFilterFields>
+        <searchFilterFields>LH_360_ID__c</searchFilterFields>
+        <searchFilterFields>IMS_Rep__c</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IMS_Rep__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Berry_Master_Acct_to_Berry_Channel_types</fullName>
         <active>false</active>

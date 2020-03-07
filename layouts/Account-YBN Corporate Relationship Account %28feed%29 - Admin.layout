@@ -648,15 +648,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CRM_System_Name__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>CRM_Login_Credentials__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CRM_FOR_INDIVIDUAL_LOCATIONS__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -881,14 +873,6 @@
                 <behavior>Edit</behavior>
                 <field>Customer_s_Sales_Funnel__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CROSS_SELL_RATES_OF_PRODUCTS__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>AVERAGE_CUSTOMER_LENGTH__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -1013,10 +997,6 @@
         <editHeading>true</editHeading>
         <label>Transition Summary</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Synopsis_of_Account_State__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Overview_on_Main_Point_of_Contact__c</field>

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Permission set to Allow access to Worksheet Object and Read Access to all Fields</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>LH Worksheet - View Access</label>
-    <license>Salesforce</license>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -721,6 +718,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Corp_SDR_Score__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Corp_approval_on_organic_content_needed__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1450,6 +1452,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.ICU_Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.IDSetting__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1595,6 +1602,66 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.JCI_About_Us_Content__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Angies_List_Link__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Custom_Logo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Dealer_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Facebook_Link__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Google_Link__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Liberties_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Payment_Method__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Template_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Twitter_Link__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_Upsold_to_PPC__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.JCI_YouTube_Link__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Jigsaw</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1735,6 +1802,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Legacy_TORCHx_Client__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Length_of_Sales_Cycle__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1851,6 +1923,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Manufacturer_Brand__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Maps_Claiming_and_Organic_History__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2115,6 +2192,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Net_Invoiced_Revenue_Last_MTD__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Net_Invoiced_Revenue_Last_Month_Total__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Net_Invoiced_Revenue_This_MTD__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.New_Customers_Per_Month_Goal__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2240,12 +2332,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Ops_Organic_Only_Test__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Optimus_Listing_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Order_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Organic_Build_Process_Details__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2261,6 +2363,26 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Organic_Live_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Organic_Order_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Organic_Recurring_Fees__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Organic_Strategy_Build_Process__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Organic_taxonomy_details__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2511,6 +2633,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Preferred_Vendor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Previous_organic_provider__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3250,6 +3377,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.TORCHx_Client_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.TORCHx_Monthly_Review__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Team_Last_Month_Total_Spend__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3425,6 +3562,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Use_Existing_JCI_Dealer_Domain__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.User_Account_Director__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3515,6 +3657,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Webinar_Completed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Webinar_Scheduled_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Website</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3575,6 +3727,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.X2013_JCI_Dealer_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.X2013_JCI_Email_Sent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.YBN_CSC_Completed_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3616,6 +3778,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.YBN_TP_Needed_Test__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.YO_Status_Override__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -37118,4 +37285,7 @@
         <field>tz__Local_Time_Error_Log__c.tz__Record__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LH Worksheet - View Access</label>
+    <license>Salesforce</license>
 </PermissionSet>
