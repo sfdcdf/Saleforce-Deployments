@@ -520,20 +520,76 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Content</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningInstrumentation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
     <applicationVisibilities>
         <application>tz__Local_Time</application>
         <default>false</default>
@@ -599,13 +655,11 @@
         <field>Account.Average_Inbound_Conversion_Rate__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Analysis_Details__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Are_There_Territory_Restrictions__c</field>
@@ -796,7 +850,6 @@
         <field>Account.Average_Additional_Sales__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
@@ -812,7 +865,6 @@
         <field>Account.AVERAGE_SUCCESS_RATE_OF_A_FRANCHISE__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.CS_Sat_Score_Past_120_Day__c</field>
@@ -1198,7 +1250,6 @@
         <field>Account.AdStation_Balance__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Algo_Change_Detail__c</field>
@@ -1499,7 +1550,6 @@
         <field>Account.Do_not_Call__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Corp_Acct_in_YL_Parent_Account__c</field>
@@ -1735,7 +1785,6 @@
         <field>Account.Engagement_Num_Review_Request_Last_7_Day__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Next_TP_Trigger_Date__c</field>
@@ -1801,7 +1850,6 @@
         <field>Account.National_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Engagement_Date_Last_Email_Sent__c</field>
@@ -2127,7 +2175,6 @@
         <field>Account.National_SDR_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Number_of_Locations_Specific__c</field>
@@ -2338,7 +2385,6 @@
         <field>Account.CPP_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.CRM_Login_Credentials__c</field>
@@ -2469,7 +2515,6 @@
         <field>Account.NUMBER_OF_PRODUCTS_SERVICES_TO_SELL__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.NPS_Survey_Send__c</field>
@@ -2805,7 +2850,6 @@
         <field>Account.Post_Launch_Case_Closed__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Preferred_Vendor__c</field>
@@ -2846,7 +2890,6 @@
         <field>Account.SIC_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.SD_Notes__c</field>
@@ -2882,7 +2925,6 @@
         <field>Account.SELL_PRODUCTS_FRANCHISOR_MANUFACTURERS__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Partner_Description__c</field>
@@ -2893,8 +2935,6 @@
         <field>Account.Runbook_Most_recent_CSM_Update__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Reason_For_Continued_Underperformance__c</field>
@@ -3025,7 +3065,6 @@
         <field>Account.Prospect_Need_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Returning_Customers__c</field>
@@ -3491,7 +3530,6 @@
         <field>Account.Suppress_Exit_Email__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Overview_on_Main_Point_of_Contact__c</field>
@@ -4217,7 +4255,6 @@
         <field>Best_Practice_Evaluation__c.Banner_Customization__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Best_Practice_Evaluation__c.BPM_Overall_Grade2__c</field>

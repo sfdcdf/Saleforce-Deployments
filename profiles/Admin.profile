@@ -2384,20 +2384,76 @@
         <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Content</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningInstrumentation</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <applicationVisibilities>
         <application>tz__Local_Time</application>
         <default>false</default>
@@ -2923,7 +2979,6 @@
         <field>Call_Grading_Forms__c.Proper_Email_Opening__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Date_Pitched__c</field>
@@ -3039,7 +3094,6 @@
         <field>Account.Avg_Annual_Revenue_per_Location__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Contract_Value_Goal__c</field>
@@ -3080,7 +3134,6 @@
         <field>Account.Description</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Algo_Version__c</field>
@@ -3516,7 +3569,6 @@
         <field>Account.Contact_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Corporate_Monthly_Organic_Fees__c</field>
@@ -3742,7 +3794,6 @@
         <field>Account.Offer_to_Client__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Next_TP_Needed_By_TEMP__c</field>
@@ -3933,7 +3984,6 @@
         <field>Account.Offer_to_Client_Expiration__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Other_Performance_Goal__c</field>
@@ -3959,7 +4009,6 @@
         <field>Account.Number_of_Potential_Targets__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Stage_Lost__c</field>
@@ -4025,7 +4074,6 @@
         <field>Account.Engagement_Num_Review_Request_Last_7_Day__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Entered_Save_Mode__c</field>
@@ -4251,7 +4299,6 @@
         <field>Account.AdStation_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Not_OK_To_Clean_Out_Listing__c</field>
@@ -4352,7 +4399,6 @@
         <field>Account.CPP_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Budget_Ads__c</field>
@@ -4428,7 +4474,6 @@
         <field>Account.Channel_Development__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Channel_Partner_Type__c</field>
@@ -4499,13 +4544,11 @@
         <field>Account.CRM_Login_Credentials__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.CRM_System__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.NPS_Survey_Type_Sent__c</field>
@@ -4721,7 +4764,6 @@
         <field>Account.Month_1_Check_In_Trigger_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Monthly_Budget__c</field>
@@ -4862,7 +4904,6 @@
         <field>Account.System_Information_Used_Today__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ParentId</field>
@@ -4928,7 +4969,6 @@
         <field>Cancellation_Request__c.Concession_Details__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>CS_Operations__c.Downgrade_Reason__c</field>
@@ -6174,7 +6214,6 @@
         <field>Best_Practice_Evaluation__c.Built_Process_Timeframe__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Best_Practice_Evaluation__c.Build_Process_Used__c</field>
@@ -6465,7 +6504,6 @@
         <field>Account.Rep_market__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Best_Practice_Evaluation__c.Capitalization_Issues__c</field>
@@ -6591,7 +6629,6 @@
         <field>Account.Phone_converting__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Best_Practice_Evaluation__c.Call_Tracking_all_numbers_configured__c</field>
@@ -6602,8 +6639,6 @@
         <field>Best_Practice_Evaluation__c.Colors_for_Scoring__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Returning_Customers__c</field>
@@ -6709,7 +6744,6 @@
         <field>Account.Reactivation_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Requested_No_Call_Tracking__c</field>
@@ -6855,7 +6889,6 @@
         <field>Best_Practice_Evaluation__c.Able_to_Get_Lead_s_Contact_Information__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Asset.ContactId</field>
