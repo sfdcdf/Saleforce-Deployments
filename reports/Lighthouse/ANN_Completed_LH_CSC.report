@@ -33,14 +33,6 @@
     <columns>
         <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Lighthouse_Worksheets__c.Practice_Name__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>NYU</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
