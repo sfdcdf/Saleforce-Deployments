@@ -22,7 +22,7 @@
         <field>CLOSED</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <booleanFilter>(1 AND 2 AND (3 OR 4)) AND 5</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
             <isUnlocked>false</isUnlocked>
@@ -46,6 +46,12 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Inbound_Inquiry,Case.Partner_Inbound_Inquiry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>monday.com</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
