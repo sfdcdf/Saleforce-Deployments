@@ -56,9 +56,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Lighthouse_Worksheets__c.Date_Time_Closed__c</dateColumn>
-        <endDate>2019-10-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-10-28</startDate>
+        <dateColumn>Lighthouse_Worksheets__c.Date_Time_Opened__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
