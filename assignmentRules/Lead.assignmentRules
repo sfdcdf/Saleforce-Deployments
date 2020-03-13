@@ -89,16 +89,6 @@
             <template>Marketing/NewLeadNotification</template>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>alauer@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.partner_web_form__c</field>
-                <operation>contains</operation>
-                <value>XTOL</value>
-            </criteriaItems>
-            <template>Marketing/LeadsNewassignmentnotificationSAMPLE</template>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>sfdc@yodle.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
@@ -262,15 +252,6 @@
                 <value>Aussie Pet Mobile,Massage Heights</value>
             </criteriaItems>
             <template>Marketing/NewLeadNotification</template>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>sfdc@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Lead.LeadSource</field>
-                <operation>contains</operation>
-                <value>alisa</value>
-            </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Partner</assignedTo>
