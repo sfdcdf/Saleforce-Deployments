@@ -171,6 +171,14 @@
                 <behavior>Edit</behavior>
                 <field>LinkedIn_Connection__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Pendo_NPS_Survey_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Pendo_NPS_Rating__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -281,6 +289,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Reference_Notes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Pendo_NPS_Survey_Response__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>

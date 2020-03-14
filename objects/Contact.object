@@ -820,6 +820,37 @@
         <unique>true</unique>
     </fields>
     <fields>
+        <fullName>Pendo_NPS_Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Pendo NPS Rating</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pendo_NPS_Survey_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pendo NPS Survey Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pendo_NPS_Survey_Response__c</fullName>
+        <externalId>false</externalId>
+        <label>Pendo NPS Survey Response</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
