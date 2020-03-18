@@ -1,93 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Account.Client_ID__c</field>
+        <field>Case.Client_ID__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>OWNER</field>
+        <field>CREATED</field>
     </columns>
     <columns>
-        <field>MILESTONESTATUS</field>
+        <field>Case.IMS_Completing_Opt2__c</field>
+    </columns>
+    <columns>
+        <field>Case.YBNRequestDetail__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>Case.Account_Status__c</field>
+        <field>DESCRIPTION</field>
     </columns>
     <columns>
-        <field>STATUS</field>
+        <field>Case.general_notes__c</field>
     </columns>
     <columns>
-        <field>Case.Sub_Status__c</field>
+        <field>CASE_COMMENT</field>
     </columns>
     <columns>
-        <field>CASE_NUMBER</field>
-    </columns>
-    <columns>
-        <field>AGE</field>
-    </columns>
-    <columns>
-        <field>Case.Case_Age_Business_Days__c</field>
-    </columns>
-    <columns>
-        <field>OPEN</field>
-    </columns>
-    <columns>
-        <field>CLOSED</field>
-    </columns>
-    <columns>
-        <field>LAST_UPDATE_BY</field>
-    </columns>
-    <columns>
-        <field>CREATED_DATE</field>
-    </columns>
-    <columns>
-        <field>LAST_UPDATEONLY</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_ID</field>
-    </columns>
-    <columns>
-        <field>CASE_ID</field>
+        <field>CLOSED_DATE</field>
     </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
-            <isUnlocked>true</isUnlocked>
+            <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CLOSED</column>
+            <column>ACCOUNT_RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>0</value>
+            <value>Account.Standard</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER</column>
+            <column>Case.YBNRequestReason__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>national performance queue</value>
+            <value>Performance Team</value>
         </criteriaItems>
         <criteriaItems>
-            <column>SUBJECT</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>7 day opt,3 day error check</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>MILESTONESTATUS</column>
+            <column>PARENT_ACCOUNT_NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>open violation</value>
+            <value>budget blinds - master,budget blinds canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>salesforce automation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.YBNRequestDetail__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PPC Optimization,Relationship PPC Audit</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>NPQ Cases in Violation</name>
+    <name>HFC PPC Opt/Underperformer Cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -103,6 +85,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_PREVCURFY</interval>
+        <interval>INTERVAL_LAST60</interval>
     </timeFrameFilter>
 </Report>
