@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>LH NPS Queue</name>
+    <queueMembers>
+        <roles>
+            <role>VPofOperations</role>
+            <role>CSOperations</role>
+            <role>Lighthouse_Config_Rep</role>
+            <role>Lighthouse_CS</role>
+            <role>Lighthouse_CSC_Rep</role>
+            <role>Lighthouse_Inbound</role>
+            <role>Lighthouse_Install_Rep</role>
+            <role>TORCHx_Rep</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>
