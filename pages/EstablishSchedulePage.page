@@ -1,0 +1,95 @@
+<apex:page standardController="OpportunityLineItem" extensions="ScheduleSplitGenerator" docType="HTML-5.0">
+    <apex:form id="ScheduleForm">
+        <apex:pageMessages />
+        <apex:sectionHeader title="Establish Schedule For {!OpportunityLineItem.Name}" />   
+        <apex:pageBlock id="pgBlock" mode="edit" >
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!Save}"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="SchSelpgBlockSection" title="Choose Schedule Type(s)" collapsible="false" columns="2" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Opportunity</apex:outputLabel>
+                    <apex:outputText id="SchOppty" value="{!OpportunityLineItem.Opportunity.Name}" />
+                    
+                </apex:pageBlockSectionItem>
+                <br/>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Type</apex:outputLabel>
+                    <apex:selectList value="{!Type}" multiselect="false" id="SchType" size="1">
+                        <apex:selectOptions value="{!TypeOptions}"></apex:selectOptions>
+                        <apex:actionSupport event="onChange" reRender="QtySchedonly,RevSchedonly"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            
+            <apex:pageBlockSection id="QtySchedonly" title="Establish Quantity Schedule for {!OpportunityLineItem.Name}" collapsible="false">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Start Date</apex:outputLabel>
+                    <apex:Input Type="date" id="Schst_Date" value="{!StrtDate}" />
+                </apex:pageBlockSectionItem>
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Quantity</apex:outputLabel>
+                    <apex:InputText id="SchQty" value="{!Quantity}" />
+                </apex:pageBlockSectionItem>    
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Schedule Type</apex:outputLabel>
+                    <apex:selectList value="{!QtySchedType}" multiselect="false" id="SchQtyType" size="1">
+                        <apex:selectOptions value="{!SchedTypeOptions}"></apex:selectOptions>
+                    </apex:selectList>
+                    
+                </apex:pageBlockSectionItem> 
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Installment Period</apex:outputLabel>
+                    <apex:selectList value="{!SchQtyInstPer}" multiselect="false" id="SchQtyType" size="1">
+                        <apex:selectOptions value="{!SchedInstOptions}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>  
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Number of Installments</apex:outputLabel>
+                    <apex:InputText id="SchQtyInst" value="{!QtyNoIns}" />
+                </apex:pageBlockSectionItem>     
+            </apex:pageBlockSection>  
+            
+            
+            <apex:pageBlockSection id="RevSchedonly" title="Establish Revenue Schedule for {!OpportunityLineItem.Name}"  collapsible="false">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Start Date</apex:outputLabel>
+                    <apex:Input Type="date" id="RevSchst_Date" value="{!RevStrtDate}" />
+                </apex:pageBlockSectionItem>
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Revenue</apex:outputLabel>
+                    <apex:InputText id="SchRev" value="{!Revenue}" />
+                </apex:pageBlockSectionItem>    
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Schedule Type</apex:outputLabel>
+                    <apex:selectList value="{!RevSchedType}" multiselect="false" id="RevSchType" size="1">
+                        <apex:selectOptions value="{!SchedTypeOptions}"></apex:selectOptions>
+                    </apex:selectList>
+                    
+                </apex:pageBlockSectionItem> 
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Installment Period</apex:outputLabel>
+                    <apex:selectList value="{!RevSchInstPer}" multiselect="false" id="RevSchType" size="1">
+                        <apex:selectOptions value="{!SchedInstOptions}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>  
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Number of Installments</apex:outputLabel>
+                    <apex:InputText id="RevSchInst" value="{!RevNoIns}" />
+                </apex:pageBlockSectionItem>  
+               </apex:pageBlockSection>                 
+            </apex:pageBlock>
+        </apex:form>
+        
+    </apex:page>
