@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Additional_Values__c</field>
-        <value xsi:type="xsd:string">torchx.com,hipchat.com,yodle.onmicrosoft.com,yodle.net,slack.com,bottle-labeler.com,event.splashthat.com,salesforce.com</value>
+        <value xsi:type="xsd:string">torchx.com,hipchat.com,yodle.onmicrosoft.com,yodle.net,slack.com,bottle-labeler.com,event.splashthat.com,salesforce.com,zoom.us</value>
     </values>
     <values>
         <field>Description__c</field>
