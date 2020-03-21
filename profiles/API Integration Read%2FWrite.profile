@@ -27902,6 +27902,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Key_Financial_Decision_Maker_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Key_PPl_Their_Role_in_the_Deal__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -28948,6 +28953,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Previous_organic_provider__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Primary_Pain_Point__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

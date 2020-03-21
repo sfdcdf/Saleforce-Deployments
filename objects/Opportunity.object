@@ -3421,6 +3421,102 @@ IF(NOT(ISBLANK(Run_Rate__c)), CloseDate + ROUND(((Run_Rate__c/5)*7),0)  , CloseD
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Key_Financial_Decision_Maker_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Financial Decision Maker Title</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CDO</fullName>
+                    <default>false</default>
+                    <label>CDO</label>
+                </value>
+                <value>
+                    <fullName>CEO</fullName>
+                    <default>false</default>
+                    <label>CEO</label>
+                </value>
+                <value>
+                    <fullName>CFO</fullName>
+                    <default>false</default>
+                    <label>CFO</label>
+                </value>
+                <value>
+                    <fullName>Chairman</fullName>
+                    <default>false</default>
+                    <label>Chairman</label>
+                </value>
+                <value>
+                    <fullName>CMO</fullName>
+                    <default>false</default>
+                    <label>CMO</label>
+                </value>
+                <value>
+                    <fullName>COO</fullName>
+                    <default>false</default>
+                    <label>COO</label>
+                </value>
+                <value>
+                    <fullName>Director</fullName>
+                    <default>false</default>
+                    <label>Director</label>
+                </value>
+                <value>
+                    <fullName>EVP</fullName>
+                    <default>false</default>
+                    <label>EVP</label>
+                </value>
+                <value>
+                    <fullName>Executive – other</fullName>
+                    <default>false</default>
+                    <label>Executive – other</label>
+                </value>
+                <value>
+                    <fullName>Founder</fullName>
+                    <default>false</default>
+                    <label>Founder</label>
+                </value>
+                <value>
+                    <fullName>Officer – other</fullName>
+                    <default>false</default>
+                    <label>Officer – other</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+                <value>
+                    <fullName>President</fullName>
+                    <default>false</default>
+                    <label>President</label>
+                </value>
+                <value>
+                    <fullName>SVP</fullName>
+                    <default>false</default>
+                    <label>SVP</label>
+                </value>
+                <value>
+                    <fullName>VP</fullName>
+                    <default>false</default>
+                    <label>VP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Key_PPl_Their_Role_in_the_Deal__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>List all our contacts and decision makers and what role they are playing in the deal</inlineHelpText>
@@ -5456,6 +5552,52 @@ ISBLANK(  Display_Launch_Date__c   )),"Not Launched","Launched"))))))))))</formu
         <fullName>Pricebook2Id</fullName>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Pain_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Pain Point</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RFP/sourcing new provider</fullName>
+                    <default>false</default>
+                    <label>RFP/sourcing new provider</label>
+                </value>
+                <value>
+                    <fullName>Disparate programs</fullName>
+                    <default>false</default>
+                    <label>Disparate programs</label>
+                </value>
+                <value>
+                    <fullName>Too many providers</fullName>
+                    <default>false</default>
+                    <label>Too many providers</label>
+                </value>
+                <value>
+                    <fullName>Existing program poor performance</fullName>
+                    <default>false</default>
+                    <label>Existing program poor performance</label>
+                </value>
+                <value>
+                    <fullName>Resource constrained</fullName>
+                    <default>false</default>
+                    <label>Resource constrained</label>
+                </value>
+                <value>
+                    <fullName>Addressing new initiative</fullName>
+                    <default>false</default>
+                    <label>Addressing new initiative</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Print_Yellowpages__c</fullName>
@@ -17097,6 +17239,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -19186,6 +19395,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -22025,6 +22261,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -24054,6 +24357,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -26874,6 +27204,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -28939,6 +29336,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -31706,6 +32130,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -32907,6 +33398,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -35282,6 +35800,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -36323,6 +36908,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -46907,6 +47519,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -47948,6 +48627,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -50824,6 +51530,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -52893,6 +53666,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -55812,6 +56612,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -57573,6 +58440,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -60176,6 +61070,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -62293,6 +63254,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -65182,6 +66170,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -67271,6 +68326,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -70178,6 +71260,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -71219,6 +72368,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -81803,6 +82979,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -82844,6 +84087,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -85705,6 +86975,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -87774,6 +89111,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -90815,6 +92179,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -91856,6 +93287,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -94688,6 +96146,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -95605,6 +97130,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -98419,6 +99971,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -99460,6 +101079,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -102295,6 +103941,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -103320,6 +105033,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -106063,6 +107803,73 @@ Used by YBN.</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Key_Financial_Decision_Maker_Title__c</picklist>
+            <values>
+                <fullName>CDO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chairman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Founder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Officer %E2%80%93 other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Date_Change_Reason__c</picklist>
             <values>
                 <fullName>Client Caused</fullName>
@@ -107157,6 +108964,33 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Pain_Point__c</picklist>
+            <values>
+                <fullName>Addressing new initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disparate programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing program poor performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2Fsourcing new provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource constrained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too many providers</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
