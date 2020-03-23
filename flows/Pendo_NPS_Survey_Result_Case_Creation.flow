@@ -11,6 +11,9 @@
         <label>myDecision</label>
         <locationX>50</locationX>
         <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision5</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
@@ -102,13 +105,96 @@
                 <leftValueReference>myVariable_current.Pendo_NPS_Survey_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_2_myRule_1_5934369258</elementReference>
+                    <elementReference>formula_2_myRule_1_0064739152</elementReference>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
             <label>Pendo NPS Rating less than 8</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision5</name>
+        <label>myDecision5</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_6</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Number</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Number</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>Number</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Number</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Pendo_NPS_Rating__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>8.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Date</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Date</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>Date</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Formula</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Pendo_NPS_Survey_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_7_myRule_6_5956843286</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_6_A1</targetReference>
+            </connector>
+            <label>Pendo NPS Rating 8 or greater</label>
         </rules>
     </decisions>
     <description>This process will create a case if the NPS score is lower than 8</description>
@@ -119,7 +205,7 @@
                 <stringValue>TODAY()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_5934369258</name>
+        <name>formula_2_myRule_1_0064739152</name>
         <dataType>Date</dataType>
         <expression>TODAY()</expression>
     </formulas>
@@ -130,7 +216,7 @@
                 <stringValue>[Contact].AccountId </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_3_myRule_1_A1_7773339953</name>
+        <name>formula_3_myRule_1_A1_2871366724</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.AccountId}</expression>
     </formulas>
@@ -142,12 +228,36 @@
 + TEXT([Contact].Pendo_NPS_Survey_Date__c) + &quot;, &quot; + TEXT([Contact].Pendo_NPS_Rating__c) + &quot;, &quot; + [Contact].Pendo_NPS_Survey_Response__c   </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_4_myRule_1_A1_7555060064</name>
+        <name>formula_4_myRule_1_A1_2703451085</name>
         <dataType>String</dataType>
         <expression>&quot;This is the NPS Survey Date, Score, and Response:&quot; + &quot; &quot; 
 + TEXT({!myVariable_current.Pendo_NPS_Survey_Date__c}) + &quot;, &quot; + TEXT({!myVariable_current.Pendo_NPS_Rating__c}) + &quot;, &quot; + {!myVariable_current.Pendo_NPS_Survey_Response__c}</expression>
     </formulas>
-    <interviewLabel>Pendo_NPS_Survey_Result_Case_Creation-9_InterviewLabel</interviewLabel>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>TODAY()</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_7_myRule_6_5956843286</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;This is the NPS Survey Date, Score, and Response:&quot; + &quot; &quot; 
++ TEXT([Contact].Pendo_NPS_Survey_Date__c) + &quot;, &quot; + TEXT([Contact].Pendo_NPS_Rating__c) + &quot;, &quot; + [Contact].Pendo_NPS_Survey_Response__c   </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_8_myRule_6_A1_0657661844</name>
+        <dataType>String</dataType>
+        <expression>&quot;This is the NPS Survey Date, Score, and Response:&quot; + &quot; &quot; 
++ TEXT({!myVariable_current.Pendo_NPS_Survey_Date__c}) + &quot;, &quot; + TEXT({!myVariable_current.Pendo_NPS_Rating__c}) + &quot;, &quot; + {!myVariable_current.Pendo_NPS_Survey_Response__c}</expression>
+    </formulas>
+    <interviewLabel>Pendo_NPS_Survey_Result_Case_Creation-10_InterviewLabel</interviewLabel>
     <label>Pendo NPS Survey Result Case Creation</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -212,7 +322,7 @@
             </processMetadataValues>
             <field>AccountId</field>
             <value>
-                <elementReference>formula_3_myRule_1_A1_7773339953</elementReference>
+                <elementReference>formula_3_myRule_1_A1_2871366724</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -278,7 +388,7 @@
             </processMetadataValues>
             <field>Description</field>
             <value>
-                <elementReference>formula_4_myRule_1_A1_7555060064</elementReference>
+                <elementReference>formula_4_myRule_1_A1_2703451085</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -535,8 +645,88 @@
         </inputAssignments>
         <object>Case</object>
     </recordCreates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Contact]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_6_A1</name>
+        <label>Update NPS Survey Data</label>
+        <locationX>600</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Contact Description</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Description</field>
+            <value>
+                <elementReference>formula_8_myRule_6_A1_0657661844</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
     <startElementReference>myDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>
