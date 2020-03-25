@@ -10,6 +10,7 @@
             
             <div align="center" draggable="false" >
                 <apex:commandButton id="Est" value="Establish" action="{!newSchedule}" />
+                <apex:commandButton id="Edi" value="Edit" action="{!editSchedule}"/>
                 <apex:commandButton id="Del" value="Delete" onclick="return confirm('Are you sure?')" action="{!deleteSchedule}"/>
             </div>
 

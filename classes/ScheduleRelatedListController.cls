@@ -38,19 +38,21 @@ public class ScheduleRelatedListController {
         return pageRef ; 
 
     } 
-/*
+
     //This method is to edit the existing contact record while clicking the Edit link 
 
-    public pageReference editContact(){  
+    public pageReference editSchedule(){  
 
-        String contactId = Apexpages.currentpage().getParameters().get('contactId');  
+        for(OpportunityLineItem a:[SELECT id FROM OpportunityLineItem WHERE id=: Ole.id])
+         {
+          OleId=OpportunityLineItems.Id;
+         }
 
-        pageReference pageRef = new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/' + contactId + '/e?retURL=' + accounts.id);  
+        pageReference pageRef = new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/apex/CreateEditPage?scontrolCaching=1&id='+OleId);  
 
-        return pageRef;  
+        return pageRef ;  
 
-    }    */
-
+    }    
 
  //This method is to delete the contact record while clicking the Del link 
 

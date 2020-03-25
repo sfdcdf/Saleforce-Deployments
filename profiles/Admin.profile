@@ -260,6 +260,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CreateEditPage</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CriteriaBasedBatchDataPushToMarketo</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -2150,6 +2154,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>CreateCPPLeadRegistration</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CreateEditPage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
