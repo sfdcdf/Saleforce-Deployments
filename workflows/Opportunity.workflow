@@ -837,6 +837,16 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Today_date</fullName>
+        <description>displaying today date in the filed</description>
+        <field>Client_Discovery_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Today date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Totalupdated</fullName>
         <field>Amount</field>
         <formula>100</formula>
@@ -2090,6 +2100,20 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>Client Discovery Date auto populate</fullName>
+        <actions>
+            <name>Today_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Demo_Completed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Complete SEOPPC Ranking Scrape</fullName>
         <actions>
             <name>Completed_SEOPPC_Ranking_Scrape</name>
@@ -2528,7 +2552,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>Solution_Achitect_Requested</name>
             <type>Task</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Opportunity.Solutions_Architect__c</field>
             <operation>equals</operation>
@@ -3629,10 +3653,6 @@ OR(
     <rules>
         <fullName>YBN%3A Stage Date - Client Discovery</fullName>
         <actions>
-            <name>Client_Discovery_Date_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Last_Stage_Change_Date_Today</name>
             <type>FieldUpdate</type>
         </actions>
@@ -3641,10 +3661,6 @@ OR(
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Client Discovery</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.Client_Discovery_Date__c</field>
-            <operation>equals</operation>
         </criteriaItems>
         <description>Populates date field on stage change</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
