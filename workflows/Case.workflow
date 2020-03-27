@@ -176,6 +176,18 @@
         <template>Support/Lighthouse_Follow_Up_Needed</template>
     </alerts>
     <alerts>
+        <fullName>Newsletter_Trial_Expiration</fullName>
+        <description>Newsletter Trial Expiration</description>
+        <protected>false</protected>
+        <recipients>
+            <field>client_email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>customercare@lighthousepmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Lighthouse_Medical_IB_OB/Newsletter_Trial_Expiration</template>
+    </alerts>
+    <alerts>
         <fullName>Notification_New_Case_Created</fullName>
         <description>Notification - New Case Created</description>
         <protected>false</protected>
@@ -1019,6 +1031,22 @@
         <description>LH Specific . Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one. Using Case to compare if values not in the list</description>
         <formula>AND( RecordTypeId = "0122E000000lP1K", /* LH Master RT */ OR(      ISPICKVAL(Reason, "Custom Message Migration"),     ISPICKVAL(Reason, "Delayed Consumables"),     ISPICKVAL(Reason, "Remove Newsletter Special Pricing"),     ISPICKVAL(Reason, "Site/Listings Teardown"),     ISPICKVAL(Reason, "Transports On/Off") ),  OR(     ISNEW() ,   /*check if the reason changed to something outside this list */   AND(             NOT(ISNEW()), 	   Case( 		 TEXT(Reason), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	   &lt;&gt; 	   Case( 		 TEXT(PRIORVALUE(Reason)), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	) ) )</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LH Newsletter Free Trial has expired</fullName>
+        <actions>
+            <name>Newsletter_Trial_Expiration</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>This is a notification to clients that their Newsletter Free Trial has ended</description>
+        <formula>AND(
+				RecordType.DeveloperName = "LH_Master",
+    ISPICKVAL(Reason, "Remove Newsletter Special Pricing"),
+				ISPICKVAL(Newsletter_Trigger__c, "Removed - Trial Over"),
+				ISPICKVAL(Status, "Closed")
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>LH OBC Recording</fullName>
