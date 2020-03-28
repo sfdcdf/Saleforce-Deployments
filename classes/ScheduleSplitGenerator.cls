@@ -61,7 +61,7 @@ public class ScheduleSplitGenerator {
     
     Public void MonthlySchedule()
     {
-        if((Type=='Revenue Schedule Only' || Type=='Quantity and Revenue Schedules')&&( RevStrtDate <> null))
+        if((Type=='Revenue Schedule Only' || Type=='Quantity and Revenue Schedules')&&( RevStrtDate <> null) &&  (RevStrtDate <> StrtDate))
         {
          integer monthdays;
          integer monthnow;
@@ -159,6 +159,12 @@ public class ScheduleSplitGenerator {
         
               if (newScheduleObjects!=null) {
                   system.debug('+++++Size is more than 0');
+                  List<Schedule_Split__c> sList= [Select Id,OpportunityLineItemId__c from Schedule_Split__c Where OpportunityLineItemId__c =:OliId];
+                  System.debug('DeleteList***'+sList);
+                  if(sList!=null)
+                  {
+                      delete sList;
+                  }
              try {
                   system.debug('+++++Try me');
               insert(newScheduleObjects);
@@ -176,7 +182,7 @@ public class ScheduleSplitGenerator {
     }
         
         
-    if((Type=='Quantity Schedule Only' || Type=='Quantity and Revenue Schedules')&&( StrtDate <> null))
+    if((Type=='Quantity Schedule Only' ||Type=='Quantity and Revenue Schedules' )&&( StrtDate <> null)  &&  (RevStrtDate <> StrtDate))
         {
          integer monthdays;
          integer monthnow;
@@ -274,6 +280,12 @@ public class ScheduleSplitGenerator {
         
               if (newScheduleObjects!=null) {
                   system.debug('+++++Size is more than 0');
+                  List<Schedule_Split__c> sList= [Select Id,OpportunityLineItemId__c from Schedule_Split__c Where OpportunityLineItemId__c =:OliId];
+                  System.debug('DeleteList***'+sList);
+                  if(sList!=null)
+                  {
+                      delete sList;
+                  }
              try {
                   system.debug('+++++Try me');
               insert(newScheduleObjects);
@@ -289,12 +301,231 @@ public class ScheduleSplitGenerator {
                } // End Catch 
          } // End If greater than 0  
     } 
+    
+    if(Type=='Quantity and Revenue Schedules' && RevStrtDate <> null && StrtDate <> null &&  (RevStrtDate == StrtDate))
+        {
+         integer monthdays;
+         integer monthnow;
+         Decimal MonthAmount;
+         Decimal Totalamount;
+         Decimal PerdayAmount;
+         Double TotalQuantity;
+         Date    currentDate;
+         Date    enddate;
+         Date    ScheduleDate;
+         Date    LastDate; 
+         Date    Startmonth;
+         Date    RevLastDate; 
+         Date    QtyLastDate;
+         integer startdate;
+         integer startdatemonth;
+         integer noofmonths;
+         integer noofQtymonths;
+         string RevSchSelType;
+         
+         List<Schedule_Split__c> newScheduleObjects = new List<Schedule_Split__c>();
+         
+         for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity From OpportunityLineItem where Id =: OliId]) 
+         {    
+             // check for value in Total Price fields and also check for values in Start Date  and End Date
+             if((a.TotalPrice!=0))
+             {
+                 currentDate = RevStrtDate;
+                 Startmonth= RevStrtDate;
+                 
+                 //startdate = currentDate.day();
+                 Totalamount = a.TotalPrice;
+                 //startdatemonth = currentDate.month();
+                 RevLastDate=RevStrtDate.addMonths(RevNoIns);
+                 System.debug('++RevLastDate'+RevLastDate);
+                 QtyLastDate=StrtDate.addMonths(QtyNoIns);
+                 noofmonths =RevStrtDate.monthsBetween(RevLastDate); 
+                 noofQtymonths=StrtDate.monthsBetween(QtyLastDate);
+                 enddate = (RevLastDate.addMonths(1))-1;
+                 system.debug('***************noofmonths***********'+noofmonths);
+                 //integer currentyear = currentDate.year();
+                 
+                 PerdayAmount=(Revenue/((RevStrtDate.daysBetween(enddate))+1));
+                 System.debug('+++++PerdayAmount'+PerdayAmount);
+                 if(noofmonths>=noofQtymonths)
+                 {
+                     for(integer i=1; i<=noofmonths;i++)
+                     {
+                         //List<Schedule__c> schedid =[SELECT Id, Name FROM Schedule__c where Id=:a.Id]; 
+                        Schedule_Split__c monthschedule = new Schedule_Split__c();        
+                        currentDate = currentDate;
+                        if(currentDate.month()== enddate.month()&& currentDate.year()==enddate.year()){
+                          LastDate=enddate;
+                            system.debug('***LastDate%%%%***'+LastDate);
+                         }
+                         else{
+                        LastDate = (currentDate.addMonths(1));
+                        system.debug('***LastDate***'+LastDate);     
+                         }
+                         if(currentDate.month()==enddate.month()&& currentDate.year()==enddate.year()){
+                             if(currentDate.month()==Startmonth.month()&& currentDate.year()==Startmonth.year()){
+                                monthschedule.Start_Date__c =Startmonth ;
+                                monthschedule.End_Date__c=(monthschedule.Start_Date__c.addMonths(1))-1;
+                           system.debug('*****lastmonthschedule*****'+monthschedule); 
+                                }
+                             else{monthschedule.Start_Date__c = enddate;
+                                  monthschedule.End_Date__c=(monthschedule.Start_Date__c.addMonths(1))-1;
+                           system.debug('*****lastmonthschedule*****'+monthschedule);   
+                         }
+                         }
+                         else{
+                        monthschedule.Start_Date__c = currentDate;
+                        monthschedule.End_Date__c=(monthschedule.Start_Date__c.addMonths(1))-1;
+                        system.debug('*****monthschedule*****'+monthschedule);
+                        }
+                        //monthschedule.Id = a.Id;
+                        //Totalamount = ((currentDate.daysBetween(LastDate))+1)*PerdayAmount;
+                         if(RevSchedType=='Divide Amount into multiple installments')
+                         {
+                          Totalamount = Revenue/RevNoIns;
+                          system.debug('********Totalamount******'+Totalamount);
+                         }
+                         else
+                         {
+                            Totalamount=Revenue;
+                         }
+                             //monthschedule.QtySchedType = 'Revenue';
+                         monthschedule.Revenue__c = Totalamount.round(System.RoundingMode.HALF_EVEN);
+                        system.debug('*********Revenue.....'+monthschedule); 
+                        //Totalamount = ((currentDate.daysBetween(LastDate))+1)*PerdayAmount;
+                         if(i<=noofQtymonths)
+                         {
+                          if(QtySchedType=='Divide Amount into multiple installments')
+                             {
+                              TotalQuantity = Quantity/QtyNoIns;
+                              system.debug('********Totalamount******'+TotalQuantity);
+                             }
+                           else
+                             {
+                                TotalQuantity=Quantity;
+                             }
+                           monthschedule.Quantity__c = TotalQuantity;
+                          }     
+                        monthschedule.OpportunityLineItemId__c = a.Id;
+                        system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
+                        newScheduleObjects.add(monthschedule);
+                         system.debug('////neschedule////'+newScheduleObjects);
+                        currentDate = (currentDate.addMonths(1));
+                        system.debug('****currentDate****'+currentDate);
+                        
+                        
+                     }
+                 }
+                 else
+                 {
+                     for(integer i=1; i<=noofQtymonths;i++)
+                     {
+                         //List<Schedule__c> schedid =[SELECT Id, Name FROM Schedule__c where Id=:a.Id]; 
+                        Schedule_Split__c monthschedule = new Schedule_Split__c();        
+                        currentDate = currentDate;
+                        if(currentDate.month()== enddate.month()&& currentDate.year()==enddate.year()){
+                          LastDate=enddate;
+                            system.debug('***LastDate%%%%***'+LastDate);
+                         }
+                         else{
+                        LastDate = (currentDate.addMonths(1));
+                        system.debug('***LastDate***'+LastDate);     
+                         }
+                         if(currentDate.month()==enddate.month()&& currentDate.year()==enddate.year()){
+                             if(currentDate.month()==Startmonth.month()&& currentDate.year()==Startmonth.year()){
+                                monthschedule.Start_Date__c =Startmonth ;
+                                monthschedule.End_Date__c=(monthschedule.Start_Date__c.addMonths(1))-1;
+                           system.debug('*****lastmonthschedule*****'+monthschedule); 
+                                }
+                             else{monthschedule.Start_Date__c = enddate;
+                                  monthschedule.End_Date__c=(monthschedule.Start_Date__c.addMonths(1))-1;
+                           system.debug('*****lastmonthschedule*****'+monthschedule);   
+                         }
+                         }
+                         else{
+                        monthschedule.Start_Date__c = currentDate;
+                        monthschedule.End_Date__c=(monthschedule.Start_Date__c.addMonths(1))-1;
+                        system.debug('*****monthschedule*****'+monthschedule);
+                        }
+                        
+                         if(i<=noofmonths)
+                         {
+                         //Totalamount = ((currentDate.daysBetween(LastDate))+1)*PerdayAmount;
+                         if(RevSchedType=='Divide Amount into multiple installments')
+                         {
+                          Totalamount = Revenue/RevNoIns;
+                          system.debug('********Totalamount******'+Totalamount);
+                         }
+                         else
+                         {
+                            Totalamount=Revenue;
+                         }
+                             //monthschedule.QtySchedType = 'Revenue';
+                         monthschedule.Revenue__c = Totalamount.round(System.RoundingMode.HALF_EVEN);
+                        system.debug('*********Revenue.....'+monthschedule); 
+                         }     
+                        //Totalamount = ((currentDate.daysBetween(LastDate))+1)*PerdayAmount;
+                        
+                          if(QtySchedType=='Divide Amount into multiple installments')
+                             {
+                              TotalQuantity = Quantity/QtyNoIns;
+                              system.debug('********Totalamount******'+TotalQuantity);
+                             }
+                           else
+                             {
+                                TotalQuantity=Quantity;
+                             }
+                           monthschedule.Quantity__c = TotalQuantity;
+                              
+                        monthschedule.OpportunityLineItemId__c = a.Id;
+                        system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
+                        newScheduleObjects.add(monthschedule);
+                         system.debug('////neschedule////'+newScheduleObjects);
+                        currentDate = (currentDate.addMonths(1));
+                        system.debug('****currentDate****'+currentDate);
+                        
+                        
+                     }
+                 }
+             }
+           }
+        
+              if (newScheduleObjects!=null) {
+                  system.debug('+++++Size is more than 0');                 
+                  
+                  List<Schedule_Split__c> sList= [Select Id,OpportunityLineItemId__c from Schedule_Split__c Where OpportunityLineItemId__c =:OliId];
+                  System.debug('DeleteList***'+sList);
+                  if(sList!=null)
+                  {
+                      delete sList;
+                  }
+             try {
+                  system.debug('+++++Try me');
+              insert(newScheduleObjects);
+                  system.debug('newScheduleObjects++++'+newScheduleObjects);
+             } 
+               catch (System.DmlException e) {
+                  for (Integer ei = 0; ei < e.getNumDml(); ei++) {
+                  System.debug(e.getDmlMessage(ei));
+                  { ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'why not working here?'+e));}    
+               } 
+               // There should be something here to alert the user what failed!
+              //
+               } // End Catch 
+         } // End If greater than 0  
+    }
+        
         
         
     }
     
     public PageReference save(){
         MonthlySchedule();
+        pageReference pageRef = new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/apex/OpportunityLineItemRelatedList?scontrolCaching=1&id='+OliId);
+        return pageRef;
+    }
+    
+     public PageReference cancel(){
         pageReference pageRef = new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/apex/OpportunityLineItemRelatedList?scontrolCaching=1&id='+OliId);
         return pageRef;
     }

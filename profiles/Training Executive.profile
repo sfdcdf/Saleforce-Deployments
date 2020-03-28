@@ -30771,6 +30771,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Schedule_Split__c.Avg_Revenue_Per_Unit_ARPU__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Schedule_Split__c.Churn_Units__c</field>
         <readable>true</readable>
     </fieldPermissions>

@@ -47,10 +47,21 @@ public class ScheduleRelatedListController {
          {
           OleId=OpportunityLineItems.Id;
          }
-
-        pageReference pageRef = new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/apex/CreateEditPage?scontrolCaching=1&id='+OleId);  
-
-        return pageRef ;  
+        
+        list<Schedule_Split__c> cSchedule =[Select id from Schedule_Split__c where OpportunityLineItemId__c=:OleId];
+        System.debug('cSchedule List'+cSchedule);
+        pageReference pageRef;
+        if(cSchedule.size()>0 )
+        {
+         pageRef = new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/apex/CreateEditPage?scontrolCaching=1&id='+OleId);  
+        }
+        else
+        {   
+            pageRef=ApexPages.currentPage();
+            ApexPages.Message Msg = new ApexPages.message(ApexPages.severity.INFO,'No Schedules to Edit');
+            apexpages.addmessage(msg);
+        }
+        return pageRef ;
 
     }    
 
