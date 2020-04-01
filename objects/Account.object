@@ -14001,6 +14001,66 @@ or(
         <label>Rogers Unshared Accounts</label>
     </listViews>
     <listViews>
+        <fullName>Subba_NonCSI_WebRemaining_Clients</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Client_Type__c</columns>
+        <columns>Product_Type_Transactional__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Cancellation_Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Marketo_ID__c</columns>
+        <columns>Multi_Location_Owner_Primary_CID__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Status__c</columns>
+        <columns>Sales_Rep_Name_YL__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>IMS_Rep__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>contains</operation>
+            <value>Local</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <label>Subba NonCSI WebRemaining Clients</label>
+    </listViews>
+    <listViews>
+        <fullName>Subba_WBN_CSI_and_NonCSI_Clients</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Client_Type__c</columns>
+        <columns>Product_Type_Transactional__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Cancellation_Status__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Marketo_ID__c</columns>
+        <columns>Multi_Location_Owner_Primary_CID__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Status__c</columns>
+        <columns>Sales_Rep_Name_YL__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>IMS_Rep__c</columns>
+        <columns>Biz_Dev_Internal_Product_Division__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>equals</operation>
+            <value>YBN</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard</value>
+        </filters>
+        <label>Subba WBN CSI and NonCSI Clients</label>
+    </listViews>
+    <listViews>
         <fullName>X11_50_location_NMPs</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.TYPE</columns>
