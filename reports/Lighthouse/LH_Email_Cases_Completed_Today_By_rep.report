@@ -23,22 +23,16 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>ORIGIN</column>
+            <column>CREATED</column>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>@lighthousepmg.com,web,Email</value>
+            <value>SFDC,Salesforce</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Client_Type__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Lighthouse</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -63,6 +57,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <interval>INTERVAL_YESTERDAY</interval>
     </timeFrameFilter>
 </Report>

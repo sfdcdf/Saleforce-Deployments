@@ -51,22 +51,16 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>ORIGIN</column>
+            <column>CREATED</column>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>@lighthousepmg.com,web,YodleGoldService@yodle.com</value>
+            <value>SFDC,Salesforce</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Client_Type__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Lighthouse</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
