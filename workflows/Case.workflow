@@ -183,7 +183,7 @@
             <field>client_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>customercare@lighthousepmg.com</senderAddress>
+        <senderAddress>accountservices@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Medical_IB_OB/Newsletter_Trial_Expiration</template>
     </alerts>
