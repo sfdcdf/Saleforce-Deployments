@@ -15383,6 +15383,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contract.PPC_Product_Margin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contract.ParentContract__c</field>
         <readable>true</readable>
     </fieldPermissions>
