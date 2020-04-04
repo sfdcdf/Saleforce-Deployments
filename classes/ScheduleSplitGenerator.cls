@@ -61,7 +61,7 @@ public class ScheduleSplitGenerator {
     
     Public void MonthlySchedule()
     {
-        if((Type=='Revenue Schedule Only' || Type=='Quantity and Revenue Schedules')&&( RevStrtDate <> null) &&  (RevStrtDate <> StrtDate))
+        if((Type=='Revenue Schedule Only' || Type=='Quantity and Revenue Schedules')&&( RevStrtDate <> null))
         {
          integer monthdays;
          integer monthnow;
@@ -182,7 +182,7 @@ public class ScheduleSplitGenerator {
     }
         
         
-    if((Type=='Quantity Schedule Only' ||Type=='Quantity and Revenue Schedules' )&&( StrtDate <> null)  &&  (RevStrtDate <> StrtDate))
+    if((Type=='Quantity Schedule Only' ||Type=='Quantity and Revenue Schedules' )&&( StrtDate <> null))
         {
          integer monthdays;
          integer monthnow;
