@@ -10,6 +10,9 @@
         <field>OWNER</field>
     </columns>
     <columns>
+        <field>Case.Time_To_Complete_Task_Minutes__c</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
@@ -52,6 +55,12 @@
             <operator>equals</operator>
             <value>Account.Standard</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.YBNRequestReason__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Miscellaneous</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -70,7 +79,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
