@@ -28,8 +28,8 @@
         <criteriaItems>
             <column>OWNER</column>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Email Catch All</value>
+            <operator>equals</operator>
+            <value>Ann Lewis,Mary Tillery,Doreen Towhey,Ann Schwertz,Kevin Lewis</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
@@ -42,6 +42,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>IBC -</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>COVID,Corona</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -61,7 +67,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>SUBJECT</sortColumn>

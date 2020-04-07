@@ -1038,7 +1038,7 @@
             <name>Newsletter_Trial_Expiration</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>This is a notification to clients that their Newsletter Free Trial has ended</description>
         <formula>AND(
 				RecordType.DeveloperName = "LH_Master",
