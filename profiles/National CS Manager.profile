@@ -13310,6 +13310,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Quality_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.RAF_Followup__c</field>
         <readable>true</readable>
     </fieldPermissions>
