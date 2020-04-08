@@ -65,12 +65,12 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Cancellation_Request__c$Owner</field>
+        <field>Cancellation_Request__c$Outcome__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Cancellation_Request__c$Outcome__c</field>
+        <field>Cancellation_Request__c$Competitor_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>ANN: COVID Saved with Discounts</name>
@@ -85,6 +85,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Cancellation_Request__c$Closed_Date__c</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>
