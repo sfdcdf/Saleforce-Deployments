@@ -39,7 +39,6 @@
     <columns>
         <field>Case.Activities$CallDurationInSeconds</field>
     </columns>
-    <description>CSC Inbound Case Count</description>
     <filter>
         <criteriaItems>
             <column>Case$RecordType</column>
@@ -51,7 +50,13 @@
             <column>Case.Activities$Subject</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>Email:</value>
+            <value>Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -60,7 +65,7 @@
         <field>Case$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name># of Inbound Case</name>
+    <name>Time Spent on IB &amp; OB Email</name>
     <params>
         <name>co</name>
         <value>1</value>
