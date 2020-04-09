@@ -740,6 +740,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ScheduleSplitGenerator_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ScheduleTORCHxOBCallController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
