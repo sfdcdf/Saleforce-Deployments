@@ -50,12 +50,6 @@
             <value>Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
-            <column>ACCOUNT_RECORDTYPE</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Account.Standard</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Case.YBNRequestReason__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
