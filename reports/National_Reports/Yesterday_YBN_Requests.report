@@ -10,6 +10,7 @@
         <field>OWNER</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Time_To_Complete_Task_Minutes__c</field>
     </columns>
     <columns>
@@ -78,6 +79,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_YESTERDAY</interval>
+        <endDate>2020-04-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-04-10</startDate>
     </timeFrameFilter>
 </Report>
