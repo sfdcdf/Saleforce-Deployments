@@ -39,15 +39,20 @@ public class CreateEditPage {
     
    public CreateEditPage(ApexPages.StandardController controller) {
         //get OpportunityLine Id from URL.
-        scheSpId = ApexPages.CurrentPage().getparameters().get('id');
-        system.debug('@@@ RecordId id '+scheSpId);
+      
+          scheSpId = ApexPages.CurrentPage().getparameters().get('id');
+        system.debug('@@@ RecordId id '+scheSpId); 
+       
+        
         
         //intializing list of type Class IndexSplit.
         indexSplitList = new list<IndexSplit>();
         
         //Retrieve Splits of the Schedule based on Schedule Id from URL.
         
-        if(scheSpId != null){
+        if(scheSpId != null)
+        {
+            
             scheduleSplitList = [Select Id,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c,Revenue__c,Amount__c, End_date__c,Start_Date__c from Schedule_Split__c where OpportunityLineItemId__c= : scheSpId];
             system.debug('*****scheduleSplitList/////'+scheduleSplitList);
             

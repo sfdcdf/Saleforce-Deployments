@@ -4,79 +4,36 @@ public class ScheduleSplitGenerator_Test
     static public account acc;
     static public Opportunity opp;
     Static public id sched;
-    static public  Schedule_Split__c SchedS,SchedS2 ,SchedS3;
-    static public  PricebookEntry priceBookEntryNew ;
-    public static List<Schedule_Split__c> shedlst =new List<Schedule_Split__c> (); 
-    public static List<Schedule_Split__c> shedsplitlst =new List<Schedule_Split__c> ();     
+    //static public  Schedule_Split__c SchedS,SchedS2 ,SchedS3;
     
-        static testMethod void testScheduleScheduleSplit(){
-            test.startTest();
-            
-            createdatamethod();
-            ApexPages.currentPage().getParameters().put('ScheduleID',sched);
-            ApexPages.standardController sc = new ApexPages.standardController(SchedS);  
-                  
-            CreateEditPage  controller = new CreateEditPage(sc);
-            controller.cancelSplit();
-            controller.saveSplit();
-            controller.addRow();
-            Integer i = controller.indexSplitList.size();
-            system.debug('indexSplitList-->>'+controller.indexSplitList);
-            controller.indexSplitList[0].scSplit.Start_Date__c = SchedS.Start_Date__c;
-            controller.indexSplitList[0].scSplit.End_Date__c = SchedS.Start_Date__c.addDays(61);
-            controller.saveSplit();
-            ApexPages.currentPage().getParameters().put('indexOfSplit','0');
-            controller.deleteRow();
-            controller.reset();
-            
-            CreateEditPage  controller1 = new CreateEditPage();
-            test.stopTest();
-        }
-          
-         static testMethod void testScheduleScheduleSplit2(){
-            test.startTest();
-            
-            createdatamethod();
-             
-           // Sched.Start_Date__c =System.today().addyears(1);
-          //  Sched.End_Date__c =System.today();
-          //  Sched.Amount__c= priceBookEntryNew.UnitPrice;  
-          //  shedlst.add(Sched);
-          //  update shedlst;
-          
-            SchedS2 = new Schedule_Split__c(Revenue__c=shedlst[0].Amount__c/2, Start_Date__c =System.today().addyears(2) ,End_Date__c =System.today().addyears(3));
-            insert SchedS2; 
-             
-             SchedS3 = new Schedule_Split__c(Revenue__c=null, Start_Date__c =null ,End_Date__c =null );
-            insert SchedS3;   
-            shedsplitlst.add(SchedS3); 
-             
-           //  for(i=)
-            ApexPages.currentPage().getParameters().put('ScheduleID',shedlst[0].Id);
-            ApexPages.standardController sc = new ApexPages.standardController(shedsplitlst[1]);  
-                  
-            CreateEditPage  controller = new CreateEditPage(sc);
-            controller.cancelSplit();
-            controller.saveSplit();
-            controller.addRow();
-            Integer i = controller.indexSplitList.size();
-            system.debug('indexSplitList-->>'+controller.indexSplitList);
-            controller.indexSplitList[0].scSplit.Start_Date__c = SchedS.Start_Date__c;
-            controller.indexSplitList[0].scSplit.End_Date__c = SchedS.Start_Date__c.addDays(61);
-            controller.saveSplit();
-            ApexPages.currentPage().getParameters().put('indexOfSplit','0');
-            controller.deleteRow();
-            controller.reset();
-            
-            CreateEditPage  controller1 = new CreateEditPage();
-            test.stopTest();
-        }
-          
-        
-        
-        public static void createdatamethod() {
-        
-            // create new test account for opportunity.
+    Public Id OliId {get;set;}
+    
+    Public String Type='Quantity and Revenue Schedules';
+    Public String QtySchedType='Divide Amount into multiple installments';
+    Public Date StrtDate= date.newInstance(2020,02,10);
+    Public String SchQtyInstPer='Monthly';
+    Public Integer QtyNoIns=6;
+    Public Decimal Quantity=600.00;
+    
+    Public String RevSchedType='Repeat Amount for each installment';
+    Public Date RevStrtDate=date.newInstance(2020,02,10);
+    Public String RevSchInstPer='Monthly';
+    Public Integer RevNoIns=6;
+    Public Decimal Revenue=12;
+    
+    Public Date QtyEndDate;
+    
+    
+    static public  PricebookEntry priceBookEntryNew ;
+    public static List<OpportunityLineItem> shedlst =new List<OpportunityLineItem> (); 
+    public static List<Schedule_Split__c> shedsplitlst =new List<Schedule_Split__c> ();    
+    
+    
+    public static testMethod void ScheduleSplitGenerator_Test() {
+        PageReference pageRef = Page.EstablishSchedulePage;
+        Test.setCurrentPage(pageRef);
+        test.startTest();
+         // create new test account for opportunity.
            acc= new Account(Name = 'testAcc',BillingStreet='testStreet',BillingCity ='tectcity',BillingState='testState',BillingPostalCode='123',BillingCountry='testcountry',Description='testdesc');
            insert acc;
            
@@ -120,21 +77,117 @@ public class ScheduleSplitGenerator_Test
            (OpportunityId = opp.Id,PricebookEntryId = priceBookEntryNew.Id,Quantity = 1,UnitPrice = priceBookEntryNew.UnitPrice,ServiceDate = System.today());
            insert oli;
         
-            List<OpportunityLineItem>  OliLst = new List<OpportunityLineItem>();
-            OliLst.add(oli);
-           
-            
-            
-            oli.Quantity = 2;
-            oli.UnitPrice = priceBookEntryNew.UnitPrice;
-            oli.ServiceDate = System.today().addyears(1);
-            update OliLst;       
-            
-            sched=oli.Id;
+        Apexpages.StandardController stdController = new Apexpages.StandardController(oli);
+        
+        ScheduleSplitGenerator controller = new ScheduleSplitGenerator(stdController);
+       
 
-           
-            
-            
-            }       
+        
+        // Add parameters to page URL
+        ApexPages.currentPage().getParameters().put('qp', 'yyyy');
+      
+        // Instantiate a new controller with all parameters in the page
+        controller = new ScheduleSplitGenerator(stdController); 
+        
+        controller.OliId=oli.id;
+        controller.Type='Quantity and Revenue Schedules';
+        controller.QtySchedType='Divide Amount into multiple installments';
+        controller.StrtDate= date.newInstance(2020,02,10);
+        controller.SchQtyInstPer='Monthly';
+        controller.QtyNoIns=6;
+        controller.Quantity=600.00;
+        
+        controller.RevSchedType='Repeat Amount for each installment';
+        controller.RevStrtDate=date.newInstance(2020,02,10);
+        controller.RevSchInstPer='Monthly';
+        controller.RevNoIns=6;
+        controller.Revenue=12;
+        controller.save();
+        
+         controller = new ScheduleSplitGenerator(stdController); 
+        
+        controller.OliId=oli.id;
+        controller.Type='Quantity and Revenue Schedules';
+        controller.QtySchedType='Divide Amount into multiple installments';
+        controller.StrtDate= date.newInstance(2020,02,10);
+        controller.SchQtyInstPer='Monthly';
+        controller.QtyNoIns=12;
+        controller.Quantity=600.00;
+        
+        controller.RevSchedType='Divide Amount into multiple installments';
+        controller.RevStrtDate=date.newInstance(2020,02,10);
+        controller.RevSchInstPer='Monthly';
+        controller.RevNoIns=6;
+        controller.Revenue=12;
+        controller.save();
+        
+        
+        
+        controller = new ScheduleSplitGenerator(stdController); 
+        
+        controller.OliId=oli.id;
+        controller.Type='Quantity and Revenue Schedules';
+        controller.QtySchedType='Divide Amount into multiple installments';
+        controller.StrtDate= date.newInstance(2020,02,10);
+        controller.SchQtyInstPer='Monthly';
+        controller.QtyNoIns=12;
+        controller.Quantity=600.00;
+        
+        controller.RevSchedType='Repeat Amount for each installment';
+        controller.RevStrtDate=date.newInstance(2020,02,11);
+        controller.RevSchInstPer='Monthly';
+        controller.RevNoIns=6;
+        controller.Revenue=12;
+        controller.save();
+        
+        controller = new ScheduleSplitGenerator(stdController); 
+        
+        controller.OliId=oli.id;
+        controller.Type='Quantity Schedule Only';
+        controller.QtySchedType='Divide Amount into multiple installments';
+        controller.StrtDate= date.newInstance(2020,02,10);
+        controller.SchQtyInstPer='Monthly';
+        controller.QtyNoIns=12;
+        controller.Quantity=600.00;
+        controller.save();
+        
+        
+        controller = new ScheduleSplitGenerator(stdController); 
+        
+        controller.OliId=oli.id;
+        controller.Type='Revenue Schedule Only';
+        controller.RevSchedType='Repeat Amount for each installment';
+        controller.RevStrtDate=date.newInstance(2020,02,11);
+        controller.RevSchInstPer='Monthly';
+        controller.RevNoIns=6;
+        controller.Revenue=12;
+        controller.save();
+        
+        
+        
+        controller.getSchedInstOptions();
+        controller.getSchedTypeOptions();
+        controller.getTypeOptions();
+        controller.cancel();
+        
+        
+        PageReference pageRef2 = Page.CreateEditPage;
+        pageRef2.getparameters().put('scheSpId',oli.id);
+        
+        Test.setCurrentPage(pageRef2);
+        
+        CreateEditPage  controller3 = new CreateEditPage();
+        controller3.cancelSplit();
+        controller3.saveSplit();
+        controller3.addRow();
+       
+      
+       
+        test.stopTest();
+        
+    }
+    
+    
+       
           
 }
