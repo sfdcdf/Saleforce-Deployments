@@ -176,13 +176,23 @@ public class ScheduleSplitGenerator_Test
         
         Test.setCurrentPage(pageRef2);
         
-        CreateEditPage  controller3 = new CreateEditPage();
+        ApexPages.CurrentPage().getParameters().put('id',oli.id);
+        ApexPages.Standardcontroller sc = new ApexPages.Standardcontroller(oli);
+        
+        Apexpages.StandardController stdController2 = new Apexpages.StandardController(oli);
+        CreateEditPage  controller3 = new CreateEditPage(stdController2);
+        
         controller3.cancelSplit();
-        controller3.saveSplit();
+       // controller3.saveSplit();
         controller3.addRow();
-       
-      
-       
+        Integer i = controller3.indexSplitList.size();
+        system.debug('indexSplitList-->>'+controller3.indexSplitList);
+        controller3.indexSplitList[0].scSplit.Start_Date__c = date.newInstance(2020,02,10);
+        controller3.indexSplitList[0].scSplit.End_Date__c = date.newInstance(2020,02,10).addDays(61);
+        controller3.saveSplit();
+        ApexPages.currentPage().getParameters().put('indexOfSplit','0');
+        controller3.deleteRow();
+        controller3.reset();
         test.stopTest();
         
     }

@@ -41,7 +41,7 @@ public class CreateEditPage {
         //get OpportunityLine Id from URL.
       
           scheSpId = ApexPages.CurrentPage().getparameters().get('id');
-        system.debug('@@@ RecordId id '+scheSpId); 
+       // system.debug('@@@ RecordId id '+scheSpId); 
        
         
         
@@ -54,23 +54,23 @@ public class CreateEditPage {
         {
             
             scheduleSplitList = [Select Id,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c,Revenue__c,Amount__c, End_date__c,Start_Date__c from Schedule_Split__c where OpportunityLineItemId__c= : scheSpId];
-            system.debug('*****scheduleSplitList/////'+scheduleSplitList);
+           // system.debug('*****scheduleSplitList/////'+scheduleSplitList);
             
             scheduleSplitList.sort();
             tempstart= scheduleSplitList[0].Start_Date__c;
-            system.debug('***scheduleSplitList**'+scheduleSplitList);
-            system.debug('***123***tempstart'+tempstart);
+         //   system.debug('***scheduleSplitList**'+scheduleSplitList);
+           // system.debug('***123***tempstart'+tempstart);
             amntSched= scheduleSplitList [0].Revenue__c;
             scheduleSplitList[0].Revenue__c=amntSched;
-            system.debug('*****SchedList'+scheduleSplitList);  
+           // system.debug('*****SchedList'+scheduleSplitList);  
             StartdateTemp =scheduleSplitList[0].Start_Date__c;
-            system.debug('123***StartdateTemp'+StartdateTemp);
+           // system.debug('123***StartdateTemp'+StartdateTemp);
             Amounttemp =scheduleSplitList[0].Amount__c; 
         }
         
         if(scheduleSplitList != null && !scheduleSplitList.isEmpty()){
             startDateSched = scheduleSplitList[0].Start_Date__c;
-            system.debug('***startDateSched///'+startDateSched);
+            //system.debug('***startDateSched///'+startDateSched);
             amountSched = scheduleSplitList[0].Revenue__c.setScale(0);
                         
             IndexSplit inSplit;
@@ -93,12 +93,7 @@ public class CreateEditPage {
     }
     
    
-    
-            
-    
-    public CreateEditPage(){
-    
-    }
+
     
      //Method for saving Schedule Changes.
     public PageReference saveSchedule(){
@@ -158,28 +153,7 @@ public class CreateEditPage {
                              ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Start Date should not be less than start date of Schedule : '+string.valueOf(StartTemp)));                        
                  }
                         
-                /*  else if(scheduleSplitList[0].End_Date__c < indSplit.scSplit.End_Date__c ){ 
-                     system.debug('$$$$$$$$$$'+scheduleSplitList[0].End_Date__c);
-                            isError = TRUE;
-                            String EndTemp=scheduleSplitList[0].End_Date__c.format();
-                            String StartTemp=scheduleSplitList[0].Start_Date__c.format();
-                            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'End Date of schedule should be between Start Date and End Date of Product : '+string.valueOf(StartTemp)+ '    &   ' +string.valueOf(EndTemp)));                         
-                            break;
-                        }     
-                     else if(indSplit.scSplit.End_Date__c > scheduleSplitList[0].End_Date__c){
-                            isError = TRUE;
-                            String EndTemp=indSplit.scSplit.End_Date__c.format();
-                            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,' End Date of schedule should not be greater than the product end date: '+string.valueOf(EndTemp)));                        
-                            break;
-                        } 
-                        
-                        else if(indSplit.scSplit.End_Date__c < indSplit.scSplit.Start_Date__c){
-                            isError = TRUE;
-                            String EndTemp=EnddateTemp.format();
-                            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'End Date should not be Less than end date of Schedule Split  '));                        
-                            break;
-                        }  */ 
-                    
+                            
                     }
                    
                    getTotal();    
@@ -191,15 +165,7 @@ public class CreateEditPage {
                     isError = TRUE;
                     ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Amount Can not be blank ')); 
                 } 
-              /* else if(temptotalRevenue != scheduleSplitList[0].Revenue__c){
-                       system.debug('**123***Childamount'+scheduleSplitList[0].Revenue__c);
-                       isError = TRUE;                            
-                       ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Amount is not equal to the Schedule amount '));                                                                                                            
-                    }
-                    /*else if(totalRevenue < Amounttemp){
-                    isError = TRUE;                
-                    ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Schedule Amount should not be less than Product Amount : ' + string.valueOf(amountSched)));                
-                   } */ 
+              
                 }       
                 
                 if(!isError){                
@@ -236,28 +202,29 @@ public class CreateEditPage {
                 
                 
                 for(Schedule_Split__c Ex :[SELECT Id From Schedule_Split__c where OpportunityLineItemId__c =:scheSpId ]){
-                  system.debug('####Ex'+Ex);
+                 // system.debug('####Ex'+Ex);
                     
                         
                         existing.add(Ex);
-                        system.debug('####existing'+existing);
+                      //  system.debug('####existing'+existing);
                                    
                 }                
                         
                 delete existing;
                upsert scheduleSplitList[0];
                list<Schedule_Split__c> oplisc = new list<Schedule_Split__c>();
-               for(Schedule_Split__c Oli:[SELECT Id From Schedule_Split__c where OpportunityLineItemId__c =:scheduleSplitList[0].OpportunityLineItemId__c]){
-                       TotalPrice = scheduleSplitList[0].Revenue__c;
-             Oli.Start_Date__c = scheduleSplitList[0].Start_Date__c;
-             Oli.End_Date__c= scheduleSplitList[0].End_Date__c; 
-           // Oli.UnitPrice = SchedList[0].Amount__c;
-             //Modification made on 10th june to fix Updation Issue between standard and custom Products.
-             oli.Quantity__c=scheduleSplitList[0].Quantity__c;
-             oli.Avg_Revenue_Per_Unit_ARPU__c= scheduleSplitList[0].Avg_Revenue_Per_Unit_ARPU__c;
-             oli.Churn_Units__c=scheduleSplitList[0].Churn_Units__c;
-             oli.Comments__c=scheduleSplitList[0].Comments__c;
-             oplisc.add(oli);
+               for(Schedule_Split__c Oli:[SELECT Id From Schedule_Split__c where OpportunityLineItemId__c =:scheduleSplitList[0].OpportunityLineItemId__c])
+               {
+                   TotalPrice = scheduleSplitList[0].Revenue__c;
+                   Oli.Start_Date__c = scheduleSplitList[0].Start_Date__c;
+                   Oli.End_Date__c= scheduleSplitList[0].End_Date__c; 
+                   // Oli.UnitPrice = SchedList[0].Amount__c;
+                   //Modification made on 10th june to fix Updation Issue between standard and custom Products.
+                   oli.Quantity__c=scheduleSplitList[0].Quantity__c;
+                   oli.Avg_Revenue_Per_Unit_ARPU__c= scheduleSplitList[0].Avg_Revenue_Per_Unit_ARPU__c;
+                   oli.Churn_Units__c=scheduleSplitList[0].Churn_Units__c;
+                   oli.Comments__c=scheduleSplitList[0].Comments__c;
+                   oplisc.add(oli);
                }
                update oplisc;
               
