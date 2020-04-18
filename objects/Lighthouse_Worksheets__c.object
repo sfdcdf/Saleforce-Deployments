@@ -139,6 +139,20 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to create worksheets for Lighthouse CS, such as the CSC worksheet and the Installation Worksheet.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Account_Pinned_in_Bomgar2__c</fullName>
         <externalId>false</externalId>
@@ -14429,48 +14443,7 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Used to create worksheets for Lighthouse CS, such as the CSC worksheet and the Installation Worksheet.</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Lighthouse Worksheets</label>
-    <nameField>
-        <displayFormat>LH-{0000}</displayFormat>
-        <label>Lighthouse Worksheets Name</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Lighthouse Worksheets</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Yodle_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>X360_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Opened_Date__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Closed_Date__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Practice_Name__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Yodle_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>X360_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>Subject__c</columns>
@@ -14835,6 +14808,16 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>LH-{0000}</displayFormat>
+        <label>Lighthouse Worksheets Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Lighthouse Worksheets</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>AR_Request_Form</fullName>
         <active>true</active>
@@ -53636,6 +53619,22 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Yodle_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>X360_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opened_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Closed_Date__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Practice_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Yodle_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>X360_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Account_Settings_must_fill_out_Test_Appt</fullName>
         <active>true</active>
@@ -54427,14 +54426,19 @@ NOT(INCLUDES( Remote_GUI_Items_to_Check__c , "Verify Sync Hours"         ))))
         <active>true</active>
         <description>This validation is to require certain fields have a value before the worksheet is marked as 'Completed'</description>
         <errorConditionFormula>AND(
-				OR(
-	    ISBLANK(Close_Notes__c),
-	    ISBLANK(Error_From_Log_File__c),
-	    ISBLANK(TEXT(OOS_Category__c)),
-	    ISBLANK(TEXT(OOS_Details__c))
-								), 
- RecordType.DeveloperName = "LH_OOS",
-	ISPICKVAL(Status__c, "Complete")
+OR(
+ISBLANK(Close_Notes__c),
+ISBLANK(Error_From_Log_File__c),
+ISBLANK(TEXT(OOS_Category__c)),
+ISBLANK(TEXT(OOS_Details__c))
+),
+RecordType.DeveloperName = "LH_OOS",
+ISPICKVAL(Status__c, "Complete"),
+NOT(AND(Owner:Queue.DeveloperName = "LH_Install",
+ISPICKVAL(OOS_Category__c, "Other"),
+ISPICKVAL(OOS_Details__c, "Other")
+)
+)
 )</errorConditionFormula>
         <errorMessage>Please enter values for Action Taken, Error From Log File, OOS Category, and OOS Detail before saving as Complete</errorMessage>
     </validationRules>
@@ -54671,6 +54675,7 @@ RecordType.DeveloperName='CSC Worksheet - Medical'
         <errorDisplayField>CSC_Date__c</errorDisplayField>
         <errorMessage>Please enter CSC/AR Time and CSC/AR Date before saving the record.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>OBC_Swap</fullName>
         <availability>online</availability>
