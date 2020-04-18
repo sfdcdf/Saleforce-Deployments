@@ -1,7 +1,8 @@
 <apex:page standardController="OpportunityLineItem" extensions="ScheduleSplitGenerator" docType="HTML-5.0">
     <apex:form id="ScheduleForm">
+        
+        <apex:sectionHeader title="Establish Schedule For {!OpportunityLineItem.Name}" />  
         <apex:pageMessages />
-        <apex:sectionHeader title="Establish Schedule For {!OpportunityLineItem.Name}" />   
         <apex:pageBlock id="pgBlock" mode="edit" >
             <apex:pageBlockButtons location="bottom">
                 <apex:commandButton value="Save" action="{!Save}"/>

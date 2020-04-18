@@ -1,3 +1,10 @@
+/**************************************************************************************************************
+Name : Schedule_Split
+Created By : Mahesh Bogila
+Created Date : 03/13/2020
+Modified Date :  
+Purpose : Function for Scheduling Quantity and Revenue Schedule On Custom Object 
+***************************************************************************************************************/ 
 public class ScheduleSplitGenerator {
     Public Id OliId {get;set;}
     
@@ -61,12 +68,15 @@ public class ScheduleSplitGenerator {
     
     Public void MonthlySchedule()
     {
+         
       if(Type=='Quantity and Revenue Schedules' && RevStrtDate <> null && StrtDate <> null &&  (RevStrtDate <> StrtDate))
       {
+         
           QtySchOnly();
                     
       }
-        
+       
+          
         
       if((Type=='Revenue Schedule Only')&&( RevStrtDate <> null))
       {

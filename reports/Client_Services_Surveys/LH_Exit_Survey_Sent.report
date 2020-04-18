@@ -7,9 +7,6 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.LH_Exit_Survey_Sent__c</field>
-    </columns>
-    <columns>
         <field>Account.LH_Exit_Survey_Sent_Date__c</field>
     </columns>
     <filter>
@@ -36,12 +33,6 @@
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.LH_Exit_Survey_Sent__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

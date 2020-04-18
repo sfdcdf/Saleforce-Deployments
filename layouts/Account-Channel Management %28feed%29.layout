@@ -139,10 +139,6 @@
                 <field>Channel_Partner_Type__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Channel_Partner_Sub_Type__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Sales_Rep_MTD_Spend__c</field>
             </layoutItems>
@@ -631,14 +627,6 @@
                 <field>Bulk_Bing_AccountPL__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Agency_of_Record__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Potential_Month_Ave_Location__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Opp_Delta_Annual__c</field>
             </layoutItems>
@@ -772,18 +760,8 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Channel Management</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Number_of_SMB_Customers__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Other_Channel_Model__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>

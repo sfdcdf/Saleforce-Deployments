@@ -416,15 +416,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>LH_Exit_Survey_Sent</fullName>
-        <field>LH_Exit_Survey_Sent__c</field>
-        <literalValue>1</literalValue>
-        <name>LH Exit Survey Sent</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>LH_Exit_Survey_Sent_Date</fullName>
         <field>LH_Exit_Survey_Sent_Date__c</field>
         <formula>today()</formula>
@@ -634,15 +625,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>berrycontractreceived</fullName>
-        <field>Date_Berry_Contract_Received__c</field>
-        <formula>IF(ISCHANGED( Berry_Contract_Received__c) ,NOW(),NULL)</formula>
-        <name>Account - Date Berry Contract Rec to Now</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>channel_partnertype_white_label</fullName>
         <field>Channel_Partner_Type__c</field>
         <literalValue>White Label</literalValue>
@@ -838,20 +820,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
             <field>Account.Channel_Development__c</field>
             <operation>notEqual</operation>
             <value>Rogers</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry Contract Received</fullName>
-        <actions>
-            <name>berrycontractreceived</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.Berry_Contract_Received__c</field>
-            <operation>equals</operation>
-            <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -1226,10 +1194,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
         <actions>
             <name>Lighthouse_Exit_Survey</name>
             <type>Alert</type>
-        </actions>
-        <actions>
-            <name>LH_Exit_Survey_Sent</name>
-            <type>FieldUpdate</type>
         </actions>
         <actions>
             <name>LH_Exit_Survey_Sent_Date</name>

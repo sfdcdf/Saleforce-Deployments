@@ -12,17 +12,6 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <columns>
-        <field>Account.BCF_Collection_Status__c</field>
-    </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.BCF_Collection_Status__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>BCF Completion Status</name>
     <params>
@@ -34,8 +23,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.BCF_Collection_Status__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

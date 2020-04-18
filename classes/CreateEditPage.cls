@@ -41,7 +41,7 @@ public class CreateEditPage {
         //get OpportunityLine Id from URL.
       
           scheSpId = ApexPages.CurrentPage().getparameters().get('id');
-       // system.debug('@@@ RecordId id '+scheSpId); 
+     
        
         
         
@@ -54,23 +54,19 @@ public class CreateEditPage {
         {
             
             scheduleSplitList = [Select Id,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c,Revenue__c,Amount__c, End_date__c,Start_Date__c from Schedule_Split__c where OpportunityLineItemId__c= : scheSpId];
-           // system.debug('*****scheduleSplitList/////'+scheduleSplitList);
+         
             
             scheduleSplitList.sort();
             tempstart= scheduleSplitList[0].Start_Date__c;
-         //   system.debug('***scheduleSplitList**'+scheduleSplitList);
-           // system.debug('***123***tempstart'+tempstart);
+         
             amntSched= scheduleSplitList [0].Revenue__c;
             scheduleSplitList[0].Revenue__c=amntSched;
-           // system.debug('*****SchedList'+scheduleSplitList);  
             StartdateTemp =scheduleSplitList[0].Start_Date__c;
-           // system.debug('123***StartdateTemp'+StartdateTemp);
             Amounttemp =scheduleSplitList[0].Amount__c; 
         }
         
         if(scheduleSplitList != null && !scheduleSplitList.isEmpty()){
             startDateSched = scheduleSplitList[0].Start_Date__c;
-            //system.debug('***startDateSched///'+startDateSched);
             amountSched = scheduleSplitList[0].Revenue__c.setScale(0);
                         
             IndexSplit inSplit;
@@ -239,8 +235,7 @@ public class CreateEditPage {
               Delete SchSplLst;
          
                 
-                //upsert SchedList[0];
-                //system.debug('Parent amount to update'+SchedList[0]);                
+                             
                 prSc = new PageReference('/'+scheSpId);
             
             
@@ -254,29 +249,26 @@ public class CreateEditPage {
     
     
 }
-    // Modification on 10th June Ends Here.
     
-    //Method to cancel.    
+    
+       
     public PageReference cancelSplit(){
         return new pageReference(URL.getSalesforceBaseUrl().toExternalForm() + '/apex/OpportunityLineItemRelatedList?scontrolCaching=1&id='+scheSpId);
     }
     
-    //Modified On 10th June 2015 by Mahesh Bogila to Fix Add row Functionality issues
+   
     public void addRow(){
         
         
         IndexSplit inSplit = new IndexSplit();
         inSplit.i = indexSplitList.size();
         inSplit.scSplit.OpportunityLineItemId__c = scheSpId;
-        //Modification done on 11th June By mahesh to fix deleting schedule from split.
-        //insplit.scSplit.Id= Schedule_Split__c;
+        
         indexSplitList.add(inSplit);   
              
        
     }
-        // Modification on 10th June Ends Here.
    
-    //Modification on 10th June 2015 to Fix Delete Row functionality Issue.
     public void deleteRow(){
        
         system.debug('***splitDel-->'+apexpages.currentpage().getparameters().get('splitDel'));

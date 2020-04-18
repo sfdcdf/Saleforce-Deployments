@@ -223,6 +223,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Name</fields>
@@ -232,6 +233,10 @@
         <fields>Client_Phone_Number__c</fields>
         <label>WBN-IL</label>
     </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>AC_OCC_Created__c</fullName>
         <defaultValue>false</defaultValue>
@@ -241,30 +246,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>AD_Mentor__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>zzzAD Mentor</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Accounts7</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>AVERAGE_CUSTOMER_LENGTH__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzAverage Customer Length</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>AVERAGE_SUCCESS_RATE_OF_A_FRANCHISE__c</fullName>
@@ -613,15 +594,6 @@ PEV__c &lt;100000,"Tier 6","NA"))))))</formula>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Agency_of_Record__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzAgency of Record</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Agreement_Effective_Date__c</fullName>
         <description>Biz Dev Account Page</description>
         <externalId>false</externalId>
@@ -914,36 +886,6 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>BCF_Collection_Status__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Select the appropriate status for the BCF after a completed CSC.  Check here prior to any adoption call to see if client committed to filling out on their own and no BCF record is present.</inlineHelpText>
-        <label>zzzBCF Completion Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>BCF Submitted before CSC</fullName>
-                    <default>false</default>
-                    <label>BCF Submitted before CSC</label>
-                </value>
-                <value>
-                    <fullName>Business Info covered during CSC</fullName>
-                    <default>false</default>
-                    <label>Business Info covered during CSC</label>
-                </value>
-                <value>
-                    <fullName>Client to fill out on their own</fullName>
-                    <default>false</default>
-                    <label>Client to fill out on their own</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Berry_Account_Manager_Email__c</fullName>
         <externalId>false</externalId>
         <label>Berry Account Manager Email</label>
@@ -1099,44 +1041,6 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
                     <fullName>Steve Jecker</fullName>
                     <default>false</default>
                     <label>Steve Jecker</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Berry_Contract_Received__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>zzzBerry Contract Received</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Berry_Market__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzBerry Market</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Ashland, KY</fullName>
-                    <default>false</default>
-                    <label>Ashland, KY</label>
-                </value>
-                <value>
-                    <fullName>Cincinnati, OH</fullName>
-                    <default>false</default>
-                    <label>Cincinnati, OH</label>
-                </value>
-                <value>
-                    <fullName>Lorain, OH</fullName>
-                    <default>false</default>
-                    <label>Lorain, OH</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1608,47 +1512,10 @@ ISPICKVAL(Channel_Development__c, "")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CRM_FOR_INDIVIDUAL_LOCATIONS__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Do the individual locations use a CRM system?</inlineHelpText>
-        <label>zzzCRM for Individual Locations</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>YES</fullName>
-                    <default>false</default>
-                    <label>YES</label>
-                </value>
-                <value>
-                    <fullName>NO</fullName>
-                    <default>false</default>
-                    <label>NO</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>CRM_Login_Credentials__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Corporate CRM login credential required to compelte CRM integration</inlineHelpText>
         <label>CRM Login Credentials</label>
-        <length>50</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CRM_System_Name__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Name of the CRM system customer is using</inlineHelpText>
-        <label>zzzCRM System Name</label>
         <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1665,18 +1532,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CROSS_SELL_RATES_OF_PRODUCTS__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzCross Sell Rates of Products</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -1942,149 +1797,6 @@ ISPICKVAL(Channel_Development__c, "")),
                     <label>DSG</label>
                 </value>
             </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Channel_Partner_Sub_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzChannel Partner Sub-Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Channel_Partner_Type__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>CMRs for YP publishers</fullName>
-                    <default>false</default>
-                    <label>CMRs for YP publishers</label>
-                </value>
-                <value>
-                    <fullName>CRM</fullName>
-                    <default>false</default>
-                    <label>CRM</label>
-                </value>
-                <value>
-                    <fullName>Dental</fullName>
-                    <default>false</default>
-                    <label>Dental</label>
-                </value>
-                <value>
-                    <fullName>Internet</fullName>
-                    <default>false</default>
-                    <label>Internet</label>
-                </value>
-                <value>
-                    <fullName>Legal</fullName>
-                    <default>false</default>
-                    <label>Legal</label>
-                </value>
-                <value>
-                    <fullName>Newspaper</fullName>
-                    <default>false</default>
-                    <label>Newspaper</label>
-                </value>
-                <value>
-                    <fullName>Outdoor</fullName>
-                    <default>false</default>
-                    <label>Outdoor</label>
-                </value>
-                <value>
-                    <fullName>Publishers</fullName>
-                    <default>false</default>
-                    <label>Publishers</label>
-                </value>
-                <value>
-                    <fullName>Radio</fullName>
-                    <default>false</default>
-                    <label>Radio</label>
-                </value>
-                <value>
-                    <fullName>SEM</fullName>
-                    <default>false</default>
-                    <label>SEM</label>
-                </value>
-                <value>
-                    <fullName>SEO</fullName>
-                    <default>false</default>
-                    <label>SEO</label>
-                </value>
-                <value>
-                    <fullName>TV</fullName>
-                    <default>false</default>
-                    <label>TV</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Magazine</fullName>
-                    <default>false</default>
-                    <label>Magazine</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <valueName>CRM</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <valueName>SEM</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <valueName>SEO</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Agencies</controllingFieldValue>
-                <controllingFieldValue>Industry-specific aggregators</controllingFieldValue>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Other</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Industry-specific aggregators</controllingFieldValue>
-                <valueName>Dental</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Industry-specific aggregators</controllingFieldValue>
-                <valueName>Legal</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Internet</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Newspaper</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Outdoor</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Radio</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>TV</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Media companies</controllingFieldValue>
-                <valueName>Magazine</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Yellow Page</controllingFieldValue>
-                <valueName>CMRs for YP publishers</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Yellow Page</controllingFieldValue>
-                <valueName>Publishers</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -2726,17 +2438,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <type>Phone</type>
     </fields>
     <fields>
-        <fullName>Content_Ready__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzContent Ready</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Contract_Length__c</fullName>
         <externalId>false</externalId>
         <label>Contract Length</label>
@@ -3270,15 +2971,6 @@ ISPICKVAL(Channel_Development__c, "")),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Date_Berry_Contract_Received__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzDate Berry Contract Received</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>Date_CVR_OPT_Exhausted_del__c</fullName>
@@ -4146,17 +3838,6 @@ CASE(MOD( Order_Date__c - DATE(1985,6,24),7),
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Engine_Ready__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzEngine Ready</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -5129,15 +4810,6 @@ Used by YBN.</description>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>LH_Exit_Survey_Sent__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>zzzLH_Exit Survey Sent</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>LM2_Value__c</fullName>
         <externalId>false</externalId>
         <label>LM2-Value</label>
@@ -6026,18 +5698,6 @@ Live_Date__c+35+Month_1_Check_In_Date_Adjustment__c ,Null)</formula>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Monthly_Billing_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzMonthly Billing Date</label>
-        <precision>2</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Monthly_Budget__c</fullName>
         <externalId>false</externalId>
         <label>Monthly Budget</label>
@@ -6859,33 +6519,10 @@ Null))))))</formula>
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Number_of_SMB_Customers__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzNumber of SMB Customers</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>OEM_Customer_Identifier__c</fullName>
         <externalId>false</externalId>
         <label>OEM Customer Identifier</label>
         <length>25</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Oem_Corporate_Account__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzOEM Corporate Account</label>
-        <length>250</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -7105,17 +6742,6 @@ Null))))))</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Other_Channel_Model__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzOther Channel Model</label>
-        <length>250</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Other_Performance_Goal__c</fullName>
@@ -7992,15 +7618,26 @@ Null))))))</formula>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Potential_Month_Ave_Location__c</fullName>
+        <fullName>Pre_COVID_Budget__c</fullName>
         <externalId>false</externalId>
-        <label>zzzPotential Month Ave $/Location</label>
-        <precision>18</precision>
+        <label>Pre-COVID Budget</label>
+        <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pre_COVID_PPC_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-COVID PPC Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Preferred_Vendor__c</fullName>
@@ -9092,97 +8729,6 @@ contains( Product_Type__c , "YODLE_WEB")),
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Reseller_Close_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzReseller Close Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Reseller_Est_Revenue__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzReseller Est. Revenue</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Reseller_Launch_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzReseller Launch Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Reseller_Market__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzReseller Market</label>
-        <length>20</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Reseller_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzReseller Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Commit</fullName>
-                    <default>false</default>
-                    <label>Commit</label>
-                </value>
-                <value>
-                    <fullName>Forecast</fullName>
-                    <default>false</default>
-                    <label>Forecast</label>
-                </value>
-                <value>
-                    <fullName>Pipeline</fullName>
-                    <default>false</default>
-                    <label>Pipeline</label>
-                </value>
-                <value>
-                    <fullName>Closed</fullName>
-                    <default>false</default>
-                    <label>Closed</label>
-                </value>
-                <value>
-                    <fullName>Dead</fullName>
-                    <default>false</default>
-                    <label>Dead</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Reseller_of_Accts__c</fullName>
-        <externalId>false</externalId>
-        <label>zzzReseller # of Accts</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Retention_Test_to_Local_Outcome__c</fullName>
         <externalId>false</externalId>
         <label>Retention Test to Local Outcome</label>
@@ -9372,15 +8918,6 @@ Partial - Only some clients in relationship are participating</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>SDR_Set_M1__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>zzzSDR Set M1</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>SD_Notes__c</fullName>
@@ -10238,17 +9775,6 @@ IMS_Rep__r.Id = "00532000005P6l3"), /*LeadStream Support*/
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Synopsis_of_Account_State__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>High level overview of current account state</inlineHelpText>
-        <label>zzzSynopsis of Account State</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>System_Information_Used_Today__c</fullName>
@@ -13421,60 +12947,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Sales_Person__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>IMS_Rep__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
-        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
-        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
-        <lookupFilterFields>Client_ID__c</lookupFilterFields>
-        <lookupFilterFields>Status__c</lookupFilterFields>
-        <lookupFilterFields>SellFire__c</lookupFilterFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Contact_Cell__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Contact_Phone_Number_Berry__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Client_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
-        <searchFilterFields>Client_ID__c</searchFilterFields>
-        <searchFilterFields>ACCOUNT.RECORDTYPE</searchFilterFields>
-        <searchFilterFields>SellFire__c</searchFilterFields>
-        <searchFilterFields>LH_360_ID__c</searchFilterFields>
-        <searchFilterFields>IMS_Rep__c</searchFilterFields>
-        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>IMS_Rep__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>MLP_Group_ID__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>A_Plus_Transmissions</fullName>
         <columns>ACCOUNT.NAME</columns>
@@ -14077,6 +13549,8 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
         </filters>
         <label>submit</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
@@ -15169,21 +14643,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -15291,21 +14750,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15439,17 +14883,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -15548,65 +14981,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18182,29 +17556,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -20129,21 +19480,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -20251,21 +19587,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20399,17 +19720,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -20508,65 +19818,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -23190,29 +22441,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -25193,21 +24421,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -25263,21 +24476,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25411,17 +24609,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -25520,65 +24707,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28307,29 +27435,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -30058,21 +29163,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -30180,21 +29270,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30328,17 +29403,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -30441,65 +29505,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33459,29 +32464,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -35430,21 +34412,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -35552,21 +34519,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -35700,17 +34652,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -35813,65 +34754,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -38447,29 +37329,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -40319,21 +39178,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -40389,21 +39233,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40515,17 +39344,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -40612,65 +39430,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -43168,29 +41927,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -45028,21 +43764,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -45098,21 +43819,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -45246,17 +43952,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -45359,65 +44054,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -48166,29 +46802,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -49869,21 +48482,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -49939,21 +48537,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -50087,17 +48670,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -50184,65 +48756,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -52867,29 +51380,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -54547,21 +53037,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -54617,21 +53092,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -54765,17 +53225,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -54862,65 +53311,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -57477,29 +55867,6 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -58133,6 +56500,53 @@ Product_Type__c = 'LIGHTHOUSE,PRO_PACK,WELCOME_STATION'),
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sales_Person__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IMS_Rep__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.RECORDTYPE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.TYPE</lookupFilterFields>
+        <lookupFilterFields>Client_ID__c</lookupFilterFields>
+        <lookupFilterFields>Status__c</lookupFilterFields>
+        <lookupFilterFields>SellFire__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Cell__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Phone_Number_Berry__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.RECORDTYPE</searchFilterFields>
+        <searchFilterFields>SellFire__c</searchFilterFields>
+        <searchFilterFields>LH_360_ID__c</searchFilterFields>
+        <searchFilterFields>IMS_Rep__c</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IMS_Rep__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LH_360_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Multi_Location_Owner_For_TP__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Multi_Location_Owner_Primary_CID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MLP_Group_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Berry_Account_Quality</fullName>
         <active>false</active>

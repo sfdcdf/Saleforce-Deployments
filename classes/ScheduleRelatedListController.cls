@@ -1,3 +1,10 @@
+/**************************************************************************************************************
+Name : Schedule_Split
+Created By : Mahesh Bogila
+Created Date : 03/13/2020
+Modified Date :  
+Purpose : Function for displaying Quantity and Revenue Schedule On Custom Object 
+***************************************************************************************************************/ 
 public class ScheduleRelatedListController {     
 
     public List<Schedule_Split__c> Schedules{get;set;} 
@@ -6,7 +13,7 @@ public class ScheduleRelatedListController {
 
     public OpportunityLineItem Ole {get;set;} 
     
-    Public id OleId;
+    Public id OleId{get;set;}
 
      
 
