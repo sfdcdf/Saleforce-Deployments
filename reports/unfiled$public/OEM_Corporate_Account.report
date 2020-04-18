@@ -21,17 +21,6 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <columns>
-        <field>Account.Oem_Corporate_Account__c</field>
-    </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.Oem_Corporate_Account__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>OEM Corporate Account</name>
     <params>

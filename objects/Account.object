@@ -5190,6 +5190,28 @@ Null))))))</formula>
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Pre_COVID_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-COVID Budget</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pre_COVID_PPC_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-COVID PPC Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Preferred_Vendor__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -15466,21 +15488,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -15588,21 +15595,6 @@ or(
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15736,17 +15728,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -15845,65 +15826,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18479,29 +18401,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -20426,21 +20325,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -20548,21 +20432,6 @@ or(
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20696,17 +20565,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -20805,65 +20663,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -23487,29 +23286,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -25490,21 +25266,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -25560,21 +25321,6 @@ or(
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25708,17 +25454,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -25817,65 +25552,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28604,29 +28280,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -30355,21 +30008,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -30477,21 +30115,6 @@ or(
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30625,17 +30248,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -30738,65 +30350,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33756,29 +33309,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -35727,21 +35257,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Anthony Baker</fullName>
@@ -35849,21 +35364,6 @@ or(
             </values>
             <values>
                 <fullName>Steve Jecker</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -35997,17 +35497,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -36110,65 +35599,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -38744,29 +38174,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -40616,21 +40023,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -40686,21 +40078,6 @@ or(
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40812,17 +40189,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -40909,65 +40275,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -43465,29 +42772,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -45325,21 +44609,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -45395,21 +44664,6 @@ or(
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -45519,17 +44773,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -45632,65 +44875,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -48439,29 +47623,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -50142,21 +49303,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -50212,21 +49358,6 @@ or(
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -50336,17 +49467,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -50433,65 +49553,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -53116,29 +52177,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Retention_Test_to_Local_Outcome__c</picklist>
             <values>
                 <fullName>CSC Cancellation</fullName>
@@ -54800,21 +53838,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>BCF_Collection_Status__c</picklist>
-            <values>
-                <fullName>BCF Submitted before CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Business Info covered during CSC</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client to fill out on their own</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Berry_Account_Manager__c</picklist>
             <values>
                 <fullName>Becky Van Dine</fullName>
@@ -54870,21 +53893,6 @@ or(
             </values>
             <values>
                 <fullName>Roberta Taylor</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Berry_Market__c</picklist>
-            <values>
-                <fullName>Ashland%2C KY</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cincinnati%2C OH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lorain%2C OH</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -55018,17 +54026,6 @@ or(
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CRM_FOR_INDIVIDUAL_LOCATIONS__c</picklist>
-            <values>
-                <fullName>NO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YES</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Centermark__c</picklist>
             <values>
                 <fullName>Centermark</fullName>
@@ -55115,65 +54112,6 @@ or(
             </values>
             <values>
                 <fullName>WSI Marketing</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Channel_Partner_Sub_Type__c</picklist>
-            <values>
-                <fullName>CMRs for YP publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internet</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magazine</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Newspaper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outdoor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Publishers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Radio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TV</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -57726,29 +56664,6 @@ or(
             </values>
             <values>
                 <fullName>Service Level D</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Reseller_Status__c</picklist>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Forecast</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

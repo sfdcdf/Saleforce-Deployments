@@ -932,6 +932,7 @@
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
         <columns>MANAGER</columns>
+        <columns>LiveOps_ID__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
@@ -1261,7 +1262,7 @@
         <filters>
             <field>LAST_UPDATE</field>
             <operation>equals</operation>
-            <value>1/31/2019 12:00 AM</value>
+            <value>4/1/2020 12:00 AM</value>
         </filters>
         <label>Disabled Users Last 2 Days</label>
     </listViews>

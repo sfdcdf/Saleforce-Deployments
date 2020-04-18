@@ -1,0 +1,55 @@
+<apex:page standardController="OpportunityLineItem" extensions="ScheduleRelatedListController" sidebar="true" showHeader="false"  >     
+
+    <apex:form >                 
+      <apex:pageMessages />
+        <apex:pageblock id="ScheduleList"> 
+
+           <!-- <div style="margin-left: 30%;"><apex:commandLink value="Establish" action="{!newSchedule}" target="_parent" styleClass="btn" style="text-decoration:none;padding:4px;"/></div> 
+          <div style="margin-left: 35%;"><apex:commandLink value="Del" onclick="return confirm('Are you sure?')" action="{!deleteSchedule}" target="_parent" styleClass="btn" style="text-decoration:none;padding:4px;"></apex:commandLink></div> 
+            <br/> -->
+            
+            <div align="center" draggable="false" >
+                <apex:commandButton id="Est" value="Establish" action="{!newSchedule}" />
+                <apex:commandButton id="Edi" value="Edit" action="{!editSchedule}"/>
+                <apex:commandButton id="Del" value="Delete" onclick="return confirm('Are you sure?')" action="{!deleteSchedule}"/>
+            </div>
+
+            <apex:pageBlockTable value="{!Schedules}" var="Sched" rendered="{!NOT(ISNULL(Schedules))}">                 
+
+            <!--  <apex:column HeaderValue="Action" width="60"> 
+
+                    <apex:commandLink value="Edit" style="color:#015ba7;" action="{!editContact}" target="_parent" ><apex:param value="{!cont.id}" name="contactId"/> 
+
+                    </apex:commandLink> 
+
+                    &nbsp;|&nbsp; 
+
+                    <apex:commandLink value="Del" onclick="return confirm('Are you sure?')" style="color:#015ba7;" action="{!deleteSchedule}" target="_parent"><apex:param value="{!Sched.id}" name="ScheduleId"/> 
+
+                    </apex:commandLink> 
+
+                </apex:column> -->
+
+                <apex:column headerValue="Start Date" value="{!Sched.Start_Date__c}"><!--<apex:outputLink value="/{!Sched.id}" target="_blank">{!Sched.Id}</apex:outputLink>--> </apex:column>               
+               <!-- <apex:column value="{!Sched.End_Date__c}"/> -->
+                <apex:column headerValue="Quantity" value="{!Sched.Quantity__c}"/> 
+                <apex:column headerValue="Revenue" value="{!Sched.Revenue__c}"/> 
+                <apex:column headerValue="Avg Revenue Per Unit (ARPU)" value="{!Sched.Avg_Revenue_Per_Unit_ARPU__c}"/> 
+                <apex:column headerValue="Churn Units" value="{!Sched.Churn_Units__c}"/> 
+                <apex:column headerValue="Comments" value="{!Sched.Comments__c}"/> 
+
+            </apex:pageBlockTable>            
+
+            <apex:outputLabel value="No records to display" rendered="{!(ISNULL(Schedules))}" styleClass="noRowsHeader"></apex:outputLabel> 
+
+        </apex:pageblock> -
+
+    </apex:form>  
+<script type="text/javascript">
+function openPage(clicked_id) {
+    if(clicked_id.includes('Est')){
+        window.open("_Parent+'/apex/EstablishSchedulePage?scontrolCaching=1&id='"+"{!OpportunityLineItem.Id}");
+    }
+}
+</script>
+</apex:page>

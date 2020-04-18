@@ -10,9 +10,6 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Account.Potential_Month_Ave_Location__c</field>
-    </columns>
-    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -27,14 +24,6 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.Potential_Month_Ave_Location__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Potential Month Ave $/Location</name>
     <params>

@@ -10,9 +10,6 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.AD_Mentor__c</field>
-    </columns>
-    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -27,14 +24,6 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.AD_Mentor__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>AD Mentor</name>
     <params>

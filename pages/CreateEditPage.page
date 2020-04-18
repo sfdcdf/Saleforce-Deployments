@@ -1,0 +1,72 @@
+<apex:page standardController="OpportunityLineItem" extensions="CreateEditPage"  sidebar="true" tabStyle="OpportunityLineItem">
+    <apex:sectionHeader subtitle="Schedule Split Edit"/>
+    <apex:form id="frm">
+     <apex:pageMessages />
+          
+        <apex:pageBlock id="splitListBlock" title="Schedule Split Edit">
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Save" title="Save" action="{!saveSplit}"/>
+                <apex:commandButton value="Cancel" title="Cancel" action="{!cancelSplit}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable id="splitListBlockTable" value="{!indexSplitList}" var="split">
+                <apex:column headerValue="Start Date" width="200px" >
+                    <apex:inputField value="{!split.scSplit.Start_Date__c}"/>
+                </apex:column>
+                <apex:column headerValue="Quantity" width="200px">
+                    <apex:inputField value="{!split.scSplit.Quantity__c}"/>
+                </apex:column>
+                <apex:column headerValue="Revenue" width="200px" >
+                    <apex:inputField value="{!split.scSplit.Revenue__c}"/>
+                </apex:column>
+                <apex:column headerValue="Avg Revenue Per Unit (ARPU)" width="200px" >
+                    <apex:inputField value="{!split.scSplit.Avg_Revenue_Per_Unit_ARPU__c}"/>
+                </apex:column>
+                <apex:column headerValue="Churn Units" width="200px" >
+                    <apex:inputField value="{!split.scSplit.Churn_Units__c}"/>
+                </apex:column>
+                <apex:column headerValue="Comments" width="200px" >
+                    <apex:inputField value="{!split.scSplit.Comments__c}"/>
+                </apex:column>
+                <apex:column width="200px">
+                <apex:commandLink action="{!deleteRow}" value="Delete" reRender="splitListBlock">
+                    <apex:param value="{!split.scSplit.Id}" name="splitDel"/>
+                    <apex:param value="{!split.i}" name="indexOfSplit"/>
+                </apex:commandLink>
+                </apex:column>
+                <!-----<apex:column headerValue="Delete" >
+                    <apex:commandLink style="font-size:15px; font-weight:bold; text-align:center;color:red;" value="X" action="{!deleteRow}" reRender="splitListBlock">
+                        <apex:param value="{!rowNum}" name="index" />
+                    </apex:commandLink>
+                    <apex:variable var="rowNum" value="{!rowNum+1}"/>
+                </apex:column>--->                
+                 
+                
+                <!---<apex:facet name="header">
+                <apex:outputPanel >
+                Total Price : 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText id="opfinaltotal" value="{!totalRevenue}"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </apex:outputPanel>
+                
+                </apex:facet>---->
+                <apex:facet name="footer">
+                    <apex:outputPanel >
+                    Total : 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText id="opfinaltotal" value="{!totalRevenue}"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:commandButton id="reCalButton" value="Recalculate" action="{!getTotal}"/>
+                    </apex:outputPanel>
+                </apex:facet>
+                
+               
+                
+            </apex:pageBlockTable>   
+            <apex:commandLink value="Add Row" action="{!addRow}" reRender="splitListBlock"/>
+            
+          
+        </apex:pageBlock>
+       
+    </apex:form>
+</apex:page>

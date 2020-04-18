@@ -16,9 +16,6 @@
         <field>Account.Relationship_ID__c</field>
     </columns>
     <columns>
-        <field>Account.Agency_of_Record__c</field>
-    </columns>
-    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -33,14 +30,6 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.Agency_of_Record__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>agency_of_record__c</name>
     <params>

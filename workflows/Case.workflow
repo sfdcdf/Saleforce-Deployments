@@ -14,10 +14,6 @@
         <ccEmails>support@viviallocalleads.com</ccEmails>
         <description>Berry 72 Hour Email</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>logan.rollier@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
         <senderAddress>berrysales@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Partner_Email_Templates/Berry_72_Hour_Emails</template>

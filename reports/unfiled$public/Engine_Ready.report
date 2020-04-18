@@ -4,9 +4,6 @@
         <field>USERS.NAME</field>
     </columns>
     <columns>
-        <field>Account.Engine_Ready__c</field>
-    </columns>
-    <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
@@ -24,14 +21,6 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.Engine_Ready__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Engine Ready</name>
     <params>

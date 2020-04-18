@@ -108,6 +108,22 @@
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Schedules</label>
+        <layoutColumns>
+            <layoutItems>
+                <height>660</height>
+                <page>OpportunityLineItemRelatedList</page>
+                <showLabel>false</showLabel>
+                <showScrollbars>true</showScrollbars>
+                <width>100%</width>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Custom Links</label>
@@ -137,13 +153,6 @@
             <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
-    <relatedLists>
-        <fields>ScheduleDate</fields>
-        <fields>Revenue</fields>
-        <fields>Quantity</fields>
-        <fields>Description</fields>
-        <relatedList>RelatedScheduleList</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

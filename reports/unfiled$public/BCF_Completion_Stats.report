@@ -16,9 +16,6 @@
         <field>Account.Status__c</field>
     </columns>
     <columns>
-        <field>Account.BCF_Collection_Status__c</field>
-    </columns>
-    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -36,14 +33,6 @@
     <columns>
         <field>CREATED_DATE</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Account.BCF_Collection_Status__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>BCF Completion Status</name>
     <params>
