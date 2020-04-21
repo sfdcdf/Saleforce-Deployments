@@ -23,7 +23,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>OWNER</column>
+            <column>Case.IMS_Completing_Opt2__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>ashland murphy</value>
@@ -46,8 +46,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2020-04-10</endDate>
+        <endDate>2020-04-17</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-04-06</startDate>
+        <startDate>2020-04-13</startDate>
     </timeFrameFilter>
 </Report>

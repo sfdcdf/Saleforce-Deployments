@@ -10,6 +10,9 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
         <field>AGE</field>
     </columns>
     <columns>
@@ -23,7 +26,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>OWNER</column>
+            <column>Case.IMS_Completing_Opt2__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>erin fouraker</value>
@@ -46,8 +49,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2020-04-10</endDate>
+        <endDate>2020-04-17</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-04-06</startDate>
+        <startDate>2020-04-13</startDate>
     </timeFrameFilter>
 </Report>
