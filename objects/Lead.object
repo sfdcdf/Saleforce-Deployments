@@ -9185,9 +9185,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
         <columns>LEAD.COMPANY</columns>
         <columns>LEAD.PHONE</columns>
         <columns>LEAD.EMAIL</columns>
-        <columns>Total_of_Activities__c</columns>
         <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>Quality_of_Partner__c</columns>
         <columns>LEAD.LEAD_SOURCE</columns>
         <columns>LEAD.URL</columns>
         <filterScope>Mine</filterScope>
@@ -9200,11 +9198,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone_F__c,"")
             <field>LEAD.RECORDTYPE</field>
             <operation>equals</operation>
             <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>Business_type__c</field>
-            <operation>notEqual</operation>
-            <value>PMS,Marketing,IT Integrator</value>
         </filters>
         <filters>
             <field>LEAD.LEAD_SOURCE</field>
