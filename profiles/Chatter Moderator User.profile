@@ -5084,6 +5084,10 @@
         <flow>WBN_Vivial_Update_Case_Milestone_First_Response</flow>
     </flowAccesses>
     <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.LH_NPS_Response</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContactPointEmail-Contact Point Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -6889,6 +6893,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Business_Development</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_NPS_Response</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

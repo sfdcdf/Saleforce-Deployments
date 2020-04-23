@@ -2627,6 +2627,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case Layout</layout>
+        <recordType>Case.LH_NPS_Response</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
         <recordType>Case.LH_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -4325,6 +4329,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.LH_Master</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_NPS_Response</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

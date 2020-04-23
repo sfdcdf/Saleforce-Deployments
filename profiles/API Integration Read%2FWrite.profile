@@ -12850,6 +12850,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Date_Received__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Date_Sent_to_Performance__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -14700,6 +14705,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Response__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Result_of_QA__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -14876,6 +14886,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Scheduled_Call__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -37647,6 +37662,10 @@
         <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Case-LH NPS Response</layout>
+        <recordType>Case.LH_NPS_Response</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.YBN_Request</recordType>
     </layoutAssignments>
@@ -40944,6 +40963,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.LH_Master</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.LH_NPS_Response</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

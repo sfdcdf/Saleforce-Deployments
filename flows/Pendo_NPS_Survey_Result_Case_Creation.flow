@@ -102,7 +102,7 @@
                 <leftValueReference>myVariable_current.Pendo_NPS_Survey_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_2_myRule_1_0198784003</elementReference>
+                    <elementReference>formula_2_myRule_1_0991985221</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -119,7 +119,7 @@
                 <stringValue>TODAY() - 1</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_0198784003</name>
+        <name>formula_2_myRule_1_0991985221</name>
         <dataType>Date</dataType>
         <expression>TODAY() - 1</expression>
     </formulas>
@@ -130,7 +130,7 @@
                 <stringValue>[Contact].AccountId </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_3_myRule_1_A1_6938828534</name>
+        <name>formula_3_myRule_1_A1_5624778300</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.AccountId}</expression>
     </formulas>
@@ -138,16 +138,37 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>&quot;This is the NPS Survey Date, Score, and Response:&quot; + &quot; &quot; 
-+ TEXT([Contact].Pendo_NPS_Survey_Date__c) + &quot;, &quot; + TEXT([Contact].Pendo_NPS_Rating__c) + &quot;, &quot; + [Contact].Pendo_NPS_Survey_Response__c   </stringValue>
+                <stringValue>[Contact].Pendo_NPS_Survey_Date__c </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_4_myRule_1_A1_2100552380</name>
-        <dataType>String</dataType>
-        <expression>&quot;This is the NPS Survey Date, Score, and Response:&quot; + &quot; &quot; 
-+ TEXT({!myVariable_current.Pendo_NPS_Survey_Date__c}) + &quot;, &quot; + TEXT({!myVariable_current.Pendo_NPS_Rating__c}) + &quot;, &quot; + {!myVariable_current.Pendo_NPS_Survey_Response__c}</expression>
+        <name>formula_4_myRule_1_A1_7929466498</name>
+        <dataType>Date</dataType>
+        <expression>{!myVariable_current.Pendo_NPS_Survey_Date__c}</expression>
     </formulas>
-    <interviewLabel>Pendo_NPS_Survey_Result_Case_Creation-10_InterviewLabel</interviewLabel>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Contact].Pendo_NPS_Rating__c </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_5_myRule_1_A1_7487496350</name>
+        <dataType>Number</dataType>
+        <expression>{!myVariable_current.Pendo_NPS_Rating__c}</expression>
+        <scale>18</scale>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Contact].Pendo_NPS_Survey_Response__c </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_6_myRule_1_A1_3785467556</name>
+        <dataType>String</dataType>
+        <expression>{!myVariable_current.Pendo_NPS_Survey_Response__c}</expression>
+    </formulas>
+    <interviewLabel>Pendo_NPS_Survey_Result_Case_Creation-11_InterviewLabel</interviewLabel>
     <label>Pendo NPS Survey Result Case Creation</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -212,7 +233,7 @@
             </processMetadataValues>
             <field>AccountId</field>
             <value>
-                <elementReference>formula_3_myRule_1_A1_6938828534</elementReference>
+                <elementReference>formula_3_myRule_1_A1_5624778300</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -249,7 +270,7 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
-                    <stringValue>String</stringValue>
+                    <stringValue>Date</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -261,7 +282,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Description</stringValue>
+                    <stringValue>Date Received</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -276,9 +297,9 @@
                     <stringValue>Formula</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Description</field>
+            <field>Date_Received__c</field>
             <value>
-                <elementReference>formula_4_myRule_1_A1_2100552380</elementReference>
+                <elementReference>formula_4_myRule_1_A1_7929466498</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -464,7 +485,79 @@
             </processMetadataValues>
             <field>RecordTypeId</field>
             <value>
-                <stringValue>0122E000000lP1OQAU</stringValue>
+                <stringValue>0122E000000lVqFQAU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Response</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Response__c</field>
+            <value>
+                <elementReference>formula_6_myRule_1_A1_3785467556</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Number</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Score</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Score__c</field>
+            <value>
+                <elementReference>formula_5_myRule_1_A1_7487496350</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
