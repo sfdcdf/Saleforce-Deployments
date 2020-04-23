@@ -37273,7 +37273,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contract.Amendments</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -38000,7 +38000,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contract.Service_Agreement</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -38009,6 +38009,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Contract.WBN_MSA</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

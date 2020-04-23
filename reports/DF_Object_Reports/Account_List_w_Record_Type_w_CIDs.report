@@ -21,7 +21,14 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <description>Accounts with Record type count.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Client_ID__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Year</dateGranularity>
@@ -38,7 +45,7 @@
         <field>Account.Product_Type_Transactional__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Account List w/Record Type</name>
+    <name>Account List w/Record Type w/CIDs</name>
     <params>
         <name>co</name>
         <value>1</value>
