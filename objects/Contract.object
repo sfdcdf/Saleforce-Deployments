@@ -776,6 +776,20 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Payment_Terms__c</fullName>
+        <description>Number of days before payment is due from the invoice date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Time period in days from invoice date to payment due date</inlineHelpText>
+        <label>Payment Terms</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Renewal_Notice_Date__c</fullName>
         <externalId>false</externalId>
         <label>Renewal Notice Date</label>
