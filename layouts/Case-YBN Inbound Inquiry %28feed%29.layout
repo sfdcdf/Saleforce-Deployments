@@ -82,6 +82,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>IsStopped</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>RecordTypeId</field>
             </layoutItems>
             <layoutItems>
@@ -521,7 +525,7 @@
         <fields>CASEMILESTONE.ELPSD_TIME_MINS</fields>
         <fields>CASEMILESTONE.ELPSD_TIME_HRS</fields>
         <fields>CASEMILESTONE.ACTL_ELPSD_MINS</fields>
-        <fields>CASEMILESTONE.ACTL_ELPSD_HRS</fields>
+        <fields>CASEMILESTONE.STP_TIME_MINS</fields>
         <relatedList>RelatedCaseMilestoneList</relatedList>
     </relatedLists>
     <relatedLists>
