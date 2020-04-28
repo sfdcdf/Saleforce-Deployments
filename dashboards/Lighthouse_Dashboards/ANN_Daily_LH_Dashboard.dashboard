@@ -53,6 +53,18 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>COVID: Messages Re-activated</metricLabel>
+            <report>Lighthouse/ANN_Messages_ON_COVID</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Config - LH Master</metricLabel>
             <report>Lighthouse/ANN_LH_Master_Case_Completed_HS1</report>
             <showRange>false</showRange>
