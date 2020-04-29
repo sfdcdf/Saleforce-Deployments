@@ -75,7 +75,7 @@
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical</value>
+            <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -96,6 +96,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.CSC_Completed_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_PREVY</interval>
     </timeFrameFilter>
 </Report>

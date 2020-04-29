@@ -15,15 +15,12 @@
     <columns>
         <field>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</field>
     </columns>
-    <columns>
-        <field>Lighthouse_Worksheets__c.Status__c</field>
-    </columns>
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Lighthouse_Worksheets__c.Installation_Worksheet,Lighthouse_Worksheets__c.Auto_Support_Ticket</value>
+            <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -32,7 +29,12 @@
         <field>Lighthouse_Worksheets__c.LH_Package__c</field>
         <sortOrder>Desc</sortOrder>
     </groupingsDown>
-    <name>Tomorrow&apos;s Installs - Ryan</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lighthouse_Worksheets__c.Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tomorrow&apos;s Installs - ANN</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -42,8 +44,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</dateColumn>
         <interval>INTERVAL_TODAY</interval>
