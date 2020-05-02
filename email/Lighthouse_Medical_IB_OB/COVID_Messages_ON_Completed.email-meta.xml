@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Confirmation of completed messages on request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Medical_March_2016</letterhead>
+    <name>COVID - Messages ON Completed</name>
+    <style>freeForm</style>
+    <subject>Your Messages Are Now Active - {!Case.Client_ID__c}</subject>
+    <textOnly>Hi {!Case.Account},
+
+We wanted to reach out and let you know that your automated messages have been reactivated as per your request.  We&apos;re glad to see you getting back to business, and let us know if there&apos;s anything further we can do to assist you as things ramp back up!
+
+If you need any additional assistance, we’re happy to help. Please feel free to reply to this email or give us a call.  We are available M-F, 8am to 6pm EST. Thank you for choosing Lighthouse. We appreciate your business!
+
+
+
+{!User.FirstName}
+
+Lighthouse Support
+(855) 855-8728</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
