@@ -67,12 +67,6 @@
             <operator>contains</operator>
             <value>covid</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>STATUS</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Closed</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -97,7 +91,7 @@
     <sortColumn>CREATED_DATEONLY</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Case.Due_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
