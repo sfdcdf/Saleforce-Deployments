@@ -10,6 +10,9 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
@@ -49,8 +52,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2020-04-24</endDate>
+        <endDate>2020-05-01</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-04-20</startDate>
+        <startDate>2020-04-27</startDate>
     </timeFrameFilter>
 </Report>

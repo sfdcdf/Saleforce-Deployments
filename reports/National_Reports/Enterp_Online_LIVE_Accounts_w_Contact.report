@@ -10,7 +10,22 @@
         <field>Account.WBN_JAX_CUST_ID__c</field>
     </columns>
     <columns>
+        <field>Account.AccountId18__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Initial_Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Entered_Save_Mode__c</field>
+    </columns>
+    <columns>
+        <field>Account.Sponsored_Save_Mode_Status__c</field>
     </columns>
     <columns>
         <field>Account.IMS_Rep__c</field>
@@ -38,6 +53,9 @@
     </columns>
     <columns>
         <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
+    </columns>
+    <columns>
+        <field>Account.Biz_Dev_Internal_Product_Division__c</field>
     </columns>
     <columns>
         <field>Account.Product_Type__c</field>
@@ -95,7 +113,7 @@
     </params>
     <reportType>AccountList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
