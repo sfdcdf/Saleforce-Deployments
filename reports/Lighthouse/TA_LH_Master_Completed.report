@@ -61,12 +61,6 @@
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>SUBJECT</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>covid</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -92,6 +86,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <interval>INTERVAL_TODAY</interval>
     </timeFrameFilter>
 </Report>
