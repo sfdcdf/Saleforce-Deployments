@@ -4,6 +4,9 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Status__c</field>
+    </columns>
+    <columns>
         <field>URL</field>
     </columns>
     <columns>
@@ -62,7 +65,7 @@
             <column>Account.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>LIVE</value>
+            <value>LIVE,PROVISIONING</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
