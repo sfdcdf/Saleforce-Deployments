@@ -40,6 +40,9 @@
         <field>Account.Contact_Name__c</field>
     </columns>
     <columns>
+        <field>Account.Email_for_Touchplan__c</field>
+    </columns>
+    <columns>
         <field>PHONE1</field>
     </columns>
     <columns>
@@ -62,7 +65,7 @@
             <column>Account.Parent_Name__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>CCA Global Partners,Flooring America Corporate,Floor Trader,IDG</value>
+            <value>CCA Global Partners,Flooring America Corporate,Floor Trader,IDG,Bike Coop,Flooring Canada,Prosource</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>

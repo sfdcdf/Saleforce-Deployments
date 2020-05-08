@@ -163,7 +163,7 @@
         <field>ORIGIN</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Response &amp; Resolution - HMM</name>
+    <name>Response &amp; Resolution - AHS</name>
     <params>
         <name>units</name>
         <value>m</value>
@@ -179,6 +179,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LAST7</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

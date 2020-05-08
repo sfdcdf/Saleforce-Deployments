@@ -65,12 +65,6 @@
             <value>Yodle,Jeremy&apos;s Powerhouse</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Customer_Surveys__c.Status__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Closed Completed,Closed Not Complete</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
@@ -101,6 +95,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURPREV1</interval>
+        <endDate>2020-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-05-05</startDate>
     </timeFrameFilter>
 </Report>
