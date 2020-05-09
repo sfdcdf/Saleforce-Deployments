@@ -10,6 +10,15 @@
         <field>Case$Account</field>
     </columns>
     <columns>
+        <field>Case$Time_To_Complete_Task_Minutes__c</field>
+    </columns>
+    <columns>
+        <field>Case$IMS_Rep_Email__c</field>
+    </columns>
+    <columns>
+        <field>Case$IMS_Rep__c</field>
+    </columns>
+    <columns>
         <field>Case$RecordType</field>
     </columns>
     <columns>
@@ -17,6 +26,9 @@
     </columns>
     <columns>
         <field>Case$Status</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$CreatedDate</field>
     </columns>
     <columns>
         <field>Case$CreatedDate</field>
@@ -32,38 +44,44 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Case.Activities$Assigned_To_Role__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Activities$Owner</column>
+            <column>Case$RecordType</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Greer Rollier,Kimberly Williams,Todd Weiss,Casey Hatch,Emily Kareiva,Jordan Valentine,Richell Green,lawrence liles</value>
+            <value>Case.YBN_Inbound_Inquiry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Account</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>fss,express sunrooms,fsbp,four seasons sunrooms</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Activities$Owner</field>
+        <field>Case$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>TP Quality Review - Slocum</name>
+    <name>IB Cases - FSS</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>Cases_with_Activities__c</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>Case$CreatedDate</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.Activities$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

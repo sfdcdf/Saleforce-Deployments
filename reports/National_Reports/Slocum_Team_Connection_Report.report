@@ -7,9 +7,6 @@
         <field>Account.Cases$ClosedDate</field>
     </columns>
     <columns>
-        <field>Account.Cases$CaseNumber</field>
-    </columns>
-    <columns>
         <field>Account$Parent</field>
     </columns>
     <columns>
@@ -20,6 +17,9 @@
     </columns>
     <columns>
         <field>Account.Cases$Attempt_Date_1__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
     </columns>
     <columns>
         <field>Account$Individual_Location_Service_Level__c</field>
@@ -50,28 +50,22 @@
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account$Parent</column>
+            <column>Account.Cases$Status</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Flooring America Corporate,CCA Global Partners,Floor Trader,Flooring Canada,IDG (International Design Guild)</value>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>lawrence liles,tommie hayes,leronnie reed</value>
+            <value>Greer Rollier,Kimberly Williams,Todd Weiss,Casey Hatch,Emily Kareiva,Jordan Valentine,Richell Green,lawrence liles</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account$Status__c</column>
+            <column>Account$Individual_Location_Service_Level__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>LIVE</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account$Client_Type__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>YBN</value>
+            <operator>notEqual</operator>
+            <value>Service Level D,Service Level E</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -80,7 +74,7 @@
         <field>Account$IMS_Rep__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CCA TP Connection Report</name>
+    <name>Slocum Team Connection Report</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -90,7 +84,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account$Individual_Location_Service_Level__c</sortColumn>
+    <sortColumn>Account$Next_TP_Needed_By__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Cases$ClosedDate</dateColumn>
