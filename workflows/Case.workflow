@@ -3365,7 +3365,7 @@
         </recipients>
         <senderAddress>mbrevig@web.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/WBN_Issue_Resolution_Email_Template</template>
+        <template>Survey_Emails/WBN_Issue_Resolution_Email_Template_2020</template>
     </alerts>
     <alerts>
         <fullName>YBN_Send_Notification_Of_Budget_Change</fullName>
