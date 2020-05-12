@@ -10,6 +10,8 @@
         <field>FK_NAME</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
         <field>Cancellation_Request__c.Revenue_Lost_Month__c</field>
     </columns>
     <columns>
@@ -60,7 +62,7 @@
     </params>
     <reportType>CustomEntity$Cancellation_Request__c@Cancellation_Request__c.Account_Name__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

@@ -16,6 +16,9 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
         <field>AGE</field>
     </columns>
     <columns>
@@ -55,8 +58,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2020-05-01</endDate>
+        <endDate>2020-05-08</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-04-01</startDate>
+        <startDate>2020-05-04</startDate>
     </timeFrameFilter>
 </Report>

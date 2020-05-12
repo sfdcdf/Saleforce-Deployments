@@ -16,9 +16,6 @@
         <field>PARENT.NAME</field>
     </columns>
     <columns>
-        <field>Account.IMS_Rep__c</field>
-    </columns>
-    <columns>
         <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
     </columns>
     <columns>
@@ -44,21 +41,32 @@
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Client_ID__c</column>
+            <column>Account.IMS_Rep_Role__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
+            <operator>contains</operator>
+            <value>Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Biz_Dev_Internal_Product_Division__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Enterprise Online</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <name>All ILs - Live Accounts</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.IMS_Rep__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Live Accounts by CSC</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>AccountList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>PARENT.NAME</sortColumn>

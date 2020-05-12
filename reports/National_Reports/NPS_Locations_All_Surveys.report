@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</column>
+            <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
         </chartSummaries>
         <chartSummaries>
             <axisBinding>y</axisBinding>
@@ -31,60 +31,69 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Customer_Surveys__c.Case__c</field>
-    </columns>
-    <columns>
-        <field>Customer_Surveys__c.Status__c</field>
-    </columns>
-    <columns>
         <field>Customer_Surveys__c.Client_ID_2__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Account__c</field>
+        <field>FK_NAME</field>
     </columns>
     <columns>
-        <field>CUST_RECORDTYPE</field>
-    </columns>
-    <columns>
-        <field>CUST_CREATED_DATE</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</field>
+        <field>Customer_Surveys__c.YBN_CSD__c</field>
     </columns>
     <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_What_can_we_do_to_improve__c</field>
+        <field>Customer_Surveys__c.Status__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_Wait_time_for_resolution__c</field>
+        <field>Customer_Surveys__c.Communication_Notes__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_knowledge_of_CS_rep__c</field>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_how_courteous_CS_rep_was__c</field>
+        <field>Customer_Surveys__c.Care_to_tell_us_why__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_ability_to_understand_CS__c</field>
+        <field>Customer_Surveys__c.Anything_to_share_about_your_experience__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey__c</field>
+        <field>Customer_Surveys__c.Detail_on_your_likelihood_to_recomm__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_Was_your_issue_resolved__c</field>
+        <field>CUST_CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_Details_on_issue__c</field>
+        <field>Customer_Surveys__c.Response_Date__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Attempt_Result_1__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Attempt_Date_2__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Attempt_Result_2__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Attempt_Date_3__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Attempt_Result_3__c</field>
     </columns>
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Customer_Surveys__c.YBN_Issue_Resolution_Survey</value>
+            <value>Customer_Surveys__c.NPS_Survey_YBN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_ACC_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Standard</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -93,18 +102,18 @@
         <field>Customer_Surveys__c.YBN_Consultant__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>YBN Issue Resolution Survey Stack Rank</name>
+    <name>NPS Locations All Surveys</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Customer_Surveys__c</reportType>
+    <reportType>CustomEntity$Customer_Surveys__c@Customer_Surveys__c.Account__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

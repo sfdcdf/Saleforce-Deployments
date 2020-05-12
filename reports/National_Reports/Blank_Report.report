@@ -13,9 +13,6 @@
         <field>Account.Status__c</field>
     </columns>
     <columns>
-        <field>PARENT.NAME</field>
-    </columns>
-    <columns>
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
@@ -43,15 +40,14 @@
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Account.Client_ID__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <name>All ILs - Live Accounts</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PARENT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Blank Report</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -61,10 +57,10 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>PARENT.NAME</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2020-05-10</endDate>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-05-10</startDate>
     </timeFrameFilter>
 </Report>
