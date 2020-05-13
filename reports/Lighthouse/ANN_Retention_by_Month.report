@@ -76,7 +76,7 @@
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>BucketField_86267765</groupingColumn>
+        <groupingColumn>Cancellation_Request__c.Outcome__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -100,9 +100,6 @@
     </columns>
     <columns>
         <field>Cancellation_Request__c.Closed_Date__c</field>
-    </columns>
-    <columns>
-        <field>Cancellation_Request__c.Outcome__c</field>
     </columns>
     <columns>
         <field>CUST_NAME</field>
@@ -175,7 +172,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>BucketField_86267765</field>
+        <field>Cancellation_Request__c.Outcome__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>ANN: Retention by Month</name>
