@@ -13,6 +13,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Customer_Surveys__c.NPS_Score_Count__c</column>
+        </chartSummaries>
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
@@ -60,6 +65,10 @@
     </columns>
     <columns>
         <field>Customer_Surveys__c.Detail_on_your_likelihood_to_recomm__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Customer_Surveys__c.NPS_Score_Count__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_DATE</field>
