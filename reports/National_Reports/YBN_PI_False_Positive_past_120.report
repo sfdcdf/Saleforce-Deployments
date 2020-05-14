@@ -44,9 +44,6 @@
     <columns>
         <field>Case.Notes_Escalation__c</field>
     </columns>
-    <columns>
-        <field>Case.High_PPL_Perf_Issue__c</field>
-    </columns>
     <filter>
         <booleanFilter>2 AND 3 and (1 or 4)</booleanFilter>
         <criteriaItems>

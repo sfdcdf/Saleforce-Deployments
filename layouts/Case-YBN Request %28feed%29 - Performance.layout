@@ -176,10 +176,6 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Optimization_Difficulty__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Important_National_Notes_del__c</field>
             </layoutItems>
@@ -195,12 +191,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Performance Data</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>High_PPL_Perf_Issue__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -361,10 +352,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Suggested_Adversite__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Updated_Ad_Copies__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

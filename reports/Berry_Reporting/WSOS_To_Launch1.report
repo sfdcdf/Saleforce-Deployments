@@ -22,9 +22,6 @@
         <field>Case.X3_Day_Approval__c</field>
     </columns>
     <columns>
-        <field>Case.Days_in_SLA__c</field>
-    </columns>
-    <columns>
         <field>Case.BES_SLA__c</field>
     </columns>
     <filter>
@@ -61,8 +58,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Case.Days_in_SLA__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

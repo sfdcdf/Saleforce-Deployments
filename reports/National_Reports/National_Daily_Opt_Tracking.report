@@ -19,12 +19,6 @@
         <field>Case.Optimization_Status__c</field>
     </columns>
     <columns>
-        <field>Case.Optimization_Difficulty__c</field>
-    </columns>
-    <columns>
-        <field>Case.National_Multiplier__c</field>
-    </columns>
-    <columns>
         <field>CREATED_DATEONLY</field>
     </columns>
     <columns>
@@ -79,8 +73,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Case.Optimization_Difficulty__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.Date_Opt_Completed__c</dateColumn>
         <interval>INTERVAL_TODAY</interval>
