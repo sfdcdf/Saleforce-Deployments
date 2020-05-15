@@ -92,10 +92,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Days_in_SLA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
                 <field>CMS_3_0_Test__c</field>
             </layoutItems>
             <layoutItems>
@@ -133,10 +129,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Total_CS_Time__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>PS_Change_Order__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -425,12 +417,7 @@
                 <field>MOPs_Analyst__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>SEO_MOPs_Completed_Date__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -480,10 +467,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Date_Work_Completed__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>National_Multiplier__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

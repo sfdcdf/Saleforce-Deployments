@@ -220,10 +220,6 @@
         <label>Next Steps</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Removed_Cancellation_Dates__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Total_Collected__c</field>
             </layoutItems>
@@ -315,10 +311,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Origin</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Free_Time_Period__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

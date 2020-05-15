@@ -140,6 +140,12 @@
             <operator>notContain</operator>
             <value>New Offer,Offer Verification</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Team__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Slocum,Greene</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

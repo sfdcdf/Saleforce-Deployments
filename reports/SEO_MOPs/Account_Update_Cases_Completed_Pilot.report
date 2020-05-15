@@ -70,7 +70,7 @@
     <sortColumn>Case.Case_Age_Business_Days__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Case.SEO_MOPs_Completed_Date__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

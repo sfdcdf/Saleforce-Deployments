@@ -10,9 +10,6 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>Case.Check_for_Spend_Blockers__c</field>
-    </columns>
-    <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
@@ -27,14 +24,6 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Case.Check_for_Spend_Blockers__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>check_for_spend_blockers__c</name>
     <params>

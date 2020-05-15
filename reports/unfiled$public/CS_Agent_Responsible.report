@@ -4,9 +4,6 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>Case.CS_Agent_Responsible__c</field>
-    </columns>
-    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -24,14 +21,6 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Case.CS_Agent_Responsible__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>CS Agent Responsible</name>
     <params>

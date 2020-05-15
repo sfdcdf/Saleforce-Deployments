@@ -4,9 +4,6 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>Case.Optimization_Difficulty__c</field>
-    </columns>
-    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -24,14 +21,6 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Case.Optimization_Difficulty__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Optimization Duration</name>
     <params>

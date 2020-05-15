@@ -22,12 +22,12 @@
         <field>CLOSED</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND (3 OR 4)) AND 5</booleanFilter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>YBN E2C Catch all,Sarah McMillian,Salesforce Automation</value>
+            <value>YBN E2C Catch all,Salesforce Automation</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
@@ -46,12 +46,6 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Inbound_Inquiry,Case.Partner_Inbound_Inquiry</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>SUBJECT</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Your Google Ads account was cancelled due to no spend</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

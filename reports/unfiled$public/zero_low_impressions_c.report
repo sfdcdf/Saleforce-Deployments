@@ -13,9 +13,6 @@
         <field>LAST_ACTIVITY</field>
     </columns>
     <columns>
-        <field>Case.Zero_Low_Impressions__c</field>
-    </columns>
-    <columns>
         <field>CASE_ID</field>
     </columns>
     <columns>
@@ -36,14 +33,6 @@
     <columns>
         <field>CLOSED_DATEONLY</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Case.Zero_Low_Impressions__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>zero_low_impressions__c</name>
     <params>

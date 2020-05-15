@@ -7,7 +7,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>PARENT.NAME</field>
+        <field>Account.Live_Date__c</field>
     </columns>
     <columns>
         <field>Account.Monthly_Budget__c</field>
@@ -44,19 +44,18 @@
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
-            <column>ACCOUNT.NAME</column>
+            <column>Account.Live_Date__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Miracle-Ear</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>PARENT.NAME</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>Macco</value>
+            <operator>lessOrEqual</operator>
+            <value>LAST_N_DAYS:7</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PARENT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>No Service Level Assigned</name>
     <params>
         <name>co</name>
@@ -70,7 +69,7 @@
     <sortColumn>Account.Monthly_Budget__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>Account.Live_Date__c</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

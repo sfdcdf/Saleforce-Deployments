@@ -139,15 +139,15 @@
                 <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
-                <aggregateType>Sum</aggregateType>
-                <calculatePercent>false</calculatePercent>
-                <column>Customer_Surveys__c.NPS_Score_Count__c</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
                 <column>RowCount</column>
                 <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>Customer_Surveys__c.NPS_Score_Count__c</column>
+                <showTotal>true</showTotal>
             </dashboardTableColumn>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>

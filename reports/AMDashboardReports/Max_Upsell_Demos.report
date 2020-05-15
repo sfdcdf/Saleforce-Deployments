@@ -37,19 +37,8 @@
             <operator>equals</operator>
             <value>Max Upsell Campaign</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Case.Max_Upsell_Demo__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Case.Max_Upsell_Demo__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Max Upsell - Demos</name>
     <params>
         <name>units</name>

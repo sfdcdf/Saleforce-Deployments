@@ -30,12 +30,6 @@
     <filter>
         <booleanFilter>((1 AND 2) OR (2 AND 3)) AND 4</booleanFilter>
         <criteriaItems>
-            <column>Case.PS_Change_Order__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>1</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Case.Close_Case_Reviewed_by_CS__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>

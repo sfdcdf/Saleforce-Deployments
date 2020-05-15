@@ -22,13 +22,7 @@
         <field>Case.Attempt_Date_4__c</field>
     </columns>
     <columns>
-        <field>Case.Max_Upsell_Demo__c</field>
-    </columns>
-    <columns>
         <field>Case.Transfer__c</field>
-    </columns>
-    <columns>
-        <field>Case.Max_Upsell_Notes__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -88,8 +82,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Case.Max_Upsell_Demo__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

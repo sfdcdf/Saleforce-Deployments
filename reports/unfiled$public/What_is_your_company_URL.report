@@ -10,9 +10,6 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Case.What_is_your_company_URL__c</field>
-    </columns>
-    <columns>
         <field>AGE</field>
     </columns>
     <columns>
@@ -24,14 +21,6 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Case.What_is_your_company_URL__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>What is your company URL?</name>
     <params>
