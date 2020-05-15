@@ -808,20 +808,76 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <applicationVisibilities>
+        <application>standard__AllTabSet</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Content</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Insights</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AC_OCC_Created__c</field>
@@ -10127,7 +10183,6 @@
         <field>Case.AC_Created_Did_not_attend_webinar__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.AccountId</field>
@@ -10493,7 +10548,6 @@
         <field>Case.Business_Size__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CMS_2_0__c</field>
@@ -10524,7 +10578,6 @@
         <field>Case.CSS_Resolution__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.CS_Approved__c</field>
@@ -10875,7 +10928,6 @@
         <field>Case.Completed_on_Callback_With__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Concerned_Details__c</field>
@@ -11031,7 +11083,6 @@
         <field>Case.Date_Opt_Completed__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Date_Processed_QA__c</field>
@@ -11147,7 +11198,6 @@
         <field>Case.Days_in_Current_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Days_without_Credentials__c</field>
@@ -11223,7 +11273,6 @@
         <field>Case.Due_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Email_Marketing__c</field>
@@ -11379,7 +11428,6 @@
     <readable>false</readable>
     <field>Case.Franchisee_Escalation__c</field>
 </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Free_Time__c</field>
@@ -11815,7 +11863,6 @@
         <field>Case.Last_Bill_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Lead_Analyst__c</field>
@@ -11941,7 +11988,6 @@
         <field>Case.Marketing_Ops__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Mgr_Reviewed_Case_Feedback__c</field>
@@ -12007,7 +12053,6 @@
         <field>Case.Names_of_Key_Staff__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.National_Video_Approved__c</field>
@@ -12208,7 +12253,6 @@
         <field>Case.Office__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Optimization_Status__c</field>
@@ -12339,7 +12383,6 @@
         <field>Case.PPP_Price__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.PaidBy__c</field>
@@ -12705,7 +12748,6 @@
         <field>Case.Refund_reason_L2__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Relationship_Specific_Updates__c</field>
@@ -12716,7 +12758,6 @@
         <field>Case.Remove_From_SLA__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Rep_Emailed_QA__c</field>
@@ -12887,7 +12928,6 @@
         <field>Case.SEM_Paused__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.SEO_Optimization_Detail__c</field>
@@ -13038,7 +13078,6 @@
         <field>Case.Setup_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Site_Serving_Area_Correct__c</field>
@@ -13354,7 +13393,6 @@
         <field>Case.Unique_Selling_Points__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Updated_Geo_Targeting__c</field>
@@ -13380,7 +13418,6 @@
         <field>Case.Use_Quickbooks__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Used_Current_bill_as_Cancellation_Fee__c</field>
@@ -13551,7 +13588,6 @@
         <field>Case.What_is_the_name_of_this_project__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Will_we_be_taking_over_this_URL__c</field>
@@ -13642,7 +13678,6 @@
         <field>Case.Yodle_Path_Test_Group__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Zip_Code__c</field>
