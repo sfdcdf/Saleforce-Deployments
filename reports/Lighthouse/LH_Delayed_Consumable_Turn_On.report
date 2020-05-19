@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>OWNER</field>
-    </columns>
-    <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
@@ -25,7 +22,7 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>AGE</field>
+        <field>LAST_UPDATEONLY</field>
     </columns>
     <filter>
         <criteriaItems>

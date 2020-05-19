@@ -28,10 +28,16 @@
         <field>LAST_UPDATEONLY</field>
     </columns>
     <columns>
+        <field>Case.LH_360_ID__c</field>
+    </columns>
+    <columns>
         <field>Case.Due_Date__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
@@ -65,8 +71,8 @@
         <criteriaItems>
             <column>LAST_UPDATEONLY</column>
             <isUnlocked>true</isUnlocked>
-            <operator>lessThan</operator>
-            <value>4/22/2020 12:00 AM</value>
+            <operator>greaterOrEqual</operator>
+            <value>4/20/2020 12:00 AM</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -91,8 +97,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Case.Due_Date__c</dateColumn>
-        <endDate>2020-05-04</endDate>
+        <endDate>2020-05-18</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-04-27</startDate>
+        <startDate>2020-04-20</startDate>
     </timeFrameFilter>
 </Report>
