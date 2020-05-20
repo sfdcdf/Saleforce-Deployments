@@ -4,6 +4,9 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -67,13 +70,15 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>SUBJECT</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <endDate>2020-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-03-12</startDate>
     </timeFrameFilter>
 </Report>
