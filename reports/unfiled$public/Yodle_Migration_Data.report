@@ -51,6 +51,15 @@
     <columns>
         <field>Account.Sponsored_Save_Mode_Status__c</field>
     </columns>
+    <columns>
+        <field>Account.Days_Live__c</field>
+    </columns>
+    <columns>
+        <field>Account.Most_Recent_Login_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Secondary_Segments__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
