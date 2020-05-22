@@ -38,7 +38,7 @@
             <column>CUST_RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Lighthouse_Worksheets__c.CSC_Worksheet_Auto,Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical,Lighthouse_Worksheets__c.AR_Request_Form</value>
+            <value>Lighthouse_Worksheets__c.AR_Request_Form,Lighthouse_Worksheets__c.CSC_Worksheet_Dental</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -57,6 +57,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Lighthouse_Worksheets__c.CSC_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.CSC_Date__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>
