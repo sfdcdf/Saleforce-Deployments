@@ -5,6 +5,7 @@
             <alignment>right</alignment>
             <components>Console.BuiltInComponent.mostRecentlyUsed</components>
             <components>Console.BuiltInComponent.knowledgeOne</components>
+            <components>Console.BuiltInComponent.macroBrowser</components>
         </componentList>
         <detailPageRefreshMethod>autoRefresh</detailPageRefreshMethod>
         <footerColor>#f89514</footerColor>
