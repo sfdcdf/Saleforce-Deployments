@@ -297,8 +297,17 @@ public class ScheduleSplitGenerator_Test
         ApexPages.currentPage().getParameters().put('indexOfSplit','0');
         controller2.deleteRow();
         controller2.reset();
+              
+        controller2.getTotalARPU();
+        
         list<Schedule_Split__c> temp=[Select Id from Schedule_Split__c where OpportunityLineItemId__c =:oli.Id limit 2 ];
        delete temp;
+        
+        
+        
+        
+        
+        
         
         test.stopTest();
     }
