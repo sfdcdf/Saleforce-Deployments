@@ -445,6 +445,10 @@
                 <behavior>Readonly</behavior>
                 <field>EntitlementId</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>WorkItemSLA__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
