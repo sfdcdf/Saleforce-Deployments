@@ -4557,10 +4557,7 @@
         <tab>standard-Dashboard</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
-    <tabVisibilities>
-        <tab>tz__Local_Time_Error_Log__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
+    
     <tabVisibilities>
         <tab>Notification_Log__c</tab>
         <visibility>Hidden</visibility>
