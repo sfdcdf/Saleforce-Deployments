@@ -29,6 +29,21 @@ public class ScheduleSplitGenerator {
         OliId = ApexPages.CurrentPage().getparameters().get('id');
         system.debug('@@@ RecordId id '+OliId);
        // QtyEndDate=StrtDate.addMonths(QtyNoIns);
+       
+        for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity,ServiceDate,ContractLength__c From OpportunityLineItem where Id =: OliId]) 
+         {
+           
+               
+               StrtDate=a.ServiceDate;
+               Quantity=a.Quantity;
+               QtyNoIns=integer.valueOf(a.ContractLength__c);
+               
+               Revenue=a.TotalPrice;
+               RevStrtDate=a.ServiceDate;  
+               RevNoIns=integer.valueOf(a.ContractLength__c);
+           
+           
+         }
         
         
         
@@ -46,9 +61,9 @@ public class ScheduleSplitGenerator {
     //Method to send Picklist value to Quantity  and Revenue Type
     public List<SelectOption> getSchedTypeOptions() {
         List<SelectOption> SchedTypeOptions = new List<SelectOption>();
-        SchedTypeOptions.add(new SelectOption('','-None-'));
-        SchedTypeOptions.add(new SelectOption('Divide Amount into multiple installments','Divide Amount into multiple installments'));
+        //SchedTypeOptions.add(new SelectOption('','-None-'));
         SchedTypeOptions.add(new SelectOption('Repeat Amount for each installment','Repeat Amount for each installment'));
+        SchedTypeOptions.add(new SelectOption('Divide Amount into multiple installments','Divide Amount into multiple installments'));
         return SchedTypeOptions;
     }
     
@@ -56,7 +71,7 @@ public class ScheduleSplitGenerator {
     public List<SelectOption> getSchedInstOptions() 
     {
         List<SelectOption> SchedInstOptions = new List<SelectOption>();
-        SchedInstOptions.add(new SelectOption('','-None-'));
+        //SchedInstOptions.add(new SelectOption('','-None-'));
         /*SchedInstOptions.add(new SelectOption('Daily','Daily'));
         SchedInstOptions.add(new SelectOption('Weekly','Weekly')); */
         SchedInstOptions.add(new SelectOption('Monthly','Monthly'));

@@ -302,7 +302,9 @@ public class CreateEditPage {
         //rowNum = Integer.valueOf(apexpages.currentpage().getparameters().get('index'));
         //scheduleSplitList.remove(rowNum);        
     }
-    //Modification Ended Here On 10th June 2015.
+    
+    
+      
     
     public PageReference getTotal(){        
         if(indexSplitList != null && !indexSplitList.isEmpty()){
@@ -317,6 +319,28 @@ public class CreateEditPage {
             }
             temptotalRevenue=totalRevenue;
             totalRevenue=totalRevenue.setScale(2);   
+          //  totalRevenue=totalRevenue.round(System.RoundingMode.HALF_EVEN);
+            
+        }
+        
+              
+          
+        return null;
+    }
+    
+    public PageReference getTotalARPU(){        
+        if(indexSplitList != null && !indexSplitList.isEmpty()){
+            totalRevenue = 0.0;
+            for(IndexSplit indSplit : indexSplitList){
+                if(indSplit.scSplit.Avg_Revenue_Per_Unit_ARPU__c != null){
+                    // totalRevenue+= ss.Revenue__c;
+                    indSplit.scSplit.Revenue__c= indSplit.scSplit.Quantity__c * indSplit.scSplit.Avg_Revenue_Per_Unit_ARPU__c;
+                    system.debug('*123****totalRevenue'+totalRevenue);
+                    //totalRevenue=totalRevenue.setScale(2);                   
+                }
+            }
+          //  temptotalRevenue=totalRevenue;
+          //  totalRevenue=totalRevenue.setScale(2);   
           //  totalRevenue=totalRevenue.round(System.RoundingMode.HALF_EVEN);
             
         }

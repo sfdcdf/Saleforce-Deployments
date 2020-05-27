@@ -57,7 +57,10 @@
                     <apex:outputText id="opfinaltotal" value="{!totalRevenue}"/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <apex:commandButton id="reCalButton" value="Recalculate" action="{!getTotal}"/>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:commandButton id="reCalARPU" value="Adjust MRR by ARPU " action="{!getTotalARPU}"/>    
                     </apex:outputPanel>
+                  
                 </apex:facet>
                 
                
