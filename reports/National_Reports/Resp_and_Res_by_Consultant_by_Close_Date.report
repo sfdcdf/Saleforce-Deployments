@@ -174,11 +174,11 @@
     </params>
     <reportType>CaseMilestone</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LAST7</interval>
+        <interval>INTERVAL_YESTERDAY</interval>
     </timeFrameFilter>
 </Report>

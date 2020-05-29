@@ -44,6 +44,36 @@
     <columns>
         <field>CLOSED_DATEONLY</field>
     </columns>
+    <columns>
+        <field>Case.X1st_Touch_Attempt_Made_By__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_1_Method__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_Date_1__c</field>
+    </columns>
+    <columns>
+        <field>Case.Resolution_Attempt_Status_1__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_1_Contact_Made_With__c</field>
+    </columns>
+    <columns>
+        <field>Case.X2nd_Touch_Attempt_Made_By__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_2_Method__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_Date_2__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_2_Result__c</field>
+    </columns>
+    <columns>
+        <field>Case.Attempt_2_Contact_Made_With__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -52,28 +82,10 @@
             <value>Case.YBN_Outbound_Touch_Point,Case.YBN_Inbound_Inquiry,Case.YBN_Request,Case.New_Client_Setup,Case.YBN_Corporate_Interaction</value>
         </criteriaItems>
         <criteriaItems>
-            <column>ACCOUNT_RECORDTYPE</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Account.Standard</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>OWNER_ROLE</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Consultant</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Client_Type__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>YBN</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Time_To_Complete_Task_Minutes__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
