@@ -78661,8 +78661,8 @@ OR(
 ISPICKVAL(StageName, "M003 - Contract (IL)"), 
 ISPICKVAL(StageName, "Closed Won") 
 ),
-OR(ISBLANK(Contract_Term_in_months__c), 
-ISBLANK(Renewal_Term_in_months__c)) 
+OR(ISNULL(Contract_Term_in_months__c), 
+ISNULL(Renewal_Term_in_months__c)) 
 )</errorConditionFormula>
         <errorMessage>Please fill out the Contract Term (in months) &amp; Renewal Term (in months).</errorMessage>
     </validationRules>

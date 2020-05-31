@@ -97,6 +97,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Default</fullName>
         <fields>Name</fields>
@@ -108,6 +109,8 @@
         <fields>SE_Eligible__c</fields>
         <label>Default</label>
     </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
         <fullName>AccountId</fullName>
         <trackHistory>true</trackHistory>
@@ -137,6 +140,11 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>ExternalIdentifier</fullName>
+        <inlineHelpText>ID of matching record in an external system.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>InstallDate</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -146,6 +154,11 @@
     </fields>
     <fields>
         <fullName>IsInternal</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ManufactureDate</fullName>
+        <inlineHelpText>Date when the asset was manufactured.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -218,6 +231,12 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>StatusReason</fullName>
+        <inlineHelpText>Explanation of the device status.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>StockKeepingUnit</fullName>
     </fields>
     <fields>
@@ -229,9 +248,16 @@
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Uuid</fullName>
+        <inlineHelpText>Unique string identifying the asset.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>AllAssets</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Assets</label>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>
@@ -256,9 +282,4 @@
         <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
-    <listViews>
-        <fullName>AllAssets</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Assets</label>
-    </listViews>
 </CustomObject>
