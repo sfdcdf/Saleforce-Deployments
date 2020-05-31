@@ -35,6 +35,9 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Read</externalSharingModel>
     <fields>
         <fullName>Category</fullName>
         <trackHistory>false</trackHistory>
@@ -44,6 +47,10 @@
         <fullName>Channel</fullName>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsInsertable</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Message</fullName>
@@ -58,24 +65,6 @@
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Read</externalSharingModel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Message</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Category</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>Message</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Category</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Channel</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Message</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Category</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Channel</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>Read</sharingModel>
     <listViews>
         <fullName>All_Quick_Text</fullName>
         <columns>Name</columns>
@@ -97,4 +86,23 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>Message</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Category</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsInsertable</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Message</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Category</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Channel</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IsInsertable</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Message</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Category</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Channel</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>IsInsertable</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsInsertable</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
 </CustomObject>

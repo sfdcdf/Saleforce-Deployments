@@ -35,6 +35,9 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>CaptureContactPointType</fullName>
         <trackHistory>false</trackHistory>
@@ -69,6 +72,11 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>EngagementChannelTypeId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -81,9 +89,11 @@
         <fullName>PrivacyConsentStatus</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <listViews>
+        <fullName>All_ContactPointTypeConsent</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Contact Point Type Consent</label>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>Party</customTabListAdditionalFields>
         <customTabListAdditionalFields>ContactPointType</customTabListAdditionalFields>
@@ -103,9 +113,4 @@
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
-    <listViews>
-        <fullName>All_ContactPointTypeConsent</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Contact Point Type Consent</label>
-    </listViews>
 </CustomObject>

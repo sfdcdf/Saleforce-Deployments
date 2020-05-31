@@ -23,6 +23,9 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>KnowledgeArticleId</fullName>
         <trackHistory>false</trackHistory>
@@ -34,10 +37,12 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>LinkedEntityId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
