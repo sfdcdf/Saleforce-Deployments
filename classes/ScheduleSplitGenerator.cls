@@ -210,7 +210,8 @@ public class ScheduleSplitGenerator {
                            monthschedule.Quantity__c = TotalQuantity;
                           }     
                         monthschedule.OpportunityLineItemId__c = a.Id;
-                        system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
+                        system.debug('***-*-Opportunity--**-*-*'+monthschedule); 
+                        monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
                         newScheduleObjects.add(monthschedule);
                          system.debug('////neschedule////'+newScheduleObjects);
                         currentDate = (currentDate.addMonths(1));
@@ -281,7 +282,14 @@ public class ScheduleSplitGenerator {
                            monthschedule.Quantity__c = TotalQuantity;
                               
                         monthschedule.OpportunityLineItemId__c = a.Id;
+                        
                         system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
+                        if(monthschedule.Revenue__c!=null &&monthschedule.Quantity__c!=null)
+                        {
+                            monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
+                        }    
+                         
+                         
                         newScheduleObjects.add(monthschedule);
                          system.debug('////neschedule////'+newScheduleObjects);
                         currentDate = (currentDate.addMonths(1));
@@ -407,7 +415,11 @@ public class ScheduleSplitGenerator {
                      monthschedule.Quantity__c = TotalQuantity;
                     system.debug('*********Revenue.....'+monthschedule); 
                     monthschedule.OpportunityLineItemId__c = a.Id;
-                    system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
+                    system.debug('***-*-Opportunity--**-*-*'+monthschedule);   
+                    if(monthschedule.Revenue__c!=null &&monthschedule.Quantity__c!=null)
+                        {
+                            monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
+                        }  
                     newScheduleObjects.add(monthschedule);
                      system.debug('////neschedule////'+newScheduleObjects);
                     currentDate = (currentDate.addMonths(1));
@@ -534,6 +546,10 @@ public class ScheduleSplitGenerator {
                      monthschedule.Revenue__c = Totalamount.round(System.RoundingMode.HALF_EVEN);
                     system.debug('*********Revenue.....'+monthschedule); 
                     monthschedule.OpportunityLineItemId__c = a.Id;
+                    if(monthschedule.Revenue__c!=null &&monthschedule.Quantity__c!=null)
+                        {
+                            monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
+                        } 
                     system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
                     newScheduleObjects.add(monthschedule);
                      system.debug('////neschedule////'+newScheduleObjects);
