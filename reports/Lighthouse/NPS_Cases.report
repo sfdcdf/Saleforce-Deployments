@@ -8,10 +8,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
+        <chartType>Pie</chartType>
         <enableHoverLabels>true</enableHoverLabels>
-        <expandOthers>true</expandOthers>
-        <groupingColumn>LAST_UPDATE_BY</groupingColumn>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Case.Score__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -25,57 +26,32 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>RECORDTYPE</field>
-    </columns>
-    <columns>
         <field>CREATED_DATEONLY</field>
     </columns>
     <columns>
-        <field>CLOSED_DATE</field>
-    </columns>
-    <columns>
-        <field>Case.Case_Age_Business_Days__c</field>
-    </columns>
-    <columns>
-        <field>REASON</field>
-    </columns>
-    <columns>
-        <field>Case.Escalated__c</field>
-    </columns>
-    <columns>
-        <field>SUBJECT</field>
+        <field>Case.Response__c</field>
     </columns>
     <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
-        <field>Case.Due_Date__c</field>
-    </columns>
-    <columns>
-        <field>CREATED</field>
+        <field>CLOSED_DATE</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Case.LH_Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>LAST_UPDATE_BY</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>megan lewis,sarah vickers,sandra staffieri,wendy lincoln,laura ruer,david cambouris,thomas reece,alisha herzberg,trish wightman</value>
+            <value>Case.LH_NPS_Response</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>LAST_UPDATE_BY</field>
+        <field>Case.Score__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>LH Config Touched Cases</name>
+    <name>NPS Cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -92,7 +68,7 @@
     <sortColumn>CREATED_DATEONLY</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>LAST_UPDATEONLY</dateColumn>
-        <interval>INTERVAL_YESTERDAY</interval>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>
