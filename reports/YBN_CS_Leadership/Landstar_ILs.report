@@ -19,6 +19,9 @@
         <field>Account.Client_ID__c</field>
     </columns>
     <columns>
+        <field>Account.Client_Experience_Key__c</field>
+    </columns>
+    <columns>
         <field>Account.Client_First_Name__c</field>
     </columns>
     <columns>
@@ -47,6 +50,9 @@
     </columns>
     <columns>
         <field>PARENT.NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
     </columns>
     <filter>
         <criteriaItems>
