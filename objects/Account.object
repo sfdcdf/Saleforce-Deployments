@@ -13102,6 +13102,11 @@ IMS_Rep__r.Alias = 'lbwcs'), /*LeadStream Support*/
             <operation>contains</operation>
             <value>Lighthouse</value>
         </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
         <label>Lighthouse Accounts</label>
     </listViews>
     <listViews>
