@@ -229,6 +229,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Schedule Splits</relationshipLabel>
+        <relationshipName>Schedule_Splits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Quantity__c</fullName>
         <defaultValue>0</defaultValue>
         <externalId>false</externalId>

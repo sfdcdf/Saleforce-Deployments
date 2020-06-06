@@ -32010,6 +32010,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Schedule_Split__c.Opportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Schedule_Split__c.Quantity__c</field>
         <readable>true</readable>
     </fieldPermissions>
