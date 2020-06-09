@@ -30,7 +30,7 @@ public class ScheduleSplitGenerator {
         system.debug('@@@ RecordId id '+OliId);
        // QtyEndDate=StrtDate.addMonths(QtyNoIns);
        
-        for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity,ServiceDate,ContractLength__c From OpportunityLineItem where Id =: OliId]) 
+        for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity,ServiceDate,ContractLength__c,OpportunityId From OpportunityLineItem where Id =: OliId]) 
          {
            
                
@@ -128,7 +128,7 @@ public class ScheduleSplitGenerator {
          
          List<Schedule_Split__c> newScheduleObjects = new List<Schedule_Split__c>();
          
-         for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity From OpportunityLineItem where Id =: OliId]) 
+         for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity,OpportunityId  From OpportunityLineItem where Id =: OliId]) 
          {    
              // check for value in Total Price fields and also check for values in Start Date  and End Date
              if((a.TotalPrice!=0))
@@ -210,6 +210,7 @@ public class ScheduleSplitGenerator {
                            monthschedule.Quantity__c = TotalQuantity;
                           }     
                         monthschedule.OpportunityLineItemId__c = a.Id;
+                        monthschedule.Opportunity__c=a.OpportunityId;
                         system.debug('***-*-Opportunity--**-*-*'+monthschedule); 
                         monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
                         newScheduleObjects.add(monthschedule);
@@ -282,7 +283,7 @@ public class ScheduleSplitGenerator {
                            monthschedule.Quantity__c = TotalQuantity;
                               
                         monthschedule.OpportunityLineItemId__c = a.Id;
-                        
+                        monthschedule.Opportunity__c=a.OpportunityId;
                         system.debug('***-*-Opportunity--**-*-*'+monthschedule);    
                         if(monthschedule.Revenue__c!=null &&monthschedule.Quantity__c!=null)
                         {
@@ -350,7 +351,7 @@ public class ScheduleSplitGenerator {
          
          List<Schedule_Split__c> newScheduleObjects = new List<Schedule_Split__c>();
          
-         for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity From OpportunityLineItem where Id =: OliId]) 
+         for(OpportunityLineitem a :[Select Id,TotalPrice,Quantity,OpportunityId  From OpportunityLineItem where Id =: OliId]) 
          {    
              // check for value in Total Price fields and also check for values in Start Date  and End Date
              if((a.Quantity!=0))
@@ -415,7 +416,8 @@ public class ScheduleSplitGenerator {
                      monthschedule.Quantity__c = TotalQuantity;
                     system.debug('*********Revenue.....'+monthschedule); 
                     monthschedule.OpportunityLineItemId__c = a.Id;
-                    system.debug('***-*-Opportunity--**-*-*'+monthschedule);   
+                    system.debug('***-*-Opportunity--**-*-*'+monthschedule);  
+                    monthschedule.Opportunity__c=a.OpportunityId;
                     if(monthschedule.Revenue__c!=null &&monthschedule.Quantity__c!=null)
                         {
                             monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
@@ -481,7 +483,7 @@ public class ScheduleSplitGenerator {
          
          List<Schedule_Split__c> newScheduleObjects = new List<Schedule_Split__c>();
          
-         for(OpportunityLineitem a :[Select Id,TotalPrice From OpportunityLineItem where Id =: OliId]) 
+         for(OpportunityLineitem a :[Select Id,TotalPrice,OpportunityId  From OpportunityLineItem where Id =: OliId]) 
          {    
              // check for value in Total Price fields and also check for values in Start Date  and End Date
              if((a.TotalPrice!=0))
@@ -546,6 +548,8 @@ public class ScheduleSplitGenerator {
                      monthschedule.Revenue__c = Totalamount.round(System.RoundingMode.HALF_EVEN);
                     system.debug('*********Revenue.....'+monthschedule); 
                     monthschedule.OpportunityLineItemId__c = a.Id;
+                    monthschedule.Opportunity__c=a.OpportunityId;
+                     
                     if(monthschedule.Revenue__c!=null &&monthschedule.Quantity__c!=null)
                         {
                             monthschedule.Avg_Revenue_Per_Unit_ARPU__c=monthschedule.Revenue__c/monthschedule.Quantity__c;
