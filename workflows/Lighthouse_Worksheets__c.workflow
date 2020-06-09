@@ -6,7 +6,7 @@
         <description>Bolt On Backed Out Sale - Cancel All</description>
         <protected>false</protected>
         <recipients>
-            <recipient>kevin.lewis@lighthousepmg.com.ib</recipient>
+            <recipient>kevin.lewis@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>
@@ -54,7 +54,7 @@
         <description>LH Auto Retention for AR Request Form Package Upsell</description>
         <protected>false</protected>
         <recipients>
-            <recipient>crystal.bellew@lighthousepmg.com.ib</recipient>
+            <recipient>crystal.bellew@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>support@lighthousepmg.com</senderAddress>
@@ -77,15 +77,15 @@
         <description>LH - Curve Cloud Install Notification</description>
         <protected>false</protected>
         <recipients>
-            <recipient>breon.landers@lighthousepmg.com.ib</recipient>
+            <recipient>breon.landers@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
+            <recipient>sean.johnson@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>support@lighthousepmg.com</senderAddress>
@@ -97,15 +97,15 @@
         <description>LH Install/CSC Backed Out</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ann.lewis@lighthousepmg.com.ib</recipient>
+            <recipient>ann.lewis@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
+            <recipient>sean.johnson@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -120,15 +120,15 @@
         <description>LH Install Moved to Stalled</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ann.lewis@lighthousepmg.com.ib</recipient>
+            <recipient>ann.lewis@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sean.johnson@lighthousepmg.com.ib</recipient>
+            <recipient>sean.johnson@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>

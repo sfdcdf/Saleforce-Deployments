@@ -109,19 +109,19 @@
         <description>LH Master Escalation</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ann.lewis@lighthousepmg.com.ib</recipient>
+            <recipient>ann.lewis@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>david.cambouris@lighthousepmg.com.ib</recipient>
+            <recipient>david.cambouris@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>michael.staffieri@lighthousepmg.com.ib</recipient>
+            <recipient>michael.staffieri@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>ta.stanton@lighthousepmg.com.ib</recipient>
+            <recipient>ta.stanton@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -136,7 +136,7 @@
         <description>LH New Training Email from Support</description>
         <protected>false</protected>
         <recipients>
-            <recipient>crystal.bellew@lighthousepmg.com.ib</recipient>
+            <recipient>crystal.bellew@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -210,7 +210,7 @@
         <description>Send Email to LHFS Reps for Yodle Gold</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ann.lewis@lighthousepmg.com.ib</recipient>
+            <recipient>ann.lewis@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -221,11 +221,11 @@
         <description>Send Email to LHFS Reps for Yodle Gold</description>
         <protected>false</protected>
         <recipients>
-            <recipient>crystal.bellew@lighthousepmg.com.ib</recipient>
+            <recipient>crystal.bellew@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>kevin.lewis@lighthousepmg.com.ib</recipient>
+            <recipient>kevin.lewis@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>

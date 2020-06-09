@@ -24,7 +24,7 @@
         <description>Lighthouse Exit Survey - Poor Customer Service</description>
         <protected>false</protected>
         <recipients>
-            <recipient>crystal.bellew@lighthousepmg.com.ib</recipient>
+            <recipient>crystal.bellew@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>support@lighthousepmg.com</senderAddress>
