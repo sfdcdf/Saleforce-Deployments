@@ -36,6 +36,11 @@
         <name>OpportunityLineItemId__c</name>
     </fields>
     <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Schedule Splits --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Quantity --></label>
         <name>Quantity__c</name>
     </fields>
