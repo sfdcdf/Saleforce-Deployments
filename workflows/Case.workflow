@@ -125,7 +125,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>thomas.reece@lighthousepmg.com.ib</recipient>
+            <recipient>thomas.reece@lighthousepmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
