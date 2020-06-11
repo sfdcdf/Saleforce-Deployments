@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Schedule_Split__c$Name</field>
+    </columns>
+    <columns>
+        <field>Schedule_Split__c$Opportunity__c.Account</field>
+    </columns>
+    <columns>
+        <field>Schedule_Split__c$OpportunityLineItemId__c</field>
+    </columns>
+    <columns>
+        <field>Schedule_Split__c$Opportunity__c.Account.Id</field>
+    </columns>
+    <columns>
+        <field>Schedule_Split__c$Opportunity__c.Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Schedule_Split__c$Opportunity__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Schedule Split without Product Line Item</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpptySchedulesSplit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Schedule_Split__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
