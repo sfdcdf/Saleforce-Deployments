@@ -416,6 +416,34 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>User_Status__c</fullName>
+        <description>Always exclude [We will use this for all users who doesn't want to inactive never]
+Temporarily Exclude [ We will use this to exclude the user from deactivating batch for Lead routing and Reactivating the user(but the user should be in this status for 48 hours if he is reactivated.)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Always exclude [We will use this for all users who doesn't want to inactive never]
+Temporarily Exclude [ We will use this to exclude the user from deactivating batch for Lead routing and Reactivating the user(but the user should be in this status for 48h</inlineHelpText>
+        <label>User Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Always exclude</fullName>
+                    <default>false</default>
+                    <label>Always exclude</label>
+                </value>
+                <value>
+                    <fullName>Temporarily Exclude</fullName>
+                    <default>false</default>
+                    <label>Temporarily Exclude</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Winback_Team__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
