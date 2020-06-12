@@ -195,6 +195,10 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Ability_to_Complete_Install_Wrkst__c</fullName>
         <defaultValue>false</defaultValue>
@@ -734,6 +738,34 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>User_Status__c</fullName>
+        <description>Always exclude [We will use this for all users who doesn't want to inactive never]
+Temporarily Exclude [ We will use this to exclude the user from deactivating batch for Lead routing and Reactivating the user(but the user should be in this status for 48 hours if he is reactivated.)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Always exclude [We will use this for all users who doesn't want to inactive never]
+Temporarily Exclude [ We will use this to exclude the user from deactivating batch for Lead routing and Reactivating the user(but the user should be in this status for 48h</inlineHelpText>
+        <label>User Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Always exclude</fullName>
+                    <default>false</default>
+                    <label>Always exclude</label>
+                </value>
+                <value>
+                    <fullName>Temporarily Exclude</fullName>
+                    <default>false</default>
+                    <label>Temporarily Exclude</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Winback_Team__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -946,25 +978,6 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
-    <searchLayouts>
-        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ACTIVE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>MANAGER</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>Read</sharingModel>
     <listViews>
         <fullName>ActiveUsers1</fullName>
         <columns>FULL_NAME</columns>
@@ -1094,6 +1107,21 @@
         </filters>
         <label>Stale Users</label>
     </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ACTIVE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MANAGER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
     <webLinks>
         <fullName>Loop__Change_DS_Cred</fullName>
         <availability>online</availability>

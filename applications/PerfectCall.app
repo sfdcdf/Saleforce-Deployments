@@ -31,4 +31,5 @@
     <tabs>Call_Grading_Form_2_0__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>MarketoLeadSFAccountMapping__c</tabs>
+    <tabs>Schedule_Split__c</tabs>
 </CustomApplication>

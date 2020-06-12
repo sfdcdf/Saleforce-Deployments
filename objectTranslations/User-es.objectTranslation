@@ -354,6 +354,20 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- Always exclude [We will use this for all users who doesn&apos;t want to inactive never]
+Temporarily Exclude [ We will use this to exclude the user from deactivating batch for Lead routing and Reactivating the user(but the user should be in this status for 48h --></help>
+        <label><!-- User Status --></label>
+        <name>User_Status__c</name>
+        <picklistValues>
+            <masterLabel>Always exclude</masterLabel>
+            <translation><!-- Always exclude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporarily Exclude</masterLabel>
+            <translation><!-- Temporarily Exclude --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Winback Team --></label>
         <name>Winback_Team__c</name>
     </fields>
