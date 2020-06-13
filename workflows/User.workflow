@@ -9,6 +9,27 @@
         <protected>false</protected>
     </fieldUpdates>
     <rules>
+        <fullName>Auto Deactivate user</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.User_Status__c</field>
+            <operation>equals</operation>
+            <value>Include</value>
+        </criteriaItems>
+        <description>If the use LastLogin &gt;30 Days, User will automatically get inactivated.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>User.LastLoginDate</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
         <fullName>Deactivate the user</fullName>
         <active>true</active>
         <criteriaItems>
