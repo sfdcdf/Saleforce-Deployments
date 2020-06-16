@@ -398,7 +398,32 @@ public class ScheduleSplitGenerator_Test
         controller2.editSchedule();
         controller2.DeleteSchedule();
         
+        Apexpages.StandardController stdController2 = new Apexpages.StandardController(oli);
         
+        ScheduleSplitGenerator controller3 = new ScheduleSplitGenerator(stdController);
+        
+        
+        
+        // Add parameters to page URL
+        ApexPages.currentPage().getParameters().put('qp', 'yyyy');
+        
+        controller3 = new ScheduleSplitGenerator(stdController2); 
+        
+        controller3.OliId=oli.id;
+        controller3.Type='Quantity and Revenue Schedules';
+        controller3.QtySchedType='Divide Amount into multiple installments';
+        controller3.StrtDate= date.newInstance(2020,02,10);
+        controller3.SchQtyInstPer='Monthly';
+        controller3.QtyNoIns=6;
+        controller3.Quantity=600.00;
+        
+        controller3.RevSchedType='Repeat Amount for each installment';
+        controller3.RevStrtDate=date.newInstance(2020,02,10);
+        controller3.RevSchInstPer='Monthly';
+        controller3.RevNoIns=6;
+        controller3.Revenue=12;
+        controller3.save();
+        delete oli;
         
         test.stopTest();
     }

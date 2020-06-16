@@ -5,18 +5,18 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Average</aggregate>
+            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
+            <column>Customer_Surveys__c.NPS_Score_Count__c</column>
         </chartSummaries>
         <chartSummaries>
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
+            <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Customer_Surveys__c.NPS_Score_Count__c</column>
+            <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
         </chartSummaries>
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>

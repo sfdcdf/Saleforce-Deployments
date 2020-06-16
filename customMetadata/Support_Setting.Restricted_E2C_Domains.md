@@ -20,6 +20,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">web.com,yodle.com,acuityscheduling.com,smartsheet.com,theoreminc.net,webconnect.web.com,amben.com,lighthousepmg.com,registeredsite.com,solidcactus.com,crestcom.com,rpm.com,facebookmail.com,ccaglobal.com,chatter.salesforce.com,acquisio.com,monday.com</value>
+        <value xsi:type="xsd:string">web.com,yodle.com,acuityscheduling.com,smartsheet.com,theoreminc.net,webconnect.web.com,amben.com,lighthousepmg.com,registeredsite.com,solidcactus.com,crestcom.com,facebookmail.com,chatter.salesforce.com,acquisio.com,monday.com</value>
     </values>
 </CustomMetadata>
