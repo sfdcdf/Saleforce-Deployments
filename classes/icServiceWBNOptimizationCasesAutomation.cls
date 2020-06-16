@@ -1,5 +1,6 @@
 /**
  * Created by Francois Poirier on 2018-08-03.
+ * Modilfied by Mahesh Bogila- 06/15/2020.
  */
 
 public with sharing class icServiceWBNOptimizationCasesAutomation {
@@ -7,10 +8,10 @@ public with sharing class icServiceWBNOptimizationCasesAutomation {
     public static void wbnOptimizationCasesAutomation(){
 
         Date sevenDaysAgo = Date.today().addDays(-7);
-        Date threeDaysAgo = Date.today().addDays(-3);
+      //  Date threeDaysAgo = Date.today().addDays(-3);
 
 
-        List<Account> accountsLive3Days = new List<Account>();
+      //  List<Account> accountsLive3Days = new List<Account>();
         List<Account> accountsLive7Days = new List<Account>();
         List<Case> casesToInsert = new List<Case>();
 
@@ -41,7 +42,7 @@ public with sharing class icServiceWBNOptimizationCasesAutomation {
             actPerfQueueId = groups[0].Id;
         }
 
-        List<Case> cases3DaysOpt = [
+    /*    List<Case> cases3DaysOpt = [
                 SELECT  Id,
                         AccountId
                 FROM    Case
@@ -50,13 +51,13 @@ public with sharing class icServiceWBNOptimizationCasesAutomation {
                 AND     YBNRequestReason__c = 'Performance Team'
                 AND     YBNRequestDetail__c = 'PPC Optimzation'
                 AND     Account.Live_Date__c =: threeDaysAgo
-        ];
+        ];*/
 
-        List<Id> accountsWith3DayCase = new List<Id>();
+    //    List<Id> accountsWith3DayCase = new List<Id>();
 
-        for(Case c : cases3DaysOpt){
+     /*   for(Case c : cases3DaysOpt){
             accountsWith3DayCase.add(c.AccountId);
-        }
+        }*/
 
         List<Case> cases7DaysOpt = [
                 SELECT  Id,
@@ -76,7 +77,7 @@ public with sharing class icServiceWBNOptimizationCasesAutomation {
         }
 
 
-        accountsLive3Days = [
+     /*   accountsLive3Days = [
                 SELECT  Id,
                         Name
                 FROM    Account
@@ -99,7 +100,7 @@ public with sharing class icServiceWBNOptimizationCasesAutomation {
 
             casesToInsert.add(newCase);
 
-        }
+        }*/
 
         accountsLive7Days = [
                 SELECT  Id,
