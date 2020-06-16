@@ -140,10 +140,10 @@ Account.Product_Type_Transactional__c}</div></td></tr>
   
   <div class="slds-float--left" style="width:15%; padding-right:10px;">
     <p> <div class="slds-text-body--small"><strong>Client Information</strong></div>
-        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/dashboard/home?clientId={!Account.Client_ID__c}" 
+        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.lighthousepmg.com/app/dashboard/home?clientId={!Account.Client_ID__c}" 
 
 target="_blank">View Client Dashboard</a></div></apex:outputText>
-        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/clientconfig/home/clientsummary?clientId={!
+        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.lighthousepmg.com/app/clientconfig/home/clientsummary?clientId={!
 
 Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div></apex:outputText>
 
@@ -376,7 +376,7 @@ target="_blank">{!IF((Account.LH_Client_Portal__c != ''), "Launch Portal", "")}<
   <div class="slds-float--left" style="width:15%; padding-right:10px;">
     <p> <div class="slds-text-body--small"><strong>Client Information</strong></div>
         <apex:outputText ><div class="slds-text-body--small"><a href="{!Account.Link_to_Client_Dashboard__c}" target="_blank">View Client Dashboard</a></div></apex:outputText>
-        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.yodle.com/app/clientconfig/home/clientsummary?clientId={!Account.Client_ID__c}" target="_blank">View Client in Yodle 
+        <apex:outputText ><div class="slds-text-body--small"><a href="http://live.lighthousepmg.com/app/clientconfig/home/clientsummary?clientId={!Account.Client_ID__c}" target="_blank">View Client in Yodle 
 
 Live</a><br/></div></apex:outputText>
         
