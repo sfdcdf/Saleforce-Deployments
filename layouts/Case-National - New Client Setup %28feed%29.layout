@@ -236,10 +236,23 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>QA_Partner__c</field>
+                <field>Geo_targeting_Inclusions_Exclusions__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Landing_page_URL__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Offerings_Sub_Offerings__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Business_Address_to_use__c</field>
+            </layoutItems>
+        </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>

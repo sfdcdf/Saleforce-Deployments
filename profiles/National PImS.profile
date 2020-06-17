@@ -10424,6 +10424,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Business_Address_to_use__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Business_Hours_Days_Open__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11464,6 +11469,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Geo_targeting_Inclusions_Exclusions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Geographic_Areas_To_Service__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11805,6 +11815,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.LH_Outbound_Result__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Landing_page_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12225,6 +12240,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Offering__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Offerings_Sub_Offerings__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

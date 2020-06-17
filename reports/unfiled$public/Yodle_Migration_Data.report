@@ -67,6 +67,12 @@
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Product_Type_Transactional__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lighthouse</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Yodle Migration Data</name>
