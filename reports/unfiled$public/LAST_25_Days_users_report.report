@@ -31,7 +31,7 @@
         <field>LAST_LOGIN</field>
     </columns>
     <filter>
-        <booleanFilter>1 OR 2</booleanFilter>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>LAST_LOGIN</column>
             <isUnlocked>true</isUnlocked>
@@ -43,6 +43,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.User_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Always exclude</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
