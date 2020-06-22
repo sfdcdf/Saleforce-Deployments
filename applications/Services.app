@@ -166,33 +166,6 @@
             <location>full</location>
         </listPlacement>
         <listRefreshMethod>refreshListRows</listRefreshMethod>
-        <pushNotifications>
-            <fieldNames>Owner</fieldNames>
-            <objectName>Cancellation_Request__c</objectName>
-        </pushNotifications>
-        <pushNotifications>
-            <fieldNames>IMS_Rep__c</fieldNames>
-            <fieldNames>IsClosed</fieldNames>
-            <fieldNames>Owner</fieldNames>
-            <fieldNames>Reason_Detail__c</fieldNames>
-            <fieldNames>Reason__c</fieldNames>
-            <fieldNames>Status</fieldNames>
-            <fieldNames>Sub_Reason__c</fieldNames>
-            <fieldNames>Sub_Status__c</fieldNames>
-            <objectName>Case</objectName>
-        </pushNotifications>
-        <pushNotifications>
-            <fieldNames>0</fieldNames>
-            <objectName>Contact</objectName>
-        </pushNotifications>
-        <pushNotifications>
-            <fieldNames>0</fieldNames>
-            <objectName>Lighthouse_Worksheets__c</objectName>
-        </pushNotifications>
-        <pushNotifications>
-            <fieldNames>Owner</fieldNames>
-            <objectName>Organic_Analysis__c</objectName>
-        </pushNotifications>
         <whitelistedDomains>yodle.com</whitelistedDomains>
         <whitelistedDomains>lighthousepmg.com</whitelistedDomains>
     </consoleConfig>
