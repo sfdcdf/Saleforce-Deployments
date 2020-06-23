@@ -69,13 +69,19 @@
     <columns>
         <field>CREATED_DATEONLY</field>
     </columns>
-    <description>SEO Manager Cases</description>
+    <description>Open NCS Cases</description>
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.New_Client_Setup</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -84,7 +90,7 @@
         <field>STATUS</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Kendall&apos;s Cases</name>
+    <name>Open EFE NCS Cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -94,7 +100,7 @@
         <value>1</value>
     </params>
     <reportType>CaseList</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>

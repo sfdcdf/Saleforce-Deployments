@@ -53,10 +53,10 @@ public class CreateEditPage {
         if(scheSpId != null)
         {
             
-            scheduleSplitList = [Select Id,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c,Revenue__c,Amount__c, End_date__c,Start_Date__c from Schedule_Split__c where OpportunityLineItemId__c= : scheSpId];
+            scheduleSplitList = [Select Id,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c,Revenue__c,Amount__c, End_date__c,Start_Date__c from Schedule_Split__c where OpportunityLineItemId__c= : scheSpId order by Start_Date__c];
          
             
-            scheduleSplitList.sort();
+          //  scheduleSplitList.sort();
             tempstart= scheduleSplitList[0].Start_Date__c;
          
             amntSched= scheduleSplitList [0].Revenue__c;
@@ -129,7 +129,7 @@ public class CreateEditPage {
                 for(IndexSplit indSplit : indexSplitList){
                      scheduleSplitList.add(indSplit.scSplit);
                                              
-                     if(indSplit.scSplit.Start_Date__c == null || indSplit.scSplit.End_Date__c == null || indSplit.scSplit.Revenue__c == null ){                    
+                     if(indSplit.scSplit.Start_Date__c == null ){                    
                         //scheduleSplitList.remove(i);
                         isError = TRUE;
                         ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Start Date, End Date & Revenue should not be blank'));                    
