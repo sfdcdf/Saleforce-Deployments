@@ -127,14 +127,14 @@
         <fullName>Yodle_Gold_Service_Cancel_Closed_Email</fullName>
         <description>Yodle Gold Service Cancel Closed Email</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>katie.green@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Agent_Emails_Retention/Yodle_Gold_Cancel_Request_Closed</template>
-    </alerts>
+    <recipients>
+            <recipient>katie.green@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <fieldUpdates>
         <fullName>Approval_By_Manager</fullName>
         <field>Approval_By__c</field>
@@ -1161,7 +1161,7 @@ Original Leadstream Auto Close First Cancel Code</description>
             <name>Yodle_Gold_Service_Cancel_Closed_Email</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Yodle_Gold_Service__c</field>
             <operation>equals</operation>
