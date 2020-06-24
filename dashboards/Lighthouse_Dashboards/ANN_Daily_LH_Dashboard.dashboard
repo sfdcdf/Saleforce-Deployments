@@ -74,18 +74,6 @@
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
             <groupingSortProperties />
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>OBC Recordings</metricLabel>
-            <report>Lighthouse/ANN_Completed_OBC_Requests</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <groupingSortProperties />
             <header>CSC TEAM (Daily)</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -158,6 +146,31 @@
             <report>Lighthouse/ANN_Save_by_outcome</report>
             <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <header>Sales:</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>LH Sold (Daily)</metricLabel>
+            <report>Lighthouse/ANN_LH_Sales_Today</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Annual Prepay</metricLabel>
+            <report>Lighthouse/ANN_Annual_Prepay</report>
+            <showRange>false</showRange>
         </components>
     </middleSection>
     <rightSection>
@@ -264,19 +277,6 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>LH Email</metricLabel>
             <report>unfiled$public/ANN_LH_Email_Completed_Monthly</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <groupingSortProperties />
-            <header>Sales:</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>LH Sold (Daily)</metricLabel>
-            <report>Lighthouse/ANN_LH_Sales_Today</report>
             <showRange>false</showRange>
         </components>
     </rightSection>
