@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cancellation Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cancellation Requests</value>
+    </caseValues>
     <fields>
         <label><!-- Account IMS --></label>
         <name>Account_IMS__c</name>
@@ -3878,6 +3886,10 @@
             <translation><!-- Open Dental --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>OperaDDS</masterLabel>
+            <translation><!-- OperaDDS --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Ortho2</masterLabel>
             <translation><!-- Ortho2 --></translation>
         </picklistValues>
@@ -4994,15 +5006,6 @@
         <label><!-- Cancellation Id (18) --></label>
         <name>CancellationId18__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Cancellation Form</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Cancellation Requests</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Cancellation Request (feed)</layout>
         <sections>
@@ -5277,6 +5280,7 @@
         <label><!-- WBN Cancellation Request --></label>
         <name>WBN_Cancellation_Request</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field --></errorMessage>
         <name>Cancel_Code_is_Lost_to_Competitor</name>
