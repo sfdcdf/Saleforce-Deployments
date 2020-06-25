@@ -75,6 +75,7 @@
         <field>Case.Attempt_2_Contact_Made_With__c</field>
     </columns>
     <filter>
+        <booleanFilter>(1 OR (3 AND 4)) AND 2</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <isUnlocked>false</isUnlocked>
@@ -86,6 +87,18 @@
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Charge_Failure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Client_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>YBN</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
