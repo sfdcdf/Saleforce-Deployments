@@ -1397,7 +1397,7 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         <filters>
             <field>LAST_UPDATE</field>
             <operation>greaterOrEqual</operation>
-            <value>LAST_N_DAYS:2</value>
+            <value>LAST_N_DAYS:5</value>
         </filters>
         <label>Recently Modified Users</label>
         <sharedTo>

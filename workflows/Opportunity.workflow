@@ -2585,7 +2585,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>YBN_Opp_in_Exec_Review_Call_Stage_Assign_CSM</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 and 2 and (3 or (4 and 5))</booleanFilter>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -2620,7 +2620,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>YBN_Opp_in_Exec_Review_Call_Stage_Assign_CSM</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 and 2 and (3 or 4)</booleanFilter>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -2926,7 +2926,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>contract_status</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
