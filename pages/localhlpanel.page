@@ -285,7 +285,7 @@ Account.Client_ID__c}" target="_blank">View Client in Yodle Live</a><br/></div><
    
          <tr><td><div class="slds-text-body--small">Client ID:</div></td><td><div class="slds-text-body--small">{!Account.Client_ID__c}</div></td></tr>
             <tr><td><div class="slds-text-body--small">{!IF((Account.LH_360_ID__c != ''), "Sugar ID:", "")}</div></td><td><div class="slds-text-body--small">
-            <a href="http://sugar.lighthousepmg.local/index.php?module=Home&action=UnifiedSearch&search_form=false&advanced=false&query_string={!Account.LH_360_ID__c}" target="_blank"><apex:outputText value="{!Account.LH_360_ID__c}"></apex:outputText></a>
+            <a href="http://lh-sugarcrm.internetbrands.com/index.php?module=Home&action=UnifiedSearch&search_form=false&advanced=false&query_string={!Account.LH_360_ID__c}" target="_blank"><apex:outputText value="{!Account.LH_360_ID__c}"></apex:outputText></a>
             </div></td></tr>
             
         <tr><td><div class="slds-text-body--small">{!IF((Account.LH_Client_Portal__c != ''), "Legacy Portal:", "")}</div></td><td><div class="slds-text-body--small"><a href="{!Account.LH_Client_Portal__c}" 
