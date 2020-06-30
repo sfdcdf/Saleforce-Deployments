@@ -4,31 +4,28 @@
         <field>Account.Client_ID__c</field>
     </columns>
     <columns>
-        <field>Account.WBN_JAX_CUST_ID__c</field>
+        <field>Account.AccountId18__c</field>
     </columns>
     <columns>
-        <field>Account.AccountId18__c</field>
+        <field>Account.Client_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type_Transactional__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.Account_Director__c</field>
+        <field>Account.Client_Experience_Key__c</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type__c</field>
     </columns>
     <columns>
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
         <field>Account.Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.Individual_Location_Service_Level__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_Experience_Key__c</field>
-    </columns>
-    <columns>
-        <field>URL</field>
     </columns>
     <columns>
         <field>ADDRESS1_STREET</field>
@@ -61,9 +58,6 @@
         <field>Account.Client_Phone_Number__c</field>
     </columns>
     <columns>
-        <field>Account.Email_for_Touchplan__c</field>
-    </columns>
-    <columns>
         <field>Account.Email__c</field>
     </columns>
     <filter>
@@ -74,16 +68,10 @@
             <value>Account.Standard</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Client_Type__c</column>
+            <column>Account.IMS_Rep__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>YBN</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>516,813,814,815</value>
+            <value>Walter Rundle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
@@ -93,19 +81,14 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>PARENT.NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Tenet ILs</name>
+    <name>Local Accounts - Walter Rundle</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>AccountList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
