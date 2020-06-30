@@ -16,7 +16,7 @@
         <field>CASE_NUMBER</field>
     </columns>
     <filter>
-        <booleanFilter>((1 AND 2)) AND 3</booleanFilter>
+        <booleanFilter>(((1 AND 2)) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
             <isUnlocked>false</isUnlocked>
@@ -34,6 +34,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Billing - Annual Prepay</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>PREPAY</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
