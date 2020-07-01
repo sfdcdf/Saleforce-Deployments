@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Additional_Values__c</field>
-        <value xsi:type="xsd:string">yodle.onmicrosoft.com,yodle.net,slack.com,bottle-labeler.com,event.splashthat.com,salesforce.com,zoom.us,google.com,webpronews.com,knowbe4.com</value>
+        <value xsi:type="xsd:string">yodle.onmicrosoft.com,yodle.net,slack.com,bottle-labeler.com,event.splashthat.com,salesforce.com,zoom.us,google.com,webpronews.com,knowbe4.com,enspireforenterprise.com,constellationhbs.com</value>
     </values>
     <values>
         <field>Description__c</field>

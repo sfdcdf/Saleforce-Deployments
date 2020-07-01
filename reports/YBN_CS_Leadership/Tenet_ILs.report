@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Account.Client_ID__c</field>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Status__c</field>
+    </columns>
+    <columns>
+        <field>URL</field>
     </columns>
     <columns>
         <field>Account.WBN_JAX_CUST_ID__c</field>
@@ -10,25 +16,19 @@
         <field>Account.AccountId18__c</field>
     </columns>
     <columns>
-        <field>ACCOUNT.NAME</field>
-    </columns>
-    <columns>
-        <field>Account.Account_Director__c</field>
-    </columns>
-    <columns>
-        <field>Account.IMS_Rep__c</field>
-    </columns>
-    <columns>
-        <field>Account.Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.Individual_Location_Service_Level__c</field>
+        <field>Account.Client_ID__c</field>
     </columns>
     <columns>
         <field>Account.Client_Experience_Key__c</field>
     </columns>
     <columns>
-        <field>URL</field>
+        <field>Account.Client_First_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Last_Name__c</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
     </columns>
     <columns>
         <field>ADDRESS1_STREET</field>
@@ -46,25 +46,13 @@
         <field>ADDRESS1_COUNTRY</field>
     </columns>
     <columns>
-        <field>Account.Client_First_Name__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_Last_Name__c</field>
-    </columns>
-    <columns>
-        <field>Account.Contact_Name__c</field>
-    </columns>
-    <columns>
-        <field>PHONE1</field>
-    </columns>
-    <columns>
-        <field>Account.Client_Phone_Number__c</field>
-    </columns>
-    <columns>
-        <field>Account.Email_for_Touchplan__c</field>
-    </columns>
-    <columns>
         <field>Account.Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
+    </columns>
+    <columns>
+        <field>Account.Multi_Location_Owner_Primary_CID__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -83,13 +71,13 @@
             <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>516,813,814,815</value>
+            <value>813,814,815</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>LIVE</value>
+            <value>LIVE,PROVISIONING</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -108,6 +96,8 @@
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

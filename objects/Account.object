@@ -13759,6 +13759,36 @@ or(
         <label>Lawn Doctor</label>
     </listViews>
     <listViews>
+        <fullName>Live_Accounts_w_o_Service_Levels</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Individual_Location_Service_Level__c</columns>
+        <columns>IMS_Rep_Full_Name__c</columns>
+        <columns>PARENT_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>equals</operation>
+            <value>YBN</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <filters>
+            <field>Individual_Location_Service_Level__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Live Accounts w/o Service Levels</label>
+    </listViews>
+    <listViews>
         <fullName>Lockbox_round_7_Yellow</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
