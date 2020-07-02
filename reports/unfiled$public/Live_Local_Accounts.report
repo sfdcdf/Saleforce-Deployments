@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>ACCOUNT.NAME</field>
-    </columns>
-    <columns>
-        <field>Account.Status__c</field>
-    </columns>
-    <columns>
-        <field>URL</field>
-    </columns>
-    <columns>
-        <field>Account.WBN_JAX_CUST_ID__c</field>
+        <field>Account.Client_ID__c</field>
     </columns>
     <columns>
         <field>Account.AccountId18__c</field>
     </columns>
     <columns>
-        <field>Account.Client_ID__c</field>
+        <field>Account.Client_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
         <field>Account.Client_Experience_Key__c</field>
     </columns>
     <columns>
-        <field>Account.Client_First_Name__c</field>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.invoiced_last_mtd__c</field>
     </columns>
     <columns>
-        <field>Account.Client_Last_Name__c</field>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.invoiced_this_MTD__c</field>
     </columns>
     <columns>
-        <field>PHONE1</field>
+        <field>Account.Next_Billing_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Status__c</field>
     </columns>
     <columns>
         <field>ADDRESS1_STREET</field>
@@ -46,13 +51,22 @@
         <field>ADDRESS1_COUNTRY</field>
     </columns>
     <columns>
+        <field>Account.Client_First_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Last_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Phone_Number__c</field>
+    </columns>
+    <columns>
         <field>Account.Email__c</field>
-    </columns>
-    <columns>
-        <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
-    </columns>
-    <columns>
-        <field>Account.Multi_Location_Owner_Primary_CID__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -62,31 +76,25 @@
             <value>Account.Standard</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Client_Type__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>YBN</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>813,814,815,819,516</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Account.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>LIVE,PROVISIONING</value>
+            <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Client_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Local</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>PARENT.NAME</field>
+        <field>Account.IMS_Rep__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Tenet ILs</name>
+    <name>Live Local Accounts</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -96,8 +104,6 @@
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>ACCOUNT.NAME</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
