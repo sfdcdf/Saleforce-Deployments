@@ -131,10 +131,7 @@
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Agent_Emails_Retention/Yodle_Gold_Cancel_Request_Closed</template>
-    <recipients>
-            <recipient>katie.green@yodle.com</recipient>
-            <type>user</type>
-        </recipients></alerts>
+    </alerts>
     <fieldUpdates>
         <fullName>Approval_By_Manager</fullName>
         <field>Approval_By__c</field>
