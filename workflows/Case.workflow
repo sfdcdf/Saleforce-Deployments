@@ -6708,10 +6708,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>Berry Escalations - Update Owner</fullName>
-        <actions>
-            <name>Berry_Escalations_Update_Owner</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
