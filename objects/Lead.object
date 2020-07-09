@@ -392,6 +392,7 @@
             <default>true</default>
         </values>
     </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Name</fields>
@@ -401,6 +402,9 @@
         <fields>Email</fields>
         <label>WBN-IL</label>
     </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Activity_Indicator__c</fullName>
         <externalId>false</externalId>
@@ -628,15 +632,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Appropriate_for_LaunchPad__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Appropriate for LaunchPad</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Associations__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>What types of associations does the company belong to?</inlineHelpText>
@@ -776,15 +771,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Citysearch__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Citysearch?</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Company</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -819,15 +805,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Corporate_Objectives__c</fullName>
-        <externalId>false</externalId>
-        <label>Corporate Objectives</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Corporate_Website__c</fullName>
@@ -909,15 +886,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Customer_s_Competitors__c</fullName>
-        <externalId>false</externalId>
-        <label>Customer's Competitors</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>DB_Remarketing__c</fullName>
@@ -1117,25 +1085,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Did_Not_Purchase_LaunchPad__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <inlineHelpText>Check this if, after having a thorough conversation with prospect, they are not interested in LaunchPad.</inlineHelpText>
-        <label>Did Not Purchase LaunchPad?</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Digital_Strategy_Overview__c</fullName>
-        <externalId>false</externalId>
-        <label>Digital Strategy Overview</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Distributor_Company__c</fullName>
         <description>JCI portal</description>
         <externalId>false</externalId>
@@ -1228,15 +1177,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Expired__c</fullName>
-        <externalId>false</externalId>
-        <label>Expired</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Facebook_Profile__c</fullName>
         <externalId>false</externalId>
         <label>Facebook Profile</label>
@@ -1251,19 +1191,6 @@
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Financial_Decision_Maker__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Financial Decision Maker</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Leads (Financial Decision Maker)</relationshipLabel>
-        <relationshipName>Leads1</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>First_Name_for_converting__c</fullName>
@@ -1389,17 +1316,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Freebird_Assist_Exec__c</fullName>
-        <externalId>false</externalId>
-        <label>Freebird Assist Exec</label>
-        <length>50</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Freebird_Email_Sent__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -1454,15 +1370,6 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Has_Video_Online__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Has Video Online?</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Has_an_Adwords_Account__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -1505,16 +1412,6 @@
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
-        <fullName>How_do_decisions_get_made_within_an_org__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Examples - through agency, through committee</inlineHelpText>
-        <label>How do decisions get made within an org?</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Hub_Survey_Email_Sent__c</fullName>
@@ -1745,19 +1642,6 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Key_Decision_Maker__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Key Decision Maker</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Leads</relationshipLabel>
-        <relationshipName>Leads</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>LastTransferDate</fullName>
     </fields>
     <fields>
@@ -1770,16 +1654,6 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>LaunchPad_DB_Marketing__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>for Marketo</inlineHelpText>
-        <label>LaunchPad DB Marketing</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>LeadSource</fullName>
@@ -2111,27 +1985,6 @@
         <visibleLines>8</visibleLines>
     </fields>
     <fields>
-        <fullName>Marketing_Contact__c</fullName>
-        <externalId>false</externalId>
-        <label>Marketing Contact</label>
-        <length>60</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Marketing_Email__c</fullName>
-        <externalId>false</externalId>
-        <label>Marketing Email</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Marketing_Ownership__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Ownership</label>
@@ -2154,15 +2007,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Marketing_Strategy_Overview__c</fullName>
-        <externalId>false</externalId>
-        <label>Marketing Strategy Overview</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Marketing_Tagline__c</fullName>
@@ -3844,30 +3688,6 @@ if(
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Seasonality__c</fullName>
-        <externalId>false</externalId>
-        <label>Seasonality</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Secondary_Lead_Source__c</fullName>
@@ -5853,15 +5673,6 @@ if(
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>TMP_Free_Trial__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>TMP Free Trial</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Template_ID__c</fullName>
         <externalId>false</externalId>
         <label>Template ID</label>
@@ -6132,15 +5943,6 @@ if(
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Vertical_Site_3__c</fullName>
-        <externalId>false</externalId>
-        <label>Vertical Site 3</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Vertical__c</fullName>
         <externalId>false</externalId>
         <label>Vertical</label>
@@ -6329,24 +6131,6 @@ if(
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Win_Loss_Analysis_Completed__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Win/Loss Analysis Completed</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Win_Loss_Analysis_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Win/Loss Analysis Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>With_whom_online__c</fullName>
@@ -8325,28 +8109,6 @@ if(
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Yodle_Dental_Blog_Subscription__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>To be checked if the person has been subscribed to the Yodle Dental blog.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>To be checked if the person has been subscribed to the Yodle Dental blog.</inlineHelpText>
-        <label>Yodle Dental Blog Subscription</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Yodle_Law_Blog_Subscription__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>To be checked off if the person has been subscribed to the Yodle Law blog.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>To be checked off if the person has been subscribed to the Yodle Law blog.</inlineHelpText>
-        <label>Yodle Law Blog Subscription</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Yodle_Local_Search_Engine_Interest__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -8378,15 +8140,6 @@ if(
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Yodler_Subscription__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Yodler Subscription</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Zip_Postal_Extension__c</fullName>
@@ -8727,15 +8480,6 @@ if(
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>subscription_date__c</fullName>
-        <externalId>false</externalId>
-        <label>subscription date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>tz__LT_Info__c</fullName>
         <deprecated>false</deprecated>
         <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
@@ -8989,18 +8733,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>JCI_Primary_Brand_Color__c</fullName>
-        <description>As part of lead conversion, JCI System will be sending the color selection over as a Hexidecimal value.</description>
-        <externalId>false</externalId>
-        <label>JCI Primary Brand Color</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>JCI_Secondary_Brand_Color__c</fullName>
         <description>As part of lead conversion, JCI System will be sending the color selection over as a Hexidecimal value.</description>
         <externalId>false</externalId>
@@ -9012,34 +8744,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Franchisee_1_Phone__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Franchisee_2_Phone__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Franchisee_3_Phone__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Toll_Free_Number__c</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>CPP_LH_360_PMS_Leads</fullName>
         <columns>LEAD.STATUS</columns>
@@ -9726,6 +9430,8 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <group>YBN_Sales_Execs</group>
         </sharedTo>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Affiliate</fullName>
         <active>true</active>
@@ -12230,17 +11936,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Influencer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Seasonality__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16783,17 +16478,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Influencer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Seasonality__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21344,17 +21028,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Seasonality__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Secondary_Lead_Source__c</picklist>
             <values>
                 <fullName>Client Site</fullName>
@@ -25886,17 +25559,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Influencer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Seasonality__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30572,17 +30234,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Seasonality__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Secondary_Lead_Source__c</picklist>
             <values>
                 <fullName>Client Site</fullName>
@@ -35231,17 +34882,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Seasonality__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Secondary_Lead_Source__c</picklist>
             <values>
                 <fullName>Client Site</fullName>
@@ -37280,6 +36920,28 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Franchisee_1_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Franchisee_2_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Franchisee_3_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Toll_Free_Number__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>CPP_Lead_Source_Trade_Show_Name</fullName>
         <active>true</active>
