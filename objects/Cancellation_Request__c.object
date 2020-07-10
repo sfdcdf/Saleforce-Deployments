@@ -507,6 +507,31 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Discount_Accepted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Adding Fields in the cancellation request forms
+BOSS-29586</description>
+        <externalId>false</externalId>
+        <label>Discount Accepted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Offered__c</fullName>
+        <description>Discount Offered Field</description>
+        <externalId>false</externalId>
+        <label>Discount Offered</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Email_Notes_to_Client__c</fullName>
         <externalId>false</externalId>
         <label>Email Notes to Client</label>

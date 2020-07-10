@@ -25,13 +25,13 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>Case.Due_Date__c</field>
+    </columns>
+    <columns>
         <field>LAST_UPDATEONLY</field>
     </columns>
     <columns>
         <field>Case.LH_360_ID__c</field>
-    </columns>
-    <columns>
-        <field>Case.Due_Date__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
@@ -97,7 +97,7 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Case.Due_Date__c</dateColumn>
-        <endDate>2020-07-08</endDate>
+        <endDate>2020-07-17</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2020-04-20</startDate>
     </timeFrameFilter>

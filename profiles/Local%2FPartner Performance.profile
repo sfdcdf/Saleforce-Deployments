@@ -1192,6 +1192,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Cancellation_Request__c.Discount_Accepted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cancellation_Request__c.Discount_Offered__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Cancellation_Request__c.TS_Backed_Out_Sale__c</field>
         <readable>true</readable>
     </fieldPermissions>
