@@ -68,10 +68,6 @@
             <outputField>JCI_About_Us_Content__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Win_Loss_Analysis_Date__c</inputField>
-            <outputField>Win_Loss_Analysis_Date__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>JCI_Angies_List_Link__c</inputField>
             <outputField>JCI_Angies_List_Link__c</outputField>
         </mappingFields>
@@ -92,14 +88,6 @@
             <outputField>JCI_Liberties_ID__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>JCI_Primary_Brand_Color__c</inputField>
-            <outputField>JCI_Primary_Brand_Color__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>JCI_Secondary_Brand_Color__c</inputField>
-            <outputField>JCI_Secondary_Brand_Color__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>JCI_Twitter_Link__c</inputField>
             <outputField>JCI_Twitter_Link__c</outputField>
         </mappingFields>
@@ -114,10 +102,6 @@
         <mappingFields>
             <inputField>Lead_Record_type_Conversion__c</inputField>
             <outputField>Lead_Record_type_Conversion__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Main_Revenue_Service_Offered__c</inputField>
-            <outputField>Main_Revenue_Service_Offered__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Manufacturer_Brand__c</inputField>
@@ -220,6 +204,10 @@
             <outputField>Who_is_the_Portal_Submitted_By__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>Win_Loss_Analysis_Date__c</inputField>
+            <outputField>Win_Loss_Analysis_Date__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>Yodle_Submit_Type__c</inputField>
             <outputField>Yodle_Submit_Type__c</outputField>
         </mappingFields>
@@ -227,6 +215,10 @@
     </objectMapping>
     <objectMapping>
         <inputObject>Lead</inputObject>
+        <mappingFields>
+            <inputField>Suffix__c</inputField>
+            <outputField>Suffix__c</outputField>
+        </mappingFields>
         <mappingFields>
             <inputField>Alternate_Email__c</inputField>
             <outputField>Alternate_Email__c</outputField>
@@ -248,10 +240,6 @@
             <outputField>LinkedIn_URL__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Suffix__c</inputField>
-            <outputField>Suffix__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Role__c</inputField>
             <outputField>Role__c</outputField>
         </mappingFields>
@@ -266,10 +254,6 @@
         <mappingFields>
             <inputField>Has_an_Adwords_Account__c</inputField>
             <outputField>Has_an_Adwords_Account__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>How_do_decisions_get_made_within_an_org__c</inputField>
-            <outputField>How_do_decisions_get_made_within_an_org__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Monthly_Advertising_Spend__c</inputField>
@@ -308,90 +292,6 @@
             <outputField>Marketing_Ownership__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Additional_Comments__c</inputField>
-            <outputField>Additional_Comments__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Advertising_Dislikes__c</inputField>
-            <outputField>Advertising_Dislikes__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Advertising_Likes__c</inputField>
-            <outputField>Advertising_Likes__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Alternate_Website__c</inputField>
-            <outputField>alternate_website__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Value_from_Online__c</inputField>
-            <outputField>Value_from_Online__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Business_Description__c</inputField>
-            <outputField>Business_Description__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Business_type__c</inputField>
-            <outputField>Business_Type__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Consultative_Data_Dept__c</inputField>
-            <outputField>Consultative_Data_Dept__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Current_Advertising_Sources__c</inputField>
-            <outputField>Current_Advertising_Sources__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Customer_s_Competitors__c</inputField>
-            <outputField>Customer_s_Competitors__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Data_Appended__c</inputField>
-            <outputField>Data_Appended__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>DB_Remarketing__c</inputField>
-            <outputField>DB_Remarketing__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Dex__c</inputField>
-            <outputField>Dex__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Digital_Strategy_Overview__c</inputField>
-            <outputField>Digital_Strategy_Overview__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Advertise_Online__c</inputField>
-            <outputField>Advertise_Online__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Advertise__c</inputField>
-            <outputField>Advertise__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Website__c</inputField>
-            <outputField>Website__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Does_SEO__c</inputField>
-            <outputField>Does_SEO__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Don_t_Redistribute__c</inputField>
-            <outputField>Don_t_Redistribute__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Facebook_Profile__c</inputField>
-            <outputField>Facebook_Profile__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Marketing_Strategy_Overview__c</inputField>
-            <outputField>Marketing_Strategy_Overview__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Message__c</inputField>
             <outputField>Message__c</outputField>
         </mappingFields>
@@ -418,6 +318,54 @@
         <mappingFields>
             <inputField>ownership_change_date__c</inputField>
             <outputField>ownership_change_date__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Transfer_Reason__c</inputField>
+            <outputField>Transfer_Reason__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Twitter_Account__c</inputField>
+            <outputField>Twitter_Account__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Vertical_Site_1__c</inputField>
+            <outputField>Vertical_Site_1__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Vertical_Site_2__c</inputField>
+            <outputField>Vertical_Site_2__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Webinar__c</inputField>
+            <outputField>Webinar__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>webinar_email_subject__c</inputField>
+            <outputField>webinar_email_subject__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>What_is_the_URL__c</inputField>
+            <outputField>What_is_the_URL__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>What_types_of_clients_would_you_like__c</inputField>
+            <outputField>What_types_of_clients_would_you_like__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Who_Makes_Decision__c</inputField>
+            <outputField>Who_Makes_Decisions__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>With_whom_online__c</inputField>
+            <outputField>With_Whom_Online__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Yellow_Page_Ad__c</inputField>
+            <outputField>Yellow_Page_Adsize__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Yellow_Page_Spend__c</inputField>
+            <outputField>Yellow_Page_Ad_Spend__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Partner_ID__c</inputField>
@@ -500,52 +448,76 @@
             <outputField>X2009_Trade_Show__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Transfer_Reason__c</inputField>
-            <outputField>Transfer_Reason__c</outputField>
+            <inputField>Additional_Comments__c</inputField>
+            <outputField>Additional_Comments__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Twitter_Account__c</inputField>
-            <outputField>Twitter_Account__c</outputField>
+            <inputField>Advertising_Dislikes__c</inputField>
+            <outputField>Advertising_Dislikes__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Vertical_Site_1__c</inputField>
-            <outputField>Vertical_Site_1__c</outputField>
+            <inputField>Advertising_Likes__c</inputField>
+            <outputField>Advertising_Likes__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Vertical_Site_2__c</inputField>
-            <outputField>Vertical_Site_2__c</outputField>
+            <inputField>Alternate_Website__c</inputField>
+            <outputField>alternate_website__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Webinar__c</inputField>
-            <outputField>Webinar__c</outputField>
+            <inputField>Value_from_Online__c</inputField>
+            <outputField>Value_from_Online__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>webinar_email_subject__c</inputField>
-            <outputField>webinar_email_subject__c</outputField>
+            <inputField>Business_Description__c</inputField>
+            <outputField>Business_Description__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>What_is_the_URL__c</inputField>
-            <outputField>What_is_the_URL__c</outputField>
+            <inputField>Business_type__c</inputField>
+            <outputField>Business_Type__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>What_types_of_clients_would_you_like__c</inputField>
-            <outputField>What_types_of_clients_would_you_like__c</outputField>
+            <inputField>Consultative_Data_Dept__c</inputField>
+            <outputField>Consultative_Data_Dept__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Who_Makes_Decision__c</inputField>
-            <outputField>Who_Makes_Decisions__c</outputField>
+            <inputField>Current_Advertising_Sources__c</inputField>
+            <outputField>Current_Advertising_Sources__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>With_whom_online__c</inputField>
-            <outputField>With_Whom_Online__c</outputField>
+            <inputField>Data_Appended__c</inputField>
+            <outputField>Data_Appended__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Yellow_Page_Ad__c</inputField>
-            <outputField>Yellow_Page_Adsize__c</outputField>
+            <inputField>DB_Remarketing__c</inputField>
+            <outputField>DB_Remarketing__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Yellow_Page_Spend__c</inputField>
-            <outputField>Yellow_Page_Ad_Spend__c</outputField>
+            <inputField>Dex__c</inputField>
+            <outputField>Dex__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Advertise_Online__c</inputField>
+            <outputField>Advertise_Online__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Advertise__c</inputField>
+            <outputField>Advertise__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Website__c</inputField>
+            <outputField>Website__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Does_SEO__c</inputField>
+            <outputField>Does_SEO__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Don_t_Redistribute__c</inputField>
+            <outputField>Don_t_Redistribute__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Facebook_Profile__c</inputField>
+            <outputField>Facebook_Profile__c</outputField>
         </mappingFields>
         <outputObject>Opportunity</outputObject>
     </objectMapping>

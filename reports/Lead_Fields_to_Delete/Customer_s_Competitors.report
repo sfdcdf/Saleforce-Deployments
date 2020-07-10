@@ -7,19 +7,8 @@
         <field>EMAIL</field>
     </columns>
     <columns>
-        <field>Lead.Appropriate_for_LaunchPad__c</field>
-    </columns>
-    <columns>
         <field>LEAD_ID</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Lead.Customer_s_Competitors__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Customer&apos;s Competitors</name>
     <params>

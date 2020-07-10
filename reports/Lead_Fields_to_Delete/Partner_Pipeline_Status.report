@@ -7,9 +7,6 @@
         <field>EMAIL</field>
     </columns>
     <columns>
-        <field>Lead.Appropriate_for_LaunchPad__c</field>
-    </columns>
-    <columns>
         <field>LEAD_ID</field>
     </columns>
     <filter>
@@ -31,8 +28,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Lead.Appropriate_for_LaunchPad__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

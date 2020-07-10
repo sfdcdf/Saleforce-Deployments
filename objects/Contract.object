@@ -790,6 +790,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Renewal_Commentary__c</fullName>
+        <description>Details on how renewal progress</description>
+        <externalId>false</externalId>
+        <inlineHelpText>N/A</inlineHelpText>
+        <label>Renewal Commentary</label>
+        <length>500</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Renewal_Notice_Date__c</fullName>
         <externalId>false</externalId>
         <label>Renewal Notice Date</label>
@@ -797,6 +809,58 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Status__c</fullName>
+        <description>Current Status of Renewal Contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Current Status of Renewal Contract</inlineHelpText>
+        <label>Renewal Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>On Extension</fullName>
+                    <default>false</default>
+                    <label>On Extension</label>
+                </value>
+                <value>
+                    <fullName>Month to Month</fullName>
+                    <default>false</default>
+                    <label>Month to Month</label>
+                </value>
+                <value>
+                    <fullName>Pending Signature</fullName>
+                    <default>false</default>
+                    <label>Pending Signature</label>
+                </value>
+                <value>
+                    <fullName>Contract Renewed</fullName>
+                    <default>false</default>
+                    <label>Contract Renewed</label>
+                </value>
+                <value>
+                    <fullName>Renewal Lost</fullName>
+                    <default>false</default>
+                    <label>Renewal Lost</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Reporting_Obligation_Description__c</fullName>
@@ -1836,6 +1900,37 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Contract Renewed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month to Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Extension</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Lost</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Renewal_Term__c</picklist>
             <values>
                 <fullName>1</fullName>
@@ -2139,6 +2234,37 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Contract Renewed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month to Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Extension</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Lost</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Renewal_Term__c</picklist>
             <values>
                 <fullName>1</fullName>
@@ -2426,6 +2552,37 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Contract Renewed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month to Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Extension</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Lost</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Renewal_Term__c</picklist>
             <values>
                 <fullName>1</fullName>
@@ -2697,6 +2854,37 @@
             </values>
             <values>
                 <fullName>Wire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Contract Renewed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month to Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Extension</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Lost</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2995,6 +3183,37 @@
             </values>
             <values>
                 <fullName>Wire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Contract Renewed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month to Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Extension</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Lost</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

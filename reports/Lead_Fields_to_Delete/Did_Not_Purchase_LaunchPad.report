@@ -7,19 +7,8 @@
         <field>EMAIL</field>
     </columns>
     <columns>
-        <field>Lead.Appropriate_for_LaunchPad__c</field>
-    </columns>
-    <columns>
         <field>LEAD_ID</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Lead.Did_Not_Purchase_LaunchPad__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>0</value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Did Not Purchase LaunchPad?</name>
     <params>

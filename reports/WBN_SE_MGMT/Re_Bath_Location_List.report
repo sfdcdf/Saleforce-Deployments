@@ -4,9 +4,6 @@
         <field>PARENT.NAME</field>
     </columns>
     <columns>
-        <field>Account.NCE__c</field>
-    </columns>
-    <columns>
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
@@ -72,6 +69,11 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.NCE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>Re-Bath Location List</name>
     <params>
         <name>co</name>
@@ -82,8 +84,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.AdStation_Status__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>Account.Multi_Location_Owner_Primary_CID__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

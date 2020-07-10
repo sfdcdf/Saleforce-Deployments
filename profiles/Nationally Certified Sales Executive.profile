@@ -14819,6 +14819,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contract.Renewal_Commentary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Renewal_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contract.Renewal_Term__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -15590,6 +15600,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Customer_Surveys__c.Client_Email_Survey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Customer_Surveys__c.Client_Email_from_Survey__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -7,19 +7,8 @@
         <field>EMAIL</field>
     </columns>
     <columns>
-        <field>Lead.Appropriate_for_LaunchPad__c</field>
-    </columns>
-    <columns>
         <field>LEAD_ID</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Lead.Freebird_Assist_Exec__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Freebird Assist Exec</name>
     <params>
