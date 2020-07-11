@@ -112,10 +112,6 @@
             <outputField>Marketing_Tagline__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>National_Commission_Master__c</inputField>
-            <outputField>Prospect_National_Commission_Master__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>National_Company_Type__c</inputField>
             <outputField>National_Company_Type__c</outputField>
         </mappingFields>
@@ -128,20 +124,12 @@
             <outputField>Disposition__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Parent_Ownership_Structure__c</inputField>
-            <outputField>Parent__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Payment_Methods__c</inputField>
             <outputField>JCI_Payment_Method__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Prospect_Total_Score__c</inputField>
             <outputField>Prospect_Total_Score__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Prospect_Type__c</inputField>
-            <outputField>Prospect_Type__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>Secondary_Segments__c</inputField>
@@ -204,10 +192,6 @@
             <outputField>Who_is_the_Portal_Submitted_By__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>Win_Loss_Analysis_Date__c</inputField>
-            <outputField>Win_Loss_Analysis_Date__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>Yodle_Submit_Type__c</inputField>
             <outputField>Yodle_Submit_Type__c</outputField>
         </mappingFields>
@@ -215,10 +199,6 @@
     </objectMapping>
     <objectMapping>
         <inputObject>Lead</inputObject>
-        <mappingFields>
-            <inputField>Suffix__c</inputField>
-            <outputField>Suffix__c</outputField>
-        </mappingFields>
         <mappingFields>
             <inputField>Alternate_Email__c</inputField>
             <outputField>Alternate_Email__c</outputField>
@@ -240,6 +220,10 @@
             <outputField>LinkedIn_URL__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>Suffix__c</inputField>
+            <outputField>Suffix__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>Role__c</inputField>
             <outputField>Role__c</outputField>
         </mappingFields>
@@ -247,206 +231,6 @@
     </objectMapping>
     <objectMapping>
         <inputObject>Lead</inputObject>
-        <mappingFields>
-            <inputField>First_Name_for_converting__c</inputField>
-            <outputField>First_Name1__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Has_an_Adwords_Account__c</inputField>
-            <outputField>Has_an_Adwords_Account__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Monthly_Advertising_Spend__c</inputField>
-            <outputField>Monthly_Advertising_Spend__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>IMS_Referral__c</inputField>
-            <outputField>IMS_Referral__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Last_Name_for_converting__c</inputField>
-            <outputField>Last_Name1__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Lead_Record_type_Conversion__c</inputField>
-            <outputField>Lead_Record_type_Conversion__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Lead_Source_Detail_2__c</inputField>
-            <outputField>Lead_Source_Detail_2__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Lead_Warming_Campaign__c</inputField>
-            <outputField>Lead_Warming_Campaign__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Linkedin_Profile__c</inputField>
-            <outputField>Linkedin_Profile__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Marketing_Channels_Used__c</inputField>
-            <outputField>Marketing_Channels_Used__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Marketing_Ownership__c</inputField>
-            <outputField>Marketing_Ownership__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Message__c</inputField>
-            <outputField>Message__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>New_clients_in_the_next_30_days__c</inputField>
-            <outputField>New_clients_in_the_next_30_days__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Next_Activity_Date__c</inputField>
-            <outputField>Next_Activity_Date__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Notes__c</inputField>
-            <outputField>Notes__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Online_Annual_Marketing_Budget__c</inputField>
-            <outputField>Online_Annual_Marketing_Budget__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Original_Inbound_Team__c</inputField>
-            <outputField>Original_Inbound_Team__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>ownership_change_date__c</inputField>
-            <outputField>ownership_change_date__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Transfer_Reason__c</inputField>
-            <outputField>Transfer_Reason__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Twitter_Account__c</inputField>
-            <outputField>Twitter_Account__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Vertical_Site_1__c</inputField>
-            <outputField>Vertical_Site_1__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Vertical_Site_2__c</inputField>
-            <outputField>Vertical_Site_2__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Webinar__c</inputField>
-            <outputField>Webinar__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>webinar_email_subject__c</inputField>
-            <outputField>webinar_email_subject__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>What_is_the_URL__c</inputField>
-            <outputField>What_is_the_URL__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>What_types_of_clients_would_you_like__c</inputField>
-            <outputField>What_types_of_clients_would_you_like__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Who_Makes_Decision__c</inputField>
-            <outputField>Who_Makes_Decisions__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>With_whom_online__c</inputField>
-            <outputField>With_Whom_Online__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Yellow_Page_Ad__c</inputField>
-            <outputField>Yellow_Page_Adsize__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Yellow_Page_Spend__c</inputField>
-            <outputField>Yellow_Page_Ad_Spend__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Partner_ID__c</inputField>
-            <outputField>Partner_ID__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>partner_web_form__c</inputField>
-            <outputField>partner_web_form__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Phone_for_converting__c</inputField>
-            <outputField>Contact_Phone__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Premium_List__c</inputField>
-            <outputField>Premium_List__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Print_Yellowpages__c</inputField>
-            <outputField>Print_Yellowpages__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Prior_Existing_Advertising__c</inputField>
-            <outputField>Prior_Existing_Advertising__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Product_Category__c</inputField>
-            <outputField>Partner_Products_Available_To_Sell__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Promotion_Strategy__c</inputField>
-            <outputField>Promotion_Coupon_Strategy__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Quality_of_Partner__c</inputField>
-            <outputField>Quality_of_Partner__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Radio_2009__c</inputField>
-            <outputField>Radio_2009__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>referral_possible__c</inputField>
-            <outputField>referral_possible__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Rep_Lead_Rating__c</inputField>
-            <outputField>Rep_Lead_Rating__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Salutation1__c</inputField>
-            <outputField>Salutation1__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Secondary_Lead_Source__c</inputField>
-            <outputField>Secondary_Lead_Source__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Sole_DM_for_advertising_purchases__c</inputField>
-            <outputField>Sole_DM_for_advertising_purchases__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Spend_last_month_on_each_source__c</inputField>
-            <outputField>Spend_last_month_on_each_source__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Step_Starter_Email_Sent__c</inputField>
-            <outputField>StepStarter_Email_Sent__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>TimeZone__c</inputField>
-            <outputField>TimeZone__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Total_Annual_Marketing_Budget__c</inputField>
-            <outputField>Total_Annual_Marketing_Budget__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>X2009_Trade_Show__c</inputField>
-            <outputField>X2009_Trade_Show__c</outputField>
-        </mappingFields>
         <mappingFields>
             <inputField>Additional_Comments__c</inputField>
             <outputField>Additional_Comments__c</outputField>
@@ -518,6 +302,202 @@
         <mappingFields>
             <inputField>Facebook_Profile__c</inputField>
             <outputField>Facebook_Profile__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>First_Name_for_converting__c</inputField>
+            <outputField>First_Name1__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Has_an_Adwords_Account__c</inputField>
+            <outputField>Has_an_Adwords_Account__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Monthly_Advertising_Spend__c</inputField>
+            <outputField>Monthly_Advertising_Spend__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>IMS_Referral__c</inputField>
+            <outputField>IMS_Referral__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Last_Name_for_converting__c</inputField>
+            <outputField>Last_Name1__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Lead_Record_type_Conversion__c</inputField>
+            <outputField>Lead_Record_type_Conversion__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Lead_Source_Detail_2__c</inputField>
+            <outputField>Lead_Source_Detail_2__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Lead_Warming_Campaign__c</inputField>
+            <outputField>Lead_Warming_Campaign__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Linkedin_Profile__c</inputField>
+            <outputField>Linkedin_Profile__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Marketing_Channels_Used__c</inputField>
+            <outputField>Marketing_Channels_Used__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Marketing_Ownership__c</inputField>
+            <outputField>Marketing_Ownership__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Transfer_Reason__c</inputField>
+            <outputField>Transfer_Reason__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Message__c</inputField>
+            <outputField>Message__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>New_clients_in_the_next_30_days__c</inputField>
+            <outputField>New_clients_in_the_next_30_days__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Next_Activity_Date__c</inputField>
+            <outputField>Next_Activity_Date__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Notes__c</inputField>
+            <outputField>Notes__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Online_Annual_Marketing_Budget__c</inputField>
+            <outputField>Online_Annual_Marketing_Budget__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Original_Inbound_Team__c</inputField>
+            <outputField>Original_Inbound_Team__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>ownership_change_date__c</inputField>
+            <outputField>ownership_change_date__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Partner_ID__c</inputField>
+            <outputField>Partner_ID__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>partner_web_form__c</inputField>
+            <outputField>partner_web_form__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Phone_for_converting__c</inputField>
+            <outputField>Contact_Phone__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Premium_List__c</inputField>
+            <outputField>Premium_List__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Print_Yellowpages__c</inputField>
+            <outputField>Print_Yellowpages__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Prior_Existing_Advertising__c</inputField>
+            <outputField>Prior_Existing_Advertising__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Product_Category__c</inputField>
+            <outputField>Partner_Products_Available_To_Sell__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Quality_of_Partner__c</inputField>
+            <outputField>Quality_of_Partner__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Radio_2009__c</inputField>
+            <outputField>Radio_2009__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>referral_possible__c</inputField>
+            <outputField>referral_possible__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Rep_Lead_Rating__c</inputField>
+            <outputField>Rep_Lead_Rating__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Salutation1__c</inputField>
+            <outputField>Salutation1__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Secondary_Lead_Source__c</inputField>
+            <outputField>Secondary_Lead_Source__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Sole_DM_for_advertising_purchases__c</inputField>
+            <outputField>Sole_DM_for_advertising_purchases__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Spend_last_month_on_each_source__c</inputField>
+            <outputField>Spend_last_month_on_each_source__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Step_Starter_Email_Sent__c</inputField>
+            <outputField>StepStarter_Email_Sent__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>TimeZone__c</inputField>
+            <outputField>TimeZone__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Total_Annual_Marketing_Budget__c</inputField>
+            <outputField>Total_Annual_Marketing_Budget__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>X2009_Trade_Show__c</inputField>
+            <outputField>X2009_Trade_Show__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Twitter_Account__c</inputField>
+            <outputField>Twitter_Account__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Vertical_Site_1__c</inputField>
+            <outputField>Vertical_Site_1__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Vertical_Site_2__c</inputField>
+            <outputField>Vertical_Site_2__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Webinar__c</inputField>
+            <outputField>Webinar__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>webinar_email_subject__c</inputField>
+            <outputField>webinar_email_subject__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>What_is_the_URL__c</inputField>
+            <outputField>What_is_the_URL__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>What_types_of_clients_would_you_like__c</inputField>
+            <outputField>What_types_of_clients_would_you_like__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Who_Makes_Decision__c</inputField>
+            <outputField>Who_Makes_Decisions__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>With_whom_online__c</inputField>
+            <outputField>With_Whom_Online__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Yellow_Page_Ad__c</inputField>
+            <outputField>Yellow_Page_Adsize__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Yellow_Page_Spend__c</inputField>
+            <outputField>Yellow_Page_Ad_Spend__c</outputField>
         </mappingFields>
         <outputObject>Opportunity</outputObject>
     </objectMapping>

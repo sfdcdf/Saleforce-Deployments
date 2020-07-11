@@ -9,14 +9,6 @@
     <columns>
         <field>LEAD_ID</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Lead.Win_Loss_Analysis_Completed__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>0</value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Win/Loss Analysis Completed</name>
     <params>

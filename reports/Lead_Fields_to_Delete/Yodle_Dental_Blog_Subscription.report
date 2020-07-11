@@ -9,14 +9,6 @@
     <columns>
         <field>LEAD_ID</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Lead.Yodle_Dental_Blog_Subscription__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>0</value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Yodle Dental Blog Subscription</name>
     <params>

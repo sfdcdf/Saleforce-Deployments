@@ -7,10 +7,16 @@
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
+        <field>Account.Key_Account__c</field>
+    </columns>
+    <columns>
         <field>PROBABILITY</field>
     </columns>
     <columns>
         <field>Opportunity.Growth_Initiative__c</field>
+    </columns>
+    <columns>
+        <field>Account.Prospect_Account_Tier__c</field>
     </columns>
     <columns>
         <field>FULL_NAME</field>
@@ -124,6 +130,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_PREVCURFY</interval>
+        <interval>INTERVAL_CURNEXTFY</interval>
     </timeFrameFilter>
 </Report>
