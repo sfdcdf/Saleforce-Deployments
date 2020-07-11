@@ -1176,6 +1176,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>updateCustSurvey</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>wbn_UpdateOppStageOnScheduledEventTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -18242,6 +18246,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Customer_Surveys__c.Client_Email_Survey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Customer_Surveys__c.Client_Email_from_Survey__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
