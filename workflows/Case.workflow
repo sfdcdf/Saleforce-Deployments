@@ -5738,7 +5738,7 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <fullName>AcuitySchedulingWebhook</fullName>
         <apiVersion>46.0</apiVersion>
         <description>AcutitySchedulingWebhook Event Handler</description>
-        <endpointUrl>https://account.acquisio.com/services/api/webhooks/incoming/sfsoap/dreamforce</endpointUrl>
+        <endpointUrl>https://acuityeventmanager.api.yodle.com/salesforce</endpointUrl>
         <fields>AccountId</fields>
         <fields>Account_Status__c</fields>
         <fields>Attempt_1_Method__c</fields>
