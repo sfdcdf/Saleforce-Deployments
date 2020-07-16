@@ -23,24 +23,28 @@
         <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse QA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Quality__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>QA - False Positive</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Feedback__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>false positive</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Feedback__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>fp</value>

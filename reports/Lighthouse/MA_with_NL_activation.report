@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Messages Activated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Activated_Newsletters__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>

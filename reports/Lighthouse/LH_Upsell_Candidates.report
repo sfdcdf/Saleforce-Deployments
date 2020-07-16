@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Upsell_Candidate__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -33,30 +33,35 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Churned</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c$Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>dentist,orthodontist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c$Requesting_to_Cancel__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse Only</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c$Pre_Launch_Cancel__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>KnowledgeArticle.ViewStats$Channel</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>-1</value>

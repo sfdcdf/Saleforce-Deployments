@@ -51,18 +51,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.TORCHx_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LH Support - Sugar Hill,Ann Lewis,T.A. Stanton,Brian Allen,David Cambouris,Laura Ruer,Randy Gordon,Tom Reece,Sandy Staffieri,Wendy Lincoln,Trish Wightman,Joseph Vickers,Reid Brown</value>

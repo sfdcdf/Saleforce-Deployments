@@ -40,30 +40,35 @@
         <booleanFilter>(1 or 2 or 3) AND 4 AND 5</booleanFilter>
         <criteriaItems>
             <column>Case.Sales_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lighthouse,ppp</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Important_National_Notes_del__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lighthouse,ppp</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.SEO_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lighthouse,ppp</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>post launch associate queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

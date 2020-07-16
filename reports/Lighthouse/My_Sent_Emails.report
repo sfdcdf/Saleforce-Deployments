@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>EMAIL.STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>3</value>

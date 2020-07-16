@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>MA-4 Pending Input,MA-3 Pending Config,S. Consultant Assistance Needed</value>

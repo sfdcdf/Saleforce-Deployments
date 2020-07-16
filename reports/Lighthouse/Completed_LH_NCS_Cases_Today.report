@@ -36,6 +36,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Website_Setup_Completed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Carolina Herrera,Conrad Castro,Greg Palmer</value>

@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Quality_Case__c.IsClosed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Quality_Case__c.Case_Closed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Julia Correa</value>

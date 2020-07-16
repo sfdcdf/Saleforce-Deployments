@@ -28,12 +28,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Auto,Lighthouse_Worksheets__c.Auto_Support_Ticket</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.CSC_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>TODAY</value>

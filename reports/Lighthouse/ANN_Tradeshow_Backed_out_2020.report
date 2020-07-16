@@ -19,18 +19,21 @@
         <booleanFilter>(1 AND 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet,Lighthouse_Worksheets__c.PMS_Swap_Form,Lighthouse_Worksheets__c.LH_OOS,Lighthouse_Worksheets__c.CSC_Worksheet_Dental</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Backed Out Sale</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Install_Meeting_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>marciano,hannah,whitney,ashley</value>

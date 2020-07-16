@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>User$Contact</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

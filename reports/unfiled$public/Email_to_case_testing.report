@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>10/25/2019 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>HS1</value>

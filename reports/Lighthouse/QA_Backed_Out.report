@@ -30,18 +30,21 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Backed Out Sale</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,0</value>

@@ -24,42 +24,49 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>VM,@lighthousepmg.com,web,Phone,Chat,Web,Internal</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New Inbound Email,In Progress,New,Re-Opened,Client Problem,Escalated,Awaiting Customer Response,Awaiting Case Work Completion,Internal Review,In Progress - No Attempts,In Progress - 1 Attempt,In Progress - 2 Attempts,In Progress - 3 Attempts,In Progress - 3+ Attempts,Work Completed,Bug Reported,Awaiting Internal Response</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cheyenne Fraser,Barbara Redmond,Crystal Swindells,Laura Gosbee,Matthew Reddick,Susan Burton,Grace Hicks,Lincoln Knowles,Sarah Knowles,Shelley Mercanti,Tameka Davidson,Adrienne Glenn,Karen MacNeil,Doug Smith,Corey Wire,James Carr,Beverly Simmons,Catrina Daniels,Laura Osegueda,Terrance Jackson,Jasmin Butcher,Shannon Saunders,Gina Murphy,David Meldrum,Annie Benedict,Luis Espinosa,Seata Moji,Joe Janisch,Peyden Edwards,Beau Osteros,Christopher Baker,Brooke Grossman,Lynn Tobias,Mark Champ,Julia Correa,Alisha Herzberg,Prisma Hernandez,Holly Macki,Nikenya Micou</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>TORCHx Test Account - DO NOT CONTACT</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>TORCHx</value>

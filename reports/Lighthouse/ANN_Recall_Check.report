@@ -30,18 +30,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.PMS__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Ace,ACOM Health,ALLDATA,AllScripts,Autumn8,BRS,Chiro 8000,Chirotouch,Compulink/ChiroAdvantage,Denticon,Dentrix,EDDSON,EON TPS Chiro 2000,EZ-bis,Future Health,Genius eThompson,InPhase,Mitchell 1,Mogo,NAPA TRACS,OCS Dental,Other (list in notes),Platinum,PowerPractice,Quickbooks,R.O. Writer,Raintree,ScanDent,Vitalogics</value>

@@ -49,24 +49,28 @@
         <booleanFilter>(1 or (2 and 3)) AND 4</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Live_Chat</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Inbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brooke Grossman,Mark Champ,Rory Diller,Jeremiah Lerma,Rolando Gonzalez,Jacqueline Leona,Jennifer Agulay,Julia Correa,Kati Yee,Katura Daniel,Kelly Costello,Krystal Bell,Linzi Plummer,Lynn Tobias,Madeline Berube,Matthew Kerlin,Matthew Scott,Meagan Holdiman,Nicholas Brooks,Steven Russell,Travis Dube,Tricia Valadez,Vanessa Ramirez,Zach Bailey</value>

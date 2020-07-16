@@ -55,36 +55,42 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>VM,@lighthousepmg.com,web,Phone,Chat,Web,Internal</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New Inbound Email,In Progress,New,Re-Opened,Client Problem,Escalated,Awaiting Customer Response,Awaiting Case Work Completion,Internal Review,In Progress - No Attempts,In Progress - 1 Attempt,In Progress - 2 Attempts,In Progress - 3 Attempts,In Progress - 3+ Attempts,Work Completed,Bug Reported,Awaiting Internal Response,Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>annie benedict,seata moji,Joseph Janisch,Joe Janisch,lynn tobias,James carr,corey wire,julia correa,Laura Osegueda,gina murphy,mark champ,shannon saunders,peyden edwards,holly macki,prisma hernandez,nikenya micou,david meldrum</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>TORCHx Test Account - DO NOT CONTACT</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>IBC,escalation</value>

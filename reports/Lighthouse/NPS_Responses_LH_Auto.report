@@ -138,12 +138,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Auto</value>

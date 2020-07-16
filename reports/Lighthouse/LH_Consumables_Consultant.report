@@ -132,18 +132,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Practice_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Dawson Dental -</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.CSC_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Shane Butler,Crystal Bellew</value>

@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c$Spanish_Templates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c$PMS_version__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Enterprise</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c$Practice_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>cx</value>

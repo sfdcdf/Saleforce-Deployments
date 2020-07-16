@@ -58,12 +58,14 @@
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>LAST_UPDATE_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>megan lewis,sarah vickers,sandra staffieri,wendy lincoln,laura ruer,david cambouris,thomas reece,alisha herzberg,trish wightman</value>

@@ -61,6 +61,7 @@
     <filter>
         <criteriaItems>
             <column>LAST_ACTIVITY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>LAST_N_DAYS:4</value>

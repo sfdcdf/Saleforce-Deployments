@@ -54,12 +54,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New,In Progress</value>

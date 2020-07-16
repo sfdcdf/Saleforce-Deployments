@@ -47,18 +47,21 @@
     <filter>
         <criteriaItems>
             <column>Quality_Case__c.IsClosed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,david hamrick,anna maria hernandez,anna hernandez,anna maria cibulsky,anna cibulsky,patrick koepke,meredith henry,victoria kanicka,kevin yee,meredith kelman,kimberly davis,Tameka Davidson,tameka davidson,charles thomas,crystal perez,patrick trinidad,elizabeth koepke,bianca torres,jessica martin</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Quality_Case__c.TORCHx_Master_Quality,Quality_Case__c.Lighthouse_Master_Quality</value>

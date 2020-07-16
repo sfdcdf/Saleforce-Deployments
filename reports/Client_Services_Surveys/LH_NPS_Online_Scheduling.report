@@ -68,12 +68,14 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NPS Survey Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Online_scheduling_for_patients__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

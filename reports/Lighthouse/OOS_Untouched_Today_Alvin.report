@@ -46,42 +46,49 @@
         <booleanFilter>(((1 AND 2) AND (3 OR 4) AND (5 OR 6))) AND 7</booleanFilter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Complete,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.LH_OOS</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Defer_Until__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Defer_Until__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Last_Attempt_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Last_Attempt_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.PMS__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>ALLDATA,AllScripts,Mitchell 1,NAPA TRACS,Other (list in notes),Quickbooks,R.O. Writer,Abeldent,Ace,ACOM Health,Autumn8,BRS,Chiro 8000,Chirotouch,Compulink/ChiroAdvantage,DentalMate,DentalVision,Dentech,Denticon,Dentisoft,Dolphin,DoX,DSN,Eclipse/BestNotes,EDDSON,EndoVision,EON TPS Chiro 2000,EZ-bis,EZDent,First Pacific Pro,Genius eThompson,InPhase,MacPractice,MediaDent,Medisoft,Mogo,Oasis,OCS Dental,OMSVision,Ortho2,OrthoTrac,PerioVision,Platinum,PowerPractice,Practice Web,Primadent,Raintree,ScanDent,Suzy Dental,Tracker,Viive,Vitalogics,Windent,WinOMS,XLDent</value>

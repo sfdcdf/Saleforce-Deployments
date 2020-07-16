@@ -23,12 +23,14 @@
     <filter>
         <criteriaItems>
             <column>KnowledgeArticle.VoteStats$Channel</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>3</value>
         </criteriaItems>
         <criteriaItems>
             <column>KnowledgeArticle.VoteStats$NormalizedScore</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
