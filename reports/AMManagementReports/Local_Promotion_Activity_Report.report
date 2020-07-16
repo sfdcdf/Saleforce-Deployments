@@ -28,30 +28,35 @@
         <booleanFilter>(1 AND 3 AND 5 AND ((2 AND 5) OR 4))</booleanFilter>
         <criteriaItems>
             <column>Account$Offer_to_Client__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Activities$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>4/26/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Get More Leads This Spring,You’re Missing Out On Potential Leads,Without Ads,Your Competitors May Win,Why Stop At ‘Good Enough’?</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Email:</value>

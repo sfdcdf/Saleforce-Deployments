@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Upsell Pilot 2016</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Merry Maids</value>

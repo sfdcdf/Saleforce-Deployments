@@ -101,36 +101,42 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
         <criteriaItems>
             <column>FK_OPP_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
         </criteriaItems>
         <criteriaItems>
             <column>ObjectHistory__c.FieldValue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>New Opportunity,Adoption,Future Opportunity,Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_OPP_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Legacy Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_OPP_STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Client Discovery,Demo/Value Prop,Solution,Contract</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Opportunity.Products__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>includes</operator>
             <value>Facebook,Facebook - Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Opportunity.Network_Adoption_Products__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Facebook</value>

@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>Account.National_SDR_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>krista avantini</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Company_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Franchise</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>amy kramer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Time_Zone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>(GMT-05:00) Eastern Standard Time (America/Indiana/Indianapolis),(GMT-05:00) Eastern Standard Time (America/New_York),(GMT-06:00) Central Standard Time (America/Chicago)</value>

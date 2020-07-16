@@ -84,72 +84,84 @@
         <booleanFilter>((1 AND (2 OR (4)) AND 3 AND (((5 OR 6) AND 10) OR 9) AND 7 AND 8) AND 11) AND 12</booleanFilter>
         <criteriaItems>
             <column>Account$Include_Pacing__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Next_TP_Needed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Month_1_Check_In_Due_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$ClosedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Customer Care,Ron Gong,Wes Curry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Introduction Call/CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Auto_TP_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Auto_TP_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Mr. Electric</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>ON</value>

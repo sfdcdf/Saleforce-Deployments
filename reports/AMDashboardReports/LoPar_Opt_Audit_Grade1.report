@@ -13,18 +13,21 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>almus,lunkenheimer,wilson,ochs,ramirez,carpenter,sanchez,gulukyan,adams</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Overall_Opt_Score__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>

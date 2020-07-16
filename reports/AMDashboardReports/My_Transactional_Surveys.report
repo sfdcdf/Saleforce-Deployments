@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.Transactional_Issue_Resolution,Customer_Surveys__c.Transactional_25_Day_Call,Customer_Surveys__c.Touch_Plan_Survey,Customer_Surveys__c.Transactional_Conf_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$User_Case_Created_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

@@ -16,12 +16,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M001 – Discovery Call,M003 - Demo/Value Presentation,M008 - Solutions in Action Presentation,M010 - Present Proposal &amp; SOW</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call,Demo &amp; Value Presentation,Executive Review Call,Solution Review Call,Proposal &amp; SOW Review Call</value>

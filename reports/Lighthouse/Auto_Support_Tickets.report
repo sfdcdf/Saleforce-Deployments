@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Auto_Support_Ticket</value>

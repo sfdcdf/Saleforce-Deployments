@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep_Full_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>torchx support</value>

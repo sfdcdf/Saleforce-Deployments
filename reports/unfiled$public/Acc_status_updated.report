@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>LAST_UPDATE_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Sravani Mutnuru</value>
         </criteriaItems>
         <criteriaItems>
             <column>LAST_UPDATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>5/12/2020 12:00 AM</value>

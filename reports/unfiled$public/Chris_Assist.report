@@ -47,18 +47,21 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New,1-MA Setup AutoLaunch,Awaiting Internal Response,In Progress,ProductionTeam Mistake,2-QA AutoLaunch</value>
         </criteriaItems>
         <criteriaItems>
             <column>CASE_COMMENT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>MATL,matl,MA Team Lead,Chris Halverson,Chris H</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Janine Martin</value>

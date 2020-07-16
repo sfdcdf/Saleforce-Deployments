@@ -30,6 +30,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Average_Additional_Sales__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

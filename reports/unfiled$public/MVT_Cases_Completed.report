@@ -60,18 +60,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$PIN_Action_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Anastasia Reddick,Brianna Link,Chris Goyetche,Cindy Melanson,Janice Baudoux,Kate Dowell,Kelly Aikens,Leanne Beiswanger,Norma Dupuis,Shannon York,Susan Colquhoun,Thomas Peppard,Troy Sanders,Valerie Bigney</value>

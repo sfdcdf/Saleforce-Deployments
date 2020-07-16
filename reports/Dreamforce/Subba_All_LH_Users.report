@@ -60,6 +60,7 @@
     <filter>
         <criteriaItems>
             <column>User$Division</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>startsWith</operator>
             <value>LH</value>

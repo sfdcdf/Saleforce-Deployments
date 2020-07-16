@@ -237,18 +237,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Demetria Atkins,Jennifer Batcher,Drew Cooper,Hank Haigler,Shelia Kelly,Reagan Neely,Zack Shubow,zachery shubow,Biff Spradley,Ashley Black,James Brady,Kinsley Hill,Adam Kovacs,Jake Overman,Andrew Smith,Amber Woodhams,Sherri Aguinaga,Ron Brown,Thad Dameris,Sara Davis,Graham McGee,Erika Persil,Valerie Smith,Cassandra Stowers,Erik Vicars,Joshua Alvarez,Ryan Crary,Brittany Fountain,Nathaniel Nipper,Suzanne Oyenarte,Jamie Russell,Jordan Valentine,drew cooper</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

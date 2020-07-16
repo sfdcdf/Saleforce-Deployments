@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>failed landing,low lead,low impression,5 in 60,1 in 30,berry wso,credit card expiration</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jared Brock,Emily Kareiva,Joseph Gutierrez,Marla Sadowski,Katherine Chapman,Kimberly Williams,Zachary Kumnick,Todd Weiss,National Client Support,Nicholas Walker,Michael Means</value>

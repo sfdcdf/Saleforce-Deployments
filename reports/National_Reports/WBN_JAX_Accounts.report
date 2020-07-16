@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Account.WBN_JAX_CUST_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

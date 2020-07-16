@@ -40,18 +40,21 @@
         <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>skowronski,pollard,spurlock,wildes,barreda,torrey scott,rachel fisher,natalie barreda,Britt Copeland,Andre Cabrales,Michael Jaffe,April Atwood</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Rustin Fincke,Tiffany Gonzalez,Tyler Kapper,Michael Walker,Jennifer Barnes,Alicia McKnight,Paul Zwicker,Amanda O&apos;Sullivan,Amy Webster,Melissa Lidey,Melissa Cornine,Brock Williams,Alexis Varela,Audsley Dunavant,Lauren Aldana</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA,Case.XJen_Test_NCS_No_Use</value>

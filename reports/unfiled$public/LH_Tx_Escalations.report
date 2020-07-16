@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Client Escalation</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Susan Burton,Grace Hicks,Jessica Crim,Lincoln Knowles,Sarah Knowles,Shelley Mercanti,Tameka Davidson,Scott Meyers-Pillon,Adrienne Glenn,Karen MacNeil,Doug Smith,Corey Wire,James Carr,Beverly Simmons,Catrina Daniels,Laura Osegueda,Terrance Jackson,Jasmin Butcher,Shannon Saunders,Gina Murphy,David Meldrum,Annie Benedict,Chelsey Willey,Luis Espinosa,Seata Moji,Joe Janisch,Peyden Edwards,Beau Osteros,Travis Dube,Kati Yee,Christopher Baker,Brooke Grossman,Lynn Tobias,Tricia Valadez,Mark Champ,Julia Correa</value>

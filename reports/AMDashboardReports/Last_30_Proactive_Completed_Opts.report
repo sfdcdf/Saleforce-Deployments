@@ -39,24 +39,28 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>amie,shiv,almus,wesley adams,kelsie mettille,matthew linville,christopher carr,carpenter,joseph belk,katie collins,gelardi,helfrey,barreda,zandstein,blair pollard,enrique,shaikha,delph,lawson</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Performance_Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Client Requested,Proactive by Consultant,SMPA Algo,Touch Plan Optimization</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>30 days,10 days,Touch Plan - Day 20 Day Touch,Touch Plan - Day 40 Day Touch</value>

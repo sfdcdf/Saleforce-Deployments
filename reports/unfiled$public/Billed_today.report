@@ -57,6 +57,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Leads By Web,Yodle,Lead Stream ATV,Lighthouse,TORCHx Ads,Yodle Max,Essentials</value>

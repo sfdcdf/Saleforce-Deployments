@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases$CaseNumber</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>11310927,11312119,11308814,11308847,11308704,11309600,11316927,11335431,11312626,11309457,11317005,11316569,11321462,11316114,11322435,11332928,11328260,11332006,11326184,11325087</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>proactive touch,CS Touch Plan</value>

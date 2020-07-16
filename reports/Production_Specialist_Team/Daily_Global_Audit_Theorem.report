@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Case.general_notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>(photos spelling),(service spelling),(custom spelling),(usp spelling),(home spelling),(about spelling),(associations spelling),(bios html),(bios spelling),(tagline spelling),(description spelling),(area served spelling)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>ybn,national,national account</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

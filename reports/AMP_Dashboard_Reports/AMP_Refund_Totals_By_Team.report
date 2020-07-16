@@ -200,18 +200,21 @@
         <booleanFilter>1 AND (2 or 3)</booleanFilter>
         <criteriaItems>
             <column>Cancellation_Request__c.Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>adam kovacs,barb jenkins,erik vicars,makenzie cunningham,nathaniel nipper,randy dewey,biff spradley</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund_Amount__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund_Amount_Requested__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

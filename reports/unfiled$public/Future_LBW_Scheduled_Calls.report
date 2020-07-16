@@ -35,18 +35,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>LBW</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Next_Scheduled_Touchpoint__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>6/28/2017 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CSC_Date_Time__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>6/28/2017 12:00 AM</value>

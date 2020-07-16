@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Opportunities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>justin platt</value>

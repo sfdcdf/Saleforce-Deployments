@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Website_Setup_Completed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Aaron Woodul,Allana Maximin,Allison Smith,Becky Gibson,Brock Williams,Chantell Joseph,Charles Thomas,Gezel Stephen,Greg Palmer,Heather Rubio,Joanne Caul,Joseph Tanner,Kaylissa Spurlock,Kelly O&apos;Brien,Kimbally Gedeon,Kisha Fredrick,Lenee Knoblauch,Lionel Mason,Louis Montemayor,Melinda Fraser,Michael Jaffe,Patrick Trinidad,Petra Bellas,Rhonda Maxius,Rodolfo Ramirez,Rustin Fincke,Shayla Story,Shernelle Richard,Shirmiah Jn Baptiste,Simantha Phillip,Steve Henry,Tiffany Gonzalez,Trevor Bye,Zaina Pamphile,Zenah Isaac</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Aaron Woodul,Allana Maximin,Allison Smith,Becky Gibson,Brock Williams,Chantell Joseph,Charles Thomas,Gezel Stephen,Greg Palmer,Heather Rubio,Joanne Caul,Joseph Tanner,Kaylissa Spurlock,Kelly O&apos;Brien,Kimbally Gedeon,Kisha Fredrick,Lenee Knoblauch,Lionel Mason,Louis Montemayor,Melinda Fraser,Michael Jaffe,Patrick Trinidad,Petra Bellas,Rhonda Maxius,Rodolfo Ramirez,Rustin Fincke,Shayla Story,Shernelle Richard,Shirmiah Jn Baptiste,Simantha Phillip,Steve Henry,Tiffany Gonzalez,Trevor Bye,Zaina Pamphile,Zenah Isaac</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

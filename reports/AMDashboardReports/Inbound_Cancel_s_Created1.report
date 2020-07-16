@@ -68,6 +68,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Courtney Visser,Jorge Suarez,Javier Quiroz,Natalie Larner,Steven Grousnick,Jeffrey Aguilar,Sarah Sweet,Janie Bratcher,John Gauntt,Peyden Edwards,Chad Davis,Malik Khendek,Ivan Mora,Ron Brown,Johnny Venegas,Levar Manuel,Jaime Jimenez</value>

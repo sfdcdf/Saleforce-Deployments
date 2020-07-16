@@ -51,18 +51,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.YBN_Issue_Resolution_Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>7</value>

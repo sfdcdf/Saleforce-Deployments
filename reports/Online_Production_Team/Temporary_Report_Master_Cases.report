@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.XJenTest_No_Use,Case.LH_Master,Case.YBN_Master_Case</value>

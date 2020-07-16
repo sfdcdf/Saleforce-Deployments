@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,Awaiting Customer Response,Awaiting Internal Response,Escalated,In Progress,In Progress - No Attempts,In Progress - 1 Attempt,In Progress - 2 Attempts,In Progress - 3 Attempts,In Progress - 3+ Attempts,Pending Retention,Free Time Period</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Cancellation_Request</value>

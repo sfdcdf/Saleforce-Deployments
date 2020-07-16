@@ -42,18 +42,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>lindsey schmid,alisha herzberg,prisma hernandez,shannon lang,johnna guidry,nikki micou,leslie goldman,holly macki,maria mclean,adam livingstone,terry beaver,jason gee,amanda peake,berkley desmond,colin heighton</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

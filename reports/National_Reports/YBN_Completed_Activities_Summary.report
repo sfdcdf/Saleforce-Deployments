@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M001 – Discovery Call,M002 – Internal Download Call,M004 – Confirmation of the Audit,M005 –  Audit Download,M006 – Audit Update,M007 –Value Presentation,M008 – Product Assessment &amp; Strategy,M009 – Solutions in Action Presentation,M011 - Present solution plan,M013– Proof of Value Agreement,M015– Deliver Contract</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>

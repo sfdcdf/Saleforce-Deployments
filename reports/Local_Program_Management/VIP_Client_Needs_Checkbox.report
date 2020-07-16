@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Important_National_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>This client has completed a Video Testimonial and should be considered a VIP Client.</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.VIP_Client__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>

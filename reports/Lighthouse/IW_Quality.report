@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Quality_Issues_Found__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

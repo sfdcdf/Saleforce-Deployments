@@ -65,12 +65,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Call Calibration</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Faye Acorn,Paula Balesdent,Marilyn Bray,Marjorie Clarke,Marjorie Goodyear,Philip Landry,Stephen Landry,Kathryn Leadbeater,Christine LeBlanc,Christine Leblanc,Angela Luddington,Charles MacLeod,Angela Snow,Jean Austin,Arlene Davidson,Karen MacNeil,Iris Smith,Kathy Wilson,Kathleen Wilson</value>

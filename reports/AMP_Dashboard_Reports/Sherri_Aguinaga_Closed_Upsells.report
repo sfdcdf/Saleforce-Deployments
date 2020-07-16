@@ -46,36 +46,42 @@
             <booleanFilter>1 AND 2 AND 3 AND (4 or 6) AND 5</booleanFilter>
             <criteriaItems>
                 <column>CLOSE_DATE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>THIS_MONTH</value>
             </criteriaItems>
             <criteriaItems>
                 <column>PRODUCT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Ad Station Re-Fill,Essentials/Platform Pro Rate</value>
             </criteriaItems>
             <criteriaItems>
                 <column>STAGE_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Closed Won,Submit for Approval</value>
             </criteriaItems>
             <criteriaItems>
                 <column>FULL_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>sherri aguinaga</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Opportunity.Fee_Difference__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>lessThan</operator>
                 <value>0</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.IMS_Rep__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Sherri Aguinaga</value>
@@ -146,42 +152,49 @@
             <booleanFilter>((1 AND 2) or (5 and 6)) AND 3 AND (4 or 7)</booleanFilter>
             <criteriaItems>
                 <column>PRODUCT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Budget Change,Ads Upsell,Essentials/Platform Feature</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Opportunity.Next_Bill_Date__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>THIS_MONTH</value>
             </criteriaItems>
             <criteriaItems>
                 <column>STAGE_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Closed Won,Submit for Approval</value>
             </criteriaItems>
             <criteriaItems>
                 <column>FULL_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>sherri aguinaga</value>
             </criteriaItems>
             <criteriaItems>
                 <column>PRODUCT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>New Account</value>
             </criteriaItems>
             <criteriaItems>
                 <column>CLOSE_DATE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>THIS_MONTH</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.IMS_Rep__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Sherri Aguinaga</value>

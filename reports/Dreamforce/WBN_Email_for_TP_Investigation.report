@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Marketo_ID_For_Touchplan__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>startsWith</operator>
             <value>1</value>

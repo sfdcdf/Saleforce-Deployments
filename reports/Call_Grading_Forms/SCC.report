@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Adoption_Call,Call_Grading_Forms__c.Partner_Setup_Completion_Call</value>

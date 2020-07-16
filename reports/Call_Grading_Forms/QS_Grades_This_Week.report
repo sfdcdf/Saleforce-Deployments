@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Call_Grading_Forms__c.Soft_Skills_Breakdown</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Chrystabel Sifflet,Farley Edward,Dania Eugene,Amy Webster,Ryan Newland,Lauren Aldana</value>

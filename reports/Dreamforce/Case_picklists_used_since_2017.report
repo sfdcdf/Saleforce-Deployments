@@ -16,12 +16,14 @@
     <filter>
         <criteriaItems>
             <column>Field_Trip__Field_Analysis__c.Field_Trip__Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>MultiPicklist,Picklist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Field_Trip__Field_Analysis__c.Field_Trip__Populated_On__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>

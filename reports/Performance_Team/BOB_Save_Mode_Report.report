@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>jamie russell,customer care,sara davis,kyle zaffin,Cassandra Stowers,Graham McGee,Ronnie Brown,Demetria Atkins,Zachery Shubow,Joshua Alvarez,Amber Woodhams,Tracey Peel,Ashley Black,James Brady Jr.,Kinsley Hill,Andrew Smith,Walter Rundle,Jake Overman,Shelia Kelly,Erik Vicars,Lead Stream Support</value>

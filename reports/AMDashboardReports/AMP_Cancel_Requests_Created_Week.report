@@ -71,24 +71,28 @@
         <booleanFilter>(1 OR 2 or 4) AND 3</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>local consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lead stream support,lbw customer service,Local Pod Queue,Platinum Support,Erik Vicars,Sherri Aguinaga,Nick Johnson,Shelia Kelly,christopher grau,emily kareiva,lyndsay spa,adam kovacs,amber tamayo,samantha starett,ron brown,reagan neely,mark nagy,thad dameris,sara davis</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Duplicate Retention Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>

@@ -37,12 +37,14 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.Reason_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>citation,directory,citations</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Reason_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>teardown,tear down,release,opt out</value>

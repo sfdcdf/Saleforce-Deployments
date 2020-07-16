@@ -30,18 +30,21 @@
     <filter>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Shannon Lang,Prisma Hernandez,Alisha Herzberg,Colin Heighton,Nikki Micou,Leslie Goldman,Holly Macki,Terry Beaver,Maria Mclean,Jason Gee</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>TORCHx Touchplan Exclusions</value>

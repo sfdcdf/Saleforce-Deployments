@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Best_Practice_Evaluation__c.Optimization_Review</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Joshua Fortunatus,rachel gibbs,wesley adams,anderson allen</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Overall_Opt_Score__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>93.3</value>

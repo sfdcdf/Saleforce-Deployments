@@ -46,48 +46,56 @@
         <booleanFilter>((1 AND 2 AND 3 AND 4 AND (5 or 6)) AND 7) or (8 and 5)</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.New_Initiation_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>,test,Jeremy&apos;s powerhouse gym</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Projected_Tier__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Tier 4</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Sub_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Contract Signed</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Strategic_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Strategic_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Kate Turk,Jason Normoyle,Casey Griffith,Andrew Wilder</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Sub_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Pending Needs Assessment,Proposal Creation,Submit Proposal for Review,Proposal Review,Proposal Approved,Revised Proposal Submitted,Revised Proposal Review,Demo Creation,Submit Contract for Review,Contract Review,Revised Contract Submitted,Revised Contract Review,Custom Demo Slides Sent to Sales,Sent Back to Sales,Prospect On Hold,Contract Approved,Contract Signed</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Sub_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Proposal Estimates</value>

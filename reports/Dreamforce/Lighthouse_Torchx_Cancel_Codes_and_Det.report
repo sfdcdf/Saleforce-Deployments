@@ -6,6 +6,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

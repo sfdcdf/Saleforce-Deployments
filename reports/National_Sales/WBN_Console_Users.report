@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>User.Profile_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>National Analyst,National Analyst - Senior,National CS Manager,National IMS,National IMS - Senior,Nationally Certified Sales Executive,National RM,National RM w/ Corp Opp,NCSE - SDR,Partner CS Manager,System Administrator,YBN Operations,YBN System Administrator</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACTIVE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

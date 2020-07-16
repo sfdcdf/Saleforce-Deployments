@@ -39,6 +39,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Last_Status_Change__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>LAST_90_DAYS</value>

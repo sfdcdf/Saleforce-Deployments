@@ -30,6 +30,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Average_Sale_Price__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

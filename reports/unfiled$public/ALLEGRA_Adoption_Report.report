@@ -22,24 +22,28 @@
     <filter>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>allegra network,insty-prints</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>won,lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.YBN_Sub_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Full Rollout,Exclusive Preferred Partner Agreement,Premier Preferred Partner Agreement,Seasonal Fixed Length Campaign,Project Campaign,Initial Rollout,Location Expansion,Additional Funds,Influence/ Bottoms Up,Preferred Partner Agreement,Network Communications Portal,New Product Added,Budget Increase,Winback Campaign</value>
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Corporate Paid - No Lead Source</value>

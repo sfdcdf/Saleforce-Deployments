@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>58437,58328,59569,213293,268003,25670,54466,121708,211217,211170,262559,262618,262652,262686,262691,108759,108761,108768,108770,108771</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>fortunatus,wesley adams,santa ana,rachel gibbs</value>

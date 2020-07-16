@@ -18,60 +18,70 @@
     <filter>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Web Dev,IT Pro</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Call_Quality_Action__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Blacklist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Escalated__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Custom_Call_Tracking__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>OEM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Berry,Vivial</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Reason_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Wrong Number: Business Related to Segment,Unsupported Service but Related to Segment</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Reason_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Wrong Number: Business Related to Segment,Unsupported Service but Related to Segment</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Other</value>

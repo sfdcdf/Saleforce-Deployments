@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.CW_Quality__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Unsatisfactory: Recall Not Addressed,Unsatisfactory: Pre-CSC Check Notes Not Addressed,Unsatisfactory: Other,Satisfactory: Issues Promptly Addressed</value>

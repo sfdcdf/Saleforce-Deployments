@@ -61,18 +61,21 @@
     <filter>
         <criteriaItems>
             <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call,Email,General To Do,Other</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>TORCHx</value>
         </criteriaItems>
         <criteriaItems>
             <column>CALLDURATIONFORMATTED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>4:00</value>

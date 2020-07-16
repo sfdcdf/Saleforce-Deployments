@@ -19,6 +19,7 @@
     <filter>
         <criteriaItems>
             <column>ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Local Consultant,CSM</value>

@@ -64,12 +64,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Owner_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Erika Persil,Samantha Starett,Sara Davis,Sherri Aguinaga,Ron Brown,Thad Dameris,Valerie Smith,Graham McGee</value>
         </criteriaItems>
         <criteriaItems>
             <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call,Email,General To Do,Other</value>

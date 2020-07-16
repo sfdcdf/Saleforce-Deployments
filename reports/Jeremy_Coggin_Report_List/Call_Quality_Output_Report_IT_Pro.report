@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Call_Quality_Concerns__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Call_Quality_Concerns__r$IT_Pro_Member__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

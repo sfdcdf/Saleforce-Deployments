@@ -1176,6 +1176,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>updatecustSurvey</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>updatecustsurveyTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>wbn_UpdateOppStageOnScheduledEventTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>

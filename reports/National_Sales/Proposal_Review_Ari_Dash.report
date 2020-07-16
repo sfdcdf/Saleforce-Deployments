@@ -25,18 +25,21 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M010 - Present Proposal &amp; SOW,Proposal &amp; SOW Review Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Interaction_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Follow Up,Prep</value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alex Renner,James Gardner,Josh Schure,Leffie Crawford</value>

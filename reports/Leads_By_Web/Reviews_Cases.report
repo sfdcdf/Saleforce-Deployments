@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>Case$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Feature Support - Essentials</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Reviews</value>

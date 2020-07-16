@@ -30,18 +30,21 @@
     <filter>
         <criteriaItems>
             <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>budget change,ads upsell,Essentials/Platform Feature,reactivation,new account</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_MANAGER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>makenzie cunningham,erik vicars,shelia kelly,randy dewey,nathaniel nipper,adam kovacs,biff spradley</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won</value>

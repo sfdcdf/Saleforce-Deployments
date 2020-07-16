@@ -16,24 +16,28 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>kyle zaffin,walter rundle,hank haigler,Demetria Atkins,Jennifer Batcher,Drew Cooper,Henry Haigler,Shelia Kelly,Reagan Neely,Zack Shubow,zachery shubow,Biff Spradley,Ashley Black,James Brady,Kinsley Hill,Adam Kovacs,Jake Overman,Andrew Smith,Amber Woodhams,Sherri Aguinaga,Ron Brown,Thad Dameris,Graham McGee,Erika Persil,Valerie Smith,Cassandra Stowers,Erik Vicars,Joshua Alvarez,Nathaniel Nipper,Jamie Russell,Jordan Valentine,drew cooper</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web,lead stream atv</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

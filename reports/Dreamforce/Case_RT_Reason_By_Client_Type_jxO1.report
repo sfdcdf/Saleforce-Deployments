@@ -62,18 +62,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.Blank_for_Email_Catch_All,Case.YBN_Outbound_Touch_Point,Case.YBN_Product_Ideas,Case.YBN_Inbound_Inquiry,Case.YBN_Corporate_Interaction,Case.YBN_Request,Case.YBN_Master_Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_ALIAS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>DAMP,sauto,ssync,sadmi,tapi,SConn,sgrueser,product</value>

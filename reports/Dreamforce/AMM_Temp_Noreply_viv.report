@@ -43,12 +43,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>noreply@live.vivialreports.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>@salesforce.com,@onesourcevhr.com,@theoreminc.net,@00d600000006ycdeay.pnet,@barracudanetworks.com,@chatter.salesforce.com,@jobvite.com,@myworkday.com,@aetnagetactive.com,@office.lhmailer.com,@adp.com</value>

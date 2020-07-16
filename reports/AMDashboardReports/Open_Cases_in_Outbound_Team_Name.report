@@ -36,24 +36,28 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ds</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.Performance_Issue,Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Chrystabel Sifflet,Farley Edward,Dania Eugene,Petra Bellas- Stanislas,Alexandra Moise,Becky JnBaptiste,Chris Dominique,Chrystal Prosper,Dyane Edwards,Emma Joseph,Eva Lauren,Garna Charlery,Jacqueline Richard,Jesse Taylor,Keri Wilson,Kevin Cadette,Kisha Elibox,Kurcy Montoute,Kurina Joseph,Nicole Joseph,Petra Bellas,Russelle Lord,Shannon Rock,Suprena George,Velma Viville,Johan Evariste,Aalliyah Aimable,Windel Alexander,Kevin Leo,DAnne DeBeauville,Natasha Byron,Benjamin Sookwa,D&apos;Anne DeBeauville</value>

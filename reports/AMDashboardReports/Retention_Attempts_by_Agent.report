@@ -39,36 +39,42 @@
         <booleanFilter>((((1 or 2)  AND 3) AND 4) AND 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Mark Nagy,Matt Przywara,Priyanka Rao,Redd Jefferson,Rhianna Reed,Rob Olpinski,Robert Carpenter,Samantha Starett,Shelia Kelly,Sonny Perea,Spencer Stephens,Tami Gamliel,Tori Cardosi,Wilbert Allen,Zac Cordner,Zachary Kirchem,Beau Osteros,Benjamin Francois,Ceara Napolitano,Christa Oller,Chuck McCann,Clay Blakemore,David DeRego,David Fry,David Meldrum,Douglas Smith,Elizabeth Turner,Jennifer Hubley,John Flynt,Joshua Lowrey,Karina Suarez,Luke Mullins</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Mark Nagy,Matt Przywara,Priyanka Rao,Redd Jefferson,Rhianna Reed,Rob Olpinski,Robert Carpenter,Samantha Starett,Shelia Kelly,Sonny Perea,Spencer Stephens,Tami Gamliel,Tori Cardosi,Wilbert Allen,Zac Cordner,Zachary Kirchem,Beau Osteros,Benjamin Francois,Ceara Napolitano,Christa Oller,Chuck McCann,Clay Blakemore,David DeRego,David Fry,David Meldrum,Douglas Smith,Elizabeth Turner,Jennifer Hubley,John Flynt,Joshua Lowrey,Karina Suarez,Luke Mullins</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>call</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Mark Nagy,Matt Przywara,Priyanka Rao,Redd Jefferson,Rhianna Reed,Rob Olpinski,Robert Carpenter,Samantha Starett,Shelia Kelly,Sonny Perea,Spencer Stephens,Tami Gamliel,Tori Cardosi,Wilbert Allen,Zac Cordner,Zachary Kirchem,Beau Osteros,Benjamin Francois,Ceara Napolitano,Christa Oller,Chuck McCann,Clay Blakemore,David DeRego,David Fry,David Meldrum,Douglas Smith,Elizabeth Turner,Jennifer Hubley,John Flynt,Joshua Lowrey,Karina Suarez,Luke Mullins</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH</value>

@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Absolute Storage,Maaco,Cordell and Cordell,InterDent Pro Oil Change,Econo Lube N&apos; Tune &amp; Brakes,Dimensional Dental Management,Miracle-Ear,Hand and Stone Spa,Forefront Dermatology,Sunstate Equipment,West Coast Dental,Benevis,Hansons,Deca Dental Group,Re-Bath LLC,Speedy Glass,Heartland Dental Care,Affordable Dentures</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>

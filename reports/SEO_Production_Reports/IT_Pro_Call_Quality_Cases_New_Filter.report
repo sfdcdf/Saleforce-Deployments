@@ -43,96 +43,112 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 6 AND 7 AND 8 AND 5 AND 13 AND 14 AND 15 AND 16 AND ((9 AND 10) OR 11 OR 12)</booleanFilter>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web Dev,IT Pro</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Call_Quality_Action__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Blacklist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Blacklist,black list,escalate,escalation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Other</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Escalated__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.IT_Pro_Member__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Completion_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Unpaid</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>OEM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Google,Ingenio,City,Jingle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Paid</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Custom_Call_Tracking__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YES</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Berry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Reason_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Wrong Number: Business Related to Segment,Unsupported Service but Related to Segment</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Reason_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Wrong Number: Business Related to Segment,Unsupported Service but Related to Segment</value>

@@ -42,18 +42,21 @@
     <filter>
         <criteriaItems>
             <column>Performance_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Relevant Issue &amp; Work Completed,False Positive - Work Not Completed,Imported</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Channel__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Franchise</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>budget blinds,concrete craft,tailored living</value>

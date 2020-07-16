@@ -32,18 +32,21 @@
         <booleanFilter>1 OR 2 OR 3</booleanFilter>
         <criteriaItems>
             <column>Organic_Analysis__c.Parent_Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Mister Sparky</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Parent_Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ben Franklin</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Parent_Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>One Hour Heating &amp; Air</value>

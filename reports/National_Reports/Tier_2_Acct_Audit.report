@@ -15,24 +15,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>anna hammett,billie jacobo,grace merten,jarrett keels,john scott,natalie lance,wes curry,raji green,alexa craviotto,angie cox,ashley parks,matthew wible,sam gulliver,kate macconnachie,rachel zebracki,todd weiss</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.LiveOps_Call_Routing__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>401</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.LiveOps_Pool_Standard__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>512,517,510,513,511,516,507,520,518,521,508,514,505,522,509,504,515,519,503,506</value>

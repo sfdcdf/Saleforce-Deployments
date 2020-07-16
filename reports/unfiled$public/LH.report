@@ -24,30 +24,35 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>@lighthousepmg.com,web,Phone,Chat,Web,Internal</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lighthouse,local</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress,New,Re-Opened,Client Problem,Escalated,Awaiting Customer Response,Awaiting Case Work Completion,Internal Review,In Progress - No Attempts,In Progress - 1 Attempt,In Progress - 2 Attempts,In Progress - 3 Attempts,In Progress - 3+ Attempts,Work Completed,Bug Reported</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Peyden Edwards,Sonny Perea,Zachary Kirchem,Nicholas Brooks,Matthew Scott,Beau Osteros,Travis Dube,Kati Yee,Shannon Vaughn,Christopher Baker,Brooke Grossman,Jennifer Agulay,Madeline Berube,Matthew Kerlin,Meagan Holdiman,Jeremiah Lerma,Lynn Tobias,Zach Bailey,Jacqueline Leona,Vanessa Ramirez,Krystal Bell,Rory Diller,Kelly Costello,Tricia Valadez,Mark Champ,Julia Correa,Steven Russell,Rolando Gonzalez,Katura Daniel,Linzi Plummer</value>

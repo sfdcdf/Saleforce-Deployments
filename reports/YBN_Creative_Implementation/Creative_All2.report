@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Master_Case,Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Sean Cornwall,Ernest Cook,Mike Cross,Stephanie Stark,Tyler Klepfish,Scott Montgomery,Michael Bomar,Katherine Vega,YBN Creative,Web Dev,Quinn Campbell,Bryan Chapman,Michelle Garcia</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Theorem Users,Brian Pekarek</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Website Change/Update,Client Side Site Change/Update,Immediate Teardown - Website,Immediate Teardown - G &amp; B Listings,Mass Website Updates,Tracking Issue,YBN Presale Pricing Request</value>

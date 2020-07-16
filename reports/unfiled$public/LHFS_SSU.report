@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account.LHFS_Self_Sign_Up__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

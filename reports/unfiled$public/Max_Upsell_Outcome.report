@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Max_Upsell_Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

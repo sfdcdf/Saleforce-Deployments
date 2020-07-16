@@ -23,12 +23,14 @@
         <filter>
             <criteriaItems>
                 <column>PARENT_ACCOUNT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>Mr. Rooter</value>
             </criteriaItems>
             <criteriaItems>
                 <column>RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Case.Performance_Issue</value>
@@ -78,12 +80,14 @@
         <filter>
             <criteriaItems>
                 <column>Account$Parent</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>mr. rooter</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Organic_Analyses__r$RecordType</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Organic_Analysis__c.Organic_Optimization_Request</value>

@@ -234,18 +234,21 @@ Cancellation_Request__c.Current_Monthly_Revenue__c:SUM</calculatedFormula>
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lbw customer service,local pod queue,makenzie cunningham,barb jenkins,erik vicars,shelia kelly,leonard edwards,nathaniel nipper,adam kovacs,randy dewey,Jordan Sanchez,Zachery Shubow,Kyler Wood,Emma Brown,Reagan Neely,Shelby Cowman,Shelia Kelly,Adam Kovacs,Amber Woodhams,Andrew Smith,Brittany Fountain,James Brady,Paul Mascitti,Ryan Crary,Suzanne Oyenarte,Erik Vicars,Erika Persil,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Smith,Alvin Jobe,Alyson MacDonald,Angela Snow,April Law,Arlene Davidson,Barb Jenkins,Gwen Doyle,Kathleen Wilson,Kathryn Leadbeater,Kathy Caldwell,Lesa Lemay Marilyn Bray,Marilyn Slaunwhite,Robert Jones,Rondell Humphreys,Samantha Sewell,Jean Austin,Sara MacFarlane</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$No_Save_Mode__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Duplicate Retention Case</value>

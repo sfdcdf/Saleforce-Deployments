@@ -45,6 +45,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Total_Contract_Value__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>

@@ -51,24 +51,28 @@
         <booleanFilter>(1 and 2) or (2 and 3 and 4)</booleanFilter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New Setup,Cancel Service,Setup In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Change_Request_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Bulk ME Audit and Edits</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>ybn</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Change Requested,Question/Issue</value>

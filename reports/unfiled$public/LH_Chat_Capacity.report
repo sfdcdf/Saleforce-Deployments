@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>LiveAgentSession$TimeAtCapacity</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveAgentSession$Agent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Bea Peikert,Brooke Grossman,Christopher Baker,Jeremiah Lerma,Joe Janisch,Jordan Sanchez,Julia Correa,Kati Yee,Krystal Bell,Laura Vitro,Lauren Fischer,Linzi Plummer,Lynn Tobias,Mark Champ,Matthew Kerlin,Rolando Gonzalez,Rory Diller,Rustin Fincke,Sonny Perea,Travis Dube,Tricia Valadez,Trish Wightman,Zach Bailey,Zachary Kirchem</value>

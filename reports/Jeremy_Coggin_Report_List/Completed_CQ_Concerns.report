@@ -46,6 +46,7 @@
     <filter>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>

@@ -13,12 +13,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>karen dameron,laura osegueda,julia correa,joseph janisch,joe janisch,peyden edwards,saige hilton,chelsey willey,luis espinosa,terrance jackson,gina murphy,kati yee,seata moji,lynn tobias,jasmin butcher,kristan lemmons,anne benedict,annie benedict,shannon saunders,mark champ,tricia valadez</value>

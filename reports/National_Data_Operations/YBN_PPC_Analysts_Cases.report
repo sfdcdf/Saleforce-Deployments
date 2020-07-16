@@ -31,12 +31,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.Performance_Issue,Case.O_Account_Update,Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>cornine,brittany hunter,joshua golden,joshua fortunatus,dustin o&apos;leary,anderson allen,jonathan lawson</value>

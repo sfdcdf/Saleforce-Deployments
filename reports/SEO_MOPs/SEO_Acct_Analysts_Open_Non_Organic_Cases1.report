@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,Awaiting Customer Response,In Progress,ProductionTeam Mistake</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Amanda O&apos;Sullivan,Jay Chappell,Bryan Heckler,Miri Oakford,Kami Owens,John King,Sommer Chaka,Ryan Widmier,Brenda Healey,Kevan Irsch,Jennifer Barnes</value>

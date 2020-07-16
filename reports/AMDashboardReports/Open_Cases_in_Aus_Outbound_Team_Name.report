@@ -36,24 +36,28 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ds</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.Performance_Issue,Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Bonnie Jenkins,Emma McCrary,Christina Madison,Beth Shorter,Mila Raisovich,Dawn Sevcik,Andrew Salazar,Michele Burch,Sara Davis,Roy Lazorwitz,Courtney Christian,Terrell Pasley,Cynthia Mota,Brittanie Walker,Jordan Sanchez,katie Tillman,Felicia Morales,Sharica Thomas,Gary Poole,Thomas Standing,Ryan McDonald,Matthew Keehn,Dayna Horton,Jarrah Garrett</value>

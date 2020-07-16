@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>CALLDURATION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>5</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>SDR,sales executive,Sales Manager</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>inbound holding</value>

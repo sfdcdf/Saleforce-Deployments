@@ -39,18 +39,21 @@
     <filter>
         <criteriaItems>
             <column>Account_MLS__c.Account_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Test Accounts for Internal Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account_MLS__c.Active_Connection__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

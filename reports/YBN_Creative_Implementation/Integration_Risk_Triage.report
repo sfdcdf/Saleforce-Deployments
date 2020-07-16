@@ -34,18 +34,21 @@
     <filter>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Corporate Site Design,YBN Corporate Site Development,YBN Corporate Site Update/Change,YBN Locations Template Design,YBN Locations Template Development,YBN Locations Template Update/Change,YBN Metropage Template Design,YBN Metropage Template Development,YBN Metropage Template Update/Change,YBN Email Marketing Template Design,YBN Email Marketing Template Development,YBN Email Marketing Template Update/Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Potential_Integration_Risk__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>At Risk</value>

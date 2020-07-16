@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Activities$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Task.Interaction</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>We&apos;ll Be in Touch Soon</value>

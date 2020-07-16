@@ -31,12 +31,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LH Future Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Custom Message Migration,Delayed Consumables,Remove Newsletter Special Pricing,Site/Listings Teardown,Transports On/Off</value>

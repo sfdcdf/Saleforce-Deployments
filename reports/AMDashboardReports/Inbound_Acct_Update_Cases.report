@@ -69,12 +69,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Courtney Visser,Jorge Suarez,Javier Quiroz,Natalie Larner,Steven Grousnick,Jeffrey Aguilar,Sarah Sweet,Janie Bratcher,Peyden Edwards,Chad Davis,Malik Khendek,Ivan Mora,Ron Brown,Johnny Venegas,Levar Manuel,Jaime Jimenez,Michele Burch</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>

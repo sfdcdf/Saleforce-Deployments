@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CASE_OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>greer</value>
         </criteriaItems>
         <criteriaItems>
             <column>CASE_NUMBER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>12531618,12583227,12586808,12591572,12633845,12651719,12663991</value>

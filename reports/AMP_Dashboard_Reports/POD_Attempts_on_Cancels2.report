@@ -87,24 +87,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lead stream support,local pod queue,lbw customer service,platinum support,Adam Kovacs,Amber Woodhams,James Brady,Andrew Smith,Kinsley Hill,Ashley Black,Biff Spradley,Nathaniel Nipper,Ryan Crary,Suzanne Oyenarte,Brittany Fountain,Jamie Russell,Jordan Valentine,Shelia Kelly,Reagan Neely,Kyler Wood,Henry Haigler,Zack Shubow,Kiaira Jones,Jennifer Batcher,Demetria Atkins,Erik Vicars,Ron Brown,Sherri Aguinaga,Sara Davis,Thad Dameris,Valerie Smith,Erika Persil,Cassandra Stowers,Graham McGee,Barb Jenkins,April Law,Kathleen Wilson,Marilyn Slaunwhite,Robert Jones,Tracey Peel,Marilyn Bray,Alyson Macdonald,Lesa Lemay,Rondell Humphreys,Kathryn Leadbeater,Gwen Doyle,Arlene Davidson,Walter Rundle,Samantha Sewell,Jean Austin,Kasey DeVries</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>kyle zaffin,retention duplicate audit queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Next_Scheduled_Contact_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

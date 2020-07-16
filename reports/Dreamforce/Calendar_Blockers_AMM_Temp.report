@@ -22,12 +22,14 @@
     <filter>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>reagan</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$ShowAs</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>2</value>

@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Date_of_Cancellation_Request__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Created_By_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Outbound Associate</value>

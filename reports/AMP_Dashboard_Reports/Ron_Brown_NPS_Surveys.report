@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_LBW</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>ron brown</value>

@@ -36,30 +36,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Bathroom Remodeling,Blinds Retail and Installation Service,Cabinetry Contractor,Chimney and Fireplace Installer,Door Contractor,Fencing Contractor,Flooring Contractor,Garage Door Contractor,General Contractor,Gutter Contractor,Home Remodeling,Home Waterproofing,HVAC Contractor,Kitchen Remodeling,Plumber,Roofer,Siding Contractor,Solar Contractors,Sunroom Contractors,Swimming Pool and Hot Tub installation,Window Contractor</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Leads By Web,Lighthouse Field Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

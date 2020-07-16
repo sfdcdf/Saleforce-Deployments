@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Franchisee_Escalation__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

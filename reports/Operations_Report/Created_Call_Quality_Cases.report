@@ -6,12 +6,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Core</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Inbound Specialist,Collections Specialist,Collections Consultant,Retention Consultant,Outbound Associate</value>

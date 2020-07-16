@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>COMPANY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>One Hour Heating &amp; Air,Mister Sparky,Gotcha Covered,Steamatic,mathnasium,carstar</value>
         </criteriaItems>
         <criteriaItems>
             <column>COMPANY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ad fund</value>

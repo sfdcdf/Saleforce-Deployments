@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Joshua Alvarez,Josh Alvarez</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LBW CSC Survey,LBW NPS Survey</value>

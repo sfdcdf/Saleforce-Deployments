@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>platinum support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>HVAC Contractor,Medical Spa,Pest Exterminator,Roofer,Mortgages,Arborist,Junk Removal Service,Plastic Surgeon,Garage Door Contractor,Landscaper,Mover,Fencing Contractor,General Contractor,Damage Repair,Property Manager,Home Remodeling,Animal &amp; Wildlife Control Auto Glass Repair Shop</value>

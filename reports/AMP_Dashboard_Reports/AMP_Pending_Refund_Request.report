@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Requested,Requested and Approved,Requested and Denied</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,kevin wells,Erik Vicars,barb jenkins,shelia kelly,nathaniel nipper,adam kovacs,makenzie cunningham,biff spradley,randy dewey</value>

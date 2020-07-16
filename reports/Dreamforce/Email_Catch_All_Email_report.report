@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>email catch all</value>
         </criteriaItems>
         <criteriaItems>
             <column>EMAIL.SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>We&apos;ll Be in Touch Soon</value>

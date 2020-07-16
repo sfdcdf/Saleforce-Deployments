@@ -141,6 +141,7 @@
     <filter>
         <criteriaItems>
             <column>FK_OPP_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>

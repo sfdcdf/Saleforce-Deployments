@@ -36,6 +36,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.IMS_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

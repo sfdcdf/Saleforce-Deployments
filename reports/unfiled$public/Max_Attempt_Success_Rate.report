@@ -19,24 +19,28 @@
         <booleanFilter>((1 AND 2) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>282176,282724,273384,277612,288519,127163,274458,276615,273408,273404,310300,292811,294454,305757,302337,300248,304592,313673,315697,317515,322947,323437,322993,325635,323025,330780,328132,308193,329449,335458,334578,338582,338812,339179,339320,339674,339922,340101,341465,341466,341518,327999,341611,341666,341659,341737,340523,341854,341961,341968,342012,342014,342017,342018,342397,342537,342480,342487,342493,342509,342492,342490,342512,342514,342710,342567,343278,342050,84012,99100,109125,43112,96135,73487,73381,77735,82012,128920,95572,141840,144816,150942,162994,98512,171995,178423,182533,206833,216715,114189</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cannot Complete,All Tasks Completed,In Progress,Scheduled Call,Pending Reattempt,Pending Pin Receipt,Closed,Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Pin_Action_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Maps Contact - Comanage</value>

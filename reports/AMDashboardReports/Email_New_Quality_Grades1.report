@@ -65,12 +65,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Marsha Cunningham,Linda Keating,Kevin Grant,Kathy Caldwell,Jo-Ann McKenzie,Dawn Jordan,Nina Avery</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Alvah Mayo,Andrew Roy,Leonard Edwards,Kayla McLaren,Dawn Rodgers,Angela Anderson,Kim Amiro,Janine Martin,Kendel McArdle,Barb Jenkins</value>

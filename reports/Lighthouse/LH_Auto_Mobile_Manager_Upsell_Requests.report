@@ -18,24 +18,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.AR_Request_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$Support_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Package Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>auto</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Lighthouse</value>

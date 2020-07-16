@@ -37,24 +37,28 @@
     <filter>
         <criteriaItems>
             <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>ad station re-fill,essentials/platform pro rate</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won,Submit for Approval</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_MANAGER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>kevin wells,makenzie cunningham,erik vicars,barb jenkins,shelia kelly,adam kovacs,randy dewey,nathaniel nipper,biff spradley</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Fee_Difference__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>0</value>

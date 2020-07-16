@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed,Closed - Errors Found,Closed - No Errors Found,Closed - False Trigger,Closed - Sent to SDB</value>

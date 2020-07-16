@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveChatTranscript$ChatDuration</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>10</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveChatTranscript$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

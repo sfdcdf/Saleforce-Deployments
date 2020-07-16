@@ -25,30 +25,35 @@
         <booleanFilter>((1 OR 4) AND 2 AND 3) AND 5</booleanFilter>
         <criteriaItems>
             <column>DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>username,password,pw,a record,domain redirect,a-record</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>265954,306522,306523,104247,10561,111661,111667,111668,111669,113671,121936,121941,125124,127162,127163,128250,134595,136782,141282,142056,144414,153700,153705,168072,169941,169945,184195,188229,202791,207006,208019,211672,213308,213835,213988,216199,216200,223756,225802,230076,235941,243746,24689,251950,251988,255910,258461,26358,275163,277599,277605,27770,289581,289597,289600,289603,289604,293311,293366,301272,302886,303678,304044,306993,310324,312626,314759,36754,48524,48721,48819,50691,51090,51796,52378,52379,52879,54985,57613,57618,57780,60962,61224,61225,84693,90178,91491,93346,93367,108795,289100,300787,312642,57606</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>username,password,pw,a record,domain redirect,a-record</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Other_reason_detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Completed</value>

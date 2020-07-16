@@ -52,12 +52,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Account.Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>lee.drcriminaldefense@gmail.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_E_mail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>lee.drcriminaldefense@gmail.com</value>

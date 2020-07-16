@@ -33,30 +33,35 @@
     <filter>
         <criteriaItems>
             <column>Account.Contacts$Email</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$BillingState</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>TX,OK,LA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>nimish amin,rick basch,zack fishman,andrew little,josh schure,kevin noonan,nick dispenza,justin platt,greg boyle,chad glenn,Lane Teitelbaum,Derek Rosenzweig,Steve Kennedy,Jeffrey Leach,mike sherry,jeff leach</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Contacts$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>NLT</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Type</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect</value>

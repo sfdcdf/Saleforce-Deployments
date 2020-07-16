@@ -37,18 +37,21 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed,Work Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>SetUp,yvonne,Theorem,Kook,Michal,Da-Hea,Olaya,Miner,Smith,Pekarek,Gadson,gilbert,Kristen,Amie,Lauren</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>N. Website Swap Out,N.Website Change/Update,N. Other,N. Initial One Site Setup,N. Initial Mirror Setup,N. Initial Adversite Setup,N. Domain Name,N. Account/Tracking Issue,P.Initial Adversite Setup,P.Initial Mirror Setup,P.Initial One Site Setup,P.Other,P.Website Change/Update,P.Logo Creation,P.Website Swap Out,P. Call Center Turn off,P. Call Center</value>

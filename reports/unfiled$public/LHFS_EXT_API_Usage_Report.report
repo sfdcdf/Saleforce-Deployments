@@ -54,6 +54,7 @@
     <filter>
         <criteriaItems>
             <column>Site$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LHFS_EXT_API</value>

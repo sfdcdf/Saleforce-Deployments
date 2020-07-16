@@ -24,36 +24,42 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,Closed,Complete- Review and Changes Needed,Complete- Review Only</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Account_Setup_For__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Dana Parker,Sarah Fein</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Date_Errors_Corrected__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Errors_Corrected_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>1/19/2018 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Matt Austin,Shawna Kays</value>

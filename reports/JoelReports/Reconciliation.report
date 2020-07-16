@@ -50,24 +50,28 @@
     <filter>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>SALES</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Total_Amount__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>24.99,29.99,49.99</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$Type</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Upsell</value>

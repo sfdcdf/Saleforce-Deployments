@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Call_Grading_Forms__c.Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Press Miller,Matthew Moberly,Sommer Wells,Casey McCurdy,Adam Lovill,Stuart Katz,Wendy Manley,Caitlin Callahan</value>

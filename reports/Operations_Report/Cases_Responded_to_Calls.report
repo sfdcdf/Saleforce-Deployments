@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.YBN_Outbound_Touch_Point,Case.YBN_Product_Ideas,Case.YBN_Inbound_Inquiry,Case.YBN_Corporate_Interaction,Case.YBN_Master_Case</value>

@@ -40,18 +40,21 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>fouraker,erin fouraker,Ciurdar,Murphy,Lucas,Meirow,eden meirow,addico,solomon,heather lowe,lowe,lakeisha Kinsey,Kinsey</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request,Case.New_Client_Setup,Case.Performance_Issue,Case.O_Account_Update,Case.YBN_Master_Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>7 Day Opt,3 Day Error Check</value>

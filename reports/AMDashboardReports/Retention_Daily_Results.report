@@ -66,12 +66,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Joshua Cummings,local pod queue,diane mulkey,jackie riedl,Elayne Hoover,erik vicars,riedl,Sherri Aguinaga,rory diller,Makenzie Cunningham,kyle zaffin</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Dawn Rodgers</value>

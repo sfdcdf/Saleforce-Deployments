@@ -46,6 +46,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Days_Since_last_Activity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>12</value>

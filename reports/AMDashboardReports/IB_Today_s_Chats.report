@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Chad Davis,Sarah Sweet,Ron Brown</value>

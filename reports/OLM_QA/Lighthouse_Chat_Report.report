@@ -61,6 +61,7 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$Skill</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Medical,Lighthouse_Field_Service,Lighthouse Medical,Lighthouse Field Service</value>

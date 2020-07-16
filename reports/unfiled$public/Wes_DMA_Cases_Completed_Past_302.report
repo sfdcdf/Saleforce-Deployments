@@ -37,30 +37,35 @@
         <booleanFilter>((1 or 2) AND (3 or 4)) AND 5</booleanFilter>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls - Corporate,Miracle Method Surface Refinishing,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Orthology Inc.,Mr. Appliance</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls - Corporate,Miracle Method Surface Refinishing,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Orthology Inc.,Mr. Appliance</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Date_Opt_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_N_DAYS:30</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Setup_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_N_DAYS:30</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Daily Global Change Case Audit - Campaign/Website Updates - YBN - Performance</value>

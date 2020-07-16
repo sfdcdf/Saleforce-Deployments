@@ -49,12 +49,14 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveChatTranscript$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

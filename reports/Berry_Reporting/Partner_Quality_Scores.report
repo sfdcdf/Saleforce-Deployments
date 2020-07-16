@@ -62,12 +62,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Call_Grading_Forms__c.Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>alison sexton,andrew beban,casey hatch,greer rollier,janet deyoung,jessica shank,karla pedrego,kayla westfall,michael means,rachel bradley,suzanne baudoin,taylor smith,chuck seppanen</value>

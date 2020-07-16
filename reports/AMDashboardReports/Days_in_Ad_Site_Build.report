@@ -41,6 +41,7 @@
     <filter>
         <criteriaItems>
             <column>ObjectHistory__c.FieldValue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Site Build,Ad Build</value>

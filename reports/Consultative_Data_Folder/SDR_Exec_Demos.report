@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Original_SDR_Exec__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Kazansky,Maeda,Wright,Christoph,Travis,Stittgen,Vonderheide,Dougherty,Choukroun,Drew,Tullis,Torres,George,Diehl,Burris,Raser,Harrison,Edwards,McPhee,Benjamin,Clark,Goen,Amin,Walliser,Tvedt,Flanagan,Padgett,Iacona,Lynch,Osman,Hess,Thovson</value>

@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Case.SEO_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>2013 Existing JCI Upgrade to OR,2013 Existing JCI Website Updates,2013 New JCI Client - OR,2013 New JCI Client - WSO</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>LIVE</value>

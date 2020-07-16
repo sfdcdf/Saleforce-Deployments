@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Lynn Meshula,Chris Cottrell,Edward Ortega,Rachel Day,Matthew Dalpini,Nicole Perez,Marc Foley,Janet DeYoung,Kami Banner,Kelly Driscoll,Bechy Ochs,Vinay Sagar</value>

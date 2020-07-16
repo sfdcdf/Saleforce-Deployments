@@ -19,6 +19,7 @@
     <filter>
         <criteriaItems>
             <column>Case.JIRA_Issue_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

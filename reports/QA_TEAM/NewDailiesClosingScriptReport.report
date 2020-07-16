@@ -37,12 +37,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Quality_Case__c.Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Quality_Case__c.Case_Closed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Phillip Harpell,Joseph Sanchez,Crystal Perez,Bianca Torres,Kimberly Davis,Tameka Davidson,Cindy Melanson,Michelle MacLean,Shari DeYoung</value>

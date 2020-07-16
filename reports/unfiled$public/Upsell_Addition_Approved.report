@@ -51,12 +51,14 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.True_Upsell_Addition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Approved - True Upsell Addition</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>reactivation</value>

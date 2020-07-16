@@ -37,18 +37,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed,Awaiting Internal Response</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brian Pekarek</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Web_Dev_Member_Round_2_Changes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brian Pekarek</value>

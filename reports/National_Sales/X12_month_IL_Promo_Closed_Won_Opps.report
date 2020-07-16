@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>234877,235252,259076,231229,259063,256171,257327,231245</value>

@@ -40,18 +40,21 @@
     <filter>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Inbound_Inquiry,Case.Partner_Inbound_Inquiry,Case.YBN_Request,Case.XJen_Test_NCS_No_Use,Case.Yodle_Gold_Service,Case.Master,Case.Performance_Issue,Case.XJenTest_No_Use,Case.O_Account_Update,Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Marketing Emails</value>

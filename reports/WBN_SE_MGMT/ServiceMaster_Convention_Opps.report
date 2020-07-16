@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>270</value>
         </criteriaItems>
         <criteriaItems>
             <column>CAMPAIGN_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>WBN: 2018 ServiceMaster Clean &amp; Restore Conference</value>

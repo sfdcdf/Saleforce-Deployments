@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>LAST_UPDATE_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>sravani</value>
         </criteriaItems>
         <criteriaItems>
             <column>LAST_UPDATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>9/24/2019 12:00 AM</value>

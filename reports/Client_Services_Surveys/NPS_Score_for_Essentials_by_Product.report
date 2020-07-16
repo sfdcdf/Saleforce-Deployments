@@ -18,12 +18,14 @@ PARENTGROUPVAL(RowCount, Customer_Surveys__c.Account_Product_Type__c)</calculate
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NPS Survey Yodle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.NPS_Score__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

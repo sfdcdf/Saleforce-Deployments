@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Link_to_Script__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>https://na26.salesforce.com/articles/Scripts/Essentials-CSC-Script-Mental-Health</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>

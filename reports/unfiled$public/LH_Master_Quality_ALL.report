@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>LH Future Request,LH Support - Sugar Hill,OBC Queue,Quality Team</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Gina Murphy,Shannon Saunders,Mark Champ,Peyden Edwards,Lynn Tobias,Annie Benedict,Joseph Janisch,rebekah osteros,David Meldrum,mary tillery,ann schwertz,kurt buehler,Shannon lang</value>

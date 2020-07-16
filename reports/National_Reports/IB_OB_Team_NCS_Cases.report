@@ -43,24 +43,28 @@
         <booleanFilter>(1 AND 2 AND (3 OR 4))</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jared Brock,Emily Kareiva,Joseph Gutierrez,Marla Sadowski,Katherine Chapman,Kimberly Williams,Logan Rollier,Elizabeth Groce,Todd Weiss,National Client Support,Nicholas Walker,Michael Means</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jared Brock,Emily Kareiva,Joseph Gutierrez,Marla Sadoski,Katherine Chapman,Kimberly Williams,Logan Rollier,Elizabeth Groce,Todd Weiss,National Client Support,Nicholas Walker,Michael Means</value>

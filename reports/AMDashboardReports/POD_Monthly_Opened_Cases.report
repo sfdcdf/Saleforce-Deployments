@@ -204,12 +204,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Erika Persil,Jennifer Degreef,Keegan Sandman,Mark Nagy,Reagan Neely,Shelby Cowman,Kyler Wood,Jordan Sanchez,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Alvin Jobe,Alyson MacDonald,Angela Hoddinott,Blake MacPhee,Gwen Doyle,Karen Park,Kayla Muir,Kimberley Boutilier,Marilyn Slaunwhite,Mark Cosh,Robert Jones,Rondell Humphreys,Stephen Gerrior,Walter Rundle,April Law,Aaron Wilson,Erik Vicars,Shelia Kelly,Barb Jenkins,Leonard Edwards,Adam Kovacs,Amber Tamayo,James Brady,Paul Mascitti,Andrew Smith,Kathy Caldwell,Angela Snow,Kathryn Leadbeater,Marilyn Bray,Nina Avery,Kathleen Wilson,makenzie cunningham</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.XJen_Test_COBRA</value>

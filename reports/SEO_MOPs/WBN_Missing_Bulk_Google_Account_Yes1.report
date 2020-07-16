@@ -74,48 +74,56 @@
         <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Merry Maids,Lawn Doctor,Miracle-Ear,Affordable Dentures,Maaco,Cordell &amp; Cordell,NOVUS Glass,Painting with a Twist,Deca Dental Group,Senior Helpers,Mr. Electric</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Gotcha Covered,Hand &amp; Stone,True Green,Amada Senior Care,PostNet,Padgett,Sunstate Equipment,The Flying Locksmiths,Bath Fitter,Re-Bath</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Mosquito Authority,Handyman Matters,HomeTeam Inspection Services,SpeedPro Imaging,Miracle Method,Cottman,Uni K Wax,Massage Heights,Pro Oil Change,ProSource,Forefront Dermatology</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Speedy Glass,Executive Home Care,Top Flite Financial,Stratus Building Solutions,MSA Home Health,LivHOME</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Bulk_Google_Account_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Off</value>

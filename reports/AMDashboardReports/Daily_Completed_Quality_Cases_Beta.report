@@ -33,24 +33,28 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Quality Team</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Closed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>elizabeth koepke,david hamrick,anna cibulsky,anna maria cibulsky,patrick koepke,victoria kanicka,kevin yee,chris ono,joseph sanchez,jordan houston,charles thomas</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse,Lighthouse Essentials,TORCHx for Agent,TORCHx + Ads for Agent,TORCHx for Team,TORCHx + Ads for Team,TORCHx for Broker,TORCHx + Ads for Broker</value>

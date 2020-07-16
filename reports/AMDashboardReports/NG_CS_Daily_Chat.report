@@ -69,12 +69,14 @@
     <filter>
         <criteriaItems>
             <column>Case.LiveChatTranscripts$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.LiveChatTranscripts$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Cindy Melanson,Linda Keating,Marsha Cunningham,Dawn Jordan,Stephen Gerrior,Chris Goyetche,Norma Dupuis,Miranda DeCoste,Joseph Dahdah,Diana Cleghorn,Cindy Haymen,Angela Snow,Angela Luddington</value>

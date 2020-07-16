@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Product2.ProductChargeType__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>PPC Seasonal</value>

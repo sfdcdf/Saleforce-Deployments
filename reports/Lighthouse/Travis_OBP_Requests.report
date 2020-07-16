@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Travis Dube</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New,BOT Feature Request,In Progress,S. Consultant Assistance Needed,Updated,Stalled,Pending Retention,RFC</value>

@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>User.Ability_to_Complete_Install_Wrkst__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

@@ -34,12 +34,14 @@
     <filter>
         <criteriaItems>
             <column>User.Profile_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>National</value>
         </criteriaItems>
         <criteriaItems>
             <column>User.Profile_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Sales</value>

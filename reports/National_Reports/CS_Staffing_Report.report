@@ -25,18 +25,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Relationship_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>189,339,147,253,150,169,401,432,230,434,242,298,202,361,220,166,136,459,362,195,395,5,168,206,157,583,541,542,174,535,224,411,363,247,278,579,165,185,467,427,385,383,582,161,408,267,431,536,125,249,473,381,265,276,148,291,344,196,198,142,233,218,424,186,453,514,244,457,138,216,149,143,519,245,163,184,293,215,347,257,292,118,465,284,124,251,181,522,116,294,141,466,222,417,221,331,151,152,178,137,126,131,209,271,507,350,283,246,449,243,180,187,241,380,191,134,538,6,210,281,236,123,537,428,145,273,172,162,205,213,127,153,342,111,139,192,403,133,525,418,231,458,437,527,122,509,511,212,438,10,274,343,228,204,577,399,516,269,113,412,578,9,523,211,510,135,254,464,512,114,413,531,270,470,200,384,7,112,529,128,121,115,528,248,225,287,429,376,353,164,1,208,420,119,290,4,235,160,177,239,203,472,214,297,576,584,132,194,585,586,590,591,592,593,594,595,597,598,599,600,601,602,288,378,419,448,463,530</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Clockwork Home Services</value>

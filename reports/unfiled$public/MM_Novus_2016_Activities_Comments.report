@@ -19,24 +19,28 @@
         <booleanFilter>(1 OR 4) AND 3 AND 2</booleanFilter>
         <criteriaItems>
             <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Merry Maids</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Upsell Pilot 2016</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Description</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>a,e,i,o,u,y</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>NOVUS</value>

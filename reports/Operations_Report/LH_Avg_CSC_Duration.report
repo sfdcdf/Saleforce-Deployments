@@ -27,24 +27,28 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1,2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>1200</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Messages Activated,MA-1 Ready,MA-2 Pending Review,MA-6 Ready/Config Complete,MA-4 Pending Input</value>

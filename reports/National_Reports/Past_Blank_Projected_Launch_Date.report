@@ -49,30 +49,35 @@
         <booleanFilter>1 AND 2 AND 3 AND (4 or 5) and 6 and 7</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.New_Client_Setup,012600000009OUr</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>wilder,gertz,emmanuelidis,smith,lalonde,liesch,bauer,o&apos;leary,eisenmenger,vernon,delaura,koloda,lytton,goldfarb,locke,flannick,ricotta,machado,jenkins,zachary thomas,lilly,blouin</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>PROVISIONING</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Order_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YESTERDAY</value>

@@ -28,48 +28,56 @@
         <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) and (6 or 7) and 8</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Address Update,Unpaid Tracking Phone #,Domain Swap</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Bulk_Google_AccountPL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Bulk_Bing_AccountPL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>TWO MEN AND A TRUCK,Johnson Controls - Liberties Dealers,Hand &amp; Stone,Charles D. Jone,Virginia Air,Design Air,The Republic Co,US Air Condition,Coleman Heating,Century Air,North Florida Heat,American Air,Ferguson Enterp,Mid-City Supply,ABCO Refrigeration,Calverley Supply,Yeomans Distrib,Mid City Supply,Aircon Engineer,Norman S. Wright Company,Gustav A Larson Company,Le Groupe Master,Keller Supply Company,Refrigerative Supply,Starr Service Company,Thos Somerville Co HQ,Upstate Systems,Inc.,Canada Branch,Johnson Air,M &amp; A Supply,Winstel Controls Inc,Badger Metals,Solar Supply,Johnson Controls,cfm Distrib,Century AAA LTD,FW Webb,Pipeline Supply,Plumbers Supply,Johnson Supply,Famous Supply,Luxaire,York,ACU</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>TWO MEN AND A TRUCK,Johnson Controls - Liberties Dealers,Hand &amp; Stone,Charles D. Jone,Virginia Air,Design Air,The Republic Co,US Air Condition,Coleman Heating,Century Air,North Florida Heat,American Air,Ferguson Enterp,Mid-City Supply,ABCO Refrigeration,Calverley Supply,Yeomans Distrib,Mid City Supply,Aircon Engineer,Norman S. Wright Company,Gustav A Larson Company,Le Groupe Master,Keller Supply Company,Refrigerative Supply,Starr Service Company,Thos Somerville Co HQ,Upstate Systems,Inc.,Canada Branch,Johnson Air,M &amp; A Supply,Winstel Controls Inc,Badger Metals,Solar Supply,Johnson Controls,cfm Distrib,Century AAA LTD,FW Webb,Pipeline Supply,Plumbers Supply,Johnson Supply,Famous Supply,Luxaire,York,ACU</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>

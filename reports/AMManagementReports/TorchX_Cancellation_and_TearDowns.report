@@ -23,18 +23,21 @@
         <filter>
             <criteriaItems>
                 <column>Account$Product_Type_Transactional__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>contains</operator>
                 <value>torchx</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Cancellation_Requests__r$Outcome__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Cancelled</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Cancellation_Requests__r$Closed_Date__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>LAST_N_DAYS:15</value>
@@ -92,12 +95,14 @@
         <filter>
             <criteriaItems>
                 <column>SUBJECT</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Account Teardown</value>
             </criteriaItems>
             <criteriaItems>
                 <column>CREATED_DATEONLY</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>LAST_N_DAYS:14</value>

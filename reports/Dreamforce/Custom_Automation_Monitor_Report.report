@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Custom_Automation__c.Automation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Scheduled</value>

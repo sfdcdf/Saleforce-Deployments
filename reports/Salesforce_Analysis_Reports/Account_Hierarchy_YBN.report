@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>Account$Parent.RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>

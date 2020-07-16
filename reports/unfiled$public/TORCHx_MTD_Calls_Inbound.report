@@ -9,18 +9,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>TORCHx</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Karen MacNeil,Marjorie Goodyear,Laura Osegueda,Joe Janisch,Saige Hilton,Karen Dameron,Andrea McNerney,Scott Meyers-Pillon,Tameka Davidson,Adrienne Glenn,Peyden Edwards,Julia Correa,Chelsey Willey</value>

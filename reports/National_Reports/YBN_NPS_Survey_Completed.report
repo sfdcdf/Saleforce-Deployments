@@ -19,18 +19,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Days_Since_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

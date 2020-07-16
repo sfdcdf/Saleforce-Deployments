@@ -27,36 +27,42 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_STATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>NC,SC</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_CITY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Asheville,hendersonville,WAYNESVILLE,Murphy,charlotte,concord,Raleigh,columbia,Indian Trail,Gastonia,Hickory,Monroe,High Point,Lenoir,Huntersville,Fayetteville,Rock Hill,Shelby,Statesville,Durham,Cary,Religh,Cornelius,Belmont,Wake Forest,Mooresville,Apex,Winston Salem,Morganton,Denver,West Columbia,Winston-Salem,troutman,Seneca,Parkton,Sanford,Creedmoor,Fuquay Varina,Greenville,Rocky Mount,Holly Springs,Anderson,Moycock,simpsonville,six mile,Greenwood,Gilbert,Fort Mill,Wilkesboro,Charolotte,Matthews,Spartanburg,Asheboro,Pineville,Greensboro,Central,Traphill,Camden,Roanoke Rapids,Smithfield,Farmville,Hope Mills,Boone,Rockingham,Chester,Weaverville,Haw River,Kernersville,Lancaster,Fletcher,Candler,North Augusta,Augusta,Sylva,Chapel Hill,Southern Pines,Greer,Clemson,Hartsville,FLORENCE,Aiken,ORANGEBURG,Sumter,Santee,Marion,Garner,GOLDSBORO,ROCKHILL,LANCASTER,SALISBURY,FRANKLIN,BURLINGTON,Wilson,albemarle,Lincolnton,Waxhaw,KINSTON,Easley,Woodfin,Burnsville,Reidsville,Manning,Bennettsville</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_CITY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,Zebulon,Ayden,Easley,Conover,Colfax,Kinston,Morrisville,Leicester,Clemmons,Elgin,Mauldin,lexington,Knightdale,Taylors,Boiling Springs,NEED TO ASK,Fries,Inman,Clyde,Irmo,Rolesville,Archdale,Fountain Inn,Lake Toxaway,Waxham,Brevard,Highlands,St Stephen,Selma,Benson,Forest City,Barnwell,Gaffney,Walhalla,Oxford,Graham,Burgaw,Pittsboro,Belton,Wellford,ABERDEEN,Duncan,Harrisburg,Granite Falls,Aberdeen,Moore,Clayton,Arden,Blythewood,Old Fort,Pinebluff,Kannapolis,Germanton,Wendell,Pickens,Angier,Indian Land,Grenville,Mount Airy,Pfafftown,Lake Wylie,Grassy Creek,Randolph,Lugoff,Advance,Chapin,Pleasant Garden,Ninety Six,Thomasville</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>prosource</value>

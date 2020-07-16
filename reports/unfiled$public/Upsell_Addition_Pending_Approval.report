@@ -48,6 +48,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.True_Upsell_Addition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Pending  Approval</value>

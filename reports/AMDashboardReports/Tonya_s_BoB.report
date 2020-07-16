@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Local,Partner</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE,PROVISIONING</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>SEM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Appliances,Asphalt and Pavement Contractor,Banquet,Conference,and Convention Room,Butchers,Cash &amp; Check Advances,Chimney and Fireplace Installer,Cleaning Service,Clothing and Apparel,Communication Services,Custom Framer,Damage Repair,Electronics Stores,Geriatric Physician,Gutter Contractor,Gym,Hair Removal Service,Hearing Centers,Interior Designer,Janitorial Service,Locksmith,Medical Spa,Medical Weight Loss Center,Miscellaneous Entertainment,Motorcycles,Mover,Music Stores,Musical Instruments Service,Office Furniture,Optometrist,Pawn Shop,Pediatrician,Personal Trainer,Pet Service,Plastic Surgeon,Plumber,Preschools,Roofer,Scrap Metal,Septic System Service,Solar Contractors,Technology,Tutoring Service,TV and Internet Provider,Veterinary and Animal Hospital,Video Production,Window Contractor</value>

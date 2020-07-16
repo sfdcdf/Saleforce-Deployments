@@ -45,12 +45,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.WBN_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_ACC_PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>budget blinds canada,budget blinds - master,home franchise concepts,tailored living,concrete craft,AdvantaClean Systems,Inc.</value>

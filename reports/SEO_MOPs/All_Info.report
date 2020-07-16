@@ -68,36 +68,42 @@
         <booleanFilter>1 AND 2 AND (3 OR 4) AND (5 OR 6)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>7/21/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>7/22/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>162456,215331,233094,236391,237686,238105,238121,238190,238276,238474,238708,238728,238741,238766,238798,238825,238875,239008,239644,239758,239809,239830,240211,240283,240961,240963,240982,240996,241045,241090,241170,241202,241236,241344,241584,241639,241685,241689,241717,241727,241924,241940,242066,242072,242100,242186,242195,242210,242243,242249,242404,242514,242627,242691,242698,242700,242709,242731,242794,242849,242872,242905,242917,243021,243058,243068,243116,243118,243237,243268,243326,243447,243469,243563,243746,247216,247230,247269,247317,247362,247396,248542,248563,248772,248804,248846,248868,248932,248951,249024,249059,249525,249709,249797,250454,251097,251198,251366,251645,254573,265835,243665,243689,243692,243702,243818,243948,243962,243971,244014,244054,244072,244109,244138,244150,244158,244169,244197</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>244277,244339,247175,248905,248977,250300,251042,251219,251630</value>

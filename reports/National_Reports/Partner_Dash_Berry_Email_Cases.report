@@ -37,36 +37,42 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4 AND (5 OR 6))</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Inbound_Inquiry,Case.Master,Case.Partner_Inbound_Inquiry</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>berrysales@yodle.com,YBN Email,Partner Email,confirmation@berrylocalleads.com,Circuit Breaker</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>New Web Client,Automatic Reply,Alert: Parent Pays Billing Failed,72 Hour</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Matthew Wible,Juliet Nelson,David RIchards,Thomas Black,Kimberly Williams,Greta Oldach,Zachary Kumnick,Logan Rollier,Casey Hatch,Angelica Ripson,Ryan Wilson,Emily Kareiva</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Berry Email Queue</value>

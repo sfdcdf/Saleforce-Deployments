@@ -61,12 +61,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Coaching_Call,Yodle_Path__c.Touch_Plan_1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Coaching_Close_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>11/6/2015</value>

@@ -14,12 +14,14 @@
         <booleanFilter>1 or 2</booleanFilter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Hand &amp; Stone,The Grove,Affordable Dentures,Mini U Storage,LivHOME,ProSource,Cordell &amp; Cordell,Novus,Painting With A Twist,Forefront Dermatology,Speedy Glass,InterDent,Post Net,Deca Dental,Hansons,South Texas Dental,Bath Fitter</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Hand &amp; Stone,The Grove,Affordable Dentures,Mini U Storage,LivHOME,ProSource,Cordell &amp; Cordell,Novus,Painting With A Twist,Forefront Dermatology,Speedy Glass,InterDent,Post Net,Deca Dental,Hansons,South Texas Dental,Bath Fitter</value>

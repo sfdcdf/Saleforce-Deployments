@@ -45,12 +45,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LH Medical</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Anderson,Rodgers,Hemmings,Peppard,McLaren,Roy,Martin,Edwards,Jenkins</value>

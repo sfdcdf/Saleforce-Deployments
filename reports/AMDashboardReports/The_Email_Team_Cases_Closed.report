@@ -60,18 +60,21 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non-Actionable Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non-Actionable Email,Spam</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brittanie Walker,Carly Cade,Cynthia,Mota,Jordan Sanchez,Gary Poole,Sharica Thomas,Malik Khendek,Ryan McDonald,Dayna Horton,Thomas Standing,Cynthia Mota</value>

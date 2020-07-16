@@ -48,18 +48,21 @@
     <filter>
         <criteriaItems>
             <column>Account.CS_Operations__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed - Added</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CS_Operations__r$Request_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Reporting Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CS_Operations__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.Operation_Upsell_Additions</value>

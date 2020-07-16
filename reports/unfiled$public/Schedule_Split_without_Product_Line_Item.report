@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Schedule_Split__c$Opportunity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

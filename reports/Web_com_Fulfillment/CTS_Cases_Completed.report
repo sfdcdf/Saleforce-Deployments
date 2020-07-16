@@ -40,18 +40,21 @@
         <booleanFilter>(1 AND 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.LS_ATV_Organic_Setup,Case.LBW_Content_Organic_Setup,Case.SEO_Tasks</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.External_Ticket_System__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>CTS</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Web.com Copywriting</value>

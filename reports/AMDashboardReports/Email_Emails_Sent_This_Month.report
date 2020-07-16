@@ -60,18 +60,21 @@
         <booleanFilter>1 AND 2 AND 3</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>startsWith</operator>
             <value>Email:</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Barb Jenkins,Alvah Mayo,Andrew Roy,Leonard Edwards,Kayla McLaren,Dawn Rodgers,Angela Anderson,Kim Amiro,Janine Martin,Kendel McArdle,salesforce automation,Stephanie Lucas,Sherri Aguinaga,Mary Jane Fillmore,Lynn Arsenault,Kyler Wood,Jason Chapman,James Pyche,Graham Hines</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Joseph Dahdah,Stephen Gerrior,Angela Luddington,Kate Dowell,Norma Dupuis,Angela Snow,Chris Goyeche,Cindy Melanson,Marsha Cunningham,Dawn Jordan,Linda Keating,Leonard Edwards,Angela Anderson</value>

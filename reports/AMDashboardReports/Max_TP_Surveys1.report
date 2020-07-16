@@ -112,18 +112,21 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.How_likely_are_you_to_continue_w_Yodle__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>999101010</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Max TP</value>

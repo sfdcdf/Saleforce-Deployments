@@ -22,12 +22,14 @@
         <booleanFilter>1 or 2</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>kevin lewis,laura vitro,trish wightman</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Tier_2_Support__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

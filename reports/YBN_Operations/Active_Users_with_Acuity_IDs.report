@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>User.Acuity_Id__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

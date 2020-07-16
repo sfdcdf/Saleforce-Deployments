@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>delete</value>
         </criteriaItems>
         <criteriaItems>
             <column>MLS__c.Cannot_Sync_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Canada,Virgin Islands</value>

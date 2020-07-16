@@ -57,12 +57,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>customization,OutRank</value>

@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Case_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>RAB Teardown</value>

@@ -18,24 +18,28 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Additional_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>4th,automatically,auto,renew,fourth</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Cancel_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Sales Expectations</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.First_Cancel_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Contract Length Discrepancy,Post Contract Monthly Fee</value>

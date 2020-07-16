@@ -10,12 +10,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c$Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Mark Champ,Tricia Valadez,Lauren Fischer,Chelsey Willey,Joe Janisch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form,Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form</value>

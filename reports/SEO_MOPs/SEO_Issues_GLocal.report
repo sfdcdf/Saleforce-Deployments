@@ -60,66 +60,77 @@
         <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Dup Listing Found</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Erroneously Merged Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Listing Not Indexed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Location Not Supported</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Loss of Reviews</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Purgatory</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$SEO_MOps_Diagnosis__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Glocal- Quality Guidelines Violations</value>

@@ -37,12 +37,14 @@
         <booleanFilter>1 or 2</booleanFilter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>herin,joshua golden,dustin o&apos;leary,mcmillian,brittany hunter,anderson allen,fortunatus,jd lawson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>herin,joshua golden,dustin o&apos;leary,mcmillian,brittany hunter,anderson allen,fortunatus</value>

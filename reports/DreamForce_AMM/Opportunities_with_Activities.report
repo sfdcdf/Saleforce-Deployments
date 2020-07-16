@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>COWS-Container on Wheels,Critter Control,Icynene Inc.</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

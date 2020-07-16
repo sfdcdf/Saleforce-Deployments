@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>may upsell contest</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>email,proactive touch</value>

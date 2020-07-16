@@ -22,6 +22,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Partner_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>4652</value>

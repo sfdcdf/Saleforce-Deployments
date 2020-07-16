@@ -28,6 +28,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Closed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH,LAST_N_MONTHS:4</value>

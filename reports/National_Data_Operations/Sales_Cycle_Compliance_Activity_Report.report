@@ -30,6 +30,7 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M001 – Discovery Call,M002 – Internal Download Call,M003 - Demo/Value Presentation,M005 –  Audit Download,M006 - Implementation &amp; ROI Investigation Call,M006 - ROI info gathering,M006 - Custom Implementation Investigation,Review Initial SOW with Customer,M007 - Product Assessment &amp; Strategy Internal Stakeholder Meeting,M008 - Solutions in Action Presentation,M008 - ROI Analysis Presentation,M010 - Present Proposal &amp; SOW,M10.5 Network Adoption</value>

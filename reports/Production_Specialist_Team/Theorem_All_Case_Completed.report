@@ -25,12 +25,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Theorem Users</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Web_Dev_Member_Round_2_Changes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Theorem Users</value>

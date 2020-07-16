@@ -156,12 +156,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>In Review</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_LAST_UPDATE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Stephen Gerrior,Angela Snow,Linda Keating,Marsha Cunningham,Dawn Jordan,Angela Luddington,Chris Goyetche,Cindy Melanson,Dawn Edwards,Kate Dowell,Norma Dupuis,Paula Balesdent,Leonard Edwards,Joseph Dahdah,Angela Anderson</value>

@@ -13,12 +13,14 @@
     <filter>
         <criteriaItems>
             <column>Marketo_Email_Campaign__c.Active__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Marketo_Email_Campaign__c.Template</value>

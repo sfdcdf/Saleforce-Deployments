@@ -194,18 +194,21 @@
         <booleanFilter>1 AND (2 or 3)</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cassandra Stowers,Joshua Alvarez,Zack Shubow,Jennifer Batcher,Henry Haigler,Graham McGee,Demetria Atkins,Brittany Fountain,Jordan Valentine,Jamie Russell,Drew Cooper,Jacob Overman,Andrew Smith,Kinsley Hill,Jennifer Degreef,Jordan Sanchez,Keegan Sandman,Kyler Wood,Mark Nagy,Reagan Neely,Shelby Cowman,Shelia Kelly,Adam Kovacs,Amber Tamayo,James Brady,Ryan Crary,Suzanne Oyenarte,Ashley Black,Erik Vicars,Erika Persil,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Angela Hoddinott,Karen Park,Kayla Muir,Kimberley Boutilier,Leonard Edwards,Stephen Gerrior,Walter Rundle,Alvin Jobe,Alyson MacDonald,Angela Snow,April Law,Barb Jenkins,Blake MacPhee,Gwen Doyle,Kathleen Wilson,Kathryn Leadbeater,Kathy Caldwell,Lesa Lemay Marilyn Bray,Marilyn Slaunwhite,Mark Cosh,Nina Avery,Robert Jones,Rondell Humphreys,Samantha Sewell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund_Amount__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund_Amount_Requested__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

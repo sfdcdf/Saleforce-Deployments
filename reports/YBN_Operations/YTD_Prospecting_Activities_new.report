@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test,dormstormer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Prospecting</value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alex Renner,Nimish Amin,Josh Schure,Leffie Crawford,Rahul Saluja,Ari Katz,Brian Heppner,Carl Pflanz,James Gardner,Jeremy Friedlander,Kevin Noonan,Nick Dispenza,Peter Szalkowski</value>

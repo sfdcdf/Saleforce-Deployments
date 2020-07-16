@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Berry_Account_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

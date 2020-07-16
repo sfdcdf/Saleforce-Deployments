@@ -28,18 +28,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Turn Feature Off</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jasmin Butcher,JAmes Thomas,Gina Murphy,Shannon Saunders,Terrance Jackson,Joshua Lowrey,Seata Moji,Jordan Sanchez,Koula Barsakis,Bea Peikert,Peyden Edwards,Priyanka Rao,Sonny Perea,Lauren Fischer,Joe Janisch,Mark Champ,Beau Osteros,Rory Diller,Rolando Gonzalez,Jacqueline Leona,Julia Correa,Kati Yee,Courtney Christian,Krystal Janisch,Lynn Tobias,Madeline Klaman,Matthew Kerlin,Matthew Scott,Meagan Holdiman,Steven Russell,Travis Dube,Tricia Valadez,Chelsey Willey,Amanda McKeever,Luis Espinosa,Kristan Davis</value>

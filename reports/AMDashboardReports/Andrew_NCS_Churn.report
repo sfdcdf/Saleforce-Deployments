@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Berkley Desmond,Shannon Lang,Prisma Hernandez,Johnna Guidry,Alisha Herzberg,Nathan Hofberg,Andrew Salazar,Nikki Micou,Lindsey Schmid,Leslie Goldman,Holly Macki,Adam Livingstone,Amanda Peake,Jason Gee,Maria McLean,Terry Beaver,Colin Heighton</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.TORCHx_NCS_AutoLaunch</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Escalated,Churned</value>

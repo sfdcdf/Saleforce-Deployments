@@ -69,6 +69,7 @@
     <filter>
         <criteriaItems>
             <column>ObjectHistory__c.Case__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

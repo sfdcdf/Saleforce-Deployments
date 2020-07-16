@@ -28,24 +28,28 @@
     <filter>
         <criteriaItems>
             <column>ProcessInstance.Nodes$NodeStatus</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>P</value>
         </criteriaItems>
         <criteriaItems>
             <column>ProcessInstance$TableEnumOrId</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>ProcessInstance$ProcessDefinition</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>charge failure</value>
         </criteriaItems>
         <criteriaItems>
             <column>ProcessInstance$CompletedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

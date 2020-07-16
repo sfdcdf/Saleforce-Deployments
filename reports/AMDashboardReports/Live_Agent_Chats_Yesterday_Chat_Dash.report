@@ -43,6 +43,7 @@
     <filter>
         <criteriaItems>
             <column>LiveAgentSession$Agent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Christopher Jackobel,Jennifer Flaminio,Megan Scully</value>

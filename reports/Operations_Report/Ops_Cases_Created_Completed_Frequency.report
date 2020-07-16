@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>CS_Operations__c.Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Batch Uploads,CMS 3.1 Update Request,Essentials Features Request,LiveOps Issue,LiveOps Request,New Report Request,SalesForce/Service Cloud Assistance,Weekly Reports Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.SF_Process_Change_Reporting,CS_Operations__c.Administrative_Items,CS_Operations__c.Batch_Uploads,CS_Operations__c.Weekly_Reports_Assistance,CS_Operations__c.Test_Operations_Request,CS_Operations__c.Essentials_Features_Request,CS_Operations__c.CMS_3_1_Update_Request</value>

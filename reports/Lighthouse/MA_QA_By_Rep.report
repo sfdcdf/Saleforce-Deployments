@@ -30,30 +30,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LH QA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>David Cambouris,Randy Gordon,Sandy Staffieri,Brian Allen,Wendy Lincoln,Tom Reece,Laura Ruer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Quality__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Unsatisfactory - SF Case Writing,Unsatisfactory - YL Work Not Completed,Unsatisfactory - False Positive,Unsatisfactory -  Account is Pre-MA,Unsatisfactory - Did not Check Account Setting Prior to Submission,Unsatisfactory - Did not Check Patient Examples Prior to Submission,Unsatisfactory - Did not Provide patient/appt Examples,&quot;Unsatisfactory - Case Errors (reason, subject, description, account ID)&quot;,Unsatisfactory - Ambiguous Direction Provided for Request,Unsatisfactory - Other,Exceptional,QA - False Positive</value>

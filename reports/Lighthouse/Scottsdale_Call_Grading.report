@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse,Auto,Chiro,Dental,LH Only,LH + PP,LH + PP + MM,LH + PP + MM + WS</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_LAST_UPDATE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brittany Hickman</value>

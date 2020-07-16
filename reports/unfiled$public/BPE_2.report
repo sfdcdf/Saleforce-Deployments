@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Best_Practice_Evaluation__c.QA_Audit</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c.User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jacki Breen,Tyler Gerrior,Phillip Harpell,Sarah Taft,Kelsey MacLennan,Connor Terris,Shannon York,Kayla McLaren,Angus MacNeil,Bradley Ferguson,Kelly Dobson</value>

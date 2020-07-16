@@ -40,18 +40,21 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>SetUp,Theorem,Kook,Michal,Da-Hea,Olaya,Miner,Pekarek,Gadson,Kristen,Amie,Lauren,Yvonne,gilbert</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>N. Initial Adversite Setup,N. Initial Mirror Setup,N. Initial One Site Setup,P.Initial Adversite Setup,P.Initial Mirror Setup,P.Initial One Site Setup</value>

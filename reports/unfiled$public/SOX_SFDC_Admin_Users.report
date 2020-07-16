@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>PROFILE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>System Administrator,YBN System Administrator,System Admin +</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACTIVE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

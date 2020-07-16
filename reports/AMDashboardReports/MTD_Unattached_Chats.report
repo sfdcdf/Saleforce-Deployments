@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>William Alexander,Kevin Faust</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveChatTranscript$Case</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

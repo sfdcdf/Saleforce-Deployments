@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>maaco,carstar,interdent,gotcha covered,novus auto,affordable dentures,four seasons,merry maids,united franchise group,vision source,cottman,tenet health,hsm,b-dry,johnson controls inc.,miracle-ear,hand and stone,cordell,dwyer,miracle method,two men,tutor doctor,go mini,the joint,great expressions dental,security 1</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>canada</value>

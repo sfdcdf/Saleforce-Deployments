@@ -46,24 +46,28 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.New_Initiation_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>,test,Jeremy&apos;s powerhouse gym</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Projected_Tier__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Tier 4</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Sub_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Contract Signed,Submit Contract for Review,Contract Review,Contract Approved,Revised Contract Submitted,Revised Contract Review,Custom Demo Slides Sent to Sales,Prospect On Hold,Proposal Review,Proposal Approved,Sent Back to Sales</value>

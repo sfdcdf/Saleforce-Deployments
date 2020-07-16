@@ -33,6 +33,7 @@
     <filter>
         <criteriaItems>
             <column>Lead.Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN - Kinetico Incorporated</value>

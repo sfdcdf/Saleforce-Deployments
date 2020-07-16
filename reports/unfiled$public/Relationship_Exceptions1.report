@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Affordable Dentures,Mr. Electric,Forefront Dermatology,Handyman Matters,Deca Dental Group,Mr. Rooter,Speedpro,TWO MEN AND A TRUCK,Stratus Building Solutions,World Gym,Heartland Dental,Sunstate Equipment</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

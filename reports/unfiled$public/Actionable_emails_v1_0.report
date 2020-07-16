@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>platinumsupport@yodle.com,lbwcustomerservice@web.com,leadstreamsupport@web.com,customercare@yodle.com,email,support@torchx.com,support@lighthousepmg.com,YodleGoldService@yodle.com,medicalsupport@lighthousepmg.com,Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Resolved in Another Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Non-Actionable Email</value>

@@ -105,12 +105,14 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.NPS_Survey_Send__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_Yodle,Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</value>

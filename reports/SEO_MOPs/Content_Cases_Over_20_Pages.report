@@ -37,30 +37,35 @@
         <booleanFilter>1 AND (2 OR 5) AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LBW_Content_Organic_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Number_of_Pages__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Organic Custom Content Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Services_Offered__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Spanish</value>

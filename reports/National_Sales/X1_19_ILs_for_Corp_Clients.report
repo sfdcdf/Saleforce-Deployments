@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>542,512,158,203,127,194,509,529,225,164,507,210,192,113,114,112,248,413,592,470,4,121,119,236,160,380,273,528,603,254,7,353,420,399,343,200,577,177,510,458,214,239,403,274,290,208,1,580,269,204,270,522,429,122,523,235,384,115,578,111,211,464,472,593,178,9,418,376,128,168,271,133,595,344,608,434,137,215,511,116,576,243,152,283,525,162,145,231,153,139</value>

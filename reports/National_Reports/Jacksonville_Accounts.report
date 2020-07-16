@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Carpet One,Flooring America Corporate,International Design Guild,Padgett Business Services,Real Property Management</value>

@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,MA-1 Ready,MA-2 Pending Review,MA-3 Pending Config,MA-4 Pending Input,MA-5 Config Done Pending Approval,MA-6 Ready/Config Complete,MA-7 Suspended for Fix,In Progress,Post Install Ready,Post Install In Progress,Logo Ready,Logo Complete,S. Consultant Assistance Needed,Stalled,Escalated (Internal),Escalated (Dev),Escalated (Bolt On),Backed Out Sale</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse_Worksheets__c.Auto_Support_Ticket,Lighthouse_Worksheets__c.AR_Request_Form,Lighthouse_Worksheets__c.LH_OOS</value>

@@ -25,36 +25,42 @@
         <booleanFilter>(1 AND 2 AND 3 )AND (4 OR (5 AND 6))</booleanFilter>
         <criteriaItems>
             <column>Organic_Analysis__c.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>40</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c$Pin_Action_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Maps Contact - Comanage</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cannot Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c$Cannot_Complete_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Max Attempts</value>

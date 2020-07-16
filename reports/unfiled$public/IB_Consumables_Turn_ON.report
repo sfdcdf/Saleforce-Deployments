@@ -28,18 +28,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Turn Feature On</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Annie Benedict,Laura Osegueda,Lauren Fischer,Tricia Valadez,Mark Champ,Joe Janisch,Joshua Lowrey,Krystal Janisch,Matthew Scott,Sonny Perea,Steven Russell,Priyanka Rao,Amanda McKeever,Bea Peikert,Courtney Christian,Chelsey Willey,Jacqueline Leona,Julia Correa,Kati Yee,Koula Barsakis,Kristan Lemmons,Luis Espinosa,Lynn Tobias,Matt Kerlin,Peyden Edwards,Seata Moji</value>

@@ -22,18 +22,21 @@
         <booleanFilter>2 AND (1 or 3)</booleanFilter>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Prospecting</value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ari Katz,Brian Heppner,Alex Renner,Nimish Amin,Danielle Krieg,Daniel Boyce,Jennifer Torres,James Gardner,Leffie Crawford,Josh Schure,Kevin Noonan,Mark Armstrong,Minde Fawcett,Nick DIspenza,Peter Szalkowski,Rahul Saluja,Andrew Little,Derek Rosenzweig,Greg Boyle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M001 – Discovery Call,Discovery Call,Demo &amp; Value Presentation,Executive Review Call,Solution Review Call,Proposal &amp; SOW Review Call,Contract Review</value>

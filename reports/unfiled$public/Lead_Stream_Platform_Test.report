@@ -34,36 +34,42 @@
         <booleanFilter>(1 AND 2 AND 3 AND 5) OR (1 AND 2 AND 4 AND 6)</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Initial_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Leads by Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Product_Change2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Offered and Rejected,Offered and Accepted</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Price_Change2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Offered and Rejected,Offered and Accepted</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Product_Change_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>329,essentials,platform,organic</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Price_Change_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>329,essentials,platform,organic</value>

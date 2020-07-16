@@ -22,12 +22,14 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed,LIVE,Never launched,Closed - changes made,Churned,All Tasks Completed,Closed - Unsaveable,Work Completed,Closed - Opt Not Necessary,Closed - Errors Found/Fixed,Complete AutoLaunch,Closed - Opt Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web Dev</value>

@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER_MANAGER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>kevin wells,randy dewey,makenzie cunningham,erik vicars,shelia kelly,barb jenkins,nathaniel nipper,adam kovacs,biff spradley</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Upsell_Addition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

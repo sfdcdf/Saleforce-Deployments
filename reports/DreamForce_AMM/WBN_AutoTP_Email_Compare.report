@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>PARENT_ID</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0016000000cLpkp,0016000000LPq3D,0016000000Jm3AN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>OFF</value>

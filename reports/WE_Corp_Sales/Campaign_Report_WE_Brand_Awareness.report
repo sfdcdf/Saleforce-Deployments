@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>CAMPAIGN_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>WBN: Brand Awareness Campaign</value>

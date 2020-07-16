@@ -195,36 +195,42 @@
         <booleanFilter>((1 and 2 and 3 and 4 and 5)) AND 6</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.Charge_Failure</value>
         </criteriaItems>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>csc@yodle.com,info@mail.dmnews.com,jobvite,@lighthousepmg.com,no-reply@,noreply@,messages-noreply@,invitations@linkedin.com,info@laborlawnewsupdates.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>makenzie cunningham,Erik vicars,shelia kelly,barb jenkins,adam kovacs,nathaniel nipper,randy dewey</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Circuit Breaker,Phone,Self</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Undeliverable,low advertising funds,client spend alert,Welcome to Egencia!,Organic Setup Search Influence Work Completed,OR 3.0 GLocal &amp; BLocal Initial Setup Work Completed,Scheduled Call has Changed</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Auto Response,Automatic reply,[Auto-Reply],Auto: Out Of Office,Out of Office,AUTO:</value>

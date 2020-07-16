@@ -51,6 +51,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brian Pekarek,Bryan Chapman,Quinn Campbell,Michelle Garcia,Theorem Users</value>

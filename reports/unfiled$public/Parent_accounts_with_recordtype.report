@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Account$Parent.RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account.Partner_Master_Account</value>

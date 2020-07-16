@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Georgiann Ray,Michael Staffieri,Ron Walton,Vicki LaFond,Ann Lewis,Trish Wightman,Randy Gordon,Laura Vitro,David Cambouris,T.A. Stanton,Tom Reece,Wendy Lincoln,Shaquana Brent,Sandy Staffieri,SFDC Sync,vickers,karole,kevin lewis,ruer,bellew,Block,Towhey,Wightman,block</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>

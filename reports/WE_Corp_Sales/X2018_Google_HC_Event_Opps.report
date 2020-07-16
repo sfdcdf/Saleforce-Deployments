@@ -43,6 +43,7 @@
     <filter>
         <criteriaItems>
             <column>CAMPAIGN_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>WBN: 2018 NYC Google Event</value>

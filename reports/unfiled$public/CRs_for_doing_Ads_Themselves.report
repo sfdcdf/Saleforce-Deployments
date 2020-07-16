@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Cancel_Code_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lost to Competitor</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web,lead stream atv</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.First_Cancel_Code_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>self,house,himself,herself,themselves,their own,her own,his own,inhouse,in-house</value>

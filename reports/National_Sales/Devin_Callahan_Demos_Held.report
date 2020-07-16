@@ -74,18 +74,21 @@
         <booleanFilter>(1 OR 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>devin ca</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Lead_Gen_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>devin callahan</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Lead_Source_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>armaclad,four seasons</value>

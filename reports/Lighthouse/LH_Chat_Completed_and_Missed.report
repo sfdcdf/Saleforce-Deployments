@@ -57,12 +57,14 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$Skill</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Medical</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveChatTranscript$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Automated Process</value>

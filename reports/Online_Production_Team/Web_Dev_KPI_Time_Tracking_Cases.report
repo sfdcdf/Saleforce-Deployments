@@ -28,6 +28,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Gary Surette,Theorem Users,Edson Gonzalez</value>

@@ -20,12 +20,14 @@
         <filter>
             <criteriaItems>
                 <column>ACCOUNT.NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>mr.rooter,mr.electric,aire serv</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.Client_Type__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>ybn,national</value>
@@ -67,12 +69,14 @@
         <filter>
             <criteriaItems>
                 <column>Account$Name</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>mr.rooter,mr.electric,aire serv</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account$Client_Type__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>ybn,national</value>

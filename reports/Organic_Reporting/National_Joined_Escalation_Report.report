@@ -50,24 +50,28 @@
         <filter>
             <criteriaItems>
                 <column>Account.Organic_Analyses__r$RecordType</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Organic_Analysis__c.Organic_Optimization_Request,012600000009V0o</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Organic_Analyses__r$Status__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>New,In Progress</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Organic_Analyses__r$Owner</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>SEO Tiger Team,SEO Marketing Ops,Kami Owens,John King,Sommer Chaka,Ryan Widmier,Mark Sullivan,Kevin Yee,Brenda Healey,Kevan Irsch,Crystal Perez,Christopher Litchfield,Joel Bradbury</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Organic_Analyses__r$CreatedBy</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>notContain</operator>
                 <value>IT Pro</value>
@@ -125,18 +129,21 @@
         <filter>
             <criteriaItems>
                 <column>RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Case.SEO_Tasks</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.Channel_Type__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>National</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.Franchise_Name__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>JCI</value>

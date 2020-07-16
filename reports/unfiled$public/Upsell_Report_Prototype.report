@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.IL_PPC_Estimated_Avg_Budget__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

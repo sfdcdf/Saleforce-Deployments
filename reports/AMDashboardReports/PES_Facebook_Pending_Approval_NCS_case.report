@@ -39,6 +39,7 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>&quot;FB Setup In Progress, Pending Approval&quot;</value>

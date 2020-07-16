@@ -46,18 +46,21 @@
         <booleanFilter>1 OR 2 OR 3</booleanFilter>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>joseph tanner,joel ricigliano</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Strategic_Project_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>joseph tanner,joel ricigliano</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Solutions_Architect__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>joseph tanner,joel ricigliano</value>

@@ -39,18 +39,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alec Jandorek,Johnna Guidry,Shelbi Walker,Horacio Saenz,Alex Villarreal,Amy Furr,Stacy Walden,Josh Cooper</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QAed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alec Jandorek,Amy Furr</value>

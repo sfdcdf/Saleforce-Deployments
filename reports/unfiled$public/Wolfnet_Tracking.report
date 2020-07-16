@@ -33,24 +33,28 @@
     <filter>
         <criteriaItems>
             <column>ObjectHistory__c.Case__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>ObjectHistory__c.FieldValue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>MLS Approval</value>
         </criteriaItems>
         <criteriaItems>
             <column>ObjectHistory__c.TORCHx_Elapsed_Days__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>3</value>
         </criteriaItems>
         <criteriaItems>
             <column>ObjectHistory__c.EndDateTime__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

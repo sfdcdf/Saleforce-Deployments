@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>noreply@statuspage.web.com</value>

@@ -66,12 +66,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Best_Practice_Evaluations__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Best_Practice_Evaluation__c.QA_Audit</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Best_Practice_Evaluations__r$Account_Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Partner,Local</value>

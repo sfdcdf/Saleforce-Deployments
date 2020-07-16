@@ -26,30 +26,35 @@
         <booleanFilter>(1 OR 2) AND 3 and 4 and 5</booleanFilter>
         <criteriaItems>
             <column>Account.Sales_Person__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>tinnell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Second_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>tinnell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>SALES</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Order_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>1/1/2010</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.NE_09_Commission_Month__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>6/1/2010</value>

@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brian Pekarek,Kyle Stark,Bryan Chapman,Quinn Campbell,Michelle Garcia,Theorem Users</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>CKO Kickboxing</value>

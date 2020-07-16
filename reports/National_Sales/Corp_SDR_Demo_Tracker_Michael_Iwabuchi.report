@@ -73,12 +73,14 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Lead_Gen_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>michael iwabuchi</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect</value>

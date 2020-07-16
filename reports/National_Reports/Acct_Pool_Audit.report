@@ -15,24 +15,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Akilah McMullan,Stephen Johnson,Brad Ferrell,Nikki Carver,Lexie Bohnert,James Pellegrini</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.LiveOps_Call_Routing__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>402</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.LiveOps_Pool_Standard__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>523,524</value>

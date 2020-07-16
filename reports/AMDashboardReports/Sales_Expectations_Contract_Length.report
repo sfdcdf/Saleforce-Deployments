@@ -31,18 +31,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancel_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Sales Expectations</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$First_Cancel_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Contract Length Discrepancy</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web,lead stream atv</value>
