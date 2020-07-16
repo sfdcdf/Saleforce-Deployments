@@ -15,18 +15,21 @@
     <filter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ari Katz,Brian Heppner,Carl Pflanz,James Gardner,Jeremy Friedlander,Kevin Noonan,Nick Dispenza,Peter Szalkowski</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>External Customer Activity</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call,Demo &amp; Value Presentation,Executive Review Call,Proposal &amp; SOW Review Call,Contract Review</value>

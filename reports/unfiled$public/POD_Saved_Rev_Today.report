@@ -26,12 +26,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Makenzie Cunningham,Adam Kovacs,Amber Tamayo,Erik Vicars,Mark Nagy,Reagan Neely,Ron Brown,Samantha Starett,Sara Davis,Shelia Kelly,Sherri Aguinaga,Thad Dameris,Keegan Sandman,Erika Persil,Valerie Garner,Shelby Cowman,Kyler Wood</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.Cancellation_Request</value>

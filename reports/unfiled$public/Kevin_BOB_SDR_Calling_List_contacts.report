@@ -33,6 +33,7 @@
     <filter>
         <criteriaItems>
             <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Kevin Noonan</value>

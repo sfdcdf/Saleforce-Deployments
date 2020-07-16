@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Partner_Account4__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Berry Group,Berry,berry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Partner_Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>HVAC Contractor</value>

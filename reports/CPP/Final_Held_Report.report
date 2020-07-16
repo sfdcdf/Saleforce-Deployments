@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Eric Brief,Martin Kearns</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Demo_Held__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

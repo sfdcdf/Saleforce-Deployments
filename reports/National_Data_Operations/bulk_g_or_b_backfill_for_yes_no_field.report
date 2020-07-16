@@ -22,6 +22,7 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Account.Bulk_Google_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

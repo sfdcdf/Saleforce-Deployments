@@ -61,12 +61,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Owner_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,Bea Peikert,Courtney Christian,Julia Correa,Meg Snyder,Matthew Kerlin,Ben Block,Georgiann Ray,Kami Banner,Laura Vitro,Sarah Vickers,Kevin Lewis,Joseph Vickers</value>
         </criteriaItems>
         <criteriaItems>
             <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call,Email,Other,General To Do</value>

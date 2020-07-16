@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.YBN_Sub_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Corporate Paid Contract</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Region__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Team Katz</value>

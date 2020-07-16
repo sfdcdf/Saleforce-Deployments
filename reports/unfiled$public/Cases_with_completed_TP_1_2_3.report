@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Touch_Plan_1,Yodle_Path__c.Touch_Plan_2,Yodle_Path__c.Touch_Plan_3</value>

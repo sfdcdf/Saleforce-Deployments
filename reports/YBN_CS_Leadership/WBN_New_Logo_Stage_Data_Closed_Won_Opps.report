@@ -100,18 +100,21 @@
     <filter>
         <criteriaItems>
             <column>FK_OPP_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_OPP_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Legacy Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_OPP_STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won,Adoption,Implementation</value>

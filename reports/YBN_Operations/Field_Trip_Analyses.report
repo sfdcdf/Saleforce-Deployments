@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cases Created Since 1/1/2016</value>

@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Relationship_At_Risk__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

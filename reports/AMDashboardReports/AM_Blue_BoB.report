@@ -110,12 +110,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jennifer Degreef,Jordan Sanchez,Keegan Sandman,Kyler Wood,Mark Nagy,Reagan Neely,Shelby Cowman,Shelia Kelly</value>

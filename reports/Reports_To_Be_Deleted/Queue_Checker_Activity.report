@@ -51,36 +51,42 @@
         <booleanFilter>((1 AND 2 AND (3 or 4)) AND 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>andrew wright,james batton,jeffrey whiteside,michael masuck,shawn mirman,stephen lynch,zukoski,feven,kunal,cook,cedeno,bascom,jeffrey johnson,couden,rodrigu,eastl,brittany,buckee,erik lyon,converse,slater,rauen,john pendleton,gerler,murad,uphus,furqann,fleming,timothy thomas,minard,klement,christopher olsen,reznicek,fresch,cunningham,cogan,foster,couch,rourke,wessel,baudoin,wright,riechers</value>
         </criteriaItems>
         <criteriaItems>
             <column>LAST_UPDATE_BY_ALIAS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ajone,zalbe</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.Days_Since_Last_Activity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.Days_Since_Last_Activity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>60</value>
         </criteriaItems>
         <criteriaItems>
             <column>UNREAD</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.Vertical__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>legal</value>

@@ -6,6 +6,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.CSC_Call_Grading,Call_Grading_Forms__c.Inbound_Call,Call_Grading_Forms__c.Save_Call,Call_Grading_Forms__c.Adoption_Call</value>

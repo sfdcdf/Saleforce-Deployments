@@ -107,30 +107,35 @@
     <filter>
         <criteriaItems>
             <column>Case$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS Touch Plan - 40 Day,CS Touch Plan - 70 Day</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Upsell Accepted,Churned,Did Not Complete,Complete,Delete Case,Did Not Complete - Sent Recap Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1,2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Scheduled_Call__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>

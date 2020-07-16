@@ -54,6 +54,7 @@
     <filter>
         <criteriaItems>
             <column>Account$BillingState</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ny,ct,nj</value>

@@ -61,24 +61,28 @@
         <booleanFilter>((1 OR 3) AND 2) AND 4</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SEM Ops</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.SEO_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alec Jandorek,Allana Maximin,Allison Smith,Brock Williams,Chantell Joseph,Charles Thomas,Gezel Stephen,Heather Rubio,Joanne Caul,Joseph Tanner,Kaylissa Spurlock,Kelly O&apos;Brien,Kimbally Gedeon,Kisha Fredrick,Lionel Mason,Louis Montemayor,Melinda Fraser,Michael Jaffe,Patrick Trinidad,Petra Bellas,Rhonda Maxius,Rodolfo Ramirez,Rustin Fincke,Shayla Story,Shernelle Richard,Shirmiah Jn Baptiste,Simantha Phillip,Stacy Walden,Steve Henry,Tiffany Gonzalez,Trevor Bye,Zaina Pamphile</value>

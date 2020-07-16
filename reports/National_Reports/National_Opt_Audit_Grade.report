@@ -13,18 +13,21 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Dustin O&apos;Leary,Charles Delph,Jonathan Lawson,Sarah McMillian,Kelly Eisenmenger</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Complete,Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Overall_Opt_Score__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>

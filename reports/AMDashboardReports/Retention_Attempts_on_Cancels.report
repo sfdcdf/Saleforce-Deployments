@@ -56,30 +56,35 @@
         <booleanFilter>1 and 2 AND 3 AND 4 AND 5</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>kyle zaffin,retention duplicate audit queue,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>kyle zaffin,retention duplicate audit queue,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>call</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>

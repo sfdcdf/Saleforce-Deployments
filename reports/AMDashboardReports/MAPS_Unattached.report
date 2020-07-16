@@ -39,24 +39,28 @@
     <filter>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Setup,coaching,Touch Plan,06,05,07,08,09,10,Yodle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Pin Collection Associate</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>YO</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>LH Medical</value>

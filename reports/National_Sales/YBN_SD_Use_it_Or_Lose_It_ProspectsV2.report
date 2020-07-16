@@ -73,24 +73,28 @@
     <filter>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Team Swenson,Heppner,VanSluyters</value>
         </criteriaItems>
         <criteriaItems>
             <column>DUE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>LAST_N_DAYS:20</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.National_Client_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Prospect,Parent Company - Prospect,Prospect - With Bottoms Up Accounts</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Amy Kramer</value>

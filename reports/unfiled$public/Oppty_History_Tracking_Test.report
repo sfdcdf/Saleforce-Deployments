@@ -48,6 +48,7 @@
     <filter>
         <criteriaItems>
             <column>ObjectHistory__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Miracle-Ear</value>

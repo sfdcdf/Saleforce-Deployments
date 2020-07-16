@@ -45,12 +45,14 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Sales_Promo__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>n/a</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won,Adoption,Implementation</value>

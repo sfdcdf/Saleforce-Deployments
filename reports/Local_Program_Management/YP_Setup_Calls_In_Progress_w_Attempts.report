@@ -33,24 +33,28 @@
     <filter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Setup_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>rusty&apos;s cleaning service - test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$X3rd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

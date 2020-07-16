@@ -72,18 +72,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,Berkley Desmond,Bradley Ferguson,Chad MacDonald,Chelsea MacEachern,Chris Halverson,Douglas Walsh,Gerard Kennedy,Jo-Ann Mckenzie,Joshua Grant,Julianna Meyer,Justin Ferguson,Katharine Langille,Kelly Dobson,Kristen MacKay,Kevin Grant,Kevin Hobbs,Lynette Stewart,Ozzy Campbell,Troy Sanders,Valerie Bigney,Kim Amiro,Janine Martin,Andrew Roy,Paige Piccini,Timothy Chaulker,Angus MacNeil</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>

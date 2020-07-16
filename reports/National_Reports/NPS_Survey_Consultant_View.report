@@ -96,30 +96,35 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Yodle</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Jeremy&apos;s Powerhouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Completed,Closed Not Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.User_IMS_Rep_Survey__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

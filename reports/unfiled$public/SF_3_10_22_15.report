@@ -20,18 +20,21 @@
         <filter>
             <criteriaItems>
                 <column>Case.IMS_Completing_Opt2__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>contains</operator>
                 <value>dembitzer,kunis,fortunatus,matt austin,wesley adams,gustavo,gibbs,anderson allen</value>
             </criteriaItems>
             <criteriaItems>
                 <column>PARENT_ACCOUNT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Mr. Rooter</value>
             </criteriaItems>
             <criteriaItems>
                 <column>RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Case.Performance_Issue</value>
@@ -76,18 +79,21 @@
         <filter>
             <criteriaItems>
                 <column>Organic_Analysis__c.IMS_Completing_Opt__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>contains</operator>
                 <value>dembitzer,kunis,fortunatus,matt austin,wesley adams,gustavo,gibbs,anderson allen</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Organic_Analysis__c.Account_Name__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>contains</operator>
                 <value>Mr. Rooter</value>
             </criteriaItems>
             <criteriaItems>
                 <column>CUST_RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Organic_Analysis__c.Organic_Optimization_Request</value>

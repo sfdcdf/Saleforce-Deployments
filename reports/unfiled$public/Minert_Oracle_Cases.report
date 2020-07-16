@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Andrew Minert</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Relevant Issue &amp; Work Completed,False Positive - Work Not Completed</value>

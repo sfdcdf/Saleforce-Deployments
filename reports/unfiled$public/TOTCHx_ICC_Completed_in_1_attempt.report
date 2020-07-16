@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Number_of_Attempts_to_Complete_ICC__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.TORCHx_NCS_AutoLaunch</value>

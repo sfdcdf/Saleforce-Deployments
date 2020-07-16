@@ -33,36 +33,42 @@
     <filter>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>national,ybn</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Month 1 Check In,Monthly Touch Point,Introduction Call/CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>national client</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Owner.UserRole</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Duplicate</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Eliminate_from_Intro_Call_compliance__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>

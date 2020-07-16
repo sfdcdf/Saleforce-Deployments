@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Touch_Plan_3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Touch_Plan_Pass_Fail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>FAIL</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Rusty&apos;s Cleaning Service</value>

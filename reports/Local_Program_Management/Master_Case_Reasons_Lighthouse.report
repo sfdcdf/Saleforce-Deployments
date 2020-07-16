@@ -64,24 +64,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account,Billing,Business Associate Agreement,Cancel Request,Client Questions/Issues,Escalated Email Response,Exit Email Response,Facebook Test,Feature Support,Free Time Performance Request,Inbound Inquiry,Maps Verification,Non-Actionable Email,Other,Product,Rogers Inbound Inquiry,SEM Budget Change,SEM Upsell Test,Tech Support,Unknown,Website</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Phone</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse</value>

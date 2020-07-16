@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Interaction_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Follow Up,Prep</value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Mark Armstrong,Daniel Boyce,Danielle Krieg,Jennifer Torres,Peter Szalkowski,Rich Jaeger,Adam Lester</value>

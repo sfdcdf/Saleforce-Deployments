@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.Google_Pin_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Pin Collected</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.OV_Enter_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Owner_Verified_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Owner-Verified/Managed</value>

@@ -65,18 +65,21 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Dawn Rodgers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Call Calibration</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Christine LeBlanc,Iris Smith,Arlene Davidson,Charles Macleod,Dawn Edwards,Dawn Jordan,Graham Hines,Jean Austin,Kathleen Wilson,Kathy Caldwell,Linda Keating,Marilyn Bray,Marjorie Clarke,Marjorie Goodyear,Marsha Cunningham,Meaghan Mackinnon,Nina Avery,Paula Balesdent</value>

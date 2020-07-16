@@ -111,12 +111,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Best_Practice_Evaluation__c.QA_Audit</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c.Account_Setup_For__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Angus MacNeil,Kevin Grant,Joshua Grant,Berkley Desmond,Bradley Ferguson,Chad MacDonald,Chelsea MacEachern,Cheryl Tattrie (Drummond),Chris Halverson,Colleen Guy,Connor Terris,Douglas Walsh,Julianna Meyer,Justin Ferguson,Katharine Langille,Kelly Dobson,Kevin Hobbs,Kristen Mackay,Lynette Stewart,Michael MacMaster,Ozzy Campbell,Paige Piccini,Shannon York,Timothy Chaulker,Troy Sanders</value>

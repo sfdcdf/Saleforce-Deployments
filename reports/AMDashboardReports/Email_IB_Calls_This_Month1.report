@@ -100,30 +100,35 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Stephanie Hemmings,Marsha Cunningham,Dawn Jordan,Linda Keating</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Alvah Mayo,Andrew Roy,Leonard Edwards,Kayla McLaren,Dawn Rodgers,Angela Anderson,Kim Amiro,Janine Martin,Kendel McArdle,Barb Jenkins</value>

@@ -31,18 +31,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Leads by Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Days_Live_at__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>30</value>

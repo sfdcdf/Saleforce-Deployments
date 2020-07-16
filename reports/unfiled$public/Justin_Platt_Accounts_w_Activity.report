@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>rachel richey,adam elliott</value>

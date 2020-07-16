@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>alyssa sharp,megan stiles,anthony martinez,cottrell,jeremy banner,joshua robinson,shahrestani,kraig wilson,meshula,nicole perez,rachel day,shane butler,wendy manley,edward ortega</value>

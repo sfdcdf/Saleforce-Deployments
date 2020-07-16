@@ -25,18 +25,21 @@
         <booleanFilter>(1 or (2 and 3))</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Lighthouse_Inbound_Call,Call_Grading_Forms__c.Lighthouse_Training_TEST,Call_Grading_Forms__c.Lighthouse_CSC_Essentials,Call_Grading_Forms__c.Lighthouse_Save_Call,Call_Grading_Forms__c.Lighthouse_CSC_Auto</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Inbound_Call,Call_Grading_Forms__c.Email,Call_Grading_Forms__c.Live_Chat</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse</value>

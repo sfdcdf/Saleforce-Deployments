@@ -1176,7 +1176,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>updateCustSurvey</apexClass>
+        <apexClass>updatecustSurvey</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>updatecustsurveyTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

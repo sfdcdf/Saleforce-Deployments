@@ -40,24 +40,28 @@
         <booleanFilter>((1 OR 2) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Related_to_Object__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Stephanie Hemmings,Faye Acorn,Paula Balesdent,Marjorie Clarke,Marjorie Goodyear,Philip Landry,Stephen Landry,Christine LeBlanc,Angela Luddington,Charles MacLeod,Jean Austin,Arlene Davidson,Karen MacNeil,Iris Smith</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Supervisor</value>

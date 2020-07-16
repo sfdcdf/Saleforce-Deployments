@@ -15,18 +15,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.Standard</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ID</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0016000000o6Ffo,0016000000ROe4j,0016000000fAa9W,0016000000JknQ4,0016000000hvLPw,0016000000V2Pf7,0013200001AkGnb,00160000014COOl,0016000000xh4VE,0016000000pyEzK,00160000011LRDn,0016000000hvLPz,0016000000Lnlkp,0016000000LPq3D,0016000000xhwch,0016000000JlTam,0016000000j52bj,0016000000d53fu,0016000000hvLQ9,0016000000fAa8p,0016000000NKwuT,00160000016Z2G4,0016000000snjV6,0016000000cLpkp,0016000000fAaAE,0016000000uWpbW,0016000000PV8vY,0016000000ogDfg,0016000000o61rq,0016000000j6YDW,0016000000WS43h,0016000000j7bq7,0016000000Jm3AN,0016000000fAa8E,0016000000d4hPO,00160000010G1XY,0016000000PYyhC,0016000000ogr7L,00160000013SJfH,0016000000qk5dD,0016000000z17Ij,0016000000Nua10,0016000000j54r0</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test account,duplicate,metropage,do not use</value>

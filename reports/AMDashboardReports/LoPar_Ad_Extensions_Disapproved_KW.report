@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>belk,tippett,hamzah,kelsie mettille,ryan ciocca,marissa gelardi,tracy filter,alex meredith,brittany hunter,joshua golden,lisa ferris,matthew linville,micah helfrey,michael jurik,rebecca zandstein,Christopher Carr,Krysti Roush,herin,cory morrison,joseph tanner,kimberly miller,mike delaura,dustin o&apos;leary,kara medford</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Disapproved Keywords,Update Ad Extensions</value>

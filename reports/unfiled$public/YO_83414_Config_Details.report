@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Config_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Treatment PlansTwo-Way Texting (aka Fresh Text),RAD-&gt; RAB Migration,Remove Messages,OBC</value>

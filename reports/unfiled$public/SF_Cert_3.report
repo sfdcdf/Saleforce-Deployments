@@ -17,6 +17,7 @@
         <filter>
             <criteriaItems>
                 <column>PARENT_ACCOUNT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>mr. rooter,mr. electric,aire serv</value>
@@ -60,6 +61,7 @@
         <filter>
             <criteriaItems>
                 <column>Account$Parent</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>contains</operator>
                 <value>mr. rooter,mr. electric,aire serv</value>

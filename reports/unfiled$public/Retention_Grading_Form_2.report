@@ -10,6 +10,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</value>

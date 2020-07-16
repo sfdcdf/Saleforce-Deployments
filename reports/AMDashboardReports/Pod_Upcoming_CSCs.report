@@ -79,72 +79,84 @@
         <booleanFilter>(((((1 and 3 and 4) or (6 and 8)) and (2 or 5 or 7 or 11) and 9) AND 10)) AND 12</booleanFilter>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>LBWCustomerService@web.com,lbw support,local pod queue,platinum support,Christopher grau,lyndsay spa,emily kareiva,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Next_Scheduled_CSC2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Created in YL Tracker</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Budget__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>1420</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LBWCustomerService@web.com,lbw support,local pod queue,platinum support,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson,Christopher grau,lyndsay spa,emily kareiva</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Completed,Churned,Delete Case,Did Not Complete,Complete,Closed - Upsell Accepted</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>SFDC Sync</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LBW Support,lbw customer service,local pod queue,platinum support,Christopher grau,lyndsay spa,emily kareiva,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>torchx</value>

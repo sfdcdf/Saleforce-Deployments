@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call,Demo &amp; Value Presentation,Executive Review Call,Solution Review Call,Proposal &amp; SOW Review Call,Contract Review</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Task.YBN_Corporate_Relationship,Event.YBN_Corporate_Location_Event,Task.YBN_Prospecting_Task,Event.YBN_Prospecting,Task.YBN_Sales_Corporate,Event.YBN_Sales_Event_Corporate</value>

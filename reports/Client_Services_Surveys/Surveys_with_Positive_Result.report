@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>lauri&apos;s,Jeremy&apos;s Powerhouse,Jen&apos;s Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brian Thomason,Corey Levine,Dustin Robinson,Hillary Scott,Jonathan Slomka,Kerry Satchell,Kyle Zaffin,Scott Rappaport,Sean Surdovel,Taylor Wolfe</value>

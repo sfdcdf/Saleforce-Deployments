@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Created_By_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Inbound Email Associate</value>

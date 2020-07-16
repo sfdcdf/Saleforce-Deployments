@@ -59,60 +59,70 @@
     <filter>
         <criteriaItems>
             <column>Account.Quarantine_from_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Russell Tvedt</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>PPC Adoption</value>
         </criteriaItems>
         <criteriaItems>
             <column>BucketField_2370458</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>maaco</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.SE_Location_Disposition_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>dma</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>dma,shell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Multi_Location_Owner_Primary_CID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>312661,210721,211037,210908,211070,211074,211211,59700,304599,243440,242988,307924,312698,160997,320469,218397,210993,211286,211057,210992,211083,211022,211064,213990,210793,210850,210947,211133,211318,211302,210935,210939,210888,210938,211151,211063,211125,211021,211053,227544,211045</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>312661,210721,211037,210908,211070,211074,211211,59700,304599,243440,242988,307924,312698,160997,320469,218397,210993,211286,211057,210992,211083,211022,211064,213990,210793,210850,210947,211133,211318,211302,210935,210939,210888,210938,211151,211063,211125,211021,211053,227544,211045</value>

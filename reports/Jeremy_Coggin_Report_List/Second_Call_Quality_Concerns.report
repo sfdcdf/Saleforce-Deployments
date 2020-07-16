@@ -49,84 +49,98 @@
         <booleanFilter>((1 AND 2 AND 10) AND (3 OR 4 OR 5 OR 6 OR 11 OR (7 AND 8)) OR (1 AND 9) OR (1 AND 12) OR (1 AND (13 OR 14)))</booleanFilter>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Call_Quality_Action__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>blacklist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>blacklist,black list,escalate,escalation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Other</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Escalated__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Unpaid</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>OEM</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>jarrett</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Custom_Call_Tracking__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YES</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Berry</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lenee</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Reason_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Wrong Number: Business Related to Segment,Unsupported Service but Related to Segment</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Reason_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Wrong Number: Business Related to Segment,Unsupported Service but Related to Segment</value>

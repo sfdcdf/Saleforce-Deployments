@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Heartland Dental Care</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Individual_Location_Service_Level__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Service Level A</value>

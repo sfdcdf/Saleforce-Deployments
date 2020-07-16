@@ -34,12 +34,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>russell tv</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>russell tv</value>

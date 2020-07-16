@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>OPT_Process_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Channel Lead Approved - Pending OPT/MOPS Discussion</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPT_Process_Request__c.MOPS_OPT_Review_Meeting_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Amy Webster,Brandon Fry,Nikki Carver,Beau Osteros,Bonnie Jenkins,Christine Horn,Christopher Kellogg,Hiep Nguyen,Janie Bratcher,Javier Quiroz,Kyle Blair,Jeffery Brenot,John Gauntt,Joshua Harrison,Katie DeBakey,Leah Hansen,Lucas Gonzalez,Rosemarie Zerega,Shannon Vaughn,Tricia Llanas,James Etheridge,Jacqueline Leona,Michael Wuensch</value>

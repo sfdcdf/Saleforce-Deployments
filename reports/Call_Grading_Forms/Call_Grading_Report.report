@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer Care</value>

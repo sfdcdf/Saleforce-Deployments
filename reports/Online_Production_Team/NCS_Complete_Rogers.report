@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Website_Setup_Completed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brock Williams,Charles Thomas,Heather Rubio,Shayla Story,Tiffany Gonzalez,Patrick Trinidad,Amy Furr,Alec Jandorek,Morgan Wasserman,Shannon Lang</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Rogers</value>

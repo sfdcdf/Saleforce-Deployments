@@ -62,18 +62,21 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Products__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Centermark</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Centermark_of_Locations__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>10</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Relationship_Service_Level_C__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Service Level A,Service Level B,Service Level C,Service Level D</value>

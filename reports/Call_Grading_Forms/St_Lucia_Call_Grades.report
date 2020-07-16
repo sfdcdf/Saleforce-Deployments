@@ -55,18 +55,21 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>megan comerford</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Call_Grading_Forms__c.Email,Call_Grading_Forms__c.Lighthouse_Inbound_Call,Call_Grading_Forms__c.Partner_CSC,Call_Grading_Forms__c.Partner_20_Day,Call_Grading_Forms__c.Partner_40_Day,Call_Grading_Forms__c.Partner_70_Day,Call_Grading_Forms__c.Partner_Inbound_Call,Call_Grading_Forms__c.Partner_Save_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Janelle Benjamin,Devlyn,Zena,Janelle Gilbert,Kersanny,Jacqueline Jean,Jacqueline Jean-Baptiste,Dyane Edwards,Eva Lauren,Velma Viville,Kevin Cadette,Garna Charlery,Keri Wilson,Gabriela Beaubrun,Dania Eugene,farley edward,Alexandra moise,Chrystal prosper,Kurcy montoute,Nicole joseph,kent warren,jacqueline richard,shannon rock,jesse taylor,kurina joseph,kisha elibox,suprena george,becky jnbaptiste,chris dominique,crystal preston,emma joseph,russelle lord,Aalliyah Aimable,Benica Bowers,Germaine Eugene,Johan Evariste,Petra Bellas,Tiffany Samuels,Windel Alexander,Chrystabel Sifflet,Alexandra Moise,Becky JnBaptiste,Chris Dominique,Chrystal Prosper,Emma Joseph,Jacqueline Richard,Jesse Taylor,Kisha Elibox,Kurcy Montoute,Kurina Joseph,Nicole Joseph,Russelle Lord,Shannon Rock,Suprena George,Farley Edward,Press Miller,Kevin Leo,DAnne DeBeauville,Natasha Byron,Benjamin Sookwa</value>

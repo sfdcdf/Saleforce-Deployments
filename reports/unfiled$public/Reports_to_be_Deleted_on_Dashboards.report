@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>Report$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Reports to be deleted</value>
         </criteriaItems>
         <criteriaItems>
             <column>Report.DashboardComponents$Id</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

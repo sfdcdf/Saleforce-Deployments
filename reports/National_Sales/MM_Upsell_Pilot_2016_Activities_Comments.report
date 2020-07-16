@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Merry Maids</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Upsell Pilot 2016</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Description</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>a,e,i,o,u,y</value>

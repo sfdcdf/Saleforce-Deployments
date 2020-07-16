@@ -13,6 +13,7 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Opportunity.Local,012600000009NDy,Opportunity.Channel_Partner</value>

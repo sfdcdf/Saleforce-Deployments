@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,CS_Operations__c.Essentials_Features_Request,CS_Operations__c.CMS_3_1_Update_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>email</value>

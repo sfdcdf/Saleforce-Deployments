@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Yodle_Path_Experience</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>rusty&apos;s cleaning service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>

@@ -40,60 +40,70 @@
         <booleanFilter>1 and (2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Non Compliant Client</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Unreachable</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Bing_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Yelp_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Yellowpages_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$InfoGroup_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Insiderpages_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Superpages_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Un-Claimable,No Tracking</value>

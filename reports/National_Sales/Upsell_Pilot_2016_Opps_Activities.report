@@ -37,6 +37,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Upsell Pilot 2016</value>

@@ -91,12 +91,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Object_History__r$Field_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1-MA Setup AutoLaunch,Escalated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Object_History__r$FieldValue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Site Build</value>

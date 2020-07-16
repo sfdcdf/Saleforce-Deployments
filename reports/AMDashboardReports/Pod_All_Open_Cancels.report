@@ -96,18 +96,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lead stream support,LBW Customer Service,platinum support,local pod queue,Erika Persil,Jennifer Degreef,Keegan Sandman,Mark Nagy,Reagan Neely,Shelby Cowman,Kyler Wood,Jordan Sanchez,Ron Brown,Sam Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Alvin Jobe,Alyson MacDonald,Angela Hoddinott,Blake MacPhee,Gwen Doyle,Karen Park,Kayla Muir,Kimberley Boutilier,Marilyn Slaunwhite,Mark Cosh,Robert Jones,Rondell Humphreys,Stephen Gerrior,Walter Rundle,April Law,Aaron Wilson,Erik Vicars,Shelia Kelly,Barb Jenkins,Leonard Edwards,Adam Kovacs,Amber woodhams,James Brady,Paul Mascitti,Andrew Smith,Kathy Caldwell,Angela Snow,Kathryn Leadbeater,Marilyn Bray,Nina Avery,Kathleen Wilson,ryan crary,suzanne oyenarte,nathaniel nipper,biff spradley</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>LBW Customer Service,lbw support,platinum support,local pod queue,erik vicars,Sherri Aguinaga,Makenzie Cunningham,shelia kelly,Adam Kovacs,Amber woodhams,Samantha Starett,Ron Brown,Tameka Davidson,Stephen Collens,Walter Rundle,Kayla Muir,reagan neely,mark nagy,sara davis,thad dameris</value>

@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Post_Launch_Case_Closed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

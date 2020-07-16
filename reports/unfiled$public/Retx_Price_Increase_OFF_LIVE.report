@@ -30,30 +30,35 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Duplicate,Pod,Makenzie,Kent</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Retention</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$First_Cancel_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Pricing Initiative</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Refund_Amount__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

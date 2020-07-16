@@ -105,30 +105,35 @@
     <filter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alexandra Moise,Becky JnBaptiste,Chris Dominique,Chrystal Prosper,Dyane Edwards,Emma Joseph,Eva Lauren,Garna Charlery,Jacqueline Richard,Jesse Taylor,Keri Wilson,Kevin Cadette,Kisha Elibox,Kurcy Montoute,Kurina Joseph,Nicole Joseph,Petra Bellas,Russelle Lord,Shannon Rock,Suprena George,Velma Viville,Johan Evariste,Aalliyah Aimable,Windel Alexander,Farley Edward,Dania Eugene,Press Miller,Kevin Leo,DAnne DeBeauville,Natasha Byron,Benjamin Sookwa,D&apos;Anne DeBeauville</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>2</value>

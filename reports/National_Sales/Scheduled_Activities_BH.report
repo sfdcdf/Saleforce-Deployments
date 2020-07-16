@@ -19,18 +19,21 @@
         <booleanFilter>(1 or 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Scheduled,Rescheduled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Rescheduled,Scheduled</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Sales/Account Director C,YBN: Sales Director Manager (East Coast B)</value>

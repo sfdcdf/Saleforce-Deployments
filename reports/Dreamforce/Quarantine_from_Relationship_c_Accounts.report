@@ -33,6 +33,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Quarantine_from_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

@@ -22,24 +22,28 @@
         <booleanFilter>(2 AND (1 or 3)) AND 4</booleanFilter>
         <criteriaItems>
             <column>WHAT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local pod queue,platinum support,diane mulkey,erik vicars,sherri aguinaga,shelia kelly,nick johnson</value>
         </criteriaItems>
         <criteriaItems>
             <column>WHAT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>0,1,2,3,4,5,6,7,8,9</value>
         </criteriaItems>
         <criteriaItems>
             <column>WHAT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>rusty&apos;s cleaning,yodle</value>

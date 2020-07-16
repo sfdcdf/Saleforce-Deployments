@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Kyle Day,Karene Abegglen,Adesewa Faleti,Hiep Ngyuyen,William Sheehan,Brandon Lane,John Gauntt,Arleen Reynolds,Kami Owens,Lucas Gonzalez,Sara Henry,Natalie Larner,Tina Hatch,William Redden,Mark Champ,Sean Hertzberg</value>

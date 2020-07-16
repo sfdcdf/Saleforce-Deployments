@@ -61,12 +61,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Owner_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Brittany Fountain,Amber Woodhams,Paul Mascitti,James Brady,Andrew Smith,Suzanne Oyenarte,Ryan Crary</value>
         </criteriaItems>
         <criteriaItems>
             <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call,Email,General To Do,Other</value>

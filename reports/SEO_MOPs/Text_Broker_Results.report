@@ -22,30 +22,35 @@
         <booleanFilter>(1 AND (2 or 3 or 4)) AND 5</booleanFilter>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.SEO_Tasks</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$KeyWord_1_Unique_Proposition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>http</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$KeyWord_2_Unique_Proposition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>http</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$KeyWord_3_Unique_Proposition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>http</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

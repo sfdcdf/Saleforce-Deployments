@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>Account.SEO_Content_Preferences__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Client Provided Unique Content - Do Not Write</value>

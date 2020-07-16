@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>skowronski,spurlock,pollard,barreda,wildes,michael jaffe,torrey scott,rachel fisher,copeland,cabrales,Rustin Fincke,Tiffany Gonzalez,Tyler Kapper,Michael Walker,Jennifer Barnes,Alicia McKnight,Paul Zwicker,Amanda O&apos;Sullivan,Melissa Cornine,Brock Williams,webster</value>

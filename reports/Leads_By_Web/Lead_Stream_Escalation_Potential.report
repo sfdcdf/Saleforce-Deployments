@@ -31,12 +31,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Escalation_Potential__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>

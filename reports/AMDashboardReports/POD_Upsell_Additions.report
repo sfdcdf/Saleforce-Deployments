@@ -66,30 +66,35 @@
     <filter>
         <criteriaItems>
             <column>Account.CS_Operations__r$Request_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New Account Addition,Reactivation Upsell,SEM Budget Increase,Reporting Change,Sponsored Upsell (from SEO Only)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CS_Operations__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.Operation_Upsell_Additions</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Berry Group,Rogers,ViaMedia</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CS_Operations__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>aaron woodul,kyle zaffin,douglas smith,rhianna reed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CS_Operations__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed - Added</value>

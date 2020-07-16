@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham,local pod queue</value>

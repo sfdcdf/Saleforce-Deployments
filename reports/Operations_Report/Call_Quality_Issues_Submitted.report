@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Call_Quality_Concerns__r$Tracking_Name_Label__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Jingle</value>

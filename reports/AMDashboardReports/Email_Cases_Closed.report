@@ -62,12 +62,14 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>customercare@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brittanie Walker,Courtney Schoonover,Cynthia Mota,Felicia Morales,Gary Poole,Jordan Sanchez,Katie Tillman,Nick Johnson,Sharica Thomas,Valencia Wilson</value>

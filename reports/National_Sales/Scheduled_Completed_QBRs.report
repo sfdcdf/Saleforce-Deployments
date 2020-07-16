@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>External Customer Activity</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Quarterly Business Review</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Relationship_Service_Level_C__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Service Level A+,Service Level A,Service Level B,Service Level C,Service Level D</value>

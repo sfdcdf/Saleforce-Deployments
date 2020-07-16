@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Form_2_0__c.Maps_PIN_Collection,Call_Grading_Form_2_0__c.Maps_Owner_Verified,Call_Grading_Form_2_0__c.Maps_Quality_Assurance_Form</value>

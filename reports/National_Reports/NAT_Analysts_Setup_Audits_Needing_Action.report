@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Account_Setup_For__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>dustin o&apos;leary,morrison,delaura,kimberly miller,epstein,tanner,mcmillian,medford</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>

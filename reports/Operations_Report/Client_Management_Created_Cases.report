@@ -34,36 +34,42 @@
         <booleanFilter>(((1 AND 2 AND 3) OR (2 AND 4)) AND 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.XJenTest_No_Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Elyse Blouin,Jennifer Hecker,Jenna Rozenblat,Lauri Schultz,SFDC Sync,Jordan Laughlin,Natasha Isaacson,Sophie Lavin,Bill Vines,Megan Comerford</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>BPF Entry,Proactive Communication,New Client Setup,Organic Pin Collected,Quality Team,UX Global Template Feedback,Client Questions/Issues,Inbound Inquiry</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Performance_Issue,Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Local Consultant,Local CSM,National CSM,Inbound Specialist,National Consultant,National RM,Outbound Associate,Outbound Specialist,Partner Associate,Partner Consultant,Partner Flex,Partner Manager</value>

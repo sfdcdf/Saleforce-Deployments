@@ -25,12 +25,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>M001 – Discovery Call,M004 - Detailed Audit Discovery,Custom Implementation Discovery Call,Scheduled Discovery Call and/or Demo,Scheduled Discovery Call,Discovery Call,M1: Discovery Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Rachel Richey,Krista Avantini,Adam Elliott</value>

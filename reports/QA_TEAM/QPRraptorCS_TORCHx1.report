@@ -34,18 +34,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Developmental_Supervisor_del__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,Gina Bartolomeo,James Smith,JT Smith,Rachel Haug,Matthew Couch,Samuel Levine,Sam Levine,Michael Killeen,Macmatthews Njoku,Matt Njoku,Matthew Njoku,Michael Masuck,Trent Terrell,Jeremiah James,Nicholas Susko,Nick Susko,Kyle Campbell,William Campbell,Patrick Barrett,Martin Kearns,Marty Kearns</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Sales_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Adam Arndt,Elizabeth Greer,Michelle Greer,Shiva Kemanshahi Hemati,Shiva Hemati,William Rubbelke,Bill Rubbelke</value>

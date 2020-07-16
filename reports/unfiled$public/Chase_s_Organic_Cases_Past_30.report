@@ -37,30 +37,35 @@
         <booleanFilter>1 AND 2 AND 3 AND (4 or 5)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Reason_for_Submission__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Google Setup:Address Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>National,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Johnson Controls - Liberties Dealers,Hand &amp; Stone,Cordell &amp; Cordell,Critter Control,B-Dry Waterproofing,Miracle Method Surface Refinishing,Brightway Insurance</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Johnson Controls - Liberties Dealers,Hand &amp; Stone,Cordell &amp; Cordell,Critter Control,B-Dry Waterproofing,Miracle Method Surface Refinishing,Brightway Insurance</value>

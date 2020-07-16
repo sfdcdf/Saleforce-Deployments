@@ -46,54 +46,63 @@
         <booleanFilter>(1 AND 9 AND (2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8))</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.CSC_Call_Grading</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Marketing_Communication__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered,N/A</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Contacts_Essentials__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Reviews_Solicitation__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Social__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Photo_Upload__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Offers__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered,N/A</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Call_Grade__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>95</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Kent Warren</value>

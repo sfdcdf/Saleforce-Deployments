@@ -12,18 +12,21 @@
     <filter>
         <criteriaItems>
             <column>National_Support_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Stage 3 – Proposal</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>account performance queue,National Performance Queue,brittany hunter,mcmillian,eisenmenger,delaura,dustin o&apos;leary,joshua golden,jordan herin,anderson allen</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>

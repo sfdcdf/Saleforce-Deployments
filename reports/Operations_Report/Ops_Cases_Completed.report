@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Fincke,Laughlin,Lavin,Cummings,CS Operations,Dooley,Reeder,Woodul</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

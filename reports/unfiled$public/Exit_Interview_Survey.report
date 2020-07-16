@@ -57,12 +57,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Exit Interview Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$To_use_Yodle_again__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -33,6 +33,7 @@
     <filter>
         <criteriaItems>
             <column>Fulfillment__c.Products_Sold__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Corporate Funded Display,Facebook</value>

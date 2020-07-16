@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>49364,14869,14868,328521,328522,328266,328375,328365,328523,328499,233658,334009,333484,347623</value>

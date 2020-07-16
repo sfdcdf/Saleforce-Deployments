@@ -28,24 +28,28 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Product</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LH Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Salesforce Automation,Leslie Bert Thomas,Kami Banner,Matthew Scott,Georgiann Ray,Kayla Westfall,Jordan Sanchez,Sarah Vickers,Philip Schaffer,Alison Sexton,Ben Block,Karole Waters,Jennifer Flanagan,Jamie Boldt,Amanda Arkell,Marc Foley,Gretchen Grant,Janet DeYoung,Doreen Towhey,Joseph Vickers,Beth Taylor</value>

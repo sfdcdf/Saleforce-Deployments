@@ -49,12 +49,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>012600000009PKs,Case.XJenTest_No_Use,Case.Performance_Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Berry_Account_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

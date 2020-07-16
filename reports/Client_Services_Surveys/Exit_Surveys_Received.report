@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Exit Interview Survey</value>

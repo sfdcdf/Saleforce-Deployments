@@ -42,18 +42,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Rogers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Organic_Analysis__c.IT_Pro_QA,012600000009V0o,Organic_Analysis__c.Organic_Optimization_Request,Organic_Analysis__c.PIN_Action_Needed,Organic_Analysis__c.Underperforming,Organic_Analysis__c.YO_Initial_Error_Check</value>

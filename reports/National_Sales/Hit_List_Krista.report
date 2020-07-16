@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Contact.Yodle_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>kavantini@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Amy Kramer</value>

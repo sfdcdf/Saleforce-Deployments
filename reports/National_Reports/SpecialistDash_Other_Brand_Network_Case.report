@@ -37,24 +37,28 @@
         <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brand Network Support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YBN_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Forefront Dermatology LLC,Deca Dental Group,InterDent Inc.,Cordell &amp; Cordell,Mini U Storage,Take 5 Oil Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>brandnetworksupport@yodle.com</value>

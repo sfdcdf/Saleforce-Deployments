@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Cancel_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lost to Competitor</value>

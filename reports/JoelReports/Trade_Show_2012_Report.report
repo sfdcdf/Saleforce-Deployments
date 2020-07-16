@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>trade,email-lct-postshow09,email-lct-preshow09,clean</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Miracle-Ear</value>

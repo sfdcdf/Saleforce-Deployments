@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Centermark__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Centermark Lite,Centermark,Mix of Centermark &amp; Centermark Lite</value>

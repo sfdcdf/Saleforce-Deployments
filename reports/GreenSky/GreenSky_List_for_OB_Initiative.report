@@ -19,42 +19,49 @@
     <filter>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Bathroom Remodeling,Door Contractor,Garage Door Contractor,Home Remodeling,HVAC Contractor,Kitchen Remodeling,Roofer,Solar Contractors,Swimming Pool and Hot Tub Installation,Window Contractor</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Yodle Max</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Sponsored_Save_Mode_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>IN_SAVE_MODE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN,Partner</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_COUNTRY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>US</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>198845,119015,100354,229873,317906,332198,332456,330835,327777,331445,331756,332107,332435,330877,331027,331976,332225,332618,330629,331089,330673,330789,331722,331994,331535,332001,332047,332065,332331,331960,330422,332020,332257,330851,332116,332369,331002,331743,332083,332295,330832,332000,327117,331806,332181,331999,332149,331774,331805,332087,332104,332079,332182,332192,332473,331319,331164,331262,332299,332308,331786,330806,332069,332546,332554,330431,330744,332501,331817,331848,332395,331996,332032,331956,332315,332284,332238,331251,331975,332503,332005,332108,332026,332010,332373</value>

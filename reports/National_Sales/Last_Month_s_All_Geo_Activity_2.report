@@ -16,30 +16,35 @@
         <booleanFilter>(1 and (2 or 3)) or (1 and (4 and 5))</booleanFilter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ari Katz,Brian Heppner,James Gardner,Leffie Crawford,Rahul Saluja,Alex Renner,Nimish Amin,Kevin Noonan,Nick Dispenza,Peter Szalkowski,Josh Schure</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Prospecting</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M000 - Conversation Initiation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>External Customer Activity</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call,Demo &amp; Value Presentation,Executive Review Call,Solution Review Call,Proposal &amp; SOW Review Call,Contract Review</value>

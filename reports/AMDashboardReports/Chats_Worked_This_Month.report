@@ -6,6 +6,7 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Mark Champ,Brooke Grossman</value>

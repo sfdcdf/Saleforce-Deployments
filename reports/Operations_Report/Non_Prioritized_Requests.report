@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>In Progress,Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>CS_Operations__c.CMS_3_1_Update_Request,CS_Operations__c.Operation_Upsell_Additions,CS_Operations__c.YBN_Operations_Request,CS_Operations__c.CS_Nomination_Form,CS_Operations__c.Essentials_Features_Request,CS_Operations__c.Future_Deactivation_Request,CS_Operations__c.Upsell_Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS Operations,Jenna Rozenblat,Jennifer Flanagan,Kelly Hall,Sophie Lavin,Megan Scully,Natasha Isaacson</value>

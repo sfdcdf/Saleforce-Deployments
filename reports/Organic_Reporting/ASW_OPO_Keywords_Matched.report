@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Mismatch_between_ZoomRank_and_OPO_Geo__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>No Mismatch</value>

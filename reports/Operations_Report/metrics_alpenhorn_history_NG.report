@@ -24,24 +24,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.YBN_Outbound_Touch_Point,Case.YBN_Product_Ideas,Case.YBN_Inbound_Inquiry,Case.YBN_Corporate_Interaction,Case.New_Client_Setup,Case.YBN_Master_Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Jennifer Flanagan,SFDC Sync</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Status</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account,Adoption Call,Adoption Call - Dedicated,CSC,CS Touch Plan,CS Touch Plan - Dedicated,Feature Support,Inbound Inquiry,New Client Setup,Proactive Touch,Rogers Inbound Inquiry,Setup Call,Inbound Call,Outbound Call,Inbound Email,Outbound Email</value>

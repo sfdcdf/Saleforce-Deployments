@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>Case.LiveChatTranscripts$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse</value>

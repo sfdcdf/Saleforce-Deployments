@@ -1,6 +1,13 @@
+/*****************
+ * LOG:
+ * Developer : Mahesh Bogila
+ * Date:07/10/2020
+ * Usage: Forcustomer Survey which is submitted directly with email, then by email corresponding contact and account details are updated.
+ * **************/
+
 trigger trgrCustSurvey on Customer_Surveys__c (After insert,After Update) 
 {
-    if(checkRecursive.runBeforeInsert())
+    if(checkRecursive.runAfterInsert() || checkRecursive.runAfterUpdate())
     {
         if(trigger.isInsert || trigger.isUpdate)
         {    
@@ -13,7 +20,7 @@ trigger trgrCustSurvey on Customer_Surveys__c (After insert,After Update)
             
             if(!cusSurId.isEmpty())
             {
-                updateCustSurvey.updateConAct(cusSurId);
+                updateCustSurvey.UpdateConActMethod(cusSurId);
             }  
         }   
     }

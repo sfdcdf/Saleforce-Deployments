@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Performance_Analysis__c.Channel__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Franchise</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Relevant Issue &amp; Work Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Reviewed_by_CS__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

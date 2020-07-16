@@ -19,36 +19,42 @@
         <booleanFilter>1 AND (2 OR 3) AND 4 AND 5 AND 6</booleanFilter>
         <criteriaItems>
             <column>Opportunity$StageName</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Implementation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Cases__r$Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Billing QA For Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Cases__r$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Launch QA Document</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test,dorm</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Opportunity_Launched__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Launched</value>

@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Madeline Berube,Rory Diller,Jeremiah Lerma,Rolando Gonzalez,Brooke Grossman,Jacqueline Leona,Jennifer Agulay,Julia Correa,Kati Yee,Katura Daniel,Kelly Costello,Krystal Bell,Linzi Plummer,Lynn Tobias,Mark Champ,Matthew Kerlin,Matthew Scott,Meagan Holdiman,Nicholas Brooks,Steven Russell,Travis Dube,Tricia Valadez,Vanessa Ramirez,Zach Bailey</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>

@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Sarah Taft,Stephen Collens,Leslie Bert Thomas,Georgiann Ray,Aaron Woodul,Philip Schaffer,Olivia Campbell,Michael Staffieri,Stephanie Verdusco,Adrienne Glenn,Ron Walton,Erik Vicars,Casey Crumbley,Reagan Neely,Vicki LaFond,Ann Lewis,Trish Wightman,Randy Gordon,Laura Vitro,David Cambouris,T.A. Stanton,Tom Reece,Wendy Lincoln,Shaquana Brent,Sandy Staffieri,Meredith Henry,Kimberly Davis,Jennifer Flanagan,Crystal Perez,Charles Thomas,Beth Taylor,Alison Sexton,SFDC Sync,Janet deyoung,westfall,vickers,karole,kevin lewis,lenee,bowe,wilson,ruer,garrison,bellew,Lavin,banner,Saltzman,Tolman,Block,Towhey,Grant,Boldt,Wightman,Foley,Arkell,block</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>

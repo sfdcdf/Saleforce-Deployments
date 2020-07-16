@@ -54,6 +54,7 @@
     <filter>
         <criteriaItems>
             <column>Case$Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lighthouse</value>

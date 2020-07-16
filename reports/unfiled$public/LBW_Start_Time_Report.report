@@ -28,18 +28,21 @@
         <booleanFilter>(1 or 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>lead stream support,LBW Customer Service,platinum support,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>nathaniel nipper,randy dewey,adam kovacs,leonard edwards,barb jenkins,erik vicars,makenzie cunningham,shelia kelly</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>PTO,Not Scheduled,LUNCH,loa,ooo,out of office,supervisor</value>

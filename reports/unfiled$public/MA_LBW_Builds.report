@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA,Case.XJen_Test_NCS_No_Use,Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,Angus MacNeil,Berkley Desmond,Bradley Ferguson,Chad MacDonald,Chelsea MacEachern,Chris Halverson,Douglas Walsh,Jo-Ann Mckenzie,Joshua Grant,Julianna Meyer,Justin Ferguson,Katharine Langille,Kelly Dobson,Kevin Grant,Kevin Hobbs,Kristen MacKay,Lynette Stewart,Ozzy Campbell,Timothy Chaulker,Troy Sanders,Valerie Bigney,Kim Amiro,Janine Martin,Andrew Roy</value>

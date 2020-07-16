@@ -63,18 +63,21 @@
     <filter>
         <criteriaItems>
             <column>Case$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web,CS@Outrank.com,Local Pooled VM,customercare@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Thomas Standing,Dayna Horton,Brittanie Walker,Courtney Schoonover,Cynthia Mota,Felicia Morales,Gary Poole,Jordan Sanchez,Katie Tillman,Carly Cade,Sharica Thomas,Valencia Wilson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>2</value>

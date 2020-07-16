@@ -39,24 +39,28 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Opportunity_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>YBN Corporate Opportunity</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.National_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>y</value>
         </criteriaItems>
         <criteriaItems>
             <column>PROBABILITY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>60</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>4/1/2016</value>

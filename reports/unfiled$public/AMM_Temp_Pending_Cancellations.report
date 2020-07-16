@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Closed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

@@ -13,6 +13,7 @@
     <filter>
         <criteriaItems>
             <column>Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,0</value>

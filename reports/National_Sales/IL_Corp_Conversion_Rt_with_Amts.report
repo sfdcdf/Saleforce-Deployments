@@ -88,36 +88,42 @@
         <booleanFilter>(1 AND 2 AND (3 OR 4) AND 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>Account.Activities$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>YBN: Sales Executive</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,Internal Planning &amp; Prep,Other - Customer Activity,Attempted Customer Contact,Contract Review,User Sign Up,Demo &amp; Value Presentation,ROI Calculator Data,No Voicemail Message / Email Reach Out / Contact Made,Email Reach Out Only (No Phone Contact Made),M000 - Conversation Initiation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$ActivityDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>12/31/2015 12:00 AM</value>

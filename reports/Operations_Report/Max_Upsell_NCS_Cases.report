@@ -41,24 +41,28 @@
         <filter>
             <criteriaItems>
                 <column>Case.Upsell__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>1</value>
             </criteriaItems>
             <criteriaItems>
                 <column>RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Case.XJen_Test_COBRA</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.Channel_Type__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Local</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.IMS_Rep__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>customer care</value>

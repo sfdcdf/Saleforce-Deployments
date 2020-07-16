@@ -35,30 +35,35 @@
         <booleanFilter>(4 OR (1 AND 2 AND 3)) AND 5</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Quality Team</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Developmental_Supervisor_del__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Bram Van Loon,Mehrdad Emamzadeh,Wade May,Brian Steinberg,Robert Schreiber,Robert Wohlfarth,James Porcelly,Daniel Broze,Lucene Noia,Edward Werner,Thomas Hansen,Kelly Stewart,Allison Grice,Daniel Avitabile,Jeffrey Braun,Paul Fritz,Phillip Sloyer,Ronald Dysland,Elizabeth Schmidt,Larry Romaine,Martin Kearns</value>

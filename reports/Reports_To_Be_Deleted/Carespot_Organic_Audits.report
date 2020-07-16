@@ -37,12 +37,14 @@
     <filter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>CareSpot Express Healthcare (Formerly Solantic)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Organic Listing</value>

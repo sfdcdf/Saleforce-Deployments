@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancel_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Sales Expectations</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$First_Cancel_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Buyer&apos;s Remorse</value>

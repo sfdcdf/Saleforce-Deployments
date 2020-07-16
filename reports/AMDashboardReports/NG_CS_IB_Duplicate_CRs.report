@@ -156,12 +156,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>In Review</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_LAST_UPDATE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Angela Hoddinott,Karen Park,Kayla Muir,Kimberley Boutilier,Stephen Gerrior,Walter Rundle,Nina Avery,Leonard Edwards,Angela Luddington,Marsha Cunningham,Dawn Jordan,Linda Keating</value>

@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Deactivated</value>

@@ -37,60 +37,70 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5) AND (6 AND 7) OR (8 AND 7) OR (9 AND 10)</booleanFilter>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Failed Landing Pages,New ProSite Creation,Display Creative,National Metropage/LP Creation,National Template Creation,National Template Update/Change,Call Answering,BPF Entry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>National,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.New_Client_Setup,Case.XJen_Test_COBRA,Case.SEO_Tasks,Case.XJen_Test_NCS_No_Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN Corporate Site Creation,YBN Corporate Site Update/Change,YBN Custom Project,YBN Display Creative,YBN Display Retargeting,YBN Metropage/LP Creation,YBN Presale Mockup,YBN Template Creation,YBN Template Update/Change,YBN  Portal Creation</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>TextBroker Content Creation,Offer Verification</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>SunState</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Date_Sent_to_Production__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>7/25/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Choices Cafe</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Miracle Ear</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Date_Sent_to_Production__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>11/15/2015 12:00 AM</value>

@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>weed man,go minis,carolina dental alliance,smile source,diamond residential mortgage,aligned modern health,orthology,unigroup,hungry heart,maid brigade,sam the concrete man,the maids,immersion active,signal 88,security 1 lending,gotcha covered,padgett business services</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>

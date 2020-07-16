@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Call_Answering__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Miracle-Ear</value>

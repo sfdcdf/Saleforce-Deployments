@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>national ims</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.Decision_Tree_Optimization,012600000009OR9,012600000009TfB,012600000009Oym,012600000009PEG,012600000009PDX,012600000009QNe,012600000009TJj,Case.SEO_Tasks,012600000009TiF,012600000009Oz6,012600000009OUr,012600000009PKs,Case.New_Client_Setup,Case.Performance_Issue</value>

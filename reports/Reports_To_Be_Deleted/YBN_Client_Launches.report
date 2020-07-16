@@ -53,30 +53,35 @@
         <booleanFilter>2 AND (1 OR 3) AND (4 OR 5)</booleanFilter>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Senior Helpers,Affordable Dentures,Carespot,Griswold,LivHome,Miracle Ear,Cottman,Gentle Dental,Miracle-Ear</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>OR 3.0 GLocal &amp; BLocal Initial Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Franchise_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>solantic,carespot</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status_Override__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>

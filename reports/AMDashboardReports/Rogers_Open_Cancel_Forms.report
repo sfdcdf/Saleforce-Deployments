@@ -9,18 +9,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.Rogers_Cancellation_Request,Cancellation_Request__c.Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jelena Kolomajec,Lyndsay Spa,Emily Kareiva,Christopher Grau,Rogers Outrank,Suzanne Baudoin</value>

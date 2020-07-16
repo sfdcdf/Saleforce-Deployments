@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Jeremy&apos;s Powerhouse,Lauri,Jen&apos;s Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Transactional Issue Resolution</value>

@@ -47,54 +47,63 @@
         <booleanFilter>1 AND 4 AND (2 OR 3 or 5 or 6 or 7 or 8 or 9)</booleanFilter>
         <criteriaItems>
             <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>LAST_N_MONTHS:6</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Centermark_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.PPC_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Yodle_Web_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Organic_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Review_Management_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Display_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Corporate_Site_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>6</value>

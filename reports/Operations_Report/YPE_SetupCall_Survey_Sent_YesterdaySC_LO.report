@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Yodle_Path__c.Survey_Sent__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

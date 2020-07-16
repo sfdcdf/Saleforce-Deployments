@@ -63,6 +63,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Date_of_Cancellation_Request__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

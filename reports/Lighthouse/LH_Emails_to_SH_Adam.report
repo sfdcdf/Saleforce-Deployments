@@ -22,12 +22,14 @@
     <filter>
         <criteriaItems>
             <column>HOWNERNAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LH Support - Sugar Hill,Adam Stanton,LH - Install</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>support@lighthousepmg.com,customercare@lighthousepmg.com</value>

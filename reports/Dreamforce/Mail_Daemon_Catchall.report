@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>mailer-daemon@salesforce.com</value>

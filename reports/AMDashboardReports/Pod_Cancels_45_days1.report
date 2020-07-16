@@ -64,24 +64,28 @@
         <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LBW Customer Service,rogers dedicated queue,lbw support,platinum support,local pod queue,erik vicars,Sherri Aguinaga,Makenzie Cunningham,shelia kelly,nick johnson,christopher grau,emily kareiva,lyndsay spa,Adam Kovacs,Amber Tamayo,Samantha Starett,Ron Brown,Reagan Neely,Mark Nagy,Sara Davis,Thad Dameris</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LBW Customer Service,rogers dedicated queue,lbw support,platinum support,local pod queue,erik vicars,Sherri Aguinaga,Makenzie Cunningham,shelia kelly,nick johnson,christopher grau,emily kareiva,lyndsay spa,Adam Kovacs,Amber Tamayo,Samantha Starett,Ron Brown,Reagan Neely,Mark Nagy,Sara Davis,Thad Dameris</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>N_DAYS_AGO:30</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>

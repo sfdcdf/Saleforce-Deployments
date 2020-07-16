@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Two Men</value>

@@ -34,36 +34,42 @@
         <booleanFilter>1 AND (2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.X1st_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.X2nd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.X3rd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.X4th_or_More_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Touch_Plan_2</value>

@@ -89,18 +89,21 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Low KW Position Circuit Breaker (Day 60),Low KW Position Circuit Breaker (Day 90),Low KW Position Circuit Breaker (120 Day)</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update,012600000009PEG,Case.Performance_Issue,012600000009QNe,Case.Master,012600000009PDX</value>
         </criteriaItems>
         <criteriaItems>
             <column>CASE_COMMENT_CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Joel Bradbury,Christopher Litchfield,David Minchala</value>

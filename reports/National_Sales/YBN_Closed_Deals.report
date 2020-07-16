@@ -129,24 +129,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal,Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Closed Won,Implementation,Adoption</value>
         </criteriaItems>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alex Renner,Ari Katz,Brian Heppner,Carinne Richdale,Daniel Boyce,Danielle Krieg,Debra Lozano,Ian Burris,James Gardner,Jennifer Torres,Josh Shure,Kevin Noonan,Krista Avantini,Mark Armstrong,Minde Fawcett,Nick Dispenza,Nimish Amin,Peter Szalkowski,Rahul Saluja,Russell Tvedt,Taylor Hess,Adam Lester,Rich Jaeger,Fran DeLuca,Tyler Kaufman</value>

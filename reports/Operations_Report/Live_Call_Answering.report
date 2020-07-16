@@ -12,18 +12,21 @@
     <filter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Change Requested,Question/Issue,Setup In Progress,Active</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE,AD_READY,PROVISIONING,SALES</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>8/19/2015 12:00 AM</value>

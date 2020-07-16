@@ -19,6 +19,7 @@
     <filter>
         <criteriaItems>
             <column>Account.JCI_Liberties_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

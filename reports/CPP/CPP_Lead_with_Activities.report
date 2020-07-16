@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Eric Brief,Martin Kearns</value>

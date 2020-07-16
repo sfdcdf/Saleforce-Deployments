@@ -57,6 +57,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Closed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>

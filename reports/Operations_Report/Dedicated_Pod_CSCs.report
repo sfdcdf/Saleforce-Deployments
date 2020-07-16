@@ -25,30 +25,35 @@
         <booleanFilter>1 and 3 and (2 or (4 and 5))</booleanFilter>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>tobias,sherri,elayne,vicars,zaffin,kelly O&apos;brien</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Next_Scheduled_CSC2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Total_Acct_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>1749</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

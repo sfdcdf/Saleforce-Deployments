@@ -34,6 +34,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Pooled_Web_to_Case_Check__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

@@ -61,18 +61,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lbw support,local pod queue,platinum support,diane mulkey,elayne hoover,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson,christopher grau,lyndsay spa,emily karieiva</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>local pod queue,platinum support,diane mulkey,elayne hoover,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson christopher grau,lyndsay spa,emily karieiva</value>

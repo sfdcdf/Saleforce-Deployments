@@ -34,18 +34,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA,Case.XJen_Test_NCS_No_Use,Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Angus MacNeil,Bradley Ferguson,Chris Halverson,Connor Terris,Douglas Walsh,Kelly Dobson,Lynette Stewart,Michael MacMaster,Ozzy Campbell,Timothy Chaulker,Justin Ferguson,Chelsea MacEachern,Julianna Meyer,Katharine Langille,Chad MacDonald,Berkley Desmond,Troy Sanders,Kevin Hobbs,Shannon York,Joshua Grant,Jo-Ann McKenzie,Valerie Bigney,Kevin Grant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Leads By Web</value>

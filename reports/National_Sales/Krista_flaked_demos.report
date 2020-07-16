@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Account.National_SDR_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>krista avantini</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Disposition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Flaked</value>

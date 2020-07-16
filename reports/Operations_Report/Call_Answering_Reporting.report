@@ -40,36 +40,42 @@
         <booleanFilter>(1 and (2 or 3 or 4 or 5)) AND 6</booleanFilter>
         <criteriaItems>
             <column>Call_Answering__c.List_of_Services__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Miracle-Ear Backfill</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Days_to_Setup_Business__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Days_to_Close_Question__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Days_to_Complete_Change__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Days_to_Complete_Cancel__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>National</value>

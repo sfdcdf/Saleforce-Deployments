@@ -49,18 +49,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Disposition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call Back,Opportunity,Need More Info,Contact Parent Company,Contact Child Accounts,Bottoms Up</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Franchisee,Franchisor</value>

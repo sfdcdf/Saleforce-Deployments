@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Submit for Approval</value>
         </criteriaItems>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Nina Avery,Angela Hoddinott,Blake MacPhee,Karen Park,Kayla Muir,Kimberly Boutilier,Stephen Gerrior,Walter Rundle</value>

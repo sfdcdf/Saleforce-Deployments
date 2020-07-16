@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Milestone_Last_Updated__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>LAST_N_DAYS:30</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Transaction</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Contract_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

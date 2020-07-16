@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.National_Company_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Multi-Location</value>

@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Account.NPS_Survey_Send__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

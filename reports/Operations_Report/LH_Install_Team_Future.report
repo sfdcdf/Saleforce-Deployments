@@ -22,24 +22,28 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet,Lighthouse_Worksheets__c.PMS_Swap_Form,Lighthouse_Worksheets__c.LH_OOS</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Install_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Backed Out Sale,Delete Case</value>

@@ -25,48 +25,56 @@
         <booleanFilter>((1 AND 2 AND 3 AND 4 AND 6 and 5) AND 7) AND 8</booleanFilter>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1-MA Setup AutoLaunch,1-Web Dev AutoLaunch,2-QA AutoLaunch,3-CSC AutoLaunch,Complete AutoLaunch,Escalated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Total_Acct_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>1250</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>National,Partner</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Next_Scheduled_CSC2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Account Acceptance</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Customer Care</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Total_Acct_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>749</value>

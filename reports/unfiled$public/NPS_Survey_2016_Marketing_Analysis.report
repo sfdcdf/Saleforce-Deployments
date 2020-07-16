@@ -96,6 +96,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_YBN</value>

@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Master_Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic Operations Request,Organic Audit Request,Custom SEO Keywords,Organic Consultation,Pre-launch Custom Content Creation,Zoom Rank Custom Reporting,SEO Keyword Strategy</value>

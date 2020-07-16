@@ -46,12 +46,14 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Chiropractor</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Install_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

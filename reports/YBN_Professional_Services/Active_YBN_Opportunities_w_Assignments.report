@@ -69,12 +69,14 @@
     <filter>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Client Discovery,Demo/Value Prop,Solution,Contract,Closed Won</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Opportunity_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Corporate Opportunity</value>

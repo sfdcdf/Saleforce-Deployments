@@ -41,12 +41,14 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed,Closed - Errors Found,Closed - No Errors Found,Closed - False Trigger,Closed - Sent to SDB</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Amanda O&apos;Sullivan,Jay Chappell,Bryan Heckler,Miri Oakford,Kami Owens,John King,Sommer Chaka,Ryan Widmier,Brenda Healey,Kevan Irsch,Jennifer Barnes,Joey Pena,Victoria Kanicka,Darren Kuehne,Eric Layo</value>

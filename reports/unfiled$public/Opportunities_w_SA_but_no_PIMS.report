@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Performance_Implementation_Strategist__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Ryan Deller,Dustin O&apos;Leary</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Solutions_Architect__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

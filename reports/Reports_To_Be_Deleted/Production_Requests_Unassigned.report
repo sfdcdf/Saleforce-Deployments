@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>OPT_Process_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Completed,Closed - Denied,Closed - Review for OPT Plan,Completed - Approval Denied,Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPT_Process_Request__c.Production_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

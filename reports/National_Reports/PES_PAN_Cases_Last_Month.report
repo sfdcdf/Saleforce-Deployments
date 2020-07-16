@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$PIN_Action_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Christine Bergman,Kristalin Glass,Alexander Bravos,Mark Fazio,Shawna Davis,Shannon Doherty</value>

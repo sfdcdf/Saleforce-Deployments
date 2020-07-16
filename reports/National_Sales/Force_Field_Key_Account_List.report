@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Minde Fawcett,Mark Armstrong,Jennifer Torres,Danielle Krieg,Daniel Boyce</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Key_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

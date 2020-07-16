@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>Account.X2013_JCI_Email_Sent__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>,LAST_N_DAYS:7</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Outrank,Organic</value>

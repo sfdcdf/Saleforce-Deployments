@@ -39,18 +39,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Partner_CSC,Call_Grading_Forms__c.Partner_20_Day,Call_Grading_Forms__c.Partner_40_Day,Call_Grading_Forms__c.Partner_70_Day,Call_Grading_Forms__c.Partner_Inbound_Call,Call_Grading_Forms__c.Partner_Save_Call,Call_Grading_Forms__c.Partner_CSC_Engage</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.FAIR_Communication__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Great,Very Good</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.X1_Objection__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

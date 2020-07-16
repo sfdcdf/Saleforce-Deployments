@@ -25,24 +25,28 @@
         <booleanFilter>((1 OR 2) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ads</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LH Upsell,Phone</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Alison Sexton,Ben Block,Karole Waters,Jamie Boldt,Amanda Arkell,Marc Foley,Gretchen Grant,Janet DeYoung,Doreen Towhey,Joseph Vickers,Beth Garrison,Beth Taylor,Kayla Westfall</value>

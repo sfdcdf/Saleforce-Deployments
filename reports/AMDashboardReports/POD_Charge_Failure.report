@@ -68,24 +68,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Charge_Failure</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Payment Received,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Erika Persil,Jennifer Degreef,Keegan Sandman,Mark Nagy,Reagan Neely,Shelby Cowman,Kyler Wood,Jordan Sanchez,Ron Brown,Sam Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Alvin Jobe,Alyson MacDonald,Angela Hoddinott,Blake MacPhee,Gwen Doyle,Karen Park,Kayla Muir,Kimberley Boutilier,Marilyn Slaunwhite,Mark Cosh,Robert Jones,Rondell Humphreys,Stephen Gerrior,Walter Rundle,April Law,Aaron Wilson,Erik Vicars,Shelia Kelly,Barb Jenkins,Leonard Edwards,Adam Kovacs,Amber Tamayo,James Brady,Paul Mascitti,Andrew Smith,Kathy Caldwell,Angela Snow,Kathryn Leadbeater,Marilyn Bray,Nina Avery,Kathleen Wilson,lead stream support,LBW Customer Service,platinum support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Time_in_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>30</value>

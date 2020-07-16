@@ -31,6 +31,7 @@
         <booleanFilter>1</booleanFilter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New Setup,Change Requested,Question/Issue,Cancel Service,Setup In Progress</value>

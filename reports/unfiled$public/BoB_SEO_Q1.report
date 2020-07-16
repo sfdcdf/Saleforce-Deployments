@@ -69,66 +69,77 @@
         <booleanFilter>(((1 AND 2 AND 3 AND (6 OR 7)) AND (4 OR 5) OR (8 AND 11 and (9 OR 10))))</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>National,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Speedpro Imaging Center,ABCO Refrigeration Supply Co,ACU,Aircon Engineering,Inc.,American Air Distributing Inc,Badger Metals,Brightway Insurance,Business Name - unitary,Calverley Supply Company Inc,Canada Branch (York),Century AAA LTD,Century Air Conditioning Supply,cfm Distributors,Charles D. Jones/DBA Empire Gas &amp; Elect.Equip. Co.,Coleman Heating and Air Conditioning,Cordell &amp; Cordell,Critter Control,Design Air,A Division of U.S. Venture,Famous Supply,Ferguson Enterprises (Wausau),FW Webb Company,Gustav A Larson Company,H &amp; S Massage Spa Canadian Corporation,Hand &amp; Stone Master,Johnson Air Products,Johnson Controls - Corporate,Johnson Controls - Liberties Dealers,Johnson Controls - Power Solutions - Battery,Johnson Controls - Unitary Products Group,Johnson Supply (HQ),Johnstone Supply (Albuquerque),Johnstone Supply (Billings),Johnstone Supply (Bloomington),Johnstone Supply (Bridgeton),Johnstone Supply (Cherry Hill),Johnstone Supply (Dayton),Johnstone Supply (Downi</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls,Miracle Method Surface Refinishing,AAMCO,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Mr. Appliance</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>SEO marketing Ops</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Case_Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Senior Performance Analyst,Performance Analyst</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>SEO marketing Ops</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Case_Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Senior Performance Analyst,Performance Analyst</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>national,ybn</value>

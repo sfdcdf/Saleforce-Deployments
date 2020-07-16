@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Escalated__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

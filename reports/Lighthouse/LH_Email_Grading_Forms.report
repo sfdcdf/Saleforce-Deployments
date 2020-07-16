@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Call_Grading_Forms__c.Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Brooke Grossman,Bea Peikert,Mark Champ,Beau Osteros,Rory Diller,Jeremiah Lerma,Rolando Gonzalez,Jacqueline Leona,Jennifer Agulay,Julia Correa,Kati Yee,Katura Daniel,Kelly Costello,Krystal Bell,Linzi Plummer,Lynn Tobias,Madeline Berube,Matthew Kerlin,Matthew Scott,Meagan Holdiman,Nicholas Brooks,Steven Russell,Travis Dube,Tricia Valadez,Vanessa Ramirez,Zach Bailey</value>

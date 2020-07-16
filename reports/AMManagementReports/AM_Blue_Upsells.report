@@ -45,24 +45,28 @@
         <filter>
             <criteriaItems>
                 <column>CLOSE_DATE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>LAST_MONTH</value>
             </criteriaItems>
             <criteriaItems>
                 <column>PRODUCT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>New Account,Ad Station Re-Fill,Essentials/Platform Pro Rate,reactivation</value>
             </criteriaItems>
             <criteriaItems>
                 <column>STAGE_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Closed Won,Submit for Approval</value>
             </criteriaItems>
             <criteriaItems>
                 <column>OWNER_MANAGER</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Shelia kelly</value>
@@ -130,30 +134,35 @@
         <filter>
             <criteriaItems>
                 <column>PRODUCT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Budget Change,Ads Upsell,Essentials/Platform Feature,Reactivation</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Opportunity.Next_Bill_Date__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>LAST_MONTH</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Opportunity.Fee_Difference__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>greaterThan</operator>
                 <value>0</value>
             </criteriaItems>
             <criteriaItems>
                 <column>STAGE_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>Closed Won,Submit for Approval</value>
             </criteriaItems>
             <criteriaItems>
                 <column>OWNER_MANAGER</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
                 <value>shelia kelly</value>

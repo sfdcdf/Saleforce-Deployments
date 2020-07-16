@@ -34,12 +34,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.Upsell_Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.One_time_Refill_or_Budget_Change__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,One-time Refill</value>

@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>CS_Operations__c.Operation_Upsell_Additions,CS_Operations__c.Strategic_Account_Growth_Addition</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>minchala,litchfield,joel bradbury,chappell,sullivan,king,kuehne,heckler,chaka,widmier,barnes,irsch,owens,marco,zwicker,bright,crystal perez,healey,mcgill,livingston,kevin taylor,oakford</value>

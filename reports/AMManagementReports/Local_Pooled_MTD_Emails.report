@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>EMAIL.STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>3</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Outbound Specialist,Inbound Specialist,Services Inbound</value>

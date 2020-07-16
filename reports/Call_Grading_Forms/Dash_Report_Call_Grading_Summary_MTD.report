@@ -48,6 +48,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Call_Grading_Forms__c.Partner_CSC,Call_Grading_Forms__c.Partner_20_Day,Call_Grading_Forms__c.Partner_40_Day,Call_Grading_Forms__c.Partner_70_Day,Call_Grading_Forms__c.PIN_Collection,Call_Grading_Forms__c.Partner_Save_Call</value>

@@ -19,12 +19,14 @@
         <booleanFilter>1 or 2</booleanFilter>
         <criteriaItems>
             <column>FK_CASE_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Yodle_Gold_Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Yodle_Gold_Service__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

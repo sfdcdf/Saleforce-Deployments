@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Connected with Target,IL Demo Scheduled,Ran IL Demo</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>upsell pilot 2016</value>

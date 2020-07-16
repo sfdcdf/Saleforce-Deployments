@@ -1,6 +1,12 @@
-public class updateCustSurvey 
+/*****************
+ * LOG:
+ * Developer : Mahesh Bogila
+ * Date:07/10/2020
+ * Usage: Forcustomer Survey which is submitted directly with email, then by email corresponding contact and account details are updated.
+ * **************/
+public without sharing class updatecustSurvey 
 {
-    public static void updateConAct(set<id> custSurId)
+    public static void updateconactMethod(set<id> custSurId)
     {
         map<string,id>map4CId = new map<string,id>();
         map<string,id>map4AId = new map<string,id>();
@@ -27,8 +33,8 @@ public class updateCustSurvey
         {
            
             temp.Id= temp.Id;
-            temp.Contact__c=map4CId.get(temp.Contact__c);
-            temp.Account__c=map4AId.get(temp.Account__c);
+            temp.Contact__c=map4CId.get(temp.Client_Email_from_Survey__c);
+            temp.Account__c=map4AId.get(temp.Client_Email_from_Survey__c);
             lst2itterate.add(temp);
             system.debug('***lst2itterate'+lst2itterate);
         }

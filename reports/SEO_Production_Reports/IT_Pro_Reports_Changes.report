@@ -22,12 +22,14 @@
     <filter>
         <criteriaItems>
             <column>LASTMODIFIEDDATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>FOLDER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SEO Production Reports</value>

@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Krista Avantini,mike sherry</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Chad Glenn</value>

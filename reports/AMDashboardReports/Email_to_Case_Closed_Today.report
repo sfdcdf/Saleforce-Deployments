@@ -31,18 +31,21 @@
         <booleanFilter>(1 AND (2 OR 3))</booleanFilter>
         <criteriaItems>
             <column>HOWNERNAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Email to Case,Customer Care,Jennifer Flanagan</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Email to Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Inbound Specialist,Outbound Specialist,Pin Collection Associate,Outbound Associate,Collections Consultant</value>

@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Object_History__r$Field_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Backed out</value>

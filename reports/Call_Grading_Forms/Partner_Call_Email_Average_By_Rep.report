@@ -22,18 +22,21 @@
         <booleanFilter>1 OR (2 AND 3)</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Partner_CSC,Call_Grading_Forms__c.Partner_20_Day,Call_Grading_Forms__c.Partner_40_Day,Call_Grading_Forms__c.Partner_70_Day,Call_Grading_Forms__c.Partner_Inbound_Call,Call_Grading_Forms__c.Partner_Save_Call,Call_Grading_Forms__c.Partner_CSC_Engage,Call_Grading_Forms__c.Partner_Setup_Completion_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Channel__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Partner</value>

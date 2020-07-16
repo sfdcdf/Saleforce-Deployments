@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Churned,Saved with No Concessions,Saved with Hard Concessions,Saved with Soft Concessions,Saved with Upsell,Saved By Sales,Saved - Bailout Pricing - Standard,Saved - Bailout Pricing - Custom,Saved with Discount,Saved with OBC Package,Downsold to LH Only,Downsold to LH+ProPack,Downsold to LH+ProPack+Mobile Manager</value>

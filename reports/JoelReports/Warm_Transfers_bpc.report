@@ -42,18 +42,21 @@
     <filter>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lead owner</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.Lead_Source_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>warm,phone</value>
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Open Sales</value>

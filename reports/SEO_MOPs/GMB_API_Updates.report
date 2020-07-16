@@ -63,36 +63,42 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Google Listing Status</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SFDC Connector</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>305988,305286,151345,306471,299753,306285,306874,306753,306673,306632,306625,306376,123657,306653,90254,61144,60904,60557,58820,303937,29358,159903,308038,307659,307290,282282,307264,239994,306918,306682,69076,304992,304110,306605,307135,307580,307280,307916,115806,66875,309870</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>310108,89206,105960,95705,93377,88631,101408,24558,87973,94025,88786,113303,108149,88687,55900,87580,112890,88184,89117,105486,92155,89010,91056,113555,57226,88957,109429,87904,104255,88818,112353,88785,113351,103012,86554,105895,93589,53637,88373,89371,89314,34962,89163,87032,103409,84917,102320,104349,92059,100242,88896,87846,85791,101143,94982,88839,86774,92906,95963,86736,103109,108220,103068,103040,87619,88621,91675,106983,87522,103856,104881,89508,19867,87437,91517,91498,104806,89439,111922,107826,86298,105755,100613,102649,84214,93392,88261,88255,87188,95341,101460,102472,87107,93204,93186,87038,84972,87015,86966,87984,112557,93096,93090,114590,107420,91035,87961,94102,87958,95098,98160,87921,95064,94036,100181,101196,103236,85825</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>91957,91953,98091,97065,102180,64278,109333,105233,87793,87771,94924,86733,103092,84654,87714,45730,51857,92802,93818,113273,88686,90720,96852,111189,108113,36427,114246,90693,85573,60996,55876,86590,94783,65077,103979,93730,87587,88598,88584,61958,100861,88571,88564,112101,89566,84434,88524,87495,84420,61891,94655,90555,111033,58802,92558,102788,89477,92547,105846,109940,87411,103785,96587,87361,89406,88381,110907,162098,87338,86300,86301,111897,94486,78099,108816,89343,90364,93434,99579,87276,85204,86226,90293,109742,109728,89244,86165,107662,101519,62600,88178,90215,87141,90210,93277,103508,112720,102474,115783,88125,84018,92207,99362,105502,94236,110602,95016,84703,93886,88703,94827,88622,62967,53680,112037,93442,90354,133419,240234</value>

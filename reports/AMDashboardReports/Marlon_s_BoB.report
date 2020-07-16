@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Local,Partner</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE,PROVISIONING</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>SEM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Animal Shelter &amp; Rescue,Appliance Repair,Art Galleries,Bail Bondsman Agent,Beauty and Salon Training Course,Carpet &amp; Flooring,Cosmetic Stores,Counselor,Courier,Messenger and Delivery Services,Dance Studio,Door Contractor,Electrician,Energy Auditing,Equipment Rental Service,Erectile Dysfunction Clinic,Event Venue,Garage Door Contractor,Gynecologists,Home Waterproofing,Hospitals and Medical Facilities,Hotel and Temporary Accommodation,HVAC Contractor,Infertility Treatment Center,Insulation Contractor,Insurance,Internet and E-Commerce,Jeweler,Junk Removal Service,Land Surveyors,Lawn Care Service,Limousine,Management &amp; Consulting Services,Manufacturing,Marriage Counselor,Mediation and Arbitration,Medical Groups &amp; Clinics,Medical Supplies,Nursing Homes,Obstetricians,Orthopedist,Podiatrist,Pressure Washing,Private Schools,Psychiatrist,Psychologist,Radiologists,Self Defense and Martial Arts Course,Self-Storage Center,Sporting Goods Store,Swimming Pool Facilities,Tattoo Removal Service</value>

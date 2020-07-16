@@ -63,12 +63,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Call Calibration</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>barb jenkins,makenzie cunningham,shelia kelly,erik vicars</value>

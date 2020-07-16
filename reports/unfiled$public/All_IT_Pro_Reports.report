@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>SHORT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>IT Pro</value>
         </criteriaItems>
         <criteriaItems>
             <column>LASTMODIFIEDDATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_N_DAYS:7</value>

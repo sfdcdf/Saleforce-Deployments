@@ -45,6 +45,7 @@
     <filter>
         <criteriaItems>
             <column>FK_CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Setup_Call</value>

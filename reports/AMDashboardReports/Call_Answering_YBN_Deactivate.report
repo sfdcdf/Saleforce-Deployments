@@ -28,24 +28,28 @@
         <booleanFilter>4 And (1 AND 2) OR 3</booleanFilter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Active</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cancel Service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National</value>

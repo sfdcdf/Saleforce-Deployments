@@ -37,18 +37,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.CS_Agent_Responsible__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Diane Mulkey,Elayne Hoover,Erik Vicars,Jackie Riedl,Makenzie Cunningham,Rory Diller,Sherri Aguinaga</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Interaction_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Diane Mulkey,Elayne Hoover,Erik Vicars,Jackie Riedl,Makenzie Cunningham,Rory Diller,Sherri Aguinaga</value>

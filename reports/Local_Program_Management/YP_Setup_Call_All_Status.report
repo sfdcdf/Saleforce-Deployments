@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Yodle_Path__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed,Did Not Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Setup Call</value>

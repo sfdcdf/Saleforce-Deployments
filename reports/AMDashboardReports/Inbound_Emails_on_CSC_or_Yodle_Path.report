@@ -18,24 +18,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases.EmailMessages$Incoming</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.EmailMessages$FromAddress</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>@yodle.com,@lighthousepmg.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call,Case.Yodle_Path_Experience</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CSC</value>

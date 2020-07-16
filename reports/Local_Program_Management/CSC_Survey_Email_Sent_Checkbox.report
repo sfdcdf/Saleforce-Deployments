@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Case.CSC_Survey_E_mail_Sent__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

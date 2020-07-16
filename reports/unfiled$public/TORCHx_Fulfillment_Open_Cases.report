@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Shannon Lang,Prisma Hernandez,Johnna Guidry,Alisha Herzberg,Nathan Hofberg,Andrew Salazar,Nikki Micou,Holly Macki,Leslie Goldman</value>

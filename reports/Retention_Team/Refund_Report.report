@@ -40,24 +40,28 @@
         <booleanFilter>((1 OR 2) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>None,Did Not Offer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Refund_Requested__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Retention,Outbound,Inbound</value>

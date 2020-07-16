@@ -89,6 +89,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Rusty&apos;s Cleaning Service - Test2</value>

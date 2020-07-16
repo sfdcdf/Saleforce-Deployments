@@ -81,120 +81,140 @@
         <booleanFilter>((((1 or 2) AND 3 AND 4 AND ((5 AND 6) or (7 AND 8 AND 20) or (9 AND 10) AND (11 AND 12 AND 13) or (14 AND 15 AND 16) or (17 AND 18)))) AND 19)</booleanFilter>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>jackie riedl,erik vicars,elayne hoover,sherri aguinaga,diane mulkey,rory diller,kelly o&apos;brien,makenzie cunningham,local pod queue,platinum support,LBWCustomerService@web.com,lbw support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Service_Model_Local__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>dedicated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>kyle zaffin,retention duplicate audit queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>N_DAYS_AGO:7</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>N_DAYS_AGO:14</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>4</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>N_DAYS_AGO:15</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>N_DAYS_AGO:21</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>5</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>N_DAYS_AGO:21</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>5+</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Current_Monthly_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>N_DAYS_AGO:7</value>

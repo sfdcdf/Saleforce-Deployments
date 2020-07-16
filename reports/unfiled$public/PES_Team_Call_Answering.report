@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Change Requested,Question/Issue,Cancel Service,Setup In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>National,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call Answering,Chase Woodhams,Shannon Doherty,Shawna Davis,Charles Butzine,Christine Bergman</value>

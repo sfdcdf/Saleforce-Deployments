@@ -44,24 +44,28 @@
     <filter>
         <criteriaItems>
             <column>Forecast_SnapShot__c$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Adam Rubin,David Kasdan,John Picciuto,Kalani Thomas,Mike Sherry,Therese O&apos;Brian,Jamie Singer,Jonathan Pomroy,Michael Ryan,Lara Richardson,Ellie McIntyre,Tricia Gahagan,Therse O&apos;BrianCory Morrison,Emily Currin,Amy Kramer,Chris Cormier,Greg George,Ian Burris,Debra Lozano,Russell Tvedt,John Benjamin,Adam Kazansky,Seth Kriegel,Sandra Martinez,Carinne Richdale</value>
         </criteriaItems>
         <criteriaItems>
             <column>Forecast_SnapShot__c$Stage__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>Forecast_SnapShot__c$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>5/19/2014 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Forecast_SnapShot__c$Opportunity_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ari Katz,Brian Heppner,Carl Pflanz,Daniel Boyce,Danielle Krieg,James Gardner,Jeremy Friedlander,Jennifer Torres,Kevin Noonan,Mark Armstrong,Minde Fawcett,Nick Dispenza,Peter Szalkowski,Riley Hughes,Derek Rosenzweig,Andrew Little,Greg Boyle</value>

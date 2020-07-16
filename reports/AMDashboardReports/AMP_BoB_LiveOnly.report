@@ -198,18 +198,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>lead stream support,Jennifer Degreef,Jordan Sanchez,Keegan Sandman,Kyler Wood,Mark Nagy,Reagan Neely,Shelby Cowman,Shelia Kelly,Adam Kovacs,Amber Tamayo,Andrew Smith,James Brady,Paul Mascitti,Ryan Crary,Suzanne Oyenarte,Erik Vicars,Erika Persil,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,amber woodhams,valerie smith,brittany fountain</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

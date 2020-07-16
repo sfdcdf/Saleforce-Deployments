@@ -95,18 +95,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Nina Avery,Angela Hoddinott,Karen Park,Kayla Muir,Kimberley Boutilier,Stephen Gerrior,Walter Rundle,Leonard Edwards,Angela Luddington,Marsha Cunningham,Dawn Jordan,Linda Keating</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Closed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>progress</value>

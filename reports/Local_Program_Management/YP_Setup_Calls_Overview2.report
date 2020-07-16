@@ -45,12 +45,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Setup_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Scheduled_Setup_Call_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>TODAY</value>

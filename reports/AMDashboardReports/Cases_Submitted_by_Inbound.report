@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Nicholas Brooks,Mark Champ,Jorge Suarez,Natalie Larner,William Sheehan,Shannon Vaughn,Jeff Brenot,Tina Kozelsky,Javier Quiroz,Arleen Reynolds,Jaime Jimenez,Kati Pike,Hiep Nguyen,Adesewa Faleti,Sara Henry,Adam Styer,Jeff Aguilar,Johhny Gaunnt,Derek Newberry,Chris Masterson</value>

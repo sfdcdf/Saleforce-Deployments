@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Business_Name_Inputted_into_GLocal__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>OR 1,OR 1.0,Rogers -,OR1</value>

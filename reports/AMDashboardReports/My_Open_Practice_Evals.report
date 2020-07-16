@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>

@@ -27,30 +27,35 @@
     <filter>
         <criteriaItems>
             <column>EMAIL.STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>elayne hoover,willliam redden,miri oakford,matthew hausman,jackie riedl,christopher baker,crystal bellew,kyle day,shannon vaughn,brittanie hickman,nicole perez,lauren aldana,makenzie cunningham,amy webster</value>
         </criteriaItems>
         <criteriaItems>
             <column>EMAIL.FROM_ADDRESS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>@lighthousepmg.com,platinumsupport@yodle.com,@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>[Auto-Reply],Undeliverable</value>

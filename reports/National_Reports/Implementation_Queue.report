@@ -19,24 +19,28 @@
         <booleanFilter>1 AND (2 OR 3 Or 4)</booleanFilter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed,Closed - changes made,Closed - Churned,Closed - Errors Found/Fixed,Closed - KW Change Rejected,Closed - never received confirmation,Closed - Opt Complete,Closed - Opt Not Necessary,Complete,Closed - Out of Save Mode,Closed - SMC Action Complete,Closed - SMC Action Incomplete,Closed - Unsaveable,Complete AutoLaunch,Closed - Created in YL Tracker</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Implementation Specialist Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Steve Jones</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Matt Jordan</value>

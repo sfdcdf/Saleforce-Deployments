@@ -44,12 +44,14 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>YBN Inbound Inquiry</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>David Richards,Kimberly Williams,Logan Rollier,Thomas Black,Cecily Bolton,Kristen Antoline,Todd Weiss,Conor Mooney,Jeremy Giles,Elizabeth Groce</value>

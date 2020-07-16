@@ -64,60 +64,70 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Awaiting PIN,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Listing Claimed Needs Updating,Listing Claimed &amp; Updated,Report to Google,Pending Pin Receipt,Removed by Google,Reported to Google,Owner-Verified,Un-Claimable,Owner-Verified/Managed,Do Not Claim,Unverified Existing Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Awaiting PIN,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Listing Claimed Needs Updating,Listing Claimed &amp; Updated,Report to Google,Pending Pin Receipt,Removed by Google,Reported to Google,Owner-Verified,Un-Claimable,Owner-Verified/Managed,Do Not Claim,Unverified Existing Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Awaiting PIN,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Listing Claimed Needs Updating,Listing Claimed &amp; Updated,Report to Google,Pending Pin Receipt,Removed by Google,Reported to Google,Owner-Verified,Un-Claimable,Owner-Verified/Managed,Do Not Claim,Unverified Existing Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Awaiting PIN,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Listing Claimed Needs Updating,Listing Claimed &amp; Updated,Report to Google,Pending Pin Receipt,Removed by Google,Reported to Google,Owner-Verified,Un-Claimable,Owner-Verified/Managed,Do Not Claim,Unverified Existing Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_White_List_Test__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Non Compliant Client</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Client Refuses Claim</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner_Verified_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Owner-Verified/Pending Management,Owner-Verified/Managed</value>

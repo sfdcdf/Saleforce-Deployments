@@ -28,48 +28,56 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7 OR 8))</booleanFilter>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>500</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Not Started,In Progress,Did Not Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Touch_Plan_Pass_Fail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Pass</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Touch Plan 1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X1st_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Short Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X2nd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Short Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X3rd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Short Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X4th_or_More_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Short Script</value>

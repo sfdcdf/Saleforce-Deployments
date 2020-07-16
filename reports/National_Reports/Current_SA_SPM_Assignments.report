@@ -25,12 +25,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Solutions_Architect__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Strategic_Project_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -195,48 +195,56 @@
         <booleanFilter>((1 or 6 or 7) AND (2 OR 3) AND 4 AND 5) AND 8</booleanFilter>
         <criteriaItems>
             <column>Account.Service_Model_Local__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>dedicated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_this_MTD__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>kyle zaffin</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Local</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jennifer Degreef,Jordan Sanchez,Keegan Sandman,Kyler Wood,Mark Nagy,Reagan Neely,Shelby Cowman,Shelia Kelly,Adam Kovacs,Amber Tamayo,Andrew Smith,James Brady,Paul Mascitti,Ryan Crary,Suzanne Oyenarte,Erik Vicars,Erika Persil,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Angela Hoddinott,Karen Park,Kayla Muir,Kimberley Boutilier,Leonard Edwards,Stephen Gerrior,Walter Rundle,Alvin Jobe,Alyson MacDonald,Angela Snow,April Law,Barb Jenkins,Blake MacPhee,Gwen Doyle,Kathleen Wilson,Kathryn Leadbeater,Kathy Caldwell,Lesa Lemay Marilyn Bray,Marilyn Slaunwhite,Mark Cosh,Nina Avery,Robert Jones,Rondell Humphreys,Samantha Sewell,Brittany Fountain</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

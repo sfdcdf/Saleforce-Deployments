@@ -28,18 +28,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Messages Activated,Backed Out Sale,Complete,Delete Case,Not Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse CSC Rep</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brian Allen,Adam Lovill,shane butler,Rory Diller,Katura Daniel,Katie Yee,Matt Kerlin,Krystal Bell,Kami Banner</value>

@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Account_Description__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>ONBOARDING TEST</value>

@@ -27,36 +27,42 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>jennifer hecker</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Mail delivery failed,Your daily,Alert: Client,You have received,News from Outrank,New Case,Your monthly performance,4 in,Done,Initial Error Check,credit card,billing,billed,14-Day Decline Alert,save mode,Log into Outrank to see your baseline performance!,Failed Landing Page,[Outrank],New case comment notification,Charge Failure,failure notice,SPAM,Undelivered Mail,You Received a New Review,Yodle: You missed a call,Log into Outrank,Your weekly performance report,Low Advertising Funds,Client Spend Alert,Search Influence Work Completed,Your Yodle Account has been Launched,Add Promos to Ad Copy/Campaign/WebSite,Hi,Hello,Client 104415</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Jeremy&apos;s Powerhouse Gym</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Local Cancel Request</value>
