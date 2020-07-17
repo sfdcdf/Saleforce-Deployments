@@ -105,6 +105,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>NetworkAdoption</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>OpportunityLineItemRelatedList</apexPage>
         <enabled>true</enabled>
     </pageAccesses>

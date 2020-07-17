@@ -5,20 +5,15 @@
     <allowStandardAnswersPages>false</allowStandardAnswersPages>
     <allowStandardIdeasPages>false</allowStandardIdeasPages>
     <allowStandardLookups>false</allowStandardLookups>
-    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardPortalPages>false</allowStandardPortalPages>
     <allowStandardSearch>false</allowStandardSearch>
     <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
     <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
     <browserXssProtection>false</browserXssProtection>
-    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <clickjackProtectionLevel>NoFraming</clickjackProtectionLevel>
     <contentSniffingProtection>false</contentSniffingProtection>
     <cspUpgradeInsecureRequests>false</cspUpgradeInsecureRequests>
-    <customWebAddresses>
-        <certificate>Partner_Community_SSL_Certificate</certificate>
-        <domainName>partnerportal.yodle.com</domainName>
-        <primary>false</primary>
-    </customWebAddresses>
-    <enableAuraRequests>true</enableAuraRequests>
+    <enableAuraRequests>false</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>CommunitiesLogin</inMaintenancePage>
@@ -26,12 +21,11 @@
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>Yodle Partner Portal</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
-    <requireHttps>true</requireHttps>
+    <requireHttps>false</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
     
     <siteGuestRecordDefaultOwner>salesforcealerts@yodle.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>yodle-community</subdomain>
-    <urlPathPrefix>LighthouseDental</urlPathPrefix>
 </CustomSite>

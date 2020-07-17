@@ -56,6 +56,9 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <field>Customer_Surveys__c.NPS_Score_Count__c</field>
+    </columns>
+    <columns>
         <field>Customer_Surveys__c.Issue_Survey_What_can_we_do_to_improve__c</field>
     </columns>
     <columns>
@@ -106,6 +109,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <endDate>2020-07-16</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-05-01</startDate>
     </timeFrameFilter>
 </Report>

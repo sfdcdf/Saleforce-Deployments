@@ -26,25 +26,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>Lighthouse_Field_Service</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>LHFS Android App,LHFS iOS App</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>salesforcealerts@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Sales Promotion</value>
-            </criteriaItems>
-            <template>unfiled$public/SUPPORTNewassignmentnotification</template>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>Centermark_BI</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
