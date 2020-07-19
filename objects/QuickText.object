@@ -1,27 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <fullName>Message</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Category</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Channel</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
     <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
@@ -179,21 +156,33 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Read</externalSharingModel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Message</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Category</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>Message</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Category</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Channel</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Message</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Category</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Channel</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>Read</sharingModel>
+    <fields>
+        <fullName>IsInsertable</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Message</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Channel</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
     <listViews>
         <fullName>Rogers_Support_QuickText</fullName>
         <filterScope>Queue</filterScope>
@@ -203,4 +192,23 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>Message</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Category</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsInsertable</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Message</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Category</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Channel</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IsInsertable</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Message</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Category</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Channel</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>IsInsertable</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsInsertable</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
 </CustomObject>
