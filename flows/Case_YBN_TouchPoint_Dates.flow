@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -114,7 +98,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_0859588568</name>
+        <name>formula_2_myRule_1_A1_8032623300</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -125,7 +109,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_5_myRule_4_A1_1141078701</name>
+        <name>formula_5_myRule_4_A1_1953502274</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -136,7 +120,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_8_myRule_7_A1_1263306890</name>
+        <name>formula_8_myRule_7_A1_0517928036</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -155,7 +139,9 @@
       ISPICKVAL([Case].Status, &apos;Completed&apos;),
       ISPICKVAL([Case].Status, &apos;Incomplete after 2nd Attempt&apos;),
       ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
-      ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;)
+      ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;),
+      ISPICKVAL([Case].Status, &apos;Call Scheduled – No Show&apos;),
+      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;)
    )
 )</stringValue>
             </value>
@@ -173,7 +159,9 @@
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Incomplete after 2nd Attempt&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
-      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;)
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Call Scheduled – No Show&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;)
    )
 )</expression>
     </formulas>
@@ -194,7 +182,9 @@
       ISPICKVAL([Case].Status, &apos;Incomplete after 2nd Attempt&apos;),
       ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
       ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;),
-ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;)
+      ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;),
+      ISPICKVAL([Case].Status, &apos;Call Scheduled – No Show&apos;),
+      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;)
 
    )
 )</stringValue>
@@ -215,7 +205,9 @@ ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;)
       ISPICKVAL({!myVariable_current.Status}, &apos;Incomplete after 2nd Attempt&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;),
-ISPICKVAL({!myVariable_current.Status}, &apos;Completed - Client Declined&apos;)
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed - Client Declined&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Call Scheduled – No Show&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;)
 
    )
 )</expression>
@@ -242,7 +234,9 @@ ISPICKVAL([Case].Reason_Detail__c, &quot;Weekly Touch Point&quot;)
       ISPICKVAL([Case].Status, &apos;Incomplete after 2nd Attempt&apos;),
       ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
       ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;),
-      ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;)
+      ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;),
+      ISPICKVAL([Case].Status, &apos;Call Scheduled – No Show&apos;),
+      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;)
    )
 )
 </stringValue>
@@ -268,11 +262,13 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
       ISPICKVAL({!myVariable_current.Status}, &apos;Incomplete after 2nd Attempt&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;),
-      ISPICKVAL({!myVariable_current.Status}, &apos;Completed - Client Declined&apos;)
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed - Client Declined&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Call Scheduled – No Show&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;)
    )
 )</expression>
     </formulas>
-    <interviewLabel>Case_YBN_TouchPoint_Dates-8_InterviewLabel</interviewLabel>
+    <interviewLabel>Case_YBN_TouchPoint_Dates-9_InterviewLabel</interviewLabel>
     <label>Case - YBN TouchPoint Dates</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -307,6 +303,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </value>
         </processMetadataValues>
         <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
             <name>isChildRelationship</name>
             <value>
                 <booleanValue>false</booleanValue>
@@ -317,6 +316,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             <value>
                 <stringValue>[Case].Account ID</stringValue>
             </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
         </processMetadataValues>
         <name>myRule_1_A1</name>
         <label>Update Account Completed Date</label>
@@ -362,7 +364,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>YBN_CSC_Completed_Date__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_0859588568</elementReference>
+                <elementReference>formula_2_myRule_1_A1_8032623300</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -375,6 +377,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </value>
         </processMetadataValues>
         <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
             <name>isChildRelationship</name>
             <value>
                 <booleanValue>false</booleanValue>
@@ -385,6 +390,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             <value>
                 <stringValue>[Case].Account ID</stringValue>
             </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
         </processMetadataValues>
         <name>myRule_4_A1</name>
         <label>Update Account Month 1 CIC Date</label>
@@ -430,7 +438,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>Month_1_Check_In_Completed_Date__c</field>
             <value>
-                <elementReference>formula_5_myRule_4_A1_1141078701</elementReference>
+                <elementReference>formula_5_myRule_4_A1_1953502274</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -443,6 +451,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </value>
         </processMetadataValues>
         <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
             <name>isChildRelationship</name>
             <value>
                 <booleanValue>false</booleanValue>
@@ -453,6 +464,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             <value>
                 <stringValue>[Case].Account ID</stringValue>
             </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
         </processMetadataValues>
         <name>myRule_7_A1</name>
         <label>Update Account Last Completed YBN TP</label>
@@ -498,12 +512,12 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>Last_Completed_YBN_TP__c</field>
             <value>
-                <elementReference>formula_8_myRule_7_A1_1263306890</elementReference>
+                <elementReference>formula_8_myRule_7_A1_0517928036</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
     </recordUpdates>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <startElementReference>myDecision</startElementReference>
     <status>Active</status>
     <variables>
         <name>myVariable_current</name>
@@ -520,15 +534,5 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Case</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>
