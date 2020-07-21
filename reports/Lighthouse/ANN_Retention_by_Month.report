@@ -126,12 +126,6 @@
         <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
     </columns>
     <columns>
-        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
-    </columns>
-    <columns>
-        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
-    </columns>
-    <columns>
         <field>Cancellation_Request__c.Requesting_to_Cancel__c</field>
     </columns>
     <columns>
@@ -189,6 +183,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

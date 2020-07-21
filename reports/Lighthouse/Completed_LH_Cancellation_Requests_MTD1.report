@@ -105,12 +105,6 @@
         <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
     </columns>
     <columns>
-        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
-    </columns>
-    <columns>
-        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
-    </columns>
-    <columns>
         <field>Cancellation_Request__c.Requesting_to_Cancel__c</field>
     </columns>
     <columns>
@@ -121,6 +115,9 @@
     </columns>
     <columns>
         <field>Cancellation_Request__c.Description__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Discount_Offered__c</field>
     </columns>
     <columns>
         <field>Cancellation_Request__c.Pre_Launch_Cancel__c</field>
@@ -171,6 +168,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Cancellation_Request__c.Discount_Offered__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>
