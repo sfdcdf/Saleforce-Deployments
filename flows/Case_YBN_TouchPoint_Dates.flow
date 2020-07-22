@@ -98,7 +98,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_8032623300</name>
+        <name>formula_2_myRule_1_A1_9692980453</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -109,7 +109,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_5_myRule_4_A1_1953502274</name>
+        <name>formula_5_myRule_4_A1_5247661729</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -120,7 +120,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_8_myRule_7_A1_0517928036</name>
+        <name>formula_8_myRule_7_A1_9923366008</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -268,7 +268,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
    )
 )</expression>
     </formulas>
-    <interviewLabel>Case_YBN_TouchPoint_Dates-9_InterviewLabel</interviewLabel>
+    <interviewLabel>Case_YBN_TouchPoint_Dates-10_InterviewLabel</interviewLabel>
     <label>Case - YBN TouchPoint Dates</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -324,6 +324,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
         <label>Update Account Completed Date</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision3</targetReference>
+        </connector>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -364,7 +367,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>YBN_CSC_Completed_Date__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_8032623300</elementReference>
+                <elementReference>formula_2_myRule_1_A1_9692980453</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -398,6 +401,9 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
         <label>Update Account Month 1 CIC Date</label>
         <locationX>400</locationX>
         <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision6</targetReference>
+        </connector>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -438,7 +444,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>Month_1_Check_In_Completed_Date__c</field>
             <value>
-                <elementReference>formula_5_myRule_4_A1_1953502274</elementReference>
+                <elementReference>formula_5_myRule_4_A1_5247661729</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -512,7 +518,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>Last_Completed_YBN_TP__c</field>
             <value>
-                <elementReference>formula_8_myRule_7_A1_0517928036</elementReference>
+                <elementReference>formula_8_myRule_7_A1_9923366008</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
