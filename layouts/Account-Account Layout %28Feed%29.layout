@@ -46,8 +46,7 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
@@ -1463,13 +1462,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Disposition__c</field>
-            </layoutItems>
-            <layoutItems>
-                <height>200</height>
-                <page>ahaapp__AhaAccountIdeas</page>
-                <showLabel>false</showLabel>
-                <showScrollbars>false</showScrollbars>
-                <width>100%</width>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
