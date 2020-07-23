@@ -53,8 +53,7 @@
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
@@ -1122,15 +1121,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Aha!</label>
-        <layoutColumns>
-            <layoutItems>
-                <height>200</height>
-                <page>ahaapp__AhaAccountIdeas</page>
-                <showLabel>false</showLabel>
-                <showScrollbars>false</showScrollbars>
-                <width>100%</width>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>OneColumn</style>
     </layoutSections>
     <miniLayout>

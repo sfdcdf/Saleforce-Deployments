@@ -31,6 +31,9 @@
             <sourceValues>
                 <sourceValue>Completed - Client Declined</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Call Scheduled – No Show</sourceValue>
+            </sourceValues>
             <value>Connected</value>
         </values>
         <values>
@@ -54,6 +57,9 @@
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
     </columns>
     <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
