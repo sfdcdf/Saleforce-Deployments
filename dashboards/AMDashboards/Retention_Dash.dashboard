@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -14,7 +14,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>SAME DAY SLA</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Cancel Forms - Contacts</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -31,7 +31,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>SAME DAY SLA</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -46,7 +46,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -61,7 +61,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -76,7 +76,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -90,7 +90,7 @@
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
             <footer>Goal: Should be &lt;5</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Aging Cancel Forms</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -108,7 +108,7 @@
             <displayUnits>Auto</displayUnits>
             <gaugeMax>100.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>My Rev Saved Today</header>
             <indicatorBreakpoint1>30.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>45.0</indicatorBreakpoint2>
@@ -128,7 +128,7 @@
             <displayUnits>Auto</displayUnits>
             <gaugeMax>100.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Team MTD % Rev Saved</header>
             <indicatorBreakpoint1>30.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>45.0</indicatorBreakpoint2>
@@ -148,7 +148,7 @@
             <displayUnits>Auto</displayUnits>
             <gaugeMax>100.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Revenue Saved Today</header>
             <indicatorBreakpoint1>30.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>45.0</indicatorBreakpoint2>
@@ -169,7 +169,7 @@
             <footer>Goal: 55%</footer>
             <gaugeMax>100.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Revenue Metrics</header>
             <indicatorBreakpoint1>30.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>55.0</indicatorBreakpoint2>
@@ -192,7 +192,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Upsells</header>
             <legendPosition>Bottom</legendPosition>
             <report>AMDashboardReports/Retention_MTD_Upsells</report>
@@ -205,22 +205,6 @@
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>Only showing unverified upsells past billing date</footer>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Retention_Upsells_to_be_Verified</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>All Upsells Needing Verification</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Line</componentType>
             <displayUnits>Auto</displayUnits>
@@ -228,7 +212,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Volume</header>
             <legendPosition>Bottom</legendPosition>
             <report>AMDashboardReports/Cancel_Requests_Created_MTD1</report>
@@ -246,7 +230,7 @@
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
             <footer>Should be at ZERO by EOD</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Case Load</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -260,7 +244,7 @@
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
             <footer>Should be at ZERO by EOD</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -273,7 +257,7 @@
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
             <footer>Should ALWAYS be at 0</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -285,7 +269,7 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -299,7 +283,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>

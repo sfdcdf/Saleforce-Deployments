@@ -1,64 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
     <dashboardFilters>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Miracle-Ear</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Heartland Dental Care</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Merry Maids</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Hand &amp; Stone - Master</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Maaco</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Johnson Controls - Liberties Dealers</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Senior Helpers</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Aire Serv Heating &amp; Air Conditioning Master,Glass Doctor,Mr. Appliance,Mr. Electric</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Mr. Rooter</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Painting with a Twist,LLC</values>
-        </dashboardFilterOptions>
         <name>YBN Relationship</name>
     </dashboardFilters>
     <dashboardFilters>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_N_DAYS:30</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_N_DAYS:14</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_N_DAYS:7</values>
-        </dashboardFilterOptions>
         <name>Opened Date</name>
     </dashboardFilters>
     <dashboardType>SpecifiedUser</dashboardType>
@@ -100,50 +48,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>** Excludes Phone</footer>
-            <groupingSortProperties/>
-            <header>First Response</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Operations_Report/Client_Dash_Responses_Under_1_Hour</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardFilterColumns>
-                <column>Account.YBN_Relationship__c</column>
-            </dashboardFilterColumns>
-            <dashboardFilterColumns>
-                <column>CREATED_DATEONLY</column>
-            </dashboardFilterColumns>
-            <dashboardTableColumn>
-                <column>ORIGIN</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA1</column>
-                <decimalPlaces>0</decimalPlaces>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA2</column>
-                <decimalPlaces>0</decimalPlaces>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>true</calculatePercent>
-                <column>FORMULA3</column>
-                <decimalPlaces>0</decimalPlaces>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <decimalPrecision>0</decimalPrecision>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Initial Resolution</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -185,7 +90,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Reopened Resolution</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -225,7 +130,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>** CURRENT MONTH ONLY</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Outbound TouchPoints (This Month)</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -245,7 +150,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Escalated Cases</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -273,7 +178,7 @@
             <displayUnits>Auto</displayUnits>
             <gaugeMax>10.0</gaugeMax>
             <gaugeMin>1.0</gaugeMin>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Issue Survey - Avg Rating</header>
             <indicatorBreakpoint1>6.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>8.0</indicatorBreakpoint2>
@@ -315,7 +220,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Issue Survey - Rating</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -357,7 +262,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Issue Survey - Responses</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>

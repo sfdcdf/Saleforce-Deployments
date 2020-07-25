@@ -13,7 +13,13 @@
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
+        <field>Case.Initial_DateTime_Closed__c</field>
+    </columns>
+    <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -116,6 +122,11 @@
         <field>RECORDTYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.First_Response_Date_Time__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>CY CSC Case Data</name>
     <params>
         <name>units</name>
@@ -127,7 +138,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
