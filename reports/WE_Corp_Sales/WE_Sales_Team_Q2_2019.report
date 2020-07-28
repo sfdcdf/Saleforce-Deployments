@@ -7,6 +7,33 @@
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
+        <field>Opportunity.On_Hold_Status__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Client_Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_First_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Last_Name__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_LINE1</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
+    </columns>
+    <columns>
         <field>Account.Key_Account__c</field>
     </columns>
     <columns>
@@ -91,7 +118,7 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <description>High Probability Opps</description>
+    <description>All Opps</description>
     <filter>
         <criteriaItems>
             <column>User.Role_Name__c</column>

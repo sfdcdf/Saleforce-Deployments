@@ -16,6 +16,18 @@
         <field>Case.Initial_DateTime_Closed__c</field>
     </columns>
     <columns>
+        <field>Case.First_Response_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Account.Corp_Acct_in_YL_Parent_Account__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
     </columns>
     <columns>
@@ -111,22 +123,7 @@
             <value>YBN</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Account.Corp_Acct_in_YL_Parent_Account__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>RECORDTYPE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Case.First_Response_Date_Time__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
+    <format>Tabular</format>
     <name>CY CSC Case Data</name>
     <params>
         <name>units</name>
