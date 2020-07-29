@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -9,34 +9,6 @@
         <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>PRIORITY</column>
-                <sortBy>RowLabelAscending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>Case.Reason_Detail__c</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Quality_All_Open_in_Queue_Lighthouse</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <title>All Open Quality QAs - Unassigned</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
@@ -44,7 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>QA_TEAM/Quality_Report_Base_LH</report>
             <showPercentage>false</showPercentage>
@@ -56,75 +28,9 @@
     </leftSection>
     <middleSection>
         <columnSize>Wide</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>OWNER</column>
-                <sortBy>RowLabelAscending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>PRIORITY</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/All_Open_Cases_Quality_Team_Lighthouse</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <title>All Open Cases - Assigned</title>
-        </components>
     </middleSection>
     <rightSection>
         <columnSize>Wide</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Bar</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
-            <legendPosition>Bottom</legendPosition>
-            <report>AMDashboardReports/MTD_Completed_Quality_Cases_Lighthouse</report>
-            <showPercentage>false</showPercentage>
-            <showPicturesOnCharts>false</showPicturesOnCharts>
-            <showValues>true</showValues>
-            <sortBy>RowValueDescending</sortBy>
-            <title>Completed Cases - MTD</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Bar</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
-            <legendPosition>Bottom</legendPosition>
-            <report>AMDashboardReports/WTD_Completed_Quality_Cases_Lighthouse</report>
-            <showPercentage>false</showPercentage>
-            <showPicturesOnCharts>false</showPicturesOnCharts>
-            <showValues>true</showValues>
-            <sortBy>RowValueDescending</sortBy>
-            <title>Completed Cases - Weekly</title>
-            <useReportChart>false</useReportChart>
-        </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -134,7 +40,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>AMDashboardReports/Daily_Completed_Quality_Cases_Lighthou</report>
             <showPercentage>false</showPercentage>
