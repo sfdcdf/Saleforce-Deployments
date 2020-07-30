@@ -31,6 +31,9 @@
     <columns>
         <field>FK_NAME</field>
     </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Install_Meeting_Notes__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
@@ -58,6 +61,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.Initial_Stall_date__c</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>
