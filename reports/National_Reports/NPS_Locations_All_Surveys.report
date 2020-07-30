@@ -39,6 +39,9 @@
         <field>Customer_Surveys__c.Client_ID_2__c</field>
     </columns>
     <columns>
+        <field>FK_ACC_PARENT_NAME</field>
+    </columns>
+    <columns>
         <field>FK_NAME</field>
     </columns>
     <columns>
@@ -125,6 +128,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

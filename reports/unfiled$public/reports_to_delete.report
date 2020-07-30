@@ -4,6 +4,9 @@
         <field>Report$Name</field>
     </columns>
     <columns>
+        <field>Report$LastRunDate</field>
+    </columns>
+    <columns>
         <field>Report$Id</field>
     </columns>
     <columns>
@@ -20,11 +23,11 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Report$LastRunDate</column>
+            <column>Report$Owner</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>lessThan</operator>
-            <value>1/1/2018 12:00 AM</value>
+            <operator>equals</operator>
+            <value>Lighthouse</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
