@@ -4,10 +4,28 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.YBN_Consultant__c</field>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Value__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Care_to_tell_us_why__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Level_of_stratigic_marketing_provided__c</field>
     </columns>
     <columns>
         <field>Customer_Surveys__c.Network_satisfaction_with_Web_com__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Anything_to_share_about_your_experience__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Detail_on_your_likelihood_to_recomm__c</field>
     </columns>
     <columns>
         <field>Customer_Surveys__c.Contact_Name__c</field>
@@ -22,10 +40,7 @@
         <field>CUST_CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Client_ID_2__c</field>
-    </columns>
-    <columns>
-        <field>FK_NAME</field>
+        <field>Customer_Surveys__c.Response_Date__c</field>
     </columns>
     <columns>
         <field>Customer_Surveys__c.Attempt_Result_1__c</field>
@@ -35,12 +50,6 @@
     </columns>
     <columns>
         <field>Customer_Surveys__c.Attempt_Result_2__c</field>
-    </columns>
-    <columns>
-        <field>Customer_Surveys__c.Attempt_Date_3__c</field>
-    </columns>
-    <columns>
-        <field>Customer_Surveys__c.Attempt_Result_3__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -68,12 +77,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Customer_Surveys__c.YBN_CSD__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Customer_Surveys__c.Response_Date__c</field>
+        <field>FK_$Account.Account_Director__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>WFE Corp NPS Responses (All Scores)</name>

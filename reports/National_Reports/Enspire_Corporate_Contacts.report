@@ -30,6 +30,9 @@
     <columns>
         <field>Account.AccountId18__c</field>
     </columns>
+    <columns>
+        <field>Account.Account_Director__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>ACCOUNT_RECORDTYPE</column>
@@ -66,13 +69,22 @@
             <operator>equals</operator>
             <value>Andrea Christy-Glover,Andrew McQuain,Angela Orbon,April Flaum,Austin Webb,Grace Danehy,John Scott,Sean Balaban,Anthony Doty,LeRonnie Reed</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Role__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Decision Maker,Marketing Manager</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Account.Account_Director__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Enspire Corporate Contacts</name>
     <params>
         <name>co</name>
