@@ -20136,6 +20136,16 @@
     <field>Lighthouse_Worksheets__c.NEW_Portal_Link__c</field>
 </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.NPI_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.NPI_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Lighthouse_Worksheets__c.Name_Announcement__c</field>

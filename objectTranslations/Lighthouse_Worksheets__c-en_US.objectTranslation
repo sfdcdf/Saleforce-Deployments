@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lighthouse Worksheets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lighthouse Worksheets</value>
+    </caseValues>
     <fields>
         <label><!-- Account Pinned in Bomgar? --></label>
         <name>Account_Pinned_in_Bomgar2__c</name>
@@ -2917,6 +2925,14 @@ if exist then re-assign to new 360 acct --></help>
     <fields>
         <label><!-- Link to Client Portal --></label>
         <name>NEW_Portal_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Name --></label>
+        <name>NPI_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>NPI_Number__c</name>
     </fields>
     <fields>
         <help><!-- How should we announce the doctors name or office name in the message? --></help>
@@ -6603,15 +6619,6 @@ if exist then re-assign to new 360 acct --></help>
         <label><!-- Care Credit --></label>
         <name>Care_Credit__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Lighthouse Worksheets</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Lighthouse Worksheets</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>AR Request Form (feed)</layout>
         <sections>
@@ -7315,6 +7322,7 @@ if exist then re-assign to new 360 acct --></help>
         <label><!-- PMS Swap Form --></label>
         <name>PMS_Swap_Form</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- If you fill out any field in the Account Settings Section,  you must also fill out the &quot;Test Appointments (Scheduled 1 mo. out)&quot; field --></errorMessage>
         <name>Account_Settings_must_fill_out_Test_Appt</name>

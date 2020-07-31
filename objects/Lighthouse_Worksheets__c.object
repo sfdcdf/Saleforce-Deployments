@@ -6945,6 +6945,30 @@ ISPICKVAL(Disable_Recall_Postcards_for_Patients__c,"Disable ALL"),
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>NPI_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>NPI Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NPI_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>NPI Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Name_Announcement__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>How should we announce the doctors name or office name in the message?</inlineHelpText>

@@ -2177,6 +2177,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.NPI_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lighthouse_Worksheets__c.NPI_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lighthouse_Worksheets__c.Office_Manager_Email__c</field>
         <readable>true</readable>
     </fieldPermissions>
