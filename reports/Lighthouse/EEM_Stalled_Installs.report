@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>CUST_NAME</field>
+        <field>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</field>
     </columns>
     <columns>
-        <field>CUST_RECORDTYPE</field>
+        <field>Lighthouse_Worksheets__c.Stall_Reason__c</field>
     </columns>
     <columns>
         <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
@@ -16,19 +16,19 @@
         <field>Lighthouse_Worksheets__c.Practice_Name__c</field>
     </columns>
     <columns>
-        <field>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</field>
+        <field>Lighthouse_Worksheets__c.PMS__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
     </columns>
     <columns>
         <field>Lighthouse_Worksheets__c.Status__c</field>
     </columns>
     <columns>
-        <field>Lighthouse_Worksheets__c.Stall_Reason__c</field>
+        <field>CUST_RECORDTYPE</field>
     </columns>
     <columns>
         <field>Lighthouse_Worksheets__c.Investigate_Details__c</field>
-    </columns>
-    <columns>
-        <field>Lighthouse_Worksheets__c.PMS__c</field>
     </columns>
     <columns>
         <field>Lighthouse_Worksheets__c.Segment__c</field>
@@ -88,8 +88,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</dateColumn>
-        <endDate>2020-07-30</endDate>
+        <endDate>2020-07-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-07-27</startDate>
+        <startDate>2020-07-31</startDate>
     </timeFrameFilter>
 </Report>
