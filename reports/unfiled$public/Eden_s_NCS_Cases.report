@@ -26,13 +26,6 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>OWNER</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Eden Meirow</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CLOSED</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -63,7 +56,7 @@
         <value>1</value>
     </params>
     <reportType>CaseList</reportType>
-    <scope>organization</scope>
+    <scope>user</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>

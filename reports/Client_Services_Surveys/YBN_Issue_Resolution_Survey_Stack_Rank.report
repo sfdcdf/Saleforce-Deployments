@@ -109,8 +109,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <endDate>2020-07-16</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-05-01</startDate>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
