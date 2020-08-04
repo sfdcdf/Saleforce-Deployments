@@ -14671,6 +14671,55 @@ ISPICKVAL( Tx_Plan_Msg_4_Type__c ,"Letter (Default)"),
         <queue>LH_Config_Queue</queue>
     </listViews>
     <listViews>
+        <fullName>LH_OOS_Untouched1</fullName>
+        <booleanFilter>((1 AND 2 AND 5) AND (3 OR 4)) AND (6 OR (7 AND 8))</booleanFilter>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lighthouse_Worksheets__c.LH_OOS</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Complete,Delete Case</value>
+        </filters>
+        <filters>
+            <field>Defer_Until__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Defer_Until__c</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>LAST_ACTIVITY</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Investigate__c</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Time_Zone__c</field>
+            <operation>equals</operation>
+            <value>MA Priority</value>
+        </filters>
+        <filters>
+            <field>Investigate__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>LH OOS Untouched1</label>
+        <sharedTo>
+            <group>OOS_Worksheet_Gorup</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>LH_Tier_2_Support_Lighthouse_Worksheets</fullName>
         <filterScope>Queue</filterScope>
         <label>LH Tier 2 Support</label>
