@@ -9663,6 +9663,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Account_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.Account_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -23959,6 +23964,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Client_TimeZone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Client_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
