@@ -54,7 +54,6 @@
     <tabs>standard-ContentSubscriptions</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
-    <tabs>standard-Console</tabs>
     <tabs>standard-DuplicateRecordSet</tabs>
     <tabs>Field_Trip__Object_Analysis__c</tabs>
     <tabs>Population_Data__c</tabs>

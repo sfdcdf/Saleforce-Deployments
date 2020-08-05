@@ -7,7 +7,6 @@
     <tabs>Field_Sales_Reporting</tabs>
     <tabs>Custom_Report_Hierarchy__c</tabs>
     <tabs>standard-Chatter</tabs>
-    <tabs>standard-Console</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>standard-Case</tabs>
