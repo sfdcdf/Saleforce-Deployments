@@ -88,8 +88,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Lighthouse_Worksheets__c.Date_Time_Install_Scheduled__c</dateColumn>
-        <endDate>2020-07-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-07-31</startDate>
+        <interval>INTERVAL_TODAY</interval>
     </timeFrameFilter>
 </Report>
