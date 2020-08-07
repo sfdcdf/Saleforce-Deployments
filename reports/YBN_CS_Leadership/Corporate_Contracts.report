@@ -27,6 +27,9 @@
     <columns>
         <field>LAST_UPDATE</field>
     </columns>
+    <columns>
+        <field>Contract.Payment_Terms__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>

@@ -9,44 +9,6 @@
         <masterLabel>Avg Age (Hours)</masterLabel>
         <scale>2</scale>
     </aggregates>
-    <aggregates>
-        <calculatedFormula>Case.Response_Time_Hours__c:AVG</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA5</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Avg Response (Bus Hours 9-5)</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
-        <calculatedFormula>Case.Case_Age_Business_Hours__c:AVG</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA6</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Avg Resolution (Bus Hours 9-5)</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <buckets>
-        <bucketType>number</bucketType>
-        <developerName>BucketField_65007334</developerName>
-        <masterLabel>Resolution</masterLabel>
-        <nullTreatment>z</nullTreatment>
-        <sourceColumnName>Case.Case_Age_Business_Hours__c</sourceColumnName>
-        <useOther>false</useOther>
-        <values>
-            <sourceValues>
-                <to>0</to>
-            </sourceValues>
-            <value>Off Hours</value>
-        </values>
-        <values>
-            <sourceValues>
-                <from>0</from>
-            </sourceValues>
-            <value>Bus Hours</value>
-        </values>
-    </buckets>
     <columns>
         <field>OWNER</field>
     </columns>
@@ -82,13 +44,7 @@
         <field>Case.Case_Age_Business_Days__c</field>
     </columns>
     <columns>
-        <field>Case.Case_Age_Business_Hours__c</field>
-    </columns>
-    <columns>
         <field>Case.First_Response_Date_Time__c</field>
-    </columns>
-    <columns>
-        <field>Case.Response_Time_Hours__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -131,11 +87,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Account.YBN_Relationship__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>BucketField_65007334</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

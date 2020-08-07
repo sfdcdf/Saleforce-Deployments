@@ -18,24 +18,6 @@
         <masterLabel>Avg Age (Bus Hours)</masterLabel>
         <scale>2</scale>
     </aggregates>
-    <aggregates>
-        <calculatedFormula>Case.Response_Time_Hours__c:AVG</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA5</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Avg Response (Bus Hours 9-5)</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
-        <calculatedFormula>Case.Case_Age_Business_Hours__c:AVG</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA6</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Avg Resolution (Bus Hours 9-5)</masterLabel>
-        <scale>2</scale>
-    </aggregates>
     <columns>
         <field>PARENT_ACCOUNT_NAME</field>
     </columns>
@@ -69,12 +51,6 @@
     </columns>
     <columns>
         <field>AGE</field>
-    </columns>
-    <columns>
-        <field>Case.Response_Time_Hours__c</field>
-    </columns>
-    <columns>
-        <field>Case.Case_Age_Business_Hours__c</field>
     </columns>
     <filter>
         <criteriaItems>
