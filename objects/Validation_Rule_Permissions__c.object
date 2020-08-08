@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+  <description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description>
+  <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
@@ -32,6 +35,16 @@
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status to 'Did Not Complete'</description>
         <externalId>false</externalId>
         <label>Lead Stream TP Did Not Complete Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>National_New_Client_Setup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Admins can bypass this rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Admins can bypass this rule</inlineHelpText>
+        <label>National New Client Setup</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -162,12 +175,8 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-  <customSettingsType>Hierarchy</customSettingsType>
-  <description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description>
-  <enableFeeds>false</enableFeeds>
-  <label>Validation Rule Permissions</label>
-  <visibility>Public</visibility>
-    <listViews>
+    <label>Validation Rule Permissions</label>
+  <listViews>
         <fullName>WORKING_Check</fullName>
         <columns>SETUP_OWNER_NAME</columns>
         <columns>SETUP_TYPE</columns>
@@ -203,4 +212,5 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <visibility>Public</visibility>
 </CustomObject>
