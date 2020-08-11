@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>USERS.NAME</field>
+        <field>Account.Client_ID__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
@@ -10,25 +10,22 @@
         <field>Account.Months_Live__c</field>
     </columns>
     <columns>
-        <field>TYPE</field>
+        <field>Account.Client_First_Name__c</field>
     </columns>
     <columns>
-        <field>Account.Client_ID__c</field>
+        <field>Account.Client_Last_Name__c</field>
     </columns>
     <columns>
-        <field>Account.Deactivation_Date__c</field>
+        <field>ADDRESS1_STREET</field>
     </columns>
     <columns>
-        <field>Account.Reactivation_Date__c</field>
-    </columns>
-    <columns>
-        <field>DUE_DATE</field>
-    </columns>
-    <columns>
-        <field>LAST_UPDATE</field>
+        <field>ADDRESS1_CITY</field>
     </columns>
     <columns>
         <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -66,6 +63,11 @@
         <field>Account.Secondary_Segments__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADDRESS1_COUNTRY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>ANN: Active Accounts</name>
     <params>
         <name>co</name>
@@ -77,7 +79,8 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATE</dateColumn>
+        <dateColumn>Account.Live_Date__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-07-01</startDate>
     </timeFrameFilter>
 </Report>

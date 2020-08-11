@@ -66,9 +66,6 @@
         </values>
     </buckets>
     <columns>
-        <field>Cancellation_Request__c.Date_of_Cancellation_Request__c</field>
-    </columns>
-    <columns>
         <field>CUST_CREATED_DATE</field>
     </columns>
     <columns>
@@ -169,6 +166,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
