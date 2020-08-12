@@ -223,6 +223,7 @@
     <tabs>SFDCToCTSAsynchRequest__c</tabs>
     <tabs>CTS_Error_Log__c</tabs>
     <tabs>MarketoLeadSFAccountMapping__c</tabs>
+    <tabs>Mmilestones__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_MLS__c</tab>
@@ -271,6 +272,9 @@
         </mappings>
         <mappings>
             <tab>MarketoLeadSFAccountMapping__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Mmilestones__c</tab>
         </mappings>
         <mappings>
             <tab>Notification_Log__c</tab>

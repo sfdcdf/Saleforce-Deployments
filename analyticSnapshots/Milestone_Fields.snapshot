@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <mappings>
+        <sourceField>CASE_NUMBER</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Mmilestones__c.Name</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ELPSD_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Mmilestones__c.Elapse_time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>STOPPED_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Mmilestones__c.Stopped_time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ACTUAL_ELPSD_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Mmilestones__c.Actual_ElapseTime__c</targetField>
+    </mappings>
+    <name>Milestone Fields</name>
+    <runningUser>sravani.mutnuru@web.com</runningUser>
+    <sourceReport>unfiled$public/Milestones</sourceReport>
+    <targetObject>Mmilestones__c</targetObject>
+</AnalyticSnapshot>

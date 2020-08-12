@@ -31,6 +31,7 @@
     <tabs>SFDCToCTSAsynchRequest__c</tabs>
     <tabs>CTS_Error_Log__c</tabs>
     <tabs>MarketoLeadSFAccountMapping__c</tabs>
+    <tabs>Mmilestones__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -45,6 +46,9 @@
         </mappings>
         <mappings>
             <tab>MarketoLeadSFAccountMapping__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Mmilestones__c</tab>
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>

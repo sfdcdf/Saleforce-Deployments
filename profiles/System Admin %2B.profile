@@ -12294,6 +12294,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Milestones__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Minutes_Recorded__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -14085,6 +14090,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.client_email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.elapse_time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -22965,6 +22975,21 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Mgmt_Goal__c.Weekly_Commit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mmilestones__c.Actual_ElapseTime__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mmilestones__c.Elapse_time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mmilestones__c.Stopped_time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -35102,6 +35127,9 @@
         <layout>Milestone__c-Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Mmilestones__c-Milestones Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>National_Support_Request__c-Initiation Form</layout>
         <recordType>National_Support_Request__c.Initiation_Form</recordType>
     </layoutAssignments>
@@ -36262,6 +36290,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Milestone__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Mmilestones__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -38582,6 +38619,10 @@
     <tabVisibilities>
         <tab>Marketo_Email_Campaign__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Mmilestones__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>National_Support_Request__c</tab>

@@ -38,4 +38,5 @@
     <tabs>CTS_Error_Log__c</tabs>
     <tabs>standard-Forecasting3</tabs>
     <tabs>MarketoLeadSFAccountMapping__c</tabs>
+    <tabs>Mmilestones__c</tabs>
 </CustomApplication>

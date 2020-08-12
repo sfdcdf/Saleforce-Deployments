@@ -7865,6 +7865,9 @@
         <layout>Milestone__c-Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Mmilestones__c-Milestones Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>National_Support_Request__c-Pre-Sale Questions</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -10048,6 +10051,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Marketo_Email_Campaign__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Mmilestones__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

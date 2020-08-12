@@ -38105,6 +38105,9 @@
         <layout>Milestone__c-Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Mmilestones__c-Milestones Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>National_Support_Request__c-Initiation Form</layout>
         <recordType>National_Support_Request__c.Initiation_Form</recordType>
     </layoutAssignments>
@@ -39297,6 +39300,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Milestone__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Mmilestones__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -41620,6 +41632,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Marketo_Email_Campaign__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Mmilestones__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

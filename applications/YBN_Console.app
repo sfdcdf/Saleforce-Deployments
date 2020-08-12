@@ -200,6 +200,7 @@
     <tabs>Acct_Email_Sub_to_Survey__c</tabs>
     <tabs>CTS_Error_Log__c</tabs>
     <tabs>MarketoLeadSFAccountMapping__c</tabs>
+    <tabs>Mmilestones__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Acct_Email_Sub_to_Survey__c</tab>
@@ -215,6 +216,9 @@
         </mappings>
         <mappings>
             <tab>MarketoLeadSFAccountMapping__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Mmilestones__c</tab>
         </mappings>
         <mappings>
             <fieldName>Account_Name__c</fieldName>
