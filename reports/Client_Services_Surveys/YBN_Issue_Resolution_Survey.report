@@ -53,6 +53,13 @@
             <operator>equals</operator>
             <value>Customer_Surveys__c.YBN_Issue_Resolution_Survey</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Re-Bath</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -72,6 +79,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_LAST30</interval>
+        <endDate>2020-08-11</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-01-01</startDate>
     </timeFrameFilter>
 </Report>
