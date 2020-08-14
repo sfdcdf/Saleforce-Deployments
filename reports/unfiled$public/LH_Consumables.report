@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Lighthouse_Worksheets__c.OBC_Check__c:SUM / RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% OBC</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Lighthouse_Worksheets__c.Letters_Check__c:SUM / RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Letters</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Lighthouse_Worksheets__c.Postcards_Check__c:SUM / RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Appt Reminder or Recall Postcards</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Lighthouse_Worksheets__c.Postcards_Check_Birthday__c:SUM / RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Birthday Postcards</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>((Lighthouse_Worksheets__c.OBC_Check__c:SUM / RowCount)
++
+(Lighthouse_Worksheets__c.Letters_Check__c:SUM / RowCount)
++
+(Lighthouse_Worksheets__c.Postcards_Check__c:SUM / RowCount)
++
+(Lighthouse_Worksheets__c.Postcards_Check_Birthday__c:SUM / RowCount))/4</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA6</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Consumable Signup</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_33310534</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lighthouse_Worksheets__c.CSC_Rep__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Sandy Staffieri</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Doreen Towhey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Beth Garrison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ben Block</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Block</sourceValue>
+            </sourceValues>
+            <value>Crystal Bellew</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Joshua Bowe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marc Foley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jamie Boldt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gretchen Grant</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amanda Arkell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Elizabeth Saltzman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kami Banner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dustin Wilson</sourceValue>
+            </sourceValues>
+            <value>Shane Butler</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Yodle_ID__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Disable_Recall_Postcards_for_Patients__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Practice_Name__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Tx_Plan_Msg_2_Type__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Tx_Plan_Msg_4_Type__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Postcards__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.AutoCalls__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Activate_Reactivation_Letters__c</field>
+    </columns>
+    <columns>
+        <field>Lighthouse_Worksheets__c.Activate_Newsletters__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lighthouse_Worksheets__c.CSC_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Crystal Bellew</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_33310534</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lighthouse_Worksheets__c.CSC_Rep__c</field>
+        <sortByName>FORMULA2</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>CustomSummaryFormula</sortType>
+    </groupingsDown>
+    <name>LH Consumables</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lighthouse_Worksheets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Lighthouse_Worksheets__c.Tx_Plan_Msg_2_Type__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lighthouse_Worksheets__c.CSC_Completed_Date__c</dateColumn>
+        <endDate>2020-08-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-01-01</startDate>
+    </timeFrameFilter>
+</Report>
