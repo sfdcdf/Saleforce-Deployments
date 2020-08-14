@@ -13988,22 +13988,22 @@ or(
     </listViews>
     <listViews>
         <fullName>New_This_Week</fullName>
+        <columns>Parent_Name__c</columns>
         <columns>ACCOUNT.NAME</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Client_Type__c</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
+        <columns>Status__c</columns>
         <columns>Product_Type__c</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>Biz_Dev_Internal_Product_Division__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.CREATED_DATE</field>
             <operation>equals</operation>
             <value>THIS_WEEK</value>
-        </filters>
-        <filters>
-            <field>Product_Type__c</field>
-            <operation>equals</operation>
-            <value>organic</value>
         </filters>
         <label>New This Week</label>
     </listViews>
