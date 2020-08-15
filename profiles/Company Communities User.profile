@@ -2656,6 +2656,11 @@
     <field>Account.SIC_Code__c</field>
 </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SMB_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Account.Sales_Activities_3_mos__c</field>

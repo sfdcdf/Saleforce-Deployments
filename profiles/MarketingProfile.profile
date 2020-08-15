@@ -1195,6 +1195,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.SMB_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.TORCHx_Client_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>

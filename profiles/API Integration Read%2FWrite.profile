@@ -3990,6 +3990,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.SMB_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.SMS_Opt_Out__c</field>
         <readable>true</readable>
     </fieldPermissions>

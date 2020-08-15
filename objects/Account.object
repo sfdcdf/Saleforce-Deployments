@@ -5558,6 +5558,17 @@ contains( Product_Type__c , "YODLE_WEB")),
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>SMB_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>SMB ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>SMS_Opt_Out__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
