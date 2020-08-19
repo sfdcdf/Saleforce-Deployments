@@ -975,6 +975,33 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         <label>Active Users</label>
     </listViews>
     <listViews>
+        <fullName>Active_API_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>API</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active API Users</label>
+    </listViews>
+    <listViews>
         <fullName>AdminUsers_AMM</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -1053,6 +1080,37 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
             <value>LAST_N_DAYS:10</value>
         </filters>
         <label>New User Requests for X days</label>
+    </listViews>
+    <listViews>
+        <fullName>Okta_New_User_Requests_for_X_days</fullName>
+        <booleanFilter>1 and 2</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_BY_ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>LAST_UPDATE_BY_ALIAS</columns>
+        <columns>Role_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_BY_NAME</field>
+            <operation>equals</operation>
+            <value>Okta System</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:10</value>
+        </filters>
+        <label>Okta New User Requests for X days</label>
     </listViews>
     <listViews>
         <fullName>Partner_Portal</fullName>
