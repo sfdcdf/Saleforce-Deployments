@@ -94,6 +94,14 @@
                 <field>ParentId</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ElapseTime__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>elapse_time__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>AccountId</field>
             </layoutItems>

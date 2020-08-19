@@ -39,6 +39,14 @@
     <columns>
         <field>IS_STOPPED</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>MT.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>First Response</value>
+        </criteriaItems>
+    </filter>
     <format>Tabular</format>
     <name>Milestones</name>
     <params>

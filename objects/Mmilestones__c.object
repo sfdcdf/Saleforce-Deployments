@@ -91,6 +91,10 @@
     <label>Milestones</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Elapse_time__c</columns>
+        <columns>Actual_ElapseTime__c</columns>
+        <columns>Stopped_time__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
