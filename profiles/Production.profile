@@ -33049,6 +33049,9 @@
         <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>MilestoneForReporting__c-MilestoneForReporting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -34253,6 +34256,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Mgmt_Goal__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>MilestoneForReporting__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

@@ -4471,6 +4471,9 @@
         <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>MilestoneForReporting__c-MilestoneForReporting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
