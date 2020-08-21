@@ -7,7 +7,25 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>MT.NAME</field>
+    </columns>
+    <columns>
+        <field>ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <field>STOPPED_TIME_MINS</field>
+    </columns>
+    <columns>
         <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>TRGT_RESP_MINS</field>
+    </columns>
+    <columns>
+        <field>ACTUAL_ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <field>Case.Response_Time__c</field>
     </columns>
     <columns>
         <field>Case.IMS_Rep__c</field>

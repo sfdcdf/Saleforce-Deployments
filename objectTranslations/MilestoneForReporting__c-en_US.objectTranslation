@@ -12,8 +12,16 @@
         <name>Account_Name__c</name>
     </fields>
     <fields>
+        <label><!-- Actual Elapse Time --></label>
+        <name>Actual_Elapse_Time__c</name>
+    </fields>
+    <fields>
         <label><!-- Case Origin --></label>
         <name>Case_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner --></label>
+        <name>Case_Owner__c</name>
     </fields>
     <fields>
         <label><!-- Case Record Type --></label>
@@ -36,6 +44,10 @@
         <name>IMS_Rep_c__c</name>
     </fields>
     <fields>
+        <label><!-- Milestone Name --></label>
+        <name>Milestone_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Opened Date --></label>
         <name>Opened_Date__c</name>
     </fields>
@@ -50,6 +62,10 @@
     <fields>
         <label><!-- Status --></label>
         <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stopped time --></label>
+        <name>Stopped_time__c</name>
     </fields>
     <fields>
         <label><!-- Subject --></label>

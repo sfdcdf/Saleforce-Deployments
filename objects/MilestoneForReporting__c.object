@@ -164,10 +164,33 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Actual_Elapse_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Elapse Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Case_Origin__c</fullName>
         <externalId>false</externalId>
         <label>Case Origin</label>
         <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Owner</label>
+        <length>200</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -207,19 +230,27 @@
         <fullName>First_Response_Time__c</fullName>
         <externalId>false</externalId>
         <label>First Response Time</label>
-        <precision>18</precision>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
+        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>IMS_Rep_c__c</fullName>
         <externalId>false</externalId>
         <label>IMS Rep</label>
         <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Milestone_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Milestone Name</label>
+        <length>100</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -270,6 +301,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Stopped_time__c</fullName>
+        <externalId>false</externalId>
+        <label>Stopped time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Subject__c</fullName>
         <externalId>false</externalId>
         <label>Subject</label>
@@ -291,8 +334,13 @@
         <unique>false</unique>
     </fields>
     <label>MilestoneForReporting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
-        <label>MilestoneForReporting Name</label>
+        <label>case number</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>

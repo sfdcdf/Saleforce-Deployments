@@ -21,11 +21,6 @@
         <targetField>MilestoneForReporting__c.Case_Origin__c</targetField>
     </mappings>
     <mappings>
-        <sourceField>Case.AA_Resolution__c</sourceField>
-        <sourceType>tabular</sourceType>
-        <targetField>MilestoneForReporting__c.Case_Record_Type__c</targetField>
-    </mappings>
-    <mappings>
         <sourceField>STATUS</sourceField>
         <sourceType>tabular</sourceType>
         <targetField>MilestoneForReporting__c.Status__c</targetField>
@@ -59,6 +54,31 @@
         <sourceField>Case.Time_To_Complete_Task_Minutes__c</sourceField>
         <sourceType>tabular</sourceType>
         <targetField>MilestoneForReporting__c.Time_to_Complete_Task__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>STOPPED_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneForReporting__c.Stopped_time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>OWNER</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneForReporting__c.Case_Owner__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Case.First_Response_Date_Time__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneForReporting__c.First_Response_Time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ACTUAL_ELPSD_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneForReporting__c.Actual_Elapse_Time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>MT.NAME</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneForReporting__c.Milestone_Name__c</targetField>
     </mappings>
     <name>Milestone Fields</name>
     <runningUser>sfsync@yodle.com</runningUser>

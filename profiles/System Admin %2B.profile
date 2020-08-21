@@ -23051,7 +23051,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>MilestoneForReporting__c.Actual_Elapse_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>MilestoneForReporting__c.Case_Origin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MilestoneForReporting__c.Case_Owner__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -23081,6 +23091,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>MilestoneForReporting__c.Milestone_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>MilestoneForReporting__c.Opened_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -23097,6 +23112,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>MilestoneForReporting__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MilestoneForReporting__c.Stopped_time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -38657,6 +38677,10 @@
         <recordType>CTS_Error_Log__c.PRE_CTS_Request_Log</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>MilestoneForReporting__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
