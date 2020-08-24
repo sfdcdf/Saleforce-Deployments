@@ -10,6 +10,9 @@
         <field>MT.NAME</field>
     </columns>
     <columns>
+        <field>CASE_ID</field>
+    </columns>
+    <columns>
         <field>ELPSD_TIME_MINS</field>
     </columns>
     <columns>
@@ -75,6 +78,15 @@
     <columns>
         <field>CLOSED_DATEONLY</field>
     </columns>
+    <filter>
+        <criteriaItems>
+            <column>MT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>First Resolution</value>
+        </criteriaItems>
+    </filter>
     <format>Tabular</format>
     <name>MilestoneForReporting</name>
     <params>
@@ -92,6 +104,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

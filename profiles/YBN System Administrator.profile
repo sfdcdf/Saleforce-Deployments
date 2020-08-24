@@ -12371,6 +12371,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.First_Response_Atual_Elapse_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.First_Response_Date_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
