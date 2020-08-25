@@ -13931,6 +13931,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Resolution_Time_Atual_Elapse_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Resolved__c</field>
         <readable>true</readable>
     </fieldPermissions>

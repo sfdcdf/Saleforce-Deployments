@@ -86,6 +86,13 @@
             <operator>equals</operator>
             <value>First Resolution</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>ACTUAL_ELPSD_TIME_MINS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>MilestoneForReporting</name>
