@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -15,7 +15,7 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Closed Won Deals</header>
             <indicatorBreakpoint1>2.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>5.0</indicatorBreakpoint2>
@@ -34,7 +34,7 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>4000.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>6000.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
@@ -53,7 +53,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Closed Won by SE</header>
             <legendPosition>Bottom</legendPosition>
             <report>WBN_SE_MGMT/CW_IL_Sales_Today</report>
@@ -78,7 +78,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>FULL_NAME</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>WBN_SE_MGMT/CW_IL_Sales_Today</report>
             <showPercentage>false</showPercentage>
@@ -97,13 +97,13 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Total Dials</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Calls Made</metricLabel>
-            <report>WBN_SE_MGMT/Call_Report_SE_SDR_Today</report>
+            <report>National_Reports/Calls_on_8_17</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -113,12 +113,12 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Duration (mins)</metricLabel>
-            <report>WBN_SE_MGMT/Call_Report_SE_SDR_Today</report>
+            <report>National_Reports/Calls_on_8_17</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -139,10 +139,10 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Activity$Owner</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Call Data</header>
             <legendPosition>Bottom</legendPosition>
-            <report>WBN_SE_MGMT/Call_Report_SE_SDR_Today</report>
+            <report>National_Reports/Calls_on_8_17</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
@@ -164,7 +164,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>ASSIGNED</groupingColumn>
             <groupingColumn>Activity.Milestone__c</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Demos Set/Held</header>
             <legendPosition>Bottom</legendPosition>
             <report>WBN_SE_MGMT/SE_Demo_Set_Held_Today</report>
@@ -187,7 +187,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Activity$Owner</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Dials This Week</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/Call_Report_SE_SDR_Month</report>
@@ -212,7 +212,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Activity$Owner</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Talk Time This Week</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/Call_Report_SE_SDR_Month</report>
