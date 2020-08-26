@@ -7,6 +7,9 @@
         <field>Account.Client_ID__c</field>
     </columns>
     <columns>
+        <field>Account.LH_360_ID__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
@@ -22,6 +25,18 @@
         <field>Account.Client_Last_Name__c</field>
     </columns>
     <columns>
+        <field>ADDRESS1_STREET</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
+    </columns>
+    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -29,9 +44,6 @@
     </columns>
     <columns>
         <field>LAST_UPDATE</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_STATE</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -82,5 +94,6 @@
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-07-01</startDate>
     </timeFrameFilter>
 </Report>
