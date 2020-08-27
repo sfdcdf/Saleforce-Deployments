@@ -4,7 +4,7 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>Case.Resolution_Time_Atual_Elapse_Time__c</field>
+        <field>Case.Resolution_Time_Actual_Elapse_Time__c</field>
     </columns>
     <columns>
         <field>CASE_ID</field>
@@ -17,7 +17,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Case.Resolution_Time_Atual_Elapse_Time__c</column>
+            <column>Case.Resolution_Time_Actual_Elapse_Time__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>

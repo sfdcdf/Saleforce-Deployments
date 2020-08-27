@@ -4,7 +4,7 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>Case.First_Response_Atual_Elapse_Time__c</field>
+        <field>Case.First_Response_Actual_Elapse_Time__c</field>
     </columns>
     <columns>
         <field>CASE_ID</field>
@@ -17,7 +17,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Case.First_Response_Atual_Elapse_Time__c</column>
+            <column>Case.First_Response_Actual_Elapse_Time__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
@@ -39,7 +39,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Case.First_Response_Atual_Elapse_Time__c</sortColumn>
+    <sortColumn>Case.First_Response_Actual_Elapse_Time__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>

@@ -4,6 +4,9 @@
         <field>CASE_ID</field>
     </columns>
     <columns>
+        <field>MT.NAME</field>
+    </columns>
+    <columns>
         <field>ACTUAL_ELPSD_TIME_MINS</field>
     </columns>
     <filter>
@@ -15,18 +18,18 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>MT.NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Resolution Time</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>LAST_UPDATE_BY</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Sravani Mutnuru</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>First Resolution</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -46,8 +49,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2019-07-01</endDate>
+        <endDate>2020-08-26</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-05-01</startDate>
+        <startDate>2019-01-01</startDate>
     </timeFrameFilter>
 </Report>

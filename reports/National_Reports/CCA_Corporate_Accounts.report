@@ -27,6 +27,9 @@
     <columns>
         <field>Account.AccountId18__c</field>
     </columns>
+    <columns>
+        <field>Account.Biz_Dev_Internal_Product_Division__c</field>
+    </columns>
     <filter>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
