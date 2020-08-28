@@ -18,18 +18,18 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>LAST_UPDATE_BY</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Sravani Mutnuru</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>MT.NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>First Resolution</value>
+            <value>First Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>8/27/2020 12:00 AM</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

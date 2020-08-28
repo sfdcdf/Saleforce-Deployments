@@ -12948,6 +12948,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.First_Resolution_Actual_Elapse_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.First_Response_Actual_Elapse_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.First_Response_Date_Time__c</field>
         <readable>true</readable>
@@ -14200,6 +14210,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Resolution_Attempt_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Resolution_Time_Actual_Elapse_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

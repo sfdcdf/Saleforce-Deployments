@@ -7,6 +7,9 @@
         <field>CASE_ID</field>
     </columns>
     <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
@@ -22,7 +25,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <filter>
-        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <booleanFilter>(1 OR 2)OR 3</booleanFilter>
         <criteriaItems>
             <column>Case.Resolution_Time_Actual_Elapse_Time__c</column>
             <columnToColumn>false</columnToColumn>
@@ -60,10 +63,10 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.First_Response_Actual_Elapse_Time__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2020-08-26</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-01-01</startDate>
+        <interval>INTERVAL_LAST7</interval>
     </timeFrameFilter>
 </Report>
