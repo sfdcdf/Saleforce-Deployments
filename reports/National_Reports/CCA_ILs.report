@@ -13,9 +13,6 @@
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
-        <field>Account.Individual_Location_Service_Level__c</field>
-    </columns>
-    <columns>
         <field>Account.Status__c</field>
     </columns>
     <columns>
@@ -23,6 +20,9 @@
     </columns>
     <columns>
         <field>Account.AccountId18__c</field>
+    </columns>
+    <columns>
+        <field>Account.Individual_Location_Service_Level__c</field>
     </columns>
     <columns>
         <field>ADDRESS1_CITY</field>
@@ -74,7 +74,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>LIVE</value>
+            <value>LIVE,PROVISIONING</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
