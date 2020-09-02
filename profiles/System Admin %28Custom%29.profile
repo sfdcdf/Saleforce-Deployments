@@ -1045,6 +1045,11 @@
         <visible>true</visible>
     </applicationVisibilities>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.AccountId18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Corp_approval_on_organic_content_needed__c</field>
         <readable>true</readable>
