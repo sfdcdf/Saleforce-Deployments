@@ -9,6 +9,9 @@
     <columns>
         <field>ACTUAL_ELPSD_TIME_MINS</field>
     </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>ACTUAL_ELPSD_TIME_MINS</column>
@@ -22,14 +25,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>First Response</value>
+            <value>Resolution time</value>
         </criteriaItems>
         <criteriaItems>
-            <column>LAST_UPDATEONLY</column>
+            <column>LAST_UPDATE_BY</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>8/27/2020 12:00 AM</value>
+            <value>Sravani Mutnuru</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -49,8 +52,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2020-08-26</endDate>
+        <endDate>2020-09-02</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-01-01</startDate>
+        <startDate>2020-08-19</startDate>
     </timeFrameFilter>
 </Report>

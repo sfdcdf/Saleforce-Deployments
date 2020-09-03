@@ -111,6 +111,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Action_Items__c</fullName>
         <externalId>false</externalId>
@@ -2745,6 +2746,11 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Customer Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Status Call</valueName>
             </valueSettings>
             <valueSettings>
@@ -3286,10 +3292,6 @@ LEFT( WhatId ,3)= '001' /* Account */
                 <valueName>M000 - Conversation Initiation</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>Prospecting</controllingFieldValue>
-                <valueName>Customer Email</valueName>
-            </valueSettings>
-            <valueSettings>
                 <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>
                 <valueName>ROI Calculator Data</valueName>
             </valueSettings>
@@ -3757,15 +3759,6 @@ LEFT( WhatId ,3)= '001' /* Account */
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <enableFeeds>false</enableFeeds>
-    <searchLayouts>
-        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
     <listViews>
         <fullName>Griswold</fullName>
         <columns>TASK.SUBJECT</columns>
@@ -3926,4 +3919,12 @@ LEFT( WhatId ,3)= '001' /* Account */
         </filters>
         <label>Upcoming Events</label>
     </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
