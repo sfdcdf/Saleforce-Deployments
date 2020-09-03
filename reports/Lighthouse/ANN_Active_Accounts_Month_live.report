@@ -13,6 +13,9 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.PMS__c</field>
+    </columns>
+    <columns>
         <field>PHONE1</field>
     </columns>
     <columns>
@@ -94,6 +97,5 @@
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-07-01</startDate>
     </timeFrameFilter>
 </Report>
