@@ -16028,6 +16028,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Surveys__c.Issue_Survey_Overall_Satisfaction__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Customer_Surveys__c.Issue_Survey_Product_Performance_Satisfa__c</field>
         <readable>true</readable>

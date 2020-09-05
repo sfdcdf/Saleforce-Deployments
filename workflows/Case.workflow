@@ -3419,6 +3419,16 @@
         <template>contracts/Completed_Budget_Change_Email</template>
     </alerts>
     <alerts>
+        <fullName>charge_failure_case_EmailElert</fullName>
+        <description>When a charge failure case is created an email alert should be sent to the Case Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTNewassignmentnotification</template>
+    </alerts>
+    <alerts>
         <fullName>notify_AD_when_status_of_custom_implementation_quote_moves_to_in_progress</fullName>
         <description>YBN notify AD when status of custom implementation quote moves to in progress</description>
         <protected>false</protected>
@@ -8379,6 +8389,20 @@ ispickval(Status ,"Unscheduled - 4+ Attempts"))</formula>
             <value>Charge Failure</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Charge failure Case</fullName>
+        <actions>
+            <name>charge_failure_case_EmailElert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Charge Failure</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>Check Production Team Mistake</fullName>
