@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</column>
+            <column>Customer_Surveys__c.Issue_Survey_Overall_Satisfaction__c</column>
         </chartSummaries>
         <chartSummaries>
             <axisBinding>y</axisBinding>
@@ -50,7 +50,7 @@
     </columns>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
-        <field>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</field>
+        <field>Customer_Surveys__c.Issue_Survey_Overall_Satisfaction__c</field>
     </columns>
     <columns>
         <field>CUST_NAME</field>

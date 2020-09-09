@@ -186,19 +186,21 @@
             <componentType>Table</componentType>
             <dashboardTableColumn>
                 <column>Customer_Surveys__c.YBN_Consultant__c</column>
-                <sortBy>RowLabelAscending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <aggregateType>Average</aggregateType>
                 <calculatePercent>false</calculatePercent>
-                <column>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</column>
+                <column>Customer_Surveys__c.Issue_Survey_Overall_Satisfaction__c</column>
+                <decimalPlaces>1</decimalPlaces>
                 <showTotal>false</showTotal>
+                <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
                 <column>RowCount</column>
                 <showTotal>false</showTotal>
             </dashboardTableColumn>
+            <decimalPrecision>1</decimalPrecision>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
